@@ -52,7 +52,7 @@ except ImportError:
 # CONFIGURACION
 # ============================================================================
 
-BASE_DIR = Path("/home/jochoa/Java/workspace/leyes/doc")
+BASE_DIR = Path(__file__).parent.parent / "doc"
 LOGS_DIR = BASE_DIR / "logs"
 VERSIONS_DIR = BASE_DIR / "versions"
 
@@ -82,6 +82,52 @@ URLS_BASE = {
     "dof": "https://www.dof.gob.mx/",
     "stps": "https://www.gob.mx/stps",
 }
+
+# ============================================================================
+# FILTRO DE LEYES Y REGLAMENTOS A DESCARGAR
+# Solo se descargan documentos relacionados con contabilidad, fiscal y laboral
+# ============================================================================
+
+# Códigos de leyes permitidas (nombre_corto debe contener alguno de estos)
+LEYES_PERMITIDAS = {
+    "CFF",      # Código Fiscal de la Federación
+    "LFT",      # Ley Federal del Trabajo
+    "LIEPS",    # Ley del Impuesto Especial sobre Producción y Servicios
+    "LISR",     # Ley del Impuesto Sobre la Renta
+    "LIVA",     # Ley del Impuesto al Valor Agregado
+    "LSS",      # Ley del Seguro Social
+}
+
+# Patrones para identificar reglamentos de las leyes permitidas
+REGLAMENTOS_PERMITIDOS = {
+    "RCFF", "REG_CFF",           # Reglamento del CFF
+    "RLIEPS", "REG_LIEPS",       # Reglamento del IEPS
+    "RLISR", "REG_LISR",         # Reglamento del ISR
+    "RLIVA", "REG_LIVA",         # Reglamento del IVA
+    "RLFT", "REG_LFT",           # Reglamento de la LFT
+    "RLSS", "REG_LSS",           # Reglamento del Seguro Social
+    "RACERF",                    # Reglamento de Afiliación IMSS
+}
+
+def documento_permitido(nombre_corto: str, tipo: str) -> bool:
+    """Verifica si un documento está en la lista de permitidos."""
+    nombre_upper = nombre_corto.upper()
+
+    if tipo == "ley":
+        return any(ley in nombre_upper for ley in LEYES_PERMITIDAS)
+    elif tipo == "reglamento":
+        # Verificar patrones de reglamentos
+        if any(reg in nombre_upper for reg in REGLAMENTOS_PERMITIDOS):
+            return True
+        # También verificar si el nombre contiene referencias a las leyes permitidas
+        for ley in LEYES_PERMITIDAS:
+            if f"REG_{ley}" in nombre_upper or f"R{ley}" in nombre_upper:
+                return True
+            if f"REGLAMENTO" in nombre_upper and ley in nombre_upper:
+                return True
+        return False
+
+    return False  # Por defecto, no descargar otros tipos
 
 
 # ============================================================================
@@ -706,7 +752,11 @@ class GestorLeyesMX:
         tipo = doc["tipo"]
         autoridad = doc["autoridad"]
 
-        dir_destino = DIRS.get(tipo, DIRS["ley"])
+        dir_tipo = DIRS.get(tipo, DIRS["ley"])
+
+        # Crear subdirectorio para cada ley/reglamento basado en nombre_corto
+        dir_destino = dir_tipo / nombre_corto
+        dir_destino.mkdir(parents=True, exist_ok=True)
 
         try:
             self.logger.info(f"Descargando: {nombre_corto}")
@@ -723,7 +773,7 @@ class GestorLeyesMX:
                 formato = "html"
                 extension = ".html"
 
-            # Nombre de archivo normalizado
+            # Nombre de archivo normalizado (ahora dentro de la subcarpeta)
             nombre_archivo = normalizar_nombre(f"{nombre_corto}_{nombre[:50]}")
             archivo_base = dir_destino / nombre_archivo
             archivo_principal = archivo_base.with_suffix(extension)
@@ -865,8 +915,15 @@ class GestorLeyesMX:
             self.logger.info(f"Manifest anterior: {len(manifest_anterior)} documentos")
 
         # Recolectar documentos
-        documentos = self.recolectar_documentos()
-        self.logger.info(f"\nTotal documentos a descargar: {len(documentos)}")
+        documentos_todos = self.recolectar_documentos()
+        self.logger.info(f"\nTotal documentos encontrados: {len(documentos_todos)}")
+
+        # Filtrar solo documentos permitidos (leyes fiscales/laborales y sus reglamentos)
+        documentos = [
+            doc for doc in documentos_todos
+            if documento_permitido(doc["nombre_corto"], doc["tipo"])
+        ]
+        self.logger.info(f"Documentos después del filtro: {len(documentos)}")
 
         # Descargar
         self.logger.info("\n" + "=" * 60)
