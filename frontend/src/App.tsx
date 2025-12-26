@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import Home from './pages/Home'
 import Article from './pages/Article'
 import LeyIndex from './pages/LeyIndex'
+import DivisionView from './pages/DivisionView'
 import Header from './components/Header'
 import ErrorBoundary from './components/ErrorBoundary'
 
@@ -33,6 +34,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/:ley/articulo/:numero" element={<Article />} />
             <Route path="/:ley/regla/:numero" element={<Article />} />
+            <Route path="/:ley/division/:id" element={<DivisionView />} />
             <Route path="/:ley" element={<LeyIndex />} />
             <Route path="/articulo/:id" element={<Article />} />
           </Routes>

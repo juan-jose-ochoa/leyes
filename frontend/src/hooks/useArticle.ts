@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division } from '@/lib/api'
+import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionInfo, getArticulosDivision, getDivisionesArticulo, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro } from '@/lib/api'
 
 export function useArticle(id: number | null) {
   return useQuery<ArticuloDetalle | null>({
@@ -56,5 +56,41 @@ export function useEstructuraLey(ley: string | null) {
     },
     enabled: ley !== null,
     staleTime: 1000 * 60 * 60, // 1 hora
+  })
+}
+
+export function useDivisionInfo(divId: number | null) {
+  return useQuery<DivisionInfo | null>({
+    queryKey: ['division', divId],
+    queryFn: async () => {
+      if (!divId) return null
+      return getDivisionInfo(divId)
+    },
+    enabled: divId !== null,
+    staleTime: 1000 * 60 * 60,
+  })
+}
+
+export function useArticulosDivision(divId: number | null) {
+  return useQuery<ArticuloDivision[]>({
+    queryKey: ['articulos-division', divId],
+    queryFn: async () => {
+      if (!divId) return []
+      return getArticulosDivision(divId)
+    },
+    enabled: divId !== null,
+    staleTime: 1000 * 60 * 30,
+  })
+}
+
+export function useDivisionesArticulo(artId: number | null) {
+  return useQuery<DivisionAncestro[]>({
+    queryKey: ['divisiones-articulo', artId],
+    queryFn: async () => {
+      if (!artId) return []
+      return getDivisionesArticulo(artId)
+    },
+    enabled: artId !== null,
+    staleTime: 1000 * 60 * 60,
   })
 }

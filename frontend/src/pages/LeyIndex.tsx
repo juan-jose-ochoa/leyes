@@ -182,9 +182,10 @@ function DivisionItem({ division, ley, tipoContenido }: DivisionItemProps) {
     </div>
   )
 
+  // Siempre enlazar a la vista de división si tiene artículos
   if (hasArticles) {
     return (
-      <Link to={`/${ley}/${tipoContenido}/${division.primer_articulo}`}>
+      <Link to={`/${ley}/division/${division.id}`}>
         {content}
       </Link>
     )

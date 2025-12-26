@@ -1,14 +1,8 @@
 import { useParams, Link } from 'react-router-dom'
 import { Copy, Check, ExternalLink, BookOpen, ChevronLeft, ChevronRight, Home } from 'lucide-react'
 import { useState } from 'react'
-import { useArticle, useArticuloPorLey, useNavegacion } from '@/hooks/useArticle'
+import { useArticle, useArticuloPorLey, useNavegacion, useDivisionesArticulo } from '@/hooks/useArticle'
 import clsx from 'clsx'
-
-// Parsear ubicación en partes para breadcrumbs
-const parsearUbicacion = (ubicacion: string): string[] => {
-  if (!ubicacion) return []
-  return ubicacion.split(' > ').map(part => part.trim()).filter(Boolean)
-}
 
 export default function Article() {
   const { id, ley, numero } = useParams<{ id?: string; ley?: string; numero?: string }>()
@@ -21,6 +15,7 @@ export default function Article() {
 
   const { data: articulo, isLoading, error } = ley ? porLey : porId
   const { data: navegacion } = useNavegacion(articulo?.id ?? null)
+  const { data: divisiones } = useDivisionesArticulo(articulo?.id ?? null)
   const [copied, setCopied] = useState(false)
 
   // Determinar si es regla basándose en el tipo o la ruta
@@ -68,8 +63,6 @@ export default function Article() {
     )
   }
 
-  const partesUbicacion = parsearUbicacion(articulo.ubicacion || '')
-
   return (
     <div className="mx-auto max-w-4xl">
       {/* Breadcrumbs - Sticky en móvil */}
@@ -105,13 +98,16 @@ export default function Article() {
             </Link>
           </li>
 
-          {/* Partes de ubicación */}
-          {partesUbicacion.map((parte, index) => (
-            <li key={index} className="flex items-center gap-1 shrink-0">
+          {/* Divisiones (Título, Capítulo, etc.) */}
+          {divisiones?.map((div) => (
+            <li key={div.id} className="flex items-center gap-1 shrink-0">
               <ChevronRight className="h-4 w-4 text-gray-400" />
-              <span className="text-gray-600 dark:text-gray-400 whitespace-nowrap">
-                {parte}
-              </span>
+              <Link
+                to={`/${ley || articulo.ley}/division/${div.id}`}
+                className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 whitespace-nowrap transition-colors"
+              >
+                {div.tipo.charAt(0).toUpperCase() + div.tipo.slice(1)} {div.numero}
+              </Link>
             </li>
           ))}
 

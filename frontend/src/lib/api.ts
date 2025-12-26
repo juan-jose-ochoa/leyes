@@ -191,3 +191,71 @@ export async function getEstructuraLey(ley: string): Promise<Division[]> {
     body: JSON.stringify({ ley_codigo: ley }),
   })
 }
+
+export interface DivisionInfo {
+  id: number
+  ley_codigo: string
+  ley_nombre: string
+  ley_tipo: string
+  div_tipo: string
+  numero: string | null
+  nombre: string | null
+  path_texto: string | null
+  total_articulos: number
+}
+
+export interface ArticuloDivision {
+  id: number
+  numero_raw: string
+  contenido: string
+  es_transitorio: boolean
+  reformas: string | null
+  tipo: string | null
+  referencias: string | null
+}
+
+export async function getDivisionInfo(divId: number): Promise<DivisionInfo | null> {
+  const result = await fetchAPI<DivisionInfo[]>('/rpc/division_info', {
+    method: 'POST',
+    body: JSON.stringify({ div_id: divId }),
+  })
+  return result[0] || null
+}
+
+export async function getArticulosDivision(divId: number): Promise<ArticuloDivision[]> {
+  return fetchAPI<ArticuloDivision[]>('/rpc/articulos_division', {
+    method: 'POST',
+    body: JSON.stringify({ div_id: divId }),
+  })
+}
+
+export interface DivisionBasica {
+  id: number
+  tipo: string
+  numero: string | null
+  nombre: string | null
+}
+
+export async function getDivisionPorPath(ley: string, path: string): Promise<DivisionBasica | null> {
+  const result = await fetchAPI<DivisionBasica[]>('/rpc/division_por_path', {
+    method: 'POST',
+    body: JSON.stringify({ p_ley: ley, p_path: path }),
+  })
+  return result[0] || null
+}
+
+export interface DivisionAncestro {
+  id: number
+  tipo: string
+  numero: string | null
+  nombre: string | null
+  path_texto: string | null
+  nivel: number
+}
+
+export async function getDivisionesArticulo(artId: number): Promise<DivisionAncestro[]> {
+  return fetchAPI<DivisionAncestro[]>('/rpc/divisiones_articulo', {
+    method: 'POST',
+    body: JSON.stringify({ art_id: artId }),
+  })
+}
