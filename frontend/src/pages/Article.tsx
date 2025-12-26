@@ -122,7 +122,7 @@ export default function Article() {
       </nav>
 
       {/* Header del artículo */}
-      <div className="mb-8">
+      <div className="mb-8 prose-legal">
         {/* División padre (Capítulo, Sección, etc.) */}
         {divisiones && divisiones.length > 0 && (
           <Link
@@ -173,7 +173,7 @@ export default function Article() {
 
       {/* Contenido principal */}
       <div className="card">
-        <div className="prose prose-gray max-w-none dark:prose-invert">
+        <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
           {articulo.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
             <p key={i} className="mb-4 leading-relaxed">
               {paragraph}

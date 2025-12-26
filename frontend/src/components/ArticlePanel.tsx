@@ -67,7 +67,7 @@ export default function ArticlePanel({ ley, numero, onClose, onNavigate }: Artic
       {/* Header sticky */}
       <div className="sticky top-0 z-10 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 px-6 py-4">
         <div className="flex items-start justify-between gap-4">
-          <div className="min-w-0 flex-1">
+          <div className="min-w-0 flex-1 prose-legal">
             <div className="flex items-center gap-2 mb-1">
               <span
                 className={clsx(
@@ -131,7 +131,7 @@ export default function ArticlePanel({ ley, numero, onClose, onNavigate }: Artic
 
       {/* Contenido scrolleable */}
       <div className="flex-1 overflow-y-auto p-6">
-        <div className="prose prose-gray max-w-none dark:prose-invert">
+        <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
           {articulo.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
             <p key={i} className="mb-4 leading-relaxed">
               {paragraph}

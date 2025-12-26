@@ -92,7 +92,7 @@ export default function DivisionView() {
       </nav>
 
       {/* Header */}
-      <div className="mb-8">
+      <div className="mb-8 prose-legal">
         <p className="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase mb-1">
           {info.div_tipo} {info.numero}
         </p>
@@ -113,7 +113,7 @@ export default function DivisionView() {
             className="scroll-mt-20"
           >
             {/* Header del artículo */}
-            <div className="flex items-start justify-between gap-4 mb-4">
+            <div className="flex items-start justify-between gap-4 mb-4 prose-legal">
               <div>
                 <Link
                   to={`/${ley}/${tipoContenido}/${art.numero_raw}`}
@@ -133,7 +133,7 @@ export default function DivisionView() {
             </div>
 
             {/* Contenido */}
-            <div className="prose prose-gray max-w-none dark:prose-invert">
+            <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
               {art.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
                 <p key={i} className="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
                   {paragraph}
