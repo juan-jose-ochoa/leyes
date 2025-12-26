@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionInfo, getArticulosDivision, getDivisionesArticulo, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro } from '@/lib/api'
+import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionInfo, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion } from '@/lib/api'
 
 export function useArticle(id: number | null) {
   return useQuery<ArticuloDetalle | null>({
@@ -92,5 +92,17 @@ export function useDivisionesArticulo(artId: number | null) {
     },
     enabled: artId !== null,
     staleTime: 1000 * 60 * 60,
+  })
+}
+
+export function useFraccionesArticulo(artId: number | null) {
+  return useQuery<Fraccion[]>({
+    queryKey: ['fracciones-articulo', artId],
+    queryFn: async () => {
+      if (!artId) return []
+      return getFraccionesArticulo(artId)
+    },
+    enabled: artId !== null,
+    staleTime: 1000 * 60 * 30,
   })
 }

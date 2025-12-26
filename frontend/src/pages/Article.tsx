@@ -1,7 +1,8 @@
 import { useParams, Link } from 'react-router-dom'
 import { Copy, Check, ExternalLink, BookOpen, ChevronLeft, ChevronRight, Home } from 'lucide-react'
 import { useState } from 'react'
-import { useArticle, useArticuloPorLey, useNavegacion, useDivisionesArticulo } from '@/hooks/useArticle'
+import { useArticle, useArticuloPorLey, useNavegacion, useDivisionesArticulo, useFraccionesArticulo } from '@/hooks/useArticle'
+import FraccionesView from '@/components/FraccionesView'
 import clsx from 'clsx'
 
 export default function Article() {
@@ -16,6 +17,7 @@ export default function Article() {
   const { data: articulo, isLoading, error } = ley ? porLey : porId
   const { data: navegacion } = useNavegacion(articulo?.id ?? null)
   const { data: divisiones } = useDivisionesArticulo(articulo?.id ?? null)
+  const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null)
   const [copied, setCopied] = useState(false)
 
   // Determinar si es regla basándose en el tipo o la ruta
@@ -174,11 +176,15 @@ export default function Article() {
       {/* Contenido principal */}
       <div className="card">
         <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
-          {articulo.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
-            <p key={i} className="mb-4 leading-relaxed">
-              {paragraph}
-            </p>
-          ))}
+          {fracciones && fracciones.length > 0 ? (
+            <FraccionesView fracciones={fracciones} />
+          ) : (
+            articulo.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
+              <p key={i} className="mb-4 leading-relaxed">
+                {paragraph}
+              </p>
+            ))
+          )}
         </div>
 
         {articulo.reformas && (

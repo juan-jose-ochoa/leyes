@@ -259,3 +259,20 @@ export async function getDivisionesArticulo(artId: number): Promise<DivisionAnce
     body: JSON.stringify({ art_id: artId }),
   })
 }
+
+export interface Fraccion {
+  id: number
+  padre_id: number | null
+  tipo: 'fraccion' | 'inciso' | 'numeral' | 'parrafo' | 'apartado'
+  numero: string | null
+  contenido: string
+  orden: number
+  nivel: number
+}
+
+export async function getFraccionesArticulo(artId: number): Promise<Fraccion[]> {
+  return fetchAPI<Fraccion[]>('/rpc/fracciones_articulo', {
+    method: 'POST',
+    body: JSON.stringify({ art_id: artId }),
+  })
+}

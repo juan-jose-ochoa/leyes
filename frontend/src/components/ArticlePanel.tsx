@@ -1,7 +1,8 @@
 import { Copy, Check, ExternalLink, BookOpen, ChevronLeft, ChevronRight, X } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useArticuloPorLey, useNavegacion } from '@/hooks/useArticle'
+import { useArticuloPorLey, useNavegacion, useFraccionesArticulo } from '@/hooks/useArticle'
+import FraccionesView from './FraccionesView'
 import clsx from 'clsx'
 
 interface ArticlePanelProps {
@@ -14,6 +15,7 @@ interface ArticlePanelProps {
 export default function ArticlePanel({ ley, numero, onClose, onNavigate }: ArticlePanelProps) {
   const { data: articulo, isLoading, error } = useArticuloPorLey(ley, numero)
   const { data: navegacion } = useNavegacion(articulo?.id ?? null)
+  const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null)
   const [copied, setCopied] = useState(false)
 
   const esRegla = articulo?.tipo === 'regla'
@@ -132,11 +134,15 @@ export default function ArticlePanel({ ley, numero, onClose, onNavigate }: Artic
       {/* Contenido scrolleable */}
       <div className="flex-1 overflow-y-auto p-6">
         <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
-          {articulo.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
-            <p key={i} className="mb-4 leading-relaxed">
-              {paragraph}
-            </p>
-          ))}
+          {fracciones && fracciones.length > 0 ? (
+            <FraccionesView fracciones={fracciones} />
+          ) : (
+            articulo.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
+              <p key={i} className="mb-4 leading-relaxed">
+                {paragraph}
+              </p>
+            ))
+          )}
         </div>
 
         {articulo.reformas && (
