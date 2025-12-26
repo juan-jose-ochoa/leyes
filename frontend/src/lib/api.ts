@@ -158,3 +158,18 @@ export async function getStats(): Promise<Stats[]> {
     body: JSON.stringify({}),
   })
 }
+
+export interface NavegacionArticulo {
+  anterior_id: number | null
+  anterior_numero: string | null
+  siguiente_id: number | null
+  siguiente_numero: string | null
+}
+
+export async function getNavegacion(articuloId: number): Promise<NavegacionArticulo | null> {
+  const result = await fetchAPI<NavegacionArticulo[]>('/rpc/navegar', {
+    method: 'POST',
+    body: JSON.stringify({ art_id: articuloId }),
+  })
+  return result[0] || null
+}

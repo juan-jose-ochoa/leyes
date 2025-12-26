@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { getArticulo, getArticuloPorLey, getLeyes, type ArticuloDetalle, type Ley } from '@/lib/api'
+import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, type ArticuloDetalle, type Ley, type NavegacionArticulo } from '@/lib/api'
 
 export function useArticle(id: number | null) {
   return useQuery<ArticuloDetalle | null>({
@@ -32,5 +32,17 @@ export function useLeyes() {
     queryKey: ['leyes'],
     queryFn: getLeyes,
     staleTime: 1000 * 60 * 60, // 1 hora
+  })
+}
+
+export function useNavegacion(articuloId: number | null) {
+  return useQuery<NavegacionArticulo | null>({
+    queryKey: ['navegacion', articuloId],
+    queryFn: async () => {
+      if (!articuloId) return null
+      return getNavegacion(articuloId)
+    },
+    enabled: articuloId !== null,
+    staleTime: 1000 * 60 * 30, // 30 minutos
   })
 }
