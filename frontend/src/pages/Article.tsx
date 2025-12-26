@@ -90,9 +90,10 @@ export default function Article() {
 
           {/* Ley */}
           <li className="shrink-0">
-            <span
+            <Link
+              to={`/${ley || articulo.ley}`}
               className={clsx(
-                'inline-flex items-center px-2 py-0.5 rounded text-xs font-medium',
+                'inline-flex items-center px-2 py-0.5 rounded text-xs font-medium hover:opacity-80 transition-opacity',
                 articulo.ley_tipo === 'resolucion'
                   ? 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200'
                   : articulo.ley_tipo === 'ley'
@@ -101,7 +102,7 @@ export default function Article() {
               )}
             >
               {articulo.ley}
-            </span>
+            </Link>
           </li>
 
           {/* Partes de ubicación */}

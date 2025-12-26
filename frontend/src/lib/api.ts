@@ -173,3 +173,21 @@ export async function getNavegacion(articuloId: number): Promise<NavegacionArtic
   })
   return result[0] || null
 }
+
+export interface Division {
+  id: number
+  tipo: string
+  numero: string | null
+  nombre: string | null
+  path_texto: string | null
+  nivel: number
+  total_articulos: number
+  primer_articulo: string | null
+}
+
+export async function getEstructuraLey(ley: string): Promise<Division[]> {
+  return fetchAPI<Division[]>('/rpc/estructura_ley', {
+    method: 'POST',
+    body: JSON.stringify({ ley_codigo: ley }),
+  })
+}

@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { useSearchParams, Link } from 'react-router-dom'
 import { Scale, BookOpen, Search as SearchIcon, Zap } from 'lucide-react'
+import clsx from 'clsx'
 import SearchBar from '@/components/SearchBar'
 import ResultList from '@/components/ResultList'
 import ArticlePanel from '@/components/ArticlePanel'
@@ -160,34 +161,35 @@ export default function Home() {
               Leyes disponibles
             </h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {leyes.map((ley) => (
-                <button
-                  key={ley.codigo}
-                  onClick={() => {
-                    setSelectedLeyes([ley.codigo])
-                    setQuery('')
-                    setSearchParams({})
-                  }}
+              {leyes.map((leyItem) => (
+                <Link
+                  key={leyItem.codigo}
+                  to={`/${leyItem.codigo}`}
                   className="card text-left transition-all hover:border-primary-300 hover:shadow-md dark:hover:border-primary-700"
                 >
                   <div className="flex items-center gap-3">
                     <div
-                      className={`flex h-10 w-10 items-center justify-center rounded-lg text-sm font-bold text-white ${
-                        ley.tipo === 'ley' ? 'bg-primary-600' : 'bg-blue-600'
-                      }`}
+                      className={clsx(
+                        'flex h-10 w-10 items-center justify-center rounded-lg text-sm font-bold text-white',
+                        leyItem.tipo === 'resolucion'
+                          ? 'bg-amber-600'
+                          : leyItem.tipo === 'ley'
+                            ? 'bg-primary-600'
+                            : 'bg-blue-600'
+                      )}
                     >
-                      {ley.codigo}
+                      {leyItem.codigo.length > 4 ? leyItem.codigo.slice(0, 3) : leyItem.codigo}
                     </div>
                     <div className="min-w-0 flex-1">
                       <h3 className="truncate font-medium text-gray-900 dark:text-white">
-                        {ley.nombre}
+                        {leyItem.nombre}
                       </h3>
                       <p className="text-sm text-gray-500">
-                        {ley.total_articulos} articulos
+                        {leyItem.total_articulos} {leyItem.tipo === 'resolucion' ? 'reglas' : 'artículos'}
                       </p>
                     </div>
                   </div>
-                </button>
+                </Link>
               ))}
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, type ArticuloDetalle, type Ley, type NavegacionArticulo } from '@/lib/api'
+import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division } from '@/lib/api'
 
 export function useArticle(id: number | null) {
   return useQuery<ArticuloDetalle | null>({
@@ -44,5 +44,17 @@ export function useNavegacion(articuloId: number | null) {
     },
     enabled: articuloId !== null,
     staleTime: 1000 * 60 * 30, // 30 minutos
+  })
+}
+
+export function useEstructuraLey(ley: string | null) {
+  return useQuery<Division[]>({
+    queryKey: ['estructura', ley],
+    queryFn: async () => {
+      if (!ley) return []
+      return getEstructuraLey(ley)
+    },
+    enabled: ley !== null,
+    staleTime: 1000 * 60 * 60, // 1 hora
   })
 }
