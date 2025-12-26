@@ -51,7 +51,7 @@ export default function DivisionView() {
   const partes = info.path_texto?.split(' > ') || []
 
   return (
-    <div className="mx-auto max-w-4xl">
+    <div className="mx-auto max-w-4xl prose-legal">
       {/* Breadcrumbs */}
       <nav className="mb-6">
         <ol className="flex items-center gap-2 text-sm flex-wrap">
@@ -92,7 +92,7 @@ export default function DivisionView() {
       </nav>
 
       {/* Header */}
-      <div className="mb-8 prose-legal">
+      <div className="mb-8">
         <p className="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase mb-1">
           {info.div_tipo} {info.numero}
         </p>
@@ -113,7 +113,7 @@ export default function DivisionView() {
             className="scroll-mt-20"
           >
             {/* Header del artículo */}
-            <div className="flex items-start justify-between gap-4 mb-4 prose-legal">
+            <div className="flex items-start justify-between gap-4 mb-4">
               <div>
                 <Link
                   to={`/${ley}/${tipoContenido}/${art.numero_raw}`}
