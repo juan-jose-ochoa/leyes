@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import Home from './pages/Home'
 import Article from './pages/Article'
 import Header from './components/Header'
+import ErrorBoundary from './components/ErrorBoundary'
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -26,10 +27,12 @@ function App() {
     <div className="min-h-screen">
       <Header darkMode={darkMode} onToggleDarkMode={() => setDarkMode(!darkMode)} />
       <main className="container mx-auto px-4 py-8">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/articulo/:id" element={<Article />} />
-        </Routes>
+        <ErrorBoundary>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/articulo/:id" element={<Article />} />
+          </Routes>
+        </ErrorBoundary>
       </main>
     </div>
   )
