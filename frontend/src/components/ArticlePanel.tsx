@@ -1,7 +1,7 @@
 import { Copy, Check, ExternalLink, BookOpen, ChevronLeft, ChevronRight, X } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useArticuloPorLey, useNavegacion, useFraccionesArticulo } from '@/hooks/useArticle'
+import { useArticuloPorLey, useNavegacion, useFraccionesArticulo, useDivisionesArticulo } from '@/hooks/useArticle'
 import FraccionesView from './FraccionesView'
 import clsx from 'clsx'
 
@@ -16,6 +16,7 @@ export default function ArticlePanel({ ley, numero, onClose, onNavigate }: Artic
   const { data: articulo, isLoading, error } = useArticuloPorLey(ley, numero)
   const { data: navegacion } = useNavegacion(articulo?.id ?? null)
   const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null)
+  const { data: divisiones } = useDivisionesArticulo(articulo?.id ?? null)
   const [copied, setCopied] = useState(false)
 
   const esRegla = articulo?.tipo === 'regla'
@@ -92,10 +93,13 @@ export default function ArticlePanel({ ley, numero, onClose, onNavigate }: Artic
             <h2 className="text-xl font-bold text-gray-900 dark:text-white">
               {etiquetaTipo} {articulo.numero_raw}
             </h2>
-            {articulo.ubicacion && (
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 truncate">
-                {articulo.ubicacion}
-              </p>
+            {divisiones && divisiones.length > 0 && (
+              <Link
+                to={`/${ley}/division/${divisiones[divisiones.length - 1].id}`}
+                className="text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 mt-1 truncate block"
+              >
+                {divisiones.map(d => `${d.tipo.toUpperCase()} ${d.numero}`).join(' > ')}
+              </Link>
             )}
           </div>
 
