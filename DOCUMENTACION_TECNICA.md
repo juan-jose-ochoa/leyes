@@ -8,6 +8,126 @@
 
 ---
 
+## 0. Quick Start (Setup Rápido)
+
+### Prerrequisitos
+
+```bash
+# PostgreSQL 17
+sudo apt install postgresql-17 postgresql-contrib-17
+
+# Node.js 20+
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install nodejs
+
+# Python 3.12+
+sudo apt install python3.12 python3.12-venv
+
+# PostgREST (v12.0.2+)
+wget https://github.com/PostgREST/postgrest/releases/download/v12.0.2/postgrest-v12.0.2-linux-static-x64.tar.xz
+tar xJf postgrest-v12.0.2-linux-static-x64.tar.xz
+mv postgrest ~/.local/bin/  # Asegúrate de que ~/.local/bin esté en tu PATH
+```
+
+### Configurar Base de Datos
+
+```bash
+# Crear usuario y base de datos
+sudo -u postgres psql << 'EOF'
+CREATE USER leyesmx WITH PASSWORD 'leyesmx';
+CREATE DATABASE leyesmx OWNER leyesmx;
+\c leyesmx
+CREATE EXTENSION IF NOT EXISTS pg_trgm;
+CREATE EXTENSION IF NOT EXISTS unaccent;
+-- CREATE EXTENSION IF NOT EXISTS vector;  -- Opcional, requiere superuser
+EOF
+
+# Ejecutar schema
+PGPASSWORD=leyesmx psql -h localhost -U leyesmx -d leyesmx -f backend/sql/001_schema.sql
+PGPASSWORD=leyesmx psql -h localhost -U leyesmx -d leyesmx -f backend/sql/002_functions.sql
+PGPASSWORD=leyesmx psql -h localhost -U leyesmx -d leyesmx -f backend/sql/003_api_views.sql
+```
+
+### Importar Datos
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install python-docx psycopg2-binary
+python backend/scripts/importar_leyes.py
+```
+
+### Iniciar Servicios
+
+```bash
+./start.sh          # Backend + Frontend
+./start.sh backend  # Solo API (puerto 3010)
+./start.sh frontend # Solo Frontend (puerto 5173)
+./start.sh status   # Ver estado de servicios
+```
+
+**URLs:**
+- Frontend: http://localhost:5173
+- API: http://localhost:3010
+
+---
+
+## 0.1 Troubleshooting
+
+### PostgREST no encontrado
+
+```bash
+# Si ~/.local/bin no está en PATH, agregar a ~/.bashrc:
+export PATH="$HOME/.local/bin:$PATH"
+source ~/.bashrc
+```
+
+### Error "column a.ley_id does not exist"
+
+Este error ocurre cuando las funciones SQL referencian tablas sin schema explícito y PostgREST resuelve `articulos` a la VIEW `api.articulos` en lugar de la TABLE `public.articulos`.
+
+**Solución:** Las funciones en `002_functions.sql` deben usar `public.articulos`, `public.leyes`, etc. Si actualizaste el código, recargar schema:
+
+```bash
+# Recargar PostgREST schema cache
+kill -SIGUSR1 $(pgrep postgrest)
+
+# O reiniciar PostgREST
+./start.sh stop && ./start.sh backend
+```
+
+### Error 401 en /rpc/buscar
+
+Falta permiso para el rol `web_anon`. Verificar en `003_api_views.sql`:
+
+```sql
+GRANT EXECUTE ON FUNCTION api.buscar TO web_anon;
+GRANT USAGE, SELECT ON SEQUENCE busquedas_frecuentes_id_seq TO web_anon;
+```
+
+### Puerto 3010 ocupado
+
+```bash
+# Ver qué proceso usa el puerto
+lsof -i :3010
+
+# Matar proceso
+./start.sh stop
+```
+
+### Base de datos vacía después de importar
+
+Verificar que `doc/manifest.json` existe y tiene documentos. Si no:
+
+```bash
+source .venv/bin/activate
+python scripts/descargar_leyes_mx.py
+python scripts/convertir_ley.py
+python backend/scripts/importar_leyes.py
+```
+
+---
+
 ## 1. Resumen del Sistema
 
 LeyesMX es una aplicación web para búsqueda de conceptos en leyes fiscales y laborales mexicanas. El sistema permite a contadores y despachos buscar artículos específicos mediante búsqueda full-text en español.

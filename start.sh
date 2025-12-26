@@ -22,6 +22,11 @@ NC='\033[0m' # No Color
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$PROJECT_DIR"
 
+# Agregar ~/.local/bin al PATH si existe
+if [ -d "$HOME/.local/bin" ]; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
 # Configuracion
 PG_HOST="localhost"
 PG_PORT="5432"
@@ -29,7 +34,7 @@ PG_DB="leyesmx"
 PG_USER="leyesmx"
 PG_PASS="leyesmx"
 
-POSTGREST_PORT="3000"
+POSTGREST_PORT="3010"
 FRONTEND_PORT="5173"
 
 # Funciones de utilidad

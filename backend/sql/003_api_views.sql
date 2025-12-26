@@ -192,7 +192,7 @@ BEGIN
     offset_calc := (pagina - 1) * limite;
 
     -- Registrar busqueda para sugerencias
-    PERFORM registrar_busqueda(q);
+    PERFORM public.registrar_busqueda(q);
 
     RETURN QUERY
     SELECT
@@ -209,7 +209,7 @@ BEGIN
         ba.reformas,
         ba.relevancia,
         ba.snippet
-    FROM buscar_articulos(q, leyes_arr, solo_transitorios, limite, offset_calc) ba;
+    FROM public.buscar_articulos(q, leyes_arr, solo_transitorios, limite, offset_calc) ba;
 END;
 $$ LANGUAGE plpgsql;
 
@@ -237,7 +237,7 @@ RETURNS TABLE(
 ) AS $$
 BEGIN
     RETURN QUERY
-    SELECT * FROM obtener_articulo(art_id);
+    SELECT * FROM public.obtener_articulo(art_id);
 END;
 $$ LANGUAGE plpgsql STABLE;
 
@@ -256,7 +256,7 @@ RETURNS TABLE(
 ) AS $$
 BEGIN
     RETURN QUERY
-    SELECT * FROM estructura_ley(ley_codigo);
+    SELECT * FROM public.estructura_ley(ley_codigo);
 END;
 $$ LANGUAGE plpgsql STABLE;
 
@@ -275,7 +275,7 @@ RETURNS TABLE(
 ) AS $$
 BEGIN
     RETURN QUERY
-    SELECT * FROM articulos_por_division(div_id);
+    SELECT * FROM public.articulos_por_division(div_id);
 END;
 $$ LANGUAGE plpgsql STABLE;
 
@@ -291,7 +291,7 @@ RETURNS TABLE(
 ) AS $$
 BEGIN
     RETURN QUERY
-    SELECT * FROM navegar_articulo(art_id);
+    SELECT * FROM public.navegar_articulo(art_id);
 END;
 $$ LANGUAGE plpgsql STABLE;
 
@@ -305,7 +305,7 @@ RETURNS TABLE(
 ) AS $$
 BEGIN
     RETURN QUERY
-    SELECT * FROM sugerir_busquedas(prefijo, 5);
+    SELECT * FROM public.sugerir_busquedas(prefijo, 5);
 END;
 $$ LANGUAGE plpgsql STABLE;
 
@@ -323,7 +323,7 @@ RETURNS TABLE(
 ) AS $$
 BEGIN
     RETURN QUERY
-    SELECT * FROM estadisticas_leyes();
+    SELECT * FROM public.estadisticas_leyes();
 END;
 $$ LANGUAGE plpgsql STABLE;
 
@@ -360,6 +360,7 @@ GRANT SELECT ON public.articulos TO web_anon;
 GRANT SELECT ON public.referencias_cruzadas TO web_anon;
 GRANT SELECT ON public.busquedas_frecuentes TO web_anon;
 GRANT INSERT, UPDATE ON public.busquedas_frecuentes TO web_anon;
+GRANT USAGE, SELECT ON SEQUENCE busquedas_frecuentes_id_seq TO web_anon;
 GRANT SELECT ON public.jerarquia_completa TO web_anon;
 
 -- ============================================================

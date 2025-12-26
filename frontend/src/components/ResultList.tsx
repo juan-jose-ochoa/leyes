@@ -73,7 +73,7 @@ function ResultCard({ result }: { result: SearchResult }) {
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2">
             <h3 className="font-semibold text-gray-900 group-hover:text-primary-600 dark:text-gray-100 dark:group-hover:text-primary-400">
-              {result.articulo}
+              Articulo {result.numero_raw}
             </h3>
             <span
               className={clsx(
@@ -83,10 +83,15 @@ function ResultCard({ result }: { result: SearchResult }) {
             >
               {result.ley_tipo}
             </span>
+            {result.es_transitorio && (
+              <span className="badge bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200">
+                transitorio
+              </span>
+            )}
           </div>
 
           <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-            {result.titulo}
+            {result.ubicacion || result.ley_nombre}
           </p>
 
           {/* Snippet con highlighting */}

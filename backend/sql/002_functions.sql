@@ -47,7 +47,7 @@ BEGIN
         a.numero_raw,
         a.numero_base,
         a.sufijo,
-        COALESCE(d.path_texto, '') as ubicacion,
+        COALESCE(d.path_texto, '')::TEXT as ubicacion,
         a.contenido,
         a.es_transitorio,
         a.reformas,
@@ -58,9 +58,10 @@ BEGIN
             tsquery_parsed,
             'MaxWords=50, MinWords=20, StartSel=<mark>, StopSel=</mark>, MaxFragments=2'
         ) as snippet
-    FROM articulos a
-    JOIN leyes l ON a.ley_id = l.id
-    LEFT JOIN divisiones d ON a.division_id = d.id
+    -- IMPORTANT: Use explicit public. schema to avoid conflict with api.articulos view
+    FROM public.articulos a
+    JOIN public.leyes l ON a.ley_id = l.id
+    LEFT JOIN public.divisiones d ON a.division_id = d.id
     WHERE a.search_vector @@ tsquery_parsed
       AND (leyes_filter IS NULL OR l.codigo = ANY(leyes_filter))
       AND (solo_transitorios = FALSE OR a.es_transitorio = TRUE)
@@ -91,11 +92,11 @@ BEGIN
         a.id,
         l.codigo,
         a.numero_raw,
-        COALESCE(d.path_texto, '') as ubicacion,
+        COALESCE(d.path_texto, '')::TEXT as ubicacion,
         similarity(a.contenido, query) as similitud
-    FROM articulos a
-    JOIN leyes l ON a.ley_id = l.id
-    LEFT JOIN divisiones d ON a.division_id = d.id
+    FROM public.articulos a
+    JOIN public.leyes l ON a.ley_id = l.id
+    LEFT JOIN public.divisiones d ON a.division_id = d.id
     WHERE a.contenido % query  -- Operador de similitud de pg_trgm
     ORDER BY similitud DESC
     LIMIT limite;
@@ -147,7 +148,7 @@ BEGIN
         a.numero_raw,
         a.numero_base,
         a.sufijo,
-        COALESCE(d.path_texto, '') as ubicacion,
+        COALESCE(d.path_texto, '')::TEXT as ubicacion,
         d.tipo as division_tipo,
         a.contenido,
         a.es_transitorio,
@@ -162,9 +163,9 @@ BEGIN
                 'numero_raw', a2.numero_raw,
                 'tipo', rc.tipo
             ))
-            FROM referencias_cruzadas rc
-            JOIN articulos a2 ON rc.articulo_destino_id = a2.id
-            JOIN leyes l2 ON a2.ley_id = l2.id
+            FROM public.referencias_cruzadas rc
+            JOIN public.articulos a2 ON rc.articulo_destino_id = a2.id
+            JOIN public.leyes l2 ON a2.ley_id = l2.id
             WHERE rc.articulo_origen_id = a.id
         ) as referencias_salientes,
         -- Articulos que referencian a este
@@ -175,14 +176,14 @@ BEGIN
                 'numero_raw', a2.numero_raw,
                 'tipo', rc.tipo
             ))
-            FROM referencias_cruzadas rc
-            JOIN articulos a2 ON rc.articulo_origen_id = a2.id
-            JOIN leyes l2 ON a2.ley_id = l2.id
+            FROM public.referencias_cruzadas rc
+            JOIN public.articulos a2 ON rc.articulo_origen_id = a2.id
+            JOIN public.leyes l2 ON a2.ley_id = l2.id
             WHERE rc.articulo_destino_id = a.id
         ) as referencias_entrantes
-    FROM articulos a
-    JOIN leyes l ON a.ley_id = l.id
-    LEFT JOIN divisiones d ON a.division_id = d.id
+    FROM public.articulos a
+    JOIN public.leyes l ON a.ley_id = l.id
+    LEFT JOIN public.divisiones d ON a.division_id = d.id
     WHERE a.id = articulo_id;
 END;
 $$ LANGUAGE plpgsql STABLE;
@@ -213,13 +214,13 @@ BEGIN
         a.numero_raw,
         a.numero_base,
         a.sufijo,
-        COALESCE(d.path_texto, '') as ubicacion,
+        COALESCE(d.path_texto, '')::TEXT as ubicacion,
         LEFT(a.contenido, 300) as contenido_preview,
         a.es_transitorio,
         a.orden_global
-    FROM articulos a
-    JOIN leyes l ON a.ley_id = l.id
-    LEFT JOIN divisiones d ON a.division_id = d.id
+    FROM public.articulos a
+    JOIN public.leyes l ON a.ley_id = l.id
+    LEFT JOIN public.divisiones d ON a.division_id = d.id
     WHERE l.codigo = ley_codigo
     ORDER BY a.orden_global
     LIMIT limite
@@ -250,9 +251,9 @@ BEGIN
         d.nombre,
         d.path_texto,
         d.nivel,
-        (SELECT COUNT(*) FROM articulos a WHERE a.division_id = d.id) as total_articulos
-    FROM divisiones d
-    JOIN leyes l ON d.ley_id = l.id
+        (SELECT COUNT(*) FROM public.articulos a WHERE a.division_id = d.id) as total_articulos
+    FROM public.divisiones d
+    JOIN public.leyes l ON d.ley_id = l.id
     WHERE l.codigo = ley_codigo
     ORDER BY d.orden_global;
 END;
@@ -282,7 +283,7 @@ BEGIN
         a.contenido,
         a.es_transitorio,
         a.orden_global
-    FROM articulos a
+    FROM public.articulos a
     WHERE a.division_id = division_id_param
     ORDER BY a.orden_global;
 END;
@@ -306,21 +307,21 @@ BEGIN
     -- Obtener ley y orden del articulo actual
     SELECT a.ley_id, a.orden_global
     INTO current_ley_id, current_orden
-    FROM articulos a
+    FROM public.articulos a
     WHERE a.id = articulo_id;
 
     RETURN QUERY
     SELECT
-        (SELECT a.id FROM articulos a
+        (SELECT a.id FROM public.articulos a
          WHERE a.ley_id = current_ley_id AND a.orden_global < current_orden
          ORDER BY a.orden_global DESC LIMIT 1) as anterior_id,
-        (SELECT a.numero_raw FROM articulos a
+        (SELECT a.numero_raw FROM public.articulos a
          WHERE a.ley_id = current_ley_id AND a.orden_global < current_orden
          ORDER BY a.orden_global DESC LIMIT 1) as anterior_numero,
-        (SELECT a.id FROM articulos a
+        (SELECT a.id FROM public.articulos a
          WHERE a.ley_id = current_ley_id AND a.orden_global > current_orden
          ORDER BY a.orden_global ASC LIMIT 1) as siguiente_id,
-        (SELECT a.numero_raw FROM articulos a
+        (SELECT a.numero_raw FROM public.articulos a
          WHERE a.ley_id = current_ley_id AND a.orden_global > current_orden
          ORDER BY a.orden_global ASC LIMIT 1) as siguiente_numero;
 END;
@@ -333,11 +334,11 @@ $$ LANGUAGE plpgsql STABLE;
 CREATE OR REPLACE FUNCTION registrar_busqueda(termino_busqueda TEXT)
 RETURNS VOID AS $$
 BEGIN
-    INSERT INTO busquedas_frecuentes (termino, contador, ultima_busqueda)
+    INSERT INTO public.busquedas_frecuentes (termino, contador, ultima_busqueda)
     VALUES (LOWER(TRIM(termino_busqueda)), 1, NOW())
     ON CONFLICT (termino)
     DO UPDATE SET
-        contador = busquedas_frecuentes.contador + 1,
+        contador = public.busquedas_frecuentes.contador + 1,
         ultima_busqueda = NOW();
 END;
 $$ LANGUAGE plpgsql;
@@ -357,7 +358,7 @@ RETURNS TABLE(
 BEGIN
     RETURN QUERY
     SELECT bf.termino, bf.contador
-    FROM busquedas_frecuentes bf
+    FROM public.busquedas_frecuentes bf
     WHERE bf.termino ILIKE prefijo || '%'
     ORDER BY bf.contador DESC, bf.ultima_busqueda DESC
     LIMIT limite;
@@ -383,10 +384,10 @@ BEGIN
         l.codigo,
         l.nombre,
         l.tipo,
-        (SELECT COUNT(*) FROM divisiones d WHERE d.ley_id = l.id) as total_divisiones,
-        (SELECT COUNT(*) FROM articulos a WHERE a.ley_id = l.id) as total_articulos,
-        (SELECT COUNT(*) FROM articulos a WHERE a.ley_id = l.id AND a.es_transitorio = TRUE) as articulos_transitorios
-    FROM leyes l
+        (SELECT COUNT(*) FROM public.divisiones d WHERE d.ley_id = l.id) as total_divisiones,
+        (SELECT COUNT(*) FROM public.articulos a WHERE a.ley_id = l.id) as total_articulos,
+        (SELECT COUNT(*) FROM public.articulos a WHERE a.ley_id = l.id AND a.es_transitorio = TRUE) as articulos_transitorios
+    FROM public.leyes l
     ORDER BY l.tipo, l.codigo;
 END;
 $$ LANGUAGE plpgsql STABLE;
