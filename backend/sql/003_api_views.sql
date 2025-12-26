@@ -184,6 +184,12 @@ DECLARE
     leyes_arr TEXT[];
     offset_calc INT;
 BEGIN
+    -- Validar query
+    IF q IS NULL OR TRIM(q) = '' THEN
+        RAISE EXCEPTION 'El termino de busqueda no puede estar vacio'
+            USING ERRCODE = 'invalid_parameter_value';
+    END IF;
+
     -- Convertir string de leyes a array (ej: "CFF,LISR" -> {"CFF","LISR"})
     IF leyes IS NOT NULL AND leyes != '' THEN
         leyes_arr := string_to_array(UPPER(leyes), ',');
