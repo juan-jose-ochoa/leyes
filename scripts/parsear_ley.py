@@ -44,17 +44,22 @@ class Articulo:
 
 
 # Patrones regex mejorados
-# Permiten que el nombre sea opcional (ej: "Título Primero" sin nombre)
+# Solo aceptan números válidos: romanos (I, II, III...) u ordinales (Primero, Segundo...)
+# Esto evita falsos positivos como "título profesional"
+_ORDINALES = r'(?:PRIMER[OA]?|SEGUND[OA]|TERCER[OA]?|CUART[OA]|QUINT[OA]|SEXT[OA]|S[ÉE]PTIM[OA]|OCTAV[OA]|NOVEN[OA]|D[ÉE]CIM[OA]|[ÚU]NIC[OA])'
+_ROMANOS = r'(?:[IVX]+|[LC]+)'  # Romanos simples (no incluir C/L solos para evitar conflictos)
+_NUMERO_VALIDO = rf'(?:{_ORDINALES}|{_ROMANOS})\b'  # \b asegura fin de palabra
+
 PATRON_TITULO = re.compile(
-    r'^T[ÍI]TULO\s+(\w+)(?:\s*[-–]?\s*)(.*)$',
+    rf'^T[ÍI]TULO\s+({_ORDINALES}|{_ROMANOS})(?:\s*[-–]?\s*)(.*)$',
     re.IGNORECASE
 )
 PATRON_CAPITULO = re.compile(
-    r'^CAP[ÍI]TULO\s+(\w+)(?:\s*[-–]?\s*)(.*)$',
+    rf'^CAP[ÍI]TULO\s+({_ORDINALES}|{_ROMANOS})(?:\s*[-–]?\s*)(.*)$',
     re.IGNORECASE
 )
 PATRON_SECCION = re.compile(
-    r'^SECCI[ÓO]N\s+(\w+)(?:\s*[-–]?\s*)(.*)$',
+    rf'^SECCI[ÓO]N\s+({_ORDINALES}|{_ROMANOS})(?:\s*[-–]?\s*)(.*)$',
     re.IGNORECASE
 )
 
@@ -198,6 +203,14 @@ def extraer_texto_docx(doc_path: Path) -> list[str]:
     doc = Document(doc_path)
     paragraphs = []
 
+    # Patrón para detectar artículos fusionados con notas de reforma
+    # Ej: "Artículo reformado DOF... Artículo 105. La Suprema Corte..."
+    patron_articulo_fusionado = re.compile(
+        r'(.*?(?:DOF|reformad[oa]|adicionad[oa]|derogad[oa]).*?)\s+'
+        r'(Art[íi]culo\s+\d+[oºa]?\.?\s+\S)',
+        re.IGNORECASE
+    )
+
     for para in doc.paragraphs:
         text = para.text.strip()
         if not text:
@@ -208,13 +221,26 @@ def extraer_texto_docx(doc_path: Path) -> list[str]:
 
         # Dividir párrafos con newlines internos
         # Esto es común en PDFs convertidos (CPEUM, etc.)
-        if '\n' in text:
-            for subpara in text.split('\n'):
-                subpara = subpara.strip()
-                if subpara and not PATRON_PAGINA.match(subpara):
-                    paragraphs.append(subpara)
-        else:
-            paragraphs.append(text)
+        subparas = text.split('\n') if '\n' in text else [text]
+
+        for subpara in subparas:
+            subpara = subpara.strip()
+            if not subpara or PATRON_PAGINA.match(subpara):
+                continue
+
+            # Detectar y separar artículos fusionados con notas DOF
+            # Ej: "Artículo reformado DOF... Artículo 105. La Suprema Corte..."
+            match = patron_articulo_fusionado.match(subpara)
+            if match:
+                # Separar: nota de reforma + nuevo artículo
+                nota = match.group(1).strip()
+                resto = subpara[match.start(2):].strip()
+                if nota:
+                    paragraphs.append(nota)
+                if resto:
+                    paragraphs.append(resto)
+            else:
+                paragraphs.append(subpara)
 
     return paragraphs
 

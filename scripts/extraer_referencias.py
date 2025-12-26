@@ -35,6 +35,7 @@ LEY_ALIASES = {
     'RLSS': 'RLSS',
     'RMF': 'RMF2025',
     'RMF2025': 'RMF2025',
+    'CPEUM': 'CPEUM',
     # Nombres completos
     'CÓDIGO FISCAL': 'CFF',
     'CODIGO FISCAL': 'CFF',
@@ -47,6 +48,9 @@ LEY_ALIASES = {
     'LEY DEL SEGURO SOCIAL': 'LSS',
     'REGLAMENTO DEL CFF': 'RCFF',
     'REGLAMENTO DEL CÓDIGO FISCAL': 'RCFF',
+    # Constitución
+    'CONSTITUCIÓN': 'CPEUM',
+    'CONSTITUCION': 'CPEUM',
 }
 
 # Referencias pronominales
@@ -141,9 +145,8 @@ def parse_contenido_referencias(contenido, origen_ley):
     - "artículos 14, 15 y 16"
     - "artículo 14 de este Código"
     - "artículo 14 de la Ley del ISR"
-
-    Excluye:
-    - "artículo 21 Constitucional" (referencias a la Constitución)
+    - "artículo 123 Constitucional" -> CPEUM
+    - "artículo 5o de la Constitución" -> CPEUM
     """
     refs = []
 
@@ -167,12 +170,11 @@ def parse_contenido_referencias(contenido, origen_ley):
         contexto = match.group(2) or ''
         ley_ref = match.group(3) or match.group(4)
 
-        # Ignorar referencias a la Constitución
+        # Referencias a la Constitución -> CPEUM
         if 'CONSTITUCIONAL' in contexto.upper() or 'CONSTITUCIÓN' in contexto.upper():
-            continue
-
-        # Determinar ley destino
-        if ley_ref:
+            ley_destino = 'CPEUM'
+        # Determinar ley destino por nombre de ley
+        elif ley_ref:
             ley_ref_upper = ley_ref.upper().strip()
             ley_destino = None
             for alias, codigo in LEY_ALIASES.items():
