@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom'
 import { Home, ChevronRight, BookOpen, ExternalLink } from 'lucide-react'
 import { useDivisionInfo, useArticulosDivision } from '@/hooks/useArticle'
+import ArticleContent from '@/components/ArticleContent'
 import clsx from 'clsx'
 
 export default function DivisionView() {
@@ -134,11 +135,7 @@ export default function DivisionView() {
 
             {/* Contenido */}
             <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
-              {art.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
-                <p key={i} className="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
-                  {paragraph}
-                </p>
-              ))}
+              <ArticleContent articuloId={art.id} contenido={art.contenido} />
             </div>
 
             {/* Reformas */}
