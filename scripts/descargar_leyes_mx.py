@@ -90,6 +90,7 @@ URLS_BASE = {
 
 # Códigos de leyes permitidas (nombre_corto debe contener alguno de estos)
 LEYES_PERMITIDAS = {
+    "CPEUM",    # Constitución Política de los Estados Unidos Mexicanos
     "CFF",      # Código Fiscal de la Federación
     "LFT",      # Ley Federal del Trabajo
     "LIEPS",    # Ley del Impuesto Especial sobre Producción y Servicios

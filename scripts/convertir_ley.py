@@ -261,6 +261,8 @@ def convertir_documento(carpeta: Path, nombre_ley: str):
 
 # Configuración de documentos a convertir
 DOCUMENTOS = {
+    # Constitución
+    BASE_DIR / "doc/leyes/cpeum": "Constitución Política de los Estados Unidos Mexicanos",
     # Leyes
     BASE_DIR / "doc/leyes/lieps": "Ley del Impuesto Especial sobre Producción y Servicios",
     BASE_DIR / "doc/leyes/lisr": "Ley del Impuesto Sobre la Renta",

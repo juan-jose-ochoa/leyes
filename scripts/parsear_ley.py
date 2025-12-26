@@ -44,16 +44,17 @@ class Articulo:
 
 
 # Patrones regex mejorados
+# Permiten que el nombre sea opcional (ej: "Título Primero" sin nombre)
 PATRON_TITULO = re.compile(
-    r'^T[ÍI]TULO\s+(\w+)(?:\s*[-–]\s*|\s+)(.*)?$',
+    r'^T[ÍI]TULO\s+(\w+)(?:\s*[-–]?\s*)(.*)$',
     re.IGNORECASE
 )
 PATRON_CAPITULO = re.compile(
-    r'^CAP[ÍI]TULO\s+(\w+)(?:\s*[-–]\s*|\s+)(.*)?$',
+    r'^CAP[ÍI]TULO\s+(\w+)(?:\s*[-–]?\s*)(.*)$',
     re.IGNORECASE
 )
 PATRON_SECCION = re.compile(
-    r'^SECCI[ÓO]N\s+(\w+)(?:\s*[-–]\s*|\s+)(.*)?$',
+    r'^SECCI[ÓO]N\s+(\w+)(?:\s*[-–]?\s*)(.*)$',
     re.IGNORECASE
 )
 
@@ -188,7 +189,12 @@ def consolidar_parrafos(partes: list[str]) -> str:
 
 
 def extraer_texto_docx(doc_path: Path) -> list[str]:
-    """Extrae párrafos del DOCX, limpiando páginas y espacios"""
+    """Extrae párrafos del DOCX, limpiando páginas y espacios.
+
+    Nota: Algunos PDFs convertidos tienen newlines internos en párrafos
+    (ej: "Capítulo I \nDe los Derechos Humanos"). Los dividimos para
+    que el parser pueda detectar correctamente títulos, capítulos, etc.
+    """
     doc = Document(doc_path)
     paragraphs = []
 
@@ -199,7 +205,16 @@ def extraer_texto_docx(doc_path: Path) -> list[str]:
         # Ignorar números de página
         if PATRON_PAGINA.match(text):
             continue
-        paragraphs.append(text)
+
+        # Dividir párrafos con newlines internos
+        # Esto es común en PDFs convertidos (CPEUM, etc.)
+        if '\n' in text:
+            for subpara in text.split('\n'):
+                subpara = subpara.strip()
+                if subpara and not PATRON_PAGINA.match(subpara):
+                    paragraphs.append(subpara)
+        else:
+            paragraphs.append(text)
 
     return paragraphs
 
@@ -252,7 +267,7 @@ def parsear_ley(paragraphs: list[str], nombre_ley: str) -> dict:
             # Si el nombre está en la siguiente línea
             if not nombre and i + 1 < len(paragraphs):
                 next_text = paragraphs[i + 1]
-                if not any(p.match(next_text) for p in [PATRON_TITULO, PATRON_CAPITULO, PATRON_ARTICULO]):
+                if not any(p.match(next_text) for p in [PATRON_TITULO, PATRON_CAPITULO, PATRON_SECCION, PATRON_ARTICULO]):
                     nombre = next_text
                     i += 1
 

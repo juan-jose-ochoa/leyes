@@ -174,8 +174,8 @@ backend/
 
 | Tabla | Registros | Descripción |
 |-------|-----------|-------------|
-| leyes | 13 | Leyes, reglamentos y RMF |
-| divisiones | ~350 | Títulos, capítulos, secciones |
-| articulos | 3,536 | Artículos y reglas RMF |
-| fracciones | 11,148 | Fracciones, incisos, numerales, párrafos |
-| referencias_cruzadas | 3,180 | Referencias entre artículos |
+| leyes | 13 | Leyes y reglamentos (incluyendo CPEUM) |
+| divisiones | ~320 | Títulos, capítulos, secciones |
+| articulos | ~3,220 | Artículos de leyes y reglamentos |
+| fracciones | ~10,000 | Fracciones, incisos, numerales, párrafos |
+| referencias_cruzadas | ~2,400 | Referencias entre artículos |

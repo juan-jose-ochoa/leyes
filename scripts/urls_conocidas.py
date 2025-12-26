@@ -15,6 +15,14 @@ YEAR = datetime.now().year
 # Basadas en la estructura del sitio: /LeyesBiblio/pdf/NOMBRE.pdf
 
 LEYES_CAMARA_DIPUTADOS = [
+    # Constitución Política de los Estados Unidos Mexicanos
+    {
+        "nombre": "Constitución Política de los Estados Unidos Mexicanos",
+        "nombre_corto": "CPEUM",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+        "tipo": "ley",  # Tratada como ley para el proceso de descarga
+        "autoridad": "CDD",
+    },
     # Código Fiscal de la Federación
     {
         "nombre": "Código Fiscal de la Federación",

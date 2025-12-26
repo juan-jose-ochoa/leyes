@@ -264,6 +264,7 @@ python scripts/extraer_referencias.py
 
 | Código | Ley |
 |--------|-----|
+| CPEUM | Constitución Política de los Estados Unidos Mexicanos |
 | CFF | Código Fiscal de la Federación |
 | LFT | Ley Federal del Trabajo |
 | LISR | Ley del Impuesto Sobre la Renta |
@@ -298,7 +299,7 @@ Editar `scripts/descargar_leyes_mx.py`:
 ```python
 # Agregar a LEYES_PERMITIDAS
 LEYES_PERMITIDAS = {
-    "CFF", "LFT", "LIEPS", "LISR", "LIVA", "LSS",
+    "CPEUM", "CFF", "LFT", "LIEPS", "LISR", "LIVA", "LSS",
     "NUEVA_LEY",  # Agregar aquí
 }
 ```
