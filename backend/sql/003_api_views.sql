@@ -44,10 +44,11 @@ GRANT web_anon TO authenticator;
 GRANT web_user TO authenticator;
 
 -- ============================================================
--- Vista: api.leyes
+-- Vista: api.v_leyes
 -- Lista de leyes disponibles
+-- Prefijo v_ para evitar ambiguedad con tablas public.*
 -- ============================================================
-CREATE OR REPLACE VIEW api.leyes AS
+CREATE OR REPLACE VIEW api.v_leyes AS
 SELECT
     id,
     codigo,
@@ -63,13 +64,13 @@ SELECT
 FROM public.leyes l
 ORDER BY tipo, codigo;
 
-COMMENT ON VIEW api.leyes IS 'Lista de leyes y reglamentos disponibles';
+COMMENT ON VIEW api.v_leyes IS 'Lista de leyes y reglamentos disponibles';
 
 -- ============================================================
--- Vista: api.divisiones
+-- Vista: api.v_divisiones
 -- Estructura jerarquica de las leyes
 -- ============================================================
-CREATE OR REPLACE VIEW api.divisiones AS
+CREATE OR REPLACE VIEW api.v_divisiones AS
 SELECT
     d.id,
     l.codigo AS ley,
@@ -84,13 +85,13 @@ FROM public.divisiones d
 JOIN public.leyes l ON d.ley_id = l.id
 ORDER BY d.ley_id, d.orden_global;
 
-COMMENT ON VIEW api.divisiones IS 'Estructura jerarquica: titulos, capitulos, secciones';
+COMMENT ON VIEW api.v_divisiones IS 'Estructura jerarquica: titulos, capitulos, secciones';
 
 -- ============================================================
--- Vista: api.articulos
+-- Vista: api.v_articulos
 -- Articulos con informacion de ley y ubicacion
 -- ============================================================
-CREATE OR REPLACE VIEW api.articulos AS
+CREATE OR REPLACE VIEW api.v_articulos AS
 SELECT
     a.id,
     l.codigo AS ley,
@@ -110,13 +111,13 @@ JOIN public.leyes l ON a.ley_id = l.id
 LEFT JOIN public.divisiones d ON a.division_id = d.id
 ORDER BY a.ley_id, a.orden_global;
 
-COMMENT ON VIEW api.articulos IS 'Articulos individuales con informacion de ley y ubicacion';
+COMMENT ON VIEW api.v_articulos IS 'Articulos individuales con informacion de ley y ubicacion';
 
 -- ============================================================
--- Vista: api.referencias
+-- Vista: api.v_referencias
 -- Referencias cruzadas entre articulos
 -- ============================================================
-CREATE OR REPLACE VIEW api.referencias AS
+CREATE OR REPLACE VIEW api.v_referencias AS
 SELECT
     rc.id,
     -- Articulo origen
@@ -136,13 +137,13 @@ JOIN public.leyes lo ON ao.ley_id = lo.id
 JOIN public.articulos ad ON rc.articulo_destino_id = ad.id
 JOIN public.leyes ld ON ad.ley_id = ld.id;
 
-COMMENT ON VIEW api.referencias IS 'Referencias cruzadas entre articulos';
+COMMENT ON VIEW api.v_referencias IS 'Referencias cruzadas entre articulos';
 
 -- ============================================================
--- Vista: api.estadisticas
+-- Vista: api.v_estadisticas
 -- Estadisticas generales del sistema
 -- ============================================================
-CREATE OR REPLACE VIEW api.estadisticas AS
+CREATE OR REPLACE VIEW api.v_estadisticas AS
 SELECT
     (SELECT COUNT(*) FROM public.leyes WHERE tipo = 'ley') AS total_leyes,
     (SELECT COUNT(*) FROM public.leyes WHERE tipo = 'reglamento') AS total_reglamentos,
@@ -151,7 +152,7 @@ SELECT
     (SELECT COUNT(*) FROM public.articulos WHERE es_transitorio = TRUE) AS total_transitorios,
     (SELECT COUNT(*) FROM public.referencias_cruzadas) AS total_referencias;
 
-COMMENT ON VIEW api.estadisticas IS 'Estadisticas generales del sistema';
+COMMENT ON VIEW api.v_estadisticas IS 'Estadisticas generales del sistema';
 
 -- ============================================================
 -- Funciones RPC expuestas via API
@@ -343,11 +344,11 @@ COMMENT ON FUNCTION api.stats IS 'Estadisticas detalladas por ley';
 GRANT USAGE ON SCHEMA api TO web_anon;
 
 -- Lectura de vistas
-GRANT SELECT ON api.leyes TO web_anon;
-GRANT SELECT ON api.divisiones TO web_anon;
-GRANT SELECT ON api.articulos TO web_anon;
-GRANT SELECT ON api.referencias TO web_anon;
-GRANT SELECT ON api.estadisticas TO web_anon;
+GRANT SELECT ON api.v_leyes TO web_anon;
+GRANT SELECT ON api.v_divisiones TO web_anon;
+GRANT SELECT ON api.v_articulos TO web_anon;
+GRANT SELECT ON api.v_referencias TO web_anon;
+GRANT SELECT ON api.v_estadisticas TO web_anon;
 
 -- Ejecucion de funciones RPC
 GRANT EXECUTE ON FUNCTION api.buscar(TEXT, TEXT, BOOLEAN, INT, INT) TO web_anon;
@@ -375,17 +376,17 @@ GRANT SELECT ON public.jerarquia_completa TO web_anon;
 /*
 PostgREST expondra automaticamente:
 
-VISTAS (GET):
-  GET /leyes                           - Lista de leyes
-  GET /leyes?codigo=eq.CFF             - Filtrar por codigo
-  GET /divisiones                      - Estructura de todas las leyes
-  GET /divisiones?ley=eq.CFF           - Estructura de una ley
-  GET /articulos                       - Todos los articulos (paginado)
-  GET /articulos?ley=eq.LISR           - Articulos de una ley
-  GET /articulos?id=eq.123             - Articulo especifico
-  GET /articulos?es_transitorio=eq.true - Articulos transitorios
-  GET /referencias                     - Todas las referencias
-  GET /estadisticas                    - Stats generales
+VISTAS (GET) - Prefijo v_ para evitar ambiguedad con tablas:
+  GET /v_leyes                           - Lista de leyes
+  GET /v_leyes?codigo=eq.CFF             - Filtrar por codigo
+  GET /v_divisiones                      - Estructura de todas las leyes
+  GET /v_divisiones?ley=eq.CFF           - Estructura de una ley
+  GET /v_articulos                       - Todos los articulos (paginado)
+  GET /v_articulos?ley=eq.LISR           - Articulos de una ley
+  GET /v_articulos?id=eq.123             - Articulo especifico
+  GET /v_articulos?es_transitorio=eq.true - Articulos transitorios
+  GET /v_referencias                     - Todas las referencias
+  GET /v_estadisticas                    - Stats generales
 
 FUNCIONES RPC (POST):
   POST /rpc/buscar                     - Busqueda full-text
