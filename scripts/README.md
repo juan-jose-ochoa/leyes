@@ -135,7 +135,43 @@ python scripts/parsear_rmf.py
 
 ---
 
-### 6. `extraer_referencias.py` - Extracción de referencias cruzadas
+### 6. `extraer_fracciones.py` - Extracción de estructura interna de artículos
+
+**Cuándo usarlo:**
+- Después de importar todas las leyes a PostgreSQL
+- Si se agregan nuevas leyes o se modifica el parser
+
+**Qué hace:**
+- Parsea el contenido de cada artículo
+- Extrae estructura jerárquica:
+  - Fracciones: I., II., III. (números romanos)
+  - Incisos: a), b), c) (letras minúsculas)
+  - Numerales: 1., 2., 3. (números arábigos)
+  - Apartados: A., B., C. (letras mayúsculas)
+  - Párrafos: texto sin identificador
+- Inserta en tabla `fracciones` con relaciones padre-hijo
+
+**Cómo usarlo:**
+```bash
+python scripts/extraer_fracciones.py
+```
+
+**Salida esperada:**
+```
+Artículos con estructura: 1,040
+Total elementos extraídos: 11,148
+
+Por tipo:
+  parrafo: 5,668
+  fraccion: 4,022
+  inciso: 1,168
+  numeral: 269
+  apartado: 21
+```
+
+---
+
+### 7. `extraer_referencias.py` - Extracción de referencias cruzadas
 
 **Cuándo usarlo:**
 - Después de importar todas las leyes a PostgreSQL
@@ -191,7 +227,10 @@ python scripts/descargar_rmf.py
 python backend/scripts/importar_leyes.py
 python backend/scripts/importar_rmf.py
 
-# 5. Extraer referencias cruzadas
+# 5. Extraer estructura de artículos (fracciones, incisos, numerales)
+python scripts/extraer_fracciones.py
+
+# 6. Extraer referencias cruzadas
 python scripts/extraer_referencias.py
 ```
 
@@ -204,8 +243,9 @@ python scripts/descargar_leyes_mx.py
 # 2. Si hubo cambios, reconvertir
 python scripts/convertir_ley.py
 
-# 3. Re-importar y regenerar referencias
+# 3. Re-importar y regenerar estructura
 python backend/scripts/importar_leyes.py
+python scripts/extraer_fracciones.py
 python scripts/extraer_referencias.py
 ```
 

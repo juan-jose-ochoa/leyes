@@ -115,10 +115,13 @@ curl -X POST http://localhost:3010/rpc/articulo \
 | `/rpc/division_info` | `{"div_id": 5}` | Info de división (capítulo) |
 | `/rpc/articulos_division` | `{"div_id": 5}` | Artículos de una división |
 | `/rpc/navegar` | `{"art_id": 123}` | Navegación anterior/siguiente |
+| `/rpc/fracciones_articulo` | `{"art_id": 123}` | Fracciones, incisos, numerales |
 | `/rpc/sugerencias` | `{"prefijo": "fac"}` | Autocompletado |
 | `/rpc/stats` | `{}` | Stats por ley |
 
-**Nota:** El campo `referencias_salientes` y `referencias_entrantes` en `/rpc/articulo` contiene las referencias cruzadas extraídas automáticamente.
+**Notas:**
+- `referencias_salientes` y `referencias_entrantes` en `/rpc/articulo` contiene referencias cruzadas
+- `fracciones_articulo` devuelve estructura jerárquica (fraccion > inciso > numeral)
 
 ## Troubleshooting
 
@@ -174,4 +177,5 @@ backend/
 | leyes | 13 | Leyes, reglamentos y RMF |
 | divisiones | ~350 | Títulos, capítulos, secciones |
 | articulos | 3,536 | Artículos y reglas RMF |
+| fracciones | 11,148 | Fracciones, incisos, numerales, párrafos |
 | referencias_cruzadas | 3,180 | Referencias entre artículos |

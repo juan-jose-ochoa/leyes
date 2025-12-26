@@ -875,6 +875,13 @@ sudo tail -f /var/log/caddy/leyesmx.log
    - Fuente Atkinson Hyperlegible para lectura
    - Tema claro/oscuro
 
+4. **Extracción de Fracciones** ✅
+   - Script `scripts/extraer_fracciones.py`
+   - Extrae fracciones (I, II), incisos (a, b), numerales (1, 2)
+   - 11,148 elementos en 1,040 artículos
+   - Visualización jerárquica con indentación en frontend
+   - Función SQL `api.fracciones_articulo`
+
 ### Pendiente
 
 1. **Búsqueda Semántica con IA**
@@ -882,12 +889,7 @@ sudo tail -f /var/log/caddy/leyesmx.log
    - Generar embeddings con OpenAI ada-002
    - Habilitar función `buscar_semantico`
 
-2. **Extracción de Fracciones**
-   - Parsear estructura interna de artículos
-   - Poblar tabla `fracciones`
-   - Crear índices de búsqueda en fracciones
-
-3. **PWA y Modo Offline**
+2. **PWA y Modo Offline**
    - Service Worker para cache
    - Sincronización de búsquedas recientes
 
