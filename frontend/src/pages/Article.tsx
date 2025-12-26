@@ -123,6 +123,20 @@ export default function Article() {
 
       {/* Header del artículo */}
       <div className="mb-8">
+        {/* División padre (Capítulo, Sección, etc.) */}
+        {divisiones && divisiones.length > 0 && (
+          <Link
+            to={`/${ley || articulo.ley}/division/${divisiones[divisiones.length - 1].id}`}
+            className="inline-flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 mb-2"
+          >
+            <span className="uppercase font-medium">
+              {divisiones[divisiones.length - 1].tipo} {divisiones[divisiones.length - 1].numero}
+            </span>
+            <span>-</span>
+            <span>{divisiones[divisiones.length - 1].nombre}</span>
+          </Link>
+        )}
+
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
           {etiquetaTipo} {articulo.numero_raw}
         </h1>
