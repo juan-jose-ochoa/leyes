@@ -42,6 +42,14 @@ ROMANOS = [
 ]
 ROMANOS_SET = set(ROMANOS)
 
+# Patrón para detectar fracciones fusionadas con notas DOF
+# Ej: "...DOF 25-10-1967, 06-06-2011 XI. La demanda..."
+# Captura: grupo 1 = todo hasta el año, grupo 2 = fracción romana + resto
+PATRON_DOF_FRACCION = re.compile(
+    r'(.*\d{2}-\d{2}-\d{4})\s+'   # Nota DOF terminando con fecha DD-MM-YYYY
+    r'([IVXL]+\.\s+.+)$'          # Fracción romana + contenido
+)
+
 # Patrones de reconocimiento
 # Fracción: I., II., III. (con espacios opcionales después)
 PATRON_FRACCION = re.compile(r'^([IVXL]+)\.\s+(.*)$', re.MULTILINE)
@@ -62,6 +70,42 @@ def romano_a_int(romano):
         return ROMANOS.index(romano) + 1
     except ValueError:
         return 999
+
+
+def preprocesar_contenido(contenido):
+    """
+    Preprocesa el contenido para separar notas DOF de fracciones.
+
+    Algunos PDFs fusionan las notas de reforma con las fracciones:
+    "...DOF 25-10-1967, 06-06-2011 XI. La demanda..."
+
+    Esto separa en dos bloques:
+    "...DOF 25-10-1967, 06-06-2011"
+    "XI. La demanda..."
+    """
+    bloques = contenido.split('\n\n')
+    nuevos_bloques = []
+
+    for bloque in bloques:
+        bloque = bloque.strip()
+        if not bloque:
+            continue
+
+        # Intentar separar nota DOF de fracción
+        match = PATRON_DOF_FRACCION.match(bloque)
+        if match:
+            nota_dof = match.group(1).strip()
+            fraccion = match.group(2).strip()
+            # Verificar que la fracción empieza con romano válido
+            romano_match = re.match(r'^([IVXL]+)\.', fraccion)
+            if romano_match and romano_match.group(1) in ROMANOS_SET:
+                nuevos_bloques.append(nota_dof)
+                nuevos_bloques.append(fraccion)
+                continue
+
+        nuevos_bloques.append(bloque)
+
+    return '\n\n'.join(nuevos_bloques)
 
 
 def detectar_tipo_linea(linea):
@@ -114,6 +158,9 @@ def parsear_articulo(contenido):
     Returns: lista de diccionarios con la estructura
     """
     elementos = []
+
+    # Preprocesar para separar notas DOF de fracciones
+    contenido = preprocesar_contenido(contenido)
 
     # Dividir por líneas dobles (párrafos)
     bloques = contenido.split('\n\n')
