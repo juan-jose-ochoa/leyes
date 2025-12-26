@@ -200,7 +200,7 @@ export default function Article() {
         <div className="mt-8 flex items-center justify-between gap-4">
           {navegacion.anterior_numero ? (
             <Link
-              to={`/${articulo.ley}/${rutaTipo}/${navegacion.anterior_numero}`}
+              to={`/${ley || articulo.ley}/${rutaTipo}/${navegacion.anterior_numero}`}
               className="flex items-center gap-2 px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group flex-1 max-w-xs"
             >
               <ChevronLeft className="h-5 w-5 text-gray-400 group-hover:text-primary-500" />
@@ -217,7 +217,7 @@ export default function Article() {
 
           {navegacion.siguiente_numero ? (
             <Link
-              to={`/${articulo.ley}/${rutaTipo}/${navegacion.siguiente_numero}`}
+              to={`/${ley || articulo.ley}/${rutaTipo}/${navegacion.siguiente_numero}`}
               className="flex items-center gap-2 px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group flex-1 max-w-xs ml-auto"
             >
               <div className="text-right flex-1">
