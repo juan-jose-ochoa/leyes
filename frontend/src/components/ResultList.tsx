@@ -1,7 +1,16 @@
 import { Link } from 'react-router-dom'
 import { FileText, ChevronRight } from 'lucide-react'
+import DOMPurify from 'dompurify'
 import type { SearchResult } from '@/lib/api'
 import clsx from 'clsx'
+
+// Sanitizar snippets: solo permitir <mark> para highlighting
+const sanitizeSnippet = (html: string): string => {
+  return DOMPurify.sanitize(html, {
+    ALLOWED_TAGS: ['mark'],
+    ALLOWED_ATTR: []
+  })
+}
 
 interface ResultListProps {
   results: SearchResult[]
@@ -94,10 +103,10 @@ function ResultCard({ result }: { result: SearchResult }) {
             {result.ubicacion || result.ley_nombre}
           </p>
 
-          {/* Snippet con highlighting */}
+          {/* Snippet con highlighting (sanitizado contra XSS) */}
           <p
             className="mt-2 line-clamp-3 text-sm text-gray-700 dark:text-gray-300"
-            dangerouslySetInnerHTML={{ __html: result.snippet }}
+            dangerouslySetInnerHTML={{ __html: sanitizeSnippet(result.snippet) }}
           />
 
           <div className="mt-3 flex items-center justify-between">

@@ -12,7 +12,7 @@ export default function Article() {
   const handleCopy = async () => {
     if (!articulo) return
     await navigator.clipboard.writeText(
-      `${articulo.articulo}\n\n${articulo.contenido}\n\nFuente: ${articulo.ley_nombre}`
+      `Artículo ${articulo.numero_raw}\n\n${articulo.contenido}\n\nFuente: ${articulo.ley_nombre}`
     )
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
@@ -74,12 +74,14 @@ export default function Article() {
         </div>
 
         <h1 className="mt-4 text-3xl font-bold text-gray-900 dark:text-white">
-          {articulo.articulo}
+          Artículo {articulo.numero_raw}
         </h1>
 
-        <p className="mt-2 text-lg text-gray-600 dark:text-gray-400">
-          {articulo.titulo}
-        </p>
+        {articulo.ubicacion && (
+          <p className="mt-2 text-lg text-gray-600 dark:text-gray-400">
+            {articulo.ubicacion}
+          </p>
+        )}
 
         <div className="mt-4 flex flex-wrap gap-2">
           <button
@@ -111,14 +113,14 @@ export default function Article() {
           ))}
         </div>
 
-        {articulo.referencia && (
+        {articulo.reformas && (
           <div className="mt-6 rounded-lg bg-gray-50 p-4 dark:bg-gray-700/50">
             <h3 className="mb-2 flex items-center gap-2 font-medium text-gray-900 dark:text-white">
               <ExternalLink className="h-4 w-4" />
-              Referencias DOF
+              Reformas DOF
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              {articulo.referencia}
+              {articulo.reformas}
             </p>
           </div>
         )}
@@ -144,7 +146,7 @@ export default function Article() {
                         {ref.ley}
                       </span>
                       <span className="text-gray-700 dark:text-gray-300">
-                        {ref.articulo}
+                        Art. {ref.numero_raw}
                       </span>
                       <span className="ml-auto text-xs text-gray-400">{ref.tipo}</span>
                     </Link>
@@ -171,7 +173,7 @@ export default function Article() {
                         {ref.ley}
                       </span>
                       <span className="text-gray-700 dark:text-gray-300">
-                        {ref.articulo}
+                        Art. {ref.numero_raw}
                       </span>
                       <span className="ml-auto text-xs text-gray-400">{ref.tipo}</span>
                     </Link>
