@@ -34,6 +34,16 @@ RETURNS TABLE(
 DECLARE
     tsquery_parsed tsquery;
 BEGIN
+    -- Validar parametros
+    IF query IS NULL OR TRIM(query) = '' THEN
+        RAISE EXCEPTION 'El termino de busqueda no puede estar vacio'
+            USING ERRCODE = 'invalid_parameter_value';
+    END IF;
+
+    IF limite < 1 OR limite > 100 THEN
+        limite := 20; -- Valor por defecto si esta fuera de rango
+    END IF;
+
     -- Parsear query con websearch (soporta "frases exactas", -exclusiones, OR)
     tsquery_parsed := websearch_to_tsquery('spanish_unaccent', query);
 
@@ -68,6 +78,16 @@ BEGIN
     ORDER BY relevancia DESC
     LIMIT limite
     OFFSET offset_num;
+
+EXCEPTION
+    WHEN invalid_parameter_value THEN
+        RAISE;
+    WHEN syntax_error THEN
+        RAISE EXCEPTION 'Sintaxis de busqueda invalida: %', query
+            USING ERRCODE = 'invalid_parameter_value';
+    WHEN OTHERS THEN
+        RAISE WARNING 'Error en buscar_articulos: % - %', SQLSTATE, SQLERRM;
+        RETURN;
 END;
 $$ LANGUAGE plpgsql STABLE;
 
@@ -87,6 +107,16 @@ RETURNS TABLE(
     similitud REAL
 ) AS $$
 BEGIN
+    -- Validar parametros
+    IF query IS NULL OR LENGTH(TRIM(query)) < 3 THEN
+        RAISE EXCEPTION 'La busqueda fuzzy requiere al menos 3 caracteres'
+            USING ERRCODE = 'invalid_parameter_value';
+    END IF;
+
+    IF limite < 1 OR limite > 50 THEN
+        limite := 10;
+    END IF;
+
     RETURN QUERY
     SELECT
         a.id,
@@ -100,6 +130,13 @@ BEGIN
     WHERE a.contenido % query  -- Operador de similitud de pg_trgm
     ORDER BY similitud DESC
     LIMIT limite;
+
+EXCEPTION
+    WHEN invalid_parameter_value THEN
+        RAISE;
+    WHEN OTHERS THEN
+        RAISE WARNING 'Error en buscar_fuzzy: % - %', SQLSTATE, SQLERRM;
+        RETURN;
 END;
 $$ LANGUAGE plpgsql STABLE;
 
@@ -139,6 +176,12 @@ RETURNS TABLE(
     referencias_entrantes JSON
 ) AS $$
 BEGIN
+    -- Validar parametro
+    IF articulo_id IS NULL OR articulo_id < 1 THEN
+        RAISE EXCEPTION 'ID de articulo invalido: %', articulo_id
+            USING ERRCODE = 'invalid_parameter_value';
+    END IF;
+
     RETURN QUERY
     SELECT
         a.id,
@@ -185,6 +228,13 @@ BEGIN
     JOIN public.leyes l ON a.ley_id = l.id
     LEFT JOIN public.divisiones d ON a.division_id = d.id
     WHERE a.id = articulo_id;
+
+EXCEPTION
+    WHEN invalid_parameter_value THEN
+        RAISE;
+    WHEN OTHERS THEN
+        RAISE WARNING 'Error en obtener_articulo: % - %', SQLSTATE, SQLERRM;
+        RETURN;
 END;
 $$ LANGUAGE plpgsql STABLE;
 
@@ -333,13 +383,30 @@ $$ LANGUAGE plpgsql STABLE;
 -- ============================================================
 CREATE OR REPLACE FUNCTION registrar_busqueda(termino_busqueda TEXT)
 RETURNS VOID AS $$
+DECLARE
+    termino_limpio TEXT;
 BEGIN
+    -- Validar y limpiar termino
+    termino_limpio := LOWER(TRIM(COALESCE(termino_busqueda, '')));
+
+    IF LENGTH(termino_limpio) < 2 THEN
+        RETURN; -- Ignorar terminos muy cortos sin error
+    END IF;
+
+    -- Limitar longitud del termino
+    termino_limpio := LEFT(termino_limpio, 100);
+
     INSERT INTO public.busquedas_frecuentes (termino, contador, ultima_busqueda)
-    VALUES (LOWER(TRIM(termino_busqueda)), 1, NOW())
+    VALUES (termino_limpio, 1, NOW())
     ON CONFLICT (termino)
     DO UPDATE SET
         contador = public.busquedas_frecuentes.contador + 1,
         ultima_busqueda = NOW();
+
+EXCEPTION
+    WHEN OTHERS THEN
+        -- No fallar silenciosamente, solo loguear
+        RAISE WARNING 'Error en registrar_busqueda: % - %', SQLSTATE, SQLERRM;
 END;
 $$ LANGUAGE plpgsql;
 
@@ -355,13 +422,31 @@ RETURNS TABLE(
     termino VARCHAR,
     frecuencia INT
 ) AS $$
+DECLARE
+    prefijo_limpio TEXT;
 BEGIN
+    -- Validar y limpiar prefijo
+    prefijo_limpio := LOWER(TRIM(COALESCE(prefijo, '')));
+
+    IF LENGTH(prefijo_limpio) < 2 THEN
+        RETURN; -- No sugerir con menos de 2 caracteres
+    END IF;
+
+    IF limite < 1 OR limite > 20 THEN
+        limite := 5;
+    END IF;
+
     RETURN QUERY
     SELECT bf.termino, bf.contador
     FROM public.busquedas_frecuentes bf
-    WHERE bf.termino ILIKE prefijo || '%'
+    WHERE bf.termino ILIKE prefijo_limpio || '%'
     ORDER BY bf.contador DESC, bf.ultima_busqueda DESC
     LIMIT limite;
+
+EXCEPTION
+    WHEN OTHERS THEN
+        RAISE WARNING 'Error en sugerir_busquedas: % - %', SQLSTATE, SQLERRM;
+        RETURN;
 END;
 $$ LANGUAGE plpgsql STABLE;
 
