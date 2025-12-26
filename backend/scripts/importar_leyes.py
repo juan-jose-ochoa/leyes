@@ -7,6 +7,7 @@ Usa el nuevo schema normalizado con divisiones y artículos.
 """
 
 import json
+import os
 import sys
 from pathlib import Path
 from datetime import datetime
@@ -26,13 +27,23 @@ except ImportError:
 # Directorio raíz del proyecto
 BASE_DIR = Path(__file__).parent.parent.parent
 
-# Configuración de PostgreSQL
+# Cargar .env si existe
+env_path = BASE_DIR / ".env"
+if env_path.exists():
+    with open(env_path) as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith('#') and '=' in line:
+                key, value = line.split('=', 1)
+                os.environ.setdefault(key.strip(), value.strip())
+
+# Configuración de PostgreSQL (desde variables de entorno)
 PG_CONFIG = {
-    "host": "localhost",
-    "port": 5432,
-    "database": "leyesmx",
-    "user": "leyesmx",
-    "password": "leyesmx"
+    "host": os.environ.get("PG_HOST", "localhost"),
+    "port": int(os.environ.get("PG_PORT", "5432")),
+    "database": os.environ.get("PG_DB", "leyesmx"),
+    "user": os.environ.get("PG_USER", "leyesmx"),
+    "password": os.environ.get("PG_PASS", "leyesmx")
 }
 
 

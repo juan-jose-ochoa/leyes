@@ -42,3 +42,15 @@ doc/
 # OS
 .DS_Store
 Thumbs.db
+
+# Environment (contains secrets)
+.env
+.env.local
+.env.*.local
+
+# Runtime files
+.postgrest.pid
+.frontend.pid
+
+# Generated config (created from .env)
+backend/postgrest.local.conf

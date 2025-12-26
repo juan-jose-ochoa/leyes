@@ -27,15 +27,23 @@ if [ -d "$HOME/.local/bin" ]; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Configuracion
-PG_HOST="localhost"
-PG_PORT="5432"
-PG_DB="leyesmx"
-PG_USER="leyesmx"
-PG_PASS="leyesmx"
+# Cargar variables de entorno desde .env si existe
+if [ -f "$PROJECT_DIR/.env" ]; then
+    set -a
+    source "$PROJECT_DIR/.env"
+    set +a
+    LOADED_ENV=1
+fi
 
-POSTGREST_PORT="3010"
-FRONTEND_PORT="5173"
+# Configuracion (defaults si no estan en .env)
+PG_HOST="${PG_HOST:-localhost}"
+PG_PORT="${PG_PORT:-5432}"
+PG_DB="${PG_DB:-leyesmx}"
+PG_USER="${PG_USER:-leyesmx}"
+PG_PASS="${PG_PASS:-leyesmx}"
+
+POSTGREST_PORT="${POSTGREST_PORT:-3010}"
+FRONTEND_PORT="${FRONTEND_PORT:-5173}"
 
 # Funciones de utilidad
 log_info() {
@@ -102,18 +110,24 @@ start_postgrest() {
         return 0
     fi
 
-    # Crear archivo de configuracion temporal si no existe
-    if [ ! -f backend/postgrest.conf ]; then
-        cat > backend/postgrest.conf << EOF
+    # Generar archivo de configuracion con credenciales actuales
+    cat > backend/postgrest.local.conf << EOF
+# Auto-generated from environment variables - DO NOT COMMIT
 db-uri = "postgres://$PG_USER:$PG_PASS@$PG_HOST:$PG_PORT/$PG_DB"
 db-schemas = "api"
 db-anon-role = "web_anon"
+server-host = "127.0.0.1"
 server-port = $POSTGREST_PORT
+db-pool = 10
+db-pool-acquisition-timeout = 10
+openapi-mode = "follow-privileges"
+log-level = "info"
+max-rows = 1000
 EOF
-    fi
+    log_info "Configuracion generada en backend/postgrest.local.conf"
 
     # Iniciar PostgREST en background
-    postgrest backend/postgrest.conf &
+    postgrest backend/postgrest.local.conf &
     POSTGREST_PID=$!
 
     sleep 1
@@ -187,7 +201,7 @@ stop_services() {
     fi
 
     # Matar procesos huerfanos
-    pkill -f "postgrest backend/postgrest.conf" 2>/dev/null || true
+    pkill -f "postgrest backend/postgrest" 2>/dev/null || true
     pkill -f "vite" 2>/dev/null || true
 }
 
@@ -259,6 +273,13 @@ main() {
     echo "=========================================="
     echo "        LeyesMX - Servidor Local"
     echo "=========================================="
+    echo ""
+
+    if [ -n "$LOADED_ENV" ]; then
+        log_success "Configuracion cargada desde .env"
+    else
+        log_warn "Usando configuracion por defecto (crea .env desde .env.example)"
+    fi
     echo ""
 
     case "${1:-all}" in
