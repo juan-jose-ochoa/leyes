@@ -6,7 +6,7 @@ export interface Ley {
   id: number
   codigo: string
   nombre: string
-  tipo: 'ley' | 'reglamento'
+  tipo: 'ley' | 'reglamento' | 'resolucion'
   total_articulos: number
   fecha_descarga: string
 }
@@ -15,7 +15,7 @@ export interface Articulo {
   id: number
   ley: string
   ley_nombre: string
-  ley_tipo: 'ley' | 'reglamento'
+  ley_tipo: 'ley' | 'reglamento' | 'resolucion'
   numero_raw: string
   numero_base: number
   sufijo: string | null
@@ -23,6 +23,7 @@ export interface Articulo {
   contenido: string
   es_transitorio: boolean
   reformas: string | null
+  tipo?: 'articulo' | 'regla'  // Tipo de contenido: articulo (leyes) o regla (RMF)
 }
 
 export interface SearchResult extends Articulo {
@@ -33,6 +34,7 @@ export interface SearchResult extends Articulo {
 export interface ArticuloDetalle extends Articulo {
   referencias_salientes: Referencia[] | null
   referencias_entrantes: Referencia[] | null
+  referencias_legales?: string | null  // Referencias legales RMF (CFF, LISR, etc.)
 }
 
 export interface Referencia {

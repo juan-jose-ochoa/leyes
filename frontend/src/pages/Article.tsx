@@ -6,6 +6,8 @@ import clsx from 'clsx'
 
 export default function Article() {
   const { id, ley, numero } = useParams<{ id?: string; ley?: string; numero?: string }>()
+  const location = window.location.pathname
+  const esRutaRegla = location.includes('/regla/')
 
   // Usar el hook apropiado según los parámetros
   const porLey = useArticuloPorLey(ley ?? null, numero ?? null)
@@ -14,10 +16,14 @@ export default function Article() {
   const { data: articulo, isLoading, error } = ley ? porLey : porId
   const [copied, setCopied] = useState(false)
 
+  // Determinar si es regla basándose en el tipo o la ruta
+  const esRegla = articulo?.tipo === 'regla' || esRutaRegla
+  const etiquetaTipo = esRegla ? 'Regla' : 'Artículo'
+
   const handleCopy = async () => {
     if (!articulo) return
     await navigator.clipboard.writeText(
-      `Artículo ${articulo.numero_raw}\n\n${articulo.contenido}\n\nFuente: ${articulo.ley_nombre}`
+      `${etiquetaTipo} ${articulo.numero_raw}\n\n${articulo.contenido}\n\nFuente: ${articulo.ley_nombre}`
     )
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
@@ -38,13 +44,14 @@ export default function Article() {
   }
 
   if (error || !articulo) {
+    const tipoTexto = esRutaRegla ? 'regla' : 'articulo'
     return (
       <div className="py-12 text-center">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-          Articulo no encontrado
+          {esRutaRegla ? 'Regla' : 'Articulo'} no encontrado
         </h2>
         <p className="mt-2 text-gray-500">
-          El articulo que buscas no existe o ha sido eliminado.
+          El {tipoTexto} que buscas no existe o ha sido eliminado.
         </p>
         <Link to="/" className="btn-primary mt-4 inline-flex">
           Volver al inicio
@@ -70,7 +77,11 @@ export default function Article() {
           <span
             className={clsx(
               'badge text-sm',
-              articulo.ley_tipo === 'ley' ? 'badge-ley' : 'badge-reglamento'
+              articulo.ley_tipo === 'resolucion'
+                ? 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200'
+                : articulo.ley_tipo === 'ley'
+                  ? 'badge-ley'
+                  : 'badge-reglamento'
             )}
           >
             {articulo.ley}
@@ -79,7 +90,7 @@ export default function Article() {
         </div>
 
         <h1 className="mt-4 text-3xl font-bold text-gray-900 dark:text-white">
-          Artículo {articulo.numero_raw}
+          {etiquetaTipo} {articulo.numero_raw}
         </h1>
 
         {articulo.ubicacion && (
@@ -129,6 +140,18 @@ export default function Article() {
             </p>
           </div>
         )}
+
+        {articulo.referencias_legales && (
+          <div className="mt-6 rounded-lg bg-amber-50 p-4 dark:bg-amber-900/20">
+            <h3 className="mb-2 flex items-center gap-2 font-medium text-gray-900 dark:text-white">
+              <BookOpen className="h-4 w-4" />
+              Referencias Legales
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              {articulo.referencias_legales}
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Referencias cruzadas */}
@@ -138,7 +161,7 @@ export default function Article() {
             <div className="card">
               <h3 className="mb-4 flex items-center gap-2 font-semibold text-gray-900 dark:text-white">
                 <BookOpen className="h-5 w-5 text-primary-600" />
-                Este articulo cita
+                {esRegla ? 'Esta regla cita' : 'Este articulo cita'}
               </h3>
               <ul className="space-y-2">
                 {articulo.referencias_salientes.map((ref) => (

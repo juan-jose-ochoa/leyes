@@ -105,7 +105,9 @@ SELECT
     a.es_transitorio,
     a.decreto_dof,
     a.reformas,
-    a.orden_global
+    a.orden_global,
+    COALESCE(a.tipo, 'articulo') AS tipo,  -- 'articulo' o 'regla'
+    a.referencias                           -- referencias RMF
 FROM public.articulos a
 JOIN public.leyes l ON a.ley_id = l.id
 LEFT JOIN public.divisiones d ON a.division_id = d.id
@@ -179,7 +181,8 @@ RETURNS TABLE(
     es_transitorio BOOLEAN,
     reformas TEXT,
     relevancia REAL,
-    snippet TEXT
+    snippet TEXT,
+    tipo VARCHAR  -- 'articulo' o 'regla'
 ) AS $$
 DECLARE
     leyes_arr TEXT[];
@@ -215,7 +218,8 @@ BEGIN
         ba.es_transitorio,
         ba.reformas,
         ba.relevancia,
-        ba.snippet
+        ba.snippet,
+        ba.tipo
     FROM public.buscar_articulos(q, leyes_arr, solo_transitorios, limite, offset_calc) ba;
 END;
 $$ LANGUAGE plpgsql;
@@ -240,7 +244,9 @@ RETURNS TABLE(
     reformas TEXT,
     orden_global INT,
     referencias_salientes JSON,
-    referencias_entrantes JSON
+    referencias_entrantes JSON,
+    tipo VARCHAR,
+    referencias_legales TEXT
 ) AS $$
 BEGIN
     RETURN QUERY
@@ -357,7 +363,9 @@ RETURNS TABLE(
     reformas TEXT,
     orden_global INT,
     referencias_salientes JSON,
-    referencias_entrantes JSON
+    referencias_entrantes JSON,
+    tipo VARCHAR,
+    referencias_legales TEXT
 ) AS $$
 DECLARE
     art_id INT;

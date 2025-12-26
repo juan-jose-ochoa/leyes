@@ -29,7 +29,8 @@ RETURNS TABLE(
     es_transitorio BOOLEAN,
     reformas TEXT,
     relevancia REAL,
-    snippet TEXT
+    snippet TEXT,
+    tipo VARCHAR  -- 'articulo' o 'regla'
 ) AS $$
 DECLARE
     tsquery_parsed tsquery;
@@ -67,7 +68,8 @@ BEGIN
             a.contenido,
             tsquery_parsed,
             'MaxWords=50, MinWords=20, StartSel=<mark>, StopSel=</mark>, MaxFragments=2'
-        ) as snippet
+        ) as snippet,
+        COALESCE(a.tipo, 'articulo') as tipo
     -- IMPORTANT: Use explicit public. schema to avoid conflict with api.articulos view
     FROM public.articulos a
     JOIN public.leyes l ON a.ley_id = l.id
@@ -173,7 +175,9 @@ RETURNS TABLE(
     reformas TEXT,
     orden_global INT,
     referencias_salientes JSON,
-    referencias_entrantes JSON
+    referencias_entrantes JSON,
+    tipo VARCHAR,          -- 'articulo' o 'regla'
+    referencias_legales TEXT -- referencias al final de reglas RMF
 ) AS $$
 BEGIN
     -- Validar parametro
@@ -223,7 +227,9 @@ BEGIN
             JOIN public.articulos a2 ON rc.articulo_origen_id = a2.id
             JOIN public.leyes l2 ON a2.ley_id = l2.id
             WHERE rc.articulo_destino_id = a.id
-        ) as referencias_entrantes
+        ) as referencias_entrantes,
+        COALESCE(a.tipo, 'articulo') as tipo,
+        a.referencias as referencias_legales
     FROM public.articulos a
     JOIN public.leyes l ON a.ley_id = l.id
     LEFT JOIN public.divisiones d ON a.division_id = d.id

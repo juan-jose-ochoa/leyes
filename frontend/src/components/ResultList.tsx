@@ -64,16 +64,24 @@ export default function ResultList({ results, isLoading }: ResultListProps) {
 }
 
 function ResultCard({ result }: { result: SearchResult }) {
+  const esRegla = result.tipo === 'regla'
+  const etiquetaTipo = esRegla ? 'Regla' : 'Articulo'
+  const rutaTipo = esRegla ? 'regla' : 'articulo'
+
   return (
     <Link
-      to={`/${result.ley}/articulo/${result.numero_raw}`}
+      to={`/${result.ley}/${rutaTipo}/${result.numero_raw}`}
       className="card group block transition-shadow hover:shadow-md"
     >
       <div className="flex items-start gap-4">
         <div
           className={clsx(
             'flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-sm font-bold text-white',
-            result.ley_tipo === 'ley' ? 'bg-primary-600' : 'bg-blue-600'
+            result.ley_tipo === 'resolucion'
+              ? 'bg-amber-600'
+              : result.ley_tipo === 'ley'
+                ? 'bg-primary-600'
+                : 'bg-blue-600'
           )}
         >
           {result.ley}
@@ -82,15 +90,19 @@ function ResultCard({ result }: { result: SearchResult }) {
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2">
             <h3 className="font-semibold text-gray-900 group-hover:text-primary-600 dark:text-gray-100 dark:group-hover:text-primary-400">
-              Articulo {result.numero_raw}
+              {etiquetaTipo} {result.numero_raw}
             </h3>
             <span
               className={clsx(
                 'badge',
-                result.ley_tipo === 'ley' ? 'badge-ley' : 'badge-reglamento'
+                result.ley_tipo === 'resolucion'
+                  ? 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200'
+                  : result.ley_tipo === 'ley'
+                    ? 'badge-ley'
+                    : 'badge-reglamento'
               )}
             >
-              {result.ley_tipo}
+              {result.ley_tipo === 'resolucion' ? 'RMF' : result.ley_tipo}
             </span>
             {result.es_transitorio && (
               <span className="badge bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200">
@@ -114,7 +126,7 @@ function ResultCard({ result }: { result: SearchResult }) {
               Relevancia: {(result.relevancia * 100).toFixed(0)}%
             </span>
             <span className="flex items-center gap-1 text-sm font-medium text-primary-600 group-hover:underline dark:text-primary-400">
-              Ver articulo completo
+              Ver {esRegla ? 'regla' : 'articulo'} completo
               <ChevronRight className="h-4 w-4" />
             </span>
           </div>
