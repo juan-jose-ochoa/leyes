@@ -616,7 +616,240 @@ leyes/
 
 ---
 
-## 9. Próximos Pasos
+## 9. Despliegue en Produccion (Caddy)
+
+### 9.1 Arquitectura de Produccion
+
+```
+                    Internet
+                        │
+                        ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    Caddy Server                             │
+│              (HTTPS, CORS, Rate Limiting)                   │
+│                                                             │
+│  leyesmx.tudominio.com  ──►  /frontend/dist (static)        │
+│  leyesmx.tudominio.com/api/* ──► localhost:3010 (PostgREST) │
+└─────────────────────────────────────────────────────────────┘
+                        │
+          ┌─────────────┴─────────────┐
+          ▼                           ▼
+    ┌──────────┐               ┌────────────┐
+    │ PostgREST│               │ PostgreSQL │
+    │  :3010   │──────────────►│   :5432    │
+    └──────────┘               └────────────┘
+```
+
+### 9.2 Instalacion de Caddy
+
+```bash
+# Debian/Ubuntu
+sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+sudo apt update
+sudo apt install caddy
+```
+
+### 9.3 Caddyfile
+
+Crear `/etc/caddy/Caddyfile`:
+
+```caddyfile
+leyesmx.tudominio.com {
+    # Logs
+    log {
+        output file /var/log/caddy/leyesmx.log
+        format json
+    }
+
+    # Rate limiting (requiere caddy-rate-limit plugin o usar limit_req)
+    # Para rate limiting basico, usar el modulo interno:
+    @api path /api/*
+
+    # CORS headers para la API
+    header /api/* {
+        Access-Control-Allow-Origin "https://leyesmx.tudominio.com"
+        Access-Control-Allow-Methods "GET, POST, OPTIONS"
+        Access-Control-Allow-Headers "Content-Type, Authorization"
+        Access-Control-Max-Age "86400"
+    }
+
+    # Responder OPTIONS para preflight CORS
+    @options method OPTIONS
+    handle @options {
+        header Access-Control-Allow-Origin "https://leyesmx.tudominio.com"
+        header Access-Control-Allow-Methods "GET, POST, OPTIONS"
+        header Access-Control-Allow-Headers "Content-Type, Authorization"
+        respond "" 204
+    }
+
+    # API: proxy a PostgREST
+    handle /api/* {
+        uri strip_prefix /api
+        reverse_proxy localhost:3010 {
+            header_up Host {host}
+            header_up X-Real-IP {remote_host}
+            header_up X-Forwarded-For {remote_host}
+            header_up X-Forwarded-Proto {scheme}
+        }
+    }
+
+    # Frontend: archivos estaticos
+    handle {
+        root * /var/www/leyesmx/dist
+        try_files {path} /index.html
+        file_server
+    }
+
+    # Seguridad headers
+    header {
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "DENY"
+        X-XSS-Protection "1; mode=block"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        -Server
+    }
+
+    # Compresion
+    encode gzip zstd
+}
+```
+
+### 9.4 Rate Limiting con Caddy
+
+Para rate limiting mas avanzado, usar el plugin `caddy-rate-limit`:
+
+```bash
+# Instalar Caddy con el plugin
+xcaddy build --with github.com/mholt/caddy-ratelimit
+```
+
+Luego en el Caddyfile:
+
+```caddyfile
+leyesmx.tudominio.com {
+    # Rate limit: 100 requests por minuto por IP
+    rate_limit {
+        zone api {
+            match {
+                path /api/*
+            }
+            key {remote_host}
+            window 1m
+            events 100
+        }
+    }
+
+    # ... resto de la configuracion
+}
+```
+
+### 9.5 Despliegue del Frontend
+
+```bash
+# Construir frontend
+npm run build
+
+# Copiar a directorio de produccion
+sudo mkdir -p /var/www/leyesmx
+sudo cp -r frontend/dist/* /var/www/leyesmx/
+sudo chown -R caddy:caddy /var/www/leyesmx
+```
+
+### 9.6 Servicio PostgREST (systemd)
+
+Crear `/etc/systemd/system/postgrest.service`:
+
+```ini
+[Unit]
+Description=PostgREST API Server
+After=postgresql.service
+Requires=postgresql.service
+
+[Service]
+User=postgrest
+Group=postgrest
+ExecStart=/usr/local/bin/postgrest /etc/postgrest/leyesmx.conf
+Restart=always
+RestartSec=5
+Environment=PGRST_DB_URI=postgres://authenticator:PASSWORD@localhost:5432/leyesmx
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+# Crear usuario sin shell
+sudo useradd -r -s /bin/false postgrest
+
+# Crear directorio de config
+sudo mkdir -p /etc/postgrest
+sudo cp backend/postgrest.conf /etc/postgrest/leyesmx.conf
+
+# Editar para usar variable de entorno
+sudo sed -i 's|db-uri = .*|db-uri = "$(PGRST_DB_URI)"|' /etc/postgrest/leyesmx.conf
+
+# Habilitar servicio
+sudo systemctl daemon-reload
+sudo systemctl enable postgrest
+sudo systemctl start postgrest
+```
+
+### 9.7 Variables de Entorno en Produccion
+
+Usar archivo de entorno para systemd:
+
+```bash
+# Crear archivo de secretos (solo root puede leer)
+sudo tee /etc/postgrest/env << 'EOF'
+PGRST_DB_URI=postgres://authenticator:TU_PASSWORD_SEGURO@localhost:5432/leyesmx
+EOF
+sudo chmod 600 /etc/postgrest/env
+```
+
+Modificar el servicio:
+
+```ini
+[Service]
+EnvironmentFile=/etc/postgrest/env
+```
+
+### 9.8 Verificacion
+
+```bash
+# Verificar servicios
+sudo systemctl status caddy
+sudo systemctl status postgrest
+sudo systemctl status postgresql
+
+# Probar API
+curl -s https://leyesmx.tudominio.com/api/leyes | jq
+
+# Probar busqueda
+curl -s -X POST https://leyesmx.tudominio.com/api/rpc/buscar \
+  -H "Content-Type: application/json" \
+  -d '{"q": "factura"}' | jq
+
+# Ver logs
+sudo journalctl -u postgrest -f
+sudo tail -f /var/log/caddy/leyesmx.log
+```
+
+### 9.9 Checklist de Seguridad Produccion
+
+- [ ] Cambiar password de PostgreSQL (`PG_PASS`)
+- [ ] Crear usuario `authenticator` con permisos minimos
+- [ ] Firewall: solo puertos 80, 443 abiertos
+- [ ] PostgREST escucha solo en localhost (127.0.0.1)
+- [ ] PostgreSQL escucha solo en localhost
+- [ ] Backups automaticos de PostgreSQL
+- [ ] Monitoreo con Prometheus/Grafana (opcional)
+- [ ] Logs rotativos configurados
+
+---
+
+## 10. Proximos Pasos
 
 1. **Búsqueda Semántica con IA**
    - Instalar extensión `vector` como superuser
