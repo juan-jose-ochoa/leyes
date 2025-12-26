@@ -1,26 +1,62 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { Scale, BookOpen, Search as SearchIcon, Zap } from 'lucide-react'
 import SearchBar from '@/components/SearchBar'
 import ResultList from '@/components/ResultList'
+import ArticlePanel from '@/components/ArticlePanel'
 import { useSearch } from '@/hooks/useSearch'
 import { useLeyes } from '@/hooks/useArticle'
+import type { SearchResult } from '@/lib/api'
 
 export default function Home() {
-  const [query, setQuery] = useState('')
-  const [searchQuery, setSearchQuery] = useState('')
+  const [searchParams, setSearchParams] = useSearchParams()
+  const urlQuery = searchParams.get('q') || ''
+
+  const [query, setQuery] = useState(urlQuery)
   const [selectedLeyes, setSelectedLeyes] = useState<string[]>([])
+  const [selectedArticle, setSelectedArticle] = useState<{ ley: string; numero: string; id: number } | null>(null)
   const { data: leyes } = useLeyes()
 
+  // Sincronizar query con URL al cargar
+  useEffect(() => {
+    if (urlQuery && urlQuery !== query) {
+      setQuery(urlQuery)
+    }
+  }, [urlQuery])
+
   const { data: results, isLoading, isFetching } = useSearch(
-    searchQuery,
+    urlQuery,
     selectedLeyes.length > 0 ? selectedLeyes : undefined
   )
 
   const handleSearch = useCallback((q: string) => {
-    setSearchQuery(q)
+    // Actualizar URL con el query
+    if (q) {
+      setSearchParams({ q })
+    } else {
+      setSearchParams({})
+    }
+    setSelectedArticle(null)
+  }, [setSearchParams])
+
+  const handleSelectArticle = useCallback((result: SearchResult) => {
+    setSelectedArticle({
+      ley: result.ley,
+      numero: result.numero_raw,
+      id: result.id
+    })
   }, [])
 
-  const hasSearched = searchQuery.length > 0
+  const handleNavigateArticle = useCallback((numero: string) => {
+    if (selectedArticle) {
+      setSelectedArticle({
+        ...selectedArticle,
+        numero
+      })
+    }
+  }, [selectedArticle])
+
+  const hasSearched = urlQuery.length > 0
 
   return (
     <div className="space-y-8">
@@ -53,10 +89,41 @@ export default function Home() {
         isLoading={isFetching}
       />
 
-      {/* Resultados de busqueda */}
+      {/* Resultados de busqueda con split panel en desktop */}
       {hasSearched && (
         <div className="mt-8">
-          <ResultList results={results || []} isLoading={isLoading} />
+          {/* Layout: móvil = solo lista, desktop = split panel */}
+          <div className="lg:grid lg:grid-cols-12 lg:gap-6">
+            {/* Panel izquierdo: Resultados */}
+            <div className={selectedArticle ? 'lg:col-span-5 xl:col-span-4' : 'lg:col-span-12'}>
+              {/* En móvil: sin onSelect (usa Link). En desktop: con onSelect */}
+              <div className="lg:hidden">
+                <ResultList results={results || []} isLoading={isLoading} />
+              </div>
+              <div className="hidden lg:block lg:max-h-[calc(100vh-200px)] lg:overflow-y-auto lg:pr-2">
+                <ResultList
+                  results={results || []}
+                  isLoading={isLoading}
+                  selectedId={selectedArticle?.id}
+                  onSelect={handleSelectArticle}
+                />
+              </div>
+            </div>
+
+            {/* Panel derecho: Artículo (solo desktop) */}
+            {selectedArticle && (
+              <div className="hidden lg:block lg:col-span-7 xl:col-span-8">
+                <div className="sticky top-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-lg max-h-[calc(100vh-200px)] overflow-hidden">
+                  <ArticlePanel
+                    ley={selectedArticle.ley}
+                    numero={selectedArticle.numero}
+                    onClose={() => setSelectedArticle(null)}
+                    onNavigate={handleNavigateArticle}
+                  />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       )}
 
@@ -99,7 +166,7 @@ export default function Home() {
                   onClick={() => {
                     setSelectedLeyes([ley.codigo])
                     setQuery('')
-                    setSearchQuery('')
+                    setSearchParams({})
                   }}
                   className="card text-left transition-all hover:border-primary-300 hover:shadow-md dark:hover:border-primary-700"
                 >

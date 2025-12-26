@@ -63,9 +63,11 @@ const agruparPorLey = (results: SearchResult[]): GrupoLey[] => {
 interface ResultListProps {
   results: SearchResult[]
   isLoading?: boolean
+  selectedId?: number | null
+  onSelect?: (result: SearchResult) => void
 }
 
-export default function ResultList({ results, isLoading }: ResultListProps) {
+export default function ResultList({ results, isLoading, selectedId, onSelect }: ResultListProps) {
   if (isLoading) {
     return (
       <div className="space-y-4">
@@ -108,13 +110,19 @@ export default function ResultList({ results, isLoading }: ResultListProps) {
       </p>
 
       {grupos.map((grupo) => (
-        <GrupoResultados key={grupo.ley} grupo={grupo} />
+        <GrupoResultados key={grupo.ley} grupo={grupo} selectedId={selectedId} onSelect={onSelect} />
       ))}
     </div>
   )
 }
 
-function GrupoResultados({ grupo }: { grupo: GrupoLey }) {
+interface GrupoResultadosProps {
+  grupo: GrupoLey
+  selectedId?: number | null
+  onSelect?: (result: SearchResult) => void
+}
+
+function GrupoResultados({ grupo, selectedId, onSelect }: GrupoResultadosProps) {
   const [expandido, setExpandido] = useState(true)
   const colorClase = grupo.ley_tipo === 'resolucion'
     ? 'bg-amber-600'
@@ -164,7 +172,7 @@ function GrupoResultados({ grupo }: { grupo: GrupoLey }) {
       {expandido && (
         <div className="divide-y divide-gray-100 dark:divide-gray-800">
           {grupo.resultados.map((result) => (
-            <ResultCard key={result.id} result={result} />
+            <ResultCard key={result.id} result={result} isSelected={result.id === selectedId} onSelect={onSelect} />
           ))}
         </div>
       )}
@@ -172,57 +180,80 @@ function GrupoResultados({ grupo }: { grupo: GrupoLey }) {
   )
 }
 
-function ResultCard({ result }: { result: SearchResult }) {
+interface ResultCardProps {
+  result: SearchResult
+  isSelected?: boolean
+  onSelect?: (result: SearchResult) => void
+}
+
+function ResultCard({ result, isSelected, onSelect }: ResultCardProps) {
   const esRegla = result.tipo === 'regla'
   const etiquetaTipo = esRegla ? 'Regla' : 'Art.'
   const rutaTipo = esRegla ? 'regla' : 'articulo'
   const titulo = extraerTitulo(result.contenido)
 
-  return (
-    <Link
-      to={`/${result.ley}/${rutaTipo}/${result.numero_raw}`}
-      className="block p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors group"
-    >
-      <div className="flex items-start gap-3">
-        {/* Número de artículo */}
-        <div className="shrink-0 w-16 text-right">
-          <span className="font-mono font-semibold text-primary-600 dark:text-primary-400 group-hover:text-primary-700 dark:group-hover:text-primary-300">
-            {etiquetaTipo} {result.numero_raw}
-          </span>
-        </div>
-
-        <div className="flex-1 min-w-0">
-          {/* Título descriptivo */}
-          <h4 className="font-medium text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400">
-            {titulo}
-          </h4>
-
-          {/* Ubicación jerárquica */}
-          {result.ubicacion && (
-            <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
-              {result.ubicacion}
-            </p>
-          )}
-
-          {/* Snippet con highlighting */}
-          <p
-            className="mt-2 text-sm text-gray-600 dark:text-gray-300 line-clamp-2"
-            dangerouslySetInnerHTML={{ __html: sanitizeSnippet(result.snippet) }}
-          />
-
-          {/* Tags */}
-          <div className="mt-2 flex items-center gap-2">
-            {result.es_transitorio && (
-              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200">
-                transitorio
-              </span>
-            )}
-          </div>
-        </div>
-
-        {/* Flecha */}
-        <ChevronRight className="h-5 w-5 text-gray-300 dark:text-gray-600 group-hover:text-primary-500 shrink-0 mt-1" />
+  const content = (
+    <div className="flex items-start gap-3">
+      {/* Número de artículo */}
+      <div className="shrink-0 w-16 text-right">
+        <span className="font-mono font-semibold text-primary-600 dark:text-primary-400 group-hover:text-primary-700 dark:group-hover:text-primary-300">
+          {etiquetaTipo} {result.numero_raw}
+        </span>
       </div>
+
+      <div className="flex-1 min-w-0">
+        {/* Título descriptivo */}
+        <h4 className="font-medium text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400">
+          {titulo}
+        </h4>
+
+        {/* Ubicación jerárquica */}
+        {result.ubicacion && (
+          <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+            {result.ubicacion}
+          </p>
+        )}
+
+        {/* Snippet con highlighting */}
+        <p
+          className="mt-2 text-sm text-gray-600 dark:text-gray-300 line-clamp-2"
+          dangerouslySetInnerHTML={{ __html: sanitizeSnippet(result.snippet) }}
+        />
+
+        {/* Tags */}
+        <div className="mt-2 flex items-center gap-2">
+          {result.es_transitorio && (
+            <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200">
+              transitorio
+            </span>
+          )}
+        </div>
+      </div>
+
+      {/* Flecha */}
+      <ChevronRight className="h-5 w-5 text-gray-300 dark:text-gray-600 group-hover:text-primary-500 shrink-0 mt-1" />
+    </div>
+  )
+
+  const baseClass = clsx(
+    'block p-4 transition-colors group text-left w-full',
+    isSelected
+      ? 'bg-primary-50 dark:bg-primary-900/20 border-l-4 border-primary-500'
+      : 'hover:bg-gray-50 dark:hover:bg-gray-800/50'
+  )
+
+  // En desktop con onSelect, usar button. En móvil, usar Link.
+  if (onSelect) {
+    return (
+      <button onClick={() => onSelect(result)} className={baseClass}>
+        {content}
+      </button>
+    )
+  }
+
+  return (
+    <Link to={`/${result.ley}/${rutaTipo}/${result.numero_raw}`} className={baseClass}>
+      {content}
     </Link>
   )
 }
