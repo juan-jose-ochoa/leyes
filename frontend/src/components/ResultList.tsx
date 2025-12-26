@@ -66,7 +66,7 @@ export default function ResultList({ results, isLoading }: ResultListProps) {
 function ResultCard({ result }: { result: SearchResult }) {
   return (
     <Link
-      to={`/articulo/${result.id}`}
+      to={`/${result.ley}/articulo/${result.numero_raw}`}
       className="card group block transition-shadow hover:shadow-md"
     >
       <div className="flex items-start gap-4">

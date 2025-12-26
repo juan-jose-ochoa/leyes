@@ -30,6 +30,7 @@ function App() {
         <ErrorBoundary>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/:ley/articulo/:numero" element={<Article />} />
             <Route path="/articulo/:id" element={<Article />} />
           </Routes>
         </ErrorBoundary>

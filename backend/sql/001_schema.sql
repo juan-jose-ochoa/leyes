@@ -133,6 +133,7 @@ CREATE TABLE articulos (
 CREATE INDEX idx_articulos_ley ON articulos(ley_id);
 CREATE INDEX idx_articulos_division ON articulos(division_id);
 CREATE INDEX idx_articulos_numero ON articulos(ley_id, numero_base, sufijo);
+CREATE INDEX idx_articulos_ley_numero_raw ON articulos(ley_id, numero_raw);
 CREATE INDEX idx_articulos_transitorio ON articulos(ley_id, es_transitorio);
 CREATE INDEX idx_articulos_orden ON articulos(ley_id, orden_global);
 CREATE INDEX idx_articulos_search ON articulos USING GIN(search_vector);

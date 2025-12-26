@@ -1,12 +1,17 @@
 import { useParams, Link } from 'react-router-dom'
 import { ArrowLeft, Copy, Check, ExternalLink, BookOpen } from 'lucide-react'
 import { useState } from 'react'
-import { useArticle } from '@/hooks/useArticle'
+import { useArticle, useArticuloPorLey } from '@/hooks/useArticle'
 import clsx from 'clsx'
 
 export default function Article() {
-  const { id } = useParams<{ id: string }>()
-  const { data: articulo, isLoading, error } = useArticle(id ? parseInt(id) : null)
+  const { id, ley, numero } = useParams<{ id?: string; ley?: string; numero?: string }>()
+
+  // Usar el hook apropiado según los parámetros
+  const porLey = useArticuloPorLey(ley ?? null, numero ?? null)
+  const porId = useArticle(id && !ley ? parseInt(id) : null)
+
+  const { data: articulo, isLoading, error } = ley ? porLey : porId
   const [copied, setCopied] = useState(false)
 
   const handleCopy = async () => {
@@ -106,7 +111,7 @@ export default function Article() {
       {/* Contenido principal */}
       <div className="card">
         <div className="prose prose-gray max-w-none dark:prose-invert">
-          {articulo.contenido.split('\n').map((paragraph, i) => (
+          {articulo.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
             <p key={i} className="mb-4 leading-relaxed">
               {paragraph}
             </p>
@@ -139,7 +144,7 @@ export default function Article() {
                 {articulo.referencias_salientes.map((ref) => (
                   <li key={ref.id}>
                     <Link
-                      to={`/articulo/${ref.id}`}
+                      to={`/${ref.ley}/articulo/${ref.numero_raw}`}
                       className="flex items-center gap-2 rounded-lg p-2 text-sm hover:bg-gray-50 dark:hover:bg-gray-700"
                     >
                       <span className="font-medium text-primary-600 dark:text-primary-400">
@@ -166,7 +171,7 @@ export default function Article() {
                 {articulo.referencias_entrantes.map((ref) => (
                   <li key={ref.id}>
                     <Link
-                      to={`/articulo/${ref.id}`}
+                      to={`/${ref.ley}/articulo/${ref.numero_raw}`}
                       className="flex items-center gap-2 rounded-lg p-2 text-sm hover:bg-gray-50 dark:hover:bg-gray-700"
                     >
                       <span className="font-medium text-blue-600 dark:text-blue-400">

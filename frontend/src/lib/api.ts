@@ -121,6 +121,13 @@ export async function getArticulo(id: number): Promise<ArticuloDetalle[]> {
   })
 }
 
+export async function getArticuloPorLey(ley: string, numero: string): Promise<ArticuloDetalle[]> {
+  return fetchAPI<ArticuloDetalle[]>('/rpc/articulo_por_ley', {
+    method: 'POST',
+    body: JSON.stringify({ p_ley: ley, p_numero: numero }),
+  })
+}
+
 export async function getArticulos(
   ley?: string,
   limite = 50,

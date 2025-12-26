@@ -148,6 +148,45 @@ def sufijo_a_orden(sufijo: Optional[str]) -> int:
     return 0
 
 
+def consolidar_parrafos(partes: list[str]) -> str:
+    """
+    Une fragmentos que son continuación del mismo párrafo.
+
+    En los DOCX, cada línea visual puede ser un "párrafo" separado,
+    aunque lógicamente sean continuación de la misma oración.
+
+    Reglas:
+    - Si una línea NO termina en puntuación final, es continuación
+    - Unir con espacio en lugar de \\n
+    - Usar \\n\\n para separar párrafos reales
+    """
+    if not partes:
+        return ""
+
+    resultado = []
+    buffer = ""
+
+    for parte in partes:
+        parte = parte.strip()
+        if not parte:
+            continue
+
+        if not buffer:
+            buffer = parte
+        elif buffer[-1] in '.;:?!':
+            # Fin de oración/párrafo, guardar y empezar nuevo
+            resultado.append(buffer)
+            buffer = parte
+        else:
+            # Continuación del mismo párrafo, unir con espacio
+            buffer = buffer + ' ' + parte
+
+    if buffer:
+        resultado.append(buffer)
+
+    return '\n\n'.join(resultado)
+
+
 def extraer_texto_docx(doc_path: Path) -> list[str]:
     """Extrae párrafos del DOCX, limpiando páginas y espacios"""
     doc = Document(doc_path)
@@ -355,7 +394,7 @@ def parsear_ley(paragraphs: list[str], nombre_ley: str) -> dict:
                 "numero_base": numero_base,
                 "sufijo": sufijo.upper() if sufijo else None,
                 "ordinal": ordinal.lower() if ordinal else None,
-                "contenido": "\n".join(contenido_partes),
+                "contenido": consolidar_parrafos(contenido_partes),
                 "es_transitorio": en_transitorios,
                 "decreto_dof": decreto_actual if en_transitorios else None,
                 "reformas": " | ".join(reformas) if reformas else None,

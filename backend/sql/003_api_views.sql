@@ -336,6 +336,51 @@ $$ LANGUAGE plpgsql STABLE;
 
 COMMENT ON FUNCTION api.stats IS 'Estadisticas detalladas por ley';
 
+-- Wrapper para obtener articulo por ley y numero (URLs amigables)
+CREATE OR REPLACE FUNCTION api.articulo_por_ley(
+    p_ley TEXT,
+    p_numero TEXT
+)
+RETURNS TABLE(
+    id INT,
+    ley_codigo VARCHAR,
+    ley_nombre VARCHAR,
+    ley_tipo VARCHAR,
+    numero_raw VARCHAR,
+    numero_base INT,
+    sufijo VARCHAR,
+    ubicacion TEXT,
+    division_tipo VARCHAR,
+    contenido TEXT,
+    es_transitorio BOOLEAN,
+    decreto_dof VARCHAR,
+    reformas TEXT,
+    orden_global INT,
+    referencias_salientes JSON,
+    referencias_entrantes JSON
+) AS $$
+DECLARE
+    art_id INT;
+BEGIN
+    -- Buscar el ID del articulo por ley y numero
+    SELECT a.id INTO art_id
+    FROM public.articulos a
+    JOIN public.leyes l ON a.ley_id = l.id
+    WHERE UPPER(l.codigo) = UPPER(p_ley)
+      AND a.numero_raw = p_numero
+    LIMIT 1;
+
+    IF art_id IS NULL THEN
+        RETURN;
+    END IF;
+
+    RETURN QUERY
+    SELECT * FROM public.obtener_articulo(art_id);
+END;
+$$ LANGUAGE plpgsql STABLE;
+
+COMMENT ON FUNCTION api.articulo_por_ley IS 'Obtiene articulo por codigo de ley y numero (ej: LFT, 199)';
+
 -- ============================================================
 -- Permisos para rol anonimo
 -- ============================================================
@@ -358,6 +403,7 @@ GRANT EXECUTE ON FUNCTION api.articulos_division(INT) TO web_anon;
 GRANT EXECUTE ON FUNCTION api.navegar(INT) TO web_anon;
 GRANT EXECUTE ON FUNCTION api.sugerencias(TEXT) TO web_anon;
 GRANT EXECUTE ON FUNCTION api.stats() TO web_anon;
+GRANT EXECUTE ON FUNCTION api.articulo_por_ley(TEXT, TEXT) TO web_anon;
 
 -- Permisos en esquema publico (necesarios para las funciones)
 GRANT USAGE ON SCHEMA public TO web_anon;
