@@ -385,23 +385,21 @@ LEFT JOIN divisiones d ON a.division_id = d.id;
 
 | Métrica | Valor |
 |---------|-------|
-| **Tamaño total BD** | 30 MB |
-| **Leyes** | 12 documentos |
-| **Divisiones** | 301 |
-| **Artículos** | 3,090 |
-| **Artículos transitorios** | 19 |
+| **Tamaño total BD** | ~35 MB |
+| **Documentos** | 13 (6 leyes + 6 reglamentos + 1 RMF) |
+| **Divisiones** | ~350 |
+| **Artículos/Reglas** | 3,536 |
+| **Referencias cruzadas** | 3,180 |
 
 ### 4.2 Tamaño por Tabla
 
 | Tabla | Total | Datos | Índices |
 |-------|-------|-------|---------|
-| articulos | 18 MB | 3.1 MB | 15 MB |
-| jerarquia_completa | 3.5 MB | - | - |
-| divisiones | 336 KB | 104 KB | 232 KB |
-| leyes | 48 KB | 8 KB | 40 KB |
-| referencias_cruzadas | 40 KB | 0 | 40 KB |
-| fracciones | 40 KB | 0 | 40 KB |
-| busquedas_frecuentes | 24 KB | 0 | 24 KB |
+| articulos | ~20 MB | ~4 MB | ~16 MB |
+| jerarquia_completa | ~4 MB | - | - |
+| referencias_cruzadas | ~500 KB | ~200 KB | ~300 KB |
+| divisiones | ~400 KB | ~120 KB | ~280 KB |
+| leyes | ~50 KB | ~10 KB | ~40 KB |
 
 ### 4.3 Desglose de Índices
 
@@ -425,12 +423,13 @@ LEFT JOIN divisiones d ON a.division_id = d.id;
 
 ### 4.4 Contenido por Documento
 
-| Código | Tipo | Artículos | Prom. Caracteres | Prom. Palabras |
-|--------|------|-----------|------------------|----------------|
+| Código | Tipo | Arts/Reglas | Prom. Caracteres | Prom. Palabras |
+|--------|------|-------------|------------------|----------------|
 | LISR | ley | 235 | 4,012 | 802 |
 | CFF | ley | 420 | 1,966 | 393 |
 | LIVA | ley | 80 | 1,886 | 377 |
 | LIEPS | ley | 69 | 1,852 | 370 |
+| RMF2025 | resolución | 446 | ~1,500 | ~300 |
 | RACERF | reglamento | 196 | 1,269 | 254 |
 | RCFF | reglamento | 113 | 1,052 | 210 |
 | RISR | reglamento | 313 | 972 | 194 |
@@ -440,7 +439,9 @@ LEFT JOIN divisiones d ON a.division_id = d.id;
 | RIVA | reglamento | 72 | 532 | 106 |
 | RLIEPS | reglamento | 19 | 492 | 98 |
 
-**Observación:** La LISR tiene los artículos más extensos (800 palabras promedio), mientras que los reglamentos tienden a ser más concisos.
+**Observaciones:**
+- La LISR tiene los artículos más extensos (800 palabras promedio)
+- RMF2025 incluye campo "referencias" con citas a otras leyes
 
 ### 4.5 Estructura Jerárquica por Documento
 
@@ -577,41 +578,37 @@ SELECT * FROM estructura_ley('CFF');
 leyes/
 ├── doc/
 │   ├── manifest.json              # Metadatos de documentos
-│   ├── DOCUMENTACION_TECNICA.md   # Este documento
-│   ├── leyes/
-│   │   ├── cff/                   # PDF, DOCX, JSON, DB
-│   │   ├── lft/
-│   │   ├── lisr/
-│   │   ├── liva/
-│   │   ├── lieps/
-│   │   └── lss/
-│   └── reglamentos/
-│       ├── rcff/
-│       ├── risr/
-│       ├── riva/
-│       ├── rlieps/
-│       ├── rlft/
-│       ├── rlss/
-│       └── racerf/
+│   ├── leyes/                     # PDF, DOCX, JSON por ley
+│   │   ├── cff/, lft/, lisr/, liva/, lieps/, lss/
+│   ├── reglamentos/
+│   │   ├── rcff/, risr/, riva/, rlieps/, rlft/, rlss/, racerf/
+│   └── rmf/                       # Resolución Miscelánea Fiscal
+│       └── rmf_2025_compilada.docx
 ├── scripts/
-│   ├── descargar_leyes_mx.py      # Descarga PDFs
+│   ├── descargar_leyes_mx.py      # Descarga PDFs de leyes
 │   ├── convertir_ley.py           # PDF → DOCX → JSON
-│   └── parsear_ley.py             # Parser v2 jerárquico
+│   ├── parsear_ley.py             # Parser v2 jerárquico
+│   ├── descargar_rmf.py           # Descarga RMF del SAT
+│   ├── parsear_rmf.py             # Parser especializado RMF
+│   └── extraer_referencias.py     # Extrae referencias cruzadas
 ├── backend/
 │   ├── sql/
 │   │   ├── 001_schema.sql         # Tablas e índices
 │   │   ├── 002_functions.sql      # Funciones de búsqueda
 │   │   └── 003_api_views.sql      # Vistas API PostgREST
-│   └── scripts/
-│       └── importar_leyes.py      # Migración a PostgreSQL
-└── frontend/
-    ├── src/
-    │   ├── components/
-    │   ├── hooks/
-    │   ├── pages/
-    │   └── lib/
-    ├── package.json
-    └── vite.config.ts
+│   ├── scripts/
+│   │   ├── importar_leyes.py      # Importa leyes a PostgreSQL
+│   │   └── importar_rmf.py        # Importa RMF a PostgreSQL
+│   └── postgrest.conf
+├── frontend/
+│   ├── src/
+│   │   ├── components/            # ArticlePanel, ResultList, etc.
+│   │   ├── hooks/                 # useArticle, useSearch, etc.
+│   │   ├── pages/                 # Home, Article, LeyIndex, DivisionView
+│   │   └── lib/                   # API client
+│   └── package.json
+├── DOCUMENTACION_TECNICA.md       # Este documento
+└── start.sh                       # Script de inicio
 ```
 
 ---
@@ -849,7 +846,36 @@ sudo tail -f /var/log/caddy/leyesmx.log
 
 ---
 
-## 10. Proximos Pasos
+## 10. Estado de Funcionalidades
+
+### Completado
+
+1. **Referencias Cruzadas** ✅
+   - Script `scripts/extraer_referencias.py` extrae referencias del contenido
+   - Soporta campo `referencias` de RMF (ej: `CFF 10, LISR 27`)
+   - Parsea patrones como `artículo 14-B de este Código`
+   - Ignora referencias a la Constitución
+   - 3,180 referencias cruzadas en la base de datos
+   - Frontend muestra "Este artículo cita" y "Citado por"
+
+2. **Soporte RMF** ✅
+   - Scripts `descargar_rmf.py` y `parsear_rmf.py`
+   - Importador `backend/scripts/importar_rmf.py`
+   - 446 reglas de RMF 2025 importadas
+   - Campo `tipo='regla'` para distinguir de artículos
+   - Frontend muestra "Regla X.X.X" en lugar de "Artículo"
+
+3. **Frontend Completo** ✅
+   - React + TypeScript + TanStack Query
+   - Búsqueda full-text con snippets y highlighting
+   - Vista de artículo con navegación anterior/siguiente
+   - Índice de ley con estructura jerárquica
+   - Vista de división (capítulo completo)
+   - Panel dividido en desktop (resultados + artículo)
+   - Fuente Atkinson Hyperlegible para lectura
+   - Tema claro/oscuro
+
+### Pendiente
 
 1. **Búsqueda Semántica con IA**
    - Instalar extensión `vector` como superuser
@@ -861,15 +887,9 @@ sudo tail -f /var/log/caddy/leyesmx.log
    - Poblar tabla `fracciones`
    - Crear índices de búsqueda en fracciones
 
-3. **Referencias Cruzadas**
-   - Detectar menciones a otros artículos
-   - Poblar tabla `referencias_cruzadas`
-   - Crear grafo de relaciones
-
-4. **Frontend**
-   - Implementar componentes React
-   - Conectar con API PostgREST
-   - Agregar PWA y modo offline
+3. **PWA y Modo Offline**
+   - Service Worker para cache
+   - Sincronización de búsquedas recientes
 
 ---
 

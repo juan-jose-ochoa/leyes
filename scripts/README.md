@@ -1,6 +1,6 @@
 # Scripts de Leyes Mexicanas
 
-Scripts para descargar y convertir leyes fiscales y laborales de México.
+Scripts para descargar, convertir y procesar leyes fiscales y laborales de México.
 
 ## Requisitos
 
@@ -9,7 +9,7 @@ Scripts para descargar y convertir leyes fiscales y laborales de México.
 source .venv/bin/activate
 
 # Dependencias (ya instaladas)
-pip install requests beautifulsoup4 tenacity unidecode tqdm python-docx pdf2docx playwright
+pip install requests beautifulsoup4 tenacity unidecode tqdm python-docx pdf2docx playwright psycopg2-binary
 ```
 
 ## Scripts disponibles
@@ -92,30 +92,135 @@ Contiene:
 
 ---
 
+### 4. `descargar_rmf.py` - Descarga Resolución Miscelánea Fiscal
+
+**Cuándo usarlo:**
+- Para obtener la RMF del año actual
+- Cuando se publique una nueva modificación a la RMF
+
+**Qué hace:**
+- Descarga la RMF compilada desde el portal del SAT
+- Guarda en `doc/rmf/`
+
+**Cómo usarlo:**
+```bash
+python scripts/descargar_rmf.py
+```
+
+---
+
+### 5. `parsear_rmf.py` - Parser especializado para RMF
+
+**Cuándo usarlo:**
+- Después de descargar la RMF
+- Si se modifica el parser para mejorar la extracción
+
+**Qué hace:**
+- Parsea la estructura de la RMF (Títulos, Capítulos, Secciones, Reglas)
+- Extrae el campo "Referencias" al final de cada regla (ej: `CFF 10, LISR 27`)
+- Genera JSON estructurado
+
+**Patrones de RMF:**
+
+| Elemento | Patrón | Ejemplo |
+|----------|--------|---------|
+| Título | `^\d+\.\s+(.+)$` | `2. Código Fiscal de la Federación` |
+| Capítulo | `^Capítulo\s+(\d+\.\d+)` | `Capítulo 2.1. Disposiciones generales` |
+| Regla | `^(\d+\.\d+\.\d+)\.\s*` | `2.1.1. Cobro de créditos fiscales...` |
+
+**Cómo usarlo:**
+```bash
+python scripts/parsear_rmf.py
+```
+
+---
+
+### 6. `extraer_referencias.py` - Extracción de referencias cruzadas
+
+**Cuándo usarlo:**
+- Después de importar todas las leyes a PostgreSQL
+- Si se agregan nuevas leyes o se modifica el parser
+
+**Qué hace:**
+- Extrae referencias cruzadas entre artículos
+- Fuentes de extracción:
+  - Campo `referencias` de RMF: `CFF 10, LISR 27, RCFF 13`
+  - Contenido de artículos: `artículo 14-B de este Código`
+- Ignora referencias a la Constitución (`artículo 21 Constitucional`)
+- Inserta en tabla `referencias_cruzadas`
+
+**Cómo usarlo:**
+```bash
+python scripts/extraer_referencias.py
+```
+
+**Salida esperada:**
+```
+Extrayendo referencias cruzadas...
+Construyendo índice de artículos...
+  3536 artículos indexados
+Extrayendo referencias del contenido...
+  5092 referencias encontradas
+Resolviendo e insertando...
+Total referencias en BD: 3180
+
+Referencias por ley origen:
+  RMF2025: 878
+  LISR: 582
+  CFF: 504
+  LFT: 397
+  ...
+```
+
+---
+
 ## Flujo de trabajo típico
 
-### Primera vez:
+### Primera vez (setup completo):
 ```bash
 # 1. Descargar todas las leyes
 python scripts/descargar_leyes_mx.py
 
 # 2. Convertir a todos los formatos
 python scripts/convertir_ley.py
+
+# 3. Descargar y procesar RMF
+python scripts/descargar_rmf.py
+
+# 4. Importar a PostgreSQL
+python backend/scripts/importar_leyes.py
+python backend/scripts/importar_rmf.py
+
+# 5. Extraer referencias cruzadas
+python scripts/extraer_referencias.py
 ```
 
 ### Actualización periódica:
 ```bash
-# 1. Verificar si hay cambios
+# 1. Verificar si hay cambios en leyes
 python scripts/descargar_leyes_mx.py
 # El script indicará qué archivos cambiaron
 
 # 2. Si hubo cambios, reconvertir
 python scripts/convertir_ley.py
+
+# 3. Re-importar y regenerar referencias
+python backend/scripts/importar_leyes.py
+python scripts/extraer_referencias.py
+```
+
+### Actualización de RMF (cuando SAT publique nueva versión):
+```bash
+python scripts/descargar_rmf.py
+python backend/scripts/importar_rmf.py
+python scripts/extraer_referencias.py
 ```
 
 ---
 
-## Leyes incluidas
+## Documentos incluidos
+
+### Leyes
 
 | Código | Ley |
 |--------|-----|
@@ -126,7 +231,7 @@ python scripts/convertir_ley.py
 | LIEPS | Ley del Impuesto Especial sobre Producción y Servicios |
 | LSS | Ley del Seguro Social |
 
-## Reglamentos incluidos
+### Reglamentos
 
 | Código | Reglamento |
 |--------|------------|
@@ -137,6 +242,12 @@ python scripts/convertir_ley.py
 | RLFT | Reglamento de la LFT |
 | RLSS | Reglamento del Seguro Social |
 | RACERF | Reglamento de Afiliación del IMSS |
+
+### Resoluciones
+
+| Código | Resolución |
+|--------|------------|
+| RMF2025 | Resolución Miscelánea Fiscal 2025 |
 
 ---
 

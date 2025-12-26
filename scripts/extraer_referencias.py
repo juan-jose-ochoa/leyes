@@ -141,14 +141,20 @@ def parse_contenido_referencias(contenido, origen_ley):
     - "artículos 14, 15 y 16"
     - "artículo 14 de este Código"
     - "artículo 14 de la Ley del ISR"
+
+    Excluye:
+    - "artículo 21 Constitucional" (referencias a la Constitución)
     """
     refs = []
 
     # Patrón para "artículo(s) X, Y y Z [de/del ...]"
+    # Captura también lo que viene después para detectar "Constitucional"
     pattern = r'''
         (?:art[íi]culos?|arts?\.?)\s+
         ([\d\-A-Za-zº°]+(?:\s*(?:,|y)\s*[\d\-A-Za-zº°]+)*)
-        (?:\s+(?:
+        (\s+(?:
+            Constitucional|
+            de\s+la\s+Constituci[óo]n|
             de\s+(?:este|la\s+presente)\s+(?:C[óo]digo|Ley)|
             del?\s+(?:mismo|misma)|
             de\s+la\s+(.+?)(?=\s*[,;.]|\s+y\s+|\s+o\s+|$)|
@@ -158,7 +164,12 @@ def parse_contenido_referencias(contenido, origen_ley):
 
     for match in re.finditer(pattern, contenido, re.IGNORECASE | re.VERBOSE):
         numeros_str = match.group(1)
-        ley_ref = match.group(2) or match.group(3)
+        contexto = match.group(2) or ''
+        ley_ref = match.group(3) or match.group(4)
+
+        # Ignorar referencias a la Constitución
+        if 'CONSTITUCIONAL' in contexto.upper() or 'CONSTITUCIÓN' in contexto.upper():
+            continue
 
         # Determinar ley destino
         if ley_ref:

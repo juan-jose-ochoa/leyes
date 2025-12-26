@@ -57,7 +57,15 @@ PGPASSWORD=leyesmx psql -h localhost -U leyesmx -d leyesmx -f sql/003_api_views.
 ```bash
 # Desde la raíz del proyecto
 source .venv/bin/activate
+
+# Importar leyes y reglamentos
 python backend/scripts/importar_leyes.py
+
+# Importar RMF (Resolución Miscelánea Fiscal)
+python backend/scripts/importar_rmf.py
+
+# Extraer referencias cruzadas entre artículos
+python scripts/extraer_referencias.py
 ```
 
 ### 4. Iniciar PostgREST
@@ -101,10 +109,16 @@ curl -X POST http://localhost:3010/rpc/articulo \
 | Endpoint | Body | Descripción |
 |----------|------|-------------|
 | `/rpc/buscar` | `{"q": "...", "leyes": "CFF,LISR", "limite": 20, "pagina": 1}` | Búsqueda full-text |
-| `/rpc/articulo` | `{"art_id": 123}` | Artículo con referencias |
-| `/rpc/estructura` | `{"ley_codigo": "CFF"}` | Estructura jerárquica |
+| `/rpc/articulo` | `{"art_id": 123}` | Artículo con referencias cruzadas |
+| `/rpc/articulo_por_ley` | `{"p_ley": "CFF", "p_numero": "14"}` | Artículo por código de ley |
+| `/rpc/estructura_ley` | `{"ley_codigo": "CFF"}` | Estructura jerárquica |
+| `/rpc/division_info` | `{"div_id": 5}` | Info de división (capítulo) |
+| `/rpc/articulos_division` | `{"div_id": 5}` | Artículos de una división |
+| `/rpc/navegar` | `{"art_id": 123}` | Navegación anterior/siguiente |
 | `/rpc/sugerencias` | `{"prefijo": "fac"}` | Autocompletado |
 | `/rpc/stats` | `{}` | Stats por ley |
+
+**Nota:** El campo `referencias_salientes` y `referencias_entrantes` en `/rpc/articulo` contiene las referencias cruzadas extraídas automáticamente.
 
 ## Troubleshooting
 
@@ -147,7 +161,17 @@ backend/
 │   ├── 002_functions.sql   # Funciones de búsqueda (public.*)
 │   └── 003_api_views.sql   # Vistas API y permisos (api.*)
 ├── scripts/
-│   └── importar_leyes.py   # Importación desde DOCX a PostgreSQL
+│   ├── importar_leyes.py   # Importación de leyes desde DOCX
+│   └── importar_rmf.py     # Importación de RMF
 ├── postgrest.conf          # Configuración PostgREST
 └── README.md
 ```
+
+## Datos
+
+| Tabla | Registros | Descripción |
+|-------|-----------|-------------|
+| leyes | 13 | Leyes, reglamentos y RMF |
+| divisiones | ~350 | Títulos, capítulos, secciones |
+| articulos | 3,536 | Artículos y reglas RMF |
+| referencias_cruzadas | 3,180 | Referencias entre artículos |
