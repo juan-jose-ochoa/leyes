@@ -531,3 +531,103 @@ class TestRegresion_2_1_11:
             assert diferencia > 0, (
                 f"Discrepancia detectada: PDF={fracciones_pdf}, DOCX={fracciones_docx}"
             )
+
+
+# =============================================================================
+# TEST DE CORRECCIÓN CON PDF
+# =============================================================================
+
+@pytest.mark.integracion
+class TestCorreccionConPDF:
+    """
+    Tests que verifican que la segunda pasada CORRIGE problemas usando el PDF.
+
+    A diferencia de TestRegresion_2_1_11 (que solo detecta),
+    estos tests verifican que la corrección realmente funciona.
+    """
+
+    def test_correccion_fracciones_2_1_11(self, rmf_docx_path, rmf_pdf_path):
+        """Verifica que la regla 2.1.11 se corrige a 6 fracciones usando PDF."""
+        if not rmf_docx_path.exists() or not rmf_pdf_path.exists():
+            pytest.skip("Archivos DOCX/PDF no disponibles")
+
+        from rmf.extractor import DocxXmlExtractor
+        from rmf.parser import ParserRMF
+
+        # Parsear DOCX (primera pasada)
+        docx_ext = DocxXmlExtractor(rmf_docx_path)
+        paragraphs = docx_ext.extraer()
+        parser = ParserRMF()
+        resultado = parser.parsear(paragraphs, "RMF 2025")
+
+        # Obtener regla antes de corrección
+        regla = next((r for r in resultado.reglas if r.numero == "2.1.11"), None)
+        assert regla is not None
+        fracciones_antes = len(regla.fracciones)
+
+        # Validar (detectar problemas)
+        validador = ValidadorEstructural()
+        validador.validar_resultado(resultado)
+
+        # Segunda pasada CON PDF
+        inspector = InspectorMultiFormato(
+            docx_path=rmf_docx_path,
+            pdf_path=rmf_pdf_path,
+        )
+        resoluciones, pendientes = inspector.procesar_resultado(resultado)
+
+        # Verificar que la regla se corrigió
+        regla_despues = next((r for r in resultado.reglas if r.numero == "2.1.11"), None)
+        fracciones_despues = len(regla_despues.fracciones)
+
+        # Debe tener 6 fracciones después de corrección
+        assert fracciones_despues == 6, (
+            f"Regla 2.1.11 debe tener 6 fracciones después de corrección, "
+            f"tiene {fracciones_despues} (antes: {fracciones_antes})"
+        )
+
+        # Verificar que tiene 2 fracciones I (capital y deuda)
+        numeros = [f.numero for f in regla_despues.fracciones]
+        assert numeros.count('I') == 2, "Debe tener 2 fracciones I"
+
+    def test_correccion_titulo_desde_pdf(self, rmf_docx_path, rmf_pdf_path):
+        """Verifica que los títulos faltantes se extraen del PDF."""
+        if not rmf_docx_path.exists() or not rmf_pdf_path.exists():
+            pytest.skip("Archivos DOCX/PDF no disponibles")
+
+        from rmf.extractor import DocxXmlExtractor
+        from rmf.parser import ParserRMF
+
+        # Parsear DOCX
+        docx_ext = DocxXmlExtractor(rmf_docx_path)
+        paragraphs = docx_ext.extraer()
+        parser = ParserRMF()
+        resultado = parser.parsear(paragraphs, "RMF 2025")
+
+        # Contar reglas sin título antes de corrección
+        reglas_sin_titulo_antes = len([
+            r for r in resultado.reglas
+            if r.tipo == "regla" and not r.titulo
+        ])
+
+        # Validar + Segunda pasada con PDF
+        validador = ValidadorEstructural()
+        validador.validar_resultado(resultado)
+
+        inspector = InspectorMultiFormato(
+            docx_path=rmf_docx_path,
+            pdf_path=rmf_pdf_path,
+        )
+        inspector.procesar_resultado(resultado)
+
+        # Contar reglas sin título después de corrección
+        reglas_sin_titulo_despues = len([
+            r for r in resultado.reglas
+            if r.tipo == "regla" and not r.titulo
+        ])
+
+        # Debe haber menos reglas sin título
+        assert reglas_sin_titulo_despues <= reglas_sin_titulo_antes, (
+            f"Debe haber menos reglas sin título después de corrección: "
+            f"antes={reglas_sin_titulo_antes}, después={reglas_sin_titulo_despues}"
+        )

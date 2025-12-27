@@ -7,8 +7,7 @@ interface ArticleContentProps {
 }
 
 /**
- * Displays article content with styled fracciones if available.
- * Falls back to plain text paragraphs if no fracciones exist.
+ * Displays article content: intro paragraphs followed by fracciones if available.
  */
 export default function ArticleContent({ articuloId, contenido }: ArticleContentProps) {
   const { data: fracciones, isLoading } = useFraccionesArticulo(articuloId)
@@ -24,19 +23,21 @@ export default function ArticleContent({ articuloId, contenido }: ArticleContent
     )
   }
 
-  // If fracciones exist, use styled view
-  if (fracciones && fracciones.length > 0) {
-    return <FraccionesView fracciones={fracciones} />
-  }
-
-  // Fallback to plain paragraphs
   return (
     <>
-      {contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
-        <p key={i} className="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
-          {paragraph}
-        </p>
-      ))}
+      {/* Contenido introductorio (siempre mostrar si existe) */}
+      {contenido && contenido.trim() && (
+        contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
+          <p key={`intro-${i}`} className="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
+            {paragraph}
+          </p>
+        ))
+      )}
+
+      {/* Fracciones (si existen) */}
+      {fracciones && fracciones.length > 0 && (
+        <FraccionesView fracciones={fracciones} />
+      )}
     </>
   )
 }

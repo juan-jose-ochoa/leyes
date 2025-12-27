@@ -66,6 +66,20 @@ def resultado_a_dict(resultado: ResultadoParseo) -> dict:
             "seccion_padre": regla.seccion_padre,
             "tipo": regla.tipo,
         }
+        # Incluir fracciones si hay
+        if regla.fracciones:
+            regla_dict["fracciones"] = [
+                {
+                    "numero": f.numero,
+                    "contenido": f.contenido,
+                    "orden": f.orden,
+                    "incisos": [
+                        {"letra": inc.letra, "contenido": inc.contenido, "orden": inc.orden}
+                        for inc in f.incisos
+                    ] if f.incisos else [],
+                }
+                for f in regla.fracciones
+            ]
         # Incluir calidad solo si hay issues (OK implícito si no hay)
         if regla.calidad:
             calidad_dict = regla.calidad.to_dict()
@@ -136,10 +150,21 @@ def procesar_rmf(docx_path: Path, output_path: Path) -> dict:
                                 if r.tipo == "regla" and r.problemas])
     print(f"   {reglas_con_problemas} reglas con problemas detectados")
 
-    # Segunda pasada: intentar corregir problemas
+    # Segunda pasada: intentar corregir problemas usando PDF como fuente de verdad
     if reglas_con_problemas > 0:
         print(f"   Ejecutando segunda pasada...")
-        inspector = InspectorMultiFormato(docx_path=docx_path)
+
+        # Buscar PDF correspondiente
+        pdf_path = RMF_DIR / (docx_path.stem.replace('_converted', '').replace('_full', '') + '.pdf')
+        if not pdf_path.exists():
+            # Buscar cualquier PDF en el directorio
+            pdfs = list(RMF_DIR.glob("*.pdf"))
+            pdf_path = pdfs[0] if pdfs else None
+
+        if pdf_path:
+            print(f"   Usando PDF: {pdf_path.name}")
+
+        inspector = InspectorMultiFormato(docx_path=docx_path, pdf_path=pdf_path)
         resoluciones, pendientes = inspector.procesar_resultado(resultado)
         print(f"   {len(resoluciones) - len(pendientes)} correcciones exitosas, {len(pendientes)} pendientes")
 

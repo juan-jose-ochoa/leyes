@@ -29,6 +29,7 @@ from .models import (
     EstatusCalidad,
     IssueCalidad,
     RegistroCalidad,
+    Fraccion,
 )
 from .extractor import Extractor, DocxXmlExtractor, PdfExtractor, TxtExtractor
 
@@ -395,13 +396,48 @@ class InspectorMultiFormato:
         problema: Problema
     ) -> Resolucion:
         """
-        Intenta resolver fracciones incompletas.
+        Intenta resolver fracciones incompletas usando PDF como fuente de verdad.
 
         Estrategia:
-        1. Buscar el contenido en otras fuentes
-        2. Identificar patrones de fracciones (I., II., III.)
-        3. Extraer fracciones faltantes
+        1. Obtener datos estructurados del PDF (buscar_regla_con_contexto)
+        2. Si el PDF tiene más fracciones, reconstruir la lista
+        3. Reemplazar las fracciones de la regla con las del PDF
         """
+        # Intentar usar PDF primero (fuente más confiable)
+        pdf_extractor = self.fuentes.get(FuenteDatos.PDF)
+
+        if pdf_extractor:
+            try:
+                pdf_data = pdf_extractor.buscar_regla_con_contexto(regla.numero)
+
+                if pdf_data and pdf_data.get('fracciones'):
+                    fracciones_pdf = pdf_data['fracciones']
+
+                    # Solo corregir si PDF tiene más fracciones
+                    if len(fracciones_pdf) > len(regla.fracciones):
+                        # Reconstruir fracciones desde PDF
+                        fracciones_nuevas = []
+                        for i, f_pdf in enumerate(fracciones_pdf):
+                            fracciones_nuevas.append(Fraccion(
+                                numero=f_pdf['numero'],
+                                contenido=f_pdf['contenido'],
+                                orden=i + 1,
+                            ))
+
+                        # Aplicar corrección
+                        regla.fracciones = fracciones_nuevas
+
+                        return Resolucion(
+                            problema_original=problema,
+                            exito=True,
+                            metodo=f"Fracciones reconstruidas desde PDF ({len(fracciones_nuevas)} fracciones)",
+                            fuente_usada=FuenteDatos.PDF,
+                        )
+            except Exception as e:
+                # Si falla PDF, continuar con fallback
+                pass
+
+        # Fallback: buscar patrones en contenido de otras fuentes
         contenidos = self._buscar_en_fuentes(regla.numero)
 
         for fuente, contenido in contenidos.items():
@@ -413,7 +449,6 @@ class InspectorMultiFormato:
             matches = patron.findall(contenido)
 
             if len(matches) > len(regla.fracciones):
-                # Encontramos más fracciones
                 return Resolucion(
                     problema_original=problema,
                     exito=True,
@@ -434,18 +469,37 @@ class InspectorMultiFormato:
         problema: Problema
     ) -> Resolucion:
         """
-        Intenta resolver título ausente.
+        Intenta resolver título ausente usando PDF como fuente de verdad.
 
         Estrategia:
-        1. Buscar el contexto de la regla en otras fuentes
-        2. Identificar texto corto antes del número
+        1. Obtener datos estructurados del PDF (buscar_regla_con_contexto)
+        2. Extraer título del PDF (párrafo anterior al número)
+        3. Asignar título a la regla
         """
-        # Por ahora, estrategia simplificada
-        # En implementación completa, buscaríamos el párrafo anterior
+        # Intentar usar PDF primero (fuente más confiable)
+        pdf_extractor = self.fuentes.get(FuenteDatos.PDF)
+
+        if pdf_extractor:
+            try:
+                pdf_data = pdf_extractor.buscar_regla_con_contexto(regla.numero)
+
+                if pdf_data and pdf_data.get('titulo'):
+                    # Aplicar corrección
+                    regla.titulo = pdf_data['titulo']
+
+                    return Resolucion(
+                        problema_original=problema,
+                        exito=True,
+                        metodo="Título extraído de PDF",
+                        fuente_usada=FuenteDatos.PDF,
+                    )
+            except Exception:
+                pass
+
         return Resolucion(
             problema_original=problema,
             exito=False,
-            metodo="Resolución de título requiere análisis de contexto",
+            metodo="Título no encontrado en otras fuentes",
         )
 
     def _resolver_referencia(

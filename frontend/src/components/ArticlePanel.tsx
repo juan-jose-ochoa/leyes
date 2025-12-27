@@ -93,6 +93,11 @@ export default function ArticlePanel({ ley, numero, onClose, onNavigate }: Artic
             <h2 className="text-xl font-bold text-gray-900 dark:text-white">
               {etiquetaTipo} {articulo.numero_raw}
             </h2>
+            {articulo.titulo && (
+              <p className="text-base font-semibold text-gray-800 dark:text-gray-200 mt-1 italic">
+                {articulo.titulo}
+              </p>
+            )}
             {divisiones && divisiones.length > 0 && (
               <Link
                 to={`/${ley}/division/${divisiones[divisiones.length - 1].id}`}

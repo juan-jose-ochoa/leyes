@@ -150,6 +150,13 @@ export default function Article() {
           {etiquetaTipo} {articulo.numero_raw}
         </h1>
 
+        {/* Título de la regla (si existe) */}
+        {articulo.titulo && (
+          <p className="mt-2 text-xl font-semibold text-gray-800 dark:text-gray-200 italic">
+            {articulo.titulo}
+          </p>
+        )}
+
         <p className="mt-2 text-gray-500 dark:text-gray-400">
           {articulo.ley_nombre}
         </p>
@@ -183,14 +190,18 @@ export default function Article() {
       {/* Contenido principal */}
       <div className="card">
         <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
-          {fracciones && fracciones.length > 0 ? (
-            <FraccionesView fracciones={fracciones} />
-          ) : (
+          {/* Contenido introductorio (siempre mostrar si existe) */}
+          {articulo.contenido && articulo.contenido.trim() && (
             articulo.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
-              <p key={i} className="mb-4 leading-relaxed">
+              <p key={`intro-${i}`} className="mb-4 leading-relaxed">
                 {paragraph}
               </p>
             ))
+          )}
+
+          {/* Fracciones (si existen) */}
+          {fracciones && fracciones.length > 0 && (
+            <FraccionesView fracciones={fracciones} />
           )}
         </div>
 

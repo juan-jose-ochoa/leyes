@@ -101,6 +101,7 @@ SELECT
     a.numero_base,
     a.sufijo,
     COALESCE(d.path_texto, '') AS ubicacion,
+    a.titulo,                               -- título de regla RMF
     a.contenido,
     a.es_transitorio,
     a.decreto_dof,
@@ -347,6 +348,7 @@ CREATE OR REPLACE FUNCTION api.articulos_division(div_id INT)
 RETURNS TABLE(
     id INT,
     numero_raw VARCHAR,
+    titulo TEXT,
     contenido TEXT,
     es_transitorio BOOLEAN,
     reformas TEXT,
@@ -359,6 +361,7 @@ BEGIN
     SELECT
         a.id,
         a.numero_raw,
+        a.titulo,
         a.contenido,
         a.es_transitorio,
         a.reformas,

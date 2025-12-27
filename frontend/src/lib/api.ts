@@ -24,6 +24,7 @@ export interface Articulo {
   numero_base: number
   sufijo: string | null
   ubicacion: string
+  titulo?: string | null  // Título de regla RMF
   contenido: string
   es_transitorio: boolean
   reformas: string | null
@@ -228,6 +229,7 @@ export interface RegistroCalidad {
 export interface ArticuloDivision {
   id: number
   numero_raw: string
+  titulo: string | null
   contenido: string
   es_transitorio: boolean
   reformas: string | null

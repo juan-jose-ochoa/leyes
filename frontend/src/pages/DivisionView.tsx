@@ -287,6 +287,11 @@ export default function DivisionView() {
                   </h2>
                   <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </Link>
+                {art.titulo && (
+                  <p className="text-lg font-semibold text-gray-800 dark:text-gray-200 mt-1 italic">
+                    {art.titulo}
+                  </p>
+                )}
                 {art.es_transitorio && (
                   <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200">
                     Transitorio

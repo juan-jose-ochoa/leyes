@@ -194,9 +194,9 @@ def insertar_reglas(cursor, ley_id, reglas, division_map):
         cursor.execute("""
             INSERT INTO articulos (
                 ley_id, division_id, numero_raw, numero_base, sufijo, ordinal,
-                contenido, es_transitorio, tipo, referencias, orden_global, calidad
+                titulo, contenido, es_transitorio, tipo, referencias, orden_global, calidad
             )
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             RETURNING id
         """, (
             ley_id,
@@ -205,6 +205,7 @@ def insertar_reglas(cursor, ley_id, reglas, division_map):
             None,  # numero_base no aplica para reglas RMF
             None,  # sufijo no aplica
             None,  # ordinal no aplica
+            regla.get("titulo"),  # Título de la regla
             regla["contenido"],
             False,  # es_transitorio
             tipo,  # 'regla' o 'inexistente'
@@ -324,10 +325,20 @@ def procesar_rmf(cursor, docx_path):
                                 if r.tipo == "regla" and r.problemas])
     print(f"   {reglas_con_problemas} reglas con problemas detectados")
 
-    # Segunda pasada: intentar corregir problemas
+    # Segunda pasada: intentar corregir problemas usando PDF como fuente de verdad
     if reglas_con_problemas > 0:
         print(f"   Ejecutando segunda pasada...")
-        inspector = InspectorMultiFormato(docx_path=docx_path)
+
+        # Buscar PDF correspondiente para corrección
+        pdf_path = RMF_DIR / (docx_path.stem.replace('_converted', '').replace('_full', '') + '.pdf')
+        if not pdf_path.exists():
+            pdfs = list(RMF_DIR.glob("*.pdf"))
+            pdf_path = pdfs[0] if pdfs else None
+
+        if pdf_path:
+            print(f"   Usando PDF: {pdf_path.name}")
+
+        inspector = InspectorMultiFormato(docx_path=docx_path, pdf_path=pdf_path)
         resoluciones, pendientes = inspector.procesar_resultado(resultado)
         print(f"   {len(resoluciones) - len(pendientes)} correcciones, {len(pendientes)} pendientes")
 
@@ -352,6 +363,7 @@ def procesar_rmf(cursor, docx_path):
     reglas_dict = [
         {
             "numero": regla.numero,
+            "titulo": regla.titulo,  # Título de la regla
             "contenido": regla.contenido,
             "referencias": regla.referencias,
             "division_path": regla.division_path,
