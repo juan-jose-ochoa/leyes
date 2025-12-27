@@ -5,10 +5,16 @@ import { useEstructuraLey, useLeyes, useVerificacionLey, useVerificacionIndice, 
 import type { Division, VerificacionDivision, VerificacionStatus, VerificacionIndice, ComparacionRegla, ComparacionDivision } from '@/lib/api'
 import clsx from 'clsx'
 
+// División extendida que puede ser un placeholder (faltante)
+interface DivisionConEstado extends Omit<Division, 'id'> {
+  id: number | string  // string para placeholders (ej: "placeholder-titulo-6")
+  esFaltante?: boolean
+}
+
 // Agrupar divisiones por título
 interface GrupoTitulo {
-  titulo: Division | null
-  hijos: Division[]
+  titulo: DivisionConEstado | null
+  hijos: DivisionConEstado[]
 }
 
 // Función para ordenar numéricamente por número de división (1, 2, 3, ... 10, 11, 12)
@@ -29,27 +35,48 @@ function compararNumeros(a: string | null, b: string | null): number {
   return 0
 }
 
-function agruparPorTitulo(divisiones: Division[]): GrupoTitulo[] {
+function agruparPorTitulo(divisiones: Division[], divisionesFaltantes?: ComparacionDivision[]): GrupoTitulo[] {
   const grupos: GrupoTitulo[] = []
   let grupoActual: GrupoTitulo | null = null
 
-  // Filtrar, deduplicar y ordenar numéricamente
-  const divsFiltradas = divisiones
+  // Convertir divisiones existentes a DivisionConEstado
+  const divsExistentes: DivisionConEstado[] = divisiones
     .filter((div) => div.total_articulos > 0 || div.primer_articulo)
     .reduce((acc, div) => {
       const key = `${div.tipo}-${div.numero}`
       const existing = acc.find(d => `${d.tipo}-${d.numero}` === key)
       if (!existing) {
-        acc.push(div)
+        acc.push({ ...div, esFaltante: false })
       } else if (div.total_articulos > existing.total_articulos) {
         const idx = acc.indexOf(existing)
-        acc[idx] = div
+        acc[idx] = { ...div, esFaltante: false }
       }
       return acc
-    }, [] as Division[])
+    }, [] as DivisionConEstado[])
+
+  // Crear set de divisiones existentes para evitar duplicados
+  const existentesSet = new Set(divsExistentes.map(d => `${d.tipo}-${d.numero}`))
+
+  // Convertir divisiones faltantes a DivisionConEstado (placeholders)
+  const divsFaltantes: DivisionConEstado[] = (divisionesFaltantes || [])
+    .filter(d => d.estado === 'faltante' && !existentesSet.has(`${d.tipo}-${d.numero}`))
+    .map(d => ({
+      id: `placeholder-${d.tipo}-${d.numero}`,
+      tipo: d.tipo,
+      numero: d.numero,
+      nombre: d.nombre_oficial,
+      path_texto: null,
+      nivel: d.tipo === 'titulo' ? 1 : d.tipo === 'capitulo' ? 2 : d.tipo === 'seccion' ? 3 : 4,
+      total_articulos: 0,
+      primer_articulo: null,
+      esFaltante: true,
+    }))
+
+  // Combinar y ordenar todas las divisiones
+  const todasDivisiones = [...divsExistentes, ...divsFaltantes]
     .sort((a, b) => compararNumeros(a.numero, b.numero))
 
-  for (const div of divsFiltradas) {
+  for (const div of todasDivisiones) {
     if (div.tipo === 'titulo') {
       // Nuevo grupo de título
       if (grupoActual) {
@@ -137,15 +164,19 @@ export default function LeyIndex() {
     }
   }, [verificacion])
 
-  // Agrupar por títulos (memoizado)
+  // Agrupar por títulos (memoizado), incluyendo placeholders para faltantes
   const grupos = useMemo(() => {
     if (!estructura) return []
-    return agruparPorTitulo(estructura)
-  }, [estructura])
+    return agruparPorTitulo(estructura, divisionesFaltantes || undefined)
+  }, [estructura, divisionesFaltantes])
 
   // Funciones de control de expansión
   const expandAll = useCallback(() => {
-    const allIds = new Set(grupos.map(g => g.titulo?.id).filter((id): id is number => id !== null && id !== undefined))
+    const allIds = new Set(
+      grupos
+        .map(g => g.titulo?.id)
+        .filter((id): id is number => typeof id === 'number')
+    )
     setExpandedTitles(allIds)
   }, [grupos])
 
@@ -410,8 +441,8 @@ export default function LeyIndex() {
             tipoContenido={tipoContenido}
             showVerificacion={showVerificacion}
             verificacionMap={verificacionMap}
-            expandido={grupo.titulo ? expandedTitles.has(grupo.titulo.id) : true}
-            onToggle={() => grupo.titulo && toggleTitle(grupo.titulo.id)}
+            expandido={grupo.titulo && typeof grupo.titulo.id === 'number' ? expandedTitles.has(grupo.titulo.id) : false}
+            onToggle={() => grupo.titulo && typeof grupo.titulo.id === 'number' && toggleTitle(grupo.titulo.id)}
           />
         ))}
       </div>
@@ -443,9 +474,36 @@ function GrupoTituloItem({ grupo, ley, tipoContenido, showVerificacion, verifica
             ley={ley}
             tipoContenido={tipoContenido}
             showVerificacion={showVerificacion}
-            verificacion={verificacionMap.get(div.id)}
+            verificacion={typeof div.id === 'number' ? verificacionMap.get(div.id) : undefined}
           />
         ))}
+      </div>
+    )
+  }
+
+  // Título placeholder (faltante)
+  if (titulo.esFaltante) {
+    return (
+      <div className="rounded-lg border border-dashed border-gray-300 dark:border-gray-600 overflow-hidden opacity-60">
+        <div className="w-full flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-800/50">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gray-400 dark:bg-gray-600 text-white">
+            <BookOpen className="h-5 w-5" />
+          </div>
+
+          <div className="flex-1 text-left">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">
+                Título {titulo.numero}
+              </span>
+              <span className="text-xs px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
+                No importado
+              </span>
+            </div>
+            <h3 className="font-semibold text-gray-500 dark:text-gray-400">
+              {titulo.nombre || '(Sin nombre)'}
+            </h3>
+          </div>
+        </div>
       </div>
     )
   }
@@ -500,7 +558,7 @@ function GrupoTituloItem({ grupo, ley, tipoContenido, showVerificacion, verifica
               tipoContenido={tipoContenido}
               isNested
               showVerificacion={showVerificacion}
-              verificacion={verificacionMap.get(div.id)}
+              verificacion={typeof div.id === 'number' ? verificacionMap.get(div.id) : undefined}
             />
           ))}
         </div>
@@ -510,7 +568,7 @@ function GrupoTituloItem({ grupo, ley, tipoContenido, showVerificacion, verifica
 }
 
 interface DivisionItemProps {
-  division: Division
+  division: DivisionConEstado
   ley: string
   tipoContenido: string
   isNested?: boolean
@@ -677,6 +735,38 @@ function StatusIcon({ status }: { status: VerificacionStatus }) {
 
 function DivisionItem({ division, ley, tipoContenido, isNested, showVerificacion, verificacion }: DivisionItemProps) {
   const tipoLabel = division.tipo.charAt(0).toUpperCase() + division.tipo.slice(1)
+
+  // Placeholder para división faltante
+  if (division.esFaltante) {
+    return (
+      <div
+        className={clsx(
+          'flex items-center gap-4 p-4 opacity-50',
+          !isNested && 'rounded-lg border border-dashed border-gray-300 dark:border-gray-600'
+        )}
+      >
+        {/* Icono */}
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gray-200 text-gray-400 dark:bg-gray-700 dark:text-gray-500">
+          <FileText className="h-5 w-5" />
+        </div>
+
+        {/* Contenido */}
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-medium text-gray-400 dark:text-gray-500 uppercase">
+              {tipoLabel} {division.numero}
+            </span>
+            <span className="text-xs px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
+              No importado
+            </span>
+          </div>
+          <h3 className="font-medium text-gray-400 dark:text-gray-500 truncate">
+            {division.nombre || `${tipoLabel} ${division.numero}`}
+          </h3>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <Link
