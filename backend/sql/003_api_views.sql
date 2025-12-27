@@ -265,7 +265,8 @@ RETURNS TABLE(
     nombre TEXT,
     path_texto TEXT,
     nivel INT,
-    total_articulos BIGINT
+    total_articulos BIGINT,
+    primer_articulo VARCHAR
 ) AS $$
 BEGIN
     RETURN QUERY
@@ -274,6 +275,72 @@ END;
 $$ LANGUAGE plpgsql STABLE;
 
 COMMENT ON FUNCTION api.estructura IS 'Obtiene la estructura jerarquica de una ley (titulos, capitulos, secciones)';
+
+-- Funcion estructura_ley con articulos heredados (usada por frontend)
+CREATE OR REPLACE FUNCTION api.estructura_ley(ley_codigo VARCHAR)
+RETURNS TABLE(
+    id INT,
+    tipo VARCHAR,
+    numero VARCHAR,
+    nombre TEXT,
+    path_texto TEXT,
+    nivel INT,
+    total_articulos BIGINT,
+    primer_articulo VARCHAR
+) AS $$
+BEGIN
+    RETURN QUERY
+    WITH RECURSIVE division_tree AS (
+        SELECT d.id, d.id as root_id, d.padre_id
+        FROM public.divisiones d
+        JOIN public.leyes l ON d.ley_id = l.id
+        WHERE l.codigo = ley_codigo
+
+        UNION ALL
+
+        SELECT child.id, dt.root_id, child.padre_id
+        FROM public.divisiones child
+        JOIN division_tree dt ON child.padre_id = dt.id
+    ),
+    articulos_por_division AS (
+        SELECT
+            d.id as division_id,
+            COUNT(a.id)::BIGINT as direct_count,
+            MIN(a.numero_raw)::VARCHAR as primer_art
+        FROM public.divisiones d
+        JOIN public.leyes l ON d.ley_id = l.id
+        LEFT JOIN public.articulos a ON a.division_id = d.id
+        WHERE l.codigo = ley_codigo
+        GROUP BY d.id
+    ),
+    articulos_heredados AS (
+        SELECT
+            dt.root_id as division_id,
+            COALESCE(SUM(apd.direct_count), 0)::BIGINT as total_heredado
+        FROM division_tree dt
+        JOIN articulos_por_division apd ON apd.division_id = dt.id
+        WHERE dt.id != dt.root_id
+        GROUP BY dt.root_id
+    )
+    SELECT
+        d.id,
+        d.tipo,
+        d.numero,
+        d.nombre,
+        d.path_texto,
+        d.nivel,
+        (COALESCE(apd.direct_count, 0) + COALESCE(ah.total_heredado, 0))::BIGINT as total_articulos,
+        apd.primer_art::VARCHAR as primer_articulo
+    FROM public.divisiones d
+    JOIN public.leyes l ON d.ley_id = l.id
+    LEFT JOIN articulos_por_division apd ON apd.division_id = d.id
+    LEFT JOIN articulos_heredados ah ON ah.division_id = d.id
+    WHERE l.codigo = ley_codigo
+    ORDER BY d.orden_global;
+END;
+$$ LANGUAGE plpgsql STABLE;
+
+COMMENT ON FUNCTION api.estructura_ley IS 'Obtiene estructura jerarquica con articulos heredados de hijos';
 
 -- Wrapper para articulos por division
 CREATE OR REPLACE FUNCTION api.articulos_division(div_id INT)
@@ -407,6 +474,7 @@ GRANT SELECT ON api.v_estadisticas TO web_anon;
 GRANT EXECUTE ON FUNCTION api.buscar(TEXT, TEXT, BOOLEAN, INT, INT) TO web_anon;
 GRANT EXECUTE ON FUNCTION api.articulo(INT) TO web_anon;
 GRANT EXECUTE ON FUNCTION api.estructura(TEXT) TO web_anon;
+GRANT EXECUTE ON FUNCTION api.estructura_ley(VARCHAR) TO web_anon;
 GRANT EXECUTE ON FUNCTION api.articulos_division(INT) TO web_anon;
 GRANT EXECUTE ON FUNCTION api.navegar(INT) TO web_anon;
 GRANT EXECUTE ON FUNCTION api.sugerencias(TEXT) TO web_anon;
@@ -451,6 +519,9 @@ FUNCIONES RPC (POST):
 
   POST /rpc/estructura                 - Estructura jerarquica de ley
     Body: {"ley_codigo": "CFF"}
+
+  POST /rpc/estructura_ley             - Estructura con articulos heredados
+    Body: {"ley_codigo": "RMF2025"}
 
   POST /rpc/articulos_division         - Articulos de una division
     Body: {"div_id": 5}

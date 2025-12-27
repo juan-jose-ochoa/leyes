@@ -302,24 +302,40 @@ RETURNS TABLE(
 ) AS $$
 BEGIN
     RETURN QUERY
-    WITH articulos_por_division AS (
+    WITH RECURSIVE division_tree AS (
+        -- Base: todas las divisiones de esta ley
+        SELECT d.id, d.id as root_id, d.padre_id
+        FROM divisiones d
+        JOIN leyes l ON d.ley_id = l.id
+        WHERE l.codigo = ley_codigo
+
+        UNION ALL
+
+        -- Recursivo: bajar a los hijos
+        SELECT child.id, dt.root_id, child.padre_id
+        FROM divisiones child
+        JOIN division_tree dt ON child.padre_id = dt.id
+    ),
+    articulos_por_division AS (
         SELECT
             d.id as division_id,
             COUNT(a.id)::BIGINT as direct_count,
             MIN(a.numero_raw)::VARCHAR as primer_art
         FROM divisiones d
+        JOIN leyes l ON d.ley_id = l.id
         LEFT JOIN articulos a ON a.division_id = d.id
+        WHERE l.codigo = ley_codigo
         GROUP BY d.id
     ),
     articulos_heredados AS (
-        -- Para cada división, sumar artículos de sus hijos (usando path_ids)
+        -- Para cada division, sumar articulos de todos sus descendientes
         SELECT
-            d.id as division_id,
+            dt.root_id as division_id,
             COALESCE(SUM(apd.direct_count), 0)::BIGINT as total_heredado
-        FROM divisiones d
-        LEFT JOIN divisiones child ON d.id = ANY(child.path_ids)
-        LEFT JOIN articulos_por_division apd ON apd.division_id = child.id
-        GROUP BY d.id
+        FROM division_tree dt
+        JOIN articulos_por_division apd ON apd.division_id = dt.id
+        WHERE dt.id != dt.root_id  -- Excluir la propia division (solo hijos)
+        GROUP BY dt.root_id
     )
     SELECT
         d.id,
