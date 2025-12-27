@@ -137,7 +137,8 @@ export default function LeyIndex() {
   const { data: verificacion } = useVerificacionLey(showVerificacion ? ley ?? null : null)
   const { data: verificacionIndice } = useVerificacionIndice(showVerificacion ? ley ?? null : null)
   const { data: reglasFaltantes } = useComparacionReglasIndice(showVerificacion ? ley ?? null : null)
-  const { data: divisionesFaltantes } = useComparacionDivisionesIndice(showVerificacion ? ley ?? null : null)
+  // Siempre cargar divisiones faltantes para mostrar placeholders
+  const { data: divisionesFaltantes } = useComparacionDivisionesIndice(ley ?? null)
 
   // Estado para controlar expansión de títulos
   const [expandedTitles, setExpandedTitles] = useState<Set<number>>(new Set())
