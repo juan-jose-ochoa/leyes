@@ -1,8 +1,9 @@
+import { useState, useMemo } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { Home, ChevronRight, BookOpen, ExternalLink, AlertTriangle, CheckCircle, XCircle } from 'lucide-react'
+import { Home, ChevronRight, BookOpen, ExternalLink, AlertTriangle, CheckCircle, XCircle, Filter, Eye, EyeOff } from 'lucide-react'
 import { useDivisionInfo, useArticulosDivision } from '@/hooks/useArticle'
 import ArticleContent from '@/components/ArticleContent'
-import type { RegistroCalidad } from '@/lib/api'
+import type { RegistroCalidad, ArticuloDivision } from '@/lib/api'
 import clsx from 'clsx'
 
 // Componente para mostrar el estatus de calidad de importación
@@ -46,9 +47,112 @@ function CalidadBadge({ calidad }: { calidad: RegistroCalidad }) {
   )
 }
 
+// Panel de resumen de calidad con links directos
+function ResumenCalidad({
+  articulos,
+  soloIssues,
+  onToggle
+}: {
+  articulos: ArticuloDivision[]
+  soloIssues: boolean
+  onToggle: () => void
+}) {
+  const stats = useMemo(() => {
+    const conError = articulos.filter(a => a.calidad?.estatus === 'con_error')
+    const corregidas = articulos.filter(a => a.calidad?.estatus === 'corregida')
+    const ok = articulos.filter(a => !a.calidad)
+    return { conError, corregidas, ok, total: articulos.length }
+  }, [articulos])
+
+  // Si no hay issues, no mostrar el panel
+  if (stats.conError.length === 0 && stats.corregidas.length === 0) {
+    return null
+  }
+
+  return (
+    <div className="mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+      <div className="flex items-center justify-between mb-3">
+        <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 flex items-center gap-2">
+          <Filter className="h-4 w-4" />
+          Resumen de Calidad de Importación
+        </h3>
+        <button
+          onClick={onToggle}
+          className={clsx(
+            'flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md transition-colors',
+            soloIssues
+              ? 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200'
+              : 'bg-gray-200 text-gray-600 dark:bg-gray-700 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-600'
+          )}
+        >
+          {soloIssues ? <Eye className="h-3 w-3" /> : <EyeOff className="h-3 w-3" />}
+          {soloIssues ? 'Mostrando solo issues' : 'Mostrar solo issues'}
+        </button>
+      </div>
+
+      {/* Contadores */}
+      <div className="flex gap-4 mb-4 text-sm">
+        <span className="text-green-600 dark:text-green-400">
+          <CheckCircle className="inline h-4 w-4 mr-1" />
+          {stats.ok.length} OK
+        </span>
+        <span className="text-yellow-600 dark:text-yellow-400">
+          <AlertTriangle className="inline h-4 w-4 mr-1" />
+          {stats.corregidas.length} corregidas
+        </span>
+        <span className="text-red-600 dark:text-red-400">
+          <XCircle className="inline h-4 w-4 mr-1" />
+          {stats.conError.length} con errores
+        </span>
+      </div>
+
+      {/* Links directos a reglas con errores */}
+      {stats.conError.length > 0 && (
+        <div className="mb-3">
+          <p className="text-xs font-medium text-red-600 dark:text-red-400 mb-2">
+            Reglas con errores pendientes:
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {stats.conError.map(art => (
+              <a
+                key={art.id}
+                href={`#art-${art.numero_raw}`}
+                className="inline-flex items-center px-2 py-1 text-xs bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300 rounded hover:bg-red-200 dark:hover:bg-red-800 transition-colors"
+              >
+                {art.numero_raw}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Links a reglas corregidas */}
+      {stats.corregidas.length > 0 && (
+        <div>
+          <p className="text-xs font-medium text-yellow-600 dark:text-yellow-400 mb-2">
+            Reglas corregidas en segunda pasada:
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {stats.corregidas.map(art => (
+              <a
+                key={art.id}
+                href={`#art-${art.numero_raw}`}
+                className="inline-flex items-center px-2 py-1 text-xs bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300 rounded hover:bg-yellow-200 dark:hover:bg-yellow-800 transition-colors"
+              >
+                {art.numero_raw}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
 export default function DivisionView() {
   const { ley, id } = useParams<{ ley: string; id: string }>()
   const divId = id ? parseInt(id) : null
+  const [soloIssues, setSoloIssues] = useState(false)
 
   const { data: info, isLoading: loadingInfo } = useDivisionInfo(divId)
   const { data: articulos, isLoading: loadingArticulos } = useArticulosDivision(divId)
@@ -56,6 +160,13 @@ export default function DivisionView() {
   const isLoading = loadingInfo || loadingArticulos
   const esRegla = info?.ley_tipo === 'resolucion'
   const tipoContenido = esRegla ? 'regla' : 'articulo'
+
+  // Filtrar artículos según el toggle
+  const articulosFiltrados = useMemo(() => {
+    if (!articulos) return []
+    if (!soloIssues) return articulos
+    return articulos.filter(a => a.calidad)
+  }, [articulos, soloIssues])
 
   if (isLoading) {
     return (
@@ -147,9 +258,18 @@ export default function DivisionView() {
         </p>
       </div>
 
+      {/* Panel de resumen de calidad (solo para RMF) */}
+      {esRegla && articulos && (
+        <ResumenCalidad
+          articulos={articulos}
+          soloIssues={soloIssues}
+          onToggle={() => setSoloIssues(!soloIssues)}
+        />
+      )}
+
       {/* Artículos */}
       <div className="space-y-8">
-        {articulos.map((art) => (
+        {articulosFiltrados.map((art) => (
           <article
             key={art.id}
             id={`art-${art.numero_raw}`}
