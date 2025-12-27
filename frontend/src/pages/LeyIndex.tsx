@@ -1,8 +1,8 @@
 import { useState, useMemo } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { BookOpen, ChevronRight, ChevronDown, FileText, Home, CheckCircle, AlertTriangle, XCircle, Activity, Download } from 'lucide-react'
-import { useEstructuraLey, useLeyes, useVerificacionLey } from '@/hooks/useArticle'
-import type { Division, VerificacionDivision, VerificacionStatus } from '@/lib/api'
+import { useEstructuraLey, useLeyes, useVerificacionLey, useVerificacionIndice, useComparacionReglasIndice, useComparacionDivisionesIndice } from '@/hooks/useArticle'
+import type { Division, VerificacionDivision, VerificacionStatus, VerificacionIndice, ComparacionRegla, ComparacionDivision } from '@/lib/api'
 import clsx from 'clsx'
 
 // Agrupar divisiones por título
@@ -89,6 +89,9 @@ export default function LeyIndex() {
   const { data: leyes } = useLeyes()
   const [showVerificacion, setShowVerificacion] = useState(false)
   const { data: verificacion } = useVerificacionLey(showVerificacion ? ley ?? null : null)
+  const { data: verificacionIndice } = useVerificacionIndice(showVerificacion ? ley ?? null : null)
+  const { data: reglasFaltantes } = useComparacionReglasIndice(showVerificacion ? ley ?? null : null)
+  const { data: divisionesFaltantes } = useComparacionDivisionesIndice(showVerificacion ? ley ?? null : null)
 
   const leyInfo = leyes?.find(l => l.codigo === ley)
 
@@ -309,6 +312,15 @@ export default function LeyIndex() {
         </div>
       )}
 
+      {/* Panel de verificación contra índice oficial del PDF */}
+      {showVerificacion && verificacionIndice && verificacionIndice.length > 0 && (
+        <VerificacionIndicePanel
+          verificacionIndice={verificacionIndice}
+          reglasFaltantes={reglasFaltantes?.filter(r => r.estado === 'faltante') || []}
+          divisionesFaltantes={divisionesFaltantes?.filter(d => d.estado === 'faltante') || []}
+        />
+      )}
+
       {/* Estructura agrupada por títulos */}
       <div className="space-y-4">
         {grupos.map((grupo, idx) => (
@@ -422,6 +434,149 @@ interface DivisionItemProps {
   isNested?: boolean
   showVerificacion?: boolean
   verificacion?: VerificacionDivision
+}
+
+// Panel de verificación contra índice oficial del PDF
+interface VerificacionIndicePanelProps {
+  verificacionIndice: VerificacionIndice[]
+  reglasFaltantes: ComparacionRegla[]
+  divisionesFaltantes: ComparacionDivision[]
+}
+
+function VerificacionIndicePanel({ verificacionIndice, reglasFaltantes, divisionesFaltantes }: VerificacionIndicePanelProps) {
+  const [showDetails, setShowDetails] = useState(false)
+
+  // Calcular totales
+  const totalFaltantes = verificacionIndice.reduce((sum, v) => sum + v.faltantes, 0)
+  const hayProblemas = totalFaltantes > 0
+
+  // Nombres legibles para categorías
+  const nombreCategoria: Record<string, string> = {
+    titulo: 'Títulos',
+    capitulo: 'Capítulos',
+    seccion: 'Secciones',
+    subseccion: 'Subsecciones',
+    regla: 'Reglas',
+  }
+
+  return (
+    <div className={clsx(
+      'mb-6 p-4 rounded-lg border',
+      hayProblemas
+        ? 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800'
+        : 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800'
+    )}>
+      <div className="flex items-center justify-between mb-3">
+        <h3 className={clsx(
+          'text-sm font-semibold',
+          hayProblemas ? 'text-red-900 dark:text-red-100' : 'text-green-900 dark:text-green-100'
+        )}>
+          Verificación contra índice oficial (PDF)
+        </h3>
+        {hayProblemas && (
+          <button
+            onClick={() => setShowDetails(!showDetails)}
+            className="text-xs font-medium text-red-700 dark:text-red-300 hover:underline"
+          >
+            {showDetails ? 'Ocultar detalles' : 'Ver detalles'}
+          </button>
+        )}
+      </div>
+
+      {/* Resumen por categoría */}
+      <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-3">
+        {verificacionIndice.map((v) => (
+          <div
+            key={v.categoria}
+            className={clsx(
+              'p-2 rounded text-center',
+              v.faltantes > 0
+                ? 'bg-red-100 dark:bg-red-900/30'
+                : 'bg-green-100 dark:bg-green-900/30'
+            )}
+          >
+            <div className="text-xs text-gray-600 dark:text-gray-400">
+              {nombreCategoria[v.categoria] || v.categoria}
+            </div>
+            <div className="flex items-center justify-center gap-1 mt-1">
+              <span className={clsx(
+                'text-lg font-bold',
+                v.faltantes > 0
+                  ? 'text-red-700 dark:text-red-400'
+                  : 'text-green-700 dark:text-green-400'
+              )}>
+                {v.total_importado}
+              </span>
+              <span className="text-xs text-gray-500">/{v.total_oficial}</span>
+            </div>
+            {v.faltantes > 0 && (
+              <div className="text-xs text-red-600 dark:text-red-400 mt-0.5">
+                -{v.faltantes} faltantes
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* Detalles expandidos */}
+      {showDetails && (
+        <div className="border-t border-red-200 dark:border-red-700 pt-3 mt-3 space-y-3">
+          {/* Títulos/Divisiones faltantes */}
+          {divisionesFaltantes.length > 0 && (
+            <div>
+              <h4 className="text-xs font-medium text-red-800 dark:text-red-300 mb-2">
+                Divisiones faltantes:
+              </h4>
+              <div className="max-h-32 overflow-y-auto space-y-1">
+                {divisionesFaltantes.map((d, idx) => (
+                  <div
+                    key={`${d.tipo}-${d.numero}-${idx}`}
+                    className="flex items-center gap-2 p-2 bg-red-100 dark:bg-red-900/30 rounded text-xs"
+                  >
+                    <XCircle className="h-3.5 w-3.5 text-red-500" />
+                    <span className="font-medium text-gray-900 dark:text-white capitalize">
+                      {d.tipo} {d.numero}
+                    </span>
+                    <span className="text-gray-600 dark:text-gray-400 truncate">
+                      {d.nombre_oficial}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Reglas faltantes */}
+          {reglasFaltantes.length > 0 && (
+            <div>
+              <h4 className="text-xs font-medium text-red-800 dark:text-red-300 mb-2">
+                Reglas faltantes ({reglasFaltantes.length}):
+              </h4>
+              <div className="flex flex-wrap gap-1.5">
+                {reglasFaltantes.map((r) => (
+                  <span
+                    key={r.numero}
+                    className="px-2 py-0.5 bg-red-200 text-red-800 dark:bg-red-800 dark:text-red-200 rounded text-xs font-medium"
+                    title={r.pagina_pdf ? `Página ${r.pagina_pdf} del PDF` : undefined}
+                  >
+                    {r.numero}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Mensaje de éxito */}
+      {!hayProblemas && (
+        <div className="flex items-center gap-2 text-sm text-green-700 dark:text-green-400">
+          <CheckCircle className="h-4 w-4" />
+          <span>Todos los elementos del índice oficial están presentes</span>
+        </div>
+      )}
+    </div>
+  )
 }
 
 // Componente de indicador de estado

@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionInfo, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, getVerificacionLey, getVerificacionDivision, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion, type VerificacionDivision, type VerificacionDivisionSimple } from '@/lib/api'
+import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionInfo, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, getVerificacionLey, getVerificacionDivision, getVerificacionIndice, getComparacionReglasIndice, getComparacionDivisionesIndice, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion, type VerificacionDivision, type VerificacionDivisionSimple, type VerificacionIndice, type ComparacionRegla, type ComparacionDivision } from '@/lib/api'
 
 export function useArticle(id: number | null) {
   return useQuery<ArticuloDetalle | null>({
@@ -127,6 +127,43 @@ export function useVerificacionDivision(divId: number | null) {
       return getVerificacionDivision(divId)
     },
     enabled: divId !== null,
+    staleTime: 1000 * 60 * 60,
+  })
+}
+
+// Hooks para verificación contra índice oficial
+export function useVerificacionIndice(ley: string | null) {
+  return useQuery<VerificacionIndice[]>({
+    queryKey: ['verificacion-indice', ley],
+    queryFn: async () => {
+      if (!ley) return []
+      return getVerificacionIndice(ley)
+    },
+    enabled: ley !== null,
+    staleTime: 1000 * 60 * 60,
+  })
+}
+
+export function useComparacionReglasIndice(ley: string | null) {
+  return useQuery<ComparacionRegla[]>({
+    queryKey: ['comparacion-reglas-indice', ley],
+    queryFn: async () => {
+      if (!ley) return []
+      return getComparacionReglasIndice(ley)
+    },
+    enabled: ley !== null,
+    staleTime: 1000 * 60 * 60,
+  })
+}
+
+export function useComparacionDivisionesIndice(ley: string | null) {
+  return useQuery<ComparacionDivision[]>({
+    queryKey: ['comparacion-divisiones-indice', ley],
+    queryFn: async () => {
+      if (!ley) return []
+      return getComparacionDivisionesIndice(ley)
+    },
+    enabled: ley !== null,
     staleTime: 1000 * 60 * 60,
   })
 }

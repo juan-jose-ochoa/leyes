@@ -349,3 +349,48 @@ export async function getVerificacionDivision(divId: number): Promise<Verificaci
   })
   return result[0] || null
 }
+
+// Verificación contra índice oficial del PDF
+export interface VerificacionIndice {
+  categoria: string
+  total_oficial: number
+  total_importado: number
+  faltantes: number
+  extras: number
+  porcentaje_completo: number
+}
+
+export interface ComparacionRegla {
+  numero: string
+  pagina_pdf: number | null
+  estado: 'ok' | 'faltante'
+}
+
+export interface ComparacionDivision {
+  tipo: string
+  numero: string
+  nombre_oficial: string | null
+  nombre_importado: string | null
+  estado: 'ok' | 'faltante' | 'extra'
+}
+
+export async function getVerificacionIndice(ley: string): Promise<VerificacionIndice[]> {
+  return fetchAPI<VerificacionIndice[]>('/rpc/verificar_indice', {
+    method: 'POST',
+    body: JSON.stringify({ ley_codigo: ley }),
+  })
+}
+
+export async function getComparacionReglasIndice(ley: string): Promise<ComparacionRegla[]> {
+  return fetchAPI<ComparacionRegla[]>('/rpc/comparar_reglas_indice', {
+    method: 'POST',
+    body: JSON.stringify({ ley_codigo: ley }),
+  })
+}
+
+export async function getComparacionDivisionesIndice(ley: string): Promise<ComparacionDivision[]> {
+  return fetchAPI<ComparacionDivision[]>('/rpc/comparar_divisiones_indice', {
+    method: 'POST',
+    body: JSON.stringify({ ley_codigo: ley }),
+  })
+}
