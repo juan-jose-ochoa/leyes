@@ -11,11 +11,29 @@ interface GrupoTitulo {
   hijos: Division[]
 }
 
+// Función para ordenar numéricamente por número de división (1, 2, 3, ... 10, 11, 12)
+function parseNumero(numero: string | null): number[] {
+  if (!numero) return [Infinity]
+  // Soporta números como "1", "2.1", "2.1.1", etc.
+  return numero.split('.').map(n => parseInt(n, 10) || 0)
+}
+
+function compararNumeros(a: string | null, b: string | null): number {
+  const partsA = parseNumero(a)
+  const partsB = parseNumero(b)
+  for (let i = 0; i < Math.max(partsA.length, partsB.length); i++) {
+    const numA = partsA[i] ?? 0
+    const numB = partsB[i] ?? 0
+    if (numA !== numB) return numA - numB
+  }
+  return 0
+}
+
 function agruparPorTitulo(divisiones: Division[]): GrupoTitulo[] {
   const grupos: GrupoTitulo[] = []
   let grupoActual: GrupoTitulo | null = null
 
-  // Filtrar y deduplicar
+  // Filtrar, deduplicar y ordenar numéricamente
   const divsFiltradas = divisiones
     .filter((div) => div.total_articulos > 0 || div.primer_articulo)
     .reduce((acc, div) => {
@@ -29,6 +47,7 @@ function agruparPorTitulo(divisiones: Division[]): GrupoTitulo[] {
       }
       return acc
     }, [] as Division[])
+    .sort((a, b) => compararNumeros(a.numero, b.numero))
 
   for (const div of divsFiltradas) {
     if (div.tipo === 'titulo') {
