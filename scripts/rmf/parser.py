@@ -91,6 +91,19 @@ PATRON_FRACCION_INLINE = re.compile(
     re.IGNORECASE | re.DOTALL
 )
 
+# Patrón para detectar regla embebida con título al final (título solo en línea)
+# Ej: "Documentación en copia simple 2.1.14."
+# Solo se usa cuando el número corresponde a la siguiente regla esperada
+PATRON_TITULO_FINAL = re.compile(
+    r'^([A-ZÁÉÍÓÚÑÜ][a-záéíóúñü].*?)\s+(\d+\.\d+\.\d+)\.\s*$'
+)
+
+# Patrón para detectar regla embebida con título Y contenido en la misma línea
+# Ej: "Tasa mensual de recargos 2.1.20. Para los efectos del artículo 21..."
+PATRON_TITULO_INLINE = re.compile(
+    r'^([A-ZÁÉÍÓÚÑÜ][a-záéíóúñü][^.]*?)\s+(\d+\.\d+\.\d+)\.\s+([A-Z].+)$'
+)
+
 # Siglas de leyes conocidas (para detectar referencias)
 SIGLAS_LEYES = (
     'CFF', 'LISR', 'LIVA', 'LIESPS', 'LIEPS', 'LIF', 'LA',
@@ -299,6 +312,16 @@ class ParserRMF:
                 )
                 continue
 
+            # === REGLA CON TÍTULO AL FINAL (ej: "Documentación en copia simple 2.1.14.") ===
+            # O con contenido inline (ej: "Tasa mensual de recargos 2.1.20. Para los efectos...")
+            # Solo procesar si es la siguiente regla esperada
+            if self.reglas:
+                ultima_regla = self.reglas[-1].numero
+                match_embebida = self._es_inicio_regla_embebida(texto, ultima_regla)
+                if match_embebida:
+                    i = self._procesar_regla_titulo_final(match_embebida, paragraphs, i)
+                    continue
+
             i += 1
 
         # Deduplicar y crear placeholders
@@ -469,6 +492,12 @@ class ParserRMF:
                 idx += 1
                 continue
 
+            # Detectar regla embebida con formato "Título X.X.X."
+            # Solo si el número es el siguiente esperado
+            if self._es_inicio_regla_embebida(texto, numero):
+                # No avanzar idx - el main loop procesará esta línea
+                break
+
             # Detectar fracción
             match_fraccion = PATRON_FRACCION.match(texto)
             if match_fraccion:
@@ -536,6 +565,132 @@ class ParserRMF:
         self._validar_regla(regla)
 
         self.reglas.append(regla)
+        return idx
+
+    def _procesar_regla_titulo_final(
+        self,
+        match: re.Match,
+        paragraphs: List[ParrafoExtraido],
+        idx: int
+    ) -> int:
+        """
+        Procesa una regla con formato "Título X.X.X." o "Título X.X.X. Contenido..."
+
+        El título está ANTES del número, no después.
+        Ej: "Documentación en copia simple 2.1.14."
+        Ej: "Tasa mensual de recargos 2.1.20. Para los efectos..."
+
+        Args:
+            match: Match de PATRON_TITULO_FINAL o PATRON_TITULO_INLINE
+            paragraphs: Lista completa de párrafos
+            idx: Índice actual
+
+        Returns:
+            Nuevo índice después del procesamiento
+        """
+        titulo = match.group(1).strip()
+        numero = match.group(2)
+
+        # Si tiene grupo 3, es formato inline (título + contenido en misma línea)
+        contenido_primera_linea = ""
+        if len(match.groups()) >= 3 and match.group(3):
+            contenido_primera_linea = match.group(3).strip()
+
+        # Inferir capítulo si no coincide
+        self._inferir_capitulo_si_necesario(numero)
+
+        # Recolectar contenido y referencias
+        contenido_partes = []
+        if contenido_primera_linea:
+            contenido_partes.append(contenido_primera_linea)
+
+        referencias = None
+        fracciones = []
+
+        idx += 1
+        while idx < len(paragraphs):
+            parrafo = paragraphs[idx]
+            texto = parrafo.texto
+            es_italica = parrafo.es_italica
+
+            # ¿Termina la regla?
+            if self._es_fin_de_regla(texto):
+                break
+
+            # Detectar regla embebida siguiente
+            if self._es_inicio_regla_embebida(texto, numero):
+                break
+
+            # Ignorar notas de reforma
+            if PATRON_NOTA_REFORMA.match(texto):
+                idx += 1
+                continue
+
+            # Detectar referencia
+            if es_referencia_final(texto, es_italica):
+                referencias = texto
+                idx += 1
+                continue
+
+            # Detectar fracción
+            match_fraccion = PATRON_FRACCION.match(texto)
+            if match_fraccion:
+                nuevas_fracciones, idx = self._procesar_fraccion(match_fraccion, paragraphs, idx)
+                fracciones.extend(nuevas_fracciones)
+                continue
+
+            # Detectar inciso
+            match_inciso = PATRON_INCISO.match(texto)
+            if match_inciso:
+                inciso = Inciso(
+                    letra=match_inciso.group(1),
+                    contenido=match_inciso.group(2),
+                    orden=ord(match_inciso.group(1)) - ord('a') + 1,
+                )
+                if fracciones:
+                    fracciones[-1].incisos.append(inciso)
+                else:
+                    fraccion_virtual = Fraccion(
+                        numero="",
+                        contenido="",
+                        orden=0,
+                        incisos=[inciso],
+                    )
+                    fracciones.append(fraccion_virtual)
+                idx += 1
+                continue
+
+            # Contenido normal
+            contenido_partes.append(texto)
+            idx += 1
+
+        # Consolidar y crear regla
+        contenido = consolidar_parrafos(contenido_partes)
+
+        # Renumerar orden de fracciones
+        for i, f in enumerate(fracciones, 1):
+            f.orden = i
+
+        self.orden_regla += 1
+        division_actual = self.seccion_actual or self.capitulo_actual or self.titulo_actual
+
+        regla = ReglaParseada(
+            numero=numero,
+            titulo=titulo,  # Ya tenemos el título del match
+            contenido=contenido,
+            referencias=referencias,
+            fracciones=fracciones,
+            division_path=division_actual.path_texto if division_actual else "",
+            titulo_padre=self.titulo_actual.numero if self.titulo_actual else None,
+            capitulo_padre=self.capitulo_actual.numero if self.capitulo_actual else None,
+            seccion_padre=self.seccion_actual.numero if self.seccion_actual else None,
+            orden_global=self.orden_regla,
+        )
+
+        # Validar
+        self._validar_regla(regla)
+        self.reglas.append(regla)
+
         return idx
 
     def _extraer_titulo_anterior(
@@ -687,6 +842,58 @@ class ParserRMF:
             prev = valor
 
         return resultado
+
+    def _siguiente_numero_regla(self, numero: str) -> str:
+        """
+        Calcula el siguiente número de regla esperado.
+
+        Args:
+            numero: Número actual (ej: "2.1.13")
+
+        Returns:
+            Siguiente número (ej: "2.1.14")
+        """
+        partes = numero.split('.')
+        if len(partes) == 3:
+            try:
+                siguiente = int(partes[2]) + 1
+                return f"{partes[0]}.{partes[1]}.{siguiente}"
+            except ValueError:
+                pass
+        return ""
+
+    def _es_inicio_regla_embebida(self, texto: str, numero_actual: str) -> Optional[re.Match]:
+        """
+        Detecta si un texto es el inicio de una regla embebida.
+
+        Patrones soportados:
+        1. "Título X.X.X." (título solo en línea)
+        2. "Título X.X.X. Contenido..." (título y contenido en misma línea)
+
+        Solo retorna match si el número coincide con el siguiente esperado.
+
+        Args:
+            texto: Texto a evaluar
+            numero_actual: Número de la regla que se está procesando
+
+        Returns:
+            Match object si es regla embebida, None si no
+        """
+        siguiente_esperado = self._siguiente_numero_regla(numero_actual)
+        if not siguiente_esperado:
+            return None
+
+        # Intentar patrón 1: título solo
+        match = PATRON_TITULO_FINAL.match(texto)
+        if match and match.group(2) == siguiente_esperado:
+            return match
+
+        # Intentar patrón 2: título + contenido inline
+        match = PATRON_TITULO_INLINE.match(texto)
+        if match and match.group(2) == siguiente_esperado:
+            return match
+
+        return None
 
     def _crear_titulo_inferido(self, numero: str):
         """Crea un Título inferido del número de capítulo."""
