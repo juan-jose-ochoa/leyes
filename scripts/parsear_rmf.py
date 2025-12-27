@@ -73,6 +73,18 @@ PATRON_REGLA = re.compile(
     r'^(\d+\.\d+\.\d+)\.?\s+(.*)$'
 )
 
+# Regla alternativa: "Regla 2.1.6." (número en línea separada)
+PATRON_REGLA_ALT = re.compile(
+    r'^Regla\s+(\d+\.\d+\.\d+)\.?\s*$',
+    re.IGNORECASE
+)
+
+# Notas de reforma/derogación que NO son contenido de regla
+PATRON_NOTA_REFORMA = re.compile(
+    r'^-?\s*(Reformada|Derogada|Adicionada|Se deroga)\s+en\s+la\s+',
+    re.IGNORECASE
+)
+
 # Referencias al final de regla: CFF, LISR, LIVA, RMF, etc.
 PATRON_REFERENCIAS = re.compile(
     r'^((?:CFF|LISR|LIVA|LIESPS|LIEPS|LIF|LA|RMF|RGCE|RCFF|RLISR|RLIVA|RLIESPS)'
@@ -191,8 +203,16 @@ def crear_placeholders_faltantes(reglas: list, divisiones: list) -> list:
     """
     Detecta huecos en la numeración y crea reglas placeholder.
     Retorna lista de reglas placeholder para agregar.
+
+    Incluye checksum: si el número de regla faltante aparece en el contenido
+    de otra regla, es posible error de parseo - no crear placeholder.
     """
     from collections import defaultdict
+
+    # Construir índice de contenido para checksum
+    contenido_total = ""
+    for regla in reglas:
+        contenido_total += " " + regla.get("contenido", "")
 
     # Agrupar reglas por capítulo (X.Y)
     por_capitulo = defaultdict(list)
@@ -209,6 +229,7 @@ def crear_placeholders_faltantes(reglas: list, divisiones: list) -> list:
                     pass
 
     placeholders = []
+    posibles_errores = []
     orden_placeholder = max((r.get("orden_global", 0) for r in reglas), default=0) + 1000
 
     for cap, numeros in por_capitulo.items():
@@ -229,8 +250,18 @@ def crear_placeholders_faltantes(reglas: list, divisiones: list) -> list:
         # Crear placeholder para cada número faltante
         for n in range(min_num, max_num + 1):
             if n not in numeros_set:
+                numero_regla = f"{cap}.{n}"
+
+                # CHECKSUM: Verificar si el número de regla aparece en el contenido
+                # Si aparece "2.1.6." en el contenido, puede ser error de parseo
+                # Usamos regex para evitar falsos positivos (ej: "12.1.4." no es "2.1.4.")
+                patron_check = re.compile(rf'(?<!\d){re.escape(numero_regla)}\.(?!\d)')
+                if patron_check.search(contenido_total):
+                    posibles_errores.append(numero_regla)
+                    continue  # No crear placeholder, posible error de parseo
+
                 placeholder = {
-                    "numero": f"{cap}.{n}",
+                    "numero": numero_regla,
                     "titulo": "(Regla no existe)",
                     "contenido": "Esta regla no existe en el documento fuente de la RMF 2025.",
                     "referencias": None,
@@ -243,6 +274,14 @@ def crear_placeholders_faltantes(reglas: list, divisiones: list) -> list:
                 }
                 placeholders.append(placeholder)
                 orden_placeholder += 1
+
+    # Reportar posibles errores de parseo
+    if posibles_errores:
+        print(f"   ADVERTENCIA: {len(posibles_errores)} reglas faltantes con texto en contenido:")
+        for num in posibles_errores[:10]:  # Mostrar primeras 10
+            print(f"      - {num}")
+        if len(posibles_errores) > 10:
+            print(f"      ... y {len(posibles_errores) - 10} más")
 
     return placeholders
 
@@ -359,10 +398,18 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
             continue
 
         # === REGLA (ej: "2.1.1. Cobro de créditos fiscales...") ===
+        # También detectar formato alternativo: "Regla 2.1.6." (título en línea siguiente)
         match = PATRON_REGLA.match(text)
-        if match:
-            numero = match.group(1)
-            titulo_inicial = match.group(2).strip()
+        match_alt = PATRON_REGLA_ALT.match(text) if not match else None
+
+        if match or match_alt:
+            if match:
+                numero = match.group(1)
+                titulo_inicial = match.group(2).strip()
+            else:
+                # Formato "Regla X.X.X." - el contenido empieza en línea siguiente
+                numero = match_alt.group(1)
+                titulo_inicial = ""
 
             # === Inferir capítulo correcto si no coincide con el actual ===
             capitulo_esperado = extraer_capitulo_de_regla(numero)
@@ -413,6 +460,8 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
                 # ¿Termina la regla?
                 if PATRON_REGLA.match(next_text):
                     break
+                if PATRON_REGLA_ALT.match(next_text):
+                    break
                 if PATRON_CAPITULO_RMF.match(next_text):
                     break
                 if PATRON_SECCION_RMF.match(next_text):
@@ -421,6 +470,11 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
                 titulo_match = PATRON_TITULO_RMF.match(next_text)
                 if titulo_match and int(titulo_match.group(1)) <= 15:
                     break
+
+                # Ignorar notas de reforma/derogación (no son contenido)
+                if PATRON_NOTA_REFORMA.match(next_text):
+                    i += 1
+                    continue
 
                 # Detectar referencias al final
                 if es_referencia_final(next_text):
@@ -463,6 +517,22 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
             continue
 
         i += 1
+
+    # Deduplicar reglas (mantener la que tiene más contenido)
+    reglas_unicas = {}
+    for regla in reglas:
+        num = regla["numero"]
+        if num not in reglas_unicas:
+            reglas_unicas[num] = regla
+        else:
+            # Mantener la que tiene contenido más largo (probablemente la real)
+            if len(regla.get("contenido", "")) > len(reglas_unicas[num].get("contenido", "")):
+                reglas_unicas[num] = regla
+
+    duplicados_eliminados = len(reglas) - len(reglas_unicas)
+    if duplicados_eliminados > 0:
+        print(f"   {duplicados_eliminados} reglas duplicadas eliminadas")
+    reglas = list(reglas_unicas.values())
 
     # Crear placeholders para reglas faltantes
     placeholders = crear_placeholders_faltantes(reglas, divisiones)
