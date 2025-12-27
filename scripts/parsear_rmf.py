@@ -99,7 +99,17 @@ PATRON_REFERENCIAS_SIMPLE = re.compile(
     re.IGNORECASE
 )
 
-PATRON_PAGINA = re.compile(r'^\d+\s+de\s+\d+$')
+# Número de página: "Página 27 de 812" o "27 de 812"
+PATRON_PAGINA = re.compile(r'^(?:Página\s+)?\d+\s+de\s+\d+$', re.IGNORECASE)
+
+# Para limpiar números de página incrustados en texto
+PATRON_PAGINA_INLINE = re.compile(r'\s*Página\s+\d+\s+de\s+\d+\s*', re.IGNORECASE)
+
+# Notas del documento que no son contenido
+PATRON_NOTA_DOCUMENTO = re.compile(
+    r'^NOTA:\s*Este documento constituye una compilación',
+    re.IGNORECASE
+)
 
 # Nombres oficiales de los Títulos de la RMF
 # Se usan para inferir el título cuando se parsea un capítulo
@@ -128,7 +138,7 @@ def extraer_capitulo_de_regla(numero_regla: str) -> str:
 
 
 def extraer_texto_docx(doc_path: Path) -> list[str]:
-    """Extrae párrafos del DOCX, limpiando páginas y espacios"""
+    """Extrae párrafos del DOCX, limpiando páginas, notas y espacios"""
     doc = Document(doc_path)
     paragraphs = []
 
@@ -142,6 +152,9 @@ def extraer_texto_docx(doc_path: Path) -> list[str]:
         # Ignorar encabezados repetitivos
         if text.startswith("Resolución Miscelánea Fiscal"):
             continue
+        # Ignorar notas del documento
+        if PATRON_NOTA_DOCUMENTO.match(text):
+            continue
         paragraphs.append(text)
 
     return paragraphs
@@ -150,7 +163,7 @@ def extraer_texto_docx(doc_path: Path) -> list[str]:
 def consolidar_parrafos(partes: list[str]) -> str:
     """
     Une fragmentos que son continuación del mismo párrafo.
-    Igual que en parsear_ley.py
+    Limpia números de página incrustados.
     """
     if not partes:
         return ""
@@ -160,6 +173,10 @@ def consolidar_parrafos(partes: list[str]) -> str:
 
     for parte in partes:
         parte = parte.strip()
+        if not parte:
+            continue
+        # Limpiar números de página incrustados
+        parte = PATRON_PAGINA_INLINE.sub(' ', parte).strip()
         if not parte:
             continue
 
