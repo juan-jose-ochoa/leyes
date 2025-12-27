@@ -76,6 +76,10 @@ PATRON_FRACCION_SOLO = re.compile(r'^(X{0,3}(?:IX|IV|V?I{0,3}))\.\s*$')
 # Inciso: "a) Contenido..." o "b) Contenido..."
 PATRON_INCISO = re.compile(r'^([a-z])\)\s+(.*)$')
 
+# Inciso inline dentro del contenido de una fracción
+# Ej: "...los productos: a) Folio aleatorio; b) Lugar; c) Máquina..."
+PATRON_INCISO_INLINE = re.compile(r'([a-z])\)\s*([^;)]+)(?:;|$)')
+
 # Para limpiar números de página inline
 PATRON_PAGINA_INLINE = re.compile(r'\s*Página\s+\d+\s+de\s+\d+\s*', re.IGNORECASE)
 
@@ -1013,11 +1017,15 @@ class ParserRMF:
             ))
         else:
             # Fracción normal sin párrafo intermedio
+            # Intentar extraer incisos inline del contenido
+            contenido_limpio, incisos_inline = self._extraer_incisos_inline(contenido_completo)
+
             resultado.append(Fraccion(
                 numero=numero_romano,
-                contenido=contenido_completo,
+                contenido=contenido_limpio if incisos_inline else contenido_completo,
                 orden=self._romano_a_entero(numero_romano),
                 tipo="fraccion",
+                incisos=incisos_inline,
             ))
 
         return resultado, idx
@@ -1083,11 +1091,15 @@ class ParserRMF:
                 tipo="parrafo",
             ))
         else:
+            # Intentar extraer incisos inline del contenido
+            contenido_limpio, incisos_inline = self._extraer_incisos_inline(contenido_completo)
+
             resultado.append(Fraccion(
                 numero=numero_romano,
-                contenido=contenido_completo,
+                contenido=contenido_limpio if incisos_inline else contenido_completo,
                 orden=self._romano_a_entero(numero_romano),
                 tipo="fraccion",
+                incisos=incisos_inline,
             ))
 
         return resultado, idx
@@ -1165,6 +1177,62 @@ class ParserRMF:
             prev = valor
 
         return resultado
+
+    def _extraer_incisos_inline(self, contenido: str) -> Tuple[str, List[Inciso]]:
+        """
+        Extrae incisos inline del contenido de una fracción.
+
+        Detecta patrones como "a) Folio; b) Lugar; c) Máquina..."
+        y los extrae como lista de Incisos.
+
+        Args:
+            contenido: Texto de la fracción
+
+        Returns:
+            Tuple de (contenido limpio sin incisos, lista de Incisos)
+        """
+        # Buscar si hay incisos inline (al menos a) y b))
+        if 'a)' not in contenido or 'b)' not in contenido:
+            return contenido, []
+
+        # Buscar todos los incisos
+        matches = list(PATRON_INCISO_INLINE.finditer(contenido))
+        if len(matches) < 2:
+            return contenido, []
+
+        incisos = []
+        for i, match in enumerate(matches):
+            letra = match.group(1)
+            texto = match.group(2).strip()
+
+            # Limpiar texto de letras de otros incisos que quedaron mal
+            # (por problemas de la conversión PDF-DOCX)
+            texto_limpio = texto
+            for c in 'abcdefghi':
+                if texto_limpio.endswith(f' {c}'):
+                    texto_limpio = texto_limpio[:-2].strip()
+
+            if texto_limpio:
+                incisos.append(Inciso(
+                    letra=letra,
+                    contenido=texto_limpio,
+                    orden=ord(letra) - ord('a') + 1,
+                ))
+
+        if not incisos:
+            return contenido, []
+
+        # El contenido limpio es todo antes del primer inciso
+        primer_inciso_pos = contenido.find('a)')
+        if primer_inciso_pos > 0:
+            contenido_limpio = contenido[:primer_inciso_pos].strip()
+            # Limpiar ":" al final
+            if contenido_limpio.endswith(':'):
+                contenido_limpio = contenido_limpio[:-1].strip()
+        else:
+            contenido_limpio = ""
+
+        return contenido_limpio, incisos
 
     def _siguiente_numero_regla(self, numero: str) -> str:
         """
