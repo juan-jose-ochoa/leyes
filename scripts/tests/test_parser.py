@@ -24,6 +24,7 @@ from rmf.parser import (
     PATRON_REGLA,
     PATRON_CAPITULO,
     PATRON_FRACCION,
+    PATRON_INCISO,
 )
 from rmf.models import (
     ParrafoExtraido,
@@ -124,6 +125,25 @@ class TestPatrones:
         assert match
         assert match.group(1) == "IV"
 
+    def test_patron_inciso(self):
+        """Detecta incisos alfabéticos."""
+        match = PATRON_INCISO.match("a) Nombre o razón social.")
+        assert match
+        assert match.group(1) == "a"
+        assert "Nombre" in match.group(2)
+
+        match = PATRON_INCISO.match("c) Domicilio fiscal.")
+        assert match
+        assert match.group(1) == "c"
+
+    def test_patron_inciso_no_detecta_parrafo(self):
+        """No detecta párrafos normales como incisos."""
+        match = PATRON_INCISO.match("Para los efectos del artículo")
+        assert match is None
+
+        match = PATRON_INCISO.match("Los contribuyentes deberán")
+        assert match is None
+
 
 # =============================================================================
 # TESTS DE PARSING BÁSICO
@@ -185,6 +205,102 @@ class TestParsingBasico:
 
         regla = resultado.reglas[0]
         assert regla.referencias == "CFF 14-B, LISR 24"
+
+
+# =============================================================================
+# TESTS DE INCISOS
+# =============================================================================
+
+class TestParsingIncisos:
+    """Tests para extracción de incisos a), b), c)."""
+
+    def test_parsear_regla_con_incisos(self, secuencia_regla_con_incisos):
+        """Parsea regla con fracción que contiene incisos."""
+        parser = ParserRMF()
+        resultado = parser.parsear(secuencia_regla_con_incisos, "Test Doc")
+
+        assert len(resultado.reglas) >= 1
+        regla = resultado.reglas[0]
+
+        assert regla.numero == "2.7.1"
+        assert len(regla.fracciones) == 2  # I y II
+
+        # Fracción I debe tener 3 incisos
+        fraccion_I = regla.fracciones[0]
+        assert fraccion_I.numero == "I"
+        assert len(fraccion_I.incisos) == 3
+
+        # Verificar contenido de incisos
+        assert fraccion_I.incisos[0].letra == "a"
+        assert "Nombre" in fraccion_I.incisos[0].contenido
+        assert fraccion_I.incisos[1].letra == "b"
+        assert "RFC" in fraccion_I.incisos[1].contenido or "Registro" in fraccion_I.incisos[1].contenido
+        assert fraccion_I.incisos[2].letra == "c"
+        assert "Domicilio" in fraccion_I.incisos[2].contenido
+
+        # Fracción II no debe tener incisos
+        fraccion_II = regla.fracciones[1]
+        assert fraccion_II.numero == "II"
+        assert len(fraccion_II.incisos) == 0
+
+    def test_incisos_sin_fraccion_padre(self, secuencia_incisos_sin_fraccion):
+        """Incisos directos crean fracción virtual."""
+        parser = ParserRMF()
+        resultado = parser.parsear(secuencia_incisos_sin_fraccion, "Test Doc")
+
+        assert len(resultado.reglas) >= 1
+        regla = resultado.reglas[0]
+
+        assert regla.numero == "2.8.5"
+        # Debe haber una "fracción virtual" con los incisos
+        assert len(regla.fracciones) >= 1
+
+        # La fracción virtual no tiene número
+        fraccion_virtual = regla.fracciones[0]
+        assert fraccion_virtual.numero == ""
+        assert fraccion_virtual.contenido == ""
+
+        # Pero contiene los 3 incisos
+        assert len(fraccion_virtual.incisos) == 3
+        assert fraccion_virtual.incisos[0].letra == "a"
+        assert fraccion_virtual.incisos[1].letra == "b"
+        assert fraccion_virtual.incisos[2].letra == "c"
+
+    def test_orden_incisos_correcto(self, secuencia_regla_con_incisos):
+        """Los incisos tienen orden correcto (1, 2, 3...)."""
+        parser = ParserRMF()
+        resultado = parser.parsear(secuencia_regla_con_incisos, "Test Doc")
+
+        regla = resultado.reglas[0]
+        fraccion_I = regla.fracciones[0]
+
+        assert fraccion_I.incisos[0].orden == 1  # a
+        assert fraccion_I.incisos[1].orden == 2  # b
+        assert fraccion_I.incisos[2].orden == 3  # c
+
+    def test_jerarquia_fraccion_inciso(self, crear_parrafo):
+        """Verifica jerarquía: fracción contiene incisos."""
+        paragraphs = [
+            crear_parrafo("2.5.1. Contenido de la regla:", indice=0),
+            crear_parrafo("I. Primera fracción:", indice=1),
+            crear_parrafo("a) Primer inciso.", indice=2),
+            crear_parrafo("b) Segundo inciso.", indice=3),
+            crear_parrafo("II. Segunda fracción sin incisos.", indice=4),
+        ]
+
+        parser = ParserRMF()
+        resultado = parser.parsear(paragraphs, "Test")
+
+        regla = resultado.reglas[0]
+        assert len(regla.fracciones) == 2
+
+        # Fracción I tiene 2 incisos
+        assert len(regla.fracciones[0].incisos) == 2
+        assert regla.fracciones[0].incisos[0].letra == "a"
+        assert regla.fracciones[0].incisos[1].letra == "b"
+
+        # Fracción II no tiene incisos
+        assert len(regla.fracciones[1].incisos) == 0
 
 
 # =============================================================================

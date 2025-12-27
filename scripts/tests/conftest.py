@@ -193,6 +193,90 @@ def secuencia_regla_con_fracciones():
 
 
 @pytest.fixture
+def secuencia_regla_con_incisos():
+    """Regla con fracción que contiene incisos a), b), c)."""
+    return [
+        ParrafoExtraido(
+            texto="Requisitos de los comprobantes fiscales",
+            es_italica=True,
+            indice_original=250,
+        ),
+        ParrafoExtraido(
+            texto="2.7.1. Para los efectos del artículo 29-A del CFF, los comprobantes deberán contener:",
+            es_italica=False,
+            indice_original=251,
+        ),
+        ParrafoExtraido(
+            texto="I. Los datos de identificación del contribuyente:",
+            es_italica=False,
+            indice_original=252,
+        ),
+        ParrafoExtraido(
+            texto="a) Nombre o razón social.",
+            es_italica=False,
+            indice_original=253,
+        ),
+        ParrafoExtraido(
+            texto="b) Registro Federal de Contribuyentes.",
+            es_italica=False,
+            indice_original=254,
+        ),
+        ParrafoExtraido(
+            texto="c) Domicilio fiscal.",
+            es_italica=False,
+            indice_original=255,
+        ),
+        ParrafoExtraido(
+            texto="II. La descripción del servicio o mercancía.",
+            es_italica=False,
+            indice_original=256,
+        ),
+        ParrafoExtraido(
+            texto="CFF 29-A",
+            es_italica=True,
+            indice_original=257,
+        ),
+    ]
+
+
+@pytest.fixture
+def secuencia_incisos_sin_fraccion():
+    """Incisos directos sin fracción padre (caso virtual)."""
+    return [
+        ParrafoExtraido(
+            texto="Documentación para trámites",
+            es_italica=True,
+            indice_original=270,
+        ),
+        ParrafoExtraido(
+            texto="2.8.5. Los contribuyentes deberán presentar:",
+            es_italica=False,
+            indice_original=271,
+        ),
+        ParrafoExtraido(
+            texto="a) Identificación oficial vigente.",
+            es_italica=False,
+            indice_original=272,
+        ),
+        ParrafoExtraido(
+            texto="b) Comprobante de domicilio.",
+            es_italica=False,
+            indice_original=273,
+        ),
+        ParrafoExtraido(
+            texto="c) Constancia de situación fiscal.",
+            es_italica=False,
+            indice_original=274,
+        ),
+        ParrafoExtraido(
+            texto="CFF 27",
+            es_italica=True,
+            indice_original=275,
+        ),
+    ]
+
+
+@pytest.fixture
 def secuencia_numerales_huerfanos():
     """Caso atípico: numerales romanos huérfanos (II. y III. solos)."""
     return [
