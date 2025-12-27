@@ -658,3 +658,204 @@ class HeuristicasRMF:
 
         matches = patron.findall(contenido)
         return [(m[0], m[1].strip()) for m in matches]
+
+
+# =============================================================================
+# VALIDADOR DE INTEGRIDAD DE TEXTO
+# =============================================================================
+
+class ValidadorIntegridad:
+    """
+    Valida que no se pierda texto en el proceso de parseo.
+
+    Regla fundamental: TODO texto del documento fuente debe existir
+    en algún lugar del resultado (contenido, fracciones, referencias, etc.)
+
+    Detecta:
+    - Texto desaparecido completamente
+    - Fracciones faltantes (detectadas en fuente pero no en resultado)
+    - Párrafos intermedios perdidos
+
+    Usage:
+        validador = ValidadorIntegridad()
+        reporte = validador.validar(parrafos_fuente, resultado_parseo)
+    """
+
+    def __init__(self, umbral_similitud: float = 0.8):
+        """
+        Args:
+            umbral_similitud: Porcentaje mínimo de texto que debe preservarse
+        """
+        self.umbral_similitud = umbral_similitud
+
+    def validar(
+        self,
+        parrafos_fuente: List['ParrafoExtraido'],
+        resultado: ResultadoParseo,
+    ) -> Dict[str, any]:
+        """
+        Valida integridad comparando fuente con resultado.
+
+        Args:
+            parrafos_fuente: Párrafos originales del documento
+            resultado: Resultado del parseo
+
+        Returns:
+            Diccionario con reporte de integridad:
+            - texto_fuente_total: caracteres en fuente
+            - texto_resultado_total: caracteres en resultado
+            - porcentaje_preservado: % de texto preservado
+            - parrafos_perdidos: lista de textos no encontrados
+            - es_valido: True si supera el umbral
+        """
+        # Extraer todo el texto de la fuente
+        texto_fuente = self._extraer_texto_fuente(parrafos_fuente)
+
+        # Extraer todo el texto del resultado
+        texto_resultado = self._extraer_texto_resultado(resultado)
+
+        # Calcular cobertura
+        palabras_fuente = set(self._normalizar_texto(texto_fuente).split())
+        palabras_resultado = set(self._normalizar_texto(texto_resultado).split())
+
+        if not palabras_fuente:
+            return {
+                'texto_fuente_total': 0,
+                'texto_resultado_total': len(texto_resultado),
+                'porcentaje_preservado': 100.0,
+                'parrafos_perdidos': [],
+                'es_valido': True,
+            }
+
+        palabras_preservadas = palabras_fuente & palabras_resultado
+        porcentaje = len(palabras_preservadas) / len(palabras_fuente) * 100
+
+        # Identificar párrafos perdidos
+        parrafos_perdidos = self._identificar_perdidos(
+            parrafos_fuente, texto_resultado
+        )
+
+        return {
+            'texto_fuente_total': len(texto_fuente),
+            'texto_resultado_total': len(texto_resultado),
+            'porcentaje_preservado': round(porcentaje, 2),
+            'palabras_fuente': len(palabras_fuente),
+            'palabras_resultado': len(palabras_resultado),
+            'palabras_perdidas': len(palabras_fuente - palabras_resultado),
+            'parrafos_perdidos': parrafos_perdidos,
+            'es_valido': porcentaje >= (self.umbral_similitud * 100),
+        }
+
+    def validar_regla_contra_pdf(
+        self,
+        regla: ReglaParseada,
+        pdf_extractor: 'PdfExtractor',
+    ) -> Dict[str, any]:
+        """
+        Valida una regla específica contra la versión del PDF.
+
+        Detecta si la regla en el resultado tiene menos contenido
+        que la versión del PDF (que suele tener mejor estructura).
+
+        Args:
+            regla: Regla parseada a validar
+            pdf_extractor: Extractor PDF configurado
+
+        Returns:
+            Diccionario con comparación:
+            - fracciones_docx: número de fracciones en DOCX
+            - fracciones_pdf: número de fracciones en PDF
+            - faltan_fracciones: True si PDF tiene más
+            - fracciones_faltantes: lista de fracciones faltantes
+        """
+        # Obtener versión del PDF
+        pdf_data = pdf_extractor.buscar_regla_con_contexto(regla.numero)
+
+        if not pdf_data:
+            return {
+                'fracciones_docx': len(regla.fracciones),
+                'fracciones_pdf': 0,
+                'faltan_fracciones': False,
+                'pdf_disponible': False,
+            }
+
+        fracciones_docx = {f.numero for f in regla.fracciones}
+        fracciones_pdf = {f['numero'] for f in pdf_data['fracciones']}
+
+        faltantes = fracciones_pdf - fracciones_docx
+
+        return {
+            'fracciones_docx': len(fracciones_docx),
+            'fracciones_pdf': len(fracciones_pdf),
+            'faltan_fracciones': len(faltantes) > 0,
+            'fracciones_faltantes': list(faltantes),
+            'pdf_disponible': True,
+            'titulo_pdf': pdf_data.get('titulo'),
+            'titulo_docx': regla.titulo,
+        }
+
+    def _extraer_texto_fuente(self, parrafos: List['ParrafoExtraido']) -> str:
+        """Extrae todo el texto de los párrafos fuente."""
+        return '\n'.join(p.texto for p in parrafos if p.texto.strip())
+
+    def _extraer_texto_resultado(self, resultado: ResultadoParseo) -> str:
+        """Extrae todo el texto del resultado del parseo."""
+        textos = []
+
+        for regla in resultado.reglas:
+            if regla.titulo:
+                textos.append(regla.titulo)
+            if regla.contenido:
+                textos.append(regla.contenido)
+            if regla.referencias:
+                textos.append(regla.referencias)
+
+            for fraccion in regla.fracciones:
+                if fraccion.contenido:
+                    textos.append(fraccion.contenido)
+                for inciso in fraccion.incisos:
+                    if inciso.contenido:
+                        textos.append(inciso.contenido)
+
+        return '\n'.join(textos)
+
+    def _normalizar_texto(self, texto: str) -> str:
+        """Normaliza texto para comparación."""
+        # Minúsculas, sin puntuación extra
+        texto = texto.lower()
+        texto = re.sub(r'[^\w\s]', ' ', texto)
+        texto = re.sub(r'\s+', ' ', texto)
+        return texto.strip()
+
+    def _identificar_perdidos(
+        self,
+        parrafos_fuente: List['ParrafoExtraido'],
+        texto_resultado: str
+    ) -> List[str]:
+        """
+        Identifica párrafos de la fuente que no están en el resultado.
+        """
+        texto_resultado_norm = self._normalizar_texto(texto_resultado)
+        perdidos = []
+
+        for parrafo in parrafos_fuente:
+            texto = parrafo.texto.strip()
+            if len(texto) < 10:
+                continue  # Ignorar textos muy cortos
+
+            texto_norm = self._normalizar_texto(texto)
+
+            # Verificar si las palabras principales están en el resultado
+            palabras = texto_norm.split()
+            if len(palabras) < 3:
+                continue
+
+            # Tomar las primeras 5 palabras significativas
+            palabras_clave = palabras[:5]
+            encontradas = sum(1 for p in palabras_clave if p in texto_resultado_norm)
+
+            # Si menos del 60% de palabras clave están, considerar perdido
+            if encontradas / len(palabras_clave) < 0.6:
+                perdidos.append(texto[:100] + '...' if len(texto) > 100 else texto)
+
+        return perdidos

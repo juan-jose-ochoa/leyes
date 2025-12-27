@@ -17,7 +17,7 @@ import zipfile
 import xml.etree.ElementTree as ET
 from abc import ABC, abstractmethod
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
 
 from .models import ParrafoExtraido, FuenteDatos
 
@@ -444,16 +444,37 @@ class DocxXmlExtractor(Extractor):
 
 
 # =============================================================================
-# EXTRACTOR PDF (STUB PARA SEGUNDA PASADA)
+# EXTRACTOR PDF (SEGUNDA PASADA)
 # =============================================================================
 
 class PdfExtractor(Extractor):
     """
-    Extractor para archivos PDF.
+    Extractor para archivos PDF usando PyMuPDF.
 
     Usado principalmente en segunda pasada para comparar
     con otras fuentes y resolver ambigüedades.
+
+    El PDF suele tener mejor estructura que el DOCX convertido
+    porque preserva los saltos de línea originales.
     """
+
+    def __init__(self, file_path: Path):
+        """Inicializa el extractor PDF."""
+        super().__init__(file_path)
+        self._doc = None
+        self._texto_cache: Optional[List[ParrafoExtraido]] = None
+
+    def _abrir_documento(self):
+        """Abre el documento PDF si no está abierto."""
+        if self._doc is None:
+            try:
+                import fitz  # PyMuPDF
+                self._doc = fitz.open(self.file_path)
+            except ImportError:
+                raise ImportError(
+                    "PyMuPDF (fitz) es requerido para extraer PDFs. "
+                    "Instalar con: pip install pymupdf"
+                )
 
     @property
     def fuente(self) -> FuenteDatos:
@@ -461,22 +482,211 @@ class PdfExtractor(Extractor):
 
     def extraer(self) -> List[ParrafoExtraido]:
         """
-        Extrae texto del PDF.
+        Extrae texto del PDF preservando estructura de párrafos.
 
-        TODO: Implementar usando pdfplumber o pymupdf.
-        Por ahora retorna lista vacía.
+        Returns:
+            Lista de párrafos extraídos del PDF
         """
-        # Stub - implementar en segunda fase
-        return []
+        if self._texto_cache is not None:
+            return self._texto_cache
+
+        self._abrir_documento()
+        paragraphs = []
+        indice = 0
+
+        for page_num in range(len(self._doc)):
+            page = self._doc[page_num]
+            text = page.get_text()
+
+            # Dividir por líneas y filtrar
+            for line in text.split('\n'):
+                line = line.strip()
+                if not line:
+                    continue
+
+                # Filtrar encabezados/pies de página
+                if self._debe_filtrar(line):
+                    continue
+
+                paragraphs.append(ParrafoExtraido(
+                    texto=line,
+                    es_italica=False,  # PDF no preserva formato fácilmente
+                    es_negrita=False,
+                    indice_original=indice,
+                    fuente=FuenteDatos.PDF,
+                ))
+                indice += 1
+
+        self._texto_cache = paragraphs
+        return paragraphs
+
+    def _debe_filtrar(self, texto: str) -> bool:
+        """
+        Determina si una línea debe ser filtrada.
+
+        Filtra encabezados, pies de página, notas del documento.
+        IMPORTANTE: No filtrar numerales romanos (I., II., III., etc.)
+        """
+        # NO filtrar numerales romanos - son importantes
+        if re.match(r'^(I{1,3}|IV|VI{0,3}|IX|X{1,3})\.?\s*$', texto):
+            return False
+
+        # NO filtrar incisos
+        if re.match(r'^[a-z]\)\s*$', texto):
+            return False
+
+        # Números de página
+        if re.match(r'^Página\s+\d+\s+de\s+\d+$', texto):
+            return True
+
+        # Encabezados repetitivos
+        if texto.startswith("Resolución Miscelánea Fiscal"):
+            return True
+        if texto.startswith("NOTA:"):
+            return True
+
+        # Líneas muy cortas que son ruido (pero no numerales/incisos)
+        if len(texto) < 3:
+            return True
+
+        return False
 
     def buscar_regla(self, numero: str) -> Optional[str]:
         """
         Busca una regla específica en el PDF.
 
-        TODO: Implementar búsqueda en PDF.
+        Extrae todo el contenido desde el número de regla
+        hasta la siguiente regla.
+
+        Args:
+            numero: Número de regla (ej: "2.1.11")
+
+        Returns:
+            Contenido completo de la regla o None si no se encuentra
         """
-        # Stub - implementar en segunda fase
-        return None
+        paragraphs = self.extraer()
+
+        # Buscar inicio de la regla
+        patron_inicio = re.compile(rf'^{re.escape(numero)}\.?\s*$')
+        patron_siguiente = re.compile(r'^\d+\.\d+\.\d+\.?\s*$')
+
+        inicio_idx = None
+        for i, p in enumerate(paragraphs):
+            if patron_inicio.match(p.texto):
+                inicio_idx = i
+                break
+
+        if inicio_idx is None:
+            return None
+
+        # Recolectar contenido hasta la siguiente regla
+        contenido = []
+        for j in range(inicio_idx + 1, len(paragraphs)):
+            texto = paragraphs[j].texto
+
+            # Si encontramos otra regla, terminar
+            if patron_siguiente.match(texto):
+                break
+
+            contenido.append(texto)
+
+        return '\n'.join(contenido) if contenido else None
+
+    def buscar_regla_con_contexto(self, numero: str) -> Optional[Dict[str, Any]]:
+        """
+        Busca una regla con contexto estructurado.
+
+        Extrae no solo el contenido sino también:
+        - Título (párrafo anterior al número)
+        - Fracciones detectadas
+        - Párrafos intermedios
+
+        Args:
+            numero: Número de regla (ej: "2.1.11")
+
+        Returns:
+            Diccionario con estructura de la regla o None
+        """
+        paragraphs = self.extraer()
+
+        # Buscar inicio de la regla
+        patron_inicio = re.compile(rf'^{re.escape(numero)}\.?\s*$')
+        patron_siguiente = re.compile(r'^\d+\.\d+\.\d+\.?\s*$')
+        patron_fraccion = re.compile(r'^(I{1,3}|IV|VI{0,3}|IX|X{1,3})\.?\s*$')
+        patron_referencia = re.compile(r'^(CFF|LISR|LIVA|RMF)\s')
+
+        inicio_idx = None
+        for i, p in enumerate(paragraphs):
+            if patron_inicio.match(p.texto):
+                inicio_idx = i
+                break
+
+        if inicio_idx is None:
+            return None
+
+        # Extraer título (párrafo anterior si es corto y no es número)
+        titulo = None
+        if inicio_idx > 0:
+            prev = paragraphs[inicio_idx - 1].texto
+            if len(prev) < 150 and not re.match(r'^\d+\.\d+', prev):
+                titulo = prev
+
+        # Recolectar estructura
+        contenido_parrafos = []
+        fracciones = []
+        fraccion_actual = None
+        referencias = None
+
+        for j in range(inicio_idx + 1, len(paragraphs)):
+            texto = paragraphs[j].texto
+
+            # Si encontramos otra regla, terminar
+            if patron_siguiente.match(texto):
+                break
+
+            # Detectar referencia final
+            if patron_referencia.match(texto) and j > inicio_idx + 3:
+                referencias = texto
+                continue
+
+            # Detectar fracción
+            match_fraccion = patron_fraccion.match(texto)
+            if match_fraccion:
+                if fraccion_actual:
+                    fracciones.append(fraccion_actual)
+                fraccion_actual = {
+                    'numero': match_fraccion.group(1),
+                    'contenido': [],
+                }
+                continue
+
+            # Agregar al contenido actual
+            if fraccion_actual:
+                fraccion_actual['contenido'].append(texto)
+            else:
+                contenido_parrafos.append(texto)
+
+        # Agregar última fracción
+        if fraccion_actual:
+            fracciones.append(fraccion_actual)
+
+        # Convertir contenido de fracciones a string
+        for f in fracciones:
+            f['contenido'] = ' '.join(f['contenido'])
+
+        return {
+            'numero': numero,
+            'titulo': titulo,
+            'contenido': '\n'.join(contenido_parrafos),
+            'fracciones': fracciones,
+            'referencias': referencias,
+            'total_parrafos': len(contenido_parrafos) + sum(1 for f in fracciones),
+        }
+
+    def __del__(self):
+        """Cierra el documento al destruir el objeto."""
+        if self._doc:
+            self._doc.close()
 
 
 # =============================================================================

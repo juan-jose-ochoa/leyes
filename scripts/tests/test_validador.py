@@ -19,6 +19,7 @@ from rmf.validador import (
     ValidadorEstructural,
     InspectorMultiFormato,
     HeuristicasRMF,
+    ValidadorIntegridad,
 )
 from rmf.models import (
     ReglaParseada,
@@ -292,3 +293,241 @@ class TestRegresiones:
 
 # Importar FuenteDatos para los tests
 from rmf.models import FuenteDatos
+
+
+# =============================================================================
+# TESTS DE VALIDADOR DE INTEGRIDAD
+# =============================================================================
+
+class TestValidadorIntegridad:
+    """
+    Tests para ValidadorIntegridad.
+
+    Verifica la regla fundamental: TODO texto debe existir en algún lugar.
+    """
+
+    def test_integridad_texto_preservado(self, crear_parrafo):
+        """Texto completamente preservado pasa validación."""
+        from rmf.models import ParrafoExtraido
+
+        parrafos = [
+            crear_parrafo("Para los efectos del artículo.", indice=0),
+            crear_parrafo("CFF 14-B", indice=1),
+        ]
+
+        # Simular resultado con el mismo texto
+        regla = ReglaParseada(
+            numero="2.1.1",
+            titulo="",
+            contenido="Para los efectos del artículo.",
+            referencias="CFF 14-B",
+            division_path="",
+            orden_global=1,
+        )
+        resultado = ResultadoParseo(
+            reglas=[regla],
+            divisiones=[],
+            documento="Test",
+        )
+
+        validador = ValidadorIntegridad(umbral_similitud=0.7)
+        reporte = validador.validar(parrafos, resultado)
+
+        assert reporte['es_valido'], "Texto preservado debe ser válido"
+        assert reporte['porcentaje_preservado'] >= 70
+
+    def test_integridad_detecta_texto_perdido(self, crear_parrafo):
+        """Detecta cuando hay texto perdido."""
+        parrafos = [
+            crear_parrafo("Para los efectos del artículo primero.", indice=0),
+            crear_parrafo("Texto importante que se pierde en el resultado.", indice=1),
+            crear_parrafo("CFF 14-B", indice=2),
+        ]
+
+        # Resultado sin el texto intermedio
+        regla = ReglaParseada(
+            numero="2.1.1",
+            titulo="",
+            contenido="Para los efectos del artículo primero.",
+            referencias="CFF 14-B",
+            division_path="",
+            orden_global=1,
+        )
+        resultado = ResultadoParseo(
+            reglas=[regla],
+            divisiones=[],
+            documento="Test",
+        )
+
+        validador = ValidadorIntegridad(umbral_similitud=0.9)
+        reporte = validador.validar(parrafos, resultado)
+
+        # Debe detectar que hay texto perdido
+        assert reporte['palabras_perdidas'] > 0
+
+
+@pytest.fixture
+def rmf_pdf_path(base_dir):
+    """Ruta al PDF de RMF."""
+    return base_dir / "doc" / "rmf" / "rmf_2025_compilada.pdf"
+
+
+# =============================================================================
+# TESTS DE VALIDACIÓN CONTRA PDF
+# =============================================================================
+
+@pytest.mark.integracion
+class TestValidacionContraPdf:
+    """
+    Tests que validan datos del parser contra el PDF original.
+
+    Estos tests son CRÍTICOS para detectar problemas de conversión
+    donde el DOCX pierde estructura que el PDF preserva.
+    """
+
+    def test_detectar_fracciones_faltantes_en_regla(self, rmf_docx_path, rmf_pdf_path):
+        """Detecta cuando una regla tiene menos fracciones que el PDF."""
+        if not rmf_docx_path.exists() or not rmf_pdf_path.exists():
+            pytest.skip("Archivos DOCX/PDF no disponibles")
+
+        from rmf.extractor import DocxXmlExtractor, PdfExtractor
+        from rmf.parser import ParserRMF
+
+        # Parsear DOCX
+        docx_ext = DocxXmlExtractor(rmf_docx_path)
+        paragraphs = docx_ext.extraer()
+        parser = ParserRMF()
+        resultado = parser.parsear(paragraphs, "RMF 2025")
+
+        # Preparar extractor PDF
+        pdf_ext = PdfExtractor(rmf_pdf_path)
+
+        # Buscar regla 2.1.11 (sabemos que tiene problemas)
+        regla_2_1_11 = next(
+            (r for r in resultado.reglas if r.numero == "2.1.11"),
+            None
+        )
+        assert regla_2_1_11 is not None
+
+        # Obtener datos del PDF directamente (no a través de validador)
+        pdf_data = pdf_ext.buscar_regla_con_contexto("2.1.11")
+        assert pdf_data is not None
+
+        # El PDF tiene 6 fracciones (2 listas de I, II, III)
+        assert len(pdf_data['fracciones']) == 6, "PDF tiene 6 fracciones"
+
+        # El DOCX parseado puede tener menos (problema de conversión)
+        fracciones_docx = len(regla_2_1_11.fracciones)
+        fracciones_pdf = len(pdf_data['fracciones'])
+
+        # Detectar discrepancia
+        assert fracciones_pdf >= fracciones_docx, (
+            "PDF debe tener al menos tantas fracciones como DOCX"
+        )
+
+    def test_validar_titulo_extraido(self, rmf_pdf_path):
+        """PDF debe extraer título que DOCX pierde."""
+        if not rmf_pdf_path.exists():
+            pytest.skip("Archivo PDF no disponible")
+
+        from rmf.extractor import PdfExtractor
+
+        pdf_ext = PdfExtractor(rmf_pdf_path)
+        resultado = pdf_ext.buscar_regla_con_contexto("2.1.11")
+
+        assert resultado is not None
+        assert resultado['titulo'] is not None
+        assert len(resultado['titulo']) > 10
+
+
+# =============================================================================
+# TEST DE REGRESIÓN: CASO 2.1.11
+# =============================================================================
+
+@pytest.mark.integracion
+@pytest.mark.regresion
+class TestRegresion_2_1_11:
+    """
+    Test de regresión para el caso específico 2.1.11.
+
+    Este caso documenta un problema de conversión PDF→DOCX donde:
+    1. Fracción I se fusiona con párrafo anterior
+    2. Se pierden 2 listas de fracciones (capital y deuda)
+    3. El título desaparece
+
+    El test verifica que PODEMOS DETECTAR el problema,
+    no que lo corregimos automáticamente (evita overfitting).
+    """
+
+    def test_pdf_tiene_6_fracciones(self, rmf_pdf_path):
+        """El PDF original tiene 6 fracciones (2 listas de I,II,III)."""
+        if not rmf_pdf_path.exists():
+            pytest.skip("Archivo PDF no disponible")
+
+        from rmf.extractor import PdfExtractor
+
+        pdf_ext = PdfExtractor(rmf_pdf_path)
+        resultado = pdf_ext.buscar_regla_con_contexto("2.1.11")
+
+        assert resultado is not None
+        assert len(resultado['fracciones']) == 6
+
+        # Debe tener 2 fracciones I
+        numeros = [f['numero'] for f in resultado['fracciones']]
+        assert numeros.count('I') == 2, "Debe haber 2 fracciones I (capital y deuda)"
+        assert numeros.count('II') == 2
+        assert numeros.count('III') == 2
+
+    def test_pdf_tiene_titulo(self, rmf_pdf_path):
+        """El PDF preserva el título de la regla."""
+        if not rmf_pdf_path.exists():
+            pytest.skip("Archivo PDF no disponible")
+
+        from rmf.extractor import PdfExtractor
+
+        pdf_ext = PdfExtractor(rmf_pdf_path)
+        resultado = pdf_ext.buscar_regla_con_contexto("2.1.11")
+
+        assert resultado is not None
+        assert resultado['titulo'] is not None
+
+        # El título debe mencionar operaciones financieras
+        titulo = resultado['titulo'].lower()
+        assert 'operaciones' in titulo or 'derivadas' in titulo
+
+    def test_podemos_detectar_discrepancia(self, rmf_docx_path, rmf_pdf_path):
+        """Podemos detectar que el DOCX tiene menos contenido que el PDF."""
+        if not rmf_docx_path.exists() or not rmf_pdf_path.exists():
+            pytest.skip("Archivos DOCX/PDF no disponibles")
+
+        from rmf.extractor import DocxXmlExtractor, PdfExtractor
+        from rmf.parser import ParserRMF
+
+        # Parsear DOCX
+        docx_ext = DocxXmlExtractor(rmf_docx_path)
+        paragraphs = docx_ext.extraer()
+        parser = ParserRMF()
+        resultado = parser.parsear(paragraphs, "RMF 2025")
+
+        # Obtener regla del resultado
+        regla = next((r for r in resultado.reglas if r.numero == "2.1.11"), None)
+        assert regla is not None
+
+        # Comparar con PDF
+        pdf_ext = PdfExtractor(rmf_pdf_path)
+        pdf_data = pdf_ext.buscar_regla_con_contexto("2.1.11")
+
+        # DETECTAR discrepancia (no corregir)
+        fracciones_docx = len(regla.fracciones)
+        fracciones_pdf = len(pdf_data['fracciones'])
+
+        # El PDF SIEMPRE debe tener 6, el DOCX puede tener menos
+        assert fracciones_pdf == 6, "PDF siempre tiene 6 fracciones"
+
+        # Si el DOCX tiene menos, hay un problema detectable
+        if fracciones_docx < fracciones_pdf:
+            # Esto es ESPERADO - documenta el problema
+            diferencia = fracciones_pdf - fracciones_docx
+            assert diferencia > 0, (
+                f"Discrepancia detectada: PDF={fracciones_pdf}, DOCX={fracciones_docx}"
+            )

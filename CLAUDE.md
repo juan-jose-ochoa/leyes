@@ -3,6 +3,9 @@
 ## Git
 
 - **No hacer commit a menos que se solicite explícitamente.** Espera a que el usuario diga "haz commit", "commit", o similar antes de ejecutar `git commit`.
+- **Protocolo de solicitud de commit**
+    - Junto con la solicitud de commit, siempre debo a presentar el resultado de la ejecución de los tests con **cero errores**. Si los test fallan, no debe de hacerse commit.
+    - Tampoco se toleran warnings del linter o del typescript, los warnings invitan a refactorizar el código. Indica los warnings encontrados o **cero warnings** en su defecto. No se aceptará la solicitud de commit con warnings.
 
 ## Proyecto
 
