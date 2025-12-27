@@ -123,12 +123,13 @@ PATRON_TITULO_CONTINUACION = re.compile(
 # Patrón para detectar regla con referencia legal al INICIO del párrafo
 # Ej: "LIEPS 19 Registro, almacenamiento... 5.2.31. Para los efectos..."
 # Ej: "CFF 27, LMV 2 Caso de aclaración... 2.5.24. Para los efectos..."
+# Ej: "LIEPS 2o., NOM-051-SCFI/SSA1-2010, DOF... Preparaciones... 5.1.3. Para los efectos..."
 # Captura: grupo 1=referencia, grupo 2=título, grupo 3=número, grupo 4=contenido
 PATRON_REF_TITULO_INLINE = re.compile(
-    r'^([A-Z]+\s+[\d\w\-,.\s]+?)\s+'  # Referencia(s) al inicio
-    r'([A-ZÁÉÍÓÚÑÜ][^\d]*?)\s+'       # Título (hasta encontrar dígito)
-    r'(\d+\.\d+\.\d+)\.\s+'           # Número de regla
-    r'(Para los efectos.+)$',         # Contenido
+    r'^([A-Z][A-Za-záéíóúñü\d\s\-,./]+?)\s+'  # Referencia(s) al inicio (más flexible)
+    r'([A-ZÁÉÍÓÚÑÜ][^\d]*?)\s+'               # Título (hasta encontrar dígito)
+    r'(\d+\.\d+\.\d+)\.\s+'                   # Número de regla
+    r'(Para los efectos.+)$',                 # Contenido
     re.DOTALL
 )
 
@@ -809,6 +810,10 @@ class ParserRMF:
 
             # Detectar si hay otra regla con título inline
             if PATRON_TITULO_INLINE.match(texto):
+                break
+
+            # Detectar si hay otra regla con título solo (sin contenido)
+            if PATRON_TITULO_FINAL.match(texto):
                 break
 
             # Ignorar notas de reforma
