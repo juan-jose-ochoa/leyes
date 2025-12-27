@@ -172,5 +172,30 @@ $$ LANGUAGE plpgsql STABLE;
 
 COMMENT ON FUNCTION api.verificar_ley IS 'API: Verifica integridad de divisiones, detecta reglas faltantes';
 
+-- API wrapper para verificar_division
+DROP FUNCTION IF EXISTS api.verificar_division(INT);
+CREATE OR REPLACE FUNCTION api.verificar_division(div_id INT)
+RETURNS TABLE(
+    division_id INT,
+    capitulo VARCHAR,
+    total_actual INT,
+    primera_regla TEXT,
+    ultima_regla TEXT,
+    num_primera INT,
+    num_ultima INT,
+    total_esperado INT,
+    faltantes INT,
+    porcentaje_completo NUMERIC,
+    numeros_faltantes INT[]
+) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT * FROM public.verificar_division(div_id);
+END;
+$$ LANGUAGE plpgsql STABLE;
+
+COMMENT ON FUNCTION api.verificar_division IS 'API: Verifica integridad de una división específica';
+
 -- Permisos
 GRANT EXECUTE ON FUNCTION api.verificar_ley(VARCHAR) TO web_anon;
+GRANT EXECUTE ON FUNCTION api.verificar_division(INT) TO web_anon;

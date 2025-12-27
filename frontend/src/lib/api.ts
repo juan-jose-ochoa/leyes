@@ -327,3 +327,25 @@ export async function getVerificacionLey(ley: string): Promise<VerificacionDivis
     body: JSON.stringify({ ley_codigo: ley }),
   })
 }
+
+export interface VerificacionDivisionSimple {
+  division_id: number
+  capitulo: string
+  total_actual: number
+  primera_regla: string | null
+  ultima_regla: string | null
+  num_primera: number | null
+  num_ultima: number | null
+  total_esperado: number
+  faltantes: number
+  porcentaje_completo: number | null
+  numeros_faltantes: number[] | null
+}
+
+export async function getVerificacionDivision(divId: number): Promise<VerificacionDivisionSimple | null> {
+  const result = await fetchAPI<VerificacionDivisionSimple[]>('/rpc/verificar_division', {
+    method: 'POST',
+    body: JSON.stringify({ div_id: divId }),
+  })
+  return result[0] || null
+}

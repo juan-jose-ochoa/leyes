@@ -1,9 +1,9 @@
 import { useState, useMemo } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { Home, ChevronRight, BookOpen, ExternalLink, AlertTriangle, CheckCircle, XCircle, Filter, Eye, EyeOff } from 'lucide-react'
-import { useDivisionInfo, useArticulosDivision } from '@/hooks/useArticle'
+import { Home, ChevronRight, BookOpen, ExternalLink, AlertTriangle, CheckCircle, XCircle, Filter, Eye, EyeOff, FileQuestion } from 'lucide-react'
+import { useDivisionInfo, useArticulosDivision, useVerificacionDivision } from '@/hooks/useArticle'
 import ArticleContent from '@/components/ArticleContent'
-import type { RegistroCalidad, ArticuloDivision } from '@/lib/api'
+import type { RegistroCalidad, ArticuloDivision, VerificacionDivisionSimple } from '@/lib/api'
 import clsx from 'clsx'
 
 // Componente para mostrar el estatus de calidad de importación
@@ -149,6 +149,85 @@ function ResumenCalidad({
   )
 }
 
+// Panel de verificación de integridad (reglas faltantes)
+function VerificacionPanel({
+  verificacion,
+  capitulo
+}: {
+  verificacion: VerificacionDivisionSimple
+  capitulo: string
+}) {
+  if (!verificacion.faltantes || verificacion.faltantes === 0) {
+    return null
+  }
+
+  const porcentaje = verificacion.porcentaje_completo ?? 100
+  const isWarning = porcentaje >= 80 && porcentaje < 100
+  const isError = porcentaje < 80
+
+  return (
+    <div className={clsx(
+      'mb-8 p-4 rounded-lg border',
+      isError
+        ? 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800'
+        : isWarning
+          ? 'bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800'
+          : 'bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700'
+    )}>
+      <div className="flex items-center justify-between mb-3">
+        <h3 className={clsx(
+          'text-sm font-semibold flex items-center gap-2',
+          isError
+            ? 'text-red-700 dark:text-red-300'
+            : isWarning
+              ? 'text-amber-700 dark:text-amber-300'
+              : 'text-gray-700 dark:text-gray-300'
+        )}>
+          <FileQuestion className="h-4 w-4" />
+          Verificación de Integridad
+        </h3>
+        <span className={clsx(
+          'text-sm font-medium px-2 py-0.5 rounded',
+          isError
+            ? 'bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300'
+            : isWarning
+              ? 'bg-amber-100 text-amber-700 dark:bg-amber-900 dark:text-amber-300'
+              : 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300'
+        )}>
+          {porcentaje}%
+        </span>
+      </div>
+
+      <div className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+        {verificacion.total_actual} de {verificacion.total_esperado} reglas
+        {verificacion.faltantes > 0 && (
+          <span className="text-red-600 dark:text-red-400 font-medium ml-1">
+            ({verificacion.faltantes} faltantes)
+          </span>
+        )}
+      </div>
+
+      {verificacion.numeros_faltantes && verificacion.numeros_faltantes.length > 0 && (
+        <div>
+          <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-2">
+            Reglas no encontradas en el documento:
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {verificacion.numeros_faltantes.map(num => (
+              <span
+                key={num}
+                className="inline-flex items-center px-2 py-1 text-xs bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300 rounded"
+              >
+                {capitulo}.{num}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
 export default function DivisionView() {
   const { ley, id } = useParams<{ ley: string; id: string }>()
   const divId = id ? parseInt(id) : null
@@ -156,6 +235,7 @@ export default function DivisionView() {
 
   const { data: info, isLoading: loadingInfo } = useDivisionInfo(divId)
   const { data: articulos, isLoading: loadingArticulos } = useArticulosDivision(divId)
+  const { data: verificacion } = useVerificacionDivision(divId)
 
   const isLoading = loadingInfo || loadingArticulos
   const esRegla = info?.ley_tipo === 'resolucion'
@@ -257,6 +337,14 @@ export default function DivisionView() {
           {info.total_articulos} {esRegla ? 'reglas' : 'artículos'}
         </p>
       </div>
+
+      {/* Panel de verificación de integridad (reglas faltantes) */}
+      {verificacion && info.numero && (
+        <VerificacionPanel
+          verificacion={verificacion}
+          capitulo={info.numero}
+        />
+      )}
 
       {/* Panel de resumen de calidad (solo para RMF) */}
       {esRegla && articulos && (
