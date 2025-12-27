@@ -65,8 +65,13 @@ PATRON_NOTA_REFORMA = re.compile(
     re.IGNORECASE
 )
 
-# Fracción romana: "I. Contenido..." o "II. Contenido..."
-PATRON_FRACCION = re.compile(r'^(I{1,3}|IV|VI{0,3}|IX|X{1,3})\.\s+(.*)$')
+# Fracción romana: "I. Contenido..." o "XI. Contenido..."
+# Patrón soporta I-XXX (números romanos del 1 al 30)
+PATRON_FRACCION = re.compile(r'^(X{0,3}(?:IX|IV|V?I{0,3}))\.\s+(.*)$')
+
+# Fracción romana sola en línea: "XI." sin contenido después
+# El contenido viene en la siguiente línea
+PATRON_FRACCION_SOLO = re.compile(r'^(X{0,3}(?:IX|IV|V?I{0,3}))\.\s*$')
 
 # Inciso: "a) Contenido..." o "b) Contenido..."
 PATRON_INCISO = re.compile(r'^([a-z])\)\s+(.*)$')
@@ -86,7 +91,7 @@ PATRON_PARRAFO_INTERMEDIO = re.compile(
 # Ej: "...las siguientes: I. Las de cobertura cambiaria..."
 PATRON_FRACCION_INLINE = re.compile(
     r'^(.*?(?:las siguientes|los siguientes|lo siguiente):\s*)'  # Intro hasta "las siguientes:"
-    r'(I{1,3}|IV|VI{0,3}|IX|X{1,3})\.\s+'  # Número romano
+    r'(X{0,3}(?:IX|IV|V?I{0,3}))\.\s+'  # Número romano (I-XXX)
     r'(.*)$',  # Contenido de la fracción
     re.IGNORECASE | re.DOTALL
 )
@@ -498,10 +503,17 @@ class ParserRMF:
                 # No avanzar idx - el main loop procesará esta línea
                 break
 
-            # Detectar fracción
+            # Detectar fracción (con contenido en misma línea)
             match_fraccion = PATRON_FRACCION.match(texto)
             if match_fraccion:
                 nuevas_fracciones, idx = self._procesar_fraccion(match_fraccion, paragraphs, idx)
+                fracciones.extend(nuevas_fracciones)
+                continue
+
+            # Detectar fracción sola (número sin contenido, ej: "XI.")
+            match_fraccion_solo = PATRON_FRACCION_SOLO.match(texto)
+            if match_fraccion_solo:
+                nuevas_fracciones, idx = self._procesar_fraccion_solo(match_fraccion_solo, paragraphs, idx)
                 fracciones.extend(nuevas_fracciones)
                 continue
 
@@ -632,10 +644,17 @@ class ParserRMF:
                 idx += 1
                 continue
 
-            # Detectar fracción
+            # Detectar fracción (con contenido en misma línea)
             match_fraccion = PATRON_FRACCION.match(texto)
             if match_fraccion:
                 nuevas_fracciones, idx = self._procesar_fraccion(match_fraccion, paragraphs, idx)
+                fracciones.extend(nuevas_fracciones)
+                continue
+
+            # Detectar fracción sola (número sin contenido, ej: "XI.")
+            match_fraccion_solo = PATRON_FRACCION_SOLO.match(texto)
+            if match_fraccion_solo:
+                nuevas_fracciones, idx = self._procesar_fraccion_solo(match_fraccion_solo, paragraphs, idx)
                 fracciones.extend(nuevas_fracciones)
                 continue
 
@@ -780,6 +799,7 @@ class ParserRMF:
 
             # ¿Termina el contenido de esta fracción?
             if (PATRON_FRACCION.match(texto) or
+                PATRON_FRACCION_SOLO.match(texto) or
                 PATRON_INCISO.match(texto) or
                 self._es_fin_de_regla(texto) or
                 es_referencia_final(texto, paragraphs[idx].es_italica)):
@@ -818,6 +838,75 @@ class ParserRMF:
             ))
         else:
             # Fracción normal sin párrafo intermedio
+            resultado.append(Fraccion(
+                numero=numero_romano,
+                contenido=contenido_completo,
+                orden=self._romano_a_entero(numero_romano),
+                tipo="fraccion",
+            ))
+
+        return resultado, idx
+
+    def _procesar_fraccion_solo(
+        self,
+        match: re.Match,
+        paragraphs: List[ParrafoExtraido],
+        idx: int
+    ) -> Tuple[List[Fraccion], int]:
+        """
+        Procesa una fracción donde el número está solo en la línea.
+
+        Ej: "XI." seguido de contenido en la siguiente línea.
+
+        Returns:
+            Tuple de (lista de fracciones/párrafos, nuevo índice)
+        """
+        numero_romano = match.group(1)
+        contenido_partes = []  # No hay contenido en la misma línea
+
+        idx += 1
+
+        # Recolectar contenido hasta encontrar otra estructura
+        while idx < len(paragraphs):
+            texto = paragraphs[idx].texto
+
+            # ¿Termina el contenido de esta fracción?
+            if (PATRON_FRACCION.match(texto) or
+                PATRON_FRACCION_SOLO.match(texto) or
+                PATRON_INCISO.match(texto) or
+                self._es_fin_de_regla(texto) or
+                es_referencia_final(texto, paragraphs[idx].es_italica)):
+                break
+
+            contenido_partes.append(texto)
+            idx += 1
+
+        # Consolidar contenido
+        contenido_completo = ' '.join(contenido_partes).strip()
+
+        # Detectar si hay un párrafo intermedio al final
+        match_intermedio = PATRON_PARRAFO_INTERMEDIO.match(contenido_completo)
+
+        resultado = []
+
+        if match_intermedio:
+            contenido_fraccion = match_intermedio.group(1).strip()
+            parrafo_intermedio = match_intermedio.group(2).strip()
+
+            resultado.append(Fraccion(
+                numero=numero_romano,
+                contenido=contenido_fraccion,
+                orden=self._romano_a_entero(numero_romano),
+                tipo="fraccion",
+            ))
+
+            resultado.append(Fraccion(
+                numero=None,
+                contenido=parrafo_intermedio,
+                orden=0,
+                tipo="parrafo",
+            ))
+        else:
             resultado.append(Fraccion(
                 numero=numero_romano,
                 contenido=contenido_completo,
