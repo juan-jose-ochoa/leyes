@@ -116,6 +116,18 @@ PATRON_TITULO_CONTINUACION = re.compile(
     r'^([a-záéíóúñü][^.]*?)\s+(\d+\.\d+\.\d+)\.\s+([A-Z].+)$'
 )
 
+# Patrón para detectar regla con referencia legal al INICIO del párrafo
+# Ej: "LIEPS 19 Registro, almacenamiento... 5.2.31. Para los efectos..."
+# Ej: "CFF 27, LMV 2 Caso de aclaración... 2.5.24. Para los efectos..."
+# Captura: grupo 1=referencia, grupo 2=título, grupo 3=número, grupo 4=contenido
+PATRON_REF_TITULO_INLINE = re.compile(
+    r'^([A-Z]+\s+[\d\w\-,.\s]+?)\s+'  # Referencia(s) al inicio
+    r'([A-ZÁÉÍÓÚÑÜ][^\d]*?)\s+'       # Título (hasta encontrar dígito)
+    r'(\d+\.\d+\.\d+)\.\s+'           # Número de regla
+    r'(Para los efectos.+)$',         # Contenido
+    re.DOTALL
+)
+
 # Siglas de leyes conocidas (para detectar referencias)
 SIGLAS_LEYES = (
     'CFF', 'LISR', 'LIVA', 'LIESPS', 'LIEPS', 'LIF', 'LA',
@@ -181,11 +193,7 @@ def es_referencia_final(texto: str, es_italica: bool = False) -> bool:
     if not empieza_con_sigla:
         return False
 
-    # Itálica + sigla = referencia segura
-    if es_italica:
-        return True
-
-    # Si tiene frases típicas de contenido, NO es referencia
+    # Si tiene frases típicas de contenido, NO es referencia (incluso si es itálica)
     texto_lower = texto.lower()
     frases_contenido = (
         'para los efectos', 'se podrá', 'los contribuyentes',
@@ -193,6 +201,10 @@ def es_referencia_final(texto: str, es_italica: bool = False) -> bool:
     )
     if any(frase in texto_lower for frase in frases_contenido):
         return False
+
+    # Itálica + sigla = referencia segura (solo si no tiene frases de contenido)
+    if es_italica:
+        return True
 
     # Referencia larga que termina con fecha
     if re.search(r'\d{1,2}/\d{1,2}/\d{4}$', texto_stripped):
@@ -333,6 +345,14 @@ class ParserRMF:
                 if match_embebida:
                     i = self._procesar_regla_titulo_final(match_embebida, paragraphs, i)
                     continue
+
+            # === REGLA CON REFERENCIA AL INICIO ===
+            # Ej: "LIEPS 19 Registro, almacenamiento... 5.2.31. Para los efectos..."
+            # Este patrón NO requiere ser la siguiente regla esperada
+            match_ref = PATRON_REF_TITULO_INLINE.match(texto)
+            if match_ref:
+                i = self._procesar_regla_ref_inicio(match_ref, paragraphs, i)
+                continue
 
             i += 1
 
@@ -498,6 +518,11 @@ class ParserRMF:
                 idx += 1
                 continue
 
+            # Detectar regla con referencia al inicio (antes de verificar referencia)
+            # Ej: "LIEPS 19 Registro... 5.2.31. Para los efectos..."
+            if PATRON_REF_TITULO_INLINE.match(texto):
+                break
+
             # Detectar referencia
             if es_referencia_final(texto, es_italica):
                 referencias = texto
@@ -646,6 +671,10 @@ class ParserRMF:
             if self._es_inicio_regla_embebida(texto, numero):
                 break
 
+            # Detectar regla con referencia al inicio
+            if PATRON_REF_TITULO_INLINE.match(texto):
+                break
+
             # Ignorar notas de reforma
             if PATRON_NOTA_REFORMA.match(texto):
                 idx += 1
@@ -709,6 +738,138 @@ class ParserRMF:
         regla = ReglaParseada(
             numero=numero,
             titulo=titulo,  # Ya tenemos el título del match
+            contenido=contenido,
+            referencias=referencias,
+            fracciones=fracciones,
+            division_path=division_actual.path_texto if division_actual else "",
+            titulo_padre=self.titulo_actual.numero if self.titulo_actual else None,
+            capitulo_padre=self.capitulo_actual.numero if self.capitulo_actual else None,
+            seccion_padre=self.seccion_actual.numero if self.seccion_actual else None,
+            orden_global=self.orden_regla,
+        )
+
+        # Validar
+        self._validar_regla(regla)
+        self.reglas.append(regla)
+
+        return idx
+
+    def _procesar_regla_ref_inicio(
+        self,
+        match: re.Match,
+        paragraphs: List[ParrafoExtraido],
+        idx: int
+    ) -> int:
+        """
+        Procesa una regla con referencia legal al INICIO del párrafo.
+
+        Formato: "SIGLA NUM Título X.X.X. Para los efectos..."
+        Ej: "LIEPS 19 Registro, almacenamiento... 5.2.31. Para los efectos..."
+
+        La referencia inicial se descarta (ya que pertenece a la regla anterior).
+
+        Args:
+            match: Match de PATRON_REF_TITULO_INLINE
+            paragraphs: Lista completa de párrafos
+            idx: Índice actual
+
+        Returns:
+            Nuevo índice después del procesamiento
+        """
+        # ref_inicio = match.group(1)  # Descartamos la referencia inicial
+        titulo = match.group(2).strip()
+        numero = match.group(3)
+        contenido_primera_linea = match.group(4).strip()
+
+        # Inferir capítulo si no coincide
+        self._inferir_capitulo_si_necesario(numero)
+
+        # Recolectar contenido y referencias
+        contenido_partes = [contenido_primera_linea]
+        referencias = None
+        fracciones = []
+
+        idx += 1
+        while idx < len(paragraphs):
+            parrafo = paragraphs[idx]
+            texto = parrafo.texto
+            es_italica = parrafo.es_italica
+
+            # ¿Termina la regla?
+            if self._es_fin_de_regla(texto):
+                break
+
+            # Detectar si hay otra regla con ref al inicio
+            if PATRON_REF_TITULO_INLINE.match(texto):
+                break
+
+            # Detectar si hay otra regla con título inline
+            if PATRON_TITULO_INLINE.match(texto):
+                break
+
+            # Ignorar notas de reforma
+            if PATRON_NOTA_REFORMA.match(texto):
+                idx += 1
+                continue
+
+            # Detectar referencia
+            if es_referencia_final(texto, es_italica):
+                referencias = texto
+                idx += 1
+                continue
+
+            # Detectar fracción
+            match_fraccion = PATRON_FRACCION.match(texto)
+            if match_fraccion:
+                nuevas_fracciones, idx = self._procesar_fraccion(match_fraccion, paragraphs, idx)
+                fracciones.extend(nuevas_fracciones)
+                continue
+
+            # Detectar fracción sola
+            match_fraccion_solo = PATRON_FRACCION_SOLO.match(texto)
+            if match_fraccion_solo:
+                nuevas_fracciones, idx = self._procesar_fraccion_solo(match_fraccion_solo, paragraphs, idx)
+                fracciones.extend(nuevas_fracciones)
+                continue
+
+            # Detectar inciso
+            match_inciso = PATRON_INCISO.match(texto)
+            if match_inciso:
+                inciso = Inciso(
+                    letra=match_inciso.group(1),
+                    contenido=match_inciso.group(2),
+                    orden=ord(match_inciso.group(1)) - ord('a') + 1,
+                )
+                if fracciones:
+                    fracciones[-1].incisos.append(inciso)
+                else:
+                    fraccion_virtual = Fraccion(
+                        numero="",
+                        contenido="",
+                        orden=0,
+                        incisos=[inciso],
+                    )
+                    fracciones.append(fraccion_virtual)
+                idx += 1
+                continue
+
+            # Contenido normal
+            contenido_partes.append(texto)
+            idx += 1
+
+        # Consolidar y crear regla
+        contenido = consolidar_parrafos(contenido_partes)
+
+        # Renumerar orden de fracciones
+        for i, f in enumerate(fracciones, 1):
+            f.orden = i
+
+        self.orden_regla += 1
+        division_actual = self.seccion_actual or self.capitulo_actual or self.titulo_actual
+
+        regla = ReglaParseada(
+            numero=numero,
+            titulo=titulo,
             contenido=contenido,
             referencias=referencias,
             fracciones=fracciones,
@@ -815,6 +976,7 @@ class ParserRMF:
                 PATRON_FRACCION_SOLO.match(texto) or
                 PATRON_INCISO.match(texto) or
                 self._es_fin_de_regla(texto) or
+                PATRON_REF_TITULO_INLINE.match(texto) or
                 es_referencia_final(texto, paragraphs[idx].es_italica)):
                 break
 
@@ -888,6 +1050,7 @@ class ParserRMF:
                 PATRON_FRACCION_SOLO.match(texto) or
                 PATRON_INCISO.match(texto) or
                 self._es_fin_de_regla(texto) or
+                PATRON_REF_TITULO_INLINE.match(texto) or
                 es_referencia_final(texto, paragraphs[idx].es_italica)):
                 break
 
