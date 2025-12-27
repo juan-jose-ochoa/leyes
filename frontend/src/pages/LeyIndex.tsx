@@ -1,7 +1,60 @@
+import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { BookOpen, ChevronRight, FileText, Home } from 'lucide-react'
+import { BookOpen, ChevronRight, ChevronDown, FileText, Home } from 'lucide-react'
 import { useEstructuraLey, useLeyes } from '@/hooks/useArticle'
+import type { Division } from '@/lib/api'
 import clsx from 'clsx'
+
+// Agrupar divisiones por título
+interface GrupoTitulo {
+  titulo: Division | null
+  hijos: Division[]
+}
+
+function agruparPorTitulo(divisiones: Division[]): GrupoTitulo[] {
+  const grupos: GrupoTitulo[] = []
+  let grupoActual: GrupoTitulo | null = null
+
+  // Filtrar y deduplicar
+  const divsFiltradas = divisiones
+    .filter((div) => div.total_articulos > 0 || div.primer_articulo)
+    .reduce((acc, div) => {
+      const key = `${div.tipo}-${div.numero}`
+      const existing = acc.find(d => `${d.tipo}-${d.numero}` === key)
+      if (!existing) {
+        acc.push(div)
+      } else if (div.total_articulos > existing.total_articulos) {
+        const idx = acc.indexOf(existing)
+        acc[idx] = div
+      }
+      return acc
+    }, [] as Division[])
+
+  for (const div of divsFiltradas) {
+    if (div.tipo === 'titulo') {
+      // Nuevo grupo de título
+      if (grupoActual) {
+        grupos.push(grupoActual)
+      }
+      grupoActual = { titulo: div, hijos: [] }
+    } else {
+      // Es capítulo o sección
+      if (grupoActual) {
+        grupoActual.hijos.push(div)
+      } else {
+        // No hay título padre, crear grupo sin título
+        grupos.push({ titulo: null, hijos: [div] })
+      }
+    }
+  }
+
+  // No olvidar el último grupo
+  if (grupoActual) {
+    grupos.push(grupoActual)
+  }
+
+  return grupos
+}
 
 export default function LeyIndex() {
   const { ley } = useParams<{ ley: string }>()
@@ -45,6 +98,9 @@ export default function LeyIndex() {
   const esResolucion = leyInfo?.tipo === 'resolucion'
   const tipoContenido = esResolucion ? 'regla' : 'articulo'
 
+  // Agrupar por títulos
+  const grupos = agruparPorTitulo(estructura)
+
   return (
     <div className="mx-auto max-w-4xl">
       {/* Breadcrumbs */}
@@ -74,9 +130,11 @@ export default function LeyIndex() {
               'inline-flex items-center px-3 py-1 rounded-lg text-sm font-bold text-white',
               leyInfo?.tipo === 'resolucion'
                 ? 'bg-amber-600'
-                : leyInfo?.tipo === 'ley'
-                  ? 'bg-primary-600'
-                  : 'bg-blue-600'
+                : leyInfo?.tipo === 'anexo'
+                  ? 'bg-orange-600'
+                  : leyInfo?.tipo === 'ley'
+                    ? 'bg-primary-600'
+                    : 'bg-blue-600'
             )}
           >
             {ley}
@@ -92,76 +150,114 @@ export default function LeyIndex() {
         )}
       </div>
 
-      {/* Estructura jerárquica - solo divisiones con artículos, deduplicadas */}
-      <div className="space-y-2">
-        {estructura
-          .filter((div) => div.total_articulos > 0 || div.primer_articulo)
-          // Deduplicar por tipo+numero, manteniendo el que tiene más artículos
-          .reduce((acc, div) => {
-            const key = `${div.tipo}-${div.numero}`
-            const existing = acc.find(d => `${d.tipo}-${d.numero}` === key)
-            if (!existing) {
-              acc.push(div)
-            } else if (div.total_articulos > existing.total_articulos) {
-              const idx = acc.indexOf(existing)
-              acc[idx] = div
-            }
-            return acc
-          }, [] as typeof estructura)
-          .map((div) => (
-            <DivisionItem
-              key={div.id}
-              division={div}
-              ley={ley!}
-              tipoContenido={tipoContenido}
-            />
-          ))}
+      {/* Estructura agrupada por títulos */}
+      <div className="space-y-4">
+        {grupos.map((grupo, idx) => (
+          <GrupoTituloItem
+            key={grupo.titulo?.id ?? `grupo-${idx}`}
+            grupo={grupo}
+            ley={ley!}
+            tipoContenido={tipoContenido}
+          />
+        ))}
       </div>
     </div>
   )
 }
 
-interface DivisionItemProps {
-  division: {
-    id: number
-    tipo: string
-    numero: string | null
-    nombre: string | null
-    nivel: number
-    total_articulos: number
-    primer_articulo: string | null
-  }
+interface GrupoTituloItemProps {
+  grupo: GrupoTitulo
   ley: string
   tipoContenido: string
 }
 
-function DivisionItem({ division, ley, tipoContenido }: DivisionItemProps) {
-  const tipoLabel = division.tipo.charAt(0).toUpperCase() + division.tipo.slice(1)
-  // Considerar que tiene artículos si total > 0 o si tiene primer_articulo
-  const hasArticles = division.total_articulos > 0 || division.primer_articulo
+function GrupoTituloItem({ grupo, ley, tipoContenido }: GrupoTituloItemProps) {
+  const [expandido, setExpandido] = useState(true)
+  const { titulo, hijos } = grupo
 
-  const content = (
-    <div
-      className={clsx(
-        'flex items-center gap-4 p-4 rounded-lg border transition-colors',
-        'border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-700 hover:bg-gray-50 dark:hover:bg-gray-800/50 cursor-pointer'
+  // Si no hay título, mostrar los hijos directamente
+  if (!titulo) {
+    return (
+      <div className="space-y-2">
+        {hijos.map((div) => (
+          <DivisionItem key={div.id} division={div} ley={ley} tipoContenido={tipoContenido} />
+        ))}
+      </div>
+    )
+  }
+
+  return (
+    <div className="rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+      {/* Header del título */}
+      <button
+        onClick={() => setExpandido(!expandido)}
+        className="w-full flex items-center gap-3 p-4 bg-primary-50 dark:bg-primary-900/20 hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-colors"
+      >
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-600 text-white">
+          <BookOpen className="h-5 w-5" />
+        </div>
+
+        <div className="flex-1 text-left">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-medium text-primary-600 dark:text-primary-400 uppercase">
+              Título {titulo.numero}
+            </span>
+          </div>
+          <h3 className="font-semibold text-gray-900 dark:text-white">
+            {titulo.nombre}
+          </h3>
+        </div>
+
+        <div className="text-right shrink-0 mr-2">
+          <span className="text-sm font-medium text-gray-900 dark:text-white">
+            {titulo.total_articulos}
+          </span>
+          <span className="text-xs text-gray-500 ml-1">
+            {tipoContenido === 'regla' ? 'reglas' : 'arts.'}
+          </span>
+        </div>
+
+        <ChevronDown
+          className={clsx(
+            'h-5 w-5 text-gray-400 transition-transform',
+            expandido && 'rotate-180'
+          )}
+        />
+      </button>
+
+      {/* Capítulos dentro del título */}
+      {expandido && hijos.length > 0 && (
+        <div className="divide-y divide-gray-100 dark:divide-gray-800">
+          {hijos.map((div) => (
+            <DivisionItem key={div.id} division={div} ley={ley} tipoContenido={tipoContenido} isNested />
+          ))}
+        </div>
       )}
-      style={{ marginLeft: `${Math.min(division.nivel, 2) * 1.5}rem` }}
+    </div>
+  )
+}
+
+interface DivisionItemProps {
+  division: Division
+  ley: string
+  tipoContenido: string
+  isNested?: boolean
+}
+
+function DivisionItem({ division, ley, tipoContenido, isNested }: DivisionItemProps) {
+  const tipoLabel = division.tipo.charAt(0).toUpperCase() + division.tipo.slice(1)
+
+  return (
+    <Link
+      to={`/${ley}/division/${division.id}`}
+      className={clsx(
+        'flex items-center gap-4 p-4 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800/50',
+        !isNested && 'rounded-lg border border-gray-200 dark:border-gray-700'
+      )}
     >
       {/* Icono */}
-      <div
-        className={clsx(
-          'flex h-10 w-10 shrink-0 items-center justify-center rounded-lg',
-          division.nivel === 0
-            ? 'bg-primary-100 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400'
-            : 'bg-gray-100 text-gray-500 dark:bg-gray-800 dark:text-gray-400'
-        )}
-      >
-        {hasArticles ? (
-          <FileText className="h-5 w-5" />
-        ) : (
-          <BookOpen className="h-5 w-5" />
-        )}
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gray-100 text-gray-500 dark:bg-gray-800 dark:text-gray-400">
+        <FileText className="h-5 w-5" />
       </div>
 
       {/* Contenido */}
@@ -188,17 +284,7 @@ function DivisionItem({ division, ley, tipoContenido }: DivisionItemProps) {
         </div>
       )}
 
-      {/* Flecha si tiene artículos */}
-      {hasArticles && (
-        <ChevronRight className="h-5 w-5 text-gray-300 dark:text-gray-600" />
-      )}
-    </div>
-  )
-
-  // Siempre enlazar a la vista de división
-  return (
-    <Link to={`/${ley}/division/${division.id}`}>
-      {content}
+      <ChevronRight className="h-5 w-5 text-gray-300 dark:text-gray-600" />
     </Link>
   )
 }
