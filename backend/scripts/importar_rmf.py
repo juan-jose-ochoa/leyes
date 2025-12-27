@@ -230,11 +230,12 @@ def insertar_fracciones(cursor, articulo_id, fracciones):
     orden_global = 0
 
     for fraccion in fracciones:
-        numero_fraccion = fraccion.get("numero", "")
+        numero_fraccion = fraccion.get("numero")  # Puede ser None para párrafos
         contenido_fraccion = fraccion.get("contenido", "")
+        tipo_fraccion = fraccion.get("tipo", "fraccion")  # "fraccion" o "parrafo"
         incisos = fraccion.get("incisos", [])
 
-        # Si es una fracción virtual (sin número), solo insertar los incisos directamente
+        # Si es una fracción virtual (sin número ni contenido), solo insertar los incisos directamente
         if not numero_fraccion and not contenido_fraccion:
             for inciso in incisos:
                 orden_global += 1
@@ -254,7 +255,7 @@ def insertar_fracciones(cursor, articulo_id, fracciones):
                 ))
             continue
 
-        # Insertar fracción normal
+        # Insertar fracción o párrafo intermedio
         orden_global += 1
         count += 1
 
@@ -264,9 +265,9 @@ def insertar_fracciones(cursor, articulo_id, fracciones):
             RETURNING id
         """, (
             articulo_id,
-            None,  # padre_id - las fracciones son de nivel superior
-            'fraccion',
-            numero_fraccion,
+            None,  # padre_id - fracciones y párrafos son de nivel superior
+            tipo_fraccion,  # Usa el tipo del JSON: 'fraccion' o 'parrafo'
+            numero_fraccion,  # Puede ser None para párrafos
             fraccion.get("orden", orden_global),
             contenido_fraccion,
             orden_global
@@ -274,7 +275,7 @@ def insertar_fracciones(cursor, articulo_id, fracciones):
 
         fraccion_id = cursor.fetchone()[0]
 
-        # Insertar incisos si existen
+        # Insertar incisos si existen (solo para fracciones, no párrafos)
         for inciso in incisos:
             orden_global += 1
             count += 1
@@ -375,6 +376,7 @@ def procesar_rmf(cursor, docx_path):
                     "numero": f.numero,
                     "contenido": f.contenido,
                     "orden": f.orden,
+                    "tipo": getattr(f, 'tipo', 'fraccion'),  # 'fraccion' o 'parrafo'
                     "incisos": [
                         {"letra": i.letra, "contenido": i.contenido, "orden": i.orden}
                         for i in f.incisos

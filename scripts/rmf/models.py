@@ -81,13 +81,14 @@ class Inciso:
 @dataclass
 class Fraccion:
     """
-    Fracción dentro de una regla.
-    Formato: I., II., III., ...
+    Fracción o párrafo intermedio dentro de una regla.
+    Formato: I., II., III., ... o párrafo entre grupos de fracciones.
     """
-    numero: str  # "I", "II", "III", "IV", etc.
+    numero: str  # "I", "II", "III", "IV", etc. o None para párrafos
     contenido: str
     incisos: List[Inciso] = field(default_factory=list)
     orden: int = 0
+    tipo: str = "fraccion"  # "fraccion" o "parrafo"
 
 
 @dataclass

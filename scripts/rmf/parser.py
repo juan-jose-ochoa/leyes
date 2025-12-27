@@ -74,6 +74,23 @@ PATRON_INCISO = re.compile(r'^([a-z])\)\s+(.*)$')
 # Para limpiar números de página inline
 PATRON_PAGINA_INLINE = re.compile(r'\s*Página\s+\d+\s+de\s+\d+\s*', re.IGNORECASE)
 
+# Patrón para detectar párrafos intermedios que introducen más fracciones
+# Ej: "Asimismo, se consideran operaciones financieras derivadas de deuda, entre otras, las siguientes:"
+PATRON_PARRAFO_INTERMEDIO = re.compile(
+    r'(.*?[.,:;])\s*'  # Contenido previo que termina en puntuación
+    r'([A-Z][^.]*(?:las siguientes|los siguientes|lo siguiente|las que siguen|los que siguen):\s*)$',
+    re.IGNORECASE | re.DOTALL
+)
+
+# Patrón para detectar fracción inline al final del texto introductorio
+# Ej: "...las siguientes: I. Las de cobertura cambiaria..."
+PATRON_FRACCION_INLINE = re.compile(
+    r'^(.*?(?:las siguientes|los siguientes|lo siguiente):\s*)'  # Intro hasta "las siguientes:"
+    r'(I{1,3}|IV|VI{0,3}|IX|X{1,3})\.\s+'  # Número romano
+    r'(.*)$',  # Contenido de la fracción
+    re.IGNORECASE | re.DOTALL
+)
+
 # Siglas de leyes conocidas (para detectar referencias)
 SIGLAS_LEYES = (
     'CFF', 'LISR', 'LIVA', 'LIESPS', 'LIEPS', 'LIF', 'LA',
@@ -455,9 +472,8 @@ class ParserRMF:
             # Detectar fracción
             match_fraccion = PATRON_FRACCION.match(texto)
             if match_fraccion:
-                fraccion = self._procesar_fraccion(match_fraccion, paragraphs, idx)
-                fracciones.append(fraccion)
-                idx += 1
+                nuevas_fracciones, idx = self._procesar_fraccion(match_fraccion, paragraphs, idx)
+                fracciones.extend(nuevas_fracciones)
                 continue
 
             # Detectar inciso (a), b), c), etc.)
@@ -489,6 +505,16 @@ class ParserRMF:
 
         # Consolidar y crear regla
         contenido = consolidar_parrafos(contenido_partes)
+
+        # Extraer fracciones inline del contenido (ej: "...las siguientes: I. Las de...")
+        contenido, fracciones_inline = self._extraer_fracciones_inline(contenido)
+        if fracciones_inline:
+            # Insertar al inicio de las fracciones
+            fracciones = fracciones_inline + fracciones
+
+        # Renumerar orden de fracciones
+        for i, f in enumerate(fracciones, 1):
+            f.orden = i
 
         self.orden_regla += 1
         division_actual = self.seccion_actual or self.capitulo_actual or self.titulo_actual
@@ -578,17 +604,73 @@ class ParserRMF:
         match: re.Match,
         paragraphs: List[ParrafoExtraido],
         idx: int
-    ) -> Fraccion:
-        """Procesa una fracción con su contenido."""
-        numero_romano = match.group(1)
-        contenido = match.group(2)
+    ) -> Tuple[List[Fraccion], int]:
+        """
+        Procesa una fracción con su contenido multilínea.
 
-        # TODO: Procesar incisos dentro de la fracción
-        return Fraccion(
-            numero=numero_romano,
-            contenido=contenido,
-            orden=self._romano_a_entero(numero_romano),
-        )
+        Detecta párrafos intermedios que introducen nuevos grupos de fracciones
+        (ej: "Asimismo, se consideran... las siguientes:").
+
+        Returns:
+            Tuple de (lista de fracciones/párrafos, nuevo índice)
+        """
+        numero_romano = match.group(1)
+        contenido_partes = [match.group(2)]
+
+        idx += 1
+
+        # Recolectar contenido de continuación hasta encontrar otra estructura
+        while idx < len(paragraphs):
+            texto = paragraphs[idx].texto
+
+            # ¿Termina el contenido de esta fracción?
+            if (PATRON_FRACCION.match(texto) or
+                PATRON_INCISO.match(texto) or
+                self._es_fin_de_regla(texto) or
+                es_referencia_final(texto, paragraphs[idx].es_italica)):
+                break
+
+            contenido_partes.append(texto)
+            idx += 1
+
+        # Consolidar contenido
+        contenido_completo = ' '.join(contenido_partes).strip()
+
+        # Detectar si hay un párrafo intermedio al final
+        match_intermedio = PATRON_PARRAFO_INTERMEDIO.match(contenido_completo)
+
+        resultado = []
+
+        if match_intermedio:
+            # Separar contenido de la fracción y párrafo intermedio
+            contenido_fraccion = match_intermedio.group(1).strip()
+            parrafo_intermedio = match_intermedio.group(2).strip()
+
+            # Crear fracción
+            resultado.append(Fraccion(
+                numero=numero_romano,
+                contenido=contenido_fraccion,
+                orden=self._romano_a_entero(numero_romano),
+                tipo="fraccion",
+            ))
+
+            # Crear párrafo intermedio (orden será asignado después)
+            resultado.append(Fraccion(
+                numero=None,
+                contenido=parrafo_intermedio,
+                orden=0,  # Se ajustará al insertar
+                tipo="parrafo",
+            ))
+        else:
+            # Fracción normal sin párrafo intermedio
+            resultado.append(Fraccion(
+                numero=numero_romano,
+                contenido=contenido_completo,
+                orden=self._romano_a_entero(numero_romano),
+                tipo="fraccion",
+            ))
+
+        return resultado, idx
 
     def _romano_a_entero(self, romano: str) -> int:
         """Convierte número romano a entero."""
@@ -664,6 +746,37 @@ class ParserRMF:
         if len(primer_parrafo) > 200:
             return primer_parrafo[:200] + "..."
         return primer_parrafo
+
+    def _extraer_fracciones_inline(self, contenido: str) -> Tuple[str, List[Fraccion]]:
+        """
+        Extrae fracciones que están inline en el contenido.
+
+        Detecta patrones como "...las siguientes: I. Las de cobertura..."
+        y los separa en contenido limpio + lista de fracciones.
+
+        Returns:
+            Tuple de (contenido limpio, lista de fracciones extraídas)
+        """
+        if not contenido:
+            return contenido, []
+
+        match = PATRON_FRACCION_INLINE.match(contenido)
+        if not match:
+            return contenido, []
+
+        # Separar intro de la fracción inline
+        intro = match.group(1).strip()
+        numero_romano = match.group(2)
+        contenido_fraccion = match.group(3).strip()
+
+        fraccion = Fraccion(
+            numero=numero_romano,
+            contenido=contenido_fraccion,
+            orden=self._romano_a_entero(numero_romano),
+            tipo="fraccion",
+        )
+
+        return intro, [fraccion]
 
     def _validar_regla(self, regla: ReglaParseada):
         """

@@ -73,6 +73,7 @@ def resultado_a_dict(resultado: ResultadoParseo) -> dict:
                     "numero": f.numero,
                     "contenido": f.contenido,
                     "orden": f.orden,
+                    "tipo": getattr(f, 'tipo', 'fraccion'),  # 'fraccion' o 'parrafo'
                     "incisos": [
                         {"letra": inc.letra, "contenido": inc.contenido, "orden": inc.orden}
                         for inc in f.incisos
