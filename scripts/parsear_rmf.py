@@ -187,6 +187,66 @@ def es_referencia_final(texto: str) -> bool:
     return False
 
 
+def crear_placeholders_faltantes(reglas: list, divisiones: list) -> list:
+    """
+    Detecta huecos en la numeración y crea reglas placeholder.
+    Retorna lista de reglas placeholder para agregar.
+    """
+    from collections import defaultdict
+
+    # Agrupar reglas por capítulo (X.Y)
+    por_capitulo = defaultdict(list)
+    for regla in reglas:
+        cap = extraer_capitulo_de_regla(regla["numero"])
+        if cap:
+            # Extraer último número (X.Y.Z -> Z)
+            partes = regla["numero"].split('.')
+            if len(partes) == 3:
+                try:
+                    num = int(partes[2])
+                    por_capitulo[cap].append(num)
+                except ValueError:
+                    pass
+
+    placeholders = []
+    orden_placeholder = max((r.get("orden_global", 0) for r in reglas), default=0) + 1000
+
+    for cap, numeros in por_capitulo.items():
+        if not numeros:
+            continue
+
+        numeros_set = set(numeros)
+        min_num = min(numeros)
+        max_num = max(numeros)
+
+        # Buscar división padre
+        division_path = None
+        for div in divisiones:
+            if div["tipo"] == "capitulo" and div["numero"] == cap:
+                division_path = div["path_texto"]
+                break
+
+        # Crear placeholder para cada número faltante
+        for n in range(min_num, max_num + 1):
+            if n not in numeros_set:
+                placeholder = {
+                    "numero": f"{cap}.{n}",
+                    "titulo": "(Regla no existe)",
+                    "contenido": "Esta regla no existe en el documento fuente de la RMF 2025.",
+                    "referencias": None,
+                    "orden_global": orden_placeholder,
+                    "division_path": division_path or "",
+                    "tipo": "no-existe",  # 9 chars, cabe en varchar(10)
+                    "titulo_padre": cap.split('.')[0],
+                    "capitulo_padre": cap,
+                    "seccion_padre": None,
+                }
+                placeholders.append(placeholder)
+                orden_placeholder += 1
+
+    return placeholders
+
+
 def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
     """
     Parsea los párrafos de la RMF en estructura jerárquica
@@ -404,11 +464,17 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
 
         i += 1
 
+    # Crear placeholders para reglas faltantes
+    placeholders = crear_placeholders_faltantes(reglas, divisiones)
+    if placeholders:
+        reglas.extend(placeholders)
+
     return {
         "documento": nombre_doc,
         "tipo": "rmf",
         "total_divisiones": len(divisiones),
         "total_reglas": len(reglas),
+        "total_placeholders": len(placeholders),
         "divisiones": divisiones,
         "reglas": reglas
     }

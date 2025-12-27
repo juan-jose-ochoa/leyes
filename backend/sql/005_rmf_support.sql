@@ -5,10 +5,14 @@
 
 -- 1. Agregar campo tipo a articulos
 ALTER TABLE articulos
-ADD COLUMN IF NOT EXISTS tipo VARCHAR(10) DEFAULT 'articulo'
-    CHECK (tipo IN ('articulo', 'regla'));
+ADD COLUMN IF NOT EXISTS tipo VARCHAR(10) DEFAULT 'articulo';
 
-COMMENT ON COLUMN articulos.tipo IS 'Tipo de contenido: articulo (leyes) o regla (RMF)';
+-- 1b. Actualizar constraint de tipo para incluir todos los valores
+ALTER TABLE articulos DROP CONSTRAINT IF EXISTS articulos_tipo_check;
+ALTER TABLE articulos ADD CONSTRAINT articulos_tipo_check
+    CHECK (tipo IN ('articulo', 'regla', 'ficha', 'criterio', 'no-existe'));
+
+COMMENT ON COLUMN articulos.tipo IS 'Tipo: articulo, regla, ficha, criterio, no-existe';
 
 -- 2. Agregar 'resolucion' como tipo válido de ley
 ALTER TABLE leyes DROP CONSTRAINT IF EXISTS leyes_tipo_check;

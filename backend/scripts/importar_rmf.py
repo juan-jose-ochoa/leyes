@@ -162,13 +162,16 @@ def insertar_divisiones_rmf(cursor, ley_id, divisiones):
 
 
 def insertar_reglas(cursor, ley_id, reglas, division_map):
-    """Inserta reglas RMF como artículos con tipo='regla'"""
+    """Inserta reglas RMF como artículos con tipo='regla' o 'inexistente'"""
     for regla in reglas:
         # Encontrar la división correspondiente
         division_id = None
         division_path = regla.get("division_path", "")
         if division_path and division_path in division_map:
             division_id = division_map[division_path]
+
+        # Usar tipo de la regla si existe, sino default 'regla'
+        tipo = regla.get("tipo", "regla")
 
         cursor.execute("""
             INSERT INTO articulos (
@@ -185,7 +188,7 @@ def insertar_reglas(cursor, ley_id, reglas, division_map):
             None,  # ordinal no aplica
             regla["contenido"],
             False,  # es_transitorio
-            'regla',  # tipo = regla
+            tipo,  # 'regla' o 'inexistente'
             regla.get("referencias"),  # referencias legales al final
             regla.get("orden_global")
         ))
