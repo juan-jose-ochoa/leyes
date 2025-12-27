@@ -107,6 +107,14 @@ NOMBRES_TITULOS_RMF = {
 }
 
 
+def extraer_capitulo_de_regla(numero_regla: str) -> str:
+    """Extrae el número de capítulo de una regla (2.1.5 -> 2.1)"""
+    partes = numero_regla.split('.')
+    if len(partes) >= 2:
+        return f"{partes[0]}.{partes[1]}"
+    return ""
+
+
 def extraer_texto_docx(doc_path: Path) -> list[str]:
     """Extrae párrafos del DOCX, limpiando páginas y espacios"""
     doc = Document(doc_path)
@@ -295,6 +303,43 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
         if match:
             numero = match.group(1)
             titulo_inicial = match.group(2).strip()
+
+            # === Inferir capítulo correcto si no coincide con el actual ===
+            capitulo_esperado = extraer_capitulo_de_regla(numero)
+            if capitulo_esperado and (capitulo_actual is None or capitulo_actual["numero"] != capitulo_esperado):
+                # Inferir título del número de capítulo
+                titulo_numero = capitulo_esperado.split('.')[0]
+
+                # Crear título si no existe o es diferente
+                if titulo_actual is None or titulo_actual["numero"] != titulo_numero:
+                    orden_division += 1
+                    titulo_actual = {
+                        "tipo": "titulo",
+                        "numero": titulo_numero,
+                        "numero_orden": int(titulo_numero),
+                        "nombre": NOMBRES_TITULOS_RMF.get(titulo_numero, f"Título {titulo_numero}"),
+                        "orden_global": orden_division,
+                        "path_texto": f"TITULO {titulo_numero}"
+                    }
+                    divisiones.append(titulo_actual)
+
+                # Crear capítulo inferido
+                orden_division += 1
+                path = titulo_actual["path_texto"] if titulo_actual else ""
+                capitulo_actual = {
+                    "tipo": "capitulo",
+                    "numero": capitulo_esperado,
+                    "numero_orden": orden_division,
+                    "nombre": "(Capítulo inferido)",
+                    "orden_global": orden_division,
+                    "padre_tipo": "titulo",
+                    "padre_numero": titulo_actual["numero"] if titulo_actual else None,
+                    "path_texto": f"{path} > CAPITULO {capitulo_esperado}" if path else f"CAPITULO {capitulo_esperado}"
+                }
+                divisiones.append(capitulo_actual)
+                seccion_actual = None
+            # === Fin inferencia de capítulo ===
+
             parrafo_inicio = i  # Guardar índice de inicio para validación de títulos
 
             # Recolectar contenido de la regla
