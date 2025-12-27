@@ -14,10 +14,11 @@ Salida: JSON estructurado listo para importar a PostgreSQL
 
 import re
 import json
+import zipfile
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from dataclasses import dataclass, field
 from typing import Optional
-from docx import Document
 
 # Directorio raíz del proyecto
 BASE_DIR = Path(__file__).parent.parent
@@ -79,6 +80,12 @@ PATRON_REGLA_ALT = re.compile(
     re.IGNORECASE
 )
 
+# Número de regla solo en una línea: "2.1.10." (sin contenido)
+# Común en documentos donde el número está en celda de tabla
+PATRON_REGLA_SOLO = re.compile(
+    r'^(\d+\.\d+\.\d+)\.?\s*$'
+)
+
 # Notas de reforma/derogación que NO son contenido de regla
 PATRON_NOTA_REFORMA = re.compile(
     r'^-?\s*(Reformada|Derogada|Adicionada|Se deroga)\s+en\s+la\s+',
@@ -138,12 +145,30 @@ def extraer_capitulo_de_regla(numero_regla: str) -> str:
 
 
 def extraer_texto_docx(doc_path: Path) -> list[str]:
-    """Extrae párrafos del DOCX, limpiando páginas, notas y espacios"""
-    doc = Document(doc_path)
+    """
+    Extrae TODOS los textos del DOCX leyendo directamente el XML.
+
+    Esto es más confiable que python-docx porque:
+    - Incluye texto en tablas (python-docx las omite en doc.paragraphs)
+    - Preserva el orden exacto del documento
+    - Es determinista
+    """
+    with zipfile.ZipFile(doc_path) as z:
+        xml_content = z.read('word/document.xml')
+
+    root = ET.fromstring(xml_content)
     paragraphs = []
 
-    for para in doc.paragraphs:
-        text = para.text.strip()
+    # Namespace de Word
+    ns_w = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
+
+    # Iterar sobre todos los párrafos (w:p) en orden del documento
+    # Esto incluye párrafos dentro de tablas
+    for para in root.iter(f'{ns_w}p'):
+        # Extraer todo el texto del párrafo (unir todos los w:t)
+        text = ''.join(t.text or '' for t in para.iter(f'{ns_w}t'))
+        text = text.strip()
+
         if not text:
             continue
         # Ignorar números de página
@@ -155,6 +180,7 @@ def extraer_texto_docx(doc_path: Path) -> list[str]:
         # Ignorar notas del documento
         if PATRON_NOTA_DOCUMENTO.match(text):
             continue
+
         paragraphs.append(text)
 
     return paragraphs
@@ -415,17 +441,25 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
             continue
 
         # === REGLA (ej: "2.1.1. Cobro de créditos fiscales...") ===
-        # También detectar formato alternativo: "Regla 2.1.6." (título en línea siguiente)
+        # Formatos soportados:
+        # 1. "2.1.1. Para los efectos..." (número + contenido en misma línea)
+        # 2. "Regla 2.1.6." (número en línea separada con prefijo "Regla")
+        # 3. "2.1.10." (número solo en línea, común en tablas)
         match = PATRON_REGLA.match(text)
         match_alt = PATRON_REGLA_ALT.match(text) if not match else None
+        match_solo = PATRON_REGLA_SOLO.match(text) if not match and not match_alt else None
 
-        if match or match_alt:
+        if match or match_alt or match_solo:
             if match:
                 numero = match.group(1)
                 titulo_inicial = match.group(2).strip()
-            else:
+            elif match_alt:
                 # Formato "Regla X.X.X." - el contenido empieza en línea siguiente
                 numero = match_alt.group(1)
+                titulo_inicial = ""
+            else:
+                # Formato "X.X.X." solo - número en celda de tabla
+                numero = match_solo.group(1)
                 titulo_inicial = ""
 
             # === Inferir capítulo correcto si no coincide con el actual ===
@@ -478,6 +512,8 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
                 if PATRON_REGLA.match(next_text):
                     break
                 if PATRON_REGLA_ALT.match(next_text):
+                    break
+                if PATRON_REGLA_SOLO.match(next_text):
                     break
                 if PATRON_CAPITULO_RMF.match(next_text):
                     break
