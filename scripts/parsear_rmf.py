@@ -144,7 +144,112 @@ def extraer_capitulo_de_regla(numero_regla: str) -> str:
     return ""
 
 
-def extraer_texto_docx(doc_path: Path) -> list[str]:
+# Patrón para numerales romanos solos (huérfanos)
+PATRON_ROMANO_SOLO = re.compile(r'^(I{1,3}|IV|VI{0,3}|IX|X{1,3})\.\s*$')
+
+
+def preprocesar_parrafos(paragraphs: list[str]) -> list[str]:
+    """
+    Pre-procesa párrafos para limpiar fragmentación del PDF→DOCX:
+
+    1. Fusiona numerales romanos huérfanos (II., III.) con el contenido siguiente
+       Ejemplo: ["II.", "Las operaciones..."] -> ["II. Las operaciones..."]
+       Caso especial: ["II.", "III.", "contenido1", "contenido2"] ->
+                      ["II. contenido1", "III. contenido2"]
+
+    2. Fusiona fragmentos de texto que continúan de párrafos anteriores
+       Ejemplo: ["forwards", "con fechas", "de"] -> se consolidan si son cortos
+
+    Retorna lista de párrafos limpios.
+    """
+    if not paragraphs:
+        return paragraphs
+
+    resultado = []
+    i = 0
+
+    while i < len(paragraphs):
+        text = paragraphs[i]
+
+        # Caso 1: Numeral romano solo (II., III., etc.)
+        if PATRON_ROMANO_SOLO.match(text):
+            # Recolectar todos los numerales romanos consecutivos
+            numerales = [text]
+            j = i + 1
+            while j < len(paragraphs) and PATRON_ROMANO_SOLO.match(paragraphs[j]):
+                numerales.append(paragraphs[j])
+                j += 1
+
+            # Ahora recolectar los contenidos correspondientes
+            contenidos = []
+            k = j
+            while k < len(paragraphs) and len(contenidos) < len(numerales):
+                siguiente = paragraphs[k]
+                # Si es estructura nueva, parar
+                if re.match(r'^\d+\.\d+\.\d+', siguiente) or \
+                   re.match(r'^Cap[íi]tulo|^Secci[óo]n', siguiente, re.IGNORECASE) or \
+                   PATRON_ROMANO_SOLO.match(siguiente):
+                    break
+                contenidos.append(siguiente)
+                k += 1
+
+            # Fusionar numerales con contenidos
+            for idx, numeral in enumerate(numerales):
+                if idx < len(contenidos):
+                    resultado.append(numeral.rstrip('.') + '. ' + contenidos[idx])
+                else:
+                    # No hay contenido para este numeral
+                    resultado.append(numeral)
+
+            i = k
+            continue
+
+        # Caso 2: Fragmentos muy cortos que parecen continuación
+        # (ej: "forwards", "con fechas", "de", "vencimiento distintas")
+        # Excluir referencias legales (CFF, LISR, etc.)
+        parece_referencia = re.match(
+            r'^(CFF|LISR|LIVA|LIESPS|LIEPS|LIF|LA|RMF|RGCE|RCFF|RLISR|RLIVA)\s+\d',
+            text, re.IGNORECASE
+        )
+        if len(text) < 30 and not text.endswith('.') and not parece_referencia and \
+           not re.match(r'^\d+\.\d+\.\d+', text) and \
+           not re.match(r'^(I{1,3}|IV|VI{0,3}|IX|X{1,3})\.', text) and \
+           not re.match(r'^Cap[íi]tulo|^Secci[óo]n', text, re.IGNORECASE):
+            # Acumular fragmentos hasta encontrar algo completo
+            fragmentos = [text]
+            j = i + 1
+            while j < len(paragraphs):
+                siguiente = paragraphs[j]
+                # ¿Es fragmento corto sin punto final?
+                parece_ref_sig = re.match(
+                    r'^(CFF|LISR|LIVA|LIESPS|LIEPS|LIF|LA|RMF|RGCE|RCFF|RLISR|RLIVA)\s+\d',
+                    siguiente, re.IGNORECASE
+                )
+                if len(siguiente) < 30 and not siguiente.endswith('.') and not parece_ref_sig and \
+                   not re.match(r'^\d+\.\d+\.\d+', siguiente) and \
+                   not re.match(r'^(I{1,3}|IV|VI{0,3}|IX|X{1,3})\.', siguiente) and \
+                   not re.match(r'^Cap[íi]tulo|^Secci[óo]n', siguiente, re.IGNORECASE):
+                    fragmentos.append(siguiente)
+                    j += 1
+                else:
+                    # Siguiente es contenido real, incluirlo y parar
+                    fragmentos.append(siguiente)
+                    j += 1
+                    break
+
+            if len(fragmentos) > 1:
+                # Fusionar todos los fragmentos
+                resultado.append(' '.join(fragmentos))
+                i = j
+                continue
+
+        resultado.append(text)
+        i += 1
+
+    return resultado
+
+
+def extraer_texto_docx(doc_path: Path) -> list[tuple[str, bool]]:
     """
     Extrae TODOS los textos del DOCX leyendo directamente el XML.
 
@@ -152,6 +257,12 @@ def extraer_texto_docx(doc_path: Path) -> list[str]:
     - Incluye texto en tablas (python-docx las omite en doc.paragraphs)
     - Preserva el orden exacto del documento
     - Es determinista
+    - Detecta formato itálico (usado para referencias)
+
+    Retorna lista de tuplas: (texto, es_italica)
+    donde es_italica=True indica que el párrafo es referencia legal.
+
+    Incluye pre-procesamiento para limpiar fragmentación del PDF→DOCX.
     """
     with zipfile.ZipFile(doc_path) as z:
         xml_content = z.read('word/document.xml')
@@ -163,11 +274,25 @@ def extraer_texto_docx(doc_path: Path) -> list[str]:
     ns_w = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
 
     # Iterar sobre todos los párrafos (w:p) en orden del documento
-    # Esto incluye párrafos dentro de tablas
     for para in root.iter(f'{ns_w}p'):
-        # Extraer todo el texto del párrafo (unir todos los w:t)
-        text = ''.join(t.text or '' for t in para.iter(f'{ns_w}t'))
-        text = text.strip()
+        # Extraer texto y detectar formato itálico
+        text_parts = []
+        total_runs = 0
+        italic_runs = 0
+
+        for run in para.iter(f'{ns_w}r'):
+            run_text = ''.join(t.text or '' for t in run.iter(f'{ns_w}t'))
+            if not run_text:
+                continue
+            text_parts.append(run_text)
+            total_runs += 1
+
+            # Detectar itálica en propiedades del run
+            rPr = run.find(f'{ns_w}rPr')
+            if rPr is not None and rPr.find(f'{ns_w}i') is not None:
+                italic_runs += 1
+
+        text = ''.join(text_parts).strip()
 
         if not text:
             continue
@@ -181,9 +306,31 @@ def extraer_texto_docx(doc_path: Path) -> list[str]:
         if PATRON_NOTA_DOCUMENTO.match(text):
             continue
 
-        paragraphs.append(text)
+        # Un párrafo es itálica si >80% de sus runs son itálicos
+        es_italica = (italic_runs / total_runs > 0.8) if total_runs > 0 else False
 
-    return paragraphs
+        paragraphs.append((text, es_italica))
+
+    # Pre-procesar para limpiar fragmentación (solo textos, preservar flags)
+    textos = [p[0] for p in paragraphs]
+    italicas = [p[1] for p in paragraphs]
+    textos_limpios = preprocesar_parrafos(textos)
+
+    # Reconstruir con flags de itálica
+    # Nota: el preprocesamiento puede cambiar el número de párrafos
+    # Para simplificar, re-detectamos itálica basándonos en si empieza con sigla
+    resultado = []
+    for texto in textos_limpios:
+        # Buscar si este texto (o parte) era itálico en el original
+        es_italica_final = False
+        for orig_texto, orig_italica in paragraphs:
+            if orig_texto in texto or texto in orig_texto:
+                if orig_italica:
+                    es_italica_final = True
+                    break
+        resultado.append((texto, es_italica_final))
+
+    return resultado
 
 
 def consolidar_parrafos(partes: list[str]) -> str:
@@ -227,6 +374,7 @@ def es_referencia_final(texto: str) -> bool:
     Ejemplos válidos:
     - "CFF 14-B, LISR 24, 32-D"
     - "CFF 17-A, 20, 26, 32-A"
+    - "CFF 14-A, Reglas a las que deberán sujetarse..., 12/01/2007" (referencia larga con fecha)
 
     NO válidos (son contenido, no referencias):
     - "Para los efectos del artículo 14-B del CFF, se podrá..."
@@ -235,7 +383,8 @@ def es_referencia_final(texto: str) -> bool:
               'RCFF', 'RLISR', 'RLIVA', 'RLIESPS', 'DECRETO', 'DOF', 'LGSM', 'Ley del ISR',
               'Ley del IVA', 'Ley General de Salud']
 
-    texto_upper = texto.upper().strip()
+    texto_stripped = texto.strip()
+    texto_upper = texto_stripped.upper()
 
     # Debe empezar con una sigla de ley para ser referencia
     empieza_con_sigla = False
@@ -247,15 +396,20 @@ def es_referencia_final(texto: str) -> bool:
     if not empieza_con_sigla:
         return False
 
-    # Verificar que no sea contenido normal que menciona una ley
-    # Las referencias son cortas y tienen formato "SIGLA artículo, artículo, SIGLA artículo"
-    # El contenido normal es largo y tiene frases completas
-    if len(texto) > 200:
+    # Si empieza con sigla y tiene frases típicas de contenido, NO es referencia
+    texto_lower = texto.lower()
+    if 'para los efectos' in texto_lower or 'se podrá' in texto_lower or \
+       'los contribuyentes' in texto_lower or 'tratándose de' in texto_lower:
         return False
 
-    # Si empieza con sigla y tiene "Para los efectos" o "se podrá" es contenido
-    texto_lower = texto.lower()
-    if 'para los efectos' in texto_lower or 'se podrá' in texto_lower:
+    # Caso especial: referencia larga que termina con fecha (DD/MM/YYYY)
+    # Ejemplo: "CFF 14-A, Reglas a las que deberán..., 12/01/2007"
+    termina_con_fecha = re.search(r'\d{1,2}/\d{1,2}/\d{4}$', texto_stripped)
+    if termina_con_fecha:
+        return True
+
+    # Para referencias sin fecha, aplicar límite de longitud
+    if len(texto) > 200:
         return False
 
     return True
@@ -348,9 +502,14 @@ def crear_placeholders_faltantes(reglas: list, divisiones: list) -> list:
     return placeholders
 
 
-def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
+def parsear_rmf(paragraphs_con_formato: list[tuple[str, bool]], nombre_doc: str) -> dict:
     """
-    Parsea los párrafos de la RMF en estructura jerárquica
+    Parsea los párrafos de la RMF en estructura jerárquica.
+
+    Args:
+        paragraphs_con_formato: Lista de tuplas (texto, es_italica)
+            donde es_italica=True indica referencia legal (formato itálico en DOCX)
+        nombre_doc: Nombre del documento
 
     Retorna:
     {
@@ -363,6 +522,10 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
     divisiones = []
     reglas = []
 
+    # Extraer textos y flags de itálica
+    paragraphs = [p[0] for p in paragraphs_con_formato]
+    es_italica = [p[1] for p in paragraphs_con_formato]
+
     # Estado actual de la jerarquía
     titulo_actual = None
     capitulo_actual = None
@@ -374,6 +537,7 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
     i = 0
     while i < len(paragraphs):
         text = paragraphs[i]
+        text_es_italica = es_italica[i]
 
         # === TÍTULO RMF ===
         # NO parseamos títulos explícitamente porque el documento tiene muchos falsos positivos
@@ -471,33 +635,52 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
         if match or match_alt or match_solo:
             if match:
                 numero = match.group(1)
-                titulo_inicial = match.group(2).strip()
+                contenido_primera_linea = match.group(2).strip()
             elif match_alt:
                 # Formato "Regla X.X.X." - el contenido empieza en línea siguiente
                 numero = match_alt.group(1)
-                titulo_inicial = ""
+                contenido_primera_linea = ""
             else:
                 # Formato "X.X.X." solo - número en celda de tabla
-                # El título de la regla está en el párrafo ANTERIOR
                 numero = match_solo.group(1)
-                titulo_inicial = ""
+                contenido_primera_linea = ""
 
-                # Buscar título en párrafo anterior (si existe y parece título)
-                if i > 0:
-                    parrafo_anterior = paragraphs[i - 1]
-                    # Es título si: no es referencia, no es número, no empieza con romano, es corto
-                    es_referencia = es_referencia_final(parrafo_anterior)
-                    es_numero = PATRON_REGLA.match(parrafo_anterior) or PATRON_REGLA_SOLO.match(parrafo_anterior)
-                    es_romano = parrafo_anterior.startswith(('I.', 'II.', 'III.', 'IV.', 'V.', 'VI.', 'VII.', 'VIII.', 'IX.', 'X.'))
-                    es_corto = len(parrafo_anterior) < 150
+            # === Buscar título en párrafo ANTERIOR (aplica a todos los formatos) ===
+            # En RMF el título de la regla suele aparecer ANTES del número
+            titulo_extraido = ""
+            if i > 0:
+                parrafo_anterior = paragraphs[i - 1]
+                anterior_es_italica = es_italica[i - 1] if i - 1 < len(es_italica) else False
 
-                    if not es_referencia and not es_numero and not es_romano and es_corto:
-                        titulo_inicial = parrafo_anterior
-                        # Remover este título del contenido de la regla anterior (si existe)
-                        if reglas and reglas[-1].get("contenido", "").endswith(parrafo_anterior):
-                            contenido_anterior = reglas[-1]["contenido"]
-                            # Quitar el título del final
+                # Referencia = itálica + empieza con sigla de ley
+                # (Los títulos también son itálicos pero NO empiezan con sigla)
+                siglas_ref = ('CFF', 'LISR', 'LIVA', 'LIESPS', 'LIEPS', 'LIF', 'LA',
+                              'RMF', 'RGCE', 'RCFF', 'RLISR', 'RLIVA', 'DECRETO', 'DOF')
+                empieza_con_sigla = any(parrafo_anterior.upper().startswith(s) for s in siglas_ref)
+                es_ref_italica = anterior_es_italica and empieza_con_sigla
+                es_ref_texto = es_referencia_final(parrafo_anterior)
+                es_referencia = es_ref_italica or es_ref_texto
+
+                es_numero = PATRON_REGLA.match(parrafo_anterior) or PATRON_REGLA_SOLO.match(parrafo_anterior)
+                es_romano = parrafo_anterior.startswith(('I.', 'II.', 'III.', 'IV.', 'V.', 'VI.', 'VII.', 'VIII.', 'IX.', 'X.'))
+                es_corto = len(parrafo_anterior) < 150
+                # No es contenido (no empieza con "Para los efectos", "Los contribuyentes", etc.)
+                es_contenido = parrafo_anterior.lower().startswith(('para los efectos', 'los contribuyentes', 'cuando', 'tratándose'))
+
+                if not es_referencia and not es_numero and not es_romano and es_corto and not es_contenido:
+                    titulo_extraido = parrafo_anterior
+                    # Remover este título del contenido de la regla anterior (si existe)
+                    if reglas and reglas[-1].get("contenido", ""):
+                        contenido_anterior = reglas[-1]["contenido"]
+                        # Verificar si el contenido termina con este párrafo
+                        if contenido_anterior.endswith(parrafo_anterior):
                             reglas[-1]["contenido"] = contenido_anterior[:-len(parrafo_anterior)].rstrip('\n').rstrip()
+                        # También verificar si está en un bloque al final
+                        elif f"\n\n{parrafo_anterior}" in contenido_anterior:
+                            reglas[-1]["contenido"] = contenido_anterior.replace(f"\n\n{parrafo_anterior}", "").rstrip()
+
+            # Determinar el título inicial: preferir título extraído, sino usar contenido primera línea
+            titulo_inicial = titulo_extraido if titulo_extraido else ""
 
             # === Inferir capítulo correcto si no coincide con el actual ===
             capitulo_esperado = extraer_capitulo_de_regla(numero)
@@ -538,12 +721,18 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
             parrafo_inicio = i  # Guardar índice de inicio para validación de títulos
 
             # Recolectar contenido de la regla
-            contenido_partes = [titulo_inicial] if titulo_inicial else []
+            # - titulo_inicial: título extraído del párrafo anterior (se usa como título, NO como contenido)
+            # - contenido_primera_linea: texto después del número (ej: "Para los efectos...")
+            contenido_partes = []
+            # NO incluir titulo_inicial en contenido (ya se usa como título)
+            if contenido_primera_linea:
+                contenido_partes.append(contenido_primera_linea)
             referencias = None
 
             i += 1
             while i < len(paragraphs):
                 next_text = paragraphs[i]
+                next_es_italica = es_italica[i] if i < len(es_italica) else False
 
                 # ¿Termina la regla?
                 if PATRON_REGLA.match(next_text):
@@ -566,25 +755,38 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
                     i += 1
                     continue
 
-                # Detectar referencias al final
-                if es_referencia_final(next_text):
+                # Detectar referencias: itálica + empieza con sigla de ley
+                # (Los títulos también son itálicos pero NO empiezan con sigla)
+                siglas_ref = ('CFF', 'LISR', 'LIVA', 'LIESPS', 'LIEPS', 'LIF', 'LA',
+                              'RMF', 'RGCE', 'RCFF', 'RLISR', 'RLIVA', 'DECRETO', 'DOF')
+                empieza_con_sigla = any(next_text.upper().startswith(s) for s in siglas_ref)
+
+                if next_es_italica and empieza_con_sigla:
+                    # Itálica + sigla = referencia segura
+                    referencias = next_text
+                elif es_referencia_final(next_text):
+                    # Fallback: patrón de texto sin itálica
                     referencias = next_text
                 else:
                     contenido_partes.append(next_text)
 
                 i += 1
 
-            # Determinar título de la regla (primera oración hasta el primer punto)
+            # Determinar título de la regla
             contenido_completo = consolidar_parrafos(contenido_partes)
-            titulo_regla = ""
-            if contenido_completo:
-                # El título es la primera parte significativa
+
+            # Preferir título extraído del párrafo anterior (es el título real en RMF)
+            if titulo_inicial:
+                titulo_regla = titulo_inicial
+            elif contenido_completo:
+                # Fallback: usar primera oración del contenido
                 primer_parrafo = contenido_completo.split('\n\n')[0] if '\n\n' in contenido_completo else contenido_completo
-                # Truncar si es muy largo
                 if len(primer_parrafo) > 200:
                     titulo_regla = primer_parrafo[:200] + "..."
                 else:
                     titulo_regla = primer_parrafo
+            else:
+                titulo_regla = ""
 
             # Determinar división actual
             division_actual = seccion_actual or capitulo_actual or titulo_actual
