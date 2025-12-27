@@ -210,6 +210,21 @@ export interface DivisionInfo {
   total_articulos: number
 }
 
+// Registro de calidad de importación
+export interface IssueCalidad {
+  tipo: string
+  descripcion: string
+  severidad: 'error' | 'warning'
+  accion: string | null
+  fuente_correccion: string | null
+  resuelto: boolean
+}
+
+export interface RegistroCalidad {
+  estatus: 'ok' | 'corregida' | 'con_error'
+  issues: IssueCalidad[]
+}
+
 export interface ArticuloDivision {
   id: number
   numero_raw: string
@@ -218,6 +233,7 @@ export interface ArticuloDivision {
   reformas: string | null
   tipo: string | null
   referencias: string | null
+  calidad: RegistroCalidad | null
 }
 
 export async function getDivisionInfo(divId: number): Promise<DivisionInfo | null> {

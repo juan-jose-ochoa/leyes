@@ -22,6 +22,7 @@ from rmf import (
     DocxXmlExtractor,
     ParserRMF,
     ValidadorEstructural,
+    InspectorMultiFormato,
     ResultadoParseo,
 )
 
@@ -53,7 +54,7 @@ def resultado_a_dict(resultado: ResultadoParseo) -> dict:
     # Convertir reglas
     reglas = []
     for regla in resultado.reglas:
-        reglas.append({
+        regla_dict = {
             "numero": regla.numero,
             "titulo": regla.titulo,
             "contenido": regla.contenido,
@@ -64,11 +65,27 @@ def resultado_a_dict(resultado: ResultadoParseo) -> dict:
             "capitulo_padre": regla.capitulo_padre,
             "seccion_padre": regla.seccion_padre,
             "tipo": regla.tipo,
-        })
+        }
+        # Incluir calidad solo si hay issues (OK implícito si no hay)
+        if regla.calidad:
+            calidad_dict = regla.calidad.to_dict()
+            if calidad_dict:
+                regla_dict["calidad"] = calidad_dict
+        reglas.append(regla_dict)
 
     # Contar placeholders
     total_placeholders = len([r for r in resultado.reglas if r.tipo == "no-existe"])
     total_reglas_reales = len([r for r in resultado.reglas if r.tipo == "regla"])
+
+    # Métricas de calidad
+    reglas_ok = len([r for r in resultado.reglas
+                     if r.tipo == "regla" and r.calidad is None])
+    reglas_corregidas = len([r for r in resultado.reglas
+                              if r.tipo == "regla" and r.calidad
+                              and r.calidad.estatus.value == "corregida"])
+    reglas_con_error = len([r for r in resultado.reglas
+                             if r.tipo == "regla" and r.calidad
+                             and r.calidad.estatus.value == "con_error"])
 
     return {
         "documento": resultado.documento,
@@ -77,7 +94,12 @@ def resultado_a_dict(resultado: ResultadoParseo) -> dict:
         "total_reglas": len(reglas),
         "total_reglas_reales": total_reglas_reales,
         "total_placeholders": total_placeholders,
-        "porcentaje_exito": resultado.porcentaje_exito,
+        "metricas_calidad": {
+            "reglas_ok": reglas_ok,
+            "reglas_corregidas": reglas_corregidas,
+            "reglas_con_error": reglas_con_error,
+            "porcentaje_ok": round(reglas_ok / total_reglas_reales * 100, 1) if total_reglas_reales else 0,
+        },
         "divisiones": divisiones,
         "reglas": reglas,
     }
@@ -90,8 +112,8 @@ def procesar_rmf(docx_path: Path, output_path: Path) -> dict:
     Pipeline:
     1. Extracción (DocxXmlExtractor)
     2. Parsing (ParserRMF)
-    3. Validación (ValidadorEstructural)
-    4. Exportación a JSON
+    3. Validación + Segunda pasada (ValidadorEstructural + InspectorMultiFormato)
+    4. Exportación a JSON con métricas de calidad
     """
     print(f"   Leyendo DOCX: {docx_path.name}")
 
@@ -106,16 +128,23 @@ def procesar_rmf(docx_path: Path, output_path: Path) -> dict:
     parser = ParserRMF()
     resultado = parser.parsear(paragraphs, nombre_doc)
 
-    # Fase 3: Validación
+    # Fase 3: Validación (primera pasada)
     validador = ValidadorEstructural()
     problemas_globales = validador.validar_resultado(resultado)
 
-    if problemas_globales:
-        print(f"   {len(problemas_globales)} problemas de numeración detectados")
+    reglas_con_problemas = len([r for r in resultado.reglas
+                                if r.tipo == "regla" and r.problemas])
+    print(f"   {reglas_con_problemas} reglas con problemas detectados")
+
+    # Segunda pasada: intentar corregir problemas
+    if reglas_con_problemas > 0:
+        print(f"   Ejecutando segunda pasada...")
+        inspector = InspectorMultiFormato(docx_path=docx_path)
+        resoluciones, pendientes = inspector.procesar_resultado(resultado)
+        print(f"   {len(resoluciones) - len(pendientes)} correcciones exitosas, {len(pendientes)} pendientes")
 
     # Mostrar estadísticas
     print(f"   {len(resultado.divisiones)} divisiones, {resultado.total_reglas} reglas")
-    print(f"   Éxito: {resultado.porcentaje_exito:.1f}%")
 
     # Fase 4: Exportación
     print(f"   Guardando JSON...")
@@ -191,7 +220,12 @@ def main():
         print(f"Documento: {resultado['documento']}")
         print(f"Divisiones: {resultado['total_divisiones']}")
         print(f"Reglas: {resultado['total_reglas']} ({resultado['total_reglas_reales']} reales + {resultado['total_placeholders']} placeholders)")
-        print(f"Éxito: {resultado['porcentaje_exito']:.1f}%")
+
+        metricas = resultado['metricas_calidad']
+        print(f"\nMétricas de calidad:")
+        print(f"   OK (primera pasada): {metricas['reglas_ok']} ({metricas['porcentaje_ok']}%)")
+        print(f"   Corregidas (segunda pasada): {metricas['reglas_corregidas']}")
+        print(f"   Con errores pendientes: {metricas['reglas_con_error']}")
 
         # Mostrar primeras reglas como ejemplo
         if resultado['reglas']:

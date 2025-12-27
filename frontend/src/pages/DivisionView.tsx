@@ -1,8 +1,50 @@
 import { useParams, Link } from 'react-router-dom'
-import { Home, ChevronRight, BookOpen, ExternalLink } from 'lucide-react'
+import { Home, ChevronRight, BookOpen, ExternalLink, AlertTriangle, CheckCircle, XCircle } from 'lucide-react'
 import { useDivisionInfo, useArticulosDivision } from '@/hooks/useArticle'
 import ArticleContent from '@/components/ArticleContent'
+import type { RegistroCalidad } from '@/lib/api'
 import clsx from 'clsx'
+
+// Componente para mostrar el estatus de calidad de importación
+function CalidadBadge({ calidad }: { calidad: RegistroCalidad }) {
+  const config = {
+    ok: { icon: CheckCircle, bg: 'bg-green-100 dark:bg-green-900', text: 'text-green-700 dark:text-green-300', label: 'OK' },
+    corregida: { icon: AlertTriangle, bg: 'bg-yellow-100 dark:bg-yellow-900', text: 'text-yellow-700 dark:text-yellow-300', label: 'Corregida' },
+    con_error: { icon: XCircle, bg: 'bg-red-100 dark:bg-red-900', text: 'text-red-700 dark:text-red-300', label: 'Con errores' },
+  }[calidad.estatus]
+
+  const Icon = config.icon
+
+  return (
+    <div className={clsx('mt-4 p-3 rounded-lg', config.bg)}>
+      <div className="flex items-center gap-2 mb-2">
+        <Icon className={clsx('h-4 w-4', config.text)} />
+        <span className={clsx('text-sm font-medium', config.text)}>
+          Calidad de importación: {config.label}
+        </span>
+      </div>
+      <ul className="space-y-1">
+        {calidad.issues.map((issue, idx) => (
+          <li key={idx} className="text-xs text-gray-600 dark:text-gray-400">
+            <span className={clsx(
+              'font-medium',
+              issue.severidad === 'error' ? 'text-red-600 dark:text-red-400' : 'text-yellow-600 dark:text-yellow-400'
+            )}>
+              [{issue.severidad}]
+            </span>{' '}
+            {issue.descripcion}
+            {issue.accion && (
+              <span className="text-gray-500 dark:text-gray-500"> → {issue.accion}</span>
+            )}
+            {issue.resuelto && (
+              <CheckCircle className="inline h-3 w-3 ml-1 text-green-500" />
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
 
 export default function DivisionView() {
   const { ley, id } = useParams<{ ley: string; id: string }>()
@@ -151,6 +193,9 @@ export default function DivisionView() {
                 Referencias: {art.referencias}
               </div>
             )}
+
+            {/* Calidad de importación (solo si hay issues) */}
+            {art.calidad && <CalidadBadge calidad={art.calidad} />}
 
             {/* Separador */}
             <hr className="mt-8 border-gray-200 dark:border-gray-700" />

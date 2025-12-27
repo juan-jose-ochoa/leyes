@@ -351,7 +351,8 @@ RETURNS TABLE(
     es_transitorio BOOLEAN,
     reformas TEXT,
     tipo VARCHAR,
-    referencias TEXT
+    referencias TEXT,
+    calidad JSONB
 ) AS $$
 BEGIN
     RETURN QUERY
@@ -362,7 +363,8 @@ BEGIN
         a.es_transitorio,
         a.reformas,
         a.tipo,
-        a.referencias
+        a.referencias,
+        a.calidad
     FROM public.articulos a
     JOIN public.divisiones d ON a.division_id = d.id
     JOIN public.leyes l ON a.ley_id = l.id

@@ -26,6 +26,9 @@ from .models import (
     TipoProblema,
     TipoDivision,
     FuenteDatos,
+    EstatusCalidad,
+    IssueCalidad,
+    RegistroCalidad,
 )
 from .extractor import Extractor, DocxXmlExtractor, PdfExtractor, TxtExtractor
 
@@ -503,6 +506,9 @@ class InspectorMultiFormato:
         """
         Procesa todas las reglas con problemas en el resultado.
 
+        Ejecuta segunda pasada automáticamente y puebla el campo `calidad`
+        de cada regla con el registro de issues y acciones correctivas.
+
         Args:
             resultado: ResultadoParseo a procesar
 
@@ -513,23 +519,56 @@ class InspectorMultiFormato:
         pendientes = []
 
         for regla in resultado.reglas:
-            if not regla.requiere_segunda_pasada:
+            if regla.tipo == "no-existe":
+                continue  # Saltar placeholders
+
+            # Crear registro de calidad para esta regla
+            registro = RegistroCalidad()
+
+            # Si no tiene problemas, queda OK (sin registro visible)
+            if not regla.problemas:
+                # No asignar calidad - OK implícito
                 continue
 
+            # Procesar cada problema detectado
             for problema in regla.problemas:
-                if problema.severidad != "error":
-                    continue
+                # Crear issue de calidad
+                issue = IssueCalidad(
+                    tipo=problema.tipo.value,
+                    descripcion=problema.descripcion,
+                    severidad=problema.severidad,
+                )
 
-                resolucion = self.resolver(regla, problema)
-                resoluciones.append(resolucion)
+                # Para errores, intentar segunda pasada
+                if problema.severidad == "error":
+                    resolucion = self.resolver(regla, problema)
+                    resoluciones.append(resolucion)
 
-                if resolucion.exito:
-                    # Aplicar corrección si es posible
-                    if resolucion.contenido_corregido:
-                        regla.contenido = resolucion.contenido_corregido
-                    regla.requiere_segunda_pasada = False
+                    if resolucion.exito:
+                        # Aplicar corrección si es posible
+                        if resolucion.contenido_corregido:
+                            regla.contenido = resolucion.contenido_corregido
+
+                        issue.accion = resolucion.metodo
+                        issue.fuente_correccion = (
+                            resolucion.fuente_usada.value
+                            if resolucion.fuente_usada else None
+                        )
+                        issue.resuelto = True
+                    else:
+                        issue.accion = f"Intento fallido: {resolucion.metodo}"
+                        issue.resuelto = False
+                        pendientes.append(problema)
                 else:
-                    pendientes.append(problema)
+                    # Warnings solo se documentan, no se corrigen
+                    issue.accion = "Solo advertencia, sin acción"
+                    issue.resuelto = True  # Warnings no bloquean
+
+                registro.agregar_issue(issue)
+
+            # Asignar registro de calidad a la regla
+            regla.calidad = registro
+            regla.requiere_segunda_pasada = (registro.estatus == EstatusCalidad.CON_ERROR)
 
         return resoluciones, pendientes
 

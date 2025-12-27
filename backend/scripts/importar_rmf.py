@@ -4,6 +4,8 @@ Importador de RMF - Resolución Miscelánea Fiscal
 
 Lee el archivo DOCX de RMF, parsea con estructura jerárquica y carga a PostgreSQL.
 Las reglas se guardan en la tabla articulos con tipo='regla'.
+
+Incluye campo 'calidad' con registro de issues y acciones correctivas.
 """
 
 import json
@@ -14,7 +16,16 @@ from pathlib import Path
 # Agregar directorio de scripts al path para importar parser
 sys.path.insert(0, str(Path(__file__).parent.parent.parent / "scripts"))
 
-from parsear_rmf import extraer_texto_docx, parsear_rmf, RMF_DIR
+from rmf import (
+    DocxXmlExtractor,
+    ParserRMF,
+    ValidadorEstructural,
+    InspectorMultiFormato,
+)
+
+# Directorio de RMF
+BASE_DIR = Path(__file__).parent.parent.parent
+RMF_DIR = BASE_DIR / "doc" / "rmf"
 
 try:
     import psycopg2
@@ -173,12 +184,17 @@ def insertar_reglas(cursor, ley_id, reglas, division_map):
         # Usar tipo de la regla si existe, sino default 'regla'
         tipo = regla.get("tipo", "regla")
 
+        # Obtener calidad si existe (solo reglas con issues)
+        calidad_json = None
+        if regla.get("calidad"):
+            calidad_json = json.dumps(regla["calidad"], ensure_ascii=False)
+
         cursor.execute("""
             INSERT INTO articulos (
                 ley_id, division_id, numero_raw, numero_base, sufijo, ordinal,
-                contenido, es_transitorio, tipo, referencias, orden_global
+                contenido, es_transitorio, tipo, referencias, orden_global, calidad
             )
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         """, (
             ley_id,
             division_id,
@@ -190,24 +206,78 @@ def insertar_reglas(cursor, ley_id, reglas, division_map):
             False,  # es_transitorio
             tipo,  # 'regla' o 'inexistente'
             regla.get("referencias"),  # referencias legales al final
-            regla.get("orden_global")
+            regla.get("orden_global"),
+            calidad_json  # registro de calidad (JSONB)
         ))
 
 
 def procesar_rmf(cursor, docx_path):
-    """Procesa el documento RMF: parsea DOCX e inserta en PostgreSQL"""
+    """
+    Procesa el documento RMF: parsea DOCX e inserta en PostgreSQL.
+
+    Pipeline completo con validación y segunda pasada:
+    1. Extracción de párrafos
+    2. Parsing estructural
+    3. Validación + segunda pasada para corregir issues
+    4. Inserción en PostgreSQL con campo calidad
+    """
     print(f"   Leyendo {docx_path.name}...")
 
-    # Extraer y parsear
-    paragraphs = extraer_texto_docx(docx_path)
+    # Fase 1: Extracción
+    extractor = DocxXmlExtractor(docx_path)
+    paragraphs = extractor.extraer()
     print(f"   {len(paragraphs)} párrafos extraídos")
 
+    # Fase 2: Parsing
     nombre_doc = "Resolución Miscelánea Fiscal 2025"
-    resultado = parsear_rmf(paragraphs, nombre_doc)
-    print(f"   {resultado['total_divisiones']} divisiones, {resultado['total_reglas']} reglas")
+    parser = ParserRMF()
+    resultado = parser.parsear(paragraphs, nombre_doc)
 
-    if resultado['total_reglas'] == 0:
+    # Fase 3: Validación (primera pasada)
+    validador = ValidadorEstructural()
+    validador.validar_resultado(resultado)
+
+    reglas_con_problemas = len([r for r in resultado.reglas
+                                if r.tipo == "regla" and r.problemas])
+    print(f"   {reglas_con_problemas} reglas con problemas detectados")
+
+    # Segunda pasada: intentar corregir problemas
+    if reglas_con_problemas > 0:
+        print(f"   Ejecutando segunda pasada...")
+        inspector = InspectorMultiFormato(docx_path=docx_path)
+        resoluciones, pendientes = inspector.procesar_resultado(resultado)
+        print(f"   {len(resoluciones) - len(pendientes)} correcciones, {len(pendientes)} pendientes")
+
+    print(f"   {len(resultado.divisiones)} divisiones, {resultado.total_reglas} reglas")
+
+    if resultado.total_reglas == 0:
         return {"status": "sin_reglas", "reglas": 0, "divisiones": 0}
+
+    # Convertir a diccionarios para inserción
+    divisiones_dict = [
+        {
+            "tipo": div.tipo.value,
+            "numero": div.numero,
+            "numero_orden": div.numero_orden,
+            "nombre": div.nombre,
+            "path_texto": div.path_texto,
+            "orden_global": div.orden_global,
+        }
+        for div in resultado.divisiones
+    ]
+
+    reglas_dict = [
+        {
+            "numero": regla.numero,
+            "contenido": regla.contenido,
+            "referencias": regla.referencias,
+            "division_path": regla.division_path,
+            "orden_global": regla.orden_global,
+            "tipo": regla.tipo,
+            "calidad": regla.calidad.to_dict() if regla.calidad else None,
+        }
+        for regla in resultado.reglas
+    ]
 
     # Preparar info para insertar
     rmf_info = {
@@ -221,15 +291,31 @@ def procesar_rmf(cursor, docx_path):
     ley_id = insertar_ley_rmf(cursor, rmf_info)
 
     division_map = {}
-    if resultado['divisiones']:
-        division_map = insertar_divisiones_rmf(cursor, ley_id, resultado['divisiones'])
+    if divisiones_dict:
+        division_map = insertar_divisiones_rmf(cursor, ley_id, divisiones_dict)
 
-    insertar_reglas(cursor, ley_id, resultado['reglas'], division_map)
+    insertar_reglas(cursor, ley_id, reglas_dict, division_map)
+
+    # Métricas de calidad
+    reglas_ok = len([r for r in resultado.reglas
+                     if r.tipo == "regla" and r.calidad is None])
+    reglas_corregidas = len([r for r in resultado.reglas
+                              if r.tipo == "regla" and r.calidad
+                              and r.calidad.estatus.value == "corregida"])
+    reglas_con_error = len([r for r in resultado.reglas
+                             if r.tipo == "regla" and r.calidad
+                             and r.calidad.estatus.value == "con_error"])
+
+    print(f"\n   Métricas de calidad:")
+    print(f"   OK: {reglas_ok}, Corregidas: {reglas_corregidas}, Con error: {reglas_con_error}")
 
     return {
         "status": "ok",
-        "reglas": resultado['total_reglas'],
-        "divisiones": resultado['total_divisiones']
+        "reglas": resultado.total_reglas,
+        "divisiones": len(resultado.divisiones),
+        "reglas_ok": reglas_ok,
+        "reglas_corregidas": reglas_corregidas,
+        "reglas_con_error": reglas_con_error,
     }
 
 

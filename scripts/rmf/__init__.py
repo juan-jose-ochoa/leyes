@@ -20,6 +20,9 @@ from .models import (
     TipoProblema,
     TipoDivision,
     FuenteDatos,
+    EstatusCalidad,
+    IssueCalidad,
+    RegistroCalidad,
 )
 from .extractor import (
     Extractor,
@@ -44,6 +47,9 @@ __all__ = [
     'TipoProblema',
     'TipoDivision',
     'FuenteDatos',
+    'EstatusCalidad',
+    'IssueCalidad',
+    'RegistroCalidad',
     # Extractor
     'Extractor',
     'DocxXmlExtractor',

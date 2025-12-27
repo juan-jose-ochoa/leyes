@@ -41,6 +41,13 @@ class FuenteDatos(Enum):
     TXT = "txt"
 
 
+class EstatusCalidad(Enum):
+    """Estatus de calidad de una regla después del procesamiento."""
+    OK = "ok"                    # Pasó validación a la primera
+    CORREGIDA = "corregida"      # Corregida en segunda pasada
+    CON_ERROR = "con_error"      # No se pudo corregir
+
+
 @dataclass
 class ParrafoExtraido:
     """
@@ -122,6 +129,63 @@ class Resolucion:
 
 
 @dataclass
+class IssueCalidad:
+    """
+    Issue de calidad detectado en una regla con su acción correctiva.
+
+    Registra qué problema se detectó, qué se intentó para corregirlo,
+    y si se resolvió o no.
+    """
+    tipo: str                           # Tipo de problema (ej: "fracciones_incompletas")
+    descripcion: str                    # Descripción del problema
+    severidad: str                      # "error" o "warning"
+    accion: Optional[str] = None        # Acción correctiva tomada (si alguna)
+    fuente_correccion: Optional[str] = None  # Fuente usada para corregir (ej: "pdf", "txt")
+    resuelto: bool = False              # Si se resolvió el problema
+
+
+@dataclass
+class RegistroCalidad:
+    """
+    Registro de calidad de una regla.
+
+    Documenta el estatus final y todos los issues detectados
+    con sus acciones correctivas.
+    """
+    estatus: EstatusCalidad = EstatusCalidad.OK
+    issues: List[IssueCalidad] = field(default_factory=list)
+
+    def agregar_issue(self, issue: IssueCalidad):
+        """Agrega un issue y actualiza el estatus."""
+        self.issues.append(issue)
+        if issue.severidad == "error":
+            if issue.resuelto:
+                if self.estatus == EstatusCalidad.OK:
+                    self.estatus = EstatusCalidad.CORREGIDA
+            else:
+                self.estatus = EstatusCalidad.CON_ERROR
+
+    def to_dict(self) -> Optional[dict]:
+        """Convierte a diccionario para JSON. Retorna None si no hay issues."""
+        if not self.issues:
+            return None
+        return {
+            "estatus": self.estatus.value,
+            "issues": [
+                {
+                    "tipo": i.tipo,
+                    "descripcion": i.descripcion,
+                    "severidad": i.severidad,
+                    "accion": i.accion,
+                    "fuente_correccion": i.fuente_correccion,
+                    "resuelto": i.resuelto,
+                }
+                for i in self.issues
+            ]
+        }
+
+
+@dataclass
 class ReglaParseada:
     """
     Regla de la RMF parseada con metadatos de validación.
@@ -159,6 +223,9 @@ class ReglaParseada:
 
     # Tipo (regla normal o placeholder)
     tipo: str = "regla"  # "regla", "no-existe", "ficha", "criterio"
+
+    # Registro de calidad (después de segunda pasada)
+    calidad: Optional[RegistroCalidad] = None
 
     def agregar_problema(self, problema: Problema):
         """Agrega un problema y marca para segunda pasada si es error."""
