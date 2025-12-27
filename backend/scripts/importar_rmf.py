@@ -112,11 +112,35 @@ def insertar_ley_rmf(cursor, rmf_info):
     return cursor.fetchone()[0]
 
 
+def eliminar_divisiones_duplicadas(divisiones):
+    """
+    Elimina divisiones duplicadas, manteniendo la primera instancia.
+    Los duplicados se identifican por path_texto.
+    """
+    seen = set()
+    resultado = []
+
+    for div in divisiones:
+        path = div.get("path_texto", "")
+        if path not in seen:
+            seen.add(path)
+            resultado.append(div)
+
+    eliminados = len(divisiones) - len(resultado)
+    if eliminados > 0:
+        print(f"   Eliminados {eliminados} divisiones duplicadas")
+
+    return resultado
+
+
 def insertar_divisiones_rmf(cursor, ley_id, divisiones):
     """
     Inserta divisiones RMF y construye la jerarquía.
     Retorna un diccionario path_texto -> division_id
     """
+    # Eliminar duplicados antes de insertar
+    divisiones = eliminar_divisiones_duplicadas(divisiones)
+
     division_map = {}
 
     for div in divisiones:
