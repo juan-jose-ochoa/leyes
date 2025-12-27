@@ -92,16 +92,18 @@ export default function LeyIndex() {
         )}
       </div>
 
-      {/* Estructura jerárquica */}
+      {/* Estructura jerárquica - solo divisiones con artículos */}
       <div className="space-y-2">
-        {estructura.map((div) => (
-          <DivisionItem
-            key={div.id}
-            division={div}
-            ley={ley!}
-            tipoContenido={tipoContenido}
-          />
-        ))}
+        {estructura
+          .filter((div) => div.total_articulos > 0 || div.primer_articulo)
+          .map((div) => (
+            <DivisionItem
+              key={div.id}
+              division={div}
+              ley={ley!}
+              tipoContenido={tipoContenido}
+            />
+          ))}
       </div>
     </div>
   )
@@ -123,17 +125,16 @@ interface DivisionItemProps {
 
 function DivisionItem({ division, ley, tipoContenido }: DivisionItemProps) {
   const tipoLabel = division.tipo.charAt(0).toUpperCase() + division.tipo.slice(1)
-  const hasArticles = division.total_articulos > 0 && division.primer_articulo
+  // Considerar que tiene artículos si total > 0 o si tiene primer_articulo
+  const hasArticles = division.total_articulos > 0 || division.primer_articulo
 
   const content = (
     <div
       className={clsx(
         'flex items-center gap-4 p-4 rounded-lg border transition-colors',
-        hasArticles
-          ? 'border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-700 hover:bg-gray-50 dark:hover:bg-gray-800/50 cursor-pointer'
-          : 'border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-800/30'
+        'border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-700 hover:bg-gray-50 dark:hover:bg-gray-800/50 cursor-pointer'
       )}
-      style={{ marginLeft: `${division.nivel * 1.5}rem` }}
+      style={{ marginLeft: `${Math.min(division.nivel, 2) * 1.5}rem` }}
     >
       {/* Icono */}
       <div
@@ -182,14 +183,10 @@ function DivisionItem({ division, ley, tipoContenido }: DivisionItemProps) {
     </div>
   )
 
-  // Siempre enlazar a la vista de división si tiene artículos
-  if (hasArticles) {
-    return (
-      <Link to={`/${ley}/division/${division.id}`}>
-        {content}
-      </Link>
-    )
-  }
-
-  return content
+  // Siempre enlazar a la vista de división
+  return (
+    <Link to={`/${ley}/division/${division.id}`}>
+      {content}
+    </Link>
+  )
 }

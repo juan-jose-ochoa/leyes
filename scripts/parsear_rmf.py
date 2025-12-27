@@ -89,6 +89,23 @@ PATRON_REFERENCIAS_SIMPLE = re.compile(
 
 PATRON_PAGINA = re.compile(r'^\d+\s+de\s+\d+$')
 
+# Nombres oficiales de los Títulos de la RMF
+# Se usan para inferir el título cuando se parsea un capítulo
+NOMBRES_TITULOS_RMF = {
+    "1": "Disposiciones Generales",
+    "2": "Código Fiscal de la Federación",
+    "3": "Impuesto sobre la Renta",
+    "4": "Impuesto al Valor Agregado",
+    "5": "Impuesto Especial sobre Producción y Servicios",
+    "6": "Contribuciones de Mejoras",
+    "7": "Derechos",
+    "8": "Impuesto sobre Automóviles Nuevos",
+    "9": "Ley de Ingresos de la Federación",
+    "10": "Ley de Ingresos sobre Hidrocarburos",
+    "11": "De los Decretos, Acuerdos, Convenios y Resoluciones de carácter general",
+    "12": "De la Prestación de Servicios Digitales",
+}
+
 
 def extraer_texto_docx(doc_path: Path) -> list[str]:
     """Extrae párrafos del DOCX, limpiando páginas y espacios"""
@@ -189,31 +206,10 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
     while i < len(paragraphs):
         text = paragraphs[i]
 
-        # === TÍTULO RMF (ej: "2. Código Fiscal de la Federación") ===
-        # Solo si no estamos dentro de una regla activa
-        match = PATRON_TITULO_RMF.match(text)
-        if match:
-            # Verificar que es realmente un título (número simple seguido de texto largo)
-            numero = match.group(1)
-            nombre = match.group(2).strip()
-
-            # Un título tiene nombre descriptivo, no parece contenido de regla
-            # y el número es pequeño (1-15 típicamente)
-            if int(numero) <= 15 and len(nombre) > 10 and not nombre[0].islower():
-                orden_division += 1
-                titulo_actual = {
-                    "tipo": "titulo",
-                    "numero": numero,
-                    "numero_orden": int(numero),
-                    "nombre": nombre,
-                    "orden_global": orden_division,
-                    "path_texto": f"TITULO {numero}"
-                }
-                divisiones.append(titulo_actual)
-                capitulo_actual = None
-                seccion_actual = None
-                i += 1
-                continue
+        # === TÍTULO RMF ===
+        # NO parseamos títulos explícitamente porque el documento tiene muchos falsos positivos
+        # (glosario, numerales, etc.). En su lugar, los títulos se INFIEREN de los capítulos.
+        # Cuando vemos "Capítulo 2.1", creamos automáticamente "Título 2" si no existe.
 
         # === CAPÍTULO RMF (ej: "Capítulo 2.1. Disposiciones generales") ===
         match = PATRON_CAPITULO_RMF.match(text)
@@ -227,6 +223,23 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
                 if not PATRON_CAPITULO_RMF.match(next_text) and not PATRON_SECCION_RMF.match(next_text) and not PATRON_REGLA.match(next_text):
                     nombre = next_text
                     i += 1
+
+            # INFERIR TÍTULO del número de capítulo (ej: "2.1" -> Título "2")
+            titulo_numero = numero.split('.')[0]  # "2.1" -> "2"
+            if titulo_actual is None or titulo_actual["numero"] != titulo_numero:
+                # Crear nuevo título inferido
+                orden_division += 1
+                titulo_actual = {
+                    "tipo": "titulo",
+                    "numero": titulo_numero,
+                    "numero_orden": int(titulo_numero),
+                    "nombre": NOMBRES_TITULOS_RMF.get(titulo_numero, f"Título {titulo_numero}"),
+                    "orden_global": orden_division,
+                    "path_texto": f"TITULO {titulo_numero}"
+                }
+                divisiones.append(titulo_actual)
+                capitulo_actual = None
+                seccion_actual = None
 
             orden_division += 1
             path = titulo_actual["path_texto"] if titulo_actual else ""
@@ -282,6 +295,7 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
         if match:
             numero = match.group(1)
             titulo_inicial = match.group(2).strip()
+            parrafo_inicio = i  # Guardar índice de inicio para validación de títulos
 
             # Recolectar contenido de la regla
             contenido_partes = [titulo_inicial] if titulo_inicial else []
@@ -338,6 +352,7 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
                 "titulo_padre": titulo_actual["numero"] if titulo_actual else None,
                 "capitulo_padre": capitulo_actual["numero"] if capitulo_actual else None,
                 "seccion_padre": seccion_actual["numero"] if seccion_actual else None,
+                "_parrafo_inicio": parrafo_inicio,  # Para validación interna
             }
             reglas.append(regla)
             continue
