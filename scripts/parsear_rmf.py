@@ -221,25 +221,44 @@ def consolidar_parrafos(partes: list[str]) -> str:
 
 
 def es_referencia_final(texto: str) -> bool:
-    """Detecta si una línea es la referencia legal al final de una regla"""
-    # Patrones típicos de referencias
+    """
+    Detecta si una línea es la referencia legal al final de una regla.
+
+    Ejemplos válidos:
+    - "CFF 14-B, LISR 24, 32-D"
+    - "CFF 17-A, 20, 26, 32-A"
+
+    NO válidos (son contenido, no referencias):
+    - "Para los efectos del artículo 14-B del CFF, se podrá..."
+    """
     siglas = ['CFF', 'LISR', 'LIVA', 'LIESPS', 'LIEPS', 'LIF', 'LA', 'RMF', 'RGCE',
-              'RCFF', 'RLISR', 'RLIVA', 'RLIESPS', 'DECRETO', 'DOF']
+              'RCFF', 'RLISR', 'RLIVA', 'RLIESPS', 'DECRETO', 'DOF', 'LGSM', 'Ley del ISR',
+              'Ley del IVA', 'Ley General de Salud']
 
     texto_upper = texto.upper().strip()
 
-    # Si empieza con una sigla de ley
+    # Debe empezar con una sigla de ley para ser referencia
+    empieza_con_sigla = False
     for sigla in siglas:
-        if texto_upper.startswith(sigla):
-            return True
+        if texto_upper.startswith(sigla.upper()):
+            empieza_con_sigla = True
+            break
 
-    # Si contiene muchas comas y números (típico de referencias)
-    if texto.count(',') >= 2 and re.search(r'\d+[oa]?', texto):
-        for sigla in siglas:
-            if sigla in texto_upper:
-                return True
+    if not empieza_con_sigla:
+        return False
 
-    return False
+    # Verificar que no sea contenido normal que menciona una ley
+    # Las referencias son cortas y tienen formato "SIGLA artículo, artículo, SIGLA artículo"
+    # El contenido normal es largo y tiene frases completas
+    if len(texto) > 200:
+        return False
+
+    # Si empieza con sigla y tiene "Para los efectos" o "se podrá" es contenido
+    texto_lower = texto.lower()
+    if 'para los efectos' in texto_lower or 'se podrá' in texto_lower:
+        return False
+
+    return True
 
 
 def crear_placeholders_faltantes(reglas: list, divisiones: list) -> list:
@@ -459,8 +478,26 @@ def parsear_rmf(paragraphs: list[str], nombre_doc: str) -> dict:
                 titulo_inicial = ""
             else:
                 # Formato "X.X.X." solo - número en celda de tabla
+                # El título de la regla está en el párrafo ANTERIOR
                 numero = match_solo.group(1)
                 titulo_inicial = ""
+
+                # Buscar título en párrafo anterior (si existe y parece título)
+                if i > 0:
+                    parrafo_anterior = paragraphs[i - 1]
+                    # Es título si: no es referencia, no es número, no empieza con romano, es corto
+                    es_referencia = es_referencia_final(parrafo_anterior)
+                    es_numero = PATRON_REGLA.match(parrafo_anterior) or PATRON_REGLA_SOLO.match(parrafo_anterior)
+                    es_romano = parrafo_anterior.startswith(('I.', 'II.', 'III.', 'IV.', 'V.', 'VI.', 'VII.', 'VIII.', 'IX.', 'X.'))
+                    es_corto = len(parrafo_anterior) < 150
+
+                    if not es_referencia and not es_numero and not es_romano and es_corto:
+                        titulo_inicial = parrafo_anterior
+                        # Remover este título del contenido de la regla anterior (si existe)
+                        if reglas and reglas[-1].get("contenido", "").endswith(parrafo_anterior):
+                            contenido_anterior = reglas[-1]["contenido"]
+                            # Quitar el título del final
+                            reglas[-1]["contenido"] = contenido_anterior[:-len(parrafo_anterior)].rstrip('\n').rstrip()
 
             # === Inferir capítulo correcto si no coincide con el actual ===
             capitulo_esperado = extraer_capitulo_de_regla(numero)
