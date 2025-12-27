@@ -342,24 +342,40 @@ $$ LANGUAGE plpgsql STABLE;
 
 COMMENT ON FUNCTION api.estructura_ley IS 'Obtiene estructura jerarquica con articulos heredados de hijos';
 
--- Wrapper para articulos por division
+-- Wrapper para articulos por division (ordena por numero de regla para RMF)
 CREATE OR REPLACE FUNCTION api.articulos_division(div_id INT)
 RETURNS TABLE(
     id INT,
     numero_raw VARCHAR,
-    numero_base INT,
-    sufijo VARCHAR,
     contenido TEXT,
     es_transitorio BOOLEAN,
-    orden_global INT
+    reformas TEXT,
+    tipo VARCHAR,
+    referencias TEXT
 ) AS $$
 BEGIN
     RETURN QUERY
-    SELECT * FROM public.articulos_por_division(div_id);
+    SELECT
+        a.id,
+        a.numero_raw,
+        a.contenido,
+        a.es_transitorio,
+        a.reformas,
+        a.tipo,
+        a.referencias
+    FROM public.articulos a
+    JOIN public.divisiones d ON a.division_id = d.id
+    JOIN public.leyes l ON a.ley_id = l.id
+    WHERE div_id = ANY(d.path_ids) OR a.division_id = div_id
+    ORDER BY
+        CASE
+            WHEN l.tipo = 'resolucion' THEN extraer_ultimo_numero(a.numero_raw)
+            ELSE a.orden_global
+        END;
 END;
 $$ LANGUAGE plpgsql STABLE;
 
-COMMENT ON FUNCTION api.articulos_division IS 'Obtiene articulos de una division especifica';
+COMMENT ON FUNCTION api.articulos_division IS 'Obtiene articulos de una division, ordenados por numero';
 
 -- Wrapper para navegacion de articulos
 CREATE OR REPLACE FUNCTION api.navegar(art_id INT)
