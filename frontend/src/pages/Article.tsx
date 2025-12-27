@@ -6,9 +6,14 @@ import FraccionesView from '@/components/FraccionesView'
 import clsx from 'clsx'
 
 export default function Article() {
-  const { id, ley, numero } = useParams<{ id?: string; ley?: string; numero?: string }>()
+  const params = useParams<{ id?: string; ley?: string; '*'?: string }>()
+  const { id, ley } = params
+  // El numero viene del wildcard (*) para soportar "/" en el valor (ej: "13/LISH")
+  const numero = params['*'] || undefined
   const location = window.location.pathname
   const esRutaRegla = location.includes('/regla/')
+  const esRutaFicha = location.includes('/ficha/')
+  const esRutaCriterio = location.includes('/criterio/')
 
   // Usar el hook apropiado según los parámetros
   const porLey = useArticuloPorLey(ley ?? null, numero ?? null)
@@ -20,10 +25,12 @@ export default function Article() {
   const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null)
   const [copied, setCopied] = useState(false)
 
-  // Determinar si es regla basándose en el tipo o la ruta
+  // Determinar el tipo basándose en el tipo del artículo o la ruta
   const esRegla = articulo?.tipo === 'regla' || esRutaRegla
-  const etiquetaTipo = esRegla ? 'Regla' : 'Artículo'
-  const rutaTipo = esRegla ? 'regla' : 'articulo'
+  const esFicha = articulo?.tipo === 'ficha' || esRutaFicha
+  const esCriterio = articulo?.tipo === 'criterio' || esRutaCriterio
+  const etiquetaTipo = esFicha ? 'Ficha' : esCriterio ? 'Criterio' : esRegla ? 'Regla' : 'Artículo'
+  const rutaTipo = esFicha ? 'ficha' : esCriterio ? 'criterio' : esRegla ? 'regla' : 'articulo'
 
   const handleCopy = async () => {
     if (!articulo) return

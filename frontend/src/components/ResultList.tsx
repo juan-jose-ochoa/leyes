@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FileText, ChevronRight, ChevronDown, BookOpen } from 'lucide-react'
 import DOMPurify from 'dompurify'
-import type { SearchResult } from '@/lib/api'
+import type { SearchResult, LeyTipo } from '@/lib/api'
 import clsx from 'clsx'
 
 // Sanitizar snippets: solo permitir <mark> para highlighting
@@ -37,7 +37,7 @@ const extraerTitulo = (contenido: string, maxLength = 80): string => {
 interface GrupoLey {
   ley: string
   ley_nombre: string
-  ley_tipo: 'ley' | 'reglamento' | 'resolucion'
+  ley_tipo: LeyTipo
   resultados: SearchResult[]
 }
 
@@ -124,11 +124,13 @@ interface GrupoResultadosProps {
 
 function GrupoResultados({ grupo, selectedId, onSelect }: GrupoResultadosProps) {
   const [expandido, setExpandido] = useState(true)
-  const colorClase = grupo.ley_tipo === 'resolucion'
-    ? 'bg-amber-600'
-    : grupo.ley_tipo === 'ley'
-      ? 'bg-primary-600'
-      : 'bg-blue-600'
+  const colorClase = grupo.ley_tipo === 'anexo'
+    ? 'bg-orange-600'
+    : grupo.ley_tipo === 'resolucion'
+      ? 'bg-amber-600'
+      : grupo.ley_tipo === 'ley'
+        ? 'bg-primary-600'
+        : 'bg-blue-600'
 
   return (
     <div className="rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
@@ -188,8 +190,10 @@ interface ResultCardProps {
 
 function ResultCard({ result, isSelected, onSelect }: ResultCardProps) {
   const esRegla = result.tipo === 'regla'
-  const etiquetaTipo = esRegla ? 'Regla' : 'Art.'
-  const rutaTipo = esRegla ? 'regla' : 'articulo'
+  const esFicha = result.tipo === 'ficha'
+  const esCriterio = result.tipo === 'criterio'
+  const etiquetaTipo = esFicha ? 'Ficha' : esCriterio ? 'Criterio' : esRegla ? 'Regla' : 'Art.'
+  const rutaTipo = esFicha ? 'ficha' : esCriterio ? 'criterio' : esRegla ? 'regla' : 'articulo'
   const titulo = extraerTitulo(result.contenido)
 
   const content = (

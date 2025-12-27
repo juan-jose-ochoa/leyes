@@ -7,7 +7,7 @@ import ResultList from '@/components/ResultList'
 import ArticlePanel from '@/components/ArticlePanel'
 import { useSearch } from '@/hooks/useSearch'
 import { useLeyes } from '@/hooks/useArticle'
-import type { SearchResult } from '@/lib/api'
+import type { SearchResult, LeyTipo } from '@/lib/api'
 
 export default function Home() {
   const [searchParams, setSearchParams] = useSearchParams()
@@ -15,6 +15,7 @@ export default function Home() {
 
   const [query, setQuery] = useState(urlQuery)
   const [selectedLeyes, setSelectedLeyes] = useState<string[]>([])
+  const [selectedTipos, setSelectedTipos] = useState<LeyTipo[]>([])
   const [selectedArticle, setSelectedArticle] = useState<{ ley: string; numero: string; id: number } | null>(null)
   const { data: leyes } = useLeyes()
 
@@ -27,7 +28,8 @@ export default function Home() {
 
   const { data: results, isLoading, isFetching } = useSearch(
     urlQuery,
-    selectedLeyes.length > 0 ? selectedLeyes : undefined
+    selectedLeyes.length > 0 ? selectedLeyes : undefined,
+    selectedTipos.length > 0 ? selectedTipos : undefined
   )
 
   const handleSearch = useCallback((q: string) => {
@@ -87,6 +89,8 @@ export default function Home() {
         onSearch={handleSearch}
         selectedLeyes={selectedLeyes}
         onLeyesChange={setSelectedLeyes}
+        selectedTipos={selectedTipos}
+        onTiposChange={setSelectedTipos}
         isLoading={isFetching}
       />
 
@@ -132,7 +136,7 @@ export default function Home() {
       {!hasSearched && leyes && (
         <div className="mt-16">
           {/* Stats */}
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             <StatCard
               icon={<BookOpen className="h-6 w-6" />}
               label="Leyes"
@@ -144,8 +148,13 @@ export default function Home() {
               value={leyes.filter((l) => l.tipo === 'reglamento').length}
             />
             <StatCard
+              icon={<BookOpen className="h-6 w-6" />}
+              label="RMF + Anexos"
+              value={leyes.filter((l) => l.tipo === 'resolucion' || l.tipo === 'anexo').length}
+            />
+            <StatCard
               icon={<SearchIcon className="h-6 w-6" />}
-              label="Articulos"
+              label="Contenidos"
               value={leyes.reduce((sum, l) => sum + l.total_articulos, 0)}
             />
             <StatCard
@@ -171,11 +180,13 @@ export default function Home() {
                     <div
                       className={clsx(
                         'flex h-10 w-10 items-center justify-center rounded-lg text-sm font-bold text-white',
-                        leyItem.tipo === 'resolucion'
-                          ? 'bg-amber-600'
-                          : leyItem.tipo === 'ley'
-                            ? 'bg-primary-600'
-                            : 'bg-blue-600'
+                        leyItem.tipo === 'anexo'
+                          ? 'bg-orange-600'
+                          : leyItem.tipo === 'resolucion'
+                            ? 'bg-amber-600'
+                            : leyItem.tipo === 'ley'
+                              ? 'bg-primary-600'
+                              : 'bg-blue-600'
                       )}
                     >
                       {leyItem.codigo.length > 4 ? leyItem.codigo.slice(0, 3) : leyItem.codigo}
@@ -185,7 +196,10 @@ export default function Home() {
                         {leyItem.nombre}
                       </h3>
                       <p className="text-sm text-gray-500">
-                        {leyItem.total_articulos} {leyItem.tipo === 'resolucion' ? 'reglas' : 'artículos'}
+                        {leyItem.total_articulos} {
+                          leyItem.tipo === 'resolucion' ? 'reglas' :
+                          leyItem.tipo === 'anexo' ? 'fichas/criterios' : 'artículos'
+                        }
                       </p>
                     </div>
                   </div>

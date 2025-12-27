@@ -32,8 +32,10 @@ function App() {
         <ErrorBoundary>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/:ley/articulo/:numero" element={<Article />} />
-            <Route path="/:ley/regla/:numero" element={<Article />} />
+            <Route path="/:ley/articulo/*" element={<Article />} />
+            <Route path="/:ley/regla/*" element={<Article />} />
+            <Route path="/:ley/ficha/*" element={<Article />} />
+            <Route path="/:ley/criterio/*" element={<Article />} />
             <Route path="/:ley/division/:id" element={<DivisionView />} />
             <Route path="/:ley" element={<LeyIndex />} />
             <Route path="/articulo/:id" element={<Article />} />

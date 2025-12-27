@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { Search, X, Loader2 } from 'lucide-react'
 import { useSugerencias } from '@/hooks/useSearch'
 import { useLeyes } from '@/hooks/useArticle'
+import type { LeyTipo } from '@/lib/api'
 import clsx from 'clsx'
 
 interface SearchBarProps {
@@ -10,8 +11,17 @@ interface SearchBarProps {
   onSearch: (query: string) => void
   selectedLeyes: string[]
   onLeyesChange: (leyes: string[]) => void
+  selectedTipos: LeyTipo[]
+  onTiposChange: (tipos: LeyTipo[]) => void
   isLoading?: boolean
 }
+
+const TIPOS_DOCUMENTO: { value: LeyTipo; label: string; color: string }[] = [
+  { value: 'ley', label: 'Leyes', color: 'bg-primary-600' },
+  { value: 'reglamento', label: 'Reglamentos', color: 'bg-blue-600' },
+  { value: 'resolucion', label: 'RMF', color: 'bg-amber-600' },
+  { value: 'anexo', label: 'Anexos', color: 'bg-orange-600' },
+]
 
 export default function SearchBar({
   value,
@@ -19,6 +29,8 @@ export default function SearchBar({
   onSearch,
   selectedLeyes,
   onLeyesChange,
+  selectedTipos,
+  onTiposChange,
   isLoading,
 }: SearchBarProps) {
   const [showSugerencias, setShowSugerencias] = useState(false)
@@ -67,6 +79,16 @@ export default function SearchBar({
       onLeyesChange([...selectedLeyes, codigo])
     }
   }
+
+  const toggleTipo = (tipo: LeyTipo) => {
+    if (selectedTipos.includes(tipo)) {
+      onTiposChange(selectedTipos.filter((t) => t !== tipo))
+    } else {
+      onTiposChange([...selectedTipos, tipo])
+    }
+  }
+
+  const totalFilters = selectedLeyes.length + selectedTipos.length
 
   return (
     <div className="relative w-full max-w-3xl mx-auto">
@@ -118,10 +140,10 @@ export default function SearchBar({
             onClick={() => setShowFilters(!showFilters)}
             className="flex items-center gap-1 rounded-lg px-2 py-1 hover:bg-gray-100 dark:hover:bg-gray-800"
           >
-            Filtrar por ley
-            {selectedLeyes.length > 0 && (
+            Filtros
+            {totalFilters > 0 && (
               <span className="ml-1 rounded-full bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900 dark:text-primary-300">
-                {selectedLeyes.length}
+                {totalFilters}
               </span>
             )}
           </button>
@@ -131,31 +153,67 @@ export default function SearchBar({
         </div>
       </form>
 
-      {/* Filtros por ley */}
-      {showFilters && leyes && (
-        <div className="mt-2 flex flex-wrap gap-2 rounded-lg border border-gray-200 bg-white p-3 dark:border-gray-700 dark:bg-gray-800">
-          {leyes.map((ley) => (
-            <button
-              key={ley.codigo}
-              onClick={() => toggleLey(ley.codigo)}
-              className={clsx(
-                'rounded-full px-3 py-1 text-sm font-medium transition-colors',
-                selectedLeyes.includes(ley.codigo)
-                  ? 'bg-primary-600 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'
-              )}
-              title={ley.nombre}
-            >
-              {ley.codigo}
-            </button>
-          ))}
-          {selectedLeyes.length > 0 && (
-            <button
-              onClick={() => onLeyesChange([])}
-              className="text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
-            >
-              Limpiar filtros
-            </button>
+      {/* Filtros */}
+      {showFilters && (
+        <div className="mt-2 rounded-lg border border-gray-200 bg-white p-3 dark:border-gray-700 dark:bg-gray-800 space-y-3">
+          {/* Filtro por tipo de documento */}
+          <div>
+            <label className="block text-xs font-medium text-gray-500 mb-2">Tipo de documento</label>
+            <div className="flex flex-wrap gap-2">
+              {TIPOS_DOCUMENTO.map((tipo) => (
+                <button
+                  key={tipo.value}
+                  onClick={() => toggleTipo(tipo.value)}
+                  className={clsx(
+                    'rounded-full px-3 py-1 text-sm font-medium transition-colors',
+                    selectedTipos.includes(tipo.value)
+                      ? `${tipo.color} text-white`
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'
+                  )}
+                >
+                  {tipo.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Filtro por ley */}
+          {leyes && (
+            <div>
+              <label className="block text-xs font-medium text-gray-500 mb-2">Ley específica</label>
+              <div className="flex flex-wrap gap-2">
+                {leyes.map((ley) => (
+                  <button
+                    key={ley.codigo}
+                    onClick={() => toggleLey(ley.codigo)}
+                    className={clsx(
+                      'rounded-full px-3 py-1 text-sm font-medium transition-colors',
+                      selectedLeyes.includes(ley.codigo)
+                        ? 'bg-primary-600 text-white'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'
+                    )}
+                    title={ley.nombre}
+                  >
+                    {ley.codigo}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Limpiar filtros */}
+          {totalFilters > 0 && (
+            <div className="pt-2 border-t border-gray-200 dark:border-gray-700">
+              <button
+                onClick={() => {
+                  onLeyesChange([])
+                  onTiposChange([])
+                }}
+                className="text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+              >
+                Limpiar todos los filtros
+              </button>
+            </div>
           )}
         </div>
       )}

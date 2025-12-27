@@ -35,11 +35,14 @@ END $$;
 -- ============================================================
 CREATE TABLE leyes (
     id SERIAL PRIMARY KEY,
-    codigo VARCHAR(20) UNIQUE NOT NULL,      -- CFF, LFT, LISR, etc.
+    codigo VARCHAR(20) UNIQUE NOT NULL,      -- CFF, LFT, LISR, RMF2025-A1A, etc.
     nombre VARCHAR(300) NOT NULL,            -- Nombre completo
     nombre_corto VARCHAR(100),               -- Nombre abreviado
-    tipo VARCHAR(20) NOT NULL                -- 'ley' o 'reglamento'
-        CHECK (tipo IN ('ley', 'reglamento')),
+    tipo VARCHAR(20) NOT NULL                -- 'ley', 'reglamento', 'resolucion', 'anexo'
+        CHECK (tipo IN ('ley', 'reglamento', 'resolucion', 'anexo')),
+
+    -- Relación padre-hijo para anexos (RMF2025-A1A -> RMF2025)
+    ley_padre_id INTEGER REFERENCES leyes(id) ON DELETE SET NULL,
 
     -- Metadatos de origen
     url_fuente TEXT,                         -- URL original de descarga

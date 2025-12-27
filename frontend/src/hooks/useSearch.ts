@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
-import { buscar, getSugerencias, type SearchResult, type Sugerencia } from '@/lib/api'
+import { buscar, getSugerencias, type SearchResult, type Sugerencia, type LeyTipo } from '@/lib/api'
 
-export function useSearch(query: string, leyes?: string[], enabled = true) {
+export function useSearch(query: string, leyes?: string[], tipos?: LeyTipo[], enabled = true) {
   return useQuery<SearchResult[]>({
-    queryKey: ['search', query, leyes],
-    queryFn: () => buscar(query, leyes),
+    queryKey: ['search', query, leyes, tipos],
+    queryFn: () => buscar(query, leyes, tipos),
     enabled: enabled && query.length >= 2,
     staleTime: 1000 * 60 * 5, // 5 minutos
   })

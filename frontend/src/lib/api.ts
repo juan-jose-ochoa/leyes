@@ -2,20 +2,24 @@
 
 const API_BASE = '/api'
 
+export type LeyTipo = 'ley' | 'reglamento' | 'resolucion' | 'anexo'
+
 export interface Ley {
   id: number
   codigo: string
   nombre: string
-  tipo: 'ley' | 'reglamento' | 'resolucion'
+  tipo: LeyTipo
   total_articulos: number
   fecha_descarga: string
 }
+
+export type ArticuloTipo = 'articulo' | 'regla' | 'ficha' | 'criterio'
 
 export interface Articulo {
   id: number
   ley: string
   ley_nombre: string
-  ley_tipo: 'ley' | 'reglamento' | 'resolucion'
+  ley_tipo: LeyTipo
   numero_raw: string
   numero_base: number
   sufijo: string | null
@@ -23,7 +27,7 @@ export interface Articulo {
   contenido: string
   es_transitorio: boolean
   reformas: string | null
-  tipo?: 'articulo' | 'regla'  // Tipo de contenido: articulo (leyes) o regla (RMF)
+  tipo?: ArticuloTipo  // Tipo de contenido: articulo (leyes), regla (RMF), ficha, criterio
 }
 
 export interface SearchResult extends Articulo {
@@ -102,6 +106,7 @@ export async function getLeyes(): Promise<Ley[]> {
 export async function buscar(
   query: string,
   leyes?: string[],
+  tipos?: LeyTipo[],
   limite = 20,
   pagina = 1
 ): Promise<SearchResult[]> {
@@ -110,6 +115,7 @@ export async function buscar(
     body: JSON.stringify({
       q: query,
       leyes: leyes?.join(',') || null,
+      tipos: tipos?.join(',') || null,
       limite,
       pagina,
     }),

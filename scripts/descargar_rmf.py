@@ -63,7 +63,11 @@ def extraer_fecha_archivo(nombre: str) -> str:
 
 def parsear_pagina_sat(session) -> dict:
     """
-    Parsea la página del SAT y encuentra los documentos compilados más recientes.
+    Parsea la página del SAT y encuentra los documentos RMF.
+
+    Prioridad para anexos:
+    1. Compilado más reciente (si existe)
+    2. Original (si no hay compilado) - solo si NO es modificación individual
 
     Returns:
         {
@@ -80,7 +84,8 @@ def parsear_pagina_sat(session) -> dict:
 
     documentos = {
         "rmf_principal": None,
-        "anexos": []
+        "anexos_compilados": [],  # Compilados
+        "anexos_originales": []   # Originales (versión base, sin modificaciones)
     }
 
     # Buscar todos los enlaces a PDFs
@@ -91,41 +96,80 @@ def parsear_pagina_sat(session) -> dict:
         if not href.lower().endswith(".pdf"):
             continue
 
-        # Solo documentos compilados
-        if "compilad" not in href.lower() and "compilad" not in texto.lower():
-            continue
-
         url_completa = urljoin(SAT_BASE_URL, href)
         fecha = extraer_fecha_archivo(href)
         nombre_archivo = Path(href).name
+        nombre_lower = nombre_archivo.lower()
+
+        # Ignorar RGCE (comercio exterior)
+        if "rgce" in nombre_lower:
+            continue
+
+        es_compilado = "compilad" in nombre_lower
+        # Modificación individual = tiene "modificacion" pero NO es compilado
+        es_modificacion_individual = "modificacion" in nombre_lower and not es_compilado
 
         doc_info = {
             "nombre": texto or nombre_archivo,
             "url": url_completa,
             "archivo": nombre_archivo,
-            "fecha": fecha
+            "fecha": fecha,
+            "es_compilado": es_compilado
         }
 
-        # Clasificar: RMF principal vs Anexos
-        nombre_lower = nombre_archivo.lower()
-
+        # Clasificar documento
         if "anexo" in nombre_lower:
-            # Es un anexo
-            # Extraer número de anexo
-            match = re.search(r'anexo[_\s]*(\d+[-_]?[a-z]?)', nombre_lower)
-            if match:
-                doc_info["numero_anexo"] = match.group(1).replace("_", "-").upper()
-            documentos["anexos"].append(doc_info)
-        elif "resolucion" in nombre_lower or "miscelanea" in nombre_lower or "rmf" in nombre_lower:
-            # Es la RMF principal
-            # Solo guardar si es más reciente
-            if documentos["rmf_principal"] is None:
-                documentos["rmf_principal"] = doc_info
-            elif fecha and fecha > (documentos["rmf_principal"].get("fecha") or ""):
-                documentos["rmf_principal"] = doc_info
+            # Ignorar modificaciones individuales (solo queremos compilados u originales)
+            if es_modificacion_individual:
+                continue
 
-    # Ordenar anexos por número
-    documentos["anexos"].sort(key=lambda x: x.get("numero_anexo", "99"))
+            # Extraer número de anexo - patrón mejorado
+            # Ejemplos: anexo_1_rmf, anexo1_rmf, anexo_1-a_rmf, anexo_16-a_rmf
+            match = re.search(r'anexo[_\s-]*(\d+)[_\s-]*([a-z])?[_\s-]*(?:rmf|compilad)', nombre_lower)
+            if match:
+                num = match.group(1)
+                letra = match.group(2).upper() if match.group(2) else ""
+                doc_info["numero_anexo"] = f"{num}-{letra}" if letra else num
+
+                if es_compilado:
+                    documentos["anexos_compilados"].append(doc_info)
+                else:
+                    documentos["anexos_originales"].append(doc_info)
+
+        elif "resolucion" in nombre_lower or "miscelanea" in nombre_lower:
+            # RMF principal - solo compilados, el más reciente
+            if es_compilado:
+                if documentos["rmf_principal"] is None:
+                    documentos["rmf_principal"] = doc_info
+                elif fecha and fecha > (documentos["rmf_principal"].get("fecha") or ""):
+                    documentos["rmf_principal"] = doc_info
+
+    # Consolidar anexos: compilado más reciente, o original si no hay compilado
+    anexos_por_numero = {}
+
+    # Primero, agregar todos los compilados (última versión de cada uno)
+    for anexo in documentos["anexos_compilados"]:
+        num = anexo.get("numero_anexo", "")
+        fecha_anexo = anexo.get("fecha", "")
+        if num not in anexos_por_numero:
+            anexos_por_numero[num] = anexo
+        elif fecha_anexo > anexos_por_numero[num].get("fecha", ""):
+            anexos_por_numero[num] = anexo
+
+    # Luego, agregar originales solo si no hay compilado para ese anexo
+    for anexo in documentos["anexos_originales"]:
+        num = anexo.get("numero_anexo", "")
+        if num not in anexos_por_numero:
+            anexos_por_numero[num] = anexo
+
+    # Ordenar por número de anexo
+    documentos["anexos"] = sorted(
+        anexos_por_numero.values(),
+        key=lambda x: (
+            int(re.match(r'(\d+)', x.get("numero_anexo", "99")).group(1)),
+            x.get("numero_anexo", "99")
+        )
+    )
 
     return documentos
 
