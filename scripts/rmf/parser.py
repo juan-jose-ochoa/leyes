@@ -109,6 +109,13 @@ PATRON_TITULO_INLINE = re.compile(
     r'^([A-ZÁÉÍÓÚÑÜ][a-záéíóúñü][^.]*?)\s+(\d+\.\d+\.\d+)\.\s+([A-Z].+)$'
 )
 
+# Patrón para detectar regla embebida cuando el título viene de párrafo anterior
+# (la línea empieza con minúscula porque es continuación)
+# Ej: "estados financieros 2.10.24. Para los efectos del artículo 32-A..."
+PATRON_TITULO_CONTINUACION = re.compile(
+    r'^([a-záéíóúñü][^.]*?)\s+(\d+\.\d+\.\d+)\.\s+([A-Z].+)$'
+)
+
 # Siglas de leyes conocidas (para detectar referencias)
 SIGLAS_LEYES = (
     'CFF', 'LISR', 'LIVA', 'LIESPS', 'LIEPS', 'LIF', 'LA',
@@ -592,6 +599,8 @@ class ParserRMF:
         Ej: "Documentación en copia simple 2.1.14."
         Ej: "Tasa mensual de recargos 2.1.20. Para los efectos..."
 
+        Si el título está fragmentado en párrafos anteriores, intenta reconstruirlo.
+
         Args:
             match: Match de PATRON_TITULO_FINAL o PATRON_TITULO_INLINE
             paragraphs: Lista completa de párrafos
@@ -600,8 +609,12 @@ class ParserRMF:
         Returns:
             Nuevo índice después del procesamiento
         """
-        titulo = match.group(1).strip()
+        titulo_parcial = match.group(1).strip()
         numero = match.group(2)
+
+        # Si el título empieza con minúscula, es continuación de párrafos anteriores
+        # Intentar reconstruir el título completo
+        titulo = self._reconstruir_titulo(titulo_parcial, paragraphs, idx)
 
         # Si tiene grupo 3, es formato inline (título + contenido en misma línea)
         contenido_primera_linea = ""
@@ -916,6 +929,64 @@ class ParserRMF:
 
         return resultado, idx
 
+    def _reconstruir_titulo(
+        self,
+        titulo_parcial: str,
+        paragraphs: List[ParrafoExtraido],
+        idx: int
+    ) -> str:
+        """
+        Reconstruye el título completo cuando está fragmentado en párrafos anteriores.
+
+        Busca hacia atrás hasta encontrar:
+        - Una referencia legal (CFF, LISR, etc.)
+        - Un párrafo que termine en punto (fin de contenido anterior)
+        - Máximo 5 párrafos hacia atrás
+
+        Args:
+            titulo_parcial: Fragmento de título en el párrafo actual
+            paragraphs: Lista completa de párrafos
+            idx: Índice del párrafo actual
+
+        Returns:
+            Título completo reconstruido
+        """
+        # Si empieza con mayúscula, probablemente está completo
+        if titulo_parcial and titulo_parcial[0].isupper():
+            return titulo_parcial
+
+        # Buscar hacia atrás para reconstruir
+        partes_titulo = [titulo_parcial]
+        max_lookback = 5
+
+        for i in range(1, max_lookback + 1):
+            prev_idx = idx - i
+            if prev_idx < 0:
+                break
+
+            prev_texto = paragraphs[prev_idx].texto.strip()
+
+            # Detener si encontramos una referencia legal (fin de regla anterior)
+            if es_referencia_final(prev_texto, paragraphs[prev_idx].es_italica):
+                break
+
+            # Detener si el párrafo termina en punto (probablemente contenido, no título)
+            if prev_texto.endswith('.') and len(prev_texto) > 50:
+                break
+
+            # Detener si es un número de regla
+            if PATRON_REGLA.match(prev_texto) or PATRON_REGLA_SOLO.match(prev_texto):
+                break
+
+            # Agregar al inicio del título
+            partes_titulo.insert(0, prev_texto)
+
+            # Si este párrafo empieza con mayúscula, es el inicio del título
+            if prev_texto and prev_texto[0].isupper():
+                break
+
+        return ' '.join(partes_titulo)
+
     def _romano_a_entero(self, romano: str) -> int:
         """Convierte número romano a entero."""
         valores = {'I': 1, 'V': 5, 'X': 10}
@@ -958,6 +1029,7 @@ class ParserRMF:
         Patrones soportados:
         1. "Título X.X.X." (título solo en línea)
         2. "Título X.X.X. Contenido..." (título y contenido en misma línea)
+        3. "continuación X.X.X. Contenido..." (título fragmentado desde párrafo anterior)
 
         Solo retorna match si el número coincide con el siguiente esperado.
 
@@ -979,6 +1051,11 @@ class ParserRMF:
 
         # Intentar patrón 2: título + contenido inline
         match = PATRON_TITULO_INLINE.match(texto)
+        if match and match.group(2) == siguiente_esperado:
+            return match
+
+        # Intentar patrón 3: continuación de título (minúscula al inicio)
+        match = PATRON_TITULO_CONTINUACION.match(texto)
         if match and match.group(2) == siguiente_esperado:
             return match
 
