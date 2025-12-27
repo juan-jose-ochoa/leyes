@@ -1,6 +1,6 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { BookOpen, ChevronRight, ChevronDown, FileText, Home, CheckCircle, AlertTriangle, XCircle, Activity, Download } from 'lucide-react'
+import { BookOpen, ChevronRight, ChevronDown, FileText, Home, CheckCircle, AlertTriangle, XCircle, Activity, Download, ChevronsUpDown, ChevronsDownUp, ToggleLeft, ToggleRight } from 'lucide-react'
 import { useEstructuraLey, useLeyes, useVerificacionLey, useVerificacionIndice, useComparacionReglasIndice, useComparacionDivisionesIndice } from '@/hooks/useArticle'
 import type { Division, VerificacionDivision, VerificacionStatus, VerificacionIndice, ComparacionRegla, ComparacionDivision } from '@/lib/api'
 import clsx from 'clsx'
@@ -93,6 +93,10 @@ export default function LeyIndex() {
   const { data: reglasFaltantes } = useComparacionReglasIndice(showVerificacion ? ley ?? null : null)
   const { data: divisionesFaltantes } = useComparacionDivisionesIndice(showVerificacion ? ley ?? null : null)
 
+  // Estado para controlar expansión de títulos
+  const [expandedTitles, setExpandedTitles] = useState<Set<number>>(new Set())
+  const [accordionMode, setAccordionMode] = useState(false)
+
   const leyInfo = leyes?.find(l => l.codigo === ley)
 
   // Crear mapa de verificación por division_id
@@ -113,6 +117,38 @@ export default function LeyIndex() {
       faltantes: conArticulos.reduce((sum, v) => sum + (v.faltantes || 0), 0),
     }
   }, [verificacion])
+
+  // Agrupar por títulos (memoizado)
+  const grupos = useMemo(() => {
+    if (!estructura) return []
+    return agruparPorTitulo(estructura)
+  }, [estructura])
+
+  // Funciones de control de expansión
+  const expandAll = useCallback(() => {
+    const allIds = new Set(grupos.map(g => g.titulo?.id).filter((id): id is number => id !== null && id !== undefined))
+    setExpandedTitles(allIds)
+  }, [grupos])
+
+  const collapseAll = useCallback(() => {
+    setExpandedTitles(new Set())
+  }, [])
+
+  const toggleTitle = useCallback((titleId: number) => {
+    setExpandedTitles(prev => {
+      const next = new Set(prev)
+      if (next.has(titleId)) {
+        next.delete(titleId)
+      } else {
+        if (accordionMode) {
+          // En modo acordeón, solo un título puede estar expandido
+          next.clear()
+        }
+        next.add(titleId)
+      }
+      return next
+    })
+  }, [accordionMode])
 
   if (isLoading) {
     return (
@@ -148,9 +184,6 @@ export default function LeyIndex() {
   // Determinar tipo de contenido (articulo o regla)
   const esResolucion = leyInfo?.tipo === 'resolucion'
   const tipoContenido = esResolucion ? 'regla' : 'articulo'
-
-  // Agrupar por títulos
-  const grupos = agruparPorTitulo(estructura)
 
   return (
     <div className="mx-auto max-w-4xl">
@@ -321,6 +354,33 @@ export default function LeyIndex() {
         />
       )}
 
+      {/* Controles de expansión */}
+      {grupos.length > 1 && (
+        <div className="flex items-center justify-end gap-2 mb-4">
+          <button
+            onClick={expandedTitles.size > 0 ? collapseAll : expandAll}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors"
+            title={expandedTitles.size > 0 ? 'Colapsar todos los títulos' : 'Expandir todos los títulos'}
+          >
+            {expandedTitles.size > 0 ? <ChevronsDownUp className="h-4 w-4" /> : <ChevronsUpDown className="h-4 w-4" />}
+            {expandedTitles.size > 0 ? 'Colapsar' : 'Expandir'}
+          </button>
+          <button
+            onClick={() => setAccordionMode(!accordionMode)}
+            className={clsx(
+              'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors',
+              accordionMode
+                ? 'bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300'
+                : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'
+            )}
+            title={accordionMode ? 'Modo acordeón activado: solo un título a la vez' : 'Activar modo acordeón'}
+          >
+            {accordionMode ? <ToggleRight className="h-4 w-4" /> : <ToggleLeft className="h-4 w-4" />}
+            Acordeón
+          </button>
+        </div>
+      )}
+
       {/* Estructura agrupada por títulos */}
       <div className="space-y-4">
         {grupos.map((grupo, idx) => (
@@ -331,6 +391,8 @@ export default function LeyIndex() {
             tipoContenido={tipoContenido}
             showVerificacion={showVerificacion}
             verificacionMap={verificacionMap}
+            expandido={grupo.titulo ? expandedTitles.has(grupo.titulo.id) : true}
+            onToggle={() => grupo.titulo && toggleTitle(grupo.titulo.id)}
           />
         ))}
       </div>
@@ -344,10 +406,11 @@ interface GrupoTituloItemProps {
   tipoContenido: string
   showVerificacion: boolean
   verificacionMap: Map<number, VerificacionDivision>
+  expandido: boolean
+  onToggle: () => void
 }
 
-function GrupoTituloItem({ grupo, ley, tipoContenido, showVerificacion, verificacionMap }: GrupoTituloItemProps) {
-  const [expandido, setExpandido] = useState(true)
+function GrupoTituloItem({ grupo, ley, tipoContenido, showVerificacion, verificacionMap, expandido, onToggle }: GrupoTituloItemProps) {
   const { titulo, hijos } = grupo
 
   // Si no hay título, mostrar los hijos directamente
@@ -372,7 +435,7 @@ function GrupoTituloItem({ grupo, ley, tipoContenido, showVerificacion, verifica
     <div className="rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
       {/* Header del título */}
       <button
-        onClick={() => setExpandido(!expandido)}
+        onClick={onToggle}
         className="w-full flex items-center gap-3 p-4 bg-primary-50 dark:bg-primary-900/20 hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-colors"
       >
         <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-600 text-white">
