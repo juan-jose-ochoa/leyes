@@ -300,6 +300,7 @@ export interface VerificacionDivision {
   faltantes: number
   porcentaje_completo: number | null
   status: VerificacionStatus
+  numeros_faltantes: number[] | null
 }
 
 export async function getVerificacionLey(ley: string): Promise<VerificacionDivision[]> {

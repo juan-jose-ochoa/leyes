@@ -32,7 +32,7 @@ RETURNS TABLE(
     total_esperado INT,
     faltantes INT,
     porcentaje_completo NUMERIC,
-    reglas_faltantes TEXT
+    numeros_faltantes INT[]
 ) AS $$
 BEGIN
     RETURN QUERY
@@ -46,8 +46,9 @@ BEGIN
     stats AS (
         SELECT
             COUNT(*)::INT as total,
-            MIN(numero_raw)::TEXT as primera,
-            MAX(numero_raw)::TEXT as ultima,
+            -- Usar ORDER BY num para obtener primera/ultima correctamente (no lexicográfico)
+            (SELECT numero_raw FROM reglas WHERE num IS NOT NULL ORDER BY num ASC LIMIT 1) as primera,
+            (SELECT numero_raw FROM reglas WHERE num IS NOT NULL ORDER BY num DESC LIMIT 1) as ultima,
             MIN(num) as min_num,
             MAX(num) as max_num,
             array_agg(num ORDER BY num) as nums
@@ -71,8 +72,9 @@ BEGIN
         CASE WHEN s.max_num IS NOT NULL AND s.min_num IS NOT NULL AND (s.max_num - s.min_num + 1) > 0
              THEN ROUND(s.total::NUMERIC / (s.max_num - s.min_num + 1) * 100, 1)
              ELSE 100 END,
+        -- Devolver array de números faltantes
         (
-            SELECT string_agg(n::TEXT, ', ')
+            SELECT array_agg(n ORDER BY n)
             FROM generate_series(s.min_num, s.max_num) n
             WHERE n != ALL(s.nums)
         )
@@ -99,7 +101,8 @@ RETURNS TABLE(
     total_esperado INT,
     faltantes INT,
     porcentaje_completo NUMERIC,
-    status TEXT  -- 'ok', 'warning', 'error', 'empty'
+    status TEXT,  -- 'ok', 'warning', 'error', 'empty'
+    numeros_faltantes INT[]
 ) AS $$
 BEGIN
     RETURN QUERY
@@ -132,7 +135,8 @@ BEGIN
             WHEN v.porcentaje_completo >= 100 THEN 'ok'::TEXT
             WHEN v.porcentaje_completo >= 80 THEN 'warning'::TEXT
             ELSE 'error'::TEXT
-        END as status
+        END as status,
+        v.numeros_faltantes
     FROM divisiones_ley dl
     LEFT JOIN verificaciones v ON v.division_id = dl.id
     ORDER BY dl.orden_global;
@@ -142,6 +146,7 @@ $$ LANGUAGE plpgsql STABLE;
 COMMENT ON FUNCTION verificar_ley IS 'Verifica integridad de todas las divisiones de una ley';
 
 -- API wrapper para verificar_ley
+DROP FUNCTION IF EXISTS api.verificar_ley(VARCHAR);
 CREATE OR REPLACE FUNCTION api.verificar_ley(ley_codigo VARCHAR)
 RETURNS TABLE(
     division_id INT,
@@ -156,7 +161,8 @@ RETURNS TABLE(
     total_esperado INT,
     faltantes INT,
     porcentaje_completo NUMERIC,
-    status TEXT
+    status TEXT,
+    numeros_faltantes INT[]
 ) AS $$
 BEGIN
     RETURN QUERY

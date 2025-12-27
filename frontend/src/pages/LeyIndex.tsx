@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { BookOpen, ChevronRight, ChevronDown, FileText, Home, CheckCircle, AlertTriangle, XCircle, Activity } from 'lucide-react'
+import { BookOpen, ChevronRight, ChevronDown, FileText, Home, CheckCircle, AlertTriangle, XCircle, Activity, Download } from 'lucide-react'
 import { useEstructuraLey, useLeyes, useVerificacionLey } from '@/hooks/useArticle'
 import type { Division, VerificacionDivision, VerificacionStatus } from '@/lib/api'
 import clsx from 'clsx'
@@ -54,6 +54,33 @@ function agruparPorTitulo(divisiones: Division[]): GrupoTitulo[] {
   }
 
   return grupos
+}
+
+// Función para exportar verificación a CSV
+function exportarVerificacionCSV(verificacion: VerificacionDivision[], ley: string) {
+  const headers = ['Capítulo', 'Nombre', 'Actual', 'Esperado', 'Faltantes', 'Porcentaje', 'Status', 'Números Faltantes']
+  const rows = verificacion
+    .filter(v => v.total_actual > 0)
+    .map(v => [
+      v.numero,
+      `"${(v.nombre || '').replace(/"/g, '""')}"`,
+      v.total_actual,
+      v.total_esperado,
+      v.faltantes,
+      v.porcentaje_completo?.toFixed(1) || '100',
+      v.status,
+      v.numeros_faltantes?.join(';') || ''
+    ])
+
+  const csv = [headers.join(','), ...rows.map(r => r.join(','))].join('\n')
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' })
+  const url = URL.createObjectURL(blob)
+
+  const a = document.createElement('a')
+  a.href = url
+  a.download = `verificacion-${ley}-${new Date().toISOString().split('T')[0]}.csv`
+  a.click()
+  URL.revokeObjectURL(url)
 }
 
 export default function LeyIndex() {
@@ -160,19 +187,21 @@ export default function LeyIndex() {
           >
             {ley}
           </span>
-          {/* Toggle de verificación */}
-          <button
-            onClick={() => setShowVerificacion(!showVerificacion)}
-            className={clsx(
-              'inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors',
-              showVerificacion
-                ? 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700'
-            )}
-          >
-            <Activity className="h-4 w-4" />
-            Verificar integridad
-          </button>
+          {/* Toggle de verificación - solo para resoluciones (RMF) */}
+          {esResolucion && (
+            <button
+              onClick={() => setShowVerificacion(!showVerificacion)}
+              className={clsx(
+                'inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors',
+                showVerificacion
+                  ? 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700'
+              )}
+            >
+              <Activity className="h-4 w-4" />
+              Verificar integridad
+            </button>
+          )}
         </div>
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
           {leyInfo?.nombre || ley}
@@ -185,12 +214,21 @@ export default function LeyIndex() {
       </div>
 
       {/* Panel de resumen de verificación */}
-      {showVerificacion && resumenVerificacion && (
+      {showVerificacion && resumenVerificacion && verificacion && (
         <div className="mb-6 p-4 rounded-lg bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800">
-          <h3 className="text-sm font-semibold text-purple-900 dark:text-purple-100 mb-3">
-            Verificación de integridad
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-semibold text-purple-900 dark:text-purple-100">
+              Verificación de integridad
+            </h3>
+            <button
+              onClick={() => exportarVerificacionCSV(verificacion, ley!)}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-medium bg-purple-200 text-purple-800 hover:bg-purple-300 dark:bg-purple-800 dark:text-purple-200 dark:hover:bg-purple-700 transition-colors"
+            >
+              <Download className="h-3.5 w-3.5" />
+              Exportar CSV
+            </button>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-green-500" />
               <div>
@@ -220,6 +258,54 @@ export default function LeyIndex() {
               </div>
             </div>
           </div>
+
+          {/* Lista detallada de capítulos con problemas */}
+          {(resumenVerificacion.warning > 0 || resumenVerificacion.error > 0) && (
+            <div className="border-t border-purple-200 dark:border-purple-700 pt-3 mt-3">
+              <h4 className="text-xs font-medium text-purple-800 dark:text-purple-300 mb-2">
+                Capítulos con huecos detectados:
+              </h4>
+              <div className="max-h-48 overflow-y-auto space-y-1.5">
+                {verificacion
+                  .filter(v => v.status === 'error' || v.status === 'warning')
+                  .sort((a, b) => (a.faltantes || 0) - (b.faltantes || 0))
+                  .reverse()
+                  .map(v => (
+                    <div
+                      key={v.division_id}
+                      className={clsx(
+                        'flex items-start gap-2 p-2 rounded text-xs',
+                        v.status === 'error' ? 'bg-red-100 dark:bg-red-900/30' : 'bg-amber-100 dark:bg-amber-900/30'
+                      )}
+                    >
+                      <StatusIcon status={v.status} />
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2">
+                          <span className="font-medium text-gray-900 dark:text-white">
+                            Cap. {v.numero}
+                          </span>
+                          <span className={clsx(
+                            'px-1.5 py-0.5 rounded font-medium',
+                            v.status === 'error' ? 'bg-red-200 text-red-800 dark:bg-red-800 dark:text-red-200' : 'bg-amber-200 text-amber-800 dark:bg-amber-800 dark:text-amber-200'
+                          )}>
+                            {v.porcentaje_completo?.toFixed(0)}%
+                          </span>
+                          <span className="text-gray-500 dark:text-gray-400">
+                            ({v.total_actual}/{v.total_esperado} reglas)
+                          </span>
+                        </div>
+                        {v.numeros_faltantes && v.numeros_faltantes.length > 0 && (
+                          <p className="text-gray-600 dark:text-gray-400 mt-0.5 truncate">
+                            Faltan: {v.numeros_faltantes.slice(0, 10).join(', ')}
+                            {v.numeros_faltantes.length > 10 && ` (+${v.numeros_faltantes.length - 10} más)`}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+              </div>
+            </div>
+          )}
         </div>
       )}
 
