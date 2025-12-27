@@ -460,6 +460,29 @@ class ParserRMF:
                 idx += 1
                 continue
 
+            # Detectar inciso (a), b), c), etc.)
+            match_inciso = PATRON_INCISO.match(texto)
+            if match_inciso:
+                inciso = Inciso(
+                    letra=match_inciso.group(1),
+                    contenido=match_inciso.group(2),
+                    orden=ord(match_inciso.group(1)) - ord('a') + 1,
+                )
+                # Si hay una fracción activa, agregar el inciso a ella
+                if fracciones:
+                    fracciones[-1].incisos.append(inciso)
+                else:
+                    # Inciso sin fracción padre - crear fracción virtual
+                    fraccion_virtual = Fraccion(
+                        numero="",
+                        contenido="",
+                        orden=0,
+                        incisos=[inciso],
+                    )
+                    fracciones.append(fraccion_virtual)
+                idx += 1
+                continue
+
             # Contenido normal
             contenido_partes.append(texto)
             idx += 1

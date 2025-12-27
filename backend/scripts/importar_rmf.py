@@ -174,6 +174,8 @@ def insertar_divisiones_rmf(cursor, ley_id, divisiones):
 
 def insertar_reglas(cursor, ley_id, reglas, division_map):
     """Inserta reglas RMF como artículos con tipo='regla' o 'inexistente'"""
+    total_fracciones = 0
+
     for regla in reglas:
         # Encontrar la división correspondiente
         division_id = None
@@ -195,6 +197,7 @@ def insertar_reglas(cursor, ley_id, reglas, division_map):
                 contenido, es_transitorio, tipo, referencias, orden_global, calidad
             )
             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            RETURNING id
         """, (
             ley_id,
             division_id,
@@ -209,6 +212,86 @@ def insertar_reglas(cursor, ley_id, reglas, division_map):
             regla.get("orden_global"),
             calidad_json  # registro de calidad (JSONB)
         ))
+
+        articulo_id = cursor.fetchone()[0]
+
+        # Insertar fracciones si existen
+        fracciones = regla.get("fracciones", [])
+        if fracciones:
+            total_fracciones += insertar_fracciones(cursor, articulo_id, fracciones)
+
+    return total_fracciones
+
+
+def insertar_fracciones(cursor, articulo_id, fracciones):
+    """Inserta fracciones e incisos de una regla."""
+    count = 0
+    orden_global = 0
+
+    for fraccion in fracciones:
+        numero_fraccion = fraccion.get("numero", "")
+        contenido_fraccion = fraccion.get("contenido", "")
+        incisos = fraccion.get("incisos", [])
+
+        # Si es una fracción virtual (sin número), solo insertar los incisos directamente
+        if not numero_fraccion and not contenido_fraccion:
+            for inciso in incisos:
+                orden_global += 1
+                count += 1
+
+                cursor.execute("""
+                    INSERT INTO fracciones (articulo_id, padre_id, tipo, numero, numero_orden, contenido, orden)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s)
+                """, (
+                    articulo_id,
+                    None,  # sin padre - inciso directo
+                    'inciso',
+                    inciso.get("letra"),
+                    inciso.get("orden", orden_global),
+                    inciso.get("contenido", ""),
+                    orden_global
+                ))
+            continue
+
+        # Insertar fracción normal
+        orden_global += 1
+        count += 1
+
+        cursor.execute("""
+            INSERT INTO fracciones (articulo_id, padre_id, tipo, numero, numero_orden, contenido, orden)
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
+            RETURNING id
+        """, (
+            articulo_id,
+            None,  # padre_id - las fracciones son de nivel superior
+            'fraccion',
+            numero_fraccion,
+            fraccion.get("orden", orden_global),
+            contenido_fraccion,
+            orden_global
+        ))
+
+        fraccion_id = cursor.fetchone()[0]
+
+        # Insertar incisos si existen
+        for inciso in incisos:
+            orden_global += 1
+            count += 1
+
+            cursor.execute("""
+                INSERT INTO fracciones (articulo_id, padre_id, tipo, numero, numero_orden, contenido, orden)
+                VALUES (%s, %s, %s, %s, %s, %s, %s)
+            """, (
+                articulo_id,
+                fraccion_id,  # padre es la fracción
+                'inciso',
+                inciso.get("letra"),
+                inciso.get("orden", orden_global),
+                inciso.get("contenido", ""),
+                orden_global
+            ))
+
+    return count
 
 
 def procesar_rmf(cursor, docx_path):
@@ -275,6 +358,18 @@ def procesar_rmf(cursor, docx_path):
             "orden_global": regla.orden_global,
             "tipo": regla.tipo,
             "calidad": regla.calidad.to_dict() if regla.calidad else None,
+            "fracciones": [
+                {
+                    "numero": f.numero,
+                    "contenido": f.contenido,
+                    "orden": f.orden,
+                    "incisos": [
+                        {"letra": i.letra, "contenido": i.contenido, "orden": i.orden}
+                        for i in f.incisos
+                    ]
+                }
+                for f in regla.fracciones
+            ] if regla.fracciones else [],
         }
         for regla in resultado.reglas
     ]
@@ -294,7 +389,8 @@ def procesar_rmf(cursor, docx_path):
     if divisiones_dict:
         division_map = insertar_divisiones_rmf(cursor, ley_id, divisiones_dict)
 
-    insertar_reglas(cursor, ley_id, reglas_dict, division_map)
+    total_fracciones = insertar_reglas(cursor, ley_id, reglas_dict, division_map)
+    print(f"   {total_fracciones} fracciones/incisos insertados")
 
     # Métricas de calidad
     reglas_ok = len([r for r in resultado.reglas

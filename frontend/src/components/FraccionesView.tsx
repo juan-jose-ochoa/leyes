@@ -30,6 +30,15 @@ function FraccionItem({ fraccion }: { fraccion: Fraccion }) {
     'ml-16': nivel >= 3,
   })
 
+  // Estilos de borde y fondo según tipo
+  const borderStyles = clsx({
+    'border-l-4 border-primary-500 bg-primary-50 dark:bg-primary-950/30': tipo === 'fraccion',
+    'border-l-3 border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30': tipo === 'inciso',
+    'border-l-2 border-amber-400 bg-amber-50 dark:bg-amber-950/30': tipo === 'numeral',
+    'border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950/30': tipo === 'apartado',
+    'border-l-2 border-gray-300 dark:border-gray-600': tipo === 'parrafo',
+  })
+
   // Estilo del identificador según tipo
   const getIdentifier = () => {
     switch (tipo) {
@@ -41,13 +50,13 @@ function FraccionItem({ fraccion }: { fraccion: Fraccion }) {
         )
       case 'inciso':
         return (
-          <span className="font-semibold text-gray-700 dark:text-gray-300">
+          <span className="font-semibold text-emerald-700 dark:text-emerald-400">
             {numero})
           </span>
         )
       case 'numeral':
         return (
-          <span className="font-medium text-gray-600 dark:text-gray-400">
+          <span className="font-medium text-amber-700 dark:text-amber-400">
             {numero}.
           </span>
         )
@@ -66,7 +75,7 @@ function FraccionItem({ fraccion }: { fraccion: Fraccion }) {
   const identifier = getIdentifier()
 
   return (
-    <div className={clsx('leading-relaxed', indentClass)}>
+    <div className={clsx('leading-relaxed pl-3 py-1.5 rounded-r', indentClass, borderStyles)}>
       {identifier ? (
         <p className="text-gray-700 dark:text-gray-300">
           {identifier}{' '}
