@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { BookOpen, ChevronRight, ChevronDown, FileText, Home } from 'lucide-react'
-import { useEstructuraLey, useLeyes } from '@/hooks/useArticle'
-import type { Division } from '@/lib/api'
+import { BookOpen, ChevronRight, ChevronDown, FileText, Home, CheckCircle, AlertTriangle, XCircle, Activity } from 'lucide-react'
+import { useEstructuraLey, useLeyes, useVerificacionLey } from '@/hooks/useArticle'
+import type { Division, VerificacionDivision, VerificacionStatus } from '@/lib/api'
 import clsx from 'clsx'
 
 // Agrupar divisiones por título
@@ -60,8 +60,29 @@ export default function LeyIndex() {
   const { ley } = useParams<{ ley: string }>()
   const { data: estructura, isLoading, error } = useEstructuraLey(ley ?? null)
   const { data: leyes } = useLeyes()
+  const [showVerificacion, setShowVerificacion] = useState(false)
+  const { data: verificacion } = useVerificacionLey(showVerificacion ? ley ?? null : null)
 
   const leyInfo = leyes?.find(l => l.codigo === ley)
+
+  // Crear mapa de verificación por division_id
+  const verificacionMap = useMemo(() => {
+    if (!verificacion) return new Map<number, VerificacionDivision>()
+    return new Map(verificacion.map(v => [v.division_id, v]))
+  }, [verificacion])
+
+  // Calcular resumen de verificación
+  const resumenVerificacion = useMemo(() => {
+    if (!verificacion) return null
+    const conArticulos = verificacion.filter(v => v.total_actual > 0)
+    return {
+      total: conArticulos.length,
+      ok: conArticulos.filter(v => v.status === 'ok').length,
+      warning: conArticulos.filter(v => v.status === 'warning').length,
+      error: conArticulos.filter(v => v.status === 'error').length,
+      faltantes: conArticulos.reduce((sum, v) => sum + (v.faltantes || 0), 0),
+    }
+  }, [verificacion])
 
   if (isLoading) {
     return (
@@ -124,7 +145,7 @@ export default function LeyIndex() {
 
       {/* Header */}
       <div className="mb-8">
-        <div className="flex items-center gap-3 mb-2">
+        <div className="flex items-center justify-between gap-3 mb-2">
           <span
             className={clsx(
               'inline-flex items-center px-3 py-1 rounded-lg text-sm font-bold text-white',
@@ -139,6 +160,19 @@ export default function LeyIndex() {
           >
             {ley}
           </span>
+          {/* Toggle de verificación */}
+          <button
+            onClick={() => setShowVerificacion(!showVerificacion)}
+            className={clsx(
+              'inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors',
+              showVerificacion
+                ? 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700'
+            )}
+          >
+            <Activity className="h-4 w-4" />
+            Verificar integridad
+          </button>
         </div>
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
           {leyInfo?.nombre || ley}
@@ -150,6 +184,45 @@ export default function LeyIndex() {
         )}
       </div>
 
+      {/* Panel de resumen de verificación */}
+      {showVerificacion && resumenVerificacion && (
+        <div className="mb-6 p-4 rounded-lg bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800">
+          <h3 className="text-sm font-semibold text-purple-900 dark:text-purple-100 mb-3">
+            Verificación de integridad
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-green-500" />
+              <div>
+                <div className="text-lg font-bold text-green-700 dark:text-green-400">{resumenVerificacion.ok}</div>
+                <div className="text-xs text-gray-500">Completos</div>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <AlertTriangle className="h-5 w-5 text-amber-500" />
+              <div>
+                <div className="text-lg font-bold text-amber-700 dark:text-amber-400">{resumenVerificacion.warning}</div>
+                <div className="text-xs text-gray-500">Advertencias</div>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <XCircle className="h-5 w-5 text-red-500" />
+              <div>
+                <div className="text-lg font-bold text-red-700 dark:text-red-400">{resumenVerificacion.error}</div>
+                <div className="text-xs text-gray-500">Con huecos</div>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <FileText className="h-5 w-5 text-purple-500" />
+              <div>
+                <div className="text-lg font-bold text-purple-700 dark:text-purple-400">{resumenVerificacion.faltantes}</div>
+                <div className="text-xs text-gray-500">Reglas faltantes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Estructura agrupada por títulos */}
       <div className="space-y-4">
         {grupos.map((grupo, idx) => (
@@ -158,6 +231,8 @@ export default function LeyIndex() {
             grupo={grupo}
             ley={ley!}
             tipoContenido={tipoContenido}
+            showVerificacion={showVerificacion}
+            verificacionMap={verificacionMap}
           />
         ))}
       </div>
@@ -169,9 +244,11 @@ interface GrupoTituloItemProps {
   grupo: GrupoTitulo
   ley: string
   tipoContenido: string
+  showVerificacion: boolean
+  verificacionMap: Map<number, VerificacionDivision>
 }
 
-function GrupoTituloItem({ grupo, ley, tipoContenido }: GrupoTituloItemProps) {
+function GrupoTituloItem({ grupo, ley, tipoContenido, showVerificacion, verificacionMap }: GrupoTituloItemProps) {
   const [expandido, setExpandido] = useState(true)
   const { titulo, hijos } = grupo
 
@@ -180,7 +257,14 @@ function GrupoTituloItem({ grupo, ley, tipoContenido }: GrupoTituloItemProps) {
     return (
       <div className="space-y-2">
         {hijos.map((div) => (
-          <DivisionItem key={div.id} division={div} ley={ley} tipoContenido={tipoContenido} />
+          <DivisionItem
+            key={div.id}
+            division={div}
+            ley={ley}
+            tipoContenido={tipoContenido}
+            showVerificacion={showVerificacion}
+            verificacion={verificacionMap.get(div.id)}
+          />
         ))}
       </div>
     )
@@ -229,7 +313,15 @@ function GrupoTituloItem({ grupo, ley, tipoContenido }: GrupoTituloItemProps) {
       {expandido && hijos.length > 0 && (
         <div className="divide-y divide-gray-100 dark:divide-gray-800">
           {hijos.map((div) => (
-            <DivisionItem key={div.id} division={div} ley={ley} tipoContenido={tipoContenido} isNested />
+            <DivisionItem
+              key={div.id}
+              division={div}
+              ley={ley}
+              tipoContenido={tipoContenido}
+              isNested
+              showVerificacion={showVerificacion}
+              verificacion={verificacionMap.get(div.id)}
+            />
           ))}
         </div>
       )}
@@ -242,9 +334,25 @@ interface DivisionItemProps {
   ley: string
   tipoContenido: string
   isNested?: boolean
+  showVerificacion?: boolean
+  verificacion?: VerificacionDivision
 }
 
-function DivisionItem({ division, ley, tipoContenido, isNested }: DivisionItemProps) {
+// Componente de indicador de estado
+function StatusIcon({ status }: { status: VerificacionStatus }) {
+  switch (status) {
+    case 'ok':
+      return <CheckCircle className="h-4 w-4 text-green-500" />
+    case 'warning':
+      return <AlertTriangle className="h-4 w-4 text-amber-500" />
+    case 'error':
+      return <XCircle className="h-4 w-4 text-red-500" />
+    default:
+      return null
+  }
+}
+
+function DivisionItem({ division, ley, tipoContenido, isNested, showVerificacion, verificacion }: DivisionItemProps) {
   const tipoLabel = division.tipo.charAt(0).toUpperCase() + division.tipo.slice(1)
 
   return (
@@ -266,10 +374,31 @@ function DivisionItem({ division, ley, tipoContenido, isNested }: DivisionItemPr
           <span className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">
             {tipoLabel} {division.numero}
           </span>
+          {/* Indicador de verificación */}
+          {showVerificacion && verificacion && verificacion.status !== 'empty' && (
+            <span
+              className={clsx(
+                'inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-xs font-medium',
+                verificacion.status === 'ok' && 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400',
+                verificacion.status === 'warning' && 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400',
+                verificacion.status === 'error' && 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400'
+              )}
+              title={verificacion.faltantes > 0 ? `Faltan ${verificacion.faltantes} reglas` : 'Completo'}
+            >
+              <StatusIcon status={verificacion.status} />
+              {verificacion.porcentaje_completo?.toFixed(0)}%
+            </span>
+          )}
         </div>
         <h3 className="font-medium text-gray-900 dark:text-white truncate">
           {division.nombre || `${tipoLabel} ${division.numero}`}
         </h3>
+        {/* Detalle de verificación */}
+        {showVerificacion && verificacion && verificacion.faltantes > 0 && (
+          <p className="text-xs text-red-600 dark:text-red-400 mt-0.5">
+            {verificacion.total_actual}/{verificacion.total_esperado} reglas (faltan {verificacion.faltantes})
+          </p>
+        )}
       </div>
 
       {/* Contador de artículos */}

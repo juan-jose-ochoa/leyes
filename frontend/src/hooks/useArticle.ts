@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionInfo, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion } from '@/lib/api'
+import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionInfo, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, getVerificacionLey, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion, type VerificacionDivision } from '@/lib/api'
 
 export function useArticle(id: number | null) {
   return useQuery<ArticuloDetalle | null>({
@@ -104,5 +104,17 @@ export function useFraccionesArticulo(artId: number | null) {
     },
     enabled: artId !== null,
     staleTime: 1000 * 60 * 30,
+  })
+}
+
+export function useVerificacionLey(ley: string | null) {
+  return useQuery<VerificacionDivision[]>({
+    queryKey: ['verificacion', ley],
+    queryFn: async () => {
+      if (!ley) return []
+      return getVerificacionLey(ley)
+    },
+    enabled: ley !== null,
+    staleTime: 1000 * 60 * 60, // 1 hora - no cambia frecuentemente
   })
 }

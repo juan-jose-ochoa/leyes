@@ -282,3 +282,29 @@ export async function getFraccionesArticulo(artId: number): Promise<Fraccion[]> 
     body: JSON.stringify({ art_id: artId }),
   })
 }
+
+// Verificación de integridad de divisiones
+export type VerificacionStatus = 'ok' | 'warning' | 'error' | 'empty'
+
+export interface VerificacionDivision {
+  division_id: number
+  tipo: string
+  numero: string
+  nombre: string | null
+  total_actual: number
+  primera_regla: string | null
+  ultima_regla: string | null
+  num_primera: number | null
+  num_ultima: number | null
+  total_esperado: number
+  faltantes: number
+  porcentaje_completo: number | null
+  status: VerificacionStatus
+}
+
+export async function getVerificacionLey(ley: string): Promise<VerificacionDivision[]> {
+  return fetchAPI<VerificacionDivision[]>('/rpc/verificar_ley', {
+    method: 'POST',
+    body: JSON.stringify({ ley_codigo: ley }),
+  })
+}
