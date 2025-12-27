@@ -287,6 +287,7 @@ $$ LANGUAGE plpgsql STABLE;
 -- ============================================================
 -- Funcion: estructura_ley
 -- Obtiene la estructura jerarquica completa de una ley
+-- Incluye articulos directos + heredados de divisiones hijas
 -- ============================================================
 CREATE OR REPLACE FUNCTION estructura_ley(ley_codigo VARCHAR)
 RETURNS TABLE(
@@ -296,10 +297,30 @@ RETURNS TABLE(
     nombre TEXT,
     path_texto TEXT,
     nivel INT,
-    total_articulos BIGINT
+    total_articulos BIGINT,
+    primer_articulo VARCHAR
 ) AS $$
 BEGIN
     RETURN QUERY
+    WITH articulos_por_division AS (
+        SELECT
+            d.id as division_id,
+            COUNT(a.id)::BIGINT as direct_count,
+            MIN(a.numero_raw)::VARCHAR as primer_art
+        FROM divisiones d
+        LEFT JOIN articulos a ON a.division_id = d.id
+        GROUP BY d.id
+    ),
+    articulos_heredados AS (
+        -- Para cada división, sumar artículos de sus hijos (usando path_ids)
+        SELECT
+            d.id as division_id,
+            COALESCE(SUM(apd.direct_count), 0)::BIGINT as total_heredado
+        FROM divisiones d
+        LEFT JOIN divisiones child ON d.id = ANY(child.path_ids)
+        LEFT JOIN articulos_por_division apd ON apd.division_id = child.id
+        GROUP BY d.id
+    )
     SELECT
         d.id,
         d.tipo,
@@ -307,9 +328,12 @@ BEGIN
         d.nombre,
         d.path_texto,
         d.nivel,
-        (SELECT COUNT(*) FROM public.articulos a WHERE a.division_id = d.id) as total_articulos
-    FROM public.divisiones d
-    JOIN public.leyes l ON d.ley_id = l.id
+        (COALESCE(apd.direct_count, 0) + COALESCE(ah.total_heredado, 0))::BIGINT as total_articulos,
+        apd.primer_art::VARCHAR as primer_articulo
+    FROM divisiones d
+    JOIN leyes l ON d.ley_id = l.id
+    LEFT JOIN articulos_por_division apd ON apd.division_id = d.id
+    LEFT JOIN articulos_heredados ah ON ah.division_id = d.id
     WHERE l.codigo = ley_codigo
     ORDER BY d.orden_global;
 END;

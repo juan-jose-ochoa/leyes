@@ -92,10 +92,22 @@ export default function LeyIndex() {
         )}
       </div>
 
-      {/* Estructura jerárquica - solo divisiones con artículos */}
+      {/* Estructura jerárquica - solo divisiones con artículos, deduplicadas */}
       <div className="space-y-2">
         {estructura
           .filter((div) => div.total_articulos > 0 || div.primer_articulo)
+          // Deduplicar por tipo+numero, manteniendo el que tiene más artículos
+          .reduce((acc, div) => {
+            const key = `${div.tipo}-${div.numero}`
+            const existing = acc.find(d => `${d.tipo}-${d.numero}` === key)
+            if (!existing) {
+              acc.push(div)
+            } else if (div.total_articulos > existing.total_articulos) {
+              const idx = acc.indexOf(existing)
+              acc[idx] = div
+            }
+            return acc
+          }, [] as typeof estructura)
           .map((div) => (
             <DivisionItem
               key={div.id}
