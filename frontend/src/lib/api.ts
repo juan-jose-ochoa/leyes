@@ -399,3 +399,19 @@ export async function getComparacionDivisionesIndice(ley: string): Promise<Compa
     body: JSON.stringify({ ley_codigo: ley }),
   })
 }
+
+// Referencias legales
+export interface ReferenciaLegal {
+  ley_codigo: string
+  numero: string
+  titulo: string | null
+  contenido: string | null
+  encontrado: boolean
+}
+
+export async function buscarReferencias(referencias: string): Promise<ReferenciaLegal[]> {
+  return fetchAPI<ReferenciaLegal[]>('/rpc/buscar_referencias', {
+    method: 'POST',
+    body: JSON.stringify({ p_referencias: referencias }),
+  })
+}

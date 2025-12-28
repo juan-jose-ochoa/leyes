@@ -242,3 +242,99 @@ GRANT EXECUTE ON FUNCTION api.division_por_tipo_numero TO web_anon;
 
 COMMENT ON FUNCTION api.division_por_tipo_numero IS
 'Busca división por ley, tipo y número para URLs estables (no depende de IDs)';
+
+-- ============================================================
+-- 6. FUNCIÓN: Buscar referencias legales (para UI expandible)
+-- ============================================================
+
+CREATE OR REPLACE FUNCTION api.buscar_referencias(p_referencias text)
+RETURNS TABLE(ley_codigo text, numero text, titulo text, contenido text, encontrado boolean)
+LANGUAGE plpgsql
+AS $function$
+DECLARE
+    clean_refs TEXT;
+    ref_parts TEXT[];
+    current_ley TEXT;
+    num TEXT;
+    part TEXT;
+    ley_real TEXT;
+    pos INT;
+BEGIN
+    -- 1. Encontrar dónde empiezan las referencias reales (primer código de ley)
+    pos := position('CFF' in upper(p_referencias));
+    IF pos = 0 THEN pos := position('LISR' in upper(p_referencias)); END IF;
+    IF pos = 0 THEN pos := position('LIVA' in upper(p_referencias)); END IF;
+    IF pos = 0 THEN pos := position('LIEPS' in upper(p_referencias)); END IF;
+    IF pos = 0 THEN pos := position('RCFF' in upper(p_referencias)); END IF;
+    IF pos = 0 THEN pos := position('RMF' in upper(p_referencias)); END IF;
+    IF pos = 0 THEN pos := position('LSS' in upper(p_referencias)); END IF;
+    IF pos = 0 THEN pos := position('LFT' in upper(p_referencias)); END IF;
+    
+    IF pos = 0 THEN RETURN; END IF;
+    
+    -- Tomar solo desde el primer código de ley
+    clean_refs := substring(p_referencias from pos);
+    
+    -- 2. Dividir por comas o punto y coma
+    ref_parts := regexp_split_to_array(clean_refs, '[,;]\s*');
+    current_ley := NULL;
+    
+    FOREACH part IN ARRAY ref_parts LOOP
+        part := trim(part);
+        IF part = '' THEN CONTINUE; END IF;
+        
+        -- Detectar si empieza con código de ley
+        IF part ~* '^(CFF|LISR|LIVA|LIEPS|LIC|LFD|RCFF|RLISR|RLIVA|RISR|RMF|RISAT|LSS|LFT|CPEUM)\s*' THEN
+            current_ley := upper((regexp_matches(part, '^([A-Za-z]+)'))[1]);
+            part := regexp_replace(part, '^[A-Za-z]+\s*', '');
+        END IF;
+        
+        IF current_ley IS NULL THEN CONTINUE; END IF;
+        
+        -- Mapear código a código real en BD (RMF -> RMF2025, etc.)
+        ley_real := CASE current_ley
+            WHEN 'RMF' THEN 'RMF2025'
+            WHEN 'RLISR' THEN 'RISR'
+            WHEN 'RLIVA' THEN 'RIVA'
+            ELSE current_ley
+        END;
+        
+        -- Procesar números
+        FOREACH num IN ARRAY regexp_split_to_array(part, '\s*,\s*|\s+y\s+') LOOP
+            num := trim(regexp_replace(regexp_replace(num, '[o°]\.\s*$', ''), '\.\s*$', ''));
+            
+            IF num = '' OR num ~ '^[a-z]' OR num ~ '^(al|del|de|la|el|los|las|en|por|para)$' THEN 
+                CONTINUE; 
+            END IF;
+            
+            -- Buscar en la base de datos
+            RETURN QUERY
+            SELECT 
+                current_ley::TEXT,
+                num::TEXT,
+                a.titulo::TEXT,
+                LEFT(a.contenido, 500)::TEXT,
+                TRUE
+            FROM articulos a
+            JOIN leyes l ON a.ley_id = l.id
+            WHERE l.codigo = ley_real
+              AND (a.numero_raw = num 
+                   OR a.numero_raw = num || '.'
+                   OR (num ~ '^\d+$' AND a.numero_raw ~ ('^' || num || '[.-]'))
+              )
+            LIMIT 1;
+            
+            IF NOT FOUND THEN
+                RETURN QUERY SELECT current_ley::TEXT, num::TEXT, NULL::TEXT, NULL::TEXT, FALSE;
+            END IF;
+        END LOOP;
+    END LOOP;
+    
+    RETURN;
+END;
+$function$;
+
+GRANT EXECUTE ON FUNCTION api.buscar_referencias TO web_anon;
+
+COMMENT ON FUNCTION api.buscar_referencias IS
+'Parsea string de referencias legales (ej: "CFF 29, 31, LISR 86") y retorna artículos encontrados';

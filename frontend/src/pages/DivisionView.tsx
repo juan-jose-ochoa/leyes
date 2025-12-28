@@ -3,6 +3,7 @@ import { useParams, Link, useLocation } from 'react-router-dom'
 import { Home, ChevronRight, BookOpen, ExternalLink, AlertTriangle, CheckCircle, XCircle, Filter, Eye, EyeOff, FileQuestion } from 'lucide-react'
 import { useDivisionPorTipoNumero, useArticulosDivision, useVerificacionDivision } from '@/hooks/useArticle'
 import ArticleContent from '@/components/ArticleContent'
+import ReferenciasList from '@/components/ReferenciasList'
 import type { RegistroCalidad, ArticuloDivision, VerificacionDivisionSimple } from '@/lib/api'
 import clsx from 'clsx'
 
@@ -409,11 +410,9 @@ export default function DivisionView() {
               </div>
             )}
 
-            {/* Referencias (RMF) */}
+            {/* Referencias legales expandibles (RMF) */}
             {art.referencias && (
-              <div className="mt-4 text-sm text-amber-700 dark:text-amber-400">
-                Referencias: {art.referencias}
-              </div>
+              <ReferenciasList referencias={art.referencias} />
             )}
 
             {/* Calidad de importación (solo si hay issues) */}

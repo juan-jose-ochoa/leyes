@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionPorTipoNumero, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, getVerificacionLey, getVerificacionDivision, getVerificacionIndice, getComparacionReglasIndice, getComparacionDivisionesIndice, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion, type VerificacionDivision, type VerificacionDivisionSimple, type VerificacionIndice, type ComparacionRegla, type ComparacionDivision } from '@/lib/api'
+import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionPorTipoNumero, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, getVerificacionLey, getVerificacionDivision, getVerificacionIndice, getComparacionReglasIndice, getComparacionDivisionesIndice, buscarReferencias, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion, type VerificacionDivision, type VerificacionDivisionSimple, type VerificacionIndice, type ComparacionRegla, type ComparacionDivision, type ReferenciaLegal } from '@/lib/api'
 
 export function useArticle(id: number | null) {
   return useQuery<ArticuloDetalle | null>({
@@ -164,6 +164,18 @@ export function useComparacionDivisionesIndice(ley: string | null) {
       return getComparacionDivisionesIndice(ley)
     },
     enabled: ley !== null,
+    staleTime: 1000 * 60 * 60,
+  })
+}
+
+export function useReferenciasLegales(referencias: string | null) {
+  return useQuery<ReferenciaLegal[]>({
+    queryKey: ['referencias-legales', referencias],
+    queryFn: async () => {
+      if (!referencias) return []
+      return buscarReferencias(referencias)
+    },
+    enabled: referencias !== null && referencias.trim() !== '',
     staleTime: 1000 * 60 * 60,
   })
 }
