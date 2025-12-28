@@ -23,13 +23,15 @@ CREATE INDEX IF NOT EXISTS idx_indice_oficial_tipo ON indice_oficial(ley_codigo,
 COMMENT ON TABLE indice_oficial IS 'Índice oficial extraído del PDF de cada RMF, usado como checksum';
 
 -- Función para comparar divisiones importadas vs índice oficial
+-- Los capítulos virtuales (bajo títulos con reglas de 2 niveles: 1,6,7,8,9,10)
+-- se marcan como 'virtual' en lugar de 'extra'
 CREATE OR REPLACE FUNCTION comparar_divisiones_indice(ley_codigo VARCHAR)
 RETURNS TABLE(
     tipo VARCHAR,
     numero VARCHAR,
     nombre_oficial TEXT,
     nombre_importado TEXT,
-    estado VARCHAR  -- 'ok', 'faltante', 'extra', 'diferente'
+    estado VARCHAR  -- 'ok', 'faltante', 'extra', 'virtual'
 ) AS $$
 BEGIN
     RETURN QUERY
@@ -46,6 +48,11 @@ BEGIN
         JOIN leyes l ON d.ley_id = l.id
         WHERE l.codigo = comparar_divisiones_indice.ley_codigo
         ORDER BY d.tipo, d.numero
+    ),
+    -- Títulos que usan reglas de 2 niveles (X.Y) en lugar de capítulos tradicionales
+    titulos_dos_niveles AS (
+        SELECT '1' as titulo UNION SELECT '6' UNION SELECT '7'
+        UNION SELECT '8' UNION SELECT '9' UNION SELECT '10'
     )
     -- Elementos en índice oficial pero no importados (faltantes)
     SELECT
@@ -60,13 +67,19 @@ BEGIN
 
     UNION ALL
 
-    -- Elementos importados pero no en índice oficial (extras)
+    -- Elementos importados pero no en índice oficial
+    -- Si es capítulo bajo título de 2 niveles → 'virtual', sino → 'extra'
     SELECT
         i.tipo,
         i.numero,
         NULL::TEXT as nombre_oficial,
         i.nombre as nombre_importado,
-        'extra'::VARCHAR as estado
+        CASE
+            WHEN i.tipo = 'capitulo'
+                 AND split_part(i.numero, '.', 1) IN (SELECT titulo FROM titulos_dos_niveles)
+            THEN 'virtual'::VARCHAR
+            ELSE 'extra'::VARCHAR
+        END as estado
     FROM importado i
     LEFT JOIN oficial o ON o.tipo = i.tipo AND o.numero = i.numero
     WHERE o.numero IS NULL
@@ -124,6 +137,7 @@ END;
 $$ LANGUAGE plpgsql STABLE;
 
 -- Función resumen de verificación contra índice
+-- Incluye columna 'virtuales' para capítulos generados para reglas de 2 niveles
 CREATE OR REPLACE FUNCTION verificar_indice(ley_codigo VARCHAR)
 RETURNS TABLE(
     categoria VARCHAR,
@@ -131,6 +145,7 @@ RETURNS TABLE(
     total_importado INT,
     faltantes INT,
     extras INT,
+    virtuales INT,
     porcentaje_completo NUMERIC
 ) AS $$
 BEGIN
@@ -143,6 +158,7 @@ BEGIN
         (SELECT COUNT(DISTINCT numero)::INT FROM divisiones d JOIN leyes l ON d.ley_id = l.id WHERE l.codigo = verificar_indice.ley_codigo AND d.tipo = 'titulo'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'titulo' AND estado = 'faltante'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'titulo' AND estado = 'extra'),
+        (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'titulo' AND estado = 'virtual'),
         CASE
             WHEN (SELECT COUNT(*) FROM indice_oficial WHERE indice_oficial.ley_codigo = verificar_indice.ley_codigo AND tipo = 'titulo') = 0 THEN 100
             ELSE ROUND(
@@ -160,6 +176,7 @@ BEGIN
         (SELECT COUNT(DISTINCT numero)::INT FROM divisiones d JOIN leyes l ON d.ley_id = l.id WHERE l.codigo = verificar_indice.ley_codigo AND d.tipo = 'capitulo'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'capitulo' AND estado = 'faltante'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'capitulo' AND estado = 'extra'),
+        (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'capitulo' AND estado = 'virtual'),
         CASE
             WHEN (SELECT COUNT(*) FROM indice_oficial WHERE indice_oficial.ley_codigo = verificar_indice.ley_codigo AND tipo = 'capitulo') = 0 THEN 100
             ELSE ROUND(
@@ -177,6 +194,7 @@ BEGIN
         (SELECT COUNT(DISTINCT numero)::INT FROM divisiones d JOIN leyes l ON d.ley_id = l.id WHERE l.codigo = verificar_indice.ley_codigo AND d.tipo = 'seccion'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'seccion' AND estado = 'faltante'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'seccion' AND estado = 'extra'),
+        (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'seccion' AND estado = 'virtual'),
         CASE
             WHEN (SELECT COUNT(*) FROM indice_oficial WHERE indice_oficial.ley_codigo = verificar_indice.ley_codigo AND tipo = 'seccion') = 0 THEN 100
             ELSE ROUND(
@@ -194,6 +212,7 @@ BEGIN
         (SELECT COUNT(DISTINCT numero)::INT FROM divisiones d JOIN leyes l ON d.ley_id = l.id WHERE l.codigo = verificar_indice.ley_codigo AND d.tipo = 'subseccion'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'subseccion' AND estado = 'faltante'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'subseccion' AND estado = 'extra'),
+        (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'subseccion' AND estado = 'virtual'),
         CASE
             WHEN (SELECT COUNT(*) FROM indice_oficial WHERE indice_oficial.ley_codigo = verificar_indice.ley_codigo AND tipo = 'subseccion') = 0 THEN 100
             ELSE ROUND(
@@ -211,6 +230,7 @@ BEGIN
         (SELECT COUNT(*)::INT FROM articulos a JOIN leyes l ON a.ley_id = l.id WHERE l.codigo = verificar_indice.ley_codigo AND a.tipo = 'regla'),
         (SELECT COUNT(*)::INT FROM comparar_reglas_indice(verificar_indice.ley_codigo) WHERE estado = 'faltante'),
         0::INT,  -- No puede haber reglas "extra" (el parser no inventa)
+        0::INT,  -- No aplica virtuales a reglas
         CASE
             WHEN (SELECT COUNT(*) FROM indice_oficial WHERE indice_oficial.ley_codigo = verificar_indice.ley_codigo AND tipo = 'regla') = 0 THEN 100
             ELSE ROUND(
@@ -229,6 +249,7 @@ RETURNS TABLE(
     total_importado INT,
     faltantes INT,
     extras INT,
+    virtuales INT,
     porcentaje_completo NUMERIC
 ) AS $$
 BEGIN

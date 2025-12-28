@@ -357,6 +357,7 @@ export interface VerificacionIndice {
   total_importado: number
   faltantes: number
   extras: number
+  virtuales: number  // Capítulos virtuales generados para reglas de 2 niveles
   porcentaje_completo: number
 }
 
@@ -371,7 +372,7 @@ export interface ComparacionDivision {
   numero: string
   nombre_oficial: string | null
   nombre_importado: string | null
-  estado: 'ok' | 'faltante' | 'extra'
+  estado: 'ok' | 'faltante' | 'extra' | 'virtual'  // virtual = capítulo generado
 }
 
 export async function getVerificacionIndice(ley: string): Promise<VerificacionIndice[]> {

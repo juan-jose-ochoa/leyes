@@ -613,10 +613,14 @@ function VerificacionIndicePanel({ verificacionIndice, reglasFaltantes, division
   // Calcular totales
   const totalFaltantes = verificacionIndice.reduce((sum, v) => sum + v.faltantes, 0)
   const totalExtras = verificacionIndice.reduce((sum, v) => sum + v.extras, 0)
+  const totalVirtuales = verificacionIndice.reduce((sum, v) => sum + (v.virtuales || 0), 0)
+  // Solo faltantes y extras reales son problemas, los virtuales son esperados
   const hayProblemas = totalFaltantes > 0 || totalExtras > 0
 
-  // Divisiones extras (en DB pero no en índice oficial)
+  // Divisiones extras (en DB pero no en índice oficial) - excluyendo virtuales
   const divisionesExtras = divisionesFaltantes.filter(d => d.estado === 'extra')
+  // Divisiones virtuales (capítulos generados para reglas de 2 niveles)
+  const divisionesVirtuales = divisionesFaltantes.filter(d => d.estado === 'virtual')
 
   // Nombres legibles para categorías
   const nombreCategoria: Record<string, string> = {
@@ -665,6 +669,7 @@ function VerificacionIndicePanel({ verificacionIndice, reglasFaltantes, division
         {verificacionIndice.map((v) => {
           const tieneError = v.faltantes > 0
           const tieneExtras = v.extras > 0
+          const tieneVirtuales = (v.virtuales || 0) > 0
 
           return (
             <div
@@ -686,18 +691,23 @@ function VerificacionIndicePanel({ verificacionIndice, reglasFaltantes, division
                   tieneExtras ? 'text-amber-700 dark:text-amber-400' :
                   'text-green-700 dark:text-green-400'
                 )}>
-                  {v.total_importado}
+                  {v.total_oficial}
                 </span>
-                <span className="text-xs text-gray-500">/{v.total_oficial}</span>
+                <span className="text-xs text-gray-500">oficiales</span>
               </div>
               {tieneError && (
                 <div className="text-xs text-red-600 dark:text-red-400 mt-0.5">
                   -{v.faltantes} faltantes
                 </div>
               )}
-              {tieneExtras && !tieneError && (
+              {tieneExtras && (
                 <div className="text-xs text-amber-600 dark:text-amber-400 mt-0.5">
                   +{v.extras} extras
+                </div>
+              )}
+              {tieneVirtuales && (
+                <div className="text-xs text-blue-600 dark:text-blue-400 mt-0.5">
+                  +{v.virtuales} virtuales
                 </div>
               )}
             </div>
@@ -766,6 +776,36 @@ function VerificacionIndicePanel({ verificacionIndice, reglasFaltantes, division
             </div>
           )}
 
+          {/* Divisiones virtuales (capítulos generados para reglas de 2 niveles) */}
+          {divisionesVirtuales.length > 0 && (
+            <div>
+              <h4 className="text-xs font-medium text-blue-800 dark:text-blue-300 mb-2">
+                Capítulos virtuales (generados para reglas X.Y): {divisionesVirtuales.length}
+              </h4>
+              <div className="max-h-32 overflow-y-auto space-y-1">
+                {divisionesVirtuales.slice(0, 20).map((d, idx) => (
+                  <div
+                    key={`virtual-${d.tipo}-${d.numero}-${idx}`}
+                    className="flex items-center gap-2 p-2 bg-blue-100 dark:bg-blue-900/30 rounded text-xs"
+                  >
+                    <FileText className="h-3.5 w-3.5 text-blue-500" />
+                    <span className="font-medium text-gray-900 dark:text-white capitalize">
+                      {d.tipo} {d.numero}
+                    </span>
+                    <span className="text-gray-600 dark:text-gray-400 truncate">
+                      {d.nombre_importado}
+                    </span>
+                  </div>
+                ))}
+                {divisionesVirtuales.length > 20 && (
+                  <div className="text-xs text-blue-600 dark:text-blue-400 py-1">
+                    ... y {divisionesVirtuales.length - 20} más
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
           {/* Reglas faltantes */}
           {reglasFaltantes.length > 0 && (
             <div>
@@ -792,7 +832,10 @@ function VerificacionIndicePanel({ verificacionIndice, reglasFaltantes, division
       {!hayProblemas && (
         <div className="flex items-center gap-2 text-sm text-green-700 dark:text-green-400">
           <CheckCircle className="h-4 w-4" />
-          <span>Todos los elementos del índice oficial están presentes</span>
+          <span>
+            Todos los elementos del índice oficial están presentes
+            {totalVirtuales > 0 && ` (+${totalVirtuales} capítulos virtuales generados)`}
+          </span>
         </div>
       )}
     </div>
