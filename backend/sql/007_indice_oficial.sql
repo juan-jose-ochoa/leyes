@@ -40,10 +40,12 @@ BEGIN
         AND io.tipo IN ('titulo', 'capitulo', 'seccion', 'subseccion')
     ),
     importado AS (
-        SELECT d.tipo::VARCHAR, d.numero::VARCHAR, d.nombre::TEXT
+        SELECT DISTINCT ON (d.tipo, d.numero)
+            d.tipo::VARCHAR, d.numero::VARCHAR, d.nombre::TEXT
         FROM divisiones d
         JOIN leyes l ON d.ley_id = l.id
         WHERE l.codigo = comparar_divisiones_indice.ley_codigo
+        ORDER BY d.tipo, d.numero
     )
     -- Elementos en índice oficial pero no importados (faltantes)
     SELECT
@@ -138,7 +140,7 @@ BEGIN
     SELECT
         'titulo'::VARCHAR as categoria,
         (SELECT COUNT(*)::INT FROM indice_oficial WHERE indice_oficial.ley_codigo = verificar_indice.ley_codigo AND tipo = 'titulo'),
-        (SELECT COUNT(*)::INT FROM divisiones d JOIN leyes l ON d.ley_id = l.id WHERE l.codigo = verificar_indice.ley_codigo AND d.tipo = 'titulo'),
+        (SELECT COUNT(DISTINCT numero)::INT FROM divisiones d JOIN leyes l ON d.ley_id = l.id WHERE l.codigo = verificar_indice.ley_codigo AND d.tipo = 'titulo'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'titulo' AND estado = 'faltante'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'titulo' AND estado = 'extra'),
         CASE
@@ -155,7 +157,7 @@ BEGIN
     SELECT
         'capitulo'::VARCHAR,
         (SELECT COUNT(*)::INT FROM indice_oficial WHERE indice_oficial.ley_codigo = verificar_indice.ley_codigo AND tipo = 'capitulo'),
-        (SELECT COUNT(*)::INT FROM divisiones d JOIN leyes l ON d.ley_id = l.id WHERE l.codigo = verificar_indice.ley_codigo AND d.tipo = 'capitulo'),
+        (SELECT COUNT(DISTINCT numero)::INT FROM divisiones d JOIN leyes l ON d.ley_id = l.id WHERE l.codigo = verificar_indice.ley_codigo AND d.tipo = 'capitulo'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'capitulo' AND estado = 'faltante'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'capitulo' AND estado = 'extra'),
         CASE
@@ -172,7 +174,7 @@ BEGIN
     SELECT
         'seccion'::VARCHAR,
         (SELECT COUNT(*)::INT FROM indice_oficial WHERE indice_oficial.ley_codigo = verificar_indice.ley_codigo AND tipo = 'seccion'),
-        (SELECT COUNT(*)::INT FROM divisiones d JOIN leyes l ON d.ley_id = l.id WHERE l.codigo = verificar_indice.ley_codigo AND d.tipo = 'seccion'),
+        (SELECT COUNT(DISTINCT numero)::INT FROM divisiones d JOIN leyes l ON d.ley_id = l.id WHERE l.codigo = verificar_indice.ley_codigo AND d.tipo = 'seccion'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'seccion' AND estado = 'faltante'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'seccion' AND estado = 'extra'),
         CASE
@@ -189,7 +191,7 @@ BEGIN
     SELECT
         'subseccion'::VARCHAR,
         (SELECT COUNT(*)::INT FROM indice_oficial WHERE indice_oficial.ley_codigo = verificar_indice.ley_codigo AND tipo = 'subseccion'),
-        (SELECT COUNT(*)::INT FROM divisiones d JOIN leyes l ON d.ley_id = l.id WHERE l.codigo = verificar_indice.ley_codigo AND d.tipo = 'subseccion'),
+        (SELECT COUNT(DISTINCT numero)::INT FROM divisiones d JOIN leyes l ON d.ley_id = l.id WHERE l.codigo = verificar_indice.ley_codigo AND d.tipo = 'subseccion'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'subseccion' AND estado = 'faltante'),
         (SELECT COUNT(*)::INT FROM comparar_divisiones_indice(verificar_indice.ley_codigo) WHERE tipo = 'subseccion' AND estado = 'extra'),
         CASE
