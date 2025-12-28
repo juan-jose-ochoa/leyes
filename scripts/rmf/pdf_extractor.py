@@ -70,9 +70,10 @@ class PDFExtractor:
     PATRON_SUBSECCION_INDICE = re.compile(r'Subsección\s+(\d+\.\d+\.\d+\.\d+)\.?\s+(.+?)(?:\n|$)')
 
     # Patrón para reglas en el contenido
-    # Formato 1: dos niveles para Título 1 (1.1, 1.2... 1.11) - máximo 2 dígitos después del punto
-    # Formato 2: tres niveles para otros títulos (2.1.1, 3.5.23...)
-    PATRON_REGLA_DOS_NIVELES = re.compile(r'(?:^|\n)(1\.\d{1,2})\.\s+', re.MULTILINE)
+    # Formato 1: dos niveles (X.Y) - para títulos sin capítulos (ej: 1.1, 1.11)
+    #            Solo números pequeños (1-99) para evitar falsos positivos como tasas (1.0476)
+    # Formato 2: tres niveles (X.Y.Z) - para títulos con capítulos (ej: 2.1.1, 3.5.23)
+    PATRON_REGLA_DOS_NIVELES = re.compile(r'(?:^|\n)(\d{1,2}\.\d{1,2})\.\s+', re.MULTILINE)
     PATRON_REGLA_TRES_NIVELES = re.compile(r'(?:^|\n)(\d+\.\d+\.\d+)\.\s+', re.MULTILINE)
 
     # Patrón para extraer título de regla (línea anterior al número)

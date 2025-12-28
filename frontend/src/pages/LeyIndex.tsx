@@ -76,10 +76,12 @@ function agruparPorTitulo(
       esFaltante: true,
     }))
 
-  // Crear placeholders para reglas faltantes de Título 1 (formato 1.x)
-  // Estas reglas van directamente bajo el título sin capítulo intermedio
-  const reglasTitulo1Faltantes: DivisionConEstado[] = (reglasFaltantes || [])
-    .filter(r => r.estado === 'faltante' && /^1\.\d{1,2}$/.test(r.numero))
+  // Crear placeholders para reglas faltantes de dos niveles (X.Y)
+  // Estas son reglas que van directamente bajo un título sin capítulo intermedio
+  // Ejemplo: Título 1 tiene reglas 1.1, 1.2... en lugar de capítulos
+  // El patrón detecta números como X.Y donde ambos son 1-2 dígitos
+  const reglasDosNivelesFaltantes: DivisionConEstado[] = (reglasFaltantes || [])
+    .filter(r => r.estado === 'faltante' && /^\d{1,2}\.\d{1,2}$/.test(r.numero))
     .map(r => ({
       id: `placeholder-regla-${r.numero}`,
       tipo: 'regla',
@@ -93,7 +95,7 @@ function agruparPorTitulo(
     }))
 
   // Combinar y ordenar todas las divisiones
-  const todasDivisiones = [...divsExistentes, ...divsFaltantes, ...reglasTitulo1Faltantes]
+  const todasDivisiones = [...divsExistentes, ...divsFaltantes, ...reglasDosNivelesFaltantes]
     .sort((a, b) => compararNumeros(a.numero, b.numero))
 
   for (const div of todasDivisiones) {
