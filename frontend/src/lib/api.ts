@@ -238,14 +238,6 @@ export interface ArticuloDivision {
   calidad: RegistroCalidad | null
 }
 
-export async function getDivisionInfo(divId: number): Promise<DivisionInfo | null> {
-  const result = await fetchAPI<DivisionInfo[]>('/rpc/division_info', {
-    method: 'POST',
-    body: JSON.stringify({ div_id: divId }),
-  })
-  return result[0] || null
-}
-
 export async function getDivisionPorTipoNumero(
   ley: string,
   tipo: string,

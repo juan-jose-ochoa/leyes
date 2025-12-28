@@ -200,7 +200,7 @@ COMMENT ON FUNCTION calcular_paths_division_after() IS
 -- 5. FUNCIÓN: Buscar división por tipo+numero (URLs estables)
 -- ============================================================
 
-CREATE OR REPLACE FUNCTION division_por_tipo_numero(
+CREATE OR REPLACE FUNCTION api.division_por_tipo_numero(
     p_ley TEXT,
     p_tipo TEXT,
     p_numero TEXT
@@ -228,9 +228,9 @@ BEGIN
         d.nombre::TEXT,
         d.path_texto::TEXT,
         COUNT(a.id)
-    FROM divisiones d
-    JOIN leyes l ON d.ley_id = l.id
-    LEFT JOIN articulos a ON a.division_id = d.id
+    FROM public.divisiones d
+    JOIN public.leyes l ON d.ley_id = l.id
+    LEFT JOIN public.articulos a ON a.division_id = d.id
     WHERE l.codigo = p_ley
       AND d.tipo = p_tipo
       AND d.numero = p_numero
@@ -238,5 +238,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-COMMENT ON FUNCTION division_por_tipo_numero IS
+GRANT EXECUTE ON FUNCTION api.division_por_tipo_numero TO web_anon;
+
+COMMENT ON FUNCTION api.division_por_tipo_numero IS
 'Busca división por ley, tipo y número para URLs estables (no depende de IDs)';

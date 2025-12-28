@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionInfo, getDivisionPorTipoNumero, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, getVerificacionLey, getVerificacionDivision, getVerificacionIndice, getComparacionReglasIndice, getComparacionDivisionesIndice, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion, type VerificacionDivision, type VerificacionDivisionSimple, type VerificacionIndice, type ComparacionRegla, type ComparacionDivision } from '@/lib/api'
+import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionPorTipoNumero, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, getVerificacionLey, getVerificacionDivision, getVerificacionIndice, getComparacionReglasIndice, getComparacionDivisionesIndice, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion, type VerificacionDivision, type VerificacionDivisionSimple, type VerificacionIndice, type ComparacionRegla, type ComparacionDivision } from '@/lib/api'
 
 export function useArticle(id: number | null) {
   return useQuery<ArticuloDetalle | null>({
@@ -56,18 +56,6 @@ export function useEstructuraLey(ley: string | null) {
     },
     enabled: ley !== null,
     staleTime: 1000 * 60 * 60, // 1 hora
-  })
-}
-
-export function useDivisionInfo(divId: number | null) {
-  return useQuery<DivisionInfo | null>({
-    queryKey: ['division', divId],
-    queryFn: async () => {
-      if (!divId) return null
-      return getDivisionInfo(divId)
-    },
-    enabled: divId !== null,
-    staleTime: 1000 * 60 * 60,
   })
 }
 
