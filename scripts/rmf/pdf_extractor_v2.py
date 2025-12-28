@@ -232,10 +232,19 @@ class PDFExtractorV2:
 
         return titulos, capitulos, secciones, subsecciones
 
-    def _parse_fracciones(self, texto: str) -> list[Fraccion]:
-        """Parsea las fracciones de un texto de contenido."""
+    def _parse_fracciones(self, texto: str) -> tuple[list[Fraccion], str]:
+        """Parsea las fracciones y retorna contenido limpio.
+
+        Returns:
+            tuple: (fracciones, contenido_limpio)
+            - Si hay fracciones, contenido_limpio es el texto ANTES de la primera fracción
+            - Si no hay fracciones, contenido_limpio es el texto original
+        """
         fracciones = []
         lineas = texto.split('\n')
+
+        # Encontrar dónde empieza la primera fracción
+        primera_fraccion_idx = None
 
         i = 0
         while i < len(lineas):
@@ -244,6 +253,9 @@ class PDFExtractorV2:
             # Detectar fracción romana (I., II., III., ...)
             match_romano = re.match(r'^(X{0,3}(?:IX|IV|V?I{0,3}))\.\s*$', linea)
             if match_romano:
+                if primera_fraccion_idx is None:
+                    primera_fraccion_idx = i
+
                 numero = match_romano.group(1)
                 # El contenido está en las siguientes líneas hasta la próxima fracción
                 contenido_lines = []
@@ -273,6 +285,9 @@ class PDFExtractorV2:
             # Detectar inciso letra (a), b), c), ...)
             match_letra = re.match(r'^([a-z])\)\s*$', linea)
             if match_letra:
+                if primera_fraccion_idx is None:
+                    primera_fraccion_idx = i
+
                 numero = match_letra.group(1)
                 contenido_lines = []
                 i += 1
@@ -301,7 +316,14 @@ class PDFExtractorV2:
 
             i += 1
 
-        return fracciones
+        # Generar contenido limpio (sin fracciones)
+        if fracciones and primera_fraccion_idx is not None:
+            # Solo conservar el texto antes de la primera fracción
+            contenido_limpio = '\n'.join(lineas[:primera_fraccion_idx]).strip()
+        else:
+            contenido_limpio = texto
+
+        return fracciones, contenido_limpio
 
     def _extraer_regla(self, numero: str, texto_pagina: str, pagina: int,
                        siguiente_numero: Optional[str] = None) -> Optional[Regla]:
@@ -396,13 +418,13 @@ class PDFExtractorV2:
         if referencias_lineas:
             referencias = ' '.join(referencias_lineas)
 
-        # Parsear fracciones
-        fracciones = self._parse_fracciones(contenido)
+        # Parsear fracciones y limpiar contenido
+        fracciones, contenido_limpio = self._parse_fracciones(contenido)
 
         return Regla(
             numero=numero,
             titulo=titulo,
-            contenido=contenido,
+            contenido=contenido_limpio,
             pagina=pagina,
             fracciones=fracciones,
             referencias=referencias,
@@ -626,13 +648,13 @@ class PDFExtractorV2:
         if referencias_encontradas:
             referencias = ' '.join(referencias_encontradas)
 
-        # Parsear fracciones
-        fracciones = self._parse_fracciones(contenido)
+        # Parsear fracciones y limpiar contenido
+        fracciones, contenido_limpio = self._parse_fracciones(contenido)
 
         return Regla(
             numero=numero,
             titulo=titulo,
-            contenido=contenido,
+            contenido=contenido_limpio,
             pagina=pagina,
             fracciones=fracciones,
             referencias=referencias,
