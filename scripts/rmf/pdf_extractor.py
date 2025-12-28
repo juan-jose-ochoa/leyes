@@ -70,10 +70,13 @@ class PDFExtractor:
     PATRON_SUBSECCION_INDICE = re.compile(r'Subsección\s+(\d+\.\d+\.\d+\.\d+)\.?\s+(.+?)(?:\n|$)')
 
     # Patrón para reglas en el contenido
-    PATRON_REGLA = re.compile(r'(?:^|\n)(\d+\.\d+\.\d+)\.\s+', re.MULTILINE)
+    # Formato 1: dos niveles para Título 1 (1.1, 1.2... 1.11) - máximo 2 dígitos después del punto
+    # Formato 2: tres niveles para otros títulos (2.1.1, 3.5.23...)
+    PATRON_REGLA_DOS_NIVELES = re.compile(r'(?:^|\n)(1\.\d{1,2})\.\s+', re.MULTILINE)
+    PATRON_REGLA_TRES_NIVELES = re.compile(r'(?:^|\n)(\d+\.\d+\.\d+)\.\s+', re.MULTILINE)
 
     # Patrón para extraer título de regla (línea anterior al número)
-    PATRON_TITULO_REGLA = re.compile(r'^([A-ZÁÉÍÓÚÑÜ][a-záéíóúñü\s,]+)\n\d+\.\d+\.\d+\.', re.MULTILINE)
+    PATRON_TITULO_REGLA = re.compile(r'^([A-ZÁÉÍÓÚÑÜ][a-záéíóúñü\s,]+)\n\d+\.\d+\.', re.MULTILINE)
 
     def __init__(self, pdf_path: str | Path):
         self.pdf_path = Path(pdf_path)
@@ -168,7 +171,17 @@ class PDFExtractor:
         for page_num in range(len(self.doc)):
             text = self._get_page_text(page_num)
 
-            for match in self.PATRON_REGLA.finditer(text):
+            # Buscar reglas de dos niveles (Título 1: 1.1, 1.2... 1.11)
+            for match in self.PATRON_REGLA_DOS_NIVELES.finditer(text):
+                num = match.group(1)
+                if num not in reglas:
+                    reglas[num] = ReglaIndice(
+                        numero=num,
+                        pagina=page_num + 1  # 1-indexed
+                    )
+
+            # Buscar reglas de tres niveles (otros títulos: 2.1.1, 3.5.23...)
+            for match in self.PATRON_REGLA_TRES_NIVELES.finditer(text):
                 num = match.group(1)
                 if num not in reglas:
                     reglas[num] = ReglaIndice(

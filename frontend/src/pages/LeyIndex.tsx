@@ -35,7 +35,11 @@ function compararNumeros(a: string | null, b: string | null): number {
   return 0
 }
 
-function agruparPorTitulo(divisiones: Division[], divisionesFaltantes?: ComparacionDivision[]): GrupoTitulo[] {
+function agruparPorTitulo(
+  divisiones: Division[],
+  divisionesFaltantes?: ComparacionDivision[],
+  reglasFaltantes?: ComparacionRegla[]
+): GrupoTitulo[] {
   const grupos: GrupoTitulo[] = []
   let grupoActual: GrupoTitulo | null = null
 
@@ -72,8 +76,24 @@ function agruparPorTitulo(divisiones: Division[], divisionesFaltantes?: Comparac
       esFaltante: true,
     }))
 
+  // Crear placeholders para reglas faltantes de Título 1 (formato 1.x)
+  // Estas reglas van directamente bajo el título sin capítulo intermedio
+  const reglasTitulo1Faltantes: DivisionConEstado[] = (reglasFaltantes || [])
+    .filter(r => r.estado === 'faltante' && /^1\.\d{1,2}$/.test(r.numero))
+    .map(r => ({
+      id: `placeholder-regla-${r.numero}`,
+      tipo: 'regla',
+      numero: r.numero,
+      nombre: null,  // Las reglas no tienen nombre en el índice
+      path_texto: null,
+      nivel: 2,
+      total_articulos: 0,
+      primer_articulo: null,
+      esFaltante: true,
+    }))
+
   // Combinar y ordenar todas las divisiones
-  const todasDivisiones = [...divsExistentes, ...divsFaltantes]
+  const todasDivisiones = [...divsExistentes, ...divsFaltantes, ...reglasTitulo1Faltantes]
     .sort((a, b) => compararNumeros(a.numero, b.numero))
 
   for (const div of todasDivisiones) {
@@ -84,7 +104,7 @@ function agruparPorTitulo(divisiones: Division[], divisionesFaltantes?: Comparac
       }
       grupoActual = { titulo: div, hijos: [] }
     } else {
-      // Es capítulo o sección
+      // Es capítulo, sección o regla de título 1
       if (grupoActual) {
         grupoActual.hijos.push(div)
       } else {
@@ -136,7 +156,8 @@ export default function LeyIndex() {
   const [showVerificacion, setShowVerificacion] = useState(false)
   const { data: verificacion } = useVerificacionLey(showVerificacion ? ley ?? null : null)
   const { data: verificacionIndice } = useVerificacionIndice(showVerificacion ? ley ?? null : null)
-  const { data: reglasFaltantes } = useComparacionReglasIndice(showVerificacion ? ley ?? null : null)
+  // Siempre cargar reglas faltantes para placeholders de Título 1
+  const { data: reglasFaltantes } = useComparacionReglasIndice(ley ?? null)
   // Siempre cargar divisiones faltantes para mostrar placeholders
   const { data: divisionesFaltantes } = useComparacionDivisionesIndice(ley ?? null)
 
@@ -168,8 +189,8 @@ export default function LeyIndex() {
   // Agrupar por títulos (memoizado), incluyendo placeholders para faltantes
   const grupos = useMemo(() => {
     if (!estructura) return []
-    return agruparPorTitulo(estructura, divisionesFaltantes || undefined)
-  }, [estructura, divisionesFaltantes])
+    return agruparPorTitulo(estructura, divisionesFaltantes || undefined, reglasFaltantes || undefined)
+  }, [estructura, divisionesFaltantes, reglasFaltantes])
 
   // Funciones de control de expansión
   const expandAll = useCallback(() => {
