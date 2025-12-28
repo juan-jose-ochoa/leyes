@@ -893,7 +893,7 @@ function DivisionItem({ division, ley, tipoContenido, isNested, showVerificacion
 
   return (
     <Link
-      to={`/${ley}/division/${division.id}`}
+      to={`/${ley}/${division.tipo}/${division.numero}`}
       className={clsx(
         'flex items-center gap-4 p-4 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800/50',
         !isNested && 'rounded-lg border border-gray-200 dark:border-gray-700'

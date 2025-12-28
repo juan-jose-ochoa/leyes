@@ -36,7 +36,11 @@ function App() {
             <Route path="/:ley/regla/*" element={<Article />} />
             <Route path="/:ley/ficha/*" element={<Article />} />
             <Route path="/:ley/criterio/*" element={<Article />} />
-            <Route path="/:ley/division/:id" element={<DivisionView />} />
+            {/* Rutas de división por tipo/numero (estables) */}
+            <Route path="/:ley/titulo/:numero" element={<DivisionView />} />
+            <Route path="/:ley/capitulo/:numero" element={<DivisionView />} />
+            <Route path="/:ley/seccion/:numero" element={<DivisionView />} />
+            <Route path="/:ley/subseccion/:numero" element={<DivisionView />} />
             <Route path="/:ley" element={<LeyIndex />} />
             <Route path="/articulo/:id" element={<Article />} />
           </Routes>

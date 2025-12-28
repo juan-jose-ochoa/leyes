@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionInfo, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, getVerificacionLey, getVerificacionDivision, getVerificacionIndice, getComparacionReglasIndice, getComparacionDivisionesIndice, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion, type VerificacionDivision, type VerificacionDivisionSimple, type VerificacionIndice, type ComparacionRegla, type ComparacionDivision } from '@/lib/api'
+import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionInfo, getDivisionPorTipoNumero, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, getVerificacionLey, getVerificacionDivision, getVerificacionIndice, getComparacionReglasIndice, getComparacionDivisionesIndice, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion, type VerificacionDivision, type VerificacionDivisionSimple, type VerificacionIndice, type ComparacionRegla, type ComparacionDivision } from '@/lib/api'
 
 export function useArticle(id: number | null) {
   return useQuery<ArticuloDetalle | null>({
@@ -67,6 +67,18 @@ export function useDivisionInfo(divId: number | null) {
       return getDivisionInfo(divId)
     },
     enabled: divId !== null,
+    staleTime: 1000 * 60 * 60,
+  })
+}
+
+export function useDivisionPorTipoNumero(ley: string | null, tipo: string | null, numero: string | null) {
+  return useQuery<DivisionInfo | null>({
+    queryKey: ['division', ley, tipo, numero],
+    queryFn: async () => {
+      if (!ley || !tipo || !numero) return null
+      return getDivisionPorTipoNumero(ley, tipo, numero)
+    },
+    enabled: ley !== null && tipo !== null && numero !== null,
     staleTime: 1000 * 60 * 60,
   })
 }

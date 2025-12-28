@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useLocation } from 'react-router-dom'
 import { Home, ChevronRight, BookOpen, ExternalLink, AlertTriangle, CheckCircle, XCircle, Filter, Eye, EyeOff, FileQuestion } from 'lucide-react'
-import { useDivisionInfo, useArticulosDivision, useVerificacionDivision } from '@/hooks/useArticle'
+import { useDivisionPorTipoNumero, useArticulosDivision, useVerificacionDivision } from '@/hooks/useArticle'
 import ArticleContent from '@/components/ArticleContent'
 import type { RegistroCalidad, ArticuloDivision, VerificacionDivisionSimple } from '@/lib/api'
 import clsx from 'clsx'
@@ -229,11 +229,20 @@ function VerificacionPanel({
 }
 
 export default function DivisionView() {
-  const { ley, id } = useParams<{ ley: string; id: string }>()
-  const divId = id ? parseInt(id) : null
+  const { ley, numero } = useParams<{ ley: string; numero: string }>()
+  const location = useLocation()
   const [soloIssues, setSoloIssues] = useState(false)
 
-  const { data: info, isLoading: loadingInfo } = useDivisionInfo(divId)
+  // Extraer tipo de la URL: /RMF2025/capitulo/1.9 → capitulo
+  const tipo = useMemo(() => {
+    const parts = location.pathname.split('/')
+    // parts = ['', 'RMF2025', 'capitulo', '1.9']
+    return parts[2] || null
+  }, [location.pathname])
+
+  // Buscar división por tipo+numero (estable, no depende de IDs)
+  const { data: info, isLoading: loadingInfo } = useDivisionPorTipoNumero(ley || null, tipo, numero || null)
+  const divId = info?.id || null
   const { data: articulos, isLoading: loadingArticulos } = useArticulosDivision(divId)
   const { data: verificacion } = useVerificacionDivision(divId)
 

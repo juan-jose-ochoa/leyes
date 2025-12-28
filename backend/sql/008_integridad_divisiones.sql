@@ -195,3 +195,48 @@ COMMENT ON FUNCTION validar_jerarquia_division() IS
 
 COMMENT ON FUNCTION calcular_paths_division_after() IS
 'Calcula automáticamente path_ids, path_texto y nivel basándose en padre_id';
+
+-- ============================================================
+-- 5. FUNCIÓN: Buscar división por tipo+numero (URLs estables)
+-- ============================================================
+
+CREATE OR REPLACE FUNCTION division_por_tipo_numero(
+    p_ley TEXT,
+    p_tipo TEXT,
+    p_numero TEXT
+)
+RETURNS TABLE (
+    id INT,
+    ley_codigo TEXT,
+    ley_nombre TEXT,
+    ley_tipo TEXT,
+    div_tipo TEXT,
+    numero TEXT,
+    nombre TEXT,
+    path_texto TEXT,
+    total_articulos BIGINT
+) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT
+        d.id,
+        l.codigo::TEXT,
+        l.nombre::TEXT,
+        l.tipo::TEXT,
+        d.tipo::TEXT,
+        d.numero::TEXT,
+        d.nombre::TEXT,
+        d.path_texto::TEXT,
+        COUNT(a.id)
+    FROM divisiones d
+    JOIN leyes l ON d.ley_id = l.id
+    LEFT JOIN articulos a ON a.division_id = d.id
+    WHERE l.codigo = p_ley
+      AND d.tipo = p_tipo
+      AND d.numero = p_numero
+    GROUP BY d.id, l.codigo, l.nombre, l.tipo, d.tipo, d.numero, d.nombre, d.path_texto;
+END;
+$$ LANGUAGE plpgsql;
+
+COMMENT ON FUNCTION division_por_tipo_numero IS
+'Busca división por ley, tipo y número para URLs estables (no depende de IDs)';

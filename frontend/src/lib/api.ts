@@ -246,6 +246,18 @@ export async function getDivisionInfo(divId: number): Promise<DivisionInfo | nul
   return result[0] || null
 }
 
+export async function getDivisionPorTipoNumero(
+  ley: string,
+  tipo: string,
+  numero: string
+): Promise<DivisionInfo | null> {
+  const result = await fetchAPI<DivisionInfo[]>('/rpc/division_por_tipo_numero', {
+    method: 'POST',
+    body: JSON.stringify({ p_ley: ley, p_tipo: tipo, p_numero: numero }),
+  })
+  return result[0] || null
+}
+
 export async function getArticulosDivision(divId: number): Promise<ArticuloDivision[]> {
   return fetchAPI<ArticuloDivision[]>('/rpc/articulos_division', {
     method: 'POST',
