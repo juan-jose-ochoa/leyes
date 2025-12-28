@@ -307,9 +307,9 @@ BEGIN
                 CONTINUE; 
             END IF;
             
-            -- Buscar en la base de datos
+            -- Buscar con UPPER() para case-insensitive (17-H Bis = 17-H BIS)
             RETURN QUERY
-            SELECT 
+            SELECT
                 current_ley::TEXT,
                 num::TEXT,
                 a.titulo::TEXT,
@@ -318,9 +318,9 @@ BEGIN
             FROM articulos a
             JOIN leyes l ON a.ley_id = l.id
             WHERE l.codigo = ley_real
-              AND (a.numero_raw = num 
-                   OR a.numero_raw = num || '.'
-                   OR (num ~ '^\d+$' AND a.numero_raw ~ ('^' || num || '[.-]'))
+              AND (UPPER(a.numero_raw) = UPPER(num)
+                   OR UPPER(a.numero_raw) = UPPER(num || '.')
+                   OR (num ~ '^\d+$' AND a.numero_raw ~* ('^' || num || '[.-]'))
               )
             LIMIT 1;
             
