@@ -189,7 +189,7 @@ def crear_divisiones_y_reglas_dos_niveles(divisiones_dict, reglas_dict):
 
         # Crear división para el título si no existe
         titulo_existente = any(
-            d.get('path_texto') == path_titulo
+            d.get('tipo') == 'titulo' and d.get('numero') == titulo_num
             for d in divisiones_dict + nuevas_divisiones
         )
 
@@ -204,34 +204,65 @@ def crear_divisiones_y_reglas_dos_niveles(divisiones_dict, reglas_dict):
                 'orden_global': max_orden_div,
             })
 
-        # Crear el capítulo virtual
-        max_orden_div += 1
-        nuevas_divisiones.append({
-            'tipo': 'capitulo',
-            'numero': numero,
-            'numero_orden': float(numero),  # Para ordenar correctamente
-            'nombre': nombre_capitulo,
-            'path_texto': path_capitulo,
-            'orden_global': max_orden_div,
-        })
+        # Verificar si el capítulo ya existe (por tipo + numero)
+        capitulo_existente = None
+        for d in divisiones_dict:
+            if d.get('tipo') == 'capitulo' and d.get('numero') == numero:
+                capitulo_existente = d
+                break
 
-        # Crear la regla
-        max_orden_regla += 1
-        nuevas_reglas.append({
-            'numero': numero,
-            'titulo': regla.get('titulo'),
-            'contenido': regla.get('contenido', ''),
-            'referencias': regla.get('referencias'),
-            'division_path': path_capitulo,
-            'orden_global': max_orden_regla,
-            'tipo': 'regla',
-            'calidad': {
-                'estatus': 'ok',
-                'issues': [],
-                'fuente': 'pdf',  # Marcar que viene del PDF
-            },
-            'fracciones': [],  # Las reglas del PDF no tienen fracciones parseadas
-        })
+        if capitulo_existente:
+            # El capítulo ya existe - actualizar nombre si es mejor
+            nombre_actual = capitulo_existente.get('nombre', '')
+            if nombre_actual in ('', None, f'(Capítulo inferido)', f'Regla {numero}.'):
+                # El nombre actual es genérico, actualizar con el del PDF
+                capitulo_existente['nombre'] = nombre_capitulo
+                # También actualizar path_texto para consistencia
+                capitulo_existente['path_texto'] = path_capitulo
+        else:
+            # Crear el capítulo virtual
+            max_orden_div += 1
+            nuevas_divisiones.append({
+                'tipo': 'capitulo',
+                'numero': numero,
+                'numero_orden': float(numero),  # Para ordenar correctamente
+                'nombre': nombre_capitulo,
+                'path_texto': path_capitulo,
+                'orden_global': max_orden_div,
+            })
+
+        # Verificar si la regla ya existe
+        regla_existente = None
+        for r in reglas_dict:
+            if r.get('numero') == numero:
+                regla_existente = r
+                break
+
+        if regla_existente:
+            # La regla ya existe - actualizar division_path si es necesario
+            # y mejorar título si está vacío
+            if not regla_existente.get('titulo'):
+                regla_existente['titulo'] = regla.get('titulo')
+            # Actualizar division_path al capítulo correcto (puede haber cambiado)
+            regla_existente['division_path'] = path_capitulo
+        else:
+            # Crear la regla
+            max_orden_regla += 1
+            nuevas_reglas.append({
+                'numero': numero,
+                'titulo': regla.get('titulo'),
+                'contenido': regla.get('contenido', ''),
+                'referencias': regla.get('referencias'),
+                'division_path': path_capitulo,
+                'orden_global': max_orden_regla,
+                'tipo': 'regla',
+                'calidad': {
+                    'estatus': 'ok',
+                    'issues': [],
+                    'fuente': 'pdf',  # Marcar que viene del PDF
+                },
+                'fracciones': [],  # Las reglas del PDF no tienen fracciones parseadas
+            })
 
     # Agregar a las listas existentes
     divisiones_dict.extend(nuevas_divisiones)
