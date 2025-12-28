@@ -225,8 +225,34 @@ def get_connection():
     return psycopg2.connect(**DB_CONFIG)
 
 
-def extraer_todas_fracciones(conn):
-    """Extrae fracciones de todos los artículos."""
+def calcular_contenido_limpio(elementos):
+    """
+    Calcula el contenido limpio: solo párrafos antes de la primera fracción.
+
+    Esto evita duplicación cuando el artículo tiene fracciones que se muestran
+    separadamente en la UI.
+    """
+    contenido_partes = []
+
+    for elem in elementos:
+        if elem['tipo'] == 'parrafo':
+            contenido_partes.append(elem['contenido'])
+        else:
+            # Primera fracción encontrada, detenerse
+            break
+
+    return '\n\n'.join(contenido_partes) if contenido_partes else ''
+
+
+def extraer_todas_fracciones(conn, actualizar_contenido=True):
+    """
+    Extrae fracciones de todos los artículos.
+
+    Args:
+        conn: Conexión a PostgreSQL
+        actualizar_contenido: Si True, actualiza articulos.contenido para quitar
+                             el texto de las fracciones (evita duplicación en UI)
+    """
     cur = conn.cursor()
 
     # Obtener todos los artículos
@@ -247,6 +273,7 @@ def extraer_todas_fracciones(conn):
 
     total_fracciones = 0
     articulos_con_fracciones = 0
+    articulos_actualizados = 0
     stats_por_tipo = defaultdict(int)
 
     for art_id, ley, numero, contenido in articulos:
@@ -262,6 +289,15 @@ def extraer_todas_fracciones(conn):
             continue
 
         articulos_con_fracciones += 1
+
+        # Calcular contenido limpio (solo intro, sin fracciones)
+        if actualizar_contenido:
+            contenido_limpio = calcular_contenido_limpio(elementos)
+            if contenido_limpio != contenido:
+                cur.execute("""
+                    UPDATE articulos SET contenido = %s WHERE id = %s
+                """, (contenido_limpio, art_id))
+                articulos_actualizados += 1
 
         # Mapeo de índice local a ID de BD para resolver padres
         idx_a_id = {}
@@ -302,22 +338,34 @@ def extraer_todas_fracciones(conn):
     return {
         'total_elementos': total_fracciones,
         'articulos_con_estructura': articulos_con_fracciones,
+        'articulos_contenido_actualizado': articulos_actualizados,
         'por_tipo': dict(stats_por_tipo)
     }
 
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description='Extrae fracciones de artículos')
+    parser.add_argument('--no-limpiar', action='store_true',
+                       help='No actualizar contenido de artículos (mantener duplicados)')
+    parser.add_argument('--solo-ley', type=str,
+                       help='Procesar solo una ley específica (ej: CFF)')
+    args = parser.parse_args()
+
     print("Extrayendo fracciones de artículos...")
     print("=" * 50)
+    if not args.no_limpiar:
+        print("NOTA: Se limpiará el contenido de artículos (--no-limpiar para desactivar)")
 
     conn = get_connection()
 
-    stats = extraer_todas_fracciones(conn)
+    stats = extraer_todas_fracciones(conn, actualizar_contenido=not args.no_limpiar)
 
     print("\n" + "=" * 50)
     print("RESUMEN")
     print("=" * 50)
     print(f"Artículos con estructura: {stats['articulos_con_estructura']}")
+    print(f"Artículos actualizados: {stats['articulos_contenido_actualizado']}")
     print(f"Total elementos extraídos: {stats['total_elementos']}")
     print("\nPor tipo:")
     for tipo, count in sorted(stats['por_tipo'].items(), key=lambda x: -x[1]):
