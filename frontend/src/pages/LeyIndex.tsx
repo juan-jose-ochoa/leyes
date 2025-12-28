@@ -612,7 +612,11 @@ function VerificacionIndicePanel({ verificacionIndice, reglasFaltantes, division
 
   // Calcular totales
   const totalFaltantes = verificacionIndice.reduce((sum, v) => sum + v.faltantes, 0)
-  const hayProblemas = totalFaltantes > 0
+  const totalExtras = verificacionIndice.reduce((sum, v) => sum + v.extras, 0)
+  const hayProblemas = totalFaltantes > 0 || totalExtras > 0
+
+  // Divisiones extras (en DB pero no en índice oficial)
+  const divisionesExtras = divisionesFaltantes.filter(d => d.estado === 'extra')
 
   // Nombres legibles para categorías
   const nombreCategoria: Record<string, string> = {
@@ -623,24 +627,33 @@ function VerificacionIndicePanel({ verificacionIndice, reglasFaltantes, division
     regla: 'Reglas',
   }
 
+  const soloExtras = totalExtras > 0 && totalFaltantes === 0
+
   return (
     <div className={clsx(
       'mb-6 p-4 rounded-lg border',
-      hayProblemas
+      totalFaltantes > 0
         ? 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800'
-        : 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800'
+        : soloExtras
+          ? 'bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800'
+          : 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800'
     )}>
       <div className="flex items-center justify-between mb-3">
         <h3 className={clsx(
           'text-sm font-semibold',
-          hayProblemas ? 'text-red-900 dark:text-red-100' : 'text-green-900 dark:text-green-100'
+          totalFaltantes > 0 ? 'text-red-900 dark:text-red-100' :
+          soloExtras ? 'text-amber-900 dark:text-amber-100' :
+          'text-green-900 dark:text-green-100'
         )}>
           Verificación contra índice oficial (PDF)
         </h3>
         {hayProblemas && (
           <button
             onClick={() => setShowDetails(!showDetails)}
-            className="text-xs font-medium text-red-700 dark:text-red-300 hover:underline"
+            className={clsx(
+              'text-xs font-medium hover:underline',
+              totalFaltantes > 0 ? 'text-red-700 dark:text-red-300' : 'text-amber-700 dark:text-amber-300'
+            )}
           >
             {showDetails ? 'Ocultar detalles' : 'Ver detalles'}
           </button>
@@ -649,50 +662,63 @@ function VerificacionIndicePanel({ verificacionIndice, reglasFaltantes, division
 
       {/* Resumen por categoría */}
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-3">
-        {verificacionIndice.map((v) => (
-          <div
-            key={v.categoria}
-            className={clsx(
-              'p-2 rounded text-center',
-              v.faltantes > 0
-                ? 'bg-red-100 dark:bg-red-900/30'
-                : 'bg-green-100 dark:bg-green-900/30'
-            )}
-          >
-            <div className="text-xs text-gray-600 dark:text-gray-400">
-              {nombreCategoria[v.categoria] || v.categoria}
-            </div>
-            <div className="flex items-center justify-center gap-1 mt-1">
-              <span className={clsx(
-                'text-lg font-bold',
-                v.faltantes > 0
-                  ? 'text-red-700 dark:text-red-400'
-                  : 'text-green-700 dark:text-green-400'
-              )}>
-                {v.total_importado}
-              </span>
-              <span className="text-xs text-gray-500">/{v.total_oficial}</span>
-            </div>
-            {v.faltantes > 0 && (
-              <div className="text-xs text-red-600 dark:text-red-400 mt-0.5">
-                -{v.faltantes} faltantes
+        {verificacionIndice.map((v) => {
+          const tieneError = v.faltantes > 0
+          const tieneExtras = v.extras > 0
+
+          return (
+            <div
+              key={v.categoria}
+              className={clsx(
+                'p-2 rounded text-center',
+                tieneError ? 'bg-red-100 dark:bg-red-900/30' :
+                tieneExtras ? 'bg-amber-100 dark:bg-amber-900/30' :
+                'bg-green-100 dark:bg-green-900/30'
+              )}
+            >
+              <div className="text-xs text-gray-600 dark:text-gray-400">
+                {nombreCategoria[v.categoria] || v.categoria}
               </div>
-            )}
-          </div>
-        ))}
+              <div className="flex items-center justify-center gap-1 mt-1">
+                <span className={clsx(
+                  'text-lg font-bold',
+                  tieneError ? 'text-red-700 dark:text-red-400' :
+                  tieneExtras ? 'text-amber-700 dark:text-amber-400' :
+                  'text-green-700 dark:text-green-400'
+                )}>
+                  {v.total_importado}
+                </span>
+                <span className="text-xs text-gray-500">/{v.total_oficial}</span>
+              </div>
+              {tieneError && (
+                <div className="text-xs text-red-600 dark:text-red-400 mt-0.5">
+                  -{v.faltantes} faltantes
+                </div>
+              )}
+              {tieneExtras && !tieneError && (
+                <div className="text-xs text-amber-600 dark:text-amber-400 mt-0.5">
+                  +{v.extras} extras
+                </div>
+              )}
+            </div>
+          )
+        })}
       </div>
 
       {/* Detalles expandidos */}
       {showDetails && (
-        <div className="border-t border-red-200 dark:border-red-700 pt-3 mt-3 space-y-3">
-          {/* Títulos/Divisiones faltantes */}
-          {divisionesFaltantes.length > 0 && (
+        <div className={clsx(
+          'border-t pt-3 mt-3 space-y-3',
+          totalFaltantes > 0 ? 'border-red-200 dark:border-red-700' : 'border-amber-200 dark:border-amber-700'
+        )}>
+          {/* Divisiones faltantes */}
+          {divisionesFaltantes.filter(d => d.estado === 'faltante').length > 0 && (
             <div>
               <h4 className="text-xs font-medium text-red-800 dark:text-red-300 mb-2">
                 Divisiones faltantes:
               </h4>
               <div className="max-h-32 overflow-y-auto space-y-1">
-                {divisionesFaltantes.map((d, idx) => (
+                {divisionesFaltantes.filter(d => d.estado === 'faltante').map((d, idx) => (
                   <div
                     key={`${d.tipo}-${d.numero}-${idx}`}
                     className="flex items-center gap-2 p-2 bg-red-100 dark:bg-red-900/30 rounded text-xs"
@@ -706,6 +732,36 @@ function VerificacionIndicePanel({ verificacionIndice, reglasFaltantes, division
                     </span>
                   </div>
                 ))}
+              </div>
+            </div>
+          )}
+
+          {/* Divisiones extras (no están en índice oficial) */}
+          {divisionesExtras.length > 0 && (
+            <div>
+              <h4 className="text-xs font-medium text-amber-800 dark:text-amber-300 mb-2">
+                Divisiones extras (no en índice oficial): {divisionesExtras.length}
+              </h4>
+              <div className="max-h-32 overflow-y-auto space-y-1">
+                {divisionesExtras.slice(0, 20).map((d, idx) => (
+                  <div
+                    key={`extra-${d.tipo}-${d.numero}-${idx}`}
+                    className="flex items-center gap-2 p-2 bg-amber-100 dark:bg-amber-900/30 rounded text-xs"
+                  >
+                    <AlertTriangle className="h-3.5 w-3.5 text-amber-500" />
+                    <span className="font-medium text-gray-900 dark:text-white capitalize">
+                      {d.tipo} {d.numero}
+                    </span>
+                    <span className="text-gray-600 dark:text-gray-400 truncate">
+                      {d.nombre_importado}
+                    </span>
+                  </div>
+                ))}
+                {divisionesExtras.length > 20 && (
+                  <div className="text-xs text-amber-600 dark:text-amber-400 py-1">
+                    ... y {divisionesExtras.length - 20} más
+                  </div>
+                )}
               </div>
             </div>
           )}
