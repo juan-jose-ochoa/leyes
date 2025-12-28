@@ -178,10 +178,18 @@ def crear_divisiones_y_reglas_dos_niveles(divisiones_dict, reglas_dict):
         titulo_num = numero.split('.')[0]  # e.g., "1"
         titulo_nombre = titulos_nombres.get(titulo_num, f'Título {titulo_num}')
 
-        # Crear path para el título (si no existe, será creado)
-        path_titulo = f"Título {titulo_num}"
+        # Buscar el path_texto real del título padre (puede ser TITULO X o Título X)
+        path_titulo = None
+        for d in divisiones_dict + nuevas_divisiones:
+            if d.get('tipo') == 'titulo' and d.get('numero') == titulo_num:
+                path_titulo = d.get('path_texto')
+                break
 
-        # Crear path para el capítulo virtual
+        # Si no existe el título, usar formato estándar
+        if not path_titulo:
+            path_titulo = f"Título {titulo_num}"
+
+        # Crear path para el capítulo virtual usando el path real del padre
         path_capitulo = f"{path_titulo} > Capítulo {numero}"
 
         # Nombre del capítulo = nombre de la regla
