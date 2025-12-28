@@ -302,7 +302,19 @@ def extraer_todas_fracciones(conn, actualizar_contenido=True):
         # Mapeo de índice local a ID de BD para resolver padres
         idx_a_id = {}
 
+        # Encontrar índice del primer elemento estructurado (no párrafo)
+        primer_estructurado = None
         for i, elem in enumerate(elementos):
+            if elem['tipo'] != 'parrafo':
+                primer_estructurado = i
+                break
+
+        for i, elem in enumerate(elementos):
+            # Saltar párrafos introductorios (antes de la primera fracción)
+            # Ya están en articulos.contenido, no duplicar en fracciones
+            if elem['tipo'] == 'parrafo' and primer_estructurado is not None and i < primer_estructurado:
+                continue
+
             # Resolver padre_idx a padre_id
             padre_id = None
             if elem['padre_idx'] is not None and elem['padre_idx'] in idx_a_id:

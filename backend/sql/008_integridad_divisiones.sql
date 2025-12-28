@@ -116,10 +116,10 @@ RETURNS TRIGGER AS $$
 DECLARE
     padre_tipo VARCHAR(20);
 BEGIN
-    -- Si no tiene padre, solo puede ser libro o título
+    -- Si no tiene padre, puede ser libro, título o capítulo (algunas leyes no tienen títulos)
     IF NEW.padre_id IS NULL THEN
-        IF NEW.tipo NOT IN ('libro', 'titulo') THEN
-            RAISE EXCEPTION '% debe tener padre_id (solo libro/titulo pueden ser raíz)', NEW.tipo;
+        IF NEW.tipo NOT IN ('libro', 'titulo', 'capitulo') THEN
+            RAISE EXCEPTION '% debe tener padre_id (solo libro/titulo/capitulo pueden ser raíz)', NEW.tipo;
         END IF;
         RETURN NEW;
     END IF;
@@ -133,15 +133,16 @@ BEGIN
         RAISE EXCEPTION 'padre_id % no existe', NEW.padre_id;
     END IF;
 
-    -- Validar jerarquía según tipo
+    -- Validar jerarquía según tipo (flexible para diferentes estructuras de leyes)
     CASE NEW.tipo
         WHEN 'titulo' THEN
             IF padre_tipo NOT IN ('libro') THEN
                 RAISE EXCEPTION 'titulo debe tener padre libro, no %', padre_tipo;
             END IF;
         WHEN 'capitulo' THEN
-            IF padre_tipo NOT IN ('titulo') THEN
-                RAISE EXCEPTION 'capitulo debe tener padre titulo, no %', padre_tipo;
+            -- Capítulo puede tener padre título O ser raíz (leyes sin títulos como LIVA)
+            IF padre_tipo NOT IN ('titulo', 'libro') THEN
+                RAISE EXCEPTION 'capitulo debe tener padre titulo o libro, no %', padre_tipo;
             END IF;
         WHEN 'seccion' THEN
             IF padre_tipo NOT IN ('capitulo') THEN
@@ -175,9 +176,10 @@ CREATE TRIGGER trg_divisiones_jerarquia
 ALTER TABLE divisiones DROP CONSTRAINT IF EXISTS divisiones_padre_required;
 
 -- Crear constraint como NOT VALID (no valida datos existentes)
+-- Nota: capitulo también puede ser raíz (leyes sin títulos como LIVA)
 ALTER TABLE divisiones ADD CONSTRAINT divisiones_padre_required
 CHECK (
-    tipo IN ('libro', 'titulo') OR padre_id IS NOT NULL
+    tipo IN ('libro', 'titulo', 'capitulo') OR padre_id IS NOT NULL
 ) NOT VALID;
 
 -- NOTA: Para activar el constraint sobre datos existentes, ejecutar:
