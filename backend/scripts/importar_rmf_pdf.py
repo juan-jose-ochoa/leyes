@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Importador de RMF desde PDF (fuente única).
+Importador de RMF desde extractor híbrido.
 
-Lee el JSON extraído por pdf_extractor_v2.py y carga a PostgreSQL.
-No depende del DOCX - todo viene directamente del PDF oficial.
+Lee el JSON extraído por extractor_hibrido.py y carga a PostgreSQL.
+Usa múltiples fuentes: DOCX (títulos), PyMuPDF (contenido), pdftotext (validación).
 
 Uso:
     python importar_rmf_pdf.py [--limpiar]
@@ -28,7 +28,7 @@ except ImportError:
 # Directorios
 BASE_DIR = Path(__file__).parent.parent.parent
 RMF_DIR = BASE_DIR / "doc" / "rmf"
-JSON_PATH = RMF_DIR / "rmf_extraido_v2.json"
+JSON_PATH = RMF_DIR / "rmf_hibrido.json"
 
 # Cargar .env
 env_path = BASE_DIR / ".env"
@@ -62,7 +62,7 @@ def cargar_json():
     """Carga el JSON extraído del PDF."""
     if not JSON_PATH.exists():
         print(f"ERROR: No existe {JSON_PATH}")
-        print("Ejecuta primero: python scripts/rmf/pdf_extractor_v2.py")
+        print("Ejecuta primero: python scripts/rmf/extractor_hibrido.py")
         sys.exit(1)
 
     with open(JSON_PATH, 'r', encoding='utf-8') as f:
@@ -322,11 +322,14 @@ def insertar_reglas(cursor, ley_id, reglas, divisiones_ids):
         div_info = determinar_division(numero, divisiones_ids)
         div_id = div_info['id'] if div_info else None
 
-        # Datos de calidad
+        # Datos de calidad (incluye metadata del extractor híbrido)
+        metadata = regla.get('metadata', {})
         calidad = {
             'estatus': 'ok',
             'issues': [],
-            'fuente': 'pdf'
+            'fuente': 'hibrido',
+            'titulo_fuente': metadata.get('titulo_fuente', 'desconocido'),
+            'contenido_validado': metadata.get('contenido_validado', False)
         }
 
         # Insertar artículo (regla) con division_id
@@ -447,7 +450,7 @@ def main():
     limpiar = '--limpiar' in sys.argv
 
     print("=" * 60)
-    print("IMPORTADOR RMF DESDE PDF")
+    print("IMPORTADOR RMF (EXTRACTOR HÍBRIDO)")
     print("=" * 60)
 
     # Cargar JSON
@@ -456,8 +459,10 @@ def main():
     estructura = data.get('estructura', {})
     reglas = data.get('reglas', [])
 
-    print(f"   Estructura: {data.get('stats', {})}")
+    stats = data.get('estadisticas', {})
     print(f"   Reglas: {len(reglas)}")
+    print(f"   Títulos: DOCX={stats.get('titulos', {}).get('docx', 0)}, PyMuPDF={stats.get('titulos', {}).get('pymupdf', 0)}, generados={stats.get('titulos', {}).get('generados', 0)}")
+    print(f"   Contenido validado: {stats.get('contenido_validado', 0)}/{len(reglas)}")
 
     # Conectar a PostgreSQL
     print("\n2. Conectando a PostgreSQL...")

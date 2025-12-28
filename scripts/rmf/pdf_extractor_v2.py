@@ -507,6 +507,91 @@ class PDFExtractorV2:
 
         return reglas
 
+    def _encontrar_inicio_titulo_siguiente(self, texto: str, pos_numero: int) -> int:
+        """
+        Encuentra dónde empieza el título de la siguiente regla.
+
+        En el PDF, la estructura de una regla es:
+        - Nota de reforma (opcional): "- Reformada en la..."
+        - Título de la regla: "Información que deben contener..."
+        - Número standalone: "2.2.3."
+        - Contenido de la regla
+
+        Esta función retrocede desde pos_numero para encontrar
+        dónde empieza el título (que es el fin del contenido anterior).
+        """
+        # Obtener texto antes del número de la siguiente regla
+        texto_antes = texto[:pos_numero]
+        lineas = texto_antes.split('\n')
+
+        # Buscar hacia atrás la última línea de contenido real
+        # (que termina con puntuación típica: . ; : ! ? ) )
+        indice_ultimo_contenido = len(lineas) - 1  # Por defecto, última línea
+
+        for i in range(len(lineas) - 1, max(len(lineas) - 50, -1), -1):
+            linea = lineas[i].strip()
+
+            if not linea:
+                continue
+
+            # Marcadores que nunca son contenido
+            if linea.startswith('[PAGE:'):
+                continue
+            if 'Página' in linea and 'de' in linea:
+                continue
+            # NOTA de pie de página (se repite en cada página, puede ocupar varias líneas)
+            if 'NOTA:' in linea or 'Este documento constituye' in linea:
+                continue
+            if 'Diario Oficial de la Federación' in linea:
+                continue
+            if 'sustentar legalmente' in linea or 'Contribuyente' in linea:
+                continue
+            if 'Resolución Miscelánea' in linea or 'resoluciones publicadas' in linea:
+                continue
+            if 'texto actualizado' in linea or 'compilación de' in linea:
+                continue
+            if 'artículo 5 de la Ley Federal' in linea:
+                continue
+
+            # Líneas que son parte del header de la siguiente regla
+            if linea.startswith('-') and ('Reformada' in linea or 'Adicionada' in linea or 'Derogada' in linea):
+                continue
+            if linea.startswith('Regla'):
+                continue
+
+            # Encabezados de estructura (Título, Capítulo, Sección, Subsección)
+            if re.match(r'^Título\s+\d+\.', linea, re.IGNORECASE):
+                continue
+            if re.match(r'^Capítulo\s+\d+\.\d+', linea, re.IGNORECASE):
+                continue
+            if re.match(r'^Sección\s+\d+\.\d+\.\d+', linea, re.IGNORECASE):
+                continue
+            if re.match(r'^Subsección\s+\d+\.\d+\.\d+\.\d+', linea, re.IGNORECASE):
+                continue
+
+            # Si la línea termina con puntuación de contenido, es contenido real
+            if (linea.endswith('.') or
+                linea.endswith(';') or
+                linea.endswith(':') or
+                linea.endswith(')') or
+                linea.endswith('"')):
+                indice_ultimo_contenido = i
+                break
+
+            # Si la línea NO termina con puntuación pero es corta,
+            # probablemente es un título de la siguiente regla
+            if len(linea) < 120 and linea[0].isupper():
+                # Seguir buscando hacia atrás
+                continue
+
+            # Otros casos: consideramos que es contenido
+            indice_ultimo_contenido = i
+            break
+
+        # Calcular posición incluyendo hasta la línea de contenido encontrada
+        lineas_a_conservar = lineas[:indice_ultimo_contenido + 1]
+        return len('\n'.join(lineas_a_conservar))
+
     def _extraer_regla_v2(self, numero: str, pagina: int,
                          siguiente_numero: Optional[str] = None) -> Optional[Regla]:
         """Extrae una regla usando el patrón de número standalone."""
@@ -584,14 +669,19 @@ class PDFExtractorV2:
             patron_sig = re.compile(rf'^{re.escape(siguiente_numero)}\.\s*$', re.MULTILINE)
             match_sig = patron_sig.search(texto_despues)
             if match_sig:
-                # El contenido termina unas líneas antes del siguiente número (donde está su título)
-                fin_contenido = match_sig.start()
+                # El título de la siguiente regla está ANTES del número
+                # Retroceder para encontrar dónde empieza el título
+                fin_contenido = self._encontrar_inicio_titulo_siguiente(
+                    texto_despues, match_sig.start()
+                )
         else:
             # Buscar cualquier número de regla
             patron_cualquier = re.compile(r'^\d{1,2}\.\d{1,2}(?:\.\d{1,3})?\.\s*$', re.MULTILINE)
             match_cualquier = patron_cualquier.search(texto_despues)
             if match_cualquier:
-                fin_contenido = match_cualquier.start()
+                fin_contenido = self._encontrar_inicio_titulo_siguiente(
+                    texto_despues, match_cualquier.start()
+                )
 
         contenido_raw = texto_despues[:fin_contenido]
 
@@ -614,36 +704,18 @@ class PDFExtractorV2:
                 continue
 
             # Detectar referencias (al final)
+            # Referencias empiezan con códigos de ley: CFF, LISR, LIVA, etc.
             if re.match(r'^(CFF|LISR|LIVA|LIEPS|LIC|LFD|RCFF|RLISR|RMF|Decreto|RISAT)', linea_strip):
                 referencias_encontradas.insert(0, linea_strip)
                 encontro_referencias = True
-            elif encontro_referencias and re.match(r'^[\d\-,\s\.;A-Za-z]+$', linea_strip) and len(linea_strip) < 100:
+            elif encontro_referencias and len(linea_strip) < 40 and re.match(r'^[\d\-,\s\.;o°]+$', linea_strip):
+                # Continuación de referencias: solo números, comas, guiones (ej: "29, 31, 42-A")
                 referencias_encontradas.insert(0, linea_strip)
             else:
                 contenido_lineas.insert(0, linea)
                 encontro_referencias = False
 
         contenido = '\n'.join(contenido_lineas).strip()
-
-        # Limpiar título de siguiente regla que quedó al final del contenido
-        # Buscar y eliminar líneas que parecen títulos de la siguiente regla
-        lineas_final = contenido.split('\n')
-        while lineas_final:
-            ultima = lineas_final[-1].strip()
-            if not ultima:
-                lineas_final.pop()
-                continue
-            # Si la última línea parece un título de regla (corta, capitalizada, sin puntuación al final)
-            if (len(ultima) < 100 and
-                ultima[0].isupper() and
-                not ultima.endswith('.') and
-                not re.match(r'^\d', ultima) and
-                not any(x in ultima for x in ['CFF', 'LISR', 'LIVA', 'para', 'que', 'del', 'los'])):
-                lineas_final.pop()
-            else:
-                break
-
-        contenido = '\n'.join(lineas_final).strip()
 
         if referencias_encontradas:
             referencias = ' '.join(referencias_encontradas)
