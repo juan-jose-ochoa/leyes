@@ -112,6 +112,143 @@ def insertar_ley_rmf(cursor, rmf_info):
     return cursor.fetchone()[0]
 
 
+def cargar_reglas_dos_niveles():
+    """
+    Carga las reglas de dos niveles extraídas del PDF.
+
+    Estas reglas (formato X.Y) pertenecen a títulos sin capítulos:
+    - Título 1: reglas 1.1-1.11
+    - Título 6: regla 6.1
+    - Título 7: reglas 7.1-7.40
+    - Título 8: reglas 8.1-8.7
+    - Título 9: reglas 9.1-9.31
+    - Título 10: reglas 10.1-10.33
+    """
+    json_path = RMF_DIR / "reglas_dos_niveles.json"
+
+    if not json_path.exists():
+        print(f"   ADVERTENCIA: No existe {json_path}")
+        print("   Ejecuta: python scripts/rmf/pdf_extractor.py")
+        return []
+
+    with open(json_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    return data.get('reglas', [])
+
+
+def crear_divisiones_y_reglas_dos_niveles(divisiones_dict, reglas_dict):
+    """
+    Crea capítulos virtuales y reglas para las reglas de dos niveles.
+
+    Para cada regla X.Y:
+    - Crea un capítulo virtual "Capítulo X.Y" bajo el título correspondiente
+    - Agrega la regla bajo ese capítulo virtual
+
+    Estructura resultante:
+        Título X > Capítulo X.Y [nombre de la regla]
+            └── Regla X.Y [nombre de la regla]
+    """
+    reglas_pdf = cargar_reglas_dos_niveles()
+
+    if not reglas_pdf:
+        return divisiones_dict, reglas_dict
+
+    print(f"   Agregando {len(reglas_pdf)} reglas de dos niveles del PDF...")
+
+    # Mapeo de número de título -> nombre del título
+    titulos_nombres = {
+        '1': 'Disposiciones Generales',
+        '6': 'Contribuciones de Mejoras',
+        '7': 'Derechos',
+        '8': 'Del Impuesto Sobre la Renta para el Régimen de Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras',
+        '9': 'Del Impuesto Especial sobre Producción y Servicios',
+        '10': 'De Hidrocarburos',
+    }
+
+    # Buscar el mayor orden_global actual para continuar la numeración
+    max_orden_div = max((d.get('orden_global', 0) or 0 for d in divisiones_dict), default=0)
+    max_orden_regla = max((r.get('orden_global', 0) or 0 for r in reglas_dict), default=0)
+
+    nuevas_divisiones = []
+    nuevas_reglas = []
+
+    for regla in reglas_pdf:
+        numero = regla['numero']  # e.g., "1.1"
+        titulo_num = numero.split('.')[0]  # e.g., "1"
+        titulo_nombre = titulos_nombres.get(titulo_num, f'Título {titulo_num}')
+
+        # Crear path para el título (si no existe, será creado)
+        path_titulo = f"Título {titulo_num}"
+
+        # Crear path para el capítulo virtual
+        path_capitulo = f"{path_titulo} > Capítulo {numero}"
+
+        # Nombre del capítulo = nombre de la regla
+        nombre_capitulo = regla.get('titulo') or f"Regla {numero}"
+
+        # Crear división para el título si no existe
+        titulo_existente = any(
+            d.get('path_texto') == path_titulo
+            for d in divisiones_dict + nuevas_divisiones
+        )
+
+        if not titulo_existente:
+            max_orden_div += 1
+            nuevas_divisiones.append({
+                'tipo': 'titulo',
+                'numero': titulo_num,
+                'numero_orden': int(titulo_num),
+                'nombre': titulo_nombre,
+                'path_texto': path_titulo,
+                'orden_global': max_orden_div,
+            })
+
+        # Crear el capítulo virtual
+        max_orden_div += 1
+        nuevas_divisiones.append({
+            'tipo': 'capitulo',
+            'numero': numero,
+            'numero_orden': float(numero),  # Para ordenar correctamente
+            'nombre': nombre_capitulo,
+            'path_texto': path_capitulo,
+            'orden_global': max_orden_div,
+        })
+
+        # Crear la regla
+        max_orden_regla += 1
+        nuevas_reglas.append({
+            'numero': numero,
+            'titulo': regla.get('titulo'),
+            'contenido': regla.get('contenido', ''),
+            'referencias': regla.get('referencias'),
+            'division_path': path_capitulo,
+            'orden_global': max_orden_regla,
+            'tipo': 'regla',
+            'calidad': {
+                'estatus': 'ok',
+                'issues': [],
+                'fuente': 'pdf',  # Marcar que viene del PDF
+            },
+            'fracciones': [],  # Las reglas del PDF no tienen fracciones parseadas
+        })
+
+    # Agregar a las listas existentes
+    divisiones_dict.extend(nuevas_divisiones)
+    reglas_dict.extend(nuevas_reglas)
+
+    # Reportar por título
+    por_titulo = {}
+    for r in nuevas_reglas:
+        t = r['numero'].split('.')[0]
+        por_titulo[t] = por_titulo.get(t, 0) + 1
+
+    for t in sorted(por_titulo.keys(), key=int):
+        print(f"      Título {t}: {por_titulo[t]} reglas")
+
+    return divisiones_dict, reglas_dict
+
+
 def eliminar_divisiones_duplicadas(divisiones):
     """
     Elimina divisiones duplicadas, manteniendo la primera instancia.
@@ -411,6 +548,12 @@ def procesar_rmf(cursor, docx_path):
         }
         for regla in resultado.reglas
     ]
+
+    # Agregar reglas de dos niveles del PDF (Títulos 1, 6, 7, 8, 9, 10)
+    # Estas reglas tienen formato X.Y y no están en el DOCX parseado
+    divisiones_dict, reglas_dict = crear_divisiones_y_reglas_dos_niveles(
+        divisiones_dict, reglas_dict
+    )
 
     # Preparar info para insertar
     rmf_info = {
