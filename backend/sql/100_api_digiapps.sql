@@ -253,7 +253,31 @@ RETURNS TABLE (
     primer_articulo VARCHAR
 ) AS $$
 BEGIN
+    -- Usa CTE recursivo para contar artículos en toda la jerarquía descendiente
+    -- Funciona para cualquier profundidad: libro->titulo->capitulo->seccion->etc
     RETURN QUERY
+    WITH RECURSIVE descendientes AS (
+        -- Caso base: la división misma
+        SELECT d.id as raiz_id, d.id as hijo_id, d.ley
+        FROM leyesmx.divisiones d
+        WHERE d.ley = ley_codigo
+
+        UNION ALL
+
+        -- Recursión: hijos de cada división
+        SELECT anc.raiz_id, child.id, child.ley
+        FROM descendientes anc
+        JOIN leyesmx.divisiones child ON child.padre_id = anc.hijo_id AND child.ley = anc.ley
+    ),
+    conteos AS (
+        -- Contar artículos de todas las divisiones descendientes
+        SELECT
+            anc.raiz_id,
+            COUNT(a.id) as total
+        FROM descendientes anc
+        JOIN leyesmx.articulos a ON a.division_id = anc.hijo_id AND a.ley = anc.ley
+        GROUP BY anc.raiz_id
+    )
     SELECT
         d.id,
         d.tipo,
@@ -261,14 +285,18 @@ BEGIN
         d.nombre,
         d.tipo || ' ' || d.numero || COALESCE(' - ' || d.nombre, ''),
         CASE d.tipo
+            WHEN 'libro' THEN 0::SMALLINT
             WHEN 'titulo' THEN 1::SMALLINT
             WHEN 'capitulo' THEN 2::SMALLINT
             WHEN 'seccion' THEN 3::SMALLINT
-            ELSE 0::SMALLINT
+            ELSE 4::SMALLINT
         END,
-        (SELECT COUNT(*) FROM leyesmx.articulos a WHERE a.division_id = d.id AND a.ley = d.ley),
-        (SELECT MIN(a.numero) FROM leyesmx.articulos a WHERE a.division_id = d.id AND a.ley = d.ley)
+        COALESCE(c.total, 0)::BIGINT,
+        (SELECT MIN(a.numero)::VARCHAR
+         FROM leyesmx.articulos a
+         WHERE a.division_id = d.id AND a.ley = d.ley)
     FROM leyesmx.divisiones d
+    LEFT JOIN conteos c ON c.raiz_id = d.id
     WHERE d.ley = ley_codigo
     ORDER BY d.numero_orden;
 END;

@@ -1,5 +1,32 @@
 # LeyesMX - Notas para Claude
 
+## Reglas de Calidad de Código
+
+### FAIL FAST
+- **Validación BLOQUEA, no solo reporta** - Si algo falla, el proceso ABORTA
+- `importar.py` DEBE llamar a `validar.py` internamente antes de escribir
+- Si validación falla → importación ABORTA con código de error
+- Código con `# TODO` NO está terminado, NO se usa en producción
+
+### Definición de "Terminado"
+Un script NO está terminado si:
+- Tiene comentarios `TODO`, `FIXME`, `HACK`
+- Usa valores por defecto en lugar de lógica real (ej: `default_division_id`)
+- No tiene validación de entrada/salida
+- No tiene tests o verificación post-ejecución
+
+### Verificación Post-Importación
+Después de importar, SIEMPRE verificar integridad:
+```bash
+python scripts/leyesmx/verificar_bd.py CFF
+```
+Debe confirmar:
+- Cada artículo tiene el `division_id` correcto (no un default)
+- Conteo de artículos por capítulo coincide con `estructura_esperada`
+- No hay artículos huérfanos ni divisiones vacías
+
+---
+
 ## Flujo de Extracción e Importación
 
 El proceso sigue **5 etapas con aprobación manual**:
@@ -148,6 +175,18 @@ RESUMEN:
 python scripts/leyesmx/importar.py CFF --limpiar
 ```
 
+**El importador DEBE:**
+1. Ejecutar validación internamente ANTES de escribir
+2. Abortar si validación falla (exit code != 0)
+3. Usar `mapa_estructura.json` para asignar `division_id` correcto a cada artículo
+4. Ejecutar verificación post-importación automáticamente
+5. Reportar discrepancias entre BD y estructura esperada
+
+**NO debe:**
+- Usar `default_division_id` para todos los artículos
+- Tener código con `# TODO` pendientes
+- Proceder si hay errores de validación
+
 ---
 
 ## Scripts
@@ -156,8 +195,9 @@ python scripts/leyesmx/importar.py CFF --limpiar
 |--------|---------|-------------|
 | `extraer_mapa.py` | Extrae jerarquía del outline PDF | No |
 | `extraer.py` | Extrae contenido (párrafos) | No |
-| `validar.py` | Compara extracción vs estructura en BD | No |
-| `importar.py` | Carga a PostgreSQL | **Sí** |
+| `validar.py` | Compara extracción vs estructura esperada | No |
+| `verificar_bd.py` | Verifica integridad de datos en BD | No |
+| `importar.py` | Carga a PostgreSQL (llama validar internamente) | **Sí** |
 
 ---
 
@@ -259,5 +299,8 @@ El outline del PDF usa formato `Artículo_4o_A` que se normaliza a `4o-A`:
 - [x] ~~Cargar estructura a BD~~
 - [x] ~~Actualizar validar.py para usar BD~~
 - [x] ~~Corregir extracción de 8 artículos faltantes~~
+- [ ] **CRÍTICO: Corregir importar.py** - Eliminar `default_division_id`, usar mapa_estructura
+- [ ] **CRÍTICO: Crear verificar_bd.py** - Verificar integridad post-importación
+- [ ] Re-importar CFF con importador corregido
 - [ ] Agregar configuración para RMF2025
 - [ ] Implementar extracción de transitorios

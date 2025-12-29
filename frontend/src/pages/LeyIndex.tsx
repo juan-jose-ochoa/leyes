@@ -44,19 +44,10 @@ function agruparPorTitulo(
   let grupoActual: GrupoTitulo | null = null
 
   // Convertir divisiones existentes a DivisionConEstado
+  // Usar id como clave única (no tipo-numero que se repite entre títulos)
   const divsExistentes: DivisionConEstado[] = divisiones
     .filter((div) => div.total_articulos > 0 || div.primer_articulo)
-    .reduce((acc, div) => {
-      const key = `${div.tipo}-${div.numero}`
-      const existing = acc.find(d => `${d.tipo}-${d.numero}` === key)
-      if (!existing) {
-        acc.push({ ...div, esFaltante: false })
-      } else if (div.total_articulos > existing.total_articulos) {
-        const idx = acc.indexOf(existing)
-        acc[idx] = { ...div, esFaltante: false }
-      }
-      return acc
-    }, [] as DivisionConEstado[])
+    .map(div => ({ ...div, esFaltante: false }))
 
   // Crear set de divisiones existentes para evitar duplicados
   const existentesSet = new Set(divsExistentes.map(d => `${d.tipo}-${d.numero}`))
