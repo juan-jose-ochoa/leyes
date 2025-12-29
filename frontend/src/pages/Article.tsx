@@ -190,18 +190,18 @@ export default function Article() {
       {/* Contenido principal */}
       <div className="card">
         <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
-          {/* Contenido introductorio (siempre mostrar si existe) */}
-          {articulo.contenido && articulo.contenido.trim() && (
-            articulo.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
-              <p key={`intro-${i}`} className="mb-4 leading-relaxed">
-                {paragraph}
-              </p>
-            ))
-          )}
-
-          {/* Fracciones (si existen) */}
-          {fracciones && fracciones.length > 0 && (
+          {/* Si hay fracciones, mostrar todo via FraccionesView (incluye párrafos texto) */}
+          {/* Si no hay fracciones, mostrar contenido directamente */}
+          {fracciones && fracciones.length > 0 ? (
             <FraccionesView fracciones={fracciones} />
+          ) : (
+            articulo.contenido && articulo.contenido.trim() && (
+              articulo.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
+                <p key={`intro-${i}`} className="mb-4 leading-relaxed">
+                  {paragraph}
+                </p>
+              ))
+            )
           )}
         </div>
 

@@ -42,9 +42,13 @@ SELECT
     a.titulo,
     d.tipo || ' ' || d.numero as ubicacion,
     a.orden,
+    -- Solo párrafos introductorios (texto a nivel artículo, sin padre)
     (SELECT string_agg(p.contenido, E'\n\n' ORDER BY p.numero)
      FROM leyesmx.parrafos p
-     WHERE p.ley = a.ley AND p.articulo_id = a.id) as contenido,
+     WHERE p.ley = a.ley
+       AND p.articulo_id = a.id
+       AND p.padre_numero IS NULL
+       AND p.tipo = 'texto') as contenido,
     a.tipo = 'transitorio' as es_transitorio,
     a.reformas
 FROM leyesmx.articulos a
@@ -399,8 +403,13 @@ BEGIN
         a.id,
         a.numero,
         a.titulo,
+        -- Solo párrafos introductorios (texto a nivel artículo, sin padre)
         (SELECT string_agg(p.contenido, E'\n\n' ORDER BY p.numero)
-         FROM leyesmx.parrafos p WHERE p.ley = a.ley AND p.articulo_id = a.id),
+         FROM leyesmx.parrafos p
+         WHERE p.ley = a.ley
+           AND p.articulo_id = a.id
+           AND p.padre_numero IS NULL
+           AND p.tipo = 'texto'),
         a.tipo = 'transitorio',
         a.reformas,
         a.tipo,
@@ -417,6 +426,7 @@ GRANT EXECUTE ON FUNCTION leyesmx.articulos_division TO web_anon;
 
 -- ============================================================
 -- Función: fracciones_articulo
+-- Retorna párrafos con nivel jerárquico calculado recursivamente
 -- ============================================================
 CREATE OR REPLACE FUNCTION leyesmx.fracciones_articulo(art_id INTEGER, p_ley VARCHAR DEFAULT NULL)
 RETURNS TABLE (
@@ -430,21 +440,53 @@ RETURNS TABLE (
 ) AS $$
 BEGIN
     RETURN QUERY
+    WITH RECURSIVE jerarquia AS (
+        -- Nivel 0: párrafos sin padre
+        SELECT
+            p.numero::INTEGER as id,
+            p.padre_numero,
+            p.tipo,
+            p.identificador,
+            p.contenido,
+            p.numero as orden,
+            0 as nivel,
+            p.ley,
+            p.articulo_id
+        FROM leyesmx.parrafos p
+        WHERE p.articulo_id = art_id
+          AND (p_ley IS NULL OR p.ley = p_ley)
+          AND p.padre_numero IS NULL
+
+        UNION ALL
+
+        -- Niveles siguientes: hijos de párrafos ya procesados
+        SELECT
+            p.numero::INTEGER,
+            p.padre_numero,
+            p.tipo,
+            p.identificador,
+            p.contenido,
+            p.numero,
+            j.nivel + 1,
+            p.ley,
+            p.articulo_id
+        FROM leyesmx.parrafos p
+        JOIN jerarquia j ON p.padre_numero = j.id
+                        AND p.ley = j.ley
+                        AND p.articulo_id = j.articulo_id
+        WHERE p.articulo_id = art_id
+          AND (p_ley IS NULL OR p.ley = p_ley)
+    )
     SELECT
-        p.numero::INTEGER as id,
-        p.padre_numero,
-        p.tipo,
-        p.identificador,
-        p.contenido,
-        p.numero,
-        CASE
-            WHEN p.padre_numero IS NULL THEN 0
-            ELSE 1
-        END
-    FROM leyesmx.parrafos p
-    WHERE p.articulo_id = art_id
-      AND (p_ley IS NULL OR p.ley = p_ley)
-    ORDER BY p.numero;
+        j.id,
+        j.padre_numero,
+        j.tipo,
+        j.identificador,
+        j.contenido,
+        j.orden,
+        j.nivel
+    FROM jerarquia j
+    ORDER BY j.orden;
 END;
 $$ LANGUAGE plpgsql STABLE;
 

@@ -24,20 +24,23 @@ export default function ArticleContent({ articuloId, contenido, ley }: ArticleCo
     )
   }
 
+  // Si hay fracciones, mostrar todo a través de FraccionesView (incluye párrafos texto)
+  // Si no hay fracciones, mostrar contenido directamente
+  const hasFracciones = fracciones && fracciones.length > 0
+
   return (
     <>
-      {/* Contenido introductorio (siempre mostrar si existe) */}
-      {contenido && contenido.trim() && (
-        contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
-          <p key={`intro-${i}`} className="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
-            {paragraph}
-          </p>
-        ))
-      )}
-
-      {/* Fracciones (si existen) */}
-      {fracciones && fracciones.length > 0 && (
+      {hasFracciones ? (
         <FraccionesView fracciones={fracciones} />
+      ) : (
+        /* Contenido sin fracciones (artículos simples) */
+        contenido && contenido.trim() && (
+          contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
+            <p key={`intro-${i}`} className="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
+              {paragraph}
+            </p>
+          ))
+        )
       )}
     </>
   )

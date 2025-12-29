@@ -36,7 +36,7 @@ function FraccionItem({ fraccion }: { fraccion: Fraccion }) {
     'border-l-3 border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30': tipo === 'inciso',
     'border-l-2 border-amber-400 bg-amber-50 dark:bg-amber-950/30': tipo === 'numeral',
     'border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950/30': tipo === 'apartado',
-    'border-l-2 border-gray-300 dark:border-gray-600': tipo === 'parrafo',
+    'border-l-2 border-gray-300 dark:border-gray-600': tipo === 'parrafo' || tipo === 'texto',
   })
 
   // Estilo del identificador según tipo
