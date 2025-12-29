@@ -192,10 +192,11 @@ def _extraer_articulo_interno(pdf, numero_articulo: str, quiet: bool) -> list[Pa
             match_inicio = patron_art.search(text)
             if match_inicio and not en_articulo:
                 en_articulo = True
-                # Extraer solo la parte desde el identificador
-                text = text[match_inicio.start():]
-                linea['text'] = text
-                todas_lineas.append(linea)
+                # Extraer contenido DESPUÉS del "Artículo XX."
+                text = text[match_inicio.end():].strip()
+                if text:  # Solo agregar si hay contenido después del encabezado
+                    linea['text'] = text
+                    todas_lineas.append(linea)
                 continue
 
             # Detectar fin (siguiente artículo)
@@ -272,17 +273,17 @@ def construir_jerarquia(lineas: list[dict], numero_articulo: str) -> list[Parraf
             buffer_x = x
             buffer_y = y
             buffer_tiene_id = True
+        elif x > buffer_x + X_TOLERANCE:
+            # X mayor = continuación indentada (prioridad sobre Y-gap)
+            buffer_texto += " " + text
+            buffer_y = y
         elif y_gap >= Y_PARAGRAPH_GAP and not es_continuacion_wrap(text):
-            # Y-gap significativo = nuevo párrafo (aunque X sea igual)
+            # Y-gap significativo = nuevo párrafo (solo si X no aumentó)
             lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
             buffer_texto = text
             buffer_x = x
             buffer_y = y
             buffer_tiene_id = False
-        elif x > buffer_x + X_TOLERANCE:
-            # X mayor = continuación indentada del elemento anterior
-            buffer_texto += " " + text
-            buffer_y = y  # Actualizar Y
         elif x < buffer_x - X_TOLERANCE:
             # X menor - podría ser wrap o nuevo elemento
             if es_continuacion_wrap(text):
