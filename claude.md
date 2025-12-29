@@ -299,8 +299,8 @@ El outline del PDF usa formato `Artículo_4o_A` que se normaliza a `4o-A`:
 - [x] ~~Cargar estructura a BD~~
 - [x] ~~Actualizar validar.py para usar BD~~
 - [x] ~~Corregir extracción de 8 artículos faltantes~~
-- [ ] **CRÍTICO: Corregir importar.py** - Eliminar `default_division_id`, usar mapa_estructura
-- [ ] **CRÍTICO: Crear verificar_bd.py** - Verificar integridad post-importación
-- [ ] Re-importar CFF con importador corregido
+- [x] ~~Corregir importar.py - usar estructura_esperada.json~~
+- [x] ~~Crear verificar_bd.py - verificación post-importación~~
+- [x] ~~Re-importar CFF con importador corregido~~
 - [ ] Agregar configuración para RMF2025
 - [ ] Implementar extracción de transitorios
