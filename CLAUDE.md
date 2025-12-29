@@ -1,33 +1,38 @@
 # Instrucciones para Claude
 
+## Reglas de interacción
+
+- **No hacer cambios sin solicitud.** Si el usuario pregunta algo, responde sin modificar código.
+- **Esperar confirmación antes de actuar.** Presenta opciones y espera que el usuario elija.
+
 ## Git
 
-- **No hacer commit a menos que se solicite explícitamente.** Espera a que el usuario diga "haz commit", "commit", o similar antes de ejecutar `git commit`.
-- **Protocolo de solicitud de commit**
-    - Junto con la solicitud de commit, siempre debo a presentar el resultado de la ejecución de los tests con **cero errores**. Si los test fallan, no debe de hacerse commit.
-    - Tampoco se toleran warnings del linter o del typescript, los warnings invitan a refactorizar el código. Indica los warnings encontrados o **cero warnings** en su defecto. No se aceptará la solicitud de commit con warnings.
+- **No hacer commit a menos que se solicite explícitamente.**
+- **Protocolo de commit:**
+  - Presentar resultado de tests con **cero errores**
+  - **Cero warnings** de linter/TypeScript
 
-## Proyecto
+## Base de datos
 
-Este proyecto parsea documentos legales mexicanos (leyes, RMF) y los carga a PostgreSQL para consulta.
+- **Ser selectivo por ley.** Solo afectar la ley específica, nunca otras.
+- **No ejecutar NI DELETE NI UPDATE directo en la BD.** Con el fin de prevenir errores, se debe de usar un procedimineto en la base de datos o un script local aprobado para la modificación de los datos.
 
-### Estructura principal
+## Calidad de código
 
-```
-scripts/
-├── rmf/                    # Módulo de parsing RMF
-│   ├── extractor.py        # Extracción de DOCX
-│   ├── parser.py           # Parsing estructural
-│   ├── validador.py        # Validación + segunda pasada
-│   └── models.py           # Dataclasses
-├── tests/                  # Tests pytest
-├── parsear_rmf.py          # CLI para parsear RMF
-├── cargar_rmf_db.py        # Carga JSON a PostgreSQL
-└── descargar_rmf.py        # Descarga RMF del SAT
-```
+### FAIL FAST
+- **Validación BLOQUEA, no solo reporta** - Si algo falla, el proceso ABORTA
+- `importar.py` DEBE llamar validación internamente antes de escribir
+- Si validación falla → importación ABORTA con código de error
 
-### Tests
+### Definición de "Terminado"
+Un script NO está terminado si:
+- Tiene comentarios `TODO`, `FIXME`, `HACK`
+- Usa valores por defecto en lugar de lógica real
+- No tiene validación de entrada/salida
+- No tiene tests o verificación post-ejecución
 
-```bash
-pytest scripts/tests/ -v
-```
+## Guías del proyecto
+
+- [PROYECTO.md](PROYECTO.md) - Arquitectura, scripts, base de datos, API
+- [DESARROLLO.md](DESARROLLO.md) - Flujo de trabajo e importación
+- [PRODUCCION.md](PRODUCCION.md) - Despliegue con Caddy
