@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
 import { Home, ChevronRight, BookOpen, ExternalLink, AlertTriangle, CheckCircle, XCircle, Filter, Eye, EyeOff, FileQuestion } from 'lucide-react'
-import { useDivisionPorTipoNumero, useArticulosDivision, useVerificacionDivision } from '@/hooks/useArticle'
+import { useDivisionPorPath, useArticulosDivision, useVerificacionDivision } from '@/hooks/useArticle'
 import ArticleContent from '@/components/ArticleContent'
 import ReferenciasList from '@/components/ReferenciasList'
 import type { RegistroCalidad, ArticuloDivision, VerificacionDivisionSimple } from '@/lib/api'
@@ -230,19 +230,21 @@ function VerificacionPanel({
 }
 
 export default function DivisionView() {
-  const { ley, numero } = useParams<{ ley: string; numero: string }>()
+  const { ley } = useParams<{ ley: string }>()
   const location = useLocation()
   const [soloIssues, setSoloIssues] = useState(false)
 
-  // Extraer tipo de la URL: /RMF2025/capitulo/1.9 → capitulo
-  const tipo = useMemo(() => {
+  // Extraer path jerárquico de la URL: /CFF/titulo/PRIMERO/capitulo/I → titulo/PRIMERO/capitulo/I
+  const divisionPath = useMemo(() => {
     const parts = location.pathname.split('/')
-    // parts = ['', 'RMF2025', 'capitulo', '1.9']
-    return parts[2] || null
+    // parts = ['', 'CFF', 'titulo', 'PRIMERO', 'capitulo', 'I']
+    // Tomar desde el índice 2 hasta el final
+    if (parts.length < 4) return null
+    return parts.slice(2).join('/')
   }, [location.pathname])
 
-  // Buscar división por tipo+numero (estable, no depende de IDs)
-  const { data: info, isLoading: loadingInfo } = useDivisionPorTipoNumero(ley || null, tipo, numero || null)
+  // Buscar división por path jerárquico completo
+  const { data: info, isLoading: loadingInfo } = useDivisionPorPath(ley || null, divisionPath)
   const divId = info?.id || null
   const { data: articulos, isLoading: loadingArticulos } = useArticulosDivision(divId, ley || undefined)
   const { data: verificacion } = useVerificacionDivision(divId)

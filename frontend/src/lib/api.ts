@@ -264,8 +264,8 @@ export interface DivisionBasica {
   nombre: string | null
 }
 
-export async function getDivisionPorPath(ley: string, path: string): Promise<DivisionBasica | null> {
-  const result = await fetchAPI<DivisionBasica[]>('/rpc/division_por_path', {
+export async function getDivisionPorPath(ley: string, path: string): Promise<DivisionInfo | null> {
+  const result = await fetchAPI<DivisionInfo[]>('/rpc/division_por_path', {
     method: 'POST',
     body: JSON.stringify({ p_ley: ley, p_path: path }),
   })

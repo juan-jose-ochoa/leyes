@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionPorTipoNumero, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, getVerificacionLey, getVerificacionDivision, getVerificacionIndice, getComparacionReglasIndice, getComparacionDivisionesIndice, buscarReferencias, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion, type VerificacionDivision, type VerificacionDivisionSimple, type VerificacionIndice, type ComparacionRegla, type ComparacionDivision, type ReferenciaLegal } from '@/lib/api'
+import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionPorTipoNumero, getDivisionPorPath, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, getVerificacionLey, getVerificacionDivision, getVerificacionIndice, getComparacionReglasIndice, getComparacionDivisionesIndice, buscarReferencias, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion, type VerificacionDivision, type VerificacionDivisionSimple, type VerificacionIndice, type ComparacionRegla, type ComparacionDivision, type ReferenciaLegal } from '@/lib/api'
 
 export function useArticle(id: number | null) {
   return useQuery<ArticuloDetalle | null>({
@@ -67,6 +67,18 @@ export function useDivisionPorTipoNumero(ley: string | null, tipo: string | null
       return getDivisionPorTipoNumero(ley, tipo, numero)
     },
     enabled: ley !== null && tipo !== null && numero !== null,
+    staleTime: 1000 * 60 * 60,
+  })
+}
+
+export function useDivisionPorPath(ley: string | null, path: string | null) {
+  return useQuery<DivisionInfo | null>({
+    queryKey: ['division-path', ley, path],
+    queryFn: async () => {
+      if (!ley || !path) return null
+      return getDivisionPorPath(ley, path)
+    },
+    enabled: ley !== null && path !== null,
     staleTime: 1000 * 60 * 60,
   })
 }

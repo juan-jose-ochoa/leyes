@@ -495,3 +495,105 @@ END;
 $$ LANGUAGE plpgsql STABLE;
 
 GRANT EXECUTE ON FUNCTION leyesmx.divisiones_articulo TO web_anon;
+
+-- ============================================================
+-- Función: division_por_path
+-- Resuelve división por path jerárquico: titulo/PRIMERO/capitulo/I
+-- ============================================================
+CREATE OR REPLACE FUNCTION leyesmx.division_por_path(
+    p_ley VARCHAR,
+    p_path TEXT
+)
+RETURNS TABLE (
+    id INTEGER,
+    ley_codigo VARCHAR,
+    ley_nombre TEXT,
+    ley_tipo VARCHAR,
+    div_tipo VARCHAR,
+    numero VARCHAR,
+    nombre TEXT,
+    path_texto TEXT,
+    total_articulos BIGINT
+) AS $$
+DECLARE
+    v_parts TEXT[];
+    v_current_id INTEGER := NULL;
+    v_tipo TEXT;
+    v_numero TEXT;
+    v_i INTEGER;
+BEGIN
+    -- Parsear path: "titulo/PRIMERO/capitulo/I" -> ['titulo','PRIMERO','capitulo','I']
+    v_parts := string_to_array(p_path, '/');
+
+    -- Validar que tengamos pares tipo/numero
+    IF array_length(v_parts, 1) IS NULL OR array_length(v_parts, 1) % 2 != 0 THEN
+        RETURN;
+    END IF;
+
+    -- Recorrer en pares (tipo, numero)
+    FOR v_i IN 1..array_length(v_parts, 1) BY 2 LOOP
+        v_tipo := v_parts[v_i];
+        v_numero := v_parts[v_i + 1];
+
+        -- Buscar división que coincida con tipo, numero y padre
+        SELECT d.id INTO v_current_id
+        FROM leyesmx.divisiones d
+        WHERE d.ley = p_ley
+          AND LOWER(d.tipo) = LOWER(v_tipo)
+          AND UPPER(d.numero) = UPPER(v_numero)
+          AND (
+              (v_current_id IS NULL AND d.padre_id IS NULL)
+              OR d.padre_id = v_current_id
+          );
+
+        -- Si no encontramos, retornar vacío
+        IF v_current_id IS NULL THEN
+            RETURN;
+        END IF;
+    END LOOP;
+
+    -- Retornar la división encontrada con su info completa
+    RETURN QUERY
+    WITH RECURSIVE ancestros AS (
+        SELECT d.id, d.padre_id, d.tipo, d.numero, d.nombre, 1 as nivel
+        FROM leyesmx.divisiones d
+        WHERE d.id = v_current_id AND d.ley = p_ley
+
+        UNION ALL
+
+        SELECT d.id, d.padre_id, d.tipo, d.numero, d.nombre, a.nivel + 1
+        FROM leyesmx.divisiones d
+        JOIN ancestros a ON d.id = a.padre_id
+        WHERE d.ley = p_ley
+    ),
+    path_completo AS (
+        SELECT string_agg(
+            a.tipo || ' ' || a.numero || COALESCE(' - ' || a.nombre, ''),
+            ' > ' ORDER BY a.nivel DESC
+        ) as path_texto
+        FROM ancestros a
+    ),
+    conteo AS (
+        SELECT COUNT(a.id) as total
+        FROM leyesmx.articulos a
+        WHERE a.division_id = v_current_id AND a.ley = p_ley
+    )
+    SELECT
+        d.id,
+        d.ley,
+        l.nombre,
+        l.tipo,
+        d.tipo,
+        d.numero,
+        d.nombre,
+        pc.path_texto,
+        c.total
+    FROM leyesmx.divisiones d
+    JOIN leyesmx.leyes l ON l.codigo = d.ley
+    CROSS JOIN path_completo pc
+    CROSS JOIN conteo c
+    WHERE d.id = v_current_id AND d.ley = p_ley;
+END;
+$$ LANGUAGE plpgsql STABLE;
+
+GRANT EXECUTE ON FUNCTION leyesmx.division_por_path TO web_anon;

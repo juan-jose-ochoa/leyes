@@ -571,6 +571,7 @@ function GrupoTituloItem({ grupo, ley, tipoContenido, showVerificacion, verifica
               division={div}
               ley={ley}
               tipoContenido={tipoContenido}
+              parentPath={`titulo/${titulo.numero}`}
               isNested
               showVerificacion={showVerificacion}
               verificacion={typeof div.id === 'number' ? verificacionMap.get(div.id) : undefined}
@@ -586,6 +587,7 @@ interface DivisionItemProps {
   division: DivisionConEstado
   ley: string
   tipoContenido: string
+  parentPath?: string  // Path jerárquico del padre: "titulo/PRIMERO"
   isNested?: boolean
   showVerificacion?: boolean
   verificacion?: VerificacionDivision
@@ -847,8 +849,13 @@ function StatusIcon({ status }: { status: VerificacionStatus }) {
   }
 }
 
-function DivisionItem({ division, ley, tipoContenido, isNested, showVerificacion, verificacion }: DivisionItemProps) {
+function DivisionItem({ division, ley, tipoContenido, parentPath, isNested, showVerificacion, verificacion }: DivisionItemProps) {
   const tipoLabel = division.tipo.charAt(0).toUpperCase() + division.tipo.slice(1)
+
+  // Construir path jerárquico completo
+  const divisionPath = parentPath
+    ? `${parentPath}/${division.tipo}/${division.numero}`
+    : `${division.tipo}/${division.numero}`
 
   // Placeholder para división faltante
   if (division.esFaltante) {
@@ -884,7 +891,7 @@ function DivisionItem({ division, ley, tipoContenido, isNested, showVerificacion
 
   return (
     <Link
-      to={`/${ley}/${division.tipo}/${division.numero}`}
+      to={`/${ley}/${divisionPath}`}
       className={clsx(
         'flex items-center gap-4 p-4 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800/50',
         !isNested && 'rounded-lg border border-gray-200 dark:border-gray-700'
