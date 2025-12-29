@@ -31,6 +31,10 @@ X_INCISO = 114
 X_NUMERAL = 142
 X_TOLERANCE = 10  # Tolerancia para matching
 
+# Umbral de Y para detectar salto de párrafo
+# En el CFF: gap=10 es línea continua, gap=15 es párrafo nuevo
+Y_PARAGRAPH_GAP = 12  # Umbral conservador
+
 
 @dataclass
 class Parrafo:
@@ -228,13 +232,15 @@ def construir_jerarquia(lineas: list[dict], numero_articulo: str) -> list[Parraf
 
     # Juntar líneas que son continuación física
     # REGLAS:
-    # 1. Si X aumenta significativamente = continuación indentada
-    # 2. Si X igual y sin identificador = continuación del mismo nivel
-    # 3. Si X menor pero la línea empieza con minúscula = wrap de línea (continuación)
-    # 4. Si X menor y empieza con mayúscula/identificador = nuevo elemento
+    # 1. Si hay Y-gap significativo = nuevo párrafo (aunque X sea igual)
+    # 2. Si X aumenta significativamente = continuación indentada
+    # 3. Si X igual y sin identificador y sin Y-gap = continuación del mismo nivel
+    # 4. Si X menor pero la línea empieza con minúscula = wrap de línea (continuación)
+    # 5. Si X menor y empieza con mayúscula/identificador = nuevo elemento
     lineas_consolidadas = []
     buffer_texto = ""
     buffer_x = None
+    buffer_y = None  # Track Y for gap detection
     buffer_tiene_id = False
 
     def es_continuacion_wrap(texto: str) -> bool:
@@ -247,46 +253,63 @@ def construir_jerarquia(lineas: list[dict], numero_articulo: str) -> list[Parraf
                (primer_char.isdigit() and not re.match(r'^\d+\.', texto.strip()))
 
     for linea in lineas:
-        x, text = linea['x'], linea['text']
+        x, y, text = linea['x'], linea['y'], linea['text']
         tipo, identificador, contenido = detectar_tipo_identificador(text)
+
+        # Calcular Y-gap respecto a línea anterior
+        y_gap = (y - buffer_y) if buffer_y is not None else 0
 
         if not buffer_texto:
             # Primera línea
             buffer_texto = text
             buffer_x = x
+            buffer_y = y
             buffer_tiene_id = identificador is not None
         elif identificador:
             # Nueva línea con identificador = nuevo elemento
             lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
             buffer_texto = text
             buffer_x = x
+            buffer_y = y
             buffer_tiene_id = True
+        elif y_gap >= Y_PARAGRAPH_GAP and not es_continuacion_wrap(text):
+            # Y-gap significativo = nuevo párrafo (aunque X sea igual)
+            lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
+            buffer_texto = text
+            buffer_x = x
+            buffer_y = y
+            buffer_tiene_id = False
         elif x > buffer_x + X_TOLERANCE:
             # X mayor = continuación indentada del elemento anterior
             buffer_texto += " " + text
+            buffer_y = y  # Actualizar Y
         elif x < buffer_x - X_TOLERANCE:
             # X menor - podría ser wrap o nuevo elemento
             if es_continuacion_wrap(text):
                 # Es wrap de línea (continuación)
                 buffer_texto += " " + text
+                buffer_y = y
             else:
                 # Nuevo elemento en nivel superior
                 lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
                 buffer_texto = text
                 buffer_x = x
+                buffer_y = y
                 buffer_tiene_id = False
         else:
-            # X igual (dentro de tolerancia)
+            # X igual (dentro de tolerancia) y sin Y-gap significativo
             if buffer_tiene_id:
                 # El buffer tiene identificador, esta línea no
                 # = nuevo elemento al mismo nivel (hermano, no continuación)
                 lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
                 buffer_texto = text
                 buffer_x = x
+                buffer_y = y
                 buffer_tiene_id = False
             else:
                 # Ambos sin identificador al mismo X = continuación
                 buffer_texto += " " + text
+                buffer_y = y
 
     if buffer_texto:
         lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
