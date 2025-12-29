@@ -1,8 +1,8 @@
 import { useParams, Link } from 'react-router-dom'
 import { Copy, Check, ExternalLink, BookOpen, ChevronLeft, ChevronRight, Home } from 'lucide-react'
 import { useState } from 'react'
-import { useArticle, useArticuloPorLey, useNavegacion, useDivisionesArticulo, useFraccionesArticulo } from '@/hooks/useArticle'
-import FraccionesView from '@/components/FraccionesView'
+import { useArticle, useArticuloPorLey, useNavegacion, useDivisionesArticulo } from '@/hooks/useArticle'
+import ArticleContent from '@/components/ArticleContent'
 import clsx from 'clsx'
 
 export default function Article() {
@@ -22,7 +22,6 @@ export default function Article() {
   const { data: articulo, isLoading, error } = ley ? porLey : porId
   const { data: navegacion } = useNavegacion(articulo?.id ?? null)
   const { data: divisiones } = useDivisionesArticulo(articulo?.id ?? null)
-  const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null, ley)
   const [copied, setCopied] = useState(false)
 
   // Determinar el tipo basándose en el tipo del artículo o la ruta
@@ -190,19 +189,7 @@ export default function Article() {
       {/* Contenido principal */}
       <div className="card">
         <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
-          {/* Si hay fracciones, mostrar todo via FraccionesView (incluye párrafos texto) */}
-          {/* Si no hay fracciones, mostrar contenido directamente */}
-          {fracciones && fracciones.length > 0 ? (
-            <FraccionesView fracciones={fracciones} />
-          ) : (
-            articulo.contenido && articulo.contenido.trim() && (
-              articulo.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
-                <p key={`intro-${i}`} className="mb-4 leading-relaxed">
-                  {paragraph}
-                </p>
-              ))
-            )
-          )}
+          <ArticleContent articuloId={articulo.id} contenido={articulo.contenido} ley={ley} />
         </div>
 
         {articulo.reformas && (
