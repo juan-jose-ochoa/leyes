@@ -41,6 +41,8 @@ function FraccionItem({ fraccion }: { fraccion: Fraccion }) {
   })
 
   // Estilo del identificador según tipo
+  // numero ya incluye puntuación para inciso (a)) y numeral (1.)
+  // pero NO para fraccion (I, II) ni apartado (A, B)
   const getIdentifier = () => {
     switch (tipo) {
       case 'fraccion':
@@ -52,13 +54,13 @@ function FraccionItem({ fraccion }: { fraccion: Fraccion }) {
       case 'inciso':
         return (
           <span className="font-semibold text-emerald-700 dark:text-emerald-400">
-            {numero})
+            {numero}
           </span>
         )
       case 'numeral':
         return (
           <span className="font-medium text-amber-700 dark:text-amber-400">
-            {numero}.
+            {numero}
           </span>
         )
       case 'apartado':
