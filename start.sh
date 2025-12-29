@@ -76,9 +76,9 @@ check_postgres() {
 
         # Mostrar estadisticas
         STATS=$(PGPASSWORD=$PG_PASS psql -h $PG_HOST -U $PG_USER -d $PG_DB -t -c \
-            "SELECT COUNT(*) FROM leyes" 2>/dev/null || echo "0")
+            "SELECT COUNT(*) FROM leyesmx.leyes" 2>/dev/null || echo "0")
         ARTS=$(PGPASSWORD=$PG_PASS psql -h $PG_HOST -U $PG_USER -d $PG_DB -t -c \
-            "SELECT COUNT(*) FROM articulos" 2>/dev/null || echo "0")
+            "SELECT COUNT(*) FROM leyesmx.articulos" 2>/dev/null || echo "0")
         log_info "  Leyes: $(echo $STATS | tr -d ' '), Articulos: $(echo $ARTS | tr -d ' ')"
         return 0
     else
@@ -114,7 +114,7 @@ start_postgrest() {
     cat > backend/postgrest.local.conf << EOF
 # Auto-generated from environment variables - DO NOT COMMIT
 db-uri = "postgres://$PG_USER:$PG_PASS@$PG_HOST:$PG_PORT/$PG_DB"
-db-schemas = "api"
+db-schemas = "leyesmx"
 db-anon-role = "web_anon"
 server-host = "127.0.0.1"
 server-port = $POSTGREST_PORT
