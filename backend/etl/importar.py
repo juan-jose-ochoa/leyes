@@ -134,6 +134,48 @@ def cargar_mapa_estructura(mapa_path: Path) -> dict:
     return articulo_a_division
 
 
+def convertir_estructura_esperada(mapa_path: Path) -> list:
+    """
+    Convierte estructura_esperada.json (formato anidado) al formato plano
+    que espera importar_estructura().
+
+    Entrada (anidado):
+        {"titulos": {"PRIMERO": {"nombre": "...", "capitulos": {"I": {...}, "II": {...}}}}}
+
+    Salida (plano):
+        [{"tipo": "titulo", "numero": "PRIMERO", "orden": 1, "padre_orden": null, "nombre": "..."},
+         {"tipo": "capitulo", "numero": "I", "orden": 2, "padre_orden": 1, "nombre": null}, ...]
+    """
+    with open(mapa_path, 'r', encoding='utf-8') as f:
+        mapa = json.load(f)
+
+    divisiones = []
+    orden = 0
+
+    for titulo_num, titulo_data in mapa.get("titulos", {}).items():
+        orden += 1
+        titulo_orden = orden
+        divisiones.append({
+            "tipo": "titulo",
+            "numero": titulo_num,
+            "nombre": titulo_data.get("nombre"),
+            "orden": titulo_orden,
+            "padre_orden": None
+        })
+
+        for cap_num, cap_data in titulo_data.get("capitulos", {}).items():
+            orden += 1
+            divisiones.append({
+                "tipo": "capitulo",
+                "numero": cap_num,
+                "nombre": cap_data.get("nombre"),
+                "orden": orden,
+                "padre_orden": titulo_orden
+            })
+
+    return divisiones
+
+
 def validar_antes_de_importar(contenido_path: Path, mapa_path: Path) -> bool:
     """Valida que todos los artículos tengan división asignada. FAIL FAST."""
     print("\n   Validando asignación de divisiones...")
@@ -210,12 +252,8 @@ def importar_ley(conn, codigo: str, config: dict, pdf_path: Path = None):
         conn.commit()
 
 
-def importar_estructura(conn, codigo: str, estructura_path: Path) -> dict:
-    """Importa divisiones y retorna mapeo (titulo, capitulo) -> id."""
-    with open(estructura_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-
-    divisiones = data.get("divisiones", [])
+def importar_estructura_desde_lista(conn, codigo: str, divisiones: list) -> dict:
+    """Importa divisiones desde lista y retorna mapeo (titulo, capitulo) -> id."""
     if not divisiones:
         print("   No hay divisiones para importar")
         return {}
@@ -487,23 +525,20 @@ def main():
         print("ERROR: pdf_path no configurado")
         sys.exit(1)
 
-    estructura_path = output_dir / "estructura.json"
     contenido_path = output_dir / "contenido.json"
-    # estructura_esperada.json es la fuente autoritativa verificada
-    mapa_path = output_dir / "estructura_esperada.json"
+    # estructura_esperada.json es la fuente autoritativa (del outline aprobado)
+    estructura_path = output_dir / "estructura_esperada.json"
 
     # Verificar archivos
     print("\n1. Verificando archivos...")
     archivos_ok = True
 
-    for path, requerido in [(estructura_path, False), (contenido_path, True), (mapa_path, True)]:
+    for path in [contenido_path, estructura_path]:
         if path.exists():
             print(f"   {path.name} encontrado")
-        elif requerido:
+        else:
             print(f"   ERROR: {path.name} no existe (REQUERIDO)")
             archivos_ok = False
-        else:
-            print(f"   AVISO: {path.name} no existe")
 
     # Verificar PDF si usamos extractor X
     if usar_extractor_x:
@@ -522,7 +557,7 @@ def main():
 
     # FAIL FAST: Validar antes de importar
     print("\n2. Validación pre-importación...")
-    if not validar_antes_de_importar(contenido_path, mapa_path):
+    if not validar_antes_de_importar(contenido_path, estructura_path):
         print("\nABORTANDO: Validación fallida")
         sys.exit(1)
 
@@ -547,24 +582,21 @@ def main():
         importar_ley(conn, codigo, config, pdf_path)
         print(f"   Ley {codigo} registrada")
 
-        # Importar estructura
-        division_lookup = {}
-        if estructura_path.exists():
-            print("\n5. Importando estructura...")
-            division_lookup = importar_estructura(conn, codigo, estructura_path)
-        else:
-            print("\n5. Saltando estructura (archivo no existe)")
+        # Importar estructura desde estructura_esperada.json (formato anidado)
+        print("\n5. Importando estructura...")
+        divisiones = convertir_estructura_esperada(estructura_path)
+        division_lookup = importar_estructura_desde_lista(conn, codigo, divisiones)
 
         # Importar contenido
         print("\n6. Importando contenido...")
-        if not importar_contenido(conn, codigo, contenido_path, mapa_path,
+        if not importar_contenido(conn, codigo, contenido_path, estructura_path,
                                    division_lookup, config["tipo_contenido"],
                                    pdf_path=str(pdf_path) if pdf_path else None,
                                    usar_extractor_x=usar_extractor_x):
             exito = False
 
         # FAIL FAST: Verificar después de importar
-        if exito and not verificar_post_importacion(conn, codigo, mapa_path):
+        if exito and not verificar_post_importacion(conn, codigo, estructura_path):
             exito = False
 
     finally:

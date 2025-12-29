@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
 """
-Extractor de leyes para esquema leyesmx.
+Extractor de contenido de leyes para esquema leyesmx.
 
-Extrae estructura y contenido de PDFs oficiales.
-Genera JSON compatible con el esquema leyesmx.
+Extrae artículos y párrafos de PDFs oficiales.
+La estructura (títulos/capítulos) viene de estructura_esperada.json (ver extraer_mapa.py).
 
 Uso:
     python backend/etl/extraer.py CFF
-    python backend/etl/extraer.py CFF --solo-estructura
-    python backend/etl/extraer.py CFF --solo-contenido
 """
 
 import re
@@ -322,8 +320,6 @@ def main():
         sys.exit(1)
 
     codigo = sys.argv[1].upper()
-    solo_estructura = '--solo-estructura' in sys.argv
-    solo_contenido = '--solo-contenido' in sys.argv
 
     print("=" * 60)
     print(f"EXTRACTOR LEYESMX: {codigo}")
@@ -346,52 +342,30 @@ def main():
     config = extractor.config
     output_dir = BASE_DIR / Path(config["pdf_path"]).parent
 
-    # Extraer estructura
-    if not solo_contenido:
-        print("\n2. Extrayendo estructura...")
-        divisiones = extractor.extraer_estructura()
+    # Extraer contenido (la estructura viene de estructura_esperada.json)
+    print("\n2. Extrayendo contenido...")
+    articulos = extractor.extraer_contenido()
 
-        # Estadísticas
-        tipos = {}
-        for d in divisiones:
-            tipos[d.tipo] = tipos.get(d.tipo, 0) + 1
-        for tipo, count in sorted(tipos.items()):
-            print(f"      {tipo}: {count}")
+    # Estadísticas
+    total_parrafos = sum(len(a.parrafos) for a in articulos)
+    tipos_parrafo = {}
+    for a in articulos:
+        for p in a.parrafos:
+            tipos_parrafo[p.tipo] = tipos_parrafo.get(p.tipo, 0) + 1
 
-        # Guardar
-        estructura_path = output_dir / "estructura.json"
-        with open(estructura_path, 'w', encoding='utf-8') as f:
-            json.dump({
-                "ley": codigo,
-                "divisiones": [d.to_dict() for d in divisiones]
-            }, f, ensure_ascii=False, indent=2)
-        print(f"   Guardado: {estructura_path.name}")
+    print(f"   {len(articulos)} artículos, {total_parrafos} párrafos")
+    for tipo, count in sorted(tipos_parrafo.items(), key=lambda x: -x[1]):
+        print(f"      {tipo}: {count}")
 
-    # Extraer contenido
-    if not solo_estructura:
-        print("\n3. Extrayendo contenido...")
-        articulos = extractor.extraer_contenido()
-
-        # Estadísticas
-        total_parrafos = sum(len(a.parrafos) for a in articulos)
-        tipos_parrafo = {}
-        for a in articulos:
-            for p in a.parrafos:
-                tipos_parrafo[p.tipo] = tipos_parrafo.get(p.tipo, 0) + 1
-
-        print(f"   {len(articulos)} artículos, {total_parrafos} párrafos")
-        for tipo, count in sorted(tipos_parrafo.items(), key=lambda x: -x[1]):
-            print(f"      {tipo}: {count}")
-
-        # Guardar
-        contenido_path = output_dir / "contenido.json"
-        with open(contenido_path, 'w', encoding='utf-8') as f:
-            json.dump({
-                "ley": codigo,
-                "tipo_contenido": config["tipo_contenido"],
-                "articulos": [a.to_dict() for a in articulos]
-            }, f, ensure_ascii=False, indent=2)
-        print(f"   Guardado: {contenido_path.name}")
+    # Guardar
+    contenido_path = output_dir / "contenido.json"
+    with open(contenido_path, 'w', encoding='utf-8') as f:
+        json.dump({
+            "ley": codigo,
+            "tipo_contenido": config["tipo_contenido"],
+            "articulos": [a.to_dict() for a in articulos]
+        }, f, ensure_ascii=False, indent=2)
+    print(f"   Guardado: {contenido_path.name}")
 
     extractor.cerrar_pdf()
 

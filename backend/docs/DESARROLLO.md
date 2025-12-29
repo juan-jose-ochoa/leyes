@@ -50,10 +50,14 @@ cp backend/etl/data/cff/mapa_estructura.json backend/etl/data/cff/estructura_esp
 python backend/etl/extraer.py CFF
 ```
 
-El extractor usa **coordenadas X** del PDF:
+Genera: `backend/etl/data/cff/contenido.json`
+
+El extractor usa **coordenadas X** del PDF para jerarquía de párrafos:
 - X~85: Fracción (I., II.)
 - X~114: Inciso (a), b))
 - X~142: Numeral (1., 2.)
+
+**Nota:** La estructura (títulos/capítulos) viene de `estructura_esperada.json` (Etapa 2), no se extrae aquí.
 
 ---
 
