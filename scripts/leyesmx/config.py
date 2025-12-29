@@ -10,7 +10,7 @@ LEYES = {
         "nombre_corto": "Código Fiscal",
         "tipo": "codigo",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
-        "pdf_path": "doc/leyes/cff/cff_codigo_fiscal_de_la_federacion.pdf",
+        "pdf_path": "scripts/leyesmx/data/cff/cff_codigo_fiscal_de_la_federacion.pdf",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo"],

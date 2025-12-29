@@ -77,7 +77,7 @@ def obtener_contenido_articulo(conn, ley: str, numero: str) -> str:
 def ruta_checksums(ley: str) -> Path:
     """Retorna la ruta del archivo de checksums para una ley."""
     ley_lower = ley.lower()
-    return BASE_DIR / f"doc/leyes/{ley_lower}/checksums_verificados.json"
+    return BASE_DIR / f"scripts/leyesmx/data/{ley_lower}/checksums_verificados.json"
 
 
 def guardar_checksums(ley: str):

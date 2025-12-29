@@ -29,17 +29,17 @@ PostgreSQL (normalizado)
 python scripts/leyesmx/extraer_mapa.py CFF
 ```
 
-Genera: `doc/leyes/cff/mapa_estructura.json`
+Genera: `scripts/leyesmx/data/cff/mapa_estructura.json`
 
 ---
 
 ### Etapa 2: Aprobar (MANUAL)
 
 ```bash
-cat doc/leyes/cff/mapa_estructura.json
+cat scripts/leyesmx/data/cff/mapa_estructura.json
 # Comparar con outline en Okular/Evince
 
-cp doc/leyes/cff/mapa_estructura.json doc/leyes/cff/estructura_esperada.json
+cp scripts/leyesmx/data/cff/mapa_estructura.json scripts/leyesmx/data/cff/estructura_esperada.json
 ```
 
 ---
@@ -106,7 +106,7 @@ python scripts/leyesmx/checksums.py CFF --diff 66
 python scripts/leyesmx/checksums.py CFF --guardar
 ```
 
-Los checksums se guardan en `doc/leyes/<ley>/checksums_verificados.json` (versionado con git).
+Los checksums se guardan en `scripts/leyesmx/data/<ley>/checksums_verificados.json` (versionado con git).
 
 ---
 

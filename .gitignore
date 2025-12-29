@@ -36,9 +36,6 @@ env/
 *.swo
 *~
 
-# Downloaded documents (generated content)
-doc/
-
 # Logs
 *.log
 
