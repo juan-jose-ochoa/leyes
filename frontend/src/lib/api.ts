@@ -8,9 +8,13 @@ export interface Ley {
   id: number
   codigo: string
   nombre: string
+  nombre_corto: string | null
   tipo: LeyTipo
+  url_fuente: string | null
+  fecha_publicacion: string | null
+  ultima_reforma: string | null
   total_articulos: number
-  fecha_descarga: string
+  fecha_descarga: string | null
 }
 
 export type ArticuloTipo = 'articulo' | 'regla' | 'ficha' | 'criterio'

@@ -6,6 +6,7 @@ import LeyIndex from './pages/LeyIndex'
 import DivisionView from './pages/DivisionView'
 import Header from './components/Header'
 import ErrorBoundary from './components/ErrorBoundary'
+import TermsBanner from './components/TermsBanner'
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -44,6 +45,7 @@ function App() {
           </Routes>
         </ErrorBoundary>
       </main>
+      <TermsBanner />
     </div>
   )
 }
