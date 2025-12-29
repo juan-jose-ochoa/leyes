@@ -1,6 +1,6 @@
 import { useState, useMemo, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { BookOpen, ChevronRight, ChevronDown, FileText, Home, CheckCircle, AlertTriangle, XCircle, Activity, Download, ChevronsUpDown, ChevronsDownUp, ToggleLeft, ToggleRight } from 'lucide-react'
+import { BookOpen, ChevronRight, ChevronDown, FileText, Home, CheckCircle, AlertTriangle, XCircle, Activity, Download, ChevronsUpDown, ChevronsDownUp, ToggleLeft, ToggleRight, ExternalLink } from 'lucide-react'
 import { useEstructuraLey, useLeyes, useVerificacionLey, useVerificacionIndice, useComparacionReglasIndice, useComparacionDivisionesIndice } from '@/hooks/useArticle'
 import type { Division, VerificacionDivision, VerificacionStatus, VerificacionIndice, ComparacionRegla, ComparacionDivision } from '@/lib/api'
 import clsx from 'clsx'
@@ -64,6 +64,7 @@ function agruparPorTitulo(
       nivel: d.tipo === 'titulo' ? 1 : d.tipo === 'capitulo' ? 2 : d.tipo === 'seccion' ? 3 : 4,
       total_articulos: 0,
       primer_articulo: null,
+      ultimo_articulo: null,
       esFaltante: true,
     }))
 
@@ -82,6 +83,7 @@ function agruparPorTitulo(
       nivel: 2,
       total_articulos: 0,
       primer_articulo: null,
+      ultimo_articulo: null,
       esFaltante: true,
     }))
 
@@ -308,9 +310,23 @@ export default function LeyIndex() {
           {leyInfo?.nombre || ley}
         </h1>
         {leyInfo && (
-          <p className="mt-2 text-gray-500">
-            {leyInfo.total_articulos} {esResolucion ? 'reglas' : 'artículos'}
-          </p>
+          <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-gray-500">
+            <span>{leyInfo.total_articulos} {esResolucion ? 'reglas' : 'artículos'}</span>
+            {leyInfo.ultima_reforma && (
+              <span>Última reforma: {new Date(leyInfo.ultima_reforma).toLocaleDateString('es-MX')}</span>
+            )}
+            {leyInfo.url_fuente && (
+              <a
+                href={leyInfo.url_fuente}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300"
+              >
+                Fuente oficial
+                <ExternalLink className="h-3.5 w-3.5" />
+              </a>
+            )}
+          </div>
         )}
       </div>
 
@@ -546,12 +562,14 @@ function GrupoTituloItem({ grupo, ley, tipoContenido, showVerificacion, verifica
         </div>
 
         <div className="text-right shrink-0 mr-2">
-          <span className="text-sm font-medium text-gray-900 dark:text-white">
-            {titulo.total_articulos}
-          </span>
-          <span className="text-xs text-gray-500 ml-1">
-            {tipoContenido === 'regla' ? 'reglas' : 'arts.'}
-          </span>
+          <div className="text-sm font-medium text-gray-900 dark:text-white">
+            {titulo.total_articulos} {tipoContenido === 'regla' ? 'reglas' : 'arts.'}
+          </div>
+          {titulo.primer_articulo && titulo.ultimo_articulo && (
+            <div className="text-xs text-gray-500">
+              {titulo.primer_articulo} – {titulo.ultimo_articulo}
+            </div>
+          )}
         </div>
 
         <ChevronDown
@@ -938,12 +956,14 @@ function DivisionItem({ division, ley, tipoContenido, parentPath, isNested, show
       {/* Contador de artículos */}
       {division.total_articulos > 0 && (
         <div className="text-right shrink-0">
-          <span className="text-sm font-medium text-gray-900 dark:text-white">
-            {division.total_articulos}
-          </span>
-          <span className="text-xs text-gray-500 ml-1">
-            {tipoContenido === 'regla' ? 'reglas' : 'arts.'}
-          </span>
+          <div className="text-sm font-medium text-gray-900 dark:text-white">
+            {division.total_articulos} {tipoContenido === 'regla' ? 'reglas' : 'arts.'}
+          </div>
+          {division.primer_articulo && division.ultimo_articulo && (
+            <div className="text-xs text-gray-500">
+              {division.primer_articulo} – {division.ultimo_articulo}
+            </div>
+          )}
         </div>
       )}
 

@@ -287,7 +287,8 @@ RETURNS TABLE(
     path_texto TEXT,
     nivel INT,
     total_articulos BIGINT,
-    primer_articulo VARCHAR
+    primer_articulo VARCHAR,
+    ultimo_articulo VARCHAR
 ) AS $$
 BEGIN
     RETURN QUERY
@@ -307,7 +308,10 @@ BEGIN
         SELECT
             d.id as division_id,
             COUNT(a.id)::BIGINT as direct_count,
-            MIN(a.numero_raw)::VARCHAR as primer_art
+            MIN(a.orden) as primer_orden,
+            MAX(a.orden) as ultimo_orden,
+            MIN(a.numero) as primer_art,
+            MAX(a.numero) as ultimo_art
         FROM public.divisiones d
         JOIN public.leyes l ON d.ley_id = l.id
         LEFT JOIN public.articulos a ON a.division_id = d.id
@@ -317,11 +321,28 @@ BEGIN
     articulos_heredados AS (
         SELECT
             dt.root_id as division_id,
-            COALESCE(SUM(apd.direct_count), 0)::BIGINT as total_heredado
+            COALESCE(SUM(apd.direct_count), 0)::BIGINT as total_heredado,
+            MIN(apd.primer_orden) as primer_orden_heredado,
+            MAX(apd.ultimo_orden) as ultimo_orden_heredado
         FROM division_tree dt
         JOIN articulos_por_division apd ON apd.division_id = dt.id
-        WHERE dt.id != dt.root_id
         GROUP BY dt.root_id
+    ),
+    rango_articulos AS (
+        -- Obtener el numero real del primer y ultimo articulo por orden
+        SELECT
+            ah.division_id,
+            (SELECT a.numero FROM public.articulos a
+             JOIN public.divisiones d ON a.division_id = d.id
+             JOIN public.leyes l ON d.ley_id = l.id
+             WHERE l.codigo = ley_codigo AND a.orden = ah.primer_orden_heredado
+             LIMIT 1) as primer_num,
+            (SELECT a.numero FROM public.articulos a
+             JOIN public.divisiones d ON a.division_id = d.id
+             JOIN public.leyes l ON d.ley_id = l.id
+             WHERE l.codigo = ley_codigo AND a.orden = ah.ultimo_orden_heredado
+             LIMIT 1) as ultimo_num
+        FROM articulos_heredados ah
     )
     SELECT
         d.id,
@@ -330,12 +351,14 @@ BEGIN
         d.nombre,
         d.path_texto,
         d.nivel,
-        (COALESCE(apd.direct_count, 0) + COALESCE(ah.total_heredado, 0))::BIGINT as total_articulos,
-        apd.primer_art::VARCHAR as primer_articulo
+        COALESCE(ah.total_heredado, 0)::BIGINT as total_articulos,
+        COALESCE(ra.primer_num, apd.primer_art)::VARCHAR as primer_articulo,
+        COALESCE(ra.ultimo_num, apd.ultimo_art)::VARCHAR as ultimo_articulo
     FROM public.divisiones d
     JOIN public.leyes l ON d.ley_id = l.id
     LEFT JOIN articulos_por_division apd ON apd.division_id = d.id
     LEFT JOIN articulos_heredados ah ON ah.division_id = d.id
+    LEFT JOIN rango_articulos ra ON ra.division_id = d.id
     WHERE l.codigo = ley_codigo
     ORDER BY d.orden_global;
 END;

@@ -14,8 +14,10 @@ Uso:
 
 import json
 import os
+import re
 import sys
 from dataclasses import asdict
+from datetime import date
 from pathlib import Path
 
 try:
@@ -33,7 +35,59 @@ except ImportError:
 from config import get_config
 from extraer_parrafos_x import extraer_articulo
 
+
+# Meses en español para parsear fechas
+MESES = {
+    'enero': 1, 'febrero': 2, 'marzo': 3, 'abril': 4,
+    'mayo': 5, 'junio': 6, 'julio': 7, 'agosto': 8,
+    'septiembre': 9, 'octubre': 10, 'noviembre': 11, 'diciembre': 12
+}
+
 BASE_DIR = Path(__file__).parent.parent.parent
+
+
+def extraer_fecha_ultima_reforma(pdf_path: Path) -> date | None:
+    """Extrae la fecha de última reforma de la primera página del PDF.
+
+    Busca patrones como:
+    - "Última reforma publicada DOF 14-11-2025"
+    - "Última Reforma DOF 14-11-2025"
+    - "DOF 14 de noviembre de 2025"
+
+    Returns:
+        date object o None si no se encuentra
+    """
+    if not PDFPLUMBER_DISPONIBLE or not pdf_path.exists():
+        return None
+
+    try:
+        with pdfplumber.open(pdf_path) as pdf:
+            # Solo revisar primera página
+            text = pdf.pages[0].extract_text() or ""
+
+            # Patrón 1: "DOF DD-MM-YYYY" o "DOF DD/MM/YYYY"
+            match = re.search(r'DOF\s+(\d{1,2})[-/](\d{1,2})[-/](\d{4})', text)
+            if match:
+                dia, mes, anio = int(match.group(1)), int(match.group(2)), int(match.group(3))
+                return date(anio, mes, dia)
+
+            # Patrón 2: "DOF DD de MES de YYYY"
+            match = re.search(
+                r'DOF\s+(\d{1,2})\s+de\s+(\w+)\s+de\s+(\d{4})',
+                text, re.IGNORECASE
+            )
+            if match:
+                dia = int(match.group(1))
+                mes_texto = match.group(2).lower()
+                anio = int(match.group(3))
+                mes = MESES.get(mes_texto)
+                if mes:
+                    return date(anio, mes, dia)
+
+    except Exception as e:
+        print(f"   AVISO: No se pudo extraer fecha de reforma: {e}")
+
+    return None
 
 
 def get_connection():
@@ -119,20 +173,28 @@ def limpiar_ley(conn, codigo: str):
         print(f"   Datos anteriores de {codigo} eliminados")
 
 
-def importar_ley(conn, codigo: str, config: dict):
-    """Inserta la ley en el catálogo."""
+def importar_ley(conn, codigo: str, config: dict, pdf_path: Path = None):
+    """Inserta la ley en el catálogo, extrayendo fecha de última reforma del PDF."""
+    # Extraer fecha de última reforma del PDF
+    ultima_reforma = None
+    if pdf_path:
+        ultima_reforma = extraer_fecha_ultima_reforma(pdf_path)
+        if ultima_reforma:
+            print(f"   Última reforma: {ultima_reforma.strftime('%d-%m-%Y')}")
+
     with conn.cursor() as cur:
         cur.execute("""
             INSERT INTO leyesmx.leyes (
                 codigo, nombre, nombre_corto, tipo,
                 ley_base, anio,
-                url_fuente,
+                url_fuente, ultima_reforma,
                 divisiones_permitidas, parrafos_permitidos
-            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             ON CONFLICT (codigo) DO UPDATE SET
                 nombre = EXCLUDED.nombre,
                 nombre_corto = EXCLUDED.nombre_corto,
-                url_fuente = EXCLUDED.url_fuente
+                url_fuente = EXCLUDED.url_fuente,
+                ultima_reforma = EXCLUDED.ultima_reforma
         """, (
             codigo,
             config["nombre"],
@@ -141,6 +203,7 @@ def importar_ley(conn, codigo: str, config: dict):
             config.get("ley_base"),
             config.get("anio"),
             config.get("url_fuente"),
+            ultima_reforma,
             config["divisiones_permitidas"],
             config["parrafos_permitidos"],
         ))
@@ -481,7 +544,7 @@ def main():
 
         # Importar ley
         print("\n4. Importando catálogo de ley...")
-        importar_ley(conn, codigo, config)
+        importar_ley(conn, codigo, config, pdf_path)
         print(f"   Ley {codigo} registrada")
 
         # Importar estructura
