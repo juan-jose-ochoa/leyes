@@ -291,11 +291,12 @@ export async function getDivisionesArticulo(artId: number): Promise<DivisionAnce
 export interface Fraccion {
   id: number
   padre_id: number | null
-  tipo: 'fraccion' | 'inciso' | 'numeral' | 'parrafo' | 'apartado'
+  tipo: 'fraccion' | 'inciso' | 'numeral' | 'parrafo' | 'apartado' | 'texto'
   numero: string | null
   contenido: string
   orden: number
   nivel: number
+  es_continuacion: boolean
 }
 
 export async function getFraccionesArticulo(artId: number, ley?: string): Promise<Fraccion[]> {

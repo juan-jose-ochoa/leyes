@@ -427,6 +427,7 @@ GRANT EXECUTE ON FUNCTION leyesmx.articulos_division TO web_anon;
 -- ============================================================
 -- Función: fracciones_articulo
 -- Retorna párrafos con nivel jerárquico calculado recursivamente
+-- es_continuacion: true si es párrafo de continuación (texto con nivel > 0)
 -- ============================================================
 CREATE OR REPLACE FUNCTION leyesmx.fracciones_articulo(art_id INTEGER, p_ley VARCHAR DEFAULT NULL)
 RETURNS TABLE (
@@ -436,7 +437,8 @@ RETURNS TABLE (
     numero VARCHAR,
     contenido TEXT,
     orden SMALLINT,
-    nivel INTEGER
+    nivel INTEGER,
+    es_continuacion BOOLEAN
 ) AS $$
 BEGIN
     RETURN QUERY
@@ -484,7 +486,8 @@ BEGIN
         j.identificador,
         j.contenido,
         j.orden,
-        j.nivel
+        j.nivel,
+        (j.tipo = 'texto' AND j.nivel > 0)::BOOLEAN
     FROM jerarquia j
     ORDER BY j.orden;
 END;

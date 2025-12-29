@@ -20,30 +20,24 @@ export default function FraccionesView({ fracciones }: FraccionesViewProps) {
 }
 
 function FraccionItem({ fraccion }: { fraccion: Fraccion }) {
-  const { tipo, numero, contenido, nivel } = fraccion
+  const { tipo, numero, contenido, nivel, es_continuacion } = fraccion
 
-  // Los párrafos de continuación (texto con nivel > 0) no se indentan
-  // porque son continuación del contenido de su padre, no sub-elementos
-  const esContinuacion = tipo === 'texto' && nivel > 0
-
-  // Calcular indentación basada en nivel
-  // Continuaciones no se indentan extra
+  // Indentación: continuaciones no se indentan (servidor decide)
   const indentClass = clsx({
-    'ml-0': nivel === 0 || esContinuacion,
-    'ml-6': nivel === 1 && !esContinuacion,
-    'ml-12': nivel === 2 && !esContinuacion,
-    'ml-16': nivel >= 3 && !esContinuacion,
+    'ml-0': nivel === 0 || es_continuacion,
+    'ml-6': nivel === 1 && !es_continuacion,
+    'ml-12': nivel === 2 && !es_continuacion,
+    'ml-16': nivel >= 3 && !es_continuacion,
   })
 
   // Estilos de borde y fondo según tipo
-  // Continuaciones tienen estilo sutil
   const borderStyles = clsx({
     'border-l-4 border-primary-500 bg-primary-50 dark:bg-primary-950/30': tipo === 'fraccion',
     'border-l-3 border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30': tipo === 'inciso',
     'border-l-2 border-amber-400 bg-amber-50 dark:bg-amber-950/30': tipo === 'numeral',
     'border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950/30': tipo === 'apartado',
-    'border-l-2 border-gray-200 dark:border-gray-700': esContinuacion,
-    'border-l-2 border-gray-300 dark:border-gray-600': (tipo === 'parrafo' || tipo === 'texto') && !esContinuacion,
+    'border-l-2 border-gray-200 dark:border-gray-700': es_continuacion,
+    'border-l-2 border-gray-300 dark:border-gray-600': (tipo === 'parrafo' || tipo === 'texto') && !es_continuacion,
   })
 
   // Estilo del identificador según tipo
