@@ -1,0 +1,103 @@
+{
+  "ley": "CFF",
+  "divisiones": [
+    {
+      "tipo": "titulo",
+      "numero": "PRIMERO",
+      "nombre": "Disposiciones Generales",
+      "orden": 1,
+      "padre_orden": null
+    },
+    {
+      "tipo": "capitulo",
+      "numero": "I",
+      "nombre": null,
+      "orden": 2,
+      "padre_orden": 1
+    },
+    {
+      "tipo": "titulo",
+      "numero": "SEGUNDO",
+      "nombre": "De los Derechos y Obligaciones de los Contribuyentes",
+      "orden": 3,
+      "padre_orden": null
+    },
+    {
+      "tipo": "capitulo",
+      "numero": "UNICO",
+      "nombre": null,
+      "orden": 4,
+      "padre_orden": 3
+    },
+    {
+      "tipo": "titulo",
+      "numero": "TERCERO",
+      "nombre": "De las Facultades de las Autoridades Fiscales",
+      "orden": 5,
+      "padre_orden": null
+    },
+    {
+      "tipo": "capitulo",
+      "numero": "I",
+      "nombre": null,
+      "orden": 6,
+      "padre_orden": 5
+    },
+    {
+      "tipo": "titulo",
+      "numero": "CUARTO",
+      "nombre": "De las Infracciones y Delitos Fiscales",
+      "orden": 7,
+      "padre_orden": null
+    },
+    {
+      "tipo": "capitulo",
+      "numero": "I",
+      "nombre": "De las infracciones",
+      "orden": 8,
+      "padre_orden": 7
+    },
+    {
+      "tipo": "capitulo",
+      "numero": "II",
+      "nombre": "De los delitos fiscales",
+      "orden": 9,
+      "padre_orden": 7
+    },
+    {
+      "tipo": "titulo",
+      "numero": "QUINTO",
+      "nombre": "De Los Procedimientos Administrativos",
+      "orden": 10,
+      "padre_orden": null
+    },
+    {
+      "tipo": "capitulo",
+      "numero": "I",
+      "nombre": "Del recurso administrativo",
+      "orden": 11,
+      "padre_orden": 10
+    },
+    {
+      "tipo": "capitulo",
+      "numero": "II",
+      "nombre": "De las notificaciones y la garantía del interés fiscal",
+      "orden": 12,
+      "padre_orden": 10
+    },
+    {
+      "tipo": "capitulo",
+      "numero": "III",
+      "nombre": "Del procedimiento administrativo de ejecución",
+      "orden": 13,
+      "padre_orden": 10
+    },
+    {
+      "tipo": "titulo",
+      "numero": "SEXTO",
+      "nombre": "De la Revelación de Esquemas Reportables",
+      "orden": 14,
+      "padre_orden": null
+    }
+  ]
+}

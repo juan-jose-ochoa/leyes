@@ -4,6 +4,8 @@
 
 - **No hacer cambios sin solicitud.** Si el usuario pregunta algo, responde sin modificar código.
 - **Esperar confirmación antes de actuar.** Presenta opciones y espera que el usuario elija.
+- **Proceso de desarrollo:** Primero análisis y entendimiento del problema, luego diseño, patrones y algoritmos. El código se escribe solo al final, nunca antes de entender completamente el problema.
+- **No precipitarse a escribir código sin cumplir con el proceso de desarrollo**
 
 ## Git
 
@@ -33,6 +35,6 @@ Un script NO está terminado si:
 
 ## Guías del proyecto
 
-- [PROYECTO.md](PROYECTO.md) - Arquitectura, scripts, base de datos, API
-- [DESARROLLO.md](DESARROLLO.md) - Flujo de trabajo e importación
-- [PRODUCCION.md](PRODUCCION.md) - Despliegue con Caddy
+- [README.md](README.md) - Arquitectura, scripts, base de datos, API
+- [backend/docs/DESARROLLO.md](backend/docs/DESARROLLO.md) - Flujo de trabajo e importación
+- [backend/docs/PRODUCCION.md](backend/docs/PRODUCCION.md) - Despliegue con Caddy
