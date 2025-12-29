@@ -250,10 +250,10 @@ export async function getDivisionPorTipoNumero(
   return result[0] || null
 }
 
-export async function getArticulosDivision(divId: number): Promise<ArticuloDivision[]> {
+export async function getArticulosDivision(divId: number, ley?: string): Promise<ArticuloDivision[]> {
   return fetchAPI<ArticuloDivision[]>('/rpc/articulos_division', {
     method: 'POST',
-    body: JSON.stringify({ div_id: divId }),
+    body: JSON.stringify({ div_id: divId, p_ley: ley || null }),
   })
 }
 
@@ -298,10 +298,10 @@ export interface Fraccion {
   nivel: number
 }
 
-export async function getFraccionesArticulo(artId: number): Promise<Fraccion[]> {
+export async function getFraccionesArticulo(artId: number, ley?: string): Promise<Fraccion[]> {
   return fetchAPI<Fraccion[]>('/rpc/fracciones_articulo', {
     method: 'POST',
-    body: JSON.stringify({ art_id: artId }),
+    body: JSON.stringify({ art_id: artId, p_ley: ley || null }),
   })
 }
 

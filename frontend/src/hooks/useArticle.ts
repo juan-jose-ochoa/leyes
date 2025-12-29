@@ -71,12 +71,12 @@ export function useDivisionPorTipoNumero(ley: string | null, tipo: string | null
   })
 }
 
-export function useArticulosDivision(divId: number | null) {
+export function useArticulosDivision(divId: number | null, ley?: string) {
   return useQuery<ArticuloDivision[]>({
-    queryKey: ['articulos-division', divId],
+    queryKey: ['articulos-division', divId, ley],
     queryFn: async () => {
       if (!divId) return []
-      return getArticulosDivision(divId)
+      return getArticulosDivision(divId, ley)
     },
     enabled: divId !== null,
     staleTime: 1000 * 60 * 30,
@@ -95,12 +95,12 @@ export function useDivisionesArticulo(artId: number | null) {
   })
 }
 
-export function useFraccionesArticulo(artId: number | null) {
+export function useFraccionesArticulo(artId: number | null, ley?: string) {
   return useQuery<Fraccion[]>({
-    queryKey: ['fracciones-articulo', artId],
+    queryKey: ['fracciones-articulo', artId, ley],
     queryFn: async () => {
       if (!artId) return []
-      return getFraccionesArticulo(artId)
+      return getFraccionesArticulo(artId, ley)
     },
     enabled: artId !== null,
     staleTime: 1000 * 60 * 30,

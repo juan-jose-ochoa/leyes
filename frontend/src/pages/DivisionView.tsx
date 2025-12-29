@@ -244,7 +244,7 @@ export default function DivisionView() {
   // Buscar división por tipo+numero (estable, no depende de IDs)
   const { data: info, isLoading: loadingInfo } = useDivisionPorTipoNumero(ley || null, tipo, numero || null)
   const divId = info?.id || null
-  const { data: articulos, isLoading: loadingArticulos } = useArticulosDivision(divId)
+  const { data: articulos, isLoading: loadingArticulos } = useArticulosDivision(divId, ley || undefined)
   const { data: verificacion } = useVerificacionDivision(divId)
 
   const isLoading = loadingInfo || loadingArticulos
@@ -400,7 +400,7 @@ export default function DivisionView() {
 
             {/* Contenido */}
             <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
-              <ArticleContent articuloId={art.id} contenido={art.contenido} />
+              <ArticleContent articuloId={art.id} contenido={art.contenido} ley={ley} />
             </div>
 
             {/* Reformas */}

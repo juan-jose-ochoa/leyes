@@ -15,7 +15,7 @@ interface ArticlePanelProps {
 export default function ArticlePanel({ ley, numero, onClose, onNavigate }: ArticlePanelProps) {
   const { data: articulo, isLoading, error } = useArticuloPorLey(ley, numero)
   const { data: navegacion } = useNavegacion(articulo?.id ?? null)
-  const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null)
+  const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null, ley)
   const { data: divisiones } = useDivisionesArticulo(articulo?.id ?? null)
   const [copied, setCopied] = useState(false)
 

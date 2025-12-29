@@ -22,7 +22,7 @@ export default function Article() {
   const { data: articulo, isLoading, error } = ley ? porLey : porId
   const { data: navegacion } = useNavegacion(articulo?.id ?? null)
   const { data: divisiones } = useDivisionesArticulo(articulo?.id ?? null)
-  const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null)
+  const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null, ley)
   const [copied, setCopied] = useState(false)
 
   // Determinar el tipo basándose en el tipo del artículo o la ruta

@@ -4,13 +4,14 @@ import FraccionesView from './FraccionesView'
 interface ArticleContentProps {
   articuloId: number
   contenido: string
+  ley?: string
 }
 
 /**
  * Displays article content: intro paragraphs followed by fracciones if available.
  */
-export default function ArticleContent({ articuloId, contenido }: ArticleContentProps) {
-  const { data: fracciones, isLoading } = useFraccionesArticulo(articuloId)
+export default function ArticleContent({ articuloId, contenido, ley }: ArticleContentProps) {
+  const { data: fracciones, isLoading } = useFraccionesArticulo(articuloId, ley)
 
   // Show loading skeleton briefly
   if (isLoading) {

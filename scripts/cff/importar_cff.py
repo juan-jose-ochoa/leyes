@@ -105,39 +105,43 @@ def insertar_ley(cursor):
 
 
 def insertar_estructura(cursor, ley_id, estructura):
-    """Inserta la estructura de títulos y capítulos."""
+    """Inserta la estructura jerárquica de divisiones."""
     print("   Insertando estructura...")
 
-    divisiones_ids = {}
-    orden = 0
+    divisiones = estructura.get('divisiones', [])
+    path_to_id = {}  # path_texto -> id
 
-    # Insertar títulos
-    for titulo in estructura.get('titulos', []):
-        orden += 1
+    for div in divisiones:
+        # Buscar padre por path_texto
+        padre_id = None
+        padre_path = div.get('padre')
+        if padre_path and padre_path in path_to_id:
+            padre_id = path_to_id[padre_path]
+
         cursor.execute("""
-            INSERT INTO divisiones (ley_id, tipo, numero, nombre, orden_global)
-            VALUES (%s, %s, %s, %s, %s)
+            INSERT INTO divisiones (ley_id, padre_id, tipo, numero, nombre, path_texto, orden_global)
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
             RETURNING id
-        """, (ley_id, 'titulo', titulo['numero'], titulo['nombre'], orden))
+        """, (
+            ley_id,
+            padre_id,
+            div['tipo'],
+            div['numero'],
+            div['nombre'],
+            div.get('path_texto'),
+            div.get('orden', 0)
+        ))
         div_id = cursor.fetchone()[0]
-        divisiones_ids[f"titulo-{titulo['numero']}"] = div_id
+        path_to_id[div['path_texto']] = div_id
 
-    print(f"      {len(estructura.get('titulos', []))} títulos")
+    # Contar por tipo
+    tipos = {}
+    for d in divisiones:
+        tipos[d['tipo']] = tipos.get(d['tipo'], 0) + 1
+    for tipo, count in tipos.items():
+        print(f"      {count} {tipo}s")
 
-    # Insertar capítulos
-    for cap in estructura.get('capitulos', []):
-        orden += 1
-        cursor.execute("""
-            INSERT INTO divisiones (ley_id, tipo, numero, nombre, orden_global)
-            VALUES (%s, %s, %s, %s, %s)
-            RETURNING id
-        """, (ley_id, 'capitulo', cap['numero'], cap['nombre'], orden))
-        div_id = cursor.fetchone()[0]
-        divisiones_ids[f"capitulo-{cap['numero']}"] = div_id
-
-    print(f"      {len(estructura.get('capitulos', []))} capítulos")
-
-    return divisiones_ids
+    return path_to_id
 
 
 def insertar_articulos(cursor, ley_id, articulos):

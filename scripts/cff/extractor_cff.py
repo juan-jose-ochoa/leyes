@@ -396,46 +396,82 @@ class ExtractorCFF:
         return articulos
 
     def extraer_estructura(self) -> dict:
-        """Extrae la estructura de títulos y capítulos."""
+        """Extrae la estructura jerárquica de títulos, capítulos y secciones."""
         texto = self._get_texto()
 
-        estructura = {
-            'titulos': [],
-            'capitulos': [],
-            'secciones': []
-        }
+        divisiones = []
+        orden = 0
 
-        # Títulos: "TITULO PRIMERO" o "TÍTULO I"
-        patron_titulo = re.compile(
-            r'T[ÍI]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[ÉE]PTIMO|OCTAVO|NOVENO|D[ÉE]CIMO|[IVX]+)\s*\n\s*(.+?)(?=\n)',
+        # Patrón unificado para detectar títulos, capítulos y secciones
+        patron = re.compile(
+            r'(T[ÍI]TULO|CAP[ÍI]TULO|SECCI[ÓO]N)\s+'
+            r'(PRIMERO|PRIMERA|SEGUNDO|SEGUNDA|TERCERO|TERCERA|CUARTO|CUARTA|'
+            r'QUINTO|QUINTA|SEXTO|SEXTA|S[ÉE]PTIMO|S[ÉE]PTIMA|OCTAVO|OCTAVA|'
+            r'NOVENO|NOVENA|D[ÉE]CIMO|D[ÉE]CIMA|[IVX]+|[ÚU]NICO|[ÚU]NICA)\s*\n\s*(.+?)(?=\n)',
             re.IGNORECASE
         )
-        for match in patron_titulo.finditer(texto):
-            numero = match.group(1).upper()
-            nombre = match.group(2).strip()
-            if nombre and len(nombre) > 3:
-                estructura['titulos'].append({
+
+        # Rastrear jerarquía actual
+        titulo_actual = None
+        capitulo_actual = None
+
+        for match in patron.finditer(texto):
+            tipo_raw = match.group(1).upper()
+            numero = match.group(2).upper()
+            nombre = match.group(3).strip()
+
+            # Filtrar nombres basura
+            if not nombre or len(nombre) < 5:
+                continue
+            if any(x in nombre for x in ['Artículo', 'DOF', '[PAGE:', 'Capítulo', 'Sección', '"']):
+                continue
+
+            orden += 1
+
+            if 'TITULO' in tipo_raw or 'TÍTULO' in tipo_raw:
+                titulo_actual = numero
+                capitulo_actual = None
+                divisiones.append({
                     'tipo': 'titulo',
                     'numero': numero,
-                    'nombre': nombre
+                    'nombre': nombre,
+                    'path_texto': f"Título {numero}",
+                    'orden': orden
                 })
 
-        # Capítulos
-        patron_capitulo = re.compile(
-            r'CAP[ÍI]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[ÉE]PTIMO|OCTAVO|NOVENO|D[ÉE]CIMO|[IVX]+|[ÚU]NICO)\s*\n\s*(.+?)(?=\n)',
-            re.IGNORECASE
-        )
-        for match in patron_capitulo.finditer(texto):
-            numero = match.group(1).upper()
-            nombre = match.group(2).strip()
-            if nombre and len(nombre) > 3:
-                estructura['capitulos'].append({
+            elif 'CAPITULO' in tipo_raw or 'CAPÍTULO' in tipo_raw:
+                capitulo_actual = numero
+                path = f"Título {titulo_actual} > Capítulo {numero}" if titulo_actual else f"Capítulo {numero}"
+                divisiones.append({
                     'tipo': 'capitulo',
                     'numero': numero,
-                    'nombre': nombre
+                    'nombre': nombre,
+                    'path_texto': path,
+                    'padre': f"Título {titulo_actual}" if titulo_actual else None,
+                    'orden': orden
                 })
 
-        return estructura
+            elif 'SECCION' in tipo_raw or 'SECCIÓN' in tipo_raw:
+                if titulo_actual and capitulo_actual:
+                    path = f"Título {titulo_actual} > Capítulo {capitulo_actual} > Sección {numero}"
+                    padre = f"Título {titulo_actual} > Capítulo {capitulo_actual}"
+                elif capitulo_actual:
+                    path = f"Capítulo {capitulo_actual} > Sección {numero}"
+                    padre = f"Capítulo {capitulo_actual}"
+                else:
+                    path = f"Sección {numero}"
+                    padre = None
+
+                divisiones.append({
+                    'tipo': 'seccion',
+                    'numero': numero,
+                    'nombre': nombre,
+                    'path_texto': path,
+                    'padre': padre,
+                    'orden': orden
+                })
+
+        return {'divisiones': divisiones}
 
     def close(self):
         self.doc.close()
@@ -512,9 +548,11 @@ def main():
     estructura = extractor.extraer_estructura()
     extractor.close()
 
+    divisiones = estructura.get('divisiones', [])
     print(f"   {len(articulos)} artículos extraídos")
-    print(f"   {len(estructura['titulos'])} títulos")
-    print(f"   {len(estructura['capitulos'])} capítulos")
+    print(f"   {len([d for d in divisiones if d['tipo'] == 'titulo'])} títulos")
+    print(f"   {len([d for d in divisiones if d['tipo'] == 'capitulo'])} capítulos")
+    print(f"   {len([d for d in divisiones if d['tipo'] == 'seccion'])} secciones")
 
     # 2. Validar
     print("\n2. Validando calidad...")
