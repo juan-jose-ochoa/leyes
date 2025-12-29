@@ -1,1 +1,1 @@
-scripts/smoke-test.sh
+backend/smoke-test.sh

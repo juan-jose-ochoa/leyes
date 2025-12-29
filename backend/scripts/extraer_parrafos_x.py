@@ -8,7 +8,7 @@ Determina la jerarquía correcta basándose en la indentación:
 - X~142: Numeral (1., 2., etc.) o continuación de inciso
 
 Uso:
-    python scripts/leyesmx/extraer_parrafos_x.py CFF 66-A
+    python backend/scripts/extraer_parrafos_x.py CFF 66-A
 """
 
 import re

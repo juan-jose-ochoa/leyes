@@ -6,7 +6,7 @@ Usa el outline (TOC) del PDF como fuente primaria para artículos.
 Extrae estructura jerárquica (Títulos/Capítulos) del texto.
 
 Uso:
-    python scripts/leyesmx/extraer_mapa.py CFF
+    python backend/scripts/extraer_mapa.py CFF
 """
 
 import re
@@ -420,7 +420,7 @@ def generar_json(titulos: list[TituloRef], derogados: list[ArticuloRef], transit
 
 def main():
     if len(sys.argv) < 2:
-        print("Uso: python scripts/leyesmx/extraer_mapa.py <CODIGO>")
+        print("Uso: python backend/scripts/extraer_mapa.py <CODIGO>")
         sys.exit(1)
 
     codigo = sys.argv[1].upper()

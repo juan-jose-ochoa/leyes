@@ -6,8 +6,8 @@ Compara la extracción actual contra la estructura esperada almacenada en BD.
 NO modifica ningún archivo ni base de datos.
 
 Uso:
-    python scripts/leyesmx/validar.py CFF
-    python scripts/leyesmx/validar.py CFF --detalle
+    python backend/scripts/validar.py CFF
+    python backend/scripts/validar.py CFF --detalle
 """
 
 import json
@@ -117,12 +117,12 @@ class Validador:
             print("   BD no disponible, usando archivo local...")
             if not self.cargar_estructura_archivo():
                 print(f"ERROR: No hay estructura esperada en BD ni en archivo")
-                print("       Ejecuta: python scripts/leyesmx/extraer_mapa.py", self.codigo)
+                print("       Ejecuta: python backend/scripts/extraer_mapa.py", self.codigo)
                 return False
 
         if not self.contenido_path.exists():
             print(f"ERROR: {self.contenido_path.name} no existe")
-            print("       Ejecuta primero: python scripts/leyesmx/extraer.py", self.codigo)
+            print("       Ejecuta primero: python backend/scripts/extraer.py", self.codigo)
             return False
 
         with open(self.contenido_path, 'r', encoding='utf-8') as f:
@@ -327,7 +327,7 @@ class Validador:
 
 def main():
     if len(sys.argv) < 2:
-        print("Uso: python scripts/leyesmx/validar.py <CODIGO> [--detalle]")
+        print("Uso: python backend/scripts/validar.py <CODIGO> [--detalle]")
         sys.exit(1)
 
     codigo = sys.argv[1].upper()

@@ -7,9 +7,9 @@ Usa extracción de párrafos basada en coordenadas X del PDF para jerarquía cor
 FAIL FAST: Valida antes de importar, verifica después.
 
 Uso:
-    python scripts/leyesmx/importar.py CFF
-    python scripts/leyesmx/importar.py CFF --limpiar  # Borra datos anteriores
-    python scripts/leyesmx/importar.py CFF --sin-x    # Usa párrafos del JSON (sin re-extraer)
+    python backend/scripts/importar.py CFF
+    python backend/scripts/importar.py CFF --limpiar  # Borra datos anteriores
+    python backend/scripts/importar.py CFF --sin-x    # Usa párrafos del JSON (sin re-extraer)
 """
 
 import json
@@ -459,7 +459,7 @@ def verificar_post_importacion(conn, codigo: str, mapa_path: Path) -> bool:
 
 def main():
     if len(sys.argv) < 2:
-        print("Uso: python scripts/leyesmx/importar.py <CODIGO> [--limpiar] [--sin-x]")
+        print("Uso: python backend/scripts/importar.py <CODIGO> [--limpiar] [--sin-x]")
         print("  --limpiar  Borra datos anteriores antes de importar")
         print("  --sin-x    No usa extractor X (usa párrafos del JSON)")
         sys.exit(1)

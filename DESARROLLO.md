@@ -26,20 +26,20 @@ PostgreSQL (normalizado)
 ### Etapa 1: Extraer Mapa
 
 ```bash
-python scripts/leyesmx/extraer_mapa.py CFF
+python backend/scripts/extraer_mapa.py CFF
 ```
 
-Genera: `scripts/leyesmx/data/cff/mapa_estructura.json`
+Genera: `backend/scripts/data/cff/mapa_estructura.json`
 
 ---
 
 ### Etapa 2: Aprobar (MANUAL)
 
 ```bash
-cat scripts/leyesmx/data/cff/mapa_estructura.json
+cat backend/scripts/data/cff/mapa_estructura.json
 # Comparar con outline en Okular/Evince
 
-cp scripts/leyesmx/data/cff/mapa_estructura.json scripts/leyesmx/data/cff/estructura_esperada.json
+cp backend/scripts/data/cff/mapa_estructura.json backend/scripts/data/cff/estructura_esperada.json
 ```
 
 ---
@@ -47,7 +47,7 @@ cp scripts/leyesmx/data/cff/mapa_estructura.json scripts/leyesmx/data/cff/estruc
 ### Etapa 3: Extraer Contenido
 
 ```bash
-python scripts/leyesmx/extraer.py CFF
+python backend/scripts/extraer.py CFF
 ```
 
 El extractor usa **coordenadas X** del PDF:
@@ -60,7 +60,7 @@ El extractor usa **coordenadas X** del PDF:
 ### Etapa 4: Validar
 
 ```bash
-python scripts/leyesmx/validar.py CFF
+python backend/scripts/validar.py CFF
 ```
 
 ---
@@ -68,7 +68,7 @@ python scripts/leyesmx/validar.py CFF
 ### Etapa 5: Importar
 
 ```bash
-python scripts/leyesmx/importar.py CFF
+python backend/scripts/importar.py CFF
 ```
 
 ---
@@ -76,7 +76,7 @@ python scripts/leyesmx/importar.py CFF
 ## Verificación Post-Importación
 
 ```bash
-python scripts/leyesmx/verificar_bd.py CFF
+python backend/scripts/verificar_bd.py CFF
 ```
 
 Confirma:
@@ -92,21 +92,21 @@ Para detectar cambios en artículos después de modificar el algoritmo de extrac
 
 ```bash
 # 1. Guardar checksums actuales como referencia (antes de modificar)
-python scripts/leyesmx/checksums.py CFF --guardar
+python backend/scripts/checksums.py CFF --guardar
 
 # 2. [Modificar algoritmo y reimportar]
 
 # 3. Comparar contra referencia
-python scripts/leyesmx/checksums.py CFF --comparar
+python backend/scripts/checksums.py CFF --comparar
 
 # 4. Ver contenido de artículo específico
-python scripts/leyesmx/checksums.py CFF --diff 66
+python backend/scripts/checksums.py CFF --diff 66
 
 # 5. Si los cambios son correctos, actualizar referencia
-python scripts/leyesmx/checksums.py CFF --guardar
+python backend/scripts/checksums.py CFF --guardar
 ```
 
-Los checksums se guardan en `scripts/leyesmx/data/<ley>/checksums_verificados.json` (versionado con git).
+Los checksums se guardan en `backend/scripts/data/<ley>/checksums_verificados.json` (versionado con git).
 
 ---
 
