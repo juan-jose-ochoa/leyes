@@ -139,8 +139,8 @@ export default function Home() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             <StatCard
               icon={<BookOpen className="h-6 w-6" />}
-              label="Leyes"
-              value={leyes.filter((l) => l.tipo === 'ley').length}
+              label="Leyes y Códigos"
+              value={leyes.filter((l) => l.tipo === 'ley' || l.tipo === 'codigo').length}
             />
             <StatCard
               icon={<BookOpen className="h-6 w-6" />}
@@ -184,7 +184,7 @@ export default function Home() {
                           ? 'bg-orange-600'
                           : leyItem.tipo === 'resolucion'
                             ? 'bg-amber-600'
-                            : leyItem.tipo === 'ley'
+                            : leyItem.tipo === 'ley' || leyItem.tipo === 'codigo'
                               ? 'bg-primary-600'
                               : 'bg-blue-600'
                       )}
@@ -198,7 +198,8 @@ export default function Home() {
                       <p className="text-sm text-gray-500">
                         {leyItem.total_articulos} {
                           leyItem.tipo === 'resolucion' ? 'reglas' :
-                          leyItem.tipo === 'anexo' ? 'fichas/criterios' : 'artículos'
+                          leyItem.tipo === 'anexo' ? 'fichas/criterios' :
+                          'artículos'
                         }
                       </p>
                     </div>

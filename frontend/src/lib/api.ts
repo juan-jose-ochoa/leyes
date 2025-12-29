@@ -2,7 +2,7 @@
 
 const API_BASE = '/api'
 
-export type LeyTipo = 'ley' | 'reglamento' | 'resolucion' | 'anexo'
+export type LeyTipo = 'codigo' | 'ley' | 'reglamento' | 'resolucion' | 'anexo'
 
 export interface Ley {
   id: number
