@@ -26,20 +26,20 @@ PostgreSQL (normalizado)
 ### Etapa 1: Extraer Mapa
 
 ```bash
-python backend/scripts/extraer_mapa.py CFF
+python backend/etl/extraer_mapa.py CFF
 ```
 
-Genera: `backend/scripts/data/cff/mapa_estructura.json`
+Genera: `backend/etl/data/cff/mapa_estructura.json`
 
 ---
 
 ### Etapa 2: Aprobar (MANUAL)
 
 ```bash
-cat backend/scripts/data/cff/mapa_estructura.json
+cat backend/etl/data/cff/mapa_estructura.json
 # Comparar con outline en Okular/Evince
 
-cp backend/scripts/data/cff/mapa_estructura.json backend/scripts/data/cff/estructura_esperada.json
+cp backend/etl/data/cff/mapa_estructura.json backend/etl/data/cff/estructura_esperada.json
 ```
 
 ---
@@ -47,7 +47,7 @@ cp backend/scripts/data/cff/mapa_estructura.json backend/scripts/data/cff/estruc
 ### Etapa 3: Extraer Contenido
 
 ```bash
-python backend/scripts/extraer.py CFF
+python backend/etl/extraer.py CFF
 ```
 
 El extractor usa **coordenadas X** del PDF:
@@ -60,7 +60,7 @@ El extractor usa **coordenadas X** del PDF:
 ### Etapa 4: Validar
 
 ```bash
-python backend/scripts/validar.py CFF
+python backend/etl/validar.py CFF
 ```
 
 ---
@@ -68,7 +68,7 @@ python backend/scripts/validar.py CFF
 ### Etapa 5: Importar
 
 ```bash
-python backend/scripts/importar.py CFF
+python backend/etl/importar.py CFF
 ```
 
 ---
@@ -76,7 +76,7 @@ python backend/scripts/importar.py CFF
 ## Verificación Post-Importación
 
 ```bash
-python backend/scripts/verificar_bd.py CFF
+python backend/etl/verificar_bd.py CFF
 ```
 
 Confirma:
@@ -92,21 +92,21 @@ Para detectar cambios en artículos después de modificar el algoritmo de extrac
 
 ```bash
 # 1. Guardar checksums actuales como referencia (antes de modificar)
-python backend/scripts/checksums.py CFF --guardar
+python backend/etl/checksums.py CFF --guardar
 
 # 2. [Modificar algoritmo y reimportar]
 
 # 3. Comparar contra referencia
-python backend/scripts/checksums.py CFF --comparar
+python backend/etl/checksums.py CFF --comparar
 
 # 4. Ver contenido de artículo específico
-python backend/scripts/checksums.py CFF --diff 66
+python backend/etl/checksums.py CFF --diff 66
 
 # 5. Si los cambios son correctos, actualizar referencia
-python backend/scripts/checksums.py CFF --guardar
+python backend/etl/checksums.py CFF --guardar
 ```
 
-Los checksums se guardan en `backend/scripts/data/<ley>/checksums_verificados.json` (versionado con git).
+Los checksums se guardan en `backend/etl/data/<ley>/checksums_verificados.json` (versionado con git).
 
 ---
 

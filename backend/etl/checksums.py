@@ -3,9 +3,9 @@
 Gestión de checksums para verificar cambios en artículos.
 
 Uso:
-    python backend/scripts/checksums.py CFF --guardar    # Guarda checksums actuales como referencia
-    python backend/scripts/checksums.py CFF --comparar  # Compara BD contra referencia guardada
-    python backend/scripts/checksums.py CFF --diff 66   # Muestra diferencia de un artículo específico
+    python backend/etl/checksums.py CFF --guardar    # Guarda checksums actuales como referencia
+    python backend/etl/checksums.py CFF --comparar  # Compara BD contra referencia guardada
+    python backend/etl/checksums.py CFF --diff 66   # Muestra diferencia de un artículo específico
 """
 
 import hashlib
@@ -77,7 +77,7 @@ def obtener_contenido_articulo(conn, ley: str, numero: str) -> str:
 def ruta_checksums(ley: str) -> Path:
     """Retorna la ruta del archivo de checksums para una ley."""
     ley_lower = ley.lower()
-    return BASE_DIR / f"backend/scripts/data/{ley_lower}/checksums_verificados.json"
+    return BASE_DIR / f"backend/etl/data/{ley_lower}/checksums_verificados.json"
 
 
 def guardar_checksums(ley: str):
@@ -108,7 +108,7 @@ def comparar_checksums(ley: str) -> dict:
 
     if not ruta.exists():
         print(f"No existe archivo de referencia: {ruta}")
-        print(f"Ejecuta primero: python backend/scripts/checksums.py {ley} --guardar")
+        print(f"Ejecuta primero: python backend/etl/checksums.py {ley} --guardar")
         return None
 
     with open(ruta, 'r', encoding='utf-8') as f:
@@ -197,8 +197,8 @@ def main():
                     print(f"    x Art. {num}")
 
             print(f"\nTotal: {total} cambios")
-            print(f"\nPara ver contenido: python backend/scripts/checksums.py {ley} --diff <numero>")
-            print(f"Para aceptar cambios: python backend/scripts/checksums.py {ley} --guardar")
+            print(f"\nPara ver contenido: python backend/etl/checksums.py {ley} --diff <numero>")
+            print(f"Para aceptar cambios: python backend/etl/checksums.py {ley} --guardar")
 
     elif accion == '--diff':
         if len(sys.argv) < 4:

@@ -6,8 +6,8 @@ Verifica que los datos importados coincidan con la estructura esperada.
 Usar después de importar para confirmar integridad.
 
 Uso:
-    python backend/scripts/verificar_bd.py CFF
-    python backend/scripts/verificar_bd.py CFF --detalle
+    python backend/etl/verificar_bd.py CFF
+    python backend/etl/verificar_bd.py CFF --detalle
 """
 
 import json
@@ -185,7 +185,7 @@ def verificar_divisiones_vacias(conn, codigo: str) -> tuple:
 
 def main():
     if len(sys.argv) < 2:
-        print("Uso: python backend/scripts/verificar_bd.py <CODIGO> [--detalle]")
+        print("Uso: python backend/etl/verificar_bd.py <CODIGO> [--detalle]")
         sys.exit(1)
 
     codigo = sys.argv[1].upper()

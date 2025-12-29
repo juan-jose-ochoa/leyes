@@ -6,9 +6,9 @@ Extrae estructura y contenido de PDFs oficiales.
 Genera JSON compatible con el esquema leyesmx.
 
 Uso:
-    python backend/scripts/extraer.py CFF
-    python backend/scripts/extraer.py CFF --solo-estructura
-    python backend/scripts/extraer.py CFF --solo-contenido
+    python backend/etl/extraer.py CFF
+    python backend/etl/extraer.py CFF --solo-estructura
+    python backend/etl/extraer.py CFF --solo-contenido
 """
 
 import re
@@ -317,7 +317,7 @@ class Extractor:
 
 def main():
     if len(sys.argv) < 2:
-        print("Uso: python backend/scripts/extraer.py <CODIGO>")
+        print("Uso: python backend/etl/extraer.py <CODIGO>")
         print(f"Leyes disponibles: {', '.join(listar_leyes())}")
         sys.exit(1)
 
