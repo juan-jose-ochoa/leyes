@@ -86,6 +86,30 @@ Confirma:
 
 ---
 
+## Verificación de Regresiones (Checksums)
+
+Para detectar cambios en artículos después de modificar el algoritmo de extracción:
+
+```bash
+# 1. Guardar checksums actuales como referencia (antes de modificar)
+python scripts/leyesmx/checksums.py CFF --guardar
+
+# 2. [Modificar algoritmo y reimportar]
+
+# 3. Comparar contra referencia
+python scripts/leyesmx/checksums.py CFF --comparar
+
+# 4. Ver contenido de artículo específico
+python scripts/leyesmx/checksums.py CFF --diff 66
+
+# 5. Si los cambios son correctos, actualizar referencia
+python scripts/leyesmx/checksums.py CFF --guardar
+```
+
+Los checksums se guardan en `doc/leyes/<ley>/checksums_verificados.json` (versionado con git).
+
+---
+
 ## Comandos de Administración
 
 ### Refrescar Vista Materializada
