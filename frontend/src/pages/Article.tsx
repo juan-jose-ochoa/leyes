@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom'
 import { Copy, Check, ExternalLink, BookOpen, ChevronLeft, ChevronRight, Home } from 'lucide-react'
 import { useState } from 'react'
-import { useArticle, useArticuloPorLey, useNavegacion, useDivisionesArticulo } from '@/hooks/useArticle'
+import { useArticle, useArticuloPorLey, useNavegacion, useDivisionesArticulo, useFraccionesArticulo } from '@/hooks/useArticle'
 import ArticleContent from '@/components/ArticleContent'
 import clsx from 'clsx'
 
@@ -22,7 +22,9 @@ export default function Article() {
   const { data: articulo, isLoading, error } = ley ? porLey : porId
   const { data: navegacion } = useNavegacion(articulo?.id ?? null)
   const { data: divisiones } = useDivisionesArticulo(articulo?.id ?? null)
+  const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null, ley ?? undefined)
   const [copied, setCopied] = useState(false)
+  const [mostrarReferencias, setMostrarReferencias] = useState(false)
 
   // Determinar el tipo basándose en el tipo del artículo o la ruta
   const esRegla = articulo?.tipo === 'regla' || esRutaRegla
@@ -178,6 +180,20 @@ export default function Article() {
             )}
           </button>
 
+          {fracciones && fracciones.length > 0 && (
+            <button
+              onClick={() => setMostrarReferencias(!mostrarReferencias)}
+              className={clsx(
+                'px-3 py-1.5 rounded-lg text-sm font-medium transition-colors',
+                mostrarReferencias
+                  ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'
+                  : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+              )}
+            >
+              {mostrarReferencias ? 'Ocultar DOF' : 'Mostrar DOF'}
+            </button>
+          )}
+
           {articulo.es_transitorio && (
             <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200">
               Transitorio
@@ -189,7 +205,7 @@ export default function Article() {
       {/* Contenido principal */}
       <div className="card">
         <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
-          <ArticleContent articuloId={articulo.id} contenido={articulo.contenido} ley={ley} />
+          <ArticleContent articuloId={articulo.id} contenido={articulo.contenido} ley={ley} mostrarReferencias={mostrarReferencias} />
         </div>
 
         {articulo.reformas && (

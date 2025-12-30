@@ -438,7 +438,8 @@ RETURNS TABLE (
     contenido TEXT,
     orden SMALLINT,
     nivel INTEGER,
-    es_continuacion BOOLEAN
+    es_continuacion BOOLEAN,
+    referencias_dof TEXT[]
 ) AS $$
 BEGIN
     RETURN QUERY
@@ -453,7 +454,8 @@ BEGIN
             p.numero as orden,
             0 as nivel,
             p.ley,
-            p.articulo_id
+            p.articulo_id,
+            p.referencias_dof
         FROM leyesmx.parrafos p
         WHERE p.articulo_id = art_id
           AND (p_ley IS NULL OR p.ley = p_ley)
@@ -471,7 +473,8 @@ BEGIN
             p.numero,
             j.nivel + 1,
             p.ley,
-            p.articulo_id
+            p.articulo_id,
+            p.referencias_dof
         FROM leyesmx.parrafos p
         JOIN jerarquia j ON p.padre_numero = j.id
                         AND p.ley = j.ley
@@ -487,7 +490,8 @@ BEGIN
         j.contenido,
         j.orden,
         j.nivel,
-        (j.tipo = 'texto' AND j.nivel > 0)::BOOLEAN
+        (j.tipo = 'texto' AND j.nivel > 0)::BOOLEAN,
+        j.referencias_dof
     FROM jerarquia j
     ORDER BY j.orden;
 END;

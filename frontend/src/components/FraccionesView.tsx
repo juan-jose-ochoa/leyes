@@ -3,9 +3,10 @@ import clsx from 'clsx'
 
 interface FraccionesViewProps {
   fracciones: Fraccion[]
+  mostrarReferencias?: boolean
 }
 
-export default function FraccionesView({ fracciones }: FraccionesViewProps) {
+export default function FraccionesView({ fracciones, mostrarReferencias = false }: FraccionesViewProps) {
   if (!fracciones || fracciones.length === 0) {
     return null
   }
@@ -13,14 +14,14 @@ export default function FraccionesView({ fracciones }: FraccionesViewProps) {
   return (
     <div className="space-y-4">
       {fracciones.map((fraccion) => (
-        <FraccionItem key={fraccion.id} fraccion={fraccion} />
+        <FraccionItem key={fraccion.id} fraccion={fraccion} mostrarReferencias={mostrarReferencias} />
       ))}
     </div>
   )
 }
 
-function FraccionItem({ fraccion }: { fraccion: Fraccion }) {
-  const { tipo, numero, contenido, nivel, es_continuacion } = fraccion
+function FraccionItem({ fraccion, mostrarReferencias }: { fraccion: Fraccion; mostrarReferencias: boolean }) {
+  const { tipo, numero, contenido, nivel, es_continuacion, referencias_dof } = fraccion
 
   // Indentación: continuaciones usan el nivel del padre
   const nivelVisual = es_continuacion ? nivel - 1 : nivel
@@ -93,6 +94,15 @@ function FraccionItem({ fraccion }: { fraccion: Fraccion }) {
         <p className="text-gray-700 dark:text-gray-300">
           {contenido}
         </p>
+      )}
+      {mostrarReferencias && referencias_dof && referencias_dof.length > 0 && (
+        <div className="text-right mt-1">
+          {referencias_dof.map((ref, i) => (
+            <p key={i} className="text-xs italic text-blue-600 dark:text-blue-400">
+              {ref}
+            </p>
+          ))}
+        </div>
       )}
     </div>
   )

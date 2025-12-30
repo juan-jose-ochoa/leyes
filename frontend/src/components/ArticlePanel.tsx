@@ -18,6 +18,7 @@ export default function ArticlePanel({ ley, numero, onClose, onNavigate }: Artic
   const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null, ley)
   const { data: divisiones } = useDivisionesArticulo(articulo?.id ?? null)
   const [copied, setCopied] = useState(false)
+  const [mostrarReferencias, setMostrarReferencias] = useState(false)
 
   const esRegla = articulo?.tipo === 'regla'
   const etiquetaTipo = esRegla ? 'Regla' : 'Artículo'
@@ -109,6 +110,20 @@ export default function ArticlePanel({ ley, numero, onClose, onNavigate }: Artic
           </div>
 
           <div className="flex items-center gap-2 shrink-0">
+            {fracciones && fracciones.length > 0 && (
+              <button
+                onClick={() => setMostrarReferencias(!mostrarReferencias)}
+                className={clsx(
+                  'px-2 py-1 rounded-lg text-xs font-medium transition-colors',
+                  mostrarReferencias
+                    ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'
+                    : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+                )}
+                title={mostrarReferencias ? 'Ocultar referencias DOF' : 'Mostrar referencias DOF'}
+              >
+                DOF
+              </button>
+            )}
             <button
               onClick={handleCopy}
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -144,7 +159,7 @@ export default function ArticlePanel({ ley, numero, onClose, onNavigate }: Artic
       <div className="flex-1 overflow-y-auto p-6">
         <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
           {fracciones && fracciones.length > 0 ? (
-            <FraccionesView fracciones={fracciones} />
+            <FraccionesView fracciones={fracciones} mostrarReferencias={mostrarReferencias} />
           ) : (
             articulo.contenido.split('\n\n').filter(p => p.trim()).map((paragraph, i) => (
               <p key={i} className="mb-4 leading-relaxed">

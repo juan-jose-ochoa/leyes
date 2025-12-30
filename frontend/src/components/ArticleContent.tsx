@@ -5,12 +5,13 @@ interface ArticleContentProps {
   articuloId: number
   contenido: string
   ley?: string
+  mostrarReferencias?: boolean
 }
 
 /**
  * Displays article content: intro paragraphs followed by fracciones if available.
  */
-export default function ArticleContent({ articuloId, contenido, ley }: ArticleContentProps) {
+export default function ArticleContent({ articuloId, contenido, ley, mostrarReferencias = false }: ArticleContentProps) {
   const { data: fracciones, isLoading } = useFraccionesArticulo(articuloId, ley)
 
   // Show loading skeleton briefly
@@ -31,7 +32,7 @@ export default function ArticleContent({ articuloId, contenido, ley }: ArticleCo
   return (
     <>
       {hasFracciones ? (
-        <FraccionesView fracciones={fracciones} />
+        <FraccionesView fracciones={fracciones} mostrarReferencias={mostrarReferencias} />
       ) : (
         /* Contenido sin fracciones (artículos simples) */
         contenido && contenido.trim() && (
