@@ -128,10 +128,11 @@ class Extractor:
         for y_key in sorted(lines.keys()):
             line_words = sorted(lines[y_key], key=lambda w: w['x0'])
             x0 = round(line_words[0]['x0'])
+            x1 = round(line_words[-1]['x1'])  # x_end para detectar justificación
             text = ' '.join(w['text'] for w in line_words).strip()
 
             if text and x0 >= 70:  # Ignorar headers/footers
-                result.append({'x': x0, 'y': y_key, 'text': text})
+                result.append({'x': x0, 'x_end': x1, 'y': y_key, 'text': text})
 
         return result
 
@@ -157,69 +158,99 @@ class Extractor:
         return ('texto', None, texto)
 
     def _consolidar_lineas(self, lineas: list[dict]) -> list[dict]:
-        """Consolida líneas físicas en párrafos lógicos usando coordenadas X/Y."""
+        """Consolida líneas físicas en párrafos lógicos usando 5 reglas.
+
+        Reglas para detectar nuevo párrafo:
+        1. Sangría (X mayor que líneas normales)
+        2. Y-gap mayor que espaciado normal entre líneas
+        3. Línea anterior NO justificada a la derecha (x_end < margen)
+        4. Empieza con mayúscula
+        5. Línea anterior termina con "."
+
+        Si 4+ reglas se cumplen → nuevo párrafo
+        """
         if not lineas:
             return []
 
-        def es_continuacion_wrap(texto: str) -> bool:
-            if not texto:
-                return False
-            primer_char = texto.strip()[0] if texto.strip() else ''
-            return primer_char.islower() or primer_char in ',:;.()' or \
-                   (primer_char.isdigit() and not re.match(r'^\d+\.', texto.strip()))
+        # Constantes para detección
+        X_NORMAL = 71       # X de líneas de texto normal (sin sangría)
+        X_SANGRIA = 80      # X mínimo para considerar sangría
+        X_MARGEN_DERECHO = 530  # Margen derecho (líneas justificadas llegan a ~543)
+        Y_GAP_NORMAL = 15   # Espaciado normal entre líneas
 
         lineas_consolidadas = []
         buffer_texto = ""
         buffer_x = None
         buffer_y = None
-        buffer_tiene_id = False
+        buffer_x_end = None
 
         for linea in lineas:
-            x, y, text = linea['x'], linea['y'], linea['text']
-            _, identificador, _ = self._detectar_tipo_identificador(text)
+            x = linea['x']
+            x_end = linea.get('x_end', 544)
+            y = linea['y']
+            text = linea['text']
 
-            y_gap = (y - buffer_y) if buffer_y is not None else 0
+            # Si tiene identificador (I., a), 1.) → siempre nuevo párrafo
+            _, identificador, _ = self._detectar_tipo_identificador(text)
+            if identificador:
+                if buffer_texto:
+                    lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
+                buffer_texto = text
+                buffer_x = x
+                buffer_y = y
+                buffer_x_end = x_end
+                continue
 
             if not buffer_texto:
+                # Primera línea
                 buffer_texto = text
                 buffer_x = x
                 buffer_y = y
-                buffer_tiene_id = identificador is not None
-            elif identificador:
+                buffer_x_end = x_end
+                continue
+
+            # Calcular puntuación de las 5 reglas
+            puntos = 0
+            y_gap = y - buffer_y
+
+            # Regla 1: Sangría (línea actual tiene X > normal)
+            tiene_sangria = x >= X_SANGRIA
+            if tiene_sangria:
+                puntos += 1
+
+            # Regla 2: Y-gap mayor que normal
+            y_gap_grande = y_gap > Y_GAP_NORMAL
+            if y_gap_grande:
+                puntos += 1
+
+            # Regla 3: Línea anterior NO justificada a la derecha
+            anterior_no_justificada = buffer_x_end < X_MARGEN_DERECHO
+            if anterior_no_justificada:
+                puntos += 1
+
+            # Regla 4: Empieza con mayúscula
+            primer_char = text.strip()[0] if text.strip() else ''
+            empieza_mayuscula = primer_char.isupper()
+            if empieza_mayuscula:
+                puntos += 1
+
+            # Regla 5: Línea anterior termina con "."
+            anterior_termina_punto = buffer_texto.rstrip().endswith('.')
+            if anterior_termina_punto:
+                puntos += 1
+
+            # Decisión: 4+ reglas = nuevo párrafo
+            if puntos >= 4:
                 lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
                 buffer_texto = text
                 buffer_x = x
                 buffer_y = y
-                buffer_tiene_id = True
-            elif x > buffer_x + X_TOLERANCE:
+                buffer_x_end = x_end
+            else:
+                # Continuación del párrafo actual
                 buffer_texto += " " + text
                 buffer_y = y
-            elif y_gap >= Y_PARAGRAPH_GAP and not es_continuacion_wrap(text):
-                lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
-                buffer_texto = text
-                buffer_x = x
-                buffer_y = y
-                buffer_tiene_id = False
-            elif x < buffer_x - X_TOLERANCE:
-                if es_continuacion_wrap(text):
-                    buffer_texto += " " + text
-                    buffer_y = y
-                else:
-                    lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
-                    buffer_texto = text
-                    buffer_x = x
-                    buffer_y = y
-                    buffer_tiene_id = False
-            else:
-                if buffer_tiene_id:
-                    lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
-                    buffer_texto = text
-                    buffer_x = x
-                    buffer_y = y
-                    buffer_tiene_id = False
-                else:
-                    buffer_texto += " " + text
-                    buffer_y = y
+                buffer_x_end = x_end
 
         if buffer_texto:
             lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
@@ -305,14 +336,12 @@ class Extractor:
                         todas_lineas.append(linea)
                     continue
 
-                # Detectar fin
+                # Detectar fin (siguiente artículo)
                 if en_articulo:
-                    match = patron_siguiente.search(text)
-                    if match and not patron_art.search(text):
-                        antes = text[:match.start()].lower()
-                        if not any(p in antes for p in ['del ', 'al ', 'el ', 'este ', 'dicho ', 'presente ', 'referido ']):
-                            en_articulo = False
-                            break
+                    match = patron_siguiente.match(text)  # match() = inicio de línea
+                    if match and linea['x'] >= 80:  # X de encabezado de artículo
+                        en_articulo = False
+                        break
                     todas_lineas.append(linea)
 
             if not en_articulo and pag_num > pag_inicio:
