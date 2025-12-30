@@ -86,41 +86,47 @@ def verificar_articulos_por_capitulo(conn, codigo: str, mapa: dict, detalle: boo
     """Verifica que cada capítulo tenga los artículos correctos."""
     errores = []
 
-    # Construir esperado por capítulo
+    # Construir esperado por (titulo, capitulo) para evitar colisiones
     esperado_por_cap = {}
     for titulo_num, titulo_data in mapa.get("titulos", {}).items():
         for cap_num, cap_data in titulo_data.get("capitulos", {}).items():
             articulos = cap_data.get("articulos", [])
-            esperado_por_cap[cap_num] = {
+            key = (titulo_num, cap_num)
+            esperado_por_cap[key] = {
                 "titulo": titulo_num,
+                "capitulo": cap_num,
                 "total": len(articulos),
                 "articulos": set(articulos)
             }
 
-    # Obtener real de BD
+    # Obtener real de BD con título padre
     with conn.cursor() as cur:
         cur.execute("""
-            SELECT d.numero as capitulo, a.numero as articulo
+            SELECT p.numero as titulo, d.numero as capitulo, a.numero as articulo
             FROM leyesmx.divisiones d
+            JOIN leyesmx.divisiones p ON p.id = d.padre_id AND p.ley = d.ley
             JOIN leyesmx.articulos a ON a.division_id = d.id AND a.ley = d.ley
             WHERE d.ley = %s AND d.tipo = 'capitulo'
-            ORDER BY d.numero, a.orden
+            ORDER BY p.numero, d.numero, a.orden
         """, (codigo,))
 
         real_por_cap = {}
         for row in cur.fetchall():
-            cap_num = row[0]
-            art_num = row[1]
-            if cap_num not in real_por_cap:
-                real_por_cap[cap_num] = set()
-            real_por_cap[cap_num].add(art_num)
+            titulo_num = row[0]
+            cap_num = row[1]
+            art_num = row[2]
+            key = (titulo_num, cap_num)
+            if key not in real_por_cap:
+                real_por_cap[key] = set()
+            real_por_cap[key].add(art_num)
 
     # Comparar
-    for cap_num, esperado in esperado_por_cap.items():
-        real = real_por_cap.get(cap_num, set())
+    for key, esperado in esperado_por_cap.items():
+        real = real_por_cap.get(key, set())
+        titulo_num, cap_num = key
 
         if len(real) != esperado["total"]:
-            errores.append(f"Cap {cap_num}: esperado {esperado['total']}, real {len(real)}")
+            errores.append(f"Título {titulo_num}, Cap {cap_num}: esperado {esperado['total']}, real {len(real)}")
 
             if detalle:
                 faltantes = esperado["articulos"] - real
@@ -131,9 +137,10 @@ def verificar_articulos_por_capitulo(conn, codigo: str, mapa: dict, detalle: boo
                     errores.append(f"  Extras: {sorted(extras)[:10]}")
 
     # Verificar capítulos huérfanos (en BD pero no en mapa)
-    for cap_num in real_por_cap:
-        if cap_num not in esperado_por_cap:
-            errores.append(f"Cap {cap_num}: existe en BD pero no en mapa_estructura")
+    for key in real_por_cap:
+        if key not in esperado_por_cap:
+            titulo_num, cap_num = key
+            errores.append(f"Título {titulo_num}, Cap {cap_num}: existe en BD pero no en mapa_estructura")
 
     return len(errores) == 0, errores
 
