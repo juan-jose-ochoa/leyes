@@ -31,7 +31,7 @@ LEYES = {
 
             # Divisiones estructurales (línea completa, sin acento también)
             "titulo": r'^TITULOS?\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|SEPTIMO|OCTAVO|NOVENO|DECIMO)\s*$',
-            "capitulo": r'^CAPITULOS?\s+([IVX]+|UNICO)\s*$',
+            "capitulo": r'^CAP[IÍ]TULOS?\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$',
             "seccion": r'^Secci[oó]n\s+(Primera|Segunda|Tercera|Cuarta|Quinta|Sexta|Séptima|Octava|Novena|Décima)\s*$',
 
             # Fracciones dentro de artículos

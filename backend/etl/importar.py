@@ -114,14 +114,14 @@ def normalizar_numero(numero: str) -> str:
     return s
 
 
-def cargar_mapa_estructura(mapa_path: Path) -> tuple[dict, set]:
+def cargar_mapa_estructura(mapa_path: Path) -> dict:
     """Carga mapa_estructura.json y crea lookup artículo -> (titulo, capitulo, seccion).
 
     Si el capítulo tiene secciones, el lookup apunta a la sección.
     Si no tiene secciones, apunta al capítulo directamente.
 
     Returns:
-        Tupla de (articulo_a_division, derogados_set)
+        Diccionario articulo_a_division
     """
     with open(mapa_path, 'r', encoding='utf-8') as f:
         mapa = json.load(f)
@@ -143,10 +143,7 @@ def cargar_mapa_estructura(mapa_path: Path) -> tuple[dict, set]:
                     key = normalizar_numero(articulo)
                     articulo_a_division[key] = (titulo_num, cap_num, None)
 
-    # Cargar lista de derogados
-    derogados = set(normalizar_numero(d) for d in mapa.get("derogados", []))
-
-    return articulo_a_division, derogados
+    return articulo_a_division
 
 
 def convertir_estructura_esperada(mapa_path: Path) -> list:
@@ -206,7 +203,7 @@ def convertir_estructura_esperada(mapa_path: Path) -> list:
 
 
 def validar_antes_de_importar(contenido_path: Path, mapa_path: Path) -> bool:
-    """Valida que todos los artículos tengan división asignada (excepto derogados). FAIL FAST."""
+    """Valida que todos los artículos tengan división asignada. FAIL FAST."""
     print("\n   Validando asignación de divisiones...")
 
     if not mapa_path.exists():
@@ -216,7 +213,7 @@ def validar_antes_de_importar(contenido_path: Path, mapa_path: Path) -> bool:
     with open(contenido_path, 'r', encoding='utf-8') as f:
         contenido = json.load(f)
 
-    articulo_a_division, derogados = cargar_mapa_estructura(mapa_path)
+    articulo_a_division = cargar_mapa_estructura(mapa_path)
 
     articulos = contenido.get("articulos", [])
     sin_division = []
@@ -224,9 +221,6 @@ def validar_antes_de_importar(contenido_path: Path, mapa_path: Path) -> bool:
     for art in articulos:
         numero = art["numero"]
         key = normalizar_numero(numero)
-        # Saltar derogados - no tienen división
-        if key in derogados:
-            continue
         if key not in articulo_a_division:
             sin_division.append(numero)
 
@@ -235,9 +229,7 @@ def validar_antes_de_importar(contenido_path: Path, mapa_path: Path) -> bool:
         print(f"   {sin_division[:10]}{'...' if len(sin_division) > 10 else ''}")
         return False
 
-    if derogados:
-        print(f"   NOTA: {len(derogados)} artículos derogados serán omitidos")
-    print(f"   OK: {len(articulos) - len(derogados)} artículos con división asignada")
+    print(f"   OK: {len(articulos)} artículos con división asignada")
     return True
 
 
@@ -360,7 +352,7 @@ def importar_contenido(conn, codigo: str, contenido_path: Path, mapa_path: Path,
     with open(contenido_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    articulo_a_division, derogados = cargar_mapa_estructura(mapa_path)
+    articulo_a_division = cargar_mapa_estructura(mapa_path)
 
     articulos = data.get("articulos", [])
     if not articulos:
@@ -369,19 +361,13 @@ def importar_contenido(conn, codigo: str, contenido_path: Path, mapa_path: Path,
 
     total_parrafos = 0
     errores = []
-    omitidos_derogados = 0
 
     with conn.cursor() as cur:
         for i, art in enumerate(articulos):
             numero = art["numero"]
             key = normalizar_numero(numero)
 
-            # Saltar artículos derogados
-            if key in derogados:
-                omitidos_derogados += 1
-                continue
-
-            # Obtener división desde mapa_estructura (ahora retorna 3 elementos)
+            # Obtener división desde mapa_estructura (retorna 3 elementos)
             division_info = articulo_a_division.get(key)
             if not division_info:
                 errores.append(f"Artículo {numero}: sin división en mapa")
@@ -449,9 +435,7 @@ def importar_contenido(conn, codigo: str, contenido_path: Path, mapa_path: Path,
         if len(errores) > 5:
             print(f"      ... y {len(errores) - 5} más")
 
-    articulos_importados = len(articulos) - len(errores) - omitidos_derogados
-    if omitidos_derogados:
-        print(f"   ({omitidos_derogados} artículos derogados omitidos)")
+    articulos_importados = len(articulos) - len(errores)
     print(f"   {articulos_importados} artículos, {total_parrafos} párrafos importados")
     return len(errores) == 0
 
@@ -460,10 +444,10 @@ def verificar_post_importacion(conn, codigo: str, mapa_path: Path) -> bool:
     """Verifica integridad después de importar. FAIL FAST."""
     print("\n7. Verificando integridad post-importación...")
 
-    articulo_a_division, derogados = cargar_mapa_estructura(mapa_path)
+    articulo_a_division = cargar_mapa_estructura(mapa_path)
 
     # Contar artículos esperados por división (capítulo o sección)
-    # El lookup ahora retorna (titulo, cap, sec_or_None)
+    # El lookup retorna (titulo, cap, sec_or_None)
     esperado_por_div = {}
     for numero, (titulo, cap, sec) in articulo_a_division.items():
         # Usar sección si existe, si no usar capítulo

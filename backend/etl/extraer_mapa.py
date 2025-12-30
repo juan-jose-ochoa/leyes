@@ -139,34 +139,21 @@ def extraer_articulos_outline(doc) -> tuple[list[ArticuloRef], list[ArticuloRef]
     return articulos, transitorios
 
 
-def detectar_derogados(doc, articulos: list[ArticuloRef]) -> list[ArticuloRef]:
+def marcar_derogados(doc, articulos: list[ArticuloRef]) -> None:
     """
-    Detecta artículos derogados leyendo el texto del PDF.
-
-    Returns:
-        Lista de artículos derogados (removidos de la lista original)
+    Detecta y marca artículos derogados leyendo el texto del PDF.
+    Modifica los artículos in-place, marcando art.derogado = True.
     """
-    derogados = []
-    vigentes = []
-
     for art in articulos:
         # Leer texto de la página del artículo
         page_idx = art.pagina - 1
         if page_idx < 0 or page_idx >= len(doc):
-            vigentes.append(art)
             continue
 
         texto = doc[page_idx].get_text()
 
-        # Buscar patrón de derogado cerca del artículo
-        # Construir patrón para buscar el artículo y "(Se deroga)" después
-        numero_escapado = re.escape(art.numero.replace('-', '[-–]?').replace(' ', r'\s*'))
-        patron = rf'Artículo\s+{numero_escapado}.*?(?:Se deroga|DEROGADO)'
-
-        # Búsqueda simplificada: si el texto del artículo contiene "Se deroga"
         # Buscar línea del artículo
         lineas = texto.split('\n')
-        es_derogado = False
 
         for i, linea in enumerate(lineas):
             # Normalizar número para comparación
@@ -177,35 +164,28 @@ def detectar_derogados(doc, articulos: list[ArticuloRef]) -> list[ArticuloRef]:
                 # Revisar esta línea y las siguientes
                 texto_cercano = ' '.join(lineas[i:i+3]).lower()
                 if 'se deroga' in texto_cercano or '(derogado)' in texto_cercano:
-                    es_derogado = True
+                    art.derogado = True
                     break
 
-        if es_derogado:
-            art.derogado = True
-            derogados.append(art)
-        else:
-            vigentes.append(art)
 
-    return vigentes, derogados
-
-
-def extraer_estructura(doc, pagina_fin: int = None) -> list[TituloRef]:
+def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[TituloRef]:
     """
     Extrae estructura jerárquica (Títulos/Capítulos/Secciones) del texto del PDF.
 
     Args:
         doc: Documento PyMuPDF
+        config: Configuración de la ley (contiene patrones)
         pagina_fin: Página donde termina el contenido (opcional, 1-indexed)
     """
     titulos = []
     titulo_actual = None
     capitulo_actual = None
 
-    # Patrones soportan MAYÚSCULAS y Title Case, con y sin acentos
-    # Títulos pueden ser ordinales (PRIMERO...) o romanos (I, II, III...)
-    patron_titulo = r'^T[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[EÉ]PTIMO|OCTAVO|NOVENO|D[EÉ]CIMO|[IVX]+)\s*$'
-    patron_capitulo = r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$'
-    patron_seccion = r'^SECCI[OÓ]N\s+([IVX]+)\s*$'
+    # Patrones desde config, con defaults
+    patrones = config.get("patrones", {})
+    patron_titulo = patrones.get("titulo", r'^T[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[EÉ]PTIMO|OCTAVO|NOVENO|D[EÉ]CIMO|[IVX]+)\s*$')
+    patron_capitulo = patrones.get("capitulo", r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$')
+    patron_seccion = patrones.get("seccion", r'^SECCI[OÓ]N\s+([IVX]+)\s*$')
 
     for page_num, page in enumerate(doc):
         # Si hay límite de página, detenerse
@@ -368,14 +348,14 @@ def asignar_articulos_a_capitulos(titulos: list[TituloRef], articulos: list[Arti
             puntos_corte[0][2].articulos.append(art)
 
 
-def extraer_mapa(codigo: str) -> tuple[list[TituloRef], list[ArticuloRef], list[ArticuloRef]]:
+def extraer_mapa(codigo: str) -> tuple[list[TituloRef], list[ArticuloRef]]:
     """
     Extrae el mapa estructural completo del PDF.
 
     Usa el outline del PDF como fuente autoritativa para artículos.
 
     Returns:
-        Tupla de (titulos, derogados, transitorios)
+        Tupla de (titulos, transitorios)
     """
     config = get_config(codigo)
     pdf_path = BASE_DIR / config["pdf_path"]
@@ -391,29 +371,31 @@ def extraer_mapa(codigo: str) -> tuple[list[TituloRef], list[ArticuloRef], list[
     articulos, transitorios = extraer_articulos_outline(doc)
     print(f"   Encontrados: {len(articulos)} artículos, {len(transitorios)} transitorios")
 
-    # 2. Detectar derogados
+    # 2. Marcar derogados (in-place)
     print("   Detectando artículos derogados...")
-    vigentes, derogados = detectar_derogados(doc, articulos)
-    print(f"   Vigentes: {len(vigentes)}, Derogados: {len(derogados)}")
+    marcar_derogados(doc, articulos)
+    derogados_count = sum(1 for a in articulos if a.derogado)
+    print(f"   Vigentes: {len(articulos) - derogados_count}, Derogados: {derogados_count}")
 
     # 3. Extraer estructura (Títulos/Capítulos)
     print("   Extrayendo estructura jerárquica...")
     pagina_fin = config.get("pagina_fin_contenido")
-    titulos = extraer_estructura(doc, pagina_fin)
+    titulos = extraer_estructura(doc, config, pagina_fin)
     print(f"   Encontrados: {len(titulos)} títulos, {sum(len(t.capitulos) for t in titulos)} capítulos")
 
-    # 4. Asignar artículos a capítulos
+    # 4. Asignar TODOS los artículos a capítulos (incluyendo derogados)
     print("   Asignando artículos a capítulos...")
-    asignar_articulos_a_capitulos(titulos, vigentes, doc)
+    asignar_articulos_a_capitulos(titulos, articulos, doc)
 
     doc.close()
 
-    return titulos, derogados, transitorios
+    return titulos, transitorios
 
 
-def imprimir_mapa(titulos: list[TituloRef], derogados: list[ArticuloRef], transitorios: list[ArticuloRef]):
+def imprimir_mapa(titulos: list[TituloRef], transitorios: list[ArticuloRef]):
     """Imprime el mapa en formato legible."""
     total_articulos = 0
+    total_derogados = 0
     total_secciones = 0
 
     for titulo in titulos:
@@ -430,28 +412,29 @@ def imprimir_mapa(titulos: list[TituloRef], derogados: list[ArticuloRef], transi
                 for sec in cap.secciones:
                     nombre_sec = f" - {sec.nombre}" if sec.nombre else ""
                     arts = [a.numero for a in sec.articulos]
+                    derogados_sec = sum(1 for a in sec.articulos if a.derogado)
                     total_articulos += len(arts)
+                    total_derogados += derogados_sec
                     if arts:
                         rango = f"{arts[0]} ... {arts[-1]}" if len(arts) > 2 else ", ".join(arts)
                         print(f"    SECCION {sec.numero}{nombre_sec}")
-                        print(f"      Artículos: {rango} ({len(arts)} arts)")
+                        derog_info = f", {derogados_sec} derogados" if derogados_sec else ""
+                        print(f"      Artículos: {rango} ({len(arts)} arts{derog_info})")
                     else:
                         print(f"    SECCION {sec.numero}{nombre_sec}")
                         print(f"      (sin artículos)")
             else:
                 # Sin secciones, mostrar artículos del capítulo
                 arts = [a.numero for a in cap.articulos]
+                derogados_cap = sum(1 for a in cap.articulos if a.derogado)
                 total_articulos += len(arts)
+                total_derogados += derogados_cap
                 if arts:
                     rango = f"{arts[0]} ... {arts[-1]}" if len(arts) > 2 else ", ".join(arts)
-                    print(f"    Artículos: {rango} ({len(arts)} arts)")
+                    derog_info = f", {derogados_cap} derogados" if derogados_cap else ""
+                    print(f"    Artículos: {rango} ({len(arts)} arts{derog_info})")
                 else:
                     print(f"    (sin artículos detectados)")
-
-    if derogados:
-        print(f"\nDEROGADOS ({len(derogados)} artículos):")
-        nums = [a.numero for a in derogados]
-        print(f"  {', '.join(nums[:10])}{'...' if len(nums) > 10 else ''}")
 
     if transitorios:
         print(f"\nTRANSITORIOS ({len(transitorios)} artículos)")
@@ -462,19 +445,19 @@ def imprimir_mapa(titulos: list[TituloRef], derogados: list[ArticuloRef], transi
     print(f"  Capítulos:   {sum(len(t.capitulos) for t in titulos)}")
     if total_secciones > 0:
         print(f"  Secciones:   {total_secciones}")
-    print(f"  Vigentes:    {total_articulos}")
-    print(f"  Derogados:   {len(derogados)}")
+    print(f"  Artículos:   {total_articulos} ({total_articulos - total_derogados} vigentes, {total_derogados} derogados)")
     print(f"  Transitorios:{len(transitorios)}")
 
 
-def generar_json(titulos: list[TituloRef], derogados: list[ArticuloRef], transitorios: list[ArticuloRef]) -> dict:
+def generar_json(titulos: list[TituloRef], transitorios: list[ArticuloRef]) -> dict:
     """Genera estructura JSON para guardar."""
     resultado = {
         "titulos": {}
     }
 
     total_secciones = 0
-    total_vigentes = 0
+    total_articulos = 0
+    total_derogados = 0
 
     for titulo in titulos:
         titulo_data = {
@@ -499,18 +482,17 @@ def generar_json(titulos: list[TituloRef], derogados: list[ArticuloRef], transit
                         "pagina": sec.pagina,
                         "articulos": [a.numero for a in sec.articulos]
                     }
-                    total_vigentes += len(sec.articulos)
+                    total_articulos += len(sec.articulos)
+                    total_derogados += sum(1 for a in sec.articulos if a.derogado)
                     cap_data["secciones"][sec.numero] = sec_data
             else:
                 cap_data["articulos"] = [a.numero for a in cap.articulos]
-                total_vigentes += len(cap.articulos)
+                total_articulos += len(cap.articulos)
+                total_derogados += sum(1 for a in cap.articulos if a.derogado)
 
             titulo_data["capitulos"][cap.numero] = cap_data
 
         resultado["titulos"][titulo.numero] = titulo_data
-
-    # Derogados
-    resultado["derogados"] = [a.numero for a in derogados]
 
     # Transitorios
     resultado["transitorios"] = [a.numero for a in transitorios]
@@ -520,10 +502,10 @@ def generar_json(titulos: list[TituloRef], derogados: list[ArticuloRef], transit
         "titulos": len(titulos),
         "capitulos": sum(len(t.capitulos) for t in titulos),
         "secciones": total_secciones,
-        "articulos_vigentes": total_vigentes,
-        "articulos_derogados": len(derogados),
+        "articulos_vigentes": total_articulos - total_derogados,
+        "articulos_derogados": total_derogados,
         "articulos_transitorios": len(transitorios),
-        "total": total_vigentes + len(derogados)
+        "total": total_articulos
     }
 
     return resultado
@@ -543,13 +525,13 @@ def main():
 
     print("\n1. Procesando PDF...")
     try:
-        titulos, derogados, transitorios = extraer_mapa(codigo)
+        titulos, transitorios = extraer_mapa(codigo)
     except Exception as e:
         print(f"ERROR: {e}")
         sys.exit(1)
 
     print("\n2. Mapa estructural:")
-    imprimir_mapa(titulos, derogados, transitorios)
+    imprimir_mapa(titulos, transitorios)
 
     # Guardar JSON
     config = get_config(codigo)
@@ -557,7 +539,7 @@ def main():
     mapa_path = output_dir / "mapa_estructura.json"
 
     print(f"\n3. Guardando {mapa_path.name}...")
-    mapa_json = generar_json(titulos, derogados, transitorios)
+    mapa_json = generar_json(titulos, transitorios)
     mapa_json["ley"] = codigo
     mapa_json["fuente"] = config.get("url_fuente", "")
     mapa_json["metodo"] = "outline"

@@ -45,9 +45,10 @@ class DiferenciaArticulo:
 
 @dataclass
 class ResultadoValidacion:
-    """Resultado de validación por título/capítulo."""
+    """Resultado de validación por título/capítulo/sección."""
     titulo: str
     capitulo: str
+    seccion: Optional[str]  # None si es capítulo directo
     esperados: int
     encontrados: int
     faltantes: list[str] = field(default_factory=list)
@@ -147,7 +148,7 @@ class Validador:
         numero = re.sub(r'\s+', ' ', numero)
 
         # Convertir "BIS" -> "Bis", "TER" -> "Ter", etc.
-        numero = re.sub(r'\b(BIS|TER|QUÁTER|QUINQUIES|SEXIES)\b',
+        numero = re.sub(r'\b(BIS|TER|QUÁTER|QUINTUS|QUINQUIES|SEXIES)\b',
                        lambda m: m.group(1).capitalize(), numero, flags=re.IGNORECASE)
 
         # Normalizar separador antes de letras sueltas (A, B, C...) pero NO antes de sufijos
@@ -174,38 +175,52 @@ class Validador:
         return {self._normalizar(a["numero"]) for a in self.contenido.get("articulos", [])}
 
     def obtener_articulos_esperados(self) -> dict[str, dict]:
-        """Obtiene artículos esperados organizados por título/capítulo."""
+        """Obtiene artículos esperados organizados por título/capítulo/sección."""
         resultado = {}
         for titulo_num, titulo_data in self.esperada.get("titulos", {}).items():
             for cap_num, cap_data in titulo_data.get("capitulos", {}).items():
-                key = f"{titulo_num}.{cap_num}"
-                resultado[key] = {
-                    "titulo": titulo_num,
-                    "capitulo": cap_num,
-                    "articulos": {self._normalizar(a) for a in cap_data.get("articulos", [])}
-                }
+                # Artículos directamente en el capítulo
+                if cap_data.get("articulos"):
+                    key = f"{titulo_num}.{cap_num}"
+                    resultado[key] = {
+                        "titulo": titulo_num,
+                        "capitulo": cap_num,
+                        "seccion": None,
+                        "articulos": {self._normalizar(a) for a in cap_data.get("articulos", [])}
+                    }
+
+                # Artículos en secciones dentro del capítulo
+                for sec_num, sec_data in cap_data.get("secciones", {}).items():
+                    key = f"{titulo_num}.{cap_num}.{sec_num}"
+                    resultado[key] = {
+                        "titulo": titulo_num,
+                        "capitulo": cap_num,
+                        "seccion": sec_num,
+                        "articulos": {self._normalizar(a) for a in sec_data.get("articulos", [])}
+                    }
         return resultado
 
     def validar_por_capitulo(self):
-        """Valida artículos por capítulo."""
+        """Valida artículos por capítulo y sección."""
         extraidos = self.obtener_articulos_extraidos()
-        esperados_por_cap = self.obtener_articulos_esperados()
+        esperados_por_division = self.obtener_articulos_esperados()
 
         todos_esperados = set()
-        for cap_data in esperados_por_cap.values():
-            todos_esperados.update(cap_data["articulos"])
+        for div_data in esperados_por_division.values():
+            todos_esperados.update(div_data["articulos"])
 
-        # Validar cada capítulo
-        for key, cap_data in esperados_por_cap.items():
-            esperados = cap_data["articulos"]
+        # Validar cada capítulo/sección
+        for key, div_data in esperados_por_division.items():
+            esperados = div_data["articulos"]
             encontrados = esperados & extraidos
 
             faltantes = list(esperados - extraidos)
             extras = []  # Los extras se calculan globalmente
 
             resultado = ResultadoValidacion(
-                titulo=cap_data["titulo"],
-                capitulo=cap_data["capitulo"],
+                titulo=div_data["titulo"],
+                capitulo=div_data["capitulo"],
+                seccion=div_data.get("seccion"),
                 esperados=len(esperados),
                 encontrados=len(encontrados),
                 faltantes=sorted(faltantes, key=self._sort_articulo),
@@ -216,15 +231,14 @@ class Validador:
             # Registrar diferencias
             for num in faltantes:
                 self.diferencias.append(DiferenciaArticulo(
-                    titulo=cap_data["titulo"],
-                    capitulo=cap_data["capitulo"],
+                    titulo=div_data["titulo"],
+                    capitulo=div_data["capitulo"],
                     numero=num,
                     tipo="faltante"
                 ))
 
         # Detectar artículos extra (no esperados)
-        derogados = {self._normalizar(d) for d in self.esperada.get("derogados", [])}
-        extras_globales = extraidos - todos_esperados - derogados
+        extras_globales = extraidos - todos_esperados
 
         for num in extras_globales:
             self.diferencias.append(DiferenciaArticulo(
@@ -271,10 +285,10 @@ class Validador:
         total_extraidos = len(self.contenido.get("articulos", []))
         print(f"Extraído:   {total_extraidos} artículos")
 
-        # Resultados por capítulo
-        print("\n" + "-" * 70)
-        print(f"{'Título':<10} {'Capítulo':<10} {'Esperado':<10} {'Encontrado':<12} {'Estado':<10}")
-        print("-" * 70)
+        # Resultados por capítulo/sección
+        print("\n" + "-" * 80)
+        print(f"{'Título':<10} {'Capítulo':<10} {'Sección':<10} {'Esperado':<10} {'Encontrado':<12} {'Estado':<10}")
+        print("-" * 80)
 
         total_faltantes = 0
         total_extras = 0
@@ -282,7 +296,8 @@ class Validador:
         for r in self.resultados:
             estado = "OK" if r.ok else "FALLO"
             marca = "✓" if r.ok else "✗"
-            print(f"{marca} {r.titulo:<8} {r.capitulo:<10} {r.esperados:<10} {r.encontrados:<12} {estado:<10}")
+            seccion = r.seccion or "-"
+            print(f"{marca} {r.titulo:<8} {r.capitulo:<10} {seccion:<10} {r.esperados:<10} {r.encontrados:<12} {estado:<10}")
 
             if detalle and r.faltantes:
                 print(f"  └─ Faltantes: {', '.join(r.faltantes[:5])}{'...' if len(r.faltantes) > 5 else ''}")
@@ -292,7 +307,7 @@ class Validador:
         # Extras globales
         extras = [d for d in self.diferencias if d.tipo == "extra"]
         if extras:
-            print("-" * 70)
+            print("-" * 80)
             print(f"✗ EXTRAS (no esperados): {len(extras)} artículos")
             if detalle:
                 nums = sorted([d.numero for d in extras], key=self._sort_articulo)
@@ -300,7 +315,7 @@ class Validador:
             total_extras = len(extras)
 
         # Resumen
-        print("-" * 70)
+        print("-" * 80)
         total_ok = sum(1 for r in self.resultados if r.ok)
         total = len(self.resultados)
 
