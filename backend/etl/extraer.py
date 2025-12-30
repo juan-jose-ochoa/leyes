@@ -395,7 +395,7 @@ class Extractor:
         todas_lineas = []
         referencias = []  # Lista de (y_global, texto_referencia)
         en_articulo = False
-        basura = self.config.get("basura_lineas", [
+        ruido = self.config.get("ruido_lineas", [
             'CÓDIGO FISCAL', 'CÁMARA DE DIPUTADOS', 'Secretaría General',
             'Servicios Parlamentarios', 'DOF', 'de 375', 'Última Reforma'
         ])
@@ -418,8 +418,8 @@ class Extractor:
                         referencias.append((y_global, text))
                     continue
 
-                # Filtrar basura (después de detectar referencias)
-                if any(skip in text for skip in basura):
+                # Filtrar ruido (después de detectar referencias)
+                if any(skip in text for skip in ruido):
                     continue
 
                 # Detectar inicio

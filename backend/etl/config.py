@@ -39,9 +39,9 @@ LEYES = {
             "numeral": r'^(\d{1,2})\.\s+',
         },
 
-        # Texto basura a eliminar (encabezados, pies de página)
+        # Ruido a eliminar (encabezados, pies de página)
         # NOTA: No usar .* sin límite - usar [^\n]* para limitar a una línea
-        "basura": [
+        "ruido": [
             r'CÓDIGO FISCAL DE LA FEDERACIÓN\s*',
             r'CÁMARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNIÓN\s*',
             r'Secretaría de Servicios Parlamentarios\s*',
@@ -105,12 +105,89 @@ LEYES = {
             "numeral": r'^(\d{1,2})\.\s+',
         },
 
-        # Texto basura a eliminar
-        "basura": [
+        # Ruido a eliminar
+        "ruido": [
             r'RESOLUCIÓN MISCELÁNEA FISCAL',
             r'Secretaría de Hacienda',
             r'DOF:\s+\d{2}/\d{2}/\d{4}',
         ],
+    },
+
+    "CPEUM": {
+        "nombre": "Constitución Política de los Estados Unidos Mexicanos",
+        "nombre_corto": "Constitución",
+        "tipo": "codigo",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+        "pdf_path": "backend/etl/data/cpeum/cpeum_constitucion_politica.pdf",
+
+        # Estructura jerárquica permitida
+        "divisiones_permitidas": ["titulo", "capitulo"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral", "apartado"],
+
+        # Tipo de contenido principal
+        "tipo_contenido": "articulo",
+
+        # Patrones de detección
+        # NOTA: La CPEUM usa Title Case para títulos/capítulos, no MAYÚSCULAS
+        "patrones": {
+            # Artículo: "Artículo 1o.-" o "Artículo 10." o "Artículo 136."
+            # Formatos: ordinales (1o, 2o) hasta ~9, luego cardinales (10, 11... 136)
+            "articulo": r'^Artículo\s+(\d+[oa]?)\.[\-–]?',
+
+            # Divisiones estructurales (Title Case, con acentos)
+            "titulo": r'^Título\s+(Primero|Segundo|Tercero|Cuarto|Quinto|Sexto|Séptimo|Octavo|Noveno)$',
+            "capitulo": r'^Capítulo\s+([IVX]+|Único)$',
+
+            # Fracciones dentro de artículos
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+            "apartado": r'^([A-Z])\.\s+',  # Art. 123 tiene Apartado A y B
+        },
+
+        # Ruido a eliminar (encabezados, pies de página)
+        # ruido: patrones regex para filtrado avanzado
+        # ruido_lineas: strings simples para filtrado rápido (usado por extraer.py)
+        "ruido": [
+            r'CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS\s*',
+            r'CÁMARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNIÓN[^\n]*',
+            r'Secretaría General\s*',
+            r'Secretaría de Servicios Parlamentarios\s*',
+            r'Última\s+[Rr]eforma\s+(?:publicada\s+)?DOF[^\n]*',
+            r'\d+\s+de\s+\d+\s*',  # Números de página
+            r'TEXTO VIGENTE\s*',
+        ],
+        "ruido_lineas": [
+            'CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'Última Reforma',
+            'Última reforma',
+            'TEXTO VIGENTE',
+            ' de 402',  # "X de 402" - números de página
+        ],
+
+        # Detección de referencias (reformas, adiciones)
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
+                r"Inciso.*DOF",
+                r"Apartado.*DOF",
+                r"reformad[oa].*DOF",
+                r"adicionad[oa].*DOF",
+                r"Denominación.*reformada.*DOF",
+            ],
+        },
+
+        # Página donde terminan los artículos permanentes + transitorios originales
+        # Después de esta página comienzan los transitorios de decretos de reforma
+        "pagina_fin_contenido": 162,
     },
 }
 

@@ -1,0 +1,299 @@
+{
+  "ley": "CPEUM",
+  "version": "2025-10-15",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+  "metodo": "outline",
+  "notas": "Constitución Política de los Estados Unidos Mexicanos. 136 artículos permanentes + 19 transitorios originales.",
+  "titulos": {
+    "PRIMERO": {
+      "nombre": null,
+      "capitulos": {
+        "I": {
+          "nombre": "De los Derechos Humanos y sus Garantías",
+          "articulos": [
+            "1o",
+            "2o",
+            "3o",
+            "4o",
+            "5o",
+            "6o",
+            "7o",
+            "8o",
+            "9o",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29"
+          ]
+        },
+        "II": {
+          "nombre": "De los Mexicanos",
+          "articulos": [
+            "30",
+            "31",
+            "32"
+          ]
+        },
+        "III": {
+          "nombre": "De los Extranjeros",
+          "articulos": [
+            "33"
+          ]
+        },
+        "IV": {
+          "nombre": "De los Ciudadanos Mexicanos",
+          "articulos": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38"
+          ]
+        }
+      }
+    },
+    "SEGUNDO": {
+      "nombre": null,
+      "capitulos": {
+        "I": {
+          "nombre": "De la Soberanía Nacional y de la Forma de Gobierno",
+          "articulos": [
+            "39",
+            "40",
+            "41"
+          ]
+        },
+        "II": {
+          "nombre": "De las Partes Integrantes de la Federación y del Territorio Nacional",
+          "articulos": [
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48"
+          ]
+        }
+      }
+    },
+    "TERCERO": {
+      "nombre": null,
+      "capitulos": {
+        "I": {
+          "nombre": "De la División de Poderes",
+          "articulos": [
+            "49"
+          ]
+        },
+        "II": {
+          "nombre": "Del Poder Legislativo",
+          "articulos": [
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79"
+          ]
+        },
+        "III": {
+          "nombre": "Del Poder Ejecutivo",
+          "articulos": [
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93"
+          ]
+        },
+        "IV": {
+          "nombre": "Del Poder Judicial",
+          "articulos": [
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107"
+          ]
+        }
+      }
+    },
+    "CUARTO": {
+      "nombre": "De las Responsabilidades de los Servidores Públicos, Particulares Vinculados con Faltas",
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "articulos": [
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114"
+          ]
+        }
+      }
+    },
+    "QUINTO": {
+      "nombre": "De los Estados de la Federación y de la Ciudad de México",
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "articulos": [
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122"
+          ]
+        }
+      }
+    },
+    "SEXTO": {
+      "nombre": "Del Trabajo y de la Previsión Social",
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "articulos": [
+            "123"
+          ]
+        }
+      }
+    },
+    "SÉPTIMO": {
+      "nombre": "Prevenciones Generales",
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "articulos": [
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134"
+          ]
+        }
+      }
+    },
+    "OCTAVO": {
+      "nombre": "De las Reformas de la Constitución",
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "articulos": [
+            "135"
+          ]
+        }
+      }
+    },
+    "NOVENO": {
+      "nombre": "De la Inviolabilidad de la Constitución",
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "articulos": [
+            "136"
+          ]
+        }
+      }
+    }
+  },
+  "transitorios": [
+    "Primero",
+    "Segundo",
+    "Tercero",
+    "Cuarto",
+    "Quinto",
+    "Sexto",
+    "Séptimo",
+    "Octavo",
+    "Noveno",
+    "Décimo",
+    "Decimoprimero",
+    "Decimosegundo",
+    "Decimotercero",
+    "Decimocuarto",
+    "Decimoquinto",
+    "Decimosexto",
+    "Decimoséptimo",
+    "Decimoctavo",
+    "Decimonoveno"
+  ],
+  "estadisticas": {
+    "titulos": 9,
+    "capitulos": 16,
+    "articulos_vigentes": 136,
+    "articulos_derogados": 0,
+    "articulos_transitorios": 19,
+    "total": 136
+  }
+}

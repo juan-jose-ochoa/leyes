@@ -187,8 +187,9 @@ def extraer_estructura(doc) -> list[TituloRef]:
     titulo_actual = None
     capitulo_actual = None
 
-    patron_titulo = r'^TITULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|SEPTIMO|OCTAVO|NOVENO|DECIMO)\s*$'
-    patron_capitulo = r'^CAP[IÍ]TULO\s+([IVX]+|UNICO|ÚNICO)\s*$'
+    # Patrones soportan MAYÚSCULAS y Title Case, con y sin acentos
+    patron_titulo = r'^T[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[EÉ]PTIMO|OCTAVO|NOVENO|D[EÉ]CIMO)\s*$'
+    patron_capitulo = r'^CAP[IÍ]TULO\s+([IVX]+|[UÚ]NICO)\s*$'
 
     for page_num, page in enumerate(doc):
         texto = page.get_text()
@@ -241,7 +242,19 @@ def extraer_estructura(doc) -> list[TituloRef]:
 def asignar_articulos_a_capitulos(titulos: list[TituloRef], articulos: list[ArticuloRef], doc):
     """
     Asigna artículos a capítulos basándose en páginas y posición en texto.
+
+    Si un título no tiene capítulos, crea un capítulo "UNICO" virtual.
     """
+    # Crear capítulos virtuales para títulos sin capítulos
+    for titulo in titulos:
+        if not titulo.capitulos:
+            cap_virtual = CapituloRef(
+                numero="UNICO",
+                nombre=None,
+                pagina=titulo.pagina
+            )
+            titulo.capitulos.append(cap_virtual)
+
     # Crear lista de puntos de corte con posición en texto
     capitulos_ordenados = []
     for titulo in titulos:
@@ -250,8 +263,11 @@ def asignar_articulos_a_capitulos(titulos: list[TituloRef], articulos: list[Arti
             page_idx = cap.pagina - 1
             if page_idx >= 0 and page_idx < len(doc):
                 texto = doc[page_idx].get_text()
-                # Buscar "CAPITULO" en el texto
-                patron = rf'CAP[IÍ]TULO\s+{re.escape(cap.numero)}'
+                # Para capítulos virtuales (UNICO), buscar posición del TÍTULO
+                if cap.numero == "UNICO" and cap.pagina == titulo.pagina:
+                    patron = rf'T[IÍ]TULO\s+{re.escape(titulo.numero)}'
+                else:
+                    patron = rf'CAP[IÍ]TULO\s+{re.escape(cap.numero)}'
                 match = re.search(patron, texto, re.IGNORECASE)
                 pos_en_pagina = match.start() if match else 0
             else:
