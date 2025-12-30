@@ -520,29 +520,118 @@ class Extractor:
         patron_art = re.compile(self.config["patrones"]["articulo"], re.IGNORECASE | re.MULTILINE)
         patron_siguiente = re.compile(r'(?:ARTICULO|ARTÍCULO|Artículo)\s+\d+[oa]?(?:[-–_\s]*[A-Z])?(?:[-–_\s]+(?:bis|Bis|Ter|Quáter|Quinquies|Sexies)(?:[-–_\s]+\d+)?)?\.[- –\s]', re.IGNORECASE)
 
+        # Función para encontrar números de artículos cuyo "Artículo" está en bold
+        # y en la coordenada X correcta (margen izquierdo ~85)
+        X_ARTICULO_MIN = 80
+        X_ARTICULO_MAX = 95
+
+        def encontrar_articulos_bold(page) -> list:
+            """Retorna lista de números de artículo en bold y margen izquierdo, en orden de aparición."""
+            chars = page.chars
+            if not chars:
+                return []
+
+            articulos_bold = []
+            vistos = set()
+            i = 0
+            while i < len(chars) - 8:
+                char = chars[i]
+                if char['text'].upper() == 'A':
+                    fontname = char.get('fontname', '')
+                    x_pos = char.get('x0', 0)
+                    # Criterios: Bold + coordenada X en margen izquierdo
+                    is_bold = 'Bold' in fontname or 'bold' in fontname
+                    is_margen = X_ARTICULO_MIN <= x_pos <= X_ARTICULO_MAX
+                    if is_bold and is_margen:
+                        # Extraer texto desde aquí (hasta 50 chars)
+                        texto = ''.join(c['text'] for c in chars[i:min(i+50, len(chars))])
+                        # Aplicar patrón para extraer número
+                        match = patron_art.match(texto)
+                        if match:
+                            grupos = match.groups()
+                            numero_base = grupos[0]
+                            ordinal = grupos[1] if len(grupos) > 1 else None
+                            letra = grupos[2] if len(grupos) > 2 else None
+                            sufijo = grupos[3] if len(grupos) > 3 else None
+                            sufijo_num = grupos[4] if len(grupos) > 4 else None
+
+                            numero = numero_base
+                            if ordinal:
+                                numero += ordinal.lower()
+                            if letra:
+                                numero += f"-{letra.upper()}"
+                            if sufijo:
+                                numero += f" {sufijo.capitalize()}"
+                                if sufijo_num:
+                                    numero += f" {sufijo_num}"
+
+                            if numero not in vistos:
+                                vistos.add(numero)
+                                articulos_bold.append(numero)
+                i += 1
+
+            return articulos_bold
+
+        # Función para detectar si una página contiene "TRANSITORIO(S)" centrado (fin de artículos)
+        def pagina_tiene_transitorios(page) -> bool:
+            """Detecta si la página tiene 'TRANSITORIO' centrado en bold, indicando fin de artículos."""
+            chars = page.chars
+            if not chars:
+                return False
+
+            for j, c in enumerate(chars):
+                if c['text'].upper() == 'T':
+                    texto = ''.join(cc['text'] for cc in chars[j:min(j+20, len(chars))])
+                    # Buscar "TRANSITORIO" (cubre singular y plural, y "ARTÍCULOS TRANSITORIOS")
+                    if 'TRANSITORIO' in texto.upper():
+                        x = c.get('x0', 0)
+                        fontname = c.get('fontname', '')
+                        is_bold = 'Bold' in fontname or 'bold' in fontname
+                        # Centrado: X > 150 (no en margen izquierdo ~85)
+                        is_centrado = x > 150
+                        if is_bold and is_centrado:
+                            return True
+            return False
+
         # Escanear todas las páginas para encontrar artículos
         articulos_encontrados = []
+        pdf_tiene_chars = any(page.chars for page in self.pdf.pages[:5])  # Verificar primeras 5 páginas
+
         for i, page in enumerate(self.pdf.pages):
-            text = page.extract_text() or ""
-            for match in patron_art.finditer(text):
-                grupos = match.groups()
-                numero_base = grupos[0]
-                ordinal = grupos[1] if len(grupos) > 1 else None
-                letra = grupos[2] if len(grupos) > 2 else None
-                sufijo = grupos[3] if len(grupos) > 3 else None
-                sufijo_num = grupos[4] if len(grupos) > 4 else None
+            # Obtener artículos en bold de esta página PRIMERO
+            articulos_bold = encontrar_articulos_bold(page)
 
-                numero = numero_base
-                if ordinal:
-                    numero += ordinal.lower()
-                if letra:
-                    numero += f"-{letra.upper()}"
-                if sufijo:
-                    numero += f" {sufijo.lower()}"
-                    if sufijo_num:
-                        numero += f" {sufijo_num}"
+            # Si encontramos artículos en bold, usar esos
+            if articulos_bold:
+                for numero in articulos_bold:
+                    articulos_encontrados.append((numero, i))
+            elif not pdf_tiene_chars:
+                # Fallback: usar patrón en texto SOLO para PDFs sin info de fuentes
+                text = page.extract_text() or ""
+                for match in patron_art.finditer(text):
+                    grupos = match.groups()
+                    numero_base = grupos[0]
+                    ordinal = grupos[1] if len(grupos) > 1 else None
+                    letra = grupos[2] if len(grupos) > 2 else None
+                    sufijo = grupos[3] if len(grupos) > 3 else None
+                    sufijo_num = grupos[4] if len(grupos) > 4 else None
 
-                articulos_encontrados.append((numero, i))
+                    numero = numero_base
+                    if ordinal:
+                        numero += ordinal.lower()
+                    if letra:
+                        numero += f"-{letra.upper()}"
+                    if sufijo:
+                        numero += f" {sufijo.capitalize()}"
+                        if sufijo_num:
+                            numero += f" {sufijo_num}"
+
+                    articulos_encontrados.append((numero, i))
+            # Si no hay bold y el PDF tiene chars, no agregar nada (página sin artículos nuevos)
+
+            # Detectar fin de artículos (sección TRANSITORIOS) - DESPUÉS de procesar la página
+            if pagina_tiene_transitorios(page):
+                break  # Dejar de buscar más artículos en páginas siguientes
 
         # Eliminar duplicados manteniendo primera aparición
         numeros_vistos = set()

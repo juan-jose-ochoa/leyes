@@ -407,6 +407,62 @@ LEYES = {
         # Página donde terminan los artículos permanentes
         "pagina_fin_contenido": 200,
     },
+
+    "LIEPS": {
+        "nombre": "Ley del Impuesto Especial sobre Producción y Servicios",
+        "nombre_corto": "IEPS",
+        "tipo": "ley",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIEPS.pdf",
+        "pdf_path": "backend/etl/data/lieps/lieps_ley_del_impuesto_especial.pdf",
+
+        # Estructura jerárquica permitida
+        "divisiones_permitidas": ["titulo", "capitulo"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
+
+        # Tipo de contenido principal
+        "tipo_contenido": "articulo",
+
+        # Patrones de detección
+        "patrones": {
+            # Artículo: "Artículo 2o.-A.-" o "Artículo 5o.-A BIS.-" o "Artículo 10.-"
+            # Incluye LL y Ñ para artículos como 26-LL y 26-Ñ
+            "articulo": r'^Artículo\s+(\d+)([oa])?\.?(?:[-–\s]*([A-ZÑ]|LL))?(?:[-–\s]+(Bis|Ter|Quáter|Quinquies|Sexies))?[-.]?[- –]',
+
+            # Fracciones dentro de artículos
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+        },
+
+        # Ruido a eliminar
+        "ruido_lineas": [
+            'LEY DEL IMPUESTO ESPECIAL SOBRE PRODUCCIÓN Y SERVICIOS',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'Última Reforma',
+            'Última reforma',
+        ],
+
+        # Detección de referencias
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
+                r"Inciso.*DOF",
+                r"reformad[oa].*DOF",
+                r"adicionad[oa].*DOF",
+                r"derogad[oa].*DOF",
+            ],
+        },
+
+        # Página donde terminan los artículos permanentes
+        "pagina_fin_contenido": 150,
+    },
 }
 
 
