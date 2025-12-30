@@ -49,6 +49,11 @@ BASE_DIR = Path(__file__).parent.parent.parent
 def cargar_baseline(codigo: str) -> dict | None:
     """Carga estadísticas del contenido.json existente."""
     config = get_config(codigo)
+
+    # Saltar leyes sin PDF configurado (ej: RMF2025)
+    if not config.get("pdf_path"):
+        return None
+
     contenido_path = BASE_DIR / Path(config["pdf_path"]).parent / "contenido.json"
 
     if not contenido_path.exists():

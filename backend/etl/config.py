@@ -463,6 +463,65 @@ LEYES = {
         # Página donde terminan los artículos permanentes
         "pagina_fin_contenido": 150,
     },
+
+    "LFT": {
+        "nombre": "Ley Federal del Trabajo",
+        "nombre_corto": "Trabajo",
+        "tipo": "ley",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+        "pdf_path": "backend/etl/data/lft/lft_ley_federal_del_trabajo.pdf",
+
+        # Estructura jerárquica permitida
+        "divisiones_permitidas": ["titulo", "capitulo"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
+
+        # Tipo de contenido principal
+        "tipo_contenido": "articulo",
+
+        # Patrones de detección
+        "patrones": {
+            # Artículo: "Artículo 1o.-" o "Artículo 153-A" o "Artículo 153-F Bis" o "Artículo 10.-"
+            # LFT usa formato especial: número-letra (153-A, 291-A, 330-A, etc.)
+            "articulo": r'^Artículo\s+(\d+)([oa])?(?:[-–]([A-ZÑ]))?\.?(?:[-–\s]*(Bis|Ter|Quáter|Quinquies|Sexies))?\.?[- –]',
+
+            # Divisiones estructurales
+            # Títulos: "TITULO PRIMERO", "TITULO QUINTO BIS"
+            "titulo": r'^TITULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|SEPTIMO|SÉPTIMO|OCTAVO|NOVENO|DECIMO|DÉCIMO|ONCE|DOCE|TRECE|CATORCE|QUINCE|DIECISEIS)(?:\s+BIS)?\s*$',
+            # Capítulos: "CAPITULO I", "Capítulo III BIS"
+            "capitulo": r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$',
+
+            # Fracciones dentro de artículos
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+        },
+
+        # Ruido a eliminar
+        "ruido_lineas": [
+            'LEY FEDERAL DEL TRABAJO',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'Última Reforma',
+            'Última reforma',
+        ],
+
+        # Detección de referencias
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
+                r"Inciso.*DOF",
+                r"reformad[oa].*DOF",
+                r"adicionad[oa].*DOF",
+                r"derogad[oa].*DOF",
+            ],
+        },
+    },
 }
 
 

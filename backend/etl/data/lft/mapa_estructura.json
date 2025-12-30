@@ -1,0 +1,1916 @@
+{
+  "titulos": {
+    "PRIMERO": {
+      "nombre": "Principios Generales",
+      "pagina": 1,
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "pagina": 1,
+          "articulos": [
+            "1o",
+            "2o",
+            "3o",
+            "3o Bis",
+            "3o Ter",
+            "4o",
+            "5o",
+            "6o",
+            "7o",
+            "8o",
+            "9o",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "15-A",
+            "15-B",
+            "15-C",
+            "15-D",
+            "16",
+            "17",
+            "18",
+            "19"
+          ]
+        }
+      }
+    },
+    "SEGUNDO": {
+      "nombre": "Relaciones Individuales de Trabajo",
+      "pagina": 6,
+      "capitulos": {
+        "I": {
+          "nombre": "Disposiciones generales",
+          "pagina": 6,
+          "articulos": [
+            "20",
+            "21",
+            "22",
+            "22 Bis",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "28-A",
+            "28-B",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34"
+          ]
+        },
+        "II": {
+          "nombre": "Duración de las relaciones de trabajo",
+          "pagina": 11,
+          "articulos": [
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "39-A",
+            "39-B",
+            "39-C",
+            "39-D",
+            "39-E",
+            "39-F",
+            "40",
+            "41"
+          ]
+        },
+        "III": {
+          "nombre": "Suspensión de los efectos de las relaciones de trabajo",
+          "pagina": 13,
+          "articulos": [
+            "42",
+            "42 Bis",
+            "43",
+            "44",
+            "45"
+          ]
+        },
+        "IV": {
+          "nombre": "Rescisión de las relaciones de trabajo",
+          "pagina": 14,
+          "articulos": [
+            "46",
+            "47",
+            "48",
+            "48 Bis",
+            "49",
+            "50",
+            "51",
+            "52"
+          ]
+        },
+        "V": {
+          "nombre": "Terminación de las relaciones de trabajo",
+          "pagina": 20,
+          "articulos": [
+            "53",
+            "54",
+            "55"
+          ]
+        }
+      }
+    },
+    "TERCERO": {
+      "nombre": "Condiciones de Trabajo",
+      "pagina": 21,
+      "capitulos": {
+        "I": {
+          "nombre": "Disposiciones generales",
+          "pagina": 21,
+          "articulos": [
+            "56",
+            "56 Bis",
+            "57"
+          ]
+        },
+        "II": {
+          "nombre": "Jornada de trabajo",
+          "pagina": 21,
+          "articulos": [
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68"
+          ]
+        },
+        "III": {
+          "nombre": "Días de descanso",
+          "pagina": 22,
+          "articulos": [
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75"
+          ]
+        },
+        "IV": {
+          "nombre": "Vacaciones",
+          "pagina": 23,
+          "articulos": [
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81"
+          ]
+        },
+        "V": {
+          "nombre": "Salario",
+          "pagina": 24,
+          "articulos": [
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89"
+          ]
+        },
+        "VI": {
+          "nombre": "Salario mínimo",
+          "pagina": 25,
+          "articulos": [
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97"
+          ]
+        },
+        "VII": {
+          "nombre": "Normas protectoras y privilegios del salario",
+          "pagina": 26,
+          "articulos": [
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "103 Bis",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116"
+          ]
+        },
+        "VIII": {
+          "nombre": "Participación de los trabajadores en las utilidades de las empresas",
+          "pagina": 29,
+          "articulos": [
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131"
+          ]
+        }
+      }
+    },
+    "CUARTO": {
+      "nombre": "Derechos y Obligaciones de los Trabajadores y de los Patrones",
+      "pagina": 33,
+      "capitulos": {
+        "I": {
+          "nombre": "Obligaciones de los patrones",
+          "pagina": 33,
+          "articulos": [
+            "132",
+            "133"
+          ]
+        },
+        "II": {
+          "nombre": "Obligaciones de los trabajadores",
+          "pagina": 38,
+          "articulos": [
+            "134",
+            "135"
+          ]
+        },
+        "III": {
+          "nombre": null,
+          "pagina": 39,
+          "articulos": [
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153"
+          ]
+        },
+        "III BIS": {
+          "nombre": "De la Productividad, Formación y Capacitación de los Trabajadores",
+          "pagina": 43,
+          "articulos": [
+            "153-A",
+            "153-B",
+            "153-C",
+            "153-D",
+            "153-E",
+            "153-F",
+            "153-F Bis",
+            "153-G",
+            "153-H",
+            "153-I",
+            "153-J",
+            "153-K",
+            "153-L",
+            "153-M",
+            "153-N",
+            "153-O",
+            "153-P",
+            "153-Q",
+            "153-R",
+            "153-S",
+            "153-T",
+            "153-U",
+            "153-V",
+            "153-W",
+            "153-X"
+          ]
+        },
+        "IV": {
+          "nombre": "Derechos de preferencia, antigüedad y ascenso",
+          "pagina": 50,
+          "articulos": [
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162"
+          ]
+        },
+        "V": {
+          "nombre": "Invenciones de los trabajadores",
+          "pagina": 52,
+          "articulos": [
+            "163"
+          ]
+        }
+      }
+    },
+    "QUINTO": {
+      "nombre": "Trabajo de los Menores",
+      "pagina": 54,
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "pagina": 54,
+          "articulos": [
+            "173",
+            "174",
+            "175",
+            "175 Bis",
+            "176",
+            "177",
+            "178",
+            "179",
+            "180"
+          ]
+        }
+      }
+    },
+    "SEXTO": {
+      "nombre": "Trabajos Especiales",
+      "pagina": 58,
+      "capitulos": {
+        "I": {
+          "nombre": "Disposiciones generales",
+          "pagina": 58,
+          "articulos": [
+            "181"
+          ]
+        },
+        "II": {
+          "nombre": "Trabajadores de confianza",
+          "pagina": 58,
+          "articulos": [
+            "182",
+            "183",
+            "184",
+            "185",
+            "186"
+          ]
+        },
+        "III": {
+          "nombre": "Trabajadores de los buques",
+          "pagina": 59,
+          "articulos": [
+            "187",
+            "188",
+            "189",
+            "190",
+            "191",
+            "192",
+            "193",
+            "194",
+            "195",
+            "196",
+            "197",
+            "198",
+            "199",
+            "200",
+            "201",
+            "202",
+            "203",
+            "204",
+            "205",
+            "206",
+            "207",
+            "208",
+            "209",
+            "210",
+            "211",
+            "212",
+            "213",
+            "214"
+          ]
+        },
+        "IV": {
+          "nombre": "Trabajo de las tripulaciones aeronáuticas",
+          "pagina": 64,
+          "articulos": [
+            "215",
+            "216",
+            "217",
+            "218",
+            "219",
+            "220",
+            "221",
+            "222",
+            "223",
+            "224",
+            "225",
+            "226",
+            "227",
+            "228",
+            "229",
+            "230",
+            "231",
+            "232",
+            "233",
+            "234",
+            "235",
+            "236",
+            "237",
+            "238",
+            "239",
+            "240",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "245 Bis"
+          ]
+        },
+        "V": {
+          "nombre": "Trabajo ferrocarrilero",
+          "pagina": 69,
+          "articulos": [
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"
+          ]
+        },
+        "VI": {
+          "nombre": "Trabajo de autotransportes",
+          "pagina": 70,
+          "articulos": [
+            "256",
+            "257",
+            "258",
+            "259",
+            "260",
+            "261",
+            "262",
+            "263",
+            "264"
+          ]
+        },
+        "VII": {
+          "nombre": "Trabajo de maniobras de servicio público en zonas bajo jurisdicción federal",
+          "pagina": 72,
+          "articulos": [
+            "265",
+            "266",
+            "267",
+            "268",
+            "269",
+            "270",
+            "271",
+            "272",
+            "273",
+            "274",
+            "275",
+            "276",
+            "277",
+            "278"
+          ]
+        },
+        "VIII": {
+          "nombre": "Personas Trabajadoras del Campo",
+          "pagina": 74,
+          "articulos": [
+            "279",
+            "279 Bis",
+            "279 Ter",
+            "279 Quáter",
+            "280",
+            "280 Bis",
+            "281",
+            "282",
+            "283",
+            "283 Bis",
+            "283 Ter",
+            "284",
+            "284 Bis"
+          ]
+        },
+        "IX": {
+          "nombre": "Agentes de comercio y otros semejantes",
+          "pagina": 81,
+          "articulos": [
+            "285",
+            "286",
+            "287",
+            "288",
+            "289",
+            "290",
+            "291"
+          ]
+        },
+        "IX BIS": {
+          "nombre": "TRABAJO EN PLATAFORMAS DIGITALES",
+          "pagina": 82,
+          "articulos": [
+            "291-A",
+            "291-B",
+            "291-C",
+            "291-D",
+            "291-E",
+            "291-F",
+            "291-G",
+            "291-H",
+            "291-I",
+            "291-J",
+            "291-K",
+            "291-L",
+            "291-M",
+            "291-N",
+            "291-O",
+            "291-P",
+            "291-Q",
+            "291-R",
+            "291-S",
+            "291-T",
+            "291-U"
+          ]
+        },
+        "X": {
+          "nombre": "Deportistas profesionales",
+          "pagina": 88,
+          "articulos": [
+            "292",
+            "293",
+            "294",
+            "295",
+            "296",
+            "297",
+            "298",
+            "299",
+            "300",
+            "301",
+            "302",
+            "303"
+          ]
+        },
+        "XI": {
+          "nombre": "Trabajadores actores y músicos",
+          "pagina": 90,
+          "articulos": [
+            "304",
+            "305",
+            "306",
+            "307",
+            "308",
+            "309",
+            "310"
+          ]
+        },
+        "XII": {
+          "nombre": "Trabajo a domicilio",
+          "pagina": 91,
+          "articulos": [
+            "311",
+            "312",
+            "313",
+            "314",
+            "315",
+            "316",
+            "317",
+            "318",
+            "319",
+            "320",
+            "321",
+            "322",
+            "323",
+            "324",
+            "325",
+            "326",
+            "327",
+            "328",
+            "329",
+            "330"
+          ]
+        },
+        "XII BIS": {
+          "nombre": "Teletrabajo",
+          "pagina": 94,
+          "articulos": [
+            "330-A",
+            "330-B",
+            "330-C",
+            "330-D",
+            "330-E",
+            "330-F",
+            "330-G",
+            "330-H",
+            "330-I",
+            "330-J",
+            "330-K"
+          ]
+        },
+        "XIII": {
+          "nombre": "Personas Trabajadoras del Hogar",
+          "pagina": 97,
+          "articulos": [
+            "331",
+            "331 Bis",
+            "331 Ter",
+            "332",
+            "333",
+            "334",
+            "334 Bis",
+            "335",
+            "336",
+            "336 Bis",
+            "337",
+            "337 Bis",
+            "338",
+            "339",
+            "340",
+            "341",
+            "342",
+            "343"
+          ]
+        },
+        "XIII BIS": {
+          "nombre": "De Los Trabajadores en Minas",
+          "pagina": 101,
+          "articulos": [
+            "343-A",
+            "343-B",
+            "343-C",
+            "343-D",
+            "343-E"
+          ]
+        },
+        "XIV": {
+          "nombre": "Trabajo en hoteles, restaurantes, bares y otros establecimientos análogos",
+          "pagina": 103,
+          "articulos": [
+            "344",
+            "345",
+            "346",
+            "347",
+            "348",
+            "349",
+            "350"
+          ]
+        },
+        "XV": {
+          "nombre": "Industria familiar",
+          "pagina": 104,
+          "articulos": [
+            "351",
+            "352",
+            "353"
+          ]
+        },
+        "XVI": {
+          "nombre": "Trabajos de Médicos Residentes en Período de Adiestramiento en una Especialidad",
+          "pagina": 104,
+          "articulos": [
+            "353-A",
+            "353-B",
+            "353-C",
+            "353-D",
+            "353-E",
+            "353-F",
+            "353-G",
+            "353-H",
+            "353-I"
+          ]
+        },
+        "XVII": {
+          "nombre": "Trabajo en las Universidades e Instituciones de Educación Superior Autónomas por Ley",
+          "pagina": 106,
+          "articulos": [
+            "353-J",
+            "353-K",
+            "353-L",
+            "353-M",
+            "353-N",
+            "353-Ñ",
+            "353-O",
+            "353-P",
+            "353-Q",
+            "353-R",
+            "353-S",
+            "353-T",
+            "353-U"
+          ]
+        }
+      }
+    },
+    "SEPTIMO": {
+      "nombre": "Relaciones Colectivas de Trabajo",
+      "pagina": 107,
+      "capitulos": {
+        "I": {
+          "nombre": "Coaliciones",
+          "pagina": 107,
+          "articulos": [
+            "354",
+            "355"
+          ]
+        },
+        "II": {
+          "nombre": null,
+          "pagina": 107,
+          "articulos": [
+            "356",
+            "357",
+            "357 Bis",
+            "358",
+            "359",
+            "360",
+            "361",
+            "362",
+            "363",
+            "364",
+            "364 Bis",
+            "365",
+            "365 Bis",
+            "366",
+            "367",
+            "368",
+            "369",
+            "370",
+            "371",
+            "371 Bis",
+            "372",
+            "373",
+            "374",
+            "375",
+            "376",
+            "377",
+            "378",
+            "379",
+            "380",
+            "381",
+            "382",
+            "383",
+            "384",
+            "385"
+          ]
+        },
+        "III": {
+          "nombre": "Contrato colectivo de trabajo",
+          "pagina": 119,
+          "articulos": [
+            "386",
+            "386 Bis",
+            "387",
+            "388",
+            "389",
+            "390",
+            "390 Bis",
+            "390 Ter",
+            "391",
+            "391 Bis",
+            "392",
+            "393",
+            "394",
+            "395",
+            "396",
+            "397",
+            "398",
+            "399",
+            "399 Bis",
+            "399 Ter",
+            "400",
+            "400 Bis",
+            "401",
+            "402",
+            "403"
+          ]
+        },
+        "IV": {
+          "nombre": "Contrato Ley",
+          "pagina": 128,
+          "articulos": [
+            "404",
+            "405",
+            "406",
+            "407",
+            "408",
+            "409",
+            "410",
+            "411",
+            "412",
+            "413",
+            "414",
+            "415",
+            "416",
+            "417",
+            "418",
+            "419",
+            "419 Bis",
+            "420",
+            "421"
+          ]
+        },
+        "V": {
+          "nombre": "Reglamento interior de trabajo",
+          "pagina": 132,
+          "articulos": [
+            "422",
+            "423",
+            "424",
+            "424 Bis",
+            "425"
+          ]
+        },
+        "VI": {
+          "nombre": "Modificación colectiva de las condiciones de trabajo",
+          "pagina": 133,
+          "articulos": [
+            "426"
+          ]
+        },
+        "VII": {
+          "nombre": "Suspensión colectiva de las relaciones de trabajo",
+          "pagina": 133,
+          "articulos": [
+            "427",
+            "428",
+            "429",
+            "430",
+            "431",
+            "432"
+          ]
+        },
+        "VIII": {
+          "nombre": "Terminación colectiva de las relaciones de trabajo",
+          "pagina": 135,
+          "articulos": [
+            "433",
+            "434",
+            "435",
+            "436",
+            "437",
+            "438",
+            "439"
+          ]
+        }
+      }
+    },
+    "OCTAVO": {
+      "nombre": "Huelgas",
+      "pagina": 136,
+      "capitulos": {
+        "I": {
+          "nombre": "Disposiciones generales",
+          "pagina": 136,
+          "articulos": [
+            "440",
+            "441",
+            "442",
+            "443",
+            "444",
+            "445",
+            "446",
+            "447",
+            "448",
+            "449",
+            "450"
+          ]
+        },
+        "II": {
+          "nombre": "Objetivos y procedimientos de huelga",
+          "pagina": 137,
+          "articulos": [
+            "451",
+            "452",
+            "453",
+            "454",
+            "455",
+            "456",
+            "457",
+            "458",
+            "459",
+            "460",
+            "461",
+            "462",
+            "463",
+            "464",
+            "465",
+            "466",
+            "467",
+            "468",
+            "469",
+            "470",
+            "471"
+          ]
+        }
+      }
+    },
+    "NOVENO": {
+      "nombre": "Riesgos de Trabajo",
+      "pagina": 139,
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "pagina": 139,
+          "articulos": [
+            "472",
+            "473",
+            "474",
+            "475",
+            "475 Bis",
+            "476",
+            "477",
+            "478",
+            "479",
+            "480",
+            "481",
+            "482",
+            "483",
+            "484",
+            "485",
+            "486",
+            "487",
+            "488",
+            "489",
+            "490",
+            "491",
+            "492",
+            "493",
+            "494",
+            "495",
+            "496",
+            "497",
+            "498",
+            "499",
+            "500",
+            "501",
+            "502",
+            "503",
+            "504",
+            "505",
+            "506",
+            "507",
+            "508",
+            "509",
+            "510",
+            "511",
+            "512",
+            "512-A",
+            "512-B",
+            "512-C",
+            "512-D",
+            "512-D Bis",
+            "512-D Ter",
+            "512-E",
+            "512-F",
+            "512-G",
+            "513",
+            "514",
+            "515"
+          ]
+        }
+      }
+    },
+    "DECIMO": {
+      "nombre": "Prescripción",
+      "pagina": 260,
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "pagina": 260,
+          "articulos": [
+            "516",
+            "517",
+            "518",
+            "519",
+            "520",
+            "521",
+            "522"
+          ]
+        }
+      }
+    },
+    "ONCE": {
+      "nombre": "Autoridades del Trabajo y Servicios Sociales",
+      "pagina": 261,
+      "capitulos": {
+        "I": {
+          "nombre": "Disposiciones generales",
+          "pagina": 261,
+          "articulos": [
+            "523",
+            "524",
+            "525",
+            "525 Bis",
+            "526"
+          ]
+        },
+        "II": {
+          "nombre": "Competencia constitucional de las autoridades del trabajo",
+          "pagina": 262,
+          "articulos": [
+            "527",
+            "527-A",
+            "528",
+            "529"
+          ]
+        },
+        "III": {
+          "nombre": "Procuraduría de la defensa del trabajo",
+          "pagina": 265,
+          "articulos": [
+            "530",
+            "530 Bis",
+            "531",
+            "532",
+            "533",
+            "533 Bis",
+            "534",
+            "535",
+            "536"
+          ]
+        },
+        "IV": {
+          "nombre": "Del Servicio Nacional de Empleo",
+          "pagina": 266,
+          "articulos": [
+            "537",
+            "538",
+            "539",
+            "539-A",
+            "539-B",
+            "539-C",
+            "539-D",
+            "539-E",
+            "539-F"
+          ]
+        },
+        "V": {
+          "nombre": "Inspección del trabajo",
+          "pagina": 271,
+          "articulos": [
+            "540",
+            "541",
+            "542",
+            "543",
+            "544",
+            "545",
+            "546",
+            "547",
+            "548",
+            "549",
+            "550"
+          ]
+        },
+        "VI": {
+          "nombre": "Comisión Nacional de los Salarios Mínimos",
+          "pagina": 274,
+          "articulos": [
+            "551",
+            "552",
+            "553",
+            "554",
+            "555",
+            "556",
+            "557",
+            "558",
+            "559",
+            "560",
+            "561",
+            "562",
+            "563"
+          ]
+        },
+        "VII": {
+          "nombre": "Comisiones Consultivas de la Comisión Nacional de los Salarios Mínimos",
+          "pagina": 278,
+          "articulos": [
+            "564",
+            "565",
+            "566",
+            "567",
+            "568",
+            "569"
+          ]
+        },
+        "VIII": {
+          "nombre": "Procedimiento ante la Comisión Nacional de los Salarios Mínimos",
+          "pagina": 280,
+          "articulos": [
+            "570",
+            "571",
+            "572",
+            "573",
+            "574"
+          ]
+        },
+        "IX": {
+          "nombre": "Comisión nacional para la participación de los trabajadores en las utilidades de las",
+          "pagina": 282,
+          "articulos": [
+            "575",
+            "576",
+            "577",
+            "578",
+            "579",
+            "580",
+            "581",
+            "582",
+            "583",
+            "584",
+            "585",
+            "586",
+            "587",
+            "588",
+            "589",
+            "590"
+          ]
+        },
+        "IX BIS": {
+          "nombre": "Del Centro Federal de Conciliación y Registro Laboral",
+          "pagina": 285,
+          "articulos": [
+            "590-A",
+            "590-B",
+            "590-C",
+            "590-D",
+            "590-E",
+            "590-F"
+          ]
+        },
+        "X": {
+          "nombre": "Juntas federales de conciliación",
+          "pagina": 289,
+          "articulos": [
+            "591",
+            "592",
+            "593",
+            "594",
+            "595",
+            "596",
+            "597",
+            "598",
+            "599",
+            "600"
+          ]
+        },
+        "XI": {
+          "nombre": "Juntas locales de conciliación",
+          "pagina": 290,
+          "articulos": [
+            "601",
+            "602",
+            "603"
+          ]
+        },
+        "XII": {
+          "nombre": "De la Competencia de los Tribunales",
+          "pagina": 290,
+          "articulos": [
+            "604",
+            "605",
+            "605 Bis",
+            "606",
+            "607",
+            "608",
+            "609",
+            "610",
+            "611",
+            "612",
+            "613",
+            "614",
+            "615",
+            "616",
+            "617",
+            "618",
+            "619",
+            "620"
+          ]
+        },
+        "XIII": {
+          "nombre": "Juntas locales de conciliación y arbitraje",
+          "pagina": 292,
+          "articulos": [
+            "621",
+            "622",
+            "623",
+            "624"
+          ]
+        }
+      }
+    },
+    "DOCE": {
+      "nombre": "Personal Jurídico de las Juntas de Conciliación y Arbitraje",
+      "pagina": 292,
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "pagina": 292,
+          "articulos": [
+            "625",
+            "626",
+            "627",
+            "627-A",
+            "627-B",
+            "627-C",
+            "628",
+            "629",
+            "630",
+            "631",
+            "632",
+            "633",
+            "634",
+            "635",
+            "636",
+            "637",
+            "638",
+            "639",
+            "640",
+            "641",
+            "641-A",
+            "642",
+            "643",
+            "644",
+            "645",
+            "646",
+            "647"
+          ]
+        }
+      }
+    },
+    "TRECE": {
+      "nombre": "Representantes de los Trabajadores y de los Patrones",
+      "pagina": 294,
+      "capitulos": {
+        "I": {
+          "nombre": "Del Procedimiento de Conciliación Prejudicial",
+          "pagina": 299,
+          "articulos": [
+            "683",
+            "684",
+            "684-A",
+            "684-B",
+            "684-C",
+            "684-D",
+            "684-E"
+          ]
+        },
+        "II": {
+          "nombre": "De los Conciliadores",
+          "pagina": 303,
+          "articulos": [
+            "684-F",
+            "684-G",
+            "684-H",
+            "684-I",
+            "684-J"
+          ]
+        },
+        "III": {
+          "nombre": "Del Procedimiento para la Selección de Conciliadores",
+          "pagina": 305,
+          "articulos": [
+            "684-K",
+            "684-L",
+            "684-M",
+            "684-N",
+            "684-O",
+            "684-P",
+            "684-Q",
+            "684-R",
+            "684-S",
+            "684-T",
+            "684-U"
+          ]
+        }
+      }
+    },
+    "CATORCE": {
+      "nombre": "Derecho Procesal del Trabajo",
+      "pagina": 307,
+      "capitulos": {
+        "I": {
+          "nombre": "Principios Procesales",
+          "pagina": 307,
+          "articulos": [
+            "685",
+            "685 Bis",
+            "685 Ter",
+            "686",
+            "687",
+            "688"
+          ]
+        },
+        "II": {
+          "nombre": "De la Capacidad, Personalidad y Legitimación",
+          "pagina": 309,
+          "articulos": [
+            "689",
+            "690",
+            "691",
+            "692",
+            "693",
+            "694",
+            "695",
+            "696",
+            "697"
+          ]
+        },
+        "III": {
+          "nombre": "De las Competencias",
+          "pagina": 311,
+          "articulos": [
+            "698",
+            "699",
+            "700",
+            "701",
+            "702",
+            "703",
+            "704",
+            "705",
+            "705 Bis",
+            "706",
+            "706 Bis"
+          ]
+        },
+        "IV": {
+          "nombre": "De los Impedimentos y Excusas",
+          "pagina": 313,
+          "articulos": [
+            "707",
+            "707 Bis",
+            "707 Ter",
+            "708",
+            "709",
+            "709-A",
+            "709-B",
+            "709-C",
+            "709-D",
+            "709-E",
+            "709-F",
+            "709-G",
+            "709-H",
+            "709-I",
+            "709-J",
+            "710",
+            "711"
+          ]
+        },
+        "V": {
+          "nombre": "De la Actuación de los Tribunales",
+          "pagina": 316,
+          "articulos": [
+            "712",
+            "712 Bis",
+            "712 Ter",
+            "713",
+            "714",
+            "715",
+            "716",
+            "717",
+            "718",
+            "719",
+            "720",
+            "721",
+            "722",
+            "723",
+            "724",
+            "725",
+            "726",
+            "727",
+            "728",
+            "729",
+            "730",
+            "731",
+            "732"
+          ]
+        },
+        "VI": {
+          "nombre": "De los Términos Procesales",
+          "pagina": 320,
+          "articulos": [
+            "733",
+            "734",
+            "735",
+            "736",
+            "737",
+            "738"
+          ]
+        },
+        "VII": {
+          "nombre": "De las Notificaciones",
+          "pagina": 321,
+          "articulos": [
+            "739",
+            "739 Bis",
+            "739 Ter",
+            "740",
+            "741",
+            "742",
+            "742 Bis",
+            "742 Ter",
+            "743",
+            "744",
+            "744 Bis",
+            "745",
+            "745 Bis",
+            "745 Ter",
+            "746",
+            "747",
+            "748",
+            "749",
+            "750",
+            "751",
+            "752"
+          ]
+        },
+        "VIII": {
+          "nombre": "De los Exhortos y Despachos",
+          "pagina": 328,
+          "articulos": [
+            "753",
+            "754",
+            "755",
+            "756",
+            "757",
+            "758",
+            "759",
+            "760"
+          ]
+        },
+        "IX": {
+          "nombre": "De los Incidentes",
+          "pagina": 329,
+          "articulos": [
+            "761",
+            "762",
+            "763",
+            "763 Bis",
+            "764",
+            "765"
+          ]
+        },
+        "X": {
+          "nombre": "De la Acumulación",
+          "pagina": 330,
+          "articulos": [
+            "766",
+            "767",
+            "768",
+            "769",
+            "770"
+          ]
+        },
+        "XI": {
+          "nombre": "De la Continuación del Proceso y de la Caducidad",
+          "pagina": 331,
+          "articulos": [
+            "771",
+            "772",
+            "773",
+            "774",
+            "774 Bis",
+            "775"
+          ]
+        },
+        "XII": {
+          "nombre": "De las Pruebas",
+          "pagina": 332,
+          "articulos": [
+            "776",
+            "777",
+            "778",
+            "779",
+            "780",
+            "781",
+            "782",
+            "783",
+            "784",
+            "785",
+            "786",
+            "787",
+            "788",
+            "789",
+            "790",
+            "790 Bis",
+            "791",
+            "792",
+            "793",
+            "794",
+            "795",
+            "796",
+            "797",
+            "798",
+            "799",
+            "800",
+            "801",
+            "802",
+            "803",
+            "804",
+            "805",
+            "806",
+            "807",
+            "808",
+            "809",
+            "810",
+            "811",
+            "812",
+            "813",
+            "814",
+            "815",
+            "816",
+            "817",
+            "818",
+            "819",
+            "820",
+            "821",
+            "822",
+            "823",
+            "824",
+            "824 Bis",
+            "825",
+            "826",
+            "826 Bis",
+            "827",
+            "828",
+            "829",
+            "830",
+            "831",
+            "832",
+            "833",
+            "834",
+            "835",
+            "836",
+            "836-A",
+            "836-B",
+            "836-C",
+            "836-D"
+          ]
+        },
+        "XIII": {
+          "nombre": "De las Resoluciones Laborales",
+          "pagina": 349,
+          "articulos": [
+            "837",
+            "838",
+            "839",
+            "840",
+            "841",
+            "842",
+            "843",
+            "844",
+            "845",
+            "846",
+            "847",
+            "848"
+          ]
+        },
+        "XIV": {
+          "nombre": "De la Revisión de los Actos de Ejecución",
+          "pagina": 350,
+          "articulos": [
+            "849",
+            "850",
+            "851",
+            "852",
+            "853",
+            "854",
+            "855",
+            "856"
+          ]
+        },
+        "XV": {
+          "nombre": "De las Providencias Cautelares",
+          "pagina": 351,
+          "articulos": [
+            "857",
+            "858",
+            "859",
+            "860",
+            "861",
+            "862",
+            "863",
+            "864"
+          ]
+        },
+        "XVI": {
+          "nombre": "Procedimientos Ante las Juntas de Conciliación",
+          "pagina": 353,
+          "articulos": [
+            "865",
+            "866",
+            "867",
+            "868",
+            "869"
+          ]
+        },
+        "XVII": {
+          "nombre": "Del procedimiento ordinario",
+          "pagina": 353,
+          "articulos": [
+            "870",
+            "870 Bis",
+            "871",
+            "872",
+            "873",
+            "873-A",
+            "873-B",
+            "873-C",
+            "873-D",
+            "873-E",
+            "873-F",
+            "873-G",
+            "873-H",
+            "873-I",
+            "873-J",
+            "873-K",
+            "874",
+            "875",
+            "876",
+            "877",
+            "878",
+            "879",
+            "880",
+            "881",
+            "882",
+            "883",
+            "884",
+            "885",
+            "886",
+            "887",
+            "888",
+            "889",
+            "890",
+            "891"
+          ]
+        },
+        "XVIII": {
+          "nombre": "Del Procedimiento Especial",
+          "pagina": 361,
+          "articulos": [
+            "892",
+            "893",
+            "894",
+            "895",
+            "896",
+            "897",
+            "897-A",
+            "897-B",
+            "897-C",
+            "897-D",
+            "897-E",
+            "897-F",
+            "897-G",
+            "898",
+            "899",
+            "899-A",
+            "899-B",
+            "899-C",
+            "899-D",
+            "899-E",
+            "899-F",
+            "899-G"
+          ]
+        },
+        "XIX": {
+          "nombre": "Procedimientos de los Conflictos Colectivos de Naturaleza Económica",
+          "pagina": 370,
+          "articulos": [
+            "900",
+            "901",
+            "902",
+            "903",
+            "904",
+            "905",
+            "906",
+            "907",
+            "908",
+            "909",
+            "910",
+            "911",
+            "912",
+            "913",
+            "914",
+            "915",
+            "916",
+            "917",
+            "918",
+            "919"
+          ]
+        },
+        "XX": {
+          "nombre": "Procedimiento de Huelga",
+          "pagina": 374,
+          "articulos": [
+            "920",
+            "921",
+            "921 Bis",
+            "922",
+            "923",
+            "924",
+            "925",
+            "926",
+            "927",
+            "928",
+            "929",
+            "930",
+            "931",
+            "932",
+            "933",
+            "934",
+            "935",
+            "936",
+            "937",
+            "938"
+          ]
+        }
+      }
+    },
+    "QUINCE": {
+      "nombre": "Procedimientos de Ejecución",
+      "pagina": 381,
+      "capitulos": {
+        "I": {
+          "nombre": null,
+          "pagina": 381,
+          "articulos": [
+            "939",
+            "940",
+            "941",
+            "942",
+            "943",
+            "944",
+            "945",
+            "946",
+            "947",
+            "948",
+            "949",
+            "950",
+            "951",
+            "952",
+            "953",
+            "954",
+            "955",
+            "956",
+            "957",
+            "958",
+            "959",
+            "960",
+            "961",
+            "962",
+            "963",
+            "964",
+            "965",
+            "966",
+            "966 Bis",
+            "966 Ter",
+            "967",
+            "968",
+            "969",
+            "970",
+            "971",
+            "972",
+            "973",
+            "974",
+            "975"
+          ]
+        },
+        "II": {
+          "nombre": "Procedimiento de las tercerías y preferencias de crédito",
+          "pagina": 390,
+          "articulos": [
+            "976",
+            "977",
+            "978",
+            "979",
+            "980",
+            "981"
+          ]
+        },
+        "III": {
+          "nombre": "Procedimientos paraprocesales o voluntarios",
+          "pagina": 392,
+          "articulos": [
+            "982",
+            "983",
+            "984",
+            "985",
+            "986",
+            "987",
+            "988",
+            "989",
+            "990",
+            "991",
+            "991 Bis"
+          ]
+        }
+      }
+    },
+    "DIECISEIS": {
+      "nombre": "Responsabilidades y Sanciones",
+      "pagina": 394,
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "pagina": 394,
+          "articulos": [
+            "992",
+            "993",
+            "994",
+            "995",
+            "995 Bis",
+            "996",
+            "997",
+            "997-A",
+            "997-B",
+            "998",
+            "999",
+            "1000",
+            "1001",
+            "1002",
+            "1003",
+            "1004",
+            "1004-A",
+            "1004-B",
+            "1004-C",
+            "1005",
+            "1006",
+            "1007",
+            "1008",
+            "1009",
+            "1010"
+          ]
+        }
+      }
+    }
+  },
+  "transitorios": [
+    "1ro",
+    "2do",
+    "3ro",
+    "4to",
+    "5to",
+    "6to",
+    "7mo",
+    "8vo",
+    "9no",
+    "10o",
+    "11o",
+    "12o",
+    "13o"
+  ],
+  "estadisticas": {
+    "titulos": 17,
+    "capitulos": 99,
+    "secciones": 0,
+    "articulos_vigentes": 1115,
+    "articulos_derogados": 149,
+    "articulos_transitorios": 13,
+    "total": 1264
+  },
+  "ley": "LFT",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+  "metodo": "outline",
+  "notas": "Extraído del outline del PDF. Fuente autoritativa."
+}
