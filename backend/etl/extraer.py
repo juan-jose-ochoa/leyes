@@ -42,15 +42,22 @@ class Parrafo:
     identificador: Optional[str]    # 'I', 'a)', '1.', None para texto
     contenido: str
     padre_numero: Optional[int] = None  # Número del párrafo padre
+    x_id: Optional[int] = None      # X del identificador (o inicio de línea)
+    x_texto: Optional[int] = None   # X donde empieza el contenido de texto
 
     def to_dict(self) -> dict:
-        return {
+        d = {
             "numero": self.numero,
             "tipo": self.tipo,
             "identificador": self.identificador,
             "contenido": self.contenido,
             "padre_numero": self.padre_numero,
         }
+        if self.x_id is not None:
+            d["x_id"] = self.x_id
+        if self.x_texto is not None:
+            d["x_texto"] = self.x_texto
+        return d
 
 
 @dataclass
@@ -295,7 +302,15 @@ class Extractor:
                 padre = None
 
             numero += 1
-            parrafos.append(Parrafo(numero, tipo, identificador, contenido_limpio, padre))
+            # x_id = X del identificador o inicio de línea
+            x_id = round(x)
+            # x_texto = X donde empieza el contenido (después del identificador)
+            # Aproximación: identificador + espacio ocupa ~22 unidades
+            if identificador:
+                x_texto = x_id + 22
+            else:
+                x_texto = x_id
+            parrafos.append(Parrafo(numero, tipo, identificador, contenido_limpio, padre, x_id, x_texto))
 
             # Actualizar tracking
             x_key = round(x / 10) * 10
