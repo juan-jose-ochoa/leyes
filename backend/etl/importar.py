@@ -114,21 +114,39 @@ def normalizar_numero(numero: str) -> str:
     return s
 
 
-def cargar_mapa_estructura(mapa_path: Path) -> dict:
-    """Carga mapa_estructura.json y crea lookup artículo -> (titulo, capitulo)."""
+def cargar_mapa_estructura(mapa_path: Path) -> tuple[dict, set]:
+    """Carga mapa_estructura.json y crea lookup artículo -> (titulo, capitulo, seccion).
+
+    Si el capítulo tiene secciones, el lookup apunta a la sección.
+    Si no tiene secciones, apunta al capítulo directamente.
+
+    Returns:
+        Tupla de (articulo_a_division, derogados_set)
+    """
     with open(mapa_path, 'r', encoding='utf-8') as f:
         mapa = json.load(f)
 
-    # Crear lookup: numero_articulo_normalizado -> (titulo, capitulo, numero_original)
+    # Crear lookup: numero_articulo_normalizado -> (titulo, capitulo, seccion_or_None)
     articulo_a_division = {}
 
     for titulo_num, titulo_data in mapa.get("titulos", {}).items():
         for cap_num, cap_data in titulo_data.get("capitulos", {}).items():
-            for articulo in cap_data.get("articulos", []):
-                key = normalizar_numero(articulo)
-                articulo_a_division[key] = (titulo_num, cap_num)
+            # Si tiene secciones, los artículos están en las secciones
+            if "secciones" in cap_data:
+                for sec_num, sec_data in cap_data["secciones"].items():
+                    for articulo in sec_data.get("articulos", []):
+                        key = normalizar_numero(articulo)
+                        articulo_a_division[key] = (titulo_num, cap_num, sec_num)
+            else:
+                # Sin secciones, artículos directamente en capítulo
+                for articulo in cap_data.get("articulos", []):
+                    key = normalizar_numero(articulo)
+                    articulo_a_division[key] = (titulo_num, cap_num, None)
 
-    return articulo_a_division
+    # Cargar lista de derogados
+    derogados = set(normalizar_numero(d) for d in mapa.get("derogados", []))
+
+    return articulo_a_division, derogados
 
 
 def convertir_estructura_esperada(mapa_path: Path) -> list:
@@ -141,7 +159,8 @@ def convertir_estructura_esperada(mapa_path: Path) -> list:
 
     Salida (plano):
         [{"tipo": "titulo", "numero": "PRIMERO", "orden": 1, "padre_orden": null, "nombre": "..."},
-         {"tipo": "capitulo", "numero": "I", "orden": 2, "padre_orden": 1, "nombre": null}, ...]
+         {"tipo": "capitulo", "numero": "I", "orden": 2, "padre_orden": 1, "nombre": null},
+         {"tipo": "seccion", "numero": "I", "orden": 3, "padre_orden": 2, "nombre": null}, ...]
     """
     with open(mapa_path, 'r', encoding='utf-8') as f:
         mapa = json.load(f)
@@ -162,19 +181,32 @@ def convertir_estructura_esperada(mapa_path: Path) -> list:
 
         for cap_num, cap_data in titulo_data.get("capitulos", {}).items():
             orden += 1
+            cap_orden = orden
             divisiones.append({
                 "tipo": "capitulo",
                 "numero": cap_num,
                 "nombre": cap_data.get("nombre"),
-                "orden": orden,
+                "orden": cap_orden,
                 "padre_orden": titulo_orden
             })
+
+            # Si el capítulo tiene secciones, agregarlas
+            if "secciones" in cap_data:
+                for sec_num, sec_data in cap_data["secciones"].items():
+                    orden += 1
+                    divisiones.append({
+                        "tipo": "seccion",
+                        "numero": sec_num,
+                        "nombre": sec_data.get("nombre"),
+                        "orden": orden,
+                        "padre_orden": cap_orden
+                    })
 
     return divisiones
 
 
 def validar_antes_de_importar(contenido_path: Path, mapa_path: Path) -> bool:
-    """Valida que todos los artículos tengan división asignada. FAIL FAST."""
+    """Valida que todos los artículos tengan división asignada (excepto derogados). FAIL FAST."""
     print("\n   Validando asignación de divisiones...")
 
     if not mapa_path.exists():
@@ -184,7 +216,7 @@ def validar_antes_de_importar(contenido_path: Path, mapa_path: Path) -> bool:
     with open(contenido_path, 'r', encoding='utf-8') as f:
         contenido = json.load(f)
 
-    articulo_a_division = cargar_mapa_estructura(mapa_path)
+    articulo_a_division, derogados = cargar_mapa_estructura(mapa_path)
 
     articulos = contenido.get("articulos", [])
     sin_division = []
@@ -192,6 +224,9 @@ def validar_antes_de_importar(contenido_path: Path, mapa_path: Path) -> bool:
     for art in articulos:
         numero = art["numero"]
         key = normalizar_numero(numero)
+        # Saltar derogados - no tienen división
+        if key in derogados:
+            continue
         if key not in articulo_a_division:
             sin_division.append(numero)
 
@@ -200,7 +235,9 @@ def validar_antes_de_importar(contenido_path: Path, mapa_path: Path) -> bool:
         print(f"   {sin_division[:10]}{'...' if len(sin_division) > 10 else ''}")
         return False
 
-    print(f"   OK: {len(articulos)} artículos con división asignada")
+    if derogados:
+        print(f"   NOTA: {len(derogados)} artículos derogados serán omitidos")
+    print(f"   OK: {len(articulos) - len(derogados)} artículos con división asignada")
     return True
 
 
@@ -250,17 +287,29 @@ def importar_ley(conn, codigo: str, config: dict, pdf_path: Path = None):
 
 
 def importar_estructura_desde_lista(conn, codigo: str, divisiones: list) -> dict:
-    """Importa divisiones desde lista y retorna mapeo (titulo, capitulo) -> id."""
+    """Importa divisiones desde lista y retorna mapeo (titulo, capitulo, seccion) -> id.
+
+    El lookup tiene dos formatos:
+    - Para capítulos sin secciones: (titulo, capitulo, None) -> id
+    - Para secciones: (titulo, capitulo, seccion) -> id
+    """
     if not divisiones:
         print("   No hay divisiones para importar")
         return {}
 
     orden_to_id = {}
-    orden_to_numero = {}  # orden -> numero (para tracking de títulos)
-    division_lookup = {}  # (titulo_num, cap_num) -> id
+    orden_to_numero = {}  # orden -> (tipo, numero)
+    division_lookup = {}  # (titulo_num, cap_num, sec_num_or_None) -> id
 
     with conn.cursor() as cur:
         current_titulo = None
+        current_capitulo = None
+        caps_con_secciones = set()  # Capítulos que tienen secciones
+
+        # Primera pasada: detectar qué capítulos tienen secciones
+        for div in divisiones:
+            if div["tipo"] == "seccion":
+                caps_con_secciones.add(div["padre_orden"])
 
         for div in divisiones:
             padre_id = orden_to_id.get(div["padre_orden"]) if div.get("padre_orden") else None
@@ -280,13 +329,23 @@ def importar_estructura_desde_lista(conn, codigo: str, divisiones: list) -> dict
 
             div_id = cur.fetchone()[0]
             orden_to_id[div["orden"]] = div_id
-            orden_to_numero[div["orden"]] = div["numero"]
+            orden_to_numero[div["orden"]] = (div["tipo"], div["numero"])
 
             if div["tipo"] == "titulo":
                 current_titulo = div["numero"]
-            elif div["tipo"] == "capitulo" and current_titulo:
-                # Normalizar para lookup: (TITULO, CAP) -> id
-                key = (normalizar_numero(current_titulo), normalizar_numero(div["numero"]))
+            elif div["tipo"] == "capitulo":
+                current_capitulo = div["numero"]
+                # Solo agregar capítulo al lookup si NO tiene secciones
+                if div["orden"] not in caps_con_secciones and current_titulo:
+                    key = (normalizar_numero(current_titulo),
+                           normalizar_numero(div["numero"]),
+                           None)
+                    division_lookup[key] = div_id
+            elif div["tipo"] == "seccion" and current_titulo and current_capitulo:
+                # Agregar sección al lookup
+                key = (normalizar_numero(current_titulo),
+                       normalizar_numero(current_capitulo),
+                       normalizar_numero(div["numero"]))
                 division_lookup[key] = div_id
 
         conn.commit()
@@ -301,7 +360,7 @@ def importar_contenido(conn, codigo: str, contenido_path: Path, mapa_path: Path,
     with open(contenido_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    articulo_a_division = cargar_mapa_estructura(mapa_path)
+    articulo_a_division, derogados = cargar_mapa_estructura(mapa_path)
 
     articulos = data.get("articulos", [])
     if not articulos:
@@ -310,26 +369,35 @@ def importar_contenido(conn, codigo: str, contenido_path: Path, mapa_path: Path,
 
     total_parrafos = 0
     errores = []
+    omitidos_derogados = 0
 
     with conn.cursor() as cur:
         for i, art in enumerate(articulos):
             numero = art["numero"]
             key = normalizar_numero(numero)
 
-            # Obtener división desde mapa_estructura
+            # Saltar artículos derogados
+            if key in derogados:
+                omitidos_derogados += 1
+                continue
+
+            # Obtener división desde mapa_estructura (ahora retorna 3 elementos)
             division_info = articulo_a_division.get(key)
             if not division_info:
                 errores.append(f"Artículo {numero}: sin división en mapa")
                 continue
 
-            titulo_num, cap_num = division_info
+            titulo_num, cap_num, sec_num = division_info
 
-            # Buscar division_id usando (titulo, capitulo) normalizado
-            lookup_key = (normalizar_numero(titulo_num), normalizar_numero(cap_num))
+            # Buscar division_id usando (titulo, capitulo, seccion) normalizado
+            lookup_key = (normalizar_numero(titulo_num),
+                          normalizar_numero(cap_num),
+                          normalizar_numero(sec_num) if sec_num else None)
             division_id = division_lookup.get(lookup_key)
 
             if not division_id:
-                errores.append(f"Artículo {numero}: {titulo_num}/{cap_num} no encontrado en BD")
+                div_desc = f"{titulo_num}/{cap_num}" + (f"/{sec_num}" if sec_num else "")
+                errores.append(f"Artículo {numero}: {div_desc} no encontrado en BD")
                 continue
 
             # Insertar artículo
@@ -381,7 +449,10 @@ def importar_contenido(conn, codigo: str, contenido_path: Path, mapa_path: Path,
         if len(errores) > 5:
             print(f"      ... y {len(errores) - 5} más")
 
-    print(f"   {len(articulos) - len(errores)} artículos, {total_parrafos} párrafos importados")
+    articulos_importados = len(articulos) - len(errores) - omitidos_derogados
+    if omitidos_derogados:
+        print(f"   ({omitidos_derogados} artículos derogados omitidos)")
+    print(f"   {articulos_importados} artículos, {total_parrafos} párrafos importados")
     return len(errores) == 0
 
 
@@ -389,31 +460,37 @@ def verificar_post_importacion(conn, codigo: str, mapa_path: Path) -> bool:
     """Verifica integridad después de importar. FAIL FAST."""
     print("\n7. Verificando integridad post-importación...")
 
-    articulo_a_division = cargar_mapa_estructura(mapa_path)
+    articulo_a_division, derogados = cargar_mapa_estructura(mapa_path)
 
-    # Contar artículos esperados por capítulo
-    esperado_por_cap = {}
-    for numero, (titulo, cap) in articulo_a_division.items():
-        key = cap
-        esperado_por_cap[key] = esperado_por_cap.get(key, 0) + 1
+    # Contar artículos esperados por división (capítulo o sección)
+    # El lookup ahora retorna (titulo, cap, sec_or_None)
+    esperado_por_div = {}
+    for numero, (titulo, cap, sec) in articulo_a_division.items():
+        # Usar sección si existe, si no usar capítulo
+        if sec:
+            key = ('seccion', sec)
+        else:
+            key = ('capitulo', cap)
+        esperado_por_div[key] = esperado_por_div.get(key, 0) + 1
 
-    # Contar artículos reales por capítulo en BD
+    # Contar artículos reales por división en BD (capítulos y secciones)
     with conn.cursor() as cur:
         cur.execute("""
-            SELECT d.numero as capitulo, COUNT(a.id) as total
+            SELECT d.tipo, d.numero, COUNT(a.id) as total
             FROM leyesmx.divisiones d
             LEFT JOIN leyesmx.articulos a ON a.division_id = d.id AND a.ley = d.ley
-            WHERE d.ley = %s AND d.tipo = 'capitulo'
-            GROUP BY d.numero
+            WHERE d.ley = %s AND d.tipo IN ('capitulo', 'seccion')
+            GROUP BY d.tipo, d.numero
         """, (codigo,))
 
-        real_por_cap = {row[0]: row[1] for row in cur.fetchall()}
+        real_por_div = {(row[0], row[1]): row[2] for row in cur.fetchall()}
 
     errores = []
-    for cap, esperado in esperado_por_cap.items():
-        real = real_por_cap.get(cap, 0)
+    for div_key, esperado in esperado_por_div.items():
+        tipo, numero = div_key
+        real = real_por_div.get(div_key, 0)
         if real != esperado:
-            errores.append(f"   Capítulo {cap}: esperado {esperado}, real {real}")
+            errores.append(f"   {tipo.capitalize()} {numero}: esperado {esperado}, real {real}")
 
     if errores:
         print("   ERRORES de integridad:")
@@ -421,7 +498,7 @@ def verificar_post_importacion(conn, codigo: str, mapa_path: Path) -> bool:
             print(err)
         return False
 
-    print(f"   OK: {len(esperado_por_cap)} capítulos verificados")
+    print(f"   OK: {len(esperado_por_div)} divisiones verificadas")
     return True
 
 

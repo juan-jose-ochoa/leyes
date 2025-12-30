@@ -37,12 +37,22 @@ class ArticuloRef:
 
 
 @dataclass
+class SeccionRef:
+    """Referencia a una sección dentro de capítulo."""
+    numero: str
+    nombre: Optional[str]
+    pagina: int
+    articulos: list[ArticuloRef] = field(default_factory=list)
+
+
+@dataclass
 class CapituloRef:
     """Referencia a un capítulo."""
     numero: str
     nombre: Optional[str]
     pagina: int
     articulos: list[ArticuloRef] = field(default_factory=list)
+    secciones: list[SeccionRef] = field(default_factory=list)
 
 
 @dataclass
@@ -181,15 +191,17 @@ def detectar_derogados(doc, articulos: list[ArticuloRef]) -> list[ArticuloRef]:
 
 def extraer_estructura(doc) -> list[TituloRef]:
     """
-    Extrae estructura jerárquica (Títulos/Capítulos) del texto del PDF.
+    Extrae estructura jerárquica (Títulos/Capítulos/Secciones) del texto del PDF.
     """
     titulos = []
     titulo_actual = None
     capitulo_actual = None
 
     # Patrones soportan MAYÚSCULAS y Title Case, con y sin acentos
-    patron_titulo = r'^T[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[EÉ]PTIMO|OCTAVO|NOVENO|D[EÉ]CIMO)\s*$'
+    # Títulos pueden ser ordinales (PRIMERO...) o romanos (I, II, III...)
+    patron_titulo = r'^T[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[EÉ]PTIMO|OCTAVO|NOVENO|D[EÉ]CIMO|[IVX]+)\s*$'
     patron_capitulo = r'^CAP[IÍ]TULO\s+([IVX]+|[UÚ]NICO)\s*$'
+    patron_seccion = r'^SECCI[OÓ]N\s+([IVX]+)\s*$'
 
     for page_num, page in enumerate(doc):
         texto = page.get_text()
@@ -204,7 +216,7 @@ def extraer_estructura(doc) -> list[TituloRef]:
                 nombre = None
                 if i + 1 < len(lineas):
                     sig = lineas[i + 1].strip()
-                    if sig and len(sig) > 3 and not re.match(r'^(CAP|ART|TITULO|\[)', sig, re.IGNORECASE):
+                    if sig and len(sig) > 3 and not re.match(r'^(CAP|ART|TITULO|SECC|\[)', sig, re.IGNORECASE):
                         nombre = sig
 
                 titulo_actual = TituloRef(
@@ -226,7 +238,7 @@ def extraer_estructura(doc) -> list[TituloRef]:
                 nombre = None
                 if i + 1 < len(lineas):
                     sig = lineas[i + 1].strip()
-                    if sig and len(sig) > 3 and not re.match(r'^(CAP|ART|TITULO|\[)', sig, re.IGNORECASE):
+                    if sig and len(sig) > 3 and not re.match(r'^(CAP|ART|TITULO|SECC|\[)', sig, re.IGNORECASE):
                         nombre = sig
 
                 capitulo_actual = CapituloRef(
@@ -235,15 +247,36 @@ def extraer_estructura(doc) -> list[TituloRef]:
                     pagina=page_num + 1
                 )
                 titulo_actual.capitulos.append(capitulo_actual)
+                continue
+
+            # ¿Es sección?
+            match = re.match(patron_seccion, linea_limpia, re.IGNORECASE)
+            if match:
+                if capitulo_actual is None:
+                    continue  # Ignorar secciones sin capítulo
+
+                nombre = None
+                if i + 1 < len(lineas):
+                    sig = lineas[i + 1].strip()
+                    if sig and len(sig) > 3 and not re.match(r'^(CAP|ART|TITULO|SECC|\[)', sig, re.IGNORECASE):
+                        nombre = sig
+
+                seccion = SeccionRef(
+                    numero=match.group(1).upper(),
+                    nombre=nombre,
+                    pagina=page_num + 1
+                )
+                capitulo_actual.secciones.append(seccion)
 
     return titulos
 
 
 def asignar_articulos_a_capitulos(titulos: list[TituloRef], articulos: list[ArticuloRef], doc):
     """
-    Asigna artículos a capítulos basándose en páginas y posición en texto.
+    Asigna artículos a capítulos/secciones basándose en páginas y posición en texto.
 
     Si un título no tiene capítulos, crea un capítulo "UNICO" virtual.
+    Si un capítulo tiene secciones, los artículos se asignan a las secciones.
     """
     # Crear capítulos virtuales para títulos sin capítulos
     for titulo in titulos:
@@ -256,7 +289,9 @@ def asignar_articulos_a_capitulos(titulos: list[TituloRef], articulos: list[Arti
             titulo.capitulos.append(cap_virtual)
 
     # Crear lista de puntos de corte con posición en texto
-    capitulos_ordenados = []
+    # Incluye tanto capítulos como secciones
+    puntos_corte = []  # (pagina, pos, objeto, tipo)
+
     for titulo in titulos:
         for cap in titulo.capitulos:
             # Buscar posición exacta del capítulo en la página
@@ -272,9 +307,24 @@ def asignar_articulos_a_capitulos(titulos: list[TituloRef], articulos: list[Arti
                 pos_en_pagina = match.start() if match else 0
             else:
                 pos_en_pagina = 0
-            capitulos_ordenados.append((cap.pagina, pos_en_pagina, cap))
 
-    capitulos_ordenados.sort(key=lambda x: (x[0], x[1]))
+            # Si el capítulo tiene secciones, agregar las secciones como puntos de corte
+            if cap.secciones:
+                for sec in cap.secciones:
+                    page_idx = sec.pagina - 1
+                    if page_idx >= 0 and page_idx < len(doc):
+                        texto = doc[page_idx].get_text()
+                        patron = rf'SECCI[OÓ]N\s+{re.escape(sec.numero)}'
+                        match = re.search(patron, texto, re.IGNORECASE)
+                        pos_sec = match.start() if match else 0
+                    else:
+                        pos_sec = 0
+                    puntos_corte.append((sec.pagina, pos_sec, sec, 'seccion'))
+            else:
+                # Sin secciones, el capítulo es el punto de corte
+                puntos_corte.append((cap.pagina, pos_en_pagina, cap, 'capitulo'))
+
+    puntos_corte.sort(key=lambda x: (x[0], x[1]))
 
     # Crear índice de posición de artículos en página
     articulos_con_pos = []
@@ -291,24 +341,24 @@ def asignar_articulos_a_capitulos(titulos: list[TituloRef], articulos: list[Arti
             pos_en_pagina = 0
         articulos_con_pos.append((art, pos_en_pagina))
 
-    # Asignar cada artículo al capítulo correspondiente
+    # Asignar cada artículo al punto de corte correspondiente (capítulo o sección)
     for art, pos_art in articulos_con_pos:
-        capitulo_asignado = None
+        punto_asignado = None
 
-        for i, (pagina_cap, pos_cap, cap) in enumerate(capitulos_ordenados):
-            # El artículo pertenece a este capítulo si:
+        for pagina, pos, obj, tipo in puntos_corte:
+            # El artículo pertenece a este punto si:
             # - Está en una página posterior, O
-            # - Está en la misma página pero después del encabezado del capítulo
-            if art.pagina > pagina_cap:
-                capitulo_asignado = cap
-            elif art.pagina == pagina_cap and pos_art >= pos_cap:
-                capitulo_asignado = cap
+            # - Está en la misma página pero después del encabezado
+            if art.pagina > pagina:
+                punto_asignado = obj
+            elif art.pagina == pagina and pos_art >= pos:
+                punto_asignado = obj
 
-        if capitulo_asignado:
-            capitulo_asignado.articulos.append(art)
-        elif capitulos_ordenados:
-            # Si el artículo está antes del primer capítulo, asignar al primero
-            capitulos_ordenados[0][2].articulos.append(art)
+        if punto_asignado:
+            punto_asignado.articulos.append(art)
+        elif puntos_corte:
+            # Si el artículo está antes del primer punto, asignar al primero
+            puntos_corte[0][2].articulos.append(art)
 
 
 def extraer_mapa(codigo: str) -> tuple[list[TituloRef], list[ArticuloRef], list[ArticuloRef]]:
@@ -356,6 +406,7 @@ def extraer_mapa(codigo: str) -> tuple[list[TituloRef], list[ArticuloRef], list[
 def imprimir_mapa(titulos: list[TituloRef], derogados: list[ArticuloRef], transitorios: list[ArticuloRef]):
     """Imprime el mapa en formato legible."""
     total_articulos = 0
+    total_secciones = 0
 
     for titulo in titulos:
         nombre = f" - {titulo.nombre}" if titulo.nombre else ""
@@ -363,16 +414,31 @@ def imprimir_mapa(titulos: list[TituloRef], derogados: list[ArticuloRef], transi
 
         for cap in titulo.capitulos:
             nombre_cap = f" - {cap.nombre}" if cap.nombre else ""
-            arts = [a.numero for a in cap.articulos]
-            total_articulos += len(arts)
+            print(f"  CAPITULO {cap.numero}{nombre_cap}")
 
-            if arts:
-                rango = f"{arts[0]} ... {arts[-1]}" if len(arts) > 2 else ", ".join(arts)
-                print(f"  CAPITULO {cap.numero}{nombre_cap}")
-                print(f"    Artículos: {rango} ({len(arts)} arts)")
+            # Si tiene secciones, mostrar artículos por sección
+            if cap.secciones:
+                total_secciones += len(cap.secciones)
+                for sec in cap.secciones:
+                    nombre_sec = f" - {sec.nombre}" if sec.nombre else ""
+                    arts = [a.numero for a in sec.articulos]
+                    total_articulos += len(arts)
+                    if arts:
+                        rango = f"{arts[0]} ... {arts[-1]}" if len(arts) > 2 else ", ".join(arts)
+                        print(f"    SECCION {sec.numero}{nombre_sec}")
+                        print(f"      Artículos: {rango} ({len(arts)} arts)")
+                    else:
+                        print(f"    SECCION {sec.numero}{nombre_sec}")
+                        print(f"      (sin artículos)")
             else:
-                print(f"  CAPITULO {cap.numero}{nombre_cap}")
-                print(f"    (sin artículos detectados)")
+                # Sin secciones, mostrar artículos del capítulo
+                arts = [a.numero for a in cap.articulos]
+                total_articulos += len(arts)
+                if arts:
+                    rango = f"{arts[0]} ... {arts[-1]}" if len(arts) > 2 else ", ".join(arts)
+                    print(f"    Artículos: {rango} ({len(arts)} arts)")
+                else:
+                    print(f"    (sin artículos detectados)")
 
     if derogados:
         print(f"\nDEROGADOS ({len(derogados)} artículos):")
@@ -386,6 +452,8 @@ def imprimir_mapa(titulos: list[TituloRef], derogados: list[ArticuloRef], transi
     print(f"RESUMEN:")
     print(f"  Títulos:     {len(titulos)}")
     print(f"  Capítulos:   {sum(len(t.capitulos) for t in titulos)}")
+    if total_secciones > 0:
+        print(f"  Secciones:   {total_secciones}")
     print(f"  Vigentes:    {total_articulos}")
     print(f"  Derogados:   {len(derogados)}")
     print(f"  Transitorios:{len(transitorios)}")
@@ -396,6 +464,9 @@ def generar_json(titulos: list[TituloRef], derogados: list[ArticuloRef], transit
     resultado = {
         "titulos": {}
     }
+
+    total_secciones = 0
+    total_vigentes = 0
 
     for titulo in titulos:
         titulo_data = {
@@ -408,8 +479,24 @@ def generar_json(titulos: list[TituloRef], derogados: list[ArticuloRef], transit
             cap_data = {
                 "nombre": cap.nombre,
                 "pagina": cap.pagina,
-                "articulos": [a.numero for a in cap.articulos]
             }
+
+            # Si tiene secciones, incluirlas
+            if cap.secciones:
+                total_secciones += len(cap.secciones)
+                cap_data["secciones"] = {}
+                for sec in cap.secciones:
+                    sec_data = {
+                        "nombre": sec.nombre,
+                        "pagina": sec.pagina,
+                        "articulos": [a.numero for a in sec.articulos]
+                    }
+                    total_vigentes += len(sec.articulos)
+                    cap_data["secciones"][sec.numero] = sec_data
+            else:
+                cap_data["articulos"] = [a.numero for a in cap.articulos]
+                total_vigentes += len(cap.articulos)
+
             titulo_data["capitulos"][cap.numero] = cap_data
 
         resultado["titulos"][titulo.numero] = titulo_data
@@ -421,10 +508,10 @@ def generar_json(titulos: list[TituloRef], derogados: list[ArticuloRef], transit
     resultado["transitorios"] = [a.numero for a in transitorios]
 
     # Estadísticas
-    total_vigentes = sum(len(cap.articulos) for t in titulos for cap in t.capitulos)
     resultado["estadisticas"] = {
         "titulos": len(titulos),
         "capitulos": sum(len(t.capitulos) for t in titulos),
+        "secciones": total_secciones,
         "articulos_vigentes": total_vigentes,
         "articulos_derogados": len(derogados),
         "articulos_transitorios": len(transitorios),

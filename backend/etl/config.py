@@ -189,6 +189,77 @@ LEYES = {
         # Después de esta página comienzan los transitorios de decretos de reforma
         "pagina_fin_contenido": 162,
     },
+
+    "LISR": {
+        "nombre": "Ley del Impuesto sobre la Renta",
+        "nombre_corto": "ISR",
+        "tipo": "ley",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf",
+        "pdf_path": "backend/etl/data/lisr/lisr_ley_del_impuesto_sobre_la_renta.pdf",
+
+        # Estructura jerárquica permitida
+        "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
+
+        # Tipo de contenido principal
+        "tipo_contenido": "articulo",
+
+        # Patrones de detección
+        "patrones": {
+            # Artículo: "Artículo 5o.", "Artículo 10.", "Artículo 25-A.", "Artículo 197 Bis."
+            "articulo": r'^Artículo\s+(\d+)([oa])?\.?(?:[-–\s]*([A-Z]))?(?:[-–\s]+(Bis|Ter|Quáter|Quinquies|Sexies))?\.[- –]?',
+
+            # Divisiones estructurales (MAYÚSCULAS con números romanos)
+            "titulo": r'^T[IÍ]TULO\s+([IVX]+)\s*$',
+            "capitulo": r'^CAP[IÍ]TULO\s+([IVX]+)\s*$',
+            "seccion": r'^SECCI[OÓ]N\s+([IVX]+)\s*$',
+
+            # Fracciones dentro de artículos
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+        },
+
+        # Ruido a eliminar (encabezados, pies de página)
+        "ruido": [
+            r'LEY DEL IMPUESTO SOBRE LA RENTA\s*',
+            r'CÁMARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNIÓN[^\n]*',
+            r'Secretaría General\s*',
+            r'Secretaría de Servicios Parlamentarios\s*',
+            r'Última\s+[Rr]eforma\s+(?:publicada\s+)?DOF[^\n]*',
+            r'\d+\s+de\s+\d+\s*',  # Números de página
+            r'TEXTO VIGENTE\s*',
+        ],
+        "ruido_lineas": [
+            'LEY DEL IMPUESTO SOBRE LA RENTA',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'Última Reforma',
+            'Última reforma',
+            'TEXTO VIGENTE',
+            ' de 313',  # "X de 313" - números de página
+        ],
+
+        # Detección de referencias (reformas, adiciones)
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
+                r"Inciso.*DOF",
+                r"Sección.*DOF",
+                r"reformad[oa].*DOF",
+                r"adicionad[oa].*DOF",
+            ],
+        },
+
+        # Página donde terminan los artículos permanentes
+        "pagina_fin_contenido": 278,
+    },
 }
 
 

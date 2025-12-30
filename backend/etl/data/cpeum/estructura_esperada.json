@@ -1,15 +1,12 @@
 {
-  "ley": "CPEUM",
-  "version": "2025-10-15",
-  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-  "metodo": "outline",
-  "notas": "Constitución Política de los Estados Unidos Mexicanos. 136 artículos permanentes + 19 transitorios originales.",
   "titulos": {
     "PRIMERO": {
       "nombre": null,
+      "pagina": 1,
       "capitulos": {
         "I": {
           "nombre": "De los Derechos Humanos y sus Garantías",
+          "pagina": 1,
           "articulos": [
             "1o",
             "2o",
@@ -44,6 +41,7 @@
         },
         "II": {
           "nombre": "De los Mexicanos",
+          "pagina": 44,
           "articulos": [
             "30",
             "31",
@@ -52,12 +50,14 @@
         },
         "III": {
           "nombre": "De los Extranjeros",
+          "pagina": 46,
           "articulos": [
             "33"
           ]
         },
         "IV": {
           "nombre": "De los Ciudadanos Mexicanos",
+          "pagina": 46,
           "articulos": [
             "34",
             "35",
@@ -70,9 +70,11 @@
     },
     "SEGUNDO": {
       "nombre": null,
+      "pagina": 51,
       "capitulos": {
         "I": {
           "nombre": "De la Soberanía Nacional y de la Forma de Gobierno",
+          "pagina": 51,
           "articulos": [
             "39",
             "40",
@@ -81,6 +83,7 @@
         },
         "II": {
           "nombre": "De las Partes Integrantes de la Federación y del Territorio Nacional",
+          "pagina": 61,
           "articulos": [
             "42",
             "43",
@@ -95,50 +98,84 @@
     },
     "TERCERO": {
       "nombre": null,
+      "pagina": 62,
       "capitulos": {
         "I": {
           "nombre": "De la División de Poderes",
+          "pagina": 62,
           "articulos": [
-            "49"
+            "49",
+            "50"
           ]
         },
         "II": {
           "nombre": "Del Poder Legislativo",
-          "articulos": [
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            "60",
-            "61",
-            "62",
-            "63",
-            "64",
-            "65",
-            "66",
-            "67",
-            "68",
-            "69",
-            "70",
-            "71",
-            "72",
-            "73",
-            "74",
-            "75",
-            "76",
-            "77",
-            "78",
-            "79"
-          ]
+          "pagina": 62,
+          "secciones": {
+            "I": {
+              "nombre": "De la Elección e Instalación del Congreso",
+              "pagina": 62,
+              "articulos": [
+                "51",
+                "52",
+                "53",
+                "54",
+                "55",
+                "56",
+                "57",
+                "58",
+                "59",
+                "60",
+                "61",
+                "62",
+                "63",
+                "64",
+                "65",
+                "66",
+                "67",
+                "68",
+                "69",
+                "70"
+              ]
+            },
+            "II": {
+              "nombre": "De la Iniciativa y Formación de las Leyes",
+              "pagina": 68,
+              "articulos": [
+                "71",
+                "72"
+              ]
+            },
+            "III": {
+              "nombre": "De las Facultades del Congreso",
+              "pagina": 70,
+              "articulos": [
+                "73",
+                "74",
+                "75",
+                "76",
+                "77"
+              ]
+            },
+            "IV": {
+              "nombre": "De la Comisión Permanente",
+              "pagina": 83,
+              "articulos": [
+                "78"
+              ]
+            },
+            "V": {
+              "nombre": "De la Fiscalización Superior de la Federación",
+              "pagina": 84,
+              "articulos": [
+                "79"
+              ]
+            }
+          }
         },
         "III": {
           "nombre": "Del Poder Ejecutivo",
+          "pagina": 87,
           "articulos": [
             "80",
             "81",
@@ -158,6 +195,7 @@
         },
         "IV": {
           "nombre": "Del Poder Judicial",
+          "pagina": 93,
           "articulos": [
             "94",
             "95",
@@ -179,9 +217,11 @@
     },
     "CUARTO": {
       "nombre": "De las Responsabilidades de los Servidores Públicos, Particulares Vinculados con Faltas",
+      "pagina": 117,
       "capitulos": {
         "UNICO": {
           "nombre": null,
+          "pagina": 117,
           "articulos": [
             "108",
             "109",
@@ -196,9 +236,11 @@
     },
     "QUINTO": {
       "nombre": "De los Estados de la Federación y de la Ciudad de México",
+      "pagina": 122,
       "capitulos": {
         "UNICO": {
           "nombre": null,
+          "pagina": 122,
           "articulos": [
             "115",
             "116",
@@ -214,9 +256,11 @@
     },
     "SEXTO": {
       "nombre": "Del Trabajo y de la Previsión Social",
+      "pagina": 142,
       "capitulos": {
         "UNICO": {
           "nombre": null,
+          "pagina": 142,
           "articulos": [
             "123"
           ]
@@ -225,9 +269,11 @@
     },
     "SÉPTIMO": {
       "nombre": "Prevenciones Generales",
+      "pagina": 154,
       "capitulos": {
         "UNICO": {
           "nombre": null,
+          "pagina": 154,
           "articulos": [
             "124",
             "125",
@@ -246,9 +292,11 @@
     },
     "OCTAVO": {
       "nombre": "De las Reformas de la Constitución",
+      "pagina": 158,
       "capitulos": {
         "UNICO": {
           "nombre": null,
+          "pagina": 158,
           "articulos": [
             "135"
           ]
@@ -257,9 +305,11 @@
     },
     "NOVENO": {
       "nombre": "De la Inviolabilidad de la Constitución",
+      "pagina": 158,
       "capitulos": {
         "UNICO": {
           "nombre": null,
+          "pagina": 158,
           "articulos": [
             "136"
           ]
@@ -267,6 +317,7 @@
       }
     }
   },
+  "derogados": [],
   "transitorios": [
     "Primero",
     "Segundo",
@@ -291,9 +342,14 @@
   "estadisticas": {
     "titulos": 9,
     "capitulos": 16,
+    "secciones": 5,
     "articulos_vigentes": 136,
     "articulos_derogados": 0,
     "articulos_transitorios": 19,
     "total": 136
-  }
+  },
+  "ley": "CPEUM",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+  "metodo": "outline",
+  "notas": "Extraído del outline del PDF. Fuente autoritativa."
 }

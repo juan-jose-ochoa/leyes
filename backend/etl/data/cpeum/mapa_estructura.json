@@ -104,44 +104,74 @@
           "nombre": "De la División de Poderes",
           "pagina": 62,
           "articulos": [
-            "49"
+            "49",
+            "50"
           ]
         },
         "II": {
           "nombre": "Del Poder Legislativo",
           "pagina": 62,
-          "articulos": [
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            "60",
-            "61",
-            "62",
-            "63",
-            "64",
-            "65",
-            "66",
-            "67",
-            "68",
-            "69",
-            "70",
-            "71",
-            "72",
-            "73",
-            "74",
-            "75",
-            "76",
-            "77",
-            "78",
-            "79"
-          ]
+          "secciones": {
+            "I": {
+              "nombre": "De la Elección e Instalación del Congreso",
+              "pagina": 62,
+              "articulos": [
+                "51",
+                "52",
+                "53",
+                "54",
+                "55",
+                "56",
+                "57",
+                "58",
+                "59",
+                "60",
+                "61",
+                "62",
+                "63",
+                "64",
+                "65",
+                "66",
+                "67",
+                "68",
+                "69",
+                "70"
+              ]
+            },
+            "II": {
+              "nombre": "De la Iniciativa y Formación de las Leyes",
+              "pagina": 68,
+              "articulos": [
+                "71",
+                "72"
+              ]
+            },
+            "III": {
+              "nombre": "De las Facultades del Congreso",
+              "pagina": 70,
+              "articulos": [
+                "73",
+                "74",
+                "75",
+                "76",
+                "77"
+              ]
+            },
+            "IV": {
+              "nombre": "De la Comisión Permanente",
+              "pagina": 83,
+              "articulos": [
+                "78"
+              ]
+            },
+            "V": {
+              "nombre": "De la Fiscalización Superior de la Federación",
+              "pagina": 84,
+              "articulos": [
+                "79"
+              ]
+            }
+          }
         },
         "III": {
           "nombre": "Del Poder Ejecutivo",
@@ -312,6 +342,7 @@
   "estadisticas": {
     "titulos": 9,
     "capitulos": 16,
+    "secciones": 5,
     "articulos_vigentes": 136,
     "articulos_derogados": 0,
     "articulos_transitorios": 19,
