@@ -76,7 +76,7 @@ def normalizar_numero(titulo_outline: str) -> str:
     numero = titulo_outline.replace("Artículo_", "")
 
     # Sufijos especiales que van con espacio
-    sufijos = ['Bis', 'Ter', 'Quáter', 'Quinquies', 'Sexies']
+    sufijos = ['Bis', 'Ter', 'Quáter', 'Quintus', 'Quinquies', 'Sexies']
 
     # Procesar partes separadas por _
     partes = numero.split('_')
@@ -189,9 +189,13 @@ def detectar_derogados(doc, articulos: list[ArticuloRef]) -> list[ArticuloRef]:
     return vigentes, derogados
 
 
-def extraer_estructura(doc) -> list[TituloRef]:
+def extraer_estructura(doc, pagina_fin: int = None) -> list[TituloRef]:
     """
     Extrae estructura jerárquica (Títulos/Capítulos/Secciones) del texto del PDF.
+
+    Args:
+        doc: Documento PyMuPDF
+        pagina_fin: Página donde termina el contenido (opcional, 1-indexed)
     """
     titulos = []
     titulo_actual = None
@@ -200,10 +204,13 @@ def extraer_estructura(doc) -> list[TituloRef]:
     # Patrones soportan MAYÚSCULAS y Title Case, con y sin acentos
     # Títulos pueden ser ordinales (PRIMERO...) o romanos (I, II, III...)
     patron_titulo = r'^T[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[EÉ]PTIMO|OCTAVO|NOVENO|D[EÉ]CIMO|[IVX]+)\s*$'
-    patron_capitulo = r'^CAP[IÍ]TULO\s+([IVX]+|[UÚ]NICO)\s*$'
+    patron_capitulo = r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$'
     patron_seccion = r'^SECCI[OÓ]N\s+([IVX]+)\s*$'
 
     for page_num, page in enumerate(doc):
+        # Si hay límite de página, detenerse
+        if pagina_fin and (page_num + 1) > pagina_fin:
+            break
         texto = page.get_text()
         lineas = texto.split('\n')
 
@@ -391,7 +398,8 @@ def extraer_mapa(codigo: str) -> tuple[list[TituloRef], list[ArticuloRef], list[
 
     # 3. Extraer estructura (Títulos/Capítulos)
     print("   Extrayendo estructura jerárquica...")
-    titulos = extraer_estructura(doc)
+    pagina_fin = config.get("pagina_fin_contenido")
+    titulos = extraer_estructura(doc, pagina_fin)
     print(f"   Encontrados: {len(titulos)} títulos, {sum(len(t.capitulos) for t in titulos)} capítulos")
 
     # 4. Asignar artículos a capítulos

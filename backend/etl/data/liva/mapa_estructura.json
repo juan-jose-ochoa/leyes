@@ -1,0 +1,184 @@
+{
+  "titulos": {
+    "PRELIMINAR": {
+      "nombre": null,
+      "pagina": 1,
+      "capitulos": {
+        "I": {
+          "nombre": "Disposiciones generales",
+          "pagina": 1,
+          "articulos": [
+            "1o",
+            "1o-A",
+            "1o-A Bis",
+            "1o-B",
+            "1o-C",
+            "2o-A",
+            "3o",
+            "4o",
+            "4o-A",
+            "5o",
+            "5o-A",
+            "5o-B",
+            "5o-C",
+            "5o-D",
+            "5o-F",
+            "6o",
+            "7o"
+          ]
+        },
+        "II": {
+          "nombre": "De la enajenación",
+          "pagina": 19,
+          "articulos": [
+            "8o",
+            "9o",
+            "10",
+            "11",
+            "12"
+          ]
+        },
+        "III": {
+          "nombre": "De la prestación de servicios",
+          "pagina": 22,
+          "articulos": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "18-A"
+          ]
+        },
+        "III BIS": {
+          "nombre": "De la prestación de servicios digitales por residentes en el extranjero sin establecimiento",
+          "pagina": 28,
+          "secciones": {
+            "I": {
+              "nombre": "Disposiciones generales",
+              "pagina": 28,
+              "articulos": [
+                "18-B",
+                "18-C",
+                "18-D",
+                "18-E",
+                "18-F",
+                "18-G",
+                "18-H",
+                "18-H Bis",
+                "18-H Ter",
+                "18-H Quáter",
+                "18-H Quintus",
+                "18-I"
+              ]
+            },
+            "II": {
+              "nombre": "De los servicios digitales de intermediación entre terceros",
+              "pagina": 33,
+              "articulos": [
+                "18-J",
+                "18-K",
+                "18-L",
+                "18-M"
+              ]
+            }
+          }
+        },
+        "IV": {
+          "nombre": "Del uso o goce temporal de bienes",
+          "pagina": 36,
+          "articulos": [
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ]
+        },
+        "V": {
+          "nombre": "De la importación de bienes y servicios",
+          "pagina": 37,
+          "articulos": [
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "28-A"
+          ]
+        },
+        "VI": {
+          "nombre": "De la exportación de bienes o servicios",
+          "pagina": 40,
+          "articulos": [
+            "29",
+            "30",
+            "31"
+          ]
+        },
+        "VII": {
+          "nombre": "De las obligaciones de los contribuyentes",
+          "pagina": 44,
+          "articulos": [
+            "32",
+            "33",
+            "34"
+          ]
+        },
+        "VIII": {
+          "nombre": "De las facultades de las autoridades",
+          "pagina": 47,
+          "articulos": [
+            "39"
+          ]
+        },
+        "IX": {
+          "nombre": "De las participaciones a las entidades federativas",
+          "pagina": 47,
+          "articulos": [
+            "41",
+            "42",
+            "43"
+          ]
+        }
+      }
+    }
+  },
+  "derogados": [
+    "2o",
+    "2o-B",
+    "2o-C",
+    "2o-D",
+    "4o-B",
+    "4o-C",
+    "5o-E",
+    "13",
+    "35",
+    "35-A",
+    "35-B",
+    "36",
+    "37",
+    "38",
+    "40"
+  ],
+  "transitorios": [
+    "Primero",
+    "Segundo",
+    "Tercero",
+    "Cuarto",
+    "Quinto"
+  ],
+  "estadisticas": {
+    "titulos": 1,
+    "capitulos": 10,
+    "secciones": 2,
+    "articulos_vigentes": 65,
+    "articulos_derogados": 15,
+    "articulos_transitorios": 5,
+    "total": 80
+  },
+  "ley": "LIVA",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf",
+  "metodo": "outline",
+  "notas": "Extraído del outline del PDF. Fuente autoritativa."
+}

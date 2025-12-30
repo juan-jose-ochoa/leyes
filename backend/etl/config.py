@@ -260,6 +260,78 @@ LEYES = {
         # Página donde terminan los artículos permanentes
         "pagina_fin_contenido": 278,
     },
+
+    "LIVA": {
+        "nombre": "Ley del Impuesto al Valor Agregado",
+        "nombre_corto": "IVA",
+        "tipo": "ley",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf",
+        "pdf_path": "backend/etl/data/liva/liva_ley_del_impuesto_al_valor_agregado.pdf",
+
+        # Estructura jerárquica permitida
+        # LIVA no tiene títulos, solo capítulos directamente
+        "divisiones_permitidas": ["titulo", "capitulo"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
+
+        # Tipo de contenido principal
+        "tipo_contenido": "articulo",
+
+        # Patrones de detección
+        "patrones": {
+            # Artículo: "Artículo 1o.", "Artículo 18-A.", "Artículo 18-H QUINTUS."
+            "articulo": r'^Artículo\s+(\d+)([oa])?\.?(?:[-–\s]*([A-Z]))?(?:[-–\s]+(Bis|Ter|Quáter|Quintus|Quinquies|Sexies))?\.[- –]?',
+
+            # LIVA no tiene títulos explícitos
+            "titulo": r'^$',  # No match
+            # Capítulos (incluyendo "III BIS")
+            "capitulo": r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?)\s*$',
+
+            # Fracciones dentro de artículos
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+        },
+
+        # Ruido a eliminar (encabezados, pies de página)
+        "ruido": [
+            r'LEY DEL IMPUESTO AL VALOR AGREGADO\s*',
+            r'CÁMARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNIÓN[^\n]*',
+            r'Secretaría General\s*',
+            r'Secretaría de Servicios Parlamentarios\s*',
+            r'Última\s+[Rr]eforma\s+(?:publicada\s+)?DOF[^\n]*',
+            r'\d+\s+de\s+\d+\s*',  # Números de página
+            r'TEXTO VIGENTE\s*',
+        ],
+        "ruido_lineas": [
+            'LEY DEL IMPUESTO AL VALOR AGREGADO',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'Última Reforma',
+            'Última reforma',
+            'TEXTO VIGENTE',
+            ' de 128',  # "X de 128" - números de página
+        ],
+
+        # Detección de referencias (reformas, adiciones)
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
+                r"Inciso.*DOF",
+                r"Capítulo.*DOF",
+                r"reformad[oa].*DOF",
+                r"adicionad[oa].*DOF",
+            ],
+        },
+
+        # Página donde terminan los artículos permanentes + transitorios originales
+        "pagina_fin_contenido": 52,
+    },
 }
 
 
