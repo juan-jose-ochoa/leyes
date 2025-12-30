@@ -518,7 +518,7 @@ class Extractor:
 
         # Primero, encontrar todos los artículos escaneando el PDF
         patron_art = re.compile(self.config["patrones"]["articulo"], re.IGNORECASE | re.MULTILINE)
-        patron_siguiente = re.compile(r'Artículo\s+\d+[o]?(?:\.-[A-Z])?(?:-[A-Z])?(?:\s+[A-Z][a-z]+)?\.[\-\s]', re.IGNORECASE)
+        patron_siguiente = re.compile(r'(?:ARTICULO|ARTÍCULO|Artículo)\s+\d+[oa]?(?:[-–_\s]*[A-Z])?(?:[-–_\s]+(?:bis|Bis|Ter|Quáter|Quinquies|Sexies)(?:[-–_\s]+\d+)?)?\.[- –\s]', re.IGNORECASE)
 
         # Escanear todas las páginas para encontrar artículos
         articulos_encontrados = []
@@ -530,6 +530,7 @@ class Extractor:
                 ordinal = grupos[1] if len(grupos) > 1 else None
                 letra = grupos[2] if len(grupos) > 2 else None
                 sufijo = grupos[3] if len(grupos) > 3 else None
+                sufijo_num = grupos[4] if len(grupos) > 4 else None
 
                 numero = numero_base
                 if ordinal:
@@ -537,7 +538,9 @@ class Extractor:
                 if letra:
                     numero += f"-{letra.upper()}"
                 if sufijo:
-                    numero += f" {sufijo.upper()}"
+                    numero += f" {sufijo.lower()}"
+                    if sufijo_num:
+                        numero += f" {sufijo_num}"
 
                 articulos_encontrados.append((numero, i))
 
@@ -562,7 +565,9 @@ class Extractor:
             # Patrón específico para este artículo
             # Convertir "4o-A" a patrón que coincida con "4o.-A.-" del PDF
             numero_patron = re.escape(numero).replace(r'\-', r'\.?-')
-            patron_este = re.compile(rf'Artículo\s+{numero_patron}\.', re.IGNORECASE)
+            # Flexibilizar espacio antes de sufijos (bis/ter/etc) para aceptar guión o espacio
+            numero_patron = re.sub(r'\\ (bis|ter|quáter|quinquies|sexies)', '[-–\\\\s]+\\1', numero_patron, flags=re.IGNORECASE)
+            patron_este = re.compile(rf'(?:ARTICULO|ARTÍCULO|Artículo)\s+{numero_patron}\.', re.IGNORECASE)
 
             # Extraer párrafos
             parrafos = self._extraer_parrafos_articulo(pag_inicio, pag_fin, patron_este, patron_siguiente)

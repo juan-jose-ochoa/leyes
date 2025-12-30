@@ -248,7 +248,7 @@
       ]
     },
     {
-      "numero": "1o-A BIS",
+      "numero": "1o-A bis",
       "tipo": "articulo",
       "orden": 3,
       "pagina": 3,
@@ -3228,7 +3228,7 @@
       ]
     },
     {
-      "numero": "18-H BIS",
+      "numero": "18-H bis",
       "tipo": "articulo",
       "orden": 44,
       "pagina": 31,
@@ -3278,7 +3278,7 @@
       ]
     },
     {
-      "numero": "18-H TER",
+      "numero": "18-H ter",
       "tipo": "articulo",
       "orden": 45,
       "pagina": 31,
@@ -3348,41 +3348,11 @@
           "referencias": [
             "Artículo adicionado DOF 08-12-2020"
           ]
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Artículo 18-H QUÁTER. Para los efectos de lo dispuesto en los artículos 18-H BIS y 18-H TER de esta Ley, el bloqueo temporal deberá ser ordenado a los concesionarios de una red pública de telecomunicaciones en México, mediante resolución debidamente fundada y motivada, emitida por funcionario público con cargo de administrador general de conformidad con lo previsto en el Reglamento Interior del Servicio de Administración Tributaria. Con independencia de lo anterior, dicho órgano desconcentrado podrá solicitar el auxilio de cualquier autoridad competente para llevar a cabo el bloqueo temporal a que se refiere el presente artículo.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "El concesionario de la red pública de telecomunicaciones en México de que se trate, contará con un plazo de cinco días a partir del día siguiente a aquél en que haya surtido efectos la notificación de la resolución en la que se ordene el bloqueo temporal del acceso al servicio digital, para realizar el bloqueo temporal correspondiente.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 10,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "El concesionario de la red pública de telecomunicaciones en México de que se trate, deberá informar del cumplimiento de dicho bloqueo temporal a la autoridad fiscal a más tardar al quinto día siguiente a aquél en que lo haya realizado.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
-          "referencias": [
-            "Artículo adicionado DOF 08-12-2020"
-          ]
         }
       ]
     },
     {
-      "numero": "18-H QUÁTER",
+      "numero": "18-H quáter",
       "tipo": "articulo",
       "orden": 46,
       "pagina": 32,
@@ -3416,11 +3386,32 @@
           "referencias": [
             "Artículo adicionado DOF 08-12-2020"
           ]
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo 18-H QUINTUS. Para los efectos de lo dispuesto en los artículos 18-H BIS, 18-H TER y 18-H QUÁTER, el Servicio de Administración Tributaria dará a conocer en su página de Internet y en el Diario Oficial de la Federación el nombre del proveedor y la fecha a partir de la cual se deberá realizar el bloqueo temporal del acceso al servicio digital, a efecto de que los receptores de los servicios en territorio nacional se abstengan de contratar servicios futuros.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cuando el contribuyente cumpla con las obligaciones que dieron lugar al bloqueo temporal del acceso al servicio digital, el Servicio de Administración Tributaria, mediante resolución, emitirá la orden de desbloqueo al concesionario de una red pública de telecomunicaciones en México que corresponda, para que en un plazo máximo de cinco días se cumplimente. Dicha orden deberá ser emitida por el administrador general que haya ordenado el bloqueo temporal. Asimismo, dicho órgano desconcentrado deberá reincorporar al contribuyente en el Registro Federal de Contribuyentes e incluirlo en la lista a que se refiere el artículo 18-D, fracción I, de esta Ley.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo adicionado DOF 08-12-2020"
+          ]
         }
       ]
     },
     {
-      "numero": "18-H QUINTUS",
+      "numero": "18-H quintus",
       "tipo": "articulo",
       "orden": 47,
       "pagina": 32,

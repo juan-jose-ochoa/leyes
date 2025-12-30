@@ -333,6 +333,80 @@ LEYES = {
         # Página donde terminan los artículos permanentes + transitorios originales
         "pagina_fin_contenido": 52,
     },
+
+    "LA": {
+        "nombre": "Ley Aduanera",
+        "nombre_corto": "Aduanera",
+        "tipo": "ley",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAdua.pdf",
+        "pdf_path": "backend/etl/data/la/la_ley_aduanera.pdf",
+
+        # Estructura jerárquica permitida
+        "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
+
+        # Tipo de contenido principal
+        "tipo_contenido": "articulo",
+
+        # Patrones de detección
+        "patrones": {
+            # Artículo: "ARTICULO 1o." o "ARTICULO 14-A." o "ARTICULO 137 bis 1.-"
+            # LA usa ARTICULO en mayúsculas, con ordinal (1o, 2o) o sin (10, 11)
+            # Formato especial: "137 bis 1", "137 bis 2" (bis seguido de número)
+            "articulo": r'^(?:ARTICULO|ARTÍCULO|Artículo)\s+(\d+)([oa])?\.?(?:[-–_\s]*([A-Z]))?(?:[-–_\s]+(bis|Bis|Ter|Quáter|Quinquies|Sexies)(?:[-–_\s]+(\d+))?)?\.[- –]?',
+
+            # Divisiones estructurales (Title Case: "Título Primero", "Capítulo I")
+            "titulo": r'^Título\s+(Primero|Segundo|Tercero|Cuarto|Quinto|Sexto|Séptimo|Octavo|Noveno|Décimo)\s*$',
+            "capitulo": r'^Capítulo\s+([IVX]+|Único)\s*$',
+            "seccion": r'^Sección\s+(Primera|Segunda|Tercera|Cuarta|Quinta|Sexta|Séptima|Octava|Novena|Décima)\s*$',
+
+            # Fracciones dentro de artículos
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+        },
+
+        # Ruido a eliminar (encabezados, pies de página)
+        "ruido": [
+            r'LEY ADUANERA\s*',
+            r'CÁMARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNIÓN[^\n]*',
+            r'Secretaría General\s*',
+            r'Secretaría de Servicios Parlamentarios\s*',
+            r'Última\s+[Rr]eforma\s+(?:publicada\s+)?DOF[^\n]*',
+            r'\d+\s+de\s+\d+\s*',  # Números de página
+            r'TEXTO VIGENTE\s*',
+        ],
+        "ruido_lineas": [
+            'LEY ADUANERA',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'Última Reforma',
+            'Última reforma',
+            'TEXTO VIGENTE',
+            ' de 218',  # "X de 218" - números de página
+        ],
+
+        # Detección de referencias (reformas, adiciones)
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
+                r"Inciso.*DOF",
+                r"Capítulo.*DOF",
+                r"Sección.*DOF",
+                r"reformad[oa].*DOF",
+                r"adicionad[oa].*DOF",
+            ],
+        },
+
+        # Página donde terminan los artículos permanentes
+        "pagina_fin_contenido": 200,
+    },
 }
 
 

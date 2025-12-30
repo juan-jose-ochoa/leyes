@@ -10996,18 +10996,26 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
+        }
+      ]
+    },
+    {
+      "numero": "82 bis",
+      "tipo": "articulo",
+      "orden": 89,
+      "pagina": 111,
+      "parrafos": [
         {
-          "numero": 32,
+          "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Artículo 82-Bis. Las instituciones autorizadas para recibir donativos deducibles en términos de esta Ley, que se encuentren en los supuestos a que se refiere el artículo 82, fracción V, del presente ordenamiento, deberán informar a las autoridades fiscales el importe y los datos de identificación de los bienes, así como los de identidad de las personas morales a quienes se destinó la totalidad de su patrimonio, a través de los medios y formatos que para tal efecto emita el Servicio de Administración Tributaria mediante reglas de carácter general. En caso de no cumplir con lo anterior, el valor de los bienes susceptibles de transmisión se considerará como ingreso omitido y se deberá pagar el impuesto sobre la renta de conformidad con lo dispuesto en el Título II, de esta Ley.",
+          "contenido": "Las instituciones autorizadas para recibir donativos deducibles en términos de esta Ley, que se encuentren en los supuestos a que se refiere el artículo 82, fracción V, del presente ordenamiento, deberán informar a las autoridades fiscales el importe y los datos de identificación de los bienes, así como los de identidad de las personas morales a quienes se destinó la totalidad de su patrimonio, a través de los medios y formatos que para tal efecto emita el Servicio de Administración Tributaria mediante reglas de carácter general. En caso de no cumplir con lo anterior, el valor de los bienes susceptibles de transmisión se considerará como ingreso omitido y se deberá pagar el impuesto sobre la renta de conformidad con lo dispuesto en el Título II, de esta Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 33,
+          "numero": 2,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La entidad autorizada para recibir donativos deducibles que reciba el patrimonio a que se refiere el párrafo anterior, tendrá que emitir el comprobante fiscal correspondiente por concepto de donativo conforme a las reglas de carácter general que al efecto emita el Servicio de Administración Tributaria. En este caso, el donativo no será deducible para efectos del impuesto sobre la renta.",
@@ -11017,38 +11025,174 @@
           "referencias": [
             "Artículo adicionado DOF 30-11-2016"
           ]
-        },
-        {
-          "numero": 34,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Artículo 82-Ter. Se deroga.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
         }
       ]
     },
     {
-      "numero": "82 BIS",
-      "tipo": "articulo",
-      "orden": 89,
-      "pagina": 111,
-      "parrafos": []
-    },
-    {
-      "numero": "82 TER",
+      "numero": "82 ter",
       "tipo": "articulo",
       "orden": 90,
       "pagina": 111,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Se deroga.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo adicionado DOF 30-11-2016. Derogado DOF 08-12-2020"
+          ]
+        }
+      ]
     },
     {
-      "numero": "82 QUÁTER",
+      "numero": "82 quáter",
       "tipo": "articulo",
       "orden": 91,
       "pagina": 112,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del párrafo cuarto del artículo 82 de esta Ley, se estará a lo siguiente:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "A. Son causales de revocación de la autorización para recibir donativos deducibles las cuales darán inicio al procedimiento de revocación:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "fraccion",
+          "identificador": "I",
+          "contenido": "Destinar su activo a fines distintos del objeto social por el que obtuvieron la autorización correspondiente, conforme a la fracción I del artículo 82 de esta Ley.",
+          "padre_numero": null,
+          "x_id": 114,
+          "x_texto": 136
+        },
+        {
+          "numero": 4,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "No expedir el comprobante fiscal que ampare los donativos recibidos o expedir comprobantes fiscales de donativos deducibles para amparar cualquier otra operación distinta de la donación.",
+          "padre_numero": null,
+          "x_id": 114,
+          "x_texto": 136
+        },
+        {
+          "numero": 5,
+          "tipo": "fraccion",
+          "identificador": "III",
+          "contenido": "Cuando con motivo del ejercicio de las facultades de comprobación o de los expedientes, documentos o bases de datos del Servicio de Administración Tributaria o aquellas a las que tenga acceso o tenga en su poder dicho órgano administrativo desconcentrado, se conozca la actualización de cualquier hecho que constituya incumplimiento a las obligaciones o requisitos que establezcan las disposiciones fiscales a cargo de las donatarias autorizadas.",
+          "padre_numero": null,
+          "x_id": 114,
+          "x_texto": 136
+        },
+        {
+          "numero": 6,
+          "tipo": "fraccion",
+          "identificador": "IV",
+          "contenido": "Estar incluida en la lista a que se refiere el cuarto párrafo del artículo 69-B del Código Fiscal de la Federación.",
+          "padre_numero": null,
+          "x_id": 114,
+          "x_texto": 136
+        },
+        {
+          "numero": 7,
+          "tipo": "fraccion",
+          "identificador": "V",
+          "contenido": "Si el o los representantes legales, socios o asociados o cualquier integrante del Consejo Directivo o de Administración de una organización civil o fideicomiso que haya sido revocada su autorización por ubicarse en el supuesto referido en la fracción anterior, dentro de los últimos cinco años, forman parte de las organizaciones civiles y fideicomisos autorizados para recibir donativos deducibles durante la vigencia de la misma.",
+          "padre_numero": null,
+          "x_id": 114,
+          "x_texto": 136
+        },
+        {
+          "numero": 8,
+          "tipo": "fraccion",
+          "identificador": "VI",
+          "contenido": "Encontrarse en el supuesto establecido en el último párrafo del artículo 80 de esta Ley.",
+          "padre_numero": null,
+          "x_id": 114,
+          "x_texto": 136
+        },
+        {
+          "numero": 9,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Las organizaciones civiles y fideicomisos cuya autorización para recibir donativos deducibles para efectos del impuesto sobre la renta haya sido revocada por las causales a que se refieren las fracciones I a V de este apartado, no podrán obtener nuevamente la autorización para recibir donativos deducibles, hasta en tanto no corrijan el motivo por el cual fueron revocadas o en su caso paguen el impuesto sobre la renta correspondiente.",
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
+        },
+        {
+          "numero": 10,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En el caso de que las organizaciones civiles y fideicomisos cuya autorización para recibir donativos deducibles para efectos del impuesto sobre la renta hayan sido revocadas en una ocasión por la causal a que se refiere la fracción VI de este apartado, no podrán obtener nuevamente la autorización y deberán destinar todo su patrimonio a otra donataria autorizada para recibir donativos deducibles del impuesto sobre la renta.",
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
+        },
+        {
+          "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "B. El Servicio de Administración Tributaria realizará el procedimiento de revocación de la autorización para recibir donativos deducibles del impuesto sobre la renta conforme a lo siguiente:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 12,
+          "tipo": "fraccion",
+          "identificador": "I",
+          "contenido": "Emitirá oficio a través del cual dé a conocer a la donataria autorizada la causal de revocación que se configure conforme al apartado anterior, otorgándole un plazo de diez días hábiles siguientes a aquél en el que surta efectos la notificación de dicho oficio, a fin de que manifieste ante la autoridad fiscal lo que a su derecho convenga, aportando la documentación e información que considere pertinente para desvirtuar la misma.",
+          "padre_numero": null,
+          "x_id": 114,
+          "x_texto": 136
+        },
+        {
+          "numero": 13,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Se admitirá toda clase de pruebas, excepto la testimonial y la confesional a cargo de las autoridades. Las pruebas se valorarán en los términos del artículo 130 del Código Fiscal de la Federación.",
+          "padre_numero": 11,
+          "x_id": 114,
+          "x_texto": 114
+        },
+        {
+          "numero": 14,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "Agotado el plazo a que se refiere la fracción anterior, la autoridad fiscal emitirá la resolución correspondiente en un plazo que no excederá de tres meses, contados a partir del día siguiente a aquél en que se agotó el referido plazo.",
+          "padre_numero": null,
+          "x_id": 114,
+          "x_texto": 136
+        },
+        {
+          "numero": 15,
+          "tipo": "fraccion",
+          "identificador": "III",
+          "contenido": "La resolución señalada en la fracción que antecede se notificará de conformidad con las disposiciones fiscales aplicables.",
+          "padre_numero": null,
+          "x_id": 114,
+          "x_texto": 136,
+          "referencias": [
+            "Artículo adicionado DOF 08-12-2020"
+          ]
+        }
+      ]
     },
     {
       "numero": "83",
@@ -12749,18 +12893,26 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
+        }
+      ]
+    },
+    {
+      "numero": "96 bis",
+      "tipo": "articulo",
+      "orden": 106,
+      "pagina": 131,
+      "parrafos": [
         {
-          "numero": 9,
+          "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Artículo 96-Bis. Las personas morales que hagan pagos en una sola exhibición a personas físicas con cargo a la subcuenta del seguro de retiro o a la subcuenta de retiro, cesantía en edad avanzada y vejez, previstas en la Ley del Seguro Social y los que obtengan los trabajadores al servicio del Estado con cargo a la cuenta individual del sistema de ahorro para el retiro, prevista en la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado, distintos de los conceptos señalados en el artículo 93, fracción IV de esta Ley, deberán retener y enterar el impuesto conforme a lo siguiente:",
+          "contenido": "Las personas morales que hagan pagos en una sola exhibición a personas físicas con cargo a la subcuenta del seguro de retiro o a la subcuenta de retiro, cesantía en edad avanzada y vejez, previstas en la Ley del Seguro Social y los que obtengan los trabajadores al servicio del Estado con cargo a la cuenta individual del sistema de ahorro para el retiro, prevista en la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado, distintos de los conceptos señalados en el artículo 93, fracción IV de esta Ley, deberán retener y enterar el impuesto conforme a lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 10,
+          "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
           "contenido": "Se dividirá el monto total del ingreso recibido entre el número total de años en que los trabajadores contribuyeron a las subcuentas del seguro de retiro o a la subcuenta de retiro, cesantía en edad avanzada y vejez, previstas en la Ley del Seguro Social o a las subcuentas de ahorro para el retiro y de retiro, cesantía en edad avanzada y vejez, previstas en la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado.",
@@ -12769,7 +12921,7 @@
           "x_texto": 107
         },
         {
-          "numero": 11,
+          "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "Al resultado obtenido conforme a la fracción anterior, se le aplicará la tarifa que corresponda conforme al artículo 152 de esta Ley.",
@@ -12778,7 +12930,7 @@
           "x_texto": 107
         },
         {
-          "numero": 12,
+          "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "La cantidad que resulte conforme a la fracción anterior, se dividirá entre el resultado obtenido conforme a la fracción I de este artículo, el cociente así obtenido se multiplicará por cien y el producto se expresará en por ciento.",
@@ -12787,7 +12939,7 @@
           "x_texto": 107
         },
         {
-          "numero": 13,
+          "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
           "contenido": "El porcentaje que resulte conforme a la fracción anterior, será el que se aplique sobre el excedente del monto exento del total de los recursos que se entregarán, de conformidad con lo previsto en el artículo 93, fracción XIII de esta Ley, y el resultado será la retención que deba realizarse a cada contribuyente.",
@@ -12796,7 +12948,7 @@
           "x_texto": 107
         },
         {
-          "numero": 14,
+          "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
           "contenido": "La retención se enterará ante las oficinas autorizadas, a más tardar el día 17 del mes inmediato siguiente a aquél al que corresponda el pago, y se deberá expedir el comprobante fiscal en el que conste el monto del pago, así como el impuesto retenido.",
@@ -12805,22 +12957,18 @@
           "x_texto": 107
         },
         {
-          "numero": 15,
+          "numero": 7,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El impuesto retenido en términos de este artículo se podrá considerar como pago definitivo cuando las personas físicas únicamente obtengan ingresos en el mismo ejercicio por los pagos a que se refiere el primer párrafo de este artículo.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "referencias": [
+            "Artículo adicionado DOF 09-12-2019"
+          ]
         }
       ]
-    },
-    {
-      "numero": "96 BIS",
-      "tipo": "articulo",
-      "orden": 106,
-      "pagina": 131,
-      "parrafos": []
     },
     {
       "numero": "97",
@@ -22248,18 +22396,26 @@
           "referencias": [
             "Artículo reformado DOF 09-12-2019"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "numero": "183 bis",
+      "tipo": "articulo",
+      "orden": 204,
+      "pagina": 230,
+      "parrafos": [
         {
-          "numero": 9,
+          "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Artículo 183-Bis. Para efectos del artículo 183 de esta Ley, las empresas con programa de maquila bajo la modalidad de albergue deberán cumplir con lo siguiente:",
+          "contenido": "Para efectos del artículo 183 de esta Ley, las empresas con programa de maquila bajo la modalidad de albergue deberán cumplir con lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 10,
+          "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
           "contenido": "Identificar las operaciones y determinar la utilidad fiscal que corresponda a cada uno de los residentes en el extranjero a que se refiere el artículo 183 de esta Ley, conforme al monto mayor que resulte de comparar lo dispuesto en el artículo 182, fracciones I y II de esta Ley, para cada uno de los residentes en el extranjero mencionados, para efectos de determinar y enterar el impuesto que resulte de aplicar a dicha utilidad la tasa prevista en el artículo 9 de esta Ley.",
@@ -22271,7 +22427,7 @@
           ]
         },
         {
-          "numero": 11,
+          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para efectos del párrafo anterior, en la determinación de la utilidad fiscal se considerarán exclusivamente los activos fijos e inventarios de materia prima que son utilizados en la operación de maquila, así como los costos y gastos atribuibles a la operación de maquila en México correspondientes a cada residente en el extranjero.",
@@ -22280,22 +22436,54 @@
           "x_texto": 85
         },
         {
-          "numero": 12,
+          "numero": 4,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "Mantener a disposición de las autoridades fiscales la documentación que acredite que la información de las empresas de residentes en el extranjero se encuentra debidamente identificada de forma individual por cada una de dichas empresas en la contabilidad de la",
+          "contenido": "Mantener a disposición de las autoridades fiscales la documentación que acredite que la información de las empresas de residentes en el extranjero se encuentra debidamente identificada de forma individual por cada una de dichas empresas en la contabilidad de la empresa con programa de maquila bajo la modalidad de albergue, durante el plazo establecido en el artículo 30 del Código Fiscal de la Federación.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Las empresas con programa de maquila bajo la modalidad de albergue serán responsables solidarios en el cálculo y entero del impuesto determinado por cuenta del residente en el extranjero, en términos del artículo 26, fracción VIII del Código Fiscal de la Federación.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "A las empresas con programa de maquila bajo la modalidad de albergue que apliquen lo dispuesto en el artículo 183 de esta Ley, en ningún caso les aplicará lo previsto en los artículos 181 y 182 de esta Ley, salvo lo dispuesto en la fracción I de este artículo.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cuando una empresa con programa de maquila bajo la modalidad de albergue incumpla con alguna de las obligaciones previstas en las fracciones anteriores, el Servicio de Administración Tributaria requerirá a dicha empresa para que, en un plazo que no exceda de 30 días naturales, aclare lo que a su derecho convenga sobre el incumplimiento.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En caso de que la empresa con programa de maquila bajo la modalidad de albergue no subsane el incumplimiento en el plazo previsto en el párrafo anterior, se procederá a la suspensión de dicha empresa en el Padrón de Importadores a que se refiere el artículo 59, fracción IV de la Ley Aduanera y se considerará que el residente en el extranjero tiene establecimiento permanente en México, por lo que deberá cumplir con todas las obligaciones de carácter fiscal, de conformidad con el artículo 76 de esta Ley, por las operaciones de maquila que realice en el territorio nacional una vez que proceda la suspensión a que se refiere el presente párrafo.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo adicionado DOF 09-12-2019"
+          ]
         }
       ]
-    },
-    {
-      "numero": "183 BIS",
-      "tipo": "articulo",
-      "orden": 204,
-      "pagina": 230,
-      "parrafos": []
     },
     {
       "numero": "184",

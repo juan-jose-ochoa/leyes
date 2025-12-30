@@ -2577,7 +2577,7 @@
       ]
     },
     {
-      "numero": "17-H BIS",
+      "numero": "17-H bis",
       "tipo": "articulo",
       "orden": 37,
       "pagina": 22,
@@ -3547,18 +3547,26 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
+        }
+      ]
+    },
+    {
+      "numero": "20 bis",
+      "tipo": "articulo",
+      "orden": 48,
+      "pagina": 31,
+      "parrafos": [
         {
-          "numero": 20,
+          "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Artículo 20-Bis. El Índice Nacional de Precios al Consumidor a que se refiere el segundo párrafo del artículo 20 de este Código, que calcula el Instituto Nacional de Estadística y Geografía, se sujeta a lo siguiente:",
+          "contenido": "El Índice Nacional de Precios al Consumidor a que se refiere el segundo párrafo del artículo 20 de este Código, que calcula el Instituto Nacional de Estadística y Geografía, se sujeta a lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 21,
+          "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
           "contenido": "Se cotizarán cuando menos los precios en 30 ciudades, las cuales estarán ubicadas en por lo menos 20 entidades federativas. Las ciudades seleccionadas deberán en todo caso tener una población de 20,000 o más habitantes, y siempre habrán de incluirse las 10 zonas conurbadas o ciudades más pobladas de la República.",
@@ -3567,29 +3575,221 @@
           "x_texto": 107
         },
         {
-          "numero": 22,
+          "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "Deberán cotizarse los precios correspondientes a cuando menos 1000 productos y servicios específicos agrupados en 250 conceptos de consumo, los cuales abarcarán al menos 35 ramas",
+          "contenido": "Deberán cotizarse los precios correspondientes a cuando menos 1000 productos y servicios específicos agrupados en 250 conceptos de consumo, los cuales abarcarán al menos 35 ramas de los sectores agrícola, ganadero, industrial y de servicios, conforme al catálogo de actividades económicas elaborado por el Instituto Nacional de Estadística y Geografía.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 4,
+          "tipo": "fraccion",
+          "identificador": "III",
+          "contenido": "Tratándose de alimentos las cotizaciones de precios se harán como mínimo tres veces durante cada mes. El resto de las cotizaciones se obtendrán una o más veces mensuales.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 5,
+          "tipo": "fraccion",
+          "identificador": "IV",
+          "contenido": "Las cotizaciones de precios con las que se calcule el Indice Nacional de Precios al Consumidor de cada mes, deberán corresponder al período de que se trate.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 6,
+          "tipo": "fraccion",
+          "identificador": "V",
+          "contenido": "El Indice Nacional de Precios al Consumidor de cada mes se calculará utilizando la fórmula de Laspeyres. Se aplicarán ponderadores para cada rubro del consumo familiar considerando los conceptos siguientes:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Alimentos, bebidas y tabaco; ropa, calzado y accesorios; vivienda; muebles, aparatos y enseres domésticos; salud y cuidado personal; transporte; educación y esparcimiento; otros servicios.",
+          "padre_numero": 6,
+          "x_id": 107,
+          "x_texto": 107
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Instituto Nacional de Estadística y Geografía publicará en el Diario Oficial de la Federación las entidades federativas, zonas conurbadas, ciudades, artículos, servicios, conceptos de consumo y ramas a que se refieren las fracciones I y II de este artículo, así como las cotizaciones utilizadas para calcular el Índice Nacional de Precios al Consumidor.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
         }
       ]
     },
     {
-      "numero": "20 BIS",
-      "tipo": "articulo",
-      "orden": 48,
-      "pagina": 31,
-      "parrafos": []
-    },
-    {
-      "numero": "20 TER",
+      "numero": "20 ter",
       "tipo": "articulo",
       "orden": 49,
       "pagina": 32,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Banco de México publicará en el Diario Oficial de la Federación el valor, en moneda nacional, de la unidad de inversión, para cada día del mes. A más tardar el día 10 de cada mes el Banco de México deberá publicar el valor de la unidad de inversión correspondiente a los días 11 a 25 de dicho mes y a más tardar el día 25 de cada mes publicará el valor correspondiente a los días 26 de ese mes al 10 del mes inmediato siguiente.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El valor de la unidad de inversión se calculará conforme a la siguiente fórmula:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Donde: d = Día del que se desea conocer el valor de la UDI.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "m = Mes del año a que corresponda d.",
+          "padre_numero": 3,
+          "x_id": 110,
+          "x_texto": 110
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "UDI d,m = Unidad de Inversión correspondiente al día d del mes m.",
+          "padre_numero": null,
+          "x_id": 88,
+          "x_texto": 88
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "UDI = Unidad de Inversión correspondiente al día inmediato anterior al día d del mes m. d-1,m * = Operador de multiplicación.",
+          "padre_numero": null,
+          "x_id": 81,
+          "x_texto": 81
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "= Raíz enésima.",
+          "padre_numero": 6,
+          "x_id": 126,
+          "x_texto": 126
+        },
+        {
+          "numero": 8,
+          "tipo": "numeral",
+          "identificador": "1.",
+          "contenido": "Para determinar el valor de la UDI para los días del 11 al 25 del mes m se utiliza: n = 15",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 9,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "INPC = Índice Nacional de Precios al Consumidor de la segunda quincena del mes inmediato q anterior al mes m.",
+          "padre_numero": null,
+          "x_id": 90,
+          "x_texto": 90
+        },
+        {
+          "numero": 10,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "INPC = Índice Nacional de Precios al Consumidor de la primera quincena del mes inmediato q-1 anterior al mes m.",
+          "padre_numero": null,
+          "x_id": 83,
+          "x_texto": 83
+        },
+        {
+          "numero": 11,
+          "tipo": "numeral",
+          "identificador": "2.",
+          "contenido": "Para obtener el valor de la UDI para los días del 26 de cada mes al 10 del mes inmediato siguiente, se utiliza la siguiente formulación:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 12,
+          "tipo": "numeral",
+          "identificador": "2.",
+          "contenido": "1. Para determinar el valor de la UDI para los días del 26 al último día del mes m se utiliza: n = Número de días naturales contados desde el 26 del mes m y hasta el día 10 del mes siguiente.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 13,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "INPC = Índice Nacional de Precios al Consumidor de la primera quincena del mes m. q",
+          "padre_numero": null,
+          "x_id": 90,
+          "x_texto": 90
+        },
+        {
+          "numero": 14,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "INPC = Índice Nacional de Precios al Consumidor de la segunda quincena del mes inmediato q-1 anterior al mes m.",
+          "padre_numero": null,
+          "x_id": 83,
+          "x_texto": 83
+        },
+        {
+          "numero": 15,
+          "tipo": "numeral",
+          "identificador": "2.",
+          "contenido": "2. Para determinar el valor de la UDI para los días del 1 al 10 del mes m se utiliza: n = Número de días naturales contados desde el 26 del mes inmediato anterior al mes m y hasta el día 10 del mes m.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 16,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "INPC = Índice Nacional de Precios al Consumidor de la primera quincena del mes inmediato q anterior al mes m.",
+          "padre_numero": null,
+          "x_id": 90,
+          "x_texto": 90
+        },
+        {
+          "numero": 17,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "INPC = Índice Nacional de Precios al Consumidor de la segunda quincena del mes antepasado al q-1 mes m.",
+          "padre_numero": null,
+          "x_id": 83,
+          "x_texto": 83
+        }
+      ]
     },
     {
       "numero": "21",
@@ -5844,7 +6044,7 @@
       ]
     },
     {
-      "numero": "29 BIS",
+      "numero": "29 bis",
       "tipo": "articulo",
       "orden": 65,
       "pagina": 56,
@@ -6316,7 +6516,7 @@
       ]
     },
     {
-      "numero": "29-A BIS",
+      "numero": "29-A bis",
       "tipo": "articulo",
       "orden": 67,
       "pagina": 61,
@@ -7344,7 +7544,7 @@
       ]
     },
     {
-      "numero": "32-B BIS",
+      "numero": "32-B bis",
       "tipo": "articulo",
       "orden": 79,
       "pagina": 70,
@@ -7490,7 +7690,7 @@
       ]
     },
     {
-      "numero": "32-B TER",
+      "numero": "32-B ter",
       "tipo": "articulo",
       "orden": 80,
       "pagina": 72,
@@ -7542,95 +7742,11 @@
           "referencias": [
             "Artículo adicionado DOF 12-11-2021"
           ]
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Artículo 32-B Quáter. Para efectos de este Código se entenderá por beneficiario controlador a la persona física o grupo de personas físicas que:",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 7,
-          "tipo": "fraccion",
-          "identificador": "I",
-          "contenido": "Directamente o por medio de otra u otras o de cualquier acto jurídico, obtiene u obtienen el beneficio derivado de su participación en una persona moral, un fideicomiso o cualquier otra figura jurídica, así como de cualquier otro acto jurídico, o es quien o quienes en última instancia ejerce o ejercen los derechos de uso, goce, disfrute, aprovechamiento o disposición de un bien o servicio o en cuyo nombre se realiza una transacción, aun y cuando lo haga o hagan de forma contingente.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 8,
-          "tipo": "fraccion",
-          "identificador": "II",
-          "contenido": "Directa, indirectamente o de forma contingente, ejerzan el control de la persona moral, fideicomiso o cualquier otra figura jurídica.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Se entiende que una persona física o grupo de personas físicas ejerce el control cuando, a través de la titularidad de valores, por contrato o por cualquier otro acto jurídico, puede o pueden:",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 10,
-          "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Imponer, directa o indirectamente, decisiones en las asambleas generales de accionistas, socios u órganos equivalentes, o nombrar o destituir a la mayoría de los consejeros, administradores o sus equivalentes.",
-          "padre_numero": 9,
-          "x_id": 114,
-          "x_texto": 136
-        },
-        {
-          "numero": 11,
-          "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Mantener la titularidad de los derechos que permitan, directa o indirectamente, ejercer el voto respecto de más del 15% del capital social o bien.",
-          "padre_numero": 9,
-          "x_id": 114,
-          "x_texto": 136
-        },
-        {
-          "numero": 12,
-          "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Dirigir, directa o indirectamente, la administración, la estrategia o las principales políticas de la persona moral, fideicomiso o cualquier otra figura jurídica.",
-          "padre_numero": 9,
-          "x_id": 114,
-          "x_texto": 136
-        },
-        {
-          "numero": 13,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Tratándose de fideicomisos, se considerarán beneficiarios controladores el fideicomitente o fideicomitentes, el fiduciario, el fideicomisario o fideicomisarios, así como cualquier otra persona involucrada y que ejerza, en última instancia, el control efectivo en el contrato, aún de forma contingente. El Servicio de Administración Tributaria podrá emitir reglas de carácter general para la aplicación de este artículo.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 14,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Para la interpretación de lo dispuesto en este artículo serán aplicables las Recomendaciones emitidas por el Grupo de Acción Financiera Internacional y por el Foro Global sobre Transparencia e Intercambio de Información con Fines Fiscales organizado por la Organización para la Cooperación y el Desarrollo Económicos, acorde a los estándares internacionales de los que México forma parte, cuando su aplicación no sea contraria a la naturaleza propia de las disposiciones fiscales mexicanas.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
-          "referencias": [
-            "Artículo adicionado DOF 12-11-2021"
-          ]
         }
       ]
     },
     {
-      "numero": "32-B QUÁTER",
+      "numero": "32-B quáter",
       "tipo": "articulo",
       "orden": 81,
       "pagina": 73,
@@ -7722,7 +7838,7 @@
       ]
     },
     {
-      "numero": "32-B QUINQUIES",
+      "numero": "32-B quinquies",
       "tipo": "articulo",
       "orden": 82,
       "pagina": 73,
@@ -8814,7 +8930,7 @@
       ]
     },
     {
-      "numero": "36 BIS",
+      "numero": "36 bis",
       "tipo": "articulo",
       "orden": 97,
       "pagina": 83,
@@ -11232,7 +11348,7 @@
       ]
     },
     {
-      "numero": "49 BIS",
+      "numero": "49 bis",
       "tipo": "articulo",
       "orden": 118,
       "pagina": 107,
@@ -14597,7 +14713,7 @@
       ]
     },
     {
-      "numero": "69-B BIS",
+      "numero": "69-B bis",
       "tipo": "articulo",
       "orden": 148,
       "pagina": 137,
@@ -14767,7 +14883,7 @@
       ]
     },
     {
-      "numero": "69-B TER",
+      "numero": "69-B ter",
       "tipo": "articulo",
       "orden": 149,
       "pagina": 139,
@@ -15208,7 +15324,7 @@
       ]
     },
     {
-      "numero": "70 BIS",
+      "numero": "70 bis",
       "tipo": "articulo",
       "orden": 158,
       "pagina": 142,
@@ -21936,7 +22052,7 @@
       ]
     },
     {
-      "numero": "111 BIS",
+      "numero": "111 bis",
       "tipo": "articulo",
       "orden": 237,
       "pagina": 190,
@@ -22147,7 +22263,7 @@
       ]
     },
     {
-      "numero": "113 BIS",
+      "numero": "113 bis",
       "tipo": "articulo",
       "orden": 240,
       "pagina": 191,
@@ -22329,7 +22445,7 @@
       ]
     },
     {
-      "numero": "115 BIS",
+      "numero": "115 bis",
       "tipo": "articulo",
       "orden": 245,
       "pagina": 192,
@@ -22346,7 +22462,7 @@
       ]
     },
     {
-      "numero": "115 TER",
+      "numero": "115 ter",
       "tipo": "articulo",
       "orden": 246,
       "pagina": 192,
@@ -25630,7 +25746,7 @@
       ]
     },
     {
-      "numero": "151 BIS",
+      "numero": "151 bis",
       "tipo": "articulo",
       "orden": 297,
       "pagina": 218,
@@ -25941,18 +26057,26 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
+        }
+      ]
+    },
+    {
+      "numero": "156 bis",
+      "tipo": "articulo",
+      "orden": 303,
+      "pagina": 220,
+      "parrafos": [
         {
-          "numero": 8,
+          "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Artículo 156-Bis. La autoridad fiscal procederá a la inmovilización de depósitos bancarios, seguros o cualquier otro depósito en moneda nacional o extranjera que se realice en cualquier tipo de cuenta que tenga a su nombre el contribuyente en las entidades financieras o sociedades cooperativas de ahorro y préstamo, o de inversiones y valores, a excepción de los depósitos que una persona tenga en su cuenta individual de ahorro para el retiro, incluidas las aportaciones voluntarias que se hayan realizado hasta por el monto de las aportaciones efectuadas conforme a la Ley de la materia, de acuerdo con lo siguiente:",
+          "contenido": "La autoridad fiscal procederá a la inmovilización de depósitos bancarios, seguros o cualquier otro depósito en moneda nacional o extranjera que se realice en cualquier tipo de cuenta que tenga a su nombre el contribuyente en las entidades financieras o sociedades cooperativas de ahorro y préstamo, o de inversiones y valores, a excepción de los depósitos que una persona tenga en su cuenta individual de ahorro para el retiro, incluidas las aportaciones voluntarias que se hayan realizado hasta por el monto de las aportaciones efectuadas conforme a la Ley de la materia, de acuerdo con lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 9,
+          "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
           "contenido": "Cuando los créditos fiscales se encuentren firmes.",
@@ -25961,29 +26085,233 @@
           "x_texto": 107
         },
         {
-          "numero": 10,
+          "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "Tratándose de créditos fiscales que se encuentren impugnados y no estén debidamente garantizados, procederá la inmovilización en los siguientes supuestos:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 4,
+          "tipo": "inciso",
+          "identificador": "a)",
+          "contenido": "Cuando el contribuyente no se encuentre localizado en su domicilio o desocupe el local donde tenga su domicilio fiscal sin presentar el aviso de cambio de domicilio al registro federal de contribuyentes.",
+          "padre_numero": 3,
+          "x_id": 121,
+          "x_texto": 143
+        },
+        {
+          "numero": 5,
+          "tipo": "inciso",
+          "identificador": "b)",
+          "contenido": "Cuando no esté debidamente asegurado el interés fiscal por resultar insuficiente la garantía ofrecida.",
+          "padre_numero": 3,
+          "x_id": 121,
+          "x_texto": 143
+        },
+        {
+          "numero": 6,
+          "tipo": "inciso",
+          "identificador": "c)",
+          "contenido": "Cuando la garantía ofrecida sea insuficiente y el contribuyente no haya efectuado la ampliación requerida por la autoridad.",
+          "padre_numero": 3,
+          "x_id": 121,
+          "x_texto": 143
+        },
+        {
+          "numero": 7,
+          "tipo": "inciso",
+          "identificador": "d)",
+          "contenido": "Cuando se hubiera realizado el embargo de bienes cuyo valor sea insuficiente para satisfacer el interés fiscal o se desconozca el valor de éstos.",
+          "padre_numero": 3,
+          "x_id": 121,
+          "x_texto": 143
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Sólo procederá la inmovilización hasta por el importe del crédito fiscal y sus accesorios o, en su caso, hasta por el importe en que la garantía que haya ofrecido el contribuyente no alcance a cubrir los mismos a la fecha en que se lleve a cabo la inmovilización. Lo anterior, siempre y cuando, previo al embargo, la autoridad fiscal cuente con información de las cuentas y los saldos que existan en las mismas.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 9,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La autoridad fiscal ordenará mediante oficio dirigido a la unidad administrativa competente de la Comisión Nacional Bancaria y de Valores, de la Comisión Nacional de Seguros y Fianzas o de la Comisión Nacional del Sistema de Ahorro para el Retiro, según proceda, o bien a la entidad financiera o sociedad cooperativa de ahorro y préstamo a la que corresponda la cuenta, a efecto de que éstas últimas realicen la inmovilización y conserven los fondos depositados. Para efectos de lo anterior, la inmovilización deberán realizarla a más tardar al tercer día siguiente a aquel en que les fue notificado el oficio de la autoridad fiscal.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 10,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Las entidades financieras o sociedades de ahorro y préstamo o de inversiones y valores que hayan ejecutado la inmovilización de los depósitos o seguros en una o más cuentas del contribuyente, deberán informar del cumplimiento de dicha medida a la autoridad fiscal que la ordenó, a más tardar al tercer día siguiente a la fecha en que se ejecutó, señalando el número de las cuentas, así como el importe total que fue inmovilizado. La autoridad fiscal notificará al contribuyente sobre dicha inmovilización, a más tardar al vigésimo día siguiente a aquél en que le hubieren comunicado ésta.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Párrafo reformado DOF 07-11-2025"
+          ]
+        },
+        {
+          "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En los casos en que el contribuyente, la entidad financiera, sociedades de ahorro y préstamo o de inversiones y valores, haga del conocimiento de la autoridad fiscal que la inmovilización se realizó en una o más cuentas del contribuyente por un importe mayor al señalado en el segundo párrafo de este artículo, ésta deberá ordenar a más tardar dentro de los tres días siguientes a aquél en que hubiere tenido conocimiento de la inmovilización en exceso, que se libere la cantidad correspondiente. Dichas entidades o sociedades cooperativas de ahorro y préstamo o de inversiones y valores, deberán liberar los recursos inmovilizados en exceso, a más tardar al tercer día siguiente a aquél en que surta efectos la notificación del oficio de la autoridad fiscal.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 12,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En caso de que en las cuentas a que se refiere el primer párrafo del presente artículo, no existan recursos suficientes para garantizar el crédito fiscal y sus accesorios, la entidad financiera o la sociedad cooperativa de ahorro y préstamo de que se trate, deberá efectuar una búsqueda en su base de datos, a efecto de determinar si el contribuyente tiene otras cuentas con recursos suficientes para tal efecto. De ser el caso, la entidad o sociedad procederá a inmovilizar a más tardar dentro de los tres días siguientes a aquél en que se les ordene la inmovilización y conservar los recursos depositados hasta por el monto del crédito fiscal. En caso de que se actualice este supuesto, la entidad o sociedad correspondiente deberá notificarlo a la autoridad fiscal, dentro del plazo de tres días contados a partir de la fecha de inmovilización, a fin de que dicha autoridad realice la notificación que proceda conforme al párrafo anterior.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 13,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La entidad financiera o la sociedad cooperativa de ahorro y préstamo deberá informar a la autoridad fiscal a que se refiere el primer párrafo de este artículo, el incremento de los depósitos por los intereses que se generen, en el mismo período y frecuencia con que lo haga al cuentahabiente.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 14,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los fondos de la cuenta del contribuyente únicamente podrán transferirse cuando el crédito fiscal relacionado, incluyendo sus accesorios quede firme, y hasta por el importe que resulte suficiente para cubrirlo a la fecha en que se realice la transferencia.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 15,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En los casos en que el crédito fiscal incluyendo sus accesorios, aún no quede firme, el contribuyente titular de las cuentas inmovilizadas podrá, de acuerdo con el artículo 141 de este Código, ofrecer una garantía que comprenda el importe del crédito fiscal, incluyendo sus accesorios a la fecha de ofrecimiento. La autoridad deberá resolver y notificar al contribuyente sobre la admisión o rechazo de la garantía ofrecida, o el requerimiento de requisitos adicionales, dentro de un plazo máximo de cinco días siguientes a la presentación de la garantía. La autoridad tendrá la obligación de comunicar a la entidad financiera o la sociedad cooperativa de ahorro y préstamo el sentido de la resolución, enviándole copia de la misma, dentro del plazo de cinco días siguientes a aquél en que haya notificado dicha resolución al contribuyente, si no lo hace durante el plazo señalado, la entidad o sociedad de que se trate levantará la inmovilización de la cuenta.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 16,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En ningún caso procederá la inmovilización de los depósitos o seguros, por un monto mayor al del crédito fiscal actualizado, junto con sus accesorios legales, ya sea que el embargo se trabe sobre una sola cuenta o en más de una. Lo anterior, siempre y cuando, previo al embargo, la autoridad fiscal cuente con información de las cuentas y los saldos que existan en las mismas.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
         }
       ]
     },
     {
-      "numero": "156 BIS",
-      "tipo": "articulo",
-      "orden": 303,
-      "pagina": 220,
-      "parrafos": []
-    },
-    {
-      "numero": "156 TER",
+      "numero": "156 ter",
       "tipo": "articulo",
       "orden": 304,
       "pagina": 222,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En los casos en que el crédito fiscal se encuentre firme, la autoridad fiscal procederá como sigue:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "fraccion",
+          "identificador": "I",
+          "contenido": "Si la autoridad fiscal tiene inmovilizadas cuentas en entidades financieras o sociedades cooperativas de ahorro y préstamo, o de inversiones y valores, y el contribuyente no ofreció una forma de garantía del interés fiscal suficiente antes de que el crédito fiscal quedara firme, la autoridad fiscal ordenará a la entidad financiera o sociedad cooperativa la transferencia de los recursos hasta por el monto del crédito fiscal, o hasta por el importe en que la garantía que haya ofrecido el contribuyente no alcance a cubrir el mismo. La entidad financiera o la sociedad cooperativa de ahorro y préstamo deberán informar a la autoridad fiscal, dentro de los tres días posteriores a la orden de transferencia, el monto transferido y acompañar el comprobante que acredite el traspaso de los fondos a la cuenta de la Tesorería de la Federación o de la autoridad fiscal que corresponda.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 3,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "Si el interés fiscal se encuentra garantizado en alguna forma distinta a la establecida en el artículo 141, fracción I de este Código, la autoridad fiscal procederá a requerir al contribuyente para que efectúe el pago del crédito fiscal en el plazo de cinco días siguientes a la notificación del requerimiento. En caso de no efectuarlo, la autoridad fiscal podrá, indistintamente, hacer efectiva la garantía ofrecida, o proceder en los términos de la fracción anterior, a la transferencia de los recursos respectivos. En este caso, una vez que la entidad financiera o la sociedad cooperativa de ahorro y préstamo, informe a la autoridad fiscal haber transferido los recursos suficientes para cubrir el crédito fiscal, la autoridad fiscal deberá proceder en un plazo máximo de tres días, a liberar la garantía otorgada por el contribuyente.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción reformada DOF 07-11-2025"
+          ]
+        },
+        {
+          "numero": 4,
+          "tipo": "fraccion",
+          "identificador": "III",
+          "contenido": "Si el interés fiscal se encuentra garantizado en la forma establecida en el artículo 141, fracción I de este Código, la autoridad fiscal procederá a hacer efectiva la garantía.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción reformada DOF 07-11-2025"
+          ]
+        },
+        {
+          "numero": 5,
+          "tipo": "fraccion",
+          "identificador": "IV",
+          "contenido": "Si el interés fiscal no se encuentra garantizado, la autoridad fiscal podrá proceder a la transferencia de recursos en los términos de la fracción I de este artículo.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En los casos indicados en este artículo, las entidades financieras o sociedades de ahorro y préstamo o de inversiones y valores deberán informar a la autoridad fiscal que ordenó la transferencia el monto transferido, a más tardar al tercer día siguiente de la fecha en que ésta se realizó. La autoridad fiscal deberá notificar al contribuyente la transferencia de los recursos, conforme a las disposiciones aplicables, a más tardar al vigésimo día siguiente a aquél en que se hizo de su conocimiento la referida transferencia.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Párrafo reformado DOF 07-11-2025"
+          ]
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Si al transferirse el importe el contribuyente considera que éste es superior al crédito fiscal, deberá demostrar tal hecho ante la autoridad fiscal con prueba documental suficiente, para que dicha autoridad proceda al reintegro de la cantidad transferida en exceso en un plazo no mayor de veinte días a partir de que se notifique al contribuyente la transferencia de los recursos. Si a juicio de la autoridad fiscal las pruebas no son suficientes, se lo notificará dentro del plazo antes señalado, haciéndole saber que puede hacer valer el recurso de revocación correspondiente, o bien, presentar juicio contencioso administrativo.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El fisco federal será preferente para recibir la transferencia de fondos de las cuentas inmovilizadas de los contribuyentes para el pago de créditos provenientes de ingresos que la Federación debió percibir, en los mismos términos establecidos en el artículo 149 de este Código.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 9,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En los casos en que el fisco federal y los fiscos locales fungiendo como autoridad federal, concurrentemente ordenen en contra de un mismo deudor la inmovilización de fondos o seguros con base en lo previsto en el artículo anterior, la transferencia de fondos se sujetará al orden que establece el artículo 148 de este Código.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "157",
@@ -27117,18 +27445,26 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
+        }
+      ]
+    },
+    {
+      "numero": "188 bis",
+      "tipo": "articulo",
+      "orden": 337,
+      "pagina": 231,
+      "parrafos": [
         {
-          "numero": 2,
+          "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Artículo 188-Bis. En el caso en que los bienes rematados no puedan ser entregados al postor a cuyo favor se hubiera fincado el remate por existir impedimento jurídico debidamente fundado para ello, aquél podrá, en un plazo de seis meses contado a partir de la fecha en que la autoridad informe sobre la imposibilidad de la entrega de los bienes solicitar a la autoridad fiscal la entrega del monto pagado por la adquisición de dichos bienes.",
+          "contenido": "En el caso en que los bienes rematados no puedan ser entregados al postor a cuyo favor se hubiera fincado el remate por existir impedimento jurídico debidamente fundado para ello, aquél podrá, en un plazo de seis meses contado a partir de la fecha en que la autoridad informe sobre la imposibilidad de la entrega de los bienes solicitar a la autoridad fiscal la entrega del monto pagado por la adquisición de dichos bienes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 3,
+          "numero": 2,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La autoridad entregará la cantidad respectiva en un plazo de dos meses contado a partir de la fecha en que se efectúe la solicitud a que se refiere el párrafo anterior. Si dentro de este último plazo cesa la causa por la cual la autoridad fiscal se vio imposibilitada para efectuar la entrega de los bienes rematados, se procederá a la entrega de los mismos en lugar de entregar al postor la cantidad pagada por esos bienes.",
@@ -27137,7 +27473,7 @@
           "x_texto": 85
         },
         {
-          "numero": 4,
+          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Transcurrido el plazo de seis meses a que se refiere el párrafo anterior, sin que el postor solicite a la autoridad fiscal la entrega del monto pagado por la adquisición de dichos bienes, el importe de la postura causará abandono a favor del fisco federal dentro de dos meses contados a partir de la fecha en que concluya el plazo antes citado y se estará a lo dispuesto en el artículo 196-A de este Código.",
@@ -27146,7 +27482,7 @@
           "x_texto": 85
         },
         {
-          "numero": 5,
+          "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En el caso en que la autoridad fiscal entregue las cantidades pagadas por la adquisición de los bienes rematados, se dejará sin efectos el remate efectuado. Si con posterioridad a la entrega de las cantidades señaladas anteriormente cesa la causa por la cual la autoridad fiscal se vio imposibilitada jurídicamente para efectuar la entrega de los bienes rematados, ésta deberá iniciar nuevamente el procedimiento establecido en esta Sección para enajenar los mismos, dentro de los quince días siguientes a aquél en que haya cesado el impedimento o se cuente con resolución firme que permita hacerlo.",
@@ -27155,13 +27491,6 @@
           "x_texto": 85
         }
       ]
-    },
-    {
-      "numero": "188 BIS",
-      "tipo": "articulo",
-      "orden": 337,
-      "pagina": 231,
-      "parrafos": []
     },
     {
       "numero": "189",
@@ -28299,24 +28628,25 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
+        }
+      ]
+    },
+    {
+      "numero": "208 bis",
+      "tipo": "articulo",
+      "orden": 360,
+      "pagina": 241,
+      "parrafos": [
         {
-          "numero": 2,
+          "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Artículo 208-Bis.- (Se deroga).",
+          "contenido": "(Se deroga).",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         }
       ]
-    },
-    {
-      "numero": "208 BIS",
-      "tipo": "articulo",
-      "orden": 360,
-      "pagina": 241,
-      "parrafos": []
     },
     {
       "numero": "209",
@@ -28336,7 +28666,7 @@
       ]
     },
     {
-      "numero": "209 BIS",
+      "numero": "209 bis",
       "tipo": "articulo",
       "orden": 362,
       "pagina": 241,
@@ -28676,7 +29006,7 @@
       ]
     },
     {
-      "numero": "228 BIS",
+      "numero": "228 bis",
       "tipo": "articulo",
       "orden": 382,
       "pagina": 242,
