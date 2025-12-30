@@ -302,7 +302,7 @@ export interface Fraccion {
   orden: number
   nivel: number
   es_continuacion: boolean
-  referencias_dof: string[] | null
+  referencias: string[] | null
 }
 
 export async function getFraccionesArticulo(artId: number, ley?: string): Promise<Fraccion[]> {

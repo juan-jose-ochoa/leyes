@@ -190,7 +190,7 @@ export default function Article() {
                   : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
               )}
             >
-              {mostrarReferencias ? 'Ocultar DOF' : 'Mostrar DOF'}
+              {mostrarReferencias ? 'Ocultar referencias' : 'Mostrar referencias'}
             </button>
           )}
 

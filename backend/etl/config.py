@@ -51,9 +51,9 @@ LEYES = {
             r'TEXTO VIGENTE\s*',
         ],
 
-        # Detección de referencias DOF (reformas, adiciones)
-        # Criterios: itálica + color (azul o gris) + tamaño pequeño + patrón DOF
-        "referencias_dof": {
+        # Detección de referencias (reformas, adiciones)
+        # Criterios: itálica + color (azul o gris) + tamaño pequeño + patrón
+        "referencias": {
             "font_italic": True,       # Requiere fuente itálica
             "color_no_negro": True,    # Color diferente de negro puro (azul, gris, etc.)
             "size_max": 10,            # Tamaño fuente máximo (texto normal ~12)

@@ -44,7 +44,7 @@ class Parrafo:
     padre_numero: Optional[int] = None  # Número del párrafo padre
     x_id: Optional[int] = None      # X del identificador (o inicio de línea)
     x_texto: Optional[int] = None   # X donde empieza el contenido de texto
-    referencias_dof: list = None    # Referencias DOF: ["Párrafo reformado DOF 12-11-2021", ...]
+    referencias: list = None    # Referencias: ["Párrafo reformado DOF 12-11-2021", ...]
 
     def to_dict(self) -> dict:
         d = {
@@ -58,8 +58,8 @@ class Parrafo:
             d["x_id"] = self.x_id
         if self.x_texto is not None:
             d["x_texto"] = self.x_texto
-        if self.referencias_dof:
-            d["referencias_dof"] = self.referencias_dof
+        if self.referencias:
+            d["referencias"] = self.referencias
         return d
 
 
@@ -181,14 +181,14 @@ class Extractor:
 
         return result
 
-    def _es_referencia_dof(self, linea: dict) -> bool:
-        """Determina si una línea es referencia DOF basándose en config.
+    def _es_referencia(self, linea: dict) -> bool:
+        """Determina si una línea es referencia basándose en config.
 
         Criterios: itálica + color no negro + tamaño pequeño.
-        Si cumple los 3 criterios de fuente, ES referencia DOF.
+        Si cumple los 3 criterios de fuente, ES referencia.
         Los patrones son opcionales (para casos que no cumplan todos los criterios).
         """
-        config_ref = self.config.get("referencias_dof")
+        config_ref = self.config.get("referencias")
         if not config_ref:
             return False
 
@@ -198,7 +198,7 @@ class Extractor:
         font_size = linea.get('font_size', 12)
         size_max = config_ref.get('size_max', 10)
 
-        # Si cumple TODOS los criterios de fuente, es referencia DOF
+        # Si cumple TODOS los criterios de fuente, es referencia
         cumple_italic = not config_ref.get('font_italic', False) or is_italic
         cumple_color = not config_ref.get('color_no_negro', False) or is_non_black
         cumple_size = font_size <= size_max
@@ -393,7 +393,7 @@ class Extractor:
                                     patron_art: re.Pattern, patron_siguiente: re.Pattern) -> list[Parrafo]:
         """Extrae párrafos de un artículo usando coordenadas X/Y."""
         todas_lineas = []
-        referencias_dof = []  # Lista de (y_global, texto_referencia)
+        referencias = []  # Lista de (y_global, texto_referencia)
         en_articulo = False
         basura = self.config.get("basura_lineas", [
             'CÓDIGO FISCAL', 'CÁMARA DE DIPUTADOS', 'Secretaría General',
@@ -411,11 +411,11 @@ class Extractor:
                 y_global = linea['y'] + y_offset
                 linea['y_global'] = y_global
 
-                # Detectar referencias DOF PRIMERO (antes de filtrar basura)
+                # Detectar referencias PRIMERO (antes de filtrar basura)
                 # porque el filtro de basura podría incluir "DOF"
-                if self._es_referencia_dof(linea):
+                if self._es_referencia(linea):
                     if en_articulo:
-                        referencias_dof.append((y_global, text))
+                        referencias.append((y_global, text))
                     continue
 
                 # Filtrar basura (después de detectar referencias)
@@ -448,10 +448,10 @@ class Extractor:
         lineas_consolidadas = self._consolidar_lineas(todas_lineas)
         parrafos = self._construir_parrafos(lineas_consolidadas)
 
-        # Asociar referencias DOF a párrafos
+        # Asociar referencias a párrafos
         # Cada referencia se asocia al párrafo cuyo y_fin es menor y más cercano a ref_y
-        if referencias_dof and parrafos and len(parrafos) == len(lineas_consolidadas):
-            for ref_y, ref_texto in referencias_dof:
+        if referencias and parrafos and len(parrafos) == len(lineas_consolidadas):
+            for ref_y, ref_texto in referencias:
                 # Encontrar el párrafo con mayor y_fin que sea menor que ref_y
                 mejor_idx = -1
                 mejor_y = -1
@@ -463,9 +463,9 @@ class Extractor:
 
                 if mejor_idx >= 0:
                     p = parrafos[mejor_idx]
-                    if p.referencias_dof is None:
-                        p.referencias_dof = []
-                    p.referencias_dof.append(ref_texto)
+                    if p.referencias is None:
+                        p.referencias = []
+                    p.referencias.append(ref_texto)
 
         return parrafos
 

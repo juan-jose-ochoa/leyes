@@ -119,9 +119,9 @@ export default function ArticlePanel({ ley, numero, onClose, onNavigate }: Artic
                     ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'
                     : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
                 )}
-                title={mostrarReferencias ? 'Ocultar referencias DOF' : 'Mostrar referencias DOF'}
+                title={mostrarReferencias ? 'Ocultar referencias' : 'Mostrar referencias'}
               >
-                DOF
+                Ref
               </button>
             )}
             <button

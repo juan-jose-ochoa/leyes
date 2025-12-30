@@ -21,7 +21,7 @@ export default function FraccionesView({ fracciones, mostrarReferencias = false 
 }
 
 function FraccionItem({ fraccion, mostrarReferencias }: { fraccion: Fraccion; mostrarReferencias: boolean }) {
-  const { tipo, numero, contenido, nivel, es_continuacion, referencias_dof } = fraccion
+  const { tipo, numero, contenido, nivel, es_continuacion, referencias } = fraccion
 
   // Indentación: continuaciones usan el nivel del padre
   const nivelVisual = es_continuacion ? nivel - 1 : nivel
@@ -95,9 +95,9 @@ function FraccionItem({ fraccion, mostrarReferencias }: { fraccion: Fraccion; mo
           {contenido}
         </p>
       )}
-      {mostrarReferencias && referencias_dof && referencias_dof.length > 0 && (
+      {mostrarReferencias && referencias && referencias.length > 0 && (
         <div className="text-right mt-1">
-          {referencias_dof.map((ref, i) => (
+          {referencias.map((ref, i) => (
             <p key={i} className="text-xs italic text-blue-600 dark:text-blue-400">
               {ref}
             </p>

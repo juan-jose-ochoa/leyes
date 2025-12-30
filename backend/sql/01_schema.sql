@@ -81,7 +81,6 @@ CREATE TABLE leyesmx.articulos (
     titulo TEXT,
     tipo VARCHAR(20) NOT NULL DEFAULT 'articulo'
         CHECK (tipo IN ('articulo', 'regla', 'transitorio', 'ficha', 'criterio')),
-    decreto_dof TEXT,
     reformas TEXT,
     orden SMALLINT NOT NULL,
 
@@ -121,8 +120,8 @@ CREATE TABLE leyesmx.parrafos (
     x_id SMALLINT,                            -- X del identificador (o inicio de línea)
     x_texto SMALLINT,                         -- X donde empieza el contenido
 
-    -- Referencias DOF (reformas, adiciones, compilaciones)
-    referencias_dof TEXT[],
+    -- Referencias (reformas, adiciones, compilaciones)
+    referencias TEXT[],
 
     -- Auditoría
     checksum VARCHAR(64) GENERATED ALWAYS AS (
