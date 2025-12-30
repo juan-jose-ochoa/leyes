@@ -96,6 +96,38 @@ Confirma:
 
 ---
 
+## Cambios en Extractores (extraer_mapa.py, extraer.py)
+
+**IMPORTANTE:** Antes de hacer commit de cualquier cambio en los extractores, verificar que no hay regresiones en las leyes ya implementadas.
+
+### Flujo de Trabajo
+
+```bash
+# 1. Ejecutar extracción en TODAS las leyes implementadas
+for ley in CFF CPEUM LISR LIVA; do
+    python backend/etl/extraer_mapa.py $ley
+    python backend/etl/extraer.py $ley
+done
+
+# 2. Verificar que no cambió ni el contenido ni la estructura
+git diff backend/etl/data/*/contenido.json
+git diff backend/etl/data/*/mapa_estructura.json
+
+# 3. Si hay cambios inesperados → investigar y corregir
+# 4. Solo hacer commit si las leyes existentes no tienen cambios
+```
+
+### Qué Revisar
+
+| Archivo | Verificar |
+|---------|-----------|
+| `mapa_estructura.json` | Mismos títulos, capítulos, secciones |
+| `contenido.json` | Mismo número de artículos y párrafos |
+
+**Regla:** Los cambios en extractores solo deben afectar la ley nueva que se está agregando, nunca las existentes.
+
+---
+
 ## Verificación de Regresiones (Checksums)
 
 Para detectar cambios en artículos después de modificar el algoritmo de extracción:
