@@ -44,6 +44,7 @@ class Parrafo:
     padre_numero: Optional[int] = None  # Número del párrafo padre
     x_id: Optional[int] = None      # X del identificador (o inicio de línea)
     x_texto: Optional[int] = None   # X donde empieza el contenido de texto
+    referencias_dof: list = None    # Referencias DOF: ["Párrafo reformado DOF 12-11-2021", ...]
 
     def to_dict(self) -> dict:
         d = {
@@ -57,6 +58,8 @@ class Parrafo:
             d["x_id"] = self.x_id
         if self.x_texto is not None:
             d["x_texto"] = self.x_texto
+        if self.referencias_dof:
+            d["referencias_dof"] = self.referencias_dof
         return d
 
 
@@ -120,10 +123,19 @@ class Extractor:
             self.pdf.close()
 
     def _extraer_lineas_pagina(self, page) -> list[dict]:
-        """Extrae líneas de una página con coordenadas X/Y."""
+        """Extrae líneas de una página con coordenadas X/Y y propiedades de fuente."""
         words = page.extract_words(keep_blank_chars=True, x_tolerance=3, y_tolerance=3)
+        chars = page.chars
 
-        # Agrupar por línea (mismo Y aproximado)
+        # Agrupar chars por línea para detectar propiedades de fuente
+        chars_por_y = {}
+        for c in chars:
+            y_key = round(c['top'] / 5) * 5
+            if y_key not in chars_por_y:
+                chars_por_y[y_key] = []
+            chars_por_y[y_key].append(c)
+
+        # Agrupar words por línea (mismo Y aproximado)
         lines = {}
         for w in words:
             y_key = round(w['top'] / 5) * 5
@@ -139,9 +151,62 @@ class Extractor:
             text = ' '.join(w['text'] for w in line_words).strip()
 
             if text and x0 >= 70:  # Ignorar headers/footers
-                result.append({'x': x0, 'x_end': x1, 'y': y_key, 'text': text})
+                # Obtener propiedades de fuente del primer char de la línea
+                line_chars = chars_por_y.get(y_key, [])
+                is_italic = False
+                is_non_black = False
+                font_size = 12  # default
+
+                if line_chars:
+                    # Buscar chars con x >= x0 (de esta línea)
+                    relevant_chars = [c for c in line_chars if c['x0'] >= x0 - 5]
+                    if relevant_chars:
+                        first_char = relevant_chars[0]
+                        fontname = first_char.get('fontname', '')
+                        is_italic = 'Italic' in fontname or 'italic' in fontname
+                        font_size = first_char.get('size', 12)
+                        color = first_char.get('non_stroking_color', ())
+                        # Detectar si el color NO es negro puro
+                        # Negro: (0.0,) en Gray o (0,0,0) en RGB
+                        is_non_black = False
+                        if len(color) == 1:  # DeviceGray
+                            is_non_black = color[0] > 0.1  # Gris o más claro
+                        elif len(color) >= 3:  # RGB
+                            is_non_black = any(c > 0.1 for c in color)  # Cualquier componente no negro
+
+                result.append({
+                    'x': x0, 'x_end': x1, 'y': y_key, 'text': text,
+                    'is_italic': is_italic, 'is_non_black': is_non_black, 'font_size': font_size
+                })
 
         return result
+
+    def _es_referencia_dof(self, linea: dict) -> bool:
+        """Determina si una línea es referencia DOF basándose en config.
+
+        Criterios: itálica + color no negro + tamaño pequeño.
+        Si cumple los 3 criterios de fuente, ES referencia DOF.
+        Los patrones son opcionales (para casos que no cumplan todos los criterios).
+        """
+        config_ref = self.config.get("referencias_dof")
+        if not config_ref:
+            return False
+
+        text = linea['text']
+        is_italic = linea.get('is_italic', False)
+        is_non_black = linea.get('is_non_black', False)
+        font_size = linea.get('font_size', 12)
+        size_max = config_ref.get('size_max', 10)
+
+        # Si cumple TODOS los criterios de fuente, es referencia DOF
+        cumple_italic = not config_ref.get('font_italic', False) or is_italic
+        cumple_color = not config_ref.get('color_no_negro', False) or is_non_black
+        cumple_size = font_size <= size_max
+
+        if cumple_italic and cumple_color and cumple_size:
+            return True
+
+        return False
 
     def _detectar_tipo_identificador(self, texto: str) -> tuple:
         """Detecta tipo de elemento y extrae identificador."""
@@ -189,22 +254,24 @@ class Extractor:
         buffer_texto = ""
         buffer_x = None
         buffer_y = None
+        buffer_y_fin = None  # Y de la última línea del párrafo
         buffer_x_end = None
 
         for linea in lineas:
             x = linea['x']
             x_end = linea.get('x_end', 544)
-            y = linea['y']
+            y = linea.get('y_global', linea['y'])  # Usar y_global si existe
             text = linea['text']
 
             # Si tiene identificador (I., a), 1.) → siempre nuevo párrafo
             _, identificador, _ = self._detectar_tipo_identificador(text)
             if identificador:
                 if buffer_texto:
-                    lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
+                    lineas_consolidadas.append({'x': buffer_x, 'y_fin': buffer_y_fin, 'text': buffer_texto})
                 buffer_texto = text
                 buffer_x = x
                 buffer_y = y
+                buffer_y_fin = y
                 buffer_x_end = x_end
                 continue
 
@@ -213,6 +280,7 @@ class Extractor:
                 buffer_texto = text
                 buffer_x = x
                 buffer_y = y
+                buffer_y_fin = y
                 buffer_x_end = x_end
                 continue
 
@@ -248,19 +316,21 @@ class Extractor:
 
             # Decisión: 4+ reglas = nuevo párrafo
             if puntos >= 4:
-                lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
+                lineas_consolidadas.append({'x': buffer_x, 'y_fin': buffer_y_fin, 'text': buffer_texto})
                 buffer_texto = text
                 buffer_x = x
                 buffer_y = y
+                buffer_y_fin = y
                 buffer_x_end = x_end
             else:
                 # Continuación del párrafo actual
                 buffer_texto += " " + text
                 buffer_y = y
+                buffer_y_fin = y  # Actualizar Y final
                 buffer_x_end = x_end
 
         if buffer_texto:
-            lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
+            lineas_consolidadas.append({'x': buffer_x, 'y_fin': buffer_y_fin, 'text': buffer_texto})
 
         return lineas_consolidadas
 
@@ -323,6 +393,7 @@ class Extractor:
                                     patron_art: re.Pattern, patron_siguiente: re.Pattern) -> list[Parrafo]:
         """Extrae párrafos de un artículo usando coordenadas X/Y."""
         todas_lineas = []
+        referencias_dof = []  # Lista de (y_global, texto_referencia)
         en_articulo = False
         basura = self.config.get("basura_lineas", [
             'CÓDIGO FISCAL', 'CÁMARA DE DIPUTADOS', 'Secretaría General',
@@ -331,11 +402,23 @@ class Extractor:
 
         for pag_num in range(pag_inicio, pag_fin + 1):
             lineas = self._extraer_lineas_pagina(self.pdf.pages[pag_num])
+            # Offset Y por página (800 unidades por página aprox)
+            y_offset = (pag_num - pag_inicio) * 800
 
             for linea in lineas:
                 text = linea['text']
+                # Y global para comparaciones entre páginas
+                y_global = linea['y'] + y_offset
+                linea['y_global'] = y_global
 
-                # Filtrar basura
+                # Detectar referencias DOF PRIMERO (antes de filtrar basura)
+                # porque el filtro de basura podría incluir "DOF"
+                if self._es_referencia_dof(linea):
+                    if en_articulo:
+                        referencias_dof.append((y_global, text))
+                    continue
+
+                # Filtrar basura (después de detectar referencias)
                 if any(skip in text for skip in basura):
                     continue
 
@@ -363,7 +446,28 @@ class Extractor:
                 break
 
         lineas_consolidadas = self._consolidar_lineas(todas_lineas)
-        return self._construir_parrafos(lineas_consolidadas)
+        parrafos = self._construir_parrafos(lineas_consolidadas)
+
+        # Asociar referencias DOF a párrafos
+        # Cada referencia se asocia al párrafo cuyo y_fin es menor y más cercano a ref_y
+        if referencias_dof and parrafos and len(parrafos) == len(lineas_consolidadas):
+            for ref_y, ref_texto in referencias_dof:
+                # Encontrar el párrafo con mayor y_fin que sea menor que ref_y
+                mejor_idx = -1
+                mejor_y = -1
+                for idx, linea_cons in enumerate(lineas_consolidadas):
+                    y_fin = linea_cons.get('y_fin', 0)
+                    if y_fin < ref_y and y_fin > mejor_y:
+                        mejor_y = y_fin
+                        mejor_idx = idx
+
+                if mejor_idx >= 0:
+                    p = parrafos[mejor_idx]
+                    if p.referencias_dof is None:
+                        p.referencias_dof = []
+                    p.referencias_dof.append(ref_texto)
+
+        return parrafos
 
     def _encontrar_pagina_articulo(self, numero: str) -> tuple:
         """Encuentra página inicial y final de un artículo."""

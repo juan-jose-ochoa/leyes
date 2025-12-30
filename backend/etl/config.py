@@ -48,14 +48,28 @@ LEYES = {
             r'Secretaría General\s*',
             r'Última\s+[Rr]eforma\s+(?:publicada\s+)?DOF[^\n]*',
             r'\d+\s+de\s+\d+\s*',  # Números de página "24 de 375"
-            r'Párrafo\s+reformad[oa][^\n]*DOF[^\n]*',
-            r'Fracción\s+reformad[oa][^\n]*DOF[^\n]*',
-            r'Artículo\s+reformad[oa][^\n]*DOF[^\n]*',
-            r'Inciso\s+reformad[oa][^\n]*DOF[^\n]*',
-            r'Apartado\s+adicionad[oa][^\n]*DOF[^\n]*',
-            r'(?:Nuevo\s+)?(?:Código|Artículo)\s+[Pp]ublicad[oa][^\n]*DOF[^\n]*',
             r'TEXTO VIGENTE\s*',
         ],
+
+        # Detección de referencias DOF (reformas, adiciones)
+        # Criterios: itálica + color (azul o gris) + tamaño pequeño + patrón DOF
+        "referencias_dof": {
+            "font_italic": True,       # Requiere fuente itálica
+            "color_no_negro": True,    # Color diferente de negro puro (azul, gris, etc.)
+            "size_max": 10,            # Tamaño fuente máximo (texto normal ~12)
+            "patrones": [              # Patrones de texto para validar
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
+                r"Inciso.*DOF",
+                r"Numeral.*DOF",
+                r"Apartado.*DOF",
+                r"Reforma\s+DOF",
+                r"Compilada?\s+DOF",    # "Compilada DOF" o "Compilado DOF"
+                r"Actualizada?\s+DOF",  # "Actualizada DOF" o "Actualizado DOF"
+                r"^\d{2}-\d{2}-\d{4}$", # Fechas solas (DD-MM-YYYY) con características DOF
+            ],
+        },
     },
 
     "RMF2025": {

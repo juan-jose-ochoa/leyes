@@ -12,6 +12,12 @@ JSON (estructura jerárquica)
 PostgreSQL (normalizado)
 ```
 
+**Fuente de verdad:** `contenido.json` es la fuente de verdad técnica.
+- La BD se regenera desde el JSON
+- **No se permiten cambios manuales** en el JSON ni en la BD
+- Todo el contenido debe emanar de los scripts de extracción
+- El JSON se versiona en git
+
 ## Flujo de Importación (5 etapas)
 
 ```

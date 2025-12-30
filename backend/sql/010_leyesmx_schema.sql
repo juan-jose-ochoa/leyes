@@ -121,6 +121,9 @@ CREATE TABLE leyesmx.parrafos (
     x_id SMALLINT,                            -- X del identificador (o inicio de línea)
     x_texto SMALLINT,                         -- X donde empieza el contenido
 
+    -- Referencias DOF (reformas, adiciones, compilaciones)
+    referencias_dof TEXT[],
+
     -- Auditoría
     checksum VARCHAR(64) GENERATED ALWAYS AS (
         encode(sha256(contenido::bytea), 'hex')
