@@ -22,22 +22,27 @@ export default function FraccionesView({ fracciones }: FraccionesViewProps) {
 function FraccionItem({ fraccion }: { fraccion: Fraccion }) {
   const { tipo, numero, contenido, nivel, es_continuacion } = fraccion
 
-  // Indentación: continuaciones no se indentan (servidor decide)
+  // Indentación: continuaciones usan el nivel del padre
+  const nivelVisual = es_continuacion ? nivel - 1 : nivel
   const indentClass = clsx({
-    'ml-0': nivel === 0 || es_continuacion,
-    'ml-6': nivel === 1 && !es_continuacion,
-    'ml-12': nivel === 2 && !es_continuacion,
-    'ml-16': nivel >= 3 && !es_continuacion,
+    'ml-0': nivelVisual <= 0,
+    'ml-6': nivelVisual === 1,
+    'ml-12': nivelVisual === 2,
+    'ml-16': nivelVisual >= 3,
   })
 
   // Estilos de borde y fondo según tipo
+  // Continuaciones heredan el estilo del padre basado en su nivel
+  const tipoVisual = es_continuacion
+    ? (nivel === 1 ? 'fraccion' : nivel === 2 ? 'inciso' : nivel === 3 ? 'numeral' : tipo)
+    : tipo
+
   const borderStyles = clsx({
-    'border-l-4 border-primary-500 bg-primary-50 dark:bg-primary-950/30': tipo === 'fraccion',
-    'border-l-3 border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30': tipo === 'inciso',
-    'border-l-2 border-amber-400 bg-amber-50 dark:bg-amber-950/30': tipo === 'numeral',
-    'border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950/30': tipo === 'apartado',
-    'border-l-2 border-gray-200 dark:border-gray-700': es_continuacion,
-    'border-l-2 border-gray-300 dark:border-gray-600': (tipo === 'parrafo' || tipo === 'texto') && !es_continuacion,
+    'border-l-4 border-primary-500 bg-primary-50 dark:bg-primary-950/30': tipoVisual === 'fraccion',
+    'border-l-3 border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30': tipoVisual === 'inciso',
+    'border-l-2 border-amber-400 bg-amber-50 dark:bg-amber-950/30': tipoVisual === 'numeral',
+    'border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950/30': tipoVisual === 'apartado',
+    'border-l-2 border-gray-300 dark:border-gray-600': (tipoVisual === 'parrafo' || tipoVisual === 'texto'),
   })
 
   // Estilo del identificador según tipo
