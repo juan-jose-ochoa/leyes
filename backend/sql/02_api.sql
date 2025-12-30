@@ -245,6 +245,7 @@ GRANT EXECUTE ON FUNCTION leyesmx.articulo_por_ley TO web_anon;
 -- ============================================================
 -- Función: estructura_ley
 -- ============================================================
+DROP FUNCTION IF EXISTS leyesmx.estructura_ley(VARCHAR);
 CREATE OR REPLACE FUNCTION leyesmx.estructura_ley(ley_codigo VARCHAR)
 RETURNS TABLE (
     id INTEGER,
@@ -254,7 +255,9 @@ RETURNS TABLE (
     path_texto TEXT,
     nivel SMALLINT,
     total_articulos BIGINT,
-    primer_articulo VARCHAR
+    primer_articulo VARCHAR,
+    ultimo_articulo VARCHAR,
+    padre_id INTEGER
 ) AS $$
 BEGIN
     -- Usa CTE recursivo para contar artículos en toda la jerarquía descendiente
@@ -298,7 +301,11 @@ BEGIN
         COALESCE(c.total, 0)::BIGINT,
         (SELECT MIN(a.numero)::VARCHAR
          FROM leyesmx.articulos a
-         WHERE a.division_id = d.id AND a.ley = d.ley)
+         WHERE a.division_id = d.id AND a.ley = d.ley),
+        (SELECT MAX(a.numero)::VARCHAR
+         FROM leyesmx.articulos a
+         WHERE a.division_id = d.id AND a.ley = d.ley),
+        d.padre_id
     FROM leyesmx.divisiones d
     LEFT JOIN conteos c ON c.raiz_id = d.id
     WHERE d.ley = ley_codigo

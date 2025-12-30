@@ -195,6 +195,7 @@ export interface Division {
   total_articulos: number
   primer_articulo: string | null
   ultimo_articulo: string | null
+  padre_id: number | null
 }
 
 export async function getEstructuraLey(ley: string): Promise<Division[]> {

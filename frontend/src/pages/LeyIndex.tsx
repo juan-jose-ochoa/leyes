@@ -9,6 +9,7 @@ import clsx from 'clsx'
 interface DivisionConEstado extends Omit<Division, 'id'> {
   id: number | string  // string para placeholders (ej: "placeholder-titulo-6")
   esFaltante?: boolean
+  secciones?: DivisionConEstado[]  // Secciones hijas (solo para capítulos)
 }
 
 // Agrupar divisiones por título
@@ -65,6 +66,7 @@ function agruparPorTitulo(
       total_articulos: 0,
       primer_articulo: null,
       ultimo_articulo: null,
+      padre_id: null,
       esFaltante: true,
     }))
 
@@ -84,6 +86,7 @@ function agruparPorTitulo(
       total_articulos: 0,
       primer_articulo: null,
       ultimo_articulo: null,
+      padre_id: null,
       esFaltante: true,
     }))
 
@@ -91,7 +94,30 @@ function agruparPorTitulo(
   const todasDivisiones = [...divsExistentes, ...divsFaltantes, ...reglasDosNivelesFaltantes]
     .sort((a, b) => compararNumeros(a.numero, b.numero))
 
+  // Crear mapa de divisiones por id para encontrar padres
+  const divisionesById = new Map<number, DivisionConEstado>()
   for (const div of todasDivisiones) {
+    if (typeof div.id === 'number') {
+      divisionesById.set(div.id, div)
+    }
+  }
+
+  // Separar secciones de otras divisiones
+  const secciones = todasDivisiones.filter(d => d.tipo === 'seccion')
+  const noSecciones = todasDivisiones.filter(d => d.tipo !== 'seccion')
+
+  // Asignar secciones a sus capítulos padre
+  for (const seccion of secciones) {
+    if (seccion.padre_id && typeof seccion.padre_id === 'number') {
+      const capitulo = divisionesById.get(seccion.padre_id)
+      if (capitulo && capitulo.tipo === 'capitulo') {
+        if (!capitulo.secciones) capitulo.secciones = []
+        capitulo.secciones.push(seccion)
+      }
+    }
+  }
+
+  for (const div of noSecciones) {
     if (div.tipo === 'titulo') {
       // Nuevo grupo de título
       if (grupoActual) {
@@ -99,7 +125,7 @@ function agruparPorTitulo(
       }
       grupoActual = { titulo: div, hijos: [] }
     } else {
-      // Es capítulo, sección o regla de título 1
+      // Es capítulo o regla de título 1 (secciones ya están anidadas)
       if (grupoActual) {
         grupoActual.hijos.push(div)
       } else {
@@ -869,6 +895,7 @@ function StatusIcon({ status }: { status: VerificacionStatus }) {
 
 function DivisionItem({ division, ley, tipoContenido, parentPath, isNested, showVerificacion, verificacion }: DivisionItemProps) {
   const tipoLabel = division.tipo.charAt(0).toUpperCase() + division.tipo.slice(1)
+  const esSeccion = division.tipo === 'seccion'
 
   // Construir path jerárquico completo
   const divisionPath = parentPath
@@ -881,18 +908,27 @@ function DivisionItem({ division, ley, tipoContenido, parentPath, isNested, show
       <div
         className={clsx(
           'flex items-center gap-4 p-4 opacity-50',
-          !isNested && 'rounded-lg border border-dashed border-gray-300 dark:border-gray-600'
+          esSeccion && 'ml-6 border-l-2 border-indigo-200 dark:border-indigo-800',
+          !isNested && !esSeccion && 'rounded-lg border border-dashed border-gray-300 dark:border-gray-600'
         )}
       >
         {/* Icono */}
-        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gray-200 text-gray-400 dark:bg-gray-700 dark:text-gray-500">
+        <div className={clsx(
+          'flex h-10 w-10 shrink-0 items-center justify-center rounded-lg',
+          esSeccion
+            ? 'bg-indigo-200 text-indigo-400 dark:bg-indigo-900 dark:text-indigo-500'
+            : 'bg-gray-200 text-gray-400 dark:bg-gray-700 dark:text-gray-500'
+        )}>
           <FileText className="h-5 w-5" />
         </div>
 
         {/* Contenido */}
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2">
-            <span className="text-xs font-medium text-gray-400 dark:text-gray-500 uppercase">
+            <span className={clsx(
+              'text-xs font-medium uppercase',
+              esSeccion ? 'text-indigo-400 dark:text-indigo-500' : 'text-gray-400 dark:text-gray-500'
+            )}>
               {tipoLabel} {division.numero}
             </span>
             <span className="text-xs px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
@@ -907,23 +943,35 @@ function DivisionItem({ division, ley, tipoContenido, parentPath, isNested, show
     )
   }
 
-  return (
+  // Contenido del item (usado tanto para capítulos como secciones)
+  const itemContent = (
     <Link
       to={`/${ley}/${divisionPath}`}
       className={clsx(
-        'flex items-center gap-4 p-4 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800/50',
-        !isNested && 'rounded-lg border border-gray-200 dark:border-gray-700'
+        'flex items-center gap-4 p-4 transition-colors',
+        esSeccion
+          ? 'hover:bg-indigo-50 dark:hover:bg-indigo-900/20'
+          : 'hover:bg-gray-50 dark:hover:bg-gray-800/50',
+        !isNested && !esSeccion && 'rounded-lg border border-gray-200 dark:border-gray-700'
       )}
     >
       {/* Icono */}
-      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gray-100 text-gray-500 dark:bg-gray-800 dark:text-gray-400">
+      <div className={clsx(
+        'flex h-10 w-10 shrink-0 items-center justify-center rounded-lg',
+        esSeccion
+          ? 'bg-indigo-100 text-indigo-600 dark:bg-indigo-900/50 dark:text-indigo-400'
+          : 'bg-gray-100 text-gray-500 dark:bg-gray-800 dark:text-gray-400'
+      )}>
         <FileText className="h-5 w-5" />
       </div>
 
       {/* Contenido */}
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2">
-          <span className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">
+          <span className={clsx(
+            'text-xs font-medium uppercase',
+            esSeccion ? 'text-indigo-600 dark:text-indigo-400' : 'text-gray-500 dark:text-gray-400'
+          )}>
             {tipoLabel} {division.numero}
           </span>
           {/* Indicador de verificación */}
@@ -967,7 +1015,36 @@ function DivisionItem({ division, ley, tipoContenido, parentPath, isNested, show
         </div>
       )}
 
-      <ChevronRight className="h-5 w-5 text-gray-300 dark:text-gray-600" />
+      <ChevronRight className={clsx(
+        'h-5 w-5',
+        esSeccion ? 'text-indigo-300 dark:text-indigo-700' : 'text-gray-300 dark:text-gray-600'
+      )} />
     </Link>
   )
+
+  // Si es un capítulo con secciones, renderizar las secciones anidadas
+  if (division.secciones && division.secciones.length > 0) {
+    return (
+      <div>
+        {itemContent}
+        {/* Secciones anidadas con indentación */}
+        <div className="ml-6 border-l-2 border-indigo-200 dark:border-indigo-800">
+          {division.secciones.map((seccion) => (
+            <DivisionItem
+              key={seccion.id}
+              division={seccion}
+              ley={ley}
+              tipoContenido={tipoContenido}
+              parentPath={divisionPath}
+              isNested={true}
+              showVerificacion={showVerificacion}
+              verificacion={typeof seccion.id === 'number' ? undefined : undefined}
+            />
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  return itemContent
 }

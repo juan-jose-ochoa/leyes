@@ -13,7 +13,7 @@ LEYES = {
         "pdf_path": "backend/etl/data/cff/cff_codigo_fiscal_de_la_federacion.pdf",
 
         # Estructura jerárquica permitida
-        "divisiones_permitidas": ["titulo", "capitulo"],
+        "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
 
         # Tipo de contenido principal
@@ -32,6 +32,7 @@ LEYES = {
             # Divisiones estructurales (línea completa, sin acento también)
             "titulo": r'^TITULOS?\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|SEPTIMO|OCTAVO|NOVENO|DECIMO)\s*$',
             "capitulo": r'^CAPITULOS?\s+([IVX]+|UNICO)\s*$',
+            "seccion": r'^Secci[oó]n\s+(Primera|Segunda|Tercera|Cuarta|Quinta|Sexta|Séptima|Octava|Novena|Décima)\s*$',
 
             # Fracciones dentro de artículos
             "fraccion": r'^([IVX]+)\.\s+',
