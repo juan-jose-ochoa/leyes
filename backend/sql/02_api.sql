@@ -316,6 +316,73 @@ $$ LANGUAGE plpgsql STABLE;
 GRANT EXECUTE ON FUNCTION leyesmx.estructura_ley TO web_anon;
 
 -- ============================================================
+-- Función: divisiones_hijas
+-- Devuelve las divisiones hijas directas de una división padre
+-- ============================================================
+DROP FUNCTION IF EXISTS leyesmx.divisiones_hijas(INTEGER);
+CREATE OR REPLACE FUNCTION leyesmx.divisiones_hijas(div_id INTEGER)
+RETURNS TABLE (
+    id INTEGER,
+    tipo VARCHAR,
+    numero VARCHAR,
+    nombre TEXT,
+    path_texto TEXT,
+    nivel SMALLINT,
+    total_articulos BIGINT,
+    primer_articulo VARCHAR,
+    ultimo_articulo VARCHAR
+) AS $$
+BEGIN
+    RETURN QUERY
+    WITH RECURSIVE descendientes AS (
+        SELECT d.id as raiz_id, d.id as hijo_id, d.ley
+        FROM leyesmx.divisiones d
+        WHERE d.padre_id = div_id
+
+        UNION ALL
+
+        SELECT anc.raiz_id, child.id, child.ley
+        FROM descendientes anc
+        JOIN leyesmx.divisiones child ON child.padre_id = anc.hijo_id AND child.ley = anc.ley
+    ),
+    conteos AS (
+        SELECT
+            anc.raiz_id,
+            COUNT(a.id) as total
+        FROM descendientes anc
+        JOIN leyesmx.articulos a ON a.division_id = anc.hijo_id AND a.ley = anc.ley
+        GROUP BY anc.raiz_id
+    )
+    SELECT
+        d.id,
+        d.tipo,
+        d.numero,
+        d.nombre,
+        d.tipo || ' ' || d.numero || COALESCE(' - ' || d.nombre, ''),
+        CASE d.tipo
+            WHEN 'libro' THEN 0::SMALLINT
+            WHEN 'titulo' THEN 1::SMALLINT
+            WHEN 'capitulo' THEN 2::SMALLINT
+            WHEN 'seccion' THEN 3::SMALLINT
+            ELSE 4::SMALLINT
+        END,
+        COALESCE(c.total, 0)::BIGINT,
+        (SELECT MIN(a.numero)::VARCHAR
+         FROM leyesmx.articulos a
+         WHERE a.division_id = d.id AND a.ley = d.ley),
+        (SELECT MAX(a.numero)::VARCHAR
+         FROM leyesmx.articulos a
+         WHERE a.division_id = d.id AND a.ley = d.ley)
+    FROM leyesmx.divisiones d
+    LEFT JOIN conteos c ON c.raiz_id = d.id
+    WHERE d.padre_id = div_id
+    ORDER BY d.numero_orden;
+END;
+$$ LANGUAGE plpgsql STABLE;
+
+GRANT EXECUTE ON FUNCTION leyesmx.divisiones_hijas TO web_anon;
+
+-- ============================================================
 -- Función: stats
 -- ============================================================
 CREATE OR REPLACE FUNCTION leyesmx.stats()

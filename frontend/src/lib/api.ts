@@ -263,6 +263,25 @@ export async function getArticulosDivision(divId: number, ley?: string): Promise
   })
 }
 
+export interface DivisionHija {
+  id: number
+  tipo: string
+  numero: string | null
+  nombre: string | null
+  path_texto: string | null
+  nivel: number
+  total_articulos: number
+  primer_articulo: string | null
+  ultimo_articulo: string | null
+}
+
+export async function getDivisionesHijas(divId: number): Promise<DivisionHija[]> {
+  return fetchAPI<DivisionHija[]>('/rpc/divisiones_hijas', {
+    method: 'POST',
+    body: JSON.stringify({ div_id: divId }),
+  })
+}
+
 export interface DivisionBasica {
   id: number
   tipo: string

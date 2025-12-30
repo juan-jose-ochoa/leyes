@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
-import { Home, ChevronRight, BookOpen, ExternalLink, AlertTriangle, CheckCircle, XCircle, Filter, Eye, EyeOff, FileQuestion } from 'lucide-react'
-import { useDivisionPorPath, useArticulosDivision, useVerificacionDivision } from '@/hooks/useArticle'
+import { Home, ChevronRight, BookOpen, ExternalLink, AlertTriangle, CheckCircle, XCircle, Filter, Eye, EyeOff, FileQuestion, FileText } from 'lucide-react'
+import { useDivisionPorPath, useArticulosDivision, useDivisionesHijas, useVerificacionDivision } from '@/hooks/useArticle'
 import ArticleContent from '@/components/ArticleContent'
 import ReferenciasList from '@/components/ReferenciasList'
 import type { RegistroCalidad, ArticuloDivision, VerificacionDivisionSimple } from '@/lib/api'
@@ -247,6 +247,7 @@ export default function DivisionView() {
   const { data: info, isLoading: loadingInfo } = useDivisionPorPath(ley || null, divisionPath)
   const divId = info?.id || null
   const { data: articulos, isLoading: loadingArticulos } = useArticulosDivision(divId, ley || undefined)
+  const { data: divisionesHijas } = useDivisionesHijas(divId)
   const { data: verificacion } = useVerificacionDivision(divId)
 
   const isLoading = loadingInfo || loadingArticulos
@@ -365,6 +366,47 @@ export default function DivisionView() {
           soloIssues={soloIssues}
           onToggle={() => setSoloIssues(!soloIssues)}
         />
+      )}
+
+      {/* Divisiones hijas (secciones) */}
+      {divisionesHijas && divisionesHijas.length > 0 && (
+        <div className="mb-8">
+          <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase mb-4">
+            Secciones
+          </h3>
+          <div className="space-y-2">
+            {divisionesHijas.map((div) => (
+              <Link
+                key={div.id}
+                to={`/${ley}/${divisionPath}/${div.tipo}/${div.numero}`}
+                className="flex items-center gap-4 p-4 rounded-lg border border-indigo-200 dark:border-indigo-800 bg-indigo-50 dark:bg-indigo-900/20 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors"
+              >
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-indigo-100 text-indigo-600 dark:bg-indigo-900/50 dark:text-indigo-400">
+                  <FileText className="h-5 w-5" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <span className="text-xs font-medium text-indigo-600 dark:text-indigo-400 uppercase">
+                    {div.tipo} {div.numero}
+                  </span>
+                  <h4 className="font-medium text-gray-900 dark:text-white truncate">
+                    {div.nombre || `${div.tipo} ${div.numero}`}
+                  </h4>
+                </div>
+                <div className="text-right shrink-0">
+                  <div className="text-sm font-medium text-gray-900 dark:text-white">
+                    {div.total_articulos} {esRegla ? 'reglas' : 'arts.'}
+                  </div>
+                  {div.primer_articulo && div.ultimo_articulo && (
+                    <div className="text-xs text-gray-500">
+                      {div.primer_articulo} – {div.ultimo_articulo}
+                    </div>
+                  )}
+                </div>
+                <ChevronRight className="h-5 w-5 text-indigo-300 dark:text-indigo-700" />
+              </Link>
+            ))}
+          </div>
+        </div>
       )}
 
       {/* Artículos */}

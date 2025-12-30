@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionPorTipoNumero, getDivisionPorPath, getArticulosDivision, getDivisionesArticulo, getFraccionesArticulo, getVerificacionLey, getVerificacionDivision, getVerificacionIndice, getComparacionReglasIndice, getComparacionDivisionesIndice, buscarReferencias, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type ArticuloDivision, type DivisionAncestro, type Fraccion, type VerificacionDivision, type VerificacionDivisionSimple, type VerificacionIndice, type ComparacionRegla, type ComparacionDivision, type ReferenciaLegal } from '@/lib/api'
+import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionPorTipoNumero, getDivisionPorPath, getArticulosDivision, getDivisionesHijas, getDivisionesArticulo, getFraccionesArticulo, getVerificacionLey, getVerificacionDivision, getVerificacionIndice, getComparacionReglasIndice, getComparacionDivisionesIndice, buscarReferencias, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type DivisionHija, type ArticuloDivision, type DivisionAncestro, type Fraccion, type VerificacionDivision, type VerificacionDivisionSimple, type VerificacionIndice, type ComparacionRegla, type ComparacionDivision, type ReferenciaLegal } from '@/lib/api'
 
 export function useArticle(id: number | null) {
   return useQuery<ArticuloDetalle | null>({
@@ -92,6 +92,18 @@ export function useArticulosDivision(divId: number | null, ley?: string) {
     },
     enabled: divId !== null,
     staleTime: 1000 * 60 * 30,
+  })
+}
+
+export function useDivisionesHijas(divId: number | null) {
+  return useQuery<DivisionHija[]>({
+    queryKey: ['divisiones-hijas', divId],
+    queryFn: async () => {
+      if (!divId) return []
+      return getDivisionesHijas(divId)
+    },
+    enabled: divId !== null,
+    staleTime: 1000 * 60 * 60,
   })
 }
 
