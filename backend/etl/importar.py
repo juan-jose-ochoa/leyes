@@ -3,13 +3,11 @@
 Importador de leyes para esquema leyesmx.
 
 Lee archivos JSON generados por extraer.py e inserta en PostgreSQL.
-Usa extracción de párrafos basada en coordenadas X del PDF para jerarquía correcta.
 FAIL FAST: Valida antes de importar, verifica después.
 
 Uso:
     python backend/etl/importar.py CFF
     python backend/etl/importar.py CFF --limpiar  # Borra datos anteriores
-    python backend/etl/importar.py CFF --sin-x    # Usa párrafos del JSON (sin re-extraer)
 """
 
 import json
@@ -33,7 +31,6 @@ except ImportError:
     PDFPLUMBER_DISPONIBLE = False
 
 from config import get_config
-from extraer_parrafos_x import extraer_articulo
 
 
 # Meses en español para parsear fechas
@@ -298,41 +295,9 @@ def importar_estructura_desde_lista(conn, codigo: str, divisiones: list) -> dict
     return division_lookup
 
 
-def extraer_parrafos_x(pdf_path: str, numero_articulo: str, pdf=None) -> list:
-    """
-    Extrae párrafos de un artículo usando coordenadas X del PDF.
-    Retorna lista de dicts con: numero, tipo, identificador, contenido, padre_numero
-
-    Args:
-        pdf_path: Ruta al PDF (ignorado si se pasa pdf)
-        numero_articulo: Número del artículo
-        pdf: Objeto pdfplumber.PDF ya abierto (opcional, para optimizar)
-    """
-    try:
-        parrafos = extraer_articulo(pdf_path, numero_articulo, quiet=True, pdf=pdf)
-        return [
-            {
-                "numero": p.numero,
-                "tipo": p.tipo,
-                "identificador": p.identificador,
-                "contenido": p.contenido,
-                "padre_numero": p.padre_numero
-            }
-            for p in parrafos
-        ]
-    except Exception as e:
-        # Si falla, retornar lista vacía (se usará fallback del JSON)
-        return []
-
-
 def importar_contenido(conn, codigo: str, contenido_path: Path, mapa_path: Path,
-                       division_lookup: dict, tipo_contenido: str,
-                       pdf_path: str = None, usar_extractor_x: bool = True):
-    """Importa artículos asignando división correcta desde mapa_estructura.
-
-    Si usar_extractor_x=True y pdf_path está disponible, re-extrae los párrafos
-    usando coordenadas X del PDF para obtener jerarquía correcta.
-    """
+                       division_lookup: dict, tipo_contenido: str):
+    """Importa artículos y párrafos desde el JSON."""
     with open(contenido_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
@@ -343,104 +308,68 @@ def importar_contenido(conn, codigo: str, contenido_path: Path, mapa_path: Path,
         print("   No hay artículos para importar")
         return
 
-    # Determinar si usamos extractor X
-    usar_x = usar_extractor_x and pdf_path and PDFPLUMBER_DISPONIBLE
-    if usar_x:
-        print(f"   Usando extractor de párrafos con coordenadas X")
-    else:
-        if usar_extractor_x and not PDFPLUMBER_DISPONIBLE:
-            print("   AVISO: pdfplumber no disponible, usando párrafos del JSON")
-        elif usar_extractor_x and not pdf_path:
-            print("   AVISO: PDF no especificado, usando párrafos del JSON")
-
     total_parrafos = 0
-    total_x_extraidos = 0
-    total_x_fallback = 0
     errores = []
 
-    # Abrir PDF una sola vez si usamos extractor X
-    pdf_obj = None
-    if usar_x:
-        try:
-            pdf_obj = pdfplumber.open(pdf_path)
-        except Exception as e:
-            print(f"   ERROR abriendo PDF: {e}")
-            usar_x = False
+    with conn.cursor() as cur:
+        for i, art in enumerate(articulos):
+            numero = art["numero"]
+            key = normalizar_numero(numero)
 
-    try:
-        with conn.cursor() as cur:
-            for i, art in enumerate(articulos):
-                numero = art["numero"]
-                key = normalizar_numero(numero)
+            # Obtener división desde mapa_estructura
+            division_info = articulo_a_division.get(key)
+            if not division_info:
+                errores.append(f"Artículo {numero}: sin división en mapa")
+                continue
 
-                # Obtener división desde mapa_estructura
-                division_info = articulo_a_division.get(key)
-                if not division_info:
-                    errores.append(f"Artículo {numero}: sin división en mapa")
-                    continue
+            titulo_num, cap_num = division_info
 
-                titulo_num, cap_num = division_info
+            # Buscar division_id usando (titulo, capitulo) normalizado
+            lookup_key = (normalizar_numero(titulo_num), normalizar_numero(cap_num))
+            division_id = division_lookup.get(lookup_key)
 
-                # Buscar division_id usando (titulo, capitulo) normalizado
-                lookup_key = (normalizar_numero(titulo_num), normalizar_numero(cap_num))
-                division_id = division_lookup.get(lookup_key)
+            if not division_id:
+                errores.append(f"Artículo {numero}: {titulo_num}/{cap_num} no encontrado en BD")
+                continue
 
-                if not division_id:
-                    errores.append(f"Artículo {numero}: {titulo_num}/{cap_num} no encontrado en BD")
-                    continue
+            # Insertar artículo
+            cur.execute("""
+                INSERT INTO leyesmx.articulos (ley, division_id, numero, tipo, orden)
+                VALUES (%s, %s, %s, %s, %s)
+                RETURNING id
+            """, (
+                codigo,
+                division_id,
+                numero,
+                art.get("tipo", tipo_contenido),
+                art["orden"]
+            ))
+            articulo_id = cur.fetchone()[0]
 
-                # Insertar artículo
+            # Insertar párrafos desde JSON
+            parrafos = art.get("parrafos", [])
+            for parr in parrafos:
                 cur.execute("""
-                    INSERT INTO leyesmx.articulos (ley, division_id, numero, tipo, orden)
-                    VALUES (%s, %s, %s, %s, %s)
-                    RETURNING id
+                    INSERT INTO leyesmx.parrafos (
+                        ley, articulo_id, numero, padre_numero,
+                        tipo, identificador, contenido
+                    ) VALUES (%s, %s, %s, %s, %s, %s, %s)
                 """, (
                     codigo,
-                    division_id,
-                    numero,
-                    art.get("tipo", tipo_contenido),
-                    art["orden"]
+                    articulo_id,
+                    parr["numero"],
+                    parr.get("padre_numero"),
+                    parr["tipo"],
+                    parr.get("identificador"),
+                    parr["contenido"]
                 ))
-                articulo_id = cur.fetchone()[0]
+                total_parrafos += 1
 
-                # Obtener párrafos: extraer con X o usar JSON
-                if usar_x:
-                    parrafos = extraer_parrafos_x(pdf_path, numero, pdf=pdf_obj)
-                    if parrafos:
-                        total_x_extraidos += 1
-                    else:
-                        # Fallback a JSON si la extracción X falla
-                        parrafos = art.get("parrafos", [])
-                        total_x_fallback += 1
-                else:
-                    parrafos = art.get("parrafos", [])
+            # Progreso cada 50 artículos
+            if (i + 1) % 50 == 0:
+                print(f"   ... {i + 1}/{len(articulos)} artículos procesados")
 
-                # Insertar párrafos
-                for parr in parrafos:
-                    cur.execute("""
-                        INSERT INTO leyesmx.parrafos (
-                            ley, articulo_id, numero, padre_numero,
-                            tipo, identificador, contenido
-                        ) VALUES (%s, %s, %s, %s, %s, %s, %s)
-                    """, (
-                        codigo,
-                        articulo_id,
-                        parr["numero"],
-                        parr.get("padre_numero"),
-                        parr["tipo"],
-                        parr.get("identificador"),
-                        parr["contenido"]
-                    ))
-                    total_parrafos += 1
-
-                # Progreso cada 50 artículos
-                if (i + 1) % 50 == 0:
-                    print(f"   ... {i + 1}/{len(articulos)} artículos procesados")
-
-            conn.commit()
-    finally:
-        if pdf_obj:
-            pdf_obj.close()
+        conn.commit()
 
     if errores:
         print(f"   ERRORES ({len(errores)}):")
@@ -450,8 +379,6 @@ def importar_contenido(conn, codigo: str, contenido_path: Path, mapa_path: Path,
             print(f"      ... y {len(errores) - 5} más")
 
     print(f"   {len(articulos) - len(errores)} artículos, {total_parrafos} párrafos importados")
-    if usar_x:
-        print(f"   Extracción X: {total_x_extraidos} exitosos, {total_x_fallback} fallback a JSON")
     return len(errores) == 0
 
 
@@ -497,14 +424,12 @@ def verificar_post_importacion(conn, codigo: str, mapa_path: Path) -> bool:
 
 def main():
     if len(sys.argv) < 2:
-        print("Uso: python backend/etl/importar.py <CODIGO> [--limpiar] [--sin-x]")
+        print("Uso: python backend/etl/importar.py <CODIGO> [--limpiar]")
         print("  --limpiar  Borra datos anteriores antes de importar")
-        print("  --sin-x    No usa extractor X (usa párrafos del JSON)")
         sys.exit(1)
 
     codigo = sys.argv[1].upper()
     limpiar = '--limpiar' in sys.argv
-    usar_extractor_x = '--sin-x' not in sys.argv
 
     print("=" * 60)
     print(f"IMPORTADOR LEYESMX: {codigo}")
@@ -539,17 +464,6 @@ def main():
         else:
             print(f"   ERROR: {path.name} no existe (REQUERIDO)")
             archivos_ok = False
-
-    # Verificar PDF si usamos extractor X
-    if usar_extractor_x:
-        if pdf_path.exists():
-            print(f"   {pdf_path.name} encontrado (para extracción X)")
-        else:
-            print(f"   AVISO: {pdf_path.name} no existe, se usarán párrafos del JSON")
-            pdf_path = None
-    else:
-        pdf_path = None
-        print("   Extractor X deshabilitado (--sin-x)")
 
     if not archivos_ok:
         print("\nABORTANDO: Archivos requeridos faltantes")
@@ -590,9 +504,7 @@ def main():
         # Importar contenido
         print("\n6. Importando contenido...")
         if not importar_contenido(conn, codigo, contenido_path, estructura_path,
-                                   division_lookup, config["tipo_contenido"],
-                                   pdf_path=str(pdf_path) if pdf_path else None,
-                                   usar_extractor_x=usar_extractor_x):
+                                   division_lookup, config["tipo_contenido"]):
             exito = False
 
         # FAIL FAST: Verificar después de importar

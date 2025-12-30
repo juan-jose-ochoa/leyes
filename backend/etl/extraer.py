@@ -2,7 +2,7 @@
 """
 Extractor de contenido de leyes para esquema leyesmx.
 
-Extrae artículos y párrafos de PDFs oficiales.
+Extrae artículos y párrafos de PDFs oficiales usando coordenadas X/Y.
 La estructura (títulos/capítulos) viene de estructura_esperada.json (ver extraer_mapa.py).
 
 Uso:
@@ -17,12 +17,19 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 try:
-    import fitz  # PyMuPDF
+    import pdfplumber
 except ImportError:
-    print("Error: PyMuPDF no instalado. Ejecuta: pip install pymupdf")
+    print("Error: pdfplumber no instalado. Ejecuta: pip install pdfplumber")
     sys.exit(1)
 
 from config import get_config, listar_leyes
+
+# Constantes para detección de jerarquía por coordenadas X
+X_FRACCION = 85
+X_INCISO = 114
+X_NUMERAL = 142
+X_TOLERANCE = 10
+Y_PARAGRAPH_GAP = 12
 
 BASE_DIR = Path(__file__).parent.parent.parent
 
@@ -85,228 +92,323 @@ class Division:
 
 
 class Extractor:
-    """Extractor genérico de leyes."""
+    """Extractor genérico de leyes usando coordenadas X/Y."""
 
     def __init__(self, codigo: str):
         self.codigo = codigo.upper()
         self.config = get_config(self.codigo)
         self.pdf_path = BASE_DIR / self.config["pdf_path"]
-        self.doc = None
-        self._texto = None
+        self.pdf = None
 
     def abrir_pdf(self):
         """Abre el PDF."""
         if not self.pdf_path.exists():
             raise FileNotFoundError(f"PDF no encontrado: {self.pdf_path}")
-        self.doc = fitz.open(str(self.pdf_path))
-        print(f"   PDF: {self.pdf_path.name} ({len(self.doc)} páginas)")
+        self.pdf = pdfplumber.open(str(self.pdf_path))
+        print(f"   PDF: {self.pdf_path.name} ({len(self.pdf.pages)} páginas)")
 
     def cerrar_pdf(self):
         """Cierra el PDF."""
-        if self.doc:
-            self.doc.close()
+        if self.pdf:
+            self.pdf.close()
 
-    def _get_texto(self) -> str:
-        """Extrae todo el texto del PDF con marcadores de página y limpieza global."""
-        if self._texto is not None:
-            return self._texto
+    def _extraer_lineas_pagina(self, page) -> list[dict]:
+        """Extrae líneas de una página con coordenadas X/Y."""
+        words = page.extract_words(keep_blank_chars=True, x_tolerance=3, y_tolerance=3)
 
-        partes = []
-        for i, page in enumerate(self.doc):
-            partes.append(f"\n[PAGE:{i+1}]\n")
-            partes.append(page.get_text())
+        # Agrupar por línea (mismo Y aproximado)
+        lines = {}
+        for w in words:
+            y_key = round(w['top'] / 5) * 5
+            if y_key not in lines:
+                lines[y_key] = []
+            lines[y_key].append(w)
 
-        texto = ''.join(partes)
+        result = []
+        for y_key in sorted(lines.keys()):
+            line_words = sorted(lines[y_key], key=lambda w: w['x0'])
+            x0 = round(line_words[0]['x0'])
+            text = ' '.join(w['text'] for w in line_words).strip()
 
-        # Aplicar limpieza de basura global (mantener marcadores de página)
-        for patron in self.config.get("basura", []):
-            texto = re.sub(patron, '', texto, flags=re.IGNORECASE | re.DOTALL)
+            if text and x0 >= 70:  # Ignorar headers/footers
+                result.append({'x': x0, 'y': y_key, 'text': text})
 
-        self._texto = texto
-        return self._texto
+        return result
 
-    def _limpiar_texto(self, texto: str) -> str:
-        """Limpia el contenido de un artículo (quita marcadores y normaliza)."""
-        # Quitar marcadores de página
-        texto = re.sub(r'\[PAGE:\d+\]', '', texto)
+    def _detectar_tipo_identificador(self, texto: str) -> tuple:
+        """Detecta tipo de elemento y extrae identificador."""
+        texto = texto.strip()
 
-        # Normalizar espacios
-        texto = re.sub(r'\n\s*\n+', '\n\n', texto)
+        # Fracción romana
+        match = re.match(r'^([IVXLC]+)\.\s*(.*)$', texto)
+        if match:
+            return ('fraccion', match.group(1), match.group(2))
 
-        return texto.strip()
+        # Inciso
+        match = re.match(r'^([a-z])\)\s*(.*)$', texto)
+        if match:
+            return ('inciso', match.group(1) + ')', match.group(2))
 
-    def extraer_estructura(self) -> list[Division]:
-        """Extrae la estructura jerárquica de divisiones."""
-        texto = self._get_texto()
-        lineas = texto.split('\n')
-        divisiones = []
-        orden = 0
+        # Numeral
+        match = re.match(r'^(\d+)\.\s*(.*)$', texto)
+        if match:
+            return ('numeral', match.group(1) + '.', match.group(2))
 
-        patrones = self.config["patrones"]
-        niveles = self.config["divisiones_permitidas"]
+        return ('texto', None, texto)
 
-        # Rastrear jerarquía
-        ultimo_por_nivel = {}
+    def _consolidar_lineas(self, lineas: list[dict]) -> list[dict]:
+        """Consolida líneas físicas en párrafos lógicos usando coordenadas X/Y."""
+        if not lineas:
+            return []
 
-        for i, linea in enumerate(lineas):
-            linea_limpia = linea.strip()
-            if not linea_limpia:
-                continue
+        def es_continuacion_wrap(texto: str) -> bool:
+            if not texto:
+                return False
+            primer_char = texto.strip()[0] if texto.strip() else ''
+            return primer_char.islower() or primer_char in ',:;.()' or \
+                   (primer_char.isdigit() and not re.match(r'^\d+\.', texto.strip()))
 
-            for nivel in niveles:
-                patron = patrones.get(nivel)
-                if not patron:
-                    continue
+        lineas_consolidadas = []
+        buffer_texto = ""
+        buffer_x = None
+        buffer_y = None
+        buffer_tiene_id = False
 
-                match = re.match(patron, linea_limpia, re.IGNORECASE)
-                if not match:
-                    continue
+        for linea in lineas:
+            x, y, text = linea['x'], linea['y'], linea['text']
+            _, identificador, _ = self._detectar_tipo_identificador(text)
 
-                numero = match.group(1).upper()
+            y_gap = (y - buffer_y) if buffer_y is not None else 0
 
-                # Extraer nombre de la siguiente línea
-                nombre = None
-                if i + 1 < len(lineas):
-                    siguiente = lineas[i + 1].strip()
-                    # Filtrar nombres basura
-                    if siguiente and len(siguiente) >= 5:
-                        if not any(x in siguiente for x in ['Artículo', 'DOF', '[PAGE:', 'CAPITULO', 'TITULO']):
-                            nombre = siguiente
+            if not buffer_texto:
+                buffer_texto = text
+                buffer_x = x
+                buffer_y = y
+                buffer_tiene_id = identificador is not None
+            elif identificador:
+                lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
+                buffer_texto = text
+                buffer_x = x
+                buffer_y = y
+                buffer_tiene_id = True
+            elif x > buffer_x + X_TOLERANCE:
+                buffer_texto += " " + text
+                buffer_y = y
+            elif y_gap >= Y_PARAGRAPH_GAP and not es_continuacion_wrap(text):
+                lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
+                buffer_texto = text
+                buffer_x = x
+                buffer_y = y
+                buffer_tiene_id = False
+            elif x < buffer_x - X_TOLERANCE:
+                if es_continuacion_wrap(text):
+                    buffer_texto += " " + text
+                    buffer_y = y
+                else:
+                    lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
+                    buffer_texto = text
+                    buffer_x = x
+                    buffer_y = y
+                    buffer_tiene_id = False
+            else:
+                if buffer_tiene_id:
+                    lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
+                    buffer_texto = text
+                    buffer_x = x
+                    buffer_y = y
+                    buffer_tiene_id = False
+                else:
+                    buffer_texto += " " + text
+                    buffer_y = y
 
-                orden += 1
+        if buffer_texto:
+            lineas_consolidadas.append({'x': buffer_x, 'text': buffer_texto})
 
-                # Determinar padre
-                padre_orden = None
-                nivel_idx = niveles.index(nivel)
-                if nivel_idx > 0:
-                    nivel_padre = niveles[nivel_idx - 1]
-                    padre_orden = ultimo_por_nivel.get(nivel_padre)
+        return lineas_consolidadas
 
-                division = Division(
-                    tipo=nivel,
-                    numero=numero,
-                    nombre=nombre,
-                    orden=orden,
-                    padre_orden=padre_orden
-                )
-                divisiones.append(division)
-                ultimo_por_nivel[nivel] = orden
-                break  # Solo un match por línea
-
-        return divisiones
-
-    def _parsear_parrafos(self, contenido: str) -> list[Parrafo]:
-        """Parsea el contenido de un artículo en párrafos."""
+    def _construir_parrafos(self, lineas_consolidadas: list[dict]) -> list[Parrafo]:
+        """Construye párrafos con jerarquía desde líneas consolidadas."""
         parrafos = []
-        patrones = self.config["patrones"]
-
-        # Dividir en bloques
-        bloques = contenido.split('\n\n')
         numero = 0
-        ultimo_fraccion_numero = None
+        ultimo_por_x = {}
 
-        for bloque in bloques:
-            bloque = bloque.strip()
-            if not bloque or len(bloque) < 3:
+        def encontrar_padre_por_x(x_actual: int) -> Optional[int]:
+            candidatos = [(x_key, num) for x_key, num in ultimo_por_x.items()
+                          if x_key < x_actual - X_TOLERANCE]
+            if not candidatos:
+                return None
+            candidatos.sort(key=lambda t: t[0], reverse=True)
+            return candidatos[0][1]
+
+        for linea in lineas_consolidadas:
+            x, text = linea['x'], linea['text']
+            if not text.strip():
                 continue
 
-            # Detectar tipo de párrafo
-            tipo = "texto"
-            identificador = None
-            padre_numero = None
-            texto = bloque
+            tipo, identificador, contenido = self._detectar_tipo_identificador(text)
 
-            # ¿Es fracción? (I. II. III.)
-            match = re.match(patrones.get("fraccion", r'^$'), bloque)
-            if match:
-                tipo = "fraccion"
-                identificador = match.group(1)
-                texto = bloque[match.end():].strip()
-                numero += 1
-                ultimo_fraccion_numero = numero
-                parrafos.append(Parrafo(numero, tipo, identificador, texto, None))
-                continue
+            # Normalizar espacios múltiples
+            contenido_limpio = ' '.join((contenido if identificador else text).split())
 
-            # ¿Es inciso? (a) b) c))
-            match = re.match(patrones.get("inciso", r'^$'), bloque)
-            if match:
-                tipo = "inciso"
-                identificador = match.group(1) + ")"
-                texto = bloque[match.end():].strip()
-                padre_numero = ultimo_fraccion_numero
-                numero += 1
-                parrafos.append(Parrafo(numero, tipo, identificador, texto, padre_numero))
-                continue
+            # Determinar padre
+            if tipo == 'fraccion':
+                padre = None
+            elif tipo in ('inciso', 'numeral'):
+                padre = encontrar_padre_por_x(x)
+            elif tipo == 'texto':
+                if x < X_FRACCION + X_TOLERANCE:
+                    padre = None
+                else:
+                    padre = encontrar_padre_por_x(x)
+            else:
+                padre = None
 
-            # ¿Es numeral? (1. 2. 3.)
-            match = re.match(patrones.get("numeral", r'^$'), bloque)
-            if match and int(match.group(1)) <= 20:
-                tipo = "numeral"
-                identificador = match.group(1) + "."
-                texto = bloque[match.end():].strip()
-                padre_numero = ultimo_fraccion_numero
-                numero += 1
-                parrafos.append(Parrafo(numero, tipo, identificador, texto, padre_numero))
-                continue
-
-            # Es texto normal
             numero += 1
-            parrafos.append(Parrafo(numero, "texto", None, ' '.join(bloque.split()), None))
+            parrafos.append(Parrafo(numero, tipo, identificador, contenido_limpio, padre))
+
+            # Actualizar tracking
+            x_key = round(x / 10) * 10
+            ultimo_por_x[x_key] = numero
+            ultimo_por_x = {k: v for k, v in ultimo_por_x.items() if k <= x_key}
 
         return parrafos
 
-    def extraer_contenido(self) -> list[Articulo]:
-        """Extrae artículos/reglas con sus párrafos."""
-        texto = self._get_texto()
-        articulos = []
+    def _extraer_parrafos_articulo(self, pag_inicio: int, pag_fin: int,
+                                    patron_art: re.Pattern, patron_siguiente: re.Pattern) -> list[Parrafo]:
+        """Extrae párrafos de un artículo usando coordenadas X/Y."""
+        todas_lineas = []
+        en_articulo = False
+        basura = self.config.get("basura_lineas", [
+            'CÓDIGO FISCAL', 'CÁMARA DE DIPUTADOS', 'Secretaría General',
+            'Servicios Parlamentarios', 'DOF', 'de 375', 'Última Reforma'
+        ])
 
-        patron_art = self.config["patrones"]["articulo"]
+        for pag_num in range(pag_inicio, pag_fin + 1):
+            lineas = self._extraer_lineas_pagina(self.pdf.pages[pag_num])
+
+            for linea in lineas:
+                text = linea['text']
+
+                # Filtrar basura
+                if any(skip in text for skip in basura):
+                    continue
+
+                # Detectar inicio
+                match_inicio = patron_art.search(text)
+                if match_inicio and not en_articulo:
+                    en_articulo = True
+                    text = text[match_inicio.end():].strip()
+                    # Limpiar "- " residual del formato "Artículo Xo.-"
+                    text = text.lstrip('- ').strip()
+                    if text:
+                        linea['text'] = text
+                        todas_lineas.append(linea)
+                    continue
+
+                # Detectar fin
+                if en_articulo:
+                    match = patron_siguiente.search(text)
+                    if match and not patron_art.search(text):
+                        antes = text[:match.start()].lower()
+                        if not any(p in antes for p in ['del ', 'al ', 'el ', 'este ', 'dicho ', 'presente ', 'referido ']):
+                            en_articulo = False
+                            break
+                    todas_lineas.append(linea)
+
+            if not en_articulo and pag_num > pag_inicio:
+                break
+
+        lineas_consolidadas = self._consolidar_lineas(todas_lineas)
+        return self._construir_parrafos(lineas_consolidadas)
+
+    def _encontrar_pagina_articulo(self, numero: str) -> tuple:
+        """Encuentra página inicial y final de un artículo."""
+        patron = re.compile(rf'Artículo\s+{re.escape(numero)}\.', re.IGNORECASE)
+        patron_sig = re.compile(r'Artículo\s+\d+[o]?(?:\.-[A-Z])?(?:-[A-Z])?(?:\s+[A-Z][a-z]+)?\.', re.IGNORECASE)
+
+        pag_inicio = None
+        for i, page in enumerate(self.pdf.pages):
+            text = page.extract_text() or ""
+            if patron.search(text):
+                pag_inicio = i
+                break
+
+        if pag_inicio is None:
+            return None, None
+
+        pag_fin = pag_inicio
+        for i in range(pag_inicio + 1, min(pag_inicio + 10, len(self.pdf.pages))):
+            text = self.pdf.pages[i].extract_text() or ""
+            text_sin_actual = patron.sub('', text)
+            if patron_sig.search(text_sin_actual):
+                pag_fin = i
+                break
+            pag_fin = i
+
+        return pag_inicio, pag_fin
+
+    def extraer_contenido(self) -> list[Articulo]:
+        """Extrae artículos/reglas con sus párrafos usando coordenadas X/Y."""
+        articulos = []
         tipo_contenido = self.config["tipo_contenido"]
 
-        matches = list(re.finditer(patron_art, texto, re.IGNORECASE | re.MULTILINE))
-        print(f"   Encontrados {len(matches)} {tipo_contenido}s")
+        # Primero, encontrar todos los artículos escaneando el PDF
+        patron_art = re.compile(self.config["patrones"]["articulo"], re.IGNORECASE | re.MULTILINE)
+        patron_siguiente = re.compile(r'Artículo\s+\d+[o]?(?:\.-[A-Z])?(?:-[A-Z])?(?:\s+[A-Z][a-z]+)?\.[\-\s]', re.IGNORECASE)
 
+        # Escanear todas las páginas para encontrar artículos
+        articulos_encontrados = []
+        for i, page in enumerate(self.pdf.pages):
+            text = page.extract_text() or ""
+            for match in patron_art.finditer(text):
+                grupos = match.groups()
+                numero_base = grupos[0]
+                ordinal = grupos[1] if len(grupos) > 1 else None
+                letra = grupos[2] if len(grupos) > 2 else None
+                sufijo = grupos[3] if len(grupos) > 3 else None
+
+                numero = numero_base
+                if ordinal:
+                    numero += ordinal.lower()
+                if letra:
+                    numero += f"-{letra.upper()}"
+                if sufijo:
+                    numero += f" {sufijo.upper()}"
+
+                articulos_encontrados.append((numero, i))
+
+        # Eliminar duplicados manteniendo primera aparición
         numeros_vistos = set()
-        for i, match in enumerate(matches):
-            # Construir número
-            grupos = match.groups()
-            numero_base = grupos[0]
-            ordinal = grupos[1] if len(grupos) > 1 else None
-            letra = grupos[2] if len(grupos) > 2 else None
-            sufijo = grupos[3] if len(grupos) > 3 else None
+        articulos_unicos = []
+        for numero, pagina in articulos_encontrados:
+            if numero not in numeros_vistos:
+                numeros_vistos.add(numero)
+                articulos_unicos.append((numero, pagina))
 
-            numero = numero_base
-            if ordinal:
-                numero += ordinal.lower()
-            if letra:
-                numero += f"-{letra.upper()}"
-            if sufijo:
-                numero += f" {sufijo.upper()}"
+        print(f"   Encontrados {len(articulos_unicos)} {tipo_contenido}s")
 
-            # Saltar duplicados (erratas del DOF)
-            if numero in numeros_vistos:
-                continue
-            numeros_vistos.add(numero)
+        # Extraer cada artículo
+        for idx, (numero, pag_inicio) in enumerate(articulos_unicos):
+            # Determinar página fin
+            if idx + 1 < len(articulos_unicos):
+                pag_fin = articulos_unicos[idx + 1][1]
+            else:
+                pag_fin = min(pag_inicio + 5, len(self.pdf.pages) - 1)
 
-            # Extraer contenido hasta siguiente artículo
-            pos_inicio = match.end()
-            pos_fin = matches[i + 1].start() if i + 1 < len(matches) else len(texto)
-            contenido_raw = texto[pos_inicio:pos_fin]
+            # Patrón específico para este artículo
+            # Convertir "4o-A" a patrón que coincida con "4o.-A.-" del PDF
+            numero_patron = re.escape(numero).replace(r'\-', r'\.?-')
+            patron_este = re.compile(rf'Artículo\s+{numero_patron}\.', re.IGNORECASE)
 
-            # Limpiar y parsear
-            contenido_limpio = self._limpiar_texto(contenido_raw)
-            parrafos = self._parsear_parrafos(contenido_limpio)
-
-            # Página
-            texto_antes = texto[:match.start()]
-            pagina = texto_antes.count('[PAGE:') + 1
+            # Extraer párrafos
+            parrafos = self._extraer_parrafos_articulo(pag_inicio, pag_fin, patron_este, patron_siguiente)
 
             articulo = Articulo(
                 numero=numero,
                 tipo=tipo_contenido,
                 parrafos=parrafos,
                 orden=len(articulos) + 1,
-                pagina=pagina
+                pagina=pag_inicio + 1
             )
             articulos.append(articulo)
 
