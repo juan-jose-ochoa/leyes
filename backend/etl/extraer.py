@@ -154,6 +154,7 @@ class Extractor:
                 # Obtener propiedades de fuente del primer char de la línea
                 line_chars = chars_por_y.get(y_key, [])
                 is_italic = False
+                is_bold = False
                 is_non_black = False
                 font_size = 12  # default
 
@@ -164,6 +165,12 @@ class Extractor:
                         first_char = relevant_chars[0]
                         fontname = first_char.get('fontname', '')
                         is_italic = 'Italic' in fontname or 'italic' in fontname
+                        # is_bold = True solo si TODOS los caracteres son bold
+                        non_space_chars = [c for c in relevant_chars if c['text'].strip()]
+                        is_bold = bool(non_space_chars) and all(
+                            'Bold' in c.get('fontname', '') or 'bold' in c.get('fontname', '')
+                            for c in non_space_chars
+                        )
                         font_size = first_char.get('size', 12)
                         color = first_char.get('non_stroking_color', ())
                         # Detectar si el color NO es negro puro
@@ -176,7 +183,7 @@ class Extractor:
 
                 result.append({
                     'x': x0, 'x_end': x1, 'y': y_key, 'text': text,
-                    'is_italic': is_italic, 'is_non_black': is_non_black, 'font_size': font_size
+                    'is_italic': is_italic, 'is_bold': is_bold, 'is_non_black': is_non_black, 'font_size': font_size
                 })
 
         return result
@@ -420,6 +427,15 @@ class Extractor:
 
                 # Filtrar ruido (después de detectar referencias)
                 if any(skip in text for skip in ruido):
+                    continue
+
+                # Filtrar encabezados de división (TITULO, CAPITULO, SECCION)
+                # Criterios: 1) bold completo, 2) centrado (2*x + ancho ≈ page_width)
+                # Plus: contiene Titulo/Capítulo/Sección
+                page_width = 612  # Letter size estándar
+                linea_ancho = linea['x_end'] - linea['x']
+                linea_centrada = abs(2 * linea['x'] + linea_ancho - page_width) < 50
+                if linea.get('is_bold') and linea_centrada:
                     continue
 
                 # Detectar inicio

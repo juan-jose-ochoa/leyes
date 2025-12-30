@@ -1838,15 +1838,6 @@
             "Párrafo adicionado DOF 31-12-1998. Reformado DOF 11-12-2013, 09-12-2019",
             "Artículo reformado DOF 31-12-1979, 30-12-1980, 26-12-1990"
           ]
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "CAPITULO II De la enajenación",
-          "padre_numero": 4,
-          "x_id": 273,
-          "x_texto": 273
         }
       ]
     },
@@ -2128,15 +2119,6 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1979. Derogado 30-12-1980. Adicionado 13-12-1996. Derogado DOF 31-12-1998"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "CAPITULO III De la prestación de servicios",
-          "padre_numero": 1,
-          "x_id": 272,
-          "x_texto": 272
         }
       ]
     },
@@ -2929,30 +2911,8 @@
           "referencias": [
             "Párrafo adicionado DOF 29-12-1997",
             "Reforma DOF 30-12-2002: Derogó del artículo el entonces párrafo quinto (antes reformado por DOF 29-12-1997)",
-            "Artículo adicionado DOF 15-12-1995"
-          ]
-        },
-        {
-          "numero": 13,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "CAPÍTULO III BIS De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México",
-          "padre_numero": 12,
-          "x_id": 261,
-          "x_texto": 261,
-          "referencias": [
-            "Capítulo adicionado DOF 09-12-2019"
-          ]
-        },
-        {
-          "numero": 14,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Sección I Disposiciones generales",
-          "padre_numero": 13,
-          "x_id": 282,
-          "x_texto": 282,
-          "referencias": [
+            "Artículo adicionado DOF 15-12-1995",
+            "Capítulo adicionado DOF 09-12-2019",
             "Sección adicionada DOF 09-12-2019"
           ]
         }
@@ -3503,18 +3463,7 @@
           "x_id": 85,
           "x_texto": 85,
           "referencias": [
-            "Artículo adicionado DOF 09-12-2019"
-          ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Sección II De los servicios digitales de intermediación entre terceros",
-          "padre_numero": 1,
-          "x_id": 280,
-          "x_texto": 280,
-          "referencias": [
+            "Artículo adicionado DOF 09-12-2019",
             "Sección adicionada DOF 09-12-2019"
           ]
         }
@@ -3874,15 +3823,6 @@
           "referencias": [
             "Artículo adicionado DOF 09-12-2019"
           ]
-        },
-        {
-          "numero": 11,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "CAPITULO IV Del uso o goce temporal de bienes",
-          "padre_numero": 10,
-          "x_id": 271,
-          "x_texto": 271
         }
       ]
     },
@@ -4052,15 +3992,6 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1979"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "CAPITULO V De la importación de bienes y servicios",
-          "padre_numero": 1,
-          "x_id": 273,
-          "x_texto": 273
         }
       ]
     },
@@ -4546,15 +4477,6 @@
           "referencias": [
             "Artículo adicionado DOF 28-12-1989. Derogado DOF 26-12-1990. Adicionado DOF 11-12-2013"
           ]
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "CAPITULO VI De la exportación de bienes o servicios",
-          "padre_numero": 5,
-          "x_id": 271,
-          "x_texto": 271
         }
       ]
     },
@@ -5037,15 +4959,6 @@
             "Artículo reformado DOF 31-12-1979. Derogado DOF 31-12-1981. Adicionado DOF 28-12-1989. Reformado DOF 26-12-1990, 15-12-1995,",
             "30-12-1996, Derogado DOF 31-12-1998. Adicionado DOF 08-12-2005"
           ]
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "CAPITULO VII De las obligaciones de los contribuyentes",
-          "padre_numero": 6,
-          "x_id": 270,
-          "x_texto": 270
         }
       ]
     },
@@ -5419,15 +5332,6 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1981, 28-12-1989. Derogado DOF 29-12-1997"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "CAPITULO VIII De las facultades de las autoridades",
-          "padre_numero": 1,
-          "x_id": 268,
-          "x_texto": 268
         }
       ]
     },
@@ -5488,15 +5392,6 @@
           "referencias": [
             "Artículo derogado DOF 31-12-1981"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "CAPITULO IX De las participaciones a las entidades federativas",
-          "padre_numero": 1,
-          "x_id": 271,
-          "x_texto": 271
         }
       ]
     },
@@ -5934,22 +5829,13 @@
           "numero": 17,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "TRANSITORIOS",
-          "padre_numero": 16,
-          "x_id": 265,
-          "x_texto": 265
-        },
-        {
-          "numero": 18,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Artículo Primero.- Esta Ley entrará en vigor en toda la República el día primero de enero de 1980.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 19,
+          "numero": 18,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Artículo Segundo.- Al entrar en vigor la presente Ley, quedarán abrogadas las leyes y decretos siguientes:",
@@ -5958,7 +5844,7 @@
           "x_texto": 85
         },
         {
-          "numero": 20,
+          "numero": 19,
           "tipo": "numeral",
           "identificador": "1.",
           "contenido": "- Ley Federal del Impuesto sobre Ingresos Mercantiles.",
@@ -5967,7 +5853,7 @@
           "x_texto": 107
         },
         {
-          "numero": 21,
+          "numero": 20,
           "tipo": "numeral",
           "identificador": "2.",
           "contenido": "- Ley del Impuesto sobre Reventa de Aceites y Grasas Lubricantes.",
@@ -5976,7 +5862,7 @@
           "x_texto": 107
         },
         {
-          "numero": 22,
+          "numero": 21,
           "tipo": "numeral",
           "identificador": "3.",
           "contenido": "- Ley del Impuesto sobre Compraventa de Primera Mano de Alfombras, Tapetes y Tapices.",
@@ -5985,7 +5871,7 @@
           "x_texto": 107
         },
         {
-          "numero": 23,
+          "numero": 22,
           "tipo": "numeral",
           "identificador": "4.",
           "contenido": "- Ley del Impuesto sobre Despepite de Algodón en Rama.",
@@ -5994,7 +5880,7 @@
           "x_texto": 107
         },
         {
-          "numero": 24,
+          "numero": 23,
           "tipo": "numeral",
           "identificador": "5.",
           "contenido": "- Ley del Impuesto sobre Automóviles y Camiones Ensamblados.",
@@ -6003,7 +5889,7 @@
           "x_texto": 107
         },
         {
-          "numero": 25,
+          "numero": 24,
           "tipo": "numeral",
           "identificador": "6.",
           "contenido": "- Decreto por el cual se fija el impuesto que causarán el Benzol, Toluol, Xilol y Naftas de Alquitrán de Hulla, destinados al consumo interior del país.",
@@ -6012,7 +5898,7 @@
           "x_texto": 107
         },
         {
-          "numero": 26,
+          "numero": 25,
           "tipo": "numeral",
           "identificador": "7.",
           "contenido": "- Ley del Impuesto a la Producción del Cemento.",
@@ -6021,7 +5907,7 @@
           "x_texto": 107
         },
         {
-          "numero": 27,
+          "numero": 26,
           "tipo": "numeral",
           "identificador": "8.",
           "contenido": "- Ley del Impuesto sobre Cerillos y Fósforos.",
@@ -6030,7 +5916,7 @@
           "x_texto": 107
         },
         {
-          "numero": 28,
+          "numero": 27,
           "tipo": "numeral",
           "identificador": "9.",
           "contenido": "- Ley del Impuesto sobre Compraventa de Primera Mano de Artículos Electrónicos, Discos, Cintas, Aspiradoras y Pulidoras.",
@@ -6039,7 +5925,7 @@
           "x_texto": 107
         },
         {
-          "numero": 29,
+          "numero": 28,
           "tipo": "texto",
           "identificador": null,
           "contenido": "l0.- Ley del Impuesto sobre Llantas y Cámaras de Hule.",
@@ -6048,7 +5934,7 @@
           "x_texto": 85
         },
         {
-          "numero": 30,
+          "numero": 29,
           "tipo": "texto",
           "identificador": null,
           "contenido": "ll.- Ley del Impuesto a las Empresas que explotan Estaciones de Radio o Televisión.",
@@ -6057,7 +5943,7 @@
           "x_texto": 85
         },
         {
-          "numero": 31,
+          "numero": 30,
           "tipo": "texto",
           "identificador": null,
           "contenido": "l2.- Ley del Impuesto sobre Vehículos Propulsados por Motores Tipo Diesel y por Motores Acondicionados para uso de Gas Licuado de Petróleo.",
@@ -6066,7 +5952,7 @@
           "x_texto": 85
         },
         {
-          "numero": 32,
+          "numero": 31,
           "tipo": "texto",
           "identificador": null,
           "contenido": "l3.- Ley de Compraventa de Primera Mano de Artículos de Vidrio o Cristal.",
@@ -6075,7 +5961,7 @@
           "x_texto": 85
         },
         {
-          "numero": 33,
+          "numero": 32,
           "tipo": "texto",
           "identificador": null,
           "contenido": "l4.- Ley Federal del Impuesto sobre Portes y Pasajes.",
@@ -6084,7 +5970,7 @@
           "x_texto": 85
         },
         {
-          "numero": 34,
+          "numero": 33,
           "tipo": "texto",
           "identificador": null,
           "contenido": "l5.- Decreto relativo al impuesto del l0% sobre las entradas brutas de los Ferrocarriles.",
@@ -6093,7 +5979,7 @@
           "x_texto": 85
         },
         {
-          "numero": 35,
+          "numero": 34,
           "tipo": "texto",
           "identificador": null,
           "contenido": "l6.- Decreto que establece un Impuesto sobre Uso de Aguas de Propiedad Nacional en la Producción de Fuerza Motriz l7.- Ley del Impuesto sobre la Explotación Forestal.",
@@ -6102,7 +5988,7 @@
           "x_texto": 85
         },
         {
-          "numero": 36,
+          "numero": 35,
           "tipo": "texto",
           "identificador": null,
           "contenido": "l8.- Ley de Impuesto y Derechos a la Explotación Pesquera.",
@@ -6111,7 +5997,7 @@
           "x_texto": 85
         },
         {
-          "numero": 37,
+          "numero": 36,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Artículo Tercero.- Los impuestos que se hubieren causado conforme a las leyes a que se refiere el artículo anterior, antes de la fecha en que entre en vigor la presente Ley, deberán ser pagados en el monto, forma y plazos establecidos en dichas disposiciones.",
@@ -6120,7 +6006,7 @@
           "x_texto": 85
         },
         {
-          "numero": 38,
+          "numero": 37,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Artículo Cuarto.- Los contribuyentes que al entrar en vigor la presente Ley queden comprendidos en el artículo 35, continuarán pagando durante el año de l980 la misma cuota que les hubieren fijado o les fijen las autoridades fiscales, la cual se considerará equivalente a la diferencia entre el monto del impuesto establecido en este Ordenamiento y las cantidades que de acuerdo con el mismo pudieren ser acreditadas. En el año de l98l, del impuesto que resulte de aplicar las tasas de esta Ley al monto de las contraprestaciones por las que se deba pagar impuesto al valor agregado, se acreditará un 3% del importe de las ventas, no sujeto a comprobación y, además, el monto trasladado a dichos contribuyentes en documentación que reúna lo requisitos fiscales. A partir de l982 dejará de acreditarse dicho 3% y únicamente se acreditará el monto del impuesto trasladado a los mencionados contribuyentes, que resulte de la documentación que reúna los requisitos fiscales establecidos en esta Ley.",
@@ -6129,7 +6015,7 @@
           "x_texto": 85
         },
         {
-          "numero": 39,
+          "numero": 38,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Artículo Quinto.- Los contribuyentes que a partir del lo. de enero de l979, adquieran bienes destinados a formar parte de su activo fijo, podrán acreditar el 50% del impuesto federal sobre ingresos mercantiles causado en el momento en que dichos bienes les fueren enajenados, contra el impuesto al valor agregado que deban pagar, de acuerdo con esta Ley.",
@@ -6138,7 +6024,7 @@
           "x_texto": 85
         },
         {
-          "numero": 40,
+          "numero": 39,
           "tipo": "texto",
           "identificador": null,
           "contenido": "México, D. F., a 22 de diciembre de l978.- Antonio Riva Palacio López, D.P.- Antonio Ocampo Ramírez, S.P.- Pedro Avila Hernández, D.S.- Joaquín E. Repetto Ocampo, S.S.-Rúbricas.",
@@ -6147,7 +6033,7 @@
           "x_texto": 85
         },
         {
-          "numero": 41,
+          "numero": 40,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En cumplimiento de lo dispuesto por la fracción I del artículo 89 de la Constitución Política de los Estados Unidos Mexicanos y para su debida publicación y observancia, expido el presente Decreto en la residencia del Poder Ejecutivo Federal, en la ciudad de México, Distrito Federal, a los veintidós días del mes de diciembre de mil novecientos setenta y ocho.- José López Portillo.- Rúbrica.-El Secretario de Hacienda y Crédito Público, David Ibarra Muñoz.- Rúbrica.-El Secretario de Gobernación, Jesús Reyes Heroles.- Rúbrica.",
@@ -6156,25 +6042,25 @@
           "x_texto": 85
         },
         {
+          "numero": 41,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "LEY que reforma, adiciona y deroga diversas disposiciones fiscales.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 71
+        },
+        {
           "numero": 42,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "ARTÍCULOS TRANSITORIOS DE DECRETOS DE REFORMA LEY que reforma, adiciona y deroga diversas disposiciones fiscales.",
-          "padre_numero": 41,
-          "x_id": 150,
-          "x_texto": 150
-        },
-        {
-          "numero": 43,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Publicada en el Diario Oficial de la Federación el 31 de diciembre de 1979",
-          "padre_numero": 42,
+          "padre_numero": 41,
           "x_id": 175,
           "x_texto": 175
         },
         {
-          "numero": 44,
+          "numero": 43,
           "tipo": "texto",
           "identificador": null,
           "contenido": "VALOR AGREGADO",
@@ -6183,7 +6069,7 @@
           "x_texto": 85
         },
         {
-          "numero": 45,
+          "numero": 44,
           "tipo": "texto",
           "identificador": null,
           "contenido": "ARTICULO DECIMO SEGUNDO.- Se REFORMAN los artículos 2o., 4o., primer párrafo, 29 fracción IV 30, segundo y tercer párrafo, 31, segundo párrafo, 32, fracción IV, primer párrafo y 41, fracciones I y II de la Ley del Impuesto al Valor Agregado y se ADICIONAN los artículos IV, con un párrafo final, 9o. con una fracción XVIII, 29, con las fracciones V y VI, 33, segundo párrafo, y 42, con los párrafos tercero y cuarto de la propia Ley, para quedar como sigue: ..........",
@@ -6192,16 +6078,7 @@
           "x_texto": 85
         },
         {
-          "numero": 46,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "TRANSITORIOS",
-          "padre_numero": 45,
-          "x_id": 272,
-          "x_texto": 272
-        },
-        {
-          "numero": 47,
+          "numero": 45,
           "tipo": "texto",
           "identificador": null,
           "contenido": "ARTICULO PRIMERO.- La presente Ley entrará en vigor en toda la República el día primero de enero de mil novecientos o ochenta.",
@@ -6210,7 +6087,7 @@
           "x_texto": 85
         },
         {
-          "numero": 48,
+          "numero": 46,
           "tipo": "texto",
           "identificador": null,
           "contenido": "ARTICULO SEGUNDO.- Al entrar en vigor la presente Ley, quedan abrogadas las leyes y decretos siguientes:",
@@ -6219,88 +6096,88 @@
           "x_texto": 85
         },
         {
-          "numero": 49,
+          "numero": 47,
           "tipo": "numeral",
           "identificador": "1.",
           "contenido": "- Ley de Impuesto sobre Aguamiel y productos de su Fermentación.",
-          "padre_numero": null,
+          "padre_numero": 41,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 48,
+          "tipo": "numeral",
+          "identificador": "2.",
+          "contenido": "- Ley del Impuesto sobre Producción e Introducción de Energía Eléctrica.",
+          "padre_numero": 41,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 49,
+          "tipo": "numeral",
+          "identificador": "3.",
+          "contenido": "- Ley de Impuesto sobre Consumo de Gasolina.",
+          "padre_numero": 41,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 50,
           "tipo": "numeral",
-          "identificador": "2.",
-          "contenido": "- Ley del Impuesto sobre Producción e Introducción de Energía Eléctrica.",
-          "padre_numero": null,
+          "identificador": "4.",
+          "contenido": "- Ley de Impuestos de Migración.",
+          "padre_numero": 41,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 51,
           "tipo": "numeral",
-          "identificador": "3.",
-          "contenido": "- Ley de Impuesto sobre Consumo de Gasolina.",
-          "padre_numero": null,
+          "identificador": "5.",
+          "contenido": "- Ley de Impuestos al Petróleo y sus Derivados.",
+          "padre_numero": 41,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 52,
           "tipo": "numeral",
-          "identificador": "4.",
-          "contenido": "- Ley de Impuestos de Migración.",
-          "padre_numero": null,
+          "identificador": "6.",
+          "contenido": "- Ley que Reforma la del impuesto sobre Productos del Petróleo y sus Derivados.",
+          "padre_numero": 41,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 53,
           "tipo": "numeral",
-          "identificador": "5.",
-          "contenido": "- Ley de Impuestos al Petróleo y sus Derivados.",
-          "padre_numero": null,
+          "identificador": "7.",
+          "contenido": "- Ley del Impuesto sobre Fundos Petroleros.",
+          "padre_numero": 41,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 54,
           "tipo": "numeral",
-          "identificador": "6.",
-          "contenido": "- Ley que Reforma la del impuesto sobre Productos del Petróleo y sus Derivados.",
-          "padre_numero": null,
+          "identificador": "8.",
+          "contenido": "- Decreto que grava con un 15% los productos obtenidos por la Refinación de Petróleo Extranjero.",
+          "padre_numero": 41,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 55,
           "tipo": "numeral",
-          "identificador": "7.",
-          "contenido": "- Ley del Impuesto sobre Fundos Petroleros.",
-          "padre_numero": null,
+          "identificador": "9.",
+          "contenido": "- \"Decreto que establece un impuesto especial sobre el Consumo de Algodón Despepitado, así como el que adquieran los industriales a partir del 1o. de septiembre del presente año\", de 20 de junio de",
+          "padre_numero": 41,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 56,
-          "tipo": "numeral",
-          "identificador": "8.",
-          "contenido": "- Decreto que grava con un 15% los productos obtenidos por la Refinación de Petróleo Extranjero.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 57,
-          "tipo": "numeral",
-          "identificador": "9.",
-          "contenido": "- \"Decreto que establece un impuesto especial sobre el Consumo de Algodón Despepitado, así como el que adquieran los industriales a partir del 1o. de septiembre del presente año\", de 20 de junio de",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 58,
           "tipo": "numeral",
           "identificador": "1944.",
           "contenido": "",
@@ -6309,16 +6186,16 @@
           "x_texto": 93
         },
         {
-          "numero": 59,
+          "numero": 57,
           "tipo": "numeral",
           "identificador": "10.",
           "contenido": "- Artículo 7o. de la Ley que Establece, Reforma y Adiciona las disposiciones relativas a diversos impuestos de 28 diciembre de 1967, que estableció un impuesto sobre Compraventa de Primera Mano de Artículos de Vidrio o Cristal.",
-          "padre_numero": 58,
+          "padre_numero": 56,
           "x_id": 85,
           "x_texto": 107
         },
         {
-          "numero": 60,
+          "numero": 58,
           "tipo": "texto",
           "identificador": null,
           "contenido": "ARTICULO TERCERO.- A partir del 1o. de marzo de 1980 se abroga la Ley del Impuesto sobre la Sal de 1o. de diciembre de 1928, y la Ley del Impuesto sobre la sal de 20 de febrero de 1946.",
@@ -6327,7 +6204,7 @@
           "x_texto": 85
         },
         {
-          "numero": 61,
+          "numero": 59,
           "tipo": "texto",
           "identificador": null,
           "contenido": "ARTICULO CUARTO.- A partir del 1o. de julio de 1980 se abroga la Ley del Impuesto sobre Consumo de Energía Eléctrica.",
@@ -6336,7 +6213,7 @@
           "x_texto": 85
         },
         {
-          "numero": 62,
+          "numero": 60,
           "tipo": "texto",
           "identificador": null,
           "contenido": "ARTICULOS QUINTO A TRIGESIMO TERCERO.- ..........",
@@ -6345,7 +6222,7 @@
           "x_texto": 85
         },
         {
-          "numero": 63,
+          "numero": 61,
           "tipo": "texto",
           "identificador": null,
           "contenido": "México, D. F., a 30 de diciembre de 1979.- Ignacio Vázquez Torres, D. P.- Humberto A. Lugo Gil, S. P.- Morabito Mora Palancarte, D. S.- Rafael A. Tristán López, S. A.- Rúbrica\".",
@@ -6354,7 +6231,7 @@
           "x_texto": 85
         },
         {
-          "numero": 64,
+          "numero": 62,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En cumplimiento de lo dispuesto por la fracción I del artículo 89 de la Constitución Política de los Estados Unidos Mexicanos y para su debida publicación y observancia, expido el presente Decreto en la residencia del Poder Ejecutivo Federal en la ciudad de México, Distrito Federal, a los treinta días del mes de diciembre de mil novecientos setenta y nueve.- José López Portillo.- Rúbrica.- El Secretario de Hacienda y Crédito público, David Ibarra Muñoz.- Rúbrica.- El Secretario de Gobernación, Enrique Olivares Santana.- Rúbrica.",
