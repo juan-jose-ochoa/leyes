@@ -399,14 +399,15 @@ def importar_contenido(conn, codigo: str, contenido_path: Path, mapa_path: Path,
 
             # Insertar artículo
             cur.execute("""
-                INSERT INTO leyesmx.articulos (ley, division_id, numero, tipo, orden)
-                VALUES (%s, %s, %s, %s, %s)
+                INSERT INTO leyesmx.articulos (ley, division_id, numero, tipo, referencias, orden)
+                VALUES (%s, %s, %s, %s, %s, %s)
                 RETURNING id
             """, (
                 codigo,
                 division_id,
                 numero,
                 art.get("tipo", tipo_contenido),
+                art.get("referencias"),
                 art["orden"]
             ))
             articulo_id = cur.fetchone()[0]

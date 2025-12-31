@@ -149,6 +149,34 @@ $$ LANGUAGE plpgsql STABLE;
 GRANT EXECUTE ON FUNCTION leyesmx.buscar TO web_anon;
 
 -- ============================================================
+-- Vista: v_articulos_completos
+-- Base común para funciones de artículos (DRY)
+-- ============================================================
+CREATE OR REPLACE VIEW leyesmx.v_articulos_completos AS
+SELECT
+    a.id,
+    a.ley,
+    l.nombre AS ley_nombre,
+    l.tipo AS ley_tipo,
+    a.numero AS numero_raw,
+    COALESCE((regexp_match(a.numero, '^(\d+)'))[1]::integer, 0) AS numero_base,
+    a.tipo,
+    a.titulo,
+    d.tipo || ' ' || d.numero AS ubicacion,
+    (SELECT string_agg(p.contenido, E'\n\n' ORDER BY p.numero)
+     FROM leyesmx.parrafos p WHERE p.ley = a.ley AND p.articulo_id = a.id) AS contenido,
+    a.tipo = 'transitorio' AS es_transitorio,
+    a.reformas,
+    a.referencias AS referencias_legales,
+    NULL::JSONB AS referencias_salientes,
+    NULL::JSONB AS referencias_entrantes
+FROM leyesmx.articulos a
+JOIN leyesmx.leyes l ON l.codigo = a.ley
+LEFT JOIN leyesmx.divisiones d ON d.id = a.division_id AND d.ley = a.ley;
+
+GRANT SELECT ON leyesmx.v_articulos_completos TO web_anon;
+
+-- ============================================================
 -- Función: articulo (por ID)
 -- ============================================================
 CREATE OR REPLACE FUNCTION leyesmx.articulo(art_id INTEGER)
@@ -165,31 +193,17 @@ RETURNS TABLE (
     contenido TEXT,
     es_transitorio BOOLEAN,
     reformas TEXT,
+    referencias_legales TEXT,
     referencias_salientes JSONB,
     referencias_entrantes JSONB
 ) AS $$
 BEGIN
     RETURN QUERY
-    SELECT
-        a.id,
-        a.ley,
-        l.nombre,
-        l.tipo,
-        a.numero,
-        COALESCE((regexp_match(a.numero, '^(\d+)'))[1]::integer, 0),
-        a.tipo,
-        a.titulo,
-        d.tipo || ' ' || d.numero,
-        (SELECT string_agg(p.contenido, E'\n\n' ORDER BY p.numero)
-         FROM leyesmx.parrafos p WHERE p.ley = a.ley AND p.articulo_id = a.id),
-        a.tipo = 'transitorio',
-        a.reformas,
-        NULL::JSONB,
-        NULL::JSONB
-    FROM leyesmx.articulos a
-    JOIN leyesmx.leyes l ON l.codigo = a.ley
-    LEFT JOIN leyesmx.divisiones d ON d.id = a.division_id AND d.ley = a.ley
-    WHERE a.id = art_id;
+    SELECT v.id, v.ley, v.ley_nombre, v.ley_tipo, v.numero_raw, v.numero_base,
+           v.tipo, v.titulo, v.ubicacion, v.contenido, v.es_transitorio,
+           v.reformas, v.referencias_legales, v.referencias_salientes, v.referencias_entrantes
+    FROM leyesmx.v_articulos_completos v
+    WHERE v.id = art_id;
 END;
 $$ LANGUAGE plpgsql STABLE;
 
@@ -212,31 +226,17 @@ RETURNS TABLE (
     contenido TEXT,
     es_transitorio BOOLEAN,
     reformas TEXT,
+    referencias_legales TEXT,
     referencias_salientes JSONB,
     referencias_entrantes JSONB
 ) AS $$
 BEGIN
     RETURN QUERY
-    SELECT
-        a.id,
-        a.ley,
-        l.nombre,
-        l.tipo,
-        a.numero,
-        COALESCE((regexp_match(a.numero, '^(\d+)'))[1]::integer, 0),
-        a.tipo,
-        a.titulo,
-        d.tipo || ' ' || d.numero,
-        (SELECT string_agg(p.contenido, E'\n\n' ORDER BY p.numero)
-         FROM leyesmx.parrafos p WHERE p.ley = a.ley AND p.articulo_id = a.id),
-        a.tipo = 'transitorio',
-        a.reformas,
-        NULL::JSONB,
-        NULL::JSONB
-    FROM leyesmx.articulos a
-    JOIN leyesmx.leyes l ON l.codigo = a.ley
-    LEFT JOIN leyesmx.divisiones d ON d.id = a.division_id AND d.ley = a.ley
-    WHERE a.ley = p_ley AND a.numero = p_numero;
+    SELECT v.id, v.ley, v.ley_nombre, v.ley_tipo, v.numero_raw, v.numero_base,
+           v.tipo, v.titulo, v.ubicacion, v.contenido, v.es_transitorio,
+           v.reformas, v.referencias_legales, v.referencias_salientes, v.referencias_entrantes
+    FROM leyesmx.v_articulos_completos v
+    WHERE v.ley = p_ley AND v.numero_raw = p_numero;
 END;
 $$ LANGUAGE plpgsql STABLE;
 
@@ -487,7 +487,7 @@ BEGIN
         a.tipo = 'transitorio',
         a.reformas,
         a.tipo,
-        NULL::TEXT,
+        a.referencias,
         NULL::JSONB
     FROM leyesmx.articulos a
     WHERE a.division_id = div_id

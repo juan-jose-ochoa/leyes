@@ -82,6 +82,7 @@ CREATE TABLE leyesmx.articulos (
     tipo VARCHAR(20) NOT NULL DEFAULT 'articulo'
         CHECK (tipo IN ('articulo', 'regla', 'transitorio', 'ficha', 'criterio')),
     reformas TEXT,
+    referencias TEXT,                             -- Referencias legales (RMF: "CFF 29, LISR 1o.")
     orden SMALLINT NOT NULL,
 
     UNIQUE (ley, numero),
