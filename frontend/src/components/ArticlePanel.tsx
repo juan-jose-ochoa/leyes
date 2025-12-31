@@ -101,7 +101,7 @@ export default function ArticlePanel({ ley, numero, onClose, onNavigate }: Artic
             )}
             {divisiones && divisiones.length > 0 && (
               <Link
-                to={`/${ley}/division/${divisiones[divisiones.length - 1].id}`}
+                to={`/${ley}/${divisiones.map(d => `${d.tipo}/${d.numero}`).join('/')}`}
                 className="text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 mt-1 truncate block"
               >
                 {divisiones.map(d => `${d.tipo.toUpperCase()} ${d.numero}`).join(' > ')}

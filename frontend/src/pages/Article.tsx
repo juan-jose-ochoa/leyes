@@ -109,17 +109,22 @@ export default function Article() {
           </li>
 
           {/* Divisiones (Título, Capítulo, etc.) */}
-          {divisiones?.map((div) => (
-            <li key={div.id} className="flex items-center gap-1 shrink-0">
-              <ChevronRight className="h-4 w-4 text-gray-400" />
-              <Link
-                to={`/${ley || articulo.ley}/division/${div.id}`}
-                className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 whitespace-nowrap transition-colors"
-              >
-                {div.tipo.charAt(0).toUpperCase() + div.tipo.slice(1)} {div.numero}
-              </Link>
-            </li>
-          ))}
+          {divisiones?.map((div, idx) => {
+            // Construir path jerárquico acumulativo: titulo/PRIMERO/capitulo/I
+            const pathParts = divisiones.slice(0, idx + 1).map(d => `${d.tipo}/${d.numero}`)
+            const divPath = `/${ley || articulo.ley}/${pathParts.join('/')}`
+            return (
+              <li key={div.id} className="flex items-center gap-1 shrink-0">
+                <ChevronRight className="h-4 w-4 text-gray-400" />
+                <Link
+                  to={divPath}
+                  className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 whitespace-nowrap transition-colors"
+                >
+                  {div.tipo.charAt(0).toUpperCase() + div.tipo.slice(1)} {div.numero}
+                </Link>
+              </li>
+            )
+          })}
 
           {/* Artículo actual */}
           <li className="flex items-center gap-1 shrink-0">
@@ -136,7 +141,7 @@ export default function Article() {
         {/* División padre (Capítulo, Sección, etc.) */}
         {divisiones && divisiones.length > 0 && (
           <Link
-            to={`/${ley || articulo.ley}/division/${divisiones[divisiones.length - 1].id}`}
+            to={`/${ley || articulo.ley}/${divisiones.map(d => `${d.tipo}/${d.numero}`).join('/')}`}
             className="inline-flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 mb-2"
           >
             <span className="uppercase font-medium">
