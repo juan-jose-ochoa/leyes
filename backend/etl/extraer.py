@@ -38,9 +38,18 @@ BASE_DIR = Path(__file__).parent.parent.parent
 _PATRON_TRANSITORIOS = re.compile(r'TRANSITORI[OA]S?', re.IGNORECASE)
 
 
-def es_seccion_transitorios(texto: str) -> bool:
-    """Detecta si el texto indica inicio de sección TRANSITORIOS/TRANSITORIAS."""
-    return bool(_PATRON_TRANSITORIOS.search(texto))
+def es_fin_articulos(texto: str, patrones_extra: list[re.Pattern] = None) -> bool:
+    """Detecta si el texto indica fin de artículos permanentes.
+
+    Detecta TRANSITORIOS por defecto, más patrones adicionales de config.
+    """
+    if _PATRON_TRANSITORIOS.search(texto):
+        return True
+    if patrones_extra:
+        for patron in patrones_extra:
+            if patron.search(texto):
+                return True
+    return False
 
 
 @dataclass
@@ -118,6 +127,12 @@ class Extractor:
         self.config = get_config(self.codigo)
         self.pdf_path = BASE_DIR / self.config["pdf_path"]
         self.pdf = None
+
+        # Compilar patrones extra para detectar fin de artículos
+        self._fin_articulos_extra = [
+            re.compile(p, re.IGNORECASE)
+            for p in self.config.get("fin_articulos_extra", [])
+        ]
 
     def abrir_pdf(self):
         """Abre el PDF."""
@@ -438,8 +453,8 @@ class Extractor:
                 if any(skip in text for skip in ruido):
                     continue
 
-                # Detectar sección TRANSITORIOS (termina extracción de artículos)
-                if es_seccion_transitorios(text) and linea.get('is_bold') and en_articulo:
+                # Detectar sección TRANSITORIOS o fin de artículos (termina extracción)
+                if es_fin_articulos(text, self._fin_articulos_extra) and linea.get('is_bold') and en_articulo:
                     en_articulo = False
                     break
 
@@ -586,25 +601,34 @@ class Extractor:
 
             return articulos_bold
 
-        # Función para detectar si una página contiene "TRANSITORIO(S)" centrado (fin de artículos)
-        def pagina_tiene_transitorios(page) -> bool:
-            """Detecta si la página tiene 'TRANSITORIO' centrado en bold, indicando fin de artículos."""
+        # Función para detectar si una página contiene fin de artículos (TRANSITORIO u otro patrón)
+        def pagina_tiene_fin_articulos(page) -> bool:
+            """Detecta si la página tiene indicador de fin de artículos (bold, centrado)."""
             chars = page.chars
             if not chars:
                 return False
 
+            # Buscar TRANSITORIOS por caracteres (para detectar centrado)
             for j, c in enumerate(chars):
                 if c['text'].upper() == 'T':
                     texto = ''.join(cc['text'] for cc in chars[j:min(j+20, len(chars))])
-                    # Buscar TRANSITORIO/TRANSITORIOS/TRANSITORIAS
-                    if es_seccion_transitorios(texto):
+                    if _PATRON_TRANSITORIOS.search(texto):
                         x = c.get('x0', 0)
                         fontname = c.get('fontname', '')
                         is_bold = 'Bold' in fontname or 'bold' in fontname
-                        # Centrado: X > 150 (no en margen izquierdo ~85)
                         is_centrado = x > 150
                         if is_bold and is_centrado:
                             return True
+
+            # Buscar patrones extra en líneas bold
+            if self._fin_articulos_extra:
+                lineas = self._extraer_lineas_pagina(page)
+                for linea in lineas:
+                    if linea.get('is_bold'):
+                        for patron in self._fin_articulos_extra:
+                            if patron.search(linea['text']):
+                                return True
+
             return False
 
         # Escanear todas las páginas para encontrar artículos
@@ -644,7 +668,7 @@ class Extractor:
             # Si no hay bold y el PDF tiene chars, no agregar nada (página sin artículos nuevos)
 
             # Detectar fin de artículos (sección TRANSITORIOS) - DESPUÉS de procesar la página
-            if pagina_tiene_transitorios(page):
+            if pagina_tiene_fin_articulos(page):
                 pagina_transitorios = i  # Guardar página donde inician TRANSITORIOS
                 break  # Dejar de buscar más artículos en páginas siguientes
         else:

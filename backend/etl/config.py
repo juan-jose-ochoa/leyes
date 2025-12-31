@@ -253,6 +253,12 @@ LEYES = {
                 r"adicionad[oa].*DOF",
             ],
         },
+
+        # Patrones adicionales que indican fin de artículos permanentes
+        # (además de TRANSITORIOS que se detecta automáticamente)
+        "fin_articulos_extra": [
+            r"DISPOSICIONES\s+DE\s+VIGENCIA\s+TEMPORAL",
+        ],
     },
 
     "LIVA": {
@@ -393,6 +399,12 @@ LEYES = {
                 r"adicionad[oa].*DOF",
             ],
         },
+
+        # Patrones adicionales para fin de artículos
+        # LA usa "T r a n s i t o r i o s" con espacios entre letras
+        "fin_articulos_extra": [
+            r"T\s*r\s*a\s*n\s*s\s*i\s*t\s*o\s*r\s*i\s*o\s*s?",
+        ],
     },
 
     "LIEPS": {
@@ -429,6 +441,7 @@ LEYES = {
             'Servicios Parlamentarios',
             'Última Reforma',
             'Última reforma',
+            ' de 163',  # Paginación "X de 163"
         ],
 
         # Detección de referencias
