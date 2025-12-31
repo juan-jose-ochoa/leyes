@@ -240,7 +240,8 @@ export default function DivisionView() {
     // parts = ['', 'CFF', 'titulo', 'PRIMERO', 'capitulo', 'I']
     // Tomar desde el índice 2 hasta el final
     if (parts.length < 4) return null
-    return parts.slice(2).join('/')
+    // Decodificar caracteres URL (e.g., %C3%9ANICO → ÚNICO)
+    return parts.slice(2).map(p => decodeURIComponent(p)).join('/')
   }, [location.pathname])
 
   // Buscar división por path jerárquico completo
