@@ -177,10 +177,10 @@ export default function LeyIndex() {
   const [showVerificacion, setShowVerificacion] = useState(false)
   const { data: verificacion } = useVerificacionLey(showVerificacion ? ley ?? null : null)
   const { data: verificacionIndice } = useVerificacionIndice(showVerificacion ? ley ?? null : null)
-  // Siempre cargar reglas faltantes para placeholders de Título 1
-  const { data: reglasFaltantes } = useComparacionReglasIndice(ley ?? null)
-  // Siempre cargar divisiones faltantes para mostrar placeholders
-  const { data: divisionesFaltantes } = useComparacionDivisionesIndice(ley ?? null)
+  // Solo para RMF: cargar comparación contra índice oficial del PDF
+  const esRMF = ley?.startsWith('RMF') ?? false
+  const { data: reglasFaltantes } = useComparacionReglasIndice(ley ?? null, esRMF)
+  const { data: divisionesFaltantes } = useComparacionDivisionesIndice(ley ?? null, esRMF)
 
   // Estado para controlar expansión de títulos
   const [expandedTitles, setExpandedTitles] = useState<Set<number>>(new Set())

@@ -249,10 +249,11 @@ export default function DivisionView() {
   const divId = info?.id || null
   const { data: articulos, isLoading: loadingArticulos } = useArticulosDivision(divId, ley || undefined)
   const { data: divisionesHijas } = useDivisionesHijas(divId)
-  const { data: verificacion } = useVerificacionDivision(divId)
+  const esRegla = info?.ley_tipo === 'resolucion'
+  // Solo para RMF: verificación de integridad de reglas
+  const { data: verificacion } = useVerificacionDivision(divId, esRegla)
 
   const isLoading = loadingInfo || loadingArticulos
-  const esRegla = info?.ley_tipo === 'resolucion'
   const tipoContenido = esRegla ? 'regla' : 'articulo'
 
   // Filtrar artículos según el toggle

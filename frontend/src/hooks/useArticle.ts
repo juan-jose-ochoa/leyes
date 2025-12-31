@@ -143,14 +143,15 @@ export function useVerificacionLey(ley: string | null) {
   })
 }
 
-export function useVerificacionDivision(divId: number | null) {
+// Solo para RMF - verifica integridad de reglas en una división
+export function useVerificacionDivision(divId: number | null, esRMF: boolean = false) {
   return useQuery<VerificacionDivisionSimple | null>({
     queryKey: ['verificacion-division', divId],
     queryFn: async () => {
       if (!divId) return null
       return getVerificacionDivision(divId)
     },
-    enabled: divId !== null,
+    enabled: divId !== null && esRMF,
     staleTime: 1000 * 60 * 60,
   })
 }
@@ -168,26 +169,28 @@ export function useVerificacionIndice(ley: string | null) {
   })
 }
 
-export function useComparacionReglasIndice(ley: string | null) {
+// Solo para RMF - comparación contra índice oficial del PDF
+export function useComparacionReglasIndice(ley: string | null, esRMF: boolean = false) {
   return useQuery<ComparacionRegla[]>({
     queryKey: ['comparacion-reglas-indice', ley],
     queryFn: async () => {
       if (!ley) return []
       return getComparacionReglasIndice(ley)
     },
-    enabled: ley !== null,
+    enabled: ley !== null && esRMF,
     staleTime: 1000 * 60 * 60,
   })
 }
 
-export function useComparacionDivisionesIndice(ley: string | null) {
+// Solo para RMF - comparación contra índice oficial del PDF
+export function useComparacionDivisionesIndice(ley: string | null, esRMF: boolean = false) {
   return useQuery<ComparacionDivision[]>({
     queryKey: ['comparacion-divisiones-indice', ley],
     queryFn: async () => {
       if (!ley) return []
       return getComparacionDivisionesIndice(ley)
     },
-    enabled: ley !== null,
+    enabled: ley !== null && esRMF,
     staleTime: 1000 * 60 * 60,
   })
 }

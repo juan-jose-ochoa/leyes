@@ -589,8 +589,8 @@ DECLARE
     v_division_id INTEGER;
     v_ley VARCHAR;
 BEGIN
-    SELECT division_id, ley INTO v_division_id, v_ley
-    FROM leyesmx.articulos WHERE id = art_id;
+    SELECT a.division_id, a.ley INTO v_division_id, v_ley
+    FROM leyesmx.articulos a WHERE a.id = art_id;
 
     RETURN QUERY
     WITH RECURSIVE ancestros AS (
