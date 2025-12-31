@@ -289,6 +289,17 @@ def importar_estructura_desde_lista(conn, codigo: str, divisiones: list) -> dict
         print("   No hay divisiones para importar")
         return {}
 
+    # Verificar si ya existen datos y limpiar
+    with conn.cursor() as cur:
+        cur.execute("SELECT COUNT(*) FROM leyesmx.divisiones WHERE ley = %s", (codigo,))
+        count = cur.fetchone()[0]
+        if count > 0:
+            print(f"   Limpiando datos existentes ({count} divisiones)...")
+            cur.execute("DELETE FROM leyesmx.parrafos WHERE ley = %s", (codigo,))
+            cur.execute("DELETE FROM leyesmx.articulos WHERE ley = %s", (codigo,))
+            cur.execute("DELETE FROM leyesmx.divisiones WHERE ley = %s", (codigo,))
+            conn.commit()
+
     orden_to_id = {}
     orden_to_numero = {}  # orden -> (tipo, numero)
     division_lookup = {}  # (titulo_num, cap_num, sec_num_or_None) -> id
