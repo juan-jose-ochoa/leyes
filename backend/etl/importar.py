@@ -411,7 +411,7 @@ def importar_contenido(conn, codigo: str, contenido_path: Path, mapa_path: Path,
                 """, (
                     codigo,
                     articulo_id,
-                    parr["numero"],
+                    parr.get("numero"),
                     parr.get("padre_numero"),
                     parr["tipo"],
                     parr.get("identificador"),

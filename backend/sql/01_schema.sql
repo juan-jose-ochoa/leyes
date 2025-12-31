@@ -11,14 +11,14 @@ CREATE SCHEMA IF NOT EXISTS leyesmx;
 -- Catálogo de leyes con metadata de validación
 -- ============================================================
 CREATE TABLE leyesmx.leyes (
-    codigo VARCHAR(20) PRIMARY KEY,           -- 'CFF', 'RMF2025', 'LISR'
+    codigo VARCHAR(20) PRIMARY KEY,           -- 'CFF', 'RMF', 'LISR'
     nombre TEXT NOT NULL,
     nombre_corto VARCHAR(50),
     tipo VARCHAR(20) NOT NULL
         CHECK (tipo IN ('codigo', 'ley', 'reglamento', 'resolucion')),
 
     -- Versionamiento (para leyes anuales como RMF)
-    ley_base VARCHAR(20),                     -- NULL para leyes base, 'RMF' para RMF2025/RMF2026
+    ley_base VARCHAR(20),                     -- NULL para leyes base, para anexos
     anio SMALLINT,                            -- NULL para leyes permanentes, 2025/2026 para RMF
 
     fecha_publicacion DATE,

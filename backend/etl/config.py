@@ -73,14 +73,12 @@ LEYES = {
         },
     },
 
-    "RMF2025": {
-        "nombre": "Resolución Miscelánea Fiscal para 2025",
-        "nombre_corto": "Miscelánea 2025",
+    "RMF": {
+        "nombre": "Resolución Miscelánea Fiscal",
+        "nombre_corto": "Miscelánea Fiscal",
         "tipo": "resolucion",
-        "ley_base": "RMF",
-        "anio": 2025,
-        "url_fuente": None,  # TODO: agregar URL del DOF
-        "pdf_path": None,  # TODO: agregar path
+        "url_fuente": "https://www.sat.gob.mx/normatividad/tax-resolution",
+        "pdf_path": "backend/etl/data/rmf/rmf_2026_original.pdf",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["libro", "titulo", "capitulo", "seccion"],

@@ -9,9 +9,9 @@ A diferencia de las leyes, RMF:
 - Las referencias legales van al final de cada regla
 
 Uso:
-    python backend/etl/extraer_rmf.py RMF2026
-    python backend/etl/extraer_rmf.py RMF2026 --solo-estructura
-    python backend/etl/extraer_rmf.py RMF2026 --solo-contenido
+    python backend/etl/extraer_rmf.py RMF
+    python backend/etl/extraer_rmf.py RMF --solo-estructura
+    python backend/etl/extraer_rmf.py RMF --solo-contenido
 """
 
 import re
@@ -31,19 +31,12 @@ BASE_DIR = Path(__file__).parent.parent.parent
 
 # Configuración de RMF
 RMF_CONFIG = {
-    "RMF2026": {
-        "nombre": "Resolución Miscelánea Fiscal para 2026",
-        "nombre_corto": "RMF 2026",
+    "RMF": {
+        "nombre": "Resolución Miscelánea Fiscal",
+        "nombre_corto": "Miscelánea Fiscal",
         "tipo": "resolucion",
-        "url_fuente": "https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/normatividad_rmf_rgce2026.html",
-        "pdf_path": "backend/etl/data/rmf2026/rmf_2026_original.pdf",
-    },
-    "RMF2025": {
-        "nombre": "Resolución Miscelánea Fiscal para 2025",
-        "nombre_corto": "RMF 2025",
-        "tipo": "resolucion",
-        "url_fuente": "https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/normatividad_rmf_rgce2025.html",
-        "pdf_path": "backend/etl/data/rmf2025/rmf_2025_compilada.pdf",
+        "url_fuente": "https://www.sat.gob.mx/normatividad/tax-resolution",
+        "pdf_path": "backend/etl/data/rmf/rmf_2026_original.pdf",
     },
 }
 
@@ -569,13 +562,13 @@ def generar_json_contenido(titulos: list[TituloRef], contenido: dict[str, ReglaC
                         "referencias": regla.referencias
                     }
 
-                    for p in regla.parrafos:
+                    for idx, p in enumerate(regla.parrafos, start=1):
                         parrafo = {
                             "tipo": p.tipo,
-                            "contenido": p.contenido
+                            "contenido": p.contenido,
+                            "numero": idx,  # Orden secuencial (SMALLINT)
+                            "identificador": p.numero  # Identificador original ('I', 'a)', etc.)
                         }
-                        if p.numero:
-                            parrafo["numero"] = p.numero
                         articulo["parrafos"].append(parrafo)
 
                     resultado["articulos"].append(articulo)
@@ -664,7 +657,7 @@ def imprimir_estructura(titulos: list[TituloRef]):
 def main():
     if len(sys.argv) < 2:
         print("Uso: python backend/etl/extraer_rmf.py <CODIGO>")
-        print("     python backend/etl/extraer_rmf.py RMF2026 --solo-estructura")
+        print("     python backend/etl/extraer_rmf.py RMF --solo-estructura")
         sys.exit(1)
 
     codigo = sys.argv[1].upper()

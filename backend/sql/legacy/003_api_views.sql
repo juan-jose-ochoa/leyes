@@ -565,7 +565,7 @@ FUNCIONES RPC (POST):
     Body: {"ley_codigo": "CFF"}
 
   POST /rpc/estructura_ley             - Estructura con articulos heredados
-    Body: {"ley_codigo": "RMF2025"}
+    Body: {"ley_codigo": "RMF"}
 
   POST /rpc/articulos_division         - Articulos de una division
     Body: {"div_id": 5}

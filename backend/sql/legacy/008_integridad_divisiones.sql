@@ -293,9 +293,9 @@ BEGIN
         
         IF current_ley IS NULL THEN CONTINUE; END IF;
         
-        -- Mapear código a código real en BD (RMF -> RMF2025, etc.)
+        -- Mapear código a código real en BD
         ley_real := CASE current_ley
-            WHEN 'RMF' THEN 'RMF2025'
+            WHEN 'RMF' THEN 'RMF'
             WHEN 'RLISR' THEN 'RISR'
             WHEN 'RLIVA' THEN 'RIVA'
             ELSE current_ley

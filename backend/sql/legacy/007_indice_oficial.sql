@@ -1,13 +1,13 @@
 -- ============================================================
 -- LeyesMX - Índice oficial de RMF (checksum)
 -- Permite comparar datos importados vs estructura oficial del PDF
--- Versionado por año para soportar RMF2025, RMF2026, etc.
+-- Versionado por año para soportar múltiples versiones de RMF
 -- ============================================================
 
 -- Tabla para almacenar el índice oficial extraído del PDF
 CREATE TABLE IF NOT EXISTS indice_oficial (
     id SERIAL PRIMARY KEY,
-    ley_codigo VARCHAR(20) NOT NULL,  -- RMF2025, RMF2026, etc.
+    ley_codigo VARCHAR(20) NOT NULL,  -- RMF, CFF, LISR, etc.
     tipo VARCHAR(20) NOT NULL,         -- titulo, capitulo, seccion, subseccion, regla
     numero VARCHAR(20) NOT NULL,       -- 1, 2.1, 2.1.1, etc.
     nombre TEXT,                       -- Nombre/título del elemento
