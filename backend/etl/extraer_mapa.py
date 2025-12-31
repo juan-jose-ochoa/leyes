@@ -393,6 +393,25 @@ def extraer_mapa(codigo: str) -> tuple[list[TituloRef], list[ArticuloRef]]:
     articulos, transitorios = extraer_articulos_outline(doc)
     print(f"   Encontrados: {len(articulos)} artículos, {len(transitorios)} transitorios")
 
+    # 1b. Fallback: si outline vacío, usar contenido.json (generado por extraer.py)
+    if not articulos:
+        contenido_path = pdf_path.parent / "contenido.json"
+        if contenido_path.exists():
+            print("   Fallback: cargando artículos desde contenido.json...")
+            with open(contenido_path) as f:
+                contenido = json.load(f)
+            for art in contenido.get("articulos", []):
+                articulos.append(ArticuloRef(
+                    numero=art["numero"],
+                    pagina=art.get("pagina", 1),
+                    derogado=False,
+                    transitorio=art.get("tipo") == "transitorio"
+                ))
+            # Separar transitorios
+            transitorios = [a for a in articulos if a.transitorio]
+            articulos = [a for a in articulos if not a.transitorio]
+            print(f"   Cargados: {len(articulos)} artículos, {len(transitorios)} transitorios")
+
     # 2. Marcar derogados (in-place)
     print("   Detectando artículos derogados...")
     marcar_derogados(doc, articulos)

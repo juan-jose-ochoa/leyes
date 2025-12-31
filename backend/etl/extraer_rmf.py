@@ -66,13 +66,16 @@ def linea_es_italica(spans: list) -> bool:
 
 # Patrón para detectar si texto es referencia legal (empieza con abreviatura de ley/reglamento)
 PATRON_REFERENCIAS = re.compile(r'^(CFF|LISR|LIVA|LIEPS|LIF|RCFF|RMF|RISR|RLISR|Ley|CPEUM|LCF|LSS|Convención)\s')
-PATRON_FRACCION = re.compile(r'^([IVX]+)\.\s*$')
-PATRON_INCISO = re.compile(r'^([a-z])\)\s*$')
+PATRON_FRACCION = re.compile(r'^([IVX]+)\.\s*')
+PATRON_INCISO = re.compile(r'^([a-z])\)\s*')
+PATRON_NUMERAL = re.compile(r'^(\d+)\.\s*')
 
 # Coordenadas X para clasificación de párrafos
-X_REGLA = 99       # Número de regla
-X_TEXTO = 156      # Texto normal y fracciones
-X_INCISO = 198     # Incisos a), b), c)
+X_REGLA = 99       # Número de regla (x0)
+X_TEXTO = 156      # Texto normal y fracciones (x1)
+X_INCISO = 198     # Incisos a), b), c) (x2)
+X_NUMERAL = 241    # Numerales 1., 2., 3. (x3)
+X_CONTENIDO_NUM = 269  # Contenido de numerales (x4)
 X_TOLERANCIA = 10  # Tolerancia para comparación
 
 
@@ -385,42 +388,54 @@ def extraer_contenido(doc, reglas: list[ReglaRef]) -> dict[str, ReglaContenido]:
                     titulo_pendiente = None
                     continue
 
-                # Si es texto bold y no estamos en una regla, es título de la siguiente
-                if es_bold and not regla_actual and abs(x_min - X_TEXTO) < X_TOLERANCIA:
-                    if titulo_pendiente:
-                        titulo_pendiente += " " + texto_linea
-                    else:
-                        titulo_pendiente = texto_linea
-                    continue
-
-                # Detectar si la línea es itálica (referencias)
-                es_italica = linea_es_italica(line["spans"])
+                # Bold en X_TEXTO que NO es fracción → título de siguiente regla
+                if es_bold and abs(x_min - X_TEXTO) < X_TOLERANCIA:
+                    if not PATRON_FRACCION.match(texto_linea):
+                        # Es título de la siguiente regla
+                        if titulo_pendiente:
+                            titulo_pendiente += " " + texto_linea
+                        else:
+                            titulo_pendiente = texto_linea
+                        continue
 
                 # Si no estamos en una regla, saltar
                 if not regla_actual:
                     continue
 
-                # Si es texto bold después de referencias, es título de siguiente regla
-                if referencias_encontradas and es_bold and abs(x_min - X_TEXTO) < X_TOLERANCIA:
-                    if titulo_pendiente:
-                        titulo_pendiente += " " + texto_linea
-                    else:
-                        titulo_pendiente = texto_linea
-                    continue
+                # NO bold en X_TEXTO → posible referencia
+                # Detectar si la línea es itálica
+                es_italica = linea_es_italica(line["spans"])
 
-                # ¿Es línea de referencias? (texto itálico en X~156 = referencias)
-                if es_italica and abs(x_min - X_TEXTO) < X_TOLERANCIA:
-                    guardar_parrafo()
-                    parrafos_actuales.append(Parrafo(
-                        tipo="referencias",
-                        contenido=texto_linea
-                    ))
-                    referencias_encontradas = True
-                    continue
+                if not es_bold and abs(x_min - X_TEXTO) < X_TOLERANCIA:
+                    # Referencia si: empieza con código de ley O es itálica
+                    if PATRON_REFERENCIAS.match(texto_linea) or es_italica:
+                        guardar_parrafo()
+                        parrafos_actuales.append(Parrafo(
+                            tipo="referencias",
+                            contenido=texto_linea
+                        ))
+                        continue
 
                 # Clasificar por posición X y contenido
-                if abs(x_min - X_INCISO) < X_TOLERANCIA:
-                    # Inciso
+                if abs(x_min - X_CONTENIDO_NUM) < X_TOLERANCIA:
+                    # Contenido de numeral (x4)
+                    if texto_acumulado:
+                        texto_acumulado += " " + texto_linea
+                    else:
+                        texto_acumulado = texto_linea
+                elif abs(x_min - X_NUMERAL) < X_TOLERANCIA:
+                    # Numeral 1., 2., 3. (x3)
+                    match_numeral = PATRON_NUMERAL.match(texto_linea)
+                    if match_numeral:
+                        guardar_parrafo()
+                        tipo_parrafo = "numeral"
+                        numero_parrafo = match_numeral.group(1)
+                        texto_acumulado = texto_linea[match_numeral.end():].strip()
+                    else:
+                        # Continuación de numeral
+                        texto_acumulado += " " + texto_linea
+                elif abs(x_min - X_INCISO) < X_TOLERANCIA:
+                    # Inciso a), b), c)
                     match_inciso = PATRON_INCISO.match(texto_linea)
                     if match_inciso:
                         guardar_parrafo()

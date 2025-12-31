@@ -577,6 +577,64 @@ LEYES = {
             ],
         },
     },
+
+    # ============================================================
+    # REGLAMENTOS
+    # ============================================================
+
+    "RCFF": {
+        "nombre": "Reglamento del Código Fiscal de la Federación",
+        "nombre_corto": "Reglamento CFF",
+        "tipo": "reglamento",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_CFF.pdf",
+        "pdf_path": "backend/etl/data/rcff/rcff_reglamento_del_codigo_fiscal_de_la_federacion.pdf",
+
+        # Estructura jerárquica permitida
+        "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
+
+        # Tipo de contenido principal
+        "tipo_contenido": "articulo",
+
+        # Patrones de detección
+        "patrones": {
+            # Artículo: "Artículo 30.-"
+            "articulo": r'^Artículo\s+(\d+)([oa])?(?:[-–\s]*([A-Z]))?(?:[-–\s]+(Bis|Ter|Quáter|Quinquies|Sexies))?\.?[- –]',
+
+            # Divisiones estructurales
+            "titulo": r'^T[IÍ]TULO\s+([IVX]+)\s*$',
+            "capitulo": r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$',
+
+            # Fracciones dentro de artículos
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+        },
+
+        # Ruido a eliminar
+        "ruido_lineas": [
+            'REGLAMENTO DEL CÓDIGO FISCAL DE LA FEDERACIÓN',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'Nuevo Reglamento DOF',
+        ],
+
+        # Detección de referencias
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
+                r"reformad[oa].*DOF",
+                r"adicionad[oa].*DOF",
+                r"derogad[oa].*DOF",
+            ],
+        },
+    },
 }
 
 
