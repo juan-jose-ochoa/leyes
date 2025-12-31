@@ -1,0 +1,717 @@
+{
+  "ley": "RLSS",
+  "tipo_contenido": "articulo",
+  "articulos": [
+    {
+      "numero": "1",
+      "tipo": "articulo",
+      "orden": 1,
+      "pagina": 1,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El presente Reglamento tiene por objeto establecer las normas para la constitución, inversión y uso para la operación de las Reservas Financieras y Actuariales y de la Reserva General Financiera y Actuarial, a que se refieren las fracciones III y IV del artículo 280 de la Ley del Seguro Social, así como para la determinación de los costos financieros que deberán reintegrarse a la Reserva de Operación para Contingencias y Financiamiento, en términos del tercer párrafo del artículo 283 de la Ley del Seguro Social.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "2",
+      "tipo": "articulo",
+      "orden": 2,
+      "pagina": 1,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para efectos de este Reglamento, serán aplicables las definiciones establecidas en el artículo 5 A de la Ley del Seguro Social, así como las siguientes:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "fraccion",
+          "identificador": "I",
+          "contenido": "Consejo Técnico: El Consejo Técnico del Instituto;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 3,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "Reservas: Las Reservas Financieras y Actuariales señaladas en la fracción III del artículo 280 de la Ley;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 4,
+          "tipo": "fraccion",
+          "identificador": "III",
+          "contenido": "Reserva General: La Reserva General Financiera y Actuarial señalada en la fracción IV del artículo 280 de la Ley, y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 5,
+          "tipo": "fraccion",
+          "identificador": "IV",
+          "contenido": "Seguros y Coberturas: Los seguros de Riesgos de Trabajo, de Enfermedades y Maternidad, de Gastos Médicos para Pensionados, de Invalidez y Vida, de Guarderías y Prestaciones Sociales y de Salud para la Familia administrados por el Instituto, así como los demás seguros y coberturas que se establezcan conforme a la Ley.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "1 de 6",
+          "padre_numero": 5,
+          "x_id": 295,
+          "x_texto": 295
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "ACTUARIALES Y LA RESERVA GENERAL FINANCIERA Y ACTUARIAL, ASÍ COMO PARA LA DETERMINACIÓN DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE OPERACIÓN PARA CONTINGENCIAS Y FINANCIAMIENTO",
+          "padre_numero": 5,
+          "x_id": 159,
+          "x_texto": 159
+        }
+      ]
+    },
+    {
+      "numero": "3",
+      "tipo": "articulo",
+      "orden": 3,
+      "pagina": 2,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Las Reservas se constituirán por cada uno de los Seguros y Coberturas, a través de una aportación trimestral calculada sobre los ingresos de los mismos, que consideren las estimaciones de sustentabilidad financiera de largo plazo contenidas en el informe financiero y actuarial a que se refiere el artículo 261 de la Ley, en los términos del presupuesto del Instituto para el ejercicio fiscal que corresponda.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cada una de las Reservas constituidas conforme al párrafo anterior, podrá ser dividida y manejada conforme a la naturaleza de los riesgos que afecten a cada Seguro y Cobertura. Esta separación buscará el mejor equilibrio entre las fuentes y características del riesgo y los recursos necesarios para su financiamiento, así como el cumplimiento de las obligaciones que la Ley establezca a cargo tanto del Instituto, como del Gobierno Federal.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "4",
+      "tipo": "articulo",
+      "orden": 4,
+      "pagina": 2,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La Reserva General deberá constituirse, incrementarse o reconstituirse, a través de una aportación anual a estimarse en el informe financiero y actuarial a que se refiere el artículo 261 de la Ley.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "5",
+      "tipo": "articulo",
+      "orden": 5,
+      "pagina": 2,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La inversión de las Reservas y de la Reserva General deberá realizarse en valores a cargo del Gobierno Federal o de emisores de alta calidad crediticia, que paguen una tasa de interés competitiva, en las mejores condiciones de seguridad, rendimiento y liquidez, según los límites de inversión que se establezcan en las políticas y directrices a que se refiere este Reglamento.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La inversión de las Reservas y de la Reserva General tendrá como objetivos:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "fraccion",
+          "identificador": "I",
+          "contenido": "Obtener un balance adecuado entre el rendimiento, el riesgo y la liquidez de sus inversiones acorde con los fines de las Reservas y de la Reserva General, y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 4,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "Diversificar las inversiones para evitar una concentración inadecuada de riesgos de crédito, de mercado, de liquidez o de operación, así como una dependencia de un mismo tipo de valor, título de crédito o derecho, incluyendo su subyacente; de una emisión o emisor, y de un ramo de la actividad económica o a una zona geográfica o a personas relacionadas entre sí de tal manera que constituyan riesgos comunes.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        }
+      ]
+    },
+    {
+      "numero": "6",
+      "tipo": "articulo",
+      "orden": 6,
+      "pagina": 2,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Las Reservas y la Reserva General sólo podrán invertirse en valores, títulos de crédito y otros derechos que reúnan las siguientes características:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "fraccion",
+          "identificador": "I",
+          "contenido": "Sus riesgos puedan ser medidos y administrados por el Instituto, y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 3,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "Sean negociados en cualquiera de los siguientes mercados:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 4,
+          "tipo": "inciso",
+          "identificador": "a)",
+          "contenido": "Los referidos en la Ley del Mercado de Valores;",
+          "padre_numero": 3,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 5,
+          "tipo": "inciso",
+          "identificador": "b)",
+          "contenido": "Los que sean reconocidos por la Comisión Nacional Bancaria y de Valores en términos de la Ley del Mercado de Valores, o",
+          "padre_numero": 3,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 6,
+          "tipo": "inciso",
+          "identificador": "c)",
+          "contenido": "Los que sean reconocidos conforme a las disposiciones emitidas por el Banco de México.",
+          "padre_numero": 3,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "2 de 6",
+          "padre_numero": 6,
+          "x_id": 295,
+          "x_texto": 295
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "ACTUARIALES Y LA RESERVA GENERAL FINANCIERA Y ACTUARIAL, ASÍ COMO PARA LA DETERMINACIÓN DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE OPERACIÓN PARA CONTINGENCIAS Y FINANCIAMIENTO Tratándose de títulos representativos del capital social de sociedades, cuando estas tengan un objeto social complementario o afín al del propio Instituto, así como en el de administradoras de fondos para el retiro, en términos del artículo 251, fracción XXII, de la Ley no será necesario que se cumpla con lo dispuesto en la fracción II de este artículo.",
+          "padre_numero": 6,
+          "x_id": 159,
+          "x_texto": 159
+        },
+        {
+          "numero": 9,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Tratándose de títulos de deuda emitidos por personas distintas al Gobierno Federal y sus sociedades nacionales de crédito, se requerirá que los emisores o títulos cuenten con la calificación mínima, otorgada por una empresa calificadora de riesgo crediticio, que se determine en las políticas y directrices a que se refiere el artículo 8 de este Reglamento.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "7",
+      "tipo": "articulo",
+      "orden": 7,
+      "pagina": 3,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Consejo Técnico, a propuesta de la Comisión de Inversiones Financieras, deberá determinar los límites máximos de inversión y características para la inversión de cada una de las Reservas y la Reserva General, considerando los tipos de valores, títulos de crédito u otros derechos en que se podrán realizar las inversiones, así como su plazo máximo, características del emisor o de la emisión, y otras que estime pertinentes, con base en lo siguiente:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "fraccion",
+          "identificador": "I",
+          "contenido": "Hasta el 100% en instrumentos de deuda gubernamental, a cualquier plazo;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 3,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "Hasta el 100% en instrumentos de deuda bancaria, debiéndose establecer de manera diferenciada para cada tipo de instrumento bancario en las políticas y directrices a que se refiere el artículo 8 de este Reglamento, la calificación mínima que deberán tener, así como su plazo máximo y características de liquidez;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 4,
+          "tipo": "fraccion",
+          "identificador": "III",
+          "contenido": "Hasta el 25% en instrumentos de deuda corporativa y hasta por treinta años;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 5,
+          "tipo": "fraccion",
+          "identificador": "IV",
+          "contenido": "Hasta el 100% en acciones representativas del capital social de sociedades o empresas que tengan objeto social complementario o afín al del propio Instituto, y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 6,
+          "tipo": "fraccion",
+          "identificador": "V",
+          "contenido": "Los demás límites y plazos que el Consejo Técnico, a propuesta de la Comisión de Inversiones Financieras, determine para otros valores, títulos de crédito y derechos.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        }
+      ]
+    },
+    {
+      "numero": "8",
+      "tipo": "articulo",
+      "orden": 8,
+      "pagina": 3,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Consejo Técnico, a propuesta de la Comisión de Inversiones Financieras, y atendiendo lo dispuesto en los artículos 5 y 6 del presente Reglamento, así como a los límites y plazos señalados en el artículo anterior, deberá emitir las políticas y directrices para la inversión de cada una de las Reservas y la Reserva General, mismas que deberán:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "fraccion",
+          "identificador": "I",
+          "contenido": "Estar sustentadas en criterios de seguridad que busquen un adecuado balance entre el rendimiento, el riesgo y la liquidez de las inversiones;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 3,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "Procurar que la inversión sea coherente con la naturaleza de las obligaciones que, en su caso, deba cumplir el Instituto con cargo a las Reservas y a la Reserva General;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 4,
+          "tipo": "fraccion",
+          "identificador": "III",
+          "contenido": "Establecer los límites máximos y características para la inversión de las Reservas y la Reserva General conforme a lo dispuesto en el artículo 7 del presente Reglamento, así como determinar las causas por las que se pudieran exceder dichos límites;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 5,
+          "tipo": "fraccion",
+          "identificador": "IV",
+          "contenido": "Determinar:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 6,
+          "tipo": "inciso",
+          "identificador": "a)",
+          "contenido": "Los valores, títulos de crédito y otros derechos en los que se podrán invertir las Reservas y la Reserva General en términos del artículo 6 del presente Reglamento;",
+          "padre_numero": 5,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 7,
+          "tipo": "inciso",
+          "identificador": "b)",
+          "contenido": "Los límites de tolerancia al riesgo asociados a las inversiones y la metodología de medición correspondiente; 3 de 6",
+          "padre_numero": 5,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "ACTUARIALES Y LA RESERVA GENERAL FINANCIERA Y ACTUARIAL, ASÍ COMO PARA LA DETERMINACIÓN DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE OPERACIÓN PARA CONTINGENCIAS Y FINANCIAMIENTO",
+          "padre_numero": 7,
+          "x_id": 159,
+          "x_texto": 159
+        },
+        {
+          "numero": 9,
+          "tipo": "inciso",
+          "identificador": "c)",
+          "contenido": "Los criterios para las operaciones de reporto y para la contratación de los servicios financieros auxiliares para las inversiones, y",
+          "padre_numero": 5,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 10,
+          "tipo": "inciso",
+          "identificador": "d)",
+          "contenido": "Los mecanismos para evaluar el desempeño de las inversiones y el cumplimiento de los objetivos establecidos en el artículo 5 del presente Reglamento;",
+          "padre_numero": 5,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 11,
+          "tipo": "fraccion",
+          "identificador": "V",
+          "contenido": "Determinar, con base en los estudios que realice el Instituto, el horizonte de las obligaciones a las que deba hacer frente y tomarlas en cuenta en la inversión y la duración de los portafolios. Adicionalmente, deberá preverse la evaluación de la sensibilidad de las inversiones bajo condiciones de estrés, y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 12,
+          "tipo": "fraccion",
+          "identificador": "VI",
+          "contenido": "Fijar el porcentaje máximo que se podrá invertir en valores, títulos de crédito u otros derechos, incluyendo sus subyacentes, emitidos o garantizados por personas relacionadas entre sí.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 13,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para estos efectos, se considerará que se está en presencia de personas relacionadas entre sí, cuando estas se ubiquen en alguno de los supuestos señalados en el artículo 2, fracción XIX, de la Ley del Mercado de Valores.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "9",
+      "tipo": "articulo",
+      "orden": 9,
+      "pagina": 4,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La Comisión de Inversiones Financieras como órgano especializado del Consejo Técnico en esta materia, estará integrada por miembros designados por las representaciones de los trabajadores y patrones ante el Consejo Técnico, así como por servidores públicos del Instituto y de la Secretaría de Hacienda y Crédito Público. Su participación en la Comisión de Inversiones Financieras será de carácter honorífico.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Consejo Técnico expedirá el Manual de Integración y Funcionamiento de la Comisión de Inversiones Financieras y establecerá los requisitos de capacidad y experiencia que deberán cubrir los integrantes que representen a los trabajadores y patrones; lo anterior, para el debido desarrollo y cumplimiento de las funciones de la Comisión.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "10",
+      "tipo": "articulo",
+      "orden": 10,
+      "pagina": 4,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Consejo Técnico podrá limitar, de forma excepcional, la adquisición o enajenación de valores, títulos y otros derechos cuando, en virtud de sus características, de las condiciones prevalecientes en los mercados financieros, de la carencia de elementos suficientes para valorar adecuadamente su riesgo o la naturaleza de las obligaciones que el Instituto debe cumplir con cargo a las Reservas y a la Reserva General, cuando representen riesgos excesivos para su cartera.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "11",
+      "tipo": "articulo",
+      "orden": 11,
+      "pagina": 4,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La unidad administrativa a que se refiere el artículo 286 C de la Ley, se encargará de la inversión de las Reservas y de la Reserva General, con base en lo establecido en la Ley, este Reglamento y las políticas y directrices que emita el Consejo Técnico.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "12",
+      "tipo": "articulo",
+      "orden": 12,
+      "pagina": 4,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Instituto podrá disponer de la Reserva General y de las Reservas sólo en los casos previstos expresamente en los artículos 285 y 286 A de la Ley, respectivamente.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "13",
+      "tipo": "articulo",
+      "orden": 13,
+      "pagina": 4,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El uso de las Reservas y de la Reserva General se realizará por autorización del Consejo Técnico, a propuesta del Director General del Instituto.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La propuesta referida deberá estar soportada con el análisis y estudios que corroboren la necesidad de disponer de las Reservas o de la Reserva General, en los supuestos señalados en la Ley, que deberán contener, según corresponda, la descripción del evento catastrófico; el problema epidemiológico 4 de 6",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "ACTUARIALES Y LA RESERVA GENERAL FINANCIERA Y ACTUARIAL, ASÍ COMO PARA LA DETERMINACIÓN DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE OPERACIÓN PARA CONTINGENCIAS Y FINANCIAMIENTO o económico; las razones por las cuales se considera que el evento o problema es severo; el nivel de variación entre ingresos y egresos, así como los demás aspectos que permitan al Consejo Técnico adoptar una decisión sustentada.",
+          "padre_numero": 2,
+          "x_id": 159,
+          "x_texto": 159
+        }
+      ]
+    },
+    {
+      "numero": "14",
+      "tipo": "articulo",
+      "orden": 14,
+      "pagina": 5,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Consejo Técnico deberá resolver sobre la propuesta del Director General para el uso de las Reservas y de la Reserva General, pudiendo reunirse incluso en sesión extraordinaria en caso necesario.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "15",
+      "tipo": "articulo",
+      "orden": 15,
+      "pagina": 5,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En caso de que el Consejo Técnico autorice el uso de las Reservas y de la Reserva General, determinará el monto respectivo y podrá establecer las modalidades y términos que estime convenientes para asegurar la atención de las circunstancias que motivaron el uso.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para el caso de las Reservas, sus recursos sólo podrán destinarse para cubrir los gastos del Seguro y Cobertura que correspondan a la reserva utilizada.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Tratándose de la Reserva General, el Consejo Técnico deberá señalar el Seguro y Cobertura a los que se destinarán los recursos.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "16",
+      "tipo": "articulo",
+      "orden": 16,
+      "pagina": 5,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Director General deberá informar al Consejo Técnico, con la periodicidad que este determine, sobre el uso de los recursos de las Reservas o la Reserva General.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Con base en los informes señalados en el párrafo anterior, el Consejo Técnico podrá adoptar las medidas que estime necesarias para la adecuada aplicación de las Reservas y de la Reserva General.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "17",
+      "tipo": "articulo",
+      "orden": 17,
+      "pagina": 5,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El reintegro de los recursos a la Reserva de Operación para Contingencias y Financiamiento, por concepto de fondos no ejercidos en su totalidad en el programa prioritario de inversión o los utilizados para apoyar o financiar a las Reservas Operativas, conforme a lo dispuesto en los artículos 277 C y 283 de la Ley, deberá incluir los costos financieros correspondientes, los cuales consistirán en el rendimiento obtenido en la inversión de la Reserva de Operación para Contingencias y Financiamiento, durante el periodo que duró el apoyo o financiamiento.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En caso de que no exista saldo en la Reserva de Operación para Contingencias y Financiamiento, el cálculo de los intereses se efectuará considerando el rendimiento obtenido en la inversión de las Reservas Operativas, durante el periodo que duró el financiamiento.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los costos financieros así calculados, deberán incorporarse de forma mensual si el flujo de efectivo así lo permite, para incrementar la Reserva de Operación para Contingencias y Financiamiento, sin rebasar en ningún caso el plazo de tres años establecido en el propio artículo 283 de la Ley.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Instituto deberá informar al menos de manera trimestral a la Secretaría de Hacienda y Crédito Público, de las disposiciones y reintegros que se efectúen de la Reserva de Operación para Contingencias y Financiamiento.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "18",
+      "tipo": "articulo",
+      "orden": 18,
+      "pagina": 5,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La Comisión de Vigilancia y el Órgano Interno de Control en el Instituto vigilarán que las inversiones se realicen conforme a la Ley, este Reglamento y demás disposiciones aplicables, para lo 5 de 6",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "ACTUARIALES Y LA RESERVA GENERAL FINANCIERA Y ACTUARIAL, ASÍ COMO PARA LA DETERMINACIÓN DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE OPERACIÓN PARA CONTINGENCIAS Y FINANCIAMIENTO cual podrán, en cualquier tiempo, solicitar y revisar la documentación relativa a la situación de las Reservas, la Reserva General y de las operaciones de inversión realizadas.",
+          "padre_numero": 1,
+          "x_id": 159,
+          "x_texto": 159
+        }
+      ]
+    }
+  ]
+}

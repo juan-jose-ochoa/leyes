@@ -1,0 +1,464 @@
+{
+  "ley": "RLIEPS",
+  "tipo_contenido": "articulo",
+  "articulos": [
+    {
+      "numero": "1",
+      "tipo": "articulo",
+      "orden": 1,
+      "pagina": 1,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos de este Reglamento se entiende por:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "fraccion",
+          "identificador": "I",
+          "contenido": "Ley. La Ley del Impuesto Especial sobre Producción y Servicios, y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 3,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "Impuesto. El impuesto especial sobre producción y servicios.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        }
+      ]
+    },
+    {
+      "numero": "2",
+      "tipo": "articulo",
+      "orden": 2,
+      "pagina": 1,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 5o. de la Ley, cuando se presenten declaraciones complementarias substituyendo los datos de la original por virtud de las cuales resulten saldos a favor o se incrementen los que habían sido declarados, el contribuyente podrá llevar a cabo su compensación conforme a lo dispuesto en dicho artículo o compensarlo a partir de la siguiente declaración de pago al día en que se presente la declaración complementaria, sin perjuicio de lo dispuesto en el penúltimo párrafo del artículo citado.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "3",
+      "tipo": "articulo",
+      "orden": 3,
+      "pagina": 1,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 6o. de la Ley, el contribuyente que reciba la devolución de bienes enajenados u otorgue descuentos o bonificaciones, deberá restituir el impuesto trasladado y expedir nota de crédito en la que haga constar en forma expresa tal circunstancia, antes de realizar la disminución a que se refiere el artículo citado.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "También se expedirá nota de crédito en los casos en que no se hubiera enterado previamente el impuesto, excepto cuando se trate de descuentos que se concedan en el documento en que conste la operación.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "4",
+      "tipo": "articulo",
+      "orden": 4,
+      "pagina": 1,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 6o., primer párrafo de la Ley, sólo se podrá efectuar la disminución del impuesto a que se refiere dicho párrafo hasta que la contraprestación correspondiente se haya restituido efectivamente al adquirente, o bien, cuando la obligación de hacerlo se extinga.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Tratándose de descuentos y bonificaciones, la disminución procederá cuando aquéllos efectivamente se apliquen. 1 de 4",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Nuevo Reglamento DOF 04-12-2006",
+          "padre_numero": 2,
+          "x_id": 428,
+          "x_texto": 428
+        }
+      ]
+    },
+    {
+      "numero": "5",
+      "tipo": "articulo",
+      "orden": 5,
+      "pagina": 2,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 7o., primer párrafo de la Ley, no se consideran faltantes de materias primas o de bienes en los inventarios de los contribuyentes, aquéllos que se originen por caso fortuito o fuerza mayor, ni la destrucción autorizada de mercancías, cuando sean deducibles para los efectos de la Ley del Impuesto sobre la Renta.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Tratándose de faltantes de inventarios se considera realizada la enajenación en el mes en que se levantó el inventario, debiéndose pagar el impuesto en la declaración correspondiente a dicho mes.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "6",
+      "tipo": "articulo",
+      "orden": 6,
+      "pagina": 2,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 7o., penúltimo párrafo de la Ley, se consideran transmisiones de propiedad realizadas por las empresas por las que no se está obligado al pago del impuesto, los obsequios que efectúen, siempre que sean deducibles en los términos de la Ley del Impuesto sobre la Renta.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "7",
+      "tipo": "articulo",
+      "orden": 7,
+      "pagina": 2,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 9o. de la Ley, se entiende que la enajenación se realiza en territorio nacional, aun cuando la entrega material de los bienes se efectúe en los recintos fiscales o fiscalizados considerados como tales en la legislación aduanera.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "8",
+      "tipo": "articulo",
+      "orden": 8,
+      "pagina": 2,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Se considera comprendido dentro de lo dispuesto por el artículo 12 de la Ley, el retorno al territorio nacional de bienes tangibles exportados definitivamente, cuando se efectúe en los términos de la legislación aduanera.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "9",
+      "tipo": "articulo",
+      "orden": 9,
+      "pagina": 2,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 14 de la Ley, cuando el contribuyente haga valer algún medio de defensa en contra de las resoluciones que dicten las autoridades aduaneras, el impuesto se calculará tomando en cuenta el monto del impuesto general de importación y el de las contribuciones y aprovechamientos, a excepción del impuesto al valor agregado, que se obtenga de los datos suministrados por el propio contribuyente; la diferencia de impuestos que resulte, la podrá pagar hasta que se resuelva en definitiva la controversia, con la actualización y los recargos correspondientes al periodo comprendido desde el mes en que debió hacerse el pago y hasta que el mismo se efectúe, debiendo garantizar el interés fiscal en los términos del Código Fiscal de la Federación y de su Reglamento.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "10",
+      "tipo": "articulo",
+      "orden": 10,
+      "pagina": 2,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 15 de la Ley, el impuesto que se pague en la importación de bienes tangibles, se enterará utilizando la forma por medio de la cual se efectúe el pago del impuesto general de importación, aun cuando no se deba pagar este último gravamen.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "11",
+      "tipo": "articulo",
+      "orden": 11,
+      "pagina": 2,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 17 de la Ley, el comisionista trasladará, en su caso, el impuesto por cuenta del comitente, aplicando al valor de los actos o actividades por los que se deba pagar el impuesto las tasas que correspondan. El comitente considerará a su cargo el impuesto correspondiente a los actos o actividades realizados por su comisionista, sin descontar el valor de la comisión ni los reembolsos de gastos efectuados por cuenta del comitente y otros conceptos.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El comisionista considerará a su cargo el impuesto correspondiente a la comisión pactada, incluyendo los gastos efectuados en nombre y por cuenta del comitente. El comisionista, en este caso, no trasladará al comitente el impuesto correspondiente a la operación realizada. 2 de 4",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Nuevo Reglamento DOF 04-12-2006",
+          "padre_numero": 2,
+          "x_id": 428,
+          "x_texto": 428
+        }
+      ]
+    },
+    {
+      "numero": "12",
+      "tipo": "articulo",
+      "orden": 12,
+      "pagina": 3,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 19, fracción I de la Ley, los contribuyentes además de llevar la contabilidad de conformidad con el Código Fiscal de la Federación y su Reglamento, registrarán:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "fraccion",
+          "identificador": "I",
+          "contenido": "El valor de los actos o actividades por los que deban pagar el impuesto, conforme a las tasas o cuota que les correspondan, y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 3,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "El importe de las devoluciones, descuentos o bonificaciones, conforme a las tasas o cuota que les correspondan.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los contribuyentes del impuesto que sean productores registrarán en su contabilidad el volumen y el valor de materias primas adquiridas, los volúmenes producidos y las mermas. Cuando la materia prima tenga graduación alcohólica ésta se deberá registrar indicando los grados Gay Lussac a la temperatura de 15° C., que correspondan.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "13",
+      "tipo": "articulo",
+      "orden": 13,
+      "pagina": 3,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los contribuyentes que enajenen alcohol o alcohol desnaturalizado, podrán expedir comprobantes con el traslado en forma expresa y por separado del impuesto causado por la enajenación de tales bienes, siempre que el adquirente así lo solicite.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "14",
+      "tipo": "articulo",
+      "orden": 14,
+      "pagina": 3,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 19, fracción II, tercer párrafo de la Ley, se cumple con el requisito de cerciorarse de que los datos relativos al nombre, denominación o razón social, de la persona a favor de quien se expide un comprobante fiscal con el traslado expreso y por separado del impuesto, corresponden con el registro con que dicha persona acredite que es contribuyente del citado impuesto, cuando dichos datos coincidan con los datos de la constancia de inscripción en el Registro Federal de Contribuyentes expedida por el Servicio de Administración Tributaria, en la cual estén contenidas las obligaciones del impuesto y siempre que se anote el número de dicha constancia en el comprobante que se expida.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "15",
+      "tipo": "articulo",
+      "orden": 15,
+      "pagina": 3,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 19, fracción V, primer párrafo de la Ley, los contribuyentes que exporten bebidas alcohólicas, deberán adherir a los envases que las contengan, etiquetas o contraetiquetas con los datos de identificación del importador en el extranjero y, en su caso, etiquetas o contraetiquetas en idioma extranjero.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En el caso de que los envases que contengan bebidas alcohólicas se enajenen a tiendas libres de impuestos que cuenten con autorización para operar como depósitos fiscales para la exposición y venta de mercancías extranjeras y nacionales de conformidad con la legislación aduanera, sólo se deberá adherir a dichos envases una etiqueta que contenga los datos de identificación de las citadas tiendas.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "16",
+      "tipo": "articulo",
+      "orden": 16,
+      "pagina": 3,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 19, fracción V de la Ley, los contribuyentes que transporten bebidas alcohólicas a granel deberán adherir precintos a los envases o recipientes, en todas las entradas y salidas por donde se puedan cargar o descargar dichas bebidas.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "17",
+      "tipo": "articulo",
+      "orden": 17,
+      "pagina": 3,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 19, fracción XVIII de la Ley, los contribuyentes podrán optar por destruir los envases vacíos de bebidas alcohólicas, de manera semanal, debiendo realizar la destrucción el mismo día de cada semana.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los contribuyentes que opten por lo dispuesto en este artículo, deberán raspar la etiqueta, la contraetiqueta y el marbete, que estén adheridos a los envases vacíos que se vayan a destruir, en el 3 de 4",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Nuevo Reglamento DOF 04-12-2006 momento en que se cierren las operaciones del día, registrando el número de folio de los marbetes que se raspen.",
+          "padre_numero": 2,
+          "x_id": 428,
+          "x_texto": 428
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Asimismo, los contribuyentes que ejerzan la opción a que se refiere este artículo, deberán conservar y, en su caso, proporcionar a las autoridades fiscales cuando éstas así lo requieran, la información que corresponda al número de envases destruidos, así como al número de folio de los marbetes que hayan sido raspados.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "18",
+      "tipo": "articulo",
+      "orden": 18,
+      "pagina": 4,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para calcular las participaciones a las entidades federativas a que se refiere la Ley de Coordinación Fiscal, los contribuyentes que sean productores, registrarán en su contabilidad por cada entidad federativa en la que distribuyan los productos para su venta al público, el valor de las enajenaciones o importaciones por las que se deba pagar el impuesto, de acuerdo a las tasas correspondientes. Tratándose de cerveza y refrescos, así como de tabacos labrados, también se deberá registrar la producción de dichos bienes por entidad federativa y de acuerdo a las tasas o cuota que les correspondan.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "19",
+      "tipo": "articulo",
+      "orden": 19,
+      "pagina": 4,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del artículo 22 de la Ley, las cantidades acreditables que deben comprobarse en los términos de dicho artículo, serán las que correspondan a los meses en que el valor de los actos o actividades se determine presuntivamente, y siempre que la documentación en que consten éstas reúna los requisitos que establecen la Ley, el Código Fiscal de la Federación y su Reglamento.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    }
+  ]
+}

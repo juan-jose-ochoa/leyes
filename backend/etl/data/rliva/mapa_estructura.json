@@ -1,0 +1,174 @@
+{
+  "titulos": {
+    "PRELIMINAR": {
+      "nombre": null,
+      "pagina": 1,
+      "capitulos": {
+        "I": {
+          "nombre": "Disposiciones generales",
+          "pagina": 1,
+          "articulos": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "10a",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "22a",
+            "22b",
+            "23",
+            "24"
+          ]
+        },
+        "II": {
+          "nombre": "De la enajenación",
+          "pagina": 6,
+          "articulos": [
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+          ]
+        },
+        "III": {
+          "nombre": "De la prestación de servicios",
+          "pagina": 8,
+          "articulos": [
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "39a",
+            "40",
+            "40a",
+            "41",
+            "42",
+            "43",
+            "44"
+          ]
+        },
+        "IV": {
+          "nombre": "Del uso o goce temporal de bienes",
+          "pagina": 9,
+          "articulos": [
+            "45"
+          ]
+        },
+        "V": {
+          "nombre": "De la importación de bienes y servicios",
+          "pagina": 10,
+          "articulos": [
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56"
+          ]
+        },
+        "VI": {
+          "nombre": "De la exportación de bienes y servicios",
+          "pagina": 11,
+          "secciones": {
+            "I": {
+              "nombre": "De las disposiciones generales",
+              "pagina": 11,
+              "articulos": [
+                "57",
+                "58",
+                "59",
+                "60",
+                "61"
+              ]
+            },
+            "II": {
+              "nombre": "De los servicios de filmación o grabación",
+              "pagina": 12,
+              "articulos": [
+                "62",
+                "63"
+              ]
+            },
+            "III": {
+              "nombre": "De los servicios de hotelería y conexos para congresos, convenciones, exposiciones o",
+              "pagina": 12,
+              "articulos": [
+                "64",
+                "65",
+                "66",
+                "67",
+                "68",
+                "69",
+                "70"
+              ]
+            }
+          }
+        },
+        "VII": {
+          "nombre": "De las obligaciones de los contribuyentes",
+          "pagina": 13,
+          "articulos": [
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78"
+          ]
+        },
+        "VIII": {
+          "nombre": "De las facultades de las autoridades",
+          "pagina": 14,
+          "articulos": [
+            "79"
+          ]
+        }
+      }
+    }
+  },
+  "transitorios": [],
+  "estadisticas": {
+    "titulos": 1,
+    "capitulos": 8,
+    "secciones": 3,
+    "articulos_vigentes": 84,
+    "articulos_derogados": 0,
+    "articulos_transitorios": 0,
+    "total": 84
+  },
+  "ley": "RIVA",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA.pdf",
+  "metodo": "outline",
+  "notas": "Extraído del outline del PDF. Fuente autoritativa."
+}

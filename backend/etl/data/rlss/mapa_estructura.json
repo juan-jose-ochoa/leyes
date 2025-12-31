@@ -1,0 +1,78 @@
+{
+  "titulos": {
+    "PRELIMINAR": {
+      "nombre": null,
+      "pagina": 1,
+      "capitulos": {
+        "I": {
+          "nombre": "DISPOSICIONES GENERALES",
+          "pagina": 1,
+          "articulos": [
+            "1",
+            "2"
+          ]
+        },
+        "II": {
+          "nombre": "DE LA CONSTITUCIÓN DE LAS RESERVAS Y DE LA RESERVA GENERAL",
+          "pagina": 2,
+          "articulos": [
+            "3",
+            "4"
+          ]
+        },
+        "III": {
+          "nombre": "DE LA INVERSIÓN DE LAS RESERVAS Y DE LA RESERVA GENERAL",
+          "pagina": 2,
+          "articulos": [
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        },
+        "IV": {
+          "nombre": "DEL USO PARA LA OPERACIÓN DE LAS RESERVAS Y DE LA RESERVA GENERAL",
+          "pagina": 4,
+          "articulos": [
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"
+          ]
+        },
+        "V": {
+          "nombre": "DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE",
+          "pagina": 5,
+          "articulos": [
+            "17"
+          ]
+        },
+        "VI": {
+          "nombre": "DISPOSICIONES FINALES",
+          "pagina": 5,
+          "articulos": [
+            "18"
+          ]
+        }
+      }
+    }
+  },
+  "transitorios": [],
+  "estadisticas": {
+    "titulos": 1,
+    "capitulos": 6,
+    "secciones": 0,
+    "articulos_vigentes": 18,
+    "articulos_derogados": 0,
+    "articulos_transitorios": 0,
+    "total": 18
+  },
+  "ley": "RLSS",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_CIUORFA.pdf",
+  "metodo": "outline",
+  "notas": "Extraído del outline del PDF. Fuente autoritativa."
+}

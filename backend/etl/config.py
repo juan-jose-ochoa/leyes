@@ -635,6 +635,232 @@ LEYES = {
             ],
         },
     },
+
+    "RACERF": {
+        "nombre": "Reglamento de la Ley del Seguro Social en materia de Afiliación, Clasificación de Empresas, Recaudación y Fiscalización",
+        "nombre_corto": "Reglamento Afiliación SS",
+        "tipo": "reglamento",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_MACERF.pdf",
+        "pdf_path": "backend/etl/data/racerf/racerf_reglamento_de_la_ley_del_seguro_social_en_materia.pdf",
+        "divisiones_permitidas": ["titulo", "capitulo"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
+        "tipo_contenido": "articulo",
+        "patrones": {
+            "articulo": r'^Artículo\s+(\d+)\.\s',
+            "titulo": r'^T[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[EÉ]PTIMO|OCTAVO)\s*$',
+            "capitulo": r'^CAP[IÍ]TULO\s+([IVX]+|[UÚ]NICO)\s*$',
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+        },
+        "ruido_lineas": [
+            'REGLAMENTO DE LA LEY DEL SEGURO SOCIAL EN MATERIA',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'Última Reforma DOF',
+        ],
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Artículo.*DOF",
+                r"reformad[oa].*DOF",
+                r"adicionad[oa].*DOF",
+                r"derogad[oa].*DOF",
+            ],
+        },
+    },
+
+    "RLFT": {
+        "nombre": "Reglamento de los Artículos 121 y 122 de la Ley Federal del Trabajo",
+        "nombre_corto": "Reglamento PTU",
+        "tipo": "reglamento",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_121_122_LFT.pdf",
+        "pdf_path": "backend/etl/data/rlft/rlft_reglamento_de_la_ley_federal_del_trabajo.pdf",
+        "divisiones_permitidas": ["capitulo"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso"],
+        "tipo_contenido": "articulo",
+        "patrones": {
+            "articulo": r'ART[IÍ]CULO\s+(\d+)[oa]?\.-\s',
+            "capitulo": r'^CAP[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO)\s*$',
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+        },
+        "ruido_lineas": [
+            'REGLAMENTO DE LOS ARTÍCULOS 121 Y 122',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+        ],
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [r".*DOF"],
+        },
+    },
+
+    "RLIEPS": {
+        "nombre": "Reglamento de la Ley del Impuesto Especial sobre Producción y Servicios",
+        "nombre_corto": "Reglamento IEPS",
+        "tipo": "reglamento",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIEPS.pdf",
+        "pdf_path": "backend/etl/data/rlieps/rlieps_reglamento_de_la_ley_del_impuesto_especial_sobre_p.pdf",
+        "divisiones_permitidas": ["capitulo"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso"],
+        "tipo_contenido": "articulo",
+        "patrones": {
+            "articulo": r'^Artículo\s+(\d+)\.?\s',
+            "capitulo": r'^Cap[íi]tulo\s+([IVX]+)\s*$',
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+        },
+        "ruido_lineas": [
+            'REGLAMENTO DE LA LEY DEL IMPUESTO ESPECIAL',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+        ],
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [r".*DOF"],
+        },
+    },
+
+    "RLSS": {
+        "nombre": "Reglamento de la Ley del Seguro Social para Reservas Financieras y Actuariales",
+        "nombre_corto": "Reglamento Reservas SS",
+        "tipo": "reglamento",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_CIUORFA.pdf",
+        "pdf_path": "backend/etl/data/rlss/rlss_reglamento_de_la_ley_del_seguro_social.pdf",
+        "divisiones_permitidas": ["capitulo"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso"],
+        "tipo_contenido": "articulo",
+        "patrones": {
+            "articulo": r'Artículo\s+(\d+)\.-\s',
+            "capitulo": r'^CAP[IÍ]TULO\s+([IVX]+)\s*$',
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+        },
+        "ruido_lineas": [
+            'REGLAMENTO DE LA LEY DEL SEGURO SOCIAL',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+        ],
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [r".*DOF"],
+        },
+    },
+
+    "RIVA": {
+        "nombre": "Reglamento de la Ley del Impuesto al Valor Agregado",
+        "nombre_corto": "Reglamento IVA",
+        "tipo": "reglamento",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA.pdf",
+        "pdf_path": "backend/etl/data/rliva/riva_reglamento_del_impuesto_al_valor_agregado.pdf",
+
+        # Estructura jerárquica permitida (solo capítulos, sin títulos)
+        "divisiones_permitidas": ["capitulo"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
+
+        # Tipo de contenido principal
+        "tipo_contenido": "articulo",
+
+        # Patrones de detección
+        "patrones": {
+            "articulo": r'^Artículo\s+(\d+)(?:[-–\s]*([A-Z]))?(?:[-–\s]+(Bis|Ter))?\.?\s',
+            "capitulo": r'^Cap[íi]tulo\s+([IVX]+)\s*$',
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+        },
+
+        # Ruido a eliminar
+        "ruido_lineas": [
+            'REGLAMENTO DE LA LEY DEL IMPUESTO AL VALOR AGREGADO',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'Última Reforma DOF',
+        ],
+
+        # Detección de referencias
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Artículo.*DOF",
+                r"reformad[oa].*DOF",
+                r"adicionad[oa].*DOF",
+            ],
+        },
+    },
+
+    "RISR": {
+        "nombre": "Reglamento de la Ley del Impuesto sobre la Renta",
+        "nombre_corto": "Reglamento ISR",
+        "tipo": "reglamento",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR.pdf",
+        "pdf_path": "backend/etl/data/rlisr/risr_reglamento_del_impuesto_sobre_la_renta.pdf",
+
+        # Estructura jerárquica permitida
+        "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
+
+        # Tipo de contenido principal
+        "tipo_contenido": "articulo",
+
+        # Patrones de detección
+        "patrones": {
+            # Artículo: "Artículo 1." (sin ordinal)
+            "articulo": r'^Artículo\s+(\d+)(?:[-–\s]*([A-Z]))?(?:[-–\s]+(Bis|Ter|Quáter))?\.?\s',
+
+            # Divisiones estructurales
+            "titulo": r'^T[IÍ]TULO\s+([IVX]+)\s*$',
+            "capitulo": r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$',
+            "seccion": r'^SECCI[OÓ]N\s+([IVX]+|[UÚ]NICA)\s*$',
+
+            # Fracciones dentro de artículos
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+        },
+
+        # Ruido a eliminar
+        "ruido_lineas": [
+            'REGLAMENTO DE LA LEY DEL IMPUESTO SOBRE LA RENTA',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'Última Reforma DOF',
+        ],
+
+        # Detección de referencias
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
+                r"reformad[oa].*DOF",
+                r"adicionad[oa].*DOF",
+                r"derogad[oa].*DOF",
+            ],
+        },
+    },
 }
 
 
