@@ -661,6 +661,7 @@ LEYES = {
             'Servicios Parlamentarios',
             'Última Reforma DOF',
             ' de 113',  # Paginación
+            'FISCALIZACIÓN',  # Header de página (2da línea del título)
         ],
         "referencias": {
             "font_italic": True,
