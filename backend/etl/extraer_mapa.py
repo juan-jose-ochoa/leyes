@@ -186,6 +186,40 @@ def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[Titulo
     patron_titulo = patrones.get("titulo", r'^T[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[EÉ]PTIMO|OCTAVO|NOVENO|D[EÉ]CIMO|[IVX]+)\s*$')
     patron_capitulo = patrones.get("capitulo", r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$')
     patron_seccion = patrones.get("seccion", r'^SECCI[OÓ]N\s+([IVX]+)\s*$')
+    # Ruido: encabezados, pies de página, números de página (SALTAR)
+    patron_ruido = r'^(LEY\s|CÁMARA|Secretaría|Últim|CÓDIGO|CONSTITUCIÓN|\d+\s+de\s+\d+|\[)'
+    # No es nombre de división: artículos, capítulos, títulos, secciones, fracciones
+    patron_no_nombre = r'^(ART|CAP|TITULO|TÍTULO|SECC|[IVX]+\.\s|[a-z]\)\s)'
+
+    def es_ruido(linea):
+        """Línea de encabezado/pie que debe saltarse."""
+        return not linea or len(linea) <= 3 or re.match(patron_ruido, linea, re.IGNORECASE)
+
+    def es_nombre_division(linea):
+        """Línea que puede ser nombre de una división."""
+        return not re.match(patron_no_nombre, linea, re.IGNORECASE)
+
+    def buscar_nombre(lineas, idx, doc, page_num):
+        """Busca el primer renglón significativo y evalúa si es nombre."""
+        # Buscar en la misma página
+        for i in range(idx + 1, len(lineas)):
+            linea = lineas[i].strip()
+            if es_ruido(linea):
+                continue
+            # Primer renglón significativo encontrado
+            return linea if es_nombre_division(linea) else None
+
+        # Si no encontró en la misma página, buscar en la siguiente
+        if page_num + 1 < len(doc):
+            texto_sig = doc[page_num + 1].get_text()
+            for linea in texto_sig.split('\n'):
+                linea = linea.strip()
+                if es_ruido(linea):
+                    continue
+                # Primer renglón significativo encontrado
+                return linea if es_nombre_division(linea) else None
+
+        return None
 
     for page_num, page in enumerate(doc):
         # Si hay límite de página, detenerse
@@ -200,11 +234,7 @@ def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[Titulo
             # ¿Es título?
             match = re.match(patron_titulo, linea_limpia, re.IGNORECASE)
             if match:
-                nombre = None
-                if i + 1 < len(lineas):
-                    sig = lineas[i + 1].strip()
-                    if sig and len(sig) > 3 and not re.match(r'^(CAP|ART|TITULO|SECC|\[)', sig, re.IGNORECASE):
-                        nombre = sig
+                nombre = buscar_nombre(lineas, i, doc, page_num)
 
                 titulo_actual = TituloRef(
                     numero=match.group(1).upper(),
@@ -222,11 +252,7 @@ def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[Titulo
                     titulo_actual = TituloRef(numero="PRELIMINAR", nombre=None, pagina=1)
                     titulos.insert(0, titulo_actual)
 
-                nombre = None
-                if i + 1 < len(lineas):
-                    sig = lineas[i + 1].strip()
-                    if sig and len(sig) > 3 and not re.match(r'^(CAP|ART|TITULO|SECC|\[)', sig, re.IGNORECASE):
-                        nombre = sig
+                nombre = buscar_nombre(lineas, i, doc, page_num)
 
                 capitulo_actual = CapituloRef(
                     numero=match.group(1).upper(),
@@ -242,11 +268,7 @@ def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[Titulo
                 if capitulo_actual is None:
                     continue  # Ignorar secciones sin capítulo
 
-                nombre = None
-                if i + 1 < len(lineas):
-                    sig = lineas[i + 1].strip()
-                    if sig and len(sig) > 3 and not re.match(r'^(CAP|ART|TITULO|SECC|\[)', sig, re.IGNORECASE):
-                        nombre = sig
+                nombre = buscar_nombre(lineas, i, doc, page_num)
 
                 seccion = SeccionRef(
                     numero=match.group(1).upper(),
