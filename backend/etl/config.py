@@ -268,6 +268,10 @@ LEYES = {
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf",
         "pdf_path": "backend/etl/data/liva/liva_ley_del_impuesto_al_valor_agregado.pdf",
 
+        # Página donde termina el contenido (antes de TRANSITORIOS)
+        # Evita que capítulos de decretos de reforma sobrescriban los correctos
+        "pagina_fin_contenido": 49,
+
         # Estructura jerárquica permitida
         # LIVA no tiene títulos, solo capítulos directamente
         "divisiones_permitidas": ["titulo", "capitulo"],
@@ -282,7 +286,8 @@ LEYES = {
             "articulo": r'^Artículo\s+(\d+)([oa])?\.?(?:[-–\s]*([A-Z]))?(?:[-–\s]+(Bis|Ter|Quáter|Quintus|Quinquies|Sexies))?\.[- –]?',
 
             # LIVA no tiene títulos explícitos
-            "titulo": r'^$',  # No match
+            # LIVA no tiene títulos - usar patrón que nunca matchea pero tiene grupo
+            "titulo": r'^(TITULO_INEXISTENTE)$',
             # Capítulos (incluyendo "III BIS")
             "capitulo": r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?)\s*$',
 
