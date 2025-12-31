@@ -57,7 +57,47 @@ MARGEN_IZQUIERDO = 99  # X donde empiezan las reglas
 PATRON_TITULO = re.compile(r'^Título\s+(\d+)\.\s+(.+)$')
 PATRON_CAPITULO = re.compile(r'^Capítulo\s+(\d+\.\d+)\.\s+(.+)$')
 PATRON_REGLA = re.compile(r'^(\d+\.\d+\.\d+(?:\.\d+)?)\.\s*$')
-PATRON_REFERENCIAS = re.compile(r'^(CFF|LISR|LIVA|LIEPS|LIF|RCFF|RMF|RISR|Ley|CPEUM)\s')
+PATRON_REGLA_INICIO = re.compile(r'^(\d+\.\d+\.\d+(?:\.\d+)?)\.\s*')
+# Detección de itálico para referencias
+def linea_es_italica(spans: list) -> bool:
+    """Detecta si >50% del texto de una línea es itálico."""
+    texto_italic = 0
+    texto_total = 0
+    for span in spans:
+        texto = span["text"].strip()
+        if texto:
+            texto_total += len(texto)
+            if span["flags"] & 2:  # 2^1 = italic flag
+                texto_italic += len(texto)
+    return texto_total > 0 and (texto_italic / texto_total) > 0.5
+
+# Patrón para detectar si texto es referencia legal (empieza con abreviatura de ley/reglamento)
+PATRON_REFERENCIAS = re.compile(r'^(CFF|LISR|LIVA|LIEPS|LIF|RCFF|RMF|RISR|RLISR|Ley|CPEUM|LCF|LSS|Convención)\s')
+PATRON_FRACCION = re.compile(r'^([IVX]+)\.\s*$')
+PATRON_INCISO = re.compile(r'^([a-z])\)\s*$')
+
+# Coordenadas X para clasificación de párrafos
+X_REGLA = 99       # Número de regla
+X_TEXTO = 156      # Texto normal y fracciones
+X_INCISO = 198     # Incisos a), b), c)
+X_TOLERANCIA = 10  # Tolerancia para comparación
+
+
+@dataclass
+class Parrafo:
+    """Párrafo de contenido."""
+    tipo: str  # texto, fraccion, inciso
+    contenido: str
+    numero: Optional[str] = None  # I, II, III para fracciones; a, b, c para incisos
+
+
+@dataclass
+class ReglaContenido:
+    """Contenido completo de una regla."""
+    numero: str
+    nombre: Optional[str]  # Título/nombre de la regla (texto en bold después del número)
+    parrafos: list[Parrafo] = field(default_factory=list)
+    referencias: Optional[str] = None  # "CFF 28, 31, LISR 5"
 
 
 @dataclass
@@ -209,9 +249,9 @@ def extraer_reglas(doc) -> list[ReglaRef]:
                     texto = span["text"].strip()
                     x = span["bbox"][0]
 
-                    # Verificar si es número de regla
+                    # Verificar si es número de regla (bold y en posición X~99)
                     match = PATRON_REGLA.match(texto)
-                    if match and es_bold(span["flags"]):
+                    if match and es_bold(span["flags"]) and abs(x - X_REGLA) < X_TOLERANCIA:
                         numero = match.group(1)
 
                         # Evitar duplicados (misma regla en varias páginas)
@@ -223,6 +263,215 @@ def extraer_reglas(doc) -> list[ReglaRef]:
                             ))
 
     return reglas
+
+
+def extraer_contenido(doc, reglas: list[ReglaRef]) -> dict[str, ReglaContenido]:
+    """
+    Extrae el contenido de cada regla del PDF.
+
+    Args:
+        doc: Documento PyMuPDF
+        reglas: Lista de reglas con sus páginas
+
+    Returns:
+        Diccionario {numero_regla: ReglaContenido}
+    """
+    contenido = {}
+
+    # Crear índice de reglas por página para saber cuándo termina cada una
+    reglas_por_pagina = {}
+    for regla in reglas:
+        if regla.pagina not in reglas_por_pagina:
+            reglas_por_pagina[regla.pagina] = []
+        reglas_por_pagina[regla.pagina].append(regla.numero)
+
+    # Ordenar reglas para saber la siguiente
+    reglas_ordenadas = sorted([r.numero for r in reglas], key=lambda x: [int(p) for p in x.split('.')])
+    siguiente_regla = {reglas_ordenadas[i]: reglas_ordenadas[i+1] for i in range(len(reglas_ordenadas)-1)}
+
+    regla_actual = None
+    parrafos_actuales = []
+    nombre_regla = None
+    texto_acumulado = ""
+    tipo_parrafo = "texto"
+    numero_parrafo = None
+    y_anterior = None  # Para detectar saltos de párrafo
+    titulo_pendiente = None  # Título bold que aparece antes del número de regla
+    referencias_encontradas = False  # True después de encontrar referencias (fin de contenido)
+
+    # Umbral para detectar nuevo párrafo (salto de línea mayor a lo normal)
+    SALTO_PARRAFO = 12.5  # Líneas normales ~11, párrafos nuevos ~14
+
+    def guardar_parrafo():
+        nonlocal texto_acumulado, tipo_parrafo, numero_parrafo
+        if texto_acumulado.strip():
+            parrafos_actuales.append(Parrafo(
+                tipo=tipo_parrafo,
+                contenido=texto_acumulado.strip(),
+                numero=numero_parrafo
+            ))
+        texto_acumulado = ""
+        tipo_parrafo = "texto"
+        numero_parrafo = None
+
+    def guardar_regla():
+        nonlocal regla_actual, parrafos_actuales, nombre_regla, y_anterior, referencias_encontradas
+        if regla_actual:
+            guardar_parrafo()
+
+            # Filtrar párrafos de referencias y extraerlos
+            parrafos_finales = []
+            referencias_lista = []
+            for p in parrafos_actuales:
+                if p.tipo == "referencias":
+                    referencias_lista.append(p.contenido)
+                else:
+                    parrafos_finales.append(p)
+
+            referencias = " ".join(referencias_lista) if referencias_lista else None
+
+            contenido[regla_actual] = ReglaContenido(
+                numero=regla_actual,
+                nombre=nombre_regla,
+                parrafos=parrafos_finales,
+                referencias=referencias
+            )
+        regla_actual = None
+        parrafos_actuales = []
+        nombre_regla = None
+        y_anterior = None
+        referencias_encontradas = False
+
+    for page_num, page in enumerate(doc):
+        blocks = page.get_text("dict")["blocks"]
+
+        for block in blocks:
+            if "lines" not in block:
+                continue
+
+            for line in block["lines"]:
+                # Reconstruir línea y obtener coordenadas
+                texto_linea = ""
+                x_min = float('inf')
+                y_actual = line["bbox"][1]
+
+                for span in line["spans"]:
+                    texto_linea += span["text"]
+                    x_min = min(x_min, span["bbox"][0])
+
+                texto_linea = texto_linea.strip()
+                if not texto_linea:
+                    continue
+
+                # Detectar si la línea es bold
+                es_bold = linea_es_bold(line["spans"])
+
+                # ¿Es inicio de nueva regla?
+                match_regla = PATRON_REGLA_INICIO.match(texto_linea)
+                if match_regla and abs(x_min - X_REGLA) < X_TOLERANCIA:
+                    numero = match_regla.group(1)
+                    if numero in [r.numero for r in reglas]:
+                        guardar_regla()
+                        regla_actual = numero
+                        y_anterior = None  # Reset para nueva regla
+
+                        # Usar título pendiente si existe
+                        if titulo_pendiente:
+                            nombre_regla = titulo_pendiente
+                            titulo_pendiente = None
+
+                        # O extraer nombre si está en la misma línea
+                        if not nombre_regla:
+                            resto = texto_linea[match_regla.end():].strip()
+                            if resto:
+                                nombre_regla = resto
+                        continue
+
+                # Detectar Título/Capítulo (limpia titulo_pendiente porque es nueva sección)
+                if PATRON_TITULO.match(texto_linea) or PATRON_CAPITULO.match(texto_linea):
+                    titulo_pendiente = None
+                    continue
+
+                # Si es texto bold y no estamos en una regla, es título de la siguiente
+                if es_bold and not regla_actual and abs(x_min - X_TEXTO) < X_TOLERANCIA:
+                    if titulo_pendiente:
+                        titulo_pendiente += " " + texto_linea
+                    else:
+                        titulo_pendiente = texto_linea
+                    continue
+
+                # Detectar si la línea es itálica (referencias)
+                es_italica = linea_es_italica(line["spans"])
+
+                # Si no estamos en una regla, saltar
+                if not regla_actual:
+                    continue
+
+                # Si es texto bold después de referencias, es título de siguiente regla
+                if referencias_encontradas and es_bold and abs(x_min - X_TEXTO) < X_TOLERANCIA:
+                    if titulo_pendiente:
+                        titulo_pendiente += " " + texto_linea
+                    else:
+                        titulo_pendiente = texto_linea
+                    continue
+
+                # ¿Es línea de referencias? (texto itálico en X~156 = referencias)
+                if es_italica and abs(x_min - X_TEXTO) < X_TOLERANCIA:
+                    guardar_parrafo()
+                    parrafos_actuales.append(Parrafo(
+                        tipo="referencias",
+                        contenido=texto_linea
+                    ))
+                    referencias_encontradas = True
+                    continue
+
+                # Clasificar por posición X y contenido
+                if abs(x_min - X_INCISO) < X_TOLERANCIA:
+                    # Inciso
+                    match_inciso = PATRON_INCISO.match(texto_linea)
+                    if match_inciso:
+                        guardar_parrafo()
+                        tipo_parrafo = "inciso"
+                        numero_parrafo = match_inciso.group(1)
+                        texto_acumulado = texto_linea[match_inciso.end():].strip()
+                    else:
+                        # Continuación de inciso
+                        texto_acumulado += " " + texto_linea
+                elif abs(x_min - X_TEXTO) < X_TOLERANCIA:
+                    # Texto normal o fracción
+                    match_fraccion = PATRON_FRACCION.match(texto_linea)
+                    if match_fraccion:
+                        guardar_parrafo()
+                        tipo_parrafo = "fraccion"
+                        numero_parrafo = match_fraccion.group(1)
+                        # El contenido viene en líneas siguientes
+                    else:
+                        # Detectar si es nuevo párrafo por salto de Y
+                        es_nuevo_parrafo = (
+                            y_anterior is not None and
+                            (y_actual - y_anterior) > SALTO_PARRAFO and
+                            texto_acumulado  # Solo si hay texto previo
+                        )
+
+                        if es_nuevo_parrafo:
+                            guardar_parrafo()
+                            texto_acumulado = texto_linea
+                        elif texto_acumulado:
+                            texto_acumulado += " " + texto_linea
+                        else:
+                            texto_acumulado = texto_linea
+                else:
+                    # Otra posición - probablemente continuación
+                    if texto_acumulado:
+                        texto_acumulado += " " + texto_linea
+
+                # Actualizar Y anterior
+                y_anterior = y_actual
+
+    # Guardar última regla
+    guardar_regla()
+
+    return contenido
 
 
 def asignar_reglas_a_capitulos(titulos: list[TituloRef], reglas: list[ReglaRef]):
@@ -294,6 +543,53 @@ def verificar_integridad(titulos: list[TituloRef], reglas: list[ReglaRef]) -> di
         resultado["errores"].append(
             f"Discrepancia: {resultado['reglas_asignadas']} asignadas vs {resultado['reglas_total']} totales"
         )
+
+    return resultado
+
+
+def generar_json_contenido(titulos: list[TituloRef], contenido: dict[str, ReglaContenido]) -> dict:
+    """Genera JSON de contenido (equivalente a contenido.json)."""
+    resultado = {"articulos": []}
+
+    orden = 0
+    for titulo in titulos:
+        for cap in titulo.capitulos:
+            for regla_ref in cap.reglas:
+                orden += 1
+                regla = contenido.get(regla_ref.numero)
+
+                if regla:
+                    articulo = {
+                        "numero": regla.numero,
+                        "orden": orden,
+                        "tipo": "regla",
+                        "division": f"Título {titulo.numero} > Capítulo {cap.numero}",
+                        "nombre": regla.nombre,
+                        "parrafos": [],
+                        "referencias": regla.referencias
+                    }
+
+                    for p in regla.parrafos:
+                        parrafo = {
+                            "tipo": p.tipo,
+                            "contenido": p.contenido
+                        }
+                        if p.numero:
+                            parrafo["numero"] = p.numero
+                        articulo["parrafos"].append(parrafo)
+
+                    resultado["articulos"].append(articulo)
+                else:
+                    # Regla sin contenido extraído
+                    resultado["articulos"].append({
+                        "numero": regla_ref.numero,
+                        "orden": orden,
+                        "tipo": "regla",
+                        "division": f"Título {titulo.numero} > Capítulo {cap.numero}",
+                        "nombre": None,
+                        "parrafos": [],
+                        "referencias": None
+                    })
 
     return resultado
 
@@ -420,16 +716,26 @@ def main():
         if integridad["reglas_huerfanas"]:
             print(f"     Reglas huérfanas (primeras 10): {integridad['reglas_huerfanas'][:10]}")
 
-    # 5. Mostrar estructura
-    print("\n5. Estructura extraída:")
+    # 5. Extraer contenido (si no es solo-estructura)
+    contenido = {}
+    if not solo_estructura:
+        print("\n5. Extrayendo contenido de reglas...")
+        contenido = extraer_contenido(doc, reglas)
+        reglas_con_contenido = sum(1 for r in contenido.values() if r.parrafos)
+        reglas_con_refs = sum(1 for r in contenido.values() if r.referencias)
+        print(f"   Reglas con contenido: {reglas_con_contenido}")
+        print(f"   Reglas con referencias: {reglas_con_refs}")
+
+    # 6. Mostrar estructura
+    print("\n6. Estructura extraída:")
     imprimir_estructura(titulos)
 
-    # 6. Guardar JSON
+    # 7. Guardar JSON
     output_dir = pdf_path.parent
 
     if not solo_contenido:
         mapa_path = output_dir / "mapa_estructura.json"
-        print(f"\n6. Guardando {mapa_path.name}...")
+        print(f"\n7a. Guardando {mapa_path.name}...")
 
         mapa_json = generar_json_estructura(titulos)
         mapa_json["ley"] = codigo
@@ -440,6 +746,18 @@ def main():
         with open(mapa_path, 'w', encoding='utf-8') as f:
             json.dump(mapa_json, f, ensure_ascii=False, indent=2)
         print("   Guardado")
+
+    if not solo_estructura and contenido:
+        contenido_path = output_dir / "contenido.json"
+        print(f"\n7b. Guardando {contenido_path.name}...")
+
+        contenido_json = generar_json_contenido(titulos, contenido)
+        contenido_json["ley"] = codigo
+        contenido_json["fuente"] = config.get("url_fuente", "")
+
+        with open(contenido_path, 'w', encoding='utf-8') as f:
+            json.dump(contenido_json, f, ensure_ascii=False, indent=2)
+        print(f"   Guardado ({len(contenido_json['articulos'])} reglas)")
 
     doc.close()
 
