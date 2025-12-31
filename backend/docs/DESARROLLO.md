@@ -104,14 +104,12 @@ Confirma:
 
 ```bash
 # 1. Ejecutar extracción en TODAS las leyes implementadas
-for ley in CFF CPEUM LISR LIVA; do
-    python backend/etl/extraer_mapa.py $ley
+for ley in CFF CPEUM LISR LIVA LA LIEPS LFT LSS; do
     python backend/etl/extraer.py $ley
 done
 
-# 2. Verificar que no cambió ni el contenido ni la estructura
-git diff backend/etl/data/*/contenido.json
-git diff backend/etl/data/*/mapa_estructura.json
+# 2. Verificar que no cambió el contenido
+git diff --stat backend/etl/data/*/contenido.json
 
 # 3. Si hay cambios inesperados → investigar y corregir
 # 4. Solo hacer commit si las leyes existentes no tienen cambios

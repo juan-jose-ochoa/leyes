@@ -1,0 +1,618 @@
+{
+  "titulos": {
+    "PRIMERO": {
+      "nombre": "DISPOSICIONES GENERALES",
+      "pagina": 1,
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "pagina": 1,
+          "articulos": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "5-A",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ]
+        }
+      }
+    },
+    "SEGUNDO": {
+      "nombre": "DEL REGIMEN OBLIGATORIO",
+      "pagina": 4,
+      "capitulos": {
+        "I": {
+          "nombre": "GENERALIDADES",
+          "pagina": 4,
+          "articulos": [
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "15-A",
+            "15-B",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ]
+        },
+        "II": {
+          "nombre": "DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+          "pagina": 10,
+          "articulos": [
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "28-A",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "39-A",
+            "39-B",
+            "39-C",
+            "39-D",
+            "40",
+            "40-A",
+            "40-B",
+            "40-C",
+            "40-D",
+            "40-E",
+            "40-F"
+          ]
+        },
+        "III": {
+          "nombre": "DEL SEGURO DE RIESGOS DE TRABAJO",
+          "pagina": 18,
+          "articulos": [
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83"
+          ]
+        },
+        "IV": {
+          "nombre": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+          "pagina": 29,
+          "articulos": [
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "102 Bis",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "109 Bis",
+            "110",
+            "111",
+            "111-A"
+          ]
+        },
+        "V": {
+          "nombre": "DEL SEGURO DE INVALIDEZ Y VIDA",
+          "pagina": 37,
+          "articulos": [
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135",
+            "136",
+            "137",
+            "137 Bis",
+            "138",
+            "139",
+            "140",
+            "140 Bis",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151"
+          ]
+        },
+        "VI": {
+          "nombre": "DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+          "pagina": 47,
+          "articulos": [
+            "152",
+            "153",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "172-A",
+            "173",
+            "174",
+            "175",
+            "176",
+            "177",
+            "178",
+            "179",
+            "180",
+            "181",
+            "182",
+            "183",
+            "184",
+            "185",
+            "186",
+            "187",
+            "188",
+            "189",
+            "190",
+            "191",
+            "192",
+            "193",
+            "193 Bis",
+            "194",
+            "195",
+            "196",
+            "197",
+            "198",
+            "199",
+            "200"
+          ]
+        },
+        "VII": {
+          "nombre": "DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+          "pagina": 60,
+          "articulos": [
+            "201",
+            "202",
+            "203",
+            "204",
+            "205",
+            "206",
+            "207",
+            "208",
+            "209",
+            "210",
+            "210-A",
+            "211",
+            "212",
+            "213",
+            "214",
+            "215",
+            "216",
+            "216-A",
+            "217"
+          ]
+        },
+        "VIII": {
+          "nombre": "DE LA CONTINUACION VOLUNTARIA EN EL REGIMEN OBLIGATORIO",
+          "pagina": 64,
+          "articulos": [
+            "218",
+            "219",
+            "220",
+            "221"
+          ]
+        },
+        "IX": {
+          "nombre": "DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+          "pagina": 65,
+          "articulos": [
+            "222",
+            "223",
+            "224",
+            "225",
+            "226",
+            "227",
+            "228",
+            "229",
+            "230",
+            "231",
+            "232",
+            "233"
+          ]
+        },
+        "X": {
+          "nombre": "DE LA SEGURIDAD SOCIAL EN EL CAMPO",
+          "pagina": 68,
+          "articulos": [
+            "234",
+            "235",
+            "236",
+            "237",
+            "237-A",
+            "237-B",
+            "237-C",
+            "237-D",
+            "237-E",
+            "238",
+            "239"
+          ]
+        },
+        "XI": {
+          "nombre": "DE LAS PERSONAS TRABAJADORAS DEL HOGAR",
+          "pagina": 70,
+          "articulos": [
+            "239-A",
+            "239-B",
+            "239-C",
+            "239-D",
+            "239-E",
+            "239-F",
+            "239-G",
+            "239-H"
+          ]
+        }
+      }
+    },
+    "TERCERO": {
+      "nombre": "DEL REGIMEN VOLUNTARIO",
+      "pagina": 72,
+      "capitulos": {
+        "I": {
+          "nombre": "DEL SEGURO DE SALUD PARA LA FAMILIA",
+          "pagina": 72,
+          "articulos": [
+            "240",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "250-A",
+            "250-B"
+          ]
+        },
+        "II": {
+          "nombre": "DE LOS SEGUROS ADICIONALES",
+          "pagina": 73,
+          "articulos": [
+            "246",
+            "247",
+            "248",
+            "249",
+            "250"
+          ]
+        },
+        "III": {
+          "nombre": "OTROS SEGUROS",
+          "pagina": 73,
+          "articulos": []
+        }
+      }
+    },
+    "CUARTO": {
+      "nombre": null,
+      "pagina": 73,
+      "capitulos": {
+        "I": {
+          "nombre": "DE LAS ATRIBUCIONES, PATRIMONIO Y ÓRGANOS DE GOBIERNO Y ADMINISTRACIÓN",
+          "pagina": 74,
+          "articulos": [
+            "251",
+            "251-A",
+            "252",
+            "253",
+            "254",
+            "255",
+            "256",
+            "257"
+          ]
+        },
+        "II": {
+          "nombre": "DE LA ASAMBLEA GENERAL",
+          "pagina": 79,
+          "articulos": [
+            "258",
+            "259",
+            "260",
+            "261",
+            "262"
+          ]
+        },
+        "III": {
+          "nombre": "DEL CONSEJO TECNICO",
+          "pagina": 80,
+          "articulos": [
+            "263",
+            "264"
+          ]
+        },
+        "IV": {
+          "nombre": "DE LA COMISION DE VIGILANCIA",
+          "pagina": 83,
+          "articulos": [
+            "265",
+            "266"
+          ]
+        },
+        "V": {
+          "nombre": "DE LA DIRECCION GENERAL",
+          "pagina": 83,
+          "articulos": [
+            "267",
+            "268",
+            "268-A",
+            "269"
+          ]
+        },
+        "VI": {
+          "nombre": "DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL",
+          "pagina": 85,
+          "articulos": [
+            "270",
+            "271",
+            "272",
+            "273",
+            "274",
+            "275",
+            "276",
+            "277",
+            "277-A",
+            "277-B",
+            "277-C",
+            "277-D",
+            "277-E",
+            "277-F",
+            "277-G"
+          ]
+        },
+        "VII": {
+          "nombre": "DE LA CONSTITUCIÓN DE RESERVAS",
+          "pagina": 91,
+          "articulos": [
+            "278",
+            "279",
+            "280",
+            "281",
+            "282",
+            "283",
+            "284",
+            "285",
+            "286",
+            "286-A",
+            "286-B",
+            "286-C",
+            "286-D",
+            "286-E",
+            "286-F",
+            "286-G",
+            "286-H"
+          ]
+        },
+        "VIII": {
+          "nombre": "DEL SISTEMA DE PROFESIONALIZACIÓN Y DESARROLLO",
+          "pagina": 95,
+          "articulos": [
+            "286-I",
+            "286-J",
+            "286-K",
+            "286-L",
+            "286-M"
+          ]
+        },
+        "IX": {
+          "nombre": "DE LOS MEDIOS DE COMUNICACIÓN",
+          "pagina": 97,
+          "articulos": [
+            "286-N"
+          ]
+        }
+      }
+    },
+    "QUINTO": {
+      "nombre": "DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION",
+      "pagina": 98,
+      "capitulos": {
+        "I": {
+          "nombre": "DE LOS CRÉDITOS FISCALES",
+          "pagina": 98,
+          "articulos": [
+            "287",
+            "288",
+            "289",
+            "290"
+          ]
+        },
+        "II": {
+          "nombre": "DE LOS PROCEDIMIENTOS",
+          "pagina": 99,
+          "articulos": [
+            "291",
+            "292",
+            "293",
+            "294",
+            "295",
+            "296"
+          ]
+        },
+        "III": {
+          "nombre": "DE LA CADUCIDAD Y PRESCRIPCION",
+          "pagina": 100,
+          "articulos": [
+            "297",
+            "298",
+            "299",
+            "300",
+            "301",
+            "302",
+            "303-A",
+            "304-A"
+          ]
+        }
+      }
+    },
+    "SEXTO": {
+      "nombre": "DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS",
+      "pagina": 102,
+      "capitulos": {
+        "I": {
+          "nombre": "DE LAS RESPONSABILIDADES",
+          "pagina": 103,
+          "articulos": [
+            "303"
+          ]
+        },
+        "II": {
+          "nombre": "DE LAS INFRACCIONES Y SANCIONES",
+          "pagina": 103,
+          "articulos": [
+            "304",
+            "304-B",
+            "304-C",
+            "304-D"
+          ]
+        },
+        "III": {
+          "nombre": "DE LOS DELITOS",
+          "pagina": 106,
+          "articulos": [
+            "305",
+            "306",
+            "307",
+            "308",
+            "309",
+            "310",
+            "311",
+            "312",
+            "313",
+            "314",
+            "315",
+            "316",
+            "317",
+            "318",
+            "319"
+          ]
+        }
+      }
+    }
+  },
+  "transitorios": [],
+  "estadisticas": {
+    "titulos": 6,
+    "capitulos": 30,
+    "secciones": 0,
+    "articulos_vigentes": 385,
+    "articulos_derogados": 0,
+    "articulos_transitorios": 0,
+    "total": 385
+  },
+  "ley": "LSS",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+  "metodo": "outline",
+  "notas": "Extraído del outline del PDF. Fuente autoritativa."
+}

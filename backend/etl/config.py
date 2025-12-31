@@ -185,10 +185,6 @@ LEYES = {
                 r"Denominación.*reformada.*DOF",
             ],
         },
-
-        # Página donde terminan los artículos permanentes + transitorios originales
-        # Después de esta página comienzan los transitorios de decretos de reforma
-        "pagina_fin_contenido": 162,
     },
 
     "LISR": {
@@ -257,9 +253,6 @@ LEYES = {
                 r"adicionad[oa].*DOF",
             ],
         },
-
-        # Página donde terminan los artículos permanentes
-        "pagina_fin_contenido": 278,
     },
 
     "LIVA": {
@@ -329,9 +322,6 @@ LEYES = {
                 r"adicionad[oa].*DOF",
             ],
         },
-
-        # Página donde terminan los artículos permanentes + transitorios originales
-        "pagina_fin_contenido": 52,
     },
 
     "LA": {
@@ -403,9 +393,6 @@ LEYES = {
                 r"adicionad[oa].*DOF",
             ],
         },
-
-        # Página donde terminan los artículos permanentes
-        "pagina_fin_contenido": 200,
     },
 
     "LIEPS": {
@@ -459,9 +446,6 @@ LEYES = {
                 r"derogad[oa].*DOF",
             ],
         },
-
-        # Página donde terminan los artículos permanentes
-        "pagina_fin_contenido": 150,
     },
 
     "LFT": {
@@ -516,6 +500,61 @@ LEYES = {
                 r"Fracción.*DOF",
                 r"Artículo.*DOF",
                 r"Inciso.*DOF",
+                r"reformad[oa].*DOF",
+                r"adicionad[oa].*DOF",
+                r"derogad[oa].*DOF",
+            ],
+        },
+    },
+
+    "LSS": {
+        "nombre": "Ley del Seguro Social",
+        "nombre_corto": "Seguro Social",
+        "tipo": "ley",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+        "pdf_path": "backend/etl/data/lss/lss_ley_del_seguro_social.pdf",
+
+        # Estructura jerárquica permitida
+        "divisiones_permitidas": ["titulo", "capitulo"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
+
+        # Tipo de contenido principal
+        "tipo_contenido": "articulo",
+
+        # Patrones de detección
+        "patrones": {
+            # Artículo: "Artículo 1.-" o "Artículo 5 A.-" o "Artículo 15-A.-"
+            "articulo": r'^Artículo\s+(\d+)([oa])?(?:[-–\s_]*([A-Z]))?(?:[-–\s]+(Bis|Ter|Quáter|Quinquies|Sexies))?\.?[- –]',
+
+            # Divisiones estructurales
+            "titulo": r'^T[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO)\s*$',
+            "capitulo": r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$',
+
+            # Fracciones dentro de artículos
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+        },
+
+        # Ruido a eliminar
+        "ruido_lineas": [
+            'LEY DEL SEGURO SOCIAL',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'Última Reforma',
+            'Última reforma',
+        ],
+
+        # Detección de referencias
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
                 r"reformad[oa].*DOF",
                 r"adicionad[oa].*DOF",
                 r"derogad[oa].*DOF",

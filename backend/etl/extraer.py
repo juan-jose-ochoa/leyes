@@ -33,6 +33,15 @@ Y_PARAGRAPH_GAP = 12
 
 BASE_DIR = Path(__file__).parent.parent.parent
 
+# Patrón para detectar sección de transitorios (fin de artículos permanentes)
+# Cubre: TRANSITORIO, TRANSITORIA, TRANSITORIOS, TRANSITORIAS
+_PATRON_TRANSITORIOS = re.compile(r'TRANSITORI[OA]S?', re.IGNORECASE)
+
+
+def es_seccion_transitorios(texto: str) -> bool:
+    """Detecta si el texto indica inicio de sección TRANSITORIOS/TRANSITORIAS."""
+    return bool(_PATRON_TRANSITORIOS.search(texto))
+
 
 @dataclass
 class Parrafo:
@@ -429,6 +438,11 @@ class Extractor:
                 if any(skip in text for skip in ruido):
                     continue
 
+                # Detectar sección TRANSITORIOS (termina extracción de artículos)
+                if es_seccion_transitorios(text) and linea.get('is_bold') and en_articulo:
+                    en_articulo = False
+                    break
+
                 # Filtrar encabezados de división (TITULO, CAPITULO, SECCION)
                 # Criterios: 1) bold completo, 2) centrado (2*x + ancho ≈ page_width)
                 # Plus: contiene Titulo/Capítulo/Sección
@@ -582,8 +596,8 @@ class Extractor:
             for j, c in enumerate(chars):
                 if c['text'].upper() == 'T':
                     texto = ''.join(cc['text'] for cc in chars[j:min(j+20, len(chars))])
-                    # Buscar "TRANSITORIO" (cubre singular y plural, y "ARTÍCULOS TRANSITORIOS")
-                    if 'TRANSITORIO' in texto.upper():
+                    # Buscar TRANSITORIO/TRANSITORIOS/TRANSITORIAS
+                    if es_seccion_transitorios(texto):
                         x = c.get('x0', 0)
                         fontname = c.get('fontname', '')
                         is_bold = 'Bold' in fontname or 'bold' in fontname
@@ -631,7 +645,10 @@ class Extractor:
 
             # Detectar fin de artículos (sección TRANSITORIOS) - DESPUÉS de procesar la página
             if pagina_tiene_transitorios(page):
+                pagina_transitorios = i  # Guardar página donde inician TRANSITORIOS
                 break  # Dejar de buscar más artículos en páginas siguientes
+        else:
+            pagina_transitorios = None  # No se encontró sección TRANSITORIOS
 
         # Eliminar duplicados manteniendo primera aparición
         numeros_vistos = set()
@@ -649,7 +666,11 @@ class Extractor:
             if idx + 1 < len(articulos_unicos):
                 pag_fin = articulos_unicos[idx + 1][1]
             else:
-                pag_fin = min(pag_inicio + 5, len(self.pdf.pages) - 1)
+                # Último artículo: usar página de TRANSITORIOS como límite
+                if pagina_transitorios is not None:
+                    pag_fin = pagina_transitorios
+                else:
+                    pag_fin = min(pag_inicio + 5, len(self.pdf.pages) - 1)
 
             # Patrón específico para este artículo
             # Convertir "4o-A" a patrón que coincida con "4o.-A.-" del PDF
