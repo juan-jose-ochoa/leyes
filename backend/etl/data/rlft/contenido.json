@@ -84,7 +84,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "En las oficinas de la empresa, y 2 de 6",
+          "contenido": "En las oficinas de la empresa, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -234,15 +234,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "3 de 6",
-          "padre_numero": 3,
-          "x_id": 295,
-          "x_texto": 295
         }
       ]
     },
@@ -389,15 +380,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "4 de 6",
-          "padre_numero": 1,
-          "x_id": 295,
-          "x_texto": 295
         }
       ]
     },
@@ -538,15 +520,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "5 de 6",
-          "padre_numero": 1,
-          "x_id": 295,
-          "x_texto": 295
         }
       ]
     },

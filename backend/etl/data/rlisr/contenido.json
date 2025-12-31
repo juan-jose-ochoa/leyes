@@ -126,15 +126,6 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "1 de 93",
-          "padre_numero": 2,
-          "x_id": 293,
-          "x_texto": 293
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "En los casos en los que por la naturaleza de los servicios se considere que la duración de los mismos excederá de 183 días naturales en un periodo de doce meses, el contribuyente deberá cumplir con sus obligaciones conforme a lo dispuesto por el Título II o Título IV, Capítulo II de la Ley, según corresponda, desde el inicio de sus actividades.",
           "padre_numero": null,
           "x_id": 85,
@@ -257,22 +248,13 @@
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "2 de 93",
-          "padre_numero": 4,
-          "x_id": 293,
-          "x_texto": 293
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "En el caso de que únicamente se hubieran realizado operaciones de venta de divisas durante el día, el tipo de cambio promedio de las operaciones será el resultado de la fracción II de este artículo. Cuando únicamente se hubieran realizado operaciones de compra de divisas durante el día, el tipo de cambio promedio de sus operaciones será el resultado de la fracción III de este artículo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, en el caso de que no existan operaciones de compraventa de alguna divisa, pero se tengan que determinar las pérdidas cambiarias devengadas por la fluctuación en su valor, las casas de cambio o centros cambiarios deberán usar el tipo de cambio que publique el Banco de México a que se refiere el artículo 8 de la Ley, en el caso de dólares de los Estados Unidos de América; tratándose de divisas distintas del dólar de los Estados Unidos de América, deberán usar la tabla de equivalencias de las monedas con el dólar de los Estados Unidos de América elaborada por el Banco de México, publicada en el Diario Oficial de Federación en la primera semana del mes inmediato siguiente al día en el que se sufra la pérdida.",
@@ -368,15 +350,6 @@
           "referencias": [
             "Artículo reformado DOF 06-05-2016"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "3 de 93",
-          "padre_numero": 1,
-          "x_id": 293,
-          "x_texto": 293
         }
       ]
     },
@@ -510,7 +483,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos del artículo 17, párrafos segundo y tercero de la Ley, se considera autorizada o aprobada una estimación en la fecha en que el residente de supervisión o la persona 4 de 93 facultada por el cliente para efectuar la supervisión del avance de la obra, firme de conformidad dicha estimación.",
+          "contenido": "Para efectos del artículo 17, párrafos segundo y tercero de la Ley, se considera autorizada o aprobada una estimación en la fecha en que el residente de supervisión o la persona facultada por el cliente para efectuar la supervisión del avance de la obra, firme de conformidad dicha estimación.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -649,7 +622,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "Cuando la diferencia determinada sea menor que el costo comprobado de adquisición, se considerará como monto original ajustado de las acciones a que se refiere el artículo 22, fracción I de la Ley, la cantidad que resulte de restar al costo comprobado de adquisición actualizado, la diferencia determinada en términos del párrafo primero de este artículo, y 5 de 93",
+          "contenido": "Cuando la diferencia determinada sea menor que el costo comprobado de adquisición, se considerará como monto original ajustado de las acciones a que se refiere el artículo 22, fracción I de la Ley, la cantidad que resulte de restar al costo comprobado de adquisición actualizado, la diferencia determinada en términos del párrafo primero de este artículo, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -788,7 +761,7 @@
           "numero": 6,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Asimismo, se deberán presentar copias certificadas por el secretario del consejo de administración o el administrador único, correspondientes al libro de registro de acciones nominativas y al libro de 6 de 93 variaciones de capital, en su caso, que las personas morales se encuentran obligadas a llevar conforme a la Ley General de Sociedades Mercantiles.",
+          "contenido": "Asimismo, se deberán presentar copias certificadas por el secretario del consejo de administración o el administrador único, correspondientes al libro de registro de acciones nominativas y al libro de variaciones de capital, en su caso, que las personas morales se encuentran obligadas a llevar conforme a la Ley General de Sociedades Mercantiles.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -893,15 +866,6 @@
         },
         {
           "numero": 11,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "7 de 93",
-          "padre_numero": 10,
-          "x_id": 293,
-          "x_texto": 293
-        },
-        {
-          "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "No se podrá optar por efectuar la deducción de los gastos de conservación y mantenimiento en términos del presente artículo, cuando las personas que presten los servicios de administración carezcan de facultades para actuar en nombre y representación de la asamblea general de condóminos.",
@@ -1022,15 +986,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "8 de 93",
-          "padre_numero": 3,
-          "x_id": 293,
-          "x_texto": 293
         }
       ]
     },
@@ -1149,7 +1104,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los monumentos artísticos o históricos en términos de la Ley Federal sobre Monumentos y Zonas Arqueológicos, Artísticos e Históricos, donados a la Federación, a las entidades federativas, a los municipios, así como a sus respectivos organismos públicos descentralizados que tributen conforme 9 de 93 al Título III de la Ley, también se considerarán dentro de los donativos previstos en el artículo 27, fracción I de la Ley.",
+          "contenido": "Los monumentos artísticos o históricos en términos de la Ley Federal sobre Monumentos y Zonas Arqueológicos, Artísticos e Históricos, donados a la Federación, a las entidades federativas, a los municipios, así como a sus respectivos organismos públicos descentralizados que tributen conforme al Título III de la Ley, también se considerarán dentro de los donativos previstos en el artículo 27, fracción I de la Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -1297,7 +1252,7 @@
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos de esta fracción, el contribuyente deberá aportar los elementos de prueba que considere pertinentes, y 10 de 93",
+          "contenido": "Para efectos de esta fracción, el contribuyente deberá aportar los elementos de prueba que considere pertinentes, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 114
@@ -1433,15 +1388,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "11 de 93",
-          "padre_numero": 6,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -1577,7 +1523,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos del artículo 27, fracción XI, párrafo sexto de la Ley, los contribuyentes podrán deducir los pagos de primas de seguros de gastos médicos que efectúen, cuando los beneficios de dichos seguros además de otorgarse a sus trabajadores, se otorguen en beneficio del cónyuge, de la 12 de 93 persona con quien viva en concubinato, o de ascendientes o descendientes en línea recta, de dichos trabajadores.",
+          "contenido": "Para efectos del artículo 27, fracción XI, párrafo sexto de la Ley, los contribuyentes podrán deducir los pagos de primas de seguros de gastos médicos que efectúen, cuando los beneficios de dichos seguros además de otorgarse a sus trabajadores, se otorguen en beneficio del cónyuge, de la persona con quien viva en concubinato, o de ascendientes o descendientes en línea recta, de dichos trabajadores.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -1728,15 +1674,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "13 de 93",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -1785,16 +1722,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos del artículo 28, fracción V de la Ley, los contribuyentes podrán deducir los gastos erogados por concepto de gasolina, aceite, servicios, reparaciones y refacciones, cuando se efectúen con motivo del uso del automóvil propiedad de una persona que preste servicios personales subordinados al contribuyente y sean consecuencia de un viaje realizado para desempeñar actividades propias del contribuyente.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "La deducción a que se refiere este artículo no podrá exceder de 93 centavos M.N., por kilómetro recorrido por el automóvil, sin que dicho kilometraje pueda ser superior a veinticinco mil kilómetros recorridos en el ejercicio y además se reúnan los demás requisitos que para las deducciones establecen las disposiciones fiscales. Para efectos de este párrafo, los gastos que se hubieren erogado con motivo del uso del automóvil propiedad de la persona que preste servicios personales subordinados al contribuyente, deberán haberse realizado en territorio nacional y estar amparados con el comprobante fiscal expedido a nombre del contribuyente, siempre que éste distinga dichos comprobantes de los que acrediten los gastos efectuados en los vehículos de su propiedad. Asimismo, se deberá acompañar el comprobante fiscal que ampare el hospedaje de la persona que conduzca el vehículo.",
+          "contenido": "Para efectos del artículo 28, fracción V de la Ley, los contribuyentes podrán deducir los gastos erogados por concepto de gasolina, aceite, servicios, reparaciones y refacciones, cuando se efectúen con motivo del uso del automóvil propiedad de una persona que preste servicios personales subordinados al contribuyente y sean consecuencia de un viaje realizado para desempeñar actividades propias del contribuyente. recorrido por el automóvil, sin que dicho kilometraje pueda ser superior a veinticinco mil kilómetros recorridos en el ejercicio y además se reúnan los demás requisitos que para las deducciones establecen las disposiciones fiscales. Para efectos de este párrafo, los gastos que se hubieren erogado con motivo del uso del automóvil propiedad de la persona que preste servicios personales subordinados al contribuyente, deberán haberse realizado en territorio nacional y estar amparados con el comprobante fiscal expedido a nombre del contribuyente, siempre que éste distinga dichos comprobantes de los que acrediten los gastos efectuados en los vehículos de su propiedad. Asimismo, se deberá acompañar el comprobante fiscal que ampare el hospedaje de la persona que conduzca el vehículo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -1846,7 +1774,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Una vez presentado el aviso a que se refiere el párrafo anterior, para efectuar la deducción correspondiente, el contribuyente deberá conservar por cada ejercicio de que se trate, durante el plazo a 14 de 93 que se refiere el artículo 30 del Código Fiscal de la Federación, la documentación que acredite la estancia de las personas que ocupan dicho inmueble.",
+          "contenido": "Una vez presentado el aviso a que se refiere el párrafo anterior, para efectuar la deducción correspondiente, el contribuyente deberá conservar por cada ejercicio de que se trate, durante el plazo a que se refiere el artículo 30 del Código Fiscal de la Federación, la documentación que acredite la estancia de las personas que ocupan dicho inmueble.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -1993,7 +1921,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los contribuyentes que constituyan las reservas a que se refiere el artículo 29 de la Ley, dentro de los tres meses siguientes a cada aniversario de que se constituyó el plan de pensiones o 15 de 93 jubilaciones de personal de que se trate, deberán formular y conservar a disposición de las autoridades fiscales la documentación que a continuación se señala:",
+          "contenido": "Los contribuyentes que constituyan las reservas a que se refiere el artículo 29 de la Ley, dentro de los tres meses siguientes a cada aniversario de que se constituyó el plan de pensiones o jubilaciones de personal de que se trate, deberán formular y conservar a disposición de las autoridades fiscales la documentación que a continuación se señala:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -2107,7 +2035,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Las casas para los trabajadores tendrán el carácter de viviendas de interés social cuando reúnan los siguientes requisitos: 16 de 93",
+          "contenido": "Las casas para los trabajadores tendrán el carácter de viviendas de interés social cuando reúnan los siguientes requisitos:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -2203,7 +2131,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos del artículo 29, fracción VI de la Ley, se considera que no se dispone de los bienes, valores o de los rendimientos de la reserva de los fondos de pensiones o jubilaciones de personal, en el caso de que un trabajador termine su relación laboral antes de estar en alguno de los supuestos de jubilación o pensión del plan de pensiones o jubilaciones de personal de que se trate, y las aportaciones efectuadas por el empleador de dicho trabajador y sus rendimientos acumulados no se puedan transferir a otro plan de pensiones o jubilaciones complementario a los que establece la Ley del Seguro Social, constituido por la empresa a la que el trabajador fuere a prestar sus servicios. En este caso, el monto de las aportaciones acumuladas efectuadas por el empleador y sus rendimientos, deberá ser transferido por el empleador a la subcuenta de aportaciones complementarias de retiro a que se refiere el artículo 74 de la Ley de los Sistemas de Ahorro para el Retiro, o bien, deberá depositarse en alguna de las cuentas de planes personales de retiro a que se refiere el artículo 151, fracción V de la Ley. 17 de 93",
+          "contenido": "Para efectos del artículo 29, fracción VI de la Ley, se considera que no se dispone de los bienes, valores o de los rendimientos de la reserva de los fondos de pensiones o jubilaciones de personal, en el caso de que un trabajador termine su relación laboral antes de estar en alguno de los supuestos de jubilación o pensión del plan de pensiones o jubilaciones de personal de que se trate, y las aportaciones efectuadas por el empleador de dicho trabajador y sus rendimientos acumulados no se puedan transferir a otro plan de pensiones o jubilaciones complementario a los que establece la Ley del Seguro Social, constituido por la empresa a la que el trabajador fuere a prestar sus servicios. En este caso, el monto de las aportaciones acumuladas efectuadas por el empleador y sus rendimientos, deberá ser transferido por el empleador a la subcuenta de aportaciones complementarias de retiro a que se refiere el artículo 74 de la Ley de los Sistemas de Ahorro para el Retiro, o bien, deberá depositarse en alguna de las cuentas de planes personales de retiro a que se refiere el artículo 151, fracción V de la Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -2311,15 +2239,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "18 de 93",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -2446,7 +2365,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectuar la deducción a que se refiere el párrafo anterior, los contribuyentes llevarán un registro inicial de compras y servicios por pagar, que se adicionará con el monto de las adquisiciones de las mercancías y servicios recibidos, efectuados en el ejercicio fiscal de que se trate pendientes de pagar y 19 de 93 se disminuirá con el monto de las adquisiciones y servicios efectivamente pagados durante dicho ejercicio. El saldo que se obtenga de este registro al cierre del ejercicio de que se trate, se considerará como registro inicial del ejercicio inmediato posterior.",
+          "contenido": "Para efectuar la deducción a que se refiere el párrafo anterior, los contribuyentes llevarán un registro inicial de compras y servicios por pagar, que se adicionará con el monto de las adquisiciones de las mercancías y servicios recibidos, efectuados en el ejercicio fiscal de que se trate pendientes de pagar y se disminuirá con el monto de las adquisiciones y servicios efectivamente pagados durante dicho ejercicio. El saldo que se obtenga de este registro al cierre del ejercicio de que se trate, se considerará como registro inicial del ejercicio inmediato posterior.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -2555,15 +2474,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "20 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -2691,7 +2601,7 @@
           "numero": 6,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": "Restarán el promedio de los saldos que la deuda que se cancela haya tenido al final de cada uno de los meses que abarque el periodo comprendido desde la fecha en la que se contrajo la deuda que se cancela hasta el mes en el que se cancela la operación 21 de 93 respectiva, del saldo promedio anual de las deudas del ejercicio en el cual se cancele la operación.",
+          "contenido": "Restarán el promedio de los saldos que la deuda que se cancela haya tenido al final de cada uno de los meses que abarque el periodo comprendido desde la fecha en la que se contrajo la deuda que se cancela hasta el mes en el que se cancela la operación respectiva, del saldo promedio anual de las deudas del ejercicio en el cual se cancele la operación.",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136
@@ -2804,22 +2714,13 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "22 de 93",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "El interés nominal se calculará como la diferencia entre el precio de venta de la acción de la sociedad de inversión especializada en fondos de retiro que se liquida para entregar las aportaciones voluntarias junto a sus rendimientos, y el precio de adquisición de la acción, considerando que las primeras acciones que se adquirieron fueron las primeras que se enajenaron.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 5,
+          "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para calcular el interés real se seguirá el procedimiento previsto en el párrafo anterior y al precio de venta de la acción se le restará su precio de adquisición, actualizado conforme a lo siguiente:",
@@ -2828,7 +2729,7 @@
           "x_texto": 85
         },
         {
-          "numero": 6,
+          "numero": 5,
           "tipo": "fraccion",
           "identificador": "I",
           "contenido": "Se obtendrá un factor dividiendo el valor de la unidad de inversión del día en el que se vendan las acciones entre el valor de esa unidad al día en el que se realizó la compra de las acciones, y",
@@ -2837,7 +2738,7 @@
           "x_texto": 107
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "El factor que resulte conforme a la fracción anterior se multiplicará por el valor de adquisición de la acción que se liquida. El resultado así obtenido será el costo de adquisición actualizado.",
@@ -2935,7 +2836,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Las instituciones de crédito, las sociedades cooperativas de ahorro y préstamo y las sociedades financieras populares para realizar el cálculo del saldo promedio diario de la inversión que no exceda de cinco salarios mínimos generales del área geográfica del Distrito Federal, elevado al año, a que se refiere el artículo 93, fracción XX, incisos a) y b) de la Ley, respecto de los intereses pagados por 23 de 93 dichas instituciones y sociedades, deberán considerar todas las cuentas o inversiones, según corresponda, de las que el contribuyente sea titular de una misma institución o sociedad.",
+          "contenido": "Las instituciones de crédito, las sociedades cooperativas de ahorro y préstamo y las sociedades financieras populares para realizar el cálculo del saldo promedio diario de la inversión que no exceda de cinco salarios mínimos generales del área geográfica del Distrito Federal, elevado al año, a que se refiere el artículo 93, fracción XX, incisos a) y b) de la Ley, respecto de los intereses pagados por dichas instituciones y sociedades, deberán considerar todas las cuentas o inversiones, según corresponda, de las que el contribuyente sea titular de una misma institución o sociedad.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3075,7 +2976,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "Lugar y fecha de expedición; 24 de 93",
+          "contenido": "Lugar y fecha de expedición;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3198,7 +3099,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "Lugar y fecha de la operación, y 25 de 93",
+          "contenido": "Lugar y fecha de la operación, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3338,7 +3239,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos del artículo 27, fracción XX, párrafo primero de la Ley, los contribuyentes deberán efectuar la destrucción de mercancías, materias primas, productos semiterminados o terminados, que hubieran perdido su valor por deterioro u otras causas no imputables al contribuyente. Para tal efecto deberán presentar cuando menos treinta días antes de la fecha en la que se pretenda 26 de 93 efectuar la destrucción, aviso de destrucción de mercancía, en el que se señalen los datos de la mercancía a destruir, método de destrucción, fecha, hora y lugar de la misma, y demás requisitos que establezca el SAT mediante reglas de carácter general.",
+          "contenido": "Para efectos del artículo 27, fracción XX, párrafo primero de la Ley, los contribuyentes deberán efectuar la destrucción de mercancías, materias primas, productos semiterminados o terminados, que hubieran perdido su valor por deterioro u otras causas no imputables al contribuyente. Para tal efecto deberán presentar cuando menos treinta días antes de la fecha en la que se pretenda efectuar la destrucción, aviso de destrucción de mercancía, en el que se señalen los datos de la mercancía a destruir, método de destrucción, fecha, hora y lugar de la misma, y demás requisitos que establezca el SAT mediante reglas de carácter general.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3462,22 +3363,13 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "27 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Los contribuyentes a que se refiere este artículo deberán informar al SAT, en el mes de febrero de cada año, a través de la página de Internet de dicho órgano administrativo desconcentrado, de conformidad con las reglas de carácter general que al efecto emita, respecto de aquellos bienes que fueron entregados en donación en el ejercicio inmediato anterior, con motivo de dichos convenios, así como de aquéllos que, en su caso, fueron destruidos en ese mismo ejercicio.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 4,
+          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando las donatarias a que se refiere este artículo no recojan dentro del plazo señalado en el convenio celebrado los bienes ofrecidos en donación, el contribuyente podrá destruirlos.",
@@ -3486,7 +3378,7 @@
           "x_texto": 85
         },
         {
-          "numero": 5,
+          "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El SAT, en base a la información proporcionada por los contribuyentes, deberá publicar en su página de Internet una relación de los convenios a que se refiere el presente artículo, así como de los bienes donados y de los destruidos.",
@@ -3592,7 +3484,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos del artículo 76, fracción XI de la Ley, las personas morales que distribuyan dividendos o utilidades respecto de acciones colocadas entre el gran público inversionista, conforme a las reglas generales que al efecto expida el SAT, a personas residentes en México o en el extranjero, a que se refieren los artículos 140 y 164 fracción I de la Ley, estarán a lo siguiente: 28 de 93",
+          "contenido": "Para efectos del artículo 76, fracción XI de la Ley, las personas morales que distribuyan dividendos o utilidades respecto de acciones colocadas entre el gran público inversionista, conforme a las reglas generales que al efecto expida el SAT, a personas residentes en México o en el extranjero, a que se refieren los artículos 140 y 164 fracción I de la Ley, estarán a lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3714,15 +3606,6 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "29 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Cuando las utilidades distribuidas por reducción de capital provengan de la cuenta de utilidad fiscal neta, los contribuyentes podrán disminuir de la utilidad distribuida determinada de conformidad con el artículo 78, fracción I de la Ley, el saldo de la cuenta de utilidad fiscal neta por acción, sin que el monto disminuido por dicho concepto, por las acciones reembolsadas o consideradas para la reducción de capital, exceda de la utilidad distribuida determinada.",
           "padre_numero": null,
           "x_id": 85,
@@ -3827,7 +3710,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los ingresos por dividendos o utilidades distribuidos por personas morales que se perciban a través de un fideicomiso, se considerarán obtenidos directamente de la persona moral que los distribuyó originalmente, y se acumularán en términos del artículo 140 de la Ley si quien los obtiene es persona física, o se adicionarán a la cuenta de utilidad fiscal neta conforme al artículo 77 de la Ley si se 30 de 93 trata de persona moral. Los dividendos o utilidades referidos se considerarán en la proporción que le corresponda a cada uno de los integrantes del fideicomiso.",
+          "contenido": "Los ingresos por dividendos o utilidades distribuidos por personas morales que se perciban a través de un fideicomiso, se considerarán obtenidos directamente de la persona moral que los distribuyó originalmente, y se acumularán en términos del artículo 140 de la Ley si quien los obtiene es persona física, o se adicionarán a la cuenta de utilidad fiscal neta conforme al artículo 77 de la Ley si se trata de persona moral. Los dividendos o utilidades referidos se considerarán en la proporción que le corresponda a cada uno de los integrantes del fideicomiso.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3953,15 +3836,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "31 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -4110,15 +3984,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "32 de 93",
-          "padre_numero": 6,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -4258,7 +4123,7 @@
           "numero": 15,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "Fomento de acciones para mejorar la economía popular, aquellas actividades que comprenden la capacitación en el desarrollo de oficios, artes, habilidades y conocimientos, encaminados al logro de autogestión, autoempleo, autoempresa y autonomía de los requerimientos básicos de 33 de 93 subsistencia, siempre que no implique el otorgar a los beneficiarios de dichas actividades apoyos económicos, préstamos o beneficios de cualquier naturaleza sobre el remanente distribuible de la organización civil o fideicomiso autorizado para recibir donativos deducibles que proporciona este servicio.",
+          "contenido": "Fomento de acciones para mejorar la economía popular, aquellas actividades que comprenden la capacitación en el desarrollo de oficios, artes, habilidades y conocimientos, encaminados al logro de autogestión, autoempleo, autoempresa y autonomía de los requerimientos básicos de subsistencia, siempre que no implique el otorgar a los beneficiarios de dichas actividades apoyos económicos, préstamos o beneficios de cualquier naturaleza sobre el remanente distribuible de la organización civil o fideicomiso autorizado para recibir donativos deducibles que proporciona este servicio.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4394,15 +4259,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "34 de 93",
-          "padre_numero": 8,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -4531,7 +4387,7 @@
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "B. Las personas morales y fideicomisos autorizados para recibir donativos deducibles que realicen inversiones se considerarán que destinan sus activos exclusivamente a los fines propios de su objeto social, cuando adquieran acciones u otros títulos de crédito, colocados entre el gran 35 de 93 público inversionista, o realicen operaciones financieras derivadas referidas a dichas acciones o títulos de crédito, en los mercados reconocidos a que se refiere el artículo 16-C, fracciones I y II del Código Fiscal de la Federación, siempre que:",
+          "contenido": "B. Las personas morales y fideicomisos autorizados para recibir donativos deducibles que realicen inversiones se considerarán que destinan sus activos exclusivamente a los fines propios de su objeto social, cuando adquieran acciones u otros títulos de crédito, colocados entre el gran público inversionista, o realicen operaciones financieras derivadas referidas a dichas acciones o títulos de crédito, en los mercados reconocidos a que se refiere el artículo 16-C, fracciones I y II del Código Fiscal de la Federación, siempre que:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -4616,15 +4472,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 14,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "36 de 93",
-          "padre_numero": 13,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -4761,22 +4608,13 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "37 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "En el caso de ascendientes o descendientes menores de edad o incapacitados, en línea recta, que dependan económicamente del contribuyente, que obtengan ingresos gravados por la Ley, menores a los que obtenga el contribuyente del cual dependan, este último podrá optar por acumular a sus ingresos la totalidad de los obtenidos por los ascendientes o descendientes, pudiendo en estos casos efectuar las deducciones que correspondan a los ingresos que acumule.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 4,
+          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El integrante de la sociedad conyugal, los ascendientes o descendientes, que opten por no acumular sus ingresos conforme a los párrafos anteriores de este artículo y no tengan obligación de presentar declaración por otro tipo de ingresos, estarán eximidos de solicitar su inscripción en el registro federal de contribuyentes en términos del artículo 27 del Código Fiscal de la Federación.",
@@ -4785,7 +4623,7 @@
           "x_texto": 85
         },
         {
-          "numero": 5,
+          "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Con independencia de lo dispuesto en el párrafo anterior, tratándose de ingresos por intereses, el integrante de la sociedad conyugal, los ascendientes o descendientes, que sean titulares o cotitulares en las cuentas de las que deriven los intereses, deberán proporcionar a las instituciones integrantes del sistema financiero que paguen los intereses, su clave única de registro de población.",
@@ -4794,7 +4632,7 @@
           "x_texto": 85
         },
         {
-          "numero": 6,
+          "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los contribuyentes podrán nombrar a un representante común para que a nombre de los copropietarios o de los integrantes de la sociedad conyugal, según se trate, sea el encargado de realizar el cálculo y entero de los pagos provisionales del Impuesto.",
@@ -4803,7 +4641,7 @@
           "x_texto": 85
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El representado de la sociedad conyugal que opte por pagar el Impuesto por los ingresos que le corresponda por dicha sociedad conyugal, deberá manifestar esta opción al momento de su inscripción, o bien, mediante la presentación del aviso de actualización de actividades económicas y obligaciones en términos de los artículos 29 y 30 del Reglamento del Código Fiscal de la Federación.",
@@ -4892,22 +4730,13 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "38 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Para efectos del artículo 92, párrafo último de la Ley, efectuada la liquidación los herederos o legatarios, que no hubieran ejercido la opción de pago definitivo a que se refiere dicho párrafo, podrán presentar declaración complementaria por los cinco ejercicios anteriores a aquél en que se efectuó la liquidación, en su caso, acumulando a sus demás ingresos la parte proporcional de los ingresos que les haya correspondido de la sucesión por dichos ejercicios y pudiendo acreditar la parte proporcional del Impuesto pagado en cada ejercicio por el representante de la sucesión.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 4,
+          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los ingresos que se acumulen provenientes de la sucesión a que se refiere este artículo, se considerarán que provienen por los conceptos de los cuales los obtuvo la sucesión.",
@@ -5030,7 +4859,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos del artículo 93, fracción XVII de la Ley, las personas físicas que reciban viáticos y efectivamente los eroguen en servicio del patrón, podrán no presentar comprobantes fiscales hasta por un 20% del total de viáticos erogados en cada ocasión, cuando no existan servicios para emitir los mismos, sin que en ningún caso el monto que no se compruebe exceda de $15,000.00 en el ejercicio fiscal de que se trate, siempre que el monto restante de los viáticos se eroguen mediante tarjeta de crédito, de débito o de servicio del patrón. La parte que en su caso no se erogue deberá ser reintegrada 39 de 93 por la persona física que reciba los viáticos o en caso contrario no le será aplicable lo dispuesto en este artículo.",
+          "contenido": "Para efectos del artículo 93, fracción XVII de la Ley, las personas físicas que reciban viáticos y efectivamente los eroguen en servicio del patrón, podrán no presentar comprobantes fiscales hasta por un 20% del total de viáticos erogados en cada ocasión, cuando no existan servicios para emitir los mismos, sin que en ningún caso el monto que no se compruebe exceda de $15,000.00 en el ejercicio fiscal de que se trate, siempre que el monto restante de los viáticos se eroguen mediante tarjeta de crédito, de débito o de servicio del patrón. La parte que en su caso no se erogue deberá ser reintegrada por la persona física que reciba los viáticos o en caso contrario no le será aplicable lo dispuesto en este artículo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -5161,7 +4990,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos de lo dispuesto por el artículo 93, fracción XXI, párrafo tercero de la Ley, no se considera que la persona física o moral que paga la prima del contrato de seguro de vida de una persona sujeta a una relación laboral, es distinta del empleador del asegurado, cuando el pago de dicha prima se efectúe con recursos proporcionados por el empleador del asegurado, cualquiera que sea la naturaleza del acto mediante el cual se proporcionen los recursos. Cuando la prima del seguro de vida 40 de 93 sea pagada por una persona que no se considera distinta del empleador del asegurado en los términos de este artículo, la exención del Impuesto por las cantidades que las instituciones de seguros paguen por la realización del riesgo asegurado, aplicará únicamente cuando el pago lo haga la institución de seguros directamente al asegurado o a su cónyuge, a la persona con quien hubiera vivido en concubinato, a sus ascendientes o descendientes en línea recta, por tener el carácter de beneficiarios del asegurado. Si sólo una parte de los beneficios provenientes del seguro se pagan a los beneficiarios del asegurado previstos en este párrafo, la exención sólo aplicará para esa parte de los beneficios.",
+          "contenido": "Para efectos de lo dispuesto por el artículo 93, fracción XXI, párrafo tercero de la Ley, no se considera que la persona física o moral que paga la prima del contrato de seguro de vida de una persona sujeta a una relación laboral, es distinta del empleador del asegurado, cuando el pago de dicha prima se efectúe con recursos proporcionados por el empleador del asegurado, cualquiera que sea la naturaleza del acto mediante el cual se proporcionen los recursos. Cuando la prima del seguro de vida sea pagada por una persona que no se considera distinta del empleador del asegurado en los términos de este artículo, la exención del Impuesto por las cantidades que las instituciones de seguros paguen por la realización del riesgo asegurado, aplicará únicamente cuando el pago lo haga la institución de seguros directamente al asegurado o a su cónyuge, a la persona con quien hubiera vivido en concubinato, a sus ascendientes o descendientes en línea recta, por tener el carácter de beneficiarios del asegurado. Si sólo una parte de los beneficios provenientes del seguro se pagan a los beneficiarios del asegurado previstos en este párrafo, la exención sólo aplicará para esa parte de los beneficios.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -5273,7 +5102,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos de los artículos 118, fracción V y 128 de la Ley, los contribuyentes deberán informar el monto de las contraprestaciones recibidas en efectivo en moneda nacional o extranjera, así 41 de 93 como en piezas de oro o plata, si al incluir los impuestos correspondientes, supera la cantidad establecida en dichos artículos.",
+          "contenido": "Para efectos de los artículos 118, fracción V y 128 de la Ley, los contribuyentes deberán informar el monto de las contraprestaciones recibidas en efectivo en moneda nacional o extranjera, así como en piezas de oro o plata, si al incluir los impuestos correspondientes, supera la cantidad establecida en dichos artículos.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -5387,7 +5216,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Tratándose de contribuyentes que perciban ingresos derivados de la realización de actividades empresariales exclusivamente por concepto de comisiones, podrán optar, con el consentimiento del comitente, porque éste les efectúe la retención del Impuesto en términos del Título IV, 42 de 93 Capítulo I de la Ley, en cuyo caso no les serán aplicables las disposiciones de dicho Título, Capítulo II. Cuando se ejerza la opción antes señalada, previamente al primer pago que se les efectúe, el comisionista deberá comunicarlo por escrito al comitente, el cual cumplirá con lo siguiente:",
+          "contenido": "Tratándose de contribuyentes que perciban ingresos derivados de la realización de actividades empresariales exclusivamente por concepto de comisiones, podrán optar, con el consentimiento del comitente, porque éste les efectúe la retención del Impuesto en términos del Título IV, Capítulo I de la Ley, en cuyo caso no les serán aplicables las disposiciones de dicho Título, Capítulo II. Cuando se ejerza la opción antes señalada, previamente al primer pago que se les efectúe, el comisionista deberá comunicarlo por escrito al comitente, el cual cumplirá con lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -5485,7 +5314,7 @@
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Si la suma total de los ingresos mensuales percibidos por los conceptos a que se refiere el artículo 93, fracción IV de la Ley, de todas las personas que realizan pagos al contribuyente de que se trate, exceden de quince salarios mínimos generales del área geográfica del contribuyente elevados al mes, cada una de las personas que efectúen los pagos mensuales deberán efectuar la retención mensual del Impuesto sobre el excedente, conforme al siguiente procedimiento: 43 de 93",
+          "contenido": "Si la suma total de los ingresos mensuales percibidos por los conceptos a que se refiere el artículo 93, fracción IV de la Ley, de todas las personas que realizan pagos al contribuyente de que se trate, exceden de quince salarios mínimos generales del área geográfica del contribuyente elevados al mes, cada una de las personas que efectúen los pagos mensuales deberán efectuar la retención mensual del Impuesto sobre el excedente, conforme al siguiente procedimiento:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -5595,15 +5424,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "44 de 93",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -5764,7 +5584,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "A la cantidad que se obtenga conforme a la fracción anterior, se le adicionará el ingreso ordinario por la prestación de un servicio personal subordinado que perciba el trabajador en 45 de 93 forma regular en el mes de que se trate y al resultado se le aplicará el procedimiento establecido en el artículo 96 de la Ley;",
+          "contenido": "A la cantidad que se obtenga conforme a la fracción anterior, se le adicionará el ingreso ordinario por la prestación de un servicio personal subordinado que perciba el trabajador en forma regular en el mes de que se trate y al resultado se le aplicará el procedimiento establecido en el artículo 96 de la Ley;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5896,22 +5716,13 @@
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "46 de 93",
-          "padre_numero": 3,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Cuando se hagan pagos que comprendan periodos de siete, diez o quince días, podrán calcular la retención de acuerdo con este artículo, aplicando el procedimiento establecido en el artículo 176 de este Reglamento.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 6,
+          "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando se modifique alguna de las cantidades en base a las cuales se efectuó el cálculo a que se refieren las fracciones anteriores, se deberá recalcular el Impuesto a retener.",
@@ -6053,15 +5864,6 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "47 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Lo dispuesto en el párrafo anterior no es aplicable tratándose de los ingresos señalados en el artículo 94, fracciones III y IV de la Ley.",
           "padre_numero": null,
           "x_id": 85,
@@ -6167,7 +5969,7 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La opción a que se refiere este artículo podrá ejercerse por cada uno de los prestatarios y considerando todos los ingresos que se obtengan en el año de calendario de dicho prestatario por 48 de 93 concepto de prestación de servicios profesionales a que se refiere el párrafo primero de este artículo. Dicha opción se entenderá ejercida hasta en tanto el contribuyente manifieste por escrito al prestatario de que se trate, que pagará el Impuesto por los ingresos de referencia en términos del Título IV, Capítulo II, Sección I de la Ley.",
+          "contenido": "La opción a que se refiere este artículo podrá ejercerse por cada uno de los prestatarios y considerando todos los ingresos que se obtengan en el año de calendario de dicho prestatario por concepto de prestación de servicios profesionales a que se refiere el párrafo primero de este artículo. Dicha opción se entenderá ejercida hasta en tanto el contribuyente manifieste por escrito al prestatario de que se trate, que pagará el Impuesto por los ingresos de referencia en términos del Título IV, Capítulo II, Sección I de la Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -6299,15 +6101,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "49 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -6437,15 +6230,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "50 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -6583,15 +6367,6 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "51 de 93",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Lo dispuesto en el primer párrafo de este artículo será aplicable a la enajenación de inmuebles que realice el representante de la sucesión con consentimiento de los herederos o legatarios, considerando la proporción que a cada uno de ellos le corresponda en la sucesión.",
           "padre_numero": null,
           "x_id": 85,
@@ -6723,22 +6498,13 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "52 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Las autoridades fiscales podrán ordenar, practicar o tomar en cuenta el avalúo de las inversiones por los conceptos mencionados, referidos a la fecha en la que las construcciones, mejoras y ampliaciones del inmueble se hayan terminado. Cuando el valor de avalúo sea inferior en más de un 10% de la cantidad que se contenga en el aviso de terminación de obra, se considerará el monto del avalúo como costo de las inversiones.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 4,
+          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando por cualquier causa los contribuyentes no puedan comprobar el costo de las inversiones en construcciones, mejoras y ampliaciones realizadas en un inmueble, podrán considerar como costo de dichas inversiones el 80% del valor de las construcciones que reporte el avalúo que al efecto se practique, referido a la fecha en que las mismas inversiones fueron terminadas, tomando en consideración la antigüedad que el citado avalúo reporte.",
@@ -6862,7 +6628,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "Los automóviles cuya antigüedad de año modelo sea de 25 o más años a la fecha de la enajenación, y 53 de 93",
+          "contenido": "Los automóviles cuya antigüedad de año modelo sea de 25 o más años a la fecha de la enajenación, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -6988,15 +6754,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "54 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -7091,7 +6848,7 @@
           "numero": 10,
           "tipo": "numeral",
           "identificador": "3.",
-          "contenido": "Determinación de las pérdidas fiscales pendientes de deducir, los reembolsos pagados y la diferencia a que se refiere el artículo 77, párrafo quinto de la Ley, asignadas en la proporción que de dichos conceptos le correspondan al enajenante, considerando el periodo comprendido desde el mes de adquisición de las acciones y hasta la fecha de enajenación señalando: i. Tratándose de las pérdidas fiscales pendientes de disminuir a la fecha de la enajenación de las acciones: El análisis por año y factores de actualización aplicados a cada una de las pérdidas pendientes de disminuir, así como al periodo al que corresponde; 55 de 93 ii. Tratándose de los reembolsos pagados: Los factores de actualización aplicados, así como el periodo a que corresponden, y iii. Tratándose de la diferencia a que se refiere el artículo 77, párrafo quinto de la Ley: Los factores de actualización aplicados, así como el periodo al que corresponden, y",
+          "contenido": "Determinación de las pérdidas fiscales pendientes de deducir, los reembolsos pagados y la diferencia a que se refiere el artículo 77, párrafo quinto de la Ley, asignadas en la proporción que de dichos conceptos le correspondan al enajenante, considerando el periodo comprendido desde el mes de adquisición de las acciones y hasta la fecha de enajenación señalando: i. Tratándose de las pérdidas fiscales pendientes de disminuir a la fecha de la enajenación de las acciones: El análisis por año y factores de actualización aplicados a cada una de las pérdidas pendientes de disminuir, así como al periodo al que corresponde; ii. Tratándose de los reembolsos pagados: Los factores de actualización aplicados, así como el periodo a que corresponden, y iii. Tratándose de la diferencia a que se refiere el artículo 77, párrafo quinto de la Ley: Los factores de actualización aplicados, así como el periodo al que corresponden, y",
           "padre_numero": 6,
           "x_id": 136,
           "x_texto": 158
@@ -7199,7 +6956,7 @@
           "numero": 22,
           "tipo": "numeral",
           "identificador": "1.",
-          "contenido": "La antigüedad en la tenencia de las acciones; 56 de 93",
+          "contenido": "La antigüedad en la tenencia de las acciones;",
           "padre_numero": 21,
           "x_id": 136,
           "x_texto": 158
@@ -7314,7 +7071,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En todos los casos de enajenación de inmuebles consignados en escritura pública en los que los adquirentes sean personas físicas o morales a que se refiere el Título III de la Ley, a excepción de las que señala el artículo 86, párrafos cuarto, quinto y sexto de la Ley, en los que el valor del avalúo exceda en más de un 10% al monto de la contraprestación pactada por la operación de que se 57 de 93 trate, los notarios, corredores, jueces y demás fedatarios que por disposición legal tengan funciones notariales, cuando eleven a escritura pública el contrato en que consta la enajenación, calcularán en términos del artículo 132 de la Ley, el pago provisional que corresponda al adquirente, aplicando el 20% sobre la parte en que el valor de avalúo exceda al de la contraprestación pactada.",
+          "contenido": "En todos los casos de enajenación de inmuebles consignados en escritura pública en los que los adquirentes sean personas físicas o morales a que se refiere el Título III de la Ley, a excepción de las que señala el artículo 86, párrafos cuarto, quinto y sexto de la Ley, en los que el valor del avalúo exceda en más de un 10% al monto de la contraprestación pactada por la operación de que se trate, los notarios, corredores, jueces y demás fedatarios que por disposición legal tengan funciones notariales, cuando eleven a escritura pública el contrato en que consta la enajenación, calcularán en términos del artículo 132 de la Ley, el pago provisional que corresponda al adquirente, aplicando el 20% sobre la parte en que el valor de avalúo exceda al de la contraprestación pactada.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -7429,7 +7186,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Tratándose de la sociedad conyugal o de copropiedad en la que sus integrantes no ejerzan la opción a que se refiere el artículo 142 de este Reglamento, el cálculo del Impuesto anual, así 58 de 93 como el pago provisional a que se refieren los artículos 131 y 132 de la Ley respectivamente deberán efectuarse por cada uno de los cónyuges o copropietarios, por la parte de ingresos que le corresponda. Asimismo, en el cálculo del Impuesto anual deberán efectuarse en forma proporcional las deducciones relativas a los ingresos que obtengan por adquisición de bienes.",
+          "contenido": "Tratándose de la sociedad conyugal o de copropiedad en la que sus integrantes no ejerzan la opción a que se refiere el artículo 142 de este Reglamento, el cálculo del Impuesto anual, así como el pago provisional a que se refieren los artículos 131 y 132 de la Ley respectivamente deberán efectuarse por cada uno de los cónyuges o copropietarios, por la parte de ingresos que le corresponda. Asimismo, en el cálculo del Impuesto anual deberán efectuarse en forma proporcional las deducciones relativas a los ingresos que obtengan por adquisición de bienes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -7562,7 +7319,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "Depósitos efectuados en el extranjero; 59 de 93",
+          "contenido": "Depósitos efectuados en el extranjero;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -7711,7 +7468,7 @@
           "numero": 4,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": "El interés nominal devengado a su favor, por los instrumentos de deuda que estén exentos para sus inversionistas, y 60 de 93",
+          "contenido": "El interés nominal devengado a su favor, por los instrumentos de deuda que estén exentos para sus inversionistas, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -7836,7 +7593,7 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Cuando no se haya precisado la persona o personas que percibirán los rendimientos o las designaciones sean equívocas o alternativas, se entenderá que los rendimientos corresponden al titular y a todos los cotitulares en la misma proporción, salvo prueba en contrario, incluso cuando en la constancia que expida el integrante del sistema financiero no se efectúe la separación del ingreso por titular o 61 de 93 cotitular. Lo dispuesto en este párrafo será aplicable sin perjuicio de lo dispuesto en el artículo 142 de este Reglamento.",
+          "contenido": "Cuando no se haya precisado la persona o personas que percibirán los rendimientos o las designaciones sean equívocas o alternativas, se entenderá que los rendimientos corresponden al titular y a todos los cotitulares en la misma proporción, salvo prueba en contrario, incluso cuando en la constancia que expida el integrante del sistema financiero no se efectúe la separación del ingreso por titular o cotitular. Lo dispuesto en este párrafo será aplicable sin perjuicio de lo dispuesto en el artículo 142 de este Reglamento.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -7996,22 +7753,13 @@
           "numero": 12,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "62 de 93",
-          "padre_numero": 11,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 13,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Las personas que proporcionen la información necesaria en términos de este artículo, no estarán obligadas a retener el Impuesto correspondiente, siempre y cuando la transmitan al momento en que se realiza la transferencia de los títulos para su custodia y administración.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 14,
+          "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En el supuesto de que una institución de crédito o casa de bolsa, no intervenga en la adquisición de los títulos a que se refiere el artículo 8 de la Ley, el enajenante de los títulos deberá acumular a sus demás ingresos la ganancia obtenida.",
@@ -8020,7 +7768,7 @@
           "x_texto": 85
         },
         {
-          "numero": 15,
+          "numero": 14,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las instituciones de crédito y las casas de bolsa que celebren operaciones de reporto con los títulos a que se refiere el artículo 8 de la Ley, efectuarán la retención que corresponda en términos de las disposiciones fiscales, por los premios que se paguen. No se efectuará la retención mencionada cuando el reportador sea una institución de crédito o casa de bolsa del país.",
@@ -8029,7 +7777,7 @@
           "x_texto": 85
         },
         {
-          "numero": 16,
+          "numero": 15,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En los casos en donde la enajenación de los títulos a que se refiere el párrafo primero de este artículo se realice en un plazo distinto al anual, la retención se podrá calcular aplicando al precio de adquisición del título de que se trate, el factor que resulte de multiplicar el número de días transcurridos entre la fecha de adquisición y la de su enajenación o redención, por el cociente que resulte de dividir la tasa impositiva aplicable entre 365. Este cociente se calculará hasta el millonésimo.",
@@ -8038,7 +7786,7 @@
           "x_texto": 85
         },
         {
-          "numero": 17,
+          "numero": 16,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Lo dispuesto en este artículo, se aplica de conformidad con lo señalado en el artículo 26 del Código Fiscal de la Federación.",
@@ -8135,15 +7883,6 @@
         },
         {
           "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "63 de 93",
-          "padre_numero": 5,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 7,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Aquellos fondos de inversión que hayan percibido dividendos y les proporcionen información sobre los mismos a sus accionistas personas físicas conforme a las fracciones I, II y III del presente artículo, determinarán el monto de los dividendos acumulables y el Impuesto acreditable para cada accionista persona física, aplicando el procedimiento que se establece en el artículo 140, párrafo primero de la Ley, en la proporción que corresponda a cada uno de sus accionistas personas físicas. Dicha información se consignará en la constancia a que se refiere dicho precepto.",
@@ -8270,15 +8009,6 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "64 de 93",
-          "padre_numero": 6,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Para efectos de este artículo la estimativa diaria del Índice Nacional de Precios al Consumidor y los cocientes a los que hace referencia el mismo, deberán calcularse hasta el cienmillonésimo.",
           "padre_numero": null,
           "x_id": 85,
@@ -8382,7 +8112,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Las instituciones de seguros que paguen beneficios provenientes de contratos de seguros de vida cuya prima hubiera sido pagada directamente por el empleador del asegurado o por interpósita persona, no efectuarán la retención prevista en el artículo 142, fracción XVI, párrafo primero de la Ley, cuando el pago lo realicen directamente al asegurado o a su cónyuge, a la persona con quien hubiera vivido en concubinato, a sus ascendientes o descendientes en línea recta, por haber sido designados como beneficiarios por el asegurado. Si una parte de los beneficios provenientes del seguro de vida se paga a personas físicas o morales distintos del asegurado o de sus beneficiarios antes 65 de 93 señalados, por esa parte la institución de seguros deberá efectuar la retención prevista en la disposición legal citada.",
+          "contenido": "Las instituciones de seguros que paguen beneficios provenientes de contratos de seguros de vida cuya prima hubiera sido pagada directamente por el empleador del asegurado o por interpósita persona, no efectuarán la retención prevista en el artículo 142, fracción XVI, párrafo primero de la Ley, cuando el pago lo realicen directamente al asegurado o a su cónyuge, a la persona con quien hubiera vivido en concubinato, a sus ascendientes o descendientes en línea recta, por haber sido designados como beneficiarios por el asegurado. Si una parte de los beneficios provenientes del seguro de vida se paga a personas físicas o morales distintos del asegurado o de sus beneficiarios antes señalados, por esa parte la institución de seguros deberá efectuar la retención prevista en la disposición legal citada.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -8487,7 +8217,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Cuando la administradora de fondos para el retiro no cuente con ninguna de las manifestaciones del contribuyente a las que se refieren las fracciones I y II de este artículo, 66 de 93 dicha administradora realizará el depósito de las aportaciones a la subcuenta de aportaciones voluntarias conforme a lo señalado en la fracción I del presente artículo.",
+          "contenido": "Cuando la administradora de fondos para el retiro no cuente con ninguna de las manifestaciones del contribuyente a las que se refieren las fracciones I y II de este artículo, dicha administradora realizará el depósito de las aportaciones a la subcuenta de aportaciones voluntarias conforme a lo señalado en la fracción I del presente artículo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -8616,7 +8346,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los contribuyentes podrán utilizar por cientos de deducción menores a los establecidos en el artículo 149 de la Ley. En este caso los por cientos elegidos serán obligatorios y únicamente los podrán cambiar, sin exceder del máximo autorizado, debiendo aplicar los nuevos por cientos sobre el monto original de la inversión a partir del año de calendario en que se realice el cambio. Tratándose del segundo y posteriores cambios, deberán transcurrir cuando menos cinco años, desde el último cambio para que éstos se puedan efectuar. El cambio se podrá realizar antes de que transcurran los cinco años siempre que se dé cualquiera de los siguientes supuestos: 67 de 93",
+          "contenido": "Los contribuyentes podrán utilizar por cientos de deducción menores a los establecidos en el artículo 149 de la Ley. En este caso los por cientos elegidos serán obligatorios y únicamente los podrán cambiar, sin exceder del máximo autorizado, debiendo aplicar los nuevos por cientos sobre el monto original de la inversión a partir del año de calendario en que se realice el cambio. Tratándose del segundo y posteriores cambios, deberán transcurrir cuando menos cinco años, desde el último cambio para que éstos se puedan efectuar. El cambio se podrá realizar antes de que transcurran los cinco años siempre que se dé cualquiera de los siguientes supuestos:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -8765,15 +8495,6 @@
           "numero": 6,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "68 de 93",
-          "padre_numero": 5,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Asimismo, se consideran créditos hipotecarios, aquéllos destinados únicamente a la construcción o la remodelación de casa habitación o al pago de los pasivos que se destinen exclusivamente a la adquisición, construcción o remodelación de casa habitación.",
           "padre_numero": null,
           "x_id": 85,
@@ -8908,15 +8629,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "69 de 93",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -9018,7 +8730,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Que el empleador entere por cuenta del trabajador las aportaciones voluntarias a que se refiere este artículo, para lo cual deberá mantener a disposición del SAT los comprobantes de percepción de ingresos de los trabajadores que hubiesen optado por deducir sus aportaciones voluntarias, en los que se señale el monto de dichas aportaciones, el Impuesto retenido conforme al artículo 96 de la Ley y el monto de las aportaciones voluntarias deducidas, y 70 de 93",
+          "contenido": "Que el empleador entere por cuenta del trabajador las aportaciones voluntarias a que se refiere este artículo, para lo cual deberá mantener a disposición del SAT los comprobantes de percepción de ingresos de los trabajadores que hubiesen optado por deducir sus aportaciones voluntarias, en los que se señale el monto de dichas aportaciones, el Impuesto retenido conforme al artículo 96 de la Ley y el monto de las aportaciones voluntarias deducidas, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -9119,15 +8831,6 @@
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "71 de 93",
-          "padre_numero": 5,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -9241,15 +8944,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "72 de 93",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -9402,7 +9096,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los residentes en el extranjero que liquiden en especie una operación financiera derivada, entregando los bienes o títulos a que estaba referida la operación a un residente en México, o a un residente en el extranjero con establecimiento permanente en México, causarán Impuesto por el ingreso que obtengan por la enajenación de dichos bienes o títulos, conforme a lo establecido en el Título 73 de 93 V de la Ley. Si tal operación se liquida en efectivo, el residente en el extranjero será sujeto de retención del Impuesto por el monto en que la prima actualizada a la fecha de liquidación de la operación supere a la cantidad que el residente en el extranjero pague para liquidarla. En el caso que no exista tal pago, se entiende que la retención deberá de calcularse sobre la totalidad de la prima actualizada.",
+          "contenido": "Los residentes en el extranjero que liquiden en especie una operación financiera derivada, entregando los bienes o títulos a que estaba referida la operación a un residente en México, o a un residente en el extranjero con establecimiento permanente en México, causarán Impuesto por el ingreso que obtengan por la enajenación de dichos bienes o títulos, conforme a lo establecido en el Título V de la Ley. Si tal operación se liquida en efectivo, el residente en el extranjero será sujeto de retención del Impuesto por el monto en que la prima actualizada a la fecha de liquidación de la operación supere a la cantidad que el residente en el extranjero pague para liquidarla. En el caso que no exista tal pago, se entiende que la retención deberá de calcularse sobre la totalidad de la prima actualizada.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -9521,15 +9215,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "74 de 93",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -9663,15 +9348,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "75 de 93",
-          "padre_numero": 6,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -9759,15 +9435,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "76 de 93",
-          "padre_numero": 4,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -9895,7 +9562,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos de la opción prevista en el artículo 161, párrafo sexto de la Ley, la fecha de designación del representante en el país que reúna los requisitos establecidos en el artículo 174 de la Ley, deberá realizarse a más tardar en la fecha en que se presente o deba presentarse la declaración 77 de 93 correspondiente al Impuesto causado con motivo de la enajenación de acciones efectuada por el residente en el extranjero.",
+          "contenido": "Para efectos de la opción prevista en el artículo 161, párrafo sexto de la Ley, la fecha de designación del representante en el país que reúna los requisitos establecidos en el artículo 174 de la Ley, deberá realizarse a más tardar en la fecha en que se presente o deba presentarse la declaración correspondiente al Impuesto causado con motivo de la enajenación de acciones efectuada por el residente en el extranjero.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -9995,15 +9662,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "78 de 93",
-          "padre_numero": 5,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -10122,7 +9780,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos del artículo 161, párrafo penúltimo de la Ley, el residente en el extranjero que enajene acciones emitidas por una sociedad residente en México, deberá presentar aviso ante la 79 de 93 autoridad fiscal, dentro del mes anterior al que se efectúe dicha enajenación, en el que se informe sobre la reorganización, reestructura, fusión, escisión u operación similar que va a llevar a cabo.",
+          "contenido": "Para efectos del artículo 161, párrafo penúltimo de la Ley, el residente en el extranjero que enajene acciones emitidas por una sociedad residente en México, deberá presentar aviso ante la autoridad fiscal, dentro del mes anterior al que se efectúe dicha enajenación, en el que se informe sobre la reorganización, reestructura, fusión, escisión u operación similar que va a llevar a cabo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -10267,15 +9925,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 10,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "80 de 93",
-          "padre_numero": 9,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -10394,7 +10043,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos del artículo 177 de la Ley, y a fin de determinar la utilidad o resultado fiscal a que se refiere dicho artículo y siempre que se cumpla el requisito establecido en el párrafo tercero de dicho artículo, las deducciones de las personas, entidades, fideicomisos, asociaciones en participación, fondos de inversión, así como a cualquier otra figura jurídica, cuyos ingresos estén sujetos a regímenes fiscales preferentes, deberán cumplir con todos y cada uno de los requisitos previstos en los artículos 27 y 28 de la Ley, conforme a lo siguiente: 81 de 93",
+          "contenido": "Para efectos del artículo 177 de la Ley, y a fin de determinar la utilidad o resultado fiscal a que se refiere dicho artículo y siempre que se cumpla el requisito establecido en el párrafo tercero de dicho artículo, las deducciones de las personas, entidades, fideicomisos, asociaciones en participación, fondos de inversión, así como a cualquier otra figura jurídica, cuyos ingresos estén sujetos a regímenes fiscales preferentes, deberán cumplir con todos y cada uno de los requisitos previstos en los artículos 27 y 28 de la Ley, conforme a lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -10484,7 +10133,7 @@
           "numero": 11,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "Tratándose de inversiones en automóviles o aviones, los mismos se deberán destinar exclusivamente al transporte de bienes o prestación de servicios relacionados con la actividad de la sociedad, entidad o fideicomiso, cuyos ingresos estén sujetos a un régimen fiscal preferente, y el monto original de la inversión de los bienes de que se trate no deberá rebasar las cantidades que, en la moneda local del territorio en el que se genere el ingreso sujeto a un régimen fiscal preferente de que se trate, equivalgan a los límites establecidos en el artículo 36, fracciones II y III de la Ley, salvo que la sociedad, entidad o fideicomiso, cuyos ingresos estén sujetos a un régimen fiscal preferente, se ubiquen en el supuesto previsto en el artículo 36, fracción III, párrafo segundo de la Ley, y 82 de 93",
+          "contenido": "Tratándose de inversiones en automóviles o aviones, los mismos se deberán destinar exclusivamente al transporte de bienes o prestación de servicios relacionados con la actividad de la sociedad, entidad o fideicomiso, cuyos ingresos estén sujetos a un régimen fiscal preferente, y el monto original de la inversión de los bienes de que se trate no deberá rebasar las cantidades que, en la moneda local del territorio en el que se genere el ingreso sujeto a un régimen fiscal preferente de que se trate, equivalgan a los límites establecidos en el artículo 36, fracciones II y III de la Ley, salvo que la sociedad, entidad o fideicomiso, cuyos ingresos estén sujetos a un régimen fiscal preferente, se ubiquen en el supuesto previsto en el artículo 36, fracción III, párrafo segundo de la Ley, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10598,7 +10247,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Se obtendrá la mediana adicionando la unidad al número total de elementos que integran la muestra de precios, montos de contraprestaciones o márgenes de utilidad, dividiendo el resultado entre dos; 83 de 93",
+          "contenido": "Se obtendrá la mediana adicionando la unidad al número total de elementos que integran la muestra de precios, montos de contraprestaciones o márgenes de utilidad, dividiendo el resultado entre dos;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10733,7 +10382,7 @@
           "numero": 19,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": "Se obtendrá la diferencia entre el precio, monto de la contraprestación o margen de utilidad a que se refiere el primer párrafo de esta fracción y el precio, monto de la contraprestación o margen de utilidad inmediato superior, considerando para tales efectos su valor; 84 de 93",
+          "contenido": "Se obtendrá la diferencia entre el precio, monto de la contraprestación o margen de utilidad a que se refiere el primer párrafo de esta fracción y el precio, monto de la contraprestación o margen de utilidad inmediato superior, considerando para tales efectos su valor;",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
@@ -10839,7 +10488,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "Los planes de pensiones que se contengan en los contratos de seguro a que se refiere este artículo, deberán ser individuales, cubrir el riesgo de sobrevivencia y estarán basados en anualidades diferidas, pudiendo además amparar los riesgos de invalidez o fallecimiento del asegurado; 85 de 93",
+          "contenido": "Los planes de pensiones que se contengan en los contratos de seguro a que se refiere este artículo, deberán ser individuales, cubrir el riesgo de sobrevivencia y estarán basados en anualidades diferidas, pudiendo además amparar los riesgos de invalidez o fallecimiento del asegurado;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10971,15 +10620,6 @@
         },
         {
           "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "86 de 93",
-          "padre_numero": 3,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las cantidades depositadas o invertidas en la subcuenta a que se refiere este artículo y los intereses que ésta genere, en ningún caso se podrán ceder o dar en garantía.",
@@ -11122,7 +10762,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "La institución fiduciaria lleve una cuenta de ingresos por la prestación de los servicios independientes, conforme al artículo 193, fracción II de la Ley. Dicha cuenta se incrementará 87 de 93 con los ingresos correspondientes que reciba la institución fiduciaria, una vez efectuada la resta a que se refiere el inciso g) de la fracción II del artículo 311 de este Reglamento, y se disminuirá con los ingresos que dicha institución entregue a los fideicomisarios o tenedores de certificados provenientes de la misma cuenta, y",
+          "contenido": "La institución fiduciaria lleve una cuenta de ingresos por la prestación de los servicios independientes, conforme al artículo 193, fracción II de la Ley. Dicha cuenta se incrementará con los ingresos correspondientes que reciba la institución fiduciaria, una vez efectuada la resta a que se refiere el inciso g) de la fracción II del artículo 311 de este Reglamento, y se disminuirá con los ingresos que dicha institución entregue a los fideicomisarios o tenedores de certificados provenientes de la misma cuenta, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -11219,7 +10859,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos del artículo 192, fracción V de la Ley, los ingresos a distribuir serán los ingresos netos que reciba el fideicomiso, mismos que se determinarán conforme a la fracción II de este artículo. Para tal efecto la institución fiduciaria realizará la distribución de al menos el ochenta por ciento de los ingresos netos que reciba el fideicomiso por los conceptos de intereses provenientes de valores y ganancias obtenidas en su enajenación; intereses provenientes de financiamientos otorgados a sociedades promovidas; ganancias de capital derivadas de la enajenación de acciones de sociedades promovidas y dividendos por las acciones de sociedades promovidas de acuerdo con el procedimiento siguiente: 88 de 93",
+          "contenido": "Para efectos del artículo 192, fracción V de la Ley, los ingresos a distribuir serán los ingresos netos que reciba el fideicomiso, mismos que se determinarán conforme a la fracción II de este artículo. Para tal efecto la institución fiduciaria realizará la distribución de al menos el ochenta por ciento de los ingresos netos que reciba el fideicomiso por los conceptos de intereses provenientes de valores y ganancias obtenidas en su enajenación; intereses provenientes de financiamientos otorgados a sociedades promovidas; ganancias de capital derivadas de la enajenación de acciones de sociedades promovidas y dividendos por las acciones de sociedades promovidas de acuerdo con el procedimiento siguiente:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -11363,7 +11003,7 @@
           "numero": 17,
           "tipo": "inciso",
           "identificador": "i)",
-          "contenido": "Multiplicarán el resultado obtenido conforme al inciso anterior, por el resultado obtenido en términos del inciso c) de esta fracción, para cada persona que participe como fideicomitente o fideicomisario en el fideicomiso de que se trate, y 89 de 93",
+          "contenido": "Multiplicarán el resultado obtenido conforme al inciso anterior, por el resultado obtenido en términos del inciso c) de esta fracción, para cada persona que participe como fideicomitente o fideicomisario en el fideicomiso de que se trate, y",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136

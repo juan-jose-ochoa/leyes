@@ -618,6 +618,7 @@ LEYES = {
             'Secretaría General',
             'Servicios Parlamentarios',
             'Nuevo Reglamento DOF',
+            ' de 40',  # Paginación "X de 40"
         ],
 
         # Detección de referencias
@@ -659,6 +660,7 @@ LEYES = {
             'Secretaría General',
             'Servicios Parlamentarios',
             'Última Reforma DOF',
+            ' de 113',  # Paginación
         ],
         "referencias": {
             "font_italic": True,
@@ -694,6 +696,7 @@ LEYES = {
             'CÁMARA DE DIPUTADOS',
             'Secretaría General',
             'Servicios Parlamentarios',
+            ' de 6',  # Paginación
         ],
         "referencias": {
             "font_italic": True,
@@ -723,6 +726,7 @@ LEYES = {
             'CÁMARA DE DIPUTADOS',
             'Secretaría General',
             'Servicios Parlamentarios',
+            ' de 4',  # Paginación
         ],
         "referencias": {
             "font_italic": True,
@@ -752,6 +756,7 @@ LEYES = {
             'CÁMARA DE DIPUTADOS',
             'Secretaría General',
             'Servicios Parlamentarios',
+            ' de 6',  # Paginación
         ],
         "referencias": {
             "font_italic": True,
@@ -791,6 +796,7 @@ LEYES = {
             'Secretaría General',
             'Servicios Parlamentarios',
             'Última Reforma DOF',
+            ' de 16',  # Paginación
         ],
 
         # Detección de referencias
@@ -844,6 +850,7 @@ LEYES = {
             'Secretaría General',
             'Servicios Parlamentarios',
             'Última Reforma DOF',
+            ' de 93',  # Paginación
         ],
 
         # Detección de referencias

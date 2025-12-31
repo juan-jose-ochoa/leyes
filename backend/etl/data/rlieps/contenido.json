@@ -99,7 +99,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Tratándose de descuentos y bonificaciones, la disminución procederá cuando aquéllos efectivamente se apliquen. 1 de 4",
+          "contenido": "Tratándose de descuentos y bonificaciones, la disminución procederá cuando aquéllos efectivamente se apliquen.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -245,7 +245,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El comisionista considerará a su cargo el impuesto correspondiente a la comisión pactada, incluyendo los gastos efectuados en nombre y por cuenta del comitente. El comisionista, en este caso, no trasladará al comitente el impuesto correspondiente a la operación realizada. 2 de 4",
+          "contenido": "El comisionista considerará a su cargo el impuesto correspondiente a la comisión pactada, incluyendo los gastos efectuados en nombre y por cuenta del comitente. El comisionista, en este caso, no trasladará al comitente el impuesto correspondiente a la operación realizada.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -401,22 +401,13 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los contribuyentes que opten por lo dispuesto en este artículo, deberán raspar la etiqueta, la contraetiqueta y el marbete, que estén adheridos a los envases vacíos que se vayan a destruir, en el 3 de 4",
+          "contenido": "Los contribuyentes que opten por lo dispuesto en este artículo, deberán raspar la etiqueta, la contraetiqueta y el marbete, que estén adheridos a los envases vacíos que se vayan a destruir, en el Nuevo Reglamento DOF 04-12-2006 momento en que se cierren las operaciones del día, registrando el número de folio de los marbetes que se raspen.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
           "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Nuevo Reglamento DOF 04-12-2006 momento en que se cierren las operaciones del día, registrando el número de folio de los marbetes que se raspen.",
-          "padre_numero": 2,
-          "x_id": 428,
-          "x_texto": 428
-        },
-        {
-          "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, los contribuyentes que ejerzan la opción a que se refiere este artículo, deberán conservar y, en su caso, proporcionar a las autoridades fiscales cuando éstas así lo requieran, la información que corresponda al número de envases destruidos, así como al número de folio de los marbetes que hayan sido raspados.",

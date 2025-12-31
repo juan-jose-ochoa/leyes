@@ -74,15 +74,6 @@
           "numero": 6,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "1 de 6",
-          "padre_numero": 5,
-          "x_id": 295,
-          "x_texto": 295
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "ACTUARIALES Y LA RESERVA GENERAL FINANCIERA Y ACTUARIAL, ASÍ COMO PARA LA DETERMINACIÓN DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE OPERACIÓN PARA CONTINGENCIAS Y FINANCIAMIENTO",
           "padre_numero": 5,
           "x_id": 159,
@@ -241,22 +232,13 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "2 de 6",
-          "padre_numero": 6,
-          "x_id": 295,
-          "x_texto": 295
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "ACTUARIALES Y LA RESERVA GENERAL FINANCIERA Y ACTUARIAL, ASÍ COMO PARA LA DETERMINACIÓN DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE OPERACIÓN PARA CONTINGENCIAS Y FINANCIAMIENTO Tratándose de títulos representativos del capital social de sociedades, cuando estas tengan un objeto social complementario o afín al del propio Instituto, así como en el de administradoras de fondos para el retiro, en términos del artículo 251, fracción XXII, de la Ley no será necesario que se cumpla con lo dispuesto en la fracción II de este artículo.",
           "padre_numero": 6,
           "x_id": 159,
           "x_texto": 159
         },
         {
-          "numero": 9,
+          "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de títulos de deuda emitidos por personas distintas al Gobierno Federal y sus sociedades nacionales de crédito, se requerirá que los emisores o títulos cuenten con la calificación mínima, otorgada por una empresa calificadora de riesgo crediticio, que se determine en las políticas y directrices a que se refiere el artículo 8 de este Reglamento.",
@@ -392,7 +374,7 @@
           "numero": 7,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": "Los límites de tolerancia al riesgo asociados a las inversiones y la metodología de medición correspondiente; 3 de 6",
+          "contenido": "Los límites de tolerancia al riesgo asociados a las inversiones y la metodología de medición correspondiente;",
           "padre_numero": 5,
           "x_id": 107,
           "x_texto": 129
@@ -549,19 +531,10 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La propuesta referida deberá estar soportada con el análisis y estudios que corroboren la necesidad de disponer de las Reservas o de la Reserva General, en los supuestos señalados en la Ley, que deberán contener, según corresponda, la descripción del evento catastrófico; el problema epidemiológico 4 de 6",
+          "contenido": "La propuesta referida deberá estar soportada con el análisis y estudios que corroboren la necesidad de disponer de las Reservas o de la Reserva General, en los supuestos señalados en la Ley, que deberán contener, según corresponda, la descripción del evento catastrófico; el problema epidemiológico ACTUARIALES Y LA RESERVA GENERAL FINANCIERA Y ACTUARIAL, ASÍ COMO PARA LA DETERMINACIÓN DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE OPERACIÓN PARA CONTINGENCIAS Y FINANCIAMIENTO o económico; las razones por las cuales se considera que el evento o problema es severo; el nivel de variación entre ingresos y egresos, así como los demás aspectos que permitan al Consejo Técnico adoptar una decisión sustentada.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "ACTUARIALES Y LA RESERVA GENERAL FINANCIERA Y ACTUARIAL, ASÍ COMO PARA LA DETERMINACIÓN DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE OPERACIÓN PARA CONTINGENCIAS Y FINANCIAMIENTO o económico; las razones por las cuales se considera que el evento o problema es severo; el nivel de variación entre ingresos y egresos, así como los demás aspectos que permitan al Consejo Técnico adoptar una decisión sustentada.",
-          "padre_numero": 2,
-          "x_id": 159,
-          "x_texto": 159
         }
       ]
     },
@@ -697,19 +670,10 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La Comisión de Vigilancia y el Órgano Interno de Control en el Instituto vigilarán que las inversiones se realicen conforme a la Ley, este Reglamento y demás disposiciones aplicables, para lo 5 de 6",
+          "contenido": "La Comisión de Vigilancia y el Órgano Interno de Control en el Instituto vigilarán que las inversiones se realicen conforme a la Ley, este Reglamento y demás disposiciones aplicables, para lo ACTUARIALES Y LA RESERVA GENERAL FINANCIERA Y ACTUARIAL, ASÍ COMO PARA LA DETERMINACIÓN DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE OPERACIÓN PARA CONTINGENCIAS Y FINANCIAMIENTO cual podrán, en cualquier tiempo, solicitar y revisar la documentación relativa a la situación de las Reservas, la Reserva General y de las operaciones de inversión realizadas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "ACTUARIALES Y LA RESERVA GENERAL FINANCIERA Y ACTUARIAL, ASÍ COMO PARA LA DETERMINACIÓN DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE OPERACIÓN PARA CONTINGENCIAS Y FINANCIAMIENTO cual podrán, en cualquier tiempo, solicitar y revisar la documentación relativa a la situación de las Reservas, la Reserva General y de las operaciones de inversión realizadas.",
-          "padre_numero": 1,
-          "x_id": 159,
-          "x_texto": 159
         }
       ]
     }

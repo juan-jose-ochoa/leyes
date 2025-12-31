@@ -78,15 +78,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "1 de 40",
-          "padre_numero": 4,
-          "x_id": 293,
-          "x_texto": 293
         }
       ]
     },
@@ -254,15 +245,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "2 de 40",
-          "padre_numero": 1,
-          "x_id": 293,
-          "x_texto": 293
         }
       ]
     },
@@ -406,7 +388,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos del artículo 18-A, fracción II del Código, los residentes en el extranjero que de conformidad con la legislación del país en el que sean residentes no estén obligados a contar con 3 de 40 un número de identificación fiscal, no lo señalarán en las promociones que presenten ante las Autoridades Fiscales.",
+          "contenido": "Para los efectos del artículo 18-A, fracción II del Código, los residentes en el extranjero que de conformidad con la legislación del país en el que sean residentes no estén obligados a contar con un número de identificación fiscal, no lo señalarán en las promociones que presenten ante las Autoridades Fiscales.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -510,7 +492,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos de los artículos 21 y 22-A del Código, cuando el contribuyente deba pagar recargos o las Autoridades Fiscales deban pagar intereses, la tasa aplicable en un mismo periodo 4 de 40 mensual o fracción de éste, será siempre la que esté en vigor al primer día del mes o fracción de que se trate, independientemente de que dentro de dicho periodo la tasa de recargos o de interés varíe.",
+          "contenido": "Para los efectos de los artículos 21 y 22-A del Código, cuando el contribuyente deba pagar recargos o las Autoridades Fiscales deban pagar intereses, la tasa aplicable en un mismo periodo mensual o fracción de éste, será siempre la que esté en vigor al primer día del mes o fracción de que se trate, independientemente de que dentro de dicho periodo la tasa de recargos o de interés varíe.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -630,7 +612,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos del artículo 27 del Código, las solicitudes de inscripción en el registro federal de contribuyentes serán las siguientes: 5 de 40",
+          "contenido": "Para los efectos del artículo 27 del Código, las solicitudes de inscripción en el registro federal de contribuyentes serán las siguientes:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -795,15 +777,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "6 de 40",
-          "padre_numero": 6,
-          "x_id": 293,
-          "x_texto": 293
         }
       ]
     },
@@ -918,15 +891,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "7 de 40",
-          "padre_numero": 2,
-          "x_id": 293,
-          "x_texto": 293
         }
       ]
     },
@@ -1024,15 +988,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "8 de 40",
-          "padre_numero": 7,
-          "x_id": 293,
-          "x_texto": 293
         }
       ]
     },
@@ -1226,7 +1181,7 @@
           "numero": 21,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los residentes en el extranjero con establecimiento permanente en territorio nacional que se encuentren obligados a inscribirse en el registro federal de contribuyentes de conformidad con el artículo 9 de 40 22, fracciones I y VII de este Reglamento, en su caso, deberán presentar los avisos establecidos en esta Sección.",
+          "contenido": "Los residentes en el extranjero con establecimiento permanente en territorio nacional que se encuentren obligados a inscribirse en el registro federal de contribuyentes de conformidad con el artículo 22, fracciones I y VII de este Reglamento, en su caso, deberán presentar los avisos establecidos en esta Sección.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -1342,22 +1297,13 @@
           "numero": 12,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "10 de 40",
-          "padre_numero": 11,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 13,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Las personas que efectúen los pagos a que se refiere el Capítulo I del Título IV de la Ley del Impuesto sobre la Renta, deberán presentar el aviso a que se refiere este inciso por los contribuyentes a quienes realicen dichos pagos y que en el registro federal de contribuyentes se encuentren en suspensión de actividades;",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 114
         },
         {
-          "numero": 14,
+          "numero": 13,
           "tipo": "fraccion",
           "identificador": "V",
           "contenido": "El aviso de actualización de actividades económicas y obligaciones, se presentará cuando el contribuyente:",
@@ -1366,52 +1312,52 @@
           "x_texto": 107
         },
         {
-          "numero": 15,
+          "numero": 14,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Inicie o deje de realizar una actividad económica que tenga como consecuencia la modificación de la clave del catálogo de actividades económicas que emita el Servicio de Administración Tributaria o cambie su actividad preponderante;",
-          "padre_numero": 14,
+          "padre_numero": 13,
+          "x_id": 114,
+          "x_texto": 136
+        },
+        {
+          "numero": 15,
+          "tipo": "inciso",
+          "identificador": "b)",
+          "contenido": "Opte por una periodicidad de cumplimiento diferente respecto de una actividad u obligación ya manifestada en el registro federal de contribuyentes, o bien, cuando opte por no efectuar pagos provisionales o definitivos, en términos de las disposiciones fiscales;",
+          "padre_numero": 13,
           "x_id": 114,
           "x_texto": 136
         },
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Opte por una periodicidad de cumplimiento diferente respecto de una actividad u obligación ya manifestada en el registro federal de contribuyentes, o bien, cuando opte por no efectuar pagos provisionales o definitivos, en términos de las disposiciones fiscales;",
-          "padre_numero": 14,
+          "identificador": "c)",
+          "contenido": "Elija una opción de tributación diferente a la que viene aplicando, respecto de la misma actividad económica y que dé lugar a un cambio de obligaciones fiscales, que implique un régimen de tributación diferente, y",
+          "padre_numero": 13,
           "x_id": 114,
           "x_texto": 136
         },
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Elija una opción de tributación diferente a la que viene aplicando, respecto de la misma actividad económica y que dé lugar a un cambio de obligaciones fiscales, que implique un régimen de tributación diferente, y",
-          "padre_numero": 14,
+          "identificador": "d)",
+          "contenido": "Tenga una nueva obligación fiscal periódica de pago por cuenta propia o de terceros o cuando deje de tener alguna de éstas.",
+          "padre_numero": 13,
           "x_id": 114,
           "x_texto": 136
         },
         {
           "numero": 18,
-          "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Tenga una nueva obligación fiscal periódica de pago por cuenta propia o de terceros o cuando deje de tener alguna de éstas.",
-          "padre_numero": 14,
-          "x_id": 114,
-          "x_texto": 136
-        },
-        {
-          "numero": 19,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los contribuyentes que ejerzan la opción de no acumular los ingresos que les correspondan de la sociedad conyugal y se encuentren inscritos en el registro federal de contribuyentes, no presentarán el aviso de actualización de actividades económicas y obligaciones por esta actividad, en términos de lo dispuesto en el Reglamento de la Ley del Impuesto sobre la Renta;",
-          "padre_numero": 14,
+          "padre_numero": 13,
           "x_id": 114,
           "x_texto": 114
         },
         {
-          "numero": 20,
+          "numero": 19,
           "tipo": "fraccion",
           "identificador": "VI",
           "contenido": "No será necesario presentar el aviso a que se refiere el artículo 29, fracción VIII de este Reglamento, cuando los locales o establecimientos a que el mismo se refiere estén ubicados en el domicilio fiscal manifestado por el contribuyente para efectos del registro federal de contribuyentes;",
@@ -1420,7 +1366,7 @@
           "x_texto": 107
         },
         {
-          "numero": 21,
+          "numero": 20,
           "tipo": "fraccion",
           "identificador": "VII",
           "contenido": "En los casos en que dé inicio el ejercicio de liquidación, el aviso de inicio de liquidación se presentará dentro del mes siguiente a la fecha en que se presente la declaración del ejercicio que concluyó anticipadamente, en los términos del artículo 11 del Código;",
@@ -1429,7 +1375,7 @@
           "x_texto": 107
         },
         {
-          "numero": 22,
+          "numero": 21,
           "tipo": "fraccion",
           "identificador": "VIII",
           "contenido": "El aviso de apertura de sucesión se presentará por el representante legal de la sucesión en el caso de que fallezca una persona obligada a presentar declaraciones periódicas por cuenta propia. La presentación de este aviso deberá realizarse después de aceptar el cargo y previamente a la del aviso de cancelación en el registro federal de contribuyentes por liquidación de la sucesión.",
@@ -1438,7 +1384,7 @@
           "x_texto": 107
         },
         {
-          "numero": 23,
+          "numero": 22,
           "tipo": "texto",
           "identificador": null,
           "contenido": "No se estará obligado a presentar el aviso a que se refiere esta fracción cuando la persona que fallezca hubiera estado obligada a presentar declaración periódica únicamente por servicios personales o se encuentre en suspensión de actividades excepto, en este último caso, cuando el contribuyente tenga créditos fiscales determinados;",
@@ -1447,16 +1393,16 @@
           "x_texto": 85
         },
         {
-          "numero": 24,
+          "numero": 23,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "El aviso de cancelación en el registro federal de contribuyentes por defunción se presentará por cualquier familiar de la persona que fallezca o tercero interesado, siempre que no se actualicen los supuestos para la presentación del aviso de apertura de sucesión; 11 de 40",
+          "contenido": "El aviso de cancelación en el registro federal de contribuyentes por defunción se presentará por cualquier familiar de la persona que fallezca o tercero interesado, siempre que no se actualicen los supuestos para la presentación del aviso de apertura de sucesión;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
         },
         {
-          "numero": 25,
+          "numero": 24,
           "tipo": "fraccion",
           "identificador": "X",
           "contenido": "El aviso de cancelación en el registro federal de contribuyentes por liquidación de la sucesión se presentará por el representante legal de la sucesión cuando se haya dado por finalizada la liquidación de la misma;",
@@ -1465,7 +1411,7 @@
           "x_texto": 107
         },
         {
-          "numero": 26,
+          "numero": 25,
           "tipo": "fraccion",
           "identificador": "XI",
           "contenido": "El aviso de cancelación en el registro federal de contribuyentes por liquidación total del activo, se presentará por los contribuyentes que tributen en los términos del Título II de la Ley del Impuesto sobre la Renta, conjuntamente con la declaración final de la liquidación total del activo de la sociedad a que se refiere el artículo 12 de la citada Ley.",
@@ -1474,7 +1420,7 @@
           "x_texto": 107
         },
         {
-          "numero": 27,
+          "numero": 26,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos del párrafo anterior y del artículo 76, fracción V de la Ley del Impuesto sobre la Renta, cuando el ejercicio de liquidación a que se refiere el artículo 12 del mismo ordenamiento, sea por un periodo menor a tres meses, el contribuyente presentará el aviso a que se refiere esta fracción conjuntamente con la declaración del ejercicio de liquidación;",
@@ -1483,7 +1429,7 @@
           "x_texto": 85
         },
         {
-          "numero": 28,
+          "numero": 27,
           "tipo": "fraccion",
           "identificador": "XII",
           "contenido": "El aviso de cancelación en el registro federal de contribuyentes por cese total de operaciones, se presentará por los residentes en el extranjero que dejen de realizar operaciones en México o cierren sus establecimientos permanentes.",
@@ -1492,7 +1438,7 @@
           "x_texto": 107
         },
         {
-          "numero": 29,
+          "numero": 28,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El aviso a que se refiere esta fracción también deberá presentarse por las personas morales que no estén obligadas a presentar el trámite previsto en el artículo 24, fracciones I y II de este Reglamento y por los fideicomisos que se extingan, así como por las organizaciones civiles y fideicomisos autorizados para recibir donativos deducibles de impuestos.",
@@ -1501,7 +1447,7 @@
           "x_texto": 85
         },
         {
-          "numero": 30,
+          "numero": 29,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El cómputo del plazo para la presentación del aviso a que se refiere esta fracción inicia una vez que se ha presentado la última declaración a que estén obligados los contribuyentes;",
@@ -1510,7 +1456,7 @@
           "x_texto": 85
         },
         {
-          "numero": 31,
+          "numero": 30,
           "tipo": "fraccion",
           "identificador": "XIII",
           "contenido": "El aviso de cancelación en el registro federal de contribuyentes por fusión de sociedades, se presentará por la sociedad fusionante cuando ésta sea la que subsista y con ello se tendrá por presentado el aviso de fusión a que se refiere el artículo 14-B, fracción I, inciso a) del Código.",
@@ -1519,7 +1465,7 @@
           "x_texto": 107
         },
         {
-          "numero": 32,
+          "numero": 31,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El aviso a que se refiere esta fracción deberá presentarse una vez que se lleve a cabo la fusión y deberá contener la clave del registro federal de contribuyentes, así como la denominación o razón social de las sociedades que se fusionan y la fecha en la que se realizó la fusión;",
@@ -1528,7 +1474,7 @@
           "x_texto": 85
         },
         {
-          "numero": 33,
+          "numero": 32,
           "tipo": "fraccion",
           "identificador": "XIV",
           "contenido": "El aviso de cambio de residencia fiscal deberá presentarse cuando las personas físicas y morales dejen de ser residentes en México a más tardar dentro de los quince días inmediatos anteriores a aquél en el que suceda el cambio de residencia fiscal y con no más de dos meses de anticipación, y",
@@ -1537,7 +1483,7 @@
           "x_texto": 107
         },
         {
-          "numero": 34,
+          "numero": 33,
           "tipo": "fraccion",
           "identificador": "XV",
           "contenido": "El aviso de inicio de procedimiento de concurso mercantil se presentará a partir de que se haya admitido la demanda de solicitud de concurso mercantil.",
@@ -1583,7 +1529,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "Tratándose de actividades agrícolas o silvícolas, el predio donde realice la actividad, identificándolo por su ubicación y, en su caso, su nombre; 12 de 40",
+          "contenido": "Tratándose de actividades agrícolas o silvícolas, el predio donde realice la actividad, identificándolo por su ubicación y, en su caso, su nombre;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1726,7 +1672,7 @@
           "numero": 13,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "Ser analíticos y efectuarse en el mes en que se realicen las operaciones, actos o actividades a que se refieran, a más tardar dentro de los cinco días siguientes a la realización de la operación, acto o actividad; 13 de 40",
+          "contenido": "Ser analíticos y efectuarse en el mes en que se realicen las operaciones, actos o actividades a que se refieran, a más tardar dentro de los cinco días siguientes a la realización de la operación, acto o actividad;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1843,7 +1789,7 @@
           "numero": 26,
           "tipo": "fraccion",
           "identificador": "XII",
-          "contenido": "Establecer por centro de costos, identificando las operaciones, actos o actividades de cada sucursal o establecimiento, incluyendo aquéllos que se localicen en el extranjero; 14 de 40",
+          "contenido": "Establecer por centro de costos, identificando las operaciones, actos o actividades de cada sucursal o establecimiento, incluyendo aquéllos que se localicen en el extranjero;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1933,7 +1879,7 @@
           "numero": 36,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": "La adquisición de bienes, de servicios y el uso o goce temporal de bienes, que se utilicen exclusivamente para realizar sus actividades por las que no deban pagar el impuesto, y 15 de 40",
+          "contenido": "La adquisición de bienes, de servicios y el uso o goce temporal de bienes, que se utilicen exclusivamente para realizar sus actividades por las que no deban pagar el impuesto, y",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136
@@ -2042,15 +1988,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "16 de 40",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -2186,15 +2123,6 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "17 de 40",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Los grupos de obligaciones a que se refiere el párrafo anterior se determinarán por el Servicio de Administración Tributaria en las reglas de carácter general que para tal efecto emita.",
           "padre_numero": null,
           "x_id": 85,
@@ -2316,7 +2244,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Si el documento a que se refiere el párrafo anterior se exhibe en el momento de la diligencia de notificación del requerimiento o de la multa impuesta, el notificador ejecutor suspenderá la diligencia, 18 de 40 tomará nota circunstanciada de dicho documento y dará cuenta de la solicitud de cancelación al titular de la oficina requirente, quien resolverá sobre la cancelación del requerimiento o, en su caso, de la multa. Si el documento exhibido no fuere idóneo para acreditar la presentación del aviso o declaración de que se trate, se repetirá la diligencia.",
+          "contenido": "Si el documento a que se refiere el párrafo anterior se exhibe en el momento de la diligencia de notificación del requerimiento o de la multa impuesta, el notificador ejecutor suspenderá la diligencia, tomará nota circunstanciada de dicho documento y dará cuenta de la solicitud de cancelación al titular de la oficina requirente, quien resolverá sobre la cancelación del requerimiento o, en su caso, de la multa. Si el documento exhibido no fuere idóneo para acreditar la presentación del aviso o declaración de que se trate, se repetirá la diligencia.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -2463,7 +2391,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "Estar inscrito en el registro federal de contribuyentes, con cualquiera de las claves y regímenes de tributación que a continuación se señalan: 19 de 40",
+          "contenido": "Estar inscrito en el registro federal de contribuyentes, con cualquiera de las claves y regímenes de tributación que a continuación se señalan:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2606,7 +2534,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "Aquélla a que se refiere el artículo 52, fracción V de este Reglamento que lo acredite como miembro activo de un colegio profesional o de una asociación de contadores públicos, que 20 de 40 tengan reconocimiento por parte de la Secretaría de Educación Pública o de la autoridad educativa estatal, y",
+          "contenido": "Aquélla a que se refiere el artículo 52, fracción V de este Reglamento que lo acredite como miembro activo de un colegio profesional o de una asociación de contadores públicos, que tengan reconocimiento por parte de la Secretaría de Educación Pública o de la autoridad educativa estatal, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2713,7 +2641,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Entregar una relación con los nombres de los contadores públicos autorizados para formular dictámenes para efectos fiscales, que presten sus servicios a la misma persona moral, y 21 de 40",
+          "contenido": "Entregar una relación con los nombres de los contadores públicos autorizados para formular dictámenes para efectos fiscales, que presten sus servicios a la misma persona moral, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2838,7 +2766,7 @@
           "numero": 9,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": "De uno a tres años cuando el contador público inscrito: 22 de 40",
+          "contenido": "De uno a tres años cuando el contador público inscrito:",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -2963,7 +2891,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos del artículo 52, antepenúltimo párrafo del Código, el Servicio de Administración Tributaria, previa audiencia, procederá a la cancelación definitiva de la inscripción a que se refiere el citado precepto, para lo cual se entiende que: 23 de 40",
+          "contenido": "Para los efectos del artículo 52, antepenúltimo párrafo del Código, el Servicio de Administración Tributaria, previa audiencia, procederá a la cancelación definitiva de la inscripción a que se refiere el citado precepto, para lo cual se entiende que:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3105,7 +3033,7 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La información a que se refiere este artículo deberá ir acompañada de una declaración bajo protesta de decir verdad del contador público inscrito que elaboró el dictamen y del contribuyente o de su 24 de 40 representante legal, en los términos que establezcan las reglas de carácter general que para tal efecto emita el Servicio de Administración Tributaria.",
+          "contenido": "La información a que se refiere este artículo deberá ir acompañada de una declaración bajo protesta de decir verdad del contador público inscrito que elaboró el dictamen y del contribuyente o de su representante legal, en los términos que establezcan las reglas de carácter general que para tal efecto emita el Servicio de Administración Tributaria.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3220,7 +3148,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "Sea funcionario o empleado del Gobierno Federal, de las entidades federativas coordinadas en materia de contribuciones federales o de un organismo descentralizado competente para determinar contribuciones; 25 de 40",
+          "contenido": "Sea funcionario o empleado del Gobierno Federal, de las entidades federativas coordinadas en materia de contribuciones federales o de un organismo descentralizado competente para determinar contribuciones;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3318,7 +3246,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Cuando el tercero aporte información o documentación que requiera darse a conocer al contribuyente, la Autoridad Fiscal lo notificará a través del buzón tributario, dentro del plazo de cuatro días contado a 26 de 40 partir de aquél en que el tercero aportó dicha información o documentación; el contribuyente contará con un plazo de cuatro días contado a partir de aquél en que surta efectos la notificación para que manifieste lo que a su derecho convenga.",
+          "contenido": "Cuando el tercero aporte información o documentación que requiera darse a conocer al contribuyente, la Autoridad Fiscal lo notificará a través del buzón tributario, dentro del plazo de cuatro días contado a partir de aquél en que el tercero aportó dicha información o documentación; el contribuyente contará con un plazo de cuatro días contado a partir de aquél en que surta efectos la notificación para que manifieste lo que a su derecho convenga.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3430,22 +3358,13 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "27 de 40",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Una vez que el contribuyente presente la solicitud con el proyecto de pagos a que se refiere la fracción I del tercer párrafo del artículo 66 del Código, la Autoridad Fiscal dentro del plazo de siete días contado a partir de la recepción de la solicitud, podrá requerir datos, informes o documentos adicionales que considere necesarios para su valoración. Para tal efecto el contribuyente contará con un plazo de diez días para cumplir con lo requerido.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 5,
+          "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El plazo transcurrido entre la fecha de requerimiento de documentación por parte de la Autoridad Fiscal, y la fecha en que ésta hubiera sido aportada en su totalidad por el contribuyente, no se computará dentro del plazo de quince días a que se refiere el artículo 66, tercer párrafo, fracción II del Código.",
@@ -3578,7 +3497,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos del artículo 69-C, segundo párrafo del Código, los contribuyentes podrán solicitar la adopción de un acuerdo conclusivo antes del levantamiento de la última acta parcial u 28 de 40 oficio de observaciones, o antes de la resolución provisional a que se refiere el artículo 53-B del Código, siempre que la Autoridad Fiscal, previo a la emisión de dicha acta, oficio o resolución, haga constar la calificación correspondiente en actas parciales, oficios o notificaciones emitidos para tales efectos.",
+          "contenido": "Para los efectos del artículo 69-C, segundo párrafo del Código, los contribuyentes podrán solicitar la adopción de un acuerdo conclusivo antes del levantamiento de la última acta parcial u oficio de observaciones, o antes de la resolución provisional a que se refiere el artículo 53-B del Código, siempre que la Autoridad Fiscal, previo a la emisión de dicha acta, oficio o resolución, haga constar la calificación correspondiente en actas parciales, oficios o notificaciones emitidos para tales efectos.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3707,7 +3626,7 @@
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Cuando el ofrecimiento, cancelación, sustitución, ampliación o disminución de la garantía del interés fiscal se presente ante el Servicio de Administración Tributaria, ésta deberá efectuarse a través de la 29 de 40 forma oficial o formato electrónico que para tal efecto establezca dicho órgano mediante reglas de carácter general.",
+          "contenido": "Cuando el ofrecimiento, cancelación, sustitución, ampliación o disminución de la garantía del interés fiscal se presente ante el Servicio de Administración Tributaria, ésta deberá efectuarse a través de la forma oficial o formato electrónico que para tal efecto establezca dicho órgano mediante reglas de carácter general.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3830,15 +3749,6 @@
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "30 de 40",
-          "padre_numero": 3,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Una vez efectuada la transferencia electrónica de fondos, la institución de crédito de que se trate deberá enviar a la Tesorería de la Federación por conducto del Servicio de Administración Tributaria o al organismo descentralizado competente para cobrar coactivamente créditos fiscales el comprobante de la operación y del pago realizado.",
           "padre_numero": null,
           "x_id": 85,
@@ -3953,7 +3863,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos del artículo 141, fracción IV del Código, para que un tercero asuma la obligación solidaria de garantizar el interés fiscal, deberá sujetarse a lo siguiente: 31 de 40",
+          "contenido": "Para los efectos del artículo 141, fracción IV del Código, para que un tercero asuma la obligación solidaria de garantizar el interés fiscal, deberá sujetarse a lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -4068,7 +3978,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "Antes de la práctica de la diligencia de embargo en la vía administrativa, deberán cubrirse los gastos de ejecución y gastos extraordinarios que puedan ser determinados en términos del 32 de 40 artículo 150 del Código. El pago así efectuado tendrá el carácter de definitivo y en ningún caso procederá su devolución una vez practicada la diligencia.",
+          "contenido": "Antes de la práctica de la diligencia de embargo en la vía administrativa, deberán cubrirse los gastos de ejecución y gastos extraordinarios que puedan ser determinados en términos del artículo 150 del Código. El pago así efectuado tendrá el carácter de definitivo y en ningún caso procederá su devolución una vez practicada la diligencia.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4208,15 +4118,6 @@
         },
         {
           "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "33 de 40",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La Autoridad Fiscal podrá aceptar la garantía ofrecida por el contribuyente aun y cuando ésta no sea suficiente para garantizar el interés fiscal de acuerdo con lo establecido en el artículo 141 del Código, instaurando el procedimiento administrativo de ejecución por el monto no garantizado.",
@@ -4381,15 +4282,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "34 de 40",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -4521,15 +4413,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "35 de 40",
-          "padre_numero": 3,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -4670,15 +4553,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "36 de 40",
-          "padre_numero": 5,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -4809,7 +4683,7 @@
           "numero": 14,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "Elaborar un informe inicial que contenga la situación general de la negociación al inicio de la intervención e informes mensuales respecto de los movimientos realizados en el mes, los cuales deberá entregar a la Autoridad Fiscal dentro de los tres días siguientes al inicio de la 37 de 40 intervención en el caso del informe inicial y, en el segundo caso, dentro de los tres días siguientes al mes que corresponda el informe mensual.",
+          "contenido": "Elaborar un informe inicial que contenga la situación general de la negociación al inicio de la intervención e informes mensuales respecto de los movimientos realizados en el mes, los cuales deberá entregar a la Autoridad Fiscal dentro de los tres días siguientes al inicio de la intervención en el caso del informe inicial y, en el segundo caso, dentro de los tres días siguientes al mes que corresponda el informe mensual.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4964,15 +4838,6 @@
         },
         {
           "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "38 de 40",
-          "padre_numero": 3,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se tendrá por cubierto el requisito de enviar los datos a que se refiere el artículo 182 del Código, cuando los postores hayan dado cumplimiento a lo señalado en el presente artículo.",

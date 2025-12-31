@@ -127,7 +127,7 @@
           "numero": 5,
           "tipo": "inciso",
           "identificador": "c)",
-          "contenido": "Otorgamiento del uso o goce temporal de bienes. 1 de 16",
+          "contenido": "Otorgamiento del uso o goce temporal de bienes.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -277,7 +277,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos del artículo 2o.-A, fracción I, inciso e) de la Ley, se aplicará la tasa del 0% a la enajenación de la maquinaria y del equipo que tengan una denominación distinta a la mencionada en el citado precepto, siempre que su función cumpla exclusivamente con los supuestos previstos en dicho artículo, conserven su carácter esencial y no puedan ser destinados a otros fines. 2 de 16",
+          "contenido": "Para los efectos del artículo 2o.-A, fracción I, inciso e) de la Ley, se aplicará la tasa del 0% a la enajenación de la maquinaria y del equipo que tengan una denominación distinta a la mencionada en el citado precepto, siempre que su función cumpla exclusivamente con los supuestos previstos en dicho artículo, conserven su carácter esencial y no puedan ser destinados a otros fines.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -364,7 +364,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Cuando por virtud de los Convenios Internacionales o Acuerdos Sede aplicables a los organismos internacionales antes mencionados, el Gobierno Mexicano esté obligado al reembolso o devolución del impuesto, dichos organismos podrán solicitar la devolución del impuesto que les hubiese sido trasladado 3 de 16 y que hayan pagado efectivamente, sólo por la adquisición de los bienes y servicios que se destinen para uso oficial, que establezca el Servicio de Administración Tributaria mediante reglas de carácter general.",
+          "contenido": "Cuando por virtud de los Convenios Internacionales o Acuerdos Sede aplicables a los organismos internacionales antes mencionados, el Gobierno Mexicano esté obligado al reembolso o devolución del impuesto, dichos organismos podrán solicitar la devolución del impuesto que les hubiese sido trasladado y que hayan pagado efectivamente, sólo por la adquisición de los bienes y servicios que se destinen para uso oficial, que establezca el Servicio de Administración Tributaria mediante reglas de carácter general.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -510,7 +510,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos de las disposiciones que establece la Ley en materia de acreditamiento, éste podrá ser realizado por los contribuyentes que realicen actividades por las que se deba pagar el impuesto en inmuebles sujetos al régimen de propiedad en condominio, en la parte proporcional que les 4 de 16 corresponda del impuesto trasladado en las operaciones que amparen los gastos comunes relativos al inmueble de que se trate, siempre que además de los requisitos que establece la Ley, se cumpla con lo siguiente:",
+          "contenido": "Para los efectos de las disposiciones que establece la Ley en materia de acreditamiento, éste podrá ser realizado por los contribuyentes que realicen actividades por las que se deba pagar el impuesto en inmuebles sujetos al régimen de propiedad en condominio, en la parte proporcional que les corresponda del impuesto trasladado en las operaciones que amparen los gastos comunes relativos al inmueble de que se trate, siempre que además de los requisitos que establece la Ley, se cumpla con lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -626,7 +626,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos de las disposiciones que establece la Ley en materia de acreditamiento, los contribuyentes podrán acreditar el impuesto trasladado con motivo de los gastos erogados por concepto de combustible, aceite, servicios, reparaciones y refacciones, cuando éstos se efectúen con motivo del uso del automóvil propiedad de una persona que les preste servicios personales subordinados y sean consecuencia de un viaje realizado para desempeñar actividades propias de los contribuyentes. En estos casos, el acreditamiento se podrá efectuar en la proporción que del total de los gastos erogados represente la parte que de los mismos sea deducible para el contribuyente, para los efectos de la Ley del Impuesto sobre la Renta. 5 de 16",
+          "contenido": "Para los efectos de las disposiciones que establece la Ley en materia de acreditamiento, los contribuyentes podrán acreditar el impuesto trasladado con motivo de los gastos erogados por concepto de combustible, aceite, servicios, reparaciones y refacciones, cuando éstos se efectúen con motivo del uso del automóvil propiedad de una persona que les preste servicios personales subordinados y sean consecuencia de un viaje realizado para desempeñar actividades propias de los contribuyentes. En estos casos, el acreditamiento se podrá efectuar en la proporción que del total de los gastos erogados represente la parte que de los mismos sea deducible para el contribuyente, para los efectos de la Ley del Impuesto sobre la Renta.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -726,10 +726,13 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos del artículo 8o., primer párrafo de la Ley, no se consideran faltantes de bienes en los inventarios de las empresas, aquéllos que se originen por caso fortuito o fuerza mayor, así como las mermas y la destrucción de mercancías, cuando sean deducibles para los efectos de la Ley del Impuesto sobre la Renta. 6 de 16",
+          "contenido": "Para efectos del artículo 8o., primer párrafo de la Ley, no se consideran faltantes de bienes en los inventarios de las empresas, aquéllos que se originen por caso fortuito o fuerza mayor, así como las mermas y la destrucción de mercancías, cuando sean deducibles para los efectos de la Ley del Impuesto sobre la Renta.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "referencias": [
+            "Artículo reformado DOF 25-09-2014"
+          ]
         }
       ]
     },
@@ -874,7 +877,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos del artículo 9o., fracción VII, primer párrafo de la Ley, los dividendos pagados en acciones quedan comprendidos dentro de lo dispuesto en dicho párrafo. 7 de 16",
+          "contenido": "Para los efectos del artículo 9o., fracción VII, primer párrafo de la Ley, los dividendos pagados en acciones quedan comprendidos dentro de lo dispuesto en dicho párrafo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -1028,7 +1031,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "También quedan comprendidas en las operaciones de financiamiento de carácter activo, los créditos otorgados por los fondos o fideicomisos que únicamente operen con recursos proporcionados por las 8 de 16 personas señaladas en el párrafo anterior o por ellas conjuntamente con los gobiernos de las Entidades Federativas.",
+          "contenido": "También quedan comprendidas en las operaciones de financiamiento de carácter activo, los créditos otorgados por los fondos o fideicomisos que únicamente operen con recursos proporcionados por las personas señaladas en el párrafo anterior o por ellas conjuntamente con los gobiernos de las Entidades Federativas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -1164,7 +1167,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos del artículo 20, fracción II de la Ley, cuando se otorgue el uso o goce temporal de un bien inmueble destinado a casa habitación y se proporcione amueblado, se pagará el impuesto por el total de las contraprestaciones, aun cuando se celebren contratos distintos por los bienes muebles e inmuebles. 9 de 16",
+          "contenido": "Para los efectos del artículo 20, fracción II de la Ley, cuando se otorgue el uso o goce temporal de un bien inmueble destinado a casa habitación y se proporcione amueblado, se pagará el impuesto por el total de las contraprestaciones, aun cuando se celebren contratos distintos por los bienes muebles e inmuebles.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -1319,10 +1322,13 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Derogado. 10 de 16",
+          "contenido": "Derogado.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "referencias": [
+            "Artículo derogado DOF 25-09-2014"
+          ]
         }
       ]
     },
@@ -1470,7 +1476,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para efectos del artículo 29, segundo párrafo, fracción V de la Ley, quedan comprendidos en la transportación internacional de bienes, la que se efectúe por las vías marítima, férrea y por carretera cuando se inicie en el territorio nacional y concluya en el extranjero. 11 de 16",
+          "contenido": "Para efectos del artículo 29, segundo párrafo, fracción V de la Ley, quedan comprendidos en la transportación internacional de bienes, la que se efectúe por las vías marítima, férrea y por carretera cuando se inicie en el territorio nacional y concluya en el extranjero.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85,
@@ -1613,10 +1619,13 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Derogado. 12 de 16",
+          "contenido": "Derogado.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "referencias": [
+            "Artículo derogado DOF 25-09-2014"
+          ]
         }
       ]
     },
@@ -1837,7 +1846,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "Que la institución fiduciaria calcule y entere el impuesto que corresponda a las actividades realizadas por el fideicomiso y lleve a cabo el acreditamiento del impuesto en los términos y con los requisitos que establece la Ley. Si en la declaración de pago resulta saldo a favor, la institución fiduciaria de que se trate estará a lo dispuesto en el artículo 6o. de la Ley, y 13 de 16",
+          "contenido": "Que la institución fiduciaria calcule y entere el impuesto que corresponda a las actividades realizadas por el fideicomiso y lleve a cabo el acreditamiento del impuesto en los términos y con los requisitos que establece la Ley. Si en la declaración de pago resulta saldo a favor, la institución fiduciaria de que se trate estará a lo dispuesto en el artículo 6o. de la Ley, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1967,7 +1976,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos del artículo 39 de la Ley, las cantidades acreditables que deben comprobarse en los términos de dicho artículo, serán las que correspondan a los meses en que el valor de los actos o actividades se determine presuntivamente, y siempre que la documentación en que consten éstas reúna los requisitos que establece la Ley, el Código Fiscal de la Federación y su Reglamento. 14 de 16",
+          "contenido": "Para los efectos del artículo 39 de la Ley, las cantidades acreditables que deben comprobarse en los términos de dicho artículo, serán las que correspondan a los meses en que el valor de los actos o actividades se determine presuntivamente, y siempre que la documentación en que consten éstas reúna los requisitos que establece la Ley, el Código Fiscal de la Federación y su Reglamento.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85

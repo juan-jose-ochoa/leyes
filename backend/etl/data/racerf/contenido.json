@@ -66,7 +66,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "La comprobación del cumplimiento de las obligaciones legales, reglamentarias y administrativas ante el Instituto, y 1 de 113",
+          "contenido": "La comprobación del cumplimiento de las obligaciones legales, reglamentarias y administrativas ante el Instituto, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -220,7 +220,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El registro de los patrones y demás sujetos obligados, la inscripción de los trabajadores y demás sujetos de aseguramiento, la clasificación de empresas y la determinación de la prima de riesgo de trabajo, la determinación y pago de los créditos fiscales a cargo de patrones, trabajadores y demás sujetos obligados y de aseguramiento y en general cualquier otro sujeto de obligaciones establecidas en la Ley y en este Reglamento, así como la comunicación de sus modificaciones salariales y bajas, el registro del contador público autorizado, el aviso para dictaminar, los modelos de opinión y la carta de presentación del dictamen y los demás de cualquier otra índole, se harán en los formatos impresos 2 de 113",
+          "contenido": "El registro de los patrones y demás sujetos obligados, la inscripción de los trabajadores y demás sujetos de aseguramiento, la clasificación de empresas y la determinación de la prima de riesgo de trabajo, la determinación y pago de los créditos fiscales a cargo de patrones, trabajadores y demás sujetos obligados y de aseguramiento y en general cualquier otro sujeto de obligaciones establecidas en la Ley y en este Reglamento, así como la comunicación de sus modificaciones salariales y bajas, el registro del contador público autorizado, el aviso para dictaminar, los modelos de opinión y la carta de presentación del dictamen y los demás de cualquier otra índole, se harán en los formatos impresos FISCALIZACIÓN autorizados que deberán ser publicados en el Diario Oficial de la Federación por el Instituto. Salvo cuando la obligación se cumpla a través de un medio de los señalados en el artículo 5 de este Reglamento.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -229,22 +229,13 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "FISCALIZACIÓN autorizados que deberán ser publicados en el Diario Oficial de la Federación por el Instituto. Salvo cuando la obligación se cumpla a través de un medio de los señalados en el artículo 5 de este Reglamento.",
-          "padre_numero": 1,
-          "x_id": 494,
-          "x_texto": 494
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "La reproducción y presentación de dichos formatos podrá realizarse en la forma y términos que señale el Instituto, o en cualquiera de los medios previstos en el último párrafo del artículo 15 de la Ley, de acuerdo con las especificaciones establecidas por el mismo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 4,
+          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En el caso de que se omita presentar la información a que se refieren los párrafos anteriores, en los formatos o medios señalados, no se dará trámite a la solicitud, excepto cuando no se hayan publicado por el Instituto dichos formatos, en cuyo supuesto, se realizará mediante escrito reuniendo todos y cada uno de los requisitos previstos en la Ley y este Reglamento para el cumplimiento de las obligaciones.",
@@ -253,7 +244,7 @@
           "x_texto": 85
         },
         {
-          "numero": 5,
+          "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando el último día de los plazos señalados en este Reglamento para el cumplimiento de obligaciones, sea día inhábil o viernes se prorrogará el plazo hasta el día hábil siguiente. No se prorrogará el plazo para la presentación de avisos afiliatorios.",
@@ -352,7 +343,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En todos los casos el Instituto o las oficinas autorizadas por el mismo, entregarán al patrón o sujeto obligado la constancia correspondiente del trámite realizado, ya sea en forma impresa o en 3 de 113",
+          "contenido": "En todos los casos el Instituto o las oficinas autorizadas por el mismo, entregarán al patrón o sujeto obligado la constancia correspondiente del trámite realizado, ya sea en forma impresa o en FISCALIZACIÓN cualquiera de los medios de comunicación electrónica a que se refiere la Ley, en este último caso, dicha constancia tendrá para todos los efectos legales, igual valor probatorio que la impresa.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -361,22 +352,13 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "FISCALIZACIÓN cualquiera de los medios de comunicación electrónica a que se refiere la Ley, en este último caso, dicha constancia tendrá para todos los efectos legales, igual valor probatorio que la impresa.",
-          "padre_numero": 1,
-          "x_id": 494,
-          "x_texto": 494
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Tratándose de la constancia que se entregue a través de los medios de comunicación electrónica, ésta deberá reunir los requisitos que establezcan los lineamientos de carácter general que emita el Consejo Técnico del Instituto, los cuales se publicarán en el Diario Oficial de la Federación.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 4,
+          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El patrón, en un plazo de tres días hábiles contados a partir de la entrega de la mencionada constancia, por el mismo medio en que le fue entregada, confirmará que la información que proporcionó al Instituto concuerda con la registrada por éste, o bien, realizará las aclaraciones que procedan. En caso contrario, se tendrá por consentida.",
@@ -385,7 +367,7 @@
           "x_texto": 85
         },
         {
-          "numero": 5,
+          "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "De proceder la aclaración, se tendrá por realizado el trámite en la fecha en que fue efectuado originalmente.",
@@ -547,7 +529,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Lapso que comprende y periodicidad establecida para el pago de los salarios; 4 de 113",
+          "contenido": "Lapso que comprende y periodicidad establecida para el pago de los salarios;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -697,7 +679,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Inicie vigencia su convenio de incorporación celebrado con el Instituto, y 5 de 113",
+          "contenido": "Inicie vigencia su convenio de incorporación celebrado con el Instituto, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -874,7 +856,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El patrón o sujeto obligado deberá avisar al Instituto por escrito del robo, destrucción o extravío del documento de identificación, para proceder a su reposición, previo pago correspondiente. 6 de 113",
+          "contenido": "El patrón o sujeto obligado deberá avisar al Instituto por escrito del robo, destrucción o extravío del documento de identificación, para proceder a su reposición, previo pago correspondiente.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -1007,7 +989,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Si la actividad de una empresa no se señala en forma específica en el Catálogo de Actividades establecido en este Reglamento, el patrón o el Instituto procederán a determinar la clasificación considerando la analogía o similitud en la actividad, los procesos de trabajo y los riesgos de dicha actividad con los que se establecen en el Catálogo mencionado. 7 de 113",
+          "contenido": "Si la actividad de una empresa no se señala en forma específica en el Catálogo de Actividades establecido en este Reglamento, el patrón o el Instituto procederán a determinar la clasificación considerando la analogía o similitud en la actividad, los procesos de trabajo y los riesgos de dicha actividad con los que se establecen en el Catálogo mencionado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -1180,7 +1162,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "Si todos los registros patronales que se sustituyen están ubicados en la misma fracción y clase, la empresa será clasificada en dicha fracción y clase. La prima a cubrir, será la que resulte de aplicar el procedimiento siguiente: 8 de 113",
+          "contenido": "Si todos los registros patronales que se sustituyen están ubicados en la misma fracción y clase, la empresa será clasificada en dicha fracción y clase. La prima a cubrir, será la que resulte de aplicar el procedimiento siguiente:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1323,7 +1305,7 @@
           "numero": 10,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Cuando la fusión no implique cambio de clase, pero la empresa fusionada y la fusionante tuvieren primas diferentes, las cuotas del Seguro de Riesgos de Trabajo deberán cubrirse con base en los 9 de 113",
+          "contenido": "Cuando la fusión no implique cambio de clase, pero la empresa fusionada y la fusionante tuvieren primas diferentes, las cuotas del Seguro de Riesgos de Trabajo deberán cubrirse con base en los FISCALIZACIÓN casos concretos de riesgos de trabajo terminados en el último periodo anual de la fusionante y la fusionada, y se fijará la nueva prima conforme al artículo 38 de este Reglamento, debiéndose comparar dicha prima con la que tuviera la empresa fusionante.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -1332,22 +1314,13 @@
           "numero": 11,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "FISCALIZACIÓN casos concretos de riesgos de trabajo terminados en el último periodo anual de la fusionante y la fusionada, y se fijará la nueva prima conforme al artículo 38 de este Reglamento, debiéndose comparar dicha prima con la que tuviera la empresa fusionante.",
-          "padre_numero": 10,
-          "x_id": 494,
-          "x_texto": 494
-        },
-        {
-          "numero": 12,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "La prima resultante, definida en la forma indicada en el párrafo anterior, persistirá hasta el último día del mes de febrero posterior a la fusión.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 13,
+          "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los casos concretos de riesgos de trabajo terminados de la fusionada y la fusionante y los que se llegaren a presentar hasta completar el periodo de cómputo, servirán de base para el cálculo de la prima a cubrir en el Seguro de Riesgos de Trabajo, en los términos del artículo 32 de este Reglamento.",
@@ -1356,7 +1329,7 @@
           "x_texto": 85
         },
         {
-          "numero": 14,
+          "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La prima se determinará por la empresa fusionante; de no hacerlo, el Instituto la fijará con base en la información proporcionada por el patrón o, en su caso, con la que recabe;",
@@ -1365,7 +1338,7 @@
           "x_texto": 85
         },
         {
-          "numero": 15,
+          "numero": 14,
           "tipo": "fraccion",
           "identificador": "V",
           "contenido": "Tratándose de escisión se deberá proceder en los términos siguientes:",
@@ -1374,25 +1347,25 @@
           "x_texto": 107
         },
         {
-          "numero": 16,
+          "numero": 15,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Cuando la empresa escindente se extinga por efectos de la escisión, por haber transmitido la totalidad de sus bienes a dos o más empresas escindidas, la empresa escindente deberá manifestar su baja al Instituto y las empresas escindidas se ubicarán en la prima media de la clase que les corresponda, de acuerdo a la actividad a la que se dediquen, en términos de este Reglamento, conservando dicha prima hasta que hayan completado un periodo anual del primero de enero al treinta y uno de diciembre.",
-          "padre_numero": 15,
+          "padre_numero": 14,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 16,
+          "tipo": "inciso",
+          "identificador": "b)",
+          "contenido": "Cuando la empresa escindente no se extinga por efectos de la escisión, por haber transmitido solamente una parte de sus bienes a una o más empresas escindidas y la escisión no implique cambio de actividad para la empresa escindente, ésta continuará con la misma clasificación que tenía hasta antes de la escisión y las empresas escindidas se ubicarán en la prima media de la clase que les corresponda, de acuerdo a la actividad a la que se dediquen, en términos de este Reglamento, conservando dicha prima hasta que hayan completado un periodo anual del primero de enero al treinta y uno de diciembre, y",
+          "padre_numero": 14,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 17,
-          "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando la empresa escindente no se extinga por efectos de la escisión, por haber transmitido solamente una parte de sus bienes a una o más empresas escindidas y la escisión no implique cambio de actividad para la empresa escindente, ésta continuará con la misma clasificación que tenía hasta antes de la escisión y las empresas escindidas se ubicarán en la prima media de la clase que les corresponda, de acuerdo a la actividad a la que se dediquen, en términos de este Reglamento, conservando dicha prima hasta que hayan completado un periodo anual del primero de enero al treinta y uno de diciembre, y",
-          "padre_numero": 15,
-          "x_id": 107,
-          "x_texto": 129
-        },
-        {
-          "numero": 18,
           "tipo": "fraccion",
           "identificador": "VI",
           "contenido": "En cualquier otra circunstancia que afecte su registro, se estará a lo dispuesto a las reglas establecidas en la fracción VII del artículo 32 de este Reglamento.",
@@ -1457,7 +1430,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "Se derive de una corrección o de un dictamen emitido por contador público autorizado y sea procedente en los términos de este Reglamento, y 10 de 113",
+          "contenido": "Se derive de una corrección o de un dictamen emitido por contador público autorizado y sea procedente en los términos de este Reglamento, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1625,22 +1598,13 @@
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En caso de que sean diferentes procederá la nueva prima, aumentándola o disminuyéndola en una proporción no mayor al uno por ciento del salario base de cotización, con respecto a la prima 11 de 113",
+          "contenido": "En caso de que sean diferentes procederá la nueva prima, aumentándola o disminuyéndola en una proporción no mayor al uno por ciento del salario base de cotización, con respecto a la prima FISCALIZACIÓN del año inmediato anterior con que la empresa venía cubriendo sus cuotas, en los términos del artículo 74 de la Ley;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
           "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "FISCALIZACIÓN del año inmediato anterior con que la empresa venía cubriendo sus cuotas, en los términos del artículo 74 de la Ley;",
-          "padre_numero": 5,
-          "x_id": 494,
-          "x_texto": 494
-        },
-        {
-          "numero": 7,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "La prima obtenida de conformidad con las fracciones anteriores, tendrá vigencia desde el primero de marzo del año siguiente a aquel en que concluyó el periodo computado y hasta el día último de febrero del año subsecuente;",
@@ -1649,7 +1613,7 @@
           "x_texto": 107
         },
         {
-          "numero": 8,
+          "numero": 7,
           "tipo": "fraccion",
           "identificador": "IV",
           "contenido": "Si se trata de empresas de reciente registro en el Instituto o que hayan cambiado de actividad, en los términos de los artículos 26 y 28 de este Reglamento, la disminución o aumento de la prima procederá atendiendo a lo dispuesto por las fracciones I y II anteriores, considerando los casos de riesgos de trabajo terminados, hasta que hayan completado un periodo anual del primero de enero al treinta y uno de diciembre;",
@@ -1658,7 +1622,7 @@
           "x_texto": 107
         },
         {
-          "numero": 9,
+          "numero": 8,
           "tipo": "fraccion",
           "identificador": "V",
           "contenido": "Los patrones deberán presentar al Instituto, durante el mes de febrero, los formatos impresos o el dispositivo magnético generado por el programa informático que el Instituto autorice, en donde se harán constar los casos de riesgos de trabajo terminados durante el año, precisando la identificación de los trabajadores y las consecuencias de cada riesgo, así como el número de trabajadores promedio expuestos al riesgo dados en razón de la mecánica bajo la cual efectúen los pagos de cuotas. El Instituto deberá dar aviso al patrón cuando califique algún accidente o enfermedad de trabajo, o en caso de recaída con motivo de éstos.",
@@ -1667,7 +1631,7 @@
           "x_texto": 107
         },
         {
-          "numero": 10,
+          "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Además determinarán, con base en los datos proporcionados al Instituto, la prima correspondiente y, conforme a la misma, cubrirán sus cuotas del Seguro de Riesgos de Trabajo.",
@@ -1676,7 +1640,7 @@
           "x_texto": 85
         },
         {
-          "numero": 11,
+          "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se eximirá a los patrones de la obligación de presentar los formatos impresos o el dispositivo magnético mencionados, cuando al determinar su prima ésta resulte igual a la del ejercicio anterior;",
@@ -1685,7 +1649,7 @@
           "x_texto": 85
         },
         {
-          "numero": 12,
+          "numero": 11,
           "tipo": "fraccion",
           "identificador": "VI",
           "contenido": "El Instituto verificará la información proporcionada por las empresas contra sus registros y si determina que la prima manifestada no es congruente con la obtenida por el propio Instituto, hará la rectificación correspondiente, la cual surtirá efectos a partir del primero de marzo del año posterior a que se refiere el cómputo, debiendo ser notificada al patrón;",
@@ -1694,7 +1658,7 @@
           "x_texto": 107
         },
         {
-          "numero": 13,
+          "numero": 12,
           "tipo": "fraccion",
           "identificador": "VII",
           "contenido": "En los casos en que un patrón haya efectuado su determinación de prima y presente el aviso de baja de su registro ante el Instituto y, posteriormente, presente aviso de alta en la misma actividad, continuará cubriendo las cuotas con la clase y prima que tenía asignada al momento de la baja, siempre y cuando no hubiere transcurrido un lapso mayor de seis meses dentro del periodo que rija dicha determinación. En caso de que exceda el límite de seis meses, se asignará la prima media de la clase que le corresponda.",
@@ -1703,7 +1667,7 @@
           "x_texto": 107
         },
         {
-          "numero": 14,
+          "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para el periodo subsecuente realizará su nueva determinación, si el lapso transcurrido entre la baja y la nueva alta es de seis meses o menos. En caso contrario, la empresa continuará en la prima media de la clase en que venía cotizando.",
@@ -1712,7 +1676,7 @@
           "x_texto": 85
         },
         {
-          "numero": 15,
+          "numero": 14,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando un patrón deje de tener trabajadores a su servicio durante más de seis meses y no haya comunicado baja patronal, al reanudar la relación obrero-patronal, será colocado en la prima media de la clase que corresponda a su actividad.",
@@ -1721,25 +1685,25 @@
           "x_texto": 85
         },
         {
-          "numero": 16,
+          "numero": 15,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Si el periodo fuera de seis meses o menos será colocado en la prima en que venía cubriendo sus cuotas, siempre y cuando conserve la misma actividad, y 12 de 113",
+          "contenido": "Si el periodo fuera de seis meses o menos será colocado en la prima en que venía cubriendo sus cuotas, siempre y cuando conserve la misma actividad, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 17,
+          "numero": 16,
           "tipo": "texto",
           "identificador": null,
           "contenido": "FISCALIZACIÓN",
-          "padre_numero": 16,
+          "padre_numero": 15,
           "x_id": 494,
           "x_texto": 494
         },
         {
-          "numero": 18,
+          "numero": 17,
           "tipo": "fraccion",
           "identificador": "VIII",
           "contenido": "Cuando la empresa tenga asignados diversos números de registro patronal en un mismo municipio o en el Distrito Federal, con excepción de los casos señalados en el artículo 21 de este Reglamento, para el cálculo de la prima se tomarán las consecuencias de los casos de riesgos de trabajo acaecidos al personal de la empresa en un mismo municipio o en el Distrito Federal y terminados durante el periodo de cómputo.",
@@ -1748,7 +1712,7 @@
           "x_texto": 107
         },
         {
-          "numero": 19,
+          "numero": 18,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de que la empresa tenga registrados centros de trabajo en distintos municipios determinará la prima de dichos centros, inclusive aquellos que cuenten únicamente con trabajadores eventuales, con independencia de los que se encuentran en otro municipio.",
@@ -1901,7 +1865,7 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Donde: 13 de 113",
+          "contenido": "Donde:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -2088,7 +2052,7 @@
           "numero": 6,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "S = Total de días subsidiados a causa de incapacidad temporal. 14 de 113",
+          "contenido": "S = Total de días subsidiados a causa de incapacidad temporal.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -2237,19 +2201,10 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El patrón podrá presentar el escrito a que se refiere la fracción IV del artículo 33 de este Reglamento, respecto de la resolución que rectifique su clasificación, su prima o bien determine esta última, dentro de los quince días hábiles siguientes a la fecha en que surta efectos la notificación 15 de 113",
+          "contenido": "El patrón podrá presentar el escrito a que se refiere la fracción IV del artículo 33 de este Reglamento, respecto de la resolución que rectifique su clasificación, su prima o bien determine esta última, dentro de los quince días hábiles siguientes a la fecha en que surta efectos la notificación FISCALIZACIÓN respectiva, siempre y cuando no haya interpuesto algún medio de defensa contra la mencionada resolución.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "FISCALIZACIÓN respectiva, siempre y cuando no haya interpuesto algún medio de defensa contra la mencionada resolución.",
-          "padre_numero": 1,
-          "x_id": 494,
-          "x_texto": 494
         }
       ]
     },
@@ -2396,7 +2351,7 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En el caso de los sujetos obligados se aplicará en lo conducente lo dispuesto en el presente artículo. 16 de 113",
+          "contenido": "En el caso de los sujetos obligados se aplicará en lo conducente lo dispuesto en el presente artículo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -2582,22 +2537,13 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "No obstante lo anterior, el Instituto podrá efectuar la rectificación con la fecha manifestada en la solicitud, siempre y cuando se presente antes de realizar el pago que corresponda al mes en que se pretende surta efectos la modificación de salario y dentro de los diecisiete primeros días del 17 de 113",
+          "contenido": "No obstante lo anterior, el Instituto podrá efectuar la rectificación con la fecha manifestada en la solicitud, siempre y cuando se presente antes de realizar el pago que corresponda al mes en que se pretende surta efectos la modificación de salario y dentro de los diecisiete primeros días del FISCALIZACIÓN mes siguiente. En este caso, el patrón deberá resarcir al Instituto las prestaciones que este último hubiere otorgado indebidamente al trabajador.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
           "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "FISCALIZACIÓN mes siguiente. En este caso, el patrón deberá resarcir al Instituto las prestaciones que este último hubiere otorgado indebidamente al trabajador.",
-          "padre_numero": 7,
-          "x_id": 494,
-          "x_texto": 494
-        },
-        {
-          "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Si a través del dictamen de contador público autorizado se determina alguno de los supuestos a que se refiere este artículo, se aplicará la regla que proceda, teniéndose como fecha de la solicitud de rectificación la de presentación ante el Instituto de dicho dictamen.",
@@ -2723,7 +2669,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "De existir convenio sancionado por la Junta de Conciliación y Arbitraje durante el procedimiento de huelga, el patrón en el término de treinta días naturales contado a partir del día siguiente de la ratificación del convenio ante dicha Junta, comunicará al Instituto los ajustes salariales de los trabajadores en los términos pactados. 18 de 113",
+          "contenido": "De existir convenio sancionado por la Junta de Conciliación y Arbitraje durante el procedimiento de huelga, el patrón en el término de treinta días naturales contado a partir del día siguiente de la ratificación del convenio ante dicha Junta, comunicará al Instituto los ajustes salariales de los trabajadores en los términos pactados.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -2908,7 +2854,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En los casos en que se hubiere recibido la baja por parte del Instituto y ésta no procediera legalmente en los términos del párrafo anterior, el patrón o sujeto obligado no queda relevado de la obligación de presentar, en su caso, un nuevo aviso de baja ante el Instituto. 19 de 113",
+          "contenido": "En los casos en que se hubiere recibido la baja por parte del Instituto y ésta no procediera legalmente en los términos del párrafo anterior, el patrón o sujeto obligado no queda relevado de la obligación de presentar, en su caso, un nuevo aviso de baja ante el Instituto.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3031,7 +2977,7 @@
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La autorización que expida el Instituto por este motivo, estará vigente hasta que se modifiquen el salario mínimo general de la región que corresponda o las condiciones de aseguramiento del trabajador. 20 de 113",
+          "contenido": "La autorización que expida el Instituto por este motivo, estará vigente hasta que se modifiquen el salario mínimo general de la región que corresponda o las condiciones de aseguramiento del trabajador.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3196,7 +3142,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Las personas que cuenten con dictamen de invalidez que, adicionalmente a su registro como beneficiarios, ingresen como asegurados al régimen obligatorio con motivo de una relación laboral, al ser dados de baja como asegurados, volverán a adquirir de inmediato el carácter de beneficiarios que tenían antes de su alta como trabajadores. 21 de 113",
+          "contenido": "Las personas que cuenten con dictamen de invalidez que, adicionalmente a su registro como beneficiarios, ingresen como asegurados al régimen obligatorio con motivo de una relación laboral, al ser dados de baja como asegurados, volverán a adquirir de inmediato el carácter de beneficiarios que tenían antes de su alta como trabajadores.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3343,7 +3289,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La colectiva en favor de terceros, sólo podrá realizarse por una persona moral legalmente constituida con los que mantenga un interés jurídico. 22 de 113",
+          "contenido": "La colectiva en favor de terceros, sólo podrá realizarse por una persona moral legalmente constituida con los que mantenga un interés jurídico.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3509,7 +3455,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El Instituto podrá autorizar extemporáneamente la renovación del aseguramiento, si se solicita dentro de un plazo de treinta días naturales posteriores al vencimiento del mismo, dicha renovación surtirá sus efectos a partir del día siguiente al de la conclusión del convenio anterior. 23 de 113",
+          "contenido": "El Instituto podrá autorizar extemporáneamente la renovación del aseguramiento, si se solicita dentro de un plazo de treinta días naturales posteriores al vencimiento del mismo, dicha renovación surtirá sus efectos a partir del día siguiente al de la conclusión del convenio anterior.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3704,7 +3650,7 @@
           "numero": 13,
           "tipo": "inciso",
           "identificador": "f)",
-          "contenido": ".- Hemorroidectomía y cirugía de fístulas rectales y prolapso de recto. 24 de 113",
+          "contenido": ".- Hemorroidectomía y cirugía de fístulas rectales y prolapso de recto.",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -3910,7 +3856,7 @@
           "numero": 13,
           "tipo": "fraccion",
           "identificador": "XII",
-          "contenido": "Tratamiento de secuelas de lesiones musculoesqueléticas o neurológicas, de origen traumático adquiridas con anterioridad al aseguramiento, y 25 de 113",
+          "contenido": "Tratamiento de secuelas de lesiones musculoesqueléticas o neurológicas, de origen traumático adquiridas con anterioridad al aseguramiento, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4077,7 +4023,7 @@
           "numero": 3,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": ".- Declaración expresa firmada por el asegurado, surtiendo efecto al término de la anualidad pagada, y 26 de 113",
+          "contenido": ".- Declaración expresa firmada por el asegurado, surtiendo efecto al término de la anualidad pagada, y",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -4251,7 +4197,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La incorporación voluntaria de los sujetos a que se refiere este Capítulo, además de lo previsto en el artículo 88 de este Reglamento, terminará por incorporación al régimen obligatorio a través de Decreto del Ejecutivo Federal, en los términos del artículo 12, fracción III, de la Ley. 27 de 113",
+          "contenido": "La incorporación voluntaria de los sujetos a que se refiere este Capítulo, además de lo previsto en el artículo 88 de este Reglamento, terminará por incorporación al régimen obligatorio a través de Decreto del Ejecutivo Federal, en los términos del artículo 12, fracción III, de la Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -4398,7 +4344,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "La colectiva se formalizará, previa solicitud, mediante la celebración de un convenio, el cual deberá ser suscrito por el Instituto y el representante legal de la persona moral que se obliga al pago de las cuotas de los sujetos de aseguramiento, y comprenderá un mínimo de cincuenta personas. 28 de 113",
+          "contenido": "La colectiva se formalizará, previa solicitud, mediante la celebración de un convenio, el cual deberá ser suscrito por el Instituto y el representante legal de la persona moral que se obliga al pago de las cuotas de los sujetos de aseguramiento, y comprenderá un mínimo de cincuenta personas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4591,7 +4537,7 @@
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El Instituto autorizará la renovación extemporánea del aseguramiento, dentro de un plazo de cuarenta y cinco días hábiles posteriores al vencimiento, cuando el asegurado hubiera adquirido alguna enfermedad durante el periodo de aseguramiento y requiera continuidad en su atención médica. 29 de 113",
+          "contenido": "El Instituto autorizará la renovación extemporánea del aseguramiento, dentro de un plazo de cuarenta y cinco días hábiles posteriores al vencimiento, cuando el asegurado hubiera adquirido alguna enfermedad durante el periodo de aseguramiento y requiera continuidad en su atención médica.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -4722,7 +4668,7 @@
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En ningún caso de terminación anticipada del periodo de aseguramiento cubierto en el Seguro de Salud para la Familia, el Instituto hará devolución total o parcial del pago realizado. 30 de 113",
+          "contenido": "En ningún caso de terminación anticipada del periodo de aseguramiento cubierto en el Seguro de Salud para la Familia, el Instituto hará devolución total o parcial del pago realizado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -4871,7 +4817,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "En las unidades administrativas competentes del Instituto, cuando: 31 de 113",
+          "contenido": "En las unidades administrativas competentes del Instituto, cuando:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4995,7 +4941,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "La segunda y siguientes parcialidades se deberán pagar dentro del plazo que se establezca en la autorización correspondiente; su importe se actualizará y sobre el mismo se cubrirán recargos por prórroga. La actualización y los recargos se calcularán en términos del Código, por el periodo comprendido a partir del vencimiento del plazo en que debió pagarse la anualidad y hasta que se realice el pago de cada una de las parcialidades. 32 de 113",
+          "contenido": "La segunda y siguientes parcialidades se deberán pagar dentro del plazo que se establezca en la autorización correspondiente; su importe se actualizará y sobre el mismo se cubrirán recargos por prórroga. La actualización y los recargos se calcularán en términos del Código, por el periodo comprendido a partir del vencimiento del plazo en que debió pagarse la anualidad y hasta que se realice el pago de cada una de las parcialidades.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5108,7 +5054,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los costos unitarios que se considerarán para el cobro de las prestaciones en especie, serán los vigentes en la fecha en que se realice por el Instituto el cálculo de los montos a cobrar. 33 de 113",
+          "contenido": "Los costos unitarios que se considerarán para el cobro de las prestaciones en especie, serán los vigentes en la fecha en que se realice por el Instituto el cálculo de los montos a cobrar.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -5256,22 +5202,13 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "En caso de que durante el procedimiento de huelga y antes de que se resuelva sobre la inexistencia o imputabilidad de dicho conflicto, el patrón y los trabajadores celebren convenio para 34 de 113",
+          "contenido": "En caso de que durante el procedimiento de huelga y antes de que se resuelva sobre la inexistencia o imputabilidad de dicho conflicto, el patrón y los trabajadores celebren convenio para FISCALIZACIÓN darlo por terminado, siempre que éste sea aprobado por la autoridad competente, las cuotas se cubrirán proporcionalmente a los salarios caídos cuyo pago se pacte.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "FISCALIZACIÓN darlo por terminado, siempre que éste sea aprobado por la autoridad competente, las cuotas se cubrirán proporcionalmente a los salarios caídos cuyo pago se pacte.",
-          "padre_numero": 4,
-          "x_id": 494,
-          "x_texto": 494
-        },
-        {
-          "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El patrón determinará las cuotas obrero patronales que correspondan y enterará su importe al Instituto.",
@@ -5393,7 +5330,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El patrón, dentro del plazo establecido en la Ley, podrá solicitar la devolución de las cantidades enteradas al Instituto sin justificación legal, incluyendo los casos de solicitudes de reembolso conforme al artículo 17 de la Ley presentando en la unidad administrativa correspondiente a su domicilio fiscal, la solicitud respectiva por escrito y anexando a la misma la documentación que acredite el pago realizado en demasía y su improcedencia. 35 de 113",
+          "contenido": "El patrón, dentro del plazo establecido en la Ley, podrá solicitar la devolución de las cantidades enteradas al Instituto sin justificación legal, incluyendo los casos de solicitudes de reembolso conforme al artículo 17 de la Ley presentando en la unidad administrativa correspondiente a su domicilio fiscal, la solicitud respectiva por escrito y anexando a la misma la documentación que acredite el pago realizado en demasía y su improcedencia.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -5499,19 +5436,10 @@
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El Consejo Técnico del Instituto emitirá anualmente las reglas de carácter general para que se realicen los pagos de las cuotas a cargo de los patrones del campo, respecto de los trabajadores eventuales del campo a su servicio, sin modificar los plazos establecidos en la Ley y tomando en cuenta la existencia de ciclos estacionales en el flujo de recursos de las ramas de la producción agrícola que corresponda. Para 36 de 113",
+          "contenido": "El Consejo Técnico del Instituto emitirá anualmente las reglas de carácter general para que se realicen los pagos de las cuotas a cargo de los patrones del campo, respecto de los trabajadores eventuales del campo a su servicio, sin modificar los plazos establecidos en la Ley y tomando en cuenta la existencia de ciclos estacionales en el flujo de recursos de las ramas de la producción agrícola que corresponda. Para FISCALIZACIÓN tal efecto, el Instituto solicitará la opinión de la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "FISCALIZACIÓN tal efecto, el Instituto solicitará la opinión de la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación.",
-          "padre_numero": 5,
-          "x_id": 494,
-          "x_texto": 494,
+          "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 15-07-2005"
           ]
@@ -5678,7 +5606,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El patrón deberá pagar mensualmente, las parcialidades calculadas en unidades de inversión, de conformidad con lo que establece el Código, en función al número de parcialidades solicitadas. 37 de 113",
+          "contenido": "El patrón deberá pagar mensualmente, las parcialidades calculadas en unidades de inversión, de conformidad con lo que establece el Código, en función al número de parcialidades solicitadas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -5835,7 +5763,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En tratándose de créditos impugnados, el patrón o sujeto obligado, deberá desistirse del medio de defensa interpuesto y presentar copia del acuerdo que recaiga al escrito de desistimiento, a más tardar dentro de los quince días hábiles posteriores a la fecha de la autorización a que se refiere el artículo 135 de este Reglamento; si el patrón no requiere de autorización previa, dicho plazo se computará a partir del día siguiente de la fecha de presentación de la solicitud señalada en el artículo 133 del mismo. En caso de no presentar el acuerdo de referencia, quedará sin efecto la solicitud o autorización otorgada. 38 de 113",
+          "contenido": "En tratándose de créditos impugnados, el patrón o sujeto obligado, deberá desistirse del medio de defensa interpuesto y presentar copia del acuerdo que recaiga al escrito de desistimiento, a más tardar dentro de los quince días hábiles posteriores a la fecha de la autorización a que se refiere el artículo 135 de este Reglamento; si el patrón no requiere de autorización previa, dicho plazo se computará a partir del día siguiente de la fecha de presentación de la solicitud señalada en el artículo 133 del mismo. En caso de no presentar el acuerdo de referencia, quedará sin efecto la solicitud o autorización otorgada.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -5992,7 +5920,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Si el monto de lo determinado fuera mayor a un diez por ciento del monto de las cuotas pagadas, el Instituto emitirá y notificará al patrón o sujeto obligado, las cédulas de liquidación correspondientes. 39 de 113",
+          "contenido": "Si el monto de lo determinado fuera mayor a un diez por ciento del monto de las cuotas pagadas, el Instituto emitirá y notificará al patrón o sujeto obligado, las cédulas de liquidación correspondientes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -6132,7 +6060,7 @@
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Si como resultado de la verificación de la información y documentos presentados por el patrón, se resuelve la aclaración como procedente, el Instituto cancelará el crédito emitido. 40 de 113",
+          "contenido": "Si como resultado de la verificación de la información y documentos presentados por el patrón, se resuelve la aclaración como procedente, el Instituto cancelará el crédito emitido.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -6246,7 +6174,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "Comprobar, dentro de los tres primeros meses de cada año, que es socio activo de un colegio de profesionales de la contaduría pública, reconocido por la autoridad competente; 41 de 113",
+          "contenido": "Comprobar, dentro de los tres primeros meses de cada año, que es socio activo de un colegio de profesionales de la contaduría pública, reconocido por la autoridad competente;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -6397,7 +6325,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En el caso de los patrones que tengan dos o más registros patronales se presentará un único aviso que comprenderá todos los registros. 42 de 113",
+          "contenido": "En el caso de los patrones que tengan dos o más registros patronales se presentará un único aviso que comprenderá todos los registros.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -6573,7 +6501,7 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Si existe sustitución del contador público autorizado, el Instituto podrá autorizar, a solicitud del patrón, que el dictamen se presente dentro de los dos meses siguientes al plazo previsto en el artículo 161 de este Reglamento. 43 de 113",
+          "contenido": "Si existe sustitución del contador público autorizado, el Instituto podrá autorizar, a solicitud del patrón, que el dictamen se presente dentro de los dos meses siguientes al plazo previsto en el artículo 161 de este Reglamento.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -6740,7 +6668,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "La indicación de que si al enterar el patrón las cuotas obrero patronales del seguro social por el ejercicio dictaminado, incurrió en omisiones que no hubieran sido corregidas antes de la entrega del dictamen, debiendo señalar los conceptos omitidos; 44 de 113",
+          "contenido": "La indicación de que si al enterar el patrón las cuotas obrero patronales del seguro social por el ejercicio dictaminado, incurrió en omisiones que no hubieran sido corregidas antes de la entrega del dictamen, debiendo señalar los conceptos omitidos;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -6882,22 +6810,13 @@
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Al anexo deberá adjuntarse, invariablemente, copia de la declaración anual del impuesto sobre la renta, declaración anual de pagos y retenciones, balanza de comprobación analítica de subcuentas de costos y gastos, cuentas de balance que tengan relación con sueldos y salarios, así como el análisis del importe total de excedentes de salarios tope de acuerdo a los máximos señalados en la Ley, correspondientes al ejercicio dictaminado, importe total de percepciones 45 de 113",
+          "contenido": "Al anexo deberá adjuntarse, invariablemente, copia de la declaración anual del impuesto sobre la renta, declaración anual de pagos y retenciones, balanza de comprobación analítica de subcuentas de costos y gastos, cuentas de balance que tengan relación con sueldos y salarios, así como el análisis del importe total de excedentes de salarios tope de acuerdo a los máximos señalados en la Ley, correspondientes al ejercicio dictaminado, importe total de percepciones FISCALIZACIÓN variables del sexto bimestre inmediato anterior al ejercicio dictaminado y del sexto bimestre del ejercicio dictaminado, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
           "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "FISCALIZACIÓN variables del sexto bimestre inmediato anterior al ejercicio dictaminado y del sexto bimestre del ejercicio dictaminado, y",
-          "padre_numero": 8,
-          "x_id": 494,
-          "x_texto": 494
-        },
-        {
-          "numero": 10,
           "tipo": "fraccion",
           "identificador": "V",
           "contenido": "Reporte de la actividad o actividades, clasificación y grado de riesgo de la empresa dictaminada.",
@@ -6906,7 +6825,7 @@
           "x_texto": 107
         },
         {
-          "numero": 11,
+          "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los anexos señalados en las fracciones II y V deberán suscribirse por el patrón o su representante legal y el contador público autorizado firmará la totalidad de los anexos y consignará su nombre, así como su número de registro ante el Instituto, debiendo presentarse enumerados en forma progresiva, en el orden en que se han mencionado.",
@@ -7050,7 +6969,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En el supuesto de que el contador público autorizado carezca de elementos emitirá dictamen negativo o con abstención de opinión, debiendo mencionar claramente cuáles fueron los impedimentos y su efecto y, de ser posible, la cuantificación de las obligaciones que señala la Ley, a cargo del patrón dictaminado. 46 de 113",
+          "contenido": "En el supuesto de que el contador público autorizado carezca de elementos emitirá dictamen negativo o con abstención de opinión, debiendo mencionar claramente cuáles fueron los impedimentos y su efecto y, de ser posible, la cuantificación de las obligaciones que señala la Ley, a cargo del patrón dictaminado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -7208,7 +7127,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El patrón que se dictamine en los términos del presente Reglamento estará a lo siguiente: 47 de 113",
+          "contenido": "El patrón que se dictamine en los términos del presente Reglamento estará a lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -7358,22 +7277,13 @@
           "numero": 4,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": ".- En caso de que no cumpla con los requerimientos que le formule el Instituto o no presente la totalidad de la documentación o información solicitada en los términos de este Reglamento, y 48 de 113",
+          "contenido": ".- En caso de que no cumpla con los requerimientos que le formule el Instituto o no presente la totalidad de la documentación o información solicitada en los términos de este Reglamento, y FISCALIZACIÓN",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "FISCALIZACIÓN",
-          "padre_numero": 4,
-          "x_id": 494,
-          "x_texto": 494
-        },
-        {
-          "numero": 6,
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": ".- No cumpla con lo establecido en el artículo 154, fracciones I, II y III de este Reglamento.",
@@ -7382,7 +7292,7 @@
           "x_texto": 129
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "Le suspenderá el registro ante el Instituto:",
@@ -7391,43 +7301,43 @@
           "x_texto": 107
         },
         {
-          "numero": 8,
+          "numero": 7,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": ".- Por un año, cuando acumule tres amonestaciones, dentro de un periodo de cuatro años consecutivos;",
-          "padre_numero": 7,
+          "padre_numero": 6,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 8,
+          "tipo": "inciso",
+          "identificador": "b)",
+          "contenido": ".- Por dos años, en las siguientes situaciones: 1) Cuando no formule el dictamen y anexos debiendo hacerlo; 2) Cuando habiendo presentado incompletos bien sea el dictamen o los anexos, el contador público autorizado no hiciera las aclaraciones que le solicite el Instituto, y 3) Cuando la documentación aclaratoria solicitada por el Instituto no se presente dentro del plazo que se otorgue para tal efecto, independientemente de las prórrogas o nuevos requerimientos autorizados o formulados por el Instituto que sean diversos al requerimiento de documentación.",
+          "padre_numero": 6,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": ".- Por dos años, en las siguientes situaciones: 1) Cuando no formule el dictamen y anexos debiendo hacerlo; 2) Cuando habiendo presentado incompletos bien sea el dictamen o los anexos, el contador público autorizado no hiciera las aclaraciones que le solicite el Instituto, y 3) Cuando la documentación aclaratoria solicitada por el Instituto no se presente dentro del plazo que se otorgue para tal efecto, independientemente de las prórrogas o nuevos requerimientos autorizados o formulados por el Instituto que sean diversos al requerimiento de documentación.",
-          "padre_numero": 7,
+          "identificador": "c)",
+          "contenido": ".- Por tres años, cuando del dictamen presentado o de su revisión, se resuelva que lo hizo en contravención a lo dispuesto en la Ley, sus reglamentos o a las normas de auditoría generalmente aceptadas;",
+          "padre_numero": 6,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": ".- Por tres años, cuando del dictamen presentado o de su revisión, se resuelva que lo hizo en contravención a lo dispuesto en la Ley, sus reglamentos o a las normas de auditoría generalmente aceptadas;",
-          "padre_numero": 7,
+          "identificador": "d)",
+          "contenido": ".- Cuando esté sujeto a proceso por presunta comisión de un delito de carácter fiscal o por delitos intencionales que ameriten pena corporal. En este caso, la suspensión durará hasta la resolución definitiva de dicho proceso, y",
+          "padre_numero": 6,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 11,
-          "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": ".- Cuando esté sujeto a proceso por presunta comisión de un delito de carácter fiscal o por delitos intencionales que ameriten pena corporal. En este caso, la suspensión durará hasta la resolución definitiva de dicho proceso, y",
-          "padre_numero": 7,
-          "x_id": 107,
-          "x_texto": 129
-        },
-        {
-          "numero": 12,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "Le cancelará el registro ante el Instituto:",
@@ -7436,74 +7346,74 @@
           "x_texto": 107
         },
         {
-          "numero": 13,
+          "numero": 12,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": ".- Cuando hubiere reincidencia a la violación a las disposiciones que rigen la formulación del dictamen y demás información para efectos fiscales. Se entiende que hay reincidencia cuando el contador público autorizado acumule tres suspensiones;",
-          "padre_numero": 12,
+          "padre_numero": 11,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 13,
+          "tipo": "inciso",
+          "identificador": "b)",
+          "contenido": ".- Cuando la sentencia que ponga fin al proceso a que se refiere el inciso d) de la fracción anterior le sea condenatoria;",
+          "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": ".- Cuando la sentencia que ponga fin al proceso a que se refiere el inciso d) de la fracción anterior le sea condenatoria;",
-          "padre_numero": 12,
+          "identificador": "c)",
+          "contenido": ".- Al dejar de ser socio activo del colegio de la contaduría pública al que pertenezca, reconocido por la autoridad competente;",
+          "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": ".- Al dejar de ser socio activo del colegio de la contaduría pública al que pertenezca, reconocido por la autoridad competente;",
-          "padre_numero": 12,
+          "identificador": "d)",
+          "contenido": ".- Al establecer relación laboral con el Instituto;",
+          "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": ".- Al establecer relación laboral con el Instituto;",
-          "padre_numero": 12,
+          "identificador": "e)",
+          "contenido": ".- Si omitiera informar al Instituto en el caso de encontrarse en los supuestos que señala el artículo 155 de este Reglamento, y",
+          "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": ".- Si omitiera informar al Instituto en el caso de encontrarse en los supuestos que señala el artículo 155 de este Reglamento, y",
-          "padre_numero": 12,
+          "identificador": "f)",
+          "contenido": ".- Por no dar el aviso correspondiente al patrón en el caso de la suspensión, a que se refiere la fracción IV del artículo 154 de este Reglamento.",
+          "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 18,
-          "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": ".- Por no dar el aviso correspondiente al patrón en el caso de la suspensión, a que se refiere la fracción IV del artículo 154 de este Reglamento.",
-          "padre_numero": 12,
-          "x_id": 107,
-          "x_texto": 129
-        },
-        {
-          "numero": 19,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El cómputo de las infracciones señaladas en las fracciones I y II de este artículo, se hará por ejercicio fiscal, periodo o patrón, aun cuando cuente con diferentes registros patronales y que el contador público esté dictaminando el cumplimiento de las obligaciones patronales o derivado del incumplimiento a los requisitos que le establece el Instituto para la vigencia y actualización de su registro de contador público autorizado. 49 de 113",
+          "contenido": "El cómputo de las infracciones señaladas en las fracciones I y II de este artículo, se hará por ejercicio fiscal, periodo o patrón, aun cuando cuente con diferentes registros patronales y que el contador público esté dictaminando el cumplimiento de las obligaciones patronales o derivado del incumplimiento a los requisitos que le establece el Instituto para la vigencia y actualización de su registro de contador público autorizado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 20,
+          "numero": 19,
           "tipo": "texto",
           "identificador": null,
           "contenido": "FISCALIZACIÓN",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 494,
           "x_texto": 494
         }
@@ -7633,7 +7543,7 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El Instituto podrá solicitar al patrón, o sujeto obligado información o documentación complementaria para revisar y, en su caso, validar la corrección, en un plazo no mayor a veinte días hábiles contados a partir de la fecha de la entrega de la documentación señalada en el primer párrafo. Dicha documentación 50 de 113",
+          "contenido": "El Instituto podrá solicitar al patrón, o sujeto obligado información o documentación complementaria para revisar y, en su caso, validar la corrección, en un plazo no mayor a veinte días hábiles contados a partir de la fecha de la entrega de la documentación señalada en el primer párrafo. Dicha documentación FISCALIZACIÓN deberá presentarse en un plazo no mayor de diez días hábiles contados a partir del día siguiente al de la notificación del requerimiento.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -7642,22 +7552,13 @@
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "FISCALIZACIÓN deberá presentarse en un plazo no mayor de diez días hábiles contados a partir del día siguiente al de la notificación del requerimiento.",
-          "padre_numero": 3,
-          "x_id": 494,
-          "x_texto": 494
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Cuando de la revisión realizada por el Instituto resulten diferencias con lo manifestado por el patrón, o sujeto obligado, se le notificará por escrito para su aclaración o, en su caso, para que efectúe el pago respectivo dentro de los quince días hábiles siguientes a la fecha de notificación.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 6,
+          "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Instituto realizará la revisión a que se refiere este artículo dentro de los ciento veinte días hábiles, contados a partir de la fecha en que el patrón presente ante el propio Instituto la documentación a que se refiere el párrafo primero de este artículo o la complementaria.",
@@ -7789,7 +7690,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En caso de que el patrón con un mismo acto u omisión cometa varias infracciones a las normas previstas en la Ley o sus reglamentos, y por tal motivo, se haga acreedor a la imposición de varias multas, sólo se aplicará la que corresponda a la infracción cuya multa sea mayor. 51 de 113",
+          "contenido": "En caso de que el patrón con un mismo acto u omisión cometa varias infracciones a las normas previstas en la Ley o sus reglamentos, y por tal motivo, se haga acreedor a la imposición de varias multas, sólo se aplicará la que corresponda a la infracción cuya multa sea mayor.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -8005,7 +7906,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Contra las resoluciones que emita el Instituto imponiendo una multa se podrán interponer los medios de defensa que señalan los artículos 294 y 295 de la Ley. 52 de 113",
+          "contenido": "Contra las resoluciones que emita el Instituto imponiendo una multa se podrán interponer los medios de defensa que señalan los artículos 294 y 295 de la Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -8094,7 +7995,7 @@
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la plantación, repoblación y conservación de bosques, corte de árboles (excepto aserraderos), extracción de leña y cortezas, producción de carbón vegetal, extracción de chicle crudo y otras savias, recolección de frutas, flores, hongos, hierbas, carrizos y otras materias forestales silvestres. Incluye a las empresas que se dedican a prestar servicios de explotación forestal, tales como: estimación de volúmenes de madera, protección de bosques y otros. 53 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la plantación, repoblación y conservación de bosques, corte de árboles (excepto aserraderos), extracción de leña y cortezas, producción de carbón vegetal, extracción de chicle crudo y otras savias, recolección de frutas, flores, hongos, hierbas, carrizos y otras materias forestales silvestres. Incluye a las empresas que se dedican a prestar servicios de explotación forestal, tales como: estimación de volúmenes de madera, protección de bosques y otros.",
           "padre_numero": 7,
           "x_id": 168,
           "x_texto": 168
@@ -8211,7 +8112,7 @@
           "numero": 21,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la extracción a profundidad, con o sin beneficio de carbón mineral, grafito y otros minerales no metálicos; no se incluye la sal. Se considera también en esta fracción la extracción de azufre, excepto cuando este mineral se obtenga mediante la inyección de agua caliente, 54 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la extracción a profundidad, con o sin beneficio de carbón mineral, grafito y otros minerales no metálicos; no se incluye la sal. Se considera también en esta fracción la extracción de azufre, excepto cuando este mineral se obtenga mediante la inyección de agua caliente,",
           "padre_numero": 19,
           "x_id": 168,
           "x_texto": 168
@@ -8319,7 +8220,7 @@
           "numero": 33,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la extracción a profundidad, con o sin beneficio de hierro, oro, plata, mercurio, antimonio, cobre, plomo, zinc y otros minerales metálicos. 132 Beneficio de minerales metálicos. V 55 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la extracción a profundidad, con o sin beneficio de hierro, oro, plata, mercurio, antimonio, cobre, plomo, zinc y otros minerales metálicos. 132 Beneficio de minerales metálicos. V",
           "padre_numero": 32,
           "x_id": 125,
           "x_texto": 125
@@ -8418,7 +8319,7 @@
           "numero": 44,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican al beneficio de café, cacao; tostado y molienda de café; fabricación y envasado de café 56 de 113",
+          "contenido": "Comprende a las empresas que se dedican al beneficio de café, cacao; tostado y molienda de café; fabricación y envasado de café",
           "padre_numero": 41,
           "x_id": 125,
           "x_texto": 125
@@ -8526,7 +8427,7 @@
           "numero": 56,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican con empleo de maquinaria y/o equipo motorizado, a la elaboración, preparación, conservación, envasado y/o empacado de pescados, mariscos y otros productos de especies marinas. Incluye la deshidratación, 57 de 113",
+          "contenido": "Comprende a las empresas que se dedican con empleo de maquinaria y/o equipo motorizado, a la elaboración, preparación, conservación, envasado y/o empacado de pescados, mariscos y otros productos de especies marinas. Incluye la deshidratación,",
           "padre_numero": 55,
           "x_id": 168,
           "x_texto": 168
@@ -8643,7 +8544,7 @@
           "numero": 69,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "2013 Elaboración, preparación, envasado y/o empacado de otros III 58 de 113",
+          "contenido": "2013 Elaboración, preparación, envasado y/o empacado de otros III",
           "padre_numero": 41,
           "x_id": 114,
           "x_texto": 114
@@ -8760,7 +8661,7 @@
           "numero": 82,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "213 Elaboración y/o envase de refrescos, aguas gaseosas y IV 59 de 113",
+          "contenido": "213 Elaboración y/o envase de refrescos, aguas gaseosas y IV",
           "padre_numero": 79,
           "x_id": 116,
           "x_texto": 116
@@ -8886,7 +8787,7 @@
           "numero": 96,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican con empleo de 60 de 113",
+          "contenido": "Comprende a las empresas que se dedican con empleo de",
           "padre_numero": 95,
           "x_id": 168,
           "x_texto": 168
@@ -8994,7 +8895,7 @@
           "numero": 108,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "243 Otros artículos confeccionados con textiles y materiales diversos. II 61 de 113",
+          "contenido": "243 Otros artículos confeccionados con textiles y materiales diversos. II",
           "padre_numero": 87,
           "x_id": 116,
           "x_texto": 116
@@ -9129,7 +9030,7 @@
           "numero": 123,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que con la utilización exclusiva de maquinaria y/o equipo motorizado, realizan la totalidad del 62 de 113",
+          "contenido": "Comprende a las empresas que con la utilización exclusiva de maquinaria y/o equipo motorizado, realizan la totalidad del",
           "padre_numero": 122,
           "x_id": 168,
           "x_texto": 168
@@ -9219,7 +9120,7 @@
           "numero": 133,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "MOLDEADO FRACCIÓN ACTIVIDAD CLASE 271 Fabricación y/o reparación de muebles de madera y sus partes. V 63 de 113",
+          "contenido": "MOLDEADO FRACCIÓN ACTIVIDAD CLASE 271 Fabricación y/o reparación de muebles de madera y sus partes. V",
           "padre_numero": 131,
           "x_id": 168,
           "x_texto": 168
@@ -9300,7 +9201,7 @@
           "numero": 142,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que con productos petroquímicos básicos y/o materias primas elementales o compuestas derivadas de la carboquímica básica y de las industrias extractivas, se dedican por cualquier método a la fabricación de productos químicos orgánicos e inorgánicos básicos; incluye la fabricación 64 de 113",
+          "contenido": "Comprende a las empresas que con productos petroquímicos básicos y/o materias primas elementales o compuestas derivadas de la carboquímica básica y de las industrias extractivas, se dedican por cualquier método a la fabricación de productos químicos orgánicos e inorgánicos básicos; incluye la fabricación",
           "padre_numero": 141,
           "x_id": 168,
           "x_texto": 168
@@ -9408,7 +9309,7 @@
           "numero": 154,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "308 Fabricación de perfumes y cosméticos. II 65 de 113",
+          "contenido": "308 Fabricación de perfumes y cosméticos. II",
           "padre_numero": 141,
           "x_id": 116,
           "x_texto": 116
@@ -9561,7 +9462,7 @@
           "numero": 171,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Se considera la refinación del petróleo crudo y a la industria 66 de 113",
+          "contenido": "Se considera la refinación del petróleo crudo y a la industria",
           "padre_numero": 168,
           "x_id": 168,
           "x_texto": 168
@@ -9660,7 +9561,7 @@
           "numero": 182,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que a base de látex natural, se dedican mediante el proceso industrial de inmersión, a la fabricación de productos para usos quirúrgicos, higiénico y farmacéutico, domésticos e industriales, tales como sondas, catéteres, protectores para prótesis, calzones, preservativos, tetillas para biberón, guantes, globos y otros productos diversos. 67 de 113",
+          "contenido": "Comprende a las empresas que a base de látex natural, se dedican mediante el proceso industrial de inmersión, a la fabricación de productos para usos quirúrgicos, higiénico y farmacéutico, domésticos e industriales, tales como sondas, catéteres, protectores para prótesis, calzones, preservativos, tetillas para biberón, guantes, globos y otros productos diversos.",
           "padre_numero": 181,
           "x_id": 168,
           "x_texto": 168
@@ -9777,7 +9678,7 @@
           "numero": 195,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la fabricación de hilos, tejidos, prendas de vestir, empalmes de asbesto, 68 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la fabricación de hilos, tejidos, prendas de vestir, empalmes de asbesto,",
           "padre_numero": 194,
           "x_id": 168,
           "x_texto": 168
@@ -9885,7 +9786,7 @@
           "numero": 207,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican por medio de procesos continuos automatizados, a la fabricación y regeneración de vidrio para obtener materiales y productos como vidrio en masa, en bolas, barras, varillas o tubos, templado, refractario, colado, laminado, estirado o soplado, chapado, desbastado o pulido de superficie no lisa, vidrio multicelular en bloques, baldosas, placas, paneles y formas análogas, recipientes para transporte o envase, tapones y otros dispositivos de cierre, 69 de 113",
+          "contenido": "Comprende a las empresas que se dedican por medio de procesos continuos automatizados, a la fabricación y regeneración de vidrio para obtener materiales y productos como vidrio en masa, en bolas, barras, varillas o tubos, templado, refractario, colado, laminado, estirado o soplado, chapado, desbastado o pulido de superficie no lisa, vidrio multicelular en bloques, baldosas, placas, paneles y formas análogas, recipientes para transporte o envase, tapones y otros dispositivos de cierre,",
           "padre_numero": 206,
           "x_id": 123,
           "x_texto": 123
@@ -9993,7 +9894,7 @@
           "numero": 219,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que, con la utilización exclusiva de procesos automatizados, se dedican a la fabricación de productos primarios de hierro, acero y metales no ferrosos, tales como: ferroaleaciones, arrabio, fierro esponja, aceros especiales, planchón, tocho, palanquilla, varilla corrugada, alambrón, barras, rieles, plancha, tubos y otros productos primarios de hierro o acero y de metales no ferrosos. Incluye a empresas que realicen todo el proceso de transformación o parte de él, desde la fundición, afinación y refinación, hasta la fase de productos semiacabados por laminación, vaciado, moldeado, extrusión, 70 de 113",
+          "contenido": "Comprende a las empresas que, con la utilización exclusiva de procesos automatizados, se dedican a la fabricación de productos primarios de hierro, acero y metales no ferrosos, tales como: ferroaleaciones, arrabio, fierro esponja, aceros especiales, planchón, tocho, palanquilla, varilla corrugada, alambrón, barras, rieles, plancha, tubos y otros productos primarios de hierro o acero y de metales no ferrosos. Incluye a empresas que realicen todo el proceso de transformación o parte de él, desde la fundición, afinación y refinación, hasta la fase de productos semiacabados por laminación, vaciado, moldeado, extrusión,",
           "padre_numero": 218,
           "x_id": 168,
           "x_texto": 168
@@ -10083,7 +9984,7 @@
           "numero": 229,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "354 Fabricación y/o reparación de estructuras metálicas, tanques, V 71 de 113",
+          "contenido": "354 Fabricación y/o reparación de estructuras metálicas, tanques, V",
           "padre_numero": 216,
           "x_id": 116,
           "x_texto": 116
@@ -10200,7 +10101,7 @@
           "numero": 242,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la fabricación de ollas, sartenes, charolas, ollas express, cafeteras, moldes para 72 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la fabricación de ollas, sartenes, charolas, ollas express, cafeteras, moldes para",
           "padre_numero": 241,
           "x_id": 168,
           "x_texto": 168
@@ -10299,7 +10200,7 @@
           "numero": 253,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la fabricación y/o ensamble de implementos, equipos y máquinas especiales para las industrias señaladas. Incluye la fabricación de bombas, motores (excepto los eléctricos y automotrices), compresores, centrifugadores, aparatos de filtración, calefacción y refrigeración, equipos de elevación, carga, descarga y manipulación (carretillas, polipastos, grúas, montacargas, escaleras electromecánicas, bandas transportadoras, elevadores para personas y mercancías y otros), básculas, herramientas neumáticas (pistolas 73 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la fabricación y/o ensamble de implementos, equipos y máquinas especiales para las industrias señaladas. Incluye la fabricación de bombas, motores (excepto los eléctricos y automotrices), compresores, centrifugadores, aparatos de filtración, calefacción y refrigeración, equipos de elevación, carga, descarga y manipulación (carretillas, polipastos, grúas, montacargas, escaleras electromecánicas, bandas transportadoras, elevadores para personas y mercancías y otros), básculas, herramientas neumáticas (pistolas",
           "padre_numero": 246,
           "x_id": 123,
           "x_texto": 123
@@ -10416,7 +10317,7 @@
           "numero": 266,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "ELECTRÓNICOS Y SUS PARTES 74 de 113",
+          "contenido": "ELECTRÓNICOS Y SUS PARTES",
           "padre_numero": 265,
           "x_id": 168,
           "x_texto": 168
@@ -10497,7 +10398,7 @@
           "numero": 275,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "375 Fabricación, reconstrucción y/o ensamble de acumuladores IV eléctricos. 75 de 113",
+          "contenido": "375 Fabricación, reconstrucción y/o ensamble de acumuladores IV eléctricos.",
           "padre_numero": 216,
           "x_id": 116,
           "x_texto": 116
@@ -10623,7 +10524,7 @@
           "numero": 289,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican, mediante procesos continuos o líneas de producción en serie, a la fabricación y/o ensamble de acumuladores eléctricos (húmedos) para usos diversos. 76 de 113",
+          "contenido": "Comprende a las empresas que se dedican, mediante procesos continuos o líneas de producción en serie, a la fabricación y/o ensamble de acumuladores eléctricos (húmedos) para usos diversos.",
           "padre_numero": 288,
           "x_id": 168,
           "x_texto": 168
@@ -10740,7 +10641,7 @@
           "numero": 302,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la fabricación y/o ensamble de bicicletas, triciclos y otros vehículos de pedal similares para transporte de personas o mercancías. Excepto 77 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la fabricación y/o ensamble de bicicletas, triciclos y otros vehículos de pedal similares para transporte de personas o mercancías. Excepto",
           "padre_numero": 301,
           "x_id": 168,
           "x_texto": 168
@@ -10848,7 +10749,7 @@
           "numero": 314,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Excepto empresas que fabriquen partes para motor, como tornillos, tuercas, arandelas, bandas, mangueras, cables, partes 78 de 113",
+          "contenido": "Excepto empresas que fabriquen partes para motor, como tornillos, tuercas, arandelas, bandas, mangueras, cables, partes",
           "padre_numero": 313,
           "x_id": 168,
           "x_texto": 168
@@ -10956,7 +10857,7 @@
           "numero": 326,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que sin empleo de maquinaria ni equipo motorizado, se dedican a la fabricación y/o ensamble de instrumentos musicales, paraguas, juguetes (excepto los de 79 de 113",
+          "contenido": "Comprende a las empresas que sin empleo de maquinaria ni equipo motorizado, se dedican a la fabricación y/o ensamble de instrumentos musicales, paraguas, juguetes (excepto los de",
           "padre_numero": 325,
           "x_id": 168,
           "x_texto": 168
@@ -11082,7 +10983,7 @@
           "numero": 340,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Se incluye la construcción de casas, conjuntos habitacionales, hoteles, moteles, instalaciones y edificaciones comerciales, de oficinas y servicios tales como bancos, consultorios, tiendas de 80 de 113",
+          "contenido": "Se incluye la construcción de casas, conjuntos habitacionales, hoteles, moteles, instalaciones y edificaciones comerciales, de oficinas y servicios tales como bancos, consultorios, tiendas de",
           "padre_numero": 336,
           "x_id": 168,
           "x_texto": 168
@@ -11136,7 +11037,7 @@
           "numero": 346,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Se incluyen las edificaciones a que se refiere la fracción 411, cuando se trate de obra pública, cuando sean realizadas por personas morales o cuando, tratándose de personas físicas, éstas acrediten de manera fehaciente que se dedican 81 de 113",
+          "contenido": "Se incluyen las edificaciones a que se refiere la fracción 411, cuando se trate de obra pública, cuando sean realizadas por personas morales o cuando, tratándose de personas físicas, éstas acrediten de manera fehaciente que se dedican",
           "padre_numero": 336,
           "x_id": 123,
           "x_texto": 123
@@ -11235,7 +11136,7 @@
           "numero": 357,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "AGUA POTABLE 82 de 113",
+          "contenido": "AGUA POTABLE",
           "padre_numero": 355,
           "x_id": 168,
           "x_texto": 168
@@ -11334,7 +11235,7 @@
           "numero": 368,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la compra, 83 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la compra,",
           "padre_numero": 367,
           "x_id": 168,
           "x_texto": 168
@@ -11415,7 +11316,7 @@
           "numero": 377,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la compra, almacenamiento y venta al menudeo, medio mayoreo y/o mayoreo de prendas y accesorios de vestir y artículos para su confección que cuenten con transporte para la distribución y/o equipo para el movimiento de las mercancías. Excepto supermercados o tiendas de autoservicio y empresas que se dedican a prestar el servicio de transporte, clasificados por 84 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la compra, almacenamiento y venta al menudeo, medio mayoreo y/o mayoreo de prendas y accesorios de vestir y artículos para su confección que cuenten con transporte para la distribución y/o equipo para el movimiento de las mercancías. Excepto supermercados o tiendas de autoservicio y empresas que se dedican a prestar el servicio de transporte, clasificados por",
           "padre_numero": 360,
           "x_id": 123,
           "x_texto": 123
@@ -11514,7 +11415,7 @@
           "numero": 388,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la compra, 85 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la compra,",
           "padre_numero": 387,
           "x_id": 168,
           "x_texto": 168
@@ -11604,7 +11505,7 @@
           "numero": 398,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Excepto supermercados o tiendas de autoservicio y empresas que se dedican a prestar el servicio de transporte, clasificadas por separado. 86 de 113",
+          "contenido": "Excepto supermercados o tiendas de autoservicio y empresas que se dedican a prestar el servicio de transporte, clasificadas por separado.",
           "padre_numero": 396,
           "x_id": 168,
           "x_texto": 168
@@ -11676,7 +11577,7 @@
           "numero": 406,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la compra y expendio al menudeo de cristalería, loza, cuchillería y otros 87 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la compra y expendio al menudeo de cristalería, loza, cuchillería y otros",
           "padre_numero": 405,
           "x_id": 168,
           "x_texto": 168
@@ -11766,7 +11667,7 @@
           "numero": 416,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas consideradas o denominadas como supermercados, tiendas de autoservicio y tiendas de 88 de 113",
+          "contenido": "Comprende a las empresas consideradas o denominadas como supermercados, tiendas de autoservicio y tiendas de",
           "padre_numero": 412,
           "x_id": 168,
           "x_texto": 168
@@ -11865,7 +11766,7 @@
           "numero": 427,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la compra y expendio al menudeo de algodón en pluma, semillas para siembra, cueros y pieles sin curtir, fibras textiles naturales, tabaco 89 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la compra y expendio al menudeo de algodón en pluma, semillas para siembra, cueros y pieles sin curtir, fibras textiles naturales, tabaco",
           "padre_numero": 424,
           "x_id": 168,
           "x_texto": 168
@@ -11937,7 +11838,7 @@
           "numero": 435,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "665 Compraventa de materiales para construcción tales como: IV madera, aceros y productos de ferretería, con transporte y/o 90 de 113",
+          "contenido": "665 Compraventa de materiales para construcción tales como: IV madera, aceros y productos de ferretería, con transporte y/o",
           "padre_numero": 360,
           "x_id": 116,
           "x_texto": 116
@@ -12018,7 +11919,7 @@
           "numero": 444,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "669 Compraventa de vidrio plano, cristales, espejos y lunas, con V transporte y/o servicios de instalación. 91 de 113",
+          "contenido": "669 Compraventa de vidrio plano, cristales, espejos y lunas, con V transporte y/o servicios de instalación.",
           "padre_numero": 360,
           "x_id": 116,
           "x_texto": 116
@@ -12126,7 +12027,7 @@
           "numero": 456,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la compra, 92 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la compra,",
           "padre_numero": 455,
           "x_id": 168,
           "x_texto": 168
@@ -12216,7 +12117,7 @@
           "numero": 466,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "672 Compraventa de maquinaria, equipo y sus refacciones y/o II accesorios para la producción de bienes, sin transporte. 93 de 113",
+          "contenido": "672 Compraventa de maquinaria, equipo y sus refacciones y/o II accesorios para la producción de bienes, sin transporte.",
           "padre_numero": 360,
           "x_id": 116,
           "x_texto": 116
@@ -12297,7 +12198,7 @@
           "numero": 475,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la compra, almacenamiento y venta al menudeo, medio mayoreo y/o mayoreo de equipo y mobiliario, sus partes y/o accesorios para oficinas y comercios, hoteles, restaurantes, peluquerías, salones de belleza, billares, boliches y otro equipo y mobiliario para la prestación de servicios y el comercio, que no cuenten con transporte para la distribución ni equipo para el movimiento de las mercancías. 94 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la compra, almacenamiento y venta al menudeo, medio mayoreo y/o mayoreo de equipo y mobiliario, sus partes y/o accesorios para oficinas y comercios, hoteles, restaurantes, peluquerías, salones de belleza, billares, boliches y otro equipo y mobiliario para la prestación de servicios y el comercio, que no cuenten con transporte para la distribución ni equipo para el movimiento de las mercancías.",
           "padre_numero": 474,
           "x_id": 168,
           "x_texto": 168
@@ -12378,7 +12279,7 @@
           "numero": 484,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "6711 Compraventa de equipo de cómputo o de procesamiento II 95 de 113",
+          "contenido": "6711 Compraventa de equipo de cómputo o de procesamiento II",
           "padre_numero": 360,
           "x_id": 114,
           "x_texto": 114
@@ -12459,7 +12360,7 @@
           "numero": 493,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a la compra, 96 de 113",
+          "contenido": "Comprende a las empresas que se dedican a la compra,",
           "padre_numero": 492,
           "x_id": 168,
           "x_texto": 168
@@ -12558,7 +12459,7 @@
           "numero": 504,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "FRACCIÓN ACTIVIDAD CLASE 711 Transporte de pasajeros. IV 97 de 113",
+          "contenido": "FRACCIÓN ACTIVIDAD CLASE 711 Transporte de pasajeros. IV",
           "padre_numero": 1,
           "x_id": 99,
           "x_texto": 99
@@ -12666,7 +12567,7 @@
           "numero": 516,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a prestar servicios de transportación aérea, de carga y/o pasajeros, incluyendo servicios diversos a bordo de las aeronaves; así como la explotación de aeropuertos, campos de aterrizaje e instalaciones para la navegación aérea, escuelas y academias de aeronavegación, 98 de 113",
+          "contenido": "Comprende a las empresas que se dedican a prestar servicios de transportación aérea, de carga y/o pasajeros, incluyendo servicios diversos a bordo de las aeronaves; así como la explotación de aeropuertos, campos de aterrizaje e instalaciones para la navegación aérea, escuelas y academias de aeronavegación,",
           "padre_numero": 515,
           "x_id": 168,
           "x_texto": 168
@@ -12783,7 +12684,7 @@
           "numero": 529,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican a prestar servicios turísticos, de representación y gestión aduanal, de equipajes, organización y promoción de viajes, venta de boletos y reservación para hospedaje, que cuenten con operadores de vehículos y/o transporte para su distribución y entrega. Incluye a las empresas que se dedican a la recepción, almacenamiento, 99 de 113",
+          "contenido": "Comprende a las empresas que se dedican a prestar servicios turísticos, de representación y gestión aduanal, de equipajes, organización y promoción de viajes, venta de boletos y reservación para hospedaje, que cuenten con operadores de vehículos y/o transporte para su distribución y entrega. Incluye a las empresas que se dedican a la recepción, almacenamiento,",
           "padre_numero": 518,
           "x_id": 123,
           "x_texto": 123
@@ -12882,7 +12783,7 @@
           "numero": 540,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que se dedican al alquiler de terrenos, locales, edificios, piso para comercios ambulantes en tianguis y bazares. Incluye los servicios de corredores de bienes raíces y administración de inmuebles, que no cuenten con 100 de 113",
+          "contenido": "Comprende a las empresas que se dedican al alquiler de terrenos, locales, edificios, piso para comercios ambulantes en tianguis y bazares. Incluye los servicios de corredores de bienes raíces y administración de inmuebles, que no cuenten con",
           "padre_numero": 539,
           "x_id": 168,
           "x_texto": 168
@@ -12981,7 +12882,7 @@
           "numero": 551,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "FRACCIÓN ACTIVIDAD CLASE 851 Servicios de alquiler de maquinaria y equipo agrícola. III 101 de 113",
+          "contenido": "FRACCIÓN ACTIVIDAD CLASE 851 Servicios de alquiler de maquinaria y equipo agrícola. III",
           "padre_numero": 1,
           "x_id": 99,
           "x_texto": 99
@@ -13107,7 +13008,7 @@
           "numero": 565,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "FRACCIÓN ACTIVIDAD CLASE 102 de 113",
+          "contenido": "FRACCIÓN ACTIVIDAD CLASE",
           "padre_numero": 1,
           "x_id": 99,
           "x_texto": 99
@@ -13215,7 +13116,7 @@
           "numero": 577,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "884 Servicios de centros nocturnos, salones de baile y casinos. II 103 de 113",
+          "contenido": "884 Servicios de centros nocturnos, salones de baile y casinos. II",
           "padre_numero": 570,
           "x_id": 116,
           "x_texto": 116
@@ -13323,7 +13224,7 @@
           "numero": 589,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que prestan servicios de reparación o 104 de 113",
+          "contenido": "Comprende a las empresas que prestan servicios de reparación o",
           "padre_numero": 588,
           "x_id": 168,
           "x_texto": 168
@@ -13449,7 +13350,7 @@
           "numero": 603,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que realizan actividades de fumigación, desinfección y control de plagas en plantaciones agrícolas, establecimientos industriales, comerciales, de servicios y del hogar. Excepto la desinfección y erradicación de plagas propias del ganado y la aerotecnia agrícola, clasificadas por 105 de 113",
+          "contenido": "Comprende a las empresas que realizan actividades de fumigación, desinfección y control de plagas en plantaciones agrícolas, establecimientos industriales, comerciales, de servicios y del hogar. Excepto la desinfección y erradicación de plagas propias del ganado y la aerotecnia agrícola, clasificadas por",
           "padre_numero": 602,
           "x_id": 168,
           "x_texto": 168
@@ -13557,7 +13458,7 @@
           "numero": 615,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las empresas que prestan servicios de guardería, enseñanza preprimaria, primaria, secundaria, media-superior (preparatoria, vocacional), subprofesional, profesional, enseñanza comercial, idiomas y cursos por correspondencia; capacitación técnica de oficios y artesanías; música, danza y otras artes; servicios de investigación científica; bibliotecas, museos, jardines botánicos y otros servicios similares de difusión cultural. Excepto academias o escuelas de manejo de vehículos y de cultura física (gimnasios) clasificadas en las fracciones 755 y 881, respectivamente. 106 de 113",
+          "contenido": "Comprende a las empresas que prestan servicios de guardería, enseñanza preprimaria, primaria, secundaria, media-superior (preparatoria, vocacional), subprofesional, profesional, enseñanza comercial, idiomas y cursos por correspondencia; capacitación técnica de oficios y artesanías; música, danza y otras artes; servicios de investigación científica; bibliotecas, museos, jardines botánicos y otros servicios similares de difusión cultural. Excepto academias o escuelas de manejo de vehículos y de cultura física (gimnasios) clasificadas en las fracciones 755 y 881, respectivamente.",
           "padre_numero": 612,
           "x_id": 125,
           "x_texto": 125
@@ -13647,7 +13548,7 @@
           "numero": 625,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende asociaciones y organizaciones tales como: cámaras industriales, de comercio, agricultores, ganaderos, abogados, actuarios, médicos, ingenieros; cívicas, fraternidades, clubes literarios e históricos, políticas, sindicales, laborales y otras 107 de 113",
+          "contenido": "Comprende asociaciones y organizaciones tales como: cámaras industriales, de comercio, agricultores, ganaderos, abogados, actuarios, médicos, ingenieros; cívicas, fraternidades, clubes literarios e históricos, políticas, sindicales, laborales y otras",
           "padre_numero": 624,
           "x_id": 168,
           "x_texto": 168
@@ -13719,7 +13620,7 @@
           "numero": 633,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Comprende a las entidades de servicios de vigilancia, investigación policiaca, incluso regularización de tránsito, combate de incendios y otros de esa índole. Así como de servicios de corrección y rehabilitación social. Incluye a las empresas que prestan en forma exclusiva el servicio de ambulancias para traslado de enfermos, personas accidentadas y otros servicios similares. 108 de 113",
+          "contenido": "Comprende a las entidades de servicios de vigilancia, investigación policiaca, incluso regularización de tránsito, combate de incendios y otros de esa índole. Así como de servicios de corrección y rehabilitación social. Incluye a las empresas que prestan en forma exclusiva el servicio de ambulancias para traslado de enfermos, personas accidentadas y otros servicios similares.",
           "padre_numero": 632,
           "x_id": 168,
           "x_texto": 168
