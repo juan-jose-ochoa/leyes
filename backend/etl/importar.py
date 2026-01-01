@@ -242,13 +242,24 @@ def limpiar_ley(conn, codigo: str):
 
 
 def importar_ley(conn, codigo: str, config: dict, pdf_path: Path = None):
-    """Inserta la ley en el catálogo, extrayendo fecha de última reforma del PDF."""
-    # Extraer fecha de última reforma del PDF
+    """Inserta la ley en el catálogo con fecha de última reforma."""
+    # Prioridad: 1) config, 2) PDF, 3) fecha actual
     ultima_reforma = None
-    if pdf_path:
+
+    # 1. Usar fecha de config si existe
+    if config.get("ultima_reforma"):
+        ultima_reforma = date.fromisoformat(config["ultima_reforma"])
+        print(f"   Última reforma (config): {ultima_reforma.strftime('%d-%m-%Y')}")
+    # 2. Intentar extraer del PDF
+    elif pdf_path:
         ultima_reforma = extraer_fecha_ultima_reforma(pdf_path)
         if ultima_reforma:
-            print(f"   Última reforma: {ultima_reforma.strftime('%d-%m-%Y')}")
+            print(f"   Última reforma (PDF): {ultima_reforma.strftime('%d-%m-%Y')}")
+
+    # 3. Si no hay fecha, usar fecha actual como fallback
+    if not ultima_reforma:
+        ultima_reforma = date.today()
+        print(f"   Última reforma (fallback): {ultima_reforma.strftime('%d-%m-%Y')}")
 
     with conn.cursor() as cur:
         cur.execute("""

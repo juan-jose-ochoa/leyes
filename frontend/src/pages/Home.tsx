@@ -65,10 +65,10 @@ export default function Home() {
   // SEO dinámico según búsqueda
   const seoTitle = hasSearched
     ? `"${urlQuery}" - Búsqueda en LeyesMX`
-    : 'LeyesMX - Buscador de Leyes Fiscales Mexicanas'
+    : 'LeyesMX - Leyes Fiscales y Laborales de México'
   const seoDescription = hasSearched
-    ? `Resultados de búsqueda para "${urlQuery}" en leyes fiscales mexicanas: CFF, LISR, LIVA, RMF y más.`
-    : 'Busca y consulta el Código Fiscal, Ley del ISR, Ley del IVA, Resolución Miscelánea Fiscal y más leyes fiscales mexicanas.'
+    ? `Resultados de búsqueda para "${urlQuery}" en leyes fiscales y laborales mexicanas.`
+    : 'Encuentra cualquier artículo en segundos. Consulta leyes fiscales y laborales mexicanas sin buscar en PDFs.'
 
   return (
     <div className="space-y-8">
@@ -88,12 +88,11 @@ export default function Home() {
             </div>
           </div>
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl">
-            Busca en las leyes
-            <span className="block text-primary-600">fiscales y laborales</span>
+            Leyes fiscales y laborales
+            <span className="block text-primary-600">sin buscar en PDFs</span>
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
-            Encuentra rapidamente articulos del CFF, LISR, LIVA, LFT y mas.
-            Busqueda inteligente con referencias cruzadas.
+            Encuentra cualquier artículo en segundos. Navega fácilmente por la estructura de cada ley.
           </p>
         </div>
       )}
@@ -165,8 +164,8 @@ export default function Home() {
             />
             <StatCard
               icon={<BookOpen className="h-6 w-6" />}
-              label="RMF + Anexos"
-              value={leyes.filter((l) => l.tipo === 'resolucion' || l.tipo === 'anexo').length}
+              label="RMF"
+              value={leyes.filter((l) => l.tipo === 'resolucion').length}
             />
             <StatCard
               icon={<SearchIcon className="h-6 w-6" />}
@@ -208,16 +207,19 @@ export default function Home() {
                       {leyItem.codigo.length > 4 ? leyItem.codigo.slice(0, 3) : leyItem.codigo}
                     </div>
                     <div className="min-w-0 flex-1">
-                      <h3 className="truncate font-medium text-gray-900 dark:text-white">
+                      <h3 className="line-clamp-2 font-medium text-gray-900 dark:text-white">
                         {leyItem.nombre}
                       </h3>
-                      <p className="text-sm text-gray-500">
-                        {leyItem.total_articulos} {
-                          leyItem.tipo === 'resolucion' ? 'reglas' :
-                          leyItem.tipo === 'anexo' ? 'fichas/criterios' :
-                          'artículos'
-                        }
-                      </p>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-500">
+                          {leyItem.total_articulos} {
+                            leyItem.tipo === 'resolucion' ? 'reglas' : 'artículos'
+                          }
+                        </span>
+                        {leyItem.ultima_reforma && (
+                          <span className="text-xs text-gray-400">{new Date(leyItem.ultima_reforma).toLocaleDateString('es-MX')}</span>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </Link>
