@@ -134,11 +134,11 @@ BEGIN
         ca.contenido,
         ca.es_transitorio,
         ca.reformas,
-        ts_rank(to_tsvector('spanish', ca.contenido), plainto_tsquery('spanish', q)) as relevancia,
-        ts_headline('spanish', ca.contenido, plainto_tsquery('spanish', q),
+        ts_rank(to_tsvector('spanish', ca.contenido), websearch_to_tsquery('spanish', q)) as relevancia,
+        ts_headline('spanish', ca.contenido, websearch_to_tsquery('spanish', q),
             'StartSel=<mark>, StopSel=</mark>, MaxWords=50, MinWords=20') as snippet
     FROM contenido_articulos ca
-    WHERE to_tsvector('spanish', ca.contenido) @@ plainto_tsquery('spanish', q)
+    WHERE to_tsvector('spanish', ca.contenido) @@ websearch_to_tsquery('spanish', q)
        OR ca.numero_raw ILIKE '%' || q || '%'
     ORDER BY relevancia DESC
     LIMIT limite
