@@ -299,12 +299,12 @@ BEGIN
             ELSE 4::SMALLINT
         END,
         COALESCE(c.total, 0)::BIGINT,
-        (SELECT MIN(a.numero)::VARCHAR
-         FROM leyesmx.articulos a
-         WHERE a.division_id = d.id AND a.ley = d.ley),
-        (SELECT MAX(a.numero)::VARCHAR
-         FROM leyesmx.articulos a
-         WHERE a.division_id = d.id AND a.ley = d.ley),
+        (SELECT a.numero FROM leyesmx.articulos a
+         WHERE a.division_id = d.id AND a.ley = d.ley
+         ORDER BY a.orden ASC LIMIT 1)::VARCHAR,
+        (SELECT a.numero FROM leyesmx.articulos a
+         WHERE a.division_id = d.id AND a.ley = d.ley
+         ORDER BY a.orden DESC LIMIT 1)::VARCHAR,
         d.padre_id
     FROM leyesmx.divisiones d
     LEFT JOIN conteos c ON c.raiz_id = d.id
@@ -367,12 +367,12 @@ BEGIN
             ELSE 4::SMALLINT
         END,
         COALESCE(c.total, 0)::BIGINT,
-        (SELECT MIN(a.numero)::VARCHAR
-         FROM leyesmx.articulos a
-         WHERE a.division_id = d.id AND a.ley = d.ley),
-        (SELECT MAX(a.numero)::VARCHAR
-         FROM leyesmx.articulos a
-         WHERE a.division_id = d.id AND a.ley = d.ley)
+        (SELECT a.numero FROM leyesmx.articulos a
+         WHERE a.division_id = d.id AND a.ley = d.ley
+         ORDER BY a.orden ASC LIMIT 1)::VARCHAR,
+        (SELECT a.numero FROM leyesmx.articulos a
+         WHERE a.division_id = d.id AND a.ley = d.ley
+         ORDER BY a.orden DESC LIMIT 1)::VARCHAR
     FROM leyesmx.divisiones d
     LEFT JOIN conteos c ON c.raiz_id = d.id
     WHERE d.padre_id = div_id
