@@ -533,6 +533,9 @@ LEYES = {
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
         "pdf_path": "backend/etl/data/lss/lss_ley_del_seguro_social.pdf",
 
+        # Patrón para extraer fecha DOF (usa "Últimas Reformas" plural)
+        "fecha_dof_patron": r"[ÚU]ltimas\s+[Rr]eformas\s+DOF\s+(\d{1,2})-(\d{1,2})-(\d{4})",
+
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
@@ -684,7 +687,7 @@ LEYES = {
         "nombre": "Reglamento de los Artículos 121 y 122 de la Ley Federal del Trabajo",
         "nombre_corto": "Reglamento PTU",
         "tipo": "reglamento",
-        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_121_122_LFT.pdf",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_Art121-122_LFT_050614.pdf",
         "pdf_path": "backend/etl/data/rlft/rlft_reglamento_de_la_ley_federal_del_trabajo.pdf",
         "divisiones_permitidas": ["capitulo"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso"],
@@ -744,7 +747,7 @@ LEYES = {
         "nombre": "Reglamento de la Ley del Seguro Social para Reservas Financieras y Actuariales",
         "nombre_corto": "Reglamento Reservas SS",
         "tipo": "reglamento",
-        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_CIUORFA.pdf",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_RFARGFA.pdf",
         "pdf_path": "backend/etl/data/rlss/rlss_reglamento_de_la_ley_del_seguro_social.pdf",
         "divisiones_permitidas": ["capitulo"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso"],
@@ -774,7 +777,7 @@ LEYES = {
         "nombre": "Reglamento de la Ley del Impuesto al Valor Agregado",
         "nombre_corto": "Reglamento IVA",
         "tipo": "reglamento",
-        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA.pdf",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA_250914.pdf",
         "pdf_path": "backend/etl/data/rliva/riva_reglamento_del_impuesto_al_valor_agregado.pdf",
 
         # Estructura jerárquica permitida (solo capítulos, sin títulos)
@@ -821,7 +824,7 @@ LEYES = {
         "nombre": "Reglamento de la Ley del Impuesto sobre la Renta",
         "nombre_corto": "Reglamento ISR",
         "tipo": "reglamento",
-        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR.pdf",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR_060516.pdf",
         "pdf_path": "backend/etl/data/rlisr/risr_reglamento_del_impuesto_sobre_la_renta.pdf",
 
         # Estructura jerárquica permitida
