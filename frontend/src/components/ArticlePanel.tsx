@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useArticuloPorLey, useNavegacion, useFraccionesArticulo, useDivisionesArticulo } from '@/hooks/useArticle'
 import FraccionesView from './FraccionesView'
+import ArticleToc from './ArticleToc'
 import clsx from 'clsx'
 
 interface ArticlePanelProps {
@@ -157,6 +158,11 @@ export default function ArticlePanel({ ley, numero, onClose, onNavigate }: Artic
 
       {/* Contenido scrolleable */}
       <div className="flex-1 overflow-y-auto p-6">
+        {/* TOC compacto para panel */}
+        {fracciones && fracciones.length >= 1 && (
+          <ArticleToc fracciones={fracciones} className="mb-4" />
+        )}
+
         <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
           {fracciones && fracciones.length > 0 ? (
             <FraccionesView fracciones={fracciones} mostrarReferencias={mostrarReferencias} />

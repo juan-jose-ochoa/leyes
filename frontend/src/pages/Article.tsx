@@ -1,9 +1,10 @@
-import { useParams, Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { useParams, Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { Copy, Check, ExternalLink, BookOpen, ChevronLeft, ChevronRight, Home } from 'lucide-react'
-import { useState } from 'react'
 import { useArticle, useArticuloPorLey, useNavegacion, useDivisionesArticulo, useFraccionesArticulo } from '@/hooks/useArticle'
 import ArticleContent from '@/components/ArticleContent'
+import ArticleToc from '@/components/ArticleToc'
 import clsx from 'clsx'
 
 export default function Article() {
@@ -11,10 +12,11 @@ export default function Article() {
   const { id, ley } = params
   // El numero viene del wildcard (*) para soportar "/" en el valor (ej: "13/LISH")
   const numero = params['*'] || undefined
-  const location = window.location.pathname
-  const esRutaRegla = location.includes('/regla/')
-  const esRutaFicha = location.includes('/ficha/')
-  const esRutaCriterio = location.includes('/criterio/')
+  const location = useLocation()
+  const pathname = location.pathname
+  const esRutaRegla = pathname.includes('/regla/')
+  const esRutaFicha = pathname.includes('/ficha/')
+  const esRutaCriterio = pathname.includes('/criterio/')
 
   // Usar el hook apropiado según los parámetros
   const porLey = useArticuloPorLey(ley ?? null, numero ?? null)
@@ -26,6 +28,20 @@ export default function Article() {
   const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null, ley ?? undefined)
   const [copied, setCopied] = useState(false)
   const [mostrarReferencias, setMostrarReferencias] = useState(false)
+
+  // Scroll a hash al cargar la página (después de que carguen las fracciones)
+  useEffect(() => {
+    if (location.hash && fracciones && fracciones.length > 0) {
+      const anchorId = location.hash.slice(1) // Remover '#'
+      const element = document.getElementById(anchorId)
+      if (element) {
+        // Pequeño delay para asegurar que el DOM está listo
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }, 100)
+      }
+    }
+  }, [location.hash, fracciones])
 
   // Determinar el tipo basándose en el tipo del artículo o la ruta
   const esRegla = articulo?.tipo === 'regla' || esRutaRegla
@@ -221,6 +237,11 @@ export default function Article() {
           )}
         </div>
       </div>
+
+      {/* Tabla de contenido - Si hay al menos una fracción */}
+      {fracciones && fracciones.length >= 1 && (
+        <ArticleToc fracciones={fracciones} className="mb-6" />
+      )}
 
       {/* Contenido principal */}
       <div className="card">

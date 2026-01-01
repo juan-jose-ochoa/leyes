@@ -1,4 +1,6 @@
+import { useMemo } from 'react'
 import { type Fraccion } from '@/lib/api'
+import { buildFraccionAnchors, type FraccionWithAnchor } from '@/lib/anchorUtils'
 import clsx from 'clsx'
 
 interface FraccionesViewProps {
@@ -7,21 +9,27 @@ interface FraccionesViewProps {
 }
 
 export default function FraccionesView({ fracciones, mostrarReferencias = false }: FraccionesViewProps) {
-  if (!fracciones || fracciones.length === 0) {
+  // Pre-computar IDs de ancla para todas las fracciones
+  const fraccionesWithAnchors = useMemo(() => {
+    if (!fracciones || fracciones.length === 0) return []
+    return buildFraccionAnchors(fracciones)
+  }, [fracciones])
+
+  if (fraccionesWithAnchors.length === 0) {
     return null
   }
 
   return (
     <div className="space-y-4">
-      {fracciones.map((fraccion) => (
+      {fraccionesWithAnchors.map((fraccion) => (
         <FraccionItem key={fraccion.id} fraccion={fraccion} mostrarReferencias={mostrarReferencias} />
       ))}
     </div>
   )
 }
 
-function FraccionItem({ fraccion, mostrarReferencias }: { fraccion: Fraccion; mostrarReferencias: boolean }) {
-  const { tipo, numero, contenido, nivel, es_continuacion, referencias } = fraccion
+function FraccionItem({ fraccion, mostrarReferencias }: { fraccion: FraccionWithAnchor; mostrarReferencias: boolean }) {
+  const { tipo, numero, contenido, nivel, es_continuacion, referencias, anchorId } = fraccion
 
   // Indentación: continuaciones usan el nivel del padre
   const nivelVisual = es_continuacion ? nivel - 1 : nivel
@@ -84,7 +92,10 @@ function FraccionItem({ fraccion, mostrarReferencias }: { fraccion: Fraccion; mo
   const identifier = getIdentifier()
 
   return (
-    <div className={clsx('leading-relaxed pl-3 py-1.5 rounded-r', indentClass, borderStyles)}>
+    <div
+      id={anchorId}
+      className={clsx('leading-relaxed pl-3 py-1.5 rounded-r scroll-mt-24', indentClass, borderStyles)}
+    >
       {identifier ? (
         <p className="text-gray-700 dark:text-gray-300">
           {identifier}{' '}
