@@ -567,6 +567,7 @@ LEYES = {
             'Servicios Parlamentarios',
             'Última Reforma',
             'Última reforma',
+            ' de 178',  # Paginación "X de 178"
         ],
 
         # Detección de referencias
