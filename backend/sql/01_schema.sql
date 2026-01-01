@@ -22,7 +22,7 @@ CREATE TABLE leyesmx.leyes (
     anio SMALLINT,                            -- NULL para leyes permanentes, 2025/2026 para RMF
 
     fecha_publicacion DATE,
-    ultima_reforma DATE,
+    ultima_reforma DATE NOT NULL DEFAULT CURRENT_DATE,
 
     -- Fuentes oficiales
     url_fuente TEXT,
