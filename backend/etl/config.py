@@ -11,7 +11,6 @@ LEYES = {
         "tipo": "codigo",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "pdf_path": "backend/etl/data/cff/cff_codigo_fiscal_de_la_federacion.pdf",
-        "ultima_reforma": "2024-11-14",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
@@ -80,7 +79,6 @@ LEYES = {
         "tipo": "resolucion",
         "url_fuente": "https://www.sat.gob.mx/normatividad/tax-resolution",
         "pdf_path": "backend/etl/data/rmf/rmf_2026_original.pdf",
-        "ultima_reforma": "2025-12-24",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["libro", "titulo", "capitulo", "seccion"],
@@ -120,7 +118,6 @@ LEYES = {
         "tipo": "codigo",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
         "pdf_path": "backend/etl/data/cpeum/cpeum_constitucion_politica.pdf",
-        "ultima_reforma": "2024-11-15",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo"],
@@ -194,7 +191,6 @@ LEYES = {
         "tipo": "ley",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf",
         "pdf_path": "backend/etl/data/lisr/lisr_ley_del_impuesto_sobre_la_renta.pdf",
-        "ultima_reforma": "2024-11-14",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
@@ -269,7 +265,6 @@ LEYES = {
         "tipo": "ley",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf",
         "pdf_path": "backend/etl/data/liva/liva_ley_del_impuesto_al_valor_agregado.pdf",
-        "ultima_reforma": "2024-11-14",
 
         # Página donde termina el contenido (antes de TRANSITORIOS)
         # Evita que capítulos de decretos de reforma sobrescriban los correctos
@@ -344,7 +339,6 @@ LEYES = {
         "tipo": "ley",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAdua.pdf",
         "pdf_path": "backend/etl/data/la/la_ley_aduanera.pdf",
-        "ultima_reforma": "2024-11-14",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
@@ -422,7 +416,6 @@ LEYES = {
         "tipo": "ley",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIEPS.pdf",
         "pdf_path": "backend/etl/data/lieps/lieps_ley_del_impuesto_especial.pdf",
-        "ultima_reforma": "2024-11-14",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo"],
@@ -477,7 +470,6 @@ LEYES = {
         "tipo": "ley",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
         "pdf_path": "backend/etl/data/lft/lft_ley_federal_del_trabajo.pdf",
-        "ultima_reforma": "2024-06-19",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo"],
@@ -537,7 +529,6 @@ LEYES = {
         "tipo": "ley",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
         "pdf_path": "backend/etl/data/lss/lss_ley_del_seguro_social.pdf",
-        "ultima_reforma": "2024-05-01",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo"],
@@ -597,7 +588,6 @@ LEYES = {
         "tipo": "reglamento",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_CFF.pdf",
         "pdf_path": "backend/etl/data/rcff/rcff_reglamento_del_codigo_fiscal_de_la_federacion.pdf",
-        "ultima_reforma": "2014-11-03",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
@@ -653,7 +643,6 @@ LEYES = {
         "tipo": "reglamento",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_MACERF.pdf",
         "pdf_path": "backend/etl/data/racerf/racerf_reglamento_de_la_ley_del_seguro_social_en_materia.pdf",
-        "ultima_reforma": "2023-02-27",
         "divisiones_permitidas": ["titulo", "capitulo"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
         "tipo_contenido": "articulo",
@@ -694,7 +683,6 @@ LEYES = {
         "tipo": "reglamento",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_121_122_LFT.pdf",
         "pdf_path": "backend/etl/data/rlft/rlft_reglamento_de_la_ley_federal_del_trabajo.pdf",
-        "ultima_reforma": "1975-01-21",
         "divisiones_permitidas": ["capitulo"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso"],
         "tipo_contenido": "articulo",
@@ -725,7 +713,6 @@ LEYES = {
         "tipo": "reglamento",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIEPS.pdf",
         "pdf_path": "backend/etl/data/rlieps/rlieps_reglamento_de_la_ley_del_impuesto_especial_sobre_p.pdf",
-        "ultima_reforma": "2015-12-04",
         "divisiones_permitidas": ["capitulo"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso"],
         "tipo_contenido": "articulo",
@@ -756,7 +743,6 @@ LEYES = {
         "tipo": "reglamento",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_CIUORFA.pdf",
         "pdf_path": "backend/etl/data/rlss/rlss_reglamento_de_la_ley_del_seguro_social.pdf",
-        "ultima_reforma": "2005-10-21",
         "divisiones_permitidas": ["capitulo"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso"],
         "tipo_contenido": "articulo",
@@ -787,7 +773,6 @@ LEYES = {
         "tipo": "reglamento",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA.pdf",
         "pdf_path": "backend/etl/data/rliva/riva_reglamento_del_impuesto_al_valor_agregado.pdf",
-        "ultima_reforma": "2014-12-25",
 
         # Estructura jerárquica permitida (solo capítulos, sin títulos)
         "divisiones_permitidas": ["capitulo"],
@@ -835,7 +820,6 @@ LEYES = {
         "tipo": "reglamento",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR.pdf",
         "pdf_path": "backend/etl/data/rlisr/risr_reglamento_del_impuesto_sobre_la_renta.pdf",
-        "ultima_reforma": "2024-03-06",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
