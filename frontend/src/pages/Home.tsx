@@ -216,8 +216,8 @@ export default function Home() {
                             leyItem.tipo === 'resolucion' ? 'reglas' : 'artículos'
                           }
                         </span>
-                        {leyItem.ultima_reforma && (
-                          <span className="text-xs text-gray-400">{new Date(leyItem.ultima_reforma).toLocaleDateString('es-MX')}</span>
+                        {leyItem.ultima_reforma_dof && (
+                          <span className="text-xs text-gray-400">{new Date(leyItem.ultima_reforma_dof).toLocaleDateString('es-MX')}</span>
                         )}
                       </div>
                     </div>

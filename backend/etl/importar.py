@@ -43,7 +43,7 @@ MESES = {
 BASE_DIR = Path(__file__).parent.parent.parent
 
 
-def extraer_fecha_ultima_reforma(pdf_path: Path) -> date | None:
+def extraer_fecha_ultima_reforma_dof(pdf_path: Path) -> date | None:
     """Extrae la fecha de última reforma de la primera página del PDF.
 
     Busca patrones como:
@@ -244,36 +244,36 @@ def limpiar_ley(conn, codigo: str):
 def importar_ley(conn, codigo: str, config: dict, pdf_path: Path = None):
     """Inserta la ley en el catálogo con fecha de última reforma."""
     # Prioridad: 1) config, 2) PDF, 3) fecha actual
-    ultima_reforma = None
+    ultima_reforma_dof = None
 
     # 1. Usar fecha de config si existe
-    if config.get("ultima_reforma"):
-        ultima_reforma = date.fromisoformat(config["ultima_reforma"])
-        print(f"   Última reforma (config): {ultima_reforma.strftime('%d-%m-%Y')}")
+    if config.get("ultima_reforma_dof"):
+        ultima_reforma_dof = date.fromisoformat(config["ultima_reforma_dof"])
+        print(f"   Última reforma (config): {ultima_reforma_dof.strftime('%d-%m-%Y')}")
     # 2. Intentar extraer del PDF
     elif pdf_path:
-        ultima_reforma = extraer_fecha_ultima_reforma(pdf_path)
-        if ultima_reforma:
-            print(f"   Última reforma (PDF): {ultima_reforma.strftime('%d-%m-%Y')}")
+        ultima_reforma_dof = extraer_fecha_ultima_reforma_dof(pdf_path)
+        if ultima_reforma_dof:
+            print(f"   Última reforma (PDF): {ultima_reforma_dof.strftime('%d-%m-%Y')}")
 
     # 3. Si no hay fecha, usar fecha actual como fallback
-    if not ultima_reforma:
-        ultima_reforma = date.today()
-        print(f"   Última reforma (fallback): {ultima_reforma.strftime('%d-%m-%Y')}")
+    if not ultima_reforma_dof:
+        ultima_reforma_dof = date.today()
+        print(f"   Última reforma (fallback): {ultima_reforma_dof.strftime('%d-%m-%Y')}")
 
     with conn.cursor() as cur:
         cur.execute("""
             INSERT INTO leyesmx.leyes (
                 codigo, nombre, nombre_corto, tipo,
                 ley_base, anio,
-                url_fuente, ultima_reforma,
+                url_fuente, ultima_reforma_dof,
                 divisiones_permitidas, parrafos_permitidos
             ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             ON CONFLICT (codigo) DO UPDATE SET
                 nombre = EXCLUDED.nombre,
                 nombre_corto = EXCLUDED.nombre_corto,
                 url_fuente = EXCLUDED.url_fuente,
-                ultima_reforma = EXCLUDED.ultima_reforma
+                ultima_reforma_dof = EXCLUDED.ultima_reforma_dof
         """, (
             codigo,
             config["nombre"],
@@ -282,7 +282,7 @@ def importar_ley(conn, codigo: str, config: dict, pdf_path: Path = None):
             config.get("ley_base"),
             config.get("anio"),
             config.get("url_fuente"),
-            ultima_reforma,
+            ultima_reforma_dof,
             config["divisiones_permitidas"],
             config["parrafos_permitidos"],
         ))

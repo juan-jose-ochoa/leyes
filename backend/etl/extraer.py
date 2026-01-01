@@ -24,6 +24,70 @@ except ImportError:
 
 from config import get_config, listar_leyes
 
+# Meses en español para parsear fechas DOF
+MESES = {
+    'enero': 1, 'febrero': 2, 'marzo': 3, 'abril': 4,
+    'mayo': 5, 'junio': 6, 'julio': 7, 'agosto': 8,
+    'septiembre': 9, 'octubre': 10, 'noviembre': 11, 'diciembre': 12
+}
+
+
+def extraer_fecha_dof(pdf, config: dict) -> str | None:
+    """Extrae la fecha DOF del encabezado itálico de la primera página.
+
+    Usa el patrón definido en config["fecha_dof_patron"].
+    Busca solo en texto itálico alineado a la derecha (X > 300).
+
+    Returns:
+        Fecha en formato ISO (YYYY-MM-DD) o None
+    """
+    patron_config = config.get("fecha_dof_patron")
+    if not patron_config:
+        return None
+
+    try:
+        page = pdf.pages[0]
+        chars = page.chars
+
+        # Extraer texto itálico del encabezado (primeras líneas, X > 300)
+        italic_text = []
+        for char in chars:
+            fontname = char.get('fontname', '')
+            x = char.get('x0', 0)
+            y = char.get('top', 0)
+            # Solo encabezado (Y < 100) e itálico y lado derecho (X > 300)
+            if y < 100 and x > 300 and ('Italic' in fontname or 'italic' in fontname):
+                italic_text.append(char['text'])
+
+        header_italic = ''.join(italic_text)
+
+        # Si no hay texto itálico, buscar en texto completo del encabezado
+        if not header_italic:
+            text = page.extract_text() or ""
+            # Solo primeras 5 líneas
+            header_italic = '\n'.join(text.split('\n')[:5])
+
+        # Aplicar patrón de config
+        match = re.search(patron_config, header_italic)
+        if match:
+            grupos = match.groups()
+            # Patrón numérico: DD-MM-YYYY
+            if len(grupos) >= 3 and grupos[0].isdigit():
+                dia, mes, anio = int(grupos[0]), int(grupos[1]), int(grupos[2])
+                return f"{anio:04d}-{mes:02d}-{dia:02d}"
+            # Patrón con mes texto: DD de MES de YYYY
+            elif len(grupos) >= 3:
+                dia = int(grupos[0])
+                mes = MESES.get(grupos[1].lower())
+                anio = int(grupos[2])
+                if mes:
+                    return f"{anio:04d}-{mes:02d}-{dia:02d}"
+    except Exception as e:
+        print(f"   AVISO: No se pudo extraer fecha DOF: {e}")
+
+    return None
+
+
 # Constantes para detección de jerarquía por coordenadas X
 X_FRACCION = 85
 X_INCISO = 114
@@ -762,14 +826,26 @@ def main():
     for tipo, count in sorted(tipos_parrafo.items(), key=lambda x: -x[1]):
         print(f"      {tipo}: {count}")
 
+    # Extraer fecha DOF
+    print("\n3. Extrayendo fecha DOF...")
+    fecha_dof = extraer_fecha_dof(extractor.pdf, config)
+    if fecha_dof:
+        print(f"   Fecha DOF: {fecha_dof}")
+    else:
+        print("   AVISO: No se encontró fecha DOF")
+
     # Guardar
     contenido_path = output_dir / "contenido.json"
+    contenido = {
+        "ley": codigo,
+        "tipo_contenido": config["tipo_contenido"],
+        "articulos": [a.to_dict() for a in articulos]
+    }
+    if fecha_dof:
+        contenido["ultima_reforma_dof"] = fecha_dof
+
     with open(contenido_path, 'w', encoding='utf-8') as f:
-        json.dump({
-            "ley": codigo,
-            "tipo_contenido": config["tipo_contenido"],
-            "articulos": [a.to_dict() for a in articulos]
-        }, f, ensure_ascii=False, indent=2)
+        json.dump(contenido, f, ensure_ascii=False, indent=2)
     print(f"   Guardado: {contenido_path.name}")
 
     extractor.cerrar_pdf()

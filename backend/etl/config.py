@@ -12,6 +12,9 @@ LEYES = {
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "pdf_path": "backend/etl/data/cff/cff_codigo_fiscal_de_la_federacion.pdf",
 
+        # Patrón para extraer fecha DOF del encabezado
+        "fecha_dof_patron": r"[ÚU]ltima\s+[Rr]eforma\s+DOF\s+(\d{1,2})-(\d{1,2})-(\d{4})",
+
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
@@ -767,7 +770,7 @@ LEYES = {
         },
     },
 
-    "RIVA": {
+    "RLIVA": {
         "nombre": "Reglamento de la Ley del Impuesto al Valor Agregado",
         "nombre_corto": "Reglamento IVA",
         "tipo": "reglamento",
@@ -814,7 +817,7 @@ LEYES = {
         },
     },
 
-    "RISR": {
+    "RLISR": {
         "nombre": "Reglamento de la Ley del Impuesto sobre la Renta",
         "nombre_corto": "Reglamento ISR",
         "tipo": "reglamento",

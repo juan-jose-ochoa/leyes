@@ -22,7 +22,7 @@ CREATE TABLE leyesmx.leyes (
     anio SMALLINT,                            -- NULL para leyes permanentes, 2025/2026 para RMF
 
     fecha_publicacion DATE,
-    ultima_reforma DATE NOT NULL DEFAULT CURRENT_DATE,
+    ultima_reforma_dof DATE NOT NULL DEFAULT CURRENT_DATE,
 
     -- Fuentes oficiales
     url_fuente TEXT,
@@ -164,7 +164,7 @@ SELECT
     tipo,
     url_fuente,
     fecha_publicacion,
-    ultima_reforma,
+    ultima_reforma_dof,
     (SELECT COUNT(*) FROM leyesmx.articulos a WHERE a.ley = l.codigo) AS total_articulos
 FROM leyesmx.leyes l;
 

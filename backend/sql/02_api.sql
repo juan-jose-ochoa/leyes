@@ -18,7 +18,7 @@ SELECT
     tipo,
     url_fuente,
     fecha_publicacion,
-    ultima_reforma,
+    ultima_reforma_dof,
     (SELECT COUNT(*) FROM leyesmx.articulos a WHERE a.ley = l.codigo) as total_articulos
 FROM leyesmx.leyes l;
 
