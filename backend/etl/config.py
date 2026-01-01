@@ -43,18 +43,6 @@ LEYES = {
             "numeral": r'^(\d{1,2})\.\s+',
         },
 
-        # Ruido a eliminar (encabezados, pies de página)
-        # NOTA: No usar .* sin límite - usar [^\n]* para limitar a una línea
-        "ruido": [
-            r'CÓDIGO FISCAL DE LA FEDERACIÓN\s*',
-            r'CÁMARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNIÓN\s*',
-            r'Secretaría de Servicios Parlamentarios\s*',
-            r'Secretaría General\s*',
-            r'Última\s+[Rr]eforma\s+(?:publicada\s+)?DOF[^\n]*',
-            r'\d+\s+de\s+\d+\s*',  # Números de página "24 de 375"
-            r'TEXTO VIGENTE\s*',
-        ],
-
         # Detección de referencias (reformas, adiciones)
         # Criterios: itálica + color (azul o gris) + tamaño pequeño + patrón
         "referencias": {
@@ -106,13 +94,7 @@ LEYES = {
             "inciso": r'^([a-z])\)\s+',
             "numeral": r'^(\d{1,2})\.\s+',
         },
-
-        # Ruido a eliminar
-        "ruido": [
-            r'RESOLUCIÓN MISCELÁNEA FISCAL',
-            r'Secretaría de Hacienda',
-            r'DOF:\s+\d{2}/\d{2}/\d{4}',
-        ],
+        # RMF usa extraer_rmf.py (no extraer.py), no necesita ruido_lineas
     },
 
     "CPEUM": {
@@ -121,6 +103,9 @@ LEYES = {
         "tipo": "codigo",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
         "pdf_path": "backend/etl/data/cpeum/cpeum_constitucion_politica.pdf",
+
+        # Patrón para extraer fecha DOF del encabezado
+        "fecha_dof_patron": r"Última Reforma DOF (\d{1,2})-(\d{1,2})-(\d{4})",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo"],
@@ -148,17 +133,6 @@ LEYES = {
         },
 
         # Ruido a eliminar (encabezados, pies de página)
-        # ruido: patrones regex para filtrado avanzado
-        # ruido_lineas: strings simples para filtrado rápido (usado por extraer.py)
-        "ruido": [
-            r'CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS\s*',
-            r'CÁMARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNIÓN[^\n]*',
-            r'Secretaría General\s*',
-            r'Secretaría de Servicios Parlamentarios\s*',
-            r'Última\s+[Rr]eforma\s+(?:publicada\s+)?DOF[^\n]*',
-            r'\d+\s+de\s+\d+\s*',  # Números de página
-            r'TEXTO VIGENTE\s*',
-        ],
         "ruido_lineas": [
             'CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS',
             'CÁMARA DE DIPUTADOS',
@@ -195,6 +169,8 @@ LEYES = {
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf",
         "pdf_path": "backend/etl/data/lisr/lisr_ley_del_impuesto_sobre_la_renta.pdf",
 
+        "fecha_dof_patron": r"Última Reforma DOF (\d{1,2})-(\d{1,2})-(\d{4})",
+
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
@@ -219,15 +195,6 @@ LEYES = {
         },
 
         # Ruido a eliminar (encabezados, pies de página)
-        "ruido": [
-            r'LEY DEL IMPUESTO SOBRE LA RENTA\s*',
-            r'CÁMARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNIÓN[^\n]*',
-            r'Secretaría General\s*',
-            r'Secretaría de Servicios Parlamentarios\s*',
-            r'Última\s+[Rr]eforma\s+(?:publicada\s+)?DOF[^\n]*',
-            r'\d+\s+de\s+\d+\s*',  # Números de página
-            r'TEXTO VIGENTE\s*',
-        ],
         "ruido_lineas": [
             'LEY DEL IMPUESTO SOBRE LA RENTA',
             'CÁMARA DE DIPUTADOS',
@@ -269,6 +236,8 @@ LEYES = {
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf",
         "pdf_path": "backend/etl/data/liva/liva_ley_del_impuesto_al_valor_agregado.pdf",
 
+        "fecha_dof_patron": r"Última Reforma DOF (\d{1,2})-(\d{1,2})-(\d{4})",
+
         # Página donde termina el contenido (antes de TRANSITORIOS)
         # Evita que capítulos de decretos de reforma sobrescriban los correctos
         "pagina_fin_contenido": 49,
@@ -299,15 +268,6 @@ LEYES = {
         },
 
         # Ruido a eliminar (encabezados, pies de página)
-        "ruido": [
-            r'LEY DEL IMPUESTO AL VALOR AGREGADO\s*',
-            r'CÁMARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNIÓN[^\n]*',
-            r'Secretaría General\s*',
-            r'Secretaría de Servicios Parlamentarios\s*',
-            r'Última\s+[Rr]eforma\s+(?:publicada\s+)?DOF[^\n]*',
-            r'\d+\s+de\s+\d+\s*',  # Números de página
-            r'TEXTO VIGENTE\s*',
-        ],
         "ruido_lineas": [
             'LEY DEL IMPUESTO AL VALOR AGREGADO',
             'CÁMARA DE DIPUTADOS',
@@ -343,6 +303,8 @@ LEYES = {
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAdua.pdf",
         "pdf_path": "backend/etl/data/la/la_ley_aduanera.pdf",
 
+        "fecha_dof_patron": r"Última Reforma DOF (\d{1,2})-(\d{1,2})-(\d{4})",
+
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
@@ -369,15 +331,6 @@ LEYES = {
         },
 
         # Ruido a eliminar (encabezados, pies de página)
-        "ruido": [
-            r'LEY ADUANERA\s*',
-            r'CÁMARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNIÓN[^\n]*',
-            r'Secretaría General\s*',
-            r'Secretaría de Servicios Parlamentarios\s*',
-            r'Última\s+[Rr]eforma\s+(?:publicada\s+)?DOF[^\n]*',
-            r'\d+\s+de\s+\d+\s*',  # Números de página
-            r'TEXTO VIGENTE\s*',
-        ],
         "ruido_lineas": [
             'LEY ADUANERA',
             'CÁMARA DE DIPUTADOS',
@@ -419,6 +372,8 @@ LEYES = {
         "tipo": "ley",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIEPS.pdf",
         "pdf_path": "backend/etl/data/lieps/lieps_ley_del_impuesto_especial.pdf",
+
+        "fecha_dof_patron": r"Última Reforma DOF (\d{1,2})-(\d{1,2})-(\d{4})",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo"],
@@ -473,6 +428,8 @@ LEYES = {
         "tipo": "ley",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
         "pdf_path": "backend/etl/data/lft/lft_ley_federal_del_trabajo.pdf",
+
+        "fecha_dof_patron": r"Última Reforma DOF (\d{1,2})-(\d{1,2})-(\d{4})",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo"],
@@ -597,6 +554,8 @@ LEYES = {
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_CFF.pdf",
         "pdf_path": "backend/etl/data/rcff/rcff_reglamento_del_codigo_fiscal_de_la_federacion.pdf",
 
+        "fecha_dof_patron": r"Nuevo Reglamento DOF (\d{1,2})-(\d{1,2})-(\d{4})",
+
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
@@ -651,6 +610,8 @@ LEYES = {
         "tipo": "reglamento",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_MACERF.pdf",
         "pdf_path": "backend/etl/data/racerf/racerf_reglamento_de_la_ley_del_seguro_social_en_materia.pdf",
+
+        "fecha_dof_patron": r"Última Reforma DOF (\d{1,2})-(\d{1,2})-(\d{4})",
         "divisiones_permitidas": ["titulo", "capitulo"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
         "tipo_contenido": "articulo",
@@ -691,6 +652,8 @@ LEYES = {
         "tipo": "reglamento",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_Art121-122_LFT_050614.pdf",
         "pdf_path": "backend/etl/data/rlft/rlft_reglamento_de_la_ley_federal_del_trabajo.pdf",
+
+        "fecha_dof_patron": r"Nuevo Reglamento DOF (\d{1,2})-(\d{1,2})-(\d{4})",
         "divisiones_permitidas": ["capitulo"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso"],
         "tipo_contenido": "articulo",
@@ -721,6 +684,8 @@ LEYES = {
         "tipo": "reglamento",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIEPS.pdf",
         "pdf_path": "backend/etl/data/rlieps/rlieps_reglamento_de_la_ley_del_impuesto_especial_sobre_p.pdf",
+
+        "fecha_dof_patron": r"Nuevo Reglamento DOF (\d{1,2})-(\d{1,2})-(\d{4})",
         "divisiones_permitidas": ["capitulo"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso"],
         "tipo_contenido": "articulo",
@@ -751,6 +716,8 @@ LEYES = {
         "tipo": "reglamento",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_RFARGFA.pdf",
         "pdf_path": "backend/etl/data/rlss/rlss_reglamento_de_la_ley_del_seguro_social.pdf",
+
+        "fecha_dof_patron": r"Nuevo Reglamento DOF (\d{1,2})-(\d{1,2})-(\d{4})",
         "divisiones_permitidas": ["capitulo"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso"],
         "tipo_contenido": "articulo",
@@ -781,6 +748,8 @@ LEYES = {
         "tipo": "reglamento",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA_250914.pdf",
         "pdf_path": "backend/etl/data/rliva/riva_reglamento_del_impuesto_al_valor_agregado.pdf",
+
+        "fecha_dof_patron": r"Última Reforma DOF (\d{1,2})-(\d{1,2})-(\d{4})",
 
         # Estructura jerárquica permitida (solo capítulos, sin títulos)
         "divisiones_permitidas": ["capitulo"],
@@ -828,6 +797,8 @@ LEYES = {
         "tipo": "reglamento",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR_060516.pdf",
         "pdf_path": "backend/etl/data/rlisr/risr_reglamento_del_impuesto_sobre_la_renta.pdf",
+
+        "fecha_dof_patron": r"Última Reforma DOF (\d{1,2})-(\d{1,2})-(\d{4})",
 
         # Estructura jerárquica permitida
         "divisiones_permitidas": ["titulo", "capitulo", "seccion"],

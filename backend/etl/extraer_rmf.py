@@ -50,6 +50,14 @@ MARGEN_IZQUIERDO = 99  # X donde empiezan las reglas
 PATRON_TITULO = re.compile(r'^Título\s+(\d+)\.\s+(.+)$')
 PATRON_CAPITULO = re.compile(r'^Capítulo\s+(\d+\.\d+)\.\s+(.+)$')
 PATRON_REGLA = re.compile(r'^(\d+\.\d+\.\d+(?:\.\d+)?)\.\s*$')
+PATRON_FECHA_DOF = re.compile(r'(\d{1,2})\s+de\s+(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\s+de\s+(\d{4})', re.IGNORECASE)
+
+# Meses para conversión
+MESES = {
+    'enero': '01', 'febrero': '02', 'marzo': '03', 'abril': '04',
+    'mayo': '05', 'junio': '06', 'julio': '07', 'agosto': '08',
+    'septiembre': '09', 'octubre': '10', 'noviembre': '11', 'diciembre': '12'
+}
 PATRON_REGLA_INICIO = re.compile(r'^(\d+\.\d+\.\d+(?:\.\d+)?)\.\s*')
 # Detección de itálico para referencias
 def linea_es_italica(spans: list) -> bool:
@@ -120,6 +128,25 @@ class TituloRef:
     nombre: Optional[str]
     pagina: int
     capitulos: list[CapituloRef] = field(default_factory=list)
+
+
+def extraer_fecha_dof(doc) -> Optional[str]:
+    """
+    Extrae la fecha de publicación del DOF desde la primera página.
+
+    Busca patrones como "28 de diciembre de 2025" y retorna formato ISO "2025-12-28".
+    """
+    page = doc[0]
+    text = page.get_text()
+
+    match = PATRON_FECHA_DOF.search(text)
+    if match:
+        dia = match.group(1).zfill(2)
+        mes = MESES[match.group(2).lower()]
+        anio = match.group(3)
+        return f"{anio}-{mes}-{dia}"
+
+    return None
 
 
 def es_centrado(x_min: float, x_max: float) -> bool:
@@ -762,6 +789,15 @@ def main():
         contenido_json = generar_json_contenido(titulos, contenido)
         contenido_json["ley"] = codigo
         contenido_json["fuente"] = config.get("url_fuente", "")
+
+        # Extraer y añadir fecha DOF
+        fecha_dof = extraer_fecha_dof(doc)
+        if fecha_dof:
+            contenido_json["ultima_reforma_dof"] = fecha_dof
+            print(f"   Fecha DOF: {fecha_dof}")
+        else:
+            print("   ERROR: No se pudo extraer fecha DOF")
+            sys.exit(1)
 
         with open(contenido_path, 'w', encoding='utf-8') as f:
             json.dump(contenido_json, f, ensure_ascii=False, indent=2)
