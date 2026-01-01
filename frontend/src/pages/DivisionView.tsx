@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { Home, ChevronRight, BookOpen, ExternalLink, AlertTriangle, CheckCircle, XCircle, Filter, Eye, EyeOff, FileQuestion, FileText } from 'lucide-react'
@@ -264,6 +264,19 @@ export default function DivisionView() {
     return articulos.filter(a => a.calidad)
   }, [articulos, soloIssues])
 
+  // Scroll a hash al cargar la página
+  useEffect(() => {
+    if (location.hash && articulos && articulos.length > 0) {
+      const anchorId = location.hash.slice(1)
+      const element = document.getElementById(anchorId)
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }, 100)
+      }
+    }
+  }, [location.hash, articulos])
+
   if (isLoading) {
     return (
       <div className="mx-auto max-w-4xl animate-pulse space-y-4">
@@ -426,6 +439,40 @@ export default function DivisionView() {
             ))}
           </div>
         </div>
+      )}
+
+      {/* TOC de artículos */}
+      {articulosFiltrados.length > 0 && (
+        <nav
+          className="mb-8 p-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700"
+          aria-label="Índice de artículos"
+        >
+          <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase mb-3">
+            Ir a {esRegla ? 'regla' : 'artículo'}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {articulosFiltrados.map((art) => (
+              <button
+                key={art.id}
+                onClick={() => {
+                  const el = document.getElementById(`art-${art.numero_raw}`)
+                  if (el) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                    history.pushState(null, '', `#art-${art.numero_raw}`)
+                  }
+                }}
+                className={clsx(
+                  'inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium',
+                  'bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-200',
+                  'hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors',
+                  'focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800'
+                )}
+              >
+                {art.numero_raw}
+              </button>
+            ))}
+          </div>
+        </nav>
       )}
 
       {/* Artículos */}
