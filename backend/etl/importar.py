@@ -12,7 +12,6 @@ Uso:
 
 import json
 import os
-import re
 import sys
 from dataclasses import asdict
 from datetime import date
@@ -24,67 +23,10 @@ except ImportError:
     print("Error: psycopg2 no instalado. Ejecuta: pip install psycopg2-binary")
     sys.exit(1)
 
-try:
-    import pdfplumber
-    PDFPLUMBER_DISPONIBLE = True
-except ImportError:
-    PDFPLUMBER_DISPONIBLE = False
-
 from config import get_config
 
 
-# Meses en español para parsear fechas
-MESES = {
-    'enero': 1, 'febrero': 2, 'marzo': 3, 'abril': 4,
-    'mayo': 5, 'junio': 6, 'julio': 7, 'agosto': 8,
-    'septiembre': 9, 'octubre': 10, 'noviembre': 11, 'diciembre': 12
-}
-
 BASE_DIR = Path(__file__).parent.parent.parent
-
-
-def extraer_fecha_ultima_reforma_dof(pdf_path: Path) -> date | None:
-    """Extrae la fecha de última reforma de la primera página del PDF.
-
-    Busca patrones como:
-    - "Última reforma publicada DOF 14-11-2025"
-    - "Última Reforma DOF 14-11-2025"
-    - "DOF 14 de noviembre de 2025"
-
-    Returns:
-        date object o None si no se encuentra
-    """
-    if not PDFPLUMBER_DISPONIBLE or not pdf_path.exists():
-        return None
-
-    try:
-        with pdfplumber.open(pdf_path) as pdf:
-            # Solo revisar primera página
-            text = pdf.pages[0].extract_text() or ""
-
-            # Patrón 1: "DOF DD-MM-YYYY" o "DOF DD/MM/YYYY"
-            match = re.search(r'DOF\s+(\d{1,2})[-/](\d{1,2})[-/](\d{4})', text)
-            if match:
-                dia, mes, anio = int(match.group(1)), int(match.group(2)), int(match.group(3))
-                return date(anio, mes, dia)
-
-            # Patrón 2: "DOF DD de MES de YYYY"
-            match = re.search(
-                r'DOF\s+(\d{1,2})\s+de\s+(\w+)\s+de\s+(\d{4})',
-                text, re.IGNORECASE
-            )
-            if match:
-                dia = int(match.group(1))
-                mes_texto = match.group(2).lower()
-                anio = int(match.group(3))
-                mes = MESES.get(mes_texto)
-                if mes:
-                    return date(anio, mes, dia)
-
-    except Exception as e:
-        print(f"   AVISO: No se pudo extraer fecha de reforma: {e}")
-
-    return None
 
 
 def get_connection():
@@ -241,25 +183,14 @@ def limpiar_ley(conn, codigo: str):
         print(f"   Datos anteriores de {codigo} eliminados")
 
 
-def importar_ley(conn, codigo: str, config: dict, pdf_path: Path = None):
+def importar_ley(conn, codigo: str, config: dict, contenido_data: dict):
     """Inserta la ley en el catálogo con fecha de última reforma."""
-    # Prioridad: 1) config, 2) PDF, 3) fecha actual
-    ultima_reforma_dof = None
+    # Fuente de verdad: contenido.json
+    if not contenido_data.get("ultima_reforma_dof"):
+        raise ValueError(f"ultima_reforma_dof faltante en contenido.json para {codigo}")
 
-    # 1. Usar fecha de config si existe
-    if config.get("ultima_reforma_dof"):
-        ultima_reforma_dof = date.fromisoformat(config["ultima_reforma_dof"])
-        print(f"   Última reforma (config): {ultima_reforma_dof.strftime('%d-%m-%Y')}")
-    # 2. Intentar extraer del PDF
-    elif pdf_path:
-        ultima_reforma_dof = extraer_fecha_ultima_reforma_dof(pdf_path)
-        if ultima_reforma_dof:
-            print(f"   Última reforma (PDF): {ultima_reforma_dof.strftime('%d-%m-%Y')}")
-
-    # 3. Si no hay fecha, usar fecha actual como fallback
-    if not ultima_reforma_dof:
-        ultima_reforma_dof = date.today()
-        print(f"   Última reforma (fallback): {ultima_reforma_dof.strftime('%d-%m-%Y')}")
+    ultima_reforma_dof = date.fromisoformat(contenido_data["ultima_reforma_dof"])
+    print(f"   Última reforma: {ultima_reforma_dof.strftime('%d-%m-%Y')}")
 
     with conn.cursor() as cur:
         cur.execute("""
@@ -579,9 +510,13 @@ def main():
             print("\n4. Limpiando datos anteriores...")
             limpiar_ley(conn, codigo)
 
+        # Cargar contenido.json para obtener metadatos
+        with open(contenido_path, 'r', encoding='utf-8') as f:
+            contenido_data = json.load(f)
+
         # Importar ley
         print("\n4. Importando catálogo de ley...")
-        importar_ley(conn, codigo, config, pdf_path)
+        importar_ley(conn, codigo, config, contenido_data)
         print(f"   Ley {codigo} registrada")
 
         # Importar estructura desde estructura_esperada.json (formato anidado)
