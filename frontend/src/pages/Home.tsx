@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect } from 'react'
 import { useSearchParams, Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import { Scale, BookOpen, Search as SearchIcon, Zap } from 'lucide-react'
 import clsx from 'clsx'
 import SearchBar from '@/components/SearchBar'
@@ -61,8 +62,23 @@ export default function Home() {
 
   const hasSearched = urlQuery.length > 0
 
+  // SEO dinámico según búsqueda
+  const seoTitle = hasSearched
+    ? `"${urlQuery}" - Búsqueda en LeyesMX`
+    : 'LeyesMX - Buscador de Leyes Fiscales Mexicanas'
+  const seoDescription = hasSearched
+    ? `Resultados de búsqueda para "${urlQuery}" en leyes fiscales mexicanas: CFF, LISR, LIVA, RMF y más.`
+    : 'Busca y consulta el Código Fiscal, Ley del ISR, Ley del IVA, Resolución Miscelánea Fiscal y más leyes fiscales mexicanas.'
+
   return (
     <div className="space-y-8">
+      <Helmet>
+        <title>{seoTitle}</title>
+        <meta name="description" content={seoDescription} />
+        <meta property="og:title" content={seoTitle} />
+        <meta property="og:description" content={seoDescription} />
+      </Helmet>
+
       {/* Hero section - solo visible antes de buscar */}
       {!hasSearched && (
         <div className="py-12 text-center">

@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import { BookOpen, ChevronRight, ChevronDown, FileText, Home, CheckCircle, AlertTriangle, XCircle, Activity, Download, ChevronsUpDown, ChevronsDownUp, ToggleLeft, ToggleRight, ExternalLink } from 'lucide-react'
 import { useEstructuraLey, useLeyes, useVerificacionLey, useVerificacionIndice, useComparacionReglasIndice, useComparacionDivisionesIndice } from '@/hooks/useArticle'
 import type { Division, VerificacionDivision, VerificacionStatus, VerificacionIndice, ComparacionRegla, ComparacionDivision } from '@/lib/api'
@@ -278,8 +279,23 @@ export default function LeyIndex() {
   const esResolucion = leyInfo?.tipo === 'resolucion'
   const tipoContenido = esResolucion ? 'regla' : 'articulo'
 
+  // SEO
+  const seoTitle = leyInfo
+    ? `${ley} - ${leyInfo.nombre} | LeyesMX`
+    : `${ley} | LeyesMX`
+  const seoDescription = leyInfo
+    ? `Índice completo de ${leyInfo.nombre}. Consulta todos los artículos, títulos y capítulos.`
+    : `Índice de ${ley}. Consulta la estructura completa de la ley.`
+
   return (
     <div className="mx-auto max-w-4xl">
+      <Helmet>
+        <title>{seoTitle}</title>
+        <meta name="description" content={seoDescription} />
+        <meta property="og:title" content={seoTitle} />
+        <meta property="og:description" content={seoDescription} />
+      </Helmet>
+
       {/* Breadcrumbs */}
       <nav className="mb-6">
         <ol className="flex items-center gap-2 text-sm">

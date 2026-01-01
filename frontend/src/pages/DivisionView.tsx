@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import { Home, ChevronRight, BookOpen, ExternalLink, AlertTriangle, CheckCircle, XCircle, Filter, Eye, EyeOff, FileQuestion, FileText } from 'lucide-react'
 import { useDivisionPorPath, useArticulosDivision, useDivisionesHijas, useVerificacionDivision } from '@/hooks/useArticle'
 import ArticleContent from '@/components/ArticleContent'
@@ -299,8 +300,24 @@ export default function DivisionView() {
   // Parsear path_texto para breadcrumbs
   const partes = info.path_texto?.split(' > ') || []
 
+  // SEO dinámico
+  const seoTitle = info.nombre
+    ? `${info.nombre} - ${info.ley_codigo} | LeyesMX`
+    : `${info.div_tipo} ${info.numero} - ${info.ley_codigo} | LeyesMX`
+  const seoDescription = info.nombre
+    ? `${info.div_tipo} ${info.numero}: ${info.nombre}. ${info.total_articulos} ${esRegla ? 'reglas' : 'artículos'} de ${info.ley_nombre}.`
+    : `${info.div_tipo} ${info.numero} de ${info.ley_nombre}. ${info.total_articulos} ${esRegla ? 'reglas' : 'artículos'}.`
+
   return (
     <div className="mx-auto max-w-4xl prose-legal">
+      <Helmet>
+        <title>{seoTitle}</title>
+        <meta name="description" content={seoDescription} />
+        <meta property="og:title" content={seoTitle} />
+        <meta property="og:description" content={seoDescription} />
+        <meta property="og:type" content="article" />
+      </Helmet>
+
       {/* Breadcrumbs */}
       <nav className="mb-6">
         <ol className="flex items-center gap-2 text-sm flex-wrap">

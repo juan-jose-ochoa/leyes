@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import { Copy, Check, ExternalLink, BookOpen, ChevronLeft, ChevronRight, Home } from 'lucide-react'
 import { useState } from 'react'
 import { useArticle, useArticuloPorLey, useNavegacion, useDivisionesArticulo, useFraccionesArticulo } from '@/hooks/useArticle'
@@ -73,8 +74,22 @@ export default function Article() {
     )
   }
 
+  // SEO: título y descripción dinámicos
+  const seoTitle = `${etiquetaTipo} ${articulo.numero_raw} ${articulo.ley} - ${articulo.ley_nombre}`
+  const seoDescription = articulo.titulo
+    ? `${articulo.titulo}. ${articulo.contenido.slice(0, 150)}...`
+    : articulo.contenido.slice(0, 200) + '...'
+
   return (
     <div className="mx-auto max-w-4xl">
+      <Helmet>
+        <title>{seoTitle}</title>
+        <meta name="description" content={seoDescription} />
+        <meta property="og:title" content={seoTitle} />
+        <meta property="og:description" content={seoDescription} />
+        <meta property="og:type" content="article" />
+      </Helmet>
+
       {/* Breadcrumbs - Sticky en móvil */}
       <nav className="sticky top-0 z-10 -mx-4 px-4 py-3 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 mb-6 md:static md:bg-transparent md:dark:bg-transparent md:border-0 md:backdrop-blur-none md:mb-4">
         <ol className="flex items-center gap-1 text-sm overflow-x-auto">
