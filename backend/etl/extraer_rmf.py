@@ -29,16 +29,8 @@ except ImportError:
 
 BASE_DIR = Path(__file__).parent.parent.parent
 
-# Configuración de RMF
-RMF_CONFIG = {
-    "RMF": {
-        "nombre": "Resolución Miscelánea Fiscal",
-        "nombre_corto": "Miscelánea Fiscal",
-        "tipo": "resolucion",
-        "url_fuente": "https://www.sat.gob.mx/normatividad/tax-resolution",
-        "pdf_path": "backend/etl/data/rmf/rmf_2026_original.pdf",
-    },
-}
+# Importar configuración desde config.py
+from config import LEYES
 
 # Constantes de detección visual
 PAGINA_WIDTH = 612  # Ancho estándar carta
@@ -706,11 +698,15 @@ def main():
     solo_estructura = "--solo-estructura" in sys.argv
     solo_contenido = "--solo-contenido" in sys.argv
 
-    if codigo not in RMF_CONFIG:
-        print(f"Error: '{codigo}' no configurado. Disponibles: {list(RMF_CONFIG.keys())}")
+    if codigo != "RMF":
+        print(f"Error: Este script solo procesa RMF, no '{codigo}'")
         sys.exit(1)
 
-    config = RMF_CONFIG[codigo]
+    if codigo not in LEYES:
+        print(f"Error: '{codigo}' no configurado en config.py")
+        sys.exit(1)
+
+    config = LEYES[codigo]
     pdf_path = BASE_DIR / config["pdf_path"]
 
     if not pdf_path.exists():

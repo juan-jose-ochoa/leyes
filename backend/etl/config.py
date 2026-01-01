@@ -68,7 +68,7 @@ LEYES = {
         "nombre": "Resolución Miscelánea Fiscal",
         "nombre_corto": "Miscelánea Fiscal",
         "tipo": "resolucion",
-        "url_fuente": "https://www.sat.gob.mx/normatividad/tax-resolution",
+        "url_fuente": "https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf",
         "pdf_path": "backend/etl/data/rmf/rmf_2026_original.pdf",
 
         # Estructura jerárquica permitida
