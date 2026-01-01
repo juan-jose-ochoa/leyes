@@ -234,7 +234,7 @@ export default function LeyIndex() {
           <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-gray-500">
             <span>{leyInfo.total_articulos} {esResolucion ? 'reglas' : 'artículos'}</span>
             {leyInfo.ultima_reforma_dof && (
-              <span>Última reforma: {new Date(leyInfo.ultima_reforma_dof).toLocaleDateString('es-MX')}</span>
+              <span>Última reforma: {leyInfo.ultima_reforma_dof.split('-').reverse().join('/')}</span>
             )}
             {leyInfo.url_fuente && (
               <a

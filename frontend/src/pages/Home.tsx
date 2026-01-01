@@ -217,7 +217,7 @@ export default function Home() {
                           }
                         </span>
                         {leyItem.ultima_reforma_dof && (
-                          <span className="text-xs text-gray-400">{new Date(leyItem.ultima_reforma_dof).toLocaleDateString('es-MX')}</span>
+                          <span className="text-xs text-gray-400">{leyItem.ultima_reforma_dof.split('-').reverse().join('/')}</span>
                         )}
                       </div>
                     </div>
