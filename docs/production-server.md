@@ -100,6 +100,7 @@ db-uri = "postgres://leyesmx:CAMBIAR_PASSWORD@localhost:5432/digiapps"
 db-schemas = "leyesmx"
 db-anon-role = "web_anon"
 server-port = 3000
+server-cors-allowed-origins = "https://leyes.pages.dev"
 ```
 
 ### Crear rol anónimo
@@ -156,48 +157,56 @@ sudo apt install caddy
 caddy version
 ```
 
-### Configuración Caddy
+### Configuración DNS (Cloudflare)
+
+1. Agregar registro A:
+   - Tipo: `A`
+   - Nombre: `api`
+   - Contenido: `54.202.41.70`
+   - Proxy: Activado (nube naranja)
+
+2. Configurar SSL/TLS → Overview → **Full**
+
+### Crear Origin Certificate (Cloudflare)
+
+1. SSL/TLS → Origin Server → **Create Certificate**
+2. Dejar defaults (RSA 2048, 15 años, hostnames: `*.dominio.com` y `dominio.com`)
+3. Click **Create**
+4. Copiar el certificado (Origin Certificate) y la llave (Private Key)
+
+### LOCAL: Respaldar certificado
+
+Guardar ambos archivos localmente (la llave privada solo se muestra una vez).
+
+### SERVIDOR: Instalar certificado
+
+```bash
+sudo mkdir -p /etc/caddy/certs
+
+sudo nano /etc/caddy/certs/leyesfiscalesmexico.pem
+# Pegar el Origin Certificate
+
+sudo nano /etc/caddy/certs/leyesfiscalesmexico-key.pem
+# Pegar el Private Key
+
+sudo chmod 600 /etc/caddy/certs/*
+sudo chown caddy:caddy /etc/caddy/certs/*
+```
+
+### SERVIDOR: Configurar Caddyfile
 
 ```bash
 sudo nano /etc/caddy/Caddyfile
 ```
 
-#### Opción A: Con Cloudflare Proxy (recomendado)
-
-DNS en Cloudflare con proxy activado (nube naranja). Cloudflare maneja HTTPS.
-
-```caddy
-:80 {
-    handle /leyesmx/* {
-        uri strip_prefix /leyesmx
-        reverse_proxy localhost:3000
-
-        header Access-Control-Allow-Origin "https://leyes.pages.dev"
-        header Access-Control-Allow-Methods "GET, POST, OPTIONS"
-        header Access-Control-Allow-Headers "Content-Type"
-    }
-
-    handle {
-        respond "OK" 200
-    }
-}
-```
-
-Beneficios: DDoS protection, IP oculta, caché edge, analytics.
-
-#### Opción B: Sin Cloudflare Proxy (Let's Encrypt)
-
-DNS apuntando directamente a la IP (sin proxy). Caddy genera HTTPS automáticamente.
-
+Contenido:
 ```caddy
 api.leyesfiscalesmexico.com {
+    tls /etc/caddy/certs/leyesfiscalesmexico.pem /etc/caddy/certs/leyesfiscalesmexico-key.pem
+
     handle /leyesmx/* {
         uri strip_prefix /leyesmx
         reverse_proxy localhost:3000
-
-        header Access-Control-Allow-Origin "https://leyes.pages.dev"
-        header Access-Control-Allow-Methods "GET, POST, OPTIONS"
-        header Access-Control-Allow-Headers "Content-Type"
     }
 
     handle {
@@ -206,13 +215,25 @@ api.leyesfiscalesmexico.com {
 }
 ```
 
-Beneficios: Menos latencia, sin dependencia de terceros.
+Nota: CORS se configura en PostgREST (`server-cors-allowed-origins`), no en Caddy.
 
----
+Para agregar más dominios, crear otro Origin Certificate y agregar otro bloque:
+```caddy
+api.otrodominio.com {
+    tls /etc/caddy/certs/otrodominio.pem /etc/caddy/certs/otrodominio-key.pem
+    # ...
+}
+```
 
 ```bash
 sudo systemctl reload caddy
 sudo systemctl status caddy
+```
+
+### Verificar HTTPS
+
+```bash
+curl https://api.leyesfiscalesmexico.com/leyesmx/v_leyes
 ```
 
 ## 5. Importar datos
