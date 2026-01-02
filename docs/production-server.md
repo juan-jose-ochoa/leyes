@@ -164,7 +164,7 @@ sudo nano /etc/caddy/Caddyfile
 
 Contenido:
 ```caddy
-:80 {
+api.leyesfiscalesmexico.com {
     handle /leyesmx/* {
         uri strip_prefix /leyesmx
         reverse_proxy localhost:3000
@@ -180,7 +180,7 @@ Contenido:
 }
 ```
 
-Nota: Cambiar `Access-Control-Allow-Origin` al dominio final en producción.
+Caddy genera HTTPS automáticamente con Let's Encrypt.
 
 ```bash
 sudo systemctl reload caddy

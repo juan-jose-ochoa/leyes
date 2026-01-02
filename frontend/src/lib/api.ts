@@ -1,7 +1,7 @@
 // API Client for LeyesMX Backend
 
 const API_BASE = import.meta.env.PROD
-  ? 'http://54.202.41.70/leyesmx'
+  ? 'https://api.leyesfiscalesmexico.com/leyesmx'
   : '/leyesmx'
 
 export type LeyTipo = 'codigo' | 'ley' | 'reglamento' | 'resolucion' | 'anexo'
