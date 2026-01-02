@@ -244,6 +244,7 @@ export default function DivisionView() {
     <div className="mx-auto max-w-4xl prose-legal">
       <Helmet>
         <title>{seoTitle}</title>
+        <link rel="canonical" href={`https://leyesfiscalesmexico.com${location.pathname}`} />
         <meta name="description" content={seoDescription} />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />

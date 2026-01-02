@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from 'react'
-import { useSearchParams, Link } from 'react-router-dom'
+import { useSearchParams, useLocation, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { Scale, BookOpen, Search as SearchIcon, Zap } from 'lucide-react'
 import clsx from 'clsx'
@@ -11,6 +11,7 @@ import { useLeyes } from '@/hooks/useArticle'
 import type { SearchResult, LeyTipo } from '@/lib/api'
 
 export default function Home() {
+  const location = useLocation()
   const [searchParams, setSearchParams] = useSearchParams()
   const urlQuery = searchParams.get('q') || ''
 
@@ -74,6 +75,7 @@ export default function Home() {
     <div className="space-y-8">
       <Helmet>
         <title>{seoTitle}</title>
+        <link rel="canonical" href={`https://leyesfiscalesmexico.com${location.pathname}${location.search}`} />
         <meta name="description" content={seoDescription} />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />

@@ -1,5 +1,5 @@
 import { useState, useMemo, useCallback } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, useLocation, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { BookOpen, ChevronRight, ChevronDown, FileText, Home, ChevronsUpDown, ChevronsDownUp, ToggleLeft, ToggleRight, ExternalLink } from 'lucide-react'
 import { useEstructuraLey, useLeyes } from '@/hooks/useArticle'
@@ -95,6 +95,7 @@ function agruparPorTitulo(divisiones: Division[]): GrupoTitulo[] {
 
 export default function LeyIndex() {
   const { ley } = useParams<{ ley: string }>()
+  const location = useLocation()
   const { data: estructura, isLoading, error } = useEstructuraLey(ley ?? null)
   const { data: leyes } = useLeyes()
 
@@ -187,6 +188,7 @@ export default function LeyIndex() {
     <div className="mx-auto max-w-4xl">
       <Helmet>
         <title>{seoTitle}</title>
+        <link rel="canonical" href={`https://leyesfiscalesmexico.com${location.pathname}`} />
         <meta name="description" content={seoDescription} />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
