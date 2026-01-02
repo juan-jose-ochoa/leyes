@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { Copy, Check, ExternalLink, BookOpen, ChevronLeft, ChevronRight, Home } from 'lucide-react'
+import ReferenciasList from '@/components/ReferenciasList'
 import { useArticle, useArticuloPorLey, useNavegacion, useDivisionesArticulo, useFraccionesArticulo } from '@/hooks/useArticle'
 import ArticleContent from '@/components/ArticleContent'
 import ArticleToc from '@/components/ArticleToc'
@@ -262,15 +263,7 @@ export default function Article() {
         )}
 
         {articulo.referencias_legales && (
-          <div className="mt-6 rounded-lg bg-amber-50 p-4 dark:bg-amber-900/20">
-            <h3 className="mb-2 flex items-center gap-2 font-medium text-gray-900 dark:text-white">
-              <BookOpen className="h-4 w-4" />
-              Referencias Legales
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              {articulo.referencias_legales}
-            </p>
-          </div>
+          <ReferenciasList referencias={articulo.referencias_legales} />
         )}
       </div>
 

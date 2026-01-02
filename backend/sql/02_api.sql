@@ -720,3 +720,77 @@ END;
 $$ LANGUAGE plpgsql STABLE;
 
 GRANT EXECUTE ON FUNCTION leyesmx.division_por_path TO web_anon;
+
+-- ============================================================
+-- Función: buscar_referencias
+-- Parsea referencias legales tipo "CFF 27, LIVA 18-J, 18-M, RCFF 29, 30"
+-- y retorna info de cada artículo referenciado
+-- ============================================================
+CREATE OR REPLACE FUNCTION leyesmx.buscar_referencias(p_referencias TEXT)
+RETURNS TABLE(
+    ley_codigo VARCHAR,
+    numero VARCHAR,
+    titulo TEXT,
+    contenido TEXT,
+    encontrado BOOLEAN
+) AS $$
+DECLARE
+    v_ref TEXT;
+    v_ley VARCHAR;
+    v_num VARCHAR;
+    v_last_ley VARCHAR := NULL;
+    v_match TEXT[];
+BEGIN
+    -- Separar por comas y procesar cada referencia
+    FOREACH v_ref IN ARRAY string_to_array(p_referencias, ',')
+    LOOP
+        v_ref := trim(v_ref);
+        IF v_ref = '' THEN CONTINUE; END IF;
+
+        -- Intentar extraer LEY + NUMERO (ej: "CFF 27", "LIVA 18-J")
+        v_match := regexp_match(v_ref, '^([A-Z]{2,10})\s+(.+)$');
+
+        IF v_match IS NOT NULL THEN
+            v_ley := v_match[1];
+            v_num := trim(v_match[2]);
+            v_last_ley := v_ley;
+        ELSE
+            -- Solo número, usar última ley vista (ej: "30" después de "RCFF 29")
+            v_ley := v_last_ley;
+            v_num := v_ref;
+        END IF;
+
+        -- Si no hay ley, saltar
+        IF v_ley IS NULL THEN CONTINUE; END IF;
+
+        -- Buscar el artículo y retornar resultado
+        RETURN QUERY
+        SELECT
+            v_ley::VARCHAR as ley_codigo,
+            v_num::VARCHAR as numero,
+            a.titulo,
+            substring(
+                (SELECT string_agg(p.contenido, ' ' ORDER BY p.numero)
+                 FROM leyesmx.parrafos p
+                 WHERE p.ley = a.ley AND p.articulo_id = a.id AND p.padre_numero IS NULL),
+                1, 500
+            ) as contenido,
+            TRUE as encontrado
+        FROM leyesmx.articulos a
+        WHERE a.ley = v_ley AND a.numero = v_num
+        LIMIT 1;
+
+        -- Si no se encontró, retornar como no encontrado
+        IF NOT FOUND THEN
+            RETURN QUERY SELECT
+                v_ley::VARCHAR,
+                v_num::VARCHAR,
+                NULL::TEXT,
+                NULL::TEXT,
+                FALSE;
+        END IF;
+    END LOOP;
+END;
+$$ LANGUAGE plpgsql STABLE;
+
+GRANT EXECUTE ON FUNCTION leyesmx.buscar_referencias TO web_anon;
