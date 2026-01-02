@@ -1,6 +1,6 @@
 // API Client for LeyesMX Backend
 
-const API_BASE = '/api'
+const API_BASE = '/leyesmx'
 
 export type LeyTipo = 'codigo' | 'ley' | 'reglamento' | 'resolucion' | 'anexo'
 
