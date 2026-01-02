@@ -24,11 +24,6 @@ export default function ArticleToc({
     return buildTocEntries(withAnchors)
   }, [fracciones])
 
-  // No renderizar si no hay suficientes fracciones
-  if (tocEntries.length < minFractions) {
-    return null
-  }
-
   const handleChipClick = useCallback((anchorId: string) => {
     const element = document.getElementById(anchorId)
     if (element) {
@@ -42,6 +37,11 @@ export default function ArticleToc({
     e.stopPropagation()
     setExpandedId(prev => prev === id ? null : id)
   }, [])
+
+  // No renderizar si no hay suficientes fracciones (DESPUES de todos los hooks)
+  if (tocEntries.length < minFractions) {
+    return null
+  }
 
   return (
     <nav
