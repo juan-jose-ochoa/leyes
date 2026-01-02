@@ -162,7 +162,33 @@ caddy version
 sudo nano /etc/caddy/Caddyfile
 ```
 
-Contenido:
+#### Opción A: Con Cloudflare Proxy (recomendado)
+
+DNS en Cloudflare con proxy activado (nube naranja). Cloudflare maneja HTTPS.
+
+```caddy
+:80 {
+    handle /leyesmx/* {
+        uri strip_prefix /leyesmx
+        reverse_proxy localhost:3000
+
+        header Access-Control-Allow-Origin "https://leyes.pages.dev"
+        header Access-Control-Allow-Methods "GET, POST, OPTIONS"
+        header Access-Control-Allow-Headers "Content-Type"
+    }
+
+    handle {
+        respond "OK" 200
+    }
+}
+```
+
+Beneficios: DDoS protection, IP oculta, caché edge, analytics.
+
+#### Opción B: Sin Cloudflare Proxy (Let's Encrypt)
+
+DNS apuntando directamente a la IP (sin proxy). Caddy genera HTTPS automáticamente.
+
 ```caddy
 api.leyesfiscalesmexico.com {
     handle /leyesmx/* {
@@ -180,7 +206,9 @@ api.leyesfiscalesmexico.com {
 }
 ```
 
-Caddy genera HTTPS automáticamente con Let's Encrypt.
+Beneficios: Menos latencia, sin dependencia de terceros.
+
+---
 
 ```bash
 sudo systemctl reload caddy
