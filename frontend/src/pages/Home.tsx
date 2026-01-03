@@ -1,14 +1,70 @@
-import { useState, useCallback, useEffect } from 'react'
+import { useState, useCallback, useEffect, useMemo } from 'react'
 import { useSearchParams, useLocation, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { Scale, BookOpen, Search as SearchIcon, Zap } from 'lucide-react'
+import { Scale, BookOpen, Search as SearchIcon, Zap, ChevronRight } from 'lucide-react'
 import clsx from 'clsx'
 import SearchBar from '@/components/SearchBar'
 import ResultList from '@/components/ResultList'
 import ArticlePanel from '@/components/ArticlePanel'
 import { useSearch } from '@/hooks/useSearch'
 import { useLeyes } from '@/hooks/useArticle'
-import type { SearchResult, LeyTipo } from '@/lib/api'
+import type { SearchResult, LeyTipo, Ley } from '@/lib/api'
+import { LEY_BASE, CATEGORIA, NOMBRE_DISPLAY, CATEGORIA_INFO, type Categoria } from '@/lib/leyesConfig'
+
+// Ley con reglamentos anidados y nombre para mostrar
+interface LeyConReglamentos extends Ley {
+  reglamentos: Ley[]
+  displayName: string
+}
+
+// Grupo de leyes por categoría
+interface GrupoCategoria {
+  categoria: Categoria
+  leyes: LeyConReglamentos[]
+}
+
+// Agrupa leyes por categoría con reglamentos anidados
+function agruparLeyes(leyes: Ley[]): GrupoCategoria[] {
+  // 1. Separar leyes principales de reglamentos
+  const reglamentosPorBase = new Map<string, Ley[]>()
+  const leyesPrincipales: Ley[] = []
+
+  for (const ley of leyes) {
+    const leyBase = LEY_BASE[ley.codigo]
+    if (leyBase) {
+      const arr = reglamentosPorBase.get(leyBase) || []
+      arr.push(ley)
+      reglamentosPorBase.set(leyBase, arr)
+    } else {
+      leyesPrincipales.push(ley)
+    }
+  }
+
+  // 2. Agrupar por categoría
+  const porCategoria = new Map<Categoria, LeyConReglamentos[]>()
+
+  for (const ley of leyesPrincipales) {
+    const cat = CATEGORIA[ley.codigo] || 'fiscal'
+    const leyConRegs: LeyConReglamentos = {
+      ...ley,
+      reglamentos: reglamentosPorBase.get(ley.codigo) || [],
+      displayName: NOMBRE_DISPLAY[ley.codigo] || ley.nombre_corto || ley.codigo,
+    }
+
+    const arr = porCategoria.get(cat) || []
+    arr.push(leyConRegs)
+    porCategoria.set(cat, arr)
+  }
+
+  // 3. Ordenar y retornar
+  const orden: Categoria[] = ['fiscal', 'laboral', 'constitucional']
+  return orden
+    .filter(cat => porCategoria.has(cat))
+    .map(cat => ({
+      categoria: cat,
+      leyes: porCategoria.get(cat)!,
+    }))
+}
 
 export default function Home() {
   const location = useLocation()
@@ -181,53 +237,8 @@ export default function Home() {
             />
           </div>
 
-          {/* Lista de leyes disponibles */}
-          <div className="mt-12">
-            <h2 className="mb-6 text-center text-2xl font-bold text-gray-900 dark:text-white">
-              Leyes disponibles
-            </h2>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {leyes.map((leyItem) => (
-                <Link
-                  key={leyItem.codigo}
-                  to={`/${leyItem.codigo}`}
-                  className="card text-left transition-all hover:border-primary-300 hover:shadow-md dark:hover:border-primary-700"
-                >
-                  <div className="flex items-center gap-3">
-                    <div
-                      className={clsx(
-                        'flex h-10 w-10 items-center justify-center rounded-lg text-sm font-bold text-white',
-                        leyItem.tipo === 'anexo'
-                          ? 'bg-orange-600'
-                          : leyItem.tipo === 'resolucion'
-                            ? 'bg-amber-600'
-                            : leyItem.tipo === 'ley' || leyItem.tipo === 'codigo'
-                              ? 'bg-primary-600'
-                              : 'bg-blue-600'
-                      )}
-                    >
-                      {leyItem.codigo.length > 4 ? leyItem.codigo.slice(0, 3) : leyItem.codigo}
-                    </div>
-                    <div className="min-w-0 flex-1">
-                      <h3 className="line-clamp-2 font-medium text-gray-900 dark:text-white">
-                        {leyItem.nombre}
-                      </h3>
-                      <div className="flex items-center justify-between">
-                        <span className="text-sm text-gray-500">
-                          {leyItem.total_articulos} {
-                            leyItem.tipo === 'resolucion' ? 'reglas' : 'artículos'
-                          }
-                        </span>
-                        {leyItem.ultima_reforma_dof && (
-                          <span className="text-xs text-gray-400">{leyItem.ultima_reforma_dof.split('-').reverse().join('/')}</span>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
+          {/* Lista de leyes agrupadas por categoría */}
+          <LeyesPorCategoria leyes={leyes} />
         </div>
       )}
     </div>
@@ -252,6 +263,97 @@ function StatCard({
         <p className="text-2xl font-bold text-gray-900 dark:text-white">{value}</p>
         <p className="text-sm text-gray-500">{label}</p>
       </div>
+    </div>
+  )
+}
+
+// Componente para mostrar leyes agrupadas por categoría
+function LeyesPorCategoria({ leyes }: { leyes: Ley[] }) {
+  const grupos = useMemo(() => agruparLeyes(leyes), [leyes])
+
+  return (
+    <div className="mt-12 space-y-10">
+      {grupos.map((grupo) => {
+        const info = CATEGORIA_INFO[grupo.categoria]
+        return (
+          <div key={grupo.categoria}>
+            {/* Header de categoría */}
+            <div className="mb-4 flex items-center gap-3">
+              <div className={clsx('h-1 w-8 rounded-full', info.color)} />
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white">
+                {info.nombre}
+              </h2>
+            </div>
+
+            {/* Grid de leyes */}
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {grupo.leyes.map((ley) => (
+                <LeyCard key={ley.codigo} ley={ley} categoriaColor={info.color} />
+              ))}
+            </div>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+// Card individual de ley con reglamentos anidados
+function LeyCard({ ley, categoriaColor }: { ley: LeyConReglamentos; categoriaColor: string }) {
+  return (
+    <div className="card overflow-hidden p-0">
+      {/* Ley principal */}
+      <Link
+        to={`/${ley.codigo}`}
+        className="block p-4 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800/50"
+      >
+        <div className="flex items-start gap-3">
+          <div
+            className={clsx(
+              'flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-sm font-bold text-white',
+              categoriaColor
+            )}
+          >
+            {ley.codigo.length > 4 ? ley.codigo.slice(0, 3) : ley.codigo}
+          </div>
+          <div className="min-w-0 flex-1">
+            <h3 className="font-semibold text-gray-900 dark:text-white">
+              {ley.displayName}
+            </h3>
+            <p className="mt-0.5 text-xs text-gray-500 line-clamp-2">
+              {ley.nombre}
+            </p>
+            <div className="mt-2 flex items-center gap-3 text-xs text-gray-400">
+              <span>{ley.total_articulos} {ley.tipo === 'resolucion' ? 'reglas' : 'arts.'}</span>
+              {ley.ultima_reforma_dof && (
+                <span>{ley.ultima_reforma_dof.split('-').reverse().join('/')}</span>
+              )}
+            </div>
+          </div>
+          <ChevronRight className="h-5 w-5 shrink-0 text-gray-300 dark:text-gray-600" />
+        </div>
+      </Link>
+
+      {/* Reglamentos anidados */}
+      {ley.reglamentos.length > 0 && (
+        <div className="border-t border-gray-100 bg-gray-50/50 dark:border-gray-800 dark:bg-gray-800/30">
+          {ley.reglamentos.map((reg) => (
+            <Link
+              key={reg.codigo}
+              to={`/${reg.codigo}`}
+              className="flex items-center gap-2 px-4 py-2 text-sm transition-colors hover:bg-gray-100 dark:hover:bg-gray-700/50"
+            >
+              <div className="h-1.5 w-1.5 rounded-full bg-gray-400" />
+              <span className="font-medium text-gray-700 dark:text-gray-300">
+                {NOMBRE_DISPLAY[reg.codigo] || reg.nombre_corto || reg.codigo}
+              </span>
+              <span className="text-xs text-gray-400">
+                {reg.total_articulos} arts.
+              </span>
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
