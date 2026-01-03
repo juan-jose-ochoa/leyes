@@ -39,34 +39,22 @@ function agruparPorTitulo(divisiones: Division[]): GrupoTitulo[] {
   const grupos: GrupoTitulo[] = []
   let grupoActual: GrupoTitulo | null = null
 
-  // Filtrar divisiones con contenido
-  const todasDivisiones: DivisionConEstado[] = divisiones
-    .filter((div) => div.total_articulos > 0 || div.primer_articulo)
+  // Paso 1: Pre-agrupar secciones por padre_id (O(n), sin mutación)
+  const seccionesPorPadre = new Map<number, DivisionConEstado[]>()
+  for (const div of divisiones) {
+    if (div.tipo === 'seccion' && div.padre_id && (div.total_articulos > 0 || div.primer_articulo)) {
+      const arr = seccionesPorPadre.get(div.padre_id) || []
+      arr.push(div)
+      seccionesPorPadre.set(div.padre_id, arr)
+    }
+  }
+
+  // Paso 2: Filtrar y ordenar no-secciones
+  const noSecciones = divisiones
+    .filter((div) => div.tipo !== 'seccion' && (div.total_articulos > 0 || div.primer_articulo))
     .sort((a, b) => compararNumeros(a.numero, b.numero))
 
-  // Crear mapa de divisiones por id para encontrar padres
-  const divisionesById = new Map<number, DivisionConEstado>()
-  for (const div of todasDivisiones) {
-    if (typeof div.id === 'number') {
-      divisionesById.set(div.id, div)
-    }
-  }
-
-  // Separar secciones de otras divisiones
-  const secciones = todasDivisiones.filter(d => d.tipo === 'seccion')
-  const noSecciones = todasDivisiones.filter(d => d.tipo !== 'seccion')
-
-  // Asignar secciones a sus capítulos padre
-  for (const seccion of secciones) {
-    if (seccion.padre_id && typeof seccion.padre_id === 'number') {
-      const capitulo = divisionesById.get(seccion.padre_id)
-      if (capitulo && capitulo.tipo === 'capitulo') {
-        if (!capitulo.secciones) capitulo.secciones = []
-        capitulo.secciones.push(seccion)
-      }
-    }
-  }
-
+  // Paso 3: Construir grupos, creando nuevos objetos para capítulos con secciones
   for (const div of noSecciones) {
     if (div.tipo === 'titulo') {
       // Nuevo grupo de título
@@ -75,12 +63,17 @@ function agruparPorTitulo(divisiones: Division[]): GrupoTitulo[] {
       }
       grupoActual = { titulo: div, hijos: [] }
     } else {
-      // Es capítulo o regla de título 1 (secciones ya están anidadas)
+      // Es capítulo: crear nuevo objeto con secciones (inmutable)
+      const secciones = seccionesPorPadre.get(div.id)
+      const divConSecciones: DivisionConEstado = secciones
+        ? { ...div, secciones }
+        : div
+
       if (grupoActual) {
-        grupoActual.hijos.push(div)
+        grupoActual.hijos.push(divConSecciones)
       } else {
         // No hay título padre, crear grupo sin título
-        grupos.push({ titulo: null, hijos: [div] })
+        grupos.push({ titulo: null, hijos: [divConSecciones] })
       }
     }
   }
