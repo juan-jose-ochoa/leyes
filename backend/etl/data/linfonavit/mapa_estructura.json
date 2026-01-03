@@ -16,13 +16,13 @@
   ],
   "_generado_por": "extraer_mapa.py",
   "titulos": {
-    "PRELIMINAR": {
+    "UNICO": {
       "nombre": null,
       "pagina": 1,
       "capitulos": {
-        "VII": {
-          "nombre": "Aportaciones para el Fondo Nacional de la Vivienda para los Trabajadores.",
-          "pagina": 47,
+        "UNICO": {
+          "nombre": null,
+          "pagina": 1,
           "articulos": [
             "1o",
             "2o",
@@ -120,18 +120,13 @@
             "70",
             "71"
           ]
-        },
-        "XV": {
-          "nombre": null,
-          "pagina": 48,
-          "articulos": []
         }
       }
     }
   },
   "estadisticas": {
     "titulos": 1,
-    "capitulos": 2,
+    "capitulos": 1,
     "secciones": 0,
     "articulos_vigentes": 90,
     "articulos_derogados": 5,

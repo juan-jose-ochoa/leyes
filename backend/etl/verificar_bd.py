@@ -168,17 +168,31 @@ def verificar_articulos_huerfanos(conn, codigo: str) -> tuple:
 
 
 def verificar_divisiones_vacias(conn, codigo: str) -> tuple:
-    """Verifica que no haya divisiones (capítulos) sin artículos."""
+    """Verifica que no haya divisiones (capítulos) sin artículos.
+
+    Un capítulo NO está vacío si:
+    - Tiene artículos directos, O
+    - Tiene secciones que contienen artículos
+    """
     errores = []
 
     with conn.cursor() as cur:
+        # Capítulos sin artículos directos Y sin secciones con artículos
         cur.execute("""
             SELECT d.tipo, d.numero, d.nombre
             FROM leyesmx.divisiones d
-            LEFT JOIN leyesmx.articulos a ON a.division_id = d.id AND a.ley = d.ley
             WHERE d.ley = %s AND d.tipo = 'capitulo'
-            GROUP BY d.id, d.tipo, d.numero, d.nombre
-            HAVING COUNT(a.id) = 0
+              -- Sin artículos directos
+              AND NOT EXISTS (
+                  SELECT 1 FROM leyesmx.articulos a
+                  WHERE a.division_id = d.id AND a.ley = d.ley
+              )
+              -- Sin secciones con artículos
+              AND NOT EXISTS (
+                  SELECT 1 FROM leyesmx.divisiones sec
+                  JOIN leyesmx.articulos a ON a.division_id = sec.id AND a.ley = sec.ley
+                  WHERE sec.padre_id = d.id AND sec.ley = d.ley AND sec.tipo = 'seccion'
+              )
         """, (codigo,))
 
         vacias = cur.fetchall()

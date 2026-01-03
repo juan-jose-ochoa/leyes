@@ -420,7 +420,25 @@ def extraer_mapa(codigo: str) -> list[TituloRef]:
     # 3. Extraer estructura (Títulos/Capítulos)
     print("   Extrayendo estructura jerárquica...")
     pagina_fin = config.get("pagina_fin_contenido")
+
+    # Si no hay pagina_fin configurada, detectar desde outline (TRANSITORIOS)
+    if not pagina_fin:
+        toc = doc.get_toc()
+        for level, title, page in toc:
+            if title == transitorios_marcador or title == "TRANSITORIOS_DE_DECRETOS_DE_REFORMA":
+                pagina_fin = page
+                break
+
     titulos = extraer_estructura(doc, config, pagina_fin)
+
+    # Si no hay estructura pero sí artículos, crear título/capítulo virtual
+    if not titulos and articulos:
+        print("   Sin estructura jerárquica, creando contenedor virtual...")
+        titulo_virtual = TituloRef(numero="UNICO", nombre=None, pagina=1)
+        cap_virtual = CapituloRef(numero="UNICO", nombre=None, pagina=1)
+        titulo_virtual.capitulos.append(cap_virtual)
+        titulos.append(titulo_virtual)
+
     print(f"   Encontrados: {len(titulos)} títulos, {sum(len(t.capitulos) for t in titulos)} capítulos")
 
     # 4. Asignar TODOS los artículos a capítulos (incluyendo derogados)
