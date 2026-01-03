@@ -27,13 +27,30 @@ from config import get_config
 BASE_DIR = Path(__file__).parent.parent.parent
 
 
+def obtener_coordenada_y(page, patron: str) -> float:
+    """
+    Obtiene la coordenada Y de un texto en la página usando el patrón regex.
+    Retorna la coordenada Y del bbox (posición vertical) o 99999 si no encuentra.
+    """
+    blocks = page.get_text("dict")["blocks"]
+
+    for block in blocks:
+        if "lines" not in block:
+            continue
+        for line in block["lines"]:
+            texto_linea = "".join([span["text"] for span in line["spans"]])
+            if re.search(patron, texto_linea, re.IGNORECASE):
+                return line["bbox"][1]  # coordenada Y superior
+
+    return 99999.0  # No encontrado, poner al final
+
+
 @dataclass
 class ArticuloRef:
     """Referencia a un artículo."""
     numero: str
     pagina: int
     derogado: bool = False
-    transitorio: bool = False
 
 
 @dataclass
@@ -98,25 +115,23 @@ def normalizar_numero(titulo_outline: str) -> str:
     return ''.join(resultado)
 
 
-def extraer_articulos_outline(doc) -> tuple[list[ArticuloRef], list[ArticuloRef]]:
+def extraer_articulos_outline(doc, transitorios_marcador: str = "TRANSITORIOS") -> list[ArticuloRef]:
     """
     Extrae artículos del outline del PDF.
 
+    Args:
+        doc: Documento PDF abierto con fitz
+        transitorios_marcador: Texto del outline que marca fin de artículos
+
     Returns:
-        Tupla de (articulos_regulares, transitorios)
+        Lista de artículos
     """
     toc = doc.get_toc()
     articulos = []
-    transitorios = []
-    en_transitorios = False
 
     for level, title, page in toc:
-        # Detectar sección de transitorios
-        if title == "TRANSITORIOS":
-            en_transitorios = True
-            continue
-        if title == "TRANSITORIOS_DE_DECRETOS_DE_REFORMA":
-            # Ignorar transitorios de decretos de reforma por ahora
+        # Detectar fin de artículos (sección de transitorios)
+        if title == transitorios_marcador or title == "TRANSITORIOS_DE_DECRETOS_DE_REFORMA":
             break
 
         # Solo procesar artículos
@@ -124,19 +139,9 @@ def extraer_articulos_outline(doc) -> tuple[list[ArticuloRef], list[ArticuloRef]
             continue
 
         numero = normalizar_numero(title)
+        articulos.append(ArticuloRef(numero=numero, pagina=page))
 
-        articulo = ArticuloRef(
-            numero=numero,
-            pagina=page,
-            transitorio=en_transitorios
-        )
-
-        if en_transitorios:
-            transitorios.append(articulo)
-        else:
-            articulos.append(articulo)
-
-    return articulos, transitorios
+    return articulos
 
 
 def marcar_derogados(doc, articulos: list[ArticuloRef]) -> None:
@@ -297,58 +302,55 @@ def asignar_articulos_a_capitulos(titulos: list[TituloRef], articulos: list[Arti
             )
             titulo.capitulos.append(cap_virtual)
 
-    # Crear lista de puntos de corte con posición en texto
+    # Crear lista de puntos de corte con coordenada Y
     # Incluye tanto capítulos como secciones
-    puntos_corte = []  # (pagina, pos, objeto, tipo)
+    puntos_corte = []  # (pagina, coordenada_y, objeto, tipo)
 
     for titulo in titulos:
         for cap in titulo.capitulos:
-            # Buscar posición exacta del capítulo en la página
+            # Obtener coordenada Y del capítulo en la página
             page_idx = cap.pagina - 1
             if page_idx >= 0 and page_idx < len(doc):
-                texto = doc[page_idx].get_text()
+                page = doc[page_idx]
                 # Para capítulos virtuales (UNICO), buscar posición del TÍTULO
                 if cap.numero == "UNICO" and cap.pagina == titulo.pagina:
-                    patron = rf'T[IÍ]TULO\s+{re.escape(titulo.numero)}'
+                    patron = rf'T[IÍ]TULO\s+{re.escape(titulo.numero)}\b'
                 else:
-                    patron = rf'CAP[IÍ]TULO\s+{re.escape(cap.numero)}'
-                match = re.search(patron, texto, re.IGNORECASE)
-                pos_en_pagina = match.start() if match else 0
+                    patron = rf'CAP[IÍ]TULO\s+{re.escape(cap.numero)}\b'
+                coord_y = obtener_coordenada_y(page, patron)
             else:
-                pos_en_pagina = 0
+                coord_y = 0
 
             # Si el capítulo tiene secciones, agregar las secciones como puntos de corte
             if cap.secciones:
                 for sec in cap.secciones:
                     page_idx = sec.pagina - 1
                     if page_idx >= 0 and page_idx < len(doc):
-                        texto = doc[page_idx].get_text()
+                        page = doc[page_idx]
                         patron = rf'SECCI[OÓ]N\s+{re.escape(sec.numero)}'
-                        match = re.search(patron, texto, re.IGNORECASE)
-                        pos_sec = match.start() if match else 0
+                        coord_y_sec = obtener_coordenada_y(page, patron)
                     else:
-                        pos_sec = 0
-                    puntos_corte.append((sec.pagina, pos_sec, sec, 'seccion'))
+                        coord_y_sec = 0
+                    puntos_corte.append((sec.pagina, coord_y_sec, sec, 'seccion'))
             else:
                 # Sin secciones, el capítulo es el punto de corte
-                puntos_corte.append((cap.pagina, pos_en_pagina, cap, 'capitulo'))
+                puntos_corte.append((cap.pagina, coord_y, cap, 'capitulo'))
 
     puntos_corte.sort(key=lambda x: (x[0], x[1]))
 
-    # Crear índice de posición de artículos en página
+    # Crear índice de coordenada Y de artículos en página
     articulos_con_pos = []
     for art in articulos:
         page_idx = art.pagina - 1
         if page_idx >= 0 and page_idx < len(doc):
-            texto = doc[page_idx].get_text()
-            # Buscar posición del artículo en el texto
-            num_escapado = art.numero.replace('-', '[-–]?').replace(' ', r'[\s_]*')
-            patron = rf'Artículo[\s_]+{num_escapado}'
-            match = re.search(patron, texto, re.IGNORECASE)
-            pos_en_pagina = match.start() if match else 0
+            page = doc[page_idx]
+            # Buscar coordenada Y del artículo
+            num_escapado = art.numero.replace('-', r'\.?[-–]').replace(' ', r'[\s_]*')
+            patron = rf'Art[íi]culo[\s_]+{num_escapado}'
+            coord_y = obtener_coordenada_y(page, patron)
         else:
-            pos_en_pagina = 0
-        articulos_con_pos.append((art, pos_en_pagina))
+            coord_y = 0
+        articulos_con_pos.append((art, coord_y))
 
     # Asignar cada artículo al punto de corte correspondiente (capítulo o sección)
     for art, pos_art in articulos_con_pos:
@@ -370,14 +372,14 @@ def asignar_articulos_a_capitulos(titulos: list[TituloRef], articulos: list[Arti
             puntos_corte[0][2].articulos.append(art)
 
 
-def extraer_mapa(codigo: str) -> tuple[list[TituloRef], list[ArticuloRef]]:
+def extraer_mapa(codigo: str) -> list[TituloRef]:
     """
     Extrae el mapa estructural completo del PDF.
 
     Usa el outline del PDF como fuente autoritativa para artículos.
 
     Returns:
-        Tupla de (titulos, transitorios)
+        Lista de títulos con su estructura jerárquica
     """
     config = get_config(codigo)
     pdf_path = BASE_DIR / config["pdf_path"]
@@ -390,8 +392,9 @@ def extraer_mapa(codigo: str) -> tuple[list[TituloRef], list[ArticuloRef]]:
 
     # 1. Extraer artículos del outline (fuente autoritativa)
     print("   Extrayendo artículos del outline...")
-    articulos, transitorios = extraer_articulos_outline(doc)
-    print(f"   Encontrados: {len(articulos)} artículos, {len(transitorios)} transitorios")
+    transitorios_marcador = config.get("transitorios_marcador", "TRANSITORIOS")
+    articulos = extraer_articulos_outline(doc, transitorios_marcador)
+    print(f"   Encontrados: {len(articulos)} artículos")
 
     # 1b. Fallback: si outline vacío, usar contenido.json (generado por extraer.py)
     if not articulos:
@@ -404,13 +407,9 @@ def extraer_mapa(codigo: str) -> tuple[list[TituloRef], list[ArticuloRef]]:
                 articulos.append(ArticuloRef(
                     numero=art["numero"],
                     pagina=art.get("pagina", 1),
-                    derogado=False,
-                    transitorio=art.get("tipo") == "transitorio"
+                    derogado=False
                 ))
-            # Separar transitorios
-            transitorios = [a for a in articulos if a.transitorio]
-            articulos = [a for a in articulos if not a.transitorio]
-            print(f"   Cargados: {len(articulos)} artículos, {len(transitorios)} transitorios")
+            print(f"   Cargados: {len(articulos)} artículos")
 
     # 2. Marcar derogados (in-place)
     print("   Detectando artículos derogados...")
@@ -430,10 +429,10 @@ def extraer_mapa(codigo: str) -> tuple[list[TituloRef], list[ArticuloRef]]:
 
     doc.close()
 
-    return titulos, transitorios
+    return titulos
 
 
-def imprimir_mapa(titulos: list[TituloRef], transitorios: list[ArticuloRef]):
+def imprimir_mapa(titulos: list[TituloRef]):
     """Imprime el mapa en formato legible."""
     total_articulos = 0
     total_derogados = 0
@@ -477,9 +476,6 @@ def imprimir_mapa(titulos: list[TituloRef], transitorios: list[ArticuloRef]):
                 else:
                     print(f"    (sin artículos detectados)")
 
-    if transitorios:
-        print(f"\nTRANSITORIOS ({len(transitorios)} artículos)")
-
     print(f"\n{'='*60}")
     print(f"RESUMEN:")
     print(f"  Títulos:     {len(titulos)}")
@@ -487,10 +483,9 @@ def imprimir_mapa(titulos: list[TituloRef], transitorios: list[ArticuloRef]):
     if total_secciones > 0:
         print(f"  Secciones:   {total_secciones}")
     print(f"  Artículos:   {total_articulos} ({total_articulos - total_derogados} vigentes, {total_derogados} derogados)")
-    print(f"  Transitorios:{len(transitorios)}")
 
 
-def generar_json(titulos: list[TituloRef], transitorios: list[ArticuloRef]) -> dict:
+def generar_json(titulos: list[TituloRef]) -> dict:
     """Genera estructura JSON para guardar."""
     resultado = {
         "titulos": {}
@@ -535,9 +530,6 @@ def generar_json(titulos: list[TituloRef], transitorios: list[ArticuloRef]) -> d
 
         resultado["titulos"][titulo.numero] = titulo_data
 
-    # Transitorios
-    resultado["transitorios"] = [a.numero for a in transitorios]
-
     # Estadísticas
     resultado["estadisticas"] = {
         "titulos": len(titulos),
@@ -545,7 +537,6 @@ def generar_json(titulos: list[TituloRef], transitorios: list[ArticuloRef]) -> d
         "secciones": total_secciones,
         "articulos_vigentes": total_articulos - total_derogados,
         "articulos_derogados": total_derogados,
-        "articulos_transitorios": len(transitorios),
         "total": total_articulos
     }
 
@@ -566,13 +557,13 @@ def main():
 
     print("\n1. Procesando PDF...")
     try:
-        titulos, transitorios = extraer_mapa(codigo)
+        titulos = extraer_mapa(codigo)
     except Exception as e:
         print(f"ERROR: {e}")
         sys.exit(1)
 
     print("\n2. Mapa estructural:")
-    imprimir_mapa(titulos, transitorios)
+    imprimir_mapa(titulos)
 
     # Guardar JSON
     config = get_config(codigo)
@@ -580,14 +571,35 @@ def main():
     mapa_path = output_dir / "mapa_estructura.json"
 
     print(f"\n3. Guardando {mapa_path.name}...")
-    mapa_json = generar_json(titulos, transitorios)
-    mapa_json["ley"] = codigo
-    mapa_json["fuente"] = config.get("url_fuente", "")
-    mapa_json["metodo"] = "outline"
-    mapa_json["notas"] = "Extraído del outline del PDF. Fuente autoritativa."
+    mapa_json = generar_json(titulos)
+
+    # Advertencia sagrada - este archivo es fuente única de verdad
+    mapa_json_final = {
+        "_advertencia": [
+            "╔══════════════════════════════════════════════════════════════════╗",
+            "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
+            "║                                                                  ║",
+            "║  NO MODIFICAR MANUALMENTE                                        ║",
+            "║                                                                  ║",
+            "║  Este archivo es la ÚNICA fuente de verdad para la estructura.  ║",
+            "║  La base de datos se regenera desde aquí.                       ║",
+            "║                                                                  ║",
+            "║  Si el contenido es incorrecto:                                 ║",
+            "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
+            "║                                                                  ║",
+            "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
+            "╚══════════════════════════════════════════════════════════════════╝"
+        ],
+        "_generado_por": "extraer_mapa.py",
+        **mapa_json
+    }
+    mapa_json_final["ley"] = codigo
+    mapa_json_final["fuente"] = config.get("url_fuente", "")
+    mapa_json_final["metodo"] = "outline"
+    mapa_json_final["notas"] = "Extraído del outline del PDF. Fuente autoritativa."
 
     with open(mapa_path, 'w', encoding='utf-8') as f:
-        json.dump(mapa_json, f, ensure_ascii=False, indent=2)
+        json.dump(mapa_json_final, f, ensure_ascii=False, indent=2)
 
     print("   Guardado")
     print("\n" + "=" * 60)

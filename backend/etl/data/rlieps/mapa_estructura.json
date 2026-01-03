@@ -1,4 +1,20 @@
 {
+  "_advertencia": [
+    "╔══════════════════════════════════════════════════════════════════╗",
+    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
+    "║                                                                  ║",
+    "║  NO MODIFICAR MANUALMENTE                                        ║",
+    "║                                                                  ║",
+    "║  Este archivo es la ÚNICA fuente de verdad para la estructura.  ║",
+    "║  La base de datos se regenera desde aquí.                       ║",
+    "║                                                                  ║",
+    "║  Si el contenido es incorrecto:                                 ║",
+    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
+    "║                                                                  ║",
+    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
+    "╚══════════════════════════════════════════════════════════════════╝"
+  ],
+  "_generado_por": "extraer_mapa.py",
   "titulos": {
     "PRELIMINAR": {
       "nombre": null,
@@ -62,14 +78,12 @@
       }
     }
   },
-  "transitorios": [],
   "estadisticas": {
     "titulos": 1,
     "capitulos": 6,
     "secciones": 0,
     "articulos_vigentes": 19,
     "articulos_derogados": 0,
-    "articulos_transitorios": 0,
     "total": 19
   },
   "ley": "RLIEPS",

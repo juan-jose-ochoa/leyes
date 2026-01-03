@@ -769,13 +769,34 @@ def main():
         print(f"\n7a. Guardando {mapa_path.name}...")
 
         mapa_json = generar_json_estructura(titulos)
-        mapa_json["ley"] = codigo
-        mapa_json["fuente"] = config.get("url_fuente", "")
-        mapa_json["metodo"] = "texto"
-        mapa_json["notas"] = "Extraído del texto del PDF (sin outline)."
+
+        # Advertencia sagrada - este archivo es fuente única de verdad
+        mapa_json_final = {
+            "_advertencia": [
+                "╔══════════════════════════════════════════════════════════════════╗",
+                "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
+                "║                                                                  ║",
+                "║  NO MODIFICAR MANUALMENTE                                        ║",
+                "║                                                                  ║",
+                "║  Este archivo es la ÚNICA fuente de verdad para la estructura.  ║",
+                "║  La base de datos se regenera desde aquí.                       ║",
+                "║                                                                  ║",
+                "║  Si el contenido es incorrecto:                                 ║",
+                "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
+                "║                                                                  ║",
+                "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
+                "╚══════════════════════════════════════════════════════════════════╝"
+            ],
+            "_generado_por": "extraer_rmf.py",
+            **mapa_json
+        }
+        mapa_json_final["ley"] = codigo
+        mapa_json_final["fuente"] = config.get("url_fuente", "")
+        mapa_json_final["metodo"] = "texto"
+        mapa_json_final["notas"] = "Extraído del texto del PDF (sin outline)."
 
         with open(mapa_path, 'w', encoding='utf-8') as f:
-            json.dump(mapa_json, f, ensure_ascii=False, indent=2)
+            json.dump(mapa_json_final, f, ensure_ascii=False, indent=2)
         print("   Guardado")
 
     if not solo_estructura and contenido:
@@ -783,21 +804,42 @@ def main():
         print(f"\n7b. Guardando {contenido_path.name}...")
 
         contenido_json = generar_json_contenido(titulos, contenido)
-        contenido_json["ley"] = codigo
-        contenido_json["fuente"] = config.get("url_fuente", "")
+
+        # Advertencia sagrada - este archivo es fuente única de verdad
+        contenido_json_final = {
+            "_advertencia": [
+                "╔══════════════════════════════════════════════════════════════════╗",
+                "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
+                "║                                                                  ║",
+                "║  NO MODIFICAR MANUALMENTE                                        ║",
+                "║                                                                  ║",
+                "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
+                "║  La base de datos se regenera desde aquí.                       ║",
+                "║                                                                  ║",
+                "║  Si el contenido es incorrecto:                                 ║",
+                "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
+                "║                                                                  ║",
+                "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
+                "╚══════════════════════════════════════════════════════════════════╝"
+            ],
+            "_generado_por": "extraer_rmf.py",
+            **contenido_json
+        }
+        contenido_json_final["ley"] = codigo
+        contenido_json_final["fuente"] = config.get("url_fuente", "")
 
         # Extraer y añadir fecha DOF
         fecha_dof = extraer_fecha_dof(doc)
         if fecha_dof:
-            contenido_json["ultima_reforma_dof"] = fecha_dof
+            contenido_json_final["ultima_reforma_dof"] = fecha_dof
             print(f"   Fecha DOF: {fecha_dof}")
         else:
             print("   ERROR: No se pudo extraer fecha DOF")
             sys.exit(1)
 
         with open(contenido_path, 'w', encoding='utf-8') as f:
-            json.dump(contenido_json, f, ensure_ascii=False, indent=2)
-        print(f"   Guardado ({len(contenido_json['articulos'])} reglas)")
+            json.dump(contenido_json_final, f, ensure_ascii=False, indent=2)
+        print(f"   Guardado ({len(contenido_json_final['articulos'])} reglas)")
 
     doc.close()
 

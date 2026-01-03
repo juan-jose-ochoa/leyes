@@ -88,9 +88,9 @@ def cargar_mapa_estructura(mapa_path: Path) -> dict:
     return articulo_a_division
 
 
-def convertir_estructura_esperada(mapa_path: Path) -> list:
+def convertir_mapa_estructura(mapa_path: Path) -> list:
     """
-    Convierte estructura_esperada.json (formato anidado) al formato plano
+    Convierte mapa_estructura.json (formato anidado) al formato plano
     que espera importar_estructura().
 
     Entrada (anidado):
@@ -470,8 +470,8 @@ def main():
         sys.exit(1)
 
     contenido_path = output_dir / "contenido.json"
-    # estructura_esperada.json es la fuente autoritativa (del outline aprobado)
-    estructura_path = output_dir / "estructura_esperada.json"
+    # mapa_estructura.json es la fuente autoritativa (del outline aprobado)
+    estructura_path = output_dir / "mapa_estructura.json"
 
     # Verificar archivos
     print("\n1. Verificando archivos...")
@@ -519,9 +519,9 @@ def main():
         importar_ley(conn, codigo, config, contenido_data)
         print(f"   Ley {codigo} registrada")
 
-        # Importar estructura desde estructura_esperada.json (formato anidado)
+        # Importar estructura desde mapa_estructura.json (formato anidado)
         print("\n5. Importando estructura...")
-        divisiones = convertir_estructura_esperada(estructura_path)
+        divisiones = convertir_mapa_estructura(estructura_path)
         division_lookup = importar_estructura_desde_lista(conn, codigo, divisiones)
 
         # Importar contenido

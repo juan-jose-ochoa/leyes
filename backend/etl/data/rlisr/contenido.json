@@ -1,4 +1,21 @@
 {
+  "_advertencia": [
+    "╔══════════════════════════════════════════════════════════════════╗",
+    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
+    "║                                                                  ║",
+    "║  NO MODIFICAR MANUALMENTE                                        ║",
+    "║                                                                  ║",
+    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
+    "║  La base de datos se regenera desde aquí.                       ║",
+    "║                                                                  ║",
+    "║  Si el contenido es incorrecto:                                 ║",
+    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
+    "║                                                                  ║",
+    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
+    "╚══════════════════════════════════════════════════════════════════╝"
+  ],
+  "_generado_por": "extraer.py",
+  "_fecha_generacion": "2026-01-02T18:17:24.939555",
   "ley": "RLISR",
   "tipo_contenido": "articulo",
   "articulos": [

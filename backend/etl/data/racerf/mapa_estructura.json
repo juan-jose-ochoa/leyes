@@ -1,4 +1,20 @@
 {
+  "_advertencia": [
+    "╔══════════════════════════════════════════════════════════════════╗",
+    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
+    "║                                                                  ║",
+    "║  NO MODIFICAR MANUALMENTE                                        ║",
+    "║                                                                  ║",
+    "║  Este archivo es la ÚNICA fuente de verdad para la estructura.  ║",
+    "║  La base de datos se regenera desde aquí.                       ║",
+    "║                                                                  ║",
+    "║  Si el contenido es incorrecto:                                 ║",
+    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
+    "║                                                                  ║",
+    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
+    "╚══════════════════════════════════════════════════════════════════╝"
+  ],
+  "_generado_por": "extraer_mapa.py",
   "titulos": {
     "PRIMERO": {
       "nombre": "DISPOSICIONES GENERALES",
@@ -216,7 +232,10 @@
         "III": {
           "nombre": "DE LA TERMINACIÓN DEL ASEGURAMIENTO",
           "pagina": 30,
-          "articulos": []
+          "articulos": [
+            "108",
+            "109"
+          ]
         }
       }
     },
@@ -228,8 +247,6 @@
           "nombre": "DISPOSICIONES GENERALES",
           "pagina": 30,
           "articulos": [
-            "108",
-            "109",
             "110",
             "111"
           ]
@@ -430,14 +447,12 @@
       }
     }
   },
-  "transitorios": [],
   "estadisticas": {
     "titulos": 8,
     "capitulos": 31,
     "secciones": 0,
     "articulos_vigentes": 196,
     "articulos_derogados": 0,
-    "articulos_transitorios": 0,
     "total": 196
   },
   "ley": "RACERF",

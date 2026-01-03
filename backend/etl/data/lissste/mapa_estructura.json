@@ -1,0 +1,660 @@
+{
+  "_advertencia": [
+    "╔══════════════════════════════════════════════════════════════════╗",
+    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
+    "║                                                                  ║",
+    "║  NO MODIFICAR MANUALMENTE                                        ║",
+    "║                                                                  ║",
+    "║  Este archivo es la ÚNICA fuente de verdad para la estructura.  ║",
+    "║  La base de datos se regenera desde aquí.                       ║",
+    "║                                                                  ║",
+    "║  Si el contenido es incorrecto:                                 ║",
+    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
+    "║                                                                  ║",
+    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
+    "╚══════════════════════════════════════════════════════════════════╝"
+  ],
+  "_generado_por": "extraer_mapa.py",
+  "titulos": {
+    "PRIMERO": {
+      "nombre": "DE LAS DISPOSICIONES GENERALES",
+      "pagina": 1,
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "pagina": 1,
+          "articulos": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"
+          ]
+        }
+      }
+    },
+    "SEGUNDO": {
+      "nombre": "DEL RÉGIMEN OBLIGATORIO",
+      "pagina": 8,
+      "capitulos": {
+        "I": {
+          "nombre": "SUELDOS, CUOTAS Y APORTACIONES",
+          "pagina": 8,
+          "articulos": [
+            "17",
+            "18",
+            "19",
+            "20",
+            "20 Bis",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26"
+          ]
+        },
+        "II": {
+          "nombre": "SEGURO DE SALUD",
+          "pagina": 12,
+          "secciones": {
+            "I": {
+              "nombre": "Generalidades",
+              "pagina": 13,
+              "articulos": [
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "31 Bis"
+              ]
+            },
+            "II": {
+              "nombre": "Del Comité de Evaluación y Seguimiento de los Servicios de Salud",
+              "pagina": 14,
+              "articulos": [
+                "32"
+              ]
+            },
+            "III": {
+              "nombre": "Atención Médica Preventiva",
+              "pagina": 14,
+              "articulos": [
+                "33",
+                "34"
+              ]
+            },
+            "IV": {
+              "nombre": "Atención Médica Curativa y de Maternidad y Rehabilitación Física y Mental",
+              "pagina": 15,
+              "articulos": [
+                "35",
+                "36",
+                "37",
+                "37 Bis",
+                "38",
+                "39",
+                "40",
+                "41"
+              ]
+            },
+            "V": {
+              "nombre": "Régimen Financiero",
+              "pagina": 19,
+              "articulos": [
+                "42"
+              ]
+            }
+          }
+        },
+        "III": {
+          "nombre": "CONSERVACIÓN DE DERECHOS",
+          "pagina": 20,
+          "articulos": [
+            "43"
+          ]
+        },
+        "IV": {
+          "nombre": "DE LAS PENSIONES",
+          "pagina": 20,
+          "articulos": [
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54"
+          ]
+        },
+        "V": {
+          "nombre": "SEGURO DE RIESGOS DEL TRABAJO",
+          "pagina": 21,
+          "secciones": {
+            "I": {
+              "nombre": "Generalidades",
+              "pagina": 21,
+              "articulos": [
+                "55",
+                "56",
+                "57",
+                "58",
+                "59",
+                "60",
+                "61",
+                "62",
+                "63",
+                "64",
+                "65",
+                "66",
+                "67",
+                "68",
+                "69",
+                "70",
+                "71",
+                "72",
+                "73"
+              ]
+            },
+            "II": {
+              "nombre": "Incremento Periódico de las Pensiones",
+              "pagina": 28,
+              "articulos": []
+            },
+            "III": {
+              "nombre": "Régimen Financiero",
+              "pagina": 28,
+              "articulos": [
+                "75",
+                "76",
+                "77",
+                "78",
+                "78 Bis",
+                "79",
+                "80",
+                "81",
+                "82",
+                "83"
+              ]
+            }
+          }
+        },
+        "VI": {
+          "nombre": "SEGURO DE RETIRO, CESANTÍA EN EDAD AVANZADA Y VEJEZ",
+          "pagina": 28,
+          "secciones": {
+            "I": {
+              "nombre": "Generalidades",
+              "pagina": 28,
+              "articulos": [
+                "74"
+              ]
+            },
+            "II": {
+              "nombre": "Pensión por Cesantía en Edad Avanzada",
+              "pagina": 30,
+              "articulos": [
+                "84",
+                "85",
+                "86",
+                "87"
+              ]
+            },
+            "III": {
+              "nombre": "Pensión por Vejez",
+              "pagina": 31,
+              "articulos": [
+                "88",
+                "89",
+                "90",
+                "91"
+              ]
+            },
+            "IV": {
+              "nombre": "De la Pensión Garantizada",
+              "pagina": 32,
+              "articulos": [
+                "92",
+                "93",
+                "94",
+                "95",
+                "96"
+              ]
+            },
+            "V": {
+              "nombre": "De la Cuenta Individual",
+              "pagina": 33,
+              "articulos": [
+                "97",
+                "98",
+                "99"
+              ]
+            },
+            "VI": {
+              "nombre": "Del Ahorro Solidario para el Incremento de las Pensiones",
+              "pagina": 34,
+              "articulos": [
+                "100"
+              ]
+            },
+            "VII": {
+              "nombre": "Régimen Financiero",
+              "pagina": 34,
+              "articulos": [
+                "101",
+                "102",
+                "102 Bis"
+              ]
+            },
+            "VIII": {
+              "nombre": "Del PENSIONISSSTE",
+              "pagina": 35,
+              "articulos": [
+                "103",
+                "104",
+                "105",
+                "106",
+                "107",
+                "108",
+                "109",
+                "110",
+                "111",
+                "112",
+                "113"
+              ]
+            }
+          }
+        },
+        "VII": {
+          "nombre": "SEGURO DE INVALIDEZ Y VIDA",
+          "pagina": 39,
+          "secciones": {
+            "I": {
+              "nombre": "Generalidades",
+              "pagina": 39,
+              "articulos": [
+                "114",
+                "115",
+                "116",
+                "117",
+                "118"
+              ]
+            },
+            "II": {
+              "nombre": "Pensión por Invalidez",
+              "pagina": 39,
+              "articulos": [
+                "119",
+                "120",
+                "121",
+                "122",
+                "123",
+                "124",
+                "125",
+                "126",
+                "127",
+                "128"
+              ]
+            },
+            "III": {
+              "nombre": "Pensión por Causa de Muerte",
+              "pagina": 42,
+              "articulos": [
+                "129",
+                "130",
+                "131",
+                "132",
+                "133",
+                "134",
+                "135",
+                "136",
+                "137",
+                "138"
+              ]
+            },
+            "IV": {
+              "nombre": "Incremento Periódico de las Pensiones",
+              "pagina": 45,
+              "articulos": [
+                "139"
+              ]
+            },
+            "V": {
+              "nombre": "Régimen Financiero",
+              "pagina": 46,
+              "articulos": [
+                "140"
+              ]
+            }
+          }
+        },
+        "VIII": {
+          "nombre": "De la Transferencia de los Derechos",
+          "pagina": 46,
+          "secciones": {
+            "I": {
+              "nombre": "De la Transferencia de Derechos entre el Instituto y el IMSS",
+              "pagina": 46,
+              "articulos": [
+                "141",
+                "142",
+                "143",
+                "144",
+                "145",
+                "146",
+                "147",
+                "148"
+              ]
+            },
+            "II": {
+              "nombre": "De la Transferencia de Derechos al Instituto provenientes de otros Institutos de",
+              "pagina": 48,
+              "articulos": [
+                "149",
+                "150",
+                "151",
+                "152",
+                "153"
+              ]
+            },
+            "III": {
+              "nombre": "De la Transferencia de Derechos entre el Instituto y el Instituto del Fondo Nacional de la",
+              "pagina": 48,
+              "articulos": [
+                "154",
+                "155",
+                "156"
+              ]
+            }
+          }
+        },
+        "IX": {
+          "nombre": "Del Sistema Integral de Crédito",
+          "pagina": 49,
+          "secciones": {
+            "I": {
+              "nombre": "Préstamos Personales",
+              "pagina": 49,
+              "articulos": [
+                "157",
+                "158",
+                "159",
+                "160",
+                "161",
+                "162",
+                "163",
+                "164",
+                "165",
+                "166"
+              ]
+            },
+            "II": {
+              "nombre": "Del Crédito para Vivienda",
+              "pagina": 51,
+              "articulos": [
+                "167",
+                "168",
+                "169",
+                "170",
+                "171",
+                "172",
+                "173",
+                "174",
+                "175",
+                "176",
+                "177",
+                "178",
+                "179",
+                "180",
+                "181",
+                "182",
+                "183",
+                "184",
+                "185",
+                "186",
+                "187",
+                "188",
+                "189",
+                "190",
+                "191",
+                "192"
+              ]
+            },
+            "III": {
+              "nombre": "Régimen Financiero",
+              "pagina": 60,
+              "articulos": []
+            }
+          }
+        },
+        "X": {
+          "nombre": "De los Servicios Sociales y Culturales",
+          "pagina": 60,
+          "secciones": {
+            "I": {
+              "nombre": "Servicios Sociales",
+              "pagina": 60,
+              "articulos": []
+            },
+            "II": {
+              "nombre": "Servicios Culturales",
+              "pagina": 60,
+              "articulos": [
+                "193",
+                "194",
+                "195",
+                "196",
+                "197",
+                "198"
+              ]
+            },
+            "III": {
+              "nombre": "Régimen Financiero",
+              "pagina": 61,
+              "articulos": [
+                "199"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "TERCERO": {
+      "nombre": "DEL RÉGIMEN VOLUNTARIO",
+      "pagina": 61,
+      "capitulos": {
+        "I": {
+          "nombre": "CONTINUACIÓN VOLUNTARIA EN EL RÉGIMEN OBLIGATORIO",
+          "pagina": 61,
+          "articulos": [
+            "200",
+            "201",
+            "202",
+            "203"
+          ]
+        },
+        "II": {
+          "nombre": "INCORPORACIÓN VOLUNTARIA AL RÉGIMEN OBLIGATORIO",
+          "pagina": 62,
+          "articulos": [
+            "204",
+            "205"
+          ]
+        },
+        "III": {
+          "nombre": "DISPOSICIONES ESPECIALES",
+          "pagina": 63,
+          "articulos": [
+            "206"
+          ]
+        }
+      }
+    },
+    "CUARTO": {
+      "nombre": "DE LAS FUNCIONES Y ORGANIZACIÓN DEL INSTITUTO",
+      "pagina": 63,
+      "capitulos": {
+        "I": {
+          "nombre": "FUNCIONES",
+          "pagina": 63,
+          "articulos": [
+            "207",
+            "208"
+          ]
+        },
+        "II": {
+          "nombre": "ÓRGANOS DE GOBIERNO",
+          "pagina": 64,
+          "articulos": [
+            "209",
+            "210",
+            "211",
+            "212",
+            "213",
+            "214",
+            "215",
+            "216",
+            "217",
+            "218",
+            "219",
+            "220",
+            "221",
+            "222",
+            "223",
+            "224",
+            "225"
+          ]
+        },
+        "III": {
+          "nombre": "COMITÉ DE INVERSIONES",
+          "pagina": 71,
+          "articulos": [
+            "226",
+            "227"
+          ]
+        },
+        "IV": {
+          "nombre": "PATRIMONIO",
+          "pagina": 71,
+          "articulos": [
+            "228",
+            "229",
+            "230",
+            "231"
+          ]
+        },
+        "V": {
+          "nombre": "RESERVAS E INVERSIONES",
+          "pagina": 72,
+          "secciones": {
+            "I": {
+              "nombre": "Generalidades",
+              "pagina": 72,
+              "articulos": [
+                "232",
+                "233",
+                "234"
+              ]
+            },
+            "II": {
+              "nombre": "De las Reservas de los Seguros",
+              "pagina": 73,
+              "articulos": [
+                "235",
+                "236",
+                "237",
+                "238",
+                "239",
+                "240",
+                "241",
+                "242"
+              ]
+            },
+            "III": {
+              "nombre": "Del Programa Anual de Administración y Constitución de Reservas",
+              "pagina": 75,
+              "articulos": [
+                "243"
+              ]
+            },
+            "IV": {
+              "nombre": "De la Inversión de las Reservas y de su Uso para la Operación",
+              "pagina": 75,
+              "articulos": [
+                "244",
+                "245",
+                "246"
+              ]
+            },
+            "V": {
+              "nombre": "De la Contabilidad",
+              "pagina": 76,
+              "articulos": [
+                "247"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "QUINTO": {
+      "nombre": "DE LA PRESCRIPCIÓN",
+      "pagina": 76,
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "pagina": 76,
+          "articulos": [
+            "248",
+            "249",
+            "250",
+            "251"
+          ]
+        }
+      }
+    },
+    "SEXTO": {
+      "nombre": "DE LAS RESPONSABILIDADES Y SANCIONES",
+      "pagina": 77,
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "pagina": 77,
+          "articulos": [
+            "252",
+            "253",
+            "254"
+          ]
+        }
+      }
+    }
+  },
+  "estadisticas": {
+    "titulos": 6,
+    "capitulos": 21,
+    "secciones": 35,
+    "articulos_vigentes": 259,
+    "articulos_derogados": 0,
+    "total": 259
+  },
+  "ley": "LISSSTE",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISSSTE.pdf",
+  "metodo": "outline",
+  "notas": "Extraído del outline del PDF. Fuente autoritativa."
+}

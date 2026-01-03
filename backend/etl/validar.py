@@ -103,7 +103,7 @@ class Validador:
 
     def cargar_estructura_archivo(self) -> bool:
         """Carga estructura esperada desde archivo JSON (fallback)."""
-        archivo = self.output_dir / "estructura_esperada.json"
+        archivo = self.output_dir / "mapa_estructura.json"
         if not archivo.exists():
             return False
         with open(archivo, 'r', encoding='utf-8') as f:
@@ -139,7 +139,8 @@ class Validador:
         - '4o-A' -> '4o-A'
         - '29 Bis' -> '29 Bis'
         - '29-Bis' -> '29 Bis'
-        - '17 H Bis' -> '17-H Bis'
+        - '137-bis-1' -> '137 Bis 1'
+        - '137 Bis 1' -> '137 Bis 1'
         """
         import re
         numero = numero.strip()
@@ -147,13 +148,12 @@ class Validador:
         # Normalizar espacios múltiples
         numero = re.sub(r'\s+', ' ', numero)
 
-        # Convertir "BIS" -> "Bis", "TER" -> "Ter", etc.
-        numero = re.sub(r'\b(BIS|TER|QUÁTER|QUINTUS|QUINQUIES|SEXIES)\b',
+        # Convertir "BIS" -> "Bis", "TER" -> "Ter", etc. (case-insensitive)
+        numero = re.sub(r'\b(bis|ter|quáter|quintus|quinquies|sexies)\b',
                        lambda m: m.group(1).capitalize(), numero, flags=re.IGNORECASE)
 
         # Normalizar separador antes de letras sueltas (A, B, C...) pero NO antes de sufijos
         # "4o A" -> "4o-A", "14 A" -> "14-A", pero "29 Bis" se mantiene
-        # Letra suelta = letra seguida de espacio+sufijo O fin de string
         def replace_letter(m):
             base = m.group(1)
             letter = m.group(2)
@@ -167,6 +167,10 @@ class Validador:
         # Normalizar separador antes de sufijos (Bis, Ter...)
         # "29-Bis" -> "29 Bis", "17-H-Bis" -> "17-H Bis"
         numero = re.sub(r'-(?=Bis|Ter|Quáter|Quinquies|Sexies)', ' ', numero)
+
+        # Normalizar separador después de sufijos antes de números
+        # "137 Bis-1" -> "137 Bis 1"
+        numero = re.sub(r'(Bis|Ter|Quáter|Quinquies|Sexies)-(\d)', r'\1 \2', numero)
 
         return numero
 
@@ -273,7 +277,7 @@ class Validador:
             if hasattr(self, 'fecha_verificacion') and self.fecha_verificacion:
                 print(f"Verificado: {self.fecha_verificacion}")
         else:
-            print(f"\nReferencia: estructura_esperada.json (archivo)")
+            print(f"\nReferencia: mapa_estructura.json (archivo)")
         print(f"Versión:    {self.esperada.get('version', 'N/A')}")
         print(f"Fuente:     {self.esperada.get('fuente', 'N/A')}")
 
@@ -366,7 +370,7 @@ def main():
     if validador.fuente_estructura == 'bd':
         print(f"   estructura_esperada (BD)")
     else:
-        print(f"   estructura_esperada.json (archivo)")
+        print(f"   mapa_estructura.json (archivo)")
     print(f"   {validador.contenido_path.name} (extracción)")
 
     print("\n2. Validando artículos por capítulo...")

@@ -1,4 +1,20 @@
 {
+  "_advertencia": [
+    "╔══════════════════════════════════════════════════════════════════╗",
+    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
+    "║                                                                  ║",
+    "║  NO MODIFICAR MANUALMENTE                                        ║",
+    "║                                                                  ║",
+    "║  Este archivo es la ÚNICA fuente de verdad para la estructura.  ║",
+    "║  La base de datos se regenera desde aquí.                       ║",
+    "║                                                                  ║",
+    "║  Si el contenido es incorrecto:                                 ║",
+    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
+    "║                                                                  ║",
+    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
+    "╚══════════════════════════════════════════════════════════════════╝"
+  ],
+  "_generado_por": "extraer_mapa.py",
   "titulos": {
     "PRIMERO": {
       "nombre": "Principios Generales",
@@ -352,6 +368,28 @@
       }
     },
     "QUINTO": {
+      "nombre": "Trabajo de las Mujeres",
+      "pagina": 52,
+      "capitulos": {
+        "UNICO": {
+          "nombre": null,
+          "pagina": 52,
+          "articulos": [
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "170 Bis",
+            "171",
+            "172"
+          ]
+        }
+      }
+    },
+    "QUINTO BIS": {
       "nombre": "Trabajo de los Menores",
       "pagina": 54,
       "capitulos": {
@@ -1284,11 +1322,71 @@
       "pagina": 294,
       "capitulos": {
         "I": {
-          "nombre": "Del Procedimiento de Conciliación Prejudicial",
+          "nombre": "De los procedimientos de designación de representantes de los trabajadores y de los",
+          "pagina": 294,
+          "articulos": [
+            "648",
+            "649",
+            "650",
+            "651",
+            "652",
+            "653",
+            "654",
+            "655",
+            "656",
+            "657",
+            "658",
+            "659",
+            "660",
+            "661",
+            "662",
+            "663",
+            "664",
+            "665",
+            "666",
+            "667",
+            "668",
+            "669",
+            "670",
+            "671",
+            "672",
+            "673",
+            "674",
+            "675"
+          ]
+        },
+        "II": {
+          "nombre": "Representantes de los Trabajadores y de los Patrones en la Comisión Nacional de los",
+          "pagina": 298,
+          "articulos": [
+            "676",
+            "677",
+            "678",
+            "679",
+            "680",
+            "681",
+            "682",
+            "682-A"
+          ]
+        },
+        "III": {
+          "nombre": "Representantes de los trabajadores y de los patrones en la comisión nacional para la",
           "pagina": 299,
           "articulos": [
             "683",
-            "684",
+            "684"
+          ]
+        }
+      }
+    },
+    "TRECE BIS": {
+      "nombre": null,
+      "pagina": 299,
+      "capitulos": {
+        "I": {
+          "nombre": "Del Procedimiento de Conciliación Prejudicial",
+          "pagina": 299,
+          "articulos": [
             "684-A",
             "684-B",
             "684-C",
@@ -1885,28 +1983,12 @@
       }
     }
   },
-  "transitorios": [
-    "1ro",
-    "2do",
-    "3ro",
-    "4to",
-    "5to",
-    "6to",
-    "7mo",
-    "8vo",
-    "9no",
-    "10o",
-    "11o",
-    "12o",
-    "13o"
-  ],
   "estadisticas": {
-    "titulos": 17,
+    "titulos": 18,
     "capitulos": 99,
     "secciones": 0,
     "articulos_vigentes": 1115,
     "articulos_derogados": 149,
-    "articulos_transitorios": 13,
     "total": 1264
   },
   "ley": "LFT",

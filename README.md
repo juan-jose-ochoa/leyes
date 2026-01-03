@@ -68,8 +68,7 @@ frontend/src/
 └── lib/                        # API client
 
 doc/leyes/<ley>/
-├── mapa_estructura.json        # Mapa extraído del outline
-├── estructura_esperada.json    # Estructura aprobada
+├── mapa_estructura.json        # Estructura extraída del outline (fuente de verdad)
 ├── estructura.json             # Divisiones extraídas
 └── contenido.json              # Artículos/párrafos
 ```
@@ -83,7 +82,7 @@ doc/leyes/<ley>/
 
 | Tabla | Propósito |
 |-------|-----------|
-| `leyes` | Catálogo + `estructura_esperada` JSONB |
+| `leyes` | Catálogo + estructura JSONB |
 | `divisiones` | Títulos, capítulos (jerárquico) |
 | `articulos` | Artículos/reglas/transitorios |
 | `parrafos` | Contenido (texto, fracciones, incisos) |

@@ -1,4 +1,20 @@
 {
+  "_advertencia": [
+    "╔══════════════════════════════════════════════════════════════════╗",
+    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
+    "║                                                                  ║",
+    "║  NO MODIFICAR MANUALMENTE                                        ║",
+    "║                                                                  ║",
+    "║  Este archivo es la ÚNICA fuente de verdad para la estructura.  ║",
+    "║  La base de datos se regenera desde aquí.                       ║",
+    "║                                                                  ║",
+    "║  Si el contenido es incorrecto:                                 ║",
+    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
+    "║                                                                  ║",
+    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
+    "╚══════════════════════════════════════════════════════════════════╝"
+  ],
+  "_generado_por": "extraer_mapa.py",
   "titulos": {
     "PRELIMINAR": {
       "nombre": null,
@@ -159,20 +175,12 @@
       }
     }
   },
-  "transitorios": [
-    "Primero",
-    "Segundo",
-    "Tercero",
-    "Cuarto",
-    "Quinto"
-  ],
   "estadisticas": {
     "titulos": 1,
     "capitulos": 10,
     "secciones": 2,
     "articulos_vigentes": 65,
     "articulos_derogados": 15,
-    "articulos_transitorios": 5,
     "total": 80
   },
   "ley": "LIVA",

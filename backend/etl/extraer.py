@@ -3,7 +3,7 @@
 Extractor de contenido de leyes para esquema leyesmx.
 
 Extrae artículos y párrafos de PDFs oficiales usando coordenadas X/Y.
-La estructura (títulos/capítulos) viene de estructura_esperada.json (ver extraer_mapa.py).
+La estructura (títulos/capítulos) viene de mapa_estructura.json (ver extraer_mapa.py).
 
 Uso:
     python backend/etl/extraer.py CFF
@@ -811,7 +811,7 @@ def main():
     config = extractor.config
     output_dir = BASE_DIR / Path(config["pdf_path"]).parent
 
-    # Extraer contenido (la estructura viene de estructura_esperada.json)
+    # Extraer contenido (la estructura viene de mapa_estructura.json)
     print("\n2. Extrayendo contenido...")
     articulos = extractor.extraer_contenido()
 
@@ -836,7 +836,25 @@ def main():
 
     # Guardar
     contenido_path = output_dir / "contenido.json"
+
+    # Advertencia sagrada - este archivo es fuente única de verdad
     contenido = {
+        "_advertencia": [
+            "╔══════════════════════════════════════════════════════════════════╗",
+            "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
+            "║                                                                  ║",
+            "║  NO MODIFICAR MANUALMENTE                                        ║",
+            "║                                                                  ║",
+            "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
+            "║  La base de datos se regenera desde aquí.                       ║",
+            "║                                                                  ║",
+            "║  Si el contenido es incorrecto:                                 ║",
+            "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
+            "║                                                                  ║",
+            "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
+            "╚══════════════════════════════════════════════════════════════════╝"
+        ],
+        "_generado_por": "extraer.py",
         "ley": codigo,
         "tipo_contenido": config["tipo_contenido"],
         "articulos": [a.to_dict() for a in articulos]

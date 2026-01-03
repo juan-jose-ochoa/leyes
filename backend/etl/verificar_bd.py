@@ -209,9 +209,9 @@ def main():
         print(f"ERROR: {e}")
         sys.exit(1)
 
-    # Ruta del mapa - estructura_esperada.json es la fuente autoritativa
+    # Ruta del mapa - mapa_estructura.json es la fuente autoritativa
     output_dir = BASE_DIR / Path(config["pdf_path"]).parent
-    mapa_path = output_dir / "estructura_esperada.json"
+    mapa_path = output_dir / "mapa_estructura.json"
 
     if not mapa_path.exists():
         print(f"ERROR: {mapa_path.name} no existe")

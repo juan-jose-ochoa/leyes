@@ -312,6 +312,9 @@ LEYES = {
         # Tipo de contenido principal
         "tipo_contenido": "articulo",
 
+        # Marcador de transitorios en outline (default: "TRANSITORIOS")
+        "transitorios_marcador": "TRANSITORIOS_DE_LA_LEY",
+
         # Patrones de detección
         "patrones": {
             # Artículo: "ARTICULO 1o." o "ARTICULO 14-A." o "ARTICULO 137 bis 1.-"
@@ -446,7 +449,7 @@ LEYES = {
 
             # Divisiones estructurales
             # Títulos: "TITULO PRIMERO", "TITULO QUINTO BIS"
-            "titulo": r'^TITULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|SEPTIMO|SÉPTIMO|OCTAVO|NOVENO|DECIMO|DÉCIMO|ONCE|DOCE|TRECE|CATORCE|QUINCE|DIECISEIS)(?:\s+BIS)?\s*$',
+            "titulo": r'^T[IÍ]TULO\s+((?:PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|SEPTIMO|SÉPTIMO|OCTAVO|NOVENO|DECIMO|DÉCIMO|ONCE|DOCE|TRECE|CATORCE|QUINCE|DIECISEIS)(?:\s+BIS)?)\s*$',
             # Capítulos: "CAPITULO I", "Capítulo III BIS"
             "capitulo": r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$',
 
@@ -525,6 +528,115 @@ LEYES = {
             'Última Reforma',
             'Última reforma',
             ' de 178',  # Paginación "X de 178"
+        ],
+
+        # Detección de referencias
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
+                r"reformad[oa].*DOF",
+                r"adicionad[oa].*DOF",
+                r"derogad[oa].*DOF",
+            ],
+        },
+    },
+
+    "LINFONAVIT": {
+        "nombre": "Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores",
+        "nombre_corto": "INFONAVIT",
+        "tipo": "ley",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf",
+        "pdf_path": "backend/etl/data/linfonavit/linfonavit_ley_del_infonavit.pdf",
+
+        # Patrón para extraer fecha DOF del encabezado
+        "fecha_dof_patron": r"[ÚU]ltima\s+[Rr]eforma\s+DOF\s+(\d{1,2})-(\d{1,2})-(\d{4})",
+
+        # Estructura jerárquica permitida
+        "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
+
+        # Tipo de contenido principal
+        "tipo_contenido": "articulo",
+
+        # Patrones de detección
+        "patrones": {
+            # Artículo: "Artículo 1o.-" o "Artículo 18 Bis 1.-" (con número después de Bis)
+            "articulo": r'^Artículo\s+(\d+)([oa])?(?:[-–\s_]*([A-Z]))?(?:[-–\s]+(Bis|Ter|Quáter|Quinquies|Sexies)(?:[-–\s]+(\d+))?)?\.?[- –]',
+            "titulo": r'^T[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|SEPTIMO|OCTAVO)\s*$',
+            "capitulo": r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$',
+            "seccion": r'^SECCI[OÓ]N\s+([IVX]+)\s*$',
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+        },
+
+        # Ruido a eliminar
+        "ruido_lineas": [
+            'LEY DEL INSTITUTO DEL FONDO NACIONAL DE LA VIVIENDA PARA LOS TRABAJADORES',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'Última Reforma',
+            'Última reforma',
+        ],
+
+        # Detección de referencias
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
+                r"reformad[oa].*DOF",
+                r"adicionad[oa].*DOF",
+                r"derogad[oa].*DOF",
+            ],
+        },
+    },
+
+    "LISSSTE": {
+        "nombre": "Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado",
+        "nombre_corto": "ISSSTE",
+        "tipo": "ley",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISSSTE.pdf",
+        "pdf_path": "backend/etl/data/lissste/lissste_ley_del_issste.pdf",
+
+        # Patrón para extraer fecha DOF del encabezado
+        "fecha_dof_patron": r"[ÚU]ltima\s+[Rr]eforma\s+DOF\s+(\d{1,2})-(\d{1,2})-(\d{4})",
+
+        # Estructura jerárquica permitida
+        "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
+
+        # Tipo de contenido principal
+        "tipo_contenido": "articulo",
+
+        # Patrones de detección
+        "patrones": {
+            "articulo": r'^Artículo\s+(\d+)([oa])?(?:[-–\s_]*([A-Z]))?(?:[-–\s]+(Bis|Ter|Quáter|Quinquies|Sexies))?\.?[- –]',
+            "titulo": r'^T[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|SEPTIMO|OCTAVO)\s*$',
+            "capitulo": r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$',
+            "seccion": r'^SECCI[OÓ]N\s+([IVX]+)\s*$',
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+        },
+
+        # Ruido a eliminar
+        "ruido_lineas": [
+            'LEY DEL INSTITUTO DE SEGURIDAD Y SERVICIOS SOCIALES DE LOS TRABAJADORES DEL ESTADO',
+            'CÁMARA DE DIPUTADOS',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'Última Reforma',
+            'Última reforma',
         ],
 
         # Detección de referencias

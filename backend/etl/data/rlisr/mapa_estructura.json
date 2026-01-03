@@ -1,4 +1,20 @@
 {
+  "_advertencia": [
+    "╔══════════════════════════════════════════════════════════════════╗",
+    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
+    "║                                                                  ║",
+    "║  NO MODIFICAR MANUALMENTE                                        ║",
+    "║                                                                  ║",
+    "║  Este archivo es la ÚNICA fuente de verdad para la estructura.  ║",
+    "║  La base de datos se regenera desde aquí.                       ║",
+    "║                                                                  ║",
+    "║  Si el contenido es incorrecto:                                 ║",
+    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
+    "║                                                                  ║",
+    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
+    "╚══════════════════════════════════════════════════════════════════╝"
+  ],
+  "_generado_por": "extraer_mapa.py",
   "titulos": {
     "I": {
       "nombre": "Disposiciones Generales",
@@ -518,18 +534,16 @@
       }
     }
   },
-  "transitorios": [],
   "estadisticas": {
     "titulos": 7,
     "capitulos": 23,
     "secciones": 4,
     "articulos_vigentes": 313,
     "articulos_derogados": 0,
-    "articulos_transitorios": 0,
     "total": 313
   },
-  "ley": "RISR",
-  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR.pdf",
+  "ley": "RLISR",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR_060516.pdf",
   "metodo": "outline",
   "notas": "Extraído del outline del PDF. Fuente autoritativa."
 }

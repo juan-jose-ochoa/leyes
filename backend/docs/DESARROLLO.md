@@ -44,8 +44,6 @@ Genera: `backend/etl/data/cff/mapa_estructura.json`
 ```bash
 cat backend/etl/data/cff/mapa_estructura.json
 # Comparar con outline en Okular/Evince
-
-cp backend/etl/data/cff/mapa_estructura.json backend/etl/data/cff/estructura_esperada.json
 ```
 
 ---
@@ -63,7 +61,7 @@ El extractor usa **coordenadas X** del PDF para jerarquía de párrafos:
 - X~114: Inciso (a), b))
 - X~142: Numeral (1., 2.)
 
-**Nota:** La estructura (títulos/capítulos) viene de `estructura_esperada.json` (Etapa 2), no se extrae aquí.
+**Nota:** La estructura (títulos/capítulos) viene de `mapa_estructura.json` (Etapa 1), no se extrae aquí.
 
 ---
 
