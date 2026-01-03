@@ -1,0 +1,476 @@
+{
+  "_advertencia": [
+    "╔══════════════════════════════════════════════════════════════════╗",
+    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
+    "║                                                                  ║",
+    "║  NO MODIFICAR MANUALMENTE                                        ║",
+    "║                                                                  ║",
+    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
+    "║  La base de datos se regenera desde aquí.                       ║",
+    "║                                                                  ║",
+    "║  Si el contenido es incorrecto:                                 ║",
+    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
+    "║                                                                  ║",
+    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
+    "╚══════════════════════════════════════════════════════════════════╝"
+  ],
+  "_generado_por": "extraer.py",
+  "ley": "LFDC",
+  "tipo_contenido": "articulo",
+  "articulos": [
+    {
+      "numero": "1",
+      "tipo": "articulo",
+      "orden": 1,
+      "pagina": 1,
+      "parrafos": []
+    },
+    {
+      "numero": "2",
+      "tipo": "articulo",
+      "orden": 2,
+      "pagina": 1,
+      "parrafos": []
+    },
+    {
+      "numero": "3",
+      "tipo": "articulo",
+      "orden": 3,
+      "pagina": 2,
+      "parrafos": []
+    },
+    {
+      "numero": "4",
+      "tipo": "articulo",
+      "orden": 4,
+      "pagina": 2,
+      "parrafos": []
+    },
+    {
+      "numero": "5",
+      "tipo": "articulo",
+      "orden": 5,
+      "pagina": 3,
+      "parrafos": []
+    },
+    {
+      "numero": "6",
+      "tipo": "articulo",
+      "orden": 6,
+      "pagina": 3,
+      "parrafos": []
+    },
+    {
+      "numero": "7",
+      "tipo": "articulo",
+      "orden": 7,
+      "pagina": 3,
+      "parrafos": []
+    },
+    {
+      "numero": "8",
+      "tipo": "articulo",
+      "orden": 8,
+      "pagina": 3,
+      "parrafos": []
+    },
+    {
+      "numero": "9",
+      "tipo": "articulo",
+      "orden": 9,
+      "pagina": 3,
+      "parrafos": []
+    },
+    {
+      "numero": "10",
+      "tipo": "articulo",
+      "orden": 10,
+      "pagina": 3,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Respetando la confidencialidad de los datos individuales, el Servicio de Administración Tributaria informará al Instituto Nacional de Estadística, Geografía e Informática los datos estadísticos agregados sobre el ingreso, impuestos, deducciones y otros datos relevantes de los contribuyentes.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "11",
+      "tipo": "articulo",
+      "orden": 11,
+      "pagina": 3,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para estimular la obligación legal de los contribuyentes de entregar comprobantes fiscales por las operaciones que realicen, las autoridades fiscales organizarán loterías fiscales en las que, con diversos premios, participarán las personas que hayan obtenido los comprobantes fiscales respectivos. Las loterías fiscales se podrán organizar tomando en cuenta los medios de pago, diversos al efectivo, que reciban los contribuyentes.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "12",
+      "tipo": "articulo",
+      "orden": 12,
+      "pagina": 3,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los contribuyentes tendrán derecho a ser informados, al inicio de cualquier actuación de la autoridad fiscal, para comprobar el cumplimiento de las obligaciones fiscales, de sus derechos y obligaciones en el curso de tales actuaciones.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "3 de 7",
+          "padre_numero": 1,
+          "x_id": 295,
+          "x_texto": 295
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 1,
+          "x_id": 137,
+          "x_texto": 137
+        }
+      ]
+    },
+    {
+      "numero": "13",
+      "tipo": "articulo",
+      "orden": 13,
+      "pagina": 4,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cuando las autoridades fiscales ejerzan sus facultades para comprobar el cumplimiento de las obligaciones fiscales previstas en las fracciones II y III del artículo 42 del Código Fiscal de la Federación, deberán informar al contribuyente con el primer acto que implique el inicio de esas facultades, el derecho que tiene para corregir su situación fiscal y los beneficios de ejercer el derecho mencionado.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "14",
+      "tipo": "articulo",
+      "orden": 14,
+      "pagina": 4,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos de lo dispuesto en la fracción XIII del artículo 2o. de la presente Ley, los contribuyentes tendrán derecho a corregir su situación fiscal en las distintas contribuciones objeto de la revisión, mediante la presentación de la declaración normal o complementaria que, en su caso, corresponda, de conformidad con lo dispuesto en el Código Fiscal de la Federación.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los contribuyentes podrán corregir su situación fiscal a partir del momento en el que se dé inicio al ejercicio de las facultades de comprobación y hasta antes de que se les notifique la resolución que determine el monto de las contribuciones omitidas. El ejercicio de este derecho no está sujeto a autorización de la autoridad fiscal.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "15",
+      "tipo": "articulo",
+      "orden": 15,
+      "pagina": 4,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los contribuyentes deberán entregar a la autoridad revisora, una copia de la declaración de corrección que hayan presentado. Dicha situación deberá ser consignada en una acta parcial cuando se trate de visitas domiciliarias; en los demás casos, incluso cuando haya concluido una visita domiciliaria, la autoridad revisora en un plazo máximo de diez días contados a partir de la entrega, deberá comunicar al contribuyente mediante oficio haber recibido la declaración de corrección, sin que dicha comunicación implique la aceptación de la corrección presentada por el contribuyente.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "16",
+      "tipo": "articulo",
+      "orden": 16,
+      "pagina": 4,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cuando durante el ejercicio de las facultades de comprobación de las autoridades fiscales, los contribuyentes corrijan su situación fiscal y haya transcurrido al menos, un plazo de tres meses contados a partir del inicio del ejercicio de dichas facultades, se dará por concluida la visita domiciliaria o la revisión de que se trate, si a juicio de las autoridades fiscales y conforme a la investigación realizada, se desprende que el contribuyente ha corregido en su totalidad las obligaciones fiscales por las que se ejercieron las facultades de comprobación y por el período objeto de revisión. En el supuesto mencionado, se hará constar la corrección fiscal mediante oficio que se hará del conocimiento del contribuyente y la conclusión de la visita domiciliaria o revisión de que se trate.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cuando los contribuyentes corrijan su situación fiscal con posterioridad a la conclusión del ejercicio de las facultades de comprobación y las autoridades fiscales verifiquen que el contribuyente ha corregido en su totalidad las obligaciones fiscales que se conocieron con motivo del ejercicio de las facultades mencionadas, se deberá comunicar al contribuyente mediante oficio dicha situación, en el plazo de un mes contado a partir de la fecha en que la autoridad fiscal haya recibido la declaración de corrección fiscal.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cuando los contribuyentes presenten la declaración de corrección fiscal con posterioridad a la conclusión del ejercicio de las facultades de comprobación y hayan trascurrido al menos cinco meses del plazo a que se refiere el artículo 18 de este ordenamiento, sin que las autoridades fiscales hayan emitido la resolución que determine las contribuciones omitidas, dichas autoridades contarán con un plazo de un mes, adicional al previsto en el numeral mencionado, y contado a partir de la fecha en que los contribuyentes presenten la declaración de referencia para llevar a cabo la determinación de contribuciones omitidas que, en su caso, proceda.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "No se podrán determinar nuevas omisiones de las contribuciones revisadas durante el periodo objeto del ejercicio de las facultades de comprobación, salvo cuando se comprueben hechos diferentes. La comprobación de hechos diferentes deberá estar sustentada en información, datos o documentos de terceros o en la revisión de conceptos específicos que no se hayan revisado con anterioridad.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "4 de 7",
+          "padre_numero": 4,
+          "x_id": 295,
+          "x_texto": 295
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 4,
+          "x_id": 137,
+          "x_texto": 137
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Si con motivo del ejercicio de las facultades de comprobación se conocen hechos que puedan dar lugar a la determinación de contribuciones mayores a las corregidas por el contribuyente o contribuciones objeto de la revisión por las que no se corrigió el contribuyente, los visitadores o, en su caso, las autoridades fiscales, deberán continuar con la visita domiciliaria o con la revisión prevista en el artículo 48 del Código Fiscal de la Federación, hasta su conclusión.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cuando el contribuyente, en los términos del párrafo anterior, no corrija totalmente su situación fiscal, las autoridades fiscales emitirán la resolución que determine las contribuciones omitidas, de conformidad con el procedimiento establecido en el Código Fiscal de la Federación.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "17",
+      "tipo": "articulo",
+      "orden": 17,
+      "pagina": 5,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los contribuyentes que corrijan su situación fiscal, pagarán una multa equivalente al 20% de las contribuciones omitidas, cuando el infractor las pague junto con sus accesorios después de que se inicie el ejercicio de las facultades de comprobación de las autoridades fiscales y hasta antes de que se le notifique el acta final de la visita domiciliaria o el oficio de observaciones a que se refiere la fracción VI del artículo 48 del Código Fiscal de la Federación, según sea el caso.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Si el infractor paga las contribuciones omitidas junto con sus accesorios, después de que se notifique el acta final de la visita domiciliaria o el oficio de observaciones, según sea el caso, pero antes de la notificación de la resolución que determine el monto de las contribuciones omitidas, pagará una multa equivalente al 30% de las contribuciones omitidas.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Así mismo, podrán efectuar el pago en parcialidades de conformidad con lo dispuesto en el Código Fiscal de la Federación, siempre que esté garantizado el interés fiscal.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "18",
+      "tipo": "articulo",
+      "orden": 18,
+      "pagina": 5,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Las autoridades fiscales contarán con un plazo de seis meses para determinar las contribuciones omitidas que conozcan con motivo del ejercicio de sus facultades de comprobación, sin perjuicio de lo dispuesto en el tercer párrafo del artículo 16 de esta Ley. El cómputo del plazo se realizará a partir de los supuestos a que se refiere el artículo 50 del Código Fiscal de la Federación y le serán aplicables las reglas de suspensión que dicho numeral contempla. Si no lo hacen en dicho lapso, se entenderá de manera definitiva que no existe crédito fiscal alguno a cargo del contribuyente por los hechos, contribuciones y períodos revisados.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "19",
+      "tipo": "articulo",
+      "orden": 19,
+      "pagina": 5,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cuando las autoridades fiscales determinen contribuciones omitidas, no podrán llevar a cabo determinaciones adicionales con base en los mismos hechos conocidos en una revisión, pero podrán hacerlo cuando se comprueben hechos diferentes. La comprobación de hechos diferentes deberá estar sustentada en información, datos o documentos de terceros o en la revisión de conceptos específicos que no se hayan revisado con anterioridad; en este último supuesto, la orden por la que se ejerzan las facultades de comprobación deberá estar debidamente motivada con la expresión de los nuevos conceptos a revisar.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "20",
+      "tipo": "articulo",
+      "orden": 20,
+      "pagina": 5,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Las autoridades fiscales podrán revisar nuevamente los mismos hechos, contribuciones y períodos, por los que se tuvo al contribuyente por corregido de su situación fiscal, o se le determinaron contribuciones omitidas, sin que de dicha revisión pueda derivar crédito fiscal alguno a cargo del contribuyente.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "21",
+      "tipo": "articulo",
+      "orden": 21,
+      "pagina": 5,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En todo caso la actuación de los contribuyentes se presume realizada de buena fe, correspondiendo a la autoridad fiscal acreditar que concurren las circunstancias agravantes que señala el Código Fiscal de la Federación en la comisión de infracciones tributarias.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "5 de 7",
+          "padre_numero": 1,
+          "x_id": 295,
+          "x_texto": 295
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 1,
+          "x_id": 137,
+          "x_texto": 137
+        }
+      ]
+    },
+    {
+      "numero": "22",
+      "tipo": "articulo",
+      "orden": 22,
+      "pagina": 6,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los contribuyentes cuyos ingresos en el ejercicio inmediato anterior no hayan superado un monto equivalente a treinta veces el salario mínimo general, correspondiente al área geográfica del contribuyente elevado al año, cuando garanticen el interés fiscal mediante embargo en la vía administrativa, deberán ser designados como depositarios de los bienes y el embargo no podrá comprender las mercancías que integren el inventario circulante del negocio, excepto cuando se trate de mercancías de origen extranjero respecto de la cual no se acredite con la documentación correspondiente su legal estancia en el país.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "23",
+      "tipo": "articulo",
+      "orden": 23,
+      "pagina": 6,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los contribuyentes tendrán a su alcance los recursos y medios de defensa que procedan, en los términos de las disposiciones legales respectivas, contra los actos dictados por las autoridades fiscales, así como a que en la notificación de dichos actos se indique el recurso o medio de defensa procedente, el plazo para su interposición y el órgano ante el que debe formularse. Cuando en la resolución administrativa se omita el señalamiento de referencia, los contribuyentes contarán con el doble del plazo que establecen las disposiciones legales para interponer el recurso administrativo o el juicio contencioso administrativo.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    },
+    {
+      "numero": "24",
+      "tipo": "articulo",
+      "orden": 24,
+      "pagina": 6,
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En el recurso administrativo y en el juicio contencioso administrativo ante el Tribunal Federal de Justicia Fiscal y Administrativa, los contribuyentes podrán ofrecer como prueba el expediente administrativo del cual emane el acto impugnado. Éste será el que contenga toda la documentación relacionada con el procedimiento que dio lugar a la resolución impugnada; dicha documentación será la que corresponda al inicio del procedimiento, los actos jurídicos posteriores y a la resolución impugnada. No se incluirá en el expediente administrativo que se envíe, la información que la Ley señale como información reservada o gubernamental confidencial.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos de este artículo, no se considerará expediente administrativo, los documentos antecedentes de una resolución en la que las leyes no establezcan un procedimiento administrativo previo.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
+    }
+  ],
+  "ultima_reforma_dof": "2005-06-23"
+}

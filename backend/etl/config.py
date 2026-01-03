@@ -655,6 +655,91 @@ LEYES = {
         },
     },
 
+    "LFDC": {
+        "nombre": "Ley Federal de los Derechos del Contribuyente",
+        "nombre_corto": "Derechos del Contribuyente",
+        "tipo": "ley",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDC.pdf",
+        "pdf_path": "backend/etl/data/lfdc/lfdc.pdf",
+
+        # Formato: "Nueva Ley DOF 23-06-2005"
+        "fecha_dof_patron": r"Nueva\s+Ley\s+DOF\s+(\d{1,2})-(\d{1,2})-(\d{4})",
+
+        "divisiones_permitidas": ["capitulo"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso"],
+
+        "tipo_contenido": "articulo",
+
+        "patrones": {
+            # Formato: "Artículo 1o.-" o "Artículo 10.-"
+            "articulo": r'^Artículo\s+(\d+)[oa]?\.?[- –]',
+            "capitulo": r'^CAP[IÍ]TULO\s+([IVX]+)\s*$',
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+        },
+
+        "ruido_lineas": [
+            'LEY FEDERAL DE LOS DERECHOS DEL CONTRIBUYENTE',
+            'CÁMARA DE DIPUTADOS',
+            'Nueva Ley publicada',
+        ],
+
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
+            ],
+        },
+    },
+
+    "LIF": {
+        "nombre": "Ley de Ingresos de la Federación para el Ejercicio Fiscal de 2026",
+        "nombre_corto": "Ley de Ingresos 2026",
+        "tipo": "ley",
+        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIF_2026.pdf",
+        "pdf_path": "backend/etl/data/lif/lif_2026.pdf",
+
+        "ley_base": "LIF",
+        "anio": 2026,
+
+        "fecha_dof_patron": r"DOF\s+(\d{1,2})-(\d{1,2})-(\d{4})",
+
+        "divisiones_permitidas": ["capitulo"],
+        "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
+
+        "tipo_contenido": "articulo",
+
+        "patrones": {
+            # Formato: "Artículo 1o." o "Artículo 10."
+            "articulo": r'^Artículo\s+(\d+)[oa]?\.?[- –]',
+            "capitulo": r'^Cap[ií]tulo\s+([IVX]+)\s*$',
+            "fraccion": r'^([IVX]+)\.\s+',
+            "inciso": r'^([a-z])\)\s+',
+            "numeral": r'^(\d{1,2})\.\s+',
+        },
+
+        "ruido_lineas": [
+            'LEY DE INGRESOS DE LA FEDERACIÓN',
+            'CÁMARA DE DIPUTADOS',
+            'Ejercicio Fiscal',
+        ],
+
+        "referencias": {
+            "font_italic": True,
+            "color_no_negro": True,
+            "size_max": 10,
+            "patrones": [
+                r"Párrafo.*DOF",
+                r"Fracción.*DOF",
+                r"Artículo.*DOF",
+            ],
+        },
+    },
+
     # ============================================================
     # REGLAMENTOS
     # ============================================================

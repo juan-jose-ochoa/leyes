@@ -29,6 +29,8 @@ export const CATEGORIA: Record<string, Categoria> = {
   'LIEPS': 'fiscal',
   'LA': 'fiscal',
   'RMF': 'fiscal',
+  'LFDC': 'fiscal',
+  'LIF': 'fiscal',
   // Laboral
   'LFT': 'laboral',
   'LSS': 'laboral',
@@ -51,6 +53,8 @@ export const NOMBRE_DISPLAY: Record<string, string> = {
   'LISSSTE': 'Ley del ISSSTE',
   'CPEUM': 'Constitución',
   'RMF': 'Miscelánea Fiscal',
+  'LFDC': 'Derechos del Contribuyente',
+  'LIF': 'Ley de Ingresos 2026',
   // Reglamentos
   'RCFF': 'Reglamento CFF',
   'RLISR': 'Reglamento ISR',

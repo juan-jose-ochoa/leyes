@@ -45,10 +45,14 @@ def normalizar_numero(numero: str) -> str:
 
     Reglas:
     - Mayúsculas
-    - Guiones y espacios tratados igual: '4o-A' == '4o A'
+    - Eliminar sufijo ordinal: '1o' -> '1', '4o A' -> '4 A'
+    - Guiones y espacios tratados igual: '4-A' == '4 A'
     - Múltiples espacios -> uno solo
     """
+    import re
     s = numero.upper().strip()
+    # Eliminar sufijo ordinal (1O -> 1, 4O A -> 4 A)
+    s = re.sub(r'^(\d+)[OA](?=\s|$)', r'\1', s)
     # Reemplazar guiones por espacios
     s = s.replace('-', ' ')
     # Colapsar múltiples espacios

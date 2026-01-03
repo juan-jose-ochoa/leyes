@@ -1,0 +1,96 @@
+{
+  "_advertencia": [
+    "╔══════════════════════════════════════════════════════════════════╗",
+    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
+    "║                                                                  ║",
+    "║  NO MODIFICAR MANUALMENTE                                        ║",
+    "║                                                                  ║",
+    "║  Este archivo es la ÚNICA fuente de verdad para la estructura.  ║",
+    "║  La base de datos se regenera desde aquí.                       ║",
+    "║                                                                  ║",
+    "║  Si el contenido es incorrecto:                                 ║",
+    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
+    "║                                                                  ║",
+    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
+    "╚══════════════════════════════════════════════════════════════════╝"
+  ],
+  "_generado_por": "extraer_mapa.py",
+  "titulos": {
+    "PRELIMINAR": {
+      "nombre": null,
+      "pagina": 1,
+      "capitulos": {
+        "I": {
+          "nombre": "De los Ingresos y el Endeudamiento Público",
+          "pagina": 1,
+          "articulos": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ]
+        },
+        "II": {
+          "nombre": "De las Facilidades Administrativas y Beneficios Fiscales",
+          "pagina": 10,
+          "articulos": [
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25"
+          ]
+        },
+        "III": {
+          "nombre": "De la Información, la Transparencia, la Evaluación de la Eficiencia Recaudatoria y la Fiscalización",
+          "pagina": 30,
+          "articulos": [
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+          ]
+        },
+        "IV": {
+          "nombre": "Otras Disposiciones",
+          "pagina": 33,
+          "articulos": [
+            "32",
+            "33",
+            "34"
+          ]
+        }
+      }
+    }
+  },
+  "estadisticas": {
+    "titulos": 1,
+    "capitulos": 4,
+    "secciones": 0,
+    "articulos_vigentes": 34,
+    "articulos_derogados": 0,
+    "total": 34
+  },
+  "ley": "LIF",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIF_2026.pdf",
+  "metodo": "outline",
+  "notas": "Extraído del outline del PDF. Fuente autoritativa."
+}

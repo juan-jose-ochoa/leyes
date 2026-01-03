@@ -135,8 +135,9 @@ class Validador:
         """Normaliza número de artículo para comparación.
 
         Convierte ambos formatos a un formato canónico:
-        - '4o A' -> '4o-A'
-        - '4o-A' -> '4o-A'
+        - '1o' -> '1' (elimina sufijo ordinal)
+        - '4o A' -> '4-A'
+        - '4o-A' -> '4-A'
         - '29 Bis' -> '29 Bis'
         - '29-Bis' -> '29 Bis'
         - '137-bis-1' -> '137 Bis 1'
@@ -147,6 +148,10 @@ class Validador:
 
         # Normalizar espacios múltiples
         numero = re.sub(r'\s+', ' ', numero)
+
+        # Eliminar sufijo ordinal (1o -> 1, 2a -> 2) pero mantener antes de letra o sufijo
+        # "1o" -> "1", "4o A" -> "4 A", "4o-A" -> "4-A"
+        numero = re.sub(r'^(\d+)[oa](?=\s|$|-)', r'\1', numero)
 
         # Convertir "BIS" -> "Bis", "TER" -> "Ter", etc. (case-insensitive)
         numero = re.sub(r'\b(bis|ter|quáter|quintus|quinquies|sexies)\b',
