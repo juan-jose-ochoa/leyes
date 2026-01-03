@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect, useMemo } from 'react'
 import { useSearchParams, useLocation, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { Scale, BookOpen, Search as SearchIcon, Zap, ChevronRight } from 'lucide-react'
+import { Scale, BookOpen, Search as SearchIcon, ChevronRight } from 'lucide-react'
 import clsx from 'clsx'
 import SearchBar from '@/components/SearchBar'
 import ResultList from '@/components/ResultList'
@@ -209,7 +209,7 @@ export default function Home() {
       {!hasSearched && leyes && (
         <div className="mt-16">
           {/* Stats */}
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <StatCard
               icon={<BookOpen className="h-6 w-6" />}
               label="Leyes y Códigos"
@@ -229,11 +229,6 @@ export default function Home() {
               icon={<SearchIcon className="h-6 w-6" />}
               label="Contenidos"
               value={leyes.reduce((sum, l) => sum + l.total_articulos, 0)}
-            />
-            <StatCard
-              icon={<Zap className="h-6 w-6" />}
-              label="Busqueda FTS"
-              value="Activa"
             />
           </div>
 
