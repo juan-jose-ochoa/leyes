@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect, useMemo } from 'react'
 import { useSearchParams, useLocation, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { Scale, BookOpen, Search as SearchIcon, ChevronRight } from 'lucide-react'
+import { Scale, ChevronRight } from 'lucide-react'
 import clsx from 'clsx'
 import SearchBar from '@/components/SearchBar'
 import ResultList from '@/components/ResultList'
@@ -152,6 +152,11 @@ export default function Home() {
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
             Encuentra cualquier artículo en segundos. Navega fácilmente por la estructura de cada ley.
           </p>
+          {leyes && (
+            <p className="mt-4 text-sm text-gray-400">
+              {leyes.length} leyes y reglamentos · {leyes.reduce((sum, l) => sum + l.total_articulos, 0).toLocaleString()} artículos
+            </p>
+          )}
         </div>
       )}
 
@@ -205,59 +210,10 @@ export default function Home() {
         </div>
       )}
 
-      {/* Stats y features - solo visible antes de buscar */}
+      {/* Lista de leyes agrupadas por categoría - solo visible antes de buscar */}
       {!hasSearched && leyes && (
-        <div className="mt-16">
-          {/* Stats */}
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <StatCard
-              icon={<BookOpen className="h-6 w-6" />}
-              label="Leyes y Códigos"
-              value={leyes.filter((l) => l.tipo === 'ley' || l.tipo === 'codigo').length}
-            />
-            <StatCard
-              icon={<BookOpen className="h-6 w-6" />}
-              label="Reglamentos"
-              value={leyes.filter((l) => l.tipo === 'reglamento').length}
-            />
-            <StatCard
-              icon={<BookOpen className="h-6 w-6" />}
-              label="RMF"
-              value={leyes.filter((l) => l.tipo === 'resolucion').length}
-            />
-            <StatCard
-              icon={<SearchIcon className="h-6 w-6" />}
-              label="Contenidos"
-              value={leyes.reduce((sum, l) => sum + l.total_articulos, 0)}
-            />
-          </div>
-
-          {/* Lista de leyes agrupadas por categoría */}
-          <LeyesPorCategoria leyes={leyes} />
-        </div>
+        <LeyesPorCategoria leyes={leyes} />
       )}
-    </div>
-  )
-}
-
-function StatCard({
-  icon,
-  label,
-  value,
-}: {
-  icon: React.ReactNode
-  label: string
-  value: string | number
-}) {
-  return (
-    <div className="card flex items-center gap-4">
-      <div className="rounded-lg bg-primary-100 p-2 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400">
-        {icon}
-      </div>
-      <div>
-        <p className="text-2xl font-bold text-gray-900 dark:text-white">{value}</p>
-        <p className="text-sm text-gray-500">{label}</p>
-      </div>
     </div>
   )
 }
