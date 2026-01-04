@@ -155,6 +155,7 @@ export default function DivisionView() {
   const { ley } = useParams<{ ley: string }>()
   const location = useLocation()
   const [soloIssues, setSoloIssues] = useState(false)
+  const [mostrarReferencias, setMostrarReferencias] = useState(false)
 
   // Extraer path jerárquico de la URL: /CFF/titulo/PRIMERO/capitulo/I → titulo/PRIMERO/capitulo/I
   const divisionPath = useMemo(() => {
@@ -292,15 +293,33 @@ export default function DivisionView() {
 
       {/* Header */}
       <div className="mb-8">
-        <p className="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase mb-1">
-          {info.div_tipo} {info.numero}
-        </p>
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-          {info.nombre || `${info.div_tipo} ${info.numero}`}
-        </h1>
-        <p className="mt-2 text-gray-500">
-          {info.total_articulos} {esRegla ? 'reglas' : 'artículos'}
-        </p>
+        <div className="flex items-start justify-between">
+          <div>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase mb-1">
+              {info.div_tipo} {info.numero}
+            </p>
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+              {info.nombre || `${info.div_tipo} ${info.numero}`}
+            </h1>
+            <p className="mt-2 text-gray-500">
+              {info.total_articulos} {esRegla ? 'reglas' : 'artículos'}
+            </p>
+          </div>
+          {/* Toggle referencias */}
+          <button
+            onClick={() => setMostrarReferencias(!mostrarReferencias)}
+            className={clsx(
+              'flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-lg transition-colors',
+              mostrarReferencias
+                ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'
+                : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+            )}
+            title={mostrarReferencias ? 'Ocultar referencias' : 'Mostrar referencias'}
+          >
+            <FileText className="h-4 w-4" />
+            <span className="hidden sm:inline">{mostrarReferencias ? 'Ocultar referencias' : 'Mostrar referencias'}</span>
+          </button>
+        </div>
       </div>
 
       {/* Panel de resumen de calidad (solo para RMF) */}
@@ -422,7 +441,7 @@ export default function DivisionView() {
 
             {/* Contenido */}
             <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
-              <ArticleContent articuloId={art.id} contenido={art.contenido} ley={ley} />
+              <ArticleContent articuloId={art.id} contenido={art.contenido} ley={ley} mostrarReferencias={mostrarReferencias} />
             </div>
 
             {/* Reformas */}
