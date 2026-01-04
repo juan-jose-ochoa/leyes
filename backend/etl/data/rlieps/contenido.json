@@ -184,7 +184,16 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos del artículo 9o. de la Ley, se entiende que la enajenación se realiza en territorio nacional, aun cuando la entrega material de los bienes se efectúe en los recintos fiscales o fiscalizados considerados como tales en la legislación aduanera.",
+          "contenido": ", primer párrafo de la Ley, no se consideran faltantes de materias primas o de bienes en los inventarios de los contribuyentes, aquéllos que se originen por caso fortuito o fuerza mayor, ni la destrucción autorizada de mercancías, cuando sean deducibles para los efectos de la Ley del Impuesto sobre la Renta.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Tratándose de faltantes de inventarios se considera realizada la enajenación en el mes en que se levantó el inventario, debiéndose pagar el impuesto en la declaración correspondiente a dicho mes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -218,7 +227,7 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos del artículo 14 de la Ley, cuando el contribuyente haga valer algún medio de defensa en contra de las resoluciones que dicten las autoridades aduaneras, el impuesto se calculará tomando en cuenta el monto del impuesto general de importación y el de las contribuciones y aprovechamientos, a excepción del impuesto al valor agregado, que se obtenga de los datos suministrados por el propio contribuyente; la diferencia de impuestos que resulte, la podrá pagar hasta que se resuelva en definitiva la controversia, con la actualización y los recargos correspondientes al periodo comprendido desde el mes en que debió hacerse el pago y hasta que el mismo se efectúe, debiendo garantizar el interés fiscal en los términos del Código Fiscal de la Federación y de su Reglamento.",
+          "contenido": "de la Ley, se entiende que la enajenación se realiza en territorio nacional, aun cuando la entrega material de los bienes se efectúe en los recintos fiscales o fiscalizados considerados como tales en la legislación aduanera.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85

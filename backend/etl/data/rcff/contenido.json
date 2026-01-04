@@ -834,9 +834,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las demás sociedades que, en su caso, surjan con motivo de la escisión, únicamente presentarán la solicitud de inscripción en el registro federal de contribuyentes;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 3,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 5,
@@ -1251,9 +1251,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El aviso a que se refiere esta fracción, también se presentará cuando deban actualizarse datos relativos al domicilio fiscal derivados del cambio de nomenclatura o numeración oficial;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 6,
@@ -1278,27 +1278,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas que efectúen los pagos a que se refiere el Capítulo I del Título IV de la Ley del Impuesto sobre la Renta, deberán presentar el aviso señalado en el párrafo que antecede por los contribuyentes a quienes hagan dichos pagos, cuando éstos les dejen de prestar los servicios por los cuales hubieran estado obligados a solicitar su inscripción, computándose el plazo para su presentación a partir del día en que finalice la prestación de servicios.",
-          "padre_numero": 6,
-          "x_id": 114,
-          "x_texto": 114
+          "padre_numero": 7,
+          "x_id": 136,
+          "x_texto": 136
         },
         {
           "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La presentación del aviso a que se refiere este inciso libera al contribuyente de la obligación de presentar declaraciones periódicas durante la suspensión de actividades, excepto tratándose de las del ejercicio en que interrumpa sus actividades y cuando se trate de contribuciones causadas aún no cubiertas o de declaraciones correspondientes a periodos anteriores a la fecha de inicio de la suspensión de actividades. Lo anterior no será aplicable tratándose de los contribuyentes a que se refiere el Capítulo I del Título IV de la Ley del Impuesto sobre la Renta, cuyo aviso hubiere presentado el empleador pero continúen prestando servicios a otro empleador o tengan otro tipo de actividades económicas para efectos fiscales u obligaciones periódicas.",
-          "padre_numero": 6,
-          "x_id": 114,
-          "x_texto": 114
+          "padre_numero": 7,
+          "x_id": 136,
+          "x_texto": 136
         },
         {
           "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Durante el período de suspensión de actividades, el contribuyente no queda relevado de presentar los demás avisos previstos en el artículo 29 de este Reglamento, y",
-          "padre_numero": 6,
-          "x_id": 114,
-          "x_texto": 114
+          "padre_numero": 7,
+          "x_id": 136,
+          "x_texto": 136
         },
         {
           "numero": 11,
@@ -1314,9 +1314,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas que efectúen los pagos a que se refiere el Capítulo I del Título IV de la Ley del Impuesto sobre la Renta, deberán presentar el aviso a que se refiere este inciso por los contribuyentes a quienes realicen dichos pagos y que en el registro federal de contribuyentes se encuentren en suspensión de actividades;",
-          "padre_numero": 6,
-          "x_id": 114,
-          "x_texto": 114
+          "padre_numero": 11,
+          "x_id": 136,
+          "x_texto": 136
         },
         {
           "numero": 13,
@@ -1368,9 +1368,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los contribuyentes que ejerzan la opción de no acumular los ingresos que les correspondan de la sociedad conyugal y se encuentren inscritos en el registro federal de contribuyentes, no presentarán el aviso de actualización de actividades económicas y obligaciones por esta actividad, en términos de lo dispuesto en el Reglamento de la Ley del Impuesto sobre la Renta;",
-          "padre_numero": 13,
-          "x_id": 114,
-          "x_texto": 114
+          "padre_numero": 17,
+          "x_id": 136,
+          "x_texto": 136
         },
         {
           "numero": 19,
@@ -1404,9 +1404,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No se estará obligado a presentar el aviso a que se refiere esta fracción cuando la persona que fallezca hubiera estado obligada a presentar declaración periódica únicamente por servicios personales o se encuentre en suspensión de actividades excepto, en este último caso, cuando el contribuyente tenga créditos fiscales determinados;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 21,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 23,
@@ -1440,9 +1440,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos del párrafo anterior y del artículo 76, fracción V de la Ley del Impuesto sobre la Renta, cuando el ejercicio de liquidación a que se refiere el artículo 12 del mismo ordenamiento, sea por un periodo menor a tres meses, el contribuyente presentará el aviso a que se refiere esta fracción conjuntamente con la declaración del ejercicio de liquidación;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 25,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 27,
@@ -1458,18 +1458,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El aviso a que se refiere esta fracción también deberá presentarse por las personas morales que no estén obligadas a presentar el trámite previsto en el artículo 24, fracciones I y II de este Reglamento y por los fideicomisos que se extingan, así como por las organizaciones civiles y fideicomisos autorizados para recibir donativos deducibles de impuestos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 27,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 29,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El cómputo del plazo para la presentación del aviso a que se refiere esta fracción inicia una vez que se ha presentado la última declaración a que estén obligados los contribuyentes;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 27,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 30,
@@ -1485,9 +1485,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El aviso a que se refiere esta fracción deberá presentarse una vez que se lleve a cabo la fusión y deberá contener la clave del registro federal de contribuyentes, así como la denominación o razón social de las sociedades que se fusionan y la fecha en la que se realizó la fusión;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 30,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 32,
@@ -1707,9 +1707,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Podrán llevarse libros diario y mayor por establecimientos o dependencias, por tipos de actividad o por cualquier otra clasificación, pero en todos los casos deberán existir los libros diario y mayor general en los que se concentren todas las operaciones del contribuyente;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 14,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 16,
@@ -1797,9 +1797,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando la información de los comprobantes fiscales o de los datos y documentación que integran la contabilidad estén en idioma distinto al español, o los valores se consignen en moneda extranjera, deberán acompañarse de la traducción correspondiente y señalar el tipo de cambio utilizado por cada operación;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 24,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 26,
@@ -1824,9 +1824,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de operaciones a crédito, a plazos o en parcialidades, por cada pago o abono que se reciba o se realice, incluyendo el anticipo o enganche según corresponda. Además de lo señalado en el párrafo anterior, deberán registrar el monto del pago, precisando si se efectúa en efectivo, transferencia interbancaria de fondos, cheque nominativo para abono en cuenta, tarjeta de débito, crédito o de servicios, monedero electrónico o por cualquier otro medio. Cuando el pago se realice en especie o permuta, deberá indicarse el tipo de bien o servicio otorgado como contraprestación y su valor;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 27,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 29,
@@ -1851,9 +1851,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para efectos del párrafo anterior, en el control de inventarios deberá identificarse el método de valuación utilizado y la fecha a partir de la cual se usa, ya sea que se trate del método de primeras entradas primeras salidas, últimas entradas primeras salidas, costo identificado, costo promedio o detallista según corresponda;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 30,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 32,
@@ -1914,9 +1914,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando el destino de los bienes o servicios varíe y se deba efectuar el ajuste del acreditamiento previsto en el artículo 5o.-A de la Ley del Impuesto al Valor Agregado, se deberá registrar su efecto en la contabilidad.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 34,
+          "x_id": 114,
+          "x_texto": 114
         }
       ]
     },
@@ -2498,9 +2498,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La experiencia a que se refiere esta fracción se acreditará de conformidad con los requisitos que establezca el Servicio de Administración Tributaria mediante reglas de carácter general.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 11,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 13,
@@ -2738,9 +2738,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La sanción a que se refiere este inciso se aplicará por cada dictamen formulado en contravención a las disposiciones jurídicas aplicables, independientemente del ejercicio fiscal de que se trate y las sanciones correspondientes se acumularán;",
-          "padre_numero": 2,
-          "x_id": 114,
-          "x_texto": 114
+          "padre_numero": 3,
+          "x_id": 136,
+          "x_texto": 136
         },
         {
           "numero": 5,
@@ -2765,9 +2765,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La sanción a que se refiere este inciso, se aplicará por cada dictamen en el que no se hubiera integrado la información que corresponda, independientemente del ejercicio fiscal de que se trate y las sanciones correspondientes se acumularán, y",
-          "padre_numero": 2,
-          "x_id": 114,
-          "x_texto": 114
+          "padre_numero": 6,
+          "x_id": 136,
+          "x_texto": 136
         },
         {
           "numero": 8,
@@ -2846,9 +2846,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La sanción a que se refieren los numerales 1, 2, 3 y 6, se aplicará por cada dictamen formulado en contravención a las disposiciones jurídicas aplicables o no se hubiera presentado la información que corresponda, independientemente del ejercicio fiscal de que se trate y las sanciones correspondientes se acumularán.",
-          "padre_numero": 8,
-          "x_id": 114,
-          "x_texto": 114
+          "padre_numero": 9,
+          "x_id": 136,
+          "x_texto": 136
         },
         {
           "numero": 17,
@@ -3129,9 +3129,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El comisario de la persona moral no se considerará impedido para dictaminar, salvo que concurra otra causal de las que se mencionan en este artículo;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 3,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 5,
@@ -3801,27 +3801,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No se aceptarán en prenda los bienes de fácil descomposición o deterioro; los que se encuentren embargados, ofrecidos en garantía, o con algún gravamen o afectación; los sujetos al régimen de copropiedad, cuando no sea posible que el Gobierno Federal asuma de manera exclusiva la titularidad de todos los derechos; los afectos a algún fideicomiso; los que por su naturaleza o por disposición legal estén fuera del comercio y aquéllos que sean inembargables en términos del Código, así como las mercancías de procedencia extranjera, cuya legal estancia no esté acreditada en el país, los semovientes, las armas prohibidas y las materias y sustancias inflamables, contaminantes, radioactivas o peligrosas.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La garantía a que se refiere esta fracción podrá otorgarse mediante prenda bursátil relativa a inversiones en valores a cargo del Gobierno Federal inscritos en el Registro Nacional de Valores, siempre que se designe como beneficiario único a la Autoridad Fiscal a favor de la cual se otorgue la garantía.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Servicio de Administración Tributaria podrá autorizar a instituciones y a corredores públicos para mantener en depósito determinados bienes que se otorguen en prenda, y",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 6,
@@ -3837,18 +3837,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El otorgamiento de la garantía a que se refiere esta fracción se hará mediante escritura pública que deberá inscribirse en el Registro Público de la Propiedad que corresponda y contener los datos del crédito fiscal que se garantice.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 6,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El otorgante podrá garantizar con la misma hipoteca los recargos futuros o ampliar la garantía cada año.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 6,
+          "x_id": 114,
+          "x_texto": 114
         }
       ]
     },
@@ -3898,9 +3898,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El escrito a que se refiere el párrafo anterior deberá ser firmado por el interesado y tratándose de personas morales, por el administrador único o, en su caso, por la totalidad de los miembros del consejo de administración. Cuando en los estatutos sociales de la persona moral interesada el presidente del consejo de administración tenga conferidas las mismas facultades de administración que el propio consejo, bastará la firma de dicho presidente para tener por cumplido el requisito. Las personas a que se refiere este párrafo deberán contar con el certificado de firma electrónica avanzada expedido por el Servicio de Administración Tributaria o por un prestador de servicios de certificación autorizado en los términos del Capítulo II del Título I del Código;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 4,

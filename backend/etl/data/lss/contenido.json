@@ -634,9 +634,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, deberán cubrir las cuotas obrero patronales, aun en el caso de que no sea posible determinar el o los trabajadores a quienes se deban aplicar, por incumplimiento del patrón a las obligaciones previstas en las fracciones anteriores, en este último caso, su monto se destinará a la Reserva General Financiera y Actuarial a que se refiere el artículo 280, fracción IV de esta Ley, sin perjuicio de que a aquellos trabajadores que acreditaren sus derechos, se les otorguen las prestaciones diferidas que les correspondan;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 7,
+          "x_id": 120,
+          "x_texto": 120,
           "referencias": [
             "Fracción reformada DOF 20-12-2001"
           ]
@@ -1479,9 +1479,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El salario diario se determinará, dividiendo el importe total de los ingresos variables obtenidos en el bimestre anterior entre el número de días de salario devengado y sumando su resultado a los elementos fijos del salario diario.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 120,
+          "x_texto": 120
         },
         {
           "numero": 6,
@@ -6837,9 +6837,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los valores mencionados del importe de la cuota social, se actualizarán trimestralmente de conformidad con el Índice Nacional de Precios al Consumidor, en los meses de marzo, junio, septiembre y diciembre de cada año.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 15,
+          "x_id": 107,
+          "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 26-05-2009"
           ]
@@ -6960,9 +6960,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Si al iniciarse la pensión de orfandad el huérfano lo fuera de padre o de madre y posteriormente falleciera el otro progenitor, la pensión de orfandad se aumentará del veinte al treinta por ciento de la base señalada, a partir de la fecha de la muerte del ascendiente, y",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 3,
+          "x_id": 120,
+          "x_texto": 120
         },
         {
           "numero": 5,
@@ -7520,25 +7520,25 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las cantidades a que se refiere este inciso se entregarán en un máximo de seis mensualidades, la primera de las cuales podrá ser por un monto de treinta días de su último salario base de cotización a solicitud del trabajador, conforme a las reglas de carácter general que al efecto expida la Comisión Nacional del Sistema de Ahorro para el Retiro. En caso de que el trabajador se reincorpore a laborar durante el plazo de entrega de los recursos, las mensualidades posteriores a su reincorporación se suspenderán.",
-          "padre_numero": 3,
-          "x_id": 107,
-          "x_texto": 107
+          "padre_numero": 5,
+          "x_id": 125,
+          "x_texto": 125
         },
         {
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El trabajador que cumpla con los requisitos de antigüedad de la cuenta a que se refiere el primer párrafo de este inciso, podrá optar, en todo caso, por el beneficio señalado en el inciso",
-          "padre_numero": 3,
-          "x_id": 107,
-          "x_texto": 107
+          "padre_numero": 5,
+          "x_id": 125,
+          "x_texto": 125
         },
         {
           "numero": 8,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": ".",
-          "padre_numero": 7,
+          "padre_numero": 5,
           "x_id": 125,
           "x_texto": 147
         },
@@ -7547,9 +7547,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El derecho consignado en esta fracción sólo podrán ejercerlo los trabajadores que acrediten con los estados de cuenta correspondientes, no haber efectuado retiros durante los cinco años inmediatos anteriores a la fecha de la solicitud de retiro de recursos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 3,
+          "x_id": 107,
+          "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 26-05-2009"
           ]
@@ -10115,9 +10115,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, el Instituto podrá requerir a los patrones, responsables solidarios o terceros con ellos relacionados, sin que medie visita domiciliaria, para que exhiban en las oficinas del propio Instituto, a efecto de llevar a cabo su revisión, la contabilidad, así como que proporcionen los datos, otros documentos o informes que se les requieran;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 31,
+          "x_id": 120,
+          "x_texto": 120,
           "referencias": [
             "Fracción adicionada DOF 20-12-2001"
           ]
@@ -10919,9 +10919,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, establecer, en su caso, de común acuerdo con el sindicato de los trabajadores los términos en que ese sistema podrá hacerse extensivo a los trabajadores clasificados como de base y de confianza \"B\" en el contrato colectivo de trabajo y a la aplicación de los reglamentos derivados del mismo.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 13,
+          "x_id": 120,
+          "x_texto": 120,
           "referencias": [
             "Fracción reformada DOF 20-12-2001"
           ]
@@ -11230,9 +11230,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En cualquier caso los trabajadores de confianza a que se refiere esta fracción y la anterior deberán contar con la capacidad, experiencia y demás requisitos que se determinen en el Estatuto a que se refiere el artículo 286 I de esta Ley;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 9,
+          "x_id": 120,
+          "x_texto": 120,
           "referencias": [
             "Fracción reformada DOF 20-12-2001"
           ]

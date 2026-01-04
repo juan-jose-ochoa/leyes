@@ -1232,18 +1232,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Si ocurriera el cambio de clase después de iniciado este periodo, permanecerá en la prima media que le corresponda a la nueva clase, y la modificación de dicha prima sólo computará la siniestralidad del periodo anual siguiente.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El mismo procedimiento señalado en el párrafo precedente, se seguirá con respecto del patrón que se inscriba por primera vez ya iniciado el periodo;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 7,
@@ -1277,36 +1277,36 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando la fusión no implique cambio de clase, pero la empresa fusionada y la fusionante tuvieren primas diferentes, las cuotas del Seguro de Riesgos de Trabajo deberán cubrirse con base en los casos concretos de riesgos de trabajo terminados en el último periodo anual de la fusionante y la fusionada, y se fijará la nueva prima conforme al artículo 38 de este Reglamento, debiéndose comparar dicha prima con la que tuviera la empresa fusionante.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 9,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 11,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La prima resultante, definida en la forma indicada en el párrafo anterior, persistirá hasta el último día del mes de febrero posterior a la fusión.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 9,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los casos concretos de riesgos de trabajo terminados de la fusionada y la fusionante y los que se llegaren a presentar hasta completar el periodo de cómputo, servirán de base para el cálculo de la prima a cubrir en el Seguro de Riesgos de Trabajo, en los términos del artículo 32 de este Reglamento.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 9,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La prima se determinará por la empresa fusionante; de no hacerlo, el Instituto la fijará con base en la información proporcionada por el patrón o, en su caso, con la que recabe;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 9,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 14,
@@ -1446,9 +1446,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Si la solicitud a que se refiere la citada fracción IV se presentó fuera del plazo establecido en el artículo 44 de este Reglamento, la rectificación de la clase surtirá sus efectos a partir de la fecha de presentación de dicha solicitud;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 4,
@@ -1552,18 +1552,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El valor obtenido deberá expresarse en por ciento y se comparará con la prima en que la empresa cubre sus cuotas al momento de la revisión. Si el valor es el mismo, se continuará aplicando la misma prima.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 3,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de que sean diferentes procederá la nueva prima, aumentándola o disminuyéndola en una proporción no mayor al uno por ciento del salario base de cotización, con respecto a la prima del año inmediato anterior con que la empresa venía cubriendo sus cuotas, en los términos del artículo 74 de la Ley;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 3,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 6,
@@ -1597,18 +1597,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Además determinarán, con base en los datos proporcionados al Instituto, la prima correspondiente y, conforme a la misma, cubrirán sus cuotas del Seguro de Riesgos de Trabajo.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 8,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se eximirá a los patrones de la obligación de presentar los formatos impresos o el dispositivo magnético mencionados, cuando al determinar su prima ésta resulte igual a la del ejercicio anterior;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 8,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 11,
@@ -1633,27 +1633,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para el periodo subsecuente realizará su nueva determinación, si el lapso transcurrido entre la baja y la nueva alta es de seis meses o menos. En caso contrario, la empresa continuará en la prima media de la clase en que venía cotizando.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 12,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 14,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando un patrón deje de tener trabajadores a su servicio durante más de seis meses y no haya comunicado baja patronal, al reanudar la relación obrero-patronal, será colocado en la prima media de la clase que corresponda a su actividad.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 12,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 15,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Si el periodo fuera de seis meses o menos será colocado en la prima en que venía cubriendo sus cuotas, siempre y cuando conserve la misma actividad, y",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 12,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 16,
@@ -1669,9 +1669,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de que la empresa tenga registrados centros de trabajo en distintos municipios determinará la prima de dichos centros, inclusive aquellos que cuenten únicamente con trabajadores eventuales, con independencia de los que se encuentran en otro municipio.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 16,
+          "x_id": 107,
+          "x_texto": 107
         }
       ]
     },
@@ -2482,9 +2482,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No obstante lo anterior, el Instituto podrá efectuar la rectificación con la fecha manifestada en la solicitud, siempre y cuando se presente antes de realizar el pago que corresponda al mes en que se pretende surta efectos la modificación de salario y dentro de los diecisiete primeros días del mes siguiente. En este caso, el patrón deberá resarcir al Instituto las prestaciones que este último hubiere otorgado indebidamente al trabajador.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 6,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 8,
@@ -2693,9 +2693,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para el cálculo de las pensiones no se considerarán semanas cotizadas las que se encuentren dentro del periodo de huelga, y",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 3,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 5,
@@ -3172,9 +3172,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En este caso, el subsidio a pagar se calculará tomando como salario base aquél con el que el trabajador haya estado registrado en la fecha de su último movimiento de baja.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 3,
+          "x_id": 107,
+          "x_texto": 107
         }
       ]
     },
@@ -3478,9 +3478,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tumoración benigna de mama.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 3,
+          "x_id": 106,
+          "x_texto": 106
         },
         {
           "numero": 5,
@@ -3496,9 +3496,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Parto.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 5,
+          "x_id": 106,
+          "x_texto": 106
         },
         {
           "numero": 7,
@@ -3613,9 +3613,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cirugía ortopédica.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 18,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 20,
@@ -4663,9 +4663,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando el patrón efectúe el pago con cargo a su cuenta bancaria por transferencia electrónica, a su tarjeta de crédito o de débito, de la determinación o con base en los importes determinados por el Instituto y entregados a la entidad receptora por autorización del patrón, el comprobante de pago será el estado de cuenta que expida la propia entidad receptora en el que aparezca el cargo respectivo. La presentación de la cédula de determinación quedará cumplida al efectuarse el pago, y",
-          "padre_numero": 2,
-          "x_id": 107,
-          "x_texto": 107
+          "padre_numero": 4,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 6,
@@ -5879,18 +5879,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Si como resultado de la verificación de la información y documentos presentados por el patrón, se resuelve la aclaración como procedente, el Instituto cancelará el crédito emitido.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 7,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de que la aclaración se resuelva parcialmente procedente, el Instituto podrá emitir un nuevo crédito por las diferencias correspondientes. Cuando se resuelva que la aclaración es improcedente, quedará firme el crédito respectivo;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 7,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 10,
@@ -6593,9 +6593,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Al anexo deberá adjuntarse, invariablemente, copia de la declaración anual del impuesto sobre la renta, declaración anual de pagos y retenciones, balanza de comprobación analítica de subcuentas de costos y gastos, cuentas de balance que tengan relación con sueldos y salarios, así como el análisis del importe total de excedentes de salarios tope de acuerdo a los máximos señalados en la Ley, correspondientes al ejercicio dictaminado, importe total de percepciones variables del sexto bimestre inmediato anterior al ejercicio dictaminado y del sexto bimestre del ejercicio dictaminado, y",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 7,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 9,
@@ -6840,16 +6840,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El plazo para la presentación de la información y documentación a que se refieren los incisos b) y",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 7,
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": ", será de quince días hábiles contados a partir de la fecha de notificación del requerimiento, y",
-          "padre_numero": 6,
+          "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
         },
@@ -6964,9 +6964,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Lo establecido en esta fracción no es aplicable bajo ninguna circunstancia a los créditos que se deriven del Seguro de Retiro, Cesantía en Edad Avanzada y Vejez; capitales constitutivos, recargos documentados, visitas domiciliarias y en general, resoluciones derivadas de cualquier medio de defensa ejercido por el patrón.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 107,
+          "x_texto": 107
         }
       ]
     },
@@ -7716,8 +7716,8 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la cría y explotación de ganado vacuno, porcino, ovino, caprino, equino, así como a la avicultura, cunicultura y apicultura y a las que prestan servicios como desinfección y erradicación de plagas propias del ganado, inseminación artificial, esquila, ordeña, recolección de abono y otros servicios de ganadería.",
           "padre_numero": 5,
-          "x_id": 125,
-          "x_texto": 125
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 7,
@@ -7824,8 +7824,8 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la caza, captura y preservación de animales salvajes.",
           "padre_numero": 17,
-          "x_id": 125,
-          "x_texto": 125
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 19,
@@ -7950,15 +7950,15 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la extracción a profundidad, con o sin beneficio de hierro, oro, plata, mercurio, antimonio, cobre, plomo, zinc y otros minerales metálicos. 132 Beneficio de minerales metálicos. V",
           "padre_numero": 31,
-          "x_id": 125,
-          "x_texto": 125
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 33,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas dedicadas al beneficio sin procesos de extracción de hierro, oro, plata, mercurio, antimonio, cobre, plomo, zinc y otros minerales metálicos.",
-          "padre_numero": 32,
+          "padre_numero": 31,
           "x_id": 168,
           "x_texto": 168
         },
@@ -7968,15 +7968,15 @@
           "identificador": null,
           "contenido": "Debe entenderse por \"Beneficio\" a las operaciones y tratamientos como trituración, molienda, pulverización, cribado, concentración, calcinación, flotación, clasificación, lixiviación, aglomeración de concentrados (nódulos, pelets, briquetas y similares) y otros sistemas de beneficio de minerales metálicos.",
           "padre_numero": 31,
-          "x_id": 123,
-          "x_texto": 123
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 35,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Excepto a las empresas dedicadas a la fundición, aleación, refinación, afinación de minerales metálicos para obtener productos primarios de hierro, acero y de metales no ferrosos (hierro de primera fusión, ferroaleaciones, lingotes, planchas o barras) y/o productos elaborados por laminación o vaciado, clasificadas en las fracciones 341 o 342.",
-          "padre_numero": 34,
+          "padre_numero": 31,
           "x_id": 168,
           "x_texto": 168
         },
@@ -8048,9 +8048,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican al beneficio de café, cacao; tostado y molienda de café; fabricación y envasado de café soluble y té; desgrane, descascarado, limpieza, secado y pulido de arroz y otros granos, incluye la limpieza y envasado de lenteja, frijol, haba, garbanzo y otros productos agrícolas; así como el beneficio de especias. Excepto la fabricación de harinas clasificadas por separado en la fracción 2016.",
-          "padre_numero": 40,
-          "x_id": 125,
-          "x_texto": 125
+          "padre_numero": 42,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 44,
@@ -8111,9 +8111,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican con empleo de maquinaria y/o equipo motorizado, a la elaboración, preparación, envasado y/o empacado de carnes frías, embutidos, manteca de cerdo, sopas y otros productos derivados de carne. Incluye la deshidratación, congelación, salado, ahumado, envinagrado y otros procedimientos para conservar o preservar carnes y sus derivados, así como la elaboración de grenetinas como materia prima para otras industrias.",
-          "padre_numero": 40,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 49,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 51,
@@ -8183,9 +8183,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican con empleo de maquinaria y/o equipo motorizado, a la elaboración de chocolates, malvaviscos, gelatinas, dulces rellenos, chicles, caramelos y similares. Incluye el tratamiento y envase de miel de abeja y la elaboración de concentrados, esencias, jarabes y colorantes para alimentos.",
-          "padre_numero": 40,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 57,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 59,
@@ -8265,15 +8265,15 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que preparan, elaboran, envasan y/o empacan con empleo de maquinaria y/o equipo motorizado, otros productos alimenticios no incluidos en las fracciones anteriores.",
           "padre_numero": 66,
-          "x_id": 125,
-          "x_texto": 125
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 68,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Incluye hielo, helados, paletas, nieves, sal comestible, mostaza, vinagre y otros condimentos.",
-          "padre_numero": 67,
+          "padre_numero": 66,
           "x_id": 168,
           "x_texto": 168
         },
@@ -8588,16 +8588,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la confección de artículos diversos con telas, cuero, piel y sucedáneos ya elaborados. Se considera la confección de almohadas, cojines, bolsas, costales, sábanas, manteles, servilletas, cubreasientos, vestiduras, forros, fundas, banderines, cortinas, artículos de lona, toldos de protección, elaboración de bordados, forrado de botones, deshilados, plizados, trou-trou y otros artículos similares.",
-          "padre_numero": 82,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 102,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 104,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Excepto prendas de vestir; fabricación, armado o ensamble de muebles tapizados, clasificados por separado.",
-          "padre_numero": 103,
+          "padre_numero": 102,
           "x_id": 168,
           "x_texto": 168
         },
@@ -8687,16 +8687,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la fabricación con procesos mecanizados o de producción en serie de artículos de cuero, piel y sucedáneos como maletas, baúles, portafolios, bolsas de mano, carteras, cigarreras, cinturones, monederos, sillas de montar, arneses, látigos, artículos de talabartería.",
-          "padre_numero": 105,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 113,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 115,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Excepto calzado y prendas de vestir.",
-          "padre_numero": 114,
+          "padre_numero": 113,
           "x_id": 168,
           "x_texto": 168
         },
@@ -8750,9 +8750,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que con maderas ya tratadas o trabajadas, provistas por aserraderos o madererías, se dedican a fabricar partes o estructuras completas de cancelería, marcos, molduras, lambrines, duelas, parquets, puertas, ventanas, escaleras, cimbras, closets, monturas para cuadros y espejos, cajas, envases, empaques, toneles, barricas, ataúdes; artículos como palillos, hormas, tacones, abatelenguas, mangos para herramientas y enseres de limpieza, carretes, poleas, lanzaderas, modelos o matrices, patrones de madera, perillas, reglas, rodillos, tapones y similares. Incluye las artesanías y juguetes a base de madera. Excepto muebles.",
-          "padre_numero": 105,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 120,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 122,
@@ -8841,8 +8841,8 @@
           "identificador": null,
           "contenido": "IV Comprende a las empresas que con papel y/o cartón se dedican a fabricar cajas, envases, bolsas, papel para copiar o reportar, papel engomado, sobres, tarjetas, papel de escribir, cuadernos, bloques, láminas de cartón impermeabilizadas, papel y toallas higiénicas, pañales desechables y otros, cuando no se fabriquen en forma simultánea a la producción del papel o pasta de celulosa.",
           "padre_numero": 130,
-          "x_id": 168,
-          "x_texto": 168
+          "x_id": 492,
+          "x_texto": 492
         },
         {
           "numero": 132,
@@ -9002,16 +9002,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que fabrican aceites y grasas vegetales y animales no comestibles, para usos industriales.",
-          "padre_numero": 134,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 148,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 150,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Incluye aquéllas que realicen parte del proceso productivo como la extracción, refinación, hidrogenación, blanqueo, epoxidación, polimerización, esterificación, purificación y otros similares para los aceites y grasas de uso industrial.",
-          "padre_numero": 149,
+          "padre_numero": 148,
           "x_id": 168,
           "x_texto": 168
         },
@@ -9102,15 +9102,15 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la fabricación de fibras celulósicas y no celulósicas tales como rayón, nylon, poliéster, acrilán, elastoméricas y polipropileno, con o sin la realización de los procesos de estirado y texturizado de las fibras.",
           "padre_numero": 159,
-          "x_id": 123,
-          "x_texto": 123
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 161,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Incluye la fabricación de película celulósica transparente (celofán), así como la fabricación de película transparente de polipropileno y cuerdas para llantas.",
-          "padre_numero": 160,
+          "padre_numero": 159,
           "x_id": 168,
           "x_texto": 168
         },
@@ -9119,7 +9119,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "MINERAL FRACCIÓN ACTIVIDAD CLASE 311 Refinación del petróleo crudo y petroquímica básica. IV",
-          "padre_numero": 160,
+          "padre_numero": 159,
           "x_id": 168,
           "x_texto": 168
         },
@@ -9128,7 +9128,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se considera la refinación del petróleo crudo y a la industria petroquímica básica, aunque su manejo esté reservado en forma exclusiva al Estado. Incluye la fabricación de gasolinas, aceites pesados, asfaltos, parafinas y otros productos derivados de la refinación del petróleo crudo.",
-          "padre_numero": 160,
+          "padre_numero": 159,
           "x_id": 168,
           "x_texto": 168
         },
@@ -9183,8 +9183,8 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la fabricación de llantas, cámaras, empaques, retenes, rodillos, tapetes, bandas, poleas, topes, accesorios para automóviles, tubos, mangueras, planchas, hojas, hilos, juguetes, tacones, suelas, calzado moldeado, productos de uso higiénico y farmacéutico y otros similares de hule. Incluye la regeneración y vulcanización de llantas y otros productos de hule. Excepto el parchado de llantas y cámaras clasificadas en la fracción 891.",
           "padre_numero": 168,
-          "x_id": 125,
-          "x_texto": 125
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 170,
@@ -9371,9 +9371,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que con materiales provenientes de la industria extractiva, se dedican a la fabricación de granito artificial, al corte, pulido y laminado de mármol y otras piedras, para obtener mosaicos, losetas, baldosas, adoquines, losas para pavimentos, azulejos, piedras para acabados y ornamentación en la construcción, lápidas y productos a base de granito artificial, mármol y otras piedras.",
-          "padre_numero": 168,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 189,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 191,
@@ -9435,15 +9435,15 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican por medio de procesos continuos automatizados, a la fabricación y regeneración de vidrio para obtener materiales y productos como vidrio en masa, en bolas, barras, varillas o tubos, templado, refractario, colado, laminado, estirado o soplado, chapado, desbastado o pulido de superficie no lisa, vidrio multicelular en bloques, baldosas, placas, paneles y formas análogas, recipientes para transporte o envase, tapones y otros dispositivos de cierre, ampollas, objetos para laboratorio, higiene, farmacia, artísticos, decorativos, ornamentales, espejos, cristalería tallada y otros.",
           "padre_numero": 196,
-          "x_id": 123,
-          "x_texto": 123
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 198,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Incluye la fabricación de fibras y lana de vidrio, así como la manufactura de estos materiales.",
-          "padre_numero": 197,
+          "padre_numero": 196,
           "x_id": 168,
           "x_texto": 168
         },
@@ -9516,8 +9516,8 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la fabricación de productos primarios de hierro, acero y metales no ferrosos, tales como: ferroaleaciones, arrabio, fierro esponja, aceros especiales, planchón, tocho, palanquilla, varilla corrugada, alambrón, barras, rieles, plancha, tubos y otros productos primarios de hierro o acero y de metales no ferrosos. Incluye a empresas que realicen todo el proceso de transformación o parte de él, desde la fundición, afinación y refinación, hasta la fase de productos semiacabados por laminación, vaciado, moldeado, extrusión, trefilado, forjado y otros procesos para obtener alambre, perfiles estructurales, láminas, hojas, cintas, hojalata, cañerías, piezas fundidas y otros; así como a las dedicadas al aprovechamiento de chatarra para obtener piezas fundidas y coladas.",
           "padre_numero": 205,
-          "x_id": 123,
-          "x_texto": 123
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 207,
@@ -9542,16 +9542,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No se incluye en esta fracción a aquellas empresas cuyos procesos de trabajo no sean automatizados o lo sean parcialmente. Igualmente, se excluye a las empresas que tengan algunas líneas de producción totalmente automatizadas, pero que cuenten con otras que no lo sean, clasificadas en la fracción 341.",
-          "padre_numero": 205,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 207,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 210,
           "tipo": "texto",
           "identificador": null,
           "contenido": "MAQUINARIA Y EQUIPO FRACCIÓN ACTIVIDAD CLASE 351 Fabricación de utensilios agrícolas, herramientas y artículos de V ferretería y cerrajería.",
-          "padre_numero": 209,
+          "padre_numero": 207,
           "x_id": 168,
           "x_texto": 168
         },
@@ -9560,16 +9560,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la fabricación de palas, picos, azadones, horquillas, rastrillos, hachas, hocinas, guadañas, hoces, machetes y otras herramientas agrícolas; serruchos, seguetas, útiles intercambiables para máquinas-herramientas o de mano, buriles, brocas, pijas, pernos, tuercas, pasadores, tornillos, tensores, grilletes, chavetas, ganchos, armellas, remaches, clavos, tachuelas, clavijas, arandelas, guarniciones y herrajes, cierrapuertas automáticos, perchas, ménsulas, chapas, candados, llaves, cerraduras, accesorios metálicos para baños y otros artículos y utensilios.",
-          "padre_numero": 205,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 207,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 212,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Incluye espuelas, herraduras y frenos para animales.",
-          "padre_numero": 211,
+          "padre_numero": 207,
           "x_id": 168,
           "x_texto": 168
         },
@@ -9587,9 +9587,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la fabricación y/o reparación de puertas, ventanas, rejas, cortinas, escaleras, barandales y otros artículos de metal. Incluye la fabricación de juegos metálicos infantiles no motorizados. Excepto las empresas que en forma simultánea con la fabricación de los productos mencionados instalen los mismos, así como aquéllas que realicen exclusivamente la instalación de los productos mencionados, las que se clasifican en la fracción 423.",
-          "padre_numero": 205,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 213,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 215,
@@ -9641,9 +9641,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a fabricar envases metálicos a base de: hojalata, aluminio, acero inoxidable, lámina galvanizada y otras aleaciones; así como la fabricación de corcholatas y tapas de los envases. Excepto tanques y recipientes de placa metálica considerados en la fracción 354.",
-          "padre_numero": 205,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 219,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 221,
@@ -9812,16 +9812,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la fabricación y/o ensamble de implementos, equipos y máquinas especiales para las industrias señaladas. Incluye la fabricación de bombas, motores (excepto los eléctricos y automotrices), compresores, centrifugadores, aparatos de filtración, calefacción y refrigeración, equipos de elevación, carga, descarga y manipulación (carretillas, polipastos, grúas, montacargas, escaleras electromecánicas, bandas transportadoras, elevadores para personas y mercancías y otros), básculas, herramientas neumáticas (pistolas aerográficas, extintores, aparatos de chorro de arena) y otros equipos y máquinas de uso común a varias industrias.",
-          "padre_numero": 232,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 238,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 240,
           "tipo": "texto",
           "identificador": null,
           "contenido": "No se considera en esta fracción la fabricación y/o ensamble de implementos, equipos y máquinas clasificados por separado.",
-          "padre_numero": 239,
+          "padre_numero": 238,
           "x_id": 168,
           "x_texto": 168
         },
@@ -9866,9 +9866,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la fabricación y/o ensamble de máquinas de coser, de escribir, protectoras de cheques, calculadoras, registradoras, franqueadoras de correspondencia, sus partes y otras máquinas de oficina. Incluye la fabricación de equipo de cómputo o de procesamiento electrónico de datos y sus periféricos. Excepto los equipos de comunicación, clasificados en la fracción 372.",
-          "padre_numero": 232,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 244,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 246,
@@ -9902,9 +9902,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la fabricación de partes y piezas sueltas para maquinaria y equipo en general.",
-          "padre_numero": 232,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 248,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 250,
@@ -9939,8 +9939,8 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la fabricación y/o ensamble de generadores, motogeneradores, motorreductores, transformadores, reguladores, alternadores, rectificadores, motores eléctricos, punteadoras, soldadoras eléctricas y otros equipos y máquinas para generación y transformación de energía eléctrica. Excepto la fabricación y/o ensamble de partes para el sistema eléctrico de vehículos automóviles, clasificadas en la fracción 384.",
           "padre_numero": 252,
-          "x_id": 123,
-          "x_texto": 123
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 254,
@@ -10082,9 +10082,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la fabricación y/o ensamble de interruptores, arrancadores, relevadores, tableros, conmutadores, cortacircuitos, pararrayos, amortiguadores de onda, alarmas, tomas de corriente, pletinas y similares.",
-          "padre_numero": 252,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 268,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 270,
@@ -10226,9 +10226,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la fabricación y/o ensamble de bobinas, generadores, distribuidores, reguladores, alternadores, transformadores, bujías, platinos, sistemas de encendido y otras partes y accesorios para el sistema eléctrico de vehículos automóviles. Excepto la fabricación de acumuladores, clasificados en las fracciones 375 y 3711.",
-          "padre_numero": 275,
-          "x_id": 125,
-          "x_texto": 125
+          "padre_numero": 284,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 286,
@@ -10335,15 +10335,15 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la fabricación en serie de conjuntos mecánicos tales como: sistemas de transmisión, de dirección, de suspensión, de embrague, de frenos y otros, así como sus partes. Incluye a las empresas que se dedican exclusivamente a la fabricación de partes metálicas para motores de combustión interna (gasolina o diesel), tales como: monoblocks, pistones, bielas, anillos, engranes, cigüeñales, árboles de levas, cabezas de cilindros, balancines, bujes, inyectores, bombas (de enfriamiento, lubricación y combustible), múltiples (de admisión y escape), poleas, tapas cojinete (de cigüeñal y de árbol de levas), válvulas (para admisión y escape), carcazas, retenes de sello de aceite, flechas, camisas para cilindro, filtros (para aceite, combustibles y aire) y carburadores.",
           "padre_numero": 296,
-          "x_id": 123,
-          "x_texto": 123
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 298,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Excepto empresas que fabriquen partes para motor, como tornillos, tuercas, arandelas, bandas, mangueras, cables, partes metálicas para soporte y otras, clasificadas por separado.",
-          "padre_numero": 297,
+          "padre_numero": 296,
           "x_id": 168,
           "x_texto": 168
         },
@@ -10595,25 +10595,25 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se considera la construcción de instalaciones y edificaciones agropecuarias, industriales, edificaciones especiales relacionadas con el transporte (estaciones de pasajeros y otras) y edificaciones industriales especiales (centrales telefónicas, telegráficas o eléctricas, industria química y otras). Obras de colección, disposición y tratamiento de aguas negras, potabilizadoras y redes de distribución; camellones, banquetas, calles, avenidas, bulevares, viaductos, pasos a desnivel, sistemas de señalamiento, alumbrado público y otras obras de urbanización y saneamiento; líneas telegráficas, telefónicas, incluso cables submarinos, télex, red de microondas, torres transmisoras de radio y televisión, tendido de líneas para transmisión por cable y otros similares, incluso radares y microondas; caminos, brechas, carreteras, autopistas, pistas de aeropuertos, sistemas ferroviarios y transporte urbano eléctrico, estructura de vías para transporte ferroviario, urbano, suburbano e interurbano, estaciones subterráneas y vías férreas (metro); oleoductos, gasoductos y conductos similares y otras obras de comunicación y transportes; presas, estaciones de bombeo, acueductos y redes de distribución de agua, canales y obras de riego, obras para control de inundaciones (malecones, diques pluviales y otras), dragado y eliminación de rocas submarinas, puertos, muelles, desembarcaderos, diques rompeolas y similares; canales de navegación y otras obras marítimas; estadios, campos y canchas deportivas; perforación de pozos de agua, petroleros o de gas; lagos y estanques artificiales; instalación y remodelación de esculturas, monumentos y otras obras de ingeniería civil no especificadas.",
-          "padre_numero": 318,
-          "x_id": 125,
-          "x_texto": 125
+          "padre_numero": 324,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 327,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se incluyen las edificaciones a que se refiere la fracción 411, cuando se trate de obra pública, cuando sean realizadas por personas morales o cuando, tratándose de personas físicas, éstas acrediten de manera fehaciente que se dedican normalmente a actividades de construcción.",
-          "padre_numero": 318,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 324,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 328,
           "tipo": "texto",
           "identificador": null,
           "contenido": "ESPECIALIZADOS FRACCIÓN ACTIVIDAD CLASE 421 Instalaciones sanitarias, eléctricas, de gas y de aire IV acondicionado.",
-          "padre_numero": 327,
+          "padre_numero": 324,
           "x_id": 168,
           "x_texto": 168
         },
@@ -10622,7 +10622,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la instalación de sistemas sanitarios, de plomería y fontanería, de sistema eléctrico, intercomunicación y de alarma, de sistemas de aire acondicionado, de redes de distribución de gas combustible e instalaciones similares. Incluye la modificación, ampliación o mantenimiento y reparación de las instalaciones mencionadas, así como la limpieza del alcantarillado, caños y tuberías.",
-          "padre_numero": 327,
+          "padre_numero": 324,
           "x_id": 168,
           "x_texto": 168
         },
@@ -10758,8 +10758,8 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la compra y expendio al menudeo de frutas, verduras, carnes, pollos, pescados, vísceras, huevo, leche, chiles secos, moles, especias, granos, y otros productos alimenticios agropecuarios o de la pesca, en estado natural o elaborados. Incluye tiendas de abarrotes, ultramarinos, misceláneas, dulcerías, salchichonerías, cremerías, tabaquerías, vinaterías y otros establecimientos con ventas al menudeo de alimentos, bebidas y/o productos del tabaco. Excepto supermercados o tiendas de autoservicio, almacenes y establecimientos con transporte, cantinas, restaurantes, cafeterías y otras empresas que preparen y den servicio de alimentos, clasificadas por separado.",
           "padre_numero": 340,
-          "x_id": 123,
-          "x_texto": 123
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 345,
@@ -10829,9 +10829,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la compra y expendio al menudeo de ropa en general, calzado, sombreros, pieles para dama, pelucas, telas, casimires, artículos de mercería, bonetería, sedería y otros establecimientos con ventas al menudeo de prendas y accesorios de vestir y/o artículos para su confección. Excepto supermercados o tiendas de autoservicio, almacenes y establecimientos con transporte, clasificados por separado.",
-          "padre_numero": 340,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 349,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 353,
@@ -10865,9 +10865,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la compra, almacenamiento y venta al menudeo, medio mayoreo y/o mayoreo de prendas y accesorios de vestir y artículos para su confección que cuenten con transporte para la distribución y/o equipo para el movimiento de las mercancías. Excepto supermercados o tiendas de autoservicio y empresas que se dedican a prestar el servicio de transporte, clasificados por separado.",
-          "padre_numero": 340,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 355,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 357,
@@ -11225,9 +11225,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la compra, almacenamiento y venta al menudeo, medio mayoreo y/o mayoreo de aceites y grasas lubricantes y aditivos no comestibles, que no cuenten con transporte para la distribución ni equipo para el movimiento de las mercancías. Incluye cambios de aceite en vehículos automóviles, cuando éstos sean realizados por la venta de dichas mercancías. Excepto establecimientos con transporte, clasificados por separado.",
-          "padre_numero": 376,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 395,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 397,
@@ -11423,9 +11423,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la compra, almacenamiento y venta al menudeo, medio mayoreo y/o mayoreo de vidrio, cristales, espejos y lunas, que instalen y/o cuenten con transporte para la distribución o equipo para el movimiento de las mercancías. Excepto empresas que se dedican a prestar el servicio de transporte, clasificadas por separado.",
-          "padre_numero": 376,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 417,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 419,
@@ -11541,8 +11541,8 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la compra, almacenamiento y venta al menudeo, medio mayoreo y/o mayoreo de papel y cartón nuevos, que cuenten con transporte para la distribución y/o equipo para el movimiento de las mercancías. Excepto empresas que se dedican a prestar el servicio de transporte, clasificadas por separado.",
           "padre_numero": 430,
-          "x_id": 123,
-          "x_texto": 123
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 432,
@@ -11559,8 +11559,8 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la compra, almacenamiento y venta al menudeo, medio mayoreo y/o mayoreo de chatarra o fierro viejo, partes o mecanismos usados y desperdicios en general. Se consideran las plantas procesadoras de basura y empresas que prestan servicios de recolección y/o control de desechos industriales y en general; así como los establecimientos de compraventa de maquinaria vieja en general, trapo, papel, cartón, vidrio y plástico usados. Excepto empresas que se dedican al desmantelamiento o deshuese de equipo de transporte, para poner sus partes o mecanismos a la venta y las que prestan el servicio de transporte, clasificadas en las fracciones 683 y 712, respectivamente.",
           "padre_numero": 432,
-          "x_id": 123,
-          "x_texto": 123
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 434,
@@ -11702,9 +11702,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la compra, almacenamiento y venta al menudeo, medio mayoreo y/o mayoreo de equipo y mobiliario, sus partes y/o accesorios para oficinas y comercios, hoteles, restaurantes, peluquerías, salones de belleza, billares, boliches y otro equipo y mobiliario para la prestación de servicios y el comercio, que cuenten con transporte para la distribución y/o equipo para el movimiento de las mercancías o con servicios de instalación, reparación y mantenimiento. Excepto empresas que se dedican a prestar el servicio de transporte, clasificadas por separado.",
-          "padre_numero": 434,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 448,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 450,
@@ -12017,9 +12017,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a prestar servicios relacionados con el transporte marítimo, fluvial y lacustre como carga y descarga (estiba y alijo); mantenimiento y explotación de canales, muelles, atracaderos y otros servicios directamente vinculados con el transporte por agua. Incluye servicios de supervisión y mantenimiento preventivo y correctivo en plataformas marinas.",
-          "padre_numero": 481,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 483,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 485,
@@ -12143,9 +12143,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a prestar servicios turísticos, de representación y gestión aduanal, de equipajes, organización y promoción de viajes, venta de boletos y reservación para hospedaje, que cuenten con operadores de vehículos y/o transporte para su distribución y entrega. Incluye a las empresas que se dedican a la recepción, almacenamiento, manipulación de carga y embalaje, distribución y entrega de mensajería y paquetería; así como a las academias o escuelas de manejo y otras actividades relacionadas con los transportes en general no clasificadas anteriormente. Excepto las que se dedican exclusivamente a la transportación turística de pasajeros, que se clasifican en la fracción 711.",
-          "padre_numero": 487,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 497,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 499,
@@ -12252,8 +12252,8 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que prestan servicios profesionales y/o técnicos como: notarías públicas, bufetes jurídicos, contaduría, auditoría y teneduría de libros, asesoría y estudios técnicos de arquitectura e ingeniería, asesoría en administración, organización de empresas, relaciones públicas, economía, investigación de mercado, solvencia financiera, patentes y marcas industriales, análisis de sistemas y procesamiento electrónico de datos, administrativos, de trámite y cobranzas, escritorios públicos, comisiones y representaciones mercantiles, centros de fotocopiado, estudios fotográficos, agencias de publicidad, información, noticias y otras especialidades similares. Incluye a las agencias de colocación de personal o bolsas de trabajo, que actúen como intermediarios en los términos de la Ley Federal del Trabajo.",
           "padre_numero": 509,
-          "x_id": 123,
-          "x_texto": 123
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 511,
@@ -12459,8 +12459,8 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a la preparación y a prestar servicios de alimentos en restaurantes, cafés, fondas, cocinas económicas, loncherías, ostionerías, rosticerías, pizzerías, taquerías, torterías, neverías, refresquerías, merenderos, cenadurías y similares, que cuenten o no con el servicio de entrega a domicilio. Incluye a aquellas empresas que además de prestar los servicios antes mencionados, simultáneamente preparen y sirvan bebidas alcohólicas. Excepto empresas que se dedican a la preparación y servicio de bebidas en cantinas, bares, cervecerías y otros similares, clasificadas en la fracción 872.",
           "padre_numero": 532,
-          "x_id": 123,
-          "x_texto": 123
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 534,
@@ -12612,15 +12612,15 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a los servicios de reparación de automóviles, camiones, autobuses, motocicletas, bicicletas, lanchas, aeronaves y sus partes componentes como: motores, transmisiones, cajas de cambio, carburadores, arranques, radiadores, frenos, sistema eléctrico, carrocerías (hojalatería, pintura, asientos, polarizado de cristales y otros); así como los servicios de parchado de llantas y cámaras, lubricación, lavado y engrasado, alineación y balanceo; el servicio de estacionamiento y pensión de vehículos, siempre y cuando además presten alguno(s) de los servicios antes mencionados.",
           "padre_numero": 549,
-          "x_id": 123,
-          "x_texto": 123
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 551,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Incluye a los centros de verificación de emisión de contaminantes automotrices, que realicen en forma simultánea la(s) actividad(es) descrita(s) en esta fracción. Excepto empresas que se dedican a la reforma, reconstrucción (como la regeneración y vulcanización de llantas) o fabricación de equipo de transporte y sus partes, que se clasifican por separado.",
-          "padre_numero": 550,
+          "padre_numero": 549,
           "x_id": 168,
           "x_texto": 168
         },
@@ -12873,15 +12873,15 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que prestan servicios de guardería, enseñanza preprimaria, primaria, secundaria, media-superior (preparatoria, vocacional), subprofesional, profesional, enseñanza comercial, idiomas y cursos por correspondencia; capacitación técnica de oficios y artesanías; música, danza y otras artes; servicios de investigación científica; bibliotecas, museos, jardines botánicos y otros servicios similares de difusión cultural. Excepto academias o escuelas de manejo de vehículos y de cultura física (gimnasios) clasificadas en las fracciones 755 y 881, respectivamente.",
           "padre_numero": 576,
-          "x_id": 125,
-          "x_texto": 125
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 580,
           "tipo": "texto",
           "identificador": null,
           "contenido": "VETERINARIOS FRACCIÓN ACTIVIDAD CLASE 921 Servicios médicos. I",
-          "padre_numero": 579,
+          "padre_numero": 576,
           "x_id": 168,
           "x_texto": 168
         },
@@ -12891,8 +12891,8 @@
           "identificador": null,
           "contenido": "Comprende a las empresas que se dedican a proporcionar servicios médicos en hospitales, sanatorios, clínicas generales, maternidades, consultorios y clínicas dentales, incluso servicios de obstetricia y enfermería. Excepto las empresas que además de los servicios médicos, cuenten con transporte; operadores para traslado de pacientes; laboratorios de análisis químico-biológicos; bancos de sangre; servicios radiológicos, radioterapéuticos y otros similares, clasificados en la fracción 922.",
           "padre_numero": 576,
-          "x_id": 123,
-          "x_texto": 123
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 582,
@@ -12998,18 +12998,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Comprende la dirección, coordinación, evaluación y control de los órganos de los Gobiernos Federal, Estatales y Municipales; administración de personal, adquisiciones, edificios, maquinaria, vehículos y demás aspectos relacionados con el ejercicio presupuestal; recaudación de impuestos, derechos, productos y aprovechamientos; gestión de la deuda pública y fiscalización del empleo de fondos públicos; administración general, asuntos de relaciones exteriores e intergubernamentales (excepto los asuntos monetarios y militares); supervisión y formulación de programas de educación; servicios legislativos, asuntos de planeación económica global relativos al territorio, empleo, estadísticas, celebración de elecciones; servicios prestados por tribunales de justicia y órganos afines y otros servicios de la administración pública similares; servicios de fomento, reglamentación, investigación, desarrollo, registro y vigilancia de asuntos laborales, agropecuarios, incluso los de caza, pesca y relacionados con las industrias extractivas y de construcción; la industria manufacturera y la industria eléctrica; el comercio y los servicios; vías y medios de comunicación y transportes; servicios de fomento regional, turísticos y de otras actividades similares, así como la administración general, supervisión y apoyo de programas de vivienda.",
-          "padre_numero": 588,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 590,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 594,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando se trate de la incorporación parcial al I.M.S.S. de servicios generales de la administración pública, la clasificación se hará conforme a la actividad que desarrollen en los términos y forma de este ordenamiento. La construcción y servicios de conservación de mantenimiento de obras públicas, se clasifican por separado en las fracciones de la División de la Construcción.",
-          "padre_numero": 588,
-          "x_id": 123,
-          "x_texto": 123
+          "padre_numero": 590,
+          "x_id": 168,
+          "x_texto": 168
         },
         {
           "numero": 595,

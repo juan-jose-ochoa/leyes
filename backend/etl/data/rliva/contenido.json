@@ -162,9 +162,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas físicas o morales que presten los servicios de autotransporte de bienes a que se refiere el párrafo anterior, deberán poner a disposición del Servicio de Administración Tributaria la documentación comprobatoria, de conformidad con las disposiciones fiscales, de las cantidades adicionales al valor de la contraprestación pactada por los citados servicios, que efectivamente se cobren a quien los reciba, por contribuciones distintas al impuesto al valor agregado, viáticos, gastos de toda clase, reembolsos, intereses normales o moratorios, penas convencionales y por cualquier otro concepto, identificando dicha documentación con tales erogaciones.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 6,
+          "x_id": 107,
+          "x_texto": 107
         }
       ]
     },
@@ -501,9 +501,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando el monto del impuesto acreditable resulte inferior al monto del impuesto que se deba reintegrar, el contribuyente pagará la diferencia entre dichos montos al presentar la declaración de pago que corresponda al mes en el que se efectúa el ajuste.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 4,
@@ -596,9 +596,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Igualmente, el administrador deberá entregar a cada condómino una copia de los comprobantes.",
-          "padre_numero": 5,
-          "x_id": 107,
-          "x_texto": 107
+          "padre_numero": 7,
+          "x_id": 125,
+          "x_texto": 125
         },
         {
           "numero": 9,
@@ -1586,9 +1586,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No tendrá efecto alguno la presentación extemporánea del aviso a que se refiere esta fracción;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 3,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 5,
@@ -1854,9 +1854,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando no se hagan las manifestaciones previstas en el párrafo anterior en el momento en que se solicite la inscripción del fideicomiso en el Registro Federal de Contribuyentes, se podrá ejercer la opción a que se refiere este artículo, a partir del mes siguiente a aquél en el que se realicen dichas manifestaciones por escrito ante el Servicio de Administración Tributaria;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 4,

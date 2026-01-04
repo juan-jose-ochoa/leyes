@@ -230,9 +230,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Adicionalmente a las tasas establecidas en este numeral, se pagará una cuota de $1.1584 por cigarro enajenado o importado. Para los efectos de esta Ley se considera que el peso de un cigarro equivale a 0.75 gramos de tabaco, incluyendo el peso de otras sustancias con que esté mezclado el tabaco. También se considera que un cigarro contiene 8 miligramos de nicotina.",
-          "padre_numero": 2,
-          "x_id": 118,
-          "x_texto": 118,
+          "padre_numero": 8,
+          "x_id": 139,
+          "x_texto": 139,
           "referencias": [
             "Párrafo adicionado DOF 27-11-2009. Reformado DOF 19-11-2010",
             "Cuota del párrafo actualizada por acuerdo DOF 24-12-2019, 24-12-2020, 23-12-2021, 28-12-2022, 22-12-2023, 27-12-2024",
@@ -244,9 +244,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de los tabacos labrados no considerados en el párrafo anterior, con excepción de puros y otros tabacos labrados hechos enteramente a mano, se aplicará la cuota mencionada en dicho párrafo al resultado de dividir el peso total de los tabacos labrados enajenados o importados, entre 0.75. Para tal efecto se deberá incluir el peso de otras sustancias con que esté mezclado el tabaco. No se deberá considerar el filtro ni el papel o cualquier otra sustancia que no contenga tabaco, con el que estén envueltos los referidos tabacos labrados. Tratándose de otros productos que contengan nicotina, se aplicará la referida cuota al resultado de dividir el contenido de nicotina que contengan dichos productos, entre 8, sin considerar cualquier otra sustancia que no contenga nicotina con la que estén elaborados.",
-          "padre_numero": 2,
-          "x_id": 118,
-          "x_texto": 118,
+          "padre_numero": 8,
+          "x_id": 139,
+          "x_texto": 139,
           "referencias": [
             "Párrafo adicionado DOF 27-11-2009. Reformado DOF 11-12-2013, 07-11-2025"
           ]
@@ -256,9 +256,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La cuota a que se refieren los párrafos anteriores, se actualizará anualmente y entrará en vigor a partir del 1 de enero de cada año, con el factor de actualización correspondiente al periodo comprendido desde el mes de diciembre del penúltimo año hasta el mes de diciembre inmediato anterior a aquél por el cual se efectúa la actualización, mismo que se obtendrá de conformidad con el artículo 17-A del Código Fiscal de la Federación. La Secretaría de Hacienda y Crédito Público publicará el factor de actualización en el Diario Oficial de la Federación durante el mes de diciembre de cada año, así como la cuota actualizada, misma que se expresará hasta el diezmilésimo.",
-          "padre_numero": 2,
-          "x_id": 118,
-          "x_texto": 118,
+          "padre_numero": 8,
+          "x_id": 139,
+          "x_texto": 139,
           "referencias": [
             "Párrafo adicionado DOF 09-12-2019"
           ]
@@ -331,18 +331,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de fracciones de las unidades de medida, la cuota se aplicará en la proporción en que corresponda a dichas fracciones respecto de la unidad de medida.",
-          "padre_numero": 2,
-          "x_id": 113,
-          "x_texto": 113
+          "padre_numero": 16,
+          "x_id": 140,
+          "x_texto": 140
         },
         {
           "numero": 22,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las cantidades señaladas en el presente inciso, se actualizarán anualmente y entrarán en vigor a partir del 1 de enero de cada año, con el factor de actualización correspondiente al periodo comprendido desde el mes de diciembre del penúltimo año hasta el mes de diciembre inmediato anterior a aquél por el cual se efectúa la actualización, mismo que se obtendrá de conformidad con el artículo 17-A del Código Fiscal de la Federación. La Secretaría de Hacienda y Crédito Público publicará el factor de actualización en el Diario Oficial de la Federación durante el mes de diciembre de cada año, así como la cuota actualizada, misma que se expresará hasta el diezmilésimo.",
-          "padre_numero": 2,
-          "x_id": 113,
-          "x_texto": 113,
+          "padre_numero": 16,
+          "x_id": 140,
+          "x_texto": 140,
           "referencias": [
             "Párrafo reformado DOF 09-12-2019"
           ]
@@ -352,9 +352,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando los bienes a que se refiere este inciso estén mezclados, la cuota se calculará conforme a la cantidad que en la mezcla tenga cada combustible. Tratándose de la importación o enajenación de dichas mezclas, los contribuyentes deberán consignar la cantidad de cada uno de los combustibles que se contengan en la mezcla en el pedimento de importación o en el comprobante fiscal, según corresponda.",
-          "padre_numero": 2,
-          "x_id": 113,
-          "x_texto": 113,
+          "padre_numero": 16,
+          "x_id": 140,
+          "x_texto": 140,
           "referencias": [
             "Párrafo adicionado DOF 09-12-2019"
           ]
@@ -364,9 +364,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando la autoridad aduanera o fiscal, en ejercicio de sus facultades de comprobación, detecte que por las características de la mercancía que se introduce o pretende introducir a territorio nacional, se trata de los bienes a que se refiere este inciso, respecto de los cuales se ha omitido el pago total o parcial del impuesto a que se refiere el presente inciso, se aplicará la cuota que corresponda según el tipo de combustible de que se trate, sin perjuicio de las sanciones administrativas y penales que sean procedentes.",
-          "padre_numero": 2,
-          "x_id": 113,
-          "x_texto": 113,
+          "padre_numero": 16,
+          "x_id": 140,
+          "x_texto": 140,
           "referencias": [
             "Párrafo adicionado DOF 12-11-2021",
             "Inciso reformado DOF 18-11-2015"
@@ -410,27 +410,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las cuotas aplicables serán de $3.0818 por litro cuando se trate de bebidas saborizadas que contengan cualquier tipo de azúcares añadidos y de $1.5000 por litro cuando contengan cualquier tipo de edulcorantes añadidos. Tratándose de concentrados, polvos, jarabes, esencias o extractos de sabores, el impuesto se calculará tomando en cuenta el número de litros de bebidas saborizadas que, de conformidad con las especificaciones del fabricante, se puedan obtener.",
-          "padre_numero": 2,
-          "x_id": 113,
-          "x_texto": 113
+          "padre_numero": 27,
+          "x_id": 140,
+          "x_texto": 140
         },
         {
           "numero": 29,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Lo dispuesto en este inciso también será aplicable a los bienes mencionados en el inciso F) de esta fracción, cuando contengan azúcares o edulcorantes añadidos, en adición al impuesto establecido en dicho inciso F).",
-          "padre_numero": 2,
-          "x_id": 113,
-          "x_texto": 113
+          "padre_numero": 27,
+          "x_id": 140,
+          "x_texto": 140
         },
         {
           "numero": 30,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las cuotas a que se refiere este inciso se actualizarán anualmente y entrarán en vigor a partir del 1 de enero de cada año, con el factor de actualización correspondiente al periodo comprendido desde el mes de diciembre del penúltimo año hasta el mes de diciembre inmediato anterior a aquél por el cual se efectúa la actualización, mismo que se obtendrá de conformidad con el artículo 17-A del Código Fiscal de la Federación. La Secretaría de Hacienda y Crédito Público publicará el factor de actualización en el Diario Oficial de la Federación durante el mes de diciembre de cada año, así como las cuotas actualizadas, mismas que se expresarán hasta el diezmilésimo.",
-          "padre_numero": 2,
-          "x_id": 113,
-          "x_texto": 113,
+          "padre_numero": 27,
+          "x_id": 140,
+          "x_texto": 140,
           "referencias": [
             "Inciso reformado DOF 30-12-2002, 31-12-2003. Derogado DOF 27-12-2006. Adicionado DOF 11-12-2013. Reformado DOF 09-12-2019",
             "Cuota del inciso actualizada por Resolución Miscelánea Fiscal DOF 29-12-2017. Cuota actualizada por acuerdo DOF 24-12-2019,",
@@ -443,7 +443,7 @@
           "tipo": "numeral",
           "identificador": "1.",
           "contenido": "Propano ....................................... 9.7551 centavos por litro.",
-          "padre_numero": 30,
+          "padre_numero": 27,
           "x_id": 145,
           "x_texto": 167
         },
@@ -452,7 +452,7 @@
           "tipo": "numeral",
           "identificador": "2.",
           "contenido": "Butano ......................................... 12.6241 centavos por litro.",
-          "padre_numero": 30,
+          "padre_numero": 27,
           "x_id": 145,
           "x_texto": 167
         },
@@ -461,7 +461,7 @@
           "tipo": "numeral",
           "identificador": "3.",
           "contenido": "Gasolinas y gasavión .................. 17.1107 centavos por litro.",
-          "padre_numero": 30,
+          "padre_numero": 27,
           "x_id": 145,
           "x_texto": 167
         },
@@ -470,7 +470,7 @@
           "tipo": "numeral",
           "identificador": "4.",
           "contenido": "Turbosina y otros kerosenos ....... 20.4363 centavos por litro.",
-          "padre_numero": 30,
+          "padre_numero": 27,
           "x_id": 145,
           "x_texto": 167
         },
@@ -479,7 +479,7 @@
           "tipo": "numeral",
           "identificador": "5.",
           "contenido": "Diesel ........................................... 20.7623 centavos por litro.",
-          "padre_numero": 30,
+          "padre_numero": 27,
           "x_id": 145,
           "x_texto": 167
         },
@@ -488,7 +488,7 @@
           "tipo": "numeral",
           "identificador": "6.",
           "contenido": "Combustóleo ............................... 22.1578 centavos por litro.",
-          "padre_numero": 30,
+          "padre_numero": 27,
           "x_id": 145,
           "x_texto": 167
         },
@@ -497,7 +497,7 @@
           "tipo": "numeral",
           "identificador": "7.",
           "contenido": "Coque de petróleo ....................... 25.7183 pesos por tonelada.",
-          "padre_numero": 30,
+          "padre_numero": 27,
           "x_id": 145,
           "x_texto": 167
         },
@@ -506,7 +506,7 @@
           "tipo": "numeral",
           "identificador": "8.",
           "contenido": "Coque de carbón ......................... 60.2921 pesos por tonelada.",
-          "padre_numero": 30,
+          "padre_numero": 27,
           "x_id": 145,
           "x_texto": 167
         },
@@ -515,7 +515,7 @@
           "tipo": "numeral",
           "identificador": "9.",
           "contenido": "Carbón mineral ............................ 45.3984 pesos por tonelada.",
-          "padre_numero": 30,
+          "padre_numero": 27,
           "x_id": 145,
           "x_texto": 167
         },
@@ -524,7 +524,7 @@
           "tipo": "numeral",
           "identificador": "10.",
           "contenido": "Otros combustibles fósiles ......... 65.6262 pesos por tonelada de carbono que contenga el combustible.",
-          "padre_numero": 30,
+          "padre_numero": 27,
           "x_id": 145,
           "x_texto": 167,
           "referencias": [
@@ -537,18 +537,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de fracciones de las unidades de medida, la cuota se aplicará en la proporción que corresponda a dichas fracciones respecto de la unidad de medida de que se trate.",
-          "padre_numero": 2,
-          "x_id": 113,
-          "x_texto": 113
+          "padre_numero": 27,
+          "x_id": 140,
+          "x_texto": 140
         },
         {
           "numero": 42,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando los bienes a que se refiere este inciso estén mezclados, la cuota se calculará conforme a la cantidad que en la mezcla tenga cada combustible. Tratándose de la importación o enajenación de dichas mezclas, los contribuyentes deberán consignar la cantidad de cada uno de los combustibles que se contengan en la mezcla en el pedimento de importación o en el comprobante fiscal, según corresponda.",
-          "padre_numero": 2,
-          "x_id": 113,
-          "x_texto": 113,
+          "padre_numero": 27,
+          "x_id": 140,
+          "x_texto": 140,
           "referencias": [
             "Párrafo reformado DOF 09-12-2019"
           ]
@@ -558,9 +558,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las cantidades señaladas en el presente inciso, se actualizarán anualmente y entrarán en vigor a partir del 1 de enero de cada año, con el factor de actualización correspondiente al periodo comprendido desde el mes de diciembre del penúltimo año hasta el mes de diciembre inmediato anterior a aquél por el cual se efectúa la actualización, mismo que se obtendrá de conformidad con el artículo 17-A del Código Fiscal de la Federación. La Secretaría de Hacienda y Crédito Público publicará el factor de actualización en el Diario Oficial de la Federación durante el mes de diciembre de cada año, así como la cuota actualizada, misma que se expresará hasta el diezmilésimo.",
-          "padre_numero": 2,
-          "x_id": 113,
-          "x_texto": 113,
+          "padre_numero": 27,
+          "x_id": 140,
+          "x_texto": 140,
           "referencias": [
             "Párrafo reformado DOF 09-12-2019",
             "Inciso reformado DOF 30-12-2002, 31-12-2003. Derogado DOF 27-12-2006. Adicionado DOF 11-12-2013"
@@ -607,16 +607,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La categoría de peligro de toxicidad aguda se determinará conforme a la siguiente tabla: Categoría Categoría Categoría Categoría Categoría Vía de exposición 1 2 3 4 5 Oral (mg/kg) 5 50 300 2000 5000 Dérmica (mg/kg) 50 200 1000 2000 -",
-          "padre_numero": 2,
-          "x_id": 113,
-          "x_texto": 113
+          "padre_numero": 44,
+          "x_id": 140,
+          "x_texto": 140
         },
         {
           "numero": 49,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Inhalatoria 100 500 2500 5000 Gases (ppmV) Inhalatoria 0,5 2 10 20 Vapores (mg/l) Inhalatoria 0,05 0,5 1 5 Polvos y nieblas (mg/l)",
-          "padre_numero": 48,
+          "padre_numero": 44,
           "x_id": 145,
           "x_texto": 145
         },
@@ -625,9 +625,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La aplicación de la tabla se sujetará a lo dispuesto a la Norma Oficial Mexicana “NOM- 232-SSA1-2009, Plaguicidas: que establece los requisitos del envase, embalaje y etiquetado de productos grado técnico y para uso agrícola, forestal, pecuario, jardinería, urbano, industrial y doméstico”, publicada en el Diario Oficial de la Federación el 13 de abril de 2010, emitida por la autoridad competente.",
-          "padre_numero": 2,
-          "x_id": 118,
-          "x_texto": 118,
+          "padre_numero": 44,
+          "x_id": 139,
+          "x_texto": 139,
           "referencias": [
             "Inciso adicionado DOF 11-12-2013"
           ]
@@ -727,18 +727,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando los alimentos mencionados cumplan con las disposiciones relativas a las especificaciones generales de etiquetado para alimentos, los contribuyentes podrán tomar en consideración las kilocalorías manifestadas en la etiqueta. Tratándose de alimentos que no tengan la etiqueta mencionada, se presumirá, salvo prueba en contrario, que tienen una densidad calórica igual o superior a 275 kilocalorías por cada 100 gramos.",
-          "padre_numero": 2,
-          "x_id": 118,
-          "x_texto": 118
+          "padre_numero": 51,
+          "x_id": 139,
+          "x_texto": 139
         },
         {
           "numero": 62,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Servicio de Administración Tributaria, mediante reglas de carácter general, dará a conocer los alimentos de consumo básico, considerando su importancia en la alimentación de la población, que no quedan comprendidos en este inciso.",
-          "padre_numero": 2,
-          "x_id": 118,
-          "x_texto": 118,
+          "padre_numero": 51,
+          "x_id": 139,
+          "x_texto": 139,
           "referencias": [
             "Inciso adicionado DOF 11-12-2013"
           ]
@@ -757,9 +757,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Lo dispuesto en este inciso no será aplicable tratándose de la importación de los videojuegos mencionados.",
-          "padre_numero": 2,
-          "x_id": 113,
-          "x_texto": 113,
+          "padre_numero": 63,
+          "x_id": 140,
+          "x_texto": 140,
           "referencias": [
             "Inciso adicionado DOF 07-11-2025"
           ]
@@ -799,27 +799,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "También quedan comprendidos en este inciso, los juegos con apuestas y sorteos que se realicen a través de Internet o medios electrónicos por residentes en el extranjero sin establecimiento en México en términos del artículo 18-B, primer párrafo, fracciones I y II de la Ley del Impuesto al Valor Agregado. Para efectos de este párrafo, los residentes en el extranjero o, en su caso, las plataformas digitales de intermediación a que se refieren los artículos 1o.-A BIS y 18-B, fracción II de la Ley del Impuesto al Valor Agregado, deberán cumplir con las obligaciones establecidas en los artículos 5o.-A BIS y 20-A de esta Ley, según corresponda, por los servicios digitales a que se refiere este párrafo.",
-          "padre_numero": 65,
-          "x_id": 113,
-          "x_texto": 113
+          "padre_numero": 67,
+          "x_id": 140,
+          "x_texto": 140
         },
         {
           "numero": 69,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La omisión en el pago del impuesto o del entero de las retenciones que, en su caso, deban efectuar y en la presentación de la declaración de pago y de la información, a que se refieren este inciso y el artículo 5o.-A BIS de esta Ley, se sancionará de conformidad con lo dispuesto en la presente Ley y en el Código Fiscal de la Federación.",
-          "padre_numero": 65,
-          "x_id": 113,
-          "x_texto": 113
+          "padre_numero": 67,
+          "x_id": 140,
+          "x_texto": 140
         },
         {
           "numero": 70,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, el incumplimiento a las obligaciones a que se refiere el párrafo anterior y las fracciones III, inciso a) y IV, inciso a) del artículo 20-A de esta Ley, dará lugar al bloqueo temporal del acceso al servicio digital del prestador de los servicios digitales, bloqueo que se realizará de conformidad con lo dispuesto en los artículos 18-H BIS a 18-H QUINTUS de la Ley del Impuesto al Valor Agregado.",
-          "padre_numero": 65,
-          "x_id": 113,
-          "x_texto": 113,
+          "padre_numero": 67,
+          "x_id": 140,
+          "x_texto": 140,
           "referencias": [
             "Inciso derogado DOF 31-12-2003. Adicionado DOF 01-10-2007. Reformado DOF 27-11-2009, 07-11-2025"
           ]
@@ -868,18 +868,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Quedan comprendidos en este inciso los videojuegos con contenido violento, extremo o para adulto, no apto para personas menores de 18 años, cuyo acceso o descarga se realice sin el pago de una contraprestación, pero que oferten cualquier contenido adicional dentro del videojuego. En este caso, la tasa se aplicará sobre el precio pagado por el contenido adicional.",
-          "padre_numero": 65,
-          "x_id": 113,
-          "x_texto": 113
+          "padre_numero": 72,
+          "x_id": 140,
+          "x_texto": 140
         },
         {
           "numero": 76,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando el acceso o descarga a que se refiere este inciso, se realice mediante el pago de una membresía o suscripción, periódica o no, que dé acceso a un catálogo de videojuegos que incluya videojuegos con contenido violento, extremo o para adulto, no apto para personas menores de 18 años, ya sea exclusivamente o conjuntamente con otro tipo de contenido o servicio digital, la tasa se aplicará únicamente al precio que corresponda por el acceso o descarga de cada videojuego por el que se deba pagar el impuesto en términos de este inciso, siempre que en el comprobante respectivo se haga la separación de cada uno de ellos. Cuando no se haga la separación mencionada, la contraprestación cobrada se entenderá que corresponde a un 70% del monto de los servicios a que se refiere este inciso, en cuyo caso dicho impuesto no podrá ser menor que el que corresponda al servicio digital de videojuegos que se hubiera pagado de manera separada al precio de la membresía o suscripción.",
-          "padre_numero": 65,
-          "x_id": 113,
-          "x_texto": 113,
+          "padre_numero": 72,
+          "x_id": 140,
+          "x_texto": 140,
           "referencias": [
             "Inciso adicionado DOF 07-11-2025"
           ]
@@ -898,18 +898,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos de esta fracción, la tasa se aplicará al valor de la enajenación a que se refiere el artículo 11 de esta Ley y, en su defecto, a la base gravable del impuesto general de exportación en términos de la Ley Aduanera.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 77,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 79,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las exportaciones a las que se les aplica la tasa del 0%, producirán los mismos efectos legales que los actos o actividades por los que se deba pagar el impuesto conforme a esta Ley y los productores que exporten serán considerados como contribuyentes del impuesto que establece esta Ley por los bienes a que se refiere esta fracción.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 77,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Fracción adicionada DOF 18-11-2015",
             "Artículo reformado DOF 31-12-1981, 31-12-1982, 31-12-1985, 31-12-1987, 28-12-1989, 26-12-1990. 20-12-1991, 20-07-1992, 03-12-1993,",
@@ -1145,9 +1145,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los valores de “b” y “c”, se determinarán conforme a lo previsto en el “Módulo 1. Energía” de las “Directrices del Panel Intergubernamental de Cambio Climático para los inventarios nacionales de gases de efecto invernadero, versión revisada en 1996” o las que, en su caso, las sustituyan.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 7,
@@ -1163,9 +1163,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Donde, 44/12: Es el factor para convertir las unidades de carbono a unidades de bióxido de carbono (CO2), de acuerdo con las “Directrices del Panel Intergubernamental de Cambio Climático para los inventarios nacionales de gases de efecto invernadero, versión revisada en 1996” o las que, en su caso, las sustituyan.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 7,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 9,
@@ -1255,18 +1255,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Descripción técnica. Es el nombre común de un grupo de hidrocarburos. La molécula más simple de la parafina es el metano; en cambio, los miembros más pesados de la serie, como el octano, se presentan como líquidos. Las formas sólidas de parafina, llamadas cera de parafina, provienen de las moléculas más pesadas.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Usos. Se utiliza en la fabricación de papel parafinado para empacar alimentos y otros productos; en la fabricación de papel carbón, impermeabilización de tapas de corcho o plástico, maderas, municiones; como aislante en conductores eléctricos; para fabricar lápices crasos, bujías y múltiples artículos. La parafina líquida también se utiliza como medicamento contra el estreñimiento y para dar brillo a los alimentos horneados.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 5,
@@ -1282,18 +1282,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Descripción técnica. Es un hidrocarburo obtenido del petróleo o del carbón, a partir de un corte de hidrocarburos de alta aromaticidad.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 5,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Usos. Se utiliza en la industria del hule sintético y natural para fabricación de llantas y bandas transportadoras.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 5,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 8,
@@ -1309,18 +1309,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Descripción técnica. Es un hidrocarburo líquido, su composición es de hidrocarburos mayores a 12 carbonos, con contenido de azufre y residuos de metales pesados como vanadio y níquel.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 8,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Usos. Se utiliza como componente en la carga a las refinerías para su transformación y separación en gasolinas y combustibles pesados.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 8,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 11,
@@ -1336,18 +1336,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Descripción técnica. Son un material viscoso, pegajoso y de color negro cuyos constituyentes predominantes son bitúmenes, los cuales pueden producirse en forma natural o se obtienen del procesamiento del petróleo.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 11,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Usos. Su utilización típica es en aglomerante en mezclas asfálticas para la pavimentación de carreteras, autovías o autopistas, e impermeabilizantes.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 11,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 14,
@@ -1363,18 +1363,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Descripción técnica. Es un producto de la desintegración catalítica, el cual es útil como componente de aceites para calentamiento.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 14,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 16,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Usos. Es usualmente empleado como componente de la carga a hidrotratamiento para la producción de diésel.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 14,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 17,
@@ -1390,18 +1390,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Descripción técnica. Se obtienen del proceso de la refinación del petróleo. Los aceites básicos sintéticos son los que resultan de una conversión de una mezcla de moléculas a otra mezcla compleja. Los más comunes son polialfaolefinas (PAO), diésteres, poliol ésteres y polialquilenglicoles (PAG).",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 17,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 19,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Usos. En general, los lubricantes utilizados actualmente empezaron como aceite básico; estos aceites forman la base adicional de aditivos que los hacen aptos para diferentes usos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 17,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 20,
@@ -1417,18 +1417,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Descripción técnica. Se obtienen a partir de la destilación del barril de petróleo, después del gasóleo y antes que el alquitrán; en algunos casos comprendiendo un 50% del total del barril.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 20,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 22,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Usos. Los lubricantes son usados en las bases parafínicas. Los lubricantes minerales obtenidos por destilación del petróleo son utilizados como aditivos en combustibles. Ello para soportar diversas condiciones de trabajo, lubricar a altas temperaturas, permanecer estable en un rango amplio de temperatura, tener la capacidad de mezclarse con un refrigerante, índice de viscosidad alto y capacidad de retener humedad.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 20,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 23,
@@ -1444,27 +1444,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Descripción técnica. Es una olefina, subproducto que se obtiene en las plantas catalíticas de las refinerías y viene mezclado con otros gases, principalmente con propano; también es obtenido en menor proporción como subproducto en las plantas de etileno.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 23,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 25,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Existen tres grados de propileno según su pureza (% de propileno): (i) grado refinería, (ii) grado químico y (iii) grado polímero.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 23,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 26,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Usos. Se utiliza sobre todo para la obtención de gasolinas de alto octanaje. También se utiliza en la síntesis de sus derivados, como los polímeros, disolventes y resinas.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 23,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 27,
@@ -1480,18 +1480,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Descripción técnica. Es un subproducto que se obtiene en las plantas catalíticas de las refinerías y viene mezclado con otros gases, principalmente con propano. Tiene un grado de pureza de entre 50 y 70%.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 27,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 29,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Usos. Se utiliza mayormente para obtener polipropileno (plásticos); acrilonitrilo (fibras sintéticas, caucho y resinas termoplásticas); óxido de propileno, intermedio para la obtención del propilenglicol, polipropoxidados y otros productos; derivados oxo, butiraldehído y n-butanol; cumeno, intermedio para la obtención de fenol y acetona; alcohol isopropílico, disolvente intermedio para la obtención de acetona; entre otras aplicaciones.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 27,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 30,
@@ -1507,18 +1507,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Descripción técnica. Es un subproducto que se obtiene en las plantas catalíticas de las refinerías y viene mezclado con otros gases, principalmente con propano. Tiene un grado de pureza de entre 92 y 94%.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 30,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 32,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Usos. Se utiliza mayormente para producir polipropileno (plásticos); acrilonitrilo (fibras sintéticas, caucho y resinas termoplásticas); óxido de propileno, intermedio para la obtención del propilenglicol, polipropoxidados y otros productos; derivados oxo, butiraldehído y n-butanol; cumeno, intermedio para la obtención de fenol y acetona; alcohol isopropílico, disolvente intermedio para la obtención de acetona; entre otras aplicaciones.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 30,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Artículo adicionado DOF 18-11-2015"
           ]
@@ -1770,18 +1770,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "También forman parte de la contraprestación los anticipos o depósitos que reciba el enajenante o el prestador del servicio antes de entregar el bien o prestar el servicio, cualquiera que sea el nombre que se dé a dichos anticipos o depósitos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 23,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 25,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando con motivo de la enajenación de bienes sujetos al pago de este impuesto se convenga además del precio por dicha enajenación el pago de cantidades adicionales al mismo por concepto de publicidad o cualquier otro, que en su defecto se hubieran tenido que realizar por parte del enajenante, dichas erogaciones formarán parte del valor o precio pactado.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 23,
+          "x_id": 121,
+          "x_texto": 121,
           "referencias": [
             "Párrafo reformado DOF 31-12-2003, 18-11-2015"
           ]
@@ -1791,27 +1791,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de enajenaciones se considerará que forma parte de la contraprestación, además de lo señalado en los párrafos anteriores, las cantidades que se carguen o cobren al adquirente del bien por concepto de envases y empaques, no retornables, necesarios para contener los bienes que se enajenan.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 23,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 27,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando la contraprestación que reciba el contribuyente por la enajenación de bienes o la prestación de servicios no sea en dinero, sino total o parcialmente en otros bienes o servicios, se considerará como valor de éstos el de mercado o, en su defecto, el de avalúo. Los mismos valores se tomarán en cuenta en caso de donación, cuando por ella se deba pagar el impuesto establecido en esta Ley.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 23,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 28,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En las permutas y pagos en especie, el impuesto especial sobre producción y servicios se deberá pagar por cada bien cuya propiedad se transmita o por cada servicio que se preste.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 23,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 29,
@@ -1878,9 +1878,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se consideran concentrados, polvos y jarabes para preparar bebidas energetizantes, aquéllos que por dilución permiten obtener bebidas energetizantes con las características señaladas en el párrafo anterior.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 33,
+          "x_id": 121,
+          "x_texto": 121,
           "referencias": [
             "Fracción adicionada DOF 19-11-2010"
           ]
@@ -3134,9 +3134,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No será aplicable la exención a que se refiere esta fracción tratándose de bienes que se destinen a los regímenes aduaneros de importación temporal para elaboración, transformación o reparación en programas de maquila o de exportación; de depósito fiscal para someterse al proceso de ensamble y fabricación de vehículos; de elaboración, transformación o reparación en recinto fiscalizado, y de recinto fiscalizado estratégico.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 2,
+          "x_id": 113,
+          "x_texto": 113,
           "referencias": [
             "Párrafo adicionado DOF 30-12-2002. Reformado DOF 11-12-2013"
           ]
@@ -3596,9 +3596,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los comerciantes que en el ejercicio inmediato anterior a aquél al que corresponda, hubieran efectuado el 90% del importe de sus enajenaciones con el público en general, en el comprobante fiscal que expidan no trasladarán expresamente y por separado el impuesto establecido en esta Ley, salvo que el adquirente sea contribuyente de este impuesto por el bien o servicio de que se trate y solicite la expedición del comprobante fiscal con el impuesto trasladado expresamente y por separado. En todos los casos, se deberán ofrecer los bienes gravados por esta Ley, incluyendo el impuesto en el precio.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 3,
+          "x_id": 113,
+          "x_texto": 113,
           "referencias": [
             "Párrafo reformado DOF 11-12-2013"
           ]
@@ -3608,9 +3608,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los contribuyentes que enajenen los bienes a que se refieren los incisos A), F), G) y J) de la fracción I del artículo 2o. de esta Ley, que trasladen en forma expresa y por separado el impuesto establecido en la misma, deberán proporcionar al Servicio de Administración Tributaria en forma trimestral, en los meses de abril, julio, octubre y enero, del año que corresponda, la relación de las personas a las que en el trimestre anterior al que se declara les hubiere trasladado el impuesto especial sobre producción y servicios en forma expresa y por separado en los términos de esta fracción, así como el monto del impuesto trasladado en dichas operaciones y la información y documentación que mediante reglas de carácter general señale el Servicio de Administración Tributaria.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 3,
+          "x_id": 113,
+          "x_texto": 113,
           "referencias": [
             "Párrafo reformado DOF 30-12-2002, 27-12-2006, 19-11-2010, 11-12-2013"
           ]
@@ -3620,9 +3620,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los contribuyentes que enajenen vinos de mesa, deberán cumplir con la obligación a que se refiere el párrafo anterior en los meses de enero y julio de cada año.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 3,
+          "x_id": 113,
+          "x_texto": 113,
           "referencias": [
             "Párrafo adicionado DOF 31-12-2003"
           ]
@@ -3632,9 +3632,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de la enajenación de tabacos labrados y de otros productos que contengan nicotina, en los comprobantes fiscales que se expidan se deberá especificar el peso total de tabaco contenido en los tabacos labrados enajenados, la cantidad de cigarros enajenados o la cantidad de miligramos de nicotina contenida en los productos enajenados, según corresponda.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 3,
+          "x_id": 113,
+          "x_texto": 113,
           "referencias": [
             "Párrafo adicionado DOF 27-11-2009. Reformado DOF 11-12-2013, 07-11-2025"
           ]
@@ -3665,9 +3665,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, se deberá informar a las autoridades fiscales cuando exista alguna modificación en los precios, debiendo presentar a las citadas autoridades, dentro de los 5 días siguientes a que esto ocurra, la lista de precios de venta que estará vigente a partir del momento de la modificación.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 9,
+          "x_id": 113,
+          "x_texto": 113
         },
         {
           "numero": 11,
@@ -3698,18 +3698,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El marbete para bebidas alcohólicas podrá colocarse en el cuello de la botella, abarcando la tapa y parte del propio envase. En los casos en que por la forma de la tapa no sea posible adherir el marbete en el cuello de la botella, éste podrá colocarse en la etiqueta frontal del envase, abarcando parte de la etiqueta y parte del propio envase, previa autorización de la autoridad fiscal.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 11,
+          "x_id": 113,
+          "x_texto": 113
         },
         {
           "numero": 14,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los casos de vinos de mesa de hasta 14° GL podrán adherir el marbete en el cuello de la botella o en la etiqueta frontal del envase, abarcando parte de la etiqueta y del propio envase.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 11,
+          "x_id": 113,
+          "x_texto": 113,
           "referencias": [
             "Reforma DOF 23-12-2005: Derogó de la fracción el entonces párrafo quinto",
             "Fracción reformada DOF 31-12-2003, 01-12-2004"
@@ -3753,18 +3753,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los contribuyentes que tengan uno o varios establecimientos ubicados en una entidad federativa diferente al de la matriz, deberán presentar la información a que se refiere el párrafo anterior por las operaciones que correspondan a dichos establecimientos para su consumo final.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 17,
+          "x_id": 113,
+          "x_texto": 113
         },
         {
           "numero": 19,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La información a que se refiere esta fracción y la fracción VI de este artículo, será la base para la determinación de las participaciones a que se refiere esta Ley y los artículos 3o. y 3o.-A de la Ley de Coordinación Fiscal, en materia del impuesto especial sobre producción y servicios.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 17,
+          "x_id": 113,
+          "x_texto": 113,
           "referencias": [
             "Párrafo reformado DOF 30-12-2002"
           ]
@@ -3798,9 +3798,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La obligación a que se refiere esta fracción no será aplicable a los productores de vinos de mesa.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 21,
+          "x_id": 113,
+          "x_texto": 113,
           "referencias": [
             "Fracción reformada DOF 30-12-2002, 31-12-2003"
           ]
@@ -3834,18 +3834,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, deberán reportar a dicha dependencia la fecha de inicio del proceso de producción, destilación o envasamiento, con quince días de anticipación al mismo, acompañando la información sobre las existencias de producto en ese momento. Igualmente, deberán reportar la fecha en que finalice el proceso, dentro de los quince días siguientes a la conclusión del mismo, acompañando la información sobre el volumen fabricado, producido o envasado.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 24,
+          "x_id": 113,
+          "x_texto": 113
         },
         {
           "numero": 26,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En el caso de que se adquieran o se incorporen nuevos equipos de destilación o envasamiento, se modifiquen los instalados o se enajenen los reportados por el contribuyente, se deberá presentar aviso ante las autoridades fiscales dentro de los 15 días siguientes a que esto ocurra.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 24,
+          "x_id": 113,
+          "x_texto": 113
         },
         {
           "numero": 27,

@@ -31,8 +31,8 @@ export default function FraccionesView({ fracciones, mostrarReferencias = false 
 function FraccionItem({ fraccion, mostrarReferencias }: { fraccion: FraccionWithAnchor; mostrarReferencias: boolean }) {
   const { tipo, numero, contenido, nivel, es_continuacion, referencias, anchorId } = fraccion
 
-  // Indentación: continuaciones usan el nivel del padre
-  const nivelVisual = es_continuacion ? nivel - 1 : nivel
+  // Indentación basada en nivel jerárquico (calculado por padre_numero en SQL)
+  const nivelVisual = nivel
   const indentClass = clsx({
     'ml-0': nivelVisual <= 0,
     'ml-6': nivelVisual === 1,

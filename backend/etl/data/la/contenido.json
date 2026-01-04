@@ -410,9 +410,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las instalaciones deberán ser aprobadas previamente por las autoridades aduaneras y estar señaladas en el respectivo programa maestro de desarrollo portuario de la Administración Portuaria Integral o, en su caso, en los documentos donde se especifiquen las construcciones de las terminales ferroviarias de pasajeros o de carga, así como de aeropuertos internacionales.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 4,
@@ -1191,9 +1191,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Lo anterior no será aplicable tratándose de almacenes generales de depósito.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98
+          "padre_numero": 2,
+          "x_id": 138,
+          "x_texto": 138
         },
         {
           "numero": 4,
@@ -1236,16 +1236,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando las mercancías no sean retiradas por causas imputables a las autoridades aduaneras, el servicio no se cobrará al particular afectado y la contraprestación no cobrada se podrá compensar contra el citado aprovechamiento.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98
+          "padre_numero": 6,
+          "x_id": 138,
+          "x_texto": 138
         },
         {
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La compensación señalada en esta fracción aplicará a partir de la fecha en que la autoridad aduanera haga del conocimiento al recinto fiscalizado que la mercancía queda bajo su custodia y hasta que le notifique su liberación al propietario, donatario o consignatario, en los supuestos siguientes:",
-          "padre_numero": 7,
+          "padre_numero": 6,
           "x_id": 138,
           "x_texto": 138
         },
@@ -1254,7 +1254,7 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Tratándose de mercancía que haya pasado a propiedad del Fisco Federal, hasta que deba ser retirada por la autoridad competente para administrar y dar destino a dichas mercancías de conformidad con la Ley Federal para la Administración y Enajenación de Bienes del Sector Público.",
-          "padre_numero": 7,
+          "padre_numero": 6,
           "x_id": 138,
           "x_texto": 160,
           "referencias": [
@@ -1266,7 +1266,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Cuando las mercancías sean retiradas por los asignatarios o donatarios, quienes contarán para tales efectos con un plazo de hasta diez días, contado a partir de la firma del acta de asignación o donación, tratándose de las mercancías de las que dispongan las autoridades aduaneras.",
-          "padre_numero": 7,
+          "padre_numero": 6,
           "x_id": 138,
           "x_texto": 160,
           "referencias": [
@@ -1278,7 +1278,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "En la fecha que se instruya al recinto fiscalizado la destrucción de las mercancías.",
-          "padre_numero": 7,
+          "padre_numero": 6,
           "x_id": 138,
           "x_texto": 160,
           "referencias": [
@@ -1290,7 +1290,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En los casos anteriores, los servicios generados a partir de que las mercancías se encuentren a disposición del propietario, donatario o consignatario, o a partir de la fecha en que deban ser retiradas por la autoridad competente para administrar y dar destino a dichas mercancías de conformidad con la Ley Federal para la Administración y Enajenación de Bienes del Sector Público, serán a cargo de éstos, cuya cuota se cobrará conforme a lo dispuesto en el primer párrafo de esta fracción, sin que sean objeto de compensación.",
-          "padre_numero": 7,
+          "padre_numero": 6,
           "x_id": 138,
           "x_texto": 138,
           "referencias": [
@@ -1302,7 +1302,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para efectos de esta fracción, se entiende que las mercancías se encuentran a disposición de la autoridad competente para administrar y dar destino a dichas mercancías de conformidad con la Ley Federal para la Administración y Enajenación de Bienes del Sector Público, una vez transcurridos sesenta días a partir de que las autoridades aduaneras soliciten la transferencia de las mercancías de conformidad con lo establecido en dicha Ley, debiendo hacer del conocimiento al recinto fiscalizado de la fecha en que se realizó dicha solicitud, plazo en el cual deberá efectuarse su retiro acorde a lo previsto en la mencionada Ley, por lo que la compensación no podrá extenderse del referido plazo de tres meses, debiendo cesar en la fecha en que se realice el retiro de la mercancía o concluido dicho plazo, lo que suceda primero.",
-          "padre_numero": 7,
+          "padre_numero": 6,
           "x_id": 138,
           "x_texto": 138,
           "referencias": [
@@ -1314,7 +1314,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No podrá ser objeto de compensación el almacenamiento, manejo y custodia de mercancías objeto de procedimientos competencia de autoridades distintas de la aduanera.",
-          "padre_numero": 7,
+          "padre_numero": 6,
           "x_id": 138,
           "x_texto": 138,
           "referencias": [
@@ -1392,9 +1392,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En los casos de transferencia de mercancías a que se refiere esta fracción, cuando el almacén que permita la transferencia haya efectuado la desconsolidación de las mercancías, los cargos por desconsolidación no podrán exceder del monto de los cargos que cobre el almacén respecto de las mercancías que sean objeto de desconsolidación y que permanezcan en dicho almacén. La transferencia y la desconsolidación únicamente procederán cuando se cumpla con los requisitos y controles que para tales efectos señale el Servicio de Administración Tributaria mediante reglas. No procederá el cobro de cargos adicionales por el solo hecho de permitir la transferencia de mercancías.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98,
+          "padre_numero": 20,
+          "x_id": 138,
+          "x_texto": 138,
           "referencias": [
             "Párrafo reformado DOF 30-12-2002",
             "Fracción reformada DOF 31-12-1998"
@@ -2344,18 +2344,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de operaciones amparadas en pedimentos consolidados, la constatación se realizará considerando los datos contenidos en el aviso consolidado proporcionado, con los contenidos en el sistema electrónico aduanero, en el que aparezca el número de pedimento consolidado.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98
+          "padre_numero": 7,
+          "x_id": 138,
+          "x_texto": 138
         },
         {
           "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En la entrega de mercancías en contenedores, además se deberán constatar los datos relativos al contenedor con las características del mismo.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98,
+          "padre_numero": 7,
+          "x_id": 138,
+          "x_texto": 138,
           "referencias": [
             "Fracción reformada DOF 01-01-2002, 09-12-2013"
           ]
@@ -2527,9 +2527,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los plazos a que se refiere este inciso, serán de hasta 45 días, en aquellos casos en que se cuente con instalaciones para el mantenimiento y conservación de las mercancías de que se trate, excepto tratándose de petrolíferos, cuyo plazo será de hasta 15 días naturales.",
-          "padre_numero": 3,
-          "x_id": 138,
-          "x_texto": 138,
+          "padre_numero": 5,
+          "x_id": 170,
+          "x_texto": 170,
           "referencias": [
             "Párrafo adicionado DOF 30-12-2002. Reformado DOF 01-06-2018"
           ]
@@ -2714,8 +2714,8 @@
           "identificador": null,
           "contenido": "El recurso o la demanda sólo interrumpirán los plazos de que se trata, cuando la resolución definitiva que recaiga no confirme, en todo o en parte, la que se impugnó.",
           "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98
+          "x_id": 138,
+          "x_texto": 138
         },
         {
           "numero": 3,
@@ -2898,9 +2898,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para efectos de la aplicación de preferencias arancelarias, cuando las mercancías originarias hubieran estado en tránsito por el territorio de países no Parte del Tratado que corresponda, la que acredite que dichas mercancías permanecieron bajo control de las autoridades aduaneras, de conformidad con las reglas.",
-          "padre_numero": 2,
-          "x_id": 121,
-          "x_texto": 121,
+          "padre_numero": 6,
+          "x_id": 143,
+          "x_texto": 143,
           "referencias": [
             "Inciso reformado DOF 19-11-2025"
           ]
@@ -2928,9 +2928,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La información a que se refiere este inciso únicamente será aplicable tratándose del despacho de mercancías que establezca el Servicio de Administración Tributaria mediante reglas, que por su naturaleza requiera de equipos, sistemas o instrumentos especializados.",
-          "padre_numero": 2,
-          "x_id": 121,
-          "x_texto": 121,
+          "padre_numero": 9,
+          "x_id": 143,
+          "x_texto": 143,
           "referencias": [
             "Inciso adicionado DOF 25-06-2018. Reformado DOF 19-11-2025"
           ]
@@ -2940,18 +2940,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En el caso de mercancías susceptibles de ser identificadas individualmente, la información relativa a los números de serie, parte, marca, modelo o, en su defecto, las especificaciones técnicas o comerciales necesarias para identificar las mercancías y distinguirlas de otras similares, cuando dichos datos existan. Esta información deberá consignarse en la información transmitida relativa al valor y demás datos de comercialización de las mercancías. No obstante lo anterior, las empresas con programas de exportación autorizados por la Secretaría de Economía, no estarán obligadas a identificar las mercancías cuando realicen importaciones temporales, siempre que los productos importados sean componentes, insumos y artículos semiterminados, previstos en el programa que corresponda; cuando estas empresas opten por cambiar al régimen de importación definitiva deberán cumplir con la obligación de transmitir los números de serie de las mercancías que hubieren importado temporalmente.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de reexpediciones se estará a lo dispuesto en el artículo 39 de esta Ley.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 13,
@@ -3124,9 +3124,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La transmisión electrónica en la que aparezca la firma electrónica avanzada, sello digital u otro medio tecnológico de identificación y el acuse generado por el sistema electrónico aduanero, se considerará que fueron transmitidos y efectuados por la persona a quien corresponda dicha firma, sello o medio, ya sea del importador, exportador, agente aduanal, agencia aduanal o sus mandatarios autorizados.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 2,
+          "x_id": 121,
+          "x_texto": 121,
           "referencias": [
             "Fracción reformada DOF 25-06-2018"
           ]
@@ -4008,9 +4008,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los agentes aduanales socios de la agencia aduanal serán responsables solidarios por el pago de los impuestos al comercio exterior, las demás contribuciones que correspondan y de las cuotas compensatorias, en relación con las operaciones aduaneras realizadas por la agencia aduanal.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 3,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Párrafo reformado DOF 19-11-2025"
           ]
@@ -4020,9 +4020,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los socios de la agencia aduanal, son responsables solidarios respecto de las contribuciones que se hubieran causado en relación con las actividades realizadas por la agencia aduanal, en la parte del interés fiscal que no alcance a ser garantizada con los bienes de la misma, sin que dicha responsabilidad exceda de la participación que tengan en el capital social de la agencia durante el periodo o a la fecha de que se trate. Esa responsabilidad solidaria se calculará multiplicando el porcentaje de participación que haya tenido el socio en el capital social suscrito al momento de la causación, por la contribución omitida.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 3,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Fracción reformada DOF 01-01-2002, 25-06-2018"
           ]
@@ -4320,9 +4320,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Quienes introduzcan mercancías bajo los regímenes de importación temporal para elaboración, transformación o reparación en programas de maquila o de exportación; de depósito fiscal; de recinto fiscalizado estratégico, o de elaboración, transformación o reparación en recinto fiscalizado, deberán llevar, en forma automatizada, el sistema de control de inventarios a que se refiere el párrafo anterior.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98,
+          "padre_numero": 2,
+          "x_id": 139,
+          "x_texto": 139,
           "referencias": [
             "Párrafo reformado DOF 25-06-2018"
           ]
@@ -4332,9 +4332,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de incumplimiento a lo dispuesto en esta fracción se presumirá que las mercancías que sean propiedad del contribuyente o que se encuentren bajo su posesión o custodia y las que sean enajenadas por el contribuyente a partir de la fecha de la importación, análogas o iguales a las importadas, son de procedencia extranjera.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98,
+          "padre_numero": 2,
+          "x_id": 139,
+          "x_texto": 139,
           "referencias": [
             "Fracción reformada DOF 31-12-2000",
             "Reforma DOF 01-01-2002: Derogó de esta fracción el entonces párrafo tercero"
@@ -4363,27 +4363,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de despachos aduaneros en los que intervenga una agencia aduanal o un agente aduanal, igualmente se deberá hacer entrega al Servicio de Administración Tributaria, junto con la documentación que se requiera para cumplir lo dispuesto en la fracción IV del presente artículo, el documento que compruebe el encargo conferido a la agencia aduanal o al agente aduanal para realizar sus operaciones. Dicho documento deberá ser enviado en copia a la agencia aduanal o al agente aduanal para su correspondiente archivo, pudiendo ser expedido para una o más operaciones o por periodos determinados. En este caso, únicamente la agencia aduanal o el agente aduanal que haya sido encomendado, podrán tener acceso al sistema electrónico aduanero a cargo de la autoridad, a fin de utilizar los datos dados a conocer en el padrón por los importadores, según lo establece el artículo 40 de la presente Ley. En caso de que la agencia aduanal o el agente aduanal no haya sido encomendado por un importador, pero actúe como consignatario en una operación, no se observará lo dispuesto en el párrafo anterior, para lo cual se faculta al administrador de la aduana, por la que se pretenda despachar dicha mercancía, para que bajo su estricta responsabilidad autorice la operación.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98
+          "padre_numero": 6,
+          "x_id": 139,
+          "x_texto": 139
         },
         {
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El importador quedará exceptuado de la obligación a que se refiere el párrafo anterior, siempre y cuando utilice los medios electrónicos de seguridad para encomendar las operaciones de comercio exterior a la agencia aduanal o al agente aduanal, que mediante reglas señale el Servicio de Administración Tributaria.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98
+          "padre_numero": 6,
+          "x_id": 139,
+          "x_texto": 139
         },
         {
           "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El importador deberá entregar en documento digital o electrónico, según sea el caso, a la autoridad aduanera cuando ésta así lo requiera, la manifestación de valor y la información, documentación y otros medios de prueba necesarios, a que se refiere el primer párrafo de esta fracción, cumpliendo con los requisitos que establezca el Reglamento y los términos y condiciones que establezca el Servicio de Administración Tributaria mediante reglas.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98,
+          "padre_numero": 6,
+          "x_id": 139,
+          "x_texto": 139,
           "referencias": [
             "Fracción reformada DOF 31-12-2000, 01-01-2002, 09-12-2013, 25-06-2018"
           ]
@@ -4414,16 +4414,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Adicionalmente, el expediente electrónico deberá contener la información y documentación que acredite los recursos empleados para efectuar la operación de comercio exterior. Entre dicha documentación se incluirán, de manera enunciativa mas no limitativa:",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98
+          "padre_numero": 11,
+          "x_id": 139,
+          "x_texto": 139
         },
         {
           "numero": 13,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "La garantía a que se refiere el artículo 36-A, fracción I, inciso e) de esta Ley;",
-          "padre_numero": 12,
+          "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
         },
@@ -4432,7 +4432,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Los comprobantes fiscales digitales por Internet;",
-          "padre_numero": 12,
+          "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
         },
@@ -4441,7 +4441,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Las facturas comerciales o documentos equivalentes;",
-          "padre_numero": 12,
+          "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
         },
@@ -4450,7 +4450,7 @@
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "Las transferencias electrónicas del pago o cartas de crédito;",
-          "padre_numero": 12,
+          "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
         },
@@ -4459,7 +4459,7 @@
           "tipo": "inciso",
           "identificador": "e)",
           "contenido": "Los gastos de transporte, seguros y servicios conexos;",
-          "padre_numero": 12,
+          "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
         },
@@ -4468,7 +4468,7 @@
           "tipo": "inciso",
           "identificador": "f)",
           "contenido": "Los contratos relacionados con la transacción de la mercancía;",
-          "padre_numero": 12,
+          "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
         },
@@ -4477,7 +4477,7 @@
           "tipo": "inciso",
           "identificador": "g)",
           "contenido": "La documentación que sustente los conceptos que se suman al valor de transacción de las mercancías importadas y aquellos que no se comprendan en dicho valor, conforme a los artículos 65 y 66 de esta Ley, y",
-          "padre_numero": 12,
+          "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
         },
@@ -4486,7 +4486,7 @@
           "tipo": "inciso",
           "identificador": "h)",
           "contenido": "Cualquier otro documento o registro, que se señale mediante reglas, que demuestre la efectiva realización de la operación de comercio exterior.",
-          "padre_numero": 12,
+          "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161,
           "referencias": [
@@ -4716,18 +4716,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No quedan comprendidos en el párrafo anterior los vehículos que en el propio territorio nacional sean objeto de explotación comercial, los que se adquieran para usarse o consumirse en el país, ni los que se destinen a consumo o uso en el extranjero.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 126,
+          "x_texto": 126
         },
         {
           "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Reglamento establecerá los requisitos que deberán cumplirse, así como el periodo y la distancia máxima en que podrán internarse dentro de la franja o región fronteriza, los vehículos a que se refiere esta fracción.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 126,
+          "x_texto": 126
         },
         {
           "numero": 7,
@@ -4896,18 +4896,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos de lo dispuesto en esta fracción, se considerará como persona con discapacidad la que debido a la pérdida o anormalidad de una estructura o función psicológica, fisiológica o anatómica, sufre la restricción o ausencia de la capacidad de realizar una actividad en la forma o dentro del margen que se considera normal para un ser humano, y acredite dicha circunstancia con una constancia expedida por alguna institución de salud con autorización oficial.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 22,
+          "x_id": 126,
+          "x_texto": 126
         },
         {
           "numero": 24,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de vehículos especiales o adaptados, las personas con discapacidad podrán importar sólo un vehículo para su uso personal cada cuatro años. Las personas morales a que se refiere el primer párrafo de esta fracción podrán importar hasta tres vehículos cada cuatro años. En ambos casos, el importador no podrá enajenar dichos vehículos sino después de cuatro años de haberlos importado.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 22,
+          "x_id": 126,
+          "x_texto": 126
         },
         {
           "numero": 25,
@@ -4935,9 +4935,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Si la importación de las mercancías de que se trate, requiere del cumplimiento de regulaciones o restricciones no arancelarias, el Servicio de Administración Tributaria de inmediato lo hará del conocimiento de la dependencia competente, para que ésta resuelva respecto de su cumplimiento en un plazo no mayor a diez días. Cuando se trate de mercancías donadas para atender emergencias, desastres naturales o condiciones de extrema pobreza, la autoridad competente deberá resolver respecto de su cumplimiento en un plazo no mayor a tres días. Transcurridos dichos plazos sin que se comunique la resolución correspondiente, se entenderá que la dependencia de que se trate resolvió positivamente y el Servicio de Administración Tributaria podrá autorizar la importación de las mercancías.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 26,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Fracción adicionada DOF 01-01-2002. Reformada DOF 09-12-2013, 25-06-2018"
           ]
@@ -5015,9 +5015,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "También podrá autorizarse la importación en franquicia a funcionarios y empleados del servicio exterior mexicano que hayan permanecido en el extranjero cuando menos dos años continuos en el desempeño de comisión oficial, de un vehículo de su propiedad que hayan usado durante su residencia en el extranjero, siempre que se cumpla con los requisitos y condiciones que señale la Secretaría mediante reglas. Quedan comprendidos en lo previsto en este supuesto, los funcionarios mexicanos acreditados ante los organismos internacionales en los que el Gobierno Mexicano participe.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98,
+          "padre_numero": 2,
+          "x_id": 138,
+          "x_texto": 138,
           "referencias": [
             "Párrafo reformado DOF 30-12-1996"
           ]
@@ -5054,9 +5054,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En los casos a que se refiere este inciso, la propia Secretaría podrá autorizar la internación temporal del vehículo de que se trate al resto del país, por un plazo máximo hasta de 180 días naturales con entradas y salidas múltiples, dentro de un periodo de doce meses, contados a partir de la primera internación temporal, siempre que se cumplan los requisitos que establece el reglamento. Los vehículos internados temporalmente no podrán prestar el servicio de autotransporte de carga, pasajeros o turismo y deberán ser conducidos en territorio nacional por el propietario, su cónyuge sus hijos, padres o hermanos, o por cualquier otra persona, siempre que en este último caso el importador se encuentre en el vehículo; cuando el propietario del vehículo sea una persona moral, deberá ser conducido por una persona que tenga relación laboral con el propietario.",
-          "padre_numero": 7,
-          "x_id": 138,
-          "x_texto": 138,
+          "padre_numero": 9,
+          "x_id": 170,
+          "x_texto": 170,
           "referencias": [
             "Párrafo reformado DOF 30-12-1996, 31-12-1998, 23-01-2006"
           ]
@@ -5981,15 +5981,15 @@
           "identificador": null,
           "contenido": "El costo o valor a que se hace referencia en esta fracción, comprenderá lo siguiente:",
           "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98
+          "x_id": 138,
+          "x_texto": 138
         },
         {
           "numero": 3,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "El costo y gastos a que se refieren los incisos b) y c) de la fracción I del artículo 65 de esta Ley.",
-          "padre_numero": 2,
+          "padre_numero": 1,
           "x_id": 138,
           "x_texto": 160
         },
@@ -5998,7 +5998,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "El valor debidamente repartido, de los bienes y servicios a que se refieren los incisos a) a c) de la fracción II, del artículo 65 de esta Ley, siempre que el importador de manera directa o indirecta los haya suministrado para su utilización en la producción de las mercancías importadas.",
-          "padre_numero": 2,
+          "padre_numero": 1,
           "x_id": 138,
           "x_texto": 160
         },
@@ -6007,7 +6007,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "El valor debidamente repartido, de los trabajos a los que se refiere el inciso d), fracción II del artículo 65 de esta Ley, en la medida que corran a cargo del productor.",
-          "padre_numero": 2,
+          "padre_numero": 1,
           "x_id": 138,
           "x_texto": 160
         },
@@ -6025,9 +6025,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los gastos generales a que se refiere esta fracción deberán comprender los costos directos e indirectos de producción y venta de las mercancías para la exportación, que sean distintos de los señalados en la fracción anterior.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98
+          "padre_numero": 6,
+          "x_id": 138,
+          "x_texto": 138
         },
         {
           "numero": 8,
@@ -6631,9 +6631,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La garantía se cancelará a los doce meses de haberse efectuado la importación, salvo que las autoridades aduaneras hubieran iniciado el ejercicio de sus facultades de comprobación, en cuyo caso el plazo se ampliará hasta que se dicte resolución definitiva, así como cuando se determinen contribuciones o cuotas compensatorias omitidas, las que se harán efectivas contra la garantía otorgada, o se ordene su cancelación por las autoridades aduaneras en los términos que señale el Servicio de Administración Tributaria, mediante reglas de carácter general.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 143,
+          "x_texto": 143
         },
         {
           "numero": 4,
@@ -6649,9 +6649,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La garantía se cancelará cuando se tramite el pedimento correspondiente en la aduana de despacho o de salida, según se trate de tránsito interno o internacional y se paguen las contribuciones y cuotas compensatorias.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 143,
+          "x_texto": 143
         },
         {
           "numero": 6,
@@ -6667,18 +6667,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La autoridad aduanera podrá utilizar, entre otros, bases de datos estadísticas, mecanismos de cooperación internacional y consultas anticipadas como herramientas de referencia para la determinación o validación de los valores declarados, sin perjuicio de lo previsto en los tratados internacionales de los que México sea Parte.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 6,
+          "x_id": 143,
+          "x_texto": 143
         },
         {
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La garantía se cancelará cuando se tramite el pedimento correspondiente para retirar las mercancías extranjeras del recinto fiscalizado estratégico de conformidad con lo señalado en el artículo 135-D de esta Ley, y se paguen las contribuciones y cuotas compensatorias.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 6,
+          "x_id": 143,
+          "x_texto": 143
         },
         {
           "numero": 9,
@@ -7714,9 +7714,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El resultado será el total de contribuciones y cuotas compensatorias que en los términos de este artículo deberán pagar las empresas a que se refiere el artículo 98 de esta Ley. Es decir si PCO > ME, entonces el monto total por concepto de contribuciones y cuotas compensatorias a pagar por el importador será igual a.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 13,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 15,
@@ -7732,18 +7732,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El pago que se realice conforme a esta fracción se considerará efectuado por concepto de los impuestos y derechos al comercio exterior, al valor agregado, especial sobre producción y servicios, y sobre automóviles nuevos, así como por cuotas compensatorias, en la misma proporción que representen las citadas contribuciones y cuotas compensatorias respecto al monto total de las cantidades que haya pagado el importador de que se trate por cada una de las mismas, en el ejercicio por el que se efectúe el cálculo a que se refiere este artículo.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 13,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 17,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El monto total de contribuciones y cuotas compensatorias que resulte en los términos de esta fracción se pagará a más tardar el día 17 del mes de febrero del año siguiente del ejercicio que se determina.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 13,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 18,
@@ -8355,9 +8355,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Lo dispuesto en esta fracción no será aplicable en los casos previstos en los artículos 63-A, 105, 108, fracción III, 110 y 112 de esta Ley.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 4,
@@ -8566,18 +8566,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los vehículos podrán ser conducidos en territorio nacional por el importador, su cónyuge, sus ascendientes, descendientes o hermanos, aun cuando éstos no sean extranjeros, por un extranjero que tenga alguna de las condiciones de estancia a que se refiere este inciso, o por un nacional, siempre que en este último caso, viaje a bordo del mismo cualquiera de las personas autorizadas para conducir el vehículo y podrán efectuar entradas y salidas múltiples.",
-          "padre_numero": 15,
-          "x_id": 126,
-          "x_texto": 126
+          "padre_numero": 16,
+          "x_id": 166,
+          "x_texto": 166
         },
         {
           "numero": 18,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los vehículos a que se refiere este inciso, deberán cumplir con los requisitos que señale el Reglamento.",
-          "padre_numero": 15,
-          "x_id": 126,
-          "x_texto": 126
+          "padre_numero": 16,
+          "x_id": 166,
+          "x_texto": 166
         },
         {
           "numero": 19,
@@ -8614,9 +8614,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las lanchas, yates o veleros turísticos a que se refiere este inciso, podrán ser objeto de explotación comercial, siempre que se registren ante una marina turística.",
-          "padre_numero": 20,
-          "x_id": 126,
-          "x_texto": 126
+          "padre_numero": 21,
+          "x_id": 166,
+          "x_texto": 166
         },
         {
           "numero": 23,
@@ -8632,9 +8632,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de las mercancías señaladas en el inciso a), de esta fracción se deberá acreditar que, al momento de solicitar la autorización de prórroga, cuenten con un documento vigente emitido por la autoridad competente, en el que se certifique que cumple con las disposiciones jurídicas nacionales e internacionales para llevar a cabo el servicio para el que está destinada.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 20,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Fracción reformada DOF 30-12-1996, 31-12-1998, 01-01-2002, 09-12-2013, 19-11-2025"
           ]
@@ -9802,9 +9802,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando la venta se haga a los pasajeros que arriben al país directamente del extranjero en puertos aéreos internacionales y dicha venta así como la entrega de las mercancías se realice en los establecimientos autorizados por el Servicio de Administración Tributaria, cumpliendo los requisitos de control que se establezcan mediante reglas, las mercancías no se sujetarán al pago de impuestos al comercio exterior, siempre que se trate de las que comprenden el equipaje de pasajeros en viajes internacionales, de conformidad con lo previsto en el Artículo 61, fracción VI, de la Ley y demás disposiciones aplicables.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98,
+          "padre_numero": 2,
+          "x_id": 138,
+          "x_texto": 138,
           "referencias": [
             "Párrafo reformado DOF 25-06-2018"
           ]
@@ -9814,7 +9814,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las autoridades aduaneras controlarán los establecimientos mencionados en los dos párrafos anteriores, sus instalaciones, vías de acceso y oficinas.",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 138
         },
@@ -9823,7 +9823,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La autorización a que se refiere esta fracción sólo se otorgará a personas morales constituidas de conformidad con las leyes mexicanas, siempre que otorguen las garantías y cumplan con los demás requisitos que establezca el Servicio de Administración Tributaria mediante reglas. Las personas autorizadas responderán directamente ante el Fisco Federal por el importe de los créditos fiscales que corresponda pagar por las mercancías faltantes en sus inventarios, las que hubiesen entregado sin cumplir con los requisitos que establece la Ley.",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 138
         },
@@ -9832,7 +9832,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En el caso de los aeropuertos, se requerirá que los establecimientos se encuentren ubicados en zonas posteriores al control de acceso de pasajeros internacionales y en el caso de los puertos marítimos y fronterizos, deberán encontrarse en el recinto fiscal o contiguo al mismo. Tratándose de los establecimientos a que se refiere el segundo párrafo de esta fracción, se requerirá que los establecimientos se encuentren en la zona reservada para pasajeros internacionales. Dentro del aeropuerto internacional de que se trate antes de la zona de declaración y revisión aduanal correspondiente. Procederá la autorización de los establecimientos siempre que se encuentren dentro del recinto fiscal o, en el caso de puertos marítimos y fronterizos, contiguo al mismo.",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 138
         },
@@ -9841,7 +9841,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La autorización podrá otorgarse hasta por un plazo de diez años, el cual podrá prorrogarse por un plazo igual si lo solicita el interesado durante la vigencia de la autorización, siempre que se cumpla con los requisitos que establezca el Servicio de Administración Tributaria mediante reglas y los interesados se encuentren al corriente en el cumplimiento de sus obligaciones fiscales.",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 138
         },
@@ -9850,7 +9850,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los particulares que obtengan la autorización a que se refiere esta fracción estarán obligados a:",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 138
         },
@@ -9859,7 +9859,7 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Pagar en las oficinas autorizadas, a más tardar el día diecisiete del mes de que se trate un aprovechamiento del 5% sobre los ingresos brutos obtenidos por la venta de las mercancías en el mes inmediato anterior.",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
         },
@@ -9868,7 +9868,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Contar con equipo de cómputo y de transmisión de datos enlazado con el del SAT.",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
         },
@@ -9877,7 +9877,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Llevar un registro diario de las operaciones realizadas, mediante un sistema automatizado de control de inventarios, debiendo otorgar a la autoridad aduanera acceso electrónico en línea de manera permanente e ininterrumpida.",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
         },
@@ -9886,7 +9886,7 @@
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "Instalar y mantener en funcionamiento permanente un sistema de circuito cerrado a través del cual la autoridad aduanera tenga acceso a los puntos de venta y entrega de la mercancía, así como de los puntos de salida del territorio nacional poniendo a disposición del SAT terminales de monitoreo.",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
         },
@@ -9895,7 +9895,7 @@
           "tipo": "inciso",
           "identificador": "e)",
           "contenido": "Transmitir al sistema electrónico a cargo de la autoridad aduanera, dentro de los diez días naturales al mes siguiente, la información relativa a la venta de las mercancías realizadas en el mes inmediato anterior, en los términos que se establezcan mediante reglas, especificando cantidades, descripción y código del producto, fracción arancelaria, número de identificación comercial y valor de la venta de la mercancía.",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160,
           "referencias": [
@@ -9907,7 +9907,7 @@
           "tipo": "inciso",
           "identificador": "f)",
           "contenido": "Presentar ante la Administración General de Aduanas la documentación comprobatoria que acredite el pago del aprovechamiento del 5% de sus ingresos brutos obtenido por la venta de mercancías efectuadas mensualmente y la que acredite que se ha efectuado el pago del derecho por el otorgamiento de la autorización del establecimiento respectivo, conforme al Artículo 40, inciso k) de la Ley Federal de Derechos.",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
         },
@@ -9916,7 +9916,7 @@
           "tipo": "inciso",
           "identificador": "g)",
           "contenido": "Cumplir con los mecanismos de control de ventas y entrega de mercancías que se establezcan mediante reglas.",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
         },
@@ -9925,7 +9925,7 @@
           "tipo": "inciso",
           "identificador": "h)",
           "contenido": "Cumplir con las demás condiciones y lineamientos que establezca el SAT.",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
         },
@@ -9934,7 +9934,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Procederá la cancelación de la autorización conforme al procedimiento previsto en el Artículo 144-A de esta Ley, cuando los locales objeto de la autorización dejen de encontrarse en las zonas establecidas o se incurra en alguna otra causa de cancelación establecida en esta Ley o en la autorización.",
-          "padre_numero": 3,
+          "padre_numero": 2,
           "x_id": 138,
           "x_texto": 138,
           "referencias": [
@@ -9979,9 +9979,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los particulares que obtengan la autorización a que se refiere esta fracción deberán mantener los controles que establezca el Servicio de Administración Tributaria mediante reglas.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98,
+          "padre_numero": 20,
+          "x_id": 138,
+          "x_texto": 138,
           "referencias": [
             "Párrafo adicionado DOF 31-12-1998. Reformado DOF 25-06-2018"
           ]
@@ -9991,9 +9991,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando se extraigan los productos resultantes de los procesos de ensamble y fabricación de vehículos para su retorno al extranjero, en los casos previstos en el artículo 63-A de esta Ley, se pagará el impuesto general de importación y, en su caso, de las cuotas compensatorias aplicables.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98,
+          "padre_numero": 20,
+          "x_id": 141,
+          "x_texto": 141,
           "referencias": [
             "Párrafo adicionado DOF 31-12-2000",
             "Fracción adicionada DOF 30-12-1996"
@@ -10184,9 +10184,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de regulaciones y restricciones no arancelarias cuyo cumplimiento se demuestre a través de medios electrónicos, no se requerirá imprimir la firma electrónica que demuestre su descargo total o parcial en el pedimento de tránsito interno.",
-          "padre_numero": 3,
-          "x_id": 121,
-          "x_texto": 121
+          "padre_numero": 6,
+          "x_id": 143,
+          "x_texto": 143
         },
         {
           "numero": 8,
@@ -11725,9 +11725,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La propia Secretaría señalará, dentro de los recintos fiscales, el lugar donde se encuentren las oficinas administrativas de la aduana y sus instalaciones complementarias y establecerá la coordinación con otras dependencias y organismos que lleven a cabo sus funciones en los aeropuertos, puertos marítimos y cruces fronterizos autorizados para el tráfico internacional, en relación a las medidas de seguridad y control que deben aplicarse en los mismos, y señalará, en su caso, las aduanas por las cuales se deberá practicar el despacho de determinado tipo de mercancías que al efecto determine la citada dependencia mediante reglas.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 126,
+          "x_texto": 126
         },
         {
           "numero": 4,
@@ -11881,9 +11881,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para ejercer las facultades a que se refiere el párrafo anterior, podrá solicitar el dictamen que requiera al agente aduanal, a la agencia aduanal, a la autoridad especializada en la materia según la mercancía de que se trate o a cualquier otro perito.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 16,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Párrafo adicionado DOF 19-11-2025",
             "Fracción reformada DOF 09-12-2013, 25-06-2018, 01-07-2020"
@@ -12661,9 +12661,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de la enajenación de vehículos importados en definitiva, el importador deberá entregar el pedimento de importación al adquirente. En enajenaciones posteriores, el adquirente deberá exigir dicho pedimento y conservarlo para acreditar la legal estancia del vehículo en el país.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 126,
+          "x_texto": 126
         },
         {
           "numero": 4,
@@ -12691,9 +12691,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de mercancías en transporte el comprobante fiscal digital por Internet deberá contar con complemento carta porte emitido conforme a las disposiciones del Código Fiscal de la Federación, que acredite el traslado legal de las mercancías.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 5,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Fracción reformada DOF 09-12-2013, 25-06-2018, 19-11-2025"
           ]
@@ -14013,9 +14013,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las autoridades aduaneras podrán autorizar la suspensión voluntaria de actividades de un agente aduanal, previa solicitud que éste presente por escrito y en la que señale las causas que justifiquen la suspensión. El agente aduanal podrá reanudar sus actividades en cualquier momento, para lo cual deberá presentar el aviso correspondiente por escrito.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 6,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Fracción reformada DOF 31-12-1998, 09-12-2013"
           ]
@@ -14034,9 +14034,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para ser mandatario aduanal autorizado de agente aduanal se requiere contar con poder notarial para actos de administración y demostrar experiencia aduanera mayor a tres años; aprobar los exámenes de conocimientos y psicotécnico, éste constará de dos etapas, la de confiabilidad y la psicológica, conforme a los lineamientos que al efecto emita la autoridad aduanera; así como cumplir los demás requisitos que determine el Servicio de Administración Tributaria mediante reglas. Cada mandatario aduanal promoverá solamente el despacho en representación de un agente aduanal y ante una sola aduana, salvo uno de los mandatarios, que podrá actuar indistintamente en cualquiera de las aduanas autorizadas.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 8,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Párrafo reformado DOF 31-12-2000, 30-12-2002, 09-12-2013, 25-06-2018, 19-11-2025"
           ]
@@ -14046,7 +14046,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se entenderá que el agente aduanal es notificado personalmente cuando la notificación de los actos derivados del reconocimiento aduanero, así como de la inspección o verificación de las mercancías, durante su permanencia en el recinto fiscal por virtud de su despacho, se efectúe con cualquiera de sus empleados, dependientes autorizados o de sus mandatarios.",
-          "padre_numero": 9,
+          "padre_numero": 8,
           "x_id": 126,
           "x_texto": 126,
           "referencias": [
@@ -14058,7 +14058,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, deberá usar el gafete de identificación personal en los recintos fiscales en que actúe; obligación que también deben cumplir sus empleados o dependientes autorizados y sus mandatarios.",
-          "padre_numero": 9,
+          "padre_numero": 8,
           "x_id": 126,
           "x_texto": 126
         },
@@ -14067,7 +14067,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los actos que practiquen los mandatarios aduanales con motivo del despacho y reconocimiento aduanero, así como los actos que deriven de aquéllos, serán imputables al agente aduanal.",
-          "padre_numero": 9,
+          "padre_numero": 8,
           "x_id": 126,
           "x_texto": 126,
           "referencias": [
@@ -14116,18 +14116,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando los agentes aduanales tengan autorización para despachar en aduanas distintas a la de su adscripción, la obligación a que se refiere esta fracción será aplicable para cada una de las aduanas en las que operen.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 15,
+          "x_id": 126,
+          "x_texto": 126
         },
         {
           "numero": 17,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Servicio de Administración Tributaria podrá cambiar la obligación a que se refiere el primer párrafo de esta fracción, autorizando, a petición de los agentes aduanales de un determinado lugar, que el servicio se proporcione en forma rotatoria o permanente para el total de las operaciones a que se refiere esta fracción por uno o varios agentes.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 15,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Párrafo reformado DOF 25-06-2018"
           ]
@@ -14137,9 +14137,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En los casos a que se refiere esta fracción, el agente aduanal tendrá derecho a una contraprestación de $450.00 por cada operación.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 15,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Párrafo reformado DOF 25-06-2018",
             "Cantidad del párrafo actualizada DOF 01-03-2002, 28-04-2003, 04-04-2005, 10-04-2006, 09-05-2007, 09-05-2008, 12-05-2009,",
@@ -14311,9 +14311,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para efectos del párrafo anterior, de conformidad con el artículo 54 de esta Ley, deberá asegurarse que el importador o exportador cuenta con los documentos que acrediten el cumplimiento de las obligaciones que en materia de regulaciones y restricciones no arancelarias son aplicables a las mercancías, de conformidad con lo previsto por esta Ley y por las demás leyes y disposiciones jurídicas aplicables.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 2,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Párrafo adicionado DOF 19-11-2025",
             "Fracción reformada DOF 09-04-2012, 09-12-2013"
@@ -14363,9 +14363,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, tiene la obligación de cerciorarse de que los usuarios que le soliciten operaciones de comercio exterior se encuentren plenamente identificados, que cuenten con infraestructura, que no tengan vinculación, en términos de lo previsto en el artículo 68 de esta Ley con contribuyentes que se encuentren en el listado a que refiere el artículo 69-B, cuarto párrafo del Código Fiscal de la Federación, así como que cumplen con sus obligaciones fiscales, aduaneras y de comercio exterior.",
-          "padre_numero": null,
-          "x_id": 86,
-          "x_texto": 86,
+          "padre_numero": 7,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Párrafo adicionado DOF 19-11-2025"
           ]
@@ -14375,9 +14375,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para efectos del párrafo anterior, deberán integrar y conservar un expediente con la información y documentación que acredite el cumplimiento de la obligación anterior y ponerlo a disposición de las autoridades aduaneras cuando sea requerido. El Servicio de Administración Tributaria establecerá mediante reglas los requisitos, términos y características, con los que deberá cumplir dicho expediente.",
-          "padre_numero": null,
-          "x_id": 86,
-          "x_texto": 86,
+          "padre_numero": 7,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Párrafo adicionado DOF 19-11-2025"
           ]
@@ -14399,27 +14399,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El expediente electrónico deberá contener el pedimento o documento aduanero en el formato en que se haya transmitido, así como sus anexos y acuses, debiendo conservarse como parte de la contabilidad, por los plazos establecidos en el Código Fiscal de la Federación.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 10,
+          "x_id": 126,
+          "x_texto": 126
         },
         {
           "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Adicionalmente, deberá conservar el original de la manifestación de valor a que se refiere el artículo 59, fracción III de esta Ley, así como copia del documento presentado por el importador al Servicio de Administración Tributaria que compruebe el encargo que se le hubiere conferido para realizar el despacho aduanero de las mercancías y si éste fue otorgado de forma electrónica deberá conservar el acuse correspondiente.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 10,
+          "x_id": 126,
+          "x_texto": 126
         },
         {
           "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los expedientes electrónicos que se generen en términos de esta fracción, deberán ser proporcionados a los clientes que les correspondan, sin cargo adicional, quienes tendrán la obligación de conservarlos en términos de lo establecido en el cuarto párrafo del artículo 6o. de esta Ley.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 10,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Fracción reformada DOF 31-12-1998, 01-01-2002, 09-12-2013, 25-06-2018"
           ]
@@ -14572,9 +14572,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No será necesario comprobar la conclusión de los despachos iniciados, cuando al agente aduanal le sea autorizada la aduana de adscripción como adicional.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 3,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Fracción reformada DOF 09-12-2013"
           ]
@@ -14807,9 +14807,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La suspensión durará el tiempo que el agente aduanal se encuentre en los referidos listados.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 11,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Fracción adicionada DOF 19-11-2025"
           ]
@@ -14953,9 +14953,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "De igual forma, será cancelada la patente si el agente aduanal efectúa el trámite de las operaciones de comercio exterior y declara los datos a que se refiere el párrafo anterior de una persona de la cual no cuente con el encargo conferido en términos del artículo 59, fracción III de esta Ley.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 7,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Fracción reformada DOF 30-12-1996, 25-06-2018, 19-11-2025"
           ]
@@ -15831,9 +15831,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se entenderá que la agencia aduanal es notificada cuando la notificación de los actos derivados del reconocimiento aduanero, así como de la inspección o verificación de las mercancías, durante su permanencia en el recinto fiscal por virtud de su despacho, se efectúe con cualquiera de sus socios, empleados o dependientes autorizados, mandatarios aduanales, así como agentes aduanales que la integran.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 6,
@@ -16103,18 +16103,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El expediente electrónico deberá contener el pedimento o documento aduanero en el formato en que se haya transmitido, así como sus anexos y acuses, debiendo conservarse como parte de la contabilidad, por los plazos establecidos en el Código Fiscal de la Federación.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los expedientes electrónicos que se generen en términos de esta fracción, deberán ser proporcionados a los clientes que les correspondan, sin cargo adicional, quienes tendrán la obligación de conservarlos en términos de lo establecido por el cuarto párrafo del artículo 6o. de esta Ley.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 7,
@@ -17338,9 +17338,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando la infracción a que se refiere esta fracción sea cometida por pasajeros, se impondrá una multa del 80% al 120% del valor comercial de las mercancías.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 2,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Párrafo reformado DOF 31-12-1998, 09-12-2013"
           ]
@@ -17801,9 +17801,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Multa equivalente del 30% al 50% del impuesto general de importación que habría tenido que cubrirse si la importación fuera definitiva o del 15% al 30% del valor comercial de las mercancías cuando estén exentas, en los casos a que se refiere la fracción I, incisos d) y e) y la fracción III. Tratándose de yates y veleros turísticos la multa será del 10% al 15% del valor comercial.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 2,
+          "x_id": 126,
+          "x_texto": 126,
           "referencias": [
             "Párrafo reformado DOF 31-12-1998"
           ]
@@ -17826,9 +17826,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No se aplicará la multa a que se refiere el párrafo anterior, a las personas que retornen en forma espontánea los vehículos importados o internados temporalmente.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 126,
+          "x_texto": 126
         },
         {
           "numero": 6,
@@ -18081,9 +18081,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de lo dispuesto en los artículos 36, 37-A y 39 de la Ley, consignen en el dispositivo tecnológico o medio electrónico, información distinta a la requerida, o a la declarada en el pedimento o en el aviso consolidado. La falta de algún dato en dicho dispositivo o medio, no se considerará como información distinta, siempre que la información transmitida al sistema electrónico aduanero sea igual a la consignada en el pedimento o aviso consolidado.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98,
+          "padre_numero": 7,
+          "x_id": 138,
+          "x_texto": 138,
           "referencias": [
             "Párrafo adicionado DOF 25-06-2018",
             "Fracción reformada DOF 31-12-1998, 09-12-2013"
@@ -18103,9 +18103,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de lo dispuesto en los artículos 36, 37-A y 39 de la Ley, presenten el dispositivo tecnológico o medio electrónico correspondiente, ante la autoridad aduanera sin o con los elementos técnicos en una situación que impida su lectura.",
-          "padre_numero": 1,
-          "x_id": 98,
-          "x_texto": 98,
+          "padre_numero": 9,
+          "x_id": 138,
+          "x_texto": 138,
           "referencias": [
             "Párrafo adicionado DOF 25-06-2018",
             "Fracción reformada DOF 31-12-1998, 09-12-2013"

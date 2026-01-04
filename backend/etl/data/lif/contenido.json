@@ -38,196 +38,196 @@
           "tipo": "numeral",
           "identificador": "11.",
           "contenido": "Impuestos Sobre los Ingresos: 3,070,149.1",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 3,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Impuesto sobre la renta. 3,070,149.1",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 2,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 4,
           "tipo": "numeral",
           "identificador": "12.",
           "contenido": "Impuestos Sobre el Patrimonio. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 5,
           "tipo": "numeral",
           "identificador": "13.",
           "contenido": "Impuestos Sobre la Producción, el Consumo y las Transacciones: 2,370,732.7",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 6,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Impuesto al valor agregado. 1,589,069.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 5,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 7,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Impuesto especial sobre producción y servicios: 761,501.9",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 5,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 8,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Combustibles automotrices: 473,279.1",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 7,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 9,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Artículo 2o., fracción I, inciso D). 432,487.9",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 8,
+          "x_id": 206,
+          "x_texto": 228
         },
         {
           "numero": 10,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Artículo 2o.-A. 40,791.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 8,
+          "x_id": 206,
+          "x_texto": 228
         },
         {
           "numero": 11,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Bebidas con contenido alcohólico y cerveza: 81,518.8",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 7,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 12,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Bebidas alcohólicas. 27,780.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 11,
+          "x_id": 206,
+          "x_texto": 228
         },
         {
           "numero": 13,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Cervezas y bebidas refrescantes. 53,738.6",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 11,
+          "x_id": 206,
+          "x_texto": 228
         },
         {
           "numero": 14,
           "tipo": "numeral",
           "identificador": "03.",
           "contenido": "Tabacos labrados y otros. 62,097.5",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 7,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 15,
           "tipo": "numeral",
           "identificador": "04.",
           "contenido": "Juegos con apuestas y sorteos. 5,024.7",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 7,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 16,
           "tipo": "numeral",
           "identificador": "05.",
           "contenido": "Redes públicas de telecomunicaciones. 8,486.8",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 7,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 17,
           "tipo": "numeral",
           "identificador": "06.",
           "contenido": "Bebidas energetizantes. 100.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 7,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 18,
           "tipo": "numeral",
           "identificador": "07.",
           "contenido": "Bebidas saborizadas. 75,290.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 7,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 19,
           "tipo": "numeral",
           "identificador": "08.",
           "contenido": "Alimentos no básicos con alta densidad calórica. 42,856.1",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 7,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 20,
           "tipo": "numeral",
           "identificador": "09.",
           "contenido": "Plaguicidas. 2,148.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 7,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 21,
           "tipo": "numeral",
           "identificador": "10.",
           "contenido": "Combustibles fósiles. 10,517.7",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 7,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 22,
           "tipo": "numeral",
           "identificador": "11.",
           "contenido": "Videojuegos con violencia. 183.0 1 de 47",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 7,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 23,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
-          "padre_numero": 22,
+          "padre_numero": 5,
           "x_id": 137,
           "x_texto": 137
         },
@@ -236,295 +236,295 @@
           "tipo": "numeral",
           "identificador": "03.",
           "contenido": "Impuesto sobre automóviles nuevos. 20,161.8",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 5,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 25,
           "tipo": "numeral",
           "identificador": "14.",
           "contenido": "Impuestos al Comercio Exterior: 254,756.8",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 26,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Impuestos al comercio exterior: 254,756.8",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 25,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 27,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "A la importación. 254,756.8",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 26,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 28,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "A la exportación. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 26,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 29,
           "tipo": "numeral",
           "identificador": "15.",
           "contenido": "Impuestos Sobre Nóminas y Asimilables. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 30,
           "tipo": "numeral",
           "identificador": "16.",
           "contenido": "Impuestos Ecológicos. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 31,
           "tipo": "numeral",
           "identificador": "17.",
           "contenido": "Accesorios de impuestos: 135,769.4",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 32,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Accesorios de impuestos. 135,769.4",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 31,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 33,
           "tipo": "numeral",
           "identificador": "18.",
           "contenido": "Otros impuestos: 7,070.4",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 34,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Impuesto por la actividad de exploración y extracción de 7,070.4 hidrocarburos.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 33,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 35,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Impuesto sobre servicios expresamente declarados de interés público 0.0 por ley, en los que intervengan empresas concesionarias de bienes del dominio directo de la Nación.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 33,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 36,
           "tipo": "numeral",
           "identificador": "19.",
           "contenido": "Impuestos no comprendidos en la Ley de Ingresos Vigente, Causados en 62.7 Ejercicios Fiscales Anteriores Pendientes de Liquidación o Pago.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 37,
           "tipo": "numeral",
           "identificador": "21.",
           "contenido": "Aportaciones para Fondos de Vivienda: 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 38,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Aportaciones y abonos retenidos a trabajadores por patrones para el 0.0 Fondo Nacional de la Vivienda para los Trabajadores.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 37,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 39,
           "tipo": "numeral",
           "identificador": "22.",
           "contenido": "Cuotas para la Seguridad Social: 641,782.1",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 40,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Cuotas para el Seguro Social a cargo de patrones y trabajadores. 641,782.1",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 39,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 41,
           "tipo": "numeral",
           "identificador": "23.",
           "contenido": "Cuotas de Ahorro para el Retiro: 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 42,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Cuotas del Sistema de Ahorro para el Retiro a cargo de los patrones. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 41,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 43,
           "tipo": "numeral",
           "identificador": "24.",
           "contenido": "Otras Cuotas y Aportaciones para la Seguridad Social: 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 44,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Cuotas para el Instituto de Seguridad y Servicios Sociales de los 0.0 Trabajadores del Estado a cargo de los citados trabajadores.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 43,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 45,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Cuotas para el Instituto de Seguridad Social para las Fuerzas 0.0 Armadas Mexicanas a cargo de los militares.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 43,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 46,
           "tipo": "numeral",
           "identificador": "25.",
           "contenido": "Accesorios de Cuotas y Aportaciones de Seguridad Social. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 47,
           "tipo": "numeral",
           "identificador": "31.",
           "contenido": "Contribuciones de Mejoras por Obras Públicas: 39.6",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 48,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Contribución de mejoras por obras públicas de infraestructura 39.6 hidráulica.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 47,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 49,
           "tipo": "numeral",
           "identificador": "39.",
           "contenido": "Contribuciones de Mejoras no Comprendidas en la Ley de Ingresos Vigente, 0.0 Causadas en Ejercicios Fiscales Anteriores Pendientes de Liquidación o Pago.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 50,
           "tipo": "numeral",
           "identificador": "41.",
           "contenido": "Derechos por el Uso, Goce, Aprovechamiento o Explotación de Bienes de 81,380.2 Dominio Público:",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 51,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Secretaría de Hacienda y Crédito Público. 2,601.4",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 50,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 52,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Secretaría Anticorrupción y Buen Gobierno. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 50,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 53,
           "tipo": "numeral",
           "identificador": "03.",
           "contenido": "Secretaría de Economía. 14,798.8",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 50,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 54,
           "tipo": "numeral",
           "identificador": "04.",
           "contenido": "Secretaría de Infraestructura, Comunicaciones y Transportes. 17,955.6",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 50,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 55,
           "tipo": "numeral",
           "identificador": "05.",
           "contenido": "Secretaría de Medio Ambiente y Recursos Naturales. 26,642.9 2 de 47",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 50,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 56,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
-          "padre_numero": 55,
+          "padre_numero": 50,
           "x_id": 137,
           "x_texto": 137
         },
@@ -533,367 +533,367 @@
           "tipo": "numeral",
           "identificador": "06.",
           "contenido": "Secretaría de Agricultura y Desarrollo Rural. 54.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 50,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 58,
           "tipo": "numeral",
           "identificador": "07.",
           "contenido": "Secretaría del Trabajo y Previsión Social. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 50,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 59,
           "tipo": "numeral",
           "identificador": "08.",
           "contenido": "Secretaría de Educación Pública. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 50,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 60,
           "tipo": "numeral",
           "identificador": "09.",
           "contenido": "Agencia de Transformación Digital y Telecomunicaciones. 17,734.9",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 50,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 61,
           "tipo": "numeral",
           "identificador": "10.",
           "contenido": "Secretaría de Cultura. 1,154.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 50,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 62,
           "tipo": "numeral",
           "identificador": "11.",
           "contenido": "Secretaría de Salud. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 50,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 63,
           "tipo": "numeral",
           "identificador": "12.",
           "contenido": "Secretaría de Marina. 438.6",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 50,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 64,
           "tipo": "numeral",
           "identificador": "13.",
           "contenido": "Secretaría de Seguridad y Protección Ciudadana. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 50,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 65,
           "tipo": "numeral",
           "identificador": "43.",
           "contenido": "Derechos por Prestación de Servicios: 75,701.5",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 66,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Servicios que presta el Estado en funciones de derecho público: 75,701.5",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 65,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 67,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Secretaría de Gobernación. 34,038.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 68,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Secretaría de Relaciones Exteriores. 14,028.7",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 69,
           "tipo": "numeral",
           "identificador": "03.",
           "contenido": "Secretaría de la Defensa Nacional. 420.3",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 70,
           "tipo": "numeral",
           "identificador": "04.",
           "contenido": "Secretaría de Marina. 630.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 71,
           "tipo": "numeral",
           "identificador": "05.",
           "contenido": "Secretaría de Hacienda y Crédito Público. 15,068.7",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 72,
           "tipo": "numeral",
           "identificador": "06.",
           "contenido": "Secretaría Anticorrupción y Buen Gobierno. 899.9",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 73,
           "tipo": "numeral",
           "identificador": "07.",
           "contenido": "Secretaría de Energía. 820.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 74,
           "tipo": "numeral",
           "identificador": "08.",
           "contenido": "Secretaría de Economía. 7.9",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 75,
           "tipo": "numeral",
           "identificador": "09.",
           "contenido": "Secretaría de Agricultura y Desarrollo Rural. 1,875.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 76,
           "tipo": "numeral",
           "identificador": "10.",
           "contenido": "Secretaría de Infraestructura, Comunicaciones y Transportes. 1,657.7",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 77,
           "tipo": "numeral",
           "identificador": "11.",
           "contenido": "Secretaría de Medio Ambiente y Recursos Naturales: 1,863.3",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 78,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Agencia Nacional de Seguridad Industrial y de 62.3 Protección al Medio Ambiente del Sector Hidrocarburos.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 77,
+          "x_id": 206,
+          "x_texto": 228
         },
         {
           "numero": 79,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Otros. 1,801.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 77,
+          "x_id": 206,
+          "x_texto": 228
         },
         {
           "numero": 80,
           "tipo": "numeral",
           "identificador": "12.",
           "contenido": "Secretaría de Educación Pública. 2,293.8",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 81,
           "tipo": "numeral",
           "identificador": "13.",
           "contenido": "Secretaría de Salud. 1,671.6",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 82,
           "tipo": "numeral",
           "identificador": "14.",
           "contenido": "Secretaría del Trabajo y Previsión Social. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 83,
           "tipo": "numeral",
           "identificador": "15.",
           "contenido": "Secretaría de Desarrollo Agrario, Territorial y Urbano. 83.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 84,
           "tipo": "numeral",
           "identificador": "16.",
           "contenido": "Secretaría de Turismo. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 85,
           "tipo": "numeral",
           "identificador": "17.",
           "contenido": "Agencia de Transformación Digital y Telecomunicaciones. 40.6",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 86,
           "tipo": "numeral",
           "identificador": "18.",
           "contenido": "Secretaría de Cultura. 77.1",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 87,
           "tipo": "numeral",
           "identificador": "19.",
           "contenido": "Secretaría de Seguridad y Protección Ciudadana. 225.3",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 88,
           "tipo": "numeral",
           "identificador": "20.",
           "contenido": "Secretaría de Bienestar. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 66,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 89,
           "tipo": "numeral",
           "identificador": "44.",
           "contenido": "Otros Derechos. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 90,
           "tipo": "numeral",
           "identificador": "45.",
           "contenido": "Accesorios de Derechos. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 91,
           "tipo": "numeral",
           "identificador": "49.",
           "contenido": "Derechos no Comprendidos en la Ley de Ingresos Vigente, Causados en 0.0 Ejercicios Fiscales Anteriores Pendientes de Liquidación o Pago.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 92,
           "tipo": "numeral",
           "identificador": "51.",
           "contenido": "Productos: 16,488.3",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 93,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Por los servicios que no correspondan a funciones de derecho 165.6 público.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 92,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 94,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Derivados del uso, aprovechamiento o enajenación de bienes no 16,322.7 sujetos al régimen de dominio público:",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 92,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 95,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Explotación de tierras y aguas. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 94,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 96,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Arrendamiento de tierras, locales y construcciones. 0.0 3 de 47",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 94,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 97,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
-          "padre_numero": 96,
+          "padre_numero": 92,
           "x_id": 137,
           "x_texto": 137
         },
@@ -902,270 +902,270 @@
           "tipo": "numeral",
           "identificador": "03.",
           "contenido": "Enajenación de bienes: 3,985.6",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 97,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 99,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Muebles. 3,561.6",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 98,
+          "x_id": 206,
+          "x_texto": 228
         },
         {
           "numero": 100,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Inmuebles. 424.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 98,
+          "x_id": 206,
+          "x_texto": 228
         },
         {
           "numero": 101,
           "tipo": "numeral",
           "identificador": "04.",
           "contenido": "Intereses de valores, créditos y bonos. 11,736.9",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 97,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 102,
           "tipo": "numeral",
           "identificador": "05.",
           "contenido": "Utilidades: 600.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 97,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 103,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "De organismos descentralizados y empresas de 0.0 participación estatal.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 102,
+          "x_id": 206,
+          "x_texto": 228
         },
         {
           "numero": 104,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "De Lotería Nacional. 600.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 102,
+          "x_id": 206,
+          "x_texto": 228
         },
         {
           "numero": 105,
           "tipo": "numeral",
           "identificador": "03.",
           "contenido": "Otras. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 102,
+          "x_id": 206,
+          "x_texto": 228
         },
         {
           "numero": 106,
           "tipo": "numeral",
           "identificador": "06.",
           "contenido": "Otros. 0.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 97,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 107,
           "tipo": "numeral",
           "identificador": "59.",
           "contenido": "Productos no Comprendidos en la Ley de Ingresos Vigente, Causados en 0.0 Ejercicios Fiscales Anteriores Pendientes de Liquidación o Pago.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 108,
           "tipo": "numeral",
           "identificador": "61.",
           "contenido": "Aprovechamientos: 201,723.3",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 109,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Multas. 4,769.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 110,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Indemnizaciones. 2,408.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 111,
           "tipo": "numeral",
           "identificador": "03.",
           "contenido": "Reintegros: 6,190.30",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 112,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Sostenimiento de las escuelas artículo 123. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 111,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 113,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Servicio de vigilancia forestal. 0.3",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 111,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 114,
           "tipo": "numeral",
           "identificador": "03.",
           "contenido": "Otros. 6,190.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 111,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 115,
           "tipo": "numeral",
           "identificador": "04.",
           "contenido": "Provenientes de obras públicas de infraestructura hidráulica. 4,304.7",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 116,
           "tipo": "numeral",
           "identificador": "05.",
           "contenido": "Participaciones en los ingresos derivados de la aplicación de leyes 0.0 locales sobre herencias y legados expedidas de acuerdo con la Federación.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 117,
           "tipo": "numeral",
           "identificador": "06.",
           "contenido": "Participaciones en los ingresos derivados de la aplicación de leyes 0.0 locales sobre donaciones expedidas de acuerdo con la Federación.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 118,
           "tipo": "numeral",
           "identificador": "07.",
           "contenido": "Aportaciones de los Estados, Municipios y particulares para el 0.0 servicio del Sistema Escolar Federalizado.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 119,
           "tipo": "numeral",
           "identificador": "08.",
           "contenido": "Cooperación de la Ciudad de México por servicios públicos locales 0.0 prestados por la Federación.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 120,
           "tipo": "numeral",
           "identificador": "09.",
           "contenido": "Cooperación de los Gobiernos de Estados y Municipios y de 0.0 particulares para alcantarillado, electrificación, caminos y líneas telegráficas, telefónicas y para otras obras públicas.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 121,
           "tipo": "numeral",
           "identificador": "10.",
           "contenido": "5 por ciento de días de cama a cargo de establecimientos 0.0 particulares para internamiento de enfermos y otros destinados a la Secretaría de Salud.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 122,
           "tipo": "numeral",
           "identificador": "11.",
           "contenido": "Participaciones a cargo de los concesionarios de vías generales de 2,723.2 comunicación y de empresas de abastecimiento de energía eléctrica.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 123,
           "tipo": "numeral",
           "identificador": "12.",
           "contenido": "Participaciones señaladas por la Ley Federal de Juegos y Sorteos. 2,578.3",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 124,
           "tipo": "numeral",
           "identificador": "13.",
           "contenido": "Regalías provenientes de fondos y explotación minera. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 125,
           "tipo": "numeral",
           "identificador": "14.",
           "contenido": "Aportaciones de contratistas de obras públicas. 31.9",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 126,
           "tipo": "numeral",
           "identificador": "15.",
           "contenido": "Destinados al Fondo para el Desarrollo Forestal: 14.8",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 127,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Aportaciones que efectúen los Gobiernos de la Ciudad de 0.0 México, Estatales y Municipales, los organismos y entidades públicas, sociales y los particulares.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 126,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 128,
@@ -1181,7 +1181,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
-          "padre_numero": 127,
+          "padre_numero": 108,
           "x_id": 137,
           "x_texto": 137
         },
@@ -1190,279 +1190,279 @@
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "De las reservas nacionales forestales. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 129,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 131,
           "tipo": "numeral",
           "identificador": "03.",
           "contenido": "Aportaciones al Instituto Nacional de Investigaciones 0.0 Forestales, Agrícolas y Pecuarias.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 129,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 132,
           "tipo": "numeral",
           "identificador": "04.",
           "contenido": "Otros conceptos. 14.8",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 129,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 133,
           "tipo": "numeral",
           "identificador": "16.",
           "contenido": "Cuotas Compensatorias. 1,807.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 134,
           "tipo": "numeral",
           "identificador": "17.",
           "contenido": "Hospitales Militares. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 135,
           "tipo": "numeral",
           "identificador": "18.",
           "contenido": "Participaciones por la explotación de obras del dominio público 0.0 señaladas por la Ley Federal del Derecho de Autor.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 136,
           "tipo": "numeral",
           "identificador": "19.",
           "contenido": "Provenientes de decomiso y de bienes que pasan a propiedad del 337.0 Fisco Federal.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 137,
           "tipo": "numeral",
           "identificador": "20.",
           "contenido": "Provenientes del programa de mejoramiento de los medios de 3,496.9 informática y de control de las autoridades aduaneras.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 138,
           "tipo": "numeral",
           "identificador": "21.",
           "contenido": "No comprendidos en los incisos anteriores provenientes del 0.0 cumplimiento de convenios celebrados en otros ejercicios.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 139,
           "tipo": "numeral",
           "identificador": "22.",
           "contenido": "Otros: 171,113.8",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 140,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Remanente de operación del Banco de México. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 139,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 141,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Utilidades por Recompra de Deuda. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 139,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 142,
           "tipo": "numeral",
           "identificador": "03.",
           "contenido": "Rendimiento mínimo garantizado. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 139,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 143,
           "tipo": "numeral",
           "identificador": "04.",
           "contenido": "Otros. 171,113.8",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 139,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 144,
           "tipo": "numeral",
           "identificador": "23.",
           "contenido": "Provenientes de servicios en materia energética: 1,948.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 108,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 145,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Agencia Nacional de Seguridad Industrial y de Protección al 91.4 Medio Ambiente del Sector Hidrocarburos.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 144,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 146,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Secretaría de Energía. 659.3",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 144,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 147,
           "tipo": "numeral",
           "identificador": "03.",
           "contenido": "Comisión Nacional de Energía. 1,197.3",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 144,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 148,
           "tipo": "numeral",
           "identificador": "62.",
           "contenido": "Aprovechamientos Patrimoniales: 1,176.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 149,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Recuperaciones de capital: 1,176.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 148,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 150,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Fondos entregados en fideicomiso, a favor de Entidades 0.1 Federativas y empresas públicas.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 149,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 151,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Fondos entregados en fideicomiso, a favor de empresas 10.2 privadas y a particulares.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 149,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 152,
           "tipo": "numeral",
           "identificador": "03.",
           "contenido": "Inversiones en obras de agua potable y alcantarillado. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 149,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 153,
           "tipo": "numeral",
           "identificador": "04.",
           "contenido": "Desincorporaciones. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 149,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 154,
           "tipo": "numeral",
           "identificador": "05.",
           "contenido": "Otros. 1,165.9",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 149,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 155,
           "tipo": "numeral",
           "identificador": "63.",
           "contenido": "Accesorios de Aprovechamientos. 621.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 156,
           "tipo": "numeral",
           "identificador": "69.",
           "contenido": "Aprovechamientos no Comprendidos en la Ley de Ingresos Vigente, Causados 0.0 en Ejercicios Fiscales Anteriores Pendientes de Liquidación o Pago.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 157,
           "tipo": "numeral",
           "identificador": "71.",
           "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de Instituciones 123,819.2 Públicas de Seguridad Social:",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 158,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Instituto Mexicano del Seguro Social. 62,799.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 157,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 159,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Instituto de Seguridad y Servicios Sociales de los Trabajadores del 61,020.0 Estado.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 157,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 160,
           "tipo": "numeral",
           "identificador": "72.",
           "contenido": "Ingresos por Ventas de Bienes y Prestación de Servicios de Empresas Públicas 1,507,154.4 del Estado: 5 de 47",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 161,
@@ -1478,88 +1478,88 @@
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Petróleos Mexicanos. 971,677.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 160,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 163,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Comisión Federal de Electricidad. 535,477.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 160,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 164,
           "tipo": "numeral",
           "identificador": "73.",
           "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de Entidades 0.0 Paraestatales y Fideicomisos No Empresariales y No Financieros.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 165,
           "tipo": "numeral",
           "identificador": "74.",
           "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de Entidades 0.0 Paraestatales Empresariales No Financieras con Participación Estatal Mayoritaria.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 166,
           "tipo": "numeral",
           "identificador": "75.",
           "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de Entidades 0.0 Paraestatales Empresariales Financieras Monetarias con Participación Estatal Mayoritaria.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 167,
           "tipo": "numeral",
           "identificador": "76.",
           "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de Entidades 0.0 Paraestatales Empresariales Financieras No Monetarias con Participación Estatal Mayoritaria.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 168,
           "tipo": "numeral",
           "identificador": "77.",
           "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de Fideicomisos 0.0 Financieros Públicos con Participación Estatal Mayoritaria.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 169,
           "tipo": "numeral",
           "identificador": "78.",
           "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de los Poderes 0.0 Legislativo y Judicial, y de los Órganos Autónomos.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 170,
           "tipo": "numeral",
           "identificador": "79.",
           "contenido": "Otros Ingresos.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 171,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Colaboración Fiscal y Fondos Distintos de Aportaciones",
-          "padre_numero": 170,
+          "padre_numero": 1,
           "x_id": 98,
           "x_texto": 98
         },
@@ -1568,169 +1568,169 @@
           "tipo": "numeral",
           "identificador": "81.",
           "contenido": "Participaciones. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 173,
           "tipo": "numeral",
           "identificador": "82.",
           "contenido": "Aportaciones. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 174,
           "tipo": "numeral",
           "identificador": "83.",
           "contenido": "Convenios. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 175,
           "tipo": "numeral",
           "identificador": "84.",
           "contenido": "Incentivos Derivados de la Colaboración Fiscal. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 176,
           "tipo": "numeral",
           "identificador": "85.",
           "contenido": "Fondos Distintos de Aportaciones. 0.0 Jubilaciones",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 177,
           "tipo": "numeral",
           "identificador": "91.",
           "contenido": "Transferencias y Asignaciones. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 178,
           "tipo": "numeral",
           "identificador": "93.",
           "contenido": "Subsidios y Subvenciones. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 179,
           "tipo": "numeral",
           "identificador": "95.",
           "contenido": "Pensiones y jubilaciones. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 180,
           "tipo": "numeral",
           "identificador": "97.",
           "contenido": "Transferencias del Fondo Mexicano del Petróleo para la Estabilización y el 232,630.4 Desarrollo:",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 181,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Ordinarias. 232,630.4",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 180,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 182,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Extraordinarias. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 180,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 183,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Endeudamiento interno: 1,858,397.4",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 184,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Endeudamiento interno del Gobierno Federal. 1,779,541.7",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 183,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 185,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Otros financiamientos: 78,855.7",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 183,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 186,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Diferimiento de pagos. 78,855.7",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 185,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 187,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Otros. 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 185,
+          "x_id": 175,
+          "x_texto": 197
         },
         {
           "numero": 188,
           "tipo": "numeral",
           "identificador": "02.",
           "contenido": "Endeudamiento externo: 0.0",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 189,
           "tipo": "numeral",
           "identificador": "01.",
           "contenido": "Endeudamiento externo del Gobierno Federal. 0.0 6 de 47",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 188,
+          "x_id": 133,
+          "x_texto": 155
         },
         {
           "numero": 190,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
-          "padre_numero": 189,
+          "padre_numero": 188,
           "x_id": 137,
           "x_texto": 137
         },
@@ -1739,27 +1739,27 @@
           "tipo": "numeral",
           "identificador": "03.",
           "contenido": "Financiamiento Interno.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 192,
           "tipo": "numeral",
           "identificador": "04.",
           "contenido": "Déficit de organismos y empresas de control directo. -101,616.2",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 193,
           "tipo": "numeral",
           "identificador": "05.",
           "contenido": "Déficit de empresas públicas del Estado. -284,154.8 Informativo: Endeudamiento neto del Gobierno Federal (0.01.01+0.02.01) 1,779,541.7 Cuando una ley que establezca alguno de los ingresos previstos en este artículo, contenga disposiciones que señalen otros ingresos, estos últimos se considerarán comprendidos en el numeral que corresponda a los ingresos a que se refiere este precepto.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
+          "padre_numero": 1,
+          "x_id": 98,
+          "x_texto": 120
         },
         {
           "numero": 194,
@@ -2697,9 +2697,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El remanente se concentrará en la Tesorería de la Federación en términos de las disposiciones aplicables;",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 6,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 8,
@@ -2724,9 +2724,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los recursos que se depositen en el fondo de reserva a que hace referencia tanto el artículo 237 de la Ley Nacional de Extinción de Dominio como el artículo 93 de la Ley Federal para la Administración y Enajenación de Bienes del Sector Público, se destinarán para restituir aquellos que ordene la autoridad judicial conforme a las disposiciones aplicables;",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 9,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 11,
@@ -2778,9 +2778,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El remanente se enterará a la Tesorería de la Federación, en términos de las disposiciones aplicables. Los ingresos netos provenientes de las enajenaciones realizadas por el Instituto para Devolver al Pueblo lo Robado se podrán destinar hasta en un 100 por ciento a financiar otras transferencias o mandatos de la misma entidad transferente, así como para el pago de los créditos que hayan sido otorgados por la banca de desarrollo para cubrir los gastos de operación de los bienes transferidos, siempre que en el acta de entrega recepción de los bienes transferidos o en el convenio que al efecto se celebre se señale dicha situación. Lo anterior, no resulta aplicable a las enajenaciones de bienes decomisados a que se refiere la fracción VIII del presente artículo. Lo previsto en el presente párrafo se aplicará sin perjuicio de lo dispuesto en los artículos 27, 89 y 93 de la Ley Federal para la Administración y Enajenación de Bienes del Sector Público.",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 15,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 17,
@@ -2849,16 +2849,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos del registro de los ingresos a que se refiere esta fracción, se deberá presentar a la Secretaría de Hacienda y Crédito Público la documentación comprobatoria de la obtención de dichos 16 de 47",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 3,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Secretaría General Secretaría de Servicios Parlamentarios ingresos, o bien, de los informes avalados por el órgano interno de control o de la comisión respectiva del órgano de gobierno, según sea el caso, que especifique los importes del impuesto al valor agregado que hayan trasladado por los actos o las actividades que dieron lugar a la obtención de los ingresos;",
-          "padre_numero": 4,
+          "padre_numero": 3,
           "x_id": 137,
           "x_texto": 137
         },
@@ -2894,9 +2894,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las instituciones educativas, los planteles y centros de investigación de las dependencias que prestan servicios de educación media superior, superior, de posgrado, de investigación y de formación para el trabajo del sector público, deberán informar semestralmente a la Secretaría de Hacienda y Crédito Público el origen y aplicación de sus ingresos.",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 8,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 10,
@@ -3178,9 +3178,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El estímulo a que se refiere el párrafo anterior también será aplicable a los vehículos marinos siempre que se cumplan los requisitos que mediante reglas de carácter general establezca el Servicio de Administración Tributaria.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 2,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 4,
@@ -3205,9 +3205,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Adicionalmente, para que proceda la aplicación del estímulo al biodiésel y sus mezclas, el beneficiario deberá contar con el pedimento de importación o con el comprobante fiscal correspondiente a la adquisición del biodiésel o sus mezclas, en el que se consigne la cantidad de cada uno de los combustibles que se contenga en el caso de las mezclas y tratándose del comprobante fiscal de adquisición, deberá contar también con el número del pedimento de importación con el que se llevó a cabo la importación del citado combustible y deberá recabar de su proveedor una copia del pedimento de importación citado en el comprobante. En caso de que en el pedimento de importación o en el comprobante fiscal de adquisición no se asienten los datos mencionados o que en este último caso no se cuente con la copia del pedimento de importación, no procederá la aplicación del estímulo al biodiésel y sus mezclas;",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 2,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 7,
@@ -3232,9 +3232,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En ningún caso procederá la devolución de las cantidades a que se refiere este numeral.",
-          "padre_numero": 7,
-          "x_id": 150,
-          "x_texto": 150
+          "padre_numero": 8,
+          "x_id": 172,
+          "x_texto": 172
         },
         {
           "numero": 10,
@@ -3250,9 +3250,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El acreditamiento a que se refiere la fracción anterior podrá efectuarse contra el impuesto sobre la renta causado en el ejercicio que tenga la persona contribuyente, correspondiente al mismo ejercicio en que se importe o adquiera el diésel o biodiésel y sus mezclas, utilizando la forma oficial que mediante reglas de carácter general dé a conocer el Servicio de Administración Tributaria; en caso de no hacerlo, perderá el derecho a realizarlo con posterioridad;",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 7,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 12,
@@ -3277,45 +3277,45 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La devolución correspondiente deberá ser solicitada trimestralmente en los meses de abril, julio y octubre de 2026 y enero de 2027.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 12,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 15,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas a que se refiere el párrafo primero de esta fracción deberán llevar un registro de control de consumo de diésel o de biodiésel y sus mezclas, en el que asienten mensualmente la totalidad del diésel o del biodiésel y sus mezclas que utilicen para sus actividades agropecuarias o silvícolas en los términos de la fracción I de este artículo, en el que se deberá distinguir entre el diésel o el biodiésel y sus mezclas que se hubiera destinado para los fines a que se refiere dicha fracción, del diésel o del biodiésel y sus mezclas utilizado para otros fines. Este registro deberá estar a disposición de las autoridades fiscales por el plazo a que se esté obligado a conservar la contabilidad en los términos de las disposiciones fiscales.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 12,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 16,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La devolución a que se refiere esta fracción se deberá solicitar al Servicio de Administración Tributaria acompañando la documentación prevista en la presente fracción, así como aquella documentación que dicho órgano desconcentrado determine mediante reglas de carácter general.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 12,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 17,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El derecho para la devolución del impuesto especial sobre producción y servicios tendrá una vigencia de un año contado a partir de la fecha en que se hubiere efectuado la importación o adquisición del diésel o del biodiésel y sus mezclas cumpliendo con los requisitos señalados en esta fracción, en el entendido de que quien no solicite oportunamente su devolución, perderá el derecho de realizarlo con posterioridad a dicho año.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 12,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 18,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los derechos previstos en esta fracción y en la fracción II de este apartado no serán aplicables a las personas contribuyentes que utilicen el diésel o el biodiésel y sus mezclas en bienes destinados al autotransporte de personas o efectos a través de carreteras o caminos;",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 12,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 19,
@@ -3331,27 +3331,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos del párrafo anterior, el monto que se podrá acreditar será el que resulte de multiplicar la cuota del impuesto especial sobre producción y servicios que corresponda según el tipo de combustible, conforme al artículo 2o., fracción I, inciso D), numeral 1, subinciso c) o el numeral 2 de la Ley del Impuesto Especial sobre Producción y Servicios, con los ajustes que, en su caso, correspondan, vigente en el momento en que se haya realizado la importación o adquisición del diésel o del biodiésel y sus mezclas, por el número de litros importados o adquiridos.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 19,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 21,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El acreditamiento a que se refiere esta fracción únicamente podrá efectuarse contra el impuesto sobre la renta causado en el ejercicio que tenga la persona contribuyente, correspondiente al mismo ejercicio en que se importe o adquiera el diésel o biodiésel y sus mezclas, utilizando la forma oficial que mediante reglas de carácter general dé a conocer el Servicio de Administración Tributaria; en caso de no hacerlo, perderá el derecho a realizarlo con posterioridad.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 19,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 22,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para que proceda el acreditamiento a que se refiere esta fracción, el pago por la importación o adquisición de diésel o de biodiésel y sus mezclas a distribuidores o estaciones de servicio, deberá efectuarse con: monedero electrónico autorizado por el Servicio de Administración 21 de 47",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 19,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 23,
@@ -3367,7 +3367,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tributaria; tarjeta de crédito, débito o de servicios, expedida a favor de la persona contribuyente que pretenda hacer el acreditamiento; con cheque nominativo expedido por la persona importadora o adquirente para abono en cuenta del enajenante, o bien, transferencia electrónica de fondos desde cuentas abiertas a nombre de la persona contribuyente en instituciones que componen el sistema financiero y las entidades que para tal efecto autorice el Banco de México.",
-          "padre_numero": 22,
+          "padre_numero": 19,
           "x_id": 150,
           "x_texto": 150
         },
@@ -3376,36 +3376,36 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En ningún caso este beneficio podrá ser utilizado por las personas contribuyentes que presten preponderantemente sus servicios a otra persona moral residente en el país o en el extranjero, que se considere parte relacionada, de acuerdo al artículo 179 de la Ley del Impuesto sobre la Renta.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 19,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 26,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Adicionalmente, para que proceda la aplicación del estímulo al biodiésel y sus mezclas, el beneficiario deberá contar con el pedimento de importación o con el comprobante fiscal correspondiente a la adquisición del biodiésel o sus mezclas, en el que se consigne la cantidad de cada uno de los combustibles que se contenga en el caso de las mezclas y tratándose del comprobante de adquisición, deberá contar también con el número del pedimento de importación con el que se llevó a cabo la importación del citado combustible y deberá recabar de su proveedor una copia del pedimento de importación citado en el comprobante. En caso de que en el pedimento de importación o en el comprobante fiscal de adquisición no se asienten los datos mencionados o que en este último caso no se cuente con la copia del pedimento de importación, no procederá la aplicación del estímulo al biodiésel y sus mezclas.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 19,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 27,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas beneficiarias del estímulo previsto en esta fracción deberán llevar los controles y registros que mediante reglas de carácter general establezca el Servicio de Administración Tributaria.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 19,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 28,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos de la presente fracción y la fracción V de este apartado, se entiende por transporte privado de personas o de carga, aquel que realizan las personas contribuyentes con vehículos de su propiedad o con vehículos que tengan en arrendamiento, incluido el arrendamiento financiero, para transportar bienes propios o su personal, o bienes o personal, relacionados con sus actividades económicas, sin que por ello se genere un cobro;",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 19,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 29,
@@ -3421,18 +3421,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El acreditamiento a que se refiere esta fracción únicamente podrá efectuarse contra el impuesto sobre la renta causado en el ejercicio que tenga la persona contribuyente, correspondiente al mismo ejercicio en que se realicen los gastos a que se refiere la presente fracción, utilizando la forma oficial que mediante reglas de carácter general dé a conocer el Servicio de Administración Tributaria; en caso de no hacerlo, perderá el derecho a realizarlo con posterioridad.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 29,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 31,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se faculta al Servicio de Administración Tributaria para emitir las reglas de carácter general que determinen los porcentajes máximos de acreditamiento por tramo carretero y demás disposiciones que considere necesarias para la correcta aplicación del beneficio contenido en esta fracción;",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 29,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 32,
@@ -3466,27 +3466,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El estímulo fiscal señalado en esta fracción será igual al monto que resulte de multiplicar la cuota del impuesto especial sobre producción y servicios que corresponda, por la cantidad del combustible consumido en un mes, que no se haya sometido a un proceso de combustión.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 32,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 36,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El monto que resulte conforme a lo señalado en el párrafo anterior únicamente podrá ser acreditado contra el impuesto sobre la renta causado en el ejercicio que tenga la persona contribuyente, correspondiente al mismo ejercicio en que se adquieran los combustibles a que se refiere la presente fracción, utilizando la forma oficial que mediante reglas de carácter general dé a conocer el Servicio de Administración Tributaria; en caso de no hacerlo, perderá el derecho a realizarlo con posterioridad.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 32,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 37,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se faculta al Servicio de Administración Tributaria para emitir las reglas de carácter general que determinen los porcentajes máximos de utilización del combustible no sujeto a un proceso de combustión por tipos de industria, respecto de los litros o toneladas, según corresponda al tipo de combustible de que se trate, adquiridos en un mes de calendario, así como las demás disposiciones que considere necesarias para la correcta aplicación de este estímulo fiscal;",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 32,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 38,
@@ -3502,9 +3502,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El acreditamiento a que se refiere esta fracción, únicamente podrá efectuarse contra el impuesto sobre la renta que tengan las personas concesionarias o asignatarias mineras a su cargo, correspondiente al mismo ejercicio en que se haya determinado el estímulo, y",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 38,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 40,
@@ -3520,18 +3520,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El estímulo a que se refiere el párrafo anterior consiste en una deducción adicional para los efectos del impuesto sobre la renta, por un monto equivalente al 8 por ciento del costo de los libros, periódicos y revistas que adquiera la persona contribuyente.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 40,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 42,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas físicas y morales no acumularán el monto del estímulo fiscal a que hace referencia esta fracción, para los efectos de la Ley del Impuesto sobre la Renta.",
-          "padre_numero": 1,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 40,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 43,
@@ -3539,8 +3539,8 @@
           "identificador": null,
           "contenido": "Los beneficiarios de los estímulos fiscales previstos en las fracciones I, IV, V, VI y VII de este apartado quedarán obligados a proporcionar la información que les requieran las autoridades fiscales dentro del plazo que para tal efecto señalen.",
           "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 44,
@@ -3548,8 +3548,8 @@
           "identificador": null,
           "contenido": "Los beneficios que se otorgan en las fracciones I, II y III del presente apartado no podrán ser acumulables con ningún otro estímulo fiscal establecido en esta Ley.",
           "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 45,
@@ -3557,8 +3557,8 @@
           "identificador": null,
           "contenido": "Los estímulos establecidos en las fracciones IV y V de este apartado podrán ser acumulables entre sí, pero no con los demás estímulos establecidos en la presente Ley.",
           "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 46,
@@ -3566,8 +3566,8 @@
           "identificador": null,
           "contenido": "Los estímulos fiscales que se otorgan en el presente apartado están condicionados a que las personas beneficiarias de dichos estímulos cumplan con los requisitos que para cada uno de ellos se establece en la presente Ley.",
           "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 47,
@@ -3575,8 +3575,8 @@
           "identificador": null,
           "contenido": "Los beneficiarios de los estímulos fiscales, previstos en las fracciones I a VII de este apartado, considerarán como ingresos acumulables para los efectos del impuesto sobre la renta los estímulos fiscales a que se refieren las fracciones mencionadas en el momento en que efectivamente los acrediten.",
           "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 48,
@@ -3592,7 +3592,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
-          "padre_numero": 47,
+          "padre_numero": 1,
           "x_id": 137,
           "x_texto": 137
         },
@@ -3610,9 +3610,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se exime del pago del derecho de trámite aduanero que se cause por la importación de gas natural, en los términos del artículo 49 de la Ley Federal de Derechos.",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 50,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 52,
@@ -4037,9 +4037,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Servicio de Administración Tributaria podrá emitir las reglas de carácter general para la aplicación de esta fracción;",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 2,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 21,
@@ -4145,18 +4145,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando se tengan dos o más créditos con una misma persona física o moral de los señalados en el párrafo anterior, se deberá sumar la totalidad de los créditos otorgados para determinar si estos no exceden del monto a que se refiere dicho párrafo.",
-          "padre_numero": 30,
-          "x_id": 150,
-          "x_texto": 150
+          "padre_numero": 31,
+          "x_id": 172,
+          "x_texto": 172
         },
         {
           "numero": 33,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Lo dispuesto en este numeral será aplicable cuando la persona deudora del crédito de que se trate sea contribuyente que realiza actividades empresariales y la persona acreedora informe por escrito a la deudora de que se trate, que efectuará la deducción del crédito incobrable, a fin de que la deudora acumule el ingreso derivado de la deuda no cubierta en los términos de la Ley del Impuesto sobre la Renta. Las instituciones de crédito que apliquen lo dispuesto en este párrafo, deberán informar a más tardar el 15 de febrero de 2027 de los créditos incobrables que dedujeron en los términos de este párrafo en el ejercicio fiscal de 2026;",
-          "padre_numero": 30,
-          "x_id": 150,
-          "x_texto": 150
+          "padre_numero": 31,
+          "x_id": 172,
+          "x_texto": 172
         },
         {
           "numero": 34,
@@ -4181,18 +4181,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos del artículo 44 de la Ley del Impuesto sobre la Renta, las instituciones de crédito que deduzcan créditos por incobrables, los deberán considerar cancelados a más tardar en el mes de junio de 2026.",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 28,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 37,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de cuentas por cobrar que tengan una garantía hipotecaria, solamente será deducible el 50 por ciento del monto cuando se den los supuestos a que se refiere el numeral 2 del inciso b) de esta fracción. Cuando la persona deudora efectúe el pago del adeudo o se haga la aplicación del importe del remate a cubrir el adeudo, se hará la deducción del saldo de la cuenta por cobrar o en su caso la acumulación del importe recuperado;",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 28,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 38,
@@ -4208,16 +4208,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas morales que obtengan ingresos por concepto de enajenación de bienes y prestación de servicios a través de las plataformas a que se refiere el párrafo anterior, pagarán el impuesto sobre la 27 de 47",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 38,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 40,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Secretaría General Secretaría de Servicios Parlamentarios renta por dichos ingresos, mediante retención que efectuarán los citados medios, aplicando una tasa del 2.5 por ciento sin deducción alguna. El impuesto retenido y pagado conforme a este párrafo podrá acreditarse contra el impuesto sobre la renta que corresponda pagar en los pagos provisionales o en la declaración del ejercicio.",
-          "padre_numero": 39,
+          "padre_numero": 38,
           "x_id": 137,
           "x_texto": 137
         },
@@ -4226,18 +4226,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas morales a que se refiere el párrafo anterior deberán proporcionar su clave en el Registro Federal de Contribuyentes a las plataformas tecnológicas, aplicaciones informáticas y similares. En caso de no proporcionarla se les aplicará la tasa de retención del 20 por ciento en sustitución de la tasa del 2.5 por ciento.",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 38,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 42,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando las plataformas a que se refiere el párrafo primero de esta fracción realicen las retenciones a las personas morales a que se refiere el párrafo segundo de esta fracción, deberán cumplir con lo dispuesto en el artículo 113-C, fracciones II, III, IV, párrafo primero y V, de la Ley del Impuesto sobre la Renta, respecto de las operaciones realizadas por las citadas personas morales;",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 38,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 43,
@@ -4253,9 +4253,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se considera libro lo señalado en el artículo 2 de la Ley de Fomento para la Lectura y el Libro;",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 43,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 45,
@@ -4280,27 +4280,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando los intereses sean pagados a residentes en el extranjero, la tasa de retención del impuesto será la establecida en el artículo 166, párrafo séptimo, fracción V, de la Ley del Impuesto sobre la Renta. En este supuesto la retención se considerará como pago definitivo.",
-          "padre_numero": 45,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 46,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 48,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, deberán proporcionar la información respecto de los intereses pagados, conforme a lo dispuesto en el artículo 55 de la Ley del Impuesto sobre la Renta.",
-          "padre_numero": 45,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 46,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 49,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La retención a que se refiere este inciso se enterará ante las oficinas autorizadas, a más tardar el día 17 del mes inmediato siguiente a aquel al que corresponda;",
-          "padre_numero": 45,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 46,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 50,
@@ -4316,9 +4316,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las instituciones de financiamiento colectivo efectuarán la retención del impuesto en el momento en el que paguen el interés a la persona que los cobre, el cual se enterará mediante declaración que se presentará en las oficinas autorizadas, conjuntamente con el pago del impuesto al valor agregado correspondiente al mes en el cual se efectúe la retención o, en su defecto, a más tardar el día 17 del mes siguiente a aquel en el que hubiese efectuado la retención, sin que contra el entero de la retención pueda realizarse acreditamiento, compensación o disminución alguna.",
-          "padre_numero": 45,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 50,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 52,
@@ -4343,18 +4343,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El impuesto retenido conforme a este inciso se considerará acreditable para la persona física o moral que pague los intereses, conforme al artículo 5o., fracción IV, de la Ley del Impuesto al Valor Agregado, siempre que se cumpla con los demás requisitos previstos en la citada ley.",
-          "padre_numero": 45,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 50,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 55,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando se trate del pago de intereses de personas morales a personas físicas, dichas personas morales no estarán obligadas a cumplir con lo dispuesto en el artículo 1o.-A, fracción II, inciso a), de la Ley del Impuesto al Valor Agregado, siempre que por dichos pagos se efectúe la retención del impuesto en términos de este inciso, y",
-          "padre_numero": 45,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 50,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 56,
@@ -4424,9 +4424,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de los residentes en el extranjero sin establecimiento en México, además de lo previsto en el párrafo anterior, se deberá recabar y proporcionar la información relacionada con la identificación de dichas personas y de las operaciones celebradas con su intermediación, de conformidad con las reglas de carácter general que para tales efectos establezca el Servicio de Administración Tributaria;",
-          "padre_numero": 57,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 62,
+          "x_id": 150,
+          "x_texto": 150
         },
         {
           "numero": 64,
@@ -4610,9 +4610,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El documento a que se refiere el párrafo anterior, tomará como base los datos estadísticos necesarios que el Servicio de Administración Tributaria está obligado a proporcionar, conforme a lo previsto en el artículo 22, fracción III, de la Ley del Servicio de Administración Tributaria, y deberá contener los montos referidos estimados para el ejercicio fiscal de 2027 en los siguientes términos:",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 3,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 5,
@@ -4808,9 +4808,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El reporte deberá incluir las entidades federativas en las que se ubiquen las personas morales y fideicomisos autorizados para recibir donativos deducibles para los efectos del impuesto sobre la renta, clasificándolas por tipo de donataria de conformidad con los conceptos contenidos en los artículos 79, 82 y 83 de la Ley del Impuesto sobre la Renta y en su Reglamento.",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 10,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 27,
@@ -4844,9 +4844,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La información sobre los gastos administrativos y operativos, así como de las percepciones netas de cada integrante del Órgano de Gobierno Interno o de directivos análogos a que se refiere el Apartado B de este artículo, se obtendrá de los datos reportados a más tardar el 31 de julio de 2026, en la página de Internet del Servicio de Administración Tributaria en la Sección de Transparencia de Donatarias Autorizadas correspondiente al ejercicio fiscal de 2025, a que se refiere el artículo 82, fracción VI, de la Ley del Impuesto sobre la Renta. Se entenderá por gastos administrativos y operativos lo siguiente:",
-          "padre_numero": 1,
-          "x_id": 100,
-          "x_texto": 100
+          "padre_numero": 27,
+          "x_id": 129,
+          "x_texto": 129
         },
         {
           "numero": 31,

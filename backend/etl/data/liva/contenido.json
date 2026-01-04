@@ -761,9 +761,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se aplicará la tasa del 16% a la enajenación de los alimentos a que se refiere el presente artículo preparados para su consumo en el lugar o establecimiento en que se enajenen, inclusive cuando no cuenten con instalaciones para ser consumidos en los mismos, cuando sean para llevar o para entrega a domicilio.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 31-12-1982, 26-12-1990, 21-11-1991, 30-12-2002, 01-10-2007, 07-12-2009, 11-12-2013"
           ]
@@ -2394,9 +2394,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No será aplicable lo dispuesto en el párrafo anterior, tratándose de créditos otorgados a personas físicas que no desarrollen actividades empresariales, o no presten servicios personales independientes, o no otorguen el uso o goce temporal de bienes inmuebles. Tratándose de créditos otorgados a personas físicas que realicen las actividades mencionadas, no se pagará el impuesto cuando los mismos sean para la adquisición de bienes de inversión en dichas actividades o se trate de créditos refaccionarios, de habilitación o avío, siempre que dichas personas se encuentren inscritas en el Registro Federal de Contribuyentes.",
-          "padre_numero": 11,
-          "x_id": 107,
-          "x_texto": 107,
+          "padre_numero": 13,
+          "x_id": 129,
+          "x_texto": 129,
           "referencias": [
             "Párrafo adicionado DOF 21-11-1991. Reformado 28-12-1994, 07-12-2009, 11-12-2013"
           ]
@@ -2406,7 +2406,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tampoco será aplicable la exención prevista en el primer párrafo de este inciso tratándose de créditos otorgados a través de tarjetas de crédito.",
-          "padre_numero": 14,
+          "padre_numero": 13,
           "x_id": 129,
           "x_texto": 129,
           "referencias": [
@@ -2963,9 +2963,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No se aplicará lo dispuesto en esta fracción a la descarga o acceso a libros, periódicos y revistas electrónicos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 4,
@@ -3505,9 +3505,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas a las que se refiere este artículo podrán optar por publicar en su página de Internet, aplicación, plataforma o cualquier otro medio similar, el precio en que se oferten los bienes o servicios por los enajenantes, prestadores de servicios u otorgantes del uso o goce temporal de bienes, en los que operan como intermediarios, sin manifestar el impuesto al valor agregado en forma expresa y por separado, siempre y cuando dichos precios incluyan el impuesto al valor agregado y los publiquen con la leyenda “IVA incluido”.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Párrafo adicionado DOF 08-12-2020"
           ]
@@ -3535,9 +3535,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de residentes en el extranjero sin establecimiento en México, ya sea personas físicas o morales, que presten los servicios digitales previstos en el artículo 18-B, fracciones I, III y IV de esta Ley, deberán retener el 100% del impuesto al valor agregado cobrado. En este caso, además, cuando el receptor lo solicite, deberán emitir y enviar vía electrónica a los receptores de los mencionados servicios digitales en territorio nacional los comprobantes a que se refiere la fracción V del artículo 18-D de esta Ley, ya sea a nombre de la persona a quien le hagan la retención o a nombre propio.",
-          "padre_numero": 4,
-          "x_id": 114,
-          "x_texto": 114,
+          "padre_numero": 5,
+          "x_id": 136,
+          "x_texto": 136,
           "referencias": [
             "Párrafo adicionado DOF 08-12-2020"
           ]
@@ -3574,9 +3574,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las obligaciones a que se refieren los incisos b), c) y d) de la presente fracción deberán cumplirse de conformidad con las reglas de carácter general que para tal efecto emita el Servicio de Administración Tributaria.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 11,
@@ -3655,27 +3655,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Dicha información deberá presentarse mensualmente a más tardar el día 10 del mes siguiente de que se trate, de conformidad con las reglas de carácter general que para tal efecto emita el Servicio de Administración Tributaria.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 11,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 20,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos de lo dispuesto en los incisos a), b), c), d), e) y g) de esta fracción, las personas enajenantes de bienes, prestadores de servicios u otorgantes del uso o goce temporal de bienes, deberán proporcionar a los residentes en el extranjero sin establecimiento en México que les presten los servicios digitales de intermediación, la información a que se refieren los citados incisos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 11,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 21,
           "tipo": "texto",
           "identificador": null,
           "contenido": "No se tendrá obligación de proporcionar la información a que se refiere esta fracción, tratándose de residentes en el extranjero sin establecimiento en México que presten los servicios digitales previstos en el artículo 18-B, fracciones I, III y IV de esta Ley, a las que se les efectúe la retención en los términos de la fracción II, inciso a), segundo párrafo, de este artículo.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 11,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Párrafo adicionado DOF 08-12-2020",
             "Artículo adicionado DOF 09-12-2019"
@@ -4031,9 +4031,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "También se considera introducción al país de bienes, cuando éstos se destinen a los regímenes aduaneros de importación temporal para elaboración, transformación o reparación en programas de maquila o de exportación; de depósito fiscal para someterse al proceso de ensamble y fabricación de vehículos; de elaboración, transformación o reparación en recinto fiscalizado, y de recinto fiscalizado estratégico.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 2,
+          "x_id": 113,
+          "x_texto": 113,
           "referencias": [
             "Párrafo adicionado DOF 11-12-2013"
           ]
@@ -4043,9 +4043,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No será aplicable lo dispuesto en el párrafo anterior a las mercancías nacionales o a las importadas en definitiva, siempre que no hayan sido consideradas como exportadas en forma previa para ser destinadas a los regímenes aduaneros mencionados.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 2,
+          "x_id": 113,
+          "x_texto": 113,
           "referencias": [
             "Párrafo adicionado DOF 11-12-2013",
             "Fracción reformada DOF 30-12-1980"
@@ -4133,9 +4133,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No será aplicable la exención a que se refiere esta fracción tratándose de bienes que se destinen a los regímenes aduaneros de importación temporal para elaboración, transformación o reparación en programas de maquila o de exportación; de depósito fiscal para someterse al proceso de ensamble y fabricación de vehículos; de elaboración, transformación o reparación en recinto fiscalizado, y de recinto fiscalizado estratégico.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 2,
+          "x_id": 118,
+          "x_texto": 118,
           "referencias": [
             "Párrafo adicionado DOF 30-12-2002. Reformado DOF 11-12-2013",
             "Fracción reformada DOF 28-12-1989, 26-12-1990"
@@ -4708,16 +4708,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Lo previsto en este inciso será aplicable siempre que las empresas cumplan con lo siguiente:",
-          "padre_numero": 6,
-          "x_id": 113,
-          "x_texto": 113
+          "padre_numero": 15,
+          "x_id": 140,
+          "x_texto": 140
         },
         {
           "numero": 22,
           "tipo": "numeral",
           "identificador": "1.",
           "contenido": "Utilicen en su totalidad infraestructura tecnológica, recursos humanos y materiales, ubicados en territorio nacional.",
-          "padre_numero": 21,
+          "padre_numero": 15,
           "x_id": 140,
           "x_texto": 162
         },
@@ -4726,7 +4726,7 @@
           "tipo": "numeral",
           "identificador": "2.",
           "contenido": "Que la dirección IP de los dispositivos electrónicos a través de los cuales se prestan los servicios, así como la de su proveedor del servicio de Internet se encuentren en territorio nacional y que la dirección IP de los dispositivos electrónicos del receptor del servicio y la de su proveedor del servicio de Internet se encuentren en el extranjero.",
-          "padre_numero": 21,
+          "padre_numero": 15,
           "x_id": 140,
           "x_texto": 162
         },
@@ -4735,16 +4735,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para efectos de esta Ley se considera como dirección IP al identificador numérico único formado por valores binarios asignado a un dispositivo electrónico. Dicho identificador es imprescindible para que los dispositivos electrónicos se puedan conectar, anunciar y comunicar a través del protocolo de Internet. El identificador permite ubicar la localización geográfica del dispositivo.",
-          "padre_numero": 21,
-          "x_id": 140,
-          "x_texto": 140
+          "padre_numero": 23,
+          "x_id": 167,
+          "x_texto": 167
         },
         {
           "numero": 25,
           "tipo": "numeral",
           "identificador": "3.",
           "contenido": "Consignen en el comprobante fiscal el registro o número fiscal del residente en el extranjero que contrató y pagó el servicio, sin perjuicio de los demás requisitos que deban cumplir de conformidad con las disposiciones fiscales.",
-          "padre_numero": 21,
+          "padre_numero": 15,
           "x_id": 140,
           "x_texto": 162
         },
@@ -4753,7 +4753,7 @@
           "tipo": "numeral",
           "identificador": "4.",
           "contenido": "Que el pago se realice a través de medios electrónicos y provenga de cuentas de instituciones financieras ubicadas en el extranjero, mismo que deberá realizarse a una cuenta del prestador del servicio en instituciones de crédito en México.",
-          "padre_numero": 21,
+          "padre_numero": 15,
           "x_id": 140,
           "x_texto": 162
         },
@@ -4762,25 +4762,25 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las obligaciones mencionadas en los numerales anteriores deberán cumplirse de conformidad con las reglas de carácter general que al efecto emita el Servicio de Administración Tributaria.",
-          "padre_numero": 6,
-          "x_id": 113,
-          "x_texto": 113
+          "padre_numero": 15,
+          "x_id": 140,
+          "x_texto": 140
         },
         {
           "numero": 28,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los servicios de tecnologías de la información previstos en este inciso no se considerarán exportados en los supuestos siguientes:",
-          "padre_numero": 6,
-          "x_id": 113,
-          "x_texto": 113
+          "padre_numero": 15,
+          "x_id": 140,
+          "x_texto": 140
         },
         {
           "numero": 29,
           "tipo": "numeral",
           "identificador": "1.",
           "contenido": "Cuando para proporcionar dichos servicios se utilicen redes privadas virtuales. Para los efectos de esta Ley se considera como red privada virtual la tecnología de red que permite una extensión de una red local sobre una red pública, creando una conexión privada segura a través de una red pública y admitiendo la conexión de usuarios externos desde otro lugar geográfico de donde se encuentre el servidor o los aplicativos de la organización.",
-          "padre_numero": 28,
+          "padre_numero": 15,
           "x_id": 140,
           "x_texto": 162
         },
@@ -4789,7 +4789,7 @@
           "tipo": "numeral",
           "identificador": "2.",
           "contenido": "Cuando los servicios se proporcionen, recaigan o se apliquen en bienes ubicados en el territorio nacional.",
-          "padre_numero": 28,
+          "padre_numero": 15,
           "x_id": 140,
           "x_texto": 162,
           "referencias": [
@@ -5067,9 +5067,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas morales obligadas a efectuar la retención del impuesto en los términos del artículo 1o.-A, fracción II, inciso a) de esta Ley, podrán optar por no proporcionar el comprobante fiscal a que se refiere el primer párrafo de esta fracción, siempre que la persona física que preste los servicios profesionales o haya otorgado el uso o goce temporal de bienes, les expida un comprobante fiscal que cumpla con los requisitos a que se refieren los artículos 29 y 29-A del Código Fiscal de la Federación y en el comprobante se señale expresamente el monto del impuesto retenido. En este caso, las personas físicas que expidan el comprobante fiscal podrán considerarlo como constancia de retención del impuesto y efectuar el acreditamiento del mismo en los términos de las disposiciones fiscales. Lo previsto en este párrafo en ningún caso libera a las personas morales de efectuar, en tiempo y forma, la retención y entero del impuesto y la presentación de las declaraciones informativas correspondientes, en los términos de las disposiciones fiscales respecto de las personas a las que les hubieran efectuado dichas retenciones.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 7,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Párrafo adicionado DOF 09-12-2019",
             "Fracción adicionada DOF 31-12-1998"
@@ -5696,9 +5696,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos de esta fracción se entenderá por ingresos por la prestación de servicios profesionales, las remuneraciones que deriven de servicios personales independientes que no estén asimiladas a los ingresos por la prestación de servicios personales subordinados, conforme al artículo 94 de la Ley del Impuesto sobre la Renta. Las Entidades Federativas podrán gravar dentro del impuesto cedular sobre sueldos o salarios, los ingresos personales independientes que estén asimilados a los ingresos por la prestación de un servicio personal subordinado.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 11-12-2013"
           ]
@@ -5708,18 +5708,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las Entidades Federativas que establezcan el impuesto a que se refiere esta fracción, únicamente podrán considerar como afecto a dicho impuesto, la utilidad gravable de los contribuyentes que sea atribuida a las bases fijas en las que proporcionen los servicios que se encuentren en la Entidad Federativa de que se trate. Cuando se presten los servicios fuera de la base fija, se considerará que la actividad se realiza en el local que sirva de base a la persona que proporcione dichos servicios.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando un contribuyente tenga bases fijas en dos o más Entidades Federativas, para determinar el impuesto que a cada una de ellas le corresponda, se deberá considerar la utilidad gravable obtenida por todas las bases fijas que tenga, y el resultado se dividirá entre éstas en la proporción que representen los ingresos obtenidos por cada base fija, respecto de la totalidad de los ingresos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 6,
@@ -5735,9 +5735,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El impuesto sobre los ingresos por otorgar el uso o goce temporal de bienes inmuebles corresponderá a la Entidad Federativa en donde se encuentre ubicado el inmueble de que se trate, con independencia de que el contribuyente tenga su domicilio fiscal fuera de dicha Entidad Federativa.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 6,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 8,
@@ -5762,18 +5762,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las Entidades Federativas que establezcan el impuesto a que se refiere esta fracción, únicamente podrán gravar la utilidad gravable obtenida por los contribuyentes, por los establecimientos, sucursales o agencias que se encuentren en la Entidad Federativa de que se trate.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 9,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 11,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando un contribuyente tenga establecimientos, sucursales o agencias, en dos o más Entidades Federativas, para determinar el impuesto que a cada una de ellas le corresponda, se deberá considerar la suma de la utilidad gravable obtenida por todos los establecimientos, sucursales o agencias que tenga, y el resultado se dividirá entre éstos en la proporción que representen los ingresos obtenidos por cada establecimiento, sucursal o agencia, respecto de la totalidad de los ingresos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 9,
+          "x_id": 107,
+          "x_texto": 107,
           "referencias": [
             "Reforma DOF 11-12-2013: Derogó de la fracción el entonces párrafo cuarto"
           ]

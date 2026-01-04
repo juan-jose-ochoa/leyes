@@ -23,63 +23,225 @@
       "tipo": "articulo",
       "orden": 1,
       "pagina": 1,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El presente ordenamiento tiene por objeto regular el procedimiento relativo a las objeciones de los trabajadores a la declaración anual del impuesto sobre la renta y sus anexos, que presente el patrón ante la Secretaría de Hacienda y Crédito Público, a través del Servicio de Administración Tributaria.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Las objeciones de los trabajadores a que se refiere el párrafo que antecede, tienen el carácter de denuncia de irregularidades en materia fiscal y laboral y, por lo tanto, la aplicación de este Reglamento y las resoluciones que del mismo deriven son de interés público y social.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "2",
       "tipo": "articulo",
       "orden": 2,
       "pagina": 1,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para resolver las objeciones presentadas por los trabajadores en contra de la declaración anual del impuesto sobre la renta que presentan los patrones, el Servicio de Administración Tributaria realizará los estudios e investigaciones correspondientes, en ejercicio de las atribuciones que como autoridad fiscal le confieren la Ley del Servicio de Administración Tributaria, el Código Fiscal de la Federación, la Ley del Impuesto sobre la Renta y demás disposiciones legales aplicables, y de conformidad con el procedimiento previsto en los ordenamientos citados.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "3",
       "tipo": "articulo",
       "orden": 3,
       "pagina": 1,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El procedimiento de revisión que realice el Servicio de Administración Tributaria respecto de las objeciones presentadas por los trabajadores en contra de la declaración anual del impuesto sobre la renta de los patrones, una vez iniciado, deberá concluirse para efectos fiscales y de participación de utilidades, sin que proceda el desistimiento por parte de los trabajadores.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "4",
       "tipo": "articulo",
       "orden": 4,
       "pagina": 1,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Compete ejercer al sindicato titular del contrato colectivo de trabajo, al del contrato ley en la empresa o, en su caso, a la mayoría de los trabajadores de la misma, los siguientes derechos:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "fraccion",
+          "identificador": "I",
+          "contenido": "Recibir copia de la declaración anual del impuesto sobre la renta presentada por los patrones ante el Servicio de Administración Tributaria;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 3,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "Revisar los anexos correspondientes a la declaración anual del impuesto sobre la renta a que se refiere la fracción anterior, y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 4,
+          "tipo": "fraccion",
+          "identificador": "III",
+          "contenido": "Formular objeciones a la declaración anual del impuesto sobre la renta a que se refiere la fracción I de este artículo.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        }
+      ]
     },
     {
       "numero": "5",
       "tipo": "articulo",
       "orden": 5,
       "pagina": 2,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los trabajadores deberán acreditar la personalidad con que se ostenten como representantes del sindicato o como mayoría de los trabajadores.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para acreditar la mayoría de los trabajadores, los mismos deberán solicitar, a la Autoridad del Trabajo competente, realizar una inspección extraordinaria, o bien, las diligencias que consideren pertinentes para constatar el número de trabajadores con los que cuenta el centro de trabajo, mediante escrito libre en el que se especifique el nombre, denominación o razón social y domicilio del centro de trabajo, así como domicilio para oír y recibir notificaciones, adjuntando un listado en el que conste el número de trabajadores, el nombre de cada uno de ellos y el puesto que desempeñan.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La información que se presente será de carácter confidencial, y únicamente será para efectos de que la autoridad del trabajo aporte elementos que permitan determinar la mayoría de los trabajadores, de conformidad con la normatividad en materia de protección de datos personales.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La inspección extraordinaria se deberá llevar a cabo dentro de los quince días hábiles siguientes a la recepción de la solicitud, y deberá entregarse copia del acta a los interesados dentro de los quince días hábiles posteriores a su desahogo.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Lo anterior, con el propósito de que los trabajadores puedan formular objeciones ante el Servicio de Administración Tributaria.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "6",
       "tipo": "articulo",
       "orden": 6,
       "pagina": 2,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El reparto de utilidades en beneficio de los trabajadores deberá efectuarse dentro de los sesenta días naturales siguientes a la fecha en que corresponda pagar el impuesto sobre la renta anual, sin que sea obstáculo para ello el que los trabajadores hayan impugnado por escrito la declaración anual del impuesto sobre la renta que presente el patrón.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "7",
       "tipo": "articulo",
       "orden": 7,
       "pagina": 2,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Si la empresa presenta con posterioridad una declaración anual del impuesto sobre la renta complementaria en la que aumente la renta gravable declarado inicialmente para efectos fiscales, procederá hacer un reparto adicional dentro de un plazo igual al que establece el artículo anterior, mismo que comenzará a computarse a partir del día siguiente a aquél en que fue presentada la declaración complementaria.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "8",
       "tipo": "articulo",
       "orden": 8,
       "pagina": 2,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El importe de las utilidades que no se hayan reclamado en el año en que sean exigibles, se adicionará a la utilidad del año siguiente, para ser repartido entre todos los trabajadores.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "9",
       "tipo": "articulo",
       "orden": 9,
       "pagina": 2,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los patrones, dentro del plazo de diez días hábiles contados a partir de la fecha en que se presente la declaración anual del impuesto sobre la renta o, en su caso, a partir de la fecha de la presentación de la declaración anual complementaria, entregarán copia de ésta y pondrán a disposición los anexos de la misma al representante del sindicato titular del contrato colectivo de trabajo, del contrato ley en la empresa o a la mayoría de los trabajadores.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "10",

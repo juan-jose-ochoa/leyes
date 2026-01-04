@@ -234,7 +234,11 @@ class Extractor:
         result = []
         for y_key in sorted(lines.keys()):
             line_words = sorted(lines[y_key], key=lambda w: w['x0'])
-            x0 = round(line_words[0]['x0'])
+            # Filtrar palabras vacías para obtener X real del contenido
+            line_words_content = [w for w in line_words if w['text'].strip()]
+            if not line_words_content:
+                continue
+            x0 = round(line_words_content[0]['x0'])
             x1 = round(line_words[-1]['x1'])  # x_end para detectar justificación
             text = ' '.join(w['text'] for w in line_words).strip()
 

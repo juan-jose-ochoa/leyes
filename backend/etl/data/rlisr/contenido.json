@@ -858,9 +858,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Igualmente, el administrador deberá entregar a cada condómino una copia de los comprobantes fiscales;",
-          "padre_numero": 5,
-          "x_id": 114,
-          "x_texto": 114
+          "padre_numero": 7,
+          "x_id": 136,
+          "x_texto": 136
         },
         {
           "numero": 9,
@@ -1269,9 +1269,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para efectos de esta fracción, el contribuyente deberá aportar los elementos de prueba que considere pertinentes, y",
-          "padre_numero": 2,
-          "x_id": 114,
-          "x_texto": 114
+          "padre_numero": 4,
+          "x_id": 136,
+          "x_texto": 136
         },
         {
           "numero": 6,
@@ -2591,9 +2591,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, cuando los créditos o deudas sean cancelados en los primeros tres meses del ejercicio siguiente a que se refiere el párrafo anterior, no se considerarán en el saldo promedio anual de los créditos o de las deudas, según corresponda, del ejercicio en el que se cancele la operación de que se trate, y",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 4,
@@ -3300,25 +3300,25 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando los bienes estén sujetos a una fecha de caducidad, los contribuyentes deberán presentar el aviso a que se refiere esta fracción, a más tardar cinco días antes de la fecha de caducidad. En el caso de medicamentos, el aviso a que se refiere este párrafo, deberá presentarse a más tardar seis meses antes de la fecha de caducidad.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En el caso de productos perecederos en los que se dificulte su almacenamiento o conservación, así como de productos sujetos a caducidad, los contribuyentes en el aviso a que se refiere esta fracción, deberán informar lo siguiente:",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 5,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "La fecha de caducidad, así como el plazo adicional a partir de dicha fecha, en el que el bien de que se trate pueda ser consumido o usado sin que sea perjudicial para la salud. En el caso de productos que no estén sujetos a una fecha de caducidad, de conformidad con las disposiciones sanitarias, el contribuyente deberá informar la fecha máxima en que pueden ser consumidos;",
-          "padre_numero": 4,
+          "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
         },
@@ -3327,7 +3327,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Las condiciones especiales que, en su caso, se requieran para la conservación del bien, y",
-          "padre_numero": 4,
+          "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
         },
@@ -3336,7 +3336,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "El tipo de población o regiones hacia las cuales están enfocados sus productos, y",
-          "padre_numero": 4,
+          "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
         },
@@ -3806,9 +3806,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En ningún caso podrán comercializar dichas donaciones. No se considera que se comercializan los bienes recibidos en donación, cuando se cobren cuotas de recuperación por el suministro o la distribución de los mismos, siempre que su monto no sea mayor al 10% del precio de mercado de los productos. Para tales efectos, las donatarias deberán llevar un registro de las cuotas de recuperación que, en su caso, obtengan, y",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 3,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 5,
@@ -4032,9 +4032,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La asistencia o rehabilitación médica deberá prestarse por personas que cuenten con título y cédula en la rama a que corresponda, conforme a las leyes aplicables;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 4,
@@ -4395,9 +4395,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para efectos del párrafo anterior, se consideran gastos de administración entre otros, los relacionados con las remuneraciones al personal, arrendamiento de bienes muebles e inmuebles, teléfono, electricidad, papelería, mantenimiento y conservación, los impuestos y derechos federales o locales, así como las demás contribuciones y aportaciones que en términos de las disposiciones legales respectivas deba cubrir la donataria siempre que se efectúen en relación directa con las oficinas o actividades administrativas. No quedan comprendidos en los gastos de administración, aquéllos que la donataria deba destinar directamente para cumplir con los fines propios de su objeto social;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 4,
@@ -6847,9 +6847,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En el caso de acciones por las que ya se hubiera calculado el costo promedio por acción: Costo promedio por acción determinado conforme al cálculo efectuado en la enajenación inmediata anterior y la fecha en la que ésta se efectuó, siempre que dicha operación haya sido a su vez dictaminada cumpliendo con los requisitos a que se refiere este artículo, así como la fecha y la autoridad fiscal ante la cual se entregó dicho dictamen;",
-          "padre_numero": 6,
-          "x_id": 136,
-          "x_texto": 136
+          "padre_numero": 7,
+          "x_id": 157,
+          "x_texto": 157
         },
         {
           "numero": 9,
@@ -6919,9 +6919,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En el caso de que el Impuesto retenido al enajenante sea menor que el que se determinaría de aplicar a la ganancia en la enajenación de acciones la tasa máxima de la tarifa del artículo 96 de la Ley, el enajenante deberá calcular el Impuesto sobre dicha ganancia efectuando el entero correspondiente en la declaración de pago provisional que deba presentar, en su caso, por sus demás ingresos, acumulando a los mismos dicho ingreso, en el mes en el que se presente el dictamen respectivo, señalando en el referido dictamen la fecha en la que se efectuó el pago señalado. En este caso el enajenante podrá acreditar contra el Impuesto que resulte a su cargo el monto que le hayan retenido conforme a este artículo;",
-          "padre_numero": 14,
-          "x_id": 114,
-          "x_texto": 114
+          "padre_numero": 15,
+          "x_id": 136,
+          "x_texto": 136
         },
         {
           "numero": 17,
@@ -7256,9 +7256,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los intereses devengados deberán incluir, tanto los cobrados por el fondo de inversión, como la variación en la valuación diaria de dicho tipo de instrumentos, que no hayan sido incluidos como interés devengado de días anteriores;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 6,
@@ -7301,9 +7301,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para efectos de esta fracción los valores a que se refieren los incisos a) y b) se deberán valuar al final de cada día, y",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 6,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 11,
@@ -7503,9 +7503,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los intereses devengados deberán incluir tanto los cobrados por la sociedad como la variación en la valuación diaria de los instrumentos de deuda, que no hayan sido incluidos como intereses devengados de días anteriores;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 7,
@@ -8216,9 +8216,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando los contribuyentes a que se refiere el párrafo anterior se ubiquen en los supuestos señalados en el artículo 142, fracción XVIII de la Ley, la administradora de que se trate, deberá efectuar la retención prevista en el artículo 145, párrafo tercero de la Ley;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 3,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 5,
@@ -10123,9 +10123,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando en el país o territorio de que se trate, en el que se genera el ingreso sujeto a un régimen fiscal preferente, no exija requisitos para la importación de bienes a su territorio, se deberán satisfacer los requisitos de información que se exigirían de haberse importado a territorio nacional. Cuando en dicho país o territorio se exijan más requisitos de información que los contenidos en la legislación aplicable en territorio nacional, sólo se deberán cumplir estos últimos;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 7,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 9,
@@ -10282,16 +10282,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando la mediana sea un número formado por entero y decimales, el valor de la mediana se determinará de la siguiente manera:",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 5,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 7,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Se obtendrá la diferencia entre el precio, monto de la contraprestación o margen de utilidad a que se refiere el primer párrafo de esta fracción y el precio, monto de la contraprestación o margen de utilidad inmediato superior, considerando para estos efectos su valor;",
-          "padre_numero": 6,
+          "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
         },
@@ -10300,7 +10300,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "El resultado obtenido en el inciso anterior se multiplicará por el número decimal correspondiente a la mediana, y",
-          "padre_numero": 6,
+          "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
         },
@@ -10309,7 +10309,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Al resultado obtenido en el inciso anterior se le adicionará el resultado obtenido en el primer párrafo de esta fracción;",
-          "padre_numero": 6,
+          "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
         },
@@ -10336,16 +10336,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando el percentil vigésimo quinto sea un número formado por entero y decimales, el límite inferior del rango se determinará de la siguiente manera:",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 11,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 13,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Se obtendrá la diferencia entre el precio, monto de la contraprestación o margen de utilidad a que se refiere el primer párrafo de esta fracción y el precio, monto de la contraprestación o margen de utilidad inmediato superior, considerando para estos efectos su valor;",
-          "padre_numero": 12,
+          "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
         },
@@ -10354,7 +10354,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "El resultado obtenido en el inciso anterior se multiplicará por el número decimal del percentil vigésimo quinto, y",
-          "padre_numero": 12,
+          "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
         },
@@ -10363,7 +10363,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Al resultado obtenido en el inciso anterior se le adicionará el resultado obtenido en el primer párrafo de esta fracción;",
-          "padre_numero": 12,
+          "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
         },
@@ -10390,16 +10390,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando el percentil septuagésimo quinto sea un número formado por entero y decimales, el límite superior del rango se determinará de la siguiente manera:",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 17,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 19,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Se obtendrá la diferencia entre el precio, monto de la contraprestación o margen de utilidad a que se refiere el primer párrafo de esta fracción y el precio, monto de la contraprestación o margen de utilidad inmediato superior, considerando para tales efectos su valor;",
-          "padre_numero": 18,
+          "padre_numero": 17,
           "x_id": 114,
           "x_texto": 136
         },
@@ -10408,7 +10408,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "El resultado obtenido conforme al inciso anterior, se multiplicará por el número decimal del percentil septuagésimo quinto, y",
-          "padre_numero": 18,
+          "padre_numero": 17,
           "x_id": 114,
           "x_texto": 136
         },
@@ -10417,7 +10417,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Al resultado obtenido en el inciso anterior, se le adicionará el resultado obtenido en el primer párrafo de esta fracción.",
-          "padre_numero": 18,
+          "padre_numero": 17,
           "x_id": 114,
           "x_texto": 136
         },
@@ -10496,9 +10496,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En la denominación de estos contratos se deberá especificar que se trata de aquellos que tienen como base pagar un plan que se asemeja a pensiones bajo la modalidad de jubilación o retiro, según sea el caso;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 4,
@@ -10761,9 +10761,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El porcentaje a que se refiere el párrafo anterior, se calculará dividiendo los ingresos por la prestación de los servicios independientes que reciba el fideicomiso durante el ejercicio fiscal de que se trate, entre la totalidad de los ingresos que reciba el mismo fideicomiso durante el mismo ejercicio fiscal; el cociente así obtenido se multiplicará por cien y el producto se expresará en por ciento;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 4,

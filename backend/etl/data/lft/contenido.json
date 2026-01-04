@@ -1281,9 +1281,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de que el patrón no cuente con un establecimiento permanente y domicilio fiscal o de representación comercial en territorio nacional, el Centro Federal de Conciliación y Registro Laboral fijará el monto de una fianza o depósito para garantizar el cumplimiento de las obligaciones contraídas. El patrón deberá comprobar ante dicho Centro el otorgamiento de la fianza o la constitución del depósito;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 8,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Fracción reformada DOF 01-05-2019"
           ]
@@ -4892,9 +4892,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los trabajadores no podrán poner en conocimiento de terceras personas los datos contenidos en la declaración y en sus anexos;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 107
         },
         {
           "numero": 4,
@@ -10095,9 +10095,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Al subir a bordo, el trabajador deberá poner el hecho en conocimiento del patrón y presentarle la prescripción suscrita por el médico;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 6,
@@ -18942,9 +18942,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las resoluciones deberán adoptarse por el cincuenta y uno por ciento del total de los miembros del sindicato o de la sección, por lo menos;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 16,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Fe de erratas al párrafo DOF 30-04-1970"
           ]
@@ -18963,16 +18963,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para tal efecto, los estatutos deberán observar las normas siguientes:",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 20,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "La convocatoria de elección se emitirá con firma autógrafa de las personas facultadas para ello, debiendo precisar fecha, hora, lugar del proceso y demás requisitos estatutariamente exigidos;",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
         },
@@ -18981,7 +18981,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "La convocatoria deberá publicarse en el local sindical y en los lugares de mayor afluencia de los miembros en el centro de trabajo, con una anticipación mínima de diez días;",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
         },
@@ -18990,7 +18990,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "El lugar que se determine para la celebración del proceso electoral, así como la documentación y materiales que se elaboren para la realización, deberán garantizar que la votación se desarrolle de forma segura, directa, personal, libre y secreta;",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
         },
@@ -18999,7 +18999,7 @@
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "Se integrará un padrón completo y actualizado de los miembros del sindicato con derecho a votar, que deberá publicarse y darse a conocer entre éstos con al menos tres días de antelación a la elección;",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
         },
@@ -19008,7 +19008,7 @@
           "tipo": "inciso",
           "identificador": "e)",
           "contenido": "Establecer un procedimiento que asegure la identificación de los afiliados que tengan derecho a votar, y",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
         },
@@ -19017,7 +19017,7 @@
           "tipo": "inciso",
           "identificador": "f)",
           "contenido": "La documentación, material y boletas para la elección de integración de los órganos internos de los sindicatos a que se refiere este inciso, contendrá cuando menos los siguientes datos y requisitos:",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
         },
@@ -19071,18 +19071,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El procedimiento de elección que realicen los miembros de un sindicato respecto al Secretario General o su equivalente a nivel nacional, estatal, seccional, local o municipal, se realizará de manera independiente de la elección de delegados a los congresos o convenciones sindicales, cumpliendo con los requisitos a que se refiere este inciso.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 32,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En virtud de que estos requisitos son esenciales para expresar la libre voluntad de los afiliados al sindicato, de incumplirse éstos, el procedimiento de elección carecerá de validez, ya sea a nivel general o seccional, según sea el caso;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Fracción reformada DOF 30-11-2012, 01-05-2019"
           ]
@@ -19158,9 +19158,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para tales efectos, se deberán establecer instancias y procedimientos internos que aseguren la resolución de controversias entre los agremiados, con motivo de la gestión de los fondos sindicales.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 38,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Fracción reformada DOF 30-11-2012"
           ]
@@ -24283,9 +24283,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La Secretaría del Trabajo y Previsión Social y el Instituto Mexicano del Seguro Social deberán intercambiar información en forma permanente respecto de los avisos de accidentes de trabajo que presenten los patrones, así como otros datos estadísticos que resulten necesarios para el ejercicio de sus respectivas facultades legales; y",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 6,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Párrafo adicionado DOF 30-11-2012",
             "Fracción reformada DOF 28-04-1978"
@@ -29427,27 +29427,27 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "La primera está relacionada con la producción de las soluciones acuosas de formaldehído (formol) y su uso en la industria química, por ejemplo, para la síntesis de diferentes resinas, como conservador en los laboratorios médicos o cosméticos, líquidos de embalsamamiento y como desinfectante.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 107
+          "padre_numero": 512,
+          "x_id": 107,
+          "x_texto": 129
         },
         {
           "numero": 514,
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Un segundo grupo está relacionado con la liberación de estos a partir de la hidrólisis y la descomposición por calor de resinas hechas a base de formaldehído en las cuales está presente como un residuo, por ejemplo, durante la fabricación de madera productos textiles, productos sintéticos de aislamiento vítreo y plásticos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 107
+          "padre_numero": 512,
+          "x_id": 107,
+          "x_texto": 129
         },
         {
           "numero": 515,
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "El tercer conjunto está relacionado con la pirolisis o la combustión de materia orgánica, por ejemplo, en los gases de escapeo en extinción de incendios.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 107
+          "padre_numero": 512,
+          "x_id": 107,
+          "x_texto": 129
         },
         {
           "numero": 516,
@@ -32487,9 +32487,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "(contar con al menos una (contar con al menos prueba alterada) una prueba alterada) Evaluación  Pruebas bitérmicas con Desequilibrio que 1 10-30% otoneurológica completa: agua, y interfiere de manera Leve  Pruebas rotatorias con  De la marcha; videonistagmografía o intermitente con  De movimientos electronistagmografía. las actividades laborales, al oculares;  Pruebas postulares, y En la medida que se menos una vez  Pruebas vestibulares disponga; cada 3 meses. complementarias. Según se requiera:  Pruebas de impulso Desequilibrio que 2 31-60% interfiere de cefálico tridimensional y  Evaluación potenciales miogénicos manera continua Moderada audiológica completa: evocados por estímulo con las actividades  Estudio Audiológico vestibular. completo; laborales, que  Estudio de oído impliquen movimientos medio, y  Evaluación craneoencefálicos neurológica completa. bruscos.",
-          "padre_numero": 834,
-          "x_id": 129,
-          "x_texto": 129
+          "padre_numero": 852,
+          "x_id": 194,
+          "x_texto": 194
         },
         {
           "numero": 854,
@@ -32821,14 +32821,14 @@
           "identificador": null,
           "contenido": "1 2 3 Encefalopatía Ausente Grado 1-2 Grado 3-4 Ascitis Ausente Leve Moderada Bilirrubina sérica < 2 mg/dl 2-3 mg/dl > 3 mg/dl Albúmina sérica > 35 g/l 28-35 g/l < 28 g/l Protrombina (prolongada) 1- 4 4-6 > 6 Bilirrubina (en cirrosis biliar primaria) < 4 mg/dl 4-10 mg/dl > 10 mg/dl Nota: Para la clasificación Child-Pugh se usa la sumatoria de la puntuación de la escala: A = 5-6 puntos. B = 7-9 puntos. C = 10-15 puntos.",
           "padre_numero": 888,
-          "x_id": 172,
-          "x_texto": 172
+          "x_id": 307,
+          "x_texto": 307
         },
         {
           "numero": 891,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "MELD Score = 9,57 Ln (Creat) + 3,78 Ln (Bili) + 11,2 Ln (INR) + 6,43 insuficiencia hepática puesto de trabajo 1 0% 30% 50% 100% 2 60% 70% 80% 100% 3 80% 90% 95% 100% 4 100% 100% 100% 100% 487 Pérdida o atrofia de un testículo u ovario, estando el otro sano. 25% Pérdida o atrofia de un testículo u ovario, estando el otro enfermo por 488 50% afección ajena al trabajo. 489 Pérdida o atrofia de los dos testículos u ovarios. 50 a 100% Por la pérdida de la función de una tuba uterina con capacidad reproductiva 490 20% antes del riesgo de trabajo.",
+          "contenido": "MELD Score = 9,57 Ln (Creat) + 3,78 Ln (Bili) + 11,2 Ln (INR) + 6,43 insuficiencia hepática puesto de trabajo 0 1 2 3 1 0% 30% 50% 100% 2 60% 70% 80% 100% 3 80% 90% 95% 100% 4 100% 100% 100% 100% 487 Pérdida o atrofia de un testículo u ovario, estando el otro sano. 25% Pérdida o atrofia de un testículo u ovario, estando el otro enfermo por 488 50% afección ajena al trabajo. 489 Pérdida o atrofia de los dos testículos u ovarios. 50 a 100% Por la pérdida de la función de una tuba uterina con capacidad reproductiva 490 20% antes del riesgo de trabajo.",
           "padre_numero": 888,
           "x_id": 153,
           "x_texto": 153
@@ -35234,9 +35234,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Dentro de las 24 horas siguientes, los Inspectores del Trabajo, bajo su más estricta responsabilidad, harán llegar un informe detallado por escrito a la Secretaría del Trabajo y Previsión Social, con copia del mismo al patrón.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 9,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Fracción adicionada DOF 30-11-2012"
           ]
@@ -46817,18 +46817,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "La negativa lisa y llana del despido, no revierte la carga de la prueba.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 7,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, la negativa del despido y el ofrecimiento del empleo hecho al trabajador, no exime al patrón de probar su dicho;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 7,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Fracción reformada DOF 30-11-2012, 01-05-2019"
           ]
@@ -47907,16 +47907,16 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Tribunal, librará exhorto, acompañando, en sobre cerrado y sellado, los interrogatorios en su caso previamente calificados; del que deberá sacarse una copia que se guardará en el secreto del Tribunal, para que sea desahogado por el Tribunal exhortado.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 5,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
           "contenido": "No obstante, lo anterior de no existir impedimento técnico o material, el tribunal podrá ordenar que el desahogo de la prueba se rinda vía remota, a través de videoconferencia, cuando sea posible, para lo cual el tribunal exhortado deberá asegurarse de que el testigo se encuentre en la sala de audiencias que disponga para llevar a cabo dicha prueba;",
-          "padre_numero": 6,
+          "padre_numero": 5,
           "x_id": 114,
           "x_texto": 114
         },
@@ -48028,27 +48028,27 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "No se permitirán preguntas ambiguas, indicativas, ni referirse a hechos y circunstancias ajenas al objeto de la prueba o que pretendan coaccionar a los testigos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 6,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las preguntas podrán ser objetadas por la contraparte antes de que el testigo emita su respuesta, para lo cual el juez procederá a calificar la procedencia o desechamiento de la pregunta, fundando su determinación.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 6,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Si a juicio del juez hubiere puntos no suficientemente esclarecidos, podrá ordenar al testigo que lo aclare;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 6,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Fracción reformada DOF 01-05-2019"
           ]
@@ -49122,18 +49122,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Tribunal podrá comisionar al actuario para que asociado del o los peritos designados, dé fe del lugar, fecha y hora en que se ponga a disposición de éstos el medio en el cual se contenga el documento digital.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de recibos electrónicos de pago el Tribunal designará a un fedatario para que consulte la liga o ligas proporcionadas por el oferente de la prueba, en donde se encuentran los Comprobantes Fiscales Digitales por Internet o CFDI, compulse su contenido, y en el caso de coincidir, se tendrán por perfeccionados, salvo prueba en contrario.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Fracción reformada DOF 01-05-2019"
           ]
@@ -49173,9 +49173,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos de este artículo, se estará a lo dispuesto en la Sección Quinta del presente Capítulo, relativo a la prueba pericial.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 7,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 9,
@@ -50787,9 +50787,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Si las partes no comparecen por sí mismas o por conducto de sus apoderados, se tendrán por consentidas las actuaciones judiciales que en cada etapa sucedan y quedarán precluídos los derechos procesales que debieron ejercitarse en cada una de las etapas de la audiencia. El tribunal determinará el inicio y la conclusión de cada una de las etapas de la audiencia;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 2,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 4,
@@ -53883,18 +53883,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de que el contrato colectivo de trabajo inicial o el convenio de revisión del contrato colectivo no sea aprobado por los trabajadores en términos de lo previsto por el artículo 390 Ter, fracción II, el sindicato podrá prorrogar el periodo de prehuelga hasta por quince días. No obstante, cuando las circunstancias así lo ameriten, el Tribunal podrá autorizar que la prórroga se extienda hasta por un máximo de treinta días, siempre y cuando el sindicato así lo solicite y justifique al momento de promoverla.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 6,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Con independencia de lo anterior, las partes de común acuerdo podrán prorrogar o ampliar el período de prehuelga con objeto de llegar a un acuerdo conciliatorio; no obstante, la prórroga no podrá tener una duración que afecte derechos de terceros.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 6,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Fracción adicionada DOF 01-05-2019"
           ]
@@ -54986,9 +54986,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Podrá embargarse la empresa o establecimiento, de conformidad con lo dispuesto en el artículo 966 de esta Ley;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 4,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 6,
@@ -55526,18 +55526,18 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando el Tribunal tenga conocimiento de la existencia de un embargo, hará saber a la autoridad que lo practicó, que los bienes embargados quedan afectos al pago preferente del crédito de trabajo y continuará los procedimientos de ejecución hasta efectuar el pago. El saldo líquido que resulte después de hacer el pago, se pondrá a disposición de la autoridad que hubiese practicado el embargo.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "padre_numero": 3,
+          "x_id": 114,
+          "x_texto": 114
         },
         {
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las cuestiones de preferencia que se susciten, se tramitarán y resolverán por el Tribunal que conozca del negocio, con exclusión de cualquiera otra autoridad, y",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 3,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Fracción reformada DOF 30-11-2012, 01-05-2019"
           ]
@@ -55735,9 +55735,9 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se citará personalmente con una anticipación de diez días a los acreedores que aparezcan en el certificado de gravámenes, así como al poseedor del bien inmueble, a efecto de que hagan valer sus derechos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "padre_numero": 5,
+          "x_id": 114,
+          "x_texto": 114,
           "referencias": [
             "Párrafo reformado DOF 01-05-2019",
             "Artículo adicionado DOF 04-01-1980"
