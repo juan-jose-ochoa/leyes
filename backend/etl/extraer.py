@@ -494,15 +494,10 @@ class Extractor:
         todas_lineas = []
         referencias = []  # Lista de (y_global, texto_referencia)
         en_articulo = False
-
-        # Umbrales de posición Y para filtrar header/footer automáticamente
-        # Header: encabezados institucionales, títulos de ley
-        # Footer: números de página ("X de Y")
-        Y_HEADER_MAX = 80   # Líneas con y < 80 son header (ruido)
-        Y_FOOTER_MIN = 720  # Líneas con y > 720 son footer (ruido)
-
-        # Patrones adicionales para ruido en zona de contenido (casos especiales)
-        ruido = self.config.get("ruido_lineas", [])
+        ruido = self.config.get("ruido_lineas", [
+            'CÓDIGO FISCAL', 'CÁMARA DE DIPUTADOS', 'Secretaría General',
+            'Servicios Parlamentarios', 'DOF', 'de 375', 'Última Reforma'
+        ])
 
         for pag_num in range(pag_inicio, pag_fin + 1):
             lineas = self._extraer_lineas_pagina(self.pdf.pages[pag_num])
@@ -511,15 +506,9 @@ class Extractor:
 
             for linea in lineas:
                 text = linea['text']
-                y_local = linea['y']  # Posición Y en la página actual
-
                 # Y global para comparaciones entre páginas
-                y_global = y_local + y_offset
+                y_global = linea['y'] + y_offset
                 linea['y_global'] = y_global
-
-                # Filtrar por posición Y (header/footer automático)
-                if y_local < Y_HEADER_MAX or y_local > Y_FOOTER_MIN:
-                    continue
 
                 # Detectar referencias PRIMERO (antes de filtrar basura)
                 # porque el filtro de basura podría incluir "DOF"
@@ -528,8 +517,8 @@ class Extractor:
                         referencias.append((y_global, text))
                     continue
 
-                # Filtrar ruido adicional en zona de contenido (casos especiales)
-                if ruido and any(skip in text for skip in ruido):
+                # Filtrar ruido (después de detectar referencias)
+                if any(skip in text for skip in ruido):
                     continue
 
                 # Detectar sección TRANSITORIOS o fin de artículos (termina extracción)

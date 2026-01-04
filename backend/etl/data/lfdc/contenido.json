@@ -117,13 +117,22 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "Derecho al carácter reservado de los datos, informes o antecedentes que de los contribuyentes y terceros con ellos relacionados, conozcan los servidores públicos de la administración tributaria, los cuales sólo podrán ser utilizados de conformidad con lo dispuesto por el artículo 69 del Código Fiscal de la Federación.",
+          "contenido": "Derecho al carácter reservado de los datos, informes o antecedentes que de los contribuyentes y terceros con ellos relacionados, conozcan los servidores públicos de la administración tributaria, los 1 de 7",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 9,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios cuales sólo podrán ser utilizados de conformidad con lo dispuesto por el artículo 69 del Código Fiscal de la Federación.",
+          "padre_numero": 8,
+          "x_id": 137,
+          "x_texto": 137
+        },
+        {
+          "numero": 10,
           "tipo": "fraccion",
           "identificador": "VIII",
           "contenido": "Derecho a ser tratado con el debido respeto y consideración por los servidores públicos de la administración tributaria.",
@@ -132,7 +141,7 @@
           "x_texto": 107
         },
         {
-          "numero": 10,
+          "numero": 11,
           "tipo": "fraccion",
           "identificador": "IX",
           "contenido": "Derecho a que las actuaciones de las autoridades fiscales que requieran su intervención se lleven a cabo en la forma que les resulte menos onerosa.",
@@ -141,7 +150,7 @@
           "x_texto": 107
         },
         {
-          "numero": 11,
+          "numero": 12,
           "tipo": "fraccion",
           "identificador": "X",
           "contenido": "Derecho a formular alegatos, presentar y ofrecer como pruebas documentos conforme a las disposiciones fiscales aplicables, incluso el expediente administrativo del cual emane el acto impugnado, que serán tenidos en cuenta por los órganos competentes al redactar la correspondiente resolución administrativa.",
@@ -150,7 +159,7 @@
           "x_texto": 107
         },
         {
-          "numero": 12,
+          "numero": 13,
           "tipo": "fraccion",
           "identificador": "XI",
           "contenido": "Derecho a ser oído en el trámite administrativo con carácter previo a la emisión de la resolución determinante del crédito fiscal, en los términos de las leyes respectivas.",
@@ -159,7 +168,7 @@
           "x_texto": 107
         },
         {
-          "numero": 13,
+          "numero": 14,
           "tipo": "fraccion",
           "identificador": "XII",
           "contenido": "Derecho a ser informado, al inicio de las facultades de comprobación de las autoridades fiscales, sobre sus derechos y obligaciones en el curso de tales actuaciones y a que éstas se desarrollen en los plazos previstos en las leyes fiscales.",
@@ -168,7 +177,7 @@
           "x_texto": 107
         },
         {
-          "numero": 14,
+          "numero": 15,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se tendrá por informado al contribuyente sobre sus derechos, cuando se le entregue la carta de los derechos del contribuyente y así se asiente en la actuación que corresponda.",
@@ -177,7 +186,7 @@
           "x_texto": 85
         },
         {
-          "numero": 15,
+          "numero": 16,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La omisión de lo dispuesto en esta fracción no afectará la validez de las actuaciones que lleve a cabo la autoridad fiscal, pero dará lugar a que se finque responsabilidad administrativa al servidor público que incurrió en la omisión.",
@@ -186,7 +195,7 @@
           "x_texto": 85
         },
         {
-          "numero": 16,
+          "numero": 17,
           "tipo": "fraccion",
           "identificador": "XIII",
           "contenido": "Derecho a corregir su situación fiscal con motivo del ejercicio de las facultades de comprobación que lleven a cabo las autoridades fiscales.",
@@ -195,7 +204,7 @@
           "x_texto": 107
         },
         {
-          "numero": 17,
+          "numero": 18,
           "tipo": "fraccion",
           "identificador": "XIV",
           "contenido": "Derecho a señalar en el juicio ante el Tribunal Federal de Justicia Fiscal y Administrativa, como domicilio para recibir notificaciones, el ubicado en cualquier parte del territorio nacional, salvo cuando tenga su domicilio dentro de la jurisdicción de la Sala competente de dicho Tribunal, en cuyo caso el señalado para recibir notificaciones deberá estar ubicado dentro de la circunscripción territorial de la Sala.",
@@ -245,6 +254,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "2 de 7",
+          "padre_numero": 2,
+          "x_id": 295,
+          "x_texto": 295
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 2,
+          "x_id": 137,
+          "x_texto": 137
         }
       ]
     },
@@ -399,6 +426,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "3 de 7",
+          "padre_numero": 1,
+          "x_id": 295,
+          "x_texto": 295
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 1,
+          "x_id": 137,
+          "x_texto": 137
         }
       ]
     },
@@ -508,13 +553,31 @@
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
+          "contenido": "4 de 7",
+          "padre_numero": 4,
+          "x_id": 295,
+          "x_texto": 295
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 4,
+          "x_id": 137,
+          "x_texto": 137
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
           "contenido": "Si con motivo del ejercicio de las facultades de comprobación se conocen hechos que puedan dar lugar a la determinación de contribuciones mayores a las corregidas por el contribuyente o contribuciones objeto de la revisión por las que no se corrigió el contribuyente, los visitadores o, en su caso, las autoridades fiscales, deberán continuar con la visita domiciliaria o con la revisión prevista en el artículo 48 del Código Fiscal de la Federación, hasta su conclusión.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 6,
+          "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando el contribuyente, en los términos del párrafo anterior, no corrija totalmente su situación fiscal, las autoridades fiscales emitirán la resolución que determine las contribuciones omitidas, de conformidad con el procedimiento establecido en el Código Fiscal de la Federación.",
@@ -624,6 +687,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "5 de 7",
+          "padre_numero": 1,
+          "x_id": 295,
+          "x_texto": 295
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 1,
+          "x_id": 137,
+          "x_texto": 137
         }
       ]
     },
