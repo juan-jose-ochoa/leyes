@@ -2,10 +2,42 @@
  * Configuración de categorización y display de leyes.
  *
  * Este archivo centraliza los mapeos para:
+ * - Orden de prioridad para mostrar en UI (por frecuencia de uso)
  * - Vincular reglamentos a sus leyes base
  * - Categorizar leyes como fiscales, laborales, etc.
  * - Definir nombres cortos para mostrar en UI
  */
+
+// Orden de leyes por frecuencia de consulta (UX priority)
+export const ORDEN_LEYES: string[] = [
+  // Fiscales - uso diario
+  'CFF',      // Base del sistema fiscal
+  'LISR',     // ISR, el más consultado
+  'LIVA',     // IVA, operaciones diarias
+  'RMF',      // Reglas actuales, consulta constante
+  'LIF',      // Tasas y estímulos del año
+  'LIEPS',    // Impuestos especiales
+  'LA',       // Comercio exterior
+  'LFDC',     // Derechos del contribuyente
+  // Laborales / Seguridad Social
+  'LFT',      // Relaciones laborales
+  'LSS',      // Cuotas IMSS
+  'LINFONAVIT', // Créditos vivienda
+  'LISSSTE',  // Sector público
+  // Constitucional
+  'CPEUM',    // Referencia
+]
+
+// Orden de reglamentos (siguen a su ley base)
+export const ORDEN_REGLAMENTOS: string[] = [
+  'RCFF',
+  'RLISR',
+  'RLIVA',
+  'RLIEPS',
+  'RLFT',
+  'RACERF',
+  'RLSS',
+]
 
 // Mapeo de reglamento → ley base
 export const LEY_BASE: Record<string, string> = {
@@ -26,11 +58,11 @@ export const CATEGORIA: Record<string, Categoria> = {
   'CFF': 'fiscal',
   'LISR': 'fiscal',
   'LIVA': 'fiscal',
+  'RMF': 'fiscal',
+  'LIF': 'fiscal',
   'LIEPS': 'fiscal',
   'LA': 'fiscal',
-  'RMF': 'fiscal',
   'LFDC': 'fiscal',
-  'LIF': 'fiscal',
   // Laboral
   'LFT': 'laboral',
   'LSS': 'laboral',
@@ -42,19 +74,22 @@ export const CATEGORIA: Record<string, Categoria> = {
 
 // Nombres cortos para mostrar (override de nombre_corto de BD si es necesario)
 export const NOMBRE_DISPLAY: Record<string, string> = {
+  // Fiscales
   'CFF': 'Código Fiscal',
   'LISR': 'Ley del ISR',
   'LIVA': 'Ley del IVA',
+  'RMF': 'Miscelánea Fiscal 2026',
+  'LIF': 'Ley de Ingresos 2026',
   'LIEPS': 'Ley del IEPS',
   'LA': 'Ley Aduanera',
+  'LFDC': 'Derechos del Contribuyente',
+  // Laborales
   'LFT': 'Ley Federal del Trabajo',
   'LSS': 'Ley del Seguro Social',
   'LINFONAVIT': 'Ley del INFONAVIT',
   'LISSSTE': 'Ley del ISSSTE',
+  // Constitucional
   'CPEUM': 'Constitución',
-  'RMF': 'Miscelánea Fiscal 2026',
-  'LFDC': 'Derechos del Contribuyente',
-  'LIF': 'Ley de Ingresos 2026',
   // Reglamentos
   'RCFF': 'Reglamento CFF',
   'RLISR': 'Reglamento ISR',

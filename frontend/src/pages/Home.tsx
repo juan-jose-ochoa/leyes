@@ -9,7 +9,7 @@ import ArticlePanel from '@/components/ArticlePanel'
 import { useSearch } from '@/hooks/useSearch'
 import { useLeyes } from '@/hooks/useArticle'
 import type { SearchResult, LeyTipo, Ley } from '@/lib/api'
-import { LEY_BASE, CATEGORIA, NOMBRE_DISPLAY, CATEGORIA_INFO, type Categoria } from '@/lib/leyesConfig'
+import { LEY_BASE, CATEGORIA, NOMBRE_DISPLAY, CATEGORIA_INFO, ORDEN_LEYES, type Categoria } from '@/lib/leyesConfig'
 
 // Ley con reglamentos anidados y nombre para mostrar
 interface LeyConReglamentos extends Ley {
@@ -56,9 +56,19 @@ function agruparLeyes(leyes: Ley[]): GrupoCategoria[] {
     porCategoria.set(cat, arr)
   }
 
-  // 3. Ordenar y retornar
-  const orden: Categoria[] = ['fiscal', 'laboral', 'constitucional']
-  return orden
+  // 3. Ordenar leyes dentro de cada categoría según ORDEN_LEYES
+  for (const [, leyesArr] of porCategoria) {
+    leyesArr.sort((a, b) => {
+      const idxA = ORDEN_LEYES.indexOf(a.codigo)
+      const idxB = ORDEN_LEYES.indexOf(b.codigo)
+      // Si no está en ORDEN_LEYES, va al final
+      return (idxA === -1 ? 999 : idxA) - (idxB === -1 ? 999 : idxB)
+    })
+  }
+
+  // 4. Retornar en orden de categorías
+  const ordenCategorias: Categoria[] = ['fiscal', 'laboral', 'constitucional']
+  return ordenCategorias
     .filter(cat => porCategoria.has(cat))
     .map(cat => ({
       categoria: cat,
