@@ -583,6 +583,7 @@ LEYES = {
             'Servicios Parlamentarios',
             'Última Reforma',
             'Última reforma',
+            'de 93',  # Número de páginas del documento
         ],
 
         # Detección de referencias

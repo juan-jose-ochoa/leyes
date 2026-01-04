@@ -125,19 +125,19 @@
           "contenido": ".- El pago de pasivos contraídos por los conceptos anteriores;",
           "padre_numero": 3,
           "x_id": 114,
-          "x_texto": 136,
-          "referencias": [
-            "Inciso adicionado DOF 16-12-2020"
-          ]
+          "x_texto": 136
         },
         {
           "numero": 7,
           "tipo": "inciso",
           "identificador": "d)",
-          "contenido": ".- La adquisición en propiedad de suelo destinado para la construcción de sus habitaciones; 1 de 93",
+          "contenido": ".- La adquisición en propiedad de suelo destinado para la construcción de sus habitaciones;",
           "padre_numero": 3,
           "x_id": 114,
-          "x_texto": 136
+          "x_texto": 136,
+          "referencias": [
+            "Inciso adicionado DOF 16-12-2020"
+          ]
         },
         {
           "numero": 8,
@@ -278,18 +278,20 @@
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción derogada DOF 21-02-2025",
-            "Fracción reformada DOF 21-02-2025"
+            "Fracción derogada DOF 21-02-2025"
           ]
         },
         {
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Con las cantidades y comisiones que obtenga por los servicios que preste, tanto a particulares como entes públicos de los tres órdenes de gobierno, los cuales se determinarán en los términos de las políticas que emita el Consejo de Administración; 2 de 93",
+          "contenido": "- Con las cantidades y comisiones que obtenga por los servicios que preste, tanto a particulares como entes públicos de los tres órdenes de gobierno, los cuales se determinarán en los términos de las políticas que emita el Consejo de Administración;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "referencias": [
+            "Fracción reformada DOF 21-02-2025"
+          ]
         },
         {
           "numero": 4,
@@ -463,15 +465,6 @@
           "referencias": [
             "Artículo reformado DOF 21-02-2025"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "3 de 93",
-          "padre_numero": 1,
-          "x_id": 293,
-          "x_texto": 293
         }
       ]
     },
@@ -648,7 +641,6 @@
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción adicionada DOF 01-06-2005",
             "Fracción adicionada DOF 01-06-2005"
           ]
         },
@@ -656,10 +648,13 @@
           "numero": 14,
           "tipo": "fraccion",
           "identificador": "XIII",
-          "contenido": "- Ratificar los nombramientos y remociones de los integrantes del Comité de Auditoría, y 4 de 93",
+          "contenido": "- Ratificar los nombramientos y remociones de los integrantes del Comité de Auditoría, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "referencias": [
+            "Fracción adicionada DOF 01-06-2005"
+          ]
         },
         {
           "numero": 15,
@@ -851,7 +846,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Examinar y en su caso aprobar la presentación a la Asamblea General de las proyecciones financieras del Instituto a cinco años, el presupuesto de ingresos y egresos, los planes de labores y de financiamientos, el plan financiero para el siguiente año, así como los estados financieros, dictaminados 5 de 93 por una auditoría externa aprobados por el Comité de Auditoría, y el informe de actividades formulados por la Dirección General;",
+          "contenido": "- Examinar y en su caso aprobar la presentación a la Asamblea General de las proyecciones financieras del Instituto a cinco años, el presupuesto de ingresos y egresos, los planes de labores y de financiamientos, el plan financiero para el siguiente año, así como los estados financieros, dictaminados por una auditoría externa aprobados por el Comité de Auditoría, y el informe de actividades formulados por la Dirección General;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -974,15 +969,6 @@
           "numero": 16,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "6 de 93",
-          "padre_numero": 15,
-          "x_id": 293,
-          "x_texto": 293
-        },
-        {
-          "numero": 17,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Lo anterior, es sin perjuicio de las facultades que, en relación con dichas cuentas, correspondan a la citada Comisión o a otras autoridades del sistema financiero de conformidad con lo previsto en otras disposiciones legales;",
           "padre_numero": null,
           "x_id": 85,
@@ -992,7 +978,7 @@
           ]
         },
         {
-          "numero": 18,
+          "numero": 17,
           "tipo": "fraccion",
           "identificador": "XIII",
           "contenido": "- Previo dictamen de la Comisión de Vigilancia, designar y remover a los miembros del Comité de Auditoría y someterlos a la ratificación de la Asamblea General;",
@@ -1004,7 +990,7 @@
           ]
         },
         {
-          "numero": 19,
+          "numero": 18,
           "tipo": "fraccion",
           "identificador": "XIV",
           "contenido": "- Conocer y aprobar los informes que le presente el Comité de Auditoría, así como los dictámenes de la Comisión de Vigilancia, sobre la situación que guarda el sistema de control interno del Instituto, para la determinación de las medidas procedentes;",
@@ -1016,7 +1002,7 @@
           ]
         },
         {
-          "numero": 20,
+          "numero": 19,
           "tipo": "fraccion",
           "identificador": "XV",
           "contenido": "- Evaluar la opinión que le envíe la Comisión de Vigilancia sobre los informes remitidos por el Comité de Auditoría;",
@@ -1028,7 +1014,7 @@
           ]
         },
         {
-          "numero": 21,
+          "numero": 20,
           "tipo": "fraccion",
           "identificador": "XVI",
           "contenido": "- Conocer la opinión que le envíe la Comisión de Vigilancia sobre los informes presentados por cualquiera de las diferentes áreas de la Administración;",
@@ -1040,7 +1026,7 @@
           ]
         },
         {
-          "numero": 22,
+          "numero": 21,
           "tipo": "fraccion",
           "identificador": "XVII",
           "contenido": "- A propuesta del Comité de Auditoría, designar o remover al Auditor Externo;",
@@ -1052,7 +1038,7 @@
           ]
         },
         {
-          "numero": 23,
+          "numero": 22,
           "tipo": "fraccion",
           "identificador": "XVIII",
           "contenido": "- Designar o remover al Auditor Interno a propuesta del Comité de Auditoría; éste lo escogerá de una terna propuesta por el Director General;",
@@ -1064,7 +1050,7 @@
           ]
         },
         {
-          "numero": 24,
+          "numero": 23,
           "tipo": "fraccion",
           "identificador": "XIX",
           "contenido": "- Aprobar la normativa que derive de la presente Ley, salvo aquella que se encuentre reservada expresamente para aprobación de la Asamblea General. Las disposiciones de carácter general deberán publicarse en el Diario Oficial de la Federación;",
@@ -1076,7 +1062,7 @@
           ]
         },
         {
-          "numero": 25,
+          "numero": 24,
           "tipo": "fraccion",
           "identificador": "XX",
           "contenido": "- Interpretar para efectos administrativos la presente Ley;",
@@ -1088,7 +1074,7 @@
           ]
         },
         {
-          "numero": 26,
+          "numero": 25,
           "tipo": "fraccion",
           "identificador": "XXI",
           "contenido": "- Establecer los comités que estime necesarios para el cumplimiento de sus funciones;",
@@ -1100,7 +1086,7 @@
           ]
         },
         {
-          "numero": 27,
+          "numero": 26,
           "tipo": "texto",
           "identificador": null,
           "contenido": "XXI Bis.- Supervisar el desempeño de la empresa filial y el cumplimiento de su objeto, mediante el informe que se le presente en sus sesiones ordinarias, y",
@@ -1112,7 +1098,7 @@
           ]
         },
         {
-          "numero": 28,
+          "numero": 27,
           "tipo": "fraccion",
           "identificador": "XXII",
           "contenido": "- Las demás que le señale la Asamblea General o se desprendan de la presente Ley.",
@@ -1171,22 +1157,13 @@
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "7 de 93",
-          "padre_numero": 4,
-          "x_id": 293,
-          "x_texto": 293
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Por cada integrante propietario deberá haber un suplente.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los integrantes propietarios y suplentes de esta Comisión no podrán serlo de algún otro Órgano del Instituto y deberán cumplir con los siguientes requisitos:",
@@ -1195,7 +1172,7 @@
           "x_texto": 85
         },
         {
-          "numero": 8,
+          "numero": 7,
           "tipo": "numeral",
           "identificador": "1.",
           "contenido": "Ser una persona de reconocido prestigio.",
@@ -1204,7 +1181,7 @@
           "x_texto": 107
         },
         {
-          "numero": 9,
+          "numero": 8,
           "tipo": "numeral",
           "identificador": "2.",
           "contenido": "Contar con conocimientos y experiencia mínima de cinco años en materia financiera, legal o administrativa.",
@@ -1213,7 +1190,7 @@
           "x_texto": 107
         },
         {
-          "numero": 10,
+          "numero": 9,
           "tipo": "numeral",
           "identificador": "3.",
           "contenido": "No haber sido condenado por sentencia irrevocable por delito patrimonial o intencional que haya ameritado pena corporal, y",
@@ -1222,7 +1199,7 @@
           "x_texto": 107
         },
         {
-          "numero": 11,
+          "numero": 10,
           "tipo": "numeral",
           "identificador": "4.",
           "contenido": "No estar inhabilitado para ejercer el comercio o para desempeñar un empleo, cargo o comisión en el servicio público o en el sistema financiero mexicano, así como no haber sido declarado como quebrado o concursado.",
@@ -1231,7 +1208,7 @@
           "x_texto": 107
         },
         {
-          "numero": 12,
+          "numero": 11,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La Comisión de Vigilancia sesionará de manera ordinaria una vez al trimestre, sin perjuicio de que pueda sesionar en forma extraordinaria en cualquier momento, conforme a los plazos que establezcan sus reglas de operación. La Comisión será presidida en forma rotativa, en el orden en que las representaciones que propusieron el nombramiento de sus integrantes se encuentran mencionadas en el artículo 7o.",
@@ -1240,7 +1217,7 @@
           "x_texto": 85
         },
         {
-          "numero": 13,
+          "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los integrantes de la Comisión de Vigilancia durarán en su cargo seis años y podrán ser removidos por la Asamblea General, a petición de quien les hubiere propuesto. La solicitud de remoción se hará por conducto de la persona titular de la Dirección General.",
@@ -1249,7 +1226,7 @@
           "x_texto": 85
         },
         {
-          "numero": 14,
+          "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los integrantes de la Comisión de Vigilancia cuya remoción se haya solicitado, quedarán de inmediato suspendidos en sus funciones y el suplente tomará su lugar, hasta en tanto la Asamblea General determine lo conducente.",
@@ -1325,7 +1302,6 @@
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción reformada DOF 24-01-2017",
             "Fracción reformada DOF 24-01-2017"
           ]
         },
@@ -1333,10 +1309,13 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Vigilar la actuación del Comité de Transparencia y de la Comisión de Inconformidades; 8 de 93",
+          "contenido": "- Vigilar la actuación del Comité de Transparencia y de la Comisión de Inconformidades;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "referencias": [
+            "Fracción reformada DOF 24-01-2017"
+          ]
         },
         {
           "numero": 8,
@@ -1497,22 +1476,13 @@
           "numero": 11,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "9 de 93",
-          "padre_numero": 10,
-          "x_id": 293,
-          "x_texto": 293
-        },
-        {
-          "numero": 12,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Los integrantes del Comité de Auditoría cuya remoción se haya solicitado, quedarán de inmediato suspendidos en sus funciones, y el suplente tomará su lugar, hasta en tanto la Asamblea General determine lo conducente.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 13,
+          "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para el cumplimiento de sus funciones, el Comité de Auditoría se auxiliará de la Auditoría Interna y sesionará de manera ordinaria una vez al trimestre, sin perjuicio de que pueda sesionar en forma extraordinaria en cualquier momento, conforme a los plazos que establezcan sus reglas de operación.",
@@ -1670,15 +1640,6 @@
         },
         {
           "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "10 de 93",
-          "padre_numero": 3,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 5,
           "tipo": "numeral",
           "identificador": "3.",
           "contenido": "Estar debidamente certificado.",
@@ -1687,7 +1648,7 @@
           "x_texto": 107
         },
         {
-          "numero": 6,
+          "numero": 5,
           "tipo": "numeral",
           "identificador": "4.",
           "contenido": "Contar con conocimientos y experiencia profesional mínima de cinco años en materia de auditoría relacionada con entidades financieras.",
@@ -1696,7 +1657,7 @@
           "x_texto": 107
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "numeral",
           "identificador": "5.",
           "contenido": "No haber sido condenado por sentencia irrevocable por delito patrimonial o intencional que haya ameritado pena corporal.",
@@ -1705,7 +1666,7 @@
           "x_texto": 107
         },
         {
-          "numero": 8,
+          "numero": 7,
           "tipo": "numeral",
           "identificador": "6.",
           "contenido": "No estar inhabilitado para ejercer el comercio o para desempeñar un empleo, cargo o comisión en el servicio público, o en el sistema financiero mexicano, así como no haber sido declarado como quebrado o concursado.",
@@ -1714,7 +1675,7 @@
           "x_texto": 107
         },
         {
-          "numero": 9,
+          "numero": 8,
           "tipo": "numeral",
           "identificador": "7.",
           "contenido": "Ser socio de una firma de contadores públicos de reconocido prestigio. Esta firma no podrá ser la misma que aquélla a la que hubiera pertenecido el Auditor, en el período inmediato anterior, y",
@@ -1723,7 +1684,7 @@
           "x_texto": 107
         },
         {
-          "numero": 10,
+          "numero": 9,
           "tipo": "numeral",
           "identificador": "8.",
           "contenido": "No desempeñar ningún cargo o comisión en el servicio público.",
@@ -1732,7 +1693,7 @@
           "x_texto": 107
         },
         {
-          "numero": 11,
+          "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Comité de Auditoría propondrá al Consejo de Administración una firma de reconocido prestigio para que se autorice la contratación del Auditor Externo. Para este efecto podrá solicitar a un Colegio o Instituto de Contadores Públicos ampliamente representativo de la profesión, le proponga una terna de firmas.",
@@ -1852,16 +1813,7 @@
           "contenido": "(Se deroga).",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "11 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291,
+          "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 01-06-2005"
           ]
@@ -2002,19 +1954,19 @@
           "contenido": "- Presentar anualmente al Consejo de Administración, dentro de los dos primeros meses del año siguiente, los estados financieros y el informe de actividades del ejercicio anterior;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107,
-          "referencias": [
-            "Fracción reformada DOF 21-02-2025"
-          ]
+          "x_texto": 107
         },
         {
           "numero": 9,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Presentar al Consejo de Administración, a más tardar el último día de octubre de cada año, el plan financiero, los presupuestos de ingresos y egresos, y los planes de labores y de financiamientos para el año siguiente, así como las proyecciones financieras del Instituto a cinco años; 12 de 93",
+          "contenido": "- Presentar al Consejo de Administración, a más tardar el último día de octubre de cada año, el plan financiero, los presupuestos de ingresos y egresos, y los planes de labores y de financiamientos para el año siguiente, así como las proyecciones financieras del Instituto a cinco años;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "referencias": [
+            "Fracción reformada DOF 21-02-2025"
+          ]
         },
         {
           "numero": 10,
@@ -2180,7 +2132,7 @@
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La Comisión conocerá de las reclamaciones que reciba por parte de patrones, los trabajadores o sus causahabientes y beneficiarios, cuando a juicio de éstos hubiesen recibido un tratamiento incorrecto, 13 de 93 injusto o negligente y se asegurará de su debida atención, en los términos de la normatividad correspondiente.",
+          "contenido": "La Comisión conocerá de las reclamaciones que reciba por parte de patrones, los trabajadores o sus causahabientes y beneficiarios, cuando a juicio de éstos hubiesen recibido un tratamiento incorrecto, injusto o negligente y se asegurará de su debida atención, en los términos de la normatividad correspondiente.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -2331,7 +2283,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Garantizar la protección de los datos personales en posesión del Instituto y el ejercicio de los derechos de acceso, rectificación, corrección y oposición; 14 de 93",
+          "contenido": "- Garantizar la protección de los datos personales en posesión del Instituto y el ejercicio de los derechos de acceso, rectificación, corrección y oposición;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2537,7 +2489,7 @@
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los patrones inscribirán a sus trabajadores con el salario que perciban al momento de su inscripción; 15 de 93",
+          "contenido": "Los patrones inscribirán a sus trabajadores con el salario que perciban al momento de su inscripción;",
           "padre_numero": 2,
           "x_id": 113,
           "x_texto": 113,
@@ -2623,7 +2575,6 @@
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción adicionada DOF 06-01-1997",
             "Fracción adicionada DOF 06-01-1997"
           ]
         },
@@ -2631,10 +2582,13 @@
           "numero": 13,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Permitir las inspecciones y visitas domiciliarias que practique el Instituto, las que se sujetarán a lo establecido por esta Ley, el Código Fiscal de la Federación y sus disposiciones reglamentarias. A efecto de evitar duplicidad de acciones, el Instituto podrá convenir con el Instituto Mexicano del Seguro Social la coordinación de estas acciones fiscales; 16 de 93",
+          "contenido": "- Permitir las inspecciones y visitas domiciliarias que practique el Instituto, las que se sujetarán a lo establecido por esta Ley, el Código Fiscal de la Federación y sus disposiciones reglamentarias. A efecto de evitar duplicidad de acciones, el Instituto podrá convenir con el Instituto Mexicano del Seguro Social la coordinación de estas acciones fiscales;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "referencias": [
+            "Fracción adicionada DOF 06-01-1997"
+          ]
         },
         {
           "numero": 14,
@@ -2743,15 +2697,6 @@
           "referencias": [
             "Párrafo adicionado DOF 06-01-1997. Reformado DOF 23-04-2021"
           ]
-        },
-        {
-          "numero": 24,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "17 de 93",
-          "padre_numero": 23,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -2922,22 +2867,13 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "18 de 93",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "El Instituto podrá reconocer el uso de los certificados digitales emitidos por otras autoridades certificadoras en el ámbito de la competencia a que se refiere esta Ley, surtiendo los mismos efectos jurídicos.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 5,
+          "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Consejo de Administración del Instituto, en términos de lo dispuesto por el Código Fiscal de la Federación, o en su caso, la Ley de Firma Electrónica Avanzada, aprobará la normatividad en materia de uso de medios electrónicos, mensajes de datos, firma electrónica avanzada, así como esquemas de almacenamiento electrónico, misma que deberá publicarse en el Diario Oficial de la Federación.",
@@ -3026,19 +2962,19 @@
           "contenido": "Las entidades receptoras son aquellas autorizadas por los institutos de seguridad social para recibir el pago de las cuotas del seguro de retiro, cesantía en edad avanzada y vejez, previsto en la Ley del Seguro Social, de aportaciones y descuentos de vivienda al Fondo Nacional de la Vivienda y de aportaciones voluntarias.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
-          "referencias": [
-            "Fracción adicionada DOF 24-02-1992. Reformada 06-01-1997"
-          ]
+          "x_texto": 85
         },
         {
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El Instituto deberá abonar a la subcuenta de vivienda del trabajador el importe de las aportaciones recibidas conforme a este artículo, así como los intereses determinados de conformidad a lo previsto en el artículo 39, que correspondan al período de omisión del patrón. En caso de que no se realice el abono dentro de los diez días hábiles siguientes a la fecha de cobro efectivo, los intereses se calcularán hasta la fecha en que éste se acredite en la subcuenta de vivienda del trabajador; 19 de 93",
+          "contenido": "El Instituto deberá abonar a la subcuenta de vivienda del trabajador el importe de las aportaciones recibidas conforme a este artículo, así como los intereses determinados de conformidad a lo previsto en el artículo 39, que correspondan al período de omisión del patrón. En caso de que no se realice el abono dentro de los diez días hábiles siguientes a la fecha de cobro efectivo, los intereses se calcularán hasta la fecha en que éste se acredite en la subcuenta de vivienda del trabajador;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 24-02-1992. Reformada 06-01-1997"
+          ]
         },
         {
           "numero": 9,
@@ -3165,16 +3101,7 @@
           "contenido": "- Las demás previstas en la Ley.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 20,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "20 de 93",
-          "padre_numero": 19,
-          "x_id": 291,
-          "x_texto": 291,
+          "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 06-01-1997",
             "Párrafo con fracciones reformado DOF 24-02-1992",
@@ -3320,16 +3247,7 @@
           "contenido": "Al terminarse la relación laboral, el patrón deberá entregar al trabajador una constancia de la clave de su registro.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "21 de 93",
-          "padre_numero": 3,
-          "x_id": 291,
-          "x_texto": 291,
+          "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 07-01-1982, 06-01-1997"
           ]
@@ -3467,7 +3385,7 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para garantizar la imprescriptibilidad establecida en el párrafo primero del presente artículo, el Fondo contará con una reserva constituida con cargo a los recursos a que se refiere este artículo y en los 22 de 93 términos que establezca su contrato constitutivo a fin de garantizar la suficiencia financiera para que el Instituto pueda llevar a cabo, en su caso, la devolución de los recursos de los trabajadores o sus beneficiarios.",
+          "contenido": "Para garantizar la imprescriptibilidad establecida en el párrafo primero del presente artículo, el Fondo contará con una reserva constituida con cargo a los recursos a que se refiere este artículo y en los términos que establezca su contrato constitutivo a fin de garantizar la suficiencia financiera para que el Instituto pueda llevar a cabo, en su caso, la devolución de los recursos de los trabajadores o sus beneficiarios.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85,
@@ -3584,22 +3502,13 @@
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "23 de 93",
-          "padre_numero": 4,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "La información que manejen las administradoras de fondos para el retiro, así como las empresas operadoras estará sujeta, en materia de confidencialidad, a las disposiciones de carácter general que emita la Comisión Nacional del Sistema de Ahorro para el Retiro, en términos de la Ley correspondiente.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La documentación y demás características de estas cuentas no previstas en esta Ley y en la Ley del Seguro Social se sujetarán a lo dispuesto por la Ley de los Sistemas de Ahorro para el Retiro.",
@@ -3725,22 +3634,13 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "24 de 93",
-          "padre_numero": 2,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Para los esquemas de arrendamiento social, las personas trabajadoras derechohabientes tendrán derecho a utilizar su subcuenta de vivienda como mecanismo de garantía conforme a los programas, reglas, requisitos y criterios de prelación que establezca el Consejo de Administración.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 5,
+          "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Previo a ejercer su crédito de vivienda o cualquier beneficio de un programa de vivienda, las personas trabajadoras derechohabientes tendrán derecho a recibir información suficiente sobre las condiciones jurídicas y financieras del mismo, así como recibir directamente y sin intermediarios el crédito o beneficio mencionado, siempre y cuando cumpla con los requisitos que se establezcan. Se entenderá por persona trabajadora derechohabiente a toda aquella que sea titular de depósitos constituidos a su favor en el Instituto.",
@@ -3749,7 +3649,7 @@
           "x_texto": 85
         },
         {
-          "numero": 6,
+          "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando una persona trabajadora derechohabiente hubiere recibido crédito del Instituto y éste tenga conocimiento de que ha dejado de percibir ingresos salariales, le otorgará prórrogas en los pagos de la amortización que tenga que hacer por concepto de capital e intereses ordinarios, con efectos retroactivos a la fecha en que se suscitó la pérdida del ingreso referido. Durante dichas prórrogas no se generarán intereses ordinarios.",
@@ -3758,7 +3658,7 @@
           "x_texto": 85
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las prórrogas que se otorguen a la persona trabajadora de conformidad con el párrafo anterior no podrán ser mayores de doce meses cada una, ni exceder en su conjunto más de veinticuatro meses y terminarán anticipadamente cuando la persona trabajadora inicie una nueva relación laboral.",
@@ -3767,7 +3667,7 @@
           "x_texto": 85
         },
         {
-          "numero": 8,
+          "numero": 7,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de que hayan transcurrido treinta años contados a partir de la fecha de otorgamiento del crédito, el Instituto lo liberará del saldo pendiente, excepto en caso de pagos omisos de la persona trabajadora o por prórrogas concedidas.",
@@ -3842,15 +3742,6 @@
           "referencias": [
             "Artículo adicionado DOF 21-02-2025"
           ]
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "25 de 93",
-          "padre_numero": 6,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -3992,18 +3883,20 @@
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción reformada DOF 24-02-1992",
-            "Fracción reformada DOF 06-01-1997"
+            "Fracción reformada DOF 24-02-1992"
           ]
         },
         {
           "numero": 14,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- A cubrir los gastos de administración, operación y vigilancia del Instituto; 26 de 93",
+          "contenido": "- A cubrir los gastos de administración, operación y vigilancia del Instituto;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "referencias": [
+            "Fracción reformada DOF 06-01-1997"
+          ]
         },
         {
           "numero": 15,
@@ -4105,7 +3998,7 @@
           "numero": 23,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El patrimonio del Instituto y los rendimientos del Fondo Nacional de la Vivienda, una vez descontados los intereses que deban recibir las subcuentas de vivienda podrán destinarse, previo acuerdo del Consejo 27 de 93 de Administración, al financiamiento de objetivos en materia de construcción, administración inmobiliaria y arrendamiento social de vivienda.",
+          "contenido": "El patrimonio del Instituto y los rendimientos del Fondo Nacional de la Vivienda, una vez descontados los intereses que deban recibir las subcuentas de vivienda podrán destinarse, previo acuerdo del Consejo de Administración, al financiamiento de objetivos en materia de construcción, administración inmobiliaria y arrendamiento social de vivienda.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85,
@@ -4230,15 +4123,6 @@
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "28 de 93",
-          "padre_numero": 7,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Sin perjuicio de lo anterior, el Instituto con cargo a la cuenta que el Banco de México le lleve, podrá mantener en efectivo o en depósitos bancarios a la vista las cantidades estrictamente necesarias para la realización de sus operaciones diarias.",
           "padre_numero": null,
           "x_id": 85,
@@ -4248,7 +4132,7 @@
           ]
         },
         {
-          "numero": 10,
+          "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Por los servicios de recepción de pagos que las entidades receptoras le brinden al Instituto, éste podrá, por acuerdo de su Consejo de Administración, establecer el mecanismo de remuneración correspondiente, de conformidad con las disposiciones de carácter general que emita la Comisión Nacional del Sistema de Ahorro para el Retiro.",
@@ -4335,15 +4219,6 @@
           "referencias": [
             "Artículo adicionado DOF 24-02-1992. Reformado DOF 06-01-1997"
           ]
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "29 de 93",
-          "padre_numero": 7,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -4489,7 +4364,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- El monto de las aportaciones al Fondo proveniente de las diversas regiones y localidades del país; y 30 de 93",
+          "contenido": "- El monto de las aportaciones al Fondo proveniente de las diversas regiones y localidades del país; y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4628,15 +4503,6 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "31 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Tratándose de créditos otorgados para la adquisición de viviendas financiadas directamente por el Instituto, éstos se darán por cancelados y el contrato rescindido si los deudores incurren en alguna de las causales señaladas en el párrafo anterior, por lo que el deudor o quien ocupe el suelo o la vivienda deberá desocuparla en un término de 45 días naturales contados a partir de la fecha en que se reciba el aviso respectivo, tratándose de suelo deberá, de ser el caso, desocuparse y suspender todas aquellas actividades de construcción en ese mismo plazo.",
           "padre_numero": null,
           "x_id": 85,
@@ -4646,7 +4512,7 @@
           ]
         },
         {
-          "numero": 4,
+          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En el caso del párrafo anterior, las cantidades que hayan cubierto los trabajadores hasta la fecha en que se desocupe la vivienda, se aplicarán a favor del instituto a título de pago por el uso de la propia vivienda.",
@@ -4752,22 +4618,13 @@
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "32 de 93",
-          "padre_numero": 7,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Al suscitarse la muerte del acreditado, sus personas beneficiarias deberán acudir al Instituto a tramitar la cancelación del crédito y la emisión del instrumento privado a que se refiere el artículo 44, a fin de cancelar los gravámenes o limitaciones de dominio que existan a favor del Instituto, para lo cual deberán acreditar la capacidad e identidad de las personas beneficiarias.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 10,
+          "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de controversia, o en el supuesto de que la persona trabajadora adjudicada no haya manifestado expresamente esa designación ante el Instituto, este último procederá exclusivamente a la cancelación del crédito y solamente emitirá el instrumento privado a que se refiere el artículo 44, cuando las personas beneficiarias le acrediten ese carácter mediante la declaratoria correspondiente dictada por laudo o sentencia firme de autoridad competente, y con los medios con que acrediten su capacidad e identidad.",
@@ -4776,7 +4633,7 @@
           "x_texto": 85
         },
         {
-          "numero": 11,
+          "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Instituto por ningún motivo podrá adjudicar inmueble alguno.",
@@ -4920,15 +4777,6 @@
         },
         {
           "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "33 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
-        },
-        {
-          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Consejo de Administración del Instituto fijará las bases y porcentajes a los que deberán sujetarse las garantías que deban constituirse.",
@@ -5085,7 +4933,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- El saldo de la subcuenta de vivienda de la persona trabajadora funcionará como garantía de cumplimiento de pago. En los contratos se señalarán los procedimientos para la ejecución de dichas garantías mediante retiros anticipados del saldo de la subcuenta de vivienda que corresponda para cubrir el monto de los incumplimientos de que se trate; 34 de 93",
+          "contenido": "- El saldo de la subcuenta de vivienda de la persona trabajadora funcionará como garantía de cumplimiento de pago. En los contratos se señalarán los procedimientos para la ejecución de dichas garantías mediante retiros anticipados del saldo de la subcuenta de vivienda que corresponda para cubrir el monto de los incumplimientos de que se trate;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5213,7 +5061,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Desocupar y entregar la vivienda que se le otorgue al terminar el arrendamiento, y 35 de 93",
+          "contenido": "- Desocupar y entregar la vivienda que se le otorgue al terminar el arrendamiento, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5379,7 +5227,7 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Las multas previstas en este artículo serán impuestas por el Instituto de acuerdo con los reglamentos respectivos. Las multas referidas en el primer párrafo no se aplicarán a los patrones que enteren 36 de 93 espontáneamente en los términos del Código Fiscal de la Federación, las aportaciones y descuentos correspondientes.",
+          "contenido": "Las multas previstas en este artículo serán impuestas por el Instituto de acuerdo con los reglamentos respectivos. Las multas referidas en el primer párrafo no se aplicarán a los patrones que enteren espontáneamente en los términos del Código Fiscal de la Federación, las aportaciones y descuentos correspondientes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85,
@@ -5528,15 +5376,6 @@
           "referencias": [
             "Artículo adicionado DOF 29-11-2023"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "37 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
@@ -5730,7 +5569,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Con base en lo establecido en este artículo, el Instituto deberá presentar al Congreso de la Unión y al Ejecutivo Federal, por conducto de la Secretaría de Hacienda y Crédito Público, a 38 de 93 más tardar el 30 de mayo de cada año, un informe dictaminado por una auditoría externa, sobre la situación financiera de sus activos y pasivos, que contenga una evaluación respecto a la suficiencia de los flujos correspondientes para cubrir la operación del Instituto. El informe a que se refiere esta fracción deberá aprobarse por la Asamblea General del Instituto, y",
+          "contenido": "- Con base en lo establecido en este artículo, el Instituto deberá presentar al Congreso de la Unión y al Ejecutivo Federal, por conducto de la Secretaría de Hacienda y Crédito Público, a más tardar el 30 de mayo de cada año, un informe dictaminado por una auditoría externa, sobre la situación financiera de sus activos y pasivos, que contenga una evaluación respecto a la suficiencia de los flujos correspondientes para cubrir la operación del Instituto. El informe a que se refiere esta fracción deberá aprobarse por la Asamblea General del Instituto, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5853,15 +5692,6 @@
           "referencias": [
             "Artículo adicionado DOF 06-01-1997"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "39 de 93",
-          "padre_numero": 1,
-          "x_id": 291,
-          "x_texto": 291
         }
       ]
     },
