@@ -173,7 +173,7 @@ def linea_es_bold(spans: list) -> bool:
     return texto_total > 0 and (texto_bold / texto_total) > 0.8
 
 
-def extraer_estructura(doc) -> list[TituloRef]:
+def extraer_estructura(doc, filtro_y: dict = None) -> list[TituloRef]:
     """
     Extrae la estructura jerárquica (Títulos/Capítulos) del PDF.
 
@@ -184,6 +184,10 @@ def extraer_estructura(doc) -> list[TituloRef]:
     titulos = []
     titulo_actual = None
 
+    # Filtro Y configurable
+    y_header_max = filtro_y.get("header_max", 0) if filtro_y else 0
+    y_footer_min = filtro_y.get("footer_min", 999) if filtro_y else 999
+
     for page_num, page in enumerate(doc):
         blocks = page.get_text("dict")["blocks"]
 
@@ -192,6 +196,11 @@ def extraer_estructura(doc) -> list[TituloRef]:
                 continue
 
             for line in block["lines"]:
+                # Filtrar por posición Y (header/footer)
+                y_pos = line["bbox"][1]
+                if y_pos < y_header_max or y_pos > y_footer_min:
+                    continue
+
                 # Reconstruir línea completa
                 texto_linea = ""
                 x_min = float('inf')
@@ -240,7 +249,7 @@ def extraer_estructura(doc) -> list[TituloRef]:
     return titulos
 
 
-def extraer_reglas(doc) -> list[ReglaRef]:
+def extraer_reglas(doc, filtro_y: dict = None) -> list[ReglaRef]:
     """
     Extrae todas las reglas del PDF.
 
@@ -252,6 +261,10 @@ def extraer_reglas(doc) -> list[ReglaRef]:
     reglas = []
     reglas_vistas = set()
 
+    # Filtro Y configurable
+    y_header_max = filtro_y.get("header_max", 0) if filtro_y else 0
+    y_footer_min = filtro_y.get("footer_min", 999) if filtro_y else 999
+
     for page_num, page in enumerate(doc):
         blocks = page.get_text("dict")["blocks"]
 
@@ -260,6 +273,11 @@ def extraer_reglas(doc) -> list[ReglaRef]:
                 continue
 
             for line in block["lines"]:
+                # Filtrar por posición Y (header/footer)
+                y_pos = line["bbox"][1]
+                if y_pos < y_header_max or y_pos > y_footer_min:
+                    continue
+
                 for span in line["spans"]:
                     texto = span["text"].strip()
                     x = span["bbox"][0]
@@ -280,18 +298,23 @@ def extraer_reglas(doc) -> list[ReglaRef]:
     return reglas
 
 
-def extraer_contenido(doc, reglas: list[ReglaRef]) -> dict[str, ReglaContenido]:
+def extraer_contenido(doc, reglas: list[ReglaRef], filtro_y: dict = None) -> dict[str, ReglaContenido]:
     """
     Extrae el contenido de cada regla del PDF.
 
     Args:
         doc: Documento PyMuPDF
         reglas: Lista de reglas con sus páginas
+        filtro_y: Configuración de filtro Y (header_max, footer_min)
 
     Returns:
         Diccionario {numero_regla: ReglaContenido}
     """
     contenido = {}
+
+    # Filtro Y configurable
+    y_header_max = filtro_y.get("header_max", 0) if filtro_y else 0
+    y_footer_min = filtro_y.get("footer_min", 999) if filtro_y else 999
 
     # Crear índice de reglas por página para saber cuándo termina cada una
     reglas_por_pagina = {}
@@ -369,6 +392,10 @@ def extraer_contenido(doc, reglas: list[ReglaRef]) -> dict[str, ReglaContenido]:
                 texto_linea = ""
                 x_min = float('inf')
                 y_actual = line["bbox"][1]
+
+                # Filtrar por posición Y (header/footer)
+                if y_actual < y_header_max or y_actual > y_footer_min:
+                    continue
 
                 for span in line["spans"]:
                     texto_linea += span["text"]
@@ -708,6 +735,7 @@ def main():
 
     config = LEYES[codigo]
     pdf_path = BASE_DIR / config["pdf_path"]
+    filtro_y = config.get("filtro_y", {})
 
     if not pdf_path.exists():
         print(f"Error: PDF no encontrado: {pdf_path}")
@@ -720,14 +748,18 @@ def main():
     doc = fitz.open(str(pdf_path))
     print(f"\nPDF: {pdf_path.name} ({len(doc)} páginas)")
 
+    # Mostrar filtro Y si está configurado
+    if filtro_y:
+        print(f"   Filtro Y: header < {filtro_y.get('header_max', 0)}, footer > {filtro_y.get('footer_min', 999)}")
+
     # 1. Extraer estructura
     print("\n1. Extrayendo estructura (Títulos/Capítulos)...")
-    titulos = extraer_estructura(doc)
+    titulos = extraer_estructura(doc, filtro_y)
     print(f"   Encontrados: {len(titulos)} títulos, {sum(len(t.capitulos) for t in titulos)} capítulos")
 
     # 2. Extraer reglas
     print("\n2. Extrayendo reglas...")
-    reglas = extraer_reglas(doc)
+    reglas = extraer_reglas(doc, filtro_y)
     print(f"   Encontradas: {len(reglas)} reglas")
 
     # 3. Asignar reglas a capítulos
@@ -751,7 +783,7 @@ def main():
     contenido = {}
     if not solo_estructura:
         print("\n5. Extrayendo contenido de reglas...")
-        contenido = extraer_contenido(doc, reglas)
+        contenido = extraer_contenido(doc, reglas, filtro_y)
         reglas_con_contenido = sum(1 for r in contenido.values() if r.parrafos)
         reglas_con_refs = sum(1 for r in contenido.values() if r.referencias)
         print(f"   Reglas con contenido: {reglas_con_contenido}")

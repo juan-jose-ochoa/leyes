@@ -103,7 +103,12 @@ LEYES = {
             "inciso": r'^([a-z])\)\s+',
             "numeral": r'^(\d{1,2})\.\s+',
         },
-        # RMF usa extraer_rmf.py (no extraer.py), no necesita ruido_lineas
+        # Filtro por coordenada Y para eliminar header/footer
+        # RMF tiene layout diferente: header a Y=35.7, contenido desde Y=58
+        "filtro_y": {
+            "header_max": 50,   # y < 50: solo "Domingo 28 de diciembre de 2025" y "DIARIO OFICIAL"
+            "footer_min": 750,  # y > 750: sin filtro (contenido llega hasta ~716)
+        },
     },
 
     "CPEUM": {
