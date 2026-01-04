@@ -47,10 +47,10 @@ function FraccionItem({ fraccion, mostrarReferencias }: { fraccion: FraccionWith
     : tipo
 
   const borderStyles = clsx({
-    'border-l-4 border-primary-500 bg-primary-50 dark:bg-primary-950/30': tipoVisual === 'fraccion',
-    'border-l-3 border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30': tipoVisual === 'inciso',
-    'border-l-2 border-amber-400 bg-amber-50 dark:bg-amber-950/30': tipoVisual === 'numeral',
-    'border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950/30': tipoVisual === 'apartado',
+    'border-l-4 border-primary-500 bg-primary-50 dark:bg-transparent': tipoVisual === 'fraccion',
+    'border-l-3 border-emerald-400 bg-emerald-50 dark:bg-transparent': tipoVisual === 'inciso',
+    'border-l-2 border-amber-400 bg-amber-50 dark:bg-transparent': tipoVisual === 'numeral',
+    'border-l-4 border-blue-500 bg-blue-50 dark:bg-transparent': tipoVisual === 'apartado',
     'border-l-2 border-gray-300 dark:border-gray-600': (tipoVisual === 'parrafo' || tipoVisual === 'texto'),
   })
 
