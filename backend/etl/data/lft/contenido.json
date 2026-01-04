@@ -19016,58 +19016,13 @@
           "numero": 25,
           "tipo": "inciso",
           "identificador": "f)",
-          "contenido": "La documentación, material y boletas para la elección de integración de los órganos internos de los sindicatos a que se refiere este inciso, contendrá cuando menos los siguientes datos y requisitos:",
+          "contenido": "La documentación, material y boletas para la elección de integración de los órganos internos de los sindicatos a que se refiere este inciso, contendrá cuando menos los siguientes datos y requisitos: 1.- Municipio y entidad federativa en que se realice la votación; 2.- Cargo para el que se postula al candidato o candidatos; 3.- Emblema y color de cada una de las planillas que participan con candidatos en la elección de que se trate; 4.- El nombre completo del candidato o candidatos a elegir, y 5.- Las boletas deberán validarse en el reverso con las firmas de por lo menos dos integrantes de la Comisión Electoral que para tales efectos acuerde el sindicato.",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
         },
         {
           "numero": 26,
-          "tipo": "numeral",
-          "identificador": "1.",
-          "contenido": "- Municipio y entidad federativa en que se realice la votación;",
-          "padre_numero": 25,
-          "x_id": 142,
-          "x_texto": 164
-        },
-        {
-          "numero": 27,
-          "tipo": "numeral",
-          "identificador": "2.",
-          "contenido": "- Cargo para el que se postula al candidato o candidatos;",
-          "padre_numero": 25,
-          "x_id": 142,
-          "x_texto": 164
-        },
-        {
-          "numero": 28,
-          "tipo": "numeral",
-          "identificador": "3.",
-          "contenido": "- Emblema y color de cada una de las planillas que participan con candidatos en la elección de que se trate;",
-          "padre_numero": 25,
-          "x_id": 142,
-          "x_texto": 164
-        },
-        {
-          "numero": 29,
-          "tipo": "numeral",
-          "identificador": "4.",
-          "contenido": "- El nombre completo del candidato o candidatos a elegir, y",
-          "padre_numero": 25,
-          "x_id": 142,
-          "x_texto": 164
-        },
-        {
-          "numero": 30,
-          "tipo": "numeral",
-          "identificador": "5.",
-          "contenido": "- Las boletas deberán validarse en el reverso con las firmas de por lo menos dos integrantes de la Comisión Electoral que para tales efectos acuerde el sindicato.",
-          "padre_numero": 25,
-          "x_id": 142,
-          "x_texto": 164
-        },
-        {
-          "numero": 31,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El procedimiento de elección que realicen los miembros de un sindicato respecto al Secretario General o su equivalente a nivel nacional, estatal, seccional, local o municipal, se realizará de manera independiente de la elección de delegados a los congresos o convenciones sindicales, cumpliendo con los requisitos a que se refiere este inciso.",
@@ -19076,7 +19031,7 @@
           "x_texto": 114
         },
         {
-          "numero": 32,
+          "numero": 27,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En virtud de que estos requisitos son esenciales para expresar la libre voluntad de los afiliados al sindicato, de incumplirse éstos, el procedimiento de elección carecerá de validez, ya sea a nivel general o seccional, según sea el caso;",
@@ -19088,7 +19043,7 @@
           ]
         },
         {
-          "numero": 33,
+          "numero": 28,
           "tipo": "texto",
           "identificador": null,
           "contenido": "IX Bis. En la integración de las directivas sindicales se establecerá la representación proporcional en razón de género;",
@@ -19100,7 +19055,7 @@
           ]
         },
         {
-          "numero": 34,
+          "numero": 29,
           "tipo": "texto",
           "identificador": null,
           "contenido": "IX Ter. Normas para la integración y funcionamiento de una instancia de decisión colegiada, que será responsable de organizar y calificar los procedimientos de elección de los órganos internos del sindicato;",
@@ -19112,7 +19067,7 @@
           ]
         },
         {
-          "numero": 35,
+          "numero": 30,
           "tipo": "fraccion",
           "identificador": "X",
           "contenido": "Período de duración de la directiva sindical y de las representaciones seccionales. En el caso de reelección, será facultad de la asamblea decidir mediante voto personal, libre, directo y secreto el período de duración y el número de veces que pueden reelegirse los dirigentes sindicales. El período de duración de la directiva y en su caso la reelección, deberán respetar las garantías a que se refiere el artículo 358, fracción II, de esta Ley;",
@@ -19124,7 +19079,7 @@
           ]
         },
         {
-          "numero": 36,
+          "numero": 31,
           "tipo": "fraccion",
           "identificador": "XI",
           "contenido": "Normas para la administración, adquisición y disposición de los bienes, patrimonio del sindicato;",
@@ -19133,7 +19088,7 @@
           "x_texto": 107
         },
         {
-          "numero": 37,
+          "numero": 32,
           "tipo": "fraccion",
           "identificador": "XII",
           "contenido": "Forma de pago y monto de las cuotas sindicales;",
@@ -19142,7 +19097,7 @@
           "x_texto": 107
         },
         {
-          "numero": 38,
+          "numero": 33,
           "tipo": "fraccion",
           "identificador": "XIII",
           "contenido": "Época y forma de presentación de la cuenta completa y detallada de la administración del patrimonio sindical y sanciones a sus directivos en caso de incumplimiento.",
@@ -19154,11 +19109,11 @@
           ]
         },
         {
-          "numero": 39,
+          "numero": 34,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para tales efectos, se deberán establecer instancias y procedimientos internos que aseguren la resolución de controversias entre los agremiados, con motivo de la gestión de los fondos sindicales.",
-          "padre_numero": 38,
+          "padre_numero": 33,
           "x_id": 114,
           "x_texto": 114,
           "referencias": [
@@ -19166,7 +19121,7 @@
           ]
         },
         {
-          "numero": 40,
+          "numero": 35,
           "tipo": "fraccion",
           "identificador": "XIV",
           "contenido": "Normas para la liquidación del patrimonio sindical; y",
@@ -19175,7 +19130,7 @@
           "x_texto": 107
         },
         {
-          "numero": 41,
+          "numero": 36,
           "tipo": "texto",
           "identificador": null,
           "contenido": "XIV Bis. Procedimiento para llevar a cabo la consulta a los trabajadores mediante voto personal, libre y secreto para la aprobación del contenido de contratos colectivos de trabajo iniciales y de sus revisiones. Para tal efecto, los estatutos deberán observar el procedimiento contemplado en el artículo 390 Ter, fracción II de la presente Ley, y",
@@ -19187,7 +19142,7 @@
           ]
         },
         {
-          "numero": 42,
+          "numero": 37,
           "tipo": "fraccion",
           "identificador": "XV",
           "contenido": "Las demás normas que apruebe la asamblea.",
@@ -31991,94 +31946,22 @@
           "numero": 798,
           "tipo": "texto",
           "identificador": null,
-          "contenido": " En los casos de pérdida o disminución bilateral de la agudeza visual, a consecuencia de riesgo de trabajo en ambos ojos, el porcentaje de incapacidad indemnizable aparece en la intersección de la columna vertical y de la línea horizontal correspondiente. 1 a 0.8 0% 6% 9% 12% 15% 20% 30% 35% 40% 45% 50% 60%",
+          "contenido": " En los casos de pérdida o disminución bilateral de la agudeza visual, a consecuencia de riesgo de trabajo en ambos ojos, el porcentaje de incapacidad indemnizable aparece en la intersección de la columna vertical y de la línea horizontal correspondiente. 1 a 0.8 0% 6% 9% 12% 15% 20% 30% 35% 40% 45% 50% 60% 0.7 6% 13 16 19 22 27 37 42 47 52 57 67 0.6 9% 16 19 22 25 30 40 45 50 55 62 72 0.5 12% 19 22 25 28 33 43 50 55 60 67 77 0.4 15% 22 25 28 31 40 50 60 65 70 75 82 0.3 20% 27 30 33 40 50 60 70 75 80 85 90 0.2 30% 37 40 43 50 60 70 77 85 90 95 98 0.1 35% 42 45 50 60 70 77 90 95 98 100 100 0.05 40% 47 50 55 65 75 85 95 98 100 100 100 0 45% 52 55 60 70 80 90 98 100 100 100 100 E.c/p * 50% 57 62 67 75 85 95 100 100 100 100 100 E.p/i ** 60% 67 72 77 82 90 98 100 100 100 100 100 * Enucleación con prótesis. ** Enucleación, prótesis imposible.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
           "numero": 799,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "7 6% 13 16 19 22 27 37 42 47 52 57 67",
-          "padre_numero": 544,
-          "x_id": 83,
-          "x_texto": 105
-        },
-        {
-          "numero": 800,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "6 9% 16 19 22 25 30 40 45 50 55 62 72",
-          "padre_numero": 544,
-          "x_id": 83,
-          "x_texto": 105
-        },
-        {
-          "numero": 801,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "5 12% 19 22 25 28 33 43 50 55 60 67 77",
-          "padre_numero": 544,
-          "x_id": 83,
-          "x_texto": 105
-        },
-        {
-          "numero": 802,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "4 15% 22 25 28 31 40 50 60 65 70 75 82",
-          "padre_numero": 544,
-          "x_id": 83,
-          "x_texto": 105
-        },
-        {
-          "numero": 803,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "3 20% 27 30 33 40 50 60 70 75 80 85 90",
-          "padre_numero": 544,
-          "x_id": 83,
-          "x_texto": 105
-        },
-        {
-          "numero": 804,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "2 30% 37 40 43 50 60 70 77 85 90 95 98",
-          "padre_numero": 544,
-          "x_id": 83,
-          "x_texto": 105
-        },
-        {
-          "numero": 805,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "1 35% 42 45 50 60 70 77 90 95 98 100 100",
-          "padre_numero": 544,
-          "x_id": 83,
-          "x_texto": 105
-        },
-        {
-          "numero": 806,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "05 40% 47 50 55 65 75 85 95 98 100 100 100 0 45% 52 55 60 70 80 90 98 100 100 100 100 E.c/p * 50% 57 62 67 75 85 95 100 100 100 100 100 E.p/i ** 60% 67 72 77 82 90 98 100 100 100 100 100 * Enucleación con prótesis. ** Enucleación, prótesis imposible.",
-          "padre_numero": 544,
-          "x_id": 81,
-          "x_texto": 103
-        },
-        {
-          "numero": 807,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Pérdida o disminución permanente de la agudeza visual en sujetos monóculos. Ceguera o 348 visión inferior a 0.05 en el ojo contralateral (visión restante con corrección óptica). Ver Tabla",
-          "padre_numero": 806,
+          "padre_numero": 798,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 808,
+          "numero": 800,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "",
@@ -32087,97 +31970,25 @@
           "x_texto": 146
         },
         {
-          "numero": 809,
+          "numero": 801,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Incapacidades en persona trabajadoras Agudeza visual (%)",
-          "padre_numero": 808,
+          "contenido": "Incapacidades en persona trabajadoras Agudeza visual (%) 0.7 13 0.6 19 0.5 25 0.4 31 0.3 50 0.2 70 0.1 90 0.05 100 0 100",
+          "padre_numero": 800,
           "x_id": 331,
           "x_texto": 331
         },
         {
-          "numero": 810,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "7 13",
-          "padre_numero": 808,
-          "x_id": 180,
-          "x_texto": 202
-        },
-        {
-          "numero": 811,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "6 19",
-          "padre_numero": 808,
-          "x_id": 180,
-          "x_texto": 202
-        },
-        {
-          "numero": 812,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "5 25",
-          "padre_numero": 808,
-          "x_id": 180,
-          "x_texto": 202
-        },
-        {
-          "numero": 813,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "4 31",
-          "padre_numero": 808,
-          "x_id": 180,
-          "x_texto": 202
-        },
-        {
-          "numero": 814,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "3 50",
-          "padre_numero": 808,
-          "x_id": 180,
-          "x_texto": 202
-        },
-        {
-          "numero": 815,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "2 70",
-          "padre_numero": 808,
-          "x_id": 180,
-          "x_texto": 202
-        },
-        {
-          "numero": 816,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "1 90",
-          "padre_numero": 808,
-          "x_id": 180,
-          "x_texto": 202
-        },
-        {
-          "numero": 817,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "05 100 0 100",
-          "padre_numero": 808,
-          "x_id": 177,
-          "x_texto": 199
-        },
-        {
-          "numero": 818,
+          "numero": 802,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Al aceptarse en servicio a las personas trabajadoras, se considerará para reclamaciones 349 posteriores por pérdida de la agudeza visual, que tienen la unidad, aunque tuvieran 0. 8 (8 décimos en cada ojo).",
-          "padre_numero": 806,
+          "padre_numero": 798,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 819,
+          "numero": 803,
           "tipo": "texto",
           "identificador": null,
           "contenido": "350 Cuadrantanopsia homónima (derecha o izquierda). 26% 351 Cuadrantanopsia bitemporal. 26% 352 Pérdida total o parcial de un cuadrante. 13% 353 Pérdida total o parcial de dos cuadrantes. 26% 354 Pérdida total o parcial de tres cuadrantes. 40% 355 Pérdida total o parcial de los cuatro cuadrantes. 50% Los escotomas se valuarán según la determinación de pérdida del campo visual, aplicando 356 las fracciones anteriores.",
@@ -32186,7 +31997,7 @@
           "x_texto": 86
         },
         {
-          "numero": 820,
+          "numero": 804,
           "tipo": "texto",
           "identificador": null,
           "contenido": "357 Nictalopía adquirida. 30% Estrechamiento del campo visual, con conservación de 30 grados o más, 358 10 a 15% en un solo ojo.",
@@ -32195,34 +32006,34 @@
           "x_texto": 86
         },
         {
-          "numero": 821,
+          "numero": 805,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Estrechamiento del campo visual, con conservación de 30 grados o más, 359 20 a 30% en ambos ojos.",
-          "padre_numero": 820,
+          "padre_numero": 804,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 822,
+          "numero": 806,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Estrechamiento del campo visual, con conservación de menos de 30 360 30 a 50% grados en un solo ojo.",
-          "padre_numero": 820,
+          "padre_numero": 804,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 823,
+          "numero": 807,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Estrechamiento del campo visual, con conservación de menos de 30 361 30 a 100% grados, en ambos ojos.",
-          "padre_numero": 820,
+          "padre_numero": 804,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 824,
+          "numero": 808,
           "tipo": "texto",
           "identificador": null,
           "contenido": "362 Homónimas, derecha o izquierda. 40 a 50% 363 Heterónimas binasales. 40 a 50% 364 Heterónimas bitemporales. 50 a 60% 365 Superiores. 10 a 15% 366 Inferiores. 30 a 50% 367 Nasal. 60 a 70% 368 Inferior. 70 a 80% 369 Temporal. 80 a 90% En los casos de hemianopsia con pérdida de la visión central uni o bilateral se agregará al porcentaje de valuación correspondiente a la hemianopsia, 370 -- el relativo a la visión restante, observándose lo dispuesto en el artículo 494 de la Ley Federal del Trabajo.",
@@ -32231,16 +32042,16 @@
           "x_texto": 86
         },
         {
-          "numero": 825,
+          "numero": 809,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Estrabismo por lesión muscular o alteración nerviosa correspondiente, sin 371 10% diplopía.",
-          "padre_numero": 824,
+          "padre_numero": 808,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 826,
+          "numero": 810,
           "tipo": "texto",
           "identificador": null,
           "contenido": "372 Horizontal. 30% 373 Vertical. 30% 374 Oblicua. 30% En cualquiera de las anteriores cuando se encuentre afectada la posición 375 primaria de la mirada (central) se agregará un 20%, y cuando esté afectada -- la mirada en la parte inferior del campo se agregará un 10%.",
@@ -32249,25 +32060,25 @@
           "x_texto": 86
         },
         {
-          "numero": 827,
+          "numero": 811,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Diplopía, acompañada o no de ptosis palpebral, con o sin oftalmoplejía 376 50% interna, que amerita la oclusión de un ojo.",
-          "padre_numero": 826,
+          "padre_numero": 810,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 828,
+          "numero": 812,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Diplopía, por lesión nerviosa bilateral que limita los movimientos de ambos 377 ojos y reduce el campo visual por la desviación, originando desviación de 60% cabeza para fijar, además de la oclusión de un ojo.",
-          "padre_numero": 826,
+          "padre_numero": 810,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 829,
+          "numero": 813,
           "tipo": "texto",
           "identificador": null,
           "contenido": "378 Discromatopsia adquirida unilateral. 15% 379 Discromatopsia adquirida bilateral. 30% 380 Afaquia unilateral corregible con lente de contacto o intraocular. 10% 381 Afaquia bilateral corregible con lentes de contacto o intraoculares. 20% En las dos fracciones anteriores se les agregará la incapacidad que corresponda de acuerdo con la disminución de la agudeza visual no 382 -- corregible, sin que la suma sobrepase el 100%, conforme a las estipulaciones del artículo 494 de la Ley Federal del Trabajo.",
@@ -32276,25 +32087,25 @@
           "x_texto": 86
         },
         {
-          "numero": 830,
+          "numero": 814,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Midriasis, iridodiálisis o iridectomía en sector, cuando ocasionan trastornos 383 10% funcionales, en un ojo.",
-          "padre_numero": 829,
+          "padre_numero": 813,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 831,
+          "numero": 815,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Midriasis, iridodiálisis o iridectomía en sector, cuando ocasionan trastornos 384 20% funcionales, en ambos ojos.",
-          "padre_numero": 829,
+          "padre_numero": 813,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 832,
+          "numero": 816,
           "tipo": "texto",
           "identificador": null,
           "contenido": "385 Ptosis palpebral, pupila descubierta. 10% Ptosis palpebral en forma mínima, con elevación del párpado superior de 7 386 15% a 9 mm.",
@@ -32303,16 +32114,16 @@
           "x_texto": 86
         },
         {
-          "numero": 833,
+          "numero": 817,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Ptosis palpebral, en forma moderada, con elevación del párpado superior 387 20% de 1 a 6 mm. 388 Ptosis palpebral, en forma severa, sin elevación del párpado superior. 30% A esta incapacidad se le deberá sumar la disminución de la agudeza 389 -- visual sin que exceda del 100%.",
-          "padre_numero": 832,
+          "padre_numero": 816,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 834,
+          "numero": 818,
           "tipo": "texto",
           "identificador": null,
           "contenido": "390 Ptosis palpebral, pupilas descubiertas. 20% Ptosis palpebral, en forma mínima con elevación del párpado superior de 7 391 30% a 9 mm.",
@@ -32321,11 +32132,155 @@
           "x_texto": 86
         },
         {
-          "numero": 835,
+          "numero": 819,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Ptosis palpebral, en forma moderada con elevación del párpado superior de 392 40% 1 a 6 mm. 393 Ptosis palpebral, en forma severa, sin elevación del párpado superior. 60% A esta incapacidad se le deberá sumar la disminución de la agudeza visual 394 -- sin que exceda del 100%. horizontal de frente). La pupila está más o menos descubierta",
-          "padre_numero": 834,
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 820,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Desviación de los bordes palpebrales (entropión, ectropión, triquiasis, 395 15% cicatrices deformantes, simblefarón y anquilobléfaron) unilateral. 396 Bilateral. 25% 397 Lagoftalmos cicatrizal o paralítico unilateral. 15% 398 Lagoftalmos cicatrizal o paralítico bilateral. 25% 399 Epifora unilateral. 10% 400 Epifora bilateral. 20% 401 Fístula(s) lagrimal unilateral. 20% 402 Fístula(s) lagrimal bilateral. 30% 403 Mutilación parcial de la nariz, sin estenosis, no corregida plásticamente. 20% 404 Pérdida de la nariz sin estenosis, no reparada plásticamente. 40% 405 Cuando haya sido reparada plásticamente. 15 a 20% 406 Cuando la nariz quede reducida a muñón cicatrizal, con estenosis. 30 a 50%",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 821,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pérdida o deformación total del pabellón auricular, unilateral, sin estenosis 407 10% del conducto auditivo externo.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 822,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pérdida o deformación parcial del pabellón auricular, unilateral, sin 408 7% estenosis del conducto auditivo externo.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 823,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pérdida o deformación total del pabellón auricular, bilateral, sin estenosis 409 20% del conducto auditivo externo.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 824,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pérdida o deformación parcial del pabellón auricular, bilateral, sin estenosis 410 15% del conducto auditivo externo.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 825,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pérdida o deformación total del pabellón auricular, unilateral, con estenosis 411 15% del conducto auditivo externo.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 826,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pérdida o deformación parcial del pabellón auricular, unilateral, con 412 12% estenosis del conducto auditivo externo.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 827,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pérdida o deformación total del pabellón auricular bilateral, con estenosis 413 30% del conducto auditivo externo.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 828,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pérdida o deformación parcial del pabellón auricular bilateral, con estenosis 414 25% del conducto auditivo externo. 415 Obliteración total del conducto auditivo externo unilateral. 20% 416 Obliteración total del conducto auditivo externo bilateral. 40% Pérdida de la membrana timpánica unilateral (subtotal o total), con injerto 417 5% funcional.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 829,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pérdida de la membrana timpánica bilateral (subtotal o total), con injerto 418 10% funcional.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 830,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pérdida de la membrana timpánica unilateral (subtotal o total), con injerto 419 20% no funcional o sin posibilidad quirúrgica.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 831,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pérdida de la membrana timpánica bilateral (subtotal o total), con injerto no 420 40% funcional o sin posibilidad quirúrgica.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 832,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Alteraciones anatómicas irreversibles de las estructuras de oído medio y de 421 la cadena osicular; unilateral. 20% Incluye la perdida de la membrana timpánica.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 833,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Alteraciones anatómicas irreversibles de las estructuras de oído medio y de 422 40% la cadena osicular; bilateral. Incluye la perdida de la membrana timpánica.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 834,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Disfunción de la tuba auditiva unilateral, irreversible y resistente a 423 20% tratamiento.",
+          "padre_numero": 818,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 835,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Disfunción de la tuba auditiva bilateral, irreversible y resistente a 424 40% tratamiento.",
+          "padre_numero": 818,
           "x_id": 124,
           "x_texto": 124
         },
@@ -32333,8 +32288,8 @@
           "numero": 836,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Desviación de los bordes palpebrales (entropión, ectropión, triquiasis, 395 15% cicatrices deformantes, simblefarón y anquilobléfaron) unilateral. 396 Bilateral. 25% 397 Lagoftalmos cicatrizal o paralítico unilateral. 15% 398 Lagoftalmos cicatrizal o paralítico bilateral. 25% 399 Epifora unilateral. 10% 400 Epifora bilateral. 20% 401 Fístula(s) lagrimal unilateral. 20% 402 Fístula(s) lagrimal bilateral. 30% 403 Mutilación parcial de la nariz, sin estenosis, no corregida plásticamente. 20% 404 Pérdida de la nariz sin estenosis, no reparada plásticamente. 40% 405 Cuando haya sido reparada plásticamente. 15 a 20% 406 Cuando la nariz quede reducida a muñón cicatrizal, con estenosis. 30 a 50%",
-          "padre_numero": 834,
+          "contenido": "Disfunción de la tuba auditiva uni o bilateral, irreversible y resistente a tratamiento que interfiere de manera continua con las actividades laborales 425 aun cuando no afecten las actividades de la vida diaria. Cuyo óptimo 50% funcionamiento de la tuba auditiva, sea indispensable para su desempeño laboral. 426 Acúfeno unilateral debidamente comprobado. 5% 427 Hiperacusia debidamente comprobada. 5% Disfunción vestibular debidamente comprobada. 428 -- Se valuará siguiendo las normas de la Tabla III.",
+          "padre_numero": 818,
           "x_id": 124,
           "x_texto": 124
         },
@@ -32342,175 +32297,31 @@
           "numero": 837,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Pérdida o deformación total del pabellón auricular, unilateral, sin estenosis 407 10% del conducto auditivo externo.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
+          "contenido": "(contar con al menos una (contar con al menos prueba alterada) una prueba alterada) Evaluación  Pruebas bitérmicas con Desequilibrio que 1 10-30% otoneurológica completa: agua, y interfiere de manera Leve  Pruebas rotatorias con  De la marcha; videonistagmografía o intermitente con  De movimientos electronistagmografía. las actividades laborales, al oculares;  Pruebas postulares, y En la medida que se menos una vez  Pruebas vestibulares disponga; cada 3 meses. complementarias. Según se requiera:  Pruebas de impulso Desequilibrio que 2 31-60% interfiere de cefálico tridimensional y  Evaluación potenciales miogénicos manera continua Moderada audiológica completa: evocados por estímulo con las actividades  Estudio Audiológico vestibular. completo; laborales, que  Estudio de oído impliquen movimientos medio, y  Evaluación craneoencefálicos neurológica completa. bruscos.",
+          "padre_numero": 836,
+          "x_id": 194,
+          "x_texto": 194
         },
         {
           "numero": 838,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Pérdida o deformación parcial del pabellón auricular, unilateral, sin 408 7% estenosis del conducto auditivo externo.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
+          "contenido": "Desequilibrio que 3 61-90%  Otras evaluaciones específicas que se interfiere de requieran. manera continua Severa con las actividades laborales aun cuando no impliquen movimientos craneoencefálicos bruscos.",
+          "padre_numero": 837,
+          "x_id": 323,
+          "x_texto": 323
         },
         {
           "numero": 839,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Pérdida o deformación total del pabellón auricular, bilateral, sin estenosis 409 20% del conducto auditivo externo.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
+          "contenido": "Desequilibrio que Permanente 100% impide la total deambulación independiente y requiere asistencia continua de otra persona. No puede realizar ninguna actividad laboral. Adicionalmente a lo establecido en el artículo 492 de la Ley Federal del Trabajo, se debe considerar otorgar el valor máximo del rango del porcentaje de incapacidad, cuando el desempeño de sus actividades laborales pueda poner en riesgo su vida, la de terceros o el patrimonio.",
+          "padre_numero": 837,
+          "x_id": 323,
+          "x_texto": 323
         },
         {
           "numero": 840,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Pérdida o deformación parcial del pabellón auricular, bilateral, sin estenosis 410 15% del conducto auditivo externo.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 841,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Pérdida o deformación total del pabellón auricular, unilateral, con estenosis 411 15% del conducto auditivo externo.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 842,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Pérdida o deformación parcial del pabellón auricular, unilateral, con 412 12% estenosis del conducto auditivo externo.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 843,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Pérdida o deformación total del pabellón auricular bilateral, con estenosis 413 30% del conducto auditivo externo.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 844,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Pérdida o deformación parcial del pabellón auricular bilateral, con estenosis 414 25% del conducto auditivo externo. 415 Obliteración total del conducto auditivo externo unilateral. 20% 416 Obliteración total del conducto auditivo externo bilateral. 40% Pérdida de la membrana timpánica unilateral (subtotal o total), con injerto 417 5% funcional.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 845,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Pérdida de la membrana timpánica bilateral (subtotal o total), con injerto 418 10% funcional.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 846,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Pérdida de la membrana timpánica unilateral (subtotal o total), con injerto 419 20% no funcional o sin posibilidad quirúrgica.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 847,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Pérdida de la membrana timpánica bilateral (subtotal o total), con injerto no 420 40% funcional o sin posibilidad quirúrgica.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 848,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Alteraciones anatómicas irreversibles de las estructuras de oído medio y de 421 la cadena osicular; unilateral. 20% Incluye la perdida de la membrana timpánica.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 849,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Alteraciones anatómicas irreversibles de las estructuras de oído medio y de 422 40% la cadena osicular; bilateral. Incluye la perdida de la membrana timpánica.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 850,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Disfunción de la tuba auditiva unilateral, irreversible y resistente a 423 20% tratamiento.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 851,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Disfunción de la tuba auditiva bilateral, irreversible y resistente a 424 40% tratamiento.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 852,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Disfunción de la tuba auditiva uni o bilateral, irreversible y resistente a tratamiento que interfiere de manera continua con las actividades laborales 425 aun cuando no afecten las actividades de la vida diaria. Cuyo óptimo 50% funcionamiento de la tuba auditiva, sea indispensable para su desempeño laboral. 426 Acúfeno unilateral debidamente comprobado. 5% 427 Hiperacusia debidamente comprobada. 5% Disfunción vestibular debidamente comprobada. 428 -- Se valuará siguiendo las normas de la Tabla III.",
-          "padre_numero": 834,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 853,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "(contar con al menos una (contar con al menos prueba alterada) una prueba alterada) Evaluación  Pruebas bitérmicas con Desequilibrio que 1 10-30% otoneurológica completa: agua, y interfiere de manera Leve  Pruebas rotatorias con  De la marcha; videonistagmografía o intermitente con  De movimientos electronistagmografía. las actividades laborales, al oculares;  Pruebas postulares, y En la medida que se menos una vez  Pruebas vestibulares disponga; cada 3 meses. complementarias. Según se requiera:  Pruebas de impulso Desequilibrio que 2 31-60% interfiere de cefálico tridimensional y  Evaluación potenciales miogénicos manera continua Moderada audiológica completa: evocados por estímulo con las actividades  Estudio Audiológico vestibular. completo; laborales, que  Estudio de oído impliquen movimientos medio, y  Evaluación craneoencefálicos neurológica completa. bruscos.",
-          "padre_numero": 852,
-          "x_id": 194,
-          "x_texto": 194
-        },
-        {
-          "numero": 854,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Desequilibrio que 3 61-90%  Otras evaluaciones específicas que se interfiere de requieran. manera continua Severa con las actividades laborales aun cuando no impliquen movimientos craneoencefálicos bruscos.",
-          "padre_numero": 853,
-          "x_id": 323,
-          "x_texto": 323
-        },
-        {
-          "numero": 855,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Desequilibrio que Permanente 100% impide la total deambulación independiente y requiere asistencia continua de otra persona. No puede realizar ninguna actividad laboral. Adicionalmente a lo establecido en el artículo 492 de la Ley Federal del Trabajo, se debe considerar otorgar el valor máximo del rango del porcentaje de incapacidad, cuando el desempeño de sus actividades laborales pueda poner en riesgo su vida, la de terceros o el patrimonio.",
-          "padre_numero": 853,
-          "x_id": 323,
-          "x_texto": 323
-        },
-        {
-          "numero": 856,
           "tipo": "texto",
           "identificador": null,
           "contenido": "429 Disfunción tubárica crónica bilateral, resistente a tratamiento. 30 a 40% 430 Disfunción tubárica crónica unilateral, resistente a tratamiento. 15 a 20% 431 Acufeno bilateral debidamente comprobado. 10% Sorderas e hipoacusias profesionales. Se valuarán siguiendo las normas de 432 -- la Tabla III-B.",
@@ -32519,7 +32330,7 @@
           "x_texto": 86
         },
         {
-          "numero": 857,
+          "numero": 841,
           "tipo": "texto",
           "identificador": null,
           "contenido": "combinada 10 10 18 16 11 11 19 16 12 12 20 17 13 12 21 18 14 13 22 18 15 14 23 19 16 15 24 19 17 15 25 20 Cálculo de la incapacidad parcial permanente por obtención de la hipoacusia bilateral combinada de acuerdo a los umbrales obtenidos de la audiometría tonal y utilizando el procedimiento para la valuación de hipoacusias de: Fletcher, A.M.A. modificada por: De La Cruz Ávila, Gómez Cruz, Gutiérrez Farfán, Jiménez Ruiz, Rojo Ramírez, Toledo Ortiz, Torres Valenzuela, Velasco Reyna, Zarate Cabrera (octubre de 2016).",
@@ -32528,7 +32339,7 @@
           "x_texto": 83
         },
         {
-          "numero": 858,
+          "numero": 842,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Dependiendo del mecanismo de lesión y secuela se podrán utilizar uno de los siguientes rangos de frecuencia: a. Para lesiones que abarquen el umbral mínimo de audición en las frecuencias de 250, 500, 1,000 y 2,000 Hz. b. Para lesiones que abarquen el umbral mínimo de audición en las frecuencias de 2000, 3,000, 4,000, y 6,000 Hz. c. Para lesiones que tengan compromiso en las frecuencias de incisos A y B, se elegirá el rango de frecuencias que presente mayor pérdida auditiva.",
@@ -32537,7 +32348,7 @@
           "x_texto": 71
         },
         {
-          "numero": 859,
+          "numero": 843,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Primero. Si en el audiograma no aparecieran anotaciones de algún oído o los dos por anacusia, o no hubo respuesta en todas o en alguna de ellas, el valor que se le asignará a esas frecuencias será de 120 dB y si en el oído contralateral los niveles de audición para las frecuencias del área de lenguaje están en valores de 0 dB o menores, para efectos de valuación se considerará como promedio 5 dB.",
@@ -32546,7 +32357,7 @@
           "x_texto": 71
         },
         {
-          "numero": 860,
+          "numero": 844,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Segundo. Se suman y se obtiene el promedio aritmético para cada oído. Ejemplo: Oído derecho (OD) Oído izquierdo (OI) 2000 Hz 60 dB 2000 Hz 10 dB 3000 Hz 50 dB 3000 Hz 15 dB 4000 Hz 50 dB 4000 Hz 15 dB 6000 Hz 50 dB 6000 Hz 15 dB Suma: 210 / 4= 52.5 Suma: 55/ 4=13.7 Promedio aritmético para las frecuencias de la zona del lenguaje, para oído derecho 52.5, para oído izquierdo 13.7.",
@@ -32555,7 +32366,7 @@
           "x_texto": 71
         },
         {
-          "numero": 861,
+          "numero": 845,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tercero. El promedio aritmético de cada oído se multiplica por 0.8 (constante de fletcher) y se obtiene el promedio de pérdida para cada oído o índice de fletcher.",
@@ -32564,7 +32375,7 @@
           "x_texto": 71
         },
         {
-          "numero": 862,
+          "numero": 846,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Ejemplo: OD: 52.5 x 0.8 =42 OI: 13.75 x 0.8=11 Cuarto. Se calcula la hipoacusia bilateral combinada, (H.B.C.) o por ciento de incapacidad auditiva biaural.",
@@ -32573,7 +32384,7 @@
           "x_texto": 71
         },
         {
-          "numero": 863,
+          "numero": 847,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se multiplican los resultados anteriores: por 7 el oído menos sordo y por 1 el más sordo. Se suman y se divide entre 8. (% oído menos sordo x 7) + (% oído más sordo x 1) / 8 (11 x 7) + (42 x 1) = 77+42 = 119=14.8 (H.B.C.) Como el resultado de las operaciones aritméticas de este procedimiento con frecuencia traduce valores en fracciones decimales, se ha considerado conveniente suprimir estas fracciones y reportar números enteros (redondeo), de acuerdo al siguiente criterio: Hasta 0.5 se redondea al entero inmediato anterior: Ejemplo: 14.5= 14 Si es igual o mayor a 0.6 décimos, se elevará al entero inmediato superior: Ejemplo: 14.8= 15.",
@@ -32582,7 +32393,7 @@
           "x_texto": 71
         },
         {
-          "numero": 864,
+          "numero": 848,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Quinto. Cálculo del por ciento de la incapacidad parcial permanente: en este ejemplo corresponde a: 15% de H.B.C. y 14% de incapacidad permanente.",
@@ -32591,7 +32402,7 @@
           "x_texto": 71
         },
         {
-          "numero": 865,
+          "numero": 849,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando la H.B.C. se encuentra entre 10 y 25 por ciento se aplicará la Tabla IV ajustada suprimiendo decimales.",
@@ -32600,7 +32411,7 @@
           "x_texto": 71
         },
         {
-          "numero": 866,
+          "numero": 850,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando la H.B.C. es de 25% o mayor, basta restar 5 unidades para obtener el porcentaje de incapacidad parcial permanente, hasta 70%.",
@@ -32609,7 +32420,7 @@
           "x_texto": 71
         },
         {
-          "numero": 867,
+          "numero": 851,
           "tipo": "texto",
           "identificador": null,
           "contenido": "A partir de 71% de H.B.C. ya no se restarán 5 unidades toda vez que corresponderá a 100% de Incapacidad Permanente. En virtud de que la audición residual no es útil para establecer comunicación humana.",
@@ -32618,7 +32429,7 @@
           "x_texto": 71
         },
         {
-          "numero": 868,
+          "numero": 852,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Determinar la incapacidad funcional auditiva biaural, sin reducción por presbiacusia o estado anterior.",
@@ -32627,25 +32438,25 @@
           "x_texto": 71
         },
         {
-          "numero": 869,
+          "numero": 853,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Desviación (tortícolis, flexión anterior) por retracción muscular o amplia 433 10 a 30% cicatriz. 434 Flexión anterior cicatrizal, estando el mentón en contacto con el esternón. 40 a 60% 435 Estrechamientos cicatrizales de la laringe que produzcan disfonía. 20% 436 Que produzcan afonía o disfonía sin disnea. 30 a 40% 437 Cuando produzcan disnea de grandes esfuerzos. 10% 438 Cuando produzcan disnea de medianos o pequeños esfuerzos. 20 a 70% 439 Cuando produzcan disnea de reposo. 70 a 80% 440 Cuando por disnea se requiera el uso de cánula traqueal a permanencia. 70 a 90% 441 Cuando causen disfonía (o afonía) y disnea. 25 a 80% 442 Estrechamiento cicatrizal de la faringe con perturbación de la deglución. 20 a 40% Pérdida de la glándula tiroides, incluyendo o no las paratiroides, con 443 20% respuesta adecuada al tratamiento sustitutivo.",
-          "padre_numero": 868,
+          "padre_numero": 852,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 870,
+          "numero": 854,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Pérdida de la glándula tiroides, incluyendo o no las paratiroides, sin 444 26% respuesta al tratamiento sustitutivo.",
-          "padre_numero": 868,
+          "padre_numero": 852,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 871,
+          "numero": 855,
           "tipo": "texto",
           "identificador": null,
           "contenido": "445 Los trastornos de la voz debidamente comprobados se valuarán conforme a la Tabla IV.",
@@ -32654,16 +32465,16 @@
           "x_texto": 86
         },
         {
-          "numero": 872,
+          "numero": 856,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Leve  Presencia de disfonía; 10 al 20%  Presencia de sintomatología leve con base a procedimientos clínicos de evaluación;  Puede hacerse oír en ambiente ruidoso, y  Con aptitud para ejercer actividades de su profesión u oficio.",
-          "padre_numero": 871,
+          "padre_numero": 855,
           "x_id": 102,
           "x_texto": 102
         },
         {
-          "numero": 873,
+          "numero": 857,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Moderado  Presencia de disfonía; 21 al 40%  Presencia de sintomatología moderada con base a procedimientos clínicos de evaluación;  Puede hacerse oír en ambiente normal, y  Con aptitud limitada para ejercer actividades de su profesión u oficio.",
@@ -32672,16 +32483,16 @@
           "x_texto": 89
         },
         {
-          "numero": 874,
+          "numero": 858,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Severo  Presencia de disfonía severa o afonía; 41 al 60%  Presencia de sintomatología severa con base a procedimientos clínicos de evaluación;  No puede hacerse oír en ambiente silente, y  Sin aptitud para ejercer actividades de su profesión u oficio. En personas trabajadoras cuya calidad de la voz sea indispensable para su desempeño laboral, la valuación no podrá ser menor del 41%.",
-          "padre_numero": 868,
+          "padre_numero": 852,
           "x_id": 97,
           "x_texto": 97
         },
         {
-          "numero": 875,
+          "numero": 859,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Nota: El porcentaje de valuación lo determinará el criterio con la categoría más alta encontrada.",
@@ -32690,25 +32501,25 @@
           "x_texto": 71
         },
         {
-          "numero": 876,
+          "numero": 860,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los trastornos de la deglución se valuarán siguiendo las normas de la Tabla V. 446",
-          "padre_numero": 875,
+          "padre_numero": 859,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 877,
+          "numero": 861,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Leve  Presencia de sintomatología leve, con tos ocasional 20 al 27% cuando se alimenta;  Sensación de atragantamiento;  Puede comer la mayoría de los alimentos sólidos, semisólidos, semilíquidos, líquidos y de consistencia mixta;  Los tiempos de comidas son prolongados;  Necesita tragar varias veces para pasar el alimento, y  Con aptitud para ejercer actividades de su profesión u oficio.",
-          "padre_numero": 875,
+          "padre_numero": 859,
           "x_id": 102,
           "x_texto": 102
         },
         {
-          "numero": 878,
+          "numero": 862,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Moderado  Presencia de sintomatología moderada, tos frecuente con 28 al 34% la ingesta de alimentos sólidos, semisólidos, semilíquidos, líquidos y de consistencia mixta;  Pérdida ponderal menor al 10% del peso en 6 meses;  Sólo puede comer trozos pequeños o cantidades menores de líquidos a los que estaba acostumbrado;  Incrementa el número de mordidas para la masticación;  Necesita varios tragos en seco para pasar el alimento, y  Con aptitud para ejercer actividades de su profesión u oficio con dificultad, pero las lleva a cabo.",
@@ -32717,43 +32528,43 @@
           "x_texto": 89
         },
         {
-          "numero": 879,
+          "numero": 863,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Severo  Presencia de tos o sensación de ahogo importante con 35 al 40% los alimentos, sólidos, semisólidos, semilíquidos, líquidos y de consistencia mixta, saliva o flemas espesas;  Pérdida ponderal igual o mayor al 10% del peso en 6 meses;  Debe comer pequeñas cantidades de alimentos por bocado;  Requiere varias degluciones en seco;  Presencia de cuadros respiratorios recurrentes y neumonía, y  Sin aptitud para ejercer actividades de su profesión u oficio. Nota: El porcentaje de valuación lo determinará el criterio con la categoría más alta encontrada.",
-          "padre_numero": 875,
+          "padre_numero": 859,
           "x_id": 97,
           "x_texto": 97
         },
         {
-          "numero": 880,
+          "numero": 864,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Secuelas de fractura aislada del esternón con disminución de los 447 10% movimientos de amplexión y amplexación.",
-          "padre_numero": 879,
+          "padre_numero": 863,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 881,
+          "numero": 865,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Secuelas de fracturas del esternón con hundimiento o desviación, sin 448 20% complicaciones profundas. 449 Secuela de fracturas de una a tres costillas, con dolores al esfuerzo físico. 5 a 10% De fracturas costales o condrales con dolor y dificultad al esfuerzo torácico 450 10 a 15% o abdominal.",
-          "padre_numero": 879,
+          "padre_numero": 863,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 882,
+          "numero": 866,
           "tipo": "texto",
           "identificador": null,
           "contenido": "De fracturas costales con hundimiento y trastornos funcionales más 451 20 a 30% acentuados. 452 Adherencias y retracciones cicatrizales pleurales. 20 a 30% Secuelas con alteraciones broncopulmonares (asma bronquial, enfisema pulmonar, bronquitis crónica, neumonitis, fibrosis, lesiones postraumáticas, 453 -- etc.), según el grado de alteración orgánica y funcional, se utilizará la Tabla",
-          "padre_numero": 879,
+          "padre_numero": 863,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 883,
+          "numero": 867,
           "tipo": "fraccion",
           "identificador": "VI",
           "contenido": "",
@@ -32762,43 +32573,34 @@
           "x_texto": 146
         },
         {
-          "numero": 884,
+          "numero": 868,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Ejercicio",
-          "padre_numero": 883,
+          "padre_numero": 867,
           "x_id": 154,
           "x_texto": 154
         },
         {
-          "numero": 885,
+          "numero": 869,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Pulmonar clasificación Borg ml/kg/min % del PEF% FEF 75-85 modificada (%) 0 ≥ 25 Normal Normal  20 Leve Normal Normal 0 (59-20) 0 Normal Normal Moderada Normal Normal 5",
-          "padre_numero": 883,
+          "contenido": "Pulmonar clasificación Borg ml/kg/min % del PEF% FEF 75-85 modificada (%) 0 ≥ 25 Normal Normal  20 Leve Normal Normal 0 (59-20) 0 Normal Normal Moderada Normal Normal 5 0.5-1 20-24 Leve Leve 21-29 (19-15) Leve Normal 20-30 (79-75) (79-70) (63-59) 2-3 Moderada Moderada Grave Moderada Leve 31-40 (74-70) (69-51) (14-10) (58-54) (35-36) 4-6 15-19 Grave Grave 30-39 Muy Grave Moderada 41-60 (69-65) (50-31) Grave (53-49) (37-39) (< 9) 7-8 - Muy Grave Grave 61-80 (48-44) (40-44) 9-10 <15 Muy Muy >40 - - Muy Grave 100 Grave Grave (> 45) (< 64) (> 30)  Para poder determinar un índice de perfusión periférica (IPP) en los flujos periféricos mayor al 50%, se deberá valorar también el FEV1.  Para determinar un IPP mayor del 60% con los datos de hipoxemia censada por medio de oximetría de pulso, se deberá valorar además con hipercapnia determinada por la gasometría arterial.  La interpretación de la espirometría tendrá como punto cardinal, la utilización de valores obtenidos en población adulta mexicana sana.  El porcentaje de valuación lo determinan las pruebas de función respiratoria post broncodilatador con el valor más bajo encontrado.",
+          "padre_numero": 867,
           "x_id": 152,
           "x_texto": 152
         },
         {
-          "numero": 886,
-          "tipo": "numeral",
-          "identificador": "0.",
-          "contenido": "5-1 20-24 Leve Leve 21-29 (19-15) Leve Normal 20-30 (79-75) (79-70) (63-59) 2-3 Moderada Moderada Grave Moderada Leve 31-40 (74-70) (69-51) (14-10) (58-54) (35-36) 4-6 15-19 Grave Grave 30-39 Muy Grave Moderada 41-60 (69-65) (50-31) Grave (53-49) (37-39) (< 9) 7-8 - Muy Grave Grave 61-80 (48-44) (40-44) 9-10 <15 Muy Muy >40 - - Muy Grave 100 Grave Grave (> 45) (< 64) (> 30)  Para poder determinar un índice de perfusión periférica (IPP) en los flujos periféricos mayor al 50%, se deberá valorar también el FEV1.  Para determinar un IPP mayor del 60% con los datos de hipoxemia censada por medio de oximetría de pulso, se deberá valorar además con hipercapnia determinada por la gasometría arterial.  La interpretación de la espirometría tendrá como punto cardinal, la utilización de valores obtenidos en población adulta mexicana sana.  El porcentaje de valuación lo determinan las pruebas de función respiratoria post broncodilatador con el valor más bajo encontrado.",
-          "padre_numero": 875,
-          "x_id": 97,
-          "x_texto": 119
-        },
-        {
-          "numero": 887,
+          "numero": 870,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Fibrosis neumoconiótica complicada con tuberculosis pulmonar, clínica y 454 bacteriológicamente sin remisión. Agregar 20% al monto de las -- incapacidades consignadas en la Tabla VI, sin exceder del cien por ciento. 455 Hernia diafragmática postraumática no resuelta quirúrgicamente. 30 a 40% 456 Estrechamiento del esófago no resuelto quirúrgicamente. 20 a 70% 457 Adherencias pericárdicas sin insuficiencia cardíaca. 10 a 20% 458 Cardiopatía hipertensiva sin complicaciones. 20 a 40% Cardiopatía hipertensiva con complicaciones de insuficiencia renal crónica, 459 secuelas de hemorragia cerebral, infarto del miocardio, con o sin disfunción 100% ventricular. 460 Insuficiencia cardiaca clase II. 20 a 40% 461 Insuficiencia cardiaca clase III. 41 a 90% 462 Insuficiencia cardiaca clase IV. 91 a 100% 463 Insuficiencia valvular grado I. 20 a 40% 464 Insuficiencia valvular grado II. 41 a 70% 465 Insuficiencia valvular grado III. 71 a 100% 466 Bloqueo auriculoventricular incompleto grado I. 20% 467 Bloqueo auriculoventricular incompleto grado II (mobitz I o mobitz II). 25% 468 Bloqueo auriculoventricular completo grado III. 30% 469 Hernia inguinal, crural o abdominal inoperables. 10 a 20% Las mismas, reproducidas después de tratamiento quirúrgico (recurrente o 470 20 a 30% recidivante). 471 Cicatrices viciosas de la pared abdominal que produzcan alguna incapacidad. 10 a 30% 472 Cicatrices con eventración, inoperables o no resueltas quirúrgicamente. 30 a 60% Fístulas del tubo digestivo o de sus anexos, inoperables o cuando produzcan 473 20 a 60% alguna incapacidad. 474 Pérdida total del estómago. 60 a 80% 475 Pérdida parcial del estómago. 30 a 40% 476 Pérdida del bazo. 15% 477 Pérdida de la vesícula biliar. 15% 478 Pérdida parcial del intestino delgado. 30 a 40% 479 Pérdida total del colon. 60 a 80% 480 Pérdida parcial del colon. 40 a 50% 481 Incontinencia fecal. 60% Las alteraciones persistentes del tubo digestivo como la enfermedad ácido- 482 -- péptica y el intestino irritable se evaluarán conforme a la Tabla VII.",
-          "padre_numero": 886,
+          "padre_numero": 863,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 888,
+          "numero": 871,
           "tipo": "texto",
           "identificador": null,
           "contenido": "1  Alteraciones persistentes de la enfermedad ácido péptica (reflujo 0% gastroesofágico, gastritis recidivante, úlcera péptica).  Puede presentar antecedente de tratamiento quirúrgico.  Precisa de tratamiento continuado con control completo de síntomas. 2  Cumple los criterios de la clase 1. 10%  Tiene antecedente de tratamiento quirúrgico.  Precisa de tratamiento continuado sin control completo de síntomas. 3  Cumple los criterios de la clase 2. 20%  Precisa de tratamiento continuado y puede presentar manifestaciones sistémicas (anemia, sangrado de tubo digestivo alto, pérdida de peso).  Evidencia anatomopatológica o imagenológica de lesiones premalignas. 4  Cumple los criterios de la clase 3. --  Cuenta con estomas (gastrostomía, gastro yeyunostomía, yeyunostomía).  Tomar en cuenta la capacidad funcional en relación con el desempeño del puesto de trabajo.  Realiza trabajo ligero. 40%  Realiza trabajo medio. 60%  Realiza trabajo pesado. 80%  Incapaz de realizar cualquier actividad laboral. 100% 483 Pérdida parcial del páncreas. 60 a 80% 484 Pérdida parcial del hígado. 40 a 60% Otras lesiones o pérdidas de los órganos contenidos en el abdomen, 485 30 a 80% que produzcan como consecuencia alguna incapacidad probada. 486 La insuficiencia hepática se evaluará conforme a las Tablas VIII y IX. --",
@@ -32807,52 +32609,52 @@
           "x_texto": 94
         },
         {
-          "numero": 889,
+          "numero": 872,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Clasificación Escala de Estadio Descripción Child-Pugh MELD 1  Alteraciones persistentes de la bioquímica hepática -- 0-9 (aminotransferasas, fosfatasas alcalinas, bilirrubinas, albumina, tiempos de coagulación).  Ausencia de varices esofágicas, y  Ausencia de ascitis. 2  Cumple los criterios de la clase 1. Clase A 10-19  Presencia de varices esofágicas.  Ausencia de Ascitis.  Ausencia de hemorragia digestiva o historia de hemorragia digestiva.  Evidencia anatomopatológica o imagenológica de lesiones cirrógenas (hepatitis crónica activa, esteatohepatitis, fibrosis portal o fibrosis centrolobulillar).  Requiere tratamiento con corticoides inmunosupresores o con inmunomoduladores de manera continuada. 3  Cumple los criterios de la clase 2. Clase B 20- 29  Presencia de ascitis con o sin varices esofágicas.  Ausencia de hemorragia digestiva o historia de hemorragia digestiva.  Síntomas de insuficiencia hepática, de hipertensión portal, no desencadenados por proceso agudo intercurrente, en los últimos dos años. 4  Cumple los criterios de la clase 3. Clase C 30 o más  Síntomas de insuficiencia hepática, de hipertensión portal en forma continua a pesar de recibir tratamiento.  Presencia de ascitis.  Presencia de varices esofágicas.  Presencia de hemorragia digestiva o historia de hemorragia digestiva.",
-          "padre_numero": 888,
+          "padre_numero": 871,
           "x_id": 397,
           "x_texto": 397
         },
         {
-          "numero": 890,
+          "numero": 873,
           "tipo": "texto",
           "identificador": null,
           "contenido": "1 2 3 Encefalopatía Ausente Grado 1-2 Grado 3-4 Ascitis Ausente Leve Moderada Bilirrubina sérica < 2 mg/dl 2-3 mg/dl > 3 mg/dl Albúmina sérica > 35 g/l 28-35 g/l < 28 g/l Protrombina (prolongada) 1- 4 4-6 > 6 Bilirrubina (en cirrosis biliar primaria) < 4 mg/dl 4-10 mg/dl > 10 mg/dl Nota: Para la clasificación Child-Pugh se usa la sumatoria de la puntuación de la escala: A = 5-6 puntos. B = 7-9 puntos. C = 10-15 puntos.",
-          "padre_numero": 888,
+          "padre_numero": 871,
           "x_id": 307,
           "x_texto": 307
         },
         {
-          "numero": 891,
+          "numero": 874,
           "tipo": "texto",
           "identificador": null,
           "contenido": "MELD Score = 9,57 Ln (Creat) + 3,78 Ln (Bili) + 11,2 Ln (INR) + 6,43 insuficiencia hepática puesto de trabajo 0 1 2 3 1 0% 30% 50% 100% 2 60% 70% 80% 100% 3 80% 90% 95% 100% 4 100% 100% 100% 100% 487 Pérdida o atrofia de un testículo u ovario, estando el otro sano. 25% Pérdida o atrofia de un testículo u ovario, estando el otro enfermo por 488 50% afección ajena al trabajo. 489 Pérdida o atrofia de los dos testículos u ovarios. 50 a 100% Por la pérdida de la función de una tuba uterina con capacidad reproductiva 490 20% antes del riesgo de trabajo.",
-          "padre_numero": 888,
+          "padre_numero": 871,
           "x_id": 153,
           "x_texto": 153
         },
         {
-          "numero": 892,
+          "numero": 875,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Por la pérdida de la función de dos tubas uterinas con capacidad 491 50% reproductiva antes del riesgo de trabajo. 492 Pérdida del útero, con capacidad reproductiva antes del riesgo de trabajo. 70% 493 Pérdida del útero, sin capacidad reproductiva antes del riesgo de trabajo. 40% 494 Pérdida parcial o total de vejiga. 30% 495 Pérdida total o parcial del pene, o disminución o pérdida de su función. 50 a 100% 496 Con estrechamiento del orificio uretral, perineal o hipogástrico. 70 a 100% Prolapso uterino consecutivo a accidentes de trabajo, no resuelto 497 50 a 70% quirúrgicamente. 498 Por la pérdida o mutilación de un seno con prótesis posible. 20 a 30% 499 Por la pérdida o mutilación de un seno con prótesis imposible. 30 a 50% 500 Por la pérdida o mutilación de los dos senos con prótesis posible. 50 a 70% Pérdida orgánica o funcional de un riñón (incluye glándula suprarrenal) 501 35 a 50% estando normal la función del contralateral. 502 Con perturbación funcional del riñón contralateral. 50 a 100% 503 La insuficiencia renal crónica se evaluará conforme a la Tabla X.",
-          "padre_numero": 888,
+          "padre_numero": 871,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 893,
+          "numero": 876,
           "tipo": "texto",
           "identificador": null,
           "contenido": "(mL/min/1.73m2) cociente albúmina/creatinina 1 Normal o alta. Mayor a 90 0-30 mg/g, normal o Sin valuación levemente aumentada. 2 Levemente 60-89 10-20% disminuida.",
-          "padre_numero": 892,
+          "padre_numero": 875,
           "x_id": 240,
           "x_texto": 240
         },
         {
-          "numero": 894,
+          "numero": 877,
           "tipo": "texto",
           "identificador": null,
           "contenido": "3A Leve a 45-59 30-300 mg/g, 20 a 40% moderadamente moderadamente aumentada. disminuida. 3B Moderada a 30-44 41 a 60% gravemente disminuida. 4 Gravemente 15-29 >300 mg/g, gravemente 61 a 90% disminuida. aumentada. 5 Insuficiencia renal. Menor a 15 91 a 100% 504 Incontinencia de orina permanente. 30 a 40% 505 Estrechamiento parcial de la uretra anterior, no resuelto quirúrgicamente. 30 a 40% 506 Estrechamiento parcial de la uretra posterior, no resuelto quirúrgicamente. 60% Estrechamiento total de la uretra, postraumático, no resuelto 507 quirúrgicamente, que obligue a efectuar la micción por un meato perineal o 60 a 90% hipogástrico.",
@@ -32861,7 +32663,7 @@
           "x_texto": 91
         },
         {
-          "numero": 895,
+          "numero": 878,
           "tipo": "texto",
           "identificador": null,
           "contenido": "508 Región cervical. 30 a 50% 509 Región torácica. 15 a 30% 510 Región lumbosacra. 30 a 50% 511 Región coccígea. 10% 512 Paraplejía. 100% 513 Paraparesia de los miembros inferiores, si la marcha es imposible. 70 a 90% 514 Si la marcha es posible con muletas. 50 a 70% La pérdida de ambos ojos, ambos brazos arriba del codo, desarticulación de la cadera de ambos lados o de un brazo arriba del codo y de una pierna arriba de la rodilla del mismo lado, lesión medular por cualquier traumatismo 515 100% que produzca parálisis completa de los miembros inferiores con trastornos esfinterianos, demencia, se considerarán como incapacidad permanente total.",
@@ -32870,79 +32672,79 @@
           "x_texto": 86
         },
         {
-          "numero": 896,
+          "numero": 879,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las deformaciones puramente estéticas, según su carácter, serán indemnizadas a juicio del Tribunal del Poder Judicial de la Federación que 516 corresponda, sólo en el caso de que de alguna forma disminuyan la -- capacidad de trabajo de la persona lesionada, teniendo en cuenta la profesión a que se dedica.",
-          "padre_numero": 895,
+          "padre_numero": 878,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 897,
+          "numero": 880,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las lesiones producidas por la acción de agentes físicos y químicos serán 517 indemnizadas de acuerdo con las modalidades especiales de la 20 a 100% incapacidad.",
-          "padre_numero": 895,
+          "padre_numero": 878,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 898,
+          "numero": 881,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las cicatrices producidas por amplias quemaduras de los tegumentos serán indemnizadas tomando en cuenta la extensión y la profundidad de las zonas 518 cicatrizales, independientemente de las perturbaciones funcionales que -- acarreen en los segmentos adyacentes. Tomándose como base para su valuación la regla de los nueves.",
-          "padre_numero": 895,
+          "padre_numero": 878,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 899,
+          "numero": 882,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de haberse otorgado con anterioridad la valuación de una secuela 519 que involucre el mismo sitio anatómico, se otorgará únicamente la diferencia -- del porcentaje de la nueva fracción que aplique.",
-          "padre_numero": 895,
+          "padre_numero": 878,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 900,
+          "numero": 883,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de no encontrarse la fracción específica para la valuación de las secuelas que presenta la persona trabajadora, deberá hacerse uso del 520 -- artículo 17 de la Ley Federal del Trabajo vigente y por similitud aplicar la fracción que más se asemeje.",
-          "padre_numero": 895,
+          "padre_numero": 878,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 901,
+          "numero": 884,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cáncer secundario a agentes físicos, químicos, o biológicos se valuará con base a los siguientes criterios: para el cálculo de la incapacidad permanente parcial o total por motivo de los cánceres de origen laboral, el procedimiento para su obtención es realizando los pasos siguientes:",
-          "padre_numero": 895,
+          "padre_numero": 878,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 902,
+          "numero": 885,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Paso I: Identificar el cáncer que padece la persona trabajadora de acuerdo con el diagnóstico y sobrevida establecida por el especialista oncólogo, y verificar con la Tabla XI a qué tipo de categorización corresponde el cáncer de origen laboral. Esto es, el cáncer menos agresivo corresponde al numeral 1 y el más agresivo al numeral 5, con base a la sobrevida que pueda presentar la persona trabajadora a cinco años de su diagnóstico.",
-          "padre_numero": 895,
+          "padre_numero": 878,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 903,
+          "numero": 886,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Nota: En caso de que la neoplasia diagnosticada no se encuentre incluida en la Tabla XI, la agresividad se establecerá de acuerdo con la sobrevida determinada por el especialista oncólogo.",
-          "padre_numero": 895,
+          "padre_numero": 878,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 904,
+          "numero": 887,
           "tipo": "texto",
           "identificador": null,
           "contenido": "521 Paso 2: Después de identificar a qué categorización pertenece el cáncer de -- origen laboral, establecer en qué categoría se ubica la persona trabajadora de acuerdo con la capacidad funcional en relación con el desempeño del puesto de trabajo, esto es, por ejemplo si tiene un cáncer de colon la categoría de la neoplasia se ubicaría en el numeral 3 de la Tabla XI y si se encuentra que la persona trabajadora tiene una valoración como restringida en sus capacidades funcionales, pero es capaz de realizar el trabajo de naturaleza media, se ubicaría en el numeral 1 de la Tabla XII.",
@@ -32951,25 +32753,25 @@
           "x_texto": 86
         },
         {
-          "numero": 905,
+          "numero": 888,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Paso 3: Posteriormente, se buscaría en la Tabla XIII en la columna de categorización de las neoplasias de acuerdo con su agresividad según sobrevida a cinco años, el numeral al que pertenece el cáncer diagnosticado a la persona trabajadora, y se buscaría también en la columna de categorización funcional de las neoplasias y sus secuelas derivadas del tratamiento o generadas por el propio tumor en relación con el desempeño de su trabajo, el numeral en que se ubica el resultado de la valoración de la persona trabajadora y se hace un ajuste entre ambas columnas para encontrar el porcentaje que le corresponde.",
-          "padre_numero": 904,
+          "padre_numero": 887,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 906,
+          "numero": 889,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En el ejemplo tenemos que según la Tabla XII, el cáncer de colon se ubica en el numeral 3, y de acuerdo con su valoración de la categorización funcional, se identifica que corresponde al numeral 1 de la Tabla XII, y haciendo la búsqueda de la intersección de ambos valores encontramos que el resultado sería de 70% de acuerdo con la Tabla XIII.",
-          "padre_numero": 904,
+          "padre_numero": 887,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 907,
+          "numero": 890,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Agresividad Sobrevida Tipo de Neoplasia 1 90-100 Cáncer de tiroides papilar y folicular, y cáncer de piel (labio). 2 61-89 Cáncer de piel (no melanoma), cáncer de hueso, cáncer de laringe, cáncer tiroides medular, y leucemia linfoide. 3 30-60 Cáncer de orofaringe, cáncer de colon, cáncer de vejiga urinaria, cáncer de senos paranasales, cáncer de escroto y melanoma, cáncer de tiroides indiferenciado, leucemia mieloide y leucemia monocítica aguda. 4 15-29 Mieloma múltiple, leucemia de células plasmáticas y leucemia mieloide aguda. 5 0-14 Cáncer broncopulmonar, cáncer de estómago, cáncer del tracto digestivo, cáncer del sistema nervioso central, mesotelioma pericárdico, mesotelioma peritoneal, mesotelioma pleural, tumor maligno de hígado y vías biliares intrahepáticas, angiosarcoma de hígado, cáncer del tracto digestivo (esófago) (tracto intestinal) y otras leucemias de tipo celular especificado.",
@@ -32978,7 +32780,7 @@
           "x_texto": 85
         },
         {
-          "numero": 908,
+          "numero": 891,
           "tipo": "texto",
           "identificador": null,
           "contenido": "0 Completamente activo, capaz de realizar toda actividad física, previa a la enfermedad. 1 Restringido en las capacidades funcionales, pero es capaz de realizar el trabajo de naturaleza media (actividades tales como empujar y jalar moderadamente, caminar a una velocidad moderada, levantar 5 kg 10 veces por minuto o 12 kg seis veces por minuto, por ejemplo: recolección de frutas y verduras (inclinado, en cuclillas), pintar con brocha, empujar o tirar de carros ligeros o carretillas, operar camiones, tractores o maquinaria de construcción en todo terreno, uso de martillo neumático, eliminar maleza y usar el azadón).",
@@ -32987,43 +32789,43 @@
           "x_texto": 83
         },
         {
-          "numero": 909,
+          "numero": 892,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Si previo a la enfermedad sus actividades laborales correspondían a naturaleza media, se debe categorizar en la categoría 0, debido a que continua con la misma capacidad para realizar las actividades de naturaleza media. 2 Restringido en las capacidades funcionales pero es capaz de realizar el trabajo de naturaleza ligero (permanecer sentado, estar sentado haciendo trabajo manual ligero usando las manos y brazos, conducir un vehículo, estar de pie haciendo trabajo ligero con los brazos y caminando ocasionalmente, caminatas casuales sin exceder los 3 km por hora y levantar 5 kg menos de ocho veces por minuto 12 kg menos de cuatro veces por minuto, por ejemplo: participar en una reunión (sentado), leer instrucciones o llenar papeleo, ver un video de capacitación, uso de herramientas para mesa o pequeñas herramientas eléctricas, inspección y clasificación de productos, clasificación de materiales livianos, ensamblaje de piezas pequeñas, conducción de vehículo en carretera y clavar.",
-          "padre_numero": 908,
+          "padre_numero": 891,
           "x_id": 108,
           "x_texto": 108
         },
         {
-          "numero": 910,
+          "numero": 893,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Si previo a la enfermedad sus actividades laborales correspondían a naturaleza ligera, se debe categorizar en la categoría 0, debido a que continua con la misma capacidad para realizar las actividades de naturaleza ligera. 3 Incapaz de realizar cualquier actividad laboral. neoplasias de acuerdo con puesto de trabajo su agresividad según 0 1 2 3 sobrevida a cinco años 1 0% 30% 50% 100% 2 30% 40% 60% 100% 3 60% 70% 80% 100% 4 80% 90% 95% 100% 5 100% 100% 100% 100% 522 La infección por VIH se evaluará conforme a la Tabla XIV.",
-          "padre_numero": 908,
+          "padre_numero": 891,
           "x_id": 108,
           "x_texto": 108
         },
         {
-          "numero": 911,
+          "numero": 894,
           "tipo": "texto",
           "identificador": null,
           "contenido": "clínica 1  Diagnóstico serológico de infección por VIH; A1, A2, B1 y 20%  Sin discapacidad valuable, y B2  Requiere tratamiento. 2  Requiere tratamiento continuado; A3, B3 y C1 21-25%  Presenta menos de tres episodios anuales de enfermedades relacionadas con su inmunodeficiencia, y  Requiere atención médica hospitalaria durante al menos 24 horas cada uno o durante menos de 30 días al año. 3  Requiere tratamiento continuado; C2 y C3 26- 59%  Presenta de tres a seis episodios anuales de enfermedades relacionadas con su inmunodeficiencia;  Requiere atención médica hospitalaria durante al menos 24 horas cada uno o durante más de 30 días al año, y  Puede realizar las actividades de la vida diaria, con disminución de la capacidad para realizar actividades laborales. 4  Requiere tratamiento continuado; C2 y C3 60 a 79%  Presenta más de seis episodios anuales de enfermedades relacionadas con su inmunodeficiencia que precisan atención médica hospitalaria;  Requiere al menos 24 horas o durante más de 60 días al año, y  Disminución de la capacidad para realizar las actividades de la vida diaria. 5  Cumple los criterios de la clase 4; C2 y C3 80 a 100%  Imposibilidad para realizar las actividades de la vida diaria y de autocuidado, y  Depende de otra persona.",
-          "padre_numero": 910,
+          "padre_numero": 893,
           "x_id": 390,
           "x_texto": 390
         },
         {
-          "numero": 912,
+          "numero": 895,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los trastornos mentales se evaluarán conforme a la Tabla XV 523 (incluye síndrome cráneo-encefálico tardío postconmocional).  Valuación de trastornos mentales, trastornos afectivos (depresivo, de ansiedad o mixto), mentales orgánicos, de estrés postraumático, por lesión cerebral y trastornos del habla secundarios a accidentes y enfermedades de trabajo.  Cuando la persona trabajadora presente: trastorno depresivo, de ansiedad, de estrés postraumático, por lesión cerebral (afasia, disartria, agnosias, apraxias, acalculias, alexias, agrafias, anomias, amnesias, síndromes atencionales, síndromes de contusión cerebral, síndrome cráneo-encefálico postconmocional, síndromes frontales, demencias) y trastornos del habla (disfemia, diglosias, bradilalia, taquilalia, taquifemia, farfulleo, tartajeo, alteraciones de la prosodia y alteraciones de la resonancia), requiriendo de tratamiento continuado permanente para mejorar o controlar la sintomatología.  Los trastornos afectivos se valuarán al menos a 6 meses de haber iniciado el tratamiento correspondiente, los trastornos por lesión cerebral y trastornos del habla, se valuarán en cuanto se determine la secuela, de acuerdo con la siguiente Tabla:",
-          "padre_numero": 910,
+          "padre_numero": 893,
           "x_id": 124,
           "x_texto": 124
         },
         {
-          "numero": 913,
+          "numero": 896,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Clase I  Controlado con tratamiento (asintomático); 10%  Tratamiento farmacológico especializado permanente, y  Con aptitud para ejercer actividades de su profesión u oficio.",
@@ -33032,7 +32834,7 @@
           "x_texto": 91
         },
         {
-          "numero": 914,
+          "numero": 897,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Clase II  Con sintomatología leve especifica o derivada del manejo 11 a 25% terapéutico;  Tratamiento farmacológico especializado permanente;  Terapia médica y rehabilitadora especializada;  Puede requerir atención médica complementaria de otras especialidades;  Con crisis recurrentes ocasionales que pueden o no ameritar internamiento hospitalario;  Con aptitud para ejercer actividades de su profesión u oficio, pero algunas las realiza con dificultad, y  Sin afectación para realizar actividades de la vida diaria.",
@@ -33041,7 +32843,7 @@
           "x_texto": 89
         },
         {
-          "numero": 915,
+          "numero": 898,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Clase III  Con sintomatología moderada especifica o derivada del 26 a 50% manejo terapéutico;  Tratamiento farmacológico especializado permanente;  Terapia médica, rehabilitatoria especializada;  Puede requerir atención médica complementaria de otras especialidades;  Con internamientos recurrentes mayores a una semana para manejo especializado;  Con aptitud limitada para ejercer actividades de su profesión u oficio, y  Sin afectación para realizar actividades de la vida diaria.",
@@ -33050,7 +32852,7 @@
           "x_texto": 88
         },
         {
-          "numero": 916,
+          "numero": 899,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Clase IV  Con sintomatología severa especifica o derivada del manejo 51 a 70% terapéutico;  Tratamiento farmacológico especializado permanente;  Terapia médica, rehabilitatoria especializada;  Requiere atención médica complementaria de otras especialidades;  Con internamientos recurrentes mayores a una semana para manejo especializado;  Con aptitud limitada para ejercer actividades de su profesión u oficio, y  Sin afectación para realizar actividades de la vida diaria.",
@@ -33059,7 +32861,7 @@
           "x_texto": 87
         },
         {
-          "numero": 917,
+          "numero": 900,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Clase V  Con sintomatología severa especifica o derivada del manejo 71 a 90% terapéutico;  Tratamiento farmacológico especializado permanente;  Terapia médica, rehabilitatoria especializada;  Requiere atención médica complementaria de otras especialidades;  Con internamientos recurrentes mayores a una semana para manejo especializado;  Sin aptitud para ejercer actividades de su profesión u oficio, y  Con disminución para realizar actividades de la vida diaria, puede realizar las de autocuidado.",
@@ -33068,7 +32870,7 @@
           "x_texto": 89
         },
         {
-          "numero": 918,
+          "numero": 901,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Clase VI  Ausencia de respuesta a los tratamientos instituidos; 100%  Con internamientos recurrentes mayores a una semana para manejo especializado;  Sin aptitud para ejercer actividades remuneradas semejantes a su profesión u oficio, de la vida diaria y de autocuidado, y  Depende de otra persona. Nota: El porcentaje de valuación lo determinará el criterio con la categoría más alta encontrada.",
@@ -33077,11 +32879,11 @@
           "x_texto": 87
         },
         {
-          "numero": 919,
+          "numero": 902,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Anemia, leucopenia, trombocitopenia por exposición a agentes físicos y 524 100% químicos, serán evaluados con el mismo procedimiento que para el cáncer.",
-          "padre_numero": 918,
+          "padre_numero": 901,
           "x_id": 124,
           "x_texto": 124,
           "referencias": [

@@ -4395,22 +4395,13 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Estará prohibida la actualización del saldo, el pago por concepto de amortización o los accesorios de los créditos otorgados a las personas trabajadoras a que se refiere la fracción II del artículo",
+          "contenido": "Estará prohibida la actualización del saldo, el pago por concepto de amortización o los accesorios de los créditos otorgados a las personas trabajadoras a que se refiere la fracción II del artículo 42.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
           "numero": 2,
-          "tipo": "numeral",
-          "identificador": "42.",
-          "contenido": "",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
-        },
-        {
-          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los créditos citados devengarán intereses sobre el saldo ajustado de los mismos, a la tasa que determine el Consejo de Administración.",
@@ -4419,7 +4410,7 @@
           "x_texto": 85
         },
         {
-          "numero": 4,
+          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las reglas que al efecto determine el Consejo de Administración deberán prever medidas para que se preserve la estabilidad financiera del Instituto y se cubran los riesgos de su cartera de créditos.",
@@ -4428,7 +4419,7 @@
           "x_texto": 85
         },
         {
-          "numero": 5,
+          "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los créditos se otorgarán a un plazo no mayor de treinta años. Al concluir el pago o determinarse la extinción o cancelación de un crédito, el Instituto deberá emitir los actos jurídicos necesarios para la extinción de los gravámenes que se hubieran constituido sobre las viviendas financiadas con los créditos que hubiere otorgado, haciéndose constar en instrumentos privados e inscribirse en el Registro Público de la Propiedad que corresponda, quedando el Instituto exento del pago de cualquier contribución por tal concepto o por la obtención de constancias registrales o equivalentes para el ejercicio de sus funciones. Las personas trabajadoras recibirán gratuitamente copia certificada del instrumento que le correspondan.",

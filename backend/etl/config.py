@@ -726,6 +726,9 @@ LEYES = {
             'LEY DE INGRESOS DE LA FEDERACIÓN',
             'CÁMARA DE DIPUTADOS',
             'Ejercicio Fiscal',
+            'Secretaría General',
+            'Servicios Parlamentarios',
+            'de 47',  # Número de páginas del documento
         ],
 
         "referencias": {

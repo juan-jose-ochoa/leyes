@@ -321,8 +321,8 @@ class Extractor:
         if match:
             return ('inciso', match.group(1) + ')', match.group(2))
 
-        # Numeral
-        match = re.match(r'^(\d+)\.\s*(.*)$', texto)
+        # Numeral (requiere espacio después del punto para evitar falsos positivos como "6.61.11")
+        match = re.match(r'^(\d+)\.\s+(.*)$', texto)
         if match:
             return ('numeral', match.group(1) + '.', match.group(2))
 

@@ -2899,22 +2899,13 @@
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "I = Suma de los porcentajes de las incapacidades permanentes, parciales y totales, divididos entre",
+          "contenido": "I = Suma de los porcentajes de las incapacidades permanentes, parciales y totales, divididos entre 100.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
           "numero": 9,
-          "tipo": "numeral",
-          "identificador": "100.",
-          "contenido": "",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
-        },
-        {
-          "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "D = Número de defunciones.",
@@ -2923,7 +2914,7 @@
           "x_texto": 85
         },
         {
-          "numero": 11,
+          "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "M = 0.005, que es la prima mínima de riesgo.",
@@ -2932,7 +2923,7 @@
           "x_texto": 85
         },
         {
-          "numero": 12,
+          "numero": 11,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Al inscribirse por primera vez en el Instituto o al cambiar de actividad, las empresas cubrirán, en la clase que les corresponda conforme al reglamento, la prima media. Una vez ubicada la empresa en la prima a pagar, los siguientes aumentos o disminuciones de la misma se harán conforme al párrafo primero de este artículo.",
@@ -2941,7 +2932,7 @@
           "x_texto": 85
         },
         {
-          "numero": 13,
+          "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "No se tomarán en cuenta para la siniestralidad de las empresas, los accidentes que ocurran a los trabajadores al trasladarse de su domicilio al centro de labores o viceversa.",
@@ -2950,7 +2941,7 @@
           "x_texto": 85
         },
         {
-          "numero": 14,
+          "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los patrones cuyos centros de trabajo cuenten con un sistema de administración y seguridad en el trabajo acreditado por la Secretaría del Trabajo y Previsión Social, aplicarán una F de 2.2 como factor de prima.",
@@ -2959,7 +2950,7 @@
           "x_texto": 85
         },
         {
-          "numero": 15,
+          "numero": 14,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las empresas de menos de 10 trabajadores, podrán optar por presentar la declaración anual correspondiente o cubrir la prima media que les corresponda conforme al reglamento, de acuerdo al artículo 73 de esta Ley.",
@@ -6719,85 +6710,13 @@
           "numero": 4,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": "Los patrones cubrirán la cuota que corresponda sobre el salario base de cotización, calculada conforme a la siguiente tabla:",
+          "contenido": "Los patrones cubrirán la cuota que corresponda sobre el salario base de cotización, calculada conforme a la siguiente tabla: 1.00 SM* 3.150% 1.01 SM a 1.50 UMA** 4.202% 1.51 a 2.00 UMA 6.552% 2.01 a 2.50 UMA 7.962% 2.51 a 3.00 UMA 8.902% 3.01 a 3.50 UMA 9.573% 3.51 a 4.00 UMA 10.077% 4.01 UMA en adelante 11.875% *Salario Mínimo ** Unidad de Medida y Actualización",
           "padre_numero": 3,
           "x_id": 106,
           "x_texto": 128
         },
         {
           "numero": 5,
-          "tipo": "numeral",
-          "identificador": "1.",
-          "contenido": "00 SM* 3.150%",
-          "padre_numero": 4,
-          "x_id": 237,
-          "x_texto": 259
-        },
-        {
-          "numero": 6,
-          "tipo": "numeral",
-          "identificador": "1.",
-          "contenido": "01 SM a 1.50 UMA** 4.202%",
-          "padre_numero": 4,
-          "x_id": 207,
-          "x_texto": 229
-        },
-        {
-          "numero": 7,
-          "tipo": "numeral",
-          "identificador": "1.",
-          "contenido": "51 a 2.00 UMA 6.552%",
-          "padre_numero": 4,
-          "x_id": 220,
-          "x_texto": 242
-        },
-        {
-          "numero": 8,
-          "tipo": "numeral",
-          "identificador": "2.",
-          "contenido": "01 a 2.50 UMA 7.962%",
-          "padre_numero": 4,
-          "x_id": 220,
-          "x_texto": 242
-        },
-        {
-          "numero": 9,
-          "tipo": "numeral",
-          "identificador": "2.",
-          "contenido": "51 a 3.00 UMA 8.902%",
-          "padre_numero": 4,
-          "x_id": 220,
-          "x_texto": 242
-        },
-        {
-          "numero": 10,
-          "tipo": "numeral",
-          "identificador": "3.",
-          "contenido": "01 a 3.50 UMA 9.573%",
-          "padre_numero": 4,
-          "x_id": 220,
-          "x_texto": 242
-        },
-        {
-          "numero": 11,
-          "tipo": "numeral",
-          "identificador": "3.",
-          "contenido": "51 a 4.00 UMA 10.077%",
-          "padre_numero": 4,
-          "x_id": 220,
-          "x_texto": 242
-        },
-        {
-          "numero": 12,
-          "tipo": "numeral",
-          "identificador": "4.",
-          "contenido": "01 UMA en adelante 11.875% *Salario Mínimo ** Unidad de Medida y Actualización",
-          "padre_numero": 4,
-          "x_id": 206,
-          "x_texto": 228
-        },
-        {
-          "numero": 13,
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Los trabajadores cubrirán una cuota del uno punto ciento veinticinco por ciento sobre el salario base de cotización.",
@@ -6809,7 +6728,7 @@
           ]
         },
         {
-          "numero": 14,
+          "numero": 6,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "Se deroga.",
@@ -6821,7 +6740,7 @@
           ]
         },
         {
-          "numero": 15,
+          "numero": 7,
           "tipo": "fraccion",
           "identificador": "IV",
           "contenido": "El Gobierno Federal, por cada día de salario cotizado, aportará mensualmente una cantidad por concepto de la cuota social, para los trabajadores que ganen hasta cuatro veces la unidad de medida y actualización, que se depositará en la cuenta individual de cada trabajador asegurado conforme a la tabla siguiente:",
@@ -6833,11 +6752,11 @@
           ]
         },
         {
-          "numero": 16,
+          "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los valores mencionados del importe de la cuota social, se actualizarán trimestralmente de conformidad con el Índice Nacional de Precios al Consumidor, en los meses de marzo, junio, septiembre y diciembre de cada año.",
-          "padre_numero": 15,
+          "padre_numero": 7,
           "x_id": 107,
           "x_texto": 107,
           "referencias": [
@@ -6845,7 +6764,7 @@
           ]
         },
         {
-          "numero": 17,
+          "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Estas cuotas y aportaciones al destinarse al otorgamiento de pensiones y demás beneficios establecidos en esta Ley, se entenderán destinadas al gasto público en materia de seguridad social.",

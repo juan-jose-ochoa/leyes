@@ -14971,22 +14971,13 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Cuando los contribuyentes a que se refiere el artículo 113-E de esta Ley realicen actividades empresariales, profesionales u otorguen el uso o goce temporal de bienes, a personas morales, estas últimas deberán retener, como pago mensual, el monto que resulte de aplicar la tasa del",
+          "contenido": "Cuando los contribuyentes a que se refiere el artículo 113-E de esta Ley realicen actividades empresariales, profesionales u otorguen el uso o goce temporal de bienes, a personas morales, estas últimas deberán retener, como pago mensual, el monto que resulte de aplicar la tasa del 1.25% sobre el monto de los pagos que les efectúen, sin considerar el impuesto al valor agregado, debiendo proporcionar a los contribuyentes el comprobante fiscal en el que conste el monto del impuesto retenido, el cual deberá enterarse por dicha persona moral a más tardar el día 17 del mes inmediato posterior a aquél al que corresponda el pago.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
           "numero": 2,
-          "tipo": "numeral",
-          "identificador": "1.",
-          "contenido": "25% sobre el monto de los pagos que les efectúen, sin considerar el impuesto al valor agregado, debiendo proporcionar a los contribuyentes el comprobante fiscal en el que conste el monto del impuesto retenido, el cual deberá enterarse por dicha persona moral a más tardar el día 17 del mes inmediato posterior a aquél al que corresponda el pago.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
-        },
-        {
-          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El impuesto retenido en los términos de este artículo será considerado en el pago mensual que deban presentar las personas físicas.",
