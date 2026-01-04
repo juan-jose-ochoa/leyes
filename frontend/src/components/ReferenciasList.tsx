@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { ChevronDown, ChevronUp, ExternalLink, AlertCircle, BookOpen } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useReferenciasLegales } from '@/hooks/useArticle'
+import { getNombreLey } from '@/lib/leyesConfig'
 import clsx from 'clsx'
 
 interface ReferenciasListProps {
@@ -92,8 +93,10 @@ export default function ReferenciasList({ referencias }: ReferenciasListProps) {
                         </>
                       ) : (
                         <p className="text-sm text-red-600 dark:text-red-400">
-                          Este artículo no se encuentra en la base de datos.
-                          La ley {ref.ley_codigo} podría no estar importada.
+                          {getNombreLey(ref.ley_codigo) !== ref.ley_codigo
+                            ? `${getNombreLey(ref.ley_codigo)} (${ref.ley_codigo}) no está disponible en el sistema.`
+                            : `Ley ${ref.ley_codigo} no está disponible en el sistema.`
+                          }
                         </p>
                       )}
                     </div>

@@ -766,6 +766,17 @@ BEGIN
         -- Normalizar: quitar punto final del número (puntuación española)
         v_num := rtrim(v_num, '.');
 
+        -- Saltar si no parece artículo válido:
+        -- - muy largo (>20 chars)
+        -- - sin dígitos
+        -- - parece fecha (DD/MM/YYYY)
+        IF length(v_num) > 20
+           OR v_num !~ '\d'
+           OR v_num ~ '^\d{1,2}/\d{1,2}/\d{2,4}$'
+        THEN
+            CONTINUE;
+        END IF;
+
         -- Buscar el artículo y retornar resultado
         RETURN QUERY
         SELECT
