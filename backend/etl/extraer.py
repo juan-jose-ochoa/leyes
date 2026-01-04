@@ -488,16 +488,44 @@ class Extractor:
 
         return parrafos
 
+    def _es_ruido(self, text: str, patrones: list[str]) -> bool:
+        """Verifica si el texto coincide con algún patrón de ruido.
+
+        Patrones pueden ser:
+        - Regex (si contiene ^ o $): r'^TEXTO VIGENTE$' coincide exacto
+        - Substring (si no): 'CÁMARA' coincide si está contenido en el texto
+
+        Ejemplos de patrones regex:
+        - r'^\d+ de \d+$'     -> "1 de 402" (número de página exacto)
+        - r'^Secretaría.*$'   -> Línea que empieza con "Secretaría"
+        """
+        for patron in patrones:
+            if '^' in patron or '$' in patron:
+                # Es regex: verificar coincidencia
+                if re.match(patron, text):
+                    return True
+            else:
+                # Es substring: verificar si está contenido
+                if patron in text:
+                    return True
+        return False
+
     def _extraer_parrafos_articulo(self, pag_inicio: int, pag_fin: int,
                                     patron_art: re.Pattern, patron_siguiente: re.Pattern) -> list[Parrafo]:
         """Extrae párrafos de un artículo usando coordenadas X/Y."""
         todas_lineas = []
         referencias = []  # Lista de (y_global, texto_referencia)
         en_articulo = False
-        ruido = self.config.get("ruido_lineas", [
-            'CÓDIGO FISCAL', 'CÁMARA DE DIPUTADOS', 'Secretaría General',
-            'Servicios Parlamentarios', 'DOF', 'de 375', 'Última Reforma'
-        ])
+
+        # Filtro por posición Y (configurable por ley)
+        # Filtra automáticamente header y footer basándose en coordenadas
+        filtro_y = self.config.get("filtro_y", {})
+        y_header_max = filtro_y.get("header_max", 0)    # 0 = no filtrar header
+        y_footer_min = filtro_y.get("footer_min", 999)  # 999 = no filtrar footer
+
+        # Patrones adicionales para ruido en zona de contenido
+        # Soporta regex (con ^ o $) o substring
+        ruido = self.config.get("ruido_lineas", [])
 
         for pag_num in range(pag_inicio, pag_fin + 1):
             lineas = self._extraer_lineas_pagina(self.pdf.pages[pag_num])
@@ -506,9 +534,15 @@ class Extractor:
 
             for linea in lineas:
                 text = linea['text']
+                y_local = linea['y']  # Posición Y en la página
+
                 # Y global para comparaciones entre páginas
-                y_global = linea['y'] + y_offset
+                y_global = y_local + y_offset
                 linea['y_global'] = y_global
+
+                # Filtrar por posición Y (header/footer)
+                if y_local < y_header_max or y_local > y_footer_min:
+                    continue
 
                 # Detectar referencias PRIMERO (antes de filtrar basura)
                 # porque el filtro de basura podría incluir "DOF"
@@ -517,8 +551,8 @@ class Extractor:
                         referencias.append((y_global, text))
                     continue
 
-                # Filtrar ruido (después de detectar referencias)
-                if any(skip in text for skip in ruido):
+                # Filtrar ruido en zona de contenido (patrones regex o substring)
+                if ruido and self._es_ruido(text, ruido):
                     continue
 
                 # Detectar sección TRANSITORIOS o fin de artículos (termina extracción)

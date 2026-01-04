@@ -43,6 +43,15 @@ LEYES = {
             "numeral": r'^(\d{1,2})\.\s+',
         },
 
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        # Ruido adicional en zona de contenido (si aplica)
+        "ruido_lineas": [],
+
         # Detección de referencias (reformas, adiciones)
         # Criterios: itálica + color (azul o gris) + tamaño pequeño + patrón
         "referencias": {
@@ -132,16 +141,15 @@ LEYES = {
             "apartado": r'^([A-Z])\.\s+',  # Art. 123 tiene Apartado A y B
         },
 
-        # Ruido a eliminar (encabezados, pies de página)
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        # Ruido adicional en zona de contenido (regex con ^$ o substring)
         "ruido_lineas": [
-            'CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'Última Reforma',
-            'Última reforma',
-            'TEXTO VIGENTE',
-            ' de 402',  # "X de 402" - números de página
+            r'^TEXTO VIGENTE$',  # Aparece en zona de contenido
         ],
 
         # Detección de referencias (reformas, adiciones)
@@ -195,16 +203,13 @@ LEYES = {
         },
 
         # Ruido a eliminar (encabezados, pies de página)
-        "ruido_lineas": [
-            'LEY DEL IMPUESTO SOBRE LA RENTA',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'Última Reforma',
-            'Última reforma',
-            'TEXTO VIGENTE',
-            ' de 313',  # "X de 313" - números de página
-        ],
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        "ruido_lineas": [],
 
         # Detección de referencias (reformas, adiciones)
         "referencias": {
@@ -268,16 +273,13 @@ LEYES = {
         },
 
         # Ruido a eliminar (encabezados, pies de página)
-        "ruido_lineas": [
-            'LEY DEL IMPUESTO AL VALOR AGREGADO',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'Última Reforma',
-            'Última reforma',
-            'TEXTO VIGENTE',
-            ' de 128',  # "X de 128" - números de página
-        ],
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        "ruido_lineas": [],
 
         # Detección de referencias (reformas, adiciones)
         "referencias": {
@@ -334,16 +336,13 @@ LEYES = {
         },
 
         # Ruido a eliminar (encabezados, pies de página)
-        "ruido_lineas": [
-            'LEY ADUANERA',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'Última Reforma',
-            'Última reforma',
-            'TEXTO VIGENTE',
-            ' de 218',  # "X de 218" - números de página
-        ],
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        "ruido_lineas": [],
 
         # Detección de referencias (reformas, adiciones)
         "referencias": {
@@ -398,15 +397,13 @@ LEYES = {
         },
 
         # Ruido a eliminar
-        "ruido_lineas": [
-            'LEY DEL IMPUESTO ESPECIAL SOBRE PRODUCCIÓN Y SERVICIOS',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'Última Reforma',
-            'Última reforma',
-            ' de 163',  # Paginación "X de 163"
-        ],
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        "ruido_lineas": [],
 
         # Detección de referencias
         "referencias": {
@@ -460,15 +457,13 @@ LEYES = {
         },
 
         # Ruido a eliminar
-        "ruido_lineas": [
-            'LEY FEDERAL DEL TRABAJO',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'Última Reforma',
-            'Última reforma',
-            ' de 450',  # Paginación "X de 450"
-        ],
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        "ruido_lineas": [],
 
         # Detección de referencias
         "referencias": {
@@ -520,15 +515,13 @@ LEYES = {
         },
 
         # Ruido a eliminar
-        "ruido_lineas": [
-            'LEY DEL SEGURO SOCIAL',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'Última Reforma',
-            'Última reforma',
-            ' de 178',  # Paginación "X de 178"
-        ],
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        "ruido_lineas": [],
 
         # Detección de referencias
         "referencias": {
@@ -576,15 +569,13 @@ LEYES = {
         },
 
         # Ruido a eliminar
-        "ruido_lineas": [
-            'LEY DEL INSTITUTO DEL FONDO NACIONAL DE LA VIVIENDA PARA LOS TRABAJADORES',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'Última Reforma',
-            'Última reforma',
-            'de 93',  # Número de páginas del documento
-        ],
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        "ruido_lineas": [],
 
         # Detección de referencias
         "referencias": {
@@ -631,15 +622,13 @@ LEYES = {
         },
 
         # Ruido a eliminar
-        "ruido_lineas": [
-            'LEY DEL INSTITUTO DE SEGURIDAD Y SERVICIOS SOCIALES DE LOS TRABAJADORES DEL ESTADO',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'Última Reforma',
-            'Última reforma',
-            'de 125',  # Número de páginas del documento
-        ],
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        "ruido_lineas": [],
 
         # Detección de referencias
         "referencias": {
@@ -680,11 +669,14 @@ LEYES = {
             "inciso": r'^([a-z])\)\s+',
         },
 
-        "ruido_lineas": [
-            'LEY FEDERAL DE LOS DERECHOS DEL CONTRIBUYENTE',
-            'CÁMARA DE DIPUTADOS',
-            'Nueva Ley publicada',
-        ],
+                # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        # Ruido adicional en zona de contenido (si aplica)
+        "ruido_lineas": [],
 
         "referencias": {
             "font_italic": True,
@@ -724,14 +716,13 @@ LEYES = {
             "numeral": r'^(\d{1,2})\.\s+',
         },
 
-        "ruido_lineas": [
-            'LEY DE INGRESOS DE LA FEDERACIÓN',
-            'CÁMARA DE DIPUTADOS',
-            'Ejercicio Fiscal',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'de 47',  # Número de páginas del documento
-        ],
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        "ruido_lineas": [],
 
         "referencias": {
             "font_italic": True,
@@ -781,14 +772,13 @@ LEYES = {
         },
 
         # Ruido a eliminar
-        "ruido_lineas": [
-            'REGLAMENTO DEL CÓDIGO FISCAL DE LA FEDERACIÓN',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'Nuevo Reglamento DOF',
-            ' de 40',  # Paginación "X de 40"
-        ],
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        "ruido_lineas": [],
 
         # Detección de referencias
         "referencias": {
@@ -825,15 +815,13 @@ LEYES = {
             "inciso": r'^([a-z])\)\s+',
             "numeral": r'^(\d{1,2})\.\s+',
         },
-        "ruido_lineas": [
-            'REGLAMENTO DE LA LEY DEL SEGURO SOCIAL EN MATERIA',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'Última Reforma DOF',
-            ' de 113',  # Paginación
-            'FISCALIZACIÓN',  # Header de página (2da línea del título)
-        ],
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        "ruido_lineas": [],
         "referencias": {
             "font_italic": True,
             "color_no_negro": True,
@@ -865,13 +853,14 @@ LEYES = {
             "fraccion": r'^([IVX]+)\.\s+',
             "inciso": r'^([a-z])\)\s+',
         },
-        "ruido_lineas": [
-            'REGLAMENTO DE LOS ARTÍCULOS 121 Y 122',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            ' de 6',  # Paginación
-        ],
+                # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        # Ruido adicional en zona de contenido (si aplica)
+        "ruido_lineas": [],
         "referencias": {
             "font_italic": True,
             "color_no_negro": True,
@@ -897,13 +886,14 @@ LEYES = {
             "fraccion": r'^([IVX]+)\.\s+',
             "inciso": r'^([a-z])\)\s+',
         },
-        "ruido_lineas": [
-            'REGLAMENTO DE LA LEY DEL IMPUESTO ESPECIAL',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            ' de 4',  # Paginación
-        ],
+                # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        # Ruido adicional en zona de contenido (si aplica)
+        "ruido_lineas": [],
         "referencias": {
             "font_italic": True,
             "color_no_negro": True,
@@ -929,13 +919,14 @@ LEYES = {
             "fraccion": r'^([IVX]+)\.\s+',
             "inciso": r'^([a-z])\)\s+',
         },
-        "ruido_lineas": [
-            'REGLAMENTO DE LA LEY DEL SEGURO SOCIAL',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            ' de 6',  # Paginación
-        ],
+                # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        # Ruido adicional en zona de contenido (si aplica)
+        "ruido_lineas": [],
         "referencias": {
             "font_italic": True,
             "color_no_negro": True,
@@ -970,14 +961,13 @@ LEYES = {
         },
 
         # Ruido a eliminar
-        "ruido_lineas": [
-            'REGLAMENTO DE LA LEY DEL IMPUESTO AL VALOR AGREGADO',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'Última Reforma DOF',
-            ' de 16',  # Paginación
-        ],
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        "ruido_lineas": [],
 
         # Detección de referencias
         "referencias": {
@@ -1026,14 +1016,13 @@ LEYES = {
         },
 
         # Ruido a eliminar
-        "ruido_lineas": [
-            'REGLAMENTO DE LA LEY DEL IMPUESTO SOBRE LA RENTA',
-            'CÁMARA DE DIPUTADOS',
-            'Secretaría General',
-            'Servicios Parlamentarios',
-            'Última Reforma DOF',
-            ' de 93',  # Paginación
-        ],
+        # Filtro por coordenada Y para eliminar header/footer
+        "filtro_y": {
+            "header_max": 80,   # y < 80: encabezados institucionales
+            "footer_min": 720,  # y > 720: números de página
+        },
+
+        "ruido_lineas": [],
 
         # Detección de referencias
         "referencias": {
