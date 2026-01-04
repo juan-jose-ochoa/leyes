@@ -236,20 +236,26 @@ sudo systemctl status caddy
 curl https://api.leyesfiscalesmexico.com/leyesmx/v_leyes
 ```
 
-## 5. Importar datos
+## 5. Actualizar base de datos
 
 ### LOCAL: Exportar y copiar al servidor
 ```bash
-sudo -u postgres pg_dump -d digiapps -n leyesmx > backup.sql
-scp backup.sql jochoa@54.202.41.70:~
-rm backup.sql
+sudo -u postgres pg_dump -d digiapps -n leyesmx > backup_leyesmx.sql
+scp backup_leyesmx.sql jochoa@54.202.41.70:~
+rm backup_leyesmx.sql
 ```
 
-### SERVIDOR: Importar datos
+### SERVIDOR: Reemplazar esquema
 ```bash
-sudo -u postgres psql -d digiapps < ~/backup.sql
-rm ~/backup.sql
+ssh jochoa@54.202.41.70
+
+sudo -u postgres psql -d digiapps -c "DROP SCHEMA IF EXISTS leyesmx CASCADE;"
+sudo -u postgres psql -d digiapps < ~/backup_leyesmx.sql
+rm ~/backup_leyesmx.sql
+sudo systemctl restart postgrest
 ```
+
+> **Nota:** El `pg_dump` incluye todos los `GRANT` del esquema. Los roles (`web_anon`, `authenticator`) persisten a nivel de base de datos.
 
 ## 6. Verificar
 
