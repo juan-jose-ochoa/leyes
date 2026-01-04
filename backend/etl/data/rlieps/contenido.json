@@ -119,15 +119,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Nuevo Reglamento DOF 04-12-2006",
-          "padre_numero": 2,
-          "x_id": 428,
-          "x_texto": 428
         }
       ]
     },
@@ -274,15 +265,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Nuevo Reglamento DOF 04-12-2006",
-          "padre_numero": 2,
-          "x_id": 428,
-          "x_texto": 428
         }
       ]
     },
@@ -426,7 +408,7 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los contribuyentes que opten por lo dispuesto en este artículo, deberán raspar la etiqueta, la contraetiqueta y el marbete, que estén adheridos a los envases vacíos que se vayan a destruir, en el Nuevo Reglamento DOF 04-12-2006 momento en que se cierren las operaciones del día, registrando el número de folio de los marbetes que se raspen.",
+          "contenido": "Los contribuyentes que opten por lo dispuesto en este artículo, deberán raspar la etiqueta, la contraetiqueta y el marbete, que estén adheridos a los envases vacíos que se vayan a destruir, en el momento en que se cierren las operaciones del día, registrando el número de folio de los marbetes que se raspen.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
