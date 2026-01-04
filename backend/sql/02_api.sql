@@ -763,6 +763,9 @@ BEGIN
         -- Si no hay ley, saltar
         IF v_ley IS NULL THEN CONTINUE; END IF;
 
+        -- Normalizar: quitar punto final del número (puntuación española)
+        v_num := rtrim(v_num, '.');
+
         -- Buscar el artículo y retornar resultado
         RETURN QUERY
         SELECT
