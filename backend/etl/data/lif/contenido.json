@@ -23,63 +23,2097 @@
       "tipo": "articulo",
       "orden": 1,
       "pagina": 1,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En el ejercicio fiscal de 2026, la Federación percibirá los ingresos provenientes de los conceptos y en las cantidades estimadas en millones de pesos que a continuación se enumeran:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "numeral",
+          "identificador": "11.",
+          "contenido": "Impuestos Sobre los Ingresos: 3,070,149.1",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 3,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Impuesto sobre la renta. 3,070,149.1",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 4,
+          "tipo": "numeral",
+          "identificador": "12.",
+          "contenido": "Impuestos Sobre el Patrimonio. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 5,
+          "tipo": "numeral",
+          "identificador": "13.",
+          "contenido": "Impuestos Sobre la Producción, el Consumo y las Transacciones: 2,370,732.7",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 6,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Impuesto al valor agregado. 1,589,069.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 7,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Impuesto especial sobre producción y servicios: 761,501.9",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 8,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Combustibles automotrices: 473,279.1",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 9,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Artículo 2o., fracción I, inciso D). 432,487.9",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 10,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Artículo 2o.-A. 40,791.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 11,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Bebidas con contenido alcohólico y cerveza: 81,518.8",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 12,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Bebidas alcohólicas. 27,780.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 13,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Cervezas y bebidas refrescantes. 53,738.6",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 14,
+          "tipo": "numeral",
+          "identificador": "03.",
+          "contenido": "Tabacos labrados y otros. 62,097.5",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 15,
+          "tipo": "numeral",
+          "identificador": "04.",
+          "contenido": "Juegos con apuestas y sorteos. 5,024.7",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 16,
+          "tipo": "numeral",
+          "identificador": "05.",
+          "contenido": "Redes públicas de telecomunicaciones. 8,486.8",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 17,
+          "tipo": "numeral",
+          "identificador": "06.",
+          "contenido": "Bebidas energetizantes. 100.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 18,
+          "tipo": "numeral",
+          "identificador": "07.",
+          "contenido": "Bebidas saborizadas. 75,290.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 19,
+          "tipo": "numeral",
+          "identificador": "08.",
+          "contenido": "Alimentos no básicos con alta densidad calórica. 42,856.1",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 20,
+          "tipo": "numeral",
+          "identificador": "09.",
+          "contenido": "Plaguicidas. 2,148.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 21,
+          "tipo": "numeral",
+          "identificador": "10.",
+          "contenido": "Combustibles fósiles. 10,517.7",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 22,
+          "tipo": "numeral",
+          "identificador": "11.",
+          "contenido": "Videojuegos con violencia. 183.0 1 de 47",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 23,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 22,
+          "x_id": 137,
+          "x_texto": 137
+        },
+        {
+          "numero": 24,
+          "tipo": "numeral",
+          "identificador": "03.",
+          "contenido": "Impuesto sobre automóviles nuevos. 20,161.8",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 25,
+          "tipo": "numeral",
+          "identificador": "14.",
+          "contenido": "Impuestos al Comercio Exterior: 254,756.8",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 26,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Impuestos al comercio exterior: 254,756.8",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 27,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "A la importación. 254,756.8",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 28,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "A la exportación. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 29,
+          "tipo": "numeral",
+          "identificador": "15.",
+          "contenido": "Impuestos Sobre Nóminas y Asimilables. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 30,
+          "tipo": "numeral",
+          "identificador": "16.",
+          "contenido": "Impuestos Ecológicos. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 31,
+          "tipo": "numeral",
+          "identificador": "17.",
+          "contenido": "Accesorios de impuestos: 135,769.4",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 32,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Accesorios de impuestos. 135,769.4",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 33,
+          "tipo": "numeral",
+          "identificador": "18.",
+          "contenido": "Otros impuestos: 7,070.4",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 34,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Impuesto por la actividad de exploración y extracción de 7,070.4 hidrocarburos.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 35,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Impuesto sobre servicios expresamente declarados de interés público 0.0 por ley, en los que intervengan empresas concesionarias de bienes del dominio directo de la Nación.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 36,
+          "tipo": "numeral",
+          "identificador": "19.",
+          "contenido": "Impuestos no comprendidos en la Ley de Ingresos Vigente, Causados en 62.7 Ejercicios Fiscales Anteriores Pendientes de Liquidación o Pago.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 37,
+          "tipo": "numeral",
+          "identificador": "21.",
+          "contenido": "Aportaciones para Fondos de Vivienda: 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 38,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Aportaciones y abonos retenidos a trabajadores por patrones para el 0.0 Fondo Nacional de la Vivienda para los Trabajadores.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 39,
+          "tipo": "numeral",
+          "identificador": "22.",
+          "contenido": "Cuotas para la Seguridad Social: 641,782.1",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 40,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Cuotas para el Seguro Social a cargo de patrones y trabajadores. 641,782.1",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 41,
+          "tipo": "numeral",
+          "identificador": "23.",
+          "contenido": "Cuotas de Ahorro para el Retiro: 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 42,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Cuotas del Sistema de Ahorro para el Retiro a cargo de los patrones. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 43,
+          "tipo": "numeral",
+          "identificador": "24.",
+          "contenido": "Otras Cuotas y Aportaciones para la Seguridad Social: 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 44,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Cuotas para el Instituto de Seguridad y Servicios Sociales de los 0.0 Trabajadores del Estado a cargo de los citados trabajadores.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 45,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Cuotas para el Instituto de Seguridad Social para las Fuerzas 0.0 Armadas Mexicanas a cargo de los militares.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 46,
+          "tipo": "numeral",
+          "identificador": "25.",
+          "contenido": "Accesorios de Cuotas y Aportaciones de Seguridad Social. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 47,
+          "tipo": "numeral",
+          "identificador": "31.",
+          "contenido": "Contribuciones de Mejoras por Obras Públicas: 39.6",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 48,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Contribución de mejoras por obras públicas de infraestructura 39.6 hidráulica.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 49,
+          "tipo": "numeral",
+          "identificador": "39.",
+          "contenido": "Contribuciones de Mejoras no Comprendidas en la Ley de Ingresos Vigente, 0.0 Causadas en Ejercicios Fiscales Anteriores Pendientes de Liquidación o Pago.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 50,
+          "tipo": "numeral",
+          "identificador": "41.",
+          "contenido": "Derechos por el Uso, Goce, Aprovechamiento o Explotación de Bienes de 81,380.2 Dominio Público:",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 51,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Secretaría de Hacienda y Crédito Público. 2,601.4",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 52,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Secretaría Anticorrupción y Buen Gobierno. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 53,
+          "tipo": "numeral",
+          "identificador": "03.",
+          "contenido": "Secretaría de Economía. 14,798.8",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 54,
+          "tipo": "numeral",
+          "identificador": "04.",
+          "contenido": "Secretaría de Infraestructura, Comunicaciones y Transportes. 17,955.6",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 55,
+          "tipo": "numeral",
+          "identificador": "05.",
+          "contenido": "Secretaría de Medio Ambiente y Recursos Naturales. 26,642.9 2 de 47",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 56,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 55,
+          "x_id": 137,
+          "x_texto": 137
+        },
+        {
+          "numero": 57,
+          "tipo": "numeral",
+          "identificador": "06.",
+          "contenido": "Secretaría de Agricultura y Desarrollo Rural. 54.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 58,
+          "tipo": "numeral",
+          "identificador": "07.",
+          "contenido": "Secretaría del Trabajo y Previsión Social. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 59,
+          "tipo": "numeral",
+          "identificador": "08.",
+          "contenido": "Secretaría de Educación Pública. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 60,
+          "tipo": "numeral",
+          "identificador": "09.",
+          "contenido": "Agencia de Transformación Digital y Telecomunicaciones. 17,734.9",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 61,
+          "tipo": "numeral",
+          "identificador": "10.",
+          "contenido": "Secretaría de Cultura. 1,154.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 62,
+          "tipo": "numeral",
+          "identificador": "11.",
+          "contenido": "Secretaría de Salud. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 63,
+          "tipo": "numeral",
+          "identificador": "12.",
+          "contenido": "Secretaría de Marina. 438.6",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 64,
+          "tipo": "numeral",
+          "identificador": "13.",
+          "contenido": "Secretaría de Seguridad y Protección Ciudadana. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 65,
+          "tipo": "numeral",
+          "identificador": "43.",
+          "contenido": "Derechos por Prestación de Servicios: 75,701.5",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 66,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Servicios que presta el Estado en funciones de derecho público: 75,701.5",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 67,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Secretaría de Gobernación. 34,038.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 68,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Secretaría de Relaciones Exteriores. 14,028.7",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 69,
+          "tipo": "numeral",
+          "identificador": "03.",
+          "contenido": "Secretaría de la Defensa Nacional. 420.3",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 70,
+          "tipo": "numeral",
+          "identificador": "04.",
+          "contenido": "Secretaría de Marina. 630.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 71,
+          "tipo": "numeral",
+          "identificador": "05.",
+          "contenido": "Secretaría de Hacienda y Crédito Público. 15,068.7",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 72,
+          "tipo": "numeral",
+          "identificador": "06.",
+          "contenido": "Secretaría Anticorrupción y Buen Gobierno. 899.9",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 73,
+          "tipo": "numeral",
+          "identificador": "07.",
+          "contenido": "Secretaría de Energía. 820.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 74,
+          "tipo": "numeral",
+          "identificador": "08.",
+          "contenido": "Secretaría de Economía. 7.9",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 75,
+          "tipo": "numeral",
+          "identificador": "09.",
+          "contenido": "Secretaría de Agricultura y Desarrollo Rural. 1,875.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 76,
+          "tipo": "numeral",
+          "identificador": "10.",
+          "contenido": "Secretaría de Infraestructura, Comunicaciones y Transportes. 1,657.7",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 77,
+          "tipo": "numeral",
+          "identificador": "11.",
+          "contenido": "Secretaría de Medio Ambiente y Recursos Naturales: 1,863.3",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 78,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Agencia Nacional de Seguridad Industrial y de 62.3 Protección al Medio Ambiente del Sector Hidrocarburos.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 79,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Otros. 1,801.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 80,
+          "tipo": "numeral",
+          "identificador": "12.",
+          "contenido": "Secretaría de Educación Pública. 2,293.8",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 81,
+          "tipo": "numeral",
+          "identificador": "13.",
+          "contenido": "Secretaría de Salud. 1,671.6",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 82,
+          "tipo": "numeral",
+          "identificador": "14.",
+          "contenido": "Secretaría del Trabajo y Previsión Social. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 83,
+          "tipo": "numeral",
+          "identificador": "15.",
+          "contenido": "Secretaría de Desarrollo Agrario, Territorial y Urbano. 83.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 84,
+          "tipo": "numeral",
+          "identificador": "16.",
+          "contenido": "Secretaría de Turismo. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 85,
+          "tipo": "numeral",
+          "identificador": "17.",
+          "contenido": "Agencia de Transformación Digital y Telecomunicaciones. 40.6",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 86,
+          "tipo": "numeral",
+          "identificador": "18.",
+          "contenido": "Secretaría de Cultura. 77.1",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 87,
+          "tipo": "numeral",
+          "identificador": "19.",
+          "contenido": "Secretaría de Seguridad y Protección Ciudadana. 225.3",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 88,
+          "tipo": "numeral",
+          "identificador": "20.",
+          "contenido": "Secretaría de Bienestar. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 89,
+          "tipo": "numeral",
+          "identificador": "44.",
+          "contenido": "Otros Derechos. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 90,
+          "tipo": "numeral",
+          "identificador": "45.",
+          "contenido": "Accesorios de Derechos. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 91,
+          "tipo": "numeral",
+          "identificador": "49.",
+          "contenido": "Derechos no Comprendidos en la Ley de Ingresos Vigente, Causados en 0.0 Ejercicios Fiscales Anteriores Pendientes de Liquidación o Pago.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 92,
+          "tipo": "numeral",
+          "identificador": "51.",
+          "contenido": "Productos: 16,488.3",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 93,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Por los servicios que no correspondan a funciones de derecho 165.6 público.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 94,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Derivados del uso, aprovechamiento o enajenación de bienes no 16,322.7 sujetos al régimen de dominio público:",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 95,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Explotación de tierras y aguas. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 96,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Arrendamiento de tierras, locales y construcciones. 0.0 3 de 47",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 97,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 96,
+          "x_id": 137,
+          "x_texto": 137
+        },
+        {
+          "numero": 98,
+          "tipo": "numeral",
+          "identificador": "03.",
+          "contenido": "Enajenación de bienes: 3,985.6",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 99,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Muebles. 3,561.6",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 100,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Inmuebles. 424.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 101,
+          "tipo": "numeral",
+          "identificador": "04.",
+          "contenido": "Intereses de valores, créditos y bonos. 11,736.9",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 102,
+          "tipo": "numeral",
+          "identificador": "05.",
+          "contenido": "Utilidades: 600.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 103,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "De organismos descentralizados y empresas de 0.0 participación estatal.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 104,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "De Lotería Nacional. 600.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 105,
+          "tipo": "numeral",
+          "identificador": "03.",
+          "contenido": "Otras. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 106,
+          "tipo": "numeral",
+          "identificador": "06.",
+          "contenido": "Otros. 0.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 107,
+          "tipo": "numeral",
+          "identificador": "59.",
+          "contenido": "Productos no Comprendidos en la Ley de Ingresos Vigente, Causados en 0.0 Ejercicios Fiscales Anteriores Pendientes de Liquidación o Pago.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 108,
+          "tipo": "numeral",
+          "identificador": "61.",
+          "contenido": "Aprovechamientos: 201,723.3",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 109,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Multas. 4,769.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 110,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Indemnizaciones. 2,408.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 111,
+          "tipo": "numeral",
+          "identificador": "03.",
+          "contenido": "Reintegros: 6,190.30",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 112,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Sostenimiento de las escuelas artículo 123. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 113,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Servicio de vigilancia forestal. 0.3",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 114,
+          "tipo": "numeral",
+          "identificador": "03.",
+          "contenido": "Otros. 6,190.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 115,
+          "tipo": "numeral",
+          "identificador": "04.",
+          "contenido": "Provenientes de obras públicas de infraestructura hidráulica. 4,304.7",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 116,
+          "tipo": "numeral",
+          "identificador": "05.",
+          "contenido": "Participaciones en los ingresos derivados de la aplicación de leyes 0.0 locales sobre herencias y legados expedidas de acuerdo con la Federación.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 117,
+          "tipo": "numeral",
+          "identificador": "06.",
+          "contenido": "Participaciones en los ingresos derivados de la aplicación de leyes 0.0 locales sobre donaciones expedidas de acuerdo con la Federación.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 118,
+          "tipo": "numeral",
+          "identificador": "07.",
+          "contenido": "Aportaciones de los Estados, Municipios y particulares para el 0.0 servicio del Sistema Escolar Federalizado.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 119,
+          "tipo": "numeral",
+          "identificador": "08.",
+          "contenido": "Cooperación de la Ciudad de México por servicios públicos locales 0.0 prestados por la Federación.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 120,
+          "tipo": "numeral",
+          "identificador": "09.",
+          "contenido": "Cooperación de los Gobiernos de Estados y Municipios y de 0.0 particulares para alcantarillado, electrificación, caminos y líneas telegráficas, telefónicas y para otras obras públicas.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 121,
+          "tipo": "numeral",
+          "identificador": "10.",
+          "contenido": "5 por ciento de días de cama a cargo de establecimientos 0.0 particulares para internamiento de enfermos y otros destinados a la Secretaría de Salud.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 122,
+          "tipo": "numeral",
+          "identificador": "11.",
+          "contenido": "Participaciones a cargo de los concesionarios de vías generales de 2,723.2 comunicación y de empresas de abastecimiento de energía eléctrica.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 123,
+          "tipo": "numeral",
+          "identificador": "12.",
+          "contenido": "Participaciones señaladas por la Ley Federal de Juegos y Sorteos. 2,578.3",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 124,
+          "tipo": "numeral",
+          "identificador": "13.",
+          "contenido": "Regalías provenientes de fondos y explotación minera. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 125,
+          "tipo": "numeral",
+          "identificador": "14.",
+          "contenido": "Aportaciones de contratistas de obras públicas. 31.9",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 126,
+          "tipo": "numeral",
+          "identificador": "15.",
+          "contenido": "Destinados al Fondo para el Desarrollo Forestal: 14.8",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 127,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Aportaciones que efectúen los Gobiernos de la Ciudad de 0.0 México, Estatales y Municipales, los organismos y entidades públicas, sociales y los particulares.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 128,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "4 de 47",
+          "padre_numero": 127,
+          "x_id": 293,
+          "x_texto": 293
+        },
+        {
+          "numero": 129,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 127,
+          "x_id": 137,
+          "x_texto": 137
+        },
+        {
+          "numero": 130,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "De las reservas nacionales forestales. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 131,
+          "tipo": "numeral",
+          "identificador": "03.",
+          "contenido": "Aportaciones al Instituto Nacional de Investigaciones 0.0 Forestales, Agrícolas y Pecuarias.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 132,
+          "tipo": "numeral",
+          "identificador": "04.",
+          "contenido": "Otros conceptos. 14.8",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 133,
+          "tipo": "numeral",
+          "identificador": "16.",
+          "contenido": "Cuotas Compensatorias. 1,807.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 134,
+          "tipo": "numeral",
+          "identificador": "17.",
+          "contenido": "Hospitales Militares. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 135,
+          "tipo": "numeral",
+          "identificador": "18.",
+          "contenido": "Participaciones por la explotación de obras del dominio público 0.0 señaladas por la Ley Federal del Derecho de Autor.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 136,
+          "tipo": "numeral",
+          "identificador": "19.",
+          "contenido": "Provenientes de decomiso y de bienes que pasan a propiedad del 337.0 Fisco Federal.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 137,
+          "tipo": "numeral",
+          "identificador": "20.",
+          "contenido": "Provenientes del programa de mejoramiento de los medios de 3,496.9 informática y de control de las autoridades aduaneras.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 138,
+          "tipo": "numeral",
+          "identificador": "21.",
+          "contenido": "No comprendidos en los incisos anteriores provenientes del 0.0 cumplimiento de convenios celebrados en otros ejercicios.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 139,
+          "tipo": "numeral",
+          "identificador": "22.",
+          "contenido": "Otros: 171,113.8",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 140,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Remanente de operación del Banco de México. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 141,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Utilidades por Recompra de Deuda. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 142,
+          "tipo": "numeral",
+          "identificador": "03.",
+          "contenido": "Rendimiento mínimo garantizado. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 143,
+          "tipo": "numeral",
+          "identificador": "04.",
+          "contenido": "Otros. 171,113.8",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 144,
+          "tipo": "numeral",
+          "identificador": "23.",
+          "contenido": "Provenientes de servicios en materia energética: 1,948.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 145,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Agencia Nacional de Seguridad Industrial y de Protección al 91.4 Medio Ambiente del Sector Hidrocarburos.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 146,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Secretaría de Energía. 659.3",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 147,
+          "tipo": "numeral",
+          "identificador": "03.",
+          "contenido": "Comisión Nacional de Energía. 1,197.3",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 148,
+          "tipo": "numeral",
+          "identificador": "62.",
+          "contenido": "Aprovechamientos Patrimoniales: 1,176.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 149,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Recuperaciones de capital: 1,176.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 150,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Fondos entregados en fideicomiso, a favor de Entidades 0.1 Federativas y empresas públicas.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 151,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Fondos entregados en fideicomiso, a favor de empresas 10.2 privadas y a particulares.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 152,
+          "tipo": "numeral",
+          "identificador": "03.",
+          "contenido": "Inversiones en obras de agua potable y alcantarillado. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 153,
+          "tipo": "numeral",
+          "identificador": "04.",
+          "contenido": "Desincorporaciones. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 154,
+          "tipo": "numeral",
+          "identificador": "05.",
+          "contenido": "Otros. 1,165.9",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 155,
+          "tipo": "numeral",
+          "identificador": "63.",
+          "contenido": "Accesorios de Aprovechamientos. 621.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 156,
+          "tipo": "numeral",
+          "identificador": "69.",
+          "contenido": "Aprovechamientos no Comprendidos en la Ley de Ingresos Vigente, Causados 0.0 en Ejercicios Fiscales Anteriores Pendientes de Liquidación o Pago.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 157,
+          "tipo": "numeral",
+          "identificador": "71.",
+          "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de Instituciones 123,819.2 Públicas de Seguridad Social:",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 158,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Instituto Mexicano del Seguro Social. 62,799.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 159,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Instituto de Seguridad y Servicios Sociales de los Trabajadores del 61,020.0 Estado.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 160,
+          "tipo": "numeral",
+          "identificador": "72.",
+          "contenido": "Ingresos por Ventas de Bienes y Prestación de Servicios de Empresas Públicas 1,507,154.4 del Estado: 5 de 47",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 161,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 160,
+          "x_id": 137,
+          "x_texto": 137
+        },
+        {
+          "numero": 162,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Petróleos Mexicanos. 971,677.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 163,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Comisión Federal de Electricidad. 535,477.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 164,
+          "tipo": "numeral",
+          "identificador": "73.",
+          "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de Entidades 0.0 Paraestatales y Fideicomisos No Empresariales y No Financieros.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 165,
+          "tipo": "numeral",
+          "identificador": "74.",
+          "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de Entidades 0.0 Paraestatales Empresariales No Financieras con Participación Estatal Mayoritaria.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 166,
+          "tipo": "numeral",
+          "identificador": "75.",
+          "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de Entidades 0.0 Paraestatales Empresariales Financieras Monetarias con Participación Estatal Mayoritaria.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 167,
+          "tipo": "numeral",
+          "identificador": "76.",
+          "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de Entidades 0.0 Paraestatales Empresariales Financieras No Monetarias con Participación Estatal Mayoritaria.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 168,
+          "tipo": "numeral",
+          "identificador": "77.",
+          "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de Fideicomisos 0.0 Financieros Públicos con Participación Estatal Mayoritaria.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 169,
+          "tipo": "numeral",
+          "identificador": "78.",
+          "contenido": "Ingresos por Venta de Bienes y Prestación de Servicios de los Poderes 0.0 Legislativo y Judicial, y de los Órganos Autónomos.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 170,
+          "tipo": "numeral",
+          "identificador": "79.",
+          "contenido": "Otros Ingresos.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 171,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Colaboración Fiscal y Fondos Distintos de Aportaciones",
+          "padre_numero": 170,
+          "x_id": 98,
+          "x_texto": 98
+        },
+        {
+          "numero": 172,
+          "tipo": "numeral",
+          "identificador": "81.",
+          "contenido": "Participaciones. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 173,
+          "tipo": "numeral",
+          "identificador": "82.",
+          "contenido": "Aportaciones. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 174,
+          "tipo": "numeral",
+          "identificador": "83.",
+          "contenido": "Convenios. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 175,
+          "tipo": "numeral",
+          "identificador": "84.",
+          "contenido": "Incentivos Derivados de la Colaboración Fiscal. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 176,
+          "tipo": "numeral",
+          "identificador": "85.",
+          "contenido": "Fondos Distintos de Aportaciones. 0.0 Jubilaciones",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 177,
+          "tipo": "numeral",
+          "identificador": "91.",
+          "contenido": "Transferencias y Asignaciones. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 178,
+          "tipo": "numeral",
+          "identificador": "93.",
+          "contenido": "Subsidios y Subvenciones. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 179,
+          "tipo": "numeral",
+          "identificador": "95.",
+          "contenido": "Pensiones y jubilaciones. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 180,
+          "tipo": "numeral",
+          "identificador": "97.",
+          "contenido": "Transferencias del Fondo Mexicano del Petróleo para la Estabilización y el 232,630.4 Desarrollo:",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 181,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Ordinarias. 232,630.4",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 182,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Extraordinarias. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 183,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Endeudamiento interno: 1,858,397.4",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 184,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Endeudamiento interno del Gobierno Federal. 1,779,541.7",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 185,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Otros financiamientos: 78,855.7",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 186,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Diferimiento de pagos. 78,855.7",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 187,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Otros. 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 188,
+          "tipo": "numeral",
+          "identificador": "02.",
+          "contenido": "Endeudamiento externo: 0.0",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 189,
+          "tipo": "numeral",
+          "identificador": "01.",
+          "contenido": "Endeudamiento externo del Gobierno Federal. 0.0 6 de 47",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 190,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 189,
+          "x_id": 137,
+          "x_texto": 137
+        },
+        {
+          "numero": 191,
+          "tipo": "numeral",
+          "identificador": "03.",
+          "contenido": "Financiamiento Interno.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 192,
+          "tipo": "numeral",
+          "identificador": "04.",
+          "contenido": "Déficit de organismos y empresas de control directo. -101,616.2",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 193,
+          "tipo": "numeral",
+          "identificador": "05.",
+          "contenido": "Déficit de empresas públicas del Estado. -284,154.8 Informativo: Endeudamiento neto del Gobierno Federal (0.01.01+0.02.01) 1,779,541.7 Cuando una ley que establezca alguno de los ingresos previstos en este artículo, contenga disposiciones que señalen otros ingresos, estos últimos se considerarán comprendidos en el numeral que corresponda a los ingresos a que se refiere este precepto.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 194,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Derivado del monto de ingresos fiscales a obtener durante el ejercicio fiscal de 2026, se proyecta una recaudación federal participable por 5 billones 339 mil 634 millones de pesos.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 195,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Se estima que durante el ejercicio fiscal de 2026, en términos monetarios, el pago en especie del impuesto sobre servicios expresamente declarados de interés público por ley, en los que intervengan empresas concesionarias de bienes del dominio directo de la Nación, previsto en la Ley que establece, reforma y adiciona las disposiciones relativas a diversos impuestos publicada en el Diario Oficial de la Federación el 31 de diciembre de 1968, ascenderá al equivalente de 500 millones de pesos.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 196,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los recursos que durante el ejercicio fiscal de 2026 se destinen al Fondo de Estabilización de los Ingresos de las Entidades Federativas en términos de las disposiciones aplicables, podrán utilizarse para cubrir las obligaciones derivadas de los esquemas que se instrumenten o se hayan instrumentado para potenciar los recursos de dicho fondo, en los términos dispuestos por la Secretaría de Hacienda y Crédito Público.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 197,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado podrá transferir a la Reserva Financiera y Actuarial del Seguro de Salud, el excedente de la Reserva de Operación para Contingencias y Financiamiento sobre el monto establecido en el artículo 240 de la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 198,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para el ejercicio fiscal de 2026, el gasto en inversión física, inversión financiera e inversión en desarrollo de capital humano del sector público presupuestario, aprobado en el Presupuesto de Egresos de la Federación para el efectos del equilibrio presupuestario previsto en el artículo 17 de la Ley Federal de Presupuesto y Responsabilidad Hacendaria. Se entenderá por inversión en desarrollo de capital humano al gasto programable destinado a educación, salud pública preventiva y formación o certificación de competencias, que incremente de forma sostenible la productividad y los ingresos de la población. Se excluyen transferencias no condicionadas, pensiones, subsidios generalizados y gasto administrativo.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "2",
       "tipo": "articulo",
       "orden": 2,
       "pagina": 7,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Se autoriza al Ejecutivo Federal, por conducto de la Secretaría de Hacienda y Crédito Público, para contratar y ejercer créditos, empréstitos y otras formas del ejercicio del crédito público, incluso mediante la emisión de valores, en los términos de la Ley Federal de Deuda Pública y para el financiamiento del Presupuesto de Egresos millones de pesos.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Asimismo, la persona titular del Ejecutivo Federal podrá contratar obligaciones constitutivas de deuda pública interna adicionales a lo autorizado, siempre que el endeudamiento neto externo sea menor al establecido en el presente artículo en un monto equivalente al de dichas obligaciones adicionales. La persona titular del Ejecutivo Federal queda autorizada para contratar y ejercer en el exterior créditos, empréstitos y otras formas del ejercicio del crédito público, incluso mediante la emisión de valores, para el financiamiento del Presupuesto de Egresos de la a efecto de obtener un monto de endeudamiento neto externo de hasta 15 mil 500 millones de dólares de los Estados Unidos de América, el cual incluye el monto de endeudamiento neto externo que se ejercería con organismos financieros internacionales. De igual forma, el Ejecutivo Federal y las entidades podrán contratar obligaciones constitutivas de deuda pública externa adicionales a lo autorizado, siempre que el endeudamiento neto interno sea menor al establecido en el presente artículo en un monto equivalente al de dichas obligaciones adicionales. El cómputo de lo anterior se realizará, en una sola ocasión, el último día hábil bancario del ejercicio fiscal de 2026 considerando el tipo de cambio para solventar obligaciones denominadas en moneda extranjera pagaderas en la 7 de 47",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios República Mexicana que publique el Banco de México en el Diario Oficial de la Federación, así como la equivalencia del peso mexicano con otras monedas que dé a conocer el propio Banco de México, en todos los casos en la fecha en que se hubieren realizado las operaciones correspondientes.",
+          "padre_numero": 2,
+          "x_id": 137,
+          "x_texto": 137
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "También se autoriza al Ejecutivo Federal para que, a través de la Secretaría de Hacienda y Crédito Público, emita valores en moneda nacional y contrate empréstitos para canje o refinanciamiento de obligaciones del erario federal, en los términos de la Ley Federal de Deuda Pública. Asimismo, la persona titular del Ejecutivo Federal queda autorizada para contratar créditos o emitir valores en el exterior con el objeto de canjear o refinanciar endeudamiento externo.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Las operaciones a las que se refiere el párrafo anterior no deberán implicar endeudamiento neto adicional al autorizado para el ejercicio fiscal de 2026.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los montos establecidos en el artículo 1o., numeral 0 \"Ingresos Derivados de Financiamientos\" de esta Ley, así como el monto de endeudamiento neto interno consignado en este artículo, se verán, en su caso, modificados en lo conducente como resultado de la distribución, entre el Gobierno federal y los organismos y empresas de control",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "3",
       "tipo": "articulo",
       "orden": 3,
       "pagina": 8,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Se autoriza al Instituto para la Protección al Ahorro Bancario a contratar créditos o emitir valores con el único objeto de canjear o refinanciar exclusivamente sus obligaciones financieras, a fin de hacer frente a sus obligaciones de pago, otorgar liquidez a sus títulos y, en general, mejorar los términos y condiciones de sus obligaciones financieras. Los recursos obtenidos con esta autorización únicamente se podrán aplicar en los términos establecidos en la Ley de Protección al Ahorro Bancario, incluidos sus artículos transitorios. Sobre estas operaciones de canje y refinanciamiento se deberá informar trimestralmente al Congreso de la Unión.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Banco de México actuará como agente financiero del Instituto para la Protección al Ahorro Bancario, para la emisión, colocación, compra y venta, en el mercado nacional, de los valores representativos de la deuda del citado Instituto y, en general, para el servicio de dicha deuda. El Banco de México también podrá operar por cuenta propia con los valores referidos.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En el evento de que en las fechas en que corresponda efectuar pagos por principal o intereses de los valores que el Banco de México coloque por cuenta del Instituto para la Protección al Ahorro Bancario, este no tenga recursos suficientes para cubrir dichos pagos en la cuenta que, para tal efecto, le lleve el Banco de México, el propio Banco deberá proceder a emitir y colocar valores a cargo del Instituto para la Protección al Ahorro Bancario, por cuenta de este y por el importe necesario para cubrir los pagos que correspondan. Al determinar las características de la emisión y de la colocación, el citado Banco procurará las mejores condiciones para el mencionado Instituto dentro de lo que el mercado permita.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Banco de México deberá efectuar la colocación de los valores a que se refiere el párrafo anterior en un plazo no mayor de 15 días hábiles contado a partir de la fecha en que se presente la insuficiencia de fondos en la cuenta del Instituto para la Protección al Ahorro Bancario. Excepcionalmente, la Junta de Gobierno del Banco de México podrá ampliar este plazo una o más veces por un plazo conjunto no mayor de tres meses, si ello resulta conveniente para evitar trastornos en el mercado financiero.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En cumplimiento al artículo 45 de la Ley de Protección al Ahorro Bancario, se dispone que, en tanto se efectúe la colocación referida en el párrafo anterior, el Banco de México podrá cargar la cuenta corriente que le lleva a la Tesorería de la Federación, sin que se requiera la instrucción de la persona titular de dicha Tesorería, para atender el servicio de la deuda que emita el Instituto para la Protección al Ahorro Bancario. El Banco de México deberá abonar a la cuenta corriente de la Tesorería de la Federación el importe de la colocación de valores que efectúe en términos de este artículo.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "4",
       "tipo": "articulo",
       "orden": 4,
       "pagina": 8,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Se autoriza para Petróleos Mexicanos la contratación y ejercicio de créditos, empréstitos y otras formas del ejercicio del crédito público, incluso mediante la emisión de valores, así como el canje o refinanciamiento de sus obligaciones constitutivas de deuda pública, a efecto de obtener un monto de endeudamiento neto interno de hasta 160 mil 619.6 millones de pesos, y un monto de endeudamiento neto externo de hasta 5 mil 342.1 millones de dólares de los Estados Unidos de América; asimismo, se podrán contratar obligaciones constitutivas de deuda pública interna o externa adicionales a lo autorizado, siempre que el endeudamiento neto externo o interno, respectivamente, sea menor al establecido en este párrafo en un monto equivalente al de dichas obligaciones adicionales. El uso del endeudamiento anterior deberá cumplir con la meta de balance financiero aprobado.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "8 de 47",
+          "padre_numero": 1,
+          "x_id": 293,
+          "x_texto": 293
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 1,
+          "x_id": 137,
+          "x_texto": 137
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Se autoriza para la Comisión Federal de Electricidad la contratación y ejercicio de créditos, empréstitos y otras formas del ejercicio del crédito público, incluso mediante la emisión de valores, así como el canje o refinanciamiento de sus obligaciones constitutivas de deuda pública, a efecto de obtener un monto de endeudamiento neto interno de hasta 8 mil 764.2 millones de pesos, y un monto de endeudamiento neto externo de hasta 969.0 millones de dólares de los Estados Unidos de América; asimismo, se podrán contratar obligaciones constitutivas de deuda pública interna o externa adicionales a lo autorizado, siempre que el endeudamiento neto externo o interno, respectivamente, sea menor al establecido en este párrafo en un monto equivalente al de dichas obligaciones adicionales. El uso del endeudamiento anterior deberá cumplir con la meta de balance financiero aprobado.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El cómputo de lo establecido en los dos párrafos anteriores se realizará en una sola ocasión, el último día hábil bancario del ejercicio fiscal de 2026 considerando el tipo de cambio para solventar obligaciones denominadas en moneda extranjera pagaderas en la República Mexicana que publique el Banco de México en el Diario Oficial de la Federación, así como la equivalencia del peso mexicano con otras monedas que dé a conocer el propio Banco de México, en todos los casos en la fecha en que se hubieren realizado las operaciones correspondientes.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Ejecutivo Federal, por conducto de la Secretaría de Hacienda y Crédito Público, podrá contratar obligaciones constitutivas de deuda pública interna o externa adicionales a las autorizadas en los párrafos primero y segundo del artículo 2o. de esta Ley, siempre que el endeudamiento neto externo o interno, respectivamente, de Petróleos Mexicanos o de la Comisión Federal de Electricidad sea menor al autorizado en el presente artículo, en un monto equivalente al de las citadas obligaciones adicionales. La Secretaría de Hacienda y Crédito Público podrá entregar dichos montos a las empresas públicas del Estado antes mencionadas en la forma y términos que determine.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Se autoriza al Ejecutivo Federal, por conducto de la Secretaría de Hacienda y Crédito Público, a contratar créditos, empréstitos y otras formas de crédito público, incluso mediante la emisión de valores, con el fin de llevar a cabo operaciones de canje y refinanciamiento de obligaciones de deuda de las empresas públicas del Estado a que se refieren los párrafos primero y segundo del presente artículo, dentro del monto global de endeudamiento autorizado. Lo dispuesto en el presente párrafo no implica la autorización de endeudamiento adicional para el Gobierno federal en el ejercicio fiscal de 2026.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "5",
       "tipo": "articulo",
       "orden": 5,
       "pagina": 9,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Se autoriza a la banca de desarrollo, a los fondos de fomento y al Instituto del Fondo Nacional para el Consumo de los Trabajadores un monto conjunto de déficit por intermediación financiera, definida como el Resultado de Operación que considera la Constitución Neta de Reservas Crediticias Preventivas, de cero pesos para el ejercicio fiscal de 2026.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El monto autorizado conforme al párrafo anterior podrá ser adecuado previa autorización del órgano de gobierno de la entidad de que se trate y con la opinión favorable de la Secretaría de Hacienda y Crédito Público.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "6",
       "tipo": "articulo",
       "orden": 6,
       "pagina": 9,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Se autoriza para la Ciudad de México la contratación y ejercicio de créditos, empréstitos y otras formas de crédito público para un endeudamiento neto de 3 mil 500 millones de pesos para el financiamiento de se autoriza la contratación y ejercicio de créditos, empréstitos y otras formas de crédito público para realizar operaciones de canje, refinanciamiento o reestructura de la deuda pública de la Ciudad de México.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El ejercicio del monto de endeudamiento autorizado se sujetará a lo dispuesto en la Ley de Disciplina Financiera de las Entidades Federativas y los Municipios.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "7",
       "tipo": "articulo",
       "orden": 7,
       "pagina": 9,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En el ejercicio fiscal de 2026, la Federación percibirá los ingresos por proyectos de infraestructura productiva de largo plazo de inversión financiada directa y condicionada de la Comisión Federal de Electricidad por un total de 509 mil 256.2 millones de pesos, de los cuales 317 mil 801.4 millones de pesos corresponden a inversión directa y 191 mil 454.9 millones de pesos a inversión condicionada.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "8",
       "tipo": "articulo",
       "orden": 8,
       "pagina": 9,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Se autoriza al Ejecutivo Federal a contratar proyectos de infraestructura productiva de largo plazo de la Comisión Federal de Electricidad en los términos de los artículos 18 de la Ley Federal de Deuda Pública y 32, párrafos segundo a sexto, de la Ley Federal de Presupuesto y Responsabilidad Hacendaria, así como del Título Cuarto, Capítulo XIV del Reglamento de este último ordenamiento, por un total de 32 mil 472.7 millones de pesos que corresponde a catorce proyectos de inversión directa.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        }
+      ]
     },
     {
       "numero": "9",
       "tipo": "articulo",
       "orden": 9,
       "pagina": 9,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Ejecutivo Federal, por conducto de la Secretaría de Hacienda y Crédito Público, queda autorizado para fijar o modificar las compensaciones que deban cubrir los organismos descentralizados y las empresas de participación estatal, por los bienes federales aportados o asignados a dichas entidades paraestatales para su explotación o en relación con el monto de los productos o ingresos brutos que perciban.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "9 de 47",
+          "padre_numero": 1,
+          "x_id": 293,
+          "x_texto": 293
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Secretaría General Secretaría de Servicios Parlamentarios",
+          "padre_numero": 1,
+          "x_id": 137,
+          "x_texto": 137
+        }
+      ]
     },
     {
       "numero": "10",

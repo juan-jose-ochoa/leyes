@@ -580,7 +580,8 @@ class Extractor:
 
     def _encontrar_pagina_articulo(self, numero: str) -> tuple:
         """Encuentra página inicial y final de un artículo."""
-        patron = re.compile(rf'Artículo\s+{re.escape(numero)}\.', re.IGNORECASE)
+        # Sufijo ordinal opcional (1o, 2a) para leyes como LFDC, LIF
+        patron = re.compile(rf'Artículo\s+{re.escape(numero)}[oa]?\.', re.IGNORECASE)
         patron_sig = re.compile(r'Artículo\s+\d+[o]?(?:\.-[A-Z])?(?:-[A-Z])?(?:\s+[A-Z][a-z]+)?\.', re.IGNORECASE)
 
         pag_inicio = None
@@ -765,7 +766,7 @@ class Extractor:
             numero_patron = re.escape(numero).replace(r'\-', r'\.?-')
             # Flexibilizar espacio antes de sufijos (bis/ter/etc) para aceptar guión o espacio
             numero_patron = re.sub(r'\\ (bis|ter|quáter|quinquies|sexies)', '[-–\\\\s]+\\1', numero_patron, flags=re.IGNORECASE)
-            patron_este = re.compile(rf'(?:ARTICULO|ARTÍCULO|Artículo)\s+{numero_patron}\.', re.IGNORECASE)
+            patron_este = re.compile(rf'(?:ARTICULO|ARTÍCULO|Artículo)\s+{numero_patron}[oa]?\.', re.IGNORECASE)
 
             # Extraer párrafos
             parrafos = self._extraer_parrafos_articulo(pag_inicio, pag_fin, patron_este, patron_siguiente)
