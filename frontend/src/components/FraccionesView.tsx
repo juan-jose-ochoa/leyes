@@ -55,8 +55,8 @@ function FraccionItem({ fraccion, mostrarReferencias }: { fraccion: FraccionWith
   })
 
   // Estilo del identificador según tipo
-  // numero ya incluye puntuación para inciso (a)) y numeral (1.)
-  // pero NO para fraccion (I, II) ni apartado (A, B)
+  // El identificador en BD/JSON es solo la letra/número sin sufijo
+  // El frontend agrega el sufijo apropiado: punto (.) o paréntesis ())
   const getIdentifier = () => {
     switch (tipo) {
       case 'fraccion':
@@ -68,13 +68,13 @@ function FraccionItem({ fraccion, mostrarReferencias }: { fraccion: FraccionWith
       case 'inciso':
         return (
           <span className="font-semibold text-emerald-700 dark:text-emerald-400">
-            {numero}
+            {numero})
           </span>
         )
       case 'numeral':
         return (
           <span className="font-medium text-amber-700 dark:text-amber-400">
-            {numero}
+            {numero}.
           </span>
         )
       case 'apartado':
