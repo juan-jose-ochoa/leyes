@@ -1,20 +1,20 @@
 {
   "_advertencia": [
-    "╔══════════════════════════════════════════════════════════════════╗",
-    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
-    "║                                                                  ║",
-    "║  NO MODIFICAR MANUALMENTE                                        ║",
-    "║                                                                  ║",
-    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
-    "║  La base de datos se regenera desde aquí.                       ║",
-    "║                                                                  ║",
-    "║  Si el contenido es incorrecto:                                 ║",
-    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
-    "║                                                                  ║",
-    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
-    "╚══════════════════════════════════════════════════════════════════╝"
+    "=====================================================================",
+    "  ARCHIVO SAGRADO - FUENTE UNICA DE VERDAD",
+    "",
+    "  NO MODIFICAR MANUALMENTE",
+    "",
+    "  Este archivo es la UNICA fuente de verdad para el contenido.",
+    "  La base de datos se regenera desde aqui.",
+    "",
+    "  Si el contenido es incorrecto:",
+    "    -> CORRIGE EL SCRIPT, no este archivo",
+    "",
+    "  Modificarlo manualmente es SABOTAJE al sistema.",
+    "====================================================================="
   ],
-  "_generado_por": "extraer.py",
+  "_generado_por": "extractor/ExtractorGeneral",
   "ley": "LSS",
   "tipo_contenido": "articulo",
   "articulos": [
@@ -246,6 +246,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL REGIMEN OBLIGATORIO",
+          "padre_numero": 1,
+          "x_id": 227,
+          "x_texto": 227
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "GENERALIDADES",
+          "padre_numero": 2,
+          "x_id": 258,
+          "x_texto": 258
         }
       ]
     },
@@ -1075,6 +1093,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+          "padre_numero": 1,
+          "x_id": 169,
+          "x_texto": 169
         }
       ]
     },
@@ -2142,7 +2169,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "Muerte.",
+          "contenido": "Muerte. Se entenderá por incapacidad temporal, incapacidad permanente parcial e incapacidad permanente total, lo que al respecto disponen los artículos relativos de la Ley Federal del Trabajo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2151,10 +2178,10 @@
           "numero": 6,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Se entenderá por incapacidad temporal, incapacidad permanente parcial e incapacidad permanente total, lo que al respecto disponen los artículos relativos de la Ley Federal del Trabajo.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "contenido": "DE LAS PRESTACIONES EN ESPECIE",
+          "padre_numero": 5,
+          "x_id": 206,
+          "x_texto": 206
         }
       ]
     },
@@ -2225,6 +2252,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LAS PRESTACIONES EN DINERO",
+          "padre_numero": 1,
+          "x_id": 209,
+          "x_texto": 209
         }
       ]
     },
@@ -2544,22 +2580,13 @@
           "numero": 4,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": "Contratar rentas por una cuantía mayor.",
+          "contenido": "Contratar rentas por una cuantía mayor. Las pensiones y prestaciones a que se refiere la presente Ley serán:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Las pensiones y prestaciones a que se refiere la presente Ley serán:",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 6,
           "tipo": "fraccion",
           "identificador": "I",
           "contenido": "El pago de una cantidad igual a sesenta días de salario mínimo general que rija en el Distrito Federal en la fecha de fallecimiento del asegurado.",
@@ -2568,7 +2595,7 @@
           "x_texto": 107
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Este pago se hará a la persona preferentemente familiar del asegurado, que presente copia del acta de defunción y la cuenta original de los gastos de funeral;",
@@ -2577,7 +2604,7 @@
           "x_texto": 85
         },
         {
-          "numero": 8,
+          "numero": 7,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "A la viuda o viudo de la o el asegurado, a la concubina o concubinario que le sobreviva o a quien haya suscrito una unión civil con la o el asegurado, se le otorgará una pensión equivalente al cuarenta por ciento de la que hubiese correspondido a aquél, tratándose de incapacidad permanente total. El importe de esta prestación no podrá ser inferior a la cuantía mínima que corresponda a la pensión de viudez del seguro de invalidez y vida;",
@@ -2589,7 +2616,7 @@
           ]
         },
         {
-          "numero": 9,
+          "numero": 8,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "A cada uno de los huérfanos que lo sean de padre o madre, que se encuentren totalmente incapacitados, se les otorgará una pensión equivalente al veinte por ciento de la que hubiese correspondido al asegurado tratándose de incapacidad permanente total. Esta pensión se extinguirá cuando el huérfano recupere su capacidad para el trabajo;",
@@ -2598,7 +2625,7 @@
           "x_texto": 107
         },
         {
-          "numero": 10,
+          "numero": 9,
           "tipo": "fraccion",
           "identificador": "IV",
           "contenido": "A cada uno de los huérfanos que lo sean de padre o madre, menores de dieciséis años, se les otorgará una pensión equivalente al veinte por ciento de la que hubiera correspondido al asegurado tratándose de incapacidad permanente total. Esta pensión se extinguirá cuando el huérfano cumpla dieciséis años.",
@@ -2607,7 +2634,7 @@
           "x_texto": 107
         },
         {
-          "numero": 11,
+          "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Deberá otorgarse o extenderse el goce de esta pensión, en los términos del reglamento respectivo, a los huérfanos mayores de dieciséis años, hasta una edad máxima de veinticinco años, cuando se encuentren estudiando en planteles del sistema educativo nacional, tomando en consideración, las condiciones económicas, familiares y personales del beneficiario y siempre que no sea sujeto del régimen obligatorio;",
@@ -2616,7 +2643,7 @@
           "x_texto": 85
         },
         {
-          "numero": 12,
+          "numero": 11,
           "tipo": "fraccion",
           "identificador": "V",
           "contenido": "En el caso de las dos fracciones anteriores, si posteriormente falleciera el otro progenitor, la pensión de orfandad se aumentará del veinte al treinta por ciento, a partir de la fecha del fallecimiento del segundo progenitor y se extinguirá en los términos establecidos en las mismas fracciones, y",
@@ -2625,7 +2652,7 @@
           "x_texto": 107
         },
         {
-          "numero": 13,
+          "numero": 12,
           "tipo": "fraccion",
           "identificador": "VI",
           "contenido": "A cada uno de los huérfanos, cuando lo sean de padre y madre, menores de dieciséis años o hasta veinticinco años si se encuentran estudiando en los planteles del sistema educativo nacional, o en tanto se encuentren totalmente incapacitados debido a una enfermedad crónica o discapacidad por deficiencias físicas, mentales, intelectuales o sensoriales, que les impida mantenerse por su propio trabajo se les otorgará una pensión equivalente al treinta por ciento de la que hubiera correspondido al asegurado tratándose de incapacidad permanente total.",
@@ -2637,7 +2664,7 @@
           ]
         },
         {
-          "numero": 14,
+          "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El derecho al goce de las pensiones a que se refiere el párrafo anterior, se extinguirá en los mismos términos expresados en las fracciones III y IV de este precepto.",
@@ -2646,7 +2673,7 @@
           "x_texto": 85
         },
         {
-          "numero": 15,
+          "numero": 14,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Al término de las pensiones de orfandad establecidas en este artículo, se otorgará al huérfano un pago adicional de tres mensualidades de la pensión que disfrutaba.",
@@ -2655,7 +2682,7 @@
           "x_texto": 85
         },
         {
-          "numero": 16,
+          "numero": 15,
           "tipo": "texto",
           "identificador": null,
           "contenido": "A las personas señaladas en las fracciones II y VI de este artículo, así como a los ascendientes pensionados en los términos del artículo 66, se les otorgará un aguinaldo anual equivalente a quince días del importe de la pensión que perciban.",
@@ -2752,6 +2779,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL INCREMENTO PERIODICO DE LAS PENSIONES",
+          "padre_numero": 1,
+          "x_id": 169,
+          "x_texto": 169
         }
       ]
     },
@@ -2789,6 +2825,15 @@
           "referencias": [
             "Artículo reformado DOF 20-01-2023"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL REGIMEN FINANCIERO",
+          "padre_numero": 1,
+          "x_id": 232,
+          "x_texto": 232
         }
       ]
     },
@@ -3282,25 +3327,16 @@
           "numero": 13,
           "tipo": "fraccion",
           "identificador": "XII",
-          "contenido": "El cinco por ciento del importe de los conceptos que lo integren, por gastos de administración.",
+          "contenido": "El cinco por ciento del importe de los conceptos que lo integren, por gastos de administración. Para el fincamiento de los capitales constitutivos, el Instituto, al iniciar la atención del asegurado o, en su caso, del beneficiario, por conducto de sus servicios médicos, establecerá el diagnóstico y el tratamiento requerido especificando su duración, tipo y número de las prestaciones en especie a otorgar, así como las secuelas orgánicas o funcionales derivadas del siniestro y procederá a determinar el importe de dichas prestaciones con base en los costos unitarios por nivel de atención, aplicables para el cobro de servicios a pacientes no derechohabientes.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 14,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Para el fincamiento de los capitales constitutivos, el Instituto, al iniciar la atención del asegurado o, en su caso, del beneficiario, por conducto de sus servicios médicos, establecerá el diagnóstico y el tratamiento requerido especificando su duración, tipo y número de las prestaciones en especie a otorgar, así como las secuelas orgánicas o funcionales derivadas del siniestro y procederá a determinar el importe de dichas prestaciones con base en los costos unitarios por nivel de atención, aplicables para el cobro de servicios a pacientes no derechohabientes.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Párrafo adicionado DOF 20-12-2001"
           ]
         },
         {
-          "numero": 15,
+          "numero": 14,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, por conducto de sus áreas de prestaciones económicas calculará el monto de las prestaciones económicas a otorgar, por concepto de subsidios, gastos de funeral, indemnización global y el valor actual de la pensión, que correspondan.",
@@ -3312,7 +3348,7 @@
           ]
         },
         {
-          "numero": 16,
+          "numero": 15,
           "tipo": "texto",
           "identificador": null,
           "contenido": "De acuerdo a lo señalado en los párrafos anteriores, el Instituto al iniciar la atención del asegurado o, en su caso, del beneficiario, fincará y cobrará los capitales constitutivos, con independencia de que al concluir el tratamiento del asegurado o el beneficiario, en su caso, pueda fincar nuevos capitales constitutivos por las prestaciones otorgadas que no se hubiesen considerado en los créditos inicialmente emitidos.",
@@ -3324,7 +3360,7 @@
           ]
         },
         {
-          "numero": 17,
+          "numero": 16,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las disposiciones de este artículo serán aplicables a los capitales constitutivos derivados de todos los seguros del régimen obligatorio.",
@@ -3334,6 +3370,15 @@
           "referencias": [
             "Párrafo adicionado DOF 20-12-2001"
           ]
+        },
+        {
+          "numero": 17,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA PREVENCION DE RIESGOS DE TRABAJO",
+          "padre_numero": 16,
+          "x_id": 179,
+          "x_texto": 179
         }
       ]
     },
@@ -3450,6 +3495,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+          "padre_numero": 4,
+          "x_id": 169,
+          "x_texto": 169
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "GENERALIDADES",
+          "padre_numero": 5,
+          "x_id": 258,
+          "x_texto": 258
         }
       ]
     },
@@ -3873,6 +3936,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LAS PRESTACIONES EN ESPECIE",
+          "padre_numero": 1,
+          "x_id": 206,
+          "x_texto": 206
         }
       ]
     },
@@ -4021,6 +4093,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LAS PRESTACIONES EN DINERO",
+          "padre_numero": 1,
+          "x_id": 209,
+          "x_texto": 209
         }
       ]
     },
@@ -4296,6 +4377,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL REGIMEN FINANCIERO",
+          "padre_numero": 1,
+          "x_id": 232,
+          "x_texto": 232
         }
       ]
     },
@@ -4418,6 +4508,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA CONSERVACION DE DERECHOS",
+          "padre_numero": 1,
+          "x_id": 201,
+          "x_texto": 201
         }
       ]
     },
@@ -4485,6 +4584,15 @@
           "referencias": [
             "Artículo adicionado DOF 22-06-2018"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA MEDICINA PREVENTIVA",
+          "padre_numero": 1,
+          "x_id": 224,
+          "x_texto": 224
         }
       ]
     },
@@ -4518,7 +4626,16 @@
           "contenido": "El Instituto se coordinará con la Secretaría de Salud y con otras dependencias y organismos públicos, con objeto de realizar las campañas y programas a que se refiere el artículo anterior.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL REGISTRO DE LAS ACTIVIDADES PARA LA SALUD A LA POBLACIÓN DERECHOHABIENTE",
+          "padre_numero": 1,
+          "x_id": 109,
+          "x_texto": 109,
           "referencias": [
             "Sección adicionada DOF 20-12-2001"
           ]
@@ -4678,6 +4795,15 @@
           "referencias": [
             "Artículo reformado DOF 28-05-2012"
           ]
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL RAMO DE INVALIDEZ",
+          "padre_numero": 2,
+          "x_id": 237,
+          "x_texto": 237
         }
       ]
     },
@@ -4909,19 +5035,10 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Padezca un estado de invalidez anterior a su afiliación al régimen obligatorio.",
+          "contenido": "Padezca un estado de invalidez anterior a su afiliación al régimen obligatorio. En los casos de las fracciones I y II, el Instituto podrá otorgar el total o una parte de la pensión a los familiares que tuvieran derecho a las prestaciones que se conceden en el caso de muerte y la pensión se cubrirá mientras dure la invalidez del asegurado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "En los casos de las fracciones I y II, el Instituto podrá otorgar el total o una parte de la pensión a los familiares que tuvieran derecho a las prestaciones que se conceden en el caso de muerte y la pensión se cubrirá mientras dure la invalidez del asegurado.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
         }
       ]
     },
@@ -4991,6 +5108,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL RAMO DE VIDA",
+          "padre_numero": 2,
+          "x_id": 253,
+          "x_texto": 253
         }
       ]
     },
@@ -5411,6 +5537,15 @@
           "referencias": [
             "Artículo adicionado DOF 07-11-2019"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LAS ASIGNACIONES FAMILIARES Y AYUDA ASISTENCIAL",
+          "padre_numero": 1,
+          "x_id": 142,
+          "x_texto": 142
         }
       ]
     },
@@ -5667,19 +5802,19 @@
           "contenido": "Cuando el menor cumpla dieciséis años;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "referencias": [
+            "Artículo adicionado DOF 04-06-2019"
+          ]
         },
         {
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "Cuando el ascendiente que goza de la licencia, sea contratado por un nuevo patrón.",
+          "contenido": "Cuando el ascendiente que goza de la licencia, sea contratado por un nuevo patrón. DE LA CUANTIA DE LAS PENSIONES DE INVALIDEZ Y VIDA",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107,
-          "referencias": [
-            "Artículo adicionado DOF 04-06-2019"
-          ]
+          "x_texto": 107
         }
       ]
     },
@@ -5810,6 +5945,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL REGIMEN FINANCIERO",
+          "padre_numero": 1,
+          "x_id": 232,
+          "x_texto": 232
         }
       ]
     },
@@ -5899,6 +6043,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA CONSERVACION Y RECONOCIMIENTO DE DERECHOS",
+          "padre_numero": 3,
+          "x_id": 143,
+          "x_texto": 143
         }
       ]
     },
@@ -5987,6 +6140,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+          "padre_numero": 6,
+          "x_id": 124,
+          "x_texto": 124
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "GENERALIDADES",
+          "padre_numero": 7,
+          "x_id": 258,
+          "x_texto": 258
         }
       ]
     },
@@ -6030,6 +6201,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL RAMO DE CESANTIA EN EDAD AVANZADA",
+          "padre_numero": 2,
+          "x_id": 179,
+          "x_texto": 179
         }
       ]
     },
@@ -6398,6 +6578,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL RAMO DE VEJEZ",
+          "padre_numero": 1,
+          "x_id": 249,
+          "x_texto": 249
         }
       ]
     },
@@ -6559,6 +6748,15 @@
           "referencias": [
             "Párrafo reformado DOF 16-12-2020"
           ]
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA AYUDA PARA GASTOS DE MATRIMONIO",
+          "padre_numero": 5,
+          "x_id": 180,
+          "x_texto": 180
         }
       ]
     },
@@ -6593,7 +6791,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Que compruebe con documentos fehacientes la muerte de la persona que registró como cónyuge en el Instituto, o que, en su caso, exhiba el acta de divorcio, y",
+          "contenido": "Que compruebe con documentos fehacientes la muerte de la persona que registró como cónyuge en el Instituto, o que, en su caso, exhiba el acta de divorcio, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -6605,7 +6803,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Que cualquiera de los cónyuges no haya sido registrado con anterioridad en el Instituto con esa calidad.",
+          "contenido": "Que cualquiera de los cónyuges no haya sido registrado con anterioridad en el Instituto con esa calidad.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -6653,6 +6851,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL REGIMEN FINANCIERO",
+          "padre_numero": 2,
+          "x_id": 232,
+          "x_texto": 232
         }
       ]
     },
@@ -6710,13 +6917,76 @@
           "numero": 4,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": "Los patrones cubrirán la cuota que corresponda sobre el salario base de cotización, calculada conforme a la siguiente tabla: 1.00 SM* 3.150% 1.01 SM a 1.50 UMA** 4.202% 1.51 a 2.00 UMA 6.552% 2.01 a 2.50 UMA 7.962% 2.51 a 3.00 UMA 8.902% 3.01 a 3.50 UMA 9.573% 3.51 a 4.00 UMA 10.077% 4.01 UMA en adelante 11.875% *Salario Mínimo ** Unidad de Medida y Actualización",
+          "contenido": "Los patrones cubrirán la cuota que corresponda sobre el salario base de cotización, calculada conforme a la siguiente tabla:",
           "padre_numero": 3,
           "x_id": 106,
           "x_texto": 128
         },
         {
           "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Salario base de cotización del trabajador Cuota Patronal",
+          "padre_numero": 4,
+          "x_id": 160,
+          "x_texto": 160
+        },
+        {
+          "numero": 6,
+          "tipo": "numeral",
+          "identificador": "1.",
+          "contenido": "00 SM* 3.150%",
+          "padre_numero": 5,
+          "x_id": 237,
+          "x_texto": 259
+        },
+        {
+          "numero": 7,
+          "tipo": "numeral",
+          "identificador": "1.",
+          "contenido": "01 SM a 1.50 UMA** 4.202%",
+          "padre_numero": 5,
+          "x_id": 207,
+          "x_texto": 229
+        },
+        {
+          "numero": 8,
+          "tipo": "numeral",
+          "identificador": "1.",
+          "contenido": "51 a 2.00 UMA 6.552%",
+          "padre_numero": 5,
+          "x_id": 220,
+          "x_texto": 242
+        },
+        {
+          "numero": 9,
+          "tipo": "numeral",
+          "identificador": "2.",
+          "contenido": "01 a 2.50 UMA 7.962% 2.51 a 3.00 UMA 8.902%",
+          "padre_numero": 5,
+          "x_id": 220,
+          "x_texto": 242
+        },
+        {
+          "numero": 10,
+          "tipo": "numeral",
+          "identificador": "3.",
+          "contenido": "01 a 3.50 UMA 9.573% 3.51 a 4.00 UMA 10.077%",
+          "padre_numero": 5,
+          "x_id": 220,
+          "x_texto": 242
+        },
+        {
+          "numero": 11,
+          "tipo": "numeral",
+          "identificador": "4.",
+          "contenido": "01 UMA en adelante 11.875% *Salario Mínimo ** Unidad de Medida y Actualización",
+          "padre_numero": 5,
+          "x_id": 206,
+          "x_texto": 228
+        },
+        {
+          "numero": 12,
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Los trabajadores cubrirán una cuota del uno punto ciento veinticinco por ciento sobre el salario base de cotización.",
@@ -6728,7 +6998,7 @@
           ]
         },
         {
-          "numero": 6,
+          "numero": 13,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "Se deroga.",
@@ -6740,7 +7010,7 @@
           ]
         },
         {
-          "numero": 7,
+          "numero": 14,
           "tipo": "fraccion",
           "identificador": "IV",
           "contenido": "El Gobierno Federal, por cada día de salario cotizado, aportará mensualmente una cantidad por concepto de la cuota social, para los trabajadores que ganen hasta cuatro veces la unidad de medida y actualización, que se depositará en la cuenta individual de cada trabajador asegurado conforme a la tabla siguiente:",
@@ -6752,11 +7022,11 @@
           ]
         },
         {
-          "numero": 8,
+          "numero": 15,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los valores mencionados del importe de la cuota social, se actualizarán trimestralmente de conformidad con el Índice Nacional de Precios al Consumidor, en los meses de marzo, junio, septiembre y diciembre de cada año.",
-          "padre_numero": 7,
+          "padre_numero": 14,
           "x_id": 107,
           "x_texto": 107,
           "referencias": [
@@ -6764,7 +7034,7 @@
           ]
         },
         {
-          "numero": 9,
+          "numero": 16,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Estas cuotas y aportaciones al destinarse al otorgamiento de pensiones y demás beneficios establecidos en esta Ley, se entenderán destinadas al gasto público en materia de seguridad social.",
@@ -6800,6 +7070,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA PENSION GARANTIZADA",
+          "padre_numero": 2,
+          "x_id": 221,
+          "x_texto": 221
         }
       ]
     },
@@ -7010,6 +7289,15 @@
           "referencias": [
             "Artículo reformado DOF 20-12-2001"
           ]
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA CUENTA INDIVIDUAL Y DE LAS SOCIEDADES DE INVERSION ESPECIALIZADAS DE FONDOS PARA EL RETIRO",
+          "padre_numero": null,
+          "x_id": 77,
+          "x_texto": 77
         }
       ]
     },
@@ -7447,22 +7735,13 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El trabajador que cumpla con los requisitos de antigüedad de la cuenta a que se refiere el primer párrafo de este inciso, podrá optar, en todo caso, por el beneficio señalado en el inciso",
+          "contenido": "El trabajador que cumpla con los requisitos de antigüedad de la cuenta a que se refiere el primer párrafo de este inciso, podrá optar, en todo caso, por el beneficio señalado en el inciso a).",
           "padre_numero": 5,
           "x_id": 125,
           "x_texto": 125
         },
         {
           "numero": 8,
-          "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": ".",
-          "padre_numero": 5,
-          "x_id": 125,
-          "x_texto": 147
-        },
-        {
-          "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El derecho consignado en esta fracción sólo podrán ejercerlo los trabajadores que acrediten con los estados de cuenta correspondientes, no haber efectuado retiros durante los cinco años inmediatos anteriores a la fecha de la solicitud de retiro de recursos.",
@@ -7750,6 +8029,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+          "padre_numero": 1,
+          "x_id": 120,
+          "x_texto": 120
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL RAMO DE GUARDERIAS",
+          "padre_numero": 2,
+          "x_id": 229,
+          "x_texto": 229
         }
       ]
     },
@@ -7911,6 +8208,15 @@
           "referencias": [
             "Artículo reformado DOF 20-12-2001"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL RAMO DE LAS PRESTACIONES SOCIALES",
+          "padre_numero": 1,
+          "x_id": 180,
+          "x_texto": 180
         }
       ]
     },
@@ -8164,6 +8470,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LAS PRESTACIONES DE SOLIDARIDAD SOCIAL",
+          "padre_numero": 1,
+          "x_id": 170,
+          "x_texto": 170
         }
       ]
     },
@@ -8257,6 +8572,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA CONTINUACION VOLUNTARIA EN EL REGIMEN OBLIGATORIO",
+          "padre_numero": 2,
+          "x_id": 122,
+          "x_texto": 122
         }
       ]
     },
@@ -8406,6 +8730,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+          "padre_numero": 1,
+          "x_id": 127,
+          "x_texto": 127
         }
       ]
     },
@@ -8640,15 +8973,24 @@
         },
         {
           "numero": 2,
-          "tipo": "fraccion",
-          "identificador": "I",
-          "contenido": "Los ingresos reportados provenientes de la actividad que dio origen al aseguramiento, para los sujetos a que se refiere la fracción I del artículo 13 de esta Ley.",
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "I.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 85
         },
         {
           "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los ingresos reportados provenientes de la actividad que dio origen al aseguramiento, para los sujetos a que se refiere la fracción I del artículo 13 de esta Ley.",
+          "padre_numero": 2,
+          "x_id": 120,
+          "x_texto": 120
+        },
+        {
+          "numero": 4,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para efectos del cálculo de las cuotas obrero patronales se considerarán los límites establecidos en el artículo 28 de la presente Ley, y",
@@ -8660,19 +9002,28 @@
           ]
         },
         {
-          "numero": 4,
-          "tipo": "fraccion",
-          "identificador": "II",
-          "contenido": "Conforme al salario real integrado de acuerdo con el artículo 27 de este ordenamiento, para las personas a que se refiere la fracción V del artículo 13 de esta Ley.",
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "II.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107,
+          "x_texto": 85
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Conforme al salario real integrado de acuerdo con el artículo 27 de este ordenamiento, para las personas a que se refiere la fracción V del artículo 13 de esta Ley.",
+          "padre_numero": 5,
+          "x_id": 120,
+          "x_texto": 120,
           "referencias": [
             "Fracción reformada DOF 16-11-2022"
           ]
         },
         {
-          "numero": 5,
+          "numero": 7,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las bases de las fracciones anteriores serán aplicables, para todos los seguros que comprenda el aseguramiento en cada caso, con la excepción del seguro de enfermedades y maternidad, respecto del cual se estará a lo dispuesto por el artículo 106 de esta Ley.",
@@ -8681,7 +9032,7 @@
           "x_texto": 85
         },
         {
-          "numero": 6,
+          "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Consejo Técnico del Instituto ante las instancias competentes, proveerá lo necesario para que estas promuevan ante el Congreso de la Unión la revisión de estas bases de cotización, para propiciar que se mantenga o restituya, en su caso, el equilibrio financiero de estos seguros.",
@@ -8868,6 +9219,15 @@
           "referencias": [
             "Artículo reformado DOF 20-12-2001"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA SEGURIDAD SOCIAL EN EL CAMPO",
+          "padre_numero": 1,
+          "x_id": 193,
+          "x_texto": 193
         }
       ]
     },
@@ -9154,7 +9514,16 @@
           "contenido": "El acceso a la seguridad social de los sujetos a que se refiere el presente capítulo, podrá ser apoyado por el tercer aportante establecido en el artículo 230 de esta Ley. En cualquier caso éstos podrán acceder al seguro de salud para la familia regulado por este ordenamiento.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LAS PERSONAS TRABAJADORAS DEL HOGAR",
+          "padre_numero": 1,
+          "x_id": 171,
+          "x_texto": 171,
           "referencias": [
             "Capítulo adicionado DOF 16-11-2022"
           ]
@@ -9444,6 +9813,24 @@
           "referencias": [
             "Artículo adicionado DOF 16-11-2022"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL REGIMEN VOLUNTARIO",
+          "padre_numero": 1,
+          "x_id": 230,
+          "x_texto": 230
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL SEGURO DE SALUD PARA LA FAMILIA",
+          "padre_numero": 1,
+          "x_id": 190,
+          "x_texto": 190
         }
       ]
     },
@@ -9570,6 +9957,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LOS SEGUROS ADICIONALES",
+          "padre_numero": 1,
+          "x_id": 217,
+          "x_texto": 217
         }
       ]
     },
@@ -9663,7 +10059,16 @@
           "contenido": "Los seguros adicionales se organizarán en sección especial, con contabilidad y administración de fondos separada de la correspondiente a los seguros obligatorios.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "OTROS SEGUROS",
+          "padre_numero": 1,
+          "x_id": 262,
+          "x_texto": 262,
           "referencias": [
             "Capítulo adicionado DOF 20-12-2001"
           ]
@@ -10337,29 +10742,18 @@
           "x_id": 107,
           "x_texto": 107,
           "referencias": [
-            "Fracción adicionada DOF 21-05-2024"
+            "Fracción adicionada DOF 21-05-2024",
+            "Fracción reformada y recorrida DOF 21-05-2024"
           ]
         },
         {
           "numero": 16,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "Cualesquiera otros ingresos que le señalen las leyes y reglamentos.",
+          "contenido": "Cualesquiera otros ingresos que le señalen las leyes y reglamentos. Todos los bienes inmuebles que formen parte del patrimonio del Instituto, estarán destinados al servicio público de carácter nacional del Seguro Social a que se refiere el artículo 4o. de esta Ley y tendrán el carácter de bienes del dominio público de la Federación.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
-          "referencias": [
-            "Fracción reformada y recorrida DOF 21-05-2024"
-          ]
-        },
-        {
-          "numero": 17,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Todos los bienes inmuebles que formen parte del patrimonio del Instituto, estarán destinados al servicio público de carácter nacional del Seguro Social a que se refiere el artículo 4o. de esta Ley y tendrán el carácter de bienes del dominio público de la Federación.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 20-12-2001"
           ]
@@ -10466,7 +10860,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "La Dirección General.",
+          "contenido": "La Dirección General. DE LA ASAMBLEA GENERAL",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10510,19 +10904,10 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Diez por las organizaciones de trabajadores.",
+          "contenido": "Diez por las organizaciones de trabajadores. Dichos miembros durarán en su encargo seis años, pudiendo ser reelectos.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Dichos miembros durarán en su encargo seis años, pudiendo ser reelectos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
         }
       ]
     },
@@ -10600,6 +10985,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL CONSEJO TECNICO",
+          "padre_numero": 2,
+          "x_id": 240,
+          "x_texto": 240
         }
       ]
     },
@@ -10925,6 +11319,15 @@
           "referencias": [
             "Fracción derogada DOF 20-12-2001"
           ]
+        },
+        {
+          "numero": 22,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA COMISION DE VIGILANCIA",
+          "padre_numero": 21,
+          "x_id": 218,
+          "x_texto": 218
         }
       ]
     },
@@ -11028,6 +11431,15 @@
           "referencias": [
             "Fracción adicionada DOF 20-12-2001"
           ]
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA DIRECCION GENERAL",
+          "padre_numero": 7,
+          "x_id": 229,
+          "x_texto": 229
         }
       ]
     },
@@ -11223,7 +11635,16 @@
           "contenido": "El Director General tendrá derecho de veto sobre las resoluciones del Consejo Técnico, en los casos que fije el reglamento. El efecto del veto será suspender la aplicación de la resolución del Consejo, hasta que resuelva en definitiva la Asamblea General.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO",
+          "padre_numero": 1,
+          "x_id": 97,
+          "x_texto": 97,
           "referencias": [
             "Denominación del Capítulo reformada DOF 20-12-2001"
           ]
@@ -11809,7 +12230,18 @@
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Artículo reformado DOF 20-12-2001",
+            "Artículo reformado DOF 20-12-2001"
+          ]
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LAS RESERVAS DE LOS SEGUROS",
+          "padre_numero": 5,
+          "x_id": 203,
+          "x_texto": 203,
+          "referencias": [
             "Sección adicionada DOF 20-12-2001"
           ]
         }
@@ -12262,7 +12694,27 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 01-05-2019",
-            "Artículo reformado DOF 20-12-2001",
+            "Artículo reformado DOF 20-12-2001"
+          ]
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LOS PROCEDIMIENTOS",
+          "padre_numero": 6,
+          "x_id": 234,
+          "x_texto": 234
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "PROCEDIMIENTO ADMINISTRATIVO DE EJECUCIÓN",
+          "padre_numero": 6,
+          "x_id": 168,
+          "x_texto": 168,
+          "referencias": [
             "Sección adicionada DOF 20-12-2001"
           ]
         }
@@ -12361,7 +12813,7 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Desde la fecha de la vigencia de la prestación, si el error se debió al Instituto o a la Administradora de Fondos para el Retiro, que administre la cuenta individual del trabajador o a la Aseguradora respectiva.",
-          "padre_numero": null,
+          "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
         },
@@ -12370,7 +12822,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Desde la fecha en que se dicte el acuerdo de modificación, si el error se debió a datos falsos suministrados por el interesado.",
-          "padre_numero": null,
+          "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
         },
@@ -12388,7 +12840,7 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Desde la fecha en que se dicte el acuerdo de modificación, si el error se debió al Instituto, o a la Administradora de Fondos para el Retiro, que administre la cuenta individual del trabajador o a la Aseguradora respectiva.",
-          "padre_numero": null,
+          "padre_numero": 5,
           "x_id": 85,
           "x_texto": 107
         },
@@ -12397,9 +12849,18 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Desde la fecha de la vigencia de la prestación, si se comprueba que el interesado proporcionó al Instituto informaciones o datos falsos. En este caso se reintegrarán al Instituto las cantidades que hubiese pagado en exceso con motivo del error.",
-          "padre_numero": null,
+          "padre_numero": 5,
           "x_id": 85,
-          "x_texto": 107,
+          "x_texto": 107
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LOS MEDIOS DE DEFENSA",
+          "padre_numero": 7,
+          "x_id": 225,
+          "x_texto": 225,
           "referencias": [
             "Sección adicionada DOF 20-12-2001"
           ]
@@ -12493,6 +12954,15 @@
           "referencias": [
             "Párrafo reformado DOF 20-12-2001"
           ]
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA CADUCIDAD Y PRESCRIPCION",
+          "padre_numero": 3,
+          "x_id": 206,
+          "x_texto": 206
         }
       ]
     },
@@ -12617,19 +13087,10 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "Los finiquitos que establece la Ley.",
+          "contenido": "Los finiquitos que establece la Ley. Los subsidios por incapacidad para trabajar derivada de un riesgo de trabajo, prescriben en dos años a partir del día en que se hubiera generado el derecho a su percepción.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Los subsidios por incapacidad para trabajar derivada de un riesgo de trabajo, prescriben en dos años a partir del día en que se hubiera generado el derecho a su percepción.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
         }
       ]
     },
@@ -12771,8 +13232,30 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo recorrido y publicado sin cambios DOF 30-04-2024",
-            "Artículo reformado DOF 16-12-2020",
-            "Denominación del Título reformada DOF 20-12-2001",
+            "Artículo reformado DOF 16-12-2020"
+          ]
+        },
+        {
+          "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS",
+          "padre_numero": 10,
+          "x_id": 112,
+          "x_texto": 112,
+          "referencias": [
+            "Denominación del Título reformada DOF 20-12-2001"
+          ]
+        },
+        {
+          "numero": 12,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LAS RESPONSABILIDADES",
+          "padre_numero": 11,
+          "x_id": 224,
+          "x_texto": 224,
+          "referencias": [
             "Denominación del Capítulo reformada DOF 20-12-2001"
           ]
         }
@@ -13307,5 +13790,6 @@
       ]
     }
   ],
-  "ultima_reforma_dof": "2024-06-07"
+  "ultima_reforma_dof": "2024-06-07",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf"
 }

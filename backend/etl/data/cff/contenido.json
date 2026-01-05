@@ -1,20 +1,20 @@
 {
   "_advertencia": [
-    "╔══════════════════════════════════════════════════════════════════╗",
-    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
-    "║                                                                  ║",
-    "║  NO MODIFICAR MANUALMENTE                                        ║",
-    "║                                                                  ║",
-    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
-    "║  La base de datos se regenera desde aquí.                       ║",
-    "║                                                                  ║",
-    "║  Si el contenido es incorrecto:                                 ║",
-    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
-    "║                                                                  ║",
-    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
-    "╚══════════════════════════════════════════════════════════════════╝"
+    "=====================================================================",
+    "  ARCHIVO SAGRADO - FUENTE UNICA DE VERDAD",
+    "",
+    "  NO MODIFICAR MANUALMENTE",
+    "",
+    "  Este archivo es la UNICA fuente de verdad para el contenido.",
+    "  La base de datos se regenera desde aqui.",
+    "",
+    "  Si el contenido es incorrecto:",
+    "    -> CORRIGE EL SCRIPT, no este archivo",
+    "",
+    "  Modificarlo manualmente es SABOTAJE al sistema.",
+    "====================================================================="
   ],
-  "_generado_por": "extraer.py",
+  "_generado_por": "extractor/ExtractorGeneral",
   "ley": "CFF",
   "tipo_contenido": "articulo",
   "articulos": [
@@ -399,7 +399,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "(Se deroga).",
+          "contenido": "(Se deroga). En el caso de contribuciones que se deben pagar mediante retención, aún cuando quien deba efectuarla no retenga o no haga pago de la contraprestación relativa, el retenedor estará obligado a enterar una cantidad equivalente a la que debió haber retenido.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -408,7 +408,7 @@
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En el caso de contribuciones que se deben pagar mediante retención, aún cuando quien deba efectuarla no retenga o no haga pago de la contraprestación relativa, el retenedor estará obligado a enterar una cantidad equivalente a la que debió haber retenido.",
+          "contenido": "Cuando los retenedores deban hacer un pago en bienes, solamente harán la entrega del bien de que se trate si quien debe recibirlo provee los fondos necesarios para efectuar la retención en moneda nacional.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -417,22 +417,13 @@
           "numero": 9,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Cuando los retenedores deban hacer un pago en bienes, solamente harán la entrega del bien de que se trate si quien debe recibirlo provee los fondos necesarios para efectuar la retención en moneda nacional.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 10,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Quien haga pago de créditos fiscales deberá obtener de la oficina recaudadora, la forma oficial, el recibo oficial o la forma valorada, expedidos y controlados exclusivamente por la Secretaría de Hacienda y Crédito Público o la documentación que en las disposiciones respectivas se establezca en la que conste la impresión original de la máquina registradora. Tratándose de los pagos efectuados en las oficinas de las instituciones de crédito, se deberá obtener la impresión de la máquina registradora, el sello, la constancia o el acuse de recibo electrónico con sello digital.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 11,
+          "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando las disposiciones fiscales establezcan opciones a los contribuyentes para el cumplimiento de sus obligaciones fiscales o para determinar las contribuciones a su cargo, la elegida por el contribuyente no podrá variarla respecto al mismo ejercicio.",
@@ -722,22 +713,13 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "(Se deroga).",
+          "contenido": "(Se deroga). En los casos en que una sociedad entre en liquidación, sea fusionada o se escinda, siempre que la sociedad escindente desaparezca, el ejercicio fiscal terminará anticipadamente en la fecha en que entre en liquidación, sea fusionada o se escinda, respectivamente. En el primer caso, se considerará que habrá un ejercicio por todo el tiempo en que la sociedad esté en liquidación.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "En los casos en que una sociedad entre en liquidación, sea fusionada o se escinda, siempre que la sociedad escindente desaparezca, el ejercicio fiscal terminará anticipadamente en la fecha en que entre en liquidación, sea fusionada o se escinda, respectivamente. En el primer caso, se considerará que habrá un ejercicio por todo el tiempo en que la sociedad esté en liquidación.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando las leyes fiscales establezcan que las contribuciones se calculen por mes, se entenderá que corresponde al mes de calendario.",
@@ -1776,7 +1758,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Las bolsas de valores y los sistemas equivalentes de cotización de títulos, contratos o bienes, que cuenten al menos con cinco años de operación y de haber sido autorizados para funcionar con tal carácter de conformidad con las leyes del país en que se encuentren, donde los precios que se determinen sean del conocimiento público y no puedan ser manipulados por las partes contratantes de la operación financiera derivada.",
+          "contenido": "Las bolsas de valores y los sistemas equivalentes de cotización de títulos, contratos o bienes, que cuenten al menos con cinco años de operación y de haber sido autorizados para funcionar con tal carácter de conformidad con las leyes del país en que se encuentren, donde los precios que se determinen sean del conocimiento público y no puedan ser manipulados por las partes contratantes de la operación financiera derivada.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1969,6 +1951,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LOS MEDIOS ELECTRÓNICOS",
+          "padre_numero": 4,
+          "x_id": 217,
+          "x_texto": 217
         }
       ]
     },
@@ -2361,28 +2352,19 @@
           "contenido": "La mención de la tecnología empleada en la creación de la firma electrónica avanzada contenida en el certificado.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 8,
-          "tipo": "fraccion",
-          "identificador": "VII",
-          "contenido": "La llave pública del titular del certificado.",
-          "padre_numero": null,
-          "x_id": 85,
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 12-11-2021"
           ]
         },
         {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Cuando se trate de certificados emitidos por prestadores de servicios de certificación autorizados por el Banco de México, que amparen datos de creación de firmas electrónicas que se utilicen para los efectos fiscales, dichos certificados deberán reunir los requisitos a que se refieren las fracciones anteriores, con excepción del señalado en la fracción III. En sustitución del requisito contenido en dicha fracción, el certificado deberá contener la identificación del prestador de servicios de certificación y su dirección electrónica, así como los requisitos que para su control establezca el Servicio de Administración Tributaria, mediante reglas de carácter general.",
+          "numero": 8,
+          "tipo": "fraccion",
+          "identificador": "VII",
+          "contenido": "La llave pública del titular del certificado. Cuando se trate de certificados emitidos por prestadores de servicios de certificación autorizados por el Banco de México, que amparen datos de creación de firmas electrónicas que se utilicen para los efectos fiscales, dichos certificados deberán reunir los requisitos a que se refieren las fracciones anteriores, con excepción del señalado en la fracción III. En sustitución del requisito contenido en dicha fracción, el certificado deberá contener la identificación del prestador de servicios de certificación y su dirección electrónica, así como los requisitos que para su control establezca el Servicio de Administración Tributaria, mediante reglas de carácter general.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         }
       ]
     },
@@ -3043,6 +3025,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Derechos y Obligaciones de los Contribuyentes",
+          "padre_numero": 2,
+          "x_id": 163,
+          "x_texto": 163
         }
       ]
     },
@@ -3092,7 +3083,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "La dirección de correo electrónico para recibir notificaciones.",
+          "contenido": "La dirección de correo electrónico para recibir notificaciones. Cuando no se cumplan los requisitos a que se refieren las fracciones I y II de este artículo, las autoridades fiscales requerirán al promovente a fin de que en un plazo de 10 días cumpla con el requisito omitido. En caso de no subsanarse la omisión en dicho plazo, la promoción se tendrá por no presentada, así como cuando se omita señalar la dirección de correo electrónico.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3101,7 +3092,7 @@
           "numero": 6,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Cuando no se cumplan los requisitos a que se refieren las fracciones I y II de este artículo, las autoridades fiscales requerirán al promovente a fin de que en un plazo de 10 días cumpla con el requisito omitido. En caso de no subsanarse la omisión en dicho plazo, la promoción se tendrá por no presentada, así como cuando se omita señalar la dirección de correo electrónico.",
+          "contenido": "Los contribuyentes a que se refiere el tercer párrafo del artículo 31 de este Código no estarán obligados a utilizar los documentos digitales previstos en este artículo. En estos casos, las promociones deberán presentarse en documento impreso y estar firmadas por el interesado o por quien esté legalmente autorizado para ello, a menos que el promovente no sepa o no pueda firmar, caso en el que imprimirá su huella dactilar. Las promociones deberán presentarse en las formas que al efecto apruebe el Servicio de Administración Tributaria. Cuando no existan formas aprobadas, la promoción deberá reunir los requisitos que establece este artículo, con excepción del formato y dirección de correo electrónicos. Además deberán señalar el domicilio para oír y recibir notificaciones y, en su caso, el nombre de la persona autorizada para recibirlas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3110,7 +3101,7 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los contribuyentes a que se refiere el tercer párrafo del artículo 31 de este Código no estarán obligados a utilizar los documentos digitales previstos en este artículo. En estos casos, las promociones deberán presentarse en documento impreso y estar firmadas por el interesado o por quien esté legalmente autorizado para ello, a menos que el promovente no sepa o no pueda firmar, caso en el que imprimirá su huella dactilar. Las promociones deberán presentarse en las formas que al efecto apruebe el Servicio de Administración Tributaria. Cuando no existan formas aprobadas, la promoción deberá reunir los requisitos que establece este artículo, con excepción del formato y dirección de correo electrónicos. Además deberán señalar el domicilio para oír y recibir notificaciones y, en su caso, el nombre de la persona autorizada para recibirlas.",
+          "contenido": "Cuando el promovente que cuente con un certificado de firma electrónica avanzada, acompañe documentos distintos a escrituras o poderes notariales, y éstos no sean digitalizados, la promoción deberá presentarla en forma impresa, cumpliendo los requisitos a que se refiere el párrafo anterior, debiendo incluir su dirección de correo electrónico. Las escrituras o poderes notariales deberán presentarse en forma digitalizada, cuando se acompañen a un documento digital.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3119,22 +3110,13 @@
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Cuando el promovente que cuente con un certificado de firma electrónica avanzada, acompañe documentos distintos a escrituras o poderes notariales, y éstos no sean digitalizados, la promoción deberá presentarla en forma impresa, cumpliendo los requisitos a que se refiere el párrafo anterior, debiendo incluir su dirección de correo electrónico. Las escrituras o poderes notariales deberán presentarse en forma digitalizada, cuando se acompañen a un documento digital.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Cuando no se cumplan los requisitos a que se refieren los párrafos cuarto y quinto de este artículo, las autoridades fiscales requerirán al promovente a fin de que en un plazo de 10 días cumpla con el requisito omitido. En caso de no subsanarse la omisión en dicho plazo, la promoción se tendrá por no presentada, si la omisión consiste en no haber usado la forma oficial aprobada, las autoridades fiscales deberán especificar en el requerimiento la forma respectiva.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 10,
+          "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Lo dispuesto en este artículo no es aplicable a las declaraciones, solicitudes de inscripción o avisos al registro federal de contribuyentes a que se refiere el artículo 31 de este Código.",
@@ -3163,7 +3145,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Señalar los números telefónicos, en su caso, del contribuyente y el de los autorizados en los términos del artículo 19 de este Código.",
+          "contenido": "Señalar los números telefónicos, en su caso, del contribuyente y el de los autorizados en los términos del artículo 19 de este Código.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3172,7 +3154,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Señalar los nombres, direcciones y el registro federal de contribuyentes o número de identificación fiscal tratándose de residentes en el extranjero, de todas las personas involucradas en la solicitud o consulta planteada.",
+          "contenido": "Señalar los nombres, direcciones y el registro federal de contribuyentes o número de identificación fiscal tratándose de residentes en el extranjero, de todas las personas involucradas en la solicitud o consulta planteada.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3181,7 +3163,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Describir las actividades a las que se dedica el interesado.",
+          "contenido": "Describir las actividades a las que se dedica el interesado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3190,7 +3172,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Indicar el monto de la operación u operaciones objeto de la promoción.",
+          "contenido": "Indicar el monto de la operación u operaciones objeto de la promoción.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3199,7 +3181,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Señalar todos los hechos y circunstancias relacionados con la promoción, así como acompañar los documentos e información que soporten tales hechos o circunstancias.",
+          "contenido": "Señalar todos los hechos y circunstancias relacionados con la promoción, así como acompañar los documentos e información que soporten tales hechos o circunstancias.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3208,7 +3190,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Describir las razones de negocio que motivan la operación planteada.",
+          "contenido": "Describir las razones de negocio que motivan la operación planteada.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3496,7 +3478,7 @@
           "numero": 12,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "La indemnización a que se refiere el séptimo párrafo del artículo 21 de este Código.",
+          "contenido": "La indemnización a que se refiere el séptimo párrafo del artículo 21 de este Código. Cuando el contribuyente interponga algún medio de defensa legal impugnando alguno de los conceptos señalados en el párrafo anterior, el orden señalado en el mismo no será aplicable respecto del concepto impugnado y garantizado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3505,7 +3487,7 @@
           "numero": 13,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Cuando el contribuyente interponga algún medio de defensa legal impugnando alguno de los conceptos señalados en el párrafo anterior, el orden señalado en el mismo no será aplicable respecto del concepto impugnado y garantizado.",
+          "contenido": "Para determinar las contribuciones se considerarán, inclusive, las fracciones del peso. No obstante lo anterior, para efectuar su pago, el monto se ajustará para que las que contengan cantidades que incluyan de 1 hasta 50 centavos se ajusten a la unidad inmediata anterior y las que contengan cantidades de 51 a 99 centavos, se ajusten a la unidad inmediata superior.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3514,7 +3496,7 @@
           "numero": 14,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para determinar las contribuciones se considerarán, inclusive, las fracciones del peso. No obstante lo anterior, para efectuar su pago, el monto se ajustará para que las que contengan cantidades que incluyan de 1 hasta 50 centavos se ajusten a la unidad inmediata anterior y las que contengan cantidades de 51 a 99 centavos, se ajusten a la unidad inmediata superior.",
+          "contenido": "Cuando las leyes fiscales establezcan que las contribuciones se paguen mediante declaración, la Secretaría de Hacienda y Crédito Público podrá ordenar, por medio de disposiciones de carácter general y con el objeto de facilitar el cumplimiento de la obligación, así como para allegarse de la información necesaria en materia de estadística de ingresos, que se proporcione en declaración distinta de aquélla con la cual se efectúe el pago.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3523,7 +3505,7 @@
           "numero": 15,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Cuando las leyes fiscales establezcan que las contribuciones se paguen mediante declaración, la Secretaría de Hacienda y Crédito Público podrá ordenar, por medio de disposiciones de carácter general y con el objeto de facilitar el cumplimiento de la obligación, así como para allegarse de la información necesaria en materia de estadística de ingresos, que se proporcione en declaración distinta de aquélla con la cual se efectúe el pago.",
+          "contenido": "Los medios de pago señalados en el séptimo párrafo de este artículo, también serán aplicables a los productos y aprovechamientos.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3532,7 +3514,7 @@
           "numero": 16,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los medios de pago señalados en el séptimo párrafo de este artículo, también serán aplicables a los productos y aprovechamientos.",
+          "contenido": "Para el caso de las tarjetas de crédito y débito, este medio de pago podrá tener asociado el pago de comisiones a cargo del fisco federal.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -3541,22 +3523,13 @@
           "numero": 17,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para el caso de las tarjetas de crédito y débito, este medio de pago podrá tener asociado el pago de comisiones a cargo del fisco federal.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 18,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "El Servicio de Administración Tributaria, previa opinión de la Tesorería de la Federación, mediante reglas de carácter general, podrá autorizar otros medios de pago.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 19,
+          "numero": 18,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La Secretaría de Hacienda y Crédito Público efectuará la retención del impuesto al valor agregado que le sea trasladado con motivo de la prestación de los servicios de recaudación que presten las entidades financieras u otros auxiliares de Tesorería de la Federación, el cual formará parte de los gastos de recaudación.",
@@ -3692,7 +3665,7 @@
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "UDI d,m = Unidad de Inversión correspondiente al día d del mes m.",
+          "contenido": "UDId,m = Unidad de Inversión correspondiente al día d del mes m.",
           "padre_numero": null,
           "x_id": 88,
           "x_texto": 88
@@ -3701,7 +3674,7 @@
           "numero": 6,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "UDI = Unidad de Inversión correspondiente al día inmediato anterior al día d del mes m. d-1,m * = Operador de multiplicación.",
+          "contenido": "UDId-1,m = Unidad de Inversión correspondiente al día inmediato anterior al día d del mes m.",
           "padre_numero": null,
           "x_id": 81,
           "x_texto": 81
@@ -3710,67 +3683,76 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "= Raíz enésima.",
+          "contenido": "* = Operador de multiplicación.",
           "padre_numero": 6,
-          "x_id": 126,
-          "x_texto": 126
+          "x_id": 115,
+          "x_texto": 115
         },
         {
           "numero": 8,
-          "tipo": "numeral",
-          "identificador": "1.",
-          "contenido": "Para determinar el valor de la UDI para los días del 11 al 25 del mes m se utiliza: n = 15",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 107
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "= Raíz enésima.",
+          "padre_numero": 6,
+          "x_id": 119,
+          "x_texto": 119
         },
         {
           "numero": 9,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "INPC = Índice Nacional de Precios al Consumidor de la segunda quincena del mes inmediato q anterior al mes m.",
+          "contenido": "1. Para determinar el valor de la UDI para los días del 11 al 25 del mes m se utiliza: n = 15",
           "padre_numero": null,
-          "x_id": 90,
-          "x_texto": 90
+          "x_id": 85,
+          "x_texto": 85
         },
         {
           "numero": 10,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "INPC = Índice Nacional de Precios al Consumidor de la primera quincena del mes inmediato q-1 anterior al mes m.",
-          "padre_numero": null,
-          "x_id": 83,
-          "x_texto": 83
-        },
-        {
-          "numero": 11,
-          "tipo": "numeral",
-          "identificador": "2.",
-          "contenido": "Para obtener el valor de la UDI para los días del 26 de cada mes al 10 del mes inmediato siguiente, se utiliza la siguiente formulación: 2.1. Para determinar el valor de la UDI para los días del 26 al último día del mes m se utiliza: n = Número de días naturales contados desde el 26 del mes m y hasta el día 10 del mes siguiente.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 12,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "INPC = Índice Nacional de Precios al Consumidor de la primera quincena del mes m. q",
+          "contenido": "INPCq = Índice Nacional de Precios al Consumidor de la segunda quincena del mes inmediato anterior al mes m.",
           "padre_numero": null,
           "x_id": 90,
           "x_texto": 90
         },
         {
-          "numero": 13,
+          "numero": 11,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "INPC = Índice Nacional de Precios al Consumidor de la segunda quincena del mes inmediato q-1 anterior al mes m.",
+          "contenido": "INPCq-1 = Índice Nacional de Precios al Consumidor de la primera quincena del mes inmediato anterior al mes m.",
           "padre_numero": null,
           "x_id": 83,
           "x_texto": 83
         },
         {
+          "numero": 12,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "2. Para obtener el valor de la UDI para los días del 26 de cada mes al 10 del mes inmediato siguiente, se utiliza la siguiente formulación: 2.1. Para determinar el valor de la UDI para los días del 26 al último día del mes m se utiliza: n = Número de días naturales contados desde el 26 del mes m y hasta el día 10 del mes siguiente.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 13,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "INPCq = Índice Nacional de Precios al Consumidor de la primera quincena del mes m.",
+          "padre_numero": null,
+          "x_id": 90,
+          "x_texto": 90
+        },
+        {
           "numero": 14,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "INPCq-1 = Índice Nacional de Precios al Consumidor de la segunda quincena del mes inmediato anterior al mes m.",
+          "padre_numero": null,
+          "x_id": 83,
+          "x_texto": 83
+        },
+        {
+          "numero": 15,
           "tipo": "texto",
           "identificador": null,
           "contenido": "2.2. Para determinar el valor de la UDI para los días del 1 al 10 del mes m se utiliza: n = Número de días naturales contados desde el 26 del mes inmediato anterior al mes m y hasta el día 10 del mes m.",
@@ -3779,19 +3761,19 @@
           "x_texto": 85
         },
         {
-          "numero": 15,
+          "numero": 16,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "INPC = Índice Nacional de Precios al Consumidor de la primera quincena del mes inmediato q anterior al mes m.",
+          "contenido": "INPCq = Índice Nacional de Precios al Consumidor de la primera quincena del mes inmediato anterior al mes m.",
           "padre_numero": null,
           "x_id": 90,
           "x_texto": 90
         },
         {
-          "numero": 16,
+          "numero": 17,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "INPC = Índice Nacional de Precios al Consumidor de la segunda quincena del mes antepasado al q-1 mes m.",
+          "contenido": "INPCq-1 = Índice Nacional de Precios al Consumidor de la segunda quincena del mes antepasado al mes m.",
           "padre_numero": null,
           "x_id": 83,
           "x_texto": 83
@@ -5127,12 +5109,12 @@
         },
         {
           "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. Sujetos y sus obligaciones específicas:",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "Sujetos y sus obligaciones específicas:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 3,
@@ -5256,12 +5238,12 @@
         },
         {
           "numero": 16,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B. Catálogo general de obligaciones:",
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "Catálogo general de obligaciones:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 17,
@@ -5370,10 +5352,10 @@
         },
         {
           "numero": 28,
-          "tipo": "fraccion",
-          "identificador": "C",
+          "tipo": "apartado",
+          "identificador": "C.",
           "contenido": "Facultades de la autoridad fiscal:",
-          "padre_numero": null,
+          "padre_numero": 27,
           "x_id": 85,
           "x_texto": 107
         },
@@ -5584,12 +5566,12 @@
         },
         {
           "numero": 50,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "D. Casos especiales:",
+          "tipo": "apartado",
+          "identificador": "D.",
+          "contenido": "Casos especiales:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 51,
@@ -5784,21 +5766,21 @@
         },
         {
           "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. Los libros, sistemas y registros contables, papeles de trabajo, estados de cuenta, cuentas especiales, libros y registros sociales, control de inventarios y método de valuación, discos y cintas o cualquier otro medio procesable de almacenamiento de datos, los equipos o sistemas electrónicos de registro fiscal y sus respectivos registros, además de la documentación comprobatoria de los asientos respectivos, así como toda la documentación e información relacionada con el cumplimiento de las disposiciones fiscales, la que acredite sus ingresos y deducciones, y la que obliguen otras leyes; en el Reglamento de este Código se establecerá la documentación e información con la que se deberá dar cumplimiento a esta fracción, y los elementos adicionales que integran la contabilidad.",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "Los libros, sistemas y registros contables, papeles de trabajo, estados de cuenta, cuentas especiales, libros y registros sociales, control de inventarios y método de valuación, discos y cintas o cualquier otro medio procesable de almacenamiento de datos, los equipos o sistemas electrónicos de registro fiscal y sus respectivos registros, además de la documentación comprobatoria de los asientos respectivos, así como toda la documentación e información relacionada con el cumplimiento de las disposiciones fiscales, la que acredite sus ingresos y deducciones, y la que obliguen otras leyes; en el Reglamento de este Código se establecerá la documentación e información con la que se deberá dar cumplimiento a esta fracción, y los elementos adicionales que integran la contabilidad.",
           "padre_numero": 2,
           "x_id": 121,
-          "x_texto": 121
+          "x_texto": 143
         },
         {
           "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B. Tratándose de personas que fabriquen, produzcan, procesen, transporten, almacenen, incluyendo almacenamiento para usos propios, distribuyan o enajenen cualquier tipo de hidrocarburo o petrolífero, además de lo señalado en el apartado anterior, deberán contar con los equipos y programas informáticos para llevar controles volumétricos y los certificados que acrediten su correcta operación y funcionamiento, así como con dictámenes emitidos por un laboratorio de prueba o ensayo, que determinen el tipo de hidrocarburo o petrolífero de que se trate, el poder calorífico del gas natural y el octanaje en el caso de gasolina. Se entiende por controles volumétricos de los productos a que se refiere este párrafo, los registros de volumen, objeto de sus operaciones, incluyendo sus existencias, mismos que formarán parte de la contabilidad del contribuyente.",
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "Tratándose de personas que fabriquen, produzcan, procesen, transporten, almacenen, incluyendo almacenamiento para usos propios, distribuyan o enajenen cualquier tipo de hidrocarburo o petrolífero, además de lo señalado en el apartado anterior, deberán contar con los equipos y programas informáticos para llevar controles volumétricos y los certificados que acrediten su correcta operación y funcionamiento, así como con dictámenes emitidos por un laboratorio de prueba o ensayo, que determinen el tipo de hidrocarburo o petrolífero de que se trate, el poder calorífico del gas natural y el octanaje en el caso de gasolina. Se entiende por controles volumétricos de los productos a que se refiere este párrafo, los registros de volumen, objeto de sus operaciones, incluyendo sus existencias, mismos que formarán parte de la contabilidad del contribuyente.",
           "padre_numero": 2,
           "x_id": 121,
-          "x_texto": 121
+          "x_texto": 143
         },
         {
           "numero": 5,
@@ -7424,12 +7406,12 @@
         },
         {
           "numero": 15,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. A más tardar el 15 de febrero de cada año, la información siguiente:",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "A más tardar el 15 de febrero de cada año, la información siguiente:",
           "padre_numero": 14,
           "x_id": 107,
-          "x_texto": 107
+          "x_texto": 129
         },
         {
           "numero": 16,
@@ -7496,12 +7478,12 @@
         },
         {
           "numero": 23,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B. A más tardar el 15 de febrero de cada año, la información relativa a las utilidades o pérdidas del ejercicio inmediato anterior, tratándose de los fideicomisos a que se refiere el artículo 13 de la Ley del Impuesto sobre la Renta.",
-          "padre_numero": 14,
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "A más tardar el 15 de febrero de cada año, la información relativa a las utilidades o pérdidas del ejercicio inmediato anterior, tratándose de los fideicomisos a que se refiere el artículo 13 de la Ley del Impuesto sobre la Renta.",
+          "padre_numero": 22,
           "x_id": 107,
-          "x_texto": 107
+          "x_texto": 129
         },
         {
           "numero": 24,
@@ -8310,6 +8292,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Facultades de las Autoridades Fiscales",
+          "padre_numero": 3,
+          "x_id": 186,
+          "x_texto": 186
         }
       ]
     },
@@ -8380,7 +8371,7 @@
           "numero": 7,
           "tipo": "inciso",
           "identificador": "e)",
-          "contenido": ".- Difundir entre los contribuyentes los derechos y medios de defensa que se pueden hacer valer contra las resoluciones de las autoridades fiscales.",
+          "contenido": "Difundir entre los contribuyentes los derechos y medios de defensa que se pueden hacer valer contra las resoluciones de las autoridades fiscales.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -8389,7 +8380,7 @@
           "numero": 8,
           "tipo": "inciso",
           "identificador": "f)",
-          "contenido": ".- Efectuar en distintas partes del país reuniones de información con los contribuyentes, especialmente cuando se modifiquen las disposiciones fiscales y durante los principales periodos de presentación de declaraciones.",
+          "contenido": "Efectuar en distintas partes del país reuniones de información con los contribuyentes, especialmente cuando se modifiquen las disposiciones fiscales y durante los principales periodos de presentación de declaraciones.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -8500,22 +8491,13 @@
           "numero": 20,
           "tipo": "inciso",
           "identificador": "c)",
-          "contenido": "Prestar sus servicios en forma gratuita.",
+          "contenido": "Prestar sus servicios en forma gratuita. La Secretaría de Hacienda y Crédito Público podrá expedir las reglas de carácter general que precisen las funciones de los síndicos, la manera de desarrollarlas, así como los demás aspectos y criterios que considere pertinentes para la debida aplicación y cumplimiento de lo dispuesto en esta fracción.",
           "padre_numero": 16,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 21,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "La Secretaría de Hacienda y Crédito Público podrá expedir las reglas de carácter general que precisen las funciones de los síndicos, la manera de desarrollarlas, así como los demás aspectos y criterios que considere pertinentes para la debida aplicación y cumplimiento de lo dispuesto en esta fracción.",
-          "padre_numero": 16,
-          "x_id": 106,
-          "x_texto": 106
-        },
-        {
-          "numero": 22,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "Para los efectos de lo dispuesto en este artículo, la autoridad fiscal, para el mejor ejercicio de sus facultades y las de asistencia al contribuyente, podrá generar la clave de Registro Federal de Contribuyentes con base en la información de la Clave Única de Registro de Población a fin de facilitar la inscripción a dicho Registro; podrá realizar recorridos, invitaciones y censos para informar y asesorar a los contribuyentes acerca del exacto cumplimiento de sus obligaciones fiscales y aduaneras y promover su incorporación voluntaria o actualización de sus datos en el registro federal de contribuyentes.",
@@ -8524,16 +8506,16 @@
           "x_texto": 107
         },
         {
-          "numero": 23,
+          "numero": 22,
           "tipo": "texto",
           "identificador": null,
           "contenido": "No se considera que las autoridades fiscales inician el ejercicio de sus facultades de comprobación, cuando derivado de lo señalado en el párrafo que antecede, soliciten a los particulares los datos, informes y documentos necesarios para corregir o actualizar el Registro Federal de Contribuyentes.",
-          "padre_numero": 22,
+          "padre_numero": 21,
           "x_id": 107,
           "x_texto": 107
         },
         {
-          "numero": 24,
+          "numero": 23,
           "tipo": "fraccion",
           "identificador": "IV",
           "contenido": "Promover el cumplimiento en materia de presentación de declaraciones, así como las correcciones a su situación fiscal mediante el envío de:",
@@ -8542,43 +8524,34 @@
           "x_texto": 107
         },
         {
-          "numero": 25,
+          "numero": 24,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Propuestas de pago o declaraciones prellenadas.",
-          "padre_numero": 24,
+          "padre_numero": 23,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 25,
+          "tipo": "inciso",
+          "identificador": "b)",
+          "contenido": "Comunicados para promover el cumplimiento de sus obligaciones fiscales.",
+          "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 26,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Comunicados para promover el cumplimiento de sus obligaciones fiscales.",
-          "padre_numero": 24,
+          "identificador": "c)",
+          "contenido": "Comunicados para informar sobre inconsistencias detectadas o comportamientos atípicos. El envío de los documentos señalados en los incisos anteriores, no se considerará inicio de facultades de comprobación.",
+          "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 27,
-          "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Comunicados para informar sobre inconsistencias detectadas o comportamientos atípicos.",
-          "padre_numero": 24,
-          "x_id": 107,
-          "x_texto": 129
-        },
-        {
-          "numero": 28,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "El envío de los documentos señalados en los incisos anteriores, no se considerará inicio de facultades de comprobación.",
-          "padre_numero": 24,
-          "x_id": 107,
-          "x_texto": 107
-        },
-        {
-          "numero": 29,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, las autoridades fiscales darán a conocer a los contribuyentes, a través de los medios de difusión que se señalen en reglas de carácter general, los criterios de carácter interno que emitan para el debido cumplimiento de las disposiciones fiscales, salvo aquéllos que, a juicio de la propia autoridad, tengan el carácter de confidenciales, sin que por ello nazcan obligaciones para los particulares y únicamente derivarán derechos de los mismos cuando se publiquen en el Diario Oficial de la Federación.",
@@ -8587,7 +8560,7 @@
           "x_texto": 85
         },
         {
-          "numero": 30,
+          "numero": 28,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando las Leyes, Reglamentos y demás disposiciones legales hagan referencia u otorguen atribuciones a la Secretaría de Hacienda y Crédito Público o a cualquiera de sus Unidades Administrativas, se entenderán hechas al Servicio de Administración Tributaria, cuando se trate de atribuciones vinculadas con la materia objeto de la Ley del Servicio de Administración Tributaria, su Reglamento interior o cualquier otra disposición jurídica que emane de ellos.",
@@ -9183,19 +9156,10 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Conceder subsidios o estímulos fiscales.",
+          "contenido": "Conceder subsidios o estímulos fiscales. Las resoluciones que conforme a este Artículo dicte el Ejecutivo Federal, deberán señalar las contribuciones a que se refieren, salvo que se trate de estímulos fiscales, así como, el monto o proporción de los beneficios, plazos que se concedan y los requisitos que deban cumplirse por los beneficiados.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Las resoluciones que conforme a este Artículo dicte el Ejecutivo Federal, deberán señalar las contribuciones a que se refieren, salvo que se trate de estímulos fiscales, así como, el monto o proporción de los beneficios, plazos que se concedan y los requisitos que deban cumplirse por los beneficiados.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
         }
       ]
     },
@@ -9694,22 +9658,13 @@
           "numero": 45,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La entidad financiera o sociedad cooperativa de ahorro y préstamo que corresponda deberá informar del cumplimiento de dicha medida a la comisión de que se trate, o bien, a la autoridad fiscal que ordenó levantar el aseguramiento precautorio de los bienes a que se refiere el inciso",
+          "contenido": "La entidad financiera o sociedad cooperativa de ahorro y préstamo que corresponda deberá informar del cumplimiento de dicha medida a la comisión de que se trate, o bien, a la autoridad fiscal que ordenó levantar el aseguramiento precautorio de los bienes a que se refiere el inciso a) de la fracción III de este artículo, a más tardar al tercer día siguiente a aquél en que lo haya realizado.",
           "padre_numero": 39,
           "x_id": 114,
           "x_texto": 114
         },
         {
           "numero": 46,
-          "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "de la fracción III de este artículo, a más tardar al tercer día siguiente a aquél en que lo haya realizado.",
-          "padre_numero": 39,
-          "x_id": 114,
-          "x_texto": 136
-        },
-        {
-          "numero": 47,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En los casos en que la entidad financiera o sociedad cooperativa de ahorro y préstamo que corresponda haya informado a la comisión de que se trate que llevó a cabo el levantamiento del aseguramiento precautorio, dicha comisión contará con un plazo de tres días para informar a la autoridad fiscal sobre tal situación. El plazo de tres días a que se refiere este párrafo se contará a partir de la fecha en que la comisión de que se trate haya recibido dicha información por parte de la entidad financiera o sociedad cooperativa de ahorro y préstamo que corresponda.",
@@ -9718,7 +9673,7 @@
           "x_texto": 114
         },
         {
-          "numero": 48,
+          "numero": 47,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El plazo para notificar el levantamiento del aseguramiento de los bienes a que se refiere el inciso a) de la fracción III de este artículo, al contribuyente, responsable solidario o tercero con ellos relacionado, se computará a partir de la fecha en que la comisión de que se trate, o bien, la entidad financiera o sociedad cooperativa de ahorro y préstamo que corresponda, hayan informado a la autoridad fiscal sobre el levantamiento del aseguramiento precautorio.",
@@ -9727,7 +9682,7 @@
           "x_texto": 114
         },
         {
-          "numero": 49,
+          "numero": 48,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando la autoridad constate que el aseguramiento precautorio se practicó por una cantidad mayor a la debida, únicamente ordenará su levantamiento hasta por el monto excedente, observando para ello lo dispuesto en los párrafos que anteceden.",
@@ -9736,7 +9691,7 @@
           "x_texto": 114
         },
         {
-          "numero": 50,
+          "numero": 49,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de los supuestos establecidos en los incisos b) y d) de la fracción I de este artículo, el aseguramiento precautorio quedará sin efectos cuando se acredite la inscripción al registro federal de contribuyentes o se acredite la legal posesión o propiedad de la mercancía; se acredite la autenticidad de los marbetes o precintos adheridos a los envases o botellas que contengan bebidas alcohólicas, o se acredite la legal posesión o tenencia de los marbetes o precintos asegurados, según corresponda.",
@@ -9745,7 +9700,7 @@
           "x_texto": 114
         },
         {
-          "numero": 51,
+          "numero": 50,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para la práctica del aseguramiento precautorio se observarán las disposiciones contenidas en la Sección II del Capítulo III del Título V de este Código, en aquello que no se oponga a lo previsto en este artículo.",
@@ -9897,7 +9852,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Rectificar los errores aritméticos, omisiones u otros que aparezcan en las declaraciones, solicitudes o avisos, para lo cual las autoridades fiscales podrán requerir al contribuyente la presentación de la documentación que proceda, para la rectificación del error u omisión de que se trate.",
+          "contenido": "Rectificar los errores aritméticos, omisiones u otros que aparezcan en las declaraciones, solicitudes o avisos, para lo cual las autoridades fiscales podrán requerir al contribuyente la presentación de la documentación que proceda, para la rectificación del error u omisión de que se trate.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -9915,7 +9870,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Practicar visitas a los contribuyentes, los responsables solidarios o terceros relacionados con ellos y revisar su contabilidad, bienes y mercancías.",
+          "contenido": "Practicar visitas a los contribuyentes, los responsables solidarios o terceros relacionados con ellos y revisar su contabilidad, bienes y mercancías.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10041,7 +9996,7 @@
           "numero": 17,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Practicar u ordenar se practique avalúo o verificación física de toda clase de bienes, incluso durante su transporte.",
+          "contenido": "Practicar u ordenar se practique avalúo o verificación física de toda clase de bienes, incluso durante su transporte.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10062,7 +10017,7 @@
           "numero": 19,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- Recabar de los funcionarios y empleados públicos y de los fedatarios, los informes y datos que posean con motivo de sus funciones.",
+          "contenido": "Recabar de los funcionarios y empleados públicos y de los fedatarios, los informes y datos que posean con motivo de sus funciones.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10347,7 +10302,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- El lugar o lugares donde debe efectuarse la visita. El aumento de lugares a visitar deberá notificarse al visitado.",
+          "contenido": "El lugar o lugares donde debe efectuarse la visita. El aumento de lugares a visitar deberá notificarse al visitado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10356,7 +10311,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- El nombre de la persona o personas que deban efectuar la visita las cuales podrán ser sustituídas, aumentadas o reducidas en su número, en cualquier tiempo por la autoridad competente. La sustitución o aumento de las personas que deban efectuar la visita se notificará al visitado.",
+          "contenido": "El nombre de la persona o personas que deban efectuar la visita las cuales podrán ser sustituídas, aumentadas o reducidas en su número, en cualquier tiempo por la autoridad competente. La sustitución o aumento de las personas que deban efectuar la visita se notificará al visitado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10563,7 +10518,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Durante el desarrollo de la visita los visitadores a fin de asegurar la contabilidad, correspondencia o bienes que no estén registrados en la contabilidad, podrán, indistintamente, sellar o colocar marcas en dichos documentos, bienes o en muebles, archiveros u oficinas donde se encuentren, así como dejarlos en calidad de depósito al visitado o a la persona con quien se entienda la diligencia, previo inventario que al efecto formulen, siempre que dicho aseguramiento no impida la realización de las actividades del visitado. Para efectos de esta fracción, se considera que no se impide la realización de actividades cuando se asegure contabilidad o correspondencia no relacionada con las actividades del mes en curso y los dos anteriores. En el caso de que algún documento que se encuentre en los muebles, archiveros u oficinas que se sellen, sea necesario al visitado para realizar sus actividades, se le permitirá extraerlo ante la presencia de los visitadores, quienes podrán sacar copia del mismo.",
+          "contenido": "Durante el desarrollo de la visita los visitadores a fin de asegurar la contabilidad, correspondencia o bienes que no estén registrados en la contabilidad, podrán, indistintamente, sellar o colocar marcas en dichos documentos, bienes o en muebles, archiveros u oficinas donde se encuentren, así como dejarlos en calidad de depósito al visitado o a la persona con quien se entienda la diligencia, previo inventario que al efecto formulen, siempre que dicho aseguramiento no impida la realización de las actividades del visitado. Para efectos de esta fracción, se considera que no se impide la realización de actividades cuando se asegure contabilidad o correspondencia no relacionada con las actividades del mes en curso y los dos anteriores. En el caso de que algún documento que se encuentre en los muebles, archiveros u oficinas que se sellen, sea necesario al visitado para realizar sus actividades, se le permitirá extraerlo ante la presencia de los visitadores, quienes podrán sacar copia del mismo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10572,7 +10527,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Con las mismas formalidades a que se refieren las fracciones anteriores, se podrán levantar actas parciales o complementarias en las que se hagan constar hechos, omisiones o circunstancias de carácter concreto, de los que se tenga conocimiento en el desarrollo de una visita. Una vez levantada el acta final, no se podrán levantar actas complementarias sin que exista una nueva orden de visita.",
+          "contenido": "Con las mismas formalidades a que se refieren las fracciones anteriores, se podrán levantar actas parciales o complementarias en las que se hagan constar hechos, omisiones o circunstancias de carácter concreto, de los que se tenga conocimiento en el desarrollo de una visita. Una vez levantada el acta final, no se podrán levantar actas complementarias sin que exista una nueva orden de visita.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10662,7 +10617,7 @@
           "numero": 14,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Cuando resulte imposible continuar o concluir el ejercicio de las facultades de comprobación en los establecimientos del visitado, las actas en las que se haga constar el desarrollo de una visita en el domicilio fiscal podrán levantarse en las oficinas de las autoridades fiscales. En este caso se deberá notificar previamente esta circunstancia a la persona con quien se entiende la diligencia, excepto en el supuesto de que el visitado hubiere desaparecido del domicilio fiscal durante el desarrollo de la visita.",
+          "contenido": "Cuando resulte imposible continuar o concluir el ejercicio de las facultades de comprobación en los establecimientos del visitado, las actas en las que se haga constar el desarrollo de una visita en el domicilio fiscal podrán levantarse en las oficinas de las autoridades fiscales. En este caso se deberá notificar previamente esta circunstancia a la persona con quien se entiende la diligencia, excepto en el supuesto de que el visitado hubiere desaparecido del domicilio fiscal durante el desarrollo de la visita.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10671,7 +10626,7 @@
           "numero": 15,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Si en el cierre del acta final de la visita no estuviere presente el visitado o su representante, se le dejará citatorio para que esté presente a una hora determinada del día siguiente, si no se presentare, el acta final se levantará ante quien estuviere presente en el lugar visitado; en ese momento cualquiera de los visitadores que haya intervenido en la visita, el visitado o la persona con quien se entiende la diligencia y los testigos firmarán el acta de la que se dejará copia al visitado. Si el visitado, la persona con quien se entendió la diligencia o los testigos no comparecen a firmar el acta, se niegan a firmarla, o el visitado o la persona con quien se entendió la diligencia se niegan a aceptar copia del acta, dicha circunstancia se asentará en la propia acta sin que esto afecte la validez y valor probatorio de la misma.",
+          "contenido": "Si en el cierre del acta final de la visita no estuviere presente el visitado o su representante, se le dejará citatorio para que esté presente a una hora determinada del día siguiente, si no se presentare, el acta final se levantará ante quien estuviere presente en el lugar visitado; en ese momento cualquiera de los visitadores que haya intervenido en la visita, el visitado o la persona con quien se entiende la diligencia y los testigos firmarán el acta de la que se dejará copia al visitado. Si el visitado, la persona con quien se entendió la diligencia o los testigos no comparecen a firmar el acta, se niegan a firmarla, o el visitado o la persona con quien se entendió la diligencia se niegan a aceptar copia del acta, dicha circunstancia se asentará en la propia acta sin que esto afecte la validez y valor probatorio de la misma.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10680,7 +10635,7 @@
           "numero": 16,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- Las actas parciales se entenderá que forman parte integrante del acta final de la visita aunque no se señale así expresamente.",
+          "contenido": "Las actas parciales se entenderá que forman parte integrante del acta final de la visita aunque no se señale así expresamente.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10740,21 +10695,21 @@
         },
         {
           "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. Contribuyentes que integran el sistema financiero, así como de aquéllos que opten por aplicar el régimen previsto en el Título II, Capítulo VI de la Ley del Impuesto sobre la Renta. En estos casos, el plazo será de dieciocho meses contado a partir de la fecha en la que se notifique a los contribuyentes el inicio de las facultades de comprobación.",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "Contribuyentes que integran el sistema financiero, así como de aquéllos que opten por aplicar el régimen previsto en el Título II, Capítulo VI de la Ley del Impuesto sobre la Renta. En estos casos, el plazo será de dieciocho meses contado a partir de la fecha en la que se notifique a los contribuyentes el inicio de las facultades de comprobación.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B. Contribuyentes respecto de los cuales la autoridad fiscal o aduanera solicite información a autoridades fiscales o aduaneras de otro país o esté ejerciendo sus facultades para verificar el cumplimiento de las obligaciones establecidas en los artículos 76, fracciones IX y XII, 90, penúltimo párrafo, 110, fracción XI, 179 y 180 de la Ley del Impuesto sobre la Renta o cuando la autoridad aduanera esté llevando a cabo la verificación de origen a exportadores o productores de otros países de conformidad con los tratados internacionales celebrados por México. En estos casos, el plazo será de dos años contados a partir de la fecha en la que se notifique a los contribuyentes el inicio de las facultades de comprobación.",
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "Contribuyentes respecto de los cuales la autoridad fiscal o aduanera solicite información a autoridades fiscales o aduaneras de otro país o esté ejerciendo sus facultades para verificar el cumplimiento de las obligaciones establecidas en los artículos 76, fracciones IX y XII, 90, penúltimo párrafo, 110, fracción XI, 179 y 180 de la Ley del Impuesto sobre la Renta o cuando la autoridad aduanera esté llevando a cabo la verificación de origen a exportadores o productores de otros países de conformidad con los tratados internacionales celebrados por México. En estos casos, el plazo será de dos años contados a partir de la fecha en la que se notifique a los contribuyentes el inicio de las facultades de comprobación.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Apartado reformado DOF 12-11-2021"
           ]
@@ -10944,7 +10899,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Cuando no hubiera observaciones, la autoridad fiscalizadora comunicará al contribuyente o responsable solidario, mediante oficio, la conclusión de la revisión de gabinete de los documentos presentados.",
+          "contenido": "Cuando no hubiera observaciones, la autoridad fiscalizadora comunicará al contribuyente o responsable solidario, mediante oficio, la conclusión de la revisión de gabinete de los documentos presentados.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10953,7 +10908,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- El oficio de observaciones a que se refiere la fracción IV de este artículo se notificará cumpliendo con lo señalado en la fracción I de este artículo y en el lugar especificado en esta última fracción citada. El contribuyente o el responsable solidario, contará con un plazo de veinte días, contados a partir del día siguiente al en que surta efectos la notificación del oficio de observaciones, para presentar los documentos, libros o registros que desvirtúen los hechos u omisiones asentados en el mismo, así como para optar por corregir su situación fiscal. Cuando se trate de más de un ejercicio revisado o cuando la revisión abarque además de uno o varios ejercicios revisados, fracciones de otro ejercicio, se ampliará el plazo por quince días más, siempre que el contribuyente presente aviso dentro del plazo inicial de veinte días.",
+          "contenido": "El oficio de observaciones a que se refiere la fracción IV de este artículo se notificará cumpliendo con lo señalado en la fracción I de este artículo y en el lugar especificado en esta última fracción citada. El contribuyente o el responsable solidario, contará con un plazo de veinte días, contados a partir del día siguiente al en que surta efectos la notificación del oficio de observaciones, para presentar los documentos, libros o registros que desvirtúen los hechos u omisiones asentados en el mismo, así como para optar por corregir su situación fiscal. Cuando se trate de más de un ejercicio revisado o cuando la revisión abarque además de uno o varios ejercicios revisados, fracciones de otro ejercicio, se ampliará el plazo por quince días más, siempre que el contribuyente presente aviso dentro del plazo inicial de veinte días.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -11028,7 +10983,7 @@
           "numero": 15,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "- Dentro del plazo para desvirtuar los hechos u omisiones asentados en el oficio de observaciones, a que se refieren las fracciones VI y VII, el contribuyente podrá optar por corregir su situación fiscal en las distintas contribuciones objeto de la revisión, mediante la presentación de la forma de corrección de su situación fiscal, de la que proporcionará copia a la autoridad revisora.",
+          "contenido": "Dentro del plazo para desvirtuar los hechos u omisiones asentados en el oficio de observaciones, a que se refieren las fracciones VI y VII, el contribuyente podrá optar por corregir su situación fiscal en las distintas contribuciones objeto de la revisión, mediante la presentación de la forma de corrección de su situación fiscal, de la que proporcionará copia a la autoridad revisora.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -11037,7 +10992,7 @@
           "numero": 16,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "- Cuando el contribuyente no corrija totalmente su situación fiscal conforme al oficio de observaciones o no desvirtúe los hechos u omisiones consignados en dicho documento, se emitirá la resolución que determine las contribuciones o aprovechamientos omitidos, la cual se notificará al contribuyente cumpliendo con lo señalado en la fracción I de este artículo y en el lugar especificado en dicha fracción.",
+          "contenido": "Cuando el contribuyente no corrija totalmente su situación fiscal conforme al oficio de observaciones o no desvirtúe los hechos u omisiones consignados en dicho documento, se emitirá la resolución que determine las contribuciones o aprovechamientos omitidos, la cual se notificará al contribuyente cumpliendo con lo señalado en la fracción I de este artículo y en el lugar especificado en dicha fracción.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -11299,7 +11254,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Al presentarse los visitadores al lugar en donde deba practicarse la diligencia, entregarán la orden de verificación al visitado, a su representante legal, al encargado o a quien se encuentre al frente del lugar visitado, indistintamente, y con dicha persona se entenderá la visita de inspección.",
+          "contenido": "Al presentarse los visitadores al lugar en donde deba practicarse la diligencia, entregarán la orden de verificación al visitado, a su representante legal, al encargado o a quien se encuentre al frente del lugar visitado, indistintamente, y con dicha persona se entenderá la visita de inspección.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -12062,28 +12017,19 @@
           "contenido": "Por cada operación, no proporcionar la información a que se refiere el artículo 31-A de este Código o proporcionarla incompleta, con errores, inconsistencias o en forma distinta a lo señalado en las disposiciones fiscales.",
           "padre_numero": 9,
           "x_id": 121,
-          "x_texto": 143
-        },
-        {
-          "numero": 26,
-          "tipo": "inciso",
-          "identificador": "m)",
-          "contenido": "Tratándose de los contribuyentes a que se refiere el artículo 32-A de este Código.",
-          "padre_numero": 9,
-          "x_id": 121,
           "x_texto": 143,
           "referencias": [
             "Inciso adicionado DOF 12-11-2021"
           ]
         },
         {
-          "numero": 27,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Tratándose de la revisión de pagos provisionales o mensuales, sólo se aplicará el orden establecido en este artículo, respecto de aquellos comprendidos en los periodos por los cuales ya se hubiera presentado el dictamen.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "numero": 26,
+          "tipo": "inciso",
+          "identificador": "m)",
+          "contenido": "Tratándose de los contribuyentes a que se refiere el artículo 32-A de este Código. Tratándose de la revisión de pagos provisionales o mensuales, sólo se aplicará el orden establecido en este artículo, respecto de aquellos comprendidos en los periodos por los cuales ya se hubiera presentado el dictamen.",
+          "padre_numero": 9,
+          "x_id": 121,
+          "x_texto": 143
         }
       ]
     },
@@ -12149,12 +12095,12 @@
         },
         {
           "numero": 7,
-          "tipo": "fraccion",
-          "identificador": "II",
-          "contenido": "- (Se deroga).",
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "II.- (Se deroga).",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 85
         }
       ]
     },
@@ -14903,6 +14849,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Acuerdos Conclusivos",
+          "padre_numero": 3,
+          "x_id": 228,
+          "x_texto": 228
         }
       ]
     },
@@ -15119,6 +15074,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Infracciones y Delitos Fiscales",
+          "padre_numero": 2,
+          "x_id": 208,
+          "x_texto": 208
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las infracciones",
+          "padre_numero": 3,
+          "x_id": 256,
+          "x_texto": 256
         }
       ]
     },
@@ -17404,26 +17377,17 @@
           "numero": 57,
           "tipo": "fraccion",
           "identificador": "XXXIV",
-          "contenido": "De $26,440.00 a $44,050.00 por cada solicitud no atendida, para la señalada en la fracción",
+          "contenido": "De $26,440.00 a $44,050.00 por cada solicitud no atendida, para la señalada en la fracción XXXIV.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 58,
-          "tipo": "fraccion",
-          "identificador": "XXXIV",
-          "contenido": "",
-          "padre_numero": null,
-          "x_id": 126,
-          "x_texto": 148,
+          "x_texto": 107,
           "referencias": [
             "Multa de la fracción compilada por resolución miscelánea fiscal DOF 05-01-2022. Actualizada DOF 27-12-2022. Compilada DOF 29-12-2023,",
             "30-12-2024"
           ]
         },
         {
-          "numero": 59,
+          "numero": 58,
           "tipo": "fraccion",
           "identificador": "XXXV",
           "contenido": "(Se deroga).",
@@ -17432,7 +17396,7 @@
           "x_texto": 107
         },
         {
-          "numero": 60,
+          "numero": 59,
           "tipo": "fraccion",
           "identificador": "XXXVI",
           "contenido": "De $114,770.00 a $143,450.00 a la establecida en las fracciones XXXVI, XXXVII, XXXVIII, XLII y XLIV, y, en su caso, la cancelación de la autorización para recibir donativos deducibles.",
@@ -17445,7 +17409,7 @@
           ]
         },
         {
-          "numero": 61,
+          "numero": 60,
           "tipo": "fraccion",
           "identificador": "XXXVII",
           "contenido": "De $199,630.00 a $284,220.00, para la establecida en la fracción XL.",
@@ -17458,7 +17422,7 @@
           ]
         },
         {
-          "numero": 62,
+          "numero": 61,
           "tipo": "fraccion",
           "identificador": "XXXVIII",
           "contenido": "Respecto de las señaladas en la fracción XLI de $7,110.00 a $21,310.00, por no ingresar la información contable a través de la página de Internet del Servicio de Administración Tributaria, como lo prevé el artículo 28, fracción IV del Código, dentro de los plazos establecidos en las disposiciones fiscales estando obligado a ello; ingresarla a través de archivos con alteraciones que impidan su lectura; no ingresarla de conformidad con las reglas de carácter general emitidas para tal efecto, o no cumplir con los requerimientos de información o de documentación formulados por las autoridades fiscales en esta materia.",
@@ -17471,7 +17435,7 @@
           ]
         },
         {
-          "numero": 63,
+          "numero": 62,
           "tipo": "fraccion",
           "identificador": "XXXIX",
           "contenido": "De $201,610.00 a $287,040.00 a la establecida en la fracción XXXIX.",
@@ -17484,7 +17448,7 @@
           ]
         },
         {
-          "numero": 64,
+          "numero": 63,
           "tipo": "fraccion",
           "identificador": "XL",
           "contenido": "Se deroga.",
@@ -17496,7 +17460,7 @@
           ]
         },
         {
-          "numero": 65,
+          "numero": 64,
           "tipo": "fraccion",
           "identificador": "XLI",
           "contenido": "De $173,610.00 a $347,220.00 a la establecida en la fracción XLV, por cada obligación de entregar información no cumplida.",
@@ -17509,7 +17473,7 @@
           ]
         },
         {
-          "numero": 66,
+          "numero": 65,
           "tipo": "fraccion",
           "identificador": "XLII",
           "contenido": "Del 5% a un 10% del monto de cada comprobante fiscal, tratándose del supuesto establecido en la fracción XLVI.",
@@ -19241,7 +19205,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Divulgar, hacer uso personal o indebido de la información confidencial proporcionada por terceros independientes que afecte su posición competitiva a que se refieren los artículos 46, fracción IV y 48, fracción VII de este Código.",
+          "contenido": "Divulgar, hacer uso personal o indebido de la información confidencial proporcionada por terceros independientes que afecte su posición competitiva a que se refieren los artículos 46, fracción IV y 48, fracción VII de este Código.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -19367,7 +19331,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Hacer cualquier uso diferente de los marbetes o precintos al de adherirlos a los envases o recipientes que contengan bebidas alcohólicas.",
+          "contenido": "Hacer cualquier uso diferente de los marbetes o precintos al de adherirlos a los envases o recipientes que contengan bebidas alcohólicas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -20163,6 +20127,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los delitos fiscales",
+          "padre_numero": 1,
+          "x_id": 249,
+          "x_texto": 249
         }
       ]
     },
@@ -20655,25 +20628,16 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "De importación o exportación prohibida.",
+          "contenido": "De importación o exportación prohibida. También comete delito de contrabando quien interne mercancías extranjeras procedentes de una franja o región fronteriza al resto del país en cualquiera de los casos anteriores, así como quien las extraiga de los recintos fiscales o fiscalizados sin que le hayan sido entregados legalmente por las autoridades o por las personas autorizadas para ello.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "También comete delito de contrabando quien interne mercancías extranjeras procedentes de una franja o región fronteriza al resto del país en cualquiera de los casos anteriores, así como quien las extraiga de los recintos fiscales o fiscalizados sin que le hayan sido entregados legalmente por las autoridades o por las personas autorizadas para ello.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 12-11-2021"
           ]
         },
         {
-          "numero": 6,
+          "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "No se formulará la declaratoria a que se refiere el artículo 92, fracción II, si el monto de la omisión no excede de $225,940.00 o del diez por ciento de los impuestos causados, el que resulte mayor. Tampoco se formulará la citada declaratoria si el monto de la omisión no excede del cincuenta y cinco por ciento de los impuestos que deban cubrirse cuando la misma se deba a inexacta clasificación arancelaria por diferencia de criterio en la interpretación de las tarifas contenidas en las leyes de los impuestos generales de importación o exportación, siempre que la descripción, naturaleza y demás características necesarias para la clasificación de las mercancías hayan sido correctamente manifestadas a la autoridad. Lo dispuesto en este párrafo no será aplicable cuando la contribución omitida es el impuesto especial sobre producción y servicios aplicable a los bienes a que se refiere el artículo 2, fracción I, inciso D) de la Ley del Impuesto Especial sobre Producción y Servicios.",
@@ -21470,22 +21434,13 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "Por tres o más personas.",
+          "contenido": "Por tres o más personas. Las calificativas a que se refieren las fracciones III, IV y V de este artículo, también serán aplicables al delito previsto en el artículo 105 de este Código.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Las calificativas a que se refieren las fracciones III, IV y V de este artículo, también serán aplicables al delito previsto en el artículo 105 de este Código.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando los delitos a que se refiere este artículo sean calificados, la sanción correspondiente se aumentará de tres meses a tres años de prisión. Si la calificativa constituye otro delito, se aplicarán las reglas de la acumulación.",
@@ -21607,7 +21562,7 @@
           "numero": 11,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": ".- Usar documentos falsos.",
+          "contenido": "Usar documentos falsos.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -21616,7 +21571,7 @@
           "numero": 12,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": ".- Omitir reiteradamente la expedición de comprobantes por las actividades que se realicen, siempre que las disposiciones fiscales establezcan la obligación de expedirlos. Se entiende que existe una conducta reiterada cuando durante un período de cinco años el contribuyente haya sido sancionado por esa conducta la segunda o posteriores veces.",
+          "contenido": "Omitir reiteradamente la expedición de comprobantes por las actividades que se realicen, siempre que las disposiciones fiscales establezcan la obligación de expedirlos. Se entiende que existe una conducta reiterada cuando durante un período de cinco años el contribuyente haya sido sancionado por esa conducta la segunda o posteriores veces.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -21625,7 +21580,7 @@
           "numero": 13,
           "tipo": "inciso",
           "identificador": "c)",
-          "contenido": ".- Manifestar datos falsos para obtener de la autoridad fiscal la devolución de contribuciones que no le correspondan.",
+          "contenido": "Manifestar datos falsos para obtener de la autoridad fiscal la devolución de contribuciones que no le correspondan.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -21634,7 +21589,7 @@
           "numero": 14,
           "tipo": "inciso",
           "identificador": "d)",
-          "contenido": ".- No llevar los sistemas o registros contables a que se esté obligado conforme a las disposiciones fiscales o asentar datos falsos en dichos sistemas o registros.",
+          "contenido": "No llevar los sistemas o registros contables a que se esté obligado conforme a las disposiciones fiscales o asentar datos falsos en dichos sistemas o registros.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -22006,7 +21961,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Por sí, o por interpósita persona, divulgue, haga uso personal o indebido, a través de cualquier medio o forma, de la información confidencial que afecte la posición competitiva proporcionada por terceros a que se refieren los artículos 46, fracción IV y 48, fracción VII de este Código.",
+          "contenido": "Por sí, o por interpósita persona, divulgue, haga uso personal o indebido, a través de cualquier medio o forma, de la información confidencial que afecte la posición competitiva proporcionada por terceros a que se refieren los artículos 46, fracción IV y 48, fracción VII de este Código.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -22485,6 +22440,33 @@
           "referencias": [
             "Artículo adicionado DOF 07-11-2025"
           ]
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De Los Procedimientos Administrativos",
+          "padre_numero": 3,
+          "x_id": 202,
+          "x_texto": 202
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del recurso administrativo",
+          "padre_numero": 4,
+          "x_id": 237,
+          "x_texto": 237
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Recurso de Revocación",
+          "padre_numero": 4,
+          "x_id": 234,
+          "x_texto": 234
         }
       ]
     },
@@ -22524,7 +22506,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Las resoluciones definitivas dictadas por autoridades fiscales federales que:",
+          "contenido": "Las resoluciones definitivas dictadas por autoridades fiscales federales que:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -22569,7 +22551,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Los actos de autoridades fiscales federales que:",
+          "contenido": "Los actos de autoridades fiscales federales que:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -22768,22 +22750,13 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Las pruebas y los hechos controvertidos de que se trate.",
+          "contenido": "Las pruebas y los hechos controvertidos de que se trate. Cuando no se expresen los agravios, no se señale la resolución o el acto que se impugna, los hechos controvertidos o no se ofrezcan las pruebas a que se refieren las fracciones I, II y III, la autoridad fiscal requerirá al promovente para que dentro del plazo de cinco días cumpla con dichos requisitos. Si dentro de dicho plazo no se expresan los agravios que le cause la resolución o acto impugnado, la autoridad fiscal desechará el recurso; si no se señala el acto que se impugna se tendrá por no presentado el recurso; si el requerimiento que se incumple se refiere al señalamiento de los hechos controvertidos o al ofrecimiento de pruebas, el promovente perderá el derecho a señalar los citados hechos o se tendrán por no ofrecidas las pruebas, respectivamente.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Cuando no se expresen los agravios, no se señale la resolución o el acto que se impugna, los hechos controvertidos o no se ofrezcan las pruebas a que se refieren las fracciones I, II y III, la autoridad fiscal requerirá al promovente para que dentro del plazo de cinco días cumpla con dichos requisitos. Si dentro de dicho plazo no se expresan los agravios que le cause la resolución o acto impugnado, la autoridad fiscal desechará el recurso; si no se señala el acto que se impugna se tendrá por no presentado el recurso; si el requerimiento que se incumple se refiere al señalamiento de los hechos controvertidos o al ofrecimiento de pruebas, el promovente perderá el derecho a señalar los citados hechos o se tendrán por no ofrecidas las pruebas, respectivamente.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando no se gestione en nombre propio, la representación de las personas físicas y morales, deberá acreditarse en términos del artículo 19 de este Código.",
@@ -22839,7 +22812,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "Las pruebas documentales que ofrezca y el dictamen pericial, en su caso.",
+          "contenido": "Las pruebas documentales que ofrezca y el dictamen pericial, en su caso. Los documentos a que se refieren las fracciones anteriores, podrán presentarse en fotocopia simple, siempre que obren en poder del recurrente los originales. En caso de que presentándolos en esta forma la autoridad tenga indicios de que no existen o son falsos, podrá exigir al contribuyente la presentación del original o copia certificada.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -22848,7 +22821,7 @@
           "numero": 6,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los documentos a que se refieren las fracciones anteriores, podrán presentarse en fotocopia simple, siempre que obren en poder del recurrente los originales. En caso de que presentándolos en esta forma la autoridad tenga indicios de que no existen o son falsos, podrá exigir al contribuyente la presentación del original o copia certificada.",
+          "contenido": "En caso de que los documentos se presenten en idioma distinto al español, deberán acompañarse de su respectiva traducción.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -22857,7 +22830,7 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En caso de que los documentos se presenten en idioma distinto al español, deberán acompañarse de su respectiva traducción.",
+          "contenido": "Cuando las pruebas documentales no obren en poder del recurrente, si éste no hubiere podido obtenerlas a pesar de tratarse de documentos que legalmente se encuentren a su disposición, deberá señalar el archivo o lugar en que se encuentren para que la autoridad fiscal requiera su remisión cuando ésta sea legalmente posible. Para este efecto deberá identificar con toda precisión los documentos y, tratándose de los que pueda tener a su disposición bastará con que acompañe la copia sellada de la solicitud de los mismos. Se entiende que el recurrente tiene a su disposición los documentos, cuando legalmente pueda obtener copia autorizada de los originales o de las constancias de éstos.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -22866,7 +22839,7 @@
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Cuando las pruebas documentales no obren en poder del recurrente, si éste no hubiere podido obtenerlas a pesar de tratarse de documentos que legalmente se encuentren a su disposición, deberá señalar el archivo o lugar en que se encuentren para que la autoridad fiscal requiera su remisión cuando ésta sea legalmente posible. Para este efecto deberá identificar con toda precisión los documentos y, tratándose de los que pueda tener a su disposición bastará con que acompañe la copia sellada de la solicitud de los mismos. Se entiende que el recurrente tiene a su disposición los documentos, cuando legalmente pueda obtener copia autorizada de los originales o de las constancias de éstos.",
+          "contenido": "La autoridad fiscal, a petición del recurrente, recabará las pruebas que obren en el expediente en que se haya originado el acto impugnado, siempre que el interesado no hubiere tenido oportunidad de obtenerlas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -22875,22 +22848,13 @@
           "numero": 9,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La autoridad fiscal, a petición del recurrente, recabará las pruebas que obren en el expediente en que se haya originado el acto impugnado, siempre que el interesado no hubiere tenido oportunidad de obtenerlas.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 10,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Cuando no se acompañe alguno de los documentos a que se refieren las fracciones anteriores, la autoridad fiscal requerirá al promovente para que los presente dentro del término de cinco días. Si el promovente no los presentare dentro de dicho término y se trata de los documentos a que se refieren las fracciones I a III, se tendrá por no interpuesto el recurso; si se trata de las pruebas a que se refiere la fracción IV, las mismas se tendrán por no ofrecidas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 11,
+          "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Sin perjuicio de lo dispuesto en el párrafo anterior, en el escrito en que se interponga el recurso o dentro de los quince días posteriores, el recurrente podrá anunciar que exhibirá pruebas adicionales, en términos de lo previsto en el tercer párrafo del artículo 130 de este Código.",
@@ -23053,7 +23017,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Cuando el promovente se desista expresamente de su recurso.",
+          "contenido": "Cuando el promovente se desista expresamente de su recurso.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -23062,7 +23026,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Cuando durante el procedimiento en que se substancie el recurso administrativo sobrevenga alguna de las causas de improcedencia a que se refiere el artículo 124 de este Código.",
+          "contenido": "Cuando durante el procedimiento en que se substancie el recurso administrativo sobrevenga alguna de las causas de improcedencia a que se refiere el artículo 124 de este Código.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -23071,7 +23035,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Cuando de las constancias que obran en el expediente administrativo quede demostrado que no existe el acto o resolución impugnada.",
+          "contenido": "Cuando de las constancias que obran en el expediente administrativo quede demostrado que no existe el acto o resolución impugnada.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -23080,7 +23044,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Cuando hayan cesado los efectos del acto o resolución impugnada.",
+          "contenido": "Cuando hayan cesado los efectos del acto o resolución impugnada.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -23170,6 +23134,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Impugnación de las Notificaciones",
+          "padre_numero": 1,
+          "x_id": 201,
+          "x_texto": 201
         }
       ]
     },
@@ -23187,6 +23160,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Trámite y Resolución de los Recursos",
+          "padre_numero": 1,
+          "x_id": 196,
+          "x_texto": 196
         }
       ]
     },
@@ -23563,6 +23545,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 16,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Trámite y Resolución del Recurso de Revocación Exclusivo de Fondo",
+          "padre_numero": 15,
+          "x_id": 114,
+          "x_texto": 114
         }
       ]
     },
@@ -23926,6 +23917,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las notificaciones y la garantía del interés fiscal",
+          "padre_numero": 6,
+          "x_id": 173,
+          "x_texto": 173
         }
       ]
     },
@@ -24568,29 +24568,18 @@
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción adicionada DOF 12-11-2021"
+            "Fracción adicionada DOF 12-11-2021",
+            "Fracción recorrida DOF 12-11-2021"
           ]
         },
         {
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "En los demás casos que señalen este ordenamiento y las leyes fiscales.",
+          "contenido": "En los demás casos que señalen este ordenamiento y las leyes fiscales. No se otorgará garantía respecto de gastos de ejecución, salvo que el interés fiscal esté constituido únicamente por éstos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107,
-          "referencias": [
-            "Fracción recorrida DOF 12-11-2021"
-          ]
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "No se otorgará garantía respecto de gastos de ejecución, salvo que el interés fiscal esté constituido únicamente por éstos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         }
       ]
     },
@@ -24808,6 +24797,24 @@
           "referencias": [
             "Reforma DOF 12-11-2021: Derogó del artículo el entonces párrafo décimo"
           ]
+        },
+        {
+          "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del procedimiento administrativo de ejecución",
+          "padre_numero": 10,
+          "x_id": 184,
+          "x_texto": 184
+        },
+        {
+          "numero": 12,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Disposiciones Generales",
+          "padre_numero": 11,
+          "x_id": 241,
+          "x_texto": 241
         }
       ]
     },
@@ -24965,7 +24972,7 @@
           "numero": 17,
           "tipo": "inciso",
           "identificador": "h)",
-          "contenido": "La negociación del contribuyente.",
+          "contenido": "La negociación del contribuyente. Los contribuyentes, responsables solidarios o terceros, deberán acreditar el valor del bien o los bienes sobre los que se practique el embargo precautorio.",
           "padre_numero": 9,
           "x_id": 121,
           "x_texto": 143
@@ -24974,22 +24981,13 @@
           "numero": 18,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los contribuyentes, responsables solidarios o terceros, deberán acreditar el valor del bien o los bienes sobre los que se practique el embargo precautorio.",
-          "padre_numero": 9,
-          "x_id": 121,
-          "x_texto": 121
-        },
-        {
-          "numero": 19,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "En caso de que los contribuyentes, responsables solidarios o terceros no cuenten con alguno de los bienes a asegurar o, bajo protesta de decir verdad, manifiesten no contar con ellos conforme al orden establecido en esta fracción o, en su caso, no acrediten el valor de los mismos, ello se asentará en el acta circunstanciada referida en el segundo párrafo de la fracción II de este artículo.",
           "padre_numero": 9,
           "x_id": 121,
           "x_texto": 121
         },
         {
-          "numero": 20,
+          "numero": 19,
           "tipo": "fraccion",
           "identificador": "IV",
           "contenido": "La autoridad fiscal ordenará mediante oficio dirigido a la unidad administrativa competente de la Comisión Nacional Bancaria y de Valores, de la Comisión Nacional de Seguros y Fianzas o de la Comisión Nacional del Sistema de Ahorro para el Retiro, según proceda, o bien a la entidad financiera o sociedad cooperativa de ahorro y préstamo a la que corresponda la cuenta, que procedan a inmovilizar y conservar los bienes señalados en el inciso f) de la fracción III de este artículo, a más tardar al tercer día siguiente a la recepción de la solicitud de embargo precautorio correspondiente formulada por la autoridad fiscal. Para efectos de lo anterior, la inmovilización deberá realizarse dentro de los tres días siguientes a aquél en que les fue notificado el oficio de la autoridad fiscal.",
@@ -24998,11 +24996,20 @@
           "x_texto": 107
         },
         {
-          "numero": 21,
+          "numero": 20,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las entidades financieras o sociedades de ahorro y préstamo o de inversiones y valores que hayan ejecutado la inmovilización en una o más cuentas del contribuyente, deberán informar del cumplimiento de dicha medida a la autoridad fiscal que la ordenó a más tardar al tercer día siguiente a la fecha en que se haya ejecutado, señalando los números de las cuentas, así como el importe total que fue inmovilizado.",
-          "padre_numero": 20,
+          "padre_numero": 19,
+          "x_id": 121,
+          "x_texto": 121
+        },
+        {
+          "numero": 21,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En los casos en que el contribuyente, la entidad financiera, sociedades de ahorro y préstamo o de inversiones y valores, hagan del conocimiento de la autoridad fiscal que la inmovilización se realizó en una o más cuentas del contribuyente por un importe mayor al señalado en el segundo párrafo de este artículo, ésta deberá ordenar dentro de los tres días siguientes a aquél en que hubiere tenido conocimiento de la inmovilización en exceso, que se libere la cantidad correspondiente. Dichas entidades o sociedades cooperativas de ahorro y préstamo o de inversiones y valores, deberán liberar los recursos inmovilizados en exceso, a más tardar a los tres días siguientes a aquél en que surta efectos la notificación del oficio de la autoridad fiscal.",
+          "padre_numero": 19,
           "x_id": 121,
           "x_texto": 121
         },
@@ -25010,8 +25017,8 @@
           "numero": 22,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En los casos en que el contribuyente, la entidad financiera, sociedades de ahorro y préstamo o de inversiones y valores, hagan del conocimiento de la autoridad fiscal que la inmovilización se realizó en una o más cuentas del contribuyente por un importe mayor al señalado en el segundo párrafo de este artículo, ésta deberá ordenar dentro de los tres días siguientes a aquél en que hubiere tenido conocimiento de la inmovilización en exceso, que se libere la cantidad correspondiente. Dichas entidades o sociedades cooperativas de ahorro y préstamo o de inversiones y valores, deberán liberar los recursos inmovilizados en exceso, a más tardar a los tres días siguientes a aquél en que surta efectos la notificación del oficio de la autoridad fiscal.",
-          "padre_numero": 20,
+          "contenido": "En ningún caso procederá embargar precautoriamente los depósitos bancarios, otros depósitos o seguros del contribuyente, por un monto mayor al del crédito fiscal actualizado, junto con sus accesorios legales, ya sea que el embargo se trabe sobre una sola cuenta o en más de una. Lo anterior, siempre y cuando previo al embargo, la autoridad fiscal cuente con información de las cuentas y los saldos que existan en las mismas.",
+          "padre_numero": 19,
           "x_id": 121,
           "x_texto": 121
         },
@@ -25019,8 +25026,8 @@
           "numero": 23,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "En ningún caso procederá embargar precautoriamente los depósitos bancarios, otros depósitos o seguros del contribuyente, por un monto mayor al del crédito fiscal actualizado, junto con sus accesorios legales, ya sea que el embargo se trabe sobre una sola cuenta o en más de una. Lo anterior, siempre y cuando previo al embargo, la autoridad fiscal cuente con información de las cuentas y los saldos que existan en las mismas.",
-          "padre_numero": 20,
+          "contenido": "Al acreditarse que ha cesado la conducta que dio origen al embargo precautorio, o bien, cuando exista orden de suspensión que el contribuyente haya obtenido emitida por autoridad competente, la autoridad deberá ordenar que se levante la medida dentro del plazo de tres días.",
+          "padre_numero": 19,
           "x_id": 121,
           "x_texto": 121
         },
@@ -25028,8 +25035,8 @@
           "numero": 24,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Al acreditarse que ha cesado la conducta que dio origen al embargo precautorio, o bien, cuando exista orden de suspensión que el contribuyente haya obtenido emitida por autoridad competente, la autoridad deberá ordenar que se levante la medida dentro del plazo de tres días.",
-          "padre_numero": 20,
+          "contenido": "La autoridad fiscal deberá ordenar a las entidades financieras, sociedades de ahorro y préstamo o de inversiones y valores, la desinmovilización de los bienes señalados en el inciso f) de la fracción III de este artículo, dentro de los tres días siguientes a aquél en que se acredite que cesó la conducta que dio origen al embargo precautorio o bien, que existe orden de suspensión emitida por autoridad competente.",
+          "padre_numero": 19,
           "x_id": 121,
           "x_texto": 121
         },
@@ -25037,31 +25044,13 @@
           "numero": 25,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La autoridad fiscal deberá ordenar a las entidades financieras, sociedades de ahorro y préstamo o de inversiones y valores, la desinmovilización de los bienes señalados en el inciso",
-          "padre_numero": 20,
+          "contenido": "Las entidades financieras o sociedades cooperativas de ahorro y préstamo contarán con un plazo de tres días a partir de la recepción de la instrucción respectiva, ya sea a través de la Comisión de que se trate, o bien, de la autoridad fiscal, según sea el caso, para la liberación de los bienes embargados.",
+          "padre_numero": 19,
           "x_id": 121,
           "x_texto": 121
         },
         {
           "numero": 26,
-          "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "de la fracción III de este artículo, dentro de los tres días siguientes a aquél en que se acredite que cesó la conducta que dio origen al embargo precautorio o bien, que existe orden de suspensión emitida por autoridad competente.",
-          "padre_numero": 20,
-          "x_id": 121,
-          "x_texto": 143
-        },
-        {
-          "numero": 27,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Las entidades financieras o sociedades cooperativas de ahorro y préstamo contarán con un plazo de tres días a partir de la recepción de la instrucción respectiva, ya sea a través de la Comisión de que se trate, o bien, de la autoridad fiscal, según sea el caso, para la liberación de los bienes embargados.",
-          "padre_numero": 20,
-          "x_id": 121,
-          "x_texto": 121
-        },
-        {
-          "numero": 28,
           "tipo": "fraccion",
           "identificador": "V",
           "contenido": "A más tardar al vigésimo día siguiente a aquél en que hubiera tenido lugar el embargo precautorio, la autoridad fiscal notificará al contribuyente la conducta que originó la medida y, en su caso, el monto sobre el cual procede. La notificación se hará personalmente o a través del buzón tributario.",
@@ -25073,7 +25062,7 @@
           ]
         },
         {
-          "numero": 29,
+          "numero": 27,
           "tipo": "fraccion",
           "identificador": "VI",
           "contenido": "Con excepción de los bienes a que se refiere el inciso f) de la fracción III de este artículo, los bienes embargados precautoriamente podrán, desde el momento en que se notifique el mismo y hasta que se levante, dejarse en posesión del contribuyente, siempre que para estos efectos actúe como depositario en los términos establecidos en el artículo 153, del presente Código, salvo lo indicado en su segundo párrafo.",
@@ -25082,11 +25071,29 @@
           "x_texto": 107
         },
         {
-          "numero": 30,
+          "numero": 28,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El contribuyente que actúe como depositario, deberá rendir cuentas mensuales a la autoridad fiscal competente respecto de los bienes que se encuentren bajo su custodia.",
-          "padre_numero": 29,
+          "padre_numero": 27,
+          "x_id": 121,
+          "x_texto": 121
+        },
+        {
+          "numero": 29,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Salvo tratándose de los bienes a que se refiere el inciso f) de la fracción III de este artículo, la autoridad fiscal deberá ordenar el levantamiento del embargo precautorio a más tardar al tercer día siguiente a aquél en que se acredite que cesó la conducta que dio origen al embargo precautorio, o bien, que existe orden de suspensión emitida por autoridad competente.",
+          "padre_numero": 27,
+          "x_id": 121,
+          "x_texto": 121
+        },
+        {
+          "numero": 30,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La autoridad requerirá al obligado para que dentro del término de diez días desvirtúe el monto por el que se realizó el embargo. El embargo quedará sin efecto cuando el contribuyente cumpla con el requerimiento.",
+          "padre_numero": 27,
           "x_id": 121,
           "x_texto": 121
         },
@@ -25094,26 +25101,8 @@
           "numero": 31,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Salvo tratándose de los bienes a que se refiere el inciso f) de la fracción III de este artículo, la autoridad fiscal deberá ordenar el levantamiento del embargo precautorio a más tardar al tercer día siguiente a aquél en que se acredite que cesó la conducta que dio origen al embargo precautorio, o bien, que existe orden de suspensión emitida por autoridad competente.",
-          "padre_numero": 29,
-          "x_id": 121,
-          "x_texto": 121
-        },
-        {
-          "numero": 32,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "La autoridad requerirá al obligado para que dentro del término de diez días desvirtúe el monto por el que se realizó el embargo. El embargo quedará sin efecto cuando el contribuyente cumpla con el requerimiento.",
-          "padre_numero": 29,
-          "x_id": 121,
-          "x_texto": 121
-        },
-        {
-          "numero": 33,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Una vez practicado el embargo precautorio, el contribuyente afectado podrá proceder conforme a lo establecido en el artículo 141 de este Código, a fin de que el crédito fiscal y sus accesorios queden garantizados y se ordene el levantamiento del embargo trabado sobre los depósitos bancarios, otros depósitos o seguros del contribuyente.",
-          "padre_numero": 29,
+          "padre_numero": 27,
           "x_id": 121,
           "x_texto": 121,
           "referencias": [
@@ -25121,20 +25110,20 @@
           ]
         },
         {
-          "numero": 34,
+          "numero": 32,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El embargo precautorio se convertirá en definitivo al momento de la exigibilidad de dicho crédito fiscal y se aplicará el procedimiento administrativo de ejecución, sujetándose a las disposiciones que este Código establece.",
-          "padre_numero": 29,
+          "padre_numero": 27,
           "x_id": 121,
           "x_texto": 121
         },
         {
-          "numero": 35,
+          "numero": 33,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Son aplicables al embargo precautorio a que se refiere este artículo, las disposiciones establecidas para el embargo y para la intervención en el procedimiento administrativo de ejecución que, conforme a su naturaleza, le sean aplicables y no contravengan a lo dispuesto en este artículo.",
-          "padre_numero": 29,
+          "padre_numero": 27,
           "x_id": 121,
           "x_texto": 121
         }
@@ -25561,26 +25550,17 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Por la de remate, enajenación fuera de remate o adjudicación al fisco federal.",
+          "contenido": "Por la de remate, enajenación fuera de remate o adjudicación al fisco federal. Cuando en los casos de las fracciones anteriores, el 2% del crédito sea inferior a $560.00, se cobrará esta cantidad en vez del 2% del crédito.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Cuando en los casos de las fracciones anteriores, el 2% del crédito sea inferior a $560.00, se cobrará esta cantidad en vez del 2% del crédito.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Cantidad del párrafo compilada por resolución miscelánea fiscal DOF 05-01-2022. Actualizada DOF 27-12-2022. Compilada DOF 29-12-2023,",
             "30-12-2024"
           ]
         },
         {
-          "numero": 6,
+          "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En ningún caso los gastos de ejecución, por cada una de las diligencias a que se refiere este artículo, excluyendo las erogaciones extraordinarias y las contribuciones que se paguen por la Federación para liberar de cualquier gravamen bienes que sean objeto de remate, podrán exceder de $86,460.00.",
@@ -25593,7 +25573,7 @@
           ]
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, se pagarán por concepto de gastos de ejecución, los extraordinarios en que se incurra con motivo del procedimiento administrativo de ejecución, incluyendo los que en su caso deriven de los embargos señalados en los artículos 41, fracción II y 141, fracción VI, de este Código, que comprenderán los de transporte de los bienes embargados, de avalúos, de impresión y publicación de convocatorias y edictos, de investigaciones, de inscripciones, de cancelaciones o de solicitudes de información, en el registro público que corresponda, los erogados por la obtención del certificado de liberación de gravámenes, los honorarios de los depositarios y de los peritos, salvo cuando dichos depositarios renuncien expresamente al cobro de tales honorarios, los devengados por concepto de escrituración y las contribuciones que origine la transmisión de dominio de los bienes inmuebles enajenados o adjudicados a favor de la Federación en los términos de lo establecido por el artículo 191 de este Código, y las contribuciones que se paguen por la Federación para liberar de cualquier gravamen a los bienes que sean objeto de remate.",
@@ -25605,7 +25585,7 @@
           ]
         },
         {
-          "numero": 8,
+          "numero": 7,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los gastos de ejecución se determinarán por la autoridad ejecutora, debiendo pagarse junto con los demás créditos fiscales, salvo que se interponga el recurso de revocación.",
@@ -25614,7 +25594,7 @@
           "x_texto": 85
         },
         {
-          "numero": 9,
+          "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los ingresos recaudados por concepto de gastos de ejecución, se destinarán al establecimiento de un fondo revolvente para gastos de cobranza, para programas de fomento con el público en general del cumplimiento de las obligaciones fiscales, para financiar los programas de formación de funcionarios fiscales, salvo que por Ley estén destinados a otros fines. El destino de estos ingresos será con independencia del presupuesto que tengan asignado las autoridades fiscales federales.",
@@ -25623,13 +25603,22 @@
           "x_texto": 85
         },
         {
-          "numero": 10,
+          "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando las autoridades fiscales ordenen la práctica de un avalúo, y éste resulte superior en más de un 10% del valor declarado por el contribuyente, éste deberá cubrir el costo de dicho avalúo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 10,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Embargo",
+          "padre_numero": 9,
+          "x_id": 272,
+          "x_texto": 272
         }
       ]
     },
@@ -26033,19 +26022,10 @@
           "numero": 6,
           "tipo": "inciso",
           "identificador": "c)",
-          "contenido": "Bienes de fácil descomposición o deterioro o materias inflamables.",
+          "contenido": "Bienes de fácil descomposición o deterioro o materias inflamables. El ejecutor deberá señalar, invariablemente, bienes que sean de fácil realización o venta. En el caso de bienes inmuebles, el ejecutor solicitará al deudor o a la persona con quien se entienda la diligencia que manifieste bajo protesta de decir verdad si dichos bienes reportan cualquier gravamen real, embargo anterior, se encuentran en copropiedad o pertenecen a sociedad conyugal alguna. Para estos efectos, el deudor o la persona con quien se entienda la diligencia deberá acreditar fehacientemente dichos hechos dentro de los 15 días siguientes a aquél en que se inició la diligencia correspondiente, haciéndose constar esta situación en el acta que se levante o bien, su negativa.",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "El ejecutor deberá señalar, invariablemente, bienes que sean de fácil realización o venta. En el caso de bienes inmuebles, el ejecutor solicitará al deudor o a la persona con quien se entienda la diligencia que manifieste bajo protesta de decir verdad si dichos bienes reportan cualquier gravamen real, embargo anterior, se encuentran en copropiedad o pertenecen a sociedad conyugal alguna. Para estos efectos, el deudor o la persona con quien se entienda la diligencia deberá acreditar fehacientemente dichos hechos dentro de los 15 días siguientes a aquél en que se inició la diligencia correspondiente, haciéndose constar esta situación en el acta que se levante o bien, su negativa.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
         }
       ]
     },
@@ -26628,6 +26608,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Intervención",
+          "padre_numero": 3,
+          "x_id": 259,
+          "x_texto": 259
         }
       ]
     },
@@ -26862,6 +26851,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Remate",
+          "padre_numero": 1,
+          "x_id": 276,
+          "x_texto": 276
         }
       ]
     },
@@ -27211,19 +27209,10 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "El monto y número de la transferencia electrónica de fondos que haya realizado.",
+          "contenido": "El monto y número de la transferencia electrónica de fondos que haya realizado. Si las posturas no cumplen los requisitos a que se refieren las fracciones anteriores y los que se señalen en la convocatoria, el Servicio de Administración Tributaria no las calificará como posturas legales, situación que se hará del conocimiento del interesado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Si las posturas no cumplen los requisitos a que se refieren las fracciones anteriores y los que se señalen en la convocatoria, el Servicio de Administración Tributaria no las calificará como posturas legales, situación que se hará del conocimiento del interesado.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
         }
       ]
     },
@@ -27873,6 +27862,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Revelación de Esquemas Reportables",
+          "padre_numero": 5,
+          "x_id": 192,
+          "x_texto": 192
         }
       ]
     },
@@ -29675,5 +29673,6 @@
       ]
     }
   ],
-  "ultima_reforma_dof": "2025-11-14"
+  "ultima_reforma_dof": "2025-11-14",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf"
 }

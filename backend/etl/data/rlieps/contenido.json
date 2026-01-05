@@ -1,20 +1,20 @@
 {
   "_advertencia": [
-    "╔══════════════════════════════════════════════════════════════════╗",
-    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
-    "║                                                                  ║",
-    "║  NO MODIFICAR MANUALMENTE                                        ║",
-    "║                                                                  ║",
-    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
-    "║  La base de datos se regenera desde aquí.                       ║",
-    "║                                                                  ║",
-    "║  Si el contenido es incorrecto:                                 ║",
-    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
-    "║                                                                  ║",
-    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
-    "╚══════════════════════════════════════════════════════════════════╝"
+    "=====================================================================",
+    "  ARCHIVO SAGRADO - FUENTE UNICA DE VERDAD",
+    "",
+    "  NO MODIFICAR MANUALMENTE",
+    "",
+    "  Este archivo es la UNICA fuente de verdad para el contenido.",
+    "  La base de datos se regenera desde aqui.",
+    "",
+    "  Si el contenido es incorrecto:",
+    "    -> CORRIGE EL SCRIPT, no este archivo",
+    "",
+    "  Modificarlo manualmente es SABOTAJE al sistema.",
+    "====================================================================="
   ],
-  "_generado_por": "extraer.py",
+  "_generado_por": "extractor/ExtractorGeneral",
   "ley": "RLIEPS",
   "tipo_contenido": "articulo",
   "articulos": [
@@ -119,6 +119,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la enajenación",
+          "padre_numero": 2,
+          "x_id": 259,
+          "x_texto": 259
         }
       ]
     },
@@ -222,6 +231,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la importación de bienes",
+          "padre_numero": 1,
+          "x_id": 233,
+          "x_texto": 233
         }
       ]
     },
@@ -239,6 +257,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la prestación de servicios",
+          "padre_numero": 1,
+          "x_id": 230,
+          "x_texto": 230
         }
       ]
     },
@@ -265,6 +292,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las obligaciones de los contribuyentes",
+          "padre_numero": 2,
+          "x_id": 196,
+          "x_texto": 196
         }
       ]
     },
@@ -438,6 +474,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las facultades de las autoridades",
+          "padre_numero": 1,
+          "x_id": 211,
+          "x_texto": 211
         }
       ]
     },
@@ -459,5 +504,6 @@
       ]
     }
   ],
-  "ultima_reforma_dof": "2006-12-04"
+  "ultima_reforma_dof": "2006-12-04",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIEPS.pdf"
 }

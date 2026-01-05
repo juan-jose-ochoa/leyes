@@ -1,20 +1,20 @@
 {
   "_advertencia": [
-    "╔══════════════════════════════════════════════════════════════════╗",
-    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
-    "║                                                                  ║",
-    "║  NO MODIFICAR MANUALMENTE                                        ║",
-    "║                                                                  ║",
-    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
-    "║  La base de datos se regenera desde aquí.                       ║",
-    "║                                                                  ║",
-    "║  Si el contenido es incorrecto:                                 ║",
-    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
-    "║                                                                  ║",
-    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
-    "╚══════════════════════════════════════════════════════════════════╝"
+    "=====================================================================",
+    "  ARCHIVO SAGRADO - FUENTE UNICA DE VERDAD",
+    "",
+    "  NO MODIFICAR MANUALMENTE",
+    "",
+    "  Este archivo es la UNICA fuente de verdad para el contenido.",
+    "  La base de datos se regenera desde aqui.",
+    "",
+    "  Si el contenido es incorrecto:",
+    "    -> CORRIGE EL SCRIPT, no este archivo",
+    "",
+    "  Modificarlo manualmente es SABOTAJE al sistema.",
+    "====================================================================="
   ],
-  "_generado_por": "extraer.py",
+  "_generado_por": "extractor/ExtractorGeneral",
   "ley": "LINFONAVIT",
   "tipo_contenido": "articulo",
   "articulos": [
@@ -83,7 +83,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Administrar los recursos del Fondo Nacional de la Vivienda;",
+          "contenido": "Administrar los recursos del Fondo Nacional de la Vivienda;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -92,7 +92,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Establecer y operar un sistema de financiamiento que permita a los trabajadores obtener crédito barato y suficiente para:",
+          "contenido": "Establecer y operar un sistema de financiamiento que permita a los trabajadores obtener crédito barato y suficiente para:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -101,7 +101,7 @@
           "numero": 4,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": ".- La adquisición en propiedad de habitaciones cómodas e higiénicas,",
+          "contenido": "La adquisición en propiedad de habitaciones cómodas e higiénicas,",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -110,7 +110,7 @@
           "numero": 5,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": ".- La construcción, reparación, ampliación o mejoramiento de sus viviendas, y",
+          "contenido": "La construcción, reparación, ampliación o mejoramiento de sus viviendas, y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136,
@@ -122,7 +122,7 @@
           "numero": 6,
           "tipo": "inciso",
           "identificador": "c)",
-          "contenido": ".- El pago de pasivos contraídos por los conceptos anteriores;",
+          "contenido": "El pago de pasivos contraídos por los conceptos anteriores;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -131,7 +131,7 @@
           "numero": 7,
           "tipo": "inciso",
           "identificador": "d)",
-          "contenido": ".- La adquisición en propiedad de suelo destinado para la construcción de sus habitaciones;",
+          "contenido": "La adquisición en propiedad de suelo destinado para la construcción de sus habitaciones;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136,
@@ -143,7 +143,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Coordinar, financiar, ejecutar o invertir en programas de construcción y administración de viviendas destinadas a ser adquiridas en propiedad o en arrendamiento social por las personas trabajadoras;",
+          "contenido": "Coordinar, financiar, ejecutar o invertir en programas de construcción y administración de viviendas destinadas a ser adquiridas en propiedad o en arrendamiento social por las personas trabajadoras;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -155,7 +155,7 @@
           "numero": 9,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Otorgar en arrendamiento social los inmuebles que se construyan o que sean bienes recuperados en apoyo a las personas trabajadoras;",
+          "contenido": "Otorgar en arrendamiento social los inmuebles que se construyan o que sean bienes recuperados en apoyo a las personas trabajadoras;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -167,7 +167,7 @@
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Construir viviendas, para lo cual constituirá una empresa filial en términos de la legislación mercantil;",
+          "contenido": "Construir viviendas, para lo cual constituirá una empresa filial en términos de la legislación mercantil;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -179,7 +179,7 @@
           "numero": 11,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Ejecutar los demás supuestos a que se refieren la fracción XII del Apartado A del Artículo 123 Constitucional y el Título Cuarto, Capítulo III de la Ley Federal del Trabajo, así como lo que esta Ley establece, y",
+          "contenido": "Ejecutar los demás supuestos a que se refieren la fracción XII del Apartado A del Artículo 123 Constitucional y el Título Cuarto, Capítulo III de la Ley Federal del Trabajo, así como lo que esta Ley establece, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -191,7 +191,7 @@
           "numero": 12,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- Ejecutar los demás objetivos que apruebe a nivel estratégico la Asamblea General en el plan financiero.",
+          "contenido": "Ejecutar los demás objetivos que apruebe a nivel estratégico la Asamblea General en el plan financiero.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -273,7 +273,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- (Se deroga)",
+          "contenido": "(Se deroga)",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -285,7 +285,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Con las cantidades y comisiones que obtenga por los servicios que preste, tanto a particulares como entes públicos de los tres órdenes de gobierno, los cuales se determinarán en los términos de las políticas que emita el Consejo de Administración;",
+          "contenido": "Con las cantidades y comisiones que obtenga por los servicios que preste, tanto a particulares como entes públicos de los tres órdenes de gobierno, los cuales se determinarán en los términos de las políticas que emita el Consejo de Administración;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -297,7 +297,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Con los montos que se obtengan de las actualizaciones, recargos, sanciones y multas;",
+          "contenido": "Con los montos que se obtengan de las actualizaciones, recargos, sanciones y multas;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -306,7 +306,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Con los bienes y derechos que adquiera por cualquier título, y",
+          "contenido": "Con los bienes y derechos que adquiera por cualquier título, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -315,7 +315,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Con los rendimientos que obtenga de la inversión de los recursos a que se refieren las fracciones anteriores.",
+          "contenido": "Con los rendimientos que obtenga de la inversión de los recursos a que se refieren las fracciones anteriores.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -402,7 +402,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Diez por el Ejecutivo Federal;",
+          "contenido": "Diez por el Ejecutivo Federal;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -411,7 +411,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Diez por las organizaciones nacionales de personas trabajadoras, y",
+          "contenido": "Diez por las organizaciones nacionales de personas trabajadoras, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -420,7 +420,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Diez por las organizaciones nacionales de personas empleadoras.",
+          "contenido": "Diez por las organizaciones nacionales de personas empleadoras.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -507,7 +507,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Conocer las proyecciones financieras del Instituto a cinco años y en su caso aprobar, dentro de los últimos tres meses del año, el plan financiero, el presupuesto de ingresos y egresos, así como los planes de labores y de financiamientos del Instituto para el siguiente año;",
+          "contenido": "Conocer las proyecciones financieras del Instituto a cinco años y en su caso aprobar, dentro de los últimos tres meses del año, el plan financiero, el presupuesto de ingresos y egresos, así como los planes de labores y de financiamientos del Instituto para el siguiente año;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -519,7 +519,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Examinar y en su caso aprobar, dentro de los cuatro primeros meses del año, los estados financieros dictaminados por el auditor externo y aprobados por el Consejo de Administración, que resulten de la operación en el último ejercicio y el informe de actividades de la institución;",
+          "contenido": "Examinar y en su caso aprobar, dentro de los cuatro primeros meses del año, los estados financieros dictaminados por el auditor externo y aprobados por el Consejo de Administración, que resulten de la operación en el último ejercicio y el informe de actividades de la institución;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -531,7 +531,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Decidir, señalando su jurisdicción, sobre el establecimiento y modificación o supresión de las Comisiones Consultivas Regionales del Instituto;",
+          "contenido": "Decidir, señalando su jurisdicción, sobre el establecimiento y modificación o supresión de las Comisiones Consultivas Regionales del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -540,7 +540,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Aprobar las Reglas de Operación de los Órganos del Instituto, así como el Estatuto Orgánico del mismo y ordenar a la persona titular de la Dirección General su expedición;",
+          "contenido": "Aprobar las Reglas de Operación de los Órganos del Instituto, así como el Estatuto Orgánico del mismo y ordenar a la persona titular de la Dirección General su expedición;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -552,7 +552,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- (Se deroga).",
+          "contenido": "(Se deroga).",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -564,7 +564,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- (Se deroga).",
+          "contenido": "(Se deroga).",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -576,7 +576,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- (Se deroga).",
+          "contenido": "(Se deroga).",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -588,7 +588,7 @@
           "numero": 9,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "- Aprobar las políticas generales en materia de crédito, arrendamiento social, administración inmobiliaria y enajenación de vivienda, incorporando la perspectiva de género;",
+          "contenido": "Aprobar las políticas generales en materia de crédito, arrendamiento social, administración inmobiliaria y enajenación de vivienda, incorporando la perspectiva de género;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -600,7 +600,7 @@
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "- Aprobar el Código de Ética del Instituto y ordenar al Director General su expedición;",
+          "contenido": "Aprobar el Código de Ética del Instituto y ordenar al Director General su expedición;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -612,7 +612,7 @@
           "numero": 11,
           "tipo": "fraccion",
           "identificador": "X",
-          "contenido": "- Aprobar la normatividad interna del Instituto en materia de transparencia y acceso a la información pública conforme a la legislación general y federal aplicable, así como ordenar al Director General su expedición;",
+          "contenido": "Aprobar la normatividad interna del Instituto en materia de transparencia y acceso a la información pública conforme a la legislación general y federal aplicable, así como ordenar al Director General su expedición;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -624,7 +624,7 @@
           "numero": 12,
           "tipo": "fraccion",
           "identificador": "XI",
-          "contenido": "- Designar a propuesta de la Comisión de Vigilancia a los miembros del Comité de Transparencia y de la Comisión de Inconformidades;",
+          "contenido": "Designar a propuesta de la Comisión de Vigilancia a los miembros del Comité de Transparencia y de la Comisión de Inconformidades;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -636,7 +636,7 @@
           "numero": 13,
           "tipo": "fraccion",
           "identificador": "XII",
-          "contenido": "- Conocer los informes que le presente el Comité de Auditoría, así como los dictámenes de la Comisión de Vigilancia sobre la situación que guarda el sistema de control interno del Instituto;",
+          "contenido": "Conocer los informes que le presente el Comité de Auditoría, así como los dictámenes de la Comisión de Vigilancia sobre la situación que guarda el sistema de control interno del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -648,7 +648,7 @@
           "numero": 14,
           "tipo": "fraccion",
           "identificador": "XIII",
-          "contenido": "- Ratificar los nombramientos y remociones de los integrantes del Comité de Auditoría, y",
+          "contenido": "Ratificar los nombramientos y remociones de los integrantes del Comité de Auditoría, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -660,7 +660,7 @@
           "numero": 15,
           "tipo": "fraccion",
           "identificador": "XIV",
-          "contenido": "- Las demás a que se refiere la presente Ley y las necesarias para el cumplimiento de los fines del Instituto, que no se encuentren encomendadas a otro órgano del mismo.",
+          "contenido": "Las demás a que se refiere la presente Ley y las necesarias para el cumplimiento de los fines del Instituto, que no se encuentren encomendadas a otro órgano del mismo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -816,7 +816,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Decidir, a propuesta de la persona titular de la Dirección General, sobre las inversiones que realice el Instituto y los financiamientos que obtenga;",
+          "contenido": "Decidir, a propuesta de la persona titular de la Dirección General, sobre las inversiones que realice el Instituto y los financiamientos que obtenga;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -828,7 +828,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Resolver sobre las operaciones del Instituto, excepto aquéllas que por su importancia, a juicio de alguno de los sectores o del Director General, ameriten acuerdo expreso de la Asamblea General; la que deberá celebrarse dentro de los quince días siguientes a la fecha en que se haga la petición correspondiente;",
+          "contenido": "Resolver sobre las operaciones del Instituto, excepto aquéllas que por su importancia, a juicio de alguno de los sectores o del Director General, ameriten acuerdo expreso de la Asamblea General; la que deberá celebrarse dentro de los quince días siguientes a la fecha en que se haga la petición correspondiente;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -837,7 +837,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Proponer a la Asamblea General el establecimiento, modificación, supresión y jurisdicción de las Comisiones Consultivas Regionales del Instituto;",
+          "contenido": "Proponer a la Asamblea General el establecimiento, modificación, supresión y jurisdicción de las Comisiones Consultivas Regionales del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -846,7 +846,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Examinar y en su caso aprobar la presentación a la Asamblea General de las proyecciones financieras del Instituto a cinco años, el presupuesto de ingresos y egresos, los planes de labores y de financiamientos, el plan financiero para el siguiente año, así como los estados financieros, dictaminados por una auditoría externa aprobados por el Comité de Auditoría, y el informe de actividades formulados por la Dirección General;",
+          "contenido": "Examinar y en su caso aprobar la presentación a la Asamblea General de las proyecciones financieras del Instituto a cinco años, el presupuesto de ingresos y egresos, los planes de labores y de financiamientos, el plan financiero para el siguiente año, así como los estados financieros, dictaminados por una auditoría externa aprobados por el Comité de Auditoría, y el informe de actividades formulados por la Dirección General;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -858,7 +858,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Presentar a la Asamblea General, para su examen y aprobación, las Reglas de Operación de los Órganos del Instituto y el Estatuto Orgánico del mismo, que le proponga la persona titular de la Dirección General;",
+          "contenido": "Presentar a la Asamblea General, para su examen y aprobación, las Reglas de Operación de los Órganos del Instituto y el Estatuto Orgánico del mismo, que le proponga la persona titular de la Dirección General;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -870,7 +870,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- A propuesta del Director General aprobar los nombramientos del personal directivo y los delegados de conformidad con el Estatuto Orgánico del Instituto. Asimismo, aprobar las bases para el establecimiento, organización y funcionamiento de un sistema permanente de profesionalización y desarrollo de los trabajadores del Instituto;",
+          "contenido": "A propuesta del Director General aprobar los nombramientos del personal directivo y los delegados de conformidad con el Estatuto Orgánico del Instituto. Asimismo, aprobar las bases para el establecimiento, organización y funcionamiento de un sistema permanente de profesionalización y desarrollo de los trabajadores del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -882,7 +882,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- Aprobar anualmente el presupuesto de gastos de administración, operación y vigilancia del Instituto, así como el presupuesto de inversión en construcción, en términos del artículo 41 Bis;",
+          "contenido": "Aprobar anualmente el presupuesto de gastos de administración, operación y vigilancia del Instituto, así como el presupuesto de inversión en construcción, en términos del artículo 41 Bis;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -894,7 +894,7 @@
           "numero": 9,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "- Estudiar y en su caso aprobar, los tabuladores y prestaciones correspondientes al personal del Instituto, propuestos por el Director General y conforme al presupuesto de gastos de administración autorizados por la Asamblea General;",
+          "contenido": "Estudiar y en su caso aprobar, los tabuladores y prestaciones correspondientes al personal del Instituto, propuestos por el Director General y conforme al presupuesto de gastos de administración autorizados por la Asamblea General;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -903,7 +903,7 @@
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "- Proponer para su aprobación a la Asamblea General las políticas generales en materia de crédito, arrendamiento social, administración inmobiliaria, enajenación de vivienda y de control interno.",
+          "contenido": "Proponer para su aprobación a la Asamblea General las políticas generales en materia de crédito, arrendamiento social, administración inmobiliaria, enajenación de vivienda y de control interno.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -936,7 +936,7 @@
           "numero": 13,
           "tipo": "fraccion",
           "identificador": "X",
-          "contenido": "- Determinar la tasa de interés que generará el saldo de la subcuenta de vivienda en los términos del artículo 39;",
+          "contenido": "Determinar la tasa de interés que generará el saldo de la subcuenta de vivienda en los términos del artículo 39;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -948,7 +948,7 @@
           "numero": 14,
           "tipo": "fraccion",
           "identificador": "XI",
-          "contenido": "- Determinar las reservas que deban constituirse para asegurar la operación del Fondo Nacional de la Vivienda y el cumplimiento de los demás fines y obligaciones del Instituto. Dichas reservas deberán invertirse en valores a cargo del Gobierno Federal e instrumentos de la Banca de Desarrollo;",
+          "contenido": "Determinar las reservas que deban constituirse para asegurar la operación del Fondo Nacional de la Vivienda y el cumplimiento de los demás fines y obligaciones del Instituto. Dichas reservas deberán invertirse en valores a cargo del Gobierno Federal e instrumentos de la Banca de Desarrollo;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -960,7 +960,7 @@
           "numero": 15,
           "tipo": "fraccion",
           "identificador": "XII",
-          "contenido": "- Resolver sobre las circunstancias específicas no previstas en la presente Ley y en la Ley de los Sistemas de Ahorro para el Retiro en relación a las subcuentas del Fondo Nacional de la Vivienda de las cuentas individuales del sistema de ahorro para el retiro. Con fines de coordinación, en la elaboración de las resoluciones que se adopten conforme a esta fracción, el Consejo escuchará previamente la opinión de la Comisión Nacional del Sistema de Ahorro para el Retiro. Dichas resoluciones se publicarán en el Diario Oficial de la Federación.",
+          "contenido": "Resolver sobre las circunstancias específicas no previstas en la presente Ley y en la Ley de los Sistemas de Ahorro para el Retiro en relación a las subcuentas del Fondo Nacional de la Vivienda de las cuentas individuales del sistema de ahorro para el retiro. Con fines de coordinación, en la elaboración de las resoluciones que se adopten conforme a esta fracción, el Consejo escuchará previamente la opinión de la Comisión Nacional del Sistema de Ahorro para el Retiro. Dichas resoluciones se publicarán en el Diario Oficial de la Federación.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -981,7 +981,7 @@
           "numero": 17,
           "tipo": "fraccion",
           "identificador": "XIII",
-          "contenido": "- Previo dictamen de la Comisión de Vigilancia, designar y remover a los miembros del Comité de Auditoría y someterlos a la ratificación de la Asamblea General;",
+          "contenido": "Previo dictamen de la Comisión de Vigilancia, designar y remover a los miembros del Comité de Auditoría y someterlos a la ratificación de la Asamblea General;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -993,7 +993,7 @@
           "numero": 18,
           "tipo": "fraccion",
           "identificador": "XIV",
-          "contenido": "- Conocer y aprobar los informes que le presente el Comité de Auditoría, así como los dictámenes de la Comisión de Vigilancia, sobre la situación que guarda el sistema de control interno del Instituto, para la determinación de las medidas procedentes;",
+          "contenido": "Conocer y aprobar los informes que le presente el Comité de Auditoría, así como los dictámenes de la Comisión de Vigilancia, sobre la situación que guarda el sistema de control interno del Instituto, para la determinación de las medidas procedentes;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1005,7 +1005,7 @@
           "numero": 19,
           "tipo": "fraccion",
           "identificador": "XV",
-          "contenido": "- Evaluar la opinión que le envíe la Comisión de Vigilancia sobre los informes remitidos por el Comité de Auditoría;",
+          "contenido": "Evaluar la opinión que le envíe la Comisión de Vigilancia sobre los informes remitidos por el Comité de Auditoría;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1017,7 +1017,7 @@
           "numero": 20,
           "tipo": "fraccion",
           "identificador": "XVI",
-          "contenido": "- Conocer la opinión que le envíe la Comisión de Vigilancia sobre los informes presentados por cualquiera de las diferentes áreas de la Administración;",
+          "contenido": "Conocer la opinión que le envíe la Comisión de Vigilancia sobre los informes presentados por cualquiera de las diferentes áreas de la Administración;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1029,7 +1029,7 @@
           "numero": 21,
           "tipo": "fraccion",
           "identificador": "XVII",
-          "contenido": "- A propuesta del Comité de Auditoría, designar o remover al Auditor Externo;",
+          "contenido": "A propuesta del Comité de Auditoría, designar o remover al Auditor Externo;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1041,7 +1041,7 @@
           "numero": 22,
           "tipo": "fraccion",
           "identificador": "XVIII",
-          "contenido": "- Designar o remover al Auditor Interno a propuesta del Comité de Auditoría; éste lo escogerá de una terna propuesta por el Director General;",
+          "contenido": "Designar o remover al Auditor Interno a propuesta del Comité de Auditoría; éste lo escogerá de una terna propuesta por el Director General;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1053,7 +1053,7 @@
           "numero": 23,
           "tipo": "fraccion",
           "identificador": "XIX",
-          "contenido": "- Aprobar la normativa que derive de la presente Ley, salvo aquella que se encuentre reservada expresamente para aprobación de la Asamblea General. Las disposiciones de carácter general deberán publicarse en el Diario Oficial de la Federación;",
+          "contenido": "Aprobar la normativa que derive de la presente Ley, salvo aquella que se encuentre reservada expresamente para aprobación de la Asamblea General. Las disposiciones de carácter general deberán publicarse en el Diario Oficial de la Federación;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1065,43 +1065,32 @@
           "numero": 24,
           "tipo": "fraccion",
           "identificador": "XX",
-          "contenido": "- Interpretar para efectos administrativos la presente Ley;",
+          "contenido": "Interpretar para efectos administrativos la presente Ley;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción adicionada DOF 01-06-2005"
+            "Fracción adicionada DOF 01-06-2005",
+            "Fracción adicionada DOF 01-06-2005. Reformada DOF 21-02-2025"
           ]
         },
         {
           "numero": 25,
           "tipo": "fraccion",
           "identificador": "XXI",
-          "contenido": "- Establecer los comités que estime necesarios para el cumplimiento de sus funciones;",
+          "contenido": "Establecer los comités que estime necesarios para el cumplimiento de sus funciones; XXI Bis.- Supervisar el desempeño de la empresa filial y el cumplimiento de su objeto, mediante el informe que se le presente en sus sesiones ordinarias, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
-          "referencias": [
-            "Fracción adicionada DOF 01-06-2005. Reformada DOF 21-02-2025"
-          ]
-        },
-        {
-          "numero": 26,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "XXI Bis.- Supervisar el desempeño de la empresa filial y el cumplimiento de su objeto, mediante el informe que se le presente en sus sesiones ordinarias, y",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
           "referencias": [
             "Fracción adicionada DOF 21-02-2025"
           ]
         },
         {
-          "numero": 27,
+          "numero": 26,
           "tipo": "fraccion",
           "identificador": "XXII",
-          "contenido": "- Las demás que le señale la Asamblea General o se desprendan de la presente Ley.",
+          "contenido": "Las demás que le señale la Asamblea General o se desprendan de la presente Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1130,7 +1119,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Tres por el Gobierno Federal;",
+          "contenido": "Tres por el Gobierno Federal;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1139,7 +1128,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Tres del sector de las personas trabajadoras, y",
+          "contenido": "Tres del sector de las personas trabajadoras, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1148,7 +1137,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Tres del sector empresarial.",
+          "contenido": "Tres del sector empresarial.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1261,7 +1250,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Proponer a la Asamblea y al Consejo de Administración, en su caso, las medidas que juzgue convenientes para mejorar el funcionamiento del Instituto;",
+          "contenido": "Proponer a la Asamblea y al Consejo de Administración, en su caso, las medidas que juzgue convenientes para mejorar el funcionamiento del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1270,7 +1259,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Proponer para la aprobación de la Asamblea General el Código de Ética del Instituto;",
+          "contenido": "Proponer para la aprobación de la Asamblea General el Código de Ética del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1279,7 +1268,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Vigilar que los integrantes de los Órganos del Instituto actúen conforme a la normatividad aplicable y con apego al Código de Ética del Instituto;",
+          "contenido": "Vigilar que los integrantes de los Órganos del Instituto actúen conforme a la normatividad aplicable y con apego al Código de Ética del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1288,7 +1277,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Informar, una vez al año, a la Asamblea General sobre el funcionamiento de los Órganos del Instituto;",
+          "contenido": "Informar, una vez al año, a la Asamblea General sobre el funcionamiento de los Órganos del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1297,7 +1286,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Proponer a la Asamblea General la designación o remoción de los miembros del Comité de Transparencia y de la Comisión de Inconformidades;",
+          "contenido": "Proponer a la Asamblea General la designación o remoción de los miembros del Comité de Transparencia y de la Comisión de Inconformidades;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1309,7 +1298,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Vigilar la actuación del Comité de Transparencia y de la Comisión de Inconformidades;",
+          "contenido": "Vigilar la actuación del Comité de Transparencia y de la Comisión de Inconformidades;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1321,7 +1310,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- En los casos que a su juicio lo amerite, convocar a Asamblea General;",
+          "contenido": "En los casos que a su juicio lo amerite, convocar a Asamblea General;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1330,7 +1319,7 @@
           "numero": 9,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "- Enviar al Consejo de Administración su opinión sobre el informe periódico que le remita el Comité de Auditoría;",
+          "contenido": "Enviar al Consejo de Administración su opinión sobre el informe periódico que le remita el Comité de Auditoría;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1339,7 +1328,7 @@
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "- Emitir dictamen sobre el informe que le remita el Comité de Auditoría en relación a la situación que guarda el sistema de control interno del Instituto, para su presentación al Consejo de Administración o a la Asamblea General;",
+          "contenido": "Emitir dictamen sobre el informe que le remita el Comité de Auditoría en relación a la situación que guarda el sistema de control interno del Instituto, para su presentación al Consejo de Administración o a la Asamblea General;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1348,7 +1337,7 @@
           "numero": 11,
           "tipo": "fraccion",
           "identificador": "X",
-          "contenido": "- Enviar al Consejo de Administración su opinión sobre el informe que le presente mensualmente cualquiera de las diferentes áreas de la Administración, y",
+          "contenido": "Enviar al Consejo de Administración su opinión sobre el informe que le presente mensualmente cualquiera de las diferentes áreas de la Administración, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1357,7 +1346,7 @@
           "numero": 12,
           "tipo": "fraccion",
           "identificador": "XI",
-          "contenido": "- Dictaminar la propuesta para el nombramiento y remoción de los miembros del Comité de Auditoría.",
+          "contenido": "Dictaminar la propuesta para el nombramiento y remoción de los miembros del Comité de Auditoría.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1514,7 +1503,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Vigilar que la administración de los recursos y los gastos, así como las operaciones se hagan de acuerdo con las disposiciones de esta Ley y de la normatividad que de la misma emane;",
+          "contenido": "Vigilar que la administración de los recursos y los gastos, así como las operaciones se hagan de acuerdo con las disposiciones de esta Ley y de la normatividad que de la misma emane;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1523,7 +1512,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Aprobar los dictámenes, opiniones, reportes o informes que elabore el Auditor Externo, para enviarlos al Consejo de Administración. En caso de considerarlo conveniente, solicitar al propio Consejo que se convoque a Asamblea General;",
+          "contenido": "Aprobar los dictámenes, opiniones, reportes o informes que elabore el Auditor Externo, para enviarlos al Consejo de Administración. En caso de considerarlo conveniente, solicitar al propio Consejo que se convoque a Asamblea General;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1532,7 +1521,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Proponer para aprobación del Consejo de Administración los lineamientos generales en materia de control interno que el Instituto requiera para su adecuado funcionamiento, así como sus actualizaciones;",
+          "contenido": "Proponer para aprobación del Consejo de Administración los lineamientos generales en materia de control interno que el Instituto requiera para su adecuado funcionamiento, así como sus actualizaciones;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1541,7 +1530,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Aprobar los manuales de operación del Instituto, en la parte relativa a las políticas y procedimientos que en materia de control interno se requieran para el correcto funcionamiento del Instituto, acordes con la normatividad que sobre el particular haya sido aprobada por el Consejo de Administración;",
+          "contenido": "Aprobar los manuales de operación del Instituto, en la parte relativa a las políticas y procedimientos que en materia de control interno se requieran para el correcto funcionamiento del Instituto, acordes con la normatividad que sobre el particular haya sido aprobada por el Consejo de Administración;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1550,7 +1539,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Verificar, cuando menos una vez al año, que el programa de auditoría se desempeñe de conformidad con estándares de calidad adecuados en materia contable y de controles internos;",
+          "contenido": "Verificar, cuando menos una vez al año, que el programa de auditoría se desempeñe de conformidad con estándares de calidad adecuados en materia contable y de controles internos;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1559,7 +1548,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Evaluar e informar al Consejo de Administración, cuando menos dos veces al año, y una vez al año a la Asamblea General, previo dictamen de la Comisión de Vigilancia, sobre la situación que guarda el sistema de control interno del Instituto;",
+          "contenido": "Evaluar e informar al Consejo de Administración, cuando menos dos veces al año, y una vez al año a la Asamblea General, previo dictamen de la Comisión de Vigilancia, sobre la situación que guarda el sistema de control interno del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1568,7 +1557,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- Verificar la existencia y funcionamiento de un sistema integral de información de la situación patrimonial de los funcionarios del Instituto, aprobado por el Consejo de Administración a propuesta del Director General;",
+          "contenido": "Verificar la existencia y funcionamiento de un sistema integral de información de la situación patrimonial de los funcionarios del Instituto, aprobado por el Consejo de Administración a propuesta del Director General;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1577,7 +1566,7 @@
           "numero": 9,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "- En general, conocer y evaluar las operaciones relevantes del Instituto y la información financiera producida por la administración;",
+          "contenido": "En general, conocer y evaluar las operaciones relevantes del Instituto y la información financiera producida por la administración;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1586,7 +1575,7 @@
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "- Enviar a la Comisión de Vigilancia un informe periódico sobre la situación financiera del Instituto, y",
+          "contenido": "Enviar a la Comisión de Vigilancia un informe periódico sobre la situación financiera del Instituto, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1595,7 +1584,7 @@
           "numero": 11,
           "tipo": "fraccion",
           "identificador": "X",
-          "contenido": "- Las demás que se señalen en la normatividad que al efecto emita el Consejo de Administración.",
+          "contenido": "Las demás que se señalen en la normatividad que al efecto emita el Consejo de Administración.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1687,19 +1676,10 @@
           "numero": 9,
           "tipo": "numeral",
           "identificador": "8.",
-          "contenido": "No desempeñar ningún cargo o comisión en el servicio público.",
+          "contenido": "No desempeñar ningún cargo o comisión en el servicio público. El Comité de Auditoría propondrá al Consejo de Administración una firma de reconocido prestigio para que se autorice la contratación del Auditor Externo. Para este efecto podrá solicitar a un Colegio o Instituto de Contadores Públicos ampliamente representativo de la profesión, le proponga una terna de firmas.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 10,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "El Comité de Auditoría propondrá al Consejo de Administración una firma de reconocido prestigio para que se autorice la contratación del Auditor Externo. Para este efecto podrá solicitar a un Colegio o Instituto de Contadores Públicos ampliamente representativo de la profesión, le proponga una terna de firmas.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Artículo reformado DOF 01-06-2005"
           ]
@@ -1725,7 +1705,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Practicar la auditoría de los estados financieros y comprobar, cuando lo estime conveniente los avalúos de los bienes, materia de operación del Instituto;",
+          "contenido": "Practicar la auditoría de los estados financieros y comprobar, cuando lo estime conveniente los avalúos de los bienes, materia de operación del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1734,7 +1714,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Emitir anualmente un dictamen al Comité de Auditoría sobre la situación financiera que guarda el Instituto, para su presentación a la Asamblea General por medio del Consejo de Administración.",
+          "contenido": "Emitir anualmente un dictamen al Comité de Auditoría sobre la situación financiera que guarda el Instituto, para su presentación a la Asamblea General por medio del Consejo de Administración.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1752,7 +1732,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Hacer del conocimiento del Consejo de Administración, por conducto del Comité de Auditoría, información sobre la situación financiera que guarda el Instituto, y",
+          "contenido": "Hacer del conocimiento del Consejo de Administración, por conducto del Comité de Auditoría, información sobre la situación financiera que guarda el Instituto, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1761,7 +1741,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Asistir, con voz, pero sin voto, a las sesiones de la Asamblea General y del Consejo de Administración.",
+          "contenido": "Asistir, con voz, pero sin voto, a las sesiones de la Asamblea General y del Consejo de Administración.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1882,7 +1862,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Representar legalmente al Instituto con todas las facultades que corresponden a los mandatarios generales para pleitos y cobranzas, actos de administración y de dominio, y las especiales que requieran cláusula especial conforme a la ley, en los términos de los tres primeros párrafos del artículo 2554 del Código Civil para el Distrito Federal. Estas facultades las ejercerá en la forma en que acuerde el Consejo de Administración.",
+          "contenido": "Representar legalmente al Instituto con todas las facultades que corresponden a los mandatarios generales para pleitos y cobranzas, actos de administración y de dominio, y las especiales que requieran cláusula especial conforme a la ley, en los términos de los tres primeros párrafos del artículo 2554 del Código Civil para el Distrito Federal. Estas facultades las ejercerá en la forma en que acuerde el Consejo de Administración.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1911,38 +1891,36 @@
           "x_id": 85,
           "x_texto": 85,
           "referencias": [
-            "Párrafo adicionado DOF 13-01-1986. Reformado DOF 24-02-1992, 22-07-1994, 01-06-2005"
+            "Párrafo adicionado DOF 13-01-1986. Reformado DOF 24-02-1992, 22-07-1994, 01-06-2005",
+            "Fracción reformada DOF 21-02-2025"
           ]
         },
         {
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Asistir y presidir las sesiones de la Asamblea General con voz y voto;",
+          "contenido": "Asistir y presidir las sesiones de la Asamblea General con voz y voto; II Bis.- Asistir y presidir las sesiones del Consejo de Administración con voz y voto; asimismo tendrá derecho de veto sobre las resoluciones del Consejo de Administración o de la Comisión de Vigilancia que no se adopten por unanimidad, el efecto del veto será suspender la aplicación de la resolución correspondiente, hasta que resuelva en definitiva la Asamblea General;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
-          "referencias": [
-            "Fracción reformada DOF 21-02-2025"
-          ]
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "II Bis.- Asistir y presidir las sesiones del Consejo de Administración con voz y voto; asimismo tendrá derecho de veto sobre las resoluciones del Consejo de Administración o de la Comisión de Vigilancia que no se adopten por unanimidad, el efecto del veto será suspender la aplicación de la resolución correspondiente, hasta que resuelva en definitiva la Asamblea General;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
           "referencias": [
             "Fracción adicionada DOF 21-02-2025"
           ]
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Ejecutar los acuerdos del Consejo de Administración;",
+          "contenido": "Ejecutar los acuerdos del Consejo de Administración;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 7,
+          "tipo": "fraccion",
+          "identificador": "IV",
+          "contenido": "Presentar anualmente al Consejo de Administración, dentro de los dos primeros meses del año siguiente, los estados financieros y el informe de actividades del ejercicio anterior;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1950,17 +1928,8 @@
         {
           "numero": 8,
           "tipo": "fraccion",
-          "identificador": "IV",
-          "contenido": "- Presentar anualmente al Consejo de Administración, dentro de los dos primeros meses del año siguiente, los estados financieros y el informe de actividades del ejercicio anterior;",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 9,
-          "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Presentar al Consejo de Administración, a más tardar el último día de octubre de cada año, el plan financiero, los presupuestos de ingresos y egresos, y los planes de labores y de financiamientos para el año siguiente, así como las proyecciones financieras del Instituto a cinco años;",
+          "contenido": "Presentar al Consejo de Administración, a más tardar el último día de octubre de cada año, el plan financiero, los presupuestos de ingresos y egresos, y los planes de labores y de financiamientos para el año siguiente, así como las proyecciones financieras del Instituto a cinco años;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1969,7 +1938,7 @@
           ]
         },
         {
-          "numero": 10,
+          "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "V Bis.- Proponer al Consejo de Administración y a la Asamblea General el Estatuto Orgánico del Instituto, que contendrá la estructura, organización, facultades y funciones que correspondan a las distintas áreas, delegaciones regionales y personal directivo que lo integran, de conformidad con el presupuesto de gastos de administración, operación y vigilancia aprobado. El Estatuto Orgánico deberá publicarse en el Diario Oficial de la Federación;",
@@ -1981,10 +1950,10 @@
           ]
         },
         {
-          "numero": 11,
+          "numero": 10,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Presentar a la consideración del Consejo de Administración, en sus sesiones ordinarias, un informe sobre las actividades del Instituto;",
+          "contenido": "Presentar a la consideración del Consejo de Administración, en sus sesiones ordinarias, un informe sobre las actividades del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -1993,10 +1962,10 @@
           ]
         },
         {
-          "numero": 12,
+          "numero": 11,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- Presentar al Consejo de Administración, para su consideración y en su caso aprobación, los programas de financiamiento, administración inmobiliaria, arrendamiento social, enajenación de vivienda, y de crédito a ser otorgados por el Instituto;",
+          "contenido": "Presentar al Consejo de Administración, para su consideración y en su caso aprobación, los programas de financiamiento, administración inmobiliaria, arrendamiento social, enajenación de vivienda, y de crédito a ser otorgados por el Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2005,19 +1974,19 @@
           ]
         },
         {
-          "numero": 13,
+          "numero": 12,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "- Nombrar y remover al personal del Instituto, señalándole sus funciones y remuneraciones; y",
+          "contenido": "Nombrar y remover al personal del Instituto, señalándole sus funciones y remuneraciones; y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
         },
         {
-          "numero": 14,
+          "numero": 13,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "- Después de ser aprobado por la Asamblea General, enviar al Congreso de la Unión y al Ejecutivo Federal, por conducto de la Secretaría de Hacienda y Crédito Público, durante el mes de mayo de cada año, un Informe sobre la situación patrimonial y operativa del Instituto, así como de la situación financiera de sus activos y pasivos, que contenga una evaluación respecto a la suficiencia de los flujos correspondientes para cubrir la operación del Instituto, y",
+          "contenido": "Después de ser aprobado por la Asamblea General, enviar al Congreso de la Unión y al Ejecutivo Federal, por conducto de la Secretaría de Hacienda y Crédito Público, durante el mes de mayo de cada año, un Informe sobre la situación patrimonial y operativa del Instituto, así como de la situación financiera de sus activos y pasivos, que contenga una evaluación respecto a la suficiencia de los flujos correspondientes para cubrir la operación del Instituto, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2026,10 +1995,10 @@
           ]
         },
         {
-          "numero": 15,
+          "numero": 14,
           "tipo": "fraccion",
           "identificador": "X",
-          "contenido": "- Las demás que le señalen esta Ley y sus disposiciones reglamentarias.",
+          "contenido": "Las demás que le señalen esta Ley y sus disposiciones reglamentarias.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2265,7 +2234,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Proveer lo necesario para que toda persona pueda tener acceso a la información de conformidad con la normatividad vigente del Instituto y apegada a los principios y políticas generales de la materia;",
+          "contenido": "Proveer lo necesario para que toda persona pueda tener acceso a la información de conformidad con la normatividad vigente del Instituto y apegada a los principios y políticas generales de la materia;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2274,7 +2243,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Transparentar la gestión mediante la difusión de la información que genera el Instituto;",
+          "contenido": "Transparentar la gestión mediante la difusión de la información que genera el Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2283,7 +2252,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Garantizar la protección de los datos personales en posesión del Instituto y el ejercicio de los derechos de acceso, rectificación, corrección y oposición;",
+          "contenido": "Garantizar la protección de los datos personales en posesión del Instituto y el ejercicio de los derechos de acceso, rectificación, corrección y oposición;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2295,7 +2264,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Favorecer la rendición de cuentas a las personas, de manera que puedan valorar el desempeño del Instituto;",
+          "contenido": "Favorecer la rendición de cuentas a las personas, de manera que puedan valorar el desempeño del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2307,7 +2276,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Mejorar la organización, clasificación y manejo de los documentos;",
+          "contenido": "Mejorar la organización, clasificación y manejo de los documentos;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2316,7 +2285,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Contribuir a la democratización de la sociedad mexicana y la plena vigencia del Estado de derecho;",
+          "contenido": "Contribuir a la democratización de la sociedad mexicana y la plena vigencia del Estado de derecho;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2325,7 +2294,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- (Se deroga).",
+          "contenido": "(Se deroga).",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2337,7 +2306,7 @@
           "numero": 9,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "- Publicar un informe anual que contenga las actividades realizadas para garantizar el acceso a la información y remitir una copia del mismo al Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales.",
+          "contenido": "Publicar un informe anual que contenga las actividades realizadas para garantizar el acceso a la información y remitir una copia del mismo al Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2395,7 +2364,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Sugerir al Consejo de Administración, a través del Director General, la localización más adecuada de las áreas y las características de las habitaciones de la región, susceptibles de ser financiadas;",
+          "contenido": "Sugerir al Consejo de Administración, a través del Director General, la localización más adecuada de las áreas y las características de las habitaciones de la región, susceptibles de ser financiadas;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2404,7 +2373,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Opinar sobre los proyectos de habitaciones a financiar en sus respectivas regiones;",
+          "contenido": "Opinar sobre los proyectos de habitaciones a financiar en sus respectivas regiones;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2413,7 +2382,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Las de carácter administrativo que establezca el Reglamento de las Delegaciones Regionales; y",
+          "contenido": "Las de carácter administrativo que establezca el Reglamento de las Delegaciones Regionales; y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2422,7 +2391,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Las demás de carácter consultivo que les encomiende el Director General.",
+          "contenido": "Las demás de carácter consultivo que les encomiende el Director General.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2468,7 +2437,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Proceder a inscribirse e inscribir a sus trabajadores en el Instituto y dar los avisos a que se refiere el Artículo 31 de esta Ley;",
+          "contenido": "Proceder a inscribirse e inscribir a sus trabajadores en el Instituto y dar los avisos a que se refiere el Artículo 31 de esta Ley;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2501,7 +2470,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Determinar el monto de las aportaciones del cinco por ciento sobre el salario de los trabajadores a su servicio y efectuar el pago en las entidades receptoras que actúen por cuenta y orden del Instituto, para su abono en la subcuenta de vivienda de las cuentas individuales de los trabajadores previstas en los sistemas de ahorro para el retiro, en los términos de la presente Ley y sus reglamentos, así como en lo conducente, conforme a lo previsto en la Ley del Seguro Social y en la Ley Federal del Trabajo. En lo que corresponde a la integración y cálculo de la base y límite superior salarial para el pago de aportaciones, se aplicará lo contenido en la Ley del Seguro Social.",
+          "contenido": "Determinar el monto de las aportaciones del cinco por ciento sobre el salario de los trabajadores a su servicio y efectuar el pago en las entidades receptoras que actúen por cuenta y orden del Instituto, para su abono en la subcuenta de vivienda de las cuentas individuales de los trabajadores previstas en los sistemas de ahorro para el retiro, en los términos de la presente Ley y sus reglamentos, así como en lo conducente, conforme a lo previsto en la Ley del Seguro Social y en la Ley Federal del Trabajo. En lo que corresponde a la integración y cálculo de la base y límite superior salarial para el pago de aportaciones, se aplicará lo contenido en la Ley del Seguro Social.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2549,7 +2518,7 @@
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Hacer los descuentos a sus trabajadores en sus salarios, conforme a lo previsto en los artículos 97 y 110 de la Ley Federal del Trabajo, que se destinen al pago de abonos para cubrir préstamos otorgados por el Instituto, así como enterar el importe de dichos descuentos en las entidades receptoras que actúen por cuenta y orden del Instituto, en la forma y términos que establece esta Ley y sus disposiciones reglamentarias. La integración y cálculo de la base salarial para efectos de los descuentos será la contenida en la fracción II del presente artículo.",
+          "contenido": "Hacer los descuentos a sus trabajadores en sus salarios, conforme a lo previsto en los artículos 97 y 110 de la Ley Federal del Trabajo, que se destinen al pago de abonos para cubrir préstamos otorgados por el Instituto, así como enterar el importe de dichos descuentos en las entidades receptoras que actúen por cuenta y orden del Instituto, en la forma y términos que establece esta Ley y sus disposiciones reglamentarias. La integración y cálculo de la base salarial para efectos de los descuentos será la contenida en la fracción II del presente artículo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2570,7 +2539,7 @@
           "numero": 12,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Proporcionar al Instituto los elementos necesarios para precisar la existencia, naturaleza y cuantía de las obligaciones a su cargo, establecidas en esta Ley y sus disposiciones reglamentarias;",
+          "contenido": "Proporcionar al Instituto los elementos necesarios para precisar la existencia, naturaleza y cuantía de las obligaciones a su cargo, establecidas en esta Ley y sus disposiciones reglamentarias;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2582,7 +2551,7 @@
           "numero": 13,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Permitir las inspecciones y visitas domiciliarias que practique el Instituto, las que se sujetarán a lo establecido por esta Ley, el Código Fiscal de la Federación y sus disposiciones reglamentarias. A efecto de evitar duplicidad de acciones, el Instituto podrá convenir con el Instituto Mexicano del Seguro Social la coordinación de estas acciones fiscales;",
+          "contenido": "Permitir las inspecciones y visitas domiciliarias que practique el Instituto, las que se sujetarán a lo establecido por esta Ley, el Código Fiscal de la Federación y sus disposiciones reglamentarias. A efecto de evitar duplicidad de acciones, el Instituto podrá convenir con el Instituto Mexicano del Seguro Social la coordinación de estas acciones fiscales;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2594,7 +2563,7 @@
           "numero": 14,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Atender los requerimientos de pago e información que les formule el Instituto a través de cualquier medio, incluyendo los electrónicos, que el Instituto ponga a su alcance, de conformidad con las disposiciones legales y reglamentarias correspondientes.",
+          "contenido": "Atender los requerimientos de pago e información que les formule el Instituto a través de cualquier medio, incluyendo los electrónicos, que el Instituto ponga a su alcance, de conformidad con las disposiciones legales y reglamentarias correspondientes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2615,7 +2584,7 @@
           "numero": 16,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- Expedir y entregar, semanal o quincenalmente, a cada trabajador constancia escrita del número de días trabajados y del salario percibido, conforme a los períodos de pago establecidos, tratándose de patrones que se dediquen en forma permanente o esporádica a la actividad de la construcción.",
+          "contenido": "Expedir y entregar, semanal o quincenalmente, a cada trabajador constancia escrita del número de días trabajados y del salario percibido, conforme a los períodos de pago establecidos, tratándose de patrones que se dediquen en forma permanente o esporádica a la actividad de la construcción.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2645,7 +2614,7 @@
           "numero": 19,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "- Presentar al Instituto copia con firma autógrafa del informe sobre la situación fiscal del contribuyente con los anexos referentes a las contribuciones por concepto de aportaciones patronales de conformidad con lo dispuesto en el Reglamento del Código Fiscal de la Federación, cuando en los términos de dicho Código, estén obligados a dictaminar por contador público autorizado sus estados financieros.",
+          "contenido": "Presentar al Instituto copia con firma autógrafa del informe sobre la situación fiscal del contribuyente con los anexos referentes a las contribuciones por concepto de aportaciones patronales de conformidad con lo dispuesto en el Reglamento del Código Fiscal de la Federación, cuando en los términos de dicho Código, estén obligados a dictaminar por contador público autorizado sus estados financieros.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2659,6 +2628,7 @@
           "x_id": 113,
           "x_texto": 113,
           "referencias": [
+            "Fracción adicionada DOF 06-01-1997",
             "Fracción adicionada DOF 06-01-1997"
           ]
         },
@@ -2666,28 +2636,16 @@
           "numero": 21,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "- Las demás previstas en la Ley y sus reglamentos.",
+          "contenido": "Las demás previstas en la Ley y sus reglamentos. La obligación de efectuar las aportaciones a que se refiere la fracción II anterior, se suspenderá cuando no se paguen salarios por ausencias en los términos de la Ley del Seguro Social, siempre que se dé aviso oportuno al Instituto, en conformidad al artículo 31. Tratándose de incapacidades expedidas por el Instituto Mexicano del Seguro Social, subsistirá la obligación del pago de aportaciones. Cuando se trate de la obligación de hacer los descuentos a que se refiere la fracción III no se suspenderá por ausencias o incapacidades en términos de la Ley del Seguro Social.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
-          "referencias": [
-            "Fracción adicionada DOF 06-01-1997"
-          ]
-        },
-        {
-          "numero": 22,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "La obligación de efectuar las aportaciones a que se refiere la fracción II anterior, se suspenderá cuando no se paguen salarios por ausencias en los términos de la Ley del Seguro Social, siempre que se dé aviso oportuno al Instituto, en conformidad al artículo 31. Tratándose de incapacidades expedidas por el Instituto Mexicano del Seguro Social, subsistirá la obligación del pago de aportaciones. Cuando se trate de la obligación de hacer los descuentos a que se refiere la fracción III no se suspenderá por ausencias o incapacidades en términos de la Ley del Seguro Social.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 06-01-1997. Reformado DOF 21-02-2025"
           ]
         },
         {
-          "numero": 23,
+          "numero": 22,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de sustitución patronal, el patrón sustituido será solidariamente responsable con el nuevo de las obligaciones derivadas de esta Ley, nacidas antes de la fecha de la sustitución, hasta por el término de tres meses, concluido el cual todas las responsabilidades serán atribuibles al nuevo patrón.",
@@ -2914,7 +2872,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Determinar, en caso de incumplimiento, el importe de las aportaciones patronales y de los descuentos omitidos, así como calcular su actualización y recargos que se generen, señalar las bases para su liquidación, fijarlos en cantidad líquida y requerir su pago. Para este fin podrá ordenar y practicar, con el personal que al efecto designe, visitas domiciliarias, auditorías e inspecciones a los patrones, requiriéndoles la exhibición de libros y documentos que acrediten el cumplimiento de las obligaciones que en materia habitacional les impone esta Ley.",
+          "contenido": "Determinar, en caso de incumplimiento, el importe de las aportaciones patronales y de los descuentos omitidos, así como calcular su actualización y recargos que se generen, señalar las bases para su liquidación, fijarlos en cantidad líquida y requerir su pago. Para este fin podrá ordenar y practicar, con el personal que al efecto designe, visitas domiciliarias, auditorías e inspecciones a los patrones, requiriéndoles la exhibición de libros y documentos que acrediten el cumplimiento de las obligaciones que en materia habitacional les impone esta Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2950,7 +2908,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Recibir en sus oficinas o a través de las entidades receptoras, los pagos que deban efectuarse conforme a lo previsto por este artículo.",
+          "contenido": "Recibir en sus oficinas o a través de las entidades receptoras, los pagos que deban efectuarse conforme a lo previsto por este artículo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2992,7 +2950,7 @@
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Resolver en los casos en que así proceda, los recursos previstos en el Código Fiscal de la Federación relativos al procedimiento administrativo de ejecución, así como las solicitudes de prescripción y caducidad planteadas por los patrones;",
+          "contenido": "Resolver en los casos en que así proceda, los recursos previstos en el Código Fiscal de la Federación relativos al procedimiento administrativo de ejecución, así como las solicitudes de prescripción y caducidad planteadas por los patrones;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3004,7 +2962,7 @@
           "numero": 11,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Requerir a los patrones que omitan el cumplimiento de las obligaciones que esta Ley establece, la información necesaria para determinar la existencia o no de la relación laboral con las personas a su servicio, así como la que permita establecer en forma presuntiva y conforme al procedimiento que al efecto el Instituto señale, el monto de las aportaciones omitidas.",
+          "contenido": "Requerir a los patrones que omitan el cumplimiento de las obligaciones que esta Ley establece, la información necesaria para determinar la existencia o no de la relación laboral con las personas a su servicio, así como la que permita establecer en forma presuntiva y conforme al procedimiento que al efecto el Instituto señale, el monto de las aportaciones omitidas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3038,7 +2996,7 @@
           "numero": 14,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Determinar la existencia, contenido y alcance de las obligaciones incumplidas por los patrones y demás sujetos obligados en los términos de esta Ley y demás disposiciones relativas, para lo cual podrá aplicar los datos con los que cuente, en función del último mes cubierto o con apoyo en los hechos que conozca con motivo del ejercicio de las facultades de comprobación de que goza como autoridad o bien a través de los expedientes o documentos proporcionados por otras autoridades fiscales;",
+          "contenido": "Determinar la existencia, contenido y alcance de las obligaciones incumplidas por los patrones y demás sujetos obligados en los términos de esta Ley y demás disposiciones relativas, para lo cual podrá aplicar los datos con los que cuente, en función del último mes cubierto o con apoyo en los hechos que conozca con motivo del ejercicio de las facultades de comprobación de que goza como autoridad o bien a través de los expedientes o documentos proporcionados por otras autoridades fiscales;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3050,7 +3008,7 @@
           "numero": 15,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- Ordenar y practicar, en los casos de sustitución patronal, las investigaciones correspondientes así como emitir los dictámenes respectivos;",
+          "contenido": "Ordenar y practicar, en los casos de sustitución patronal, las investigaciones correspondientes así como emitir los dictámenes respectivos;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3062,7 +3020,7 @@
           "numero": 16,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "- Revisar los dictámenes formulados por contadores públicos sobre el cumplimiento de las disposiciones contenidas en esta Ley y sus disposiciones reglamentarias respectivas;",
+          "contenido": "Revisar los dictámenes formulados por contadores públicos sobre el cumplimiento de las disposiciones contenidas en esta Ley y sus disposiciones reglamentarias respectivas;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3074,7 +3032,7 @@
           "numero": 17,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "- Hacer efectivas las garantías del interés fiscal ofrecidas a favor del Instituto, incluyendo fianza, en los términos del Código Fiscal de la Federación;",
+          "contenido": "Hacer efectivas las garantías del interés fiscal ofrecidas a favor del Instituto, incluyendo fianza, en los términos del Código Fiscal de la Federación;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3086,7 +3044,7 @@
           "numero": 18,
           "tipo": "fraccion",
           "identificador": "X",
-          "contenido": "- Conocer y resolver las solicitudes de devolución y compensación de cantidades pagadas indebidamente o en exceso, de conformidad a lo previsto en las disposiciones legales y reglamentarias, y",
+          "contenido": "Conocer y resolver las solicitudes de devolución y compensación de cantidades pagadas indebidamente o en exceso, de conformidad a lo previsto en las disposiciones legales y reglamentarias, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3098,7 +3056,7 @@
           "numero": 19,
           "tipo": "fraccion",
           "identificador": "XI",
-          "contenido": "- Las demás previstas en la Ley.",
+          "contenido": "Las demás previstas en la Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3767,7 +3725,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- En línea uno al financiamiento de la construcción de conjuntos de habitaciones para ser adquiridas por los trabajadores, mediante créditos que les otorgue el Instituto. Estos financiamientos sólo se concederán por concurso, tratándose de programas habitacionales aprobados por el Instituto y que se ajusten a las disposiciones aplicables en materia de construcción.",
+          "contenido": "En línea uno al financiamiento de la construcción de conjuntos de habitaciones para ser adquiridas por los trabajadores, mediante créditos que les otorgue el Instituto. Estos financiamientos sólo se concederán por concurso, tratándose de programas habitacionales aprobados por el Instituto y que se ajusten a las disposiciones aplicables en materia de construcción.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3797,7 +3755,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Al otorgamiento de créditos a los trabajadores derechohabientes que sean titulares de depósitos constituidos a su favor en el Instituto:",
+          "contenido": "Al otorgamiento de créditos a los trabajadores derechohabientes que sean titulares de depósitos constituidos a su favor en el Instituto:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3878,7 +3836,7 @@
           "numero": 13,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Al pago de capital e intereses de las subcuentas de vivienda de los trabajadores en los términos de ley;",
+          "contenido": "Al pago de capital e intereses de las subcuentas de vivienda de los trabajadores en los términos de ley;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3890,7 +3848,7 @@
           "numero": 14,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- A cubrir los gastos de administración, operación y vigilancia del Instituto;",
+          "contenido": "A cubrir los gastos de administración, operación y vigilancia del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3902,7 +3860,7 @@
           "numero": 15,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- A la inversión de inmuebles destinados a sus oficinas, y de muebles estrictamente necesarios para el cumplimiento de sus fines;",
+          "contenido": "A la inversión de inmuebles destinados a sus oficinas, y de muebles estrictamente necesarios para el cumplimiento de sus fines;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3914,7 +3872,7 @@
           "numero": 16,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- A la adquisición de suelo e inmuebles destinados al cumplimiento de su objeto;",
+          "contenido": "A la adquisición de suelo e inmuebles destinados al cumplimiento de su objeto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3926,11 +3884,12 @@
           "numero": 17,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- A la construcción de vivienda que realice el Instituto, por conducto de una empresa filial, para fomentar la oferta destinada al arrendamiento social o adquisición en favor de las personas trabajadoras derechohabientes, así como el desarrollo económico local y la generación de empleos, y",
+          "contenido": "A la construcción de vivienda que realice el Instituto, por conducto de una empresa filial, para fomentar la oferta destinada al arrendamiento social o adquisición en favor de las personas trabajadoras derechohabientes, así como el desarrollo económico local y la generación de empleos, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
+            "Fracción adicionada DOF 21-02-2025",
             "Fracción adicionada DOF 21-02-2025"
           ]
         },
@@ -3938,28 +3897,16 @@
           "numero": 18,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "- A las demás erogaciones relacionadas con su objeto.",
+          "contenido": "A las demás erogaciones relacionadas con su objeto. Los contratos y las operaciones relacionadas con los inmuebles a que se refiere este artículo, así como el desarrollo y ejecución de los conjuntos habitacionales que se edifiquen mediante los programas del Instituto, por sí mismo o a través de una empresa filial, estarán exentos de las autorizaciones y del pago de toda clase de impuestos, derechos o contribuciones de la Federación, de los Estados o de la Ciudad de México y, en su caso, el precio de venta a que se refiere el artículo 48 se tendrá como valor de avalúo de las viviendas. El impuesto predial y los derechos por consumo de agua, así como las donaciones y equipamiento urbano se causarán y cumplirán en los términos de las disposiciones legales aplicables. Las operaciones del Instituto, que realice directamente o por conducto de su empresa filial, en materia inmobiliaria recibirán las facilidades administrativas que se acuerden con las autoridades competentes, debiendo ser congruentes con las necesidades de cada centro de población, y los planes y programas que regulan el uso y el aprovechamiento del suelo. Tanto las garantías como las inscripciones correspondientes se ajustarán en los términos del artículo 44 sin que se cause impuesto o derecho alguno, ni deban efectuarse trámites de registro adicionales.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
-          "referencias": [
-            "Fracción adicionada DOF 21-02-2025"
-          ]
-        },
-        {
-          "numero": 19,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Los contratos y las operaciones relacionadas con los inmuebles a que se refiere este artículo, así como el desarrollo y ejecución de los conjuntos habitacionales que se edifiquen mediante los programas del Instituto, por sí mismo o a través de una empresa filial, estarán exentos de las autorizaciones y del pago de toda clase de impuestos, derechos o contribuciones de la Federación, de los Estados o de la Ciudad de México y, en su caso, el precio de venta a que se refiere el artículo 48 se tendrá como valor de avalúo de las viviendas. El impuesto predial y los derechos por consumo de agua, así como las donaciones y equipamiento urbano se causarán y cumplirán en los términos de las disposiciones legales aplicables. Las operaciones del Instituto, que realice directamente o por conducto de su empresa filial, en materia inmobiliaria recibirán las facilidades administrativas que se acuerden con las autoridades competentes, debiendo ser congruentes con las necesidades de cada centro de población, y los planes y programas que regulan el uso y el aprovechamiento del suelo. Tanto las garantías como las inscripciones correspondientes se ajustarán en los términos del artículo 44 sin que se cause impuesto o derecho alguno, ni deban efectuarse trámites de registro adicionales.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 13-11-1981. Reformado DOF 24-02-1992, 21-02-2025"
           ]
         },
         {
-          "numero": 20,
+          "numero": 19,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los contratos y las operaciones a que se refiere el párrafo anterior deben hacerse constar en los instrumentos que establezca la legislación aplicable en la materia e inscribirse en el Registro Público de la Propiedad que corresponda.",
@@ -3971,7 +3918,7 @@
           ]
         },
         {
-          "numero": 21,
+          "numero": 20,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los créditos a que hace referencia la fracción II, inciso b), de este artículo, el Instituto deberá ofrecer opciones de financiamiento individual o colectivo. Las personas interesadas en proyectos que prevean la construcción de más de una vivienda los presentarán a la Dirección General del Instituto para que realice una evaluación técnica, financiera y jurídica del proyecto, su promovente o conjunto de promoventes, así como el impacto social del proyecto. Una vez que se cuente con una evaluación con resultado favorable, cada proyecto será sometido al Consejo de Administración para su aprobación.",
@@ -3983,7 +3930,7 @@
           ]
         },
         {
-          "numero": 22,
+          "numero": 21,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Instituto realizará las adquisiciones, arrendamientos, contratación de servicios y obras que requieran, con sujeción a los principios de economía, eficacia, eficiencia, imparcialidad y honradez, a efecto de procurarse las mejores condiciones disponibles en cuanto a precio, calidad, financiamiento, oportunidad y demás circunstancias pertinentes de acuerdo con sus particularidades, de conformidad con las políticas internas que al efecto emita el Consejo de Administración en los términos de esta Ley.",
@@ -3995,7 +3942,7 @@
           ]
         },
         {
-          "numero": 23,
+          "numero": 22,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El patrimonio del Instituto y los rendimientos del Fondo Nacional de la Vivienda, una vez descontados los intereses que deban recibir las subcuentas de vivienda podrán destinarse, previo acuerdo del Consejo de Administración, al financiamiento de objetivos en materia de construcción, administración inmobiliaria y arrendamiento social de vivienda.",
@@ -4007,7 +3954,7 @@
           ]
         },
         {
-          "numero": 24,
+          "numero": 23,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Instituto, por sí mismo o por conducto de su empresa filial, podrá destinar los recursos bajo su administración para inversiones para la construcción, adquisición y mantenimiento de inmuebles en terrenos propiedad del Instituto y destinados a vivienda de los derechohabientes del mismo. Los proyectos de inversión se integrarán en el programa de inversión habitacional que formará parte del plan financiero que será aprobado por la Asamblea General, a propuesta de la persona titular de la Dirección General, en términos de los artículos 10, fracción I y 16, fracción IV, de esta Ley.",
@@ -4019,7 +3966,7 @@
           ]
         },
         {
-          "numero": 25,
+          "numero": 24,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Instituto, por conducto de su empresa filial, podrá construir viviendas en terrenos propiedad del propio Instituto, así como en terrenos que le asigne el gobierno federal, gobiernos locales, municipales o sus entes públicos mediante la prestación de servicios, independientemente de la figura contractual que se celebre, o cuando el destino de las viviendas sea la enajenación a personas trabajadoras derechohabientes por medio de los créditos a que se refiere la fracción II anterior.",
@@ -4031,7 +3978,7 @@
           ]
         },
         {
-          "numero": 26,
+          "numero": 25,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Sin perjuicio de las obligaciones en materia de transparencia y acceso a la información previstas en la ley de la materia, la Dirección General del Instituto proveerá lo necesario para que se ponga a disposición del público en general, en forma periódica y a través de su página de Internet, información clara, sencilla, precisa, confiable y actualizada que permita conocer la situación financiera, administrativa, operacional, económica y jurídica, así como los riesgos, relacionados con el fondo que contiene los recursos a que se refiere el artículo 43, tercer párrafo de la presente Ley, así como de su empresa filial, sus proyectos de construcción, proveedores contratados por aquella, entre otros asuntos que estime conveniente.",
@@ -4346,7 +4293,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- La demanda de habitación y las necesidades de vivienda, dando preferencia a los trabajadores de bajos salarios, en las diversas regiones o localidades del país;",
+          "contenido": "La demanda de habitación y las necesidades de vivienda, dando preferencia a los trabajadores de bajos salarios, en las diversas regiones o localidades del país;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4355,7 +4302,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- La factibilidad y posibilidades reales de llevar a cabo construcciones habitacionales;",
+          "contenido": "La factibilidad y posibilidades reales de llevar a cabo construcciones habitacionales;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4364,7 +4311,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- El monto de las aportaciones al Fondo proveniente de las diversas regiones y localidades del país; y",
+          "contenido": "El monto de las aportaciones al Fondo proveniente de las diversas regiones y localidades del país; y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4373,7 +4320,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- El número de trabajadores en las diferentes regiones o localidades del Territorio Nacional.",
+          "contenido": "El número de trabajadores en las diferentes regiones o localidades del Territorio Nacional.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4695,7 +4642,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- La descripción general de la obra que se desee ejecutar;",
+          "contenido": "La descripción general de la obra que se desee ejecutar;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4704,7 +4651,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- La tasa de interés mínima a pagar por el financiamiento de que se trate;",
+          "contenido": "La tasa de interés mínima a pagar por el financiamiento de que se trate;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4713,7 +4660,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Las condiciones que deberán cumplir los interesados, particularmente en cuanto al tiempo de terminación de la obra;",
+          "contenido": "Las condiciones que deberán cumplir los interesados, particularmente en cuanto al tiempo de terminación de la obra;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4722,7 +4669,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- El plazo para la inscripción de interesados, que no podrá ser menor de treinta días hábiles contados a partir de la fecha de la publicación de la convocatoria;",
+          "contenido": "El plazo para la inscripción de interesados, que no podrá ser menor de treinta días hábiles contados a partir de la fecha de la publicación de la convocatoria;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4731,7 +4678,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- El plazo en que el Instituto autorizará a las personas inscritas a participar en la subasta, y",
+          "contenido": "El plazo en que el Instituto autorizará a las personas inscritas a participar en la subasta, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4740,7 +4687,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- El lugar, fecha y hora en que se celebrará el acto de la apertura de los sobres que contengan las posturas.",
+          "contenido": "El lugar, fecha y hora en que se celebrará el acto de la apertura de los sobres que contengan las posturas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4828,7 +4775,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Los miembros del Consejo de Administración y trabajadores del Instituto, sus cónyuges o parientes consanguíneos o por afinidad hasta el segundo grado, así como aquéllas en las que participen como accionistas, administradores, gerentes, apoderados o comisarios. El Consejo de Administración podrá autorizar excepciones a lo dispuesto en esta fracción, mediante reglas de carácter general aprobadas por lo menos por tres consejeros de cada uno de los sectores, y",
+          "contenido": "Los miembros del Consejo de Administración y trabajadores del Instituto, sus cónyuges o parientes consanguíneos o por afinidad hasta el segundo grado, así como aquéllas en las que participen como accionistas, administradores, gerentes, apoderados o comisarios. El Consejo de Administración podrá autorizar excepciones a lo dispuesto en esta fracción, mediante reglas de carácter general aprobadas por lo menos por tres consejeros de cada uno de los sectores, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4837,7 +4784,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Las que se encuentren en incumplimiento respecto de la ejecución de otra u otras construcciones de conjuntos habitacionales financiados por el Instituto.",
+          "contenido": "Las que se encuentren en incumplimiento respecto de la ejecución de otra u otras construcciones de conjuntos habitacionales financiados por el Instituto.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4915,7 +4862,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Las operaciones a que se refiere el presente artículo se podrán realizar respecto de viviendas propiedad o en administración del Instituto;",
+          "contenido": "Las operaciones a que se refiere el presente artículo se podrán realizar respecto de viviendas propiedad o en administración del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4924,7 +4871,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Establecer criterios de prelación de zonas geográficas con altos índices de marginación, baja disponibilidad de vivienda, entre otras, y priorizando la atención de las personas trabajadoras derechohabientes que no tengan vivienda propia y de menor nivel salarial;",
+          "contenido": "Establecer criterios de prelación de zonas geográficas con altos índices de marginación, baja disponibilidad de vivienda, entre otras, y priorizando la atención de las personas trabajadoras derechohabientes que no tengan vivienda propia y de menor nivel salarial;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4933,7 +4880,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- El saldo de la subcuenta de vivienda de la persona trabajadora funcionará como garantía de cumplimiento de pago. En los contratos se señalarán los procedimientos para la ejecución de dichas garantías mediante retiros anticipados del saldo de la subcuenta de vivienda que corresponda para cubrir el monto de los incumplimientos de que se trate;",
+          "contenido": "El saldo de la subcuenta de vivienda de la persona trabajadora funcionará como garantía de cumplimiento de pago. En los contratos se señalarán los procedimientos para la ejecución de dichas garantías mediante retiros anticipados del saldo de la subcuenta de vivienda que corresponda para cubrir el monto de los incumplimientos de que se trate;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4942,7 +4889,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- En términos de la legislación aplicable y en estricto apego a los derechos humanos, los modelos de contratos que establezca el Instituto para celebrar en instrumento privado el arrendamiento social de las viviendas a que se refiere este artículo deberán contener, al menos, las siguientes cláusulas:",
+          "contenido": "En términos de la legislación aplicable y en estricto apego a los derechos humanos, los modelos de contratos que establezca el Instituto para celebrar en instrumento privado el arrendamiento social de las viviendas a que se refiere este artículo deberán contener, al menos, las siguientes cláusulas:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5034,7 +4981,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Pagar en tiempo, forma y de manera completa las rentas a que estén obligados. Para tales efectos el monto de las rentas será descontado del salario en los términos de los artículos 97 y 110 de la Ley Federal del Trabajo;",
+          "contenido": "Pagar en tiempo, forma y de manera completa las rentas a que estén obligados. Para tales efectos el monto de las rentas será descontado del salario en los términos de los artículos 97 y 110 de la Ley Federal del Trabajo;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5043,7 +4990,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Cuidar diligentemente la vivienda que se le otorgue como si fuera propia;",
+          "contenido": "Cuidar diligentemente la vivienda que se le otorgue como si fuera propia;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5052,7 +4999,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Notificar al Instituto de cualquier defecto, daño o deterioro que observen, la reparación se realizará conforme a las políticas que establezca el Consejo de Administración, pudiendo establecer cargos a la persona trabajadora derechohabiente que resulte responsable de los daños a la vivienda;",
+          "contenido": "Notificar al Instituto de cualquier defecto, daño o deterioro que observen, la reparación se realizará conforme a las políticas que establezca el Consejo de Administración, pudiendo establecer cargos a la persona trabajadora derechohabiente que resulte responsable de los daños a la vivienda;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5061,7 +5008,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Desocupar y entregar la vivienda que se le otorgue al terminar el arrendamiento, y",
+          "contenido": "Desocupar y entregar la vivienda que se le otorgue al terminar el arrendamiento, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5070,7 +5017,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Está prohibido que las personas trabajadoras usen la vivienda para fines distintos a su habitación y residencia, así como darla en subarrendamiento.",
+          "contenido": "Está prohibido que las personas trabajadoras usen la vivienda para fines distintos a su habitación y residencia, así como darla en subarrendamiento.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -5515,7 +5462,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- El Instituto deberá solicitar, en su caso, a la Secretaría de Hacienda y Crédito Público aprobación de los financiamientos que reciba;",
+          "contenido": "El Instituto deberá solicitar, en su caso, a la Secretaría de Hacienda y Crédito Público aprobación de los financiamientos que reciba;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5524,7 +5471,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- La Asamblea General del Instituto deberá establecer las políticas de organización de la contabilidad y auditoría interna del Instituto, conforme a las normas de información financiera vigentes y aplicables, observando su origen constitucional, regulación como organismo de servicio social, objeto, fines y, en general, el régimen interno previsto en esta Ley;",
+          "contenido": "La Asamblea General del Instituto deberá establecer las políticas de organización de la contabilidad y auditoría interna del Instituto, conforme a las normas de información financiera vigentes y aplicables, observando su origen constitucional, regulación como organismo de servicio social, objeto, fines y, en general, el régimen interno previsto en esta Ley;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5533,7 +5480,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- La Secretaría de Hacienda y Crédito Público, auxiliada por la Comisión Nacional Bancaria y de Valores, fijará las normas de carácter prudencial y sanas prácticas a que se sujetarán las operaciones en materia crediticia que realice el Instituto, atendiendo a esta Ley y a la naturaleza social de los fines del Instituto;",
+          "contenido": "La Secretaría de Hacienda y Crédito Público, auxiliada por la Comisión Nacional Bancaria y de Valores, fijará las normas de carácter prudencial y sanas prácticas a que se sujetarán las operaciones en materia crediticia que realice el Instituto, atendiendo a esta Ley y a la naturaleza social de los fines del Instituto;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5542,7 +5489,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- La Secretaría de Hacienda y Crédito Público, auxiliada por la Comisión Nacional Bancaria y de Valores, supervisará y vigilará que las operaciones del Instituto en materia crediticia se ajusten a las normas establecidas y a las sanas prácticas.",
+          "contenido": "La Secretaría de Hacienda y Crédito Público, auxiliada por la Comisión Nacional Bancaria y de Valores, supervisará y vigilará que las operaciones del Instituto en materia crediticia se ajusten a las normas establecidas y a las sanas prácticas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5560,7 +5507,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- La Secretaría de Hacienda y Crédito Público podrá validar sobre el régimen de inversión de los recursos a que se refiere el tercer párrafo del artículo 43 de esta Ley;",
+          "contenido": "La Secretaría de Hacienda y Crédito Público podrá validar sobre el régimen de inversión de los recursos a que se refiere el tercer párrafo del artículo 43 de esta Ley;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5569,7 +5516,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Con base en lo establecido en este artículo, el Instituto deberá presentar al Congreso de la Unión y al Ejecutivo Federal, por conducto de la Secretaría de Hacienda y Crédito Público, a más tardar el 30 de mayo de cada año, un informe dictaminado por una auditoría externa, sobre la situación financiera de sus activos y pasivos, que contenga una evaluación respecto a la suficiencia de los flujos correspondientes para cubrir la operación del Instituto. El informe a que se refiere esta fracción deberá aprobarse por la Asamblea General del Instituto, y",
+          "contenido": "Con base en lo establecido en este artículo, el Instituto deberá presentar al Congreso de la Unión y al Ejecutivo Federal, por conducto de la Secretaría de Hacienda y Crédito Público, a más tardar el 30 de mayo de cada año, un informe dictaminado por una auditoría externa, sobre la situación financiera de sus activos y pasivos, que contenga una evaluación respecto a la suficiencia de los flujos correspondientes para cubrir la operación del Instituto. El informe a que se refiere esta fracción deberá aprobarse por la Asamblea General del Instituto, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5578,7 +5525,7 @@
           "numero": 9,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- Las operaciones que realice el Instituto en materia inmobiliaria, estarán basadas en los principios de máxima revelación de información, promoción de la competencia, protección al derechohabiente, preservación de la estabilidad financiera, y prevención de operaciones con recursos de procedencia ilícita y fraudes. Estos principios deben ser respetados por el Instituto y sus Órganos, respecto de su operación, así como por las autoridades que corresponda al ejercer sus facultades.",
+          "contenido": "Las operaciones que realice el Instituto en materia inmobiliaria, estarán basadas en los principios de máxima revelación de información, promoción de la competencia, protección al derechohabiente, preservación de la estabilidad financiera, y prevención de operaciones con recursos de procedencia ilícita y fraudes. Estos principios deben ser respetados por el Instituto y sus Órganos, respecto de su operación, así como por las autoridades que corresponda al ejercer sus facultades.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5736,5 +5683,6 @@
       ]
     }
   ],
-  "ultima_reforma_dof": "2025-02-21"
+  "ultima_reforma_dof": "2025-02-21",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf"
 }

@@ -1,20 +1,20 @@
 {
   "_advertencia": [
-    "╔══════════════════════════════════════════════════════════════════╗",
-    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
-    "║                                                                  ║",
-    "║  NO MODIFICAR MANUALMENTE                                        ║",
-    "║                                                                  ║",
-    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
-    "║  La base de datos se regenera desde aquí.                       ║",
-    "║                                                                  ║",
-    "║  Si el contenido es incorrecto:                                 ║",
-    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
-    "║                                                                  ║",
-    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
-    "╚══════════════════════════════════════════════════════════════════╝"
+    "=====================================================================",
+    "  ARCHIVO SAGRADO - FUENTE UNICA DE VERDAD",
+    "",
+    "  NO MODIFICAR MANUALMENTE",
+    "",
+    "  Este archivo es la UNICA fuente de verdad para el contenido.",
+    "  La base de datos se regenera desde aqui.",
+    "",
+    "  Si el contenido es incorrecto:",
+    "    -> CORRIGE EL SCRIPT, no este archivo",
+    "",
+    "  Modificarlo manualmente es SABOTAJE al sistema.",
+    "====================================================================="
   ],
-  "_generado_por": "extraer.py",
+  "_generado_por": "extractor/ExtractorGeneral",
   "ley": "CPEUM",
   "tipo_contenido": "articulo",
   "articulos": [
@@ -161,12 +161,12 @@
         },
         {
           "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. Esta Constitución reconoce y garantiza el derecho de los pueblos y las comunidades indígenas a la libre determinación y, en consecuencia, a la autonomía para:",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "Esta Constitución reconoce y garantiza el derecho de los pueblos y las comunidades indígenas a la libre determinación y, en consecuencia, a la autonomía para:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 8,
@@ -381,12 +381,12 @@
         },
         {
           "numero": 27,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B. La Federación, las entidades federativas, los Municipios y, en su caso, las demarcaciones territoriales de la Ciudad de México, deberán establecer las instituciones y determinar las políticas públicas que garanticen el ejercicio efectivo de los derechos de los pueblos indígenas y su desarrollo integral, intercultural y sostenible, las cuales deben ser diseñadas y operadas conjuntamente con ellos.",
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "La Federación, las entidades federativas, los Municipios y, en su caso, las demarcaciones territoriales de la Ciudad de México, deberán establecer las instituciones y determinar las políticas públicas que garanticen el ejercicio efectivo de los derechos de los pueblos indígenas y su desarrollo integral, intercultural y sostenible, las cuales deben ser diseñadas y operadas conjuntamente con ellos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 29-01-2016, 30-09-2024"
           ]
@@ -714,8 +714,8 @@
         },
         {
           "numero": 58,
-          "tipo": "fraccion",
-          "identificador": "C",
+          "tipo": "apartado",
+          "identificador": "C.",
           "contenido": "Esta Constitución reconoce a los pueblos y comunidades afromexicanas, cualquiera que sea su autodenominación, como parte de la composición pluricultural de la Nación. Tendrán en lo conducente los derechos señalados en los apartados anteriores de este artículo, a fin de garantizar su desarrollo e inclusión social, en los términos que establezca esta Constitución, así como su libre determinación que se ejercerá en un marco constitucional de autonomía que asegure la unidad nacional.",
           "padre_numero": null,
           "x_id": 85,
@@ -771,12 +771,12 @@
         },
         {
           "numero": 64,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "D. Esta Constitución reconoce y el Estado garantiza el derecho de las mujeres indígenas y afromexicanas a participar de manera efectiva y en condiciones de igualdad sustantiva en los procesos de desarrollo integral de sus pueblos y comunidades; en la toma de decisiones de carácter público; en la promoción y respeto de sus derechos de acceso a la educación, a la salud, a la propiedad y a la posesión de la tierra y demás derechos humanos.",
-          "padre_numero": null,
+          "tipo": "apartado",
+          "identificador": "D.",
+          "contenido": "Esta Constitución reconoce y el Estado garantiza el derecho de las mujeres indígenas y afromexicanas a participar de manera efectiva y en condiciones de igualdad sustantiva en los procesos de desarrollo integral de sus pueblos y comunidades; en la toma de decisiones de carácter público; en la promoción y respeto de sus derechos de acceso a la educación, a la salud, a la propiedad y a la posesión de la tierra y demás derechos humanos.",
+          "padre_numero": 63,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 65,
@@ -1701,12 +1701,12 @@
         },
         {
           "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. Para el ejercicio del derecho de acceso a la información, la Federación y las entidades federativas, en el ámbito de sus respectivas competencias, se regirán por los siguientes principios y bases:",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "Para el ejercicio del derecho de acceso a la información, la Federación y las entidades federativas, en el ámbito de sus respectivas competencias, se regirán por los siguientes principios y bases:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Párrafo reformado (para quedar como apartado A) DOF 11-06-2013. Reformado DOF 29-01-2016"
           ]
@@ -1848,12 +1848,12 @@
         },
         {
           "numero": 18,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B. En materia de radiodifusión y telecomunicaciones:",
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "En materia de radiodifusión y telecomunicaciones:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 19,
@@ -2671,12 +2671,12 @@
         },
         {
           "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. De los principios generales:",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "De los principios generales:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 3,
@@ -2788,12 +2788,12 @@
         },
         {
           "numero": 14,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B. De los derechos de toda persona imputada:",
-          "padre_numero": null,
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "De los derechos de toda persona imputada:",
+          "padre_numero": 13,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 15,
@@ -2935,8 +2935,8 @@
         },
         {
           "numero": 30,
-          "tipo": "fraccion",
-          "identificador": "C",
+          "tipo": "apartado",
+          "identificador": "C.",
           "contenido": "De los derechos de la víctima o del ofendido:",
           "padre_numero": null,
           "x_id": 85,
@@ -3515,12 +3515,12 @@
         },
         {
           "numero": 12,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. El Estado organizará un sistema de planeación democrática del desarrollo nacional que imprima solidez, dinamismo, competitividad, permanencia y equidad al crecimiento de la economía para la independencia y la democratización política, social y cultural de la nación.",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "El Estado organizará un sistema de planeación democrática del desarrollo nacional que imprima solidez, dinamismo, competitividad, permanencia y equidad al crecimiento de la economía para la independencia y la democratización política, social y cultural de la nación.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 05-06-2013"
           ]
@@ -3563,12 +3563,12 @@
         },
         {
           "numero": 16,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B. El Estado contará con un Sistema Nacional de Información Estadística y Geográfica cuyos datos serán considerados oficiales. Para la Federación, las entidades federativas, los Municipios y las demarcaciones territoriales de la Ciudad de México, los datos contenidos en el Sistema serán de uso obligatorio en los términos que establezca la ley.",
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "El Estado contará con un Sistema Nacional de Información Estadística y Geográfica cuyos datos serán considerados oficiales. Para la Federación, las entidades federativas, los Municipios y las demarcaciones territoriales de la Ciudad de México, los datos contenidos en el Sistema serán de uso obligatorio en los términos que establezca la ley.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 29-01-2016"
           ]
@@ -3613,12 +3613,12 @@
       "parrafos": [
         {
           "numero": 1,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. El Estado organizará un sistema de planeación democrática del desarrollo nacional que imprima solidez, dinamismo, competitividad, permanencia y equidad al crecimiento de la economía para la independencia y la democratización política, social y cultural de la nación.",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "El Estado organizará un sistema de planeación democrática del desarrollo nacional que imprima solidez, dinamismo, competitividad, permanencia y equidad al crecimiento de la economía para la independencia y la democratización política, social y cultural de la nación.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 05-06-2013"
           ]
@@ -3661,12 +3661,12 @@
         },
         {
           "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B. El Estado contará con un Sistema Nacional de Información Estadística y Geográfica cuyos datos serán considerados oficiales. Para la Federación, las entidades federativas, los Municipios y las demarcaciones territoriales de la Ciudad de México, los datos contenidos en el Sistema serán de uso obligatorio en los términos que establezca la ley.",
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "El Estado contará con un Sistema Nacional de Información Estadística y Geográfica cuyos datos serán considerados oficiales. Para la Federación, las entidades federativas, los Municipios y las demarcaciones territoriales de la Ciudad de México, los datos contenidos en el Sistema serán de uso obligatorio en los términos que establezca la ley.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 29-01-2016"
           ]
@@ -3745,8 +3745,8 @@
         },
         {
           "numero": 13,
-          "tipo": "fraccion",
-          "identificador": "C",
+          "tipo": "apartado",
+          "identificador": "C.",
           "contenido": "Se deroga",
           "padre_numero": null,
           "x_id": 85,
@@ -4179,7 +4179,7 @@
           "numero": 40,
           "tipo": "fraccion",
           "identificador": "XV",
-          "contenido": "En los Estados Unidos Mexicanos quedan prohibidos los latifundios.",
+          "contenido": "En los Estados Unidos Mexicanos quedan prohibidos los latifundios. Se considera pequeña propiedad agrícola la que no exceda por individuo de cien hectáreas de riego o humedad de primera o sus equivalentes en otras clases de tierras.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4188,7 +4188,7 @@
           "numero": 41,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Se considera pequeña propiedad agrícola la que no exceda por individuo de cien hectáreas de riego o humedad de primera o sus equivalentes en otras clases de tierras.",
+          "contenido": "Para los efectos de la equivalencia se computará una hectárea de riego por dos de temporal, por cuatro de agostadero de buena calidad y por ocho de bosque, monte o agostadero en terrenos áridos.",
           "padre_numero": 40,
           "x_id": 114,
           "x_texto": 114
@@ -4197,7 +4197,7 @@
           "numero": 42,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para los efectos de la equivalencia se computará una hectárea de riego por dos de temporal, por cuatro de agostadero de buena calidad y por ocho de bosque, monte o agostadero en terrenos áridos.",
+          "contenido": "Se considerará, asimismo, como pequeña propiedad, la superficie que no exceda por individuo de ciento cincuenta hectáreas cuando las tierras se dediquen al cultivo de algodón, si reciben riego; y de trescientas, cuando se destinen al cultivo del plátano, caña de azúcar, café, henequén, hule, palma, vid, olivo, quina, vainilla, cacao, agave, nopal o árboles frutales.",
           "padre_numero": 40,
           "x_id": 114,
           "x_texto": 114
@@ -4206,7 +4206,7 @@
           "numero": 43,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Se considerará, asimismo, como pequeña propiedad, la superficie que no exceda por individuo de ciento cincuenta hectáreas cuando las tierras se dediquen al cultivo de algodón, si reciben riego; y de trescientas, cuando se destinen al cultivo del plátano, caña de azúcar, café, henequén, hule, palma, vid, olivo, quina, vainilla, cacao, agave, nopal o árboles frutales.",
+          "contenido": "Se considerará pequeña propiedad ganadera la que no exceda por individuo la superficie necesaria para mantener hasta quinientas cabezas de ganado mayor o su equivalente en ganado menor, en los términos que fije la ley, de acuerdo con la capacidad forrajera de los terrenos.",
           "padre_numero": 40,
           "x_id": 114,
           "x_texto": 114
@@ -4215,22 +4215,13 @@
           "numero": 44,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Se considerará pequeña propiedad ganadera la que no exceda por individuo la superficie necesaria para mantener hasta quinientas cabezas de ganado mayor o su equivalente en ganado menor, en los términos que fije la ley, de acuerdo con la capacidad forrajera de los terrenos.",
-          "padre_numero": 40,
-          "x_id": 114,
-          "x_texto": 114
-        },
-        {
-          "numero": 45,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Cuando debido a obras de riego, drenaje o cualesquiera otras ejecutadas por los dueños o poseedores de una pequeña propiedad se hubiese mejorado la calidad de sus tierras, seguirá siendo considerada como pequeña propiedad, aún cuando, en virtud de la mejoría obtenida, se rebasen los máximos señalados por esta fracción, siempre que se reúnan los requisitos que fije la ley.",
           "padre_numero": 40,
           "x_id": 114,
           "x_texto": 114
         },
         {
-          "numero": 46,
+          "numero": 45,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando dentro de una pequeña propiedad ganadera se realicen mejoras en sus tierras y éstas se destinen a usos agrícolas, la superficie utilizada para este fin no podrá exceder, según el caso, los límites a que se refieren los párrafos segundo y tercero de esta fracción que correspondan a la calidad que hubieren tenido dichas tierras antes de la mejora;",
@@ -4242,7 +4233,7 @@
           ]
         },
         {
-          "numero": 47,
+          "numero": 46,
           "tipo": "fraccion",
           "identificador": "XVI",
           "contenido": "(Se deroga)",
@@ -4254,7 +4245,7 @@
           ]
         },
         {
-          "numero": 48,
+          "numero": 47,
           "tipo": "fraccion",
           "identificador": "XVII",
           "contenido": "El Congreso de la Unión y las legislaturas de los estados, en sus respectivas jurisdicciones, expedirán leyes que establezcan los procedimientos para el fraccionamiento y enajenación de las extensiones que llegaren a exceder los límites señalados en las fracciones IV y XV de este artículo.",
@@ -4263,20 +4254,20 @@
           "x_texto": 107
         },
         {
-          "numero": 49,
+          "numero": 48,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El excedente deberá ser fraccionado y enajenado por el propietario dentro del plazo de un año contado a partir de la notificación correspondiente. Si transcurrido el plazo el excedente no se ha enajenado, la venta deberá hacerse mediante pública almoneda. En igualdad de condiciones, se respetará el derecho de preferencia que prevea la ley reglamentaria.",
-          "padre_numero": 48,
+          "padre_numero": 47,
           "x_id": 114,
           "x_texto": 114
         },
         {
-          "numero": 50,
+          "numero": 49,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las leyes locales organizarán el patrimonio de familia, determinando los bienes que deben constituirlo, sobre la base de que será inalienable y no estará sujeto a embargo ni a gravamen ninguno;",
-          "padre_numero": 48,
+          "padre_numero": 47,
           "x_id": 114,
           "x_texto": 114,
           "referencias": [
@@ -4284,7 +4275,7 @@
           ]
         },
         {
-          "numero": 51,
+          "numero": 50,
           "tipo": "fraccion",
           "identificador": "XVIII",
           "contenido": "Se declaran revisables todos los contratos y concesiones hechas por los Gobiernos anteriores desde el año de 1876, que hayan traído por consecuencia el acaparamiento de tierras, aguas y riquezas naturales de la Nación, por una sola persona o sociedad, y se faculta al Ejecutivo de la Unión para declararlos nulos cuando impliquen perjuicios graves para el interés público.",
@@ -4293,7 +4284,7 @@
           "x_texto": 107
         },
         {
-          "numero": 52,
+          "numero": 51,
           "tipo": "fraccion",
           "identificador": "XIX",
           "contenido": "Con base en esta Constitución, el Estado dispondrá las medidas para la expedita y honesta impartición de la justicia agraria, con objeto de garantizar la seguridad jurídica en la tenencia de le (sic DOF 03-02-1983) tierra ejidal, comunal y de la pequeña propiedad, y apoyará la asesoría legal de los campesinos.",
@@ -4302,11 +4293,11 @@
           "x_texto": 107
         },
         {
-          "numero": 53,
+          "numero": 52,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Son de jurisdicción federal todas las cuestiones que por límites de terrenos ejidales y comunales, cualquiera que sea el origen de éstos, se hallen pendientes o se susciten entre dos o más núcleos de población; así como las relacionadas con la tenencia de la tierra de los ejidos y comunidades. Para estos efectos y, en general, para la administración de justicia agraria, la ley instituirá tribunales dotados de autonomía y plena jurisdicción, integrados por magistrados propuestos por el Ejecutivo Federal y designados por la Cámara de Senadores o, en los recesos de ésta, por la Comisión Permanente.",
-          "padre_numero": 52,
+          "padre_numero": 51,
           "x_id": 114,
           "x_texto": 114,
           "referencias": [
@@ -4314,11 +4305,11 @@
           ]
         },
         {
-          "numero": 54,
+          "numero": 53,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La ley establecerá un órgano para la procuración de justicia agraria, y",
-          "padre_numero": 52,
+          "padre_numero": 51,
           "x_id": 114,
           "x_texto": 114,
           "referencias": [
@@ -4327,7 +4318,7 @@
           ]
         },
         {
-          "numero": 55,
+          "numero": 54,
           "tipo": "fraccion",
           "identificador": "XX",
           "contenido": "El Estado promoverá las condiciones para el desarrollo rural, cultural, económico y de salud, con el propósito de generar empleo y garantizar a la población campesina su bienestar y su participación e incorporación en el desarrollo nacional, fomentará la actividad agropecuaria y forestal, cultivos tradicionales con semillas nativas, en especial el sistema milpa, para el óptimo uso de la tierra libre de cultivos de maíz genéticamente modificado, en los términos definidos en el artículo 4o., con obras de infraestructura, insumos, créditos, servicios de capacitación, investigación, innovación, conservación de la agrobiodiversidad y asistencia técnica, fortaleciendo las instituciones públicas nacionales. Asimismo, expedirá la legislación reglamentaria para planear, organizar y monitorear la producción agropecuaria, su industrialización y comercialización, considerándolas de interés público.",
@@ -4339,11 +4330,11 @@
           ]
         },
         {
-          "numero": 56,
+          "numero": 55,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El desarrollo rural integral y sustentable a que se refiere el párrafo anterior, también tendrá entre sus fines que el Estado garantice el abasto suficiente y oportuno de los alimentos básicos que la ley establezca.",
-          "padre_numero": 55,
+          "padre_numero": 54,
           "x_id": 114,
           "x_texto": 114,
           "referencias": [
@@ -4351,38 +4342,29 @@
           ]
         },
         {
-          "numero": 57,
+          "numero": 56,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Estado garantizará, en los términos que fije la ley, la entrega de:",
-          "padre_numero": 55,
+          "padre_numero": 54,
           "x_id": 114,
           "x_texto": 114
         },
         {
-          "numero": 58,
+          "numero": 57,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Un jornal seguro, justo y permanente a campesinos que cultiven sus tierras con árboles frutales, maderables y especies que requieren ser procesadas;",
-          "padre_numero": 55,
+          "padre_numero": 54,
           "x_id": 114,
           "x_texto": 136
         },
         {
-          "numero": 59,
+          "numero": 58,
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Un apoyo anual directo y fertilizantes gratuitos a productores de pequeña escala, y",
-          "padre_numero": 55,
-          "x_id": 114,
-          "x_texto": 136
-        },
-        {
-          "numero": 60,
-          "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Un apoyo anual directo a pescadores de pequeña escala.",
-          "padre_numero": 55,
+          "padre_numero": 54,
           "x_id": 114,
           "x_texto": 136,
           "referencias": [
@@ -4390,13 +4372,13 @@
           ]
         },
         {
-          "numero": 61,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "El Estado mantendrá precios de garantía para el maíz, frijol, leche, arroz y trigo harinero o panificable, en los términos de las disposiciones aplicables.",
-          "padre_numero": 55,
+          "numero": 59,
+          "tipo": "inciso",
+          "identificador": "c)",
+          "contenido": "Un apoyo anual directo a pescadores de pequeña escala. El Estado mantendrá precios de garantía para el maíz, frijol, leche, arroz y trigo harinero o panificable, en los términos de las disposiciones aplicables.",
+          "padre_numero": 54,
           "x_id": 114,
-          "x_texto": 114,
+          "x_texto": 136,
           "referencias": [
             "Párrafo adicionado DOF 02-12-2024",
             "Fracción adicionada DOF 03-02-1983",
@@ -4723,6 +4705,15 @@
           "referencias": [
             "Artículo reformado DOF 21-04-1981, 02-08-2007, 10-06-2011"
           ]
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Mexicanos",
+          "padre_numero": 5,
+          "x_id": 260,
+          "x_texto": 260
         }
       ]
     },
@@ -4946,6 +4937,15 @@
           "referencias": [
             "Artículo reformado DOF 15-12-1934, 10-02-1944, 20-03-1997"
           ]
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Extranjeros",
+          "padre_numero": 5,
+          "x_id": 258,
+          "x_texto": 258
         }
       ]
     },
@@ -4987,6 +4987,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Ciudadanos Mexicanos",
+          "padre_numero": 3,
+          "x_id": 227,
+          "x_texto": 227
         }
       ]
     },
@@ -5214,7 +5223,7 @@
           "numero": 17,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "Participar en los procesos de revocación de mandato.",
+          "contenido": "Participar en los procesos de revocación de mandato. El que se refiere a la revocación de mandato del Presidente de la República, se llevará a cabo conforme a lo siguiente: 1o. Será convocado por el Instituto Nacional Electoral a petición de los ciudadanos y ciudadanas, en un número equivalente, al menos, al tres por ciento de los inscritos en la lista nominal de electores, siempre y cuando en la solicitud correspondan a por lo menos diecisiete entidades federativas y que representen, como mínimo, el tres por ciento de la lista nominal de electores de cada una de ellas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5223,22 +5232,13 @@
           "numero": 18,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El que se refiere a la revocación de mandato del Presidente de la República, se llevará a cabo conforme a lo siguiente: 1o. Será convocado por el Instituto Nacional Electoral a petición de los ciudadanos y ciudadanas, en un número equivalente, al menos, al tres por ciento de los inscritos en la lista nominal de electores, siempre y cuando en la solicitud correspondan a por lo menos diecisiete entidades federativas y que representen, como mínimo, el tres por ciento de la lista nominal de electores de cada una de ellas.",
-          "padre_numero": 17,
-          "x_id": 107,
-          "x_texto": 107
-        },
-        {
-          "numero": 19,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "El Instituto, dentro de los siguientes treinta días a que se reciba la solicitud, verificará el requisito establecido en el párrafo anterior y emitirá inmediatamente la convocatoria al proceso para la revocación de mandato.",
-          "padre_numero": 18,
+          "padre_numero": 17,
           "x_id": 129,
           "x_texto": 129
         },
         {
-          "numero": 20,
+          "numero": 19,
           "tipo": "texto",
           "identificador": null,
           "contenido": "2o. Se podrá solicitar en una sola ocasión y durante los tres meses posteriores a la conclusión del tercer año del periodo constitucional.",
@@ -5247,16 +5247,16 @@
           "x_texto": 107
         },
         {
-          "numero": 21,
+          "numero": 20,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los ciudadanos y ciudadanas podrán recabar firmas para la solicitud de revocación de mandato durante el mes previo a la fecha prevista en el párrafo anterior. El Instituto emitirá, a partir de esta fecha, los formatos y medios para la recopilación de firmas, así como los lineamientos para las actividades relacionadas.",
-          "padre_numero": 20,
+          "padre_numero": 19,
           "x_id": 129,
           "x_texto": 129
         },
         {
-          "numero": 22,
+          "numero": 21,
           "tipo": "texto",
           "identificador": null,
           "contenido": "3o. Se realizará mediante votación libre, directa y secreta de ciudadanos y ciudadanas inscritos en la lista nominal, el domingo siguiente a los noventa días posteriores a la convocatoria y en fecha no coincidente con las jornadas electorales, federal o locales.",
@@ -5265,7 +5265,7 @@
           "x_texto": 107
         },
         {
-          "numero": 23,
+          "numero": 22,
           "tipo": "texto",
           "identificador": null,
           "contenido": "4o. Para que el proceso de revocación de mandato sea válido deberá haber una participación de, por lo menos, el cuarenta por ciento de las personas inscritas en la lista nominal de electores. La revocación de mandato sólo procederá por mayoría absoluta.",
@@ -5274,7 +5274,7 @@
           "x_texto": 107
         },
         {
-          "numero": 24,
+          "numero": 23,
           "tipo": "texto",
           "identificador": null,
           "contenido": "5o. El Instituto Nacional Electoral tendrá a su cargo, en forma directa, la organización, desarrollo y cómputo de la votación. Emitirá los resultados de los procesos de revocación de mandato del titular del Poder Ejecutivo Federal, los cuales podrán ser impugnados ante la Sala Superior del Tribunal Electoral del Poder Judicial de la Federación, en los términos de lo dispuesto en la fracción VI del artículo 41, así como en la fracción III del artículo 99.",
@@ -5283,7 +5283,7 @@
           "x_texto": 107
         },
         {
-          "numero": 25,
+          "numero": 24,
           "tipo": "texto",
           "identificador": null,
           "contenido": "6o. La Sala Superior del Tribunal Electoral del Poder Judicial de la Federación realizará el cómputo final del proceso de revocación de mandato, una vez resueltas las impugnaciones que se hubieren interpuesto. En su caso, emitirá la declaratoria de revocación y se estará a lo dispuesto en el artículo 84.",
@@ -5292,7 +5292,7 @@
           "x_texto": 107
         },
         {
-          "numero": 26,
+          "numero": 25,
           "tipo": "texto",
           "identificador": null,
           "contenido": "7o. Queda prohibido el uso de recursos públicos para la recolección de firmas, así como con fines de promoción y propaganda relacionados con los procesos de revocación de mandato.",
@@ -5301,11 +5301,20 @@
           "x_texto": 107
         },
         {
-          "numero": 27,
+          "numero": 26,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Instituto y los organismos públicos locales, según corresponda, promoverán la participación ciudadana y serán la única instancia a cargo de la difusión de los mismos. La promoción será objetiva, imparcial y con fines informativos.",
-          "padre_numero": 26,
+          "padre_numero": 25,
+          "x_id": 129,
+          "x_texto": 129
+        },
+        {
+          "numero": 27,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Ninguna otra persona física o moral, sea a título propio o por cuenta de terceros, podrá contratar propaganda en radio y televisión dirigida a influir en la opinión de los ciudadanos y ciudadanas.",
+          "padre_numero": 25,
           "x_id": 129,
           "x_texto": 129
         },
@@ -5313,8 +5322,8 @@
           "numero": 28,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Ninguna otra persona física o moral, sea a título propio o por cuenta de terceros, podrá contratar propaganda en radio y televisión dirigida a influir en la opinión de los ciudadanos y ciudadanas.",
-          "padre_numero": 26,
+          "contenido": "Durante el tiempo que comprende el proceso de revocación de mandato, desde la convocatoria y hasta la conclusión de la jornada, deberá suspenderse la difusión en los medios de comunicación de toda propaganda gubernamental de cualquier orden de gobierno.",
+          "padre_numero": 25,
           "x_id": 129,
           "x_texto": 129
         },
@@ -5322,22 +5331,13 @@
           "numero": 29,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Durante el tiempo que comprende el proceso de revocación de mandato, desde la convocatoria y hasta la conclusión de la jornada, deberá suspenderse la difusión en los medios de comunicación de toda propaganda gubernamental de cualquier orden de gobierno.",
-          "padre_numero": 26,
+          "contenido": "Los poderes públicos, los órganos autónomos, las dependencias y entidades de la administración pública y cualquier otro ente de los tres órdenes de gobierno, sólo podrán difundir las campañas de información relativas a los servicios educativos y de salud o las necesarias para la protección civil.",
+          "padre_numero": 25,
           "x_id": 129,
           "x_texto": 129
         },
         {
           "numero": 30,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Los poderes públicos, los órganos autónomos, las dependencias y entidades de la administración pública y cualquier otro ente de los tres órdenes de gobierno, sólo podrán difundir las campañas de información relativas a los servicios educativos y de salud o las necesarias para la protección civil.",
-          "padre_numero": 26,
-          "x_id": 129,
-          "x_texto": 129
-        },
-        {
-          "numero": 31,
           "tipo": "texto",
           "identificador": null,
           "contenido": "8o. El Congreso de la Unión emitirá la ley reglamentaria.",
@@ -5471,22 +5471,13 @@
           "numero": 12,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "Por residir durante cinco años continuos en el extranjero.",
+          "contenido": "Por residir durante cinco años continuos en el extranjero. C) La ciudadanía mexicana se pierde:",
           "padre_numero": null,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 13,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "C) La ciudadanía mexicana se pierde:",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 14,
           "tipo": "fraccion",
           "identificador": "I",
           "contenido": "Por aceptar o usar títulos nobiliarios de gobiernos extranjeros;",
@@ -5495,7 +5486,7 @@
           "x_texto": 129
         },
         {
-          "numero": 15,
+          "numero": 14,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "Por prestar voluntariamente servicios o funciones oficiales a un gobierno extranjero, sin permiso del Ejecutivo Federal;",
@@ -5507,28 +5498,19 @@
           ]
         },
         {
-          "numero": 16,
+          "numero": 15,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Por aceptar o usar condecoraciones extranjeras sin permiso del Ejecutivo Federal.",
+          "contenido": "Por aceptar o usar condecoraciones extranjeras sin permiso del Ejecutivo Federal. El Presidente de la República, los senadores y diputados al Congreso de la Unión y los ministros de la Suprema Corte de Justicia de la Nación podrán libremente aceptar y usar condecoraciones extranjeras;",
           "padre_numero": null,
           "x_id": 107,
-          "x_texto": 129
-        },
-        {
-          "numero": 17,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "El Presidente de la República, los senadores y diputados al Congreso de la Unión y los ministros de la Suprema Corte de Justicia de la Nación podrán libremente aceptar y usar condecoraciones extranjeras;",
-          "padre_numero": 16,
-          "x_id": 129,
           "x_texto": 129,
           "referencias": [
             "Fracción reformada DOF 30-09-2013"
           ]
         },
         {
-          "numero": 18,
+          "numero": 16,
           "tipo": "fraccion",
           "identificador": "IV",
           "contenido": "Por admitir del gobierno de otro país títulos o funciones sin previo permiso del Ejecutivo Federal, exceptuando los títulos literarios, científicos o humanitarios que pueden aceptarse libremente;",
@@ -5540,7 +5522,7 @@
           ]
         },
         {
-          "numero": 19,
+          "numero": 17,
           "tipo": "fraccion",
           "identificador": "V",
           "contenido": "Por ayudar, en contra de la Nación, a un extranjero, o a un gobierno extranjero, en cualquier reclamación diplomática o ante un tribunal internacional, y",
@@ -5549,7 +5531,7 @@
           "x_texto": 129
         },
         {
-          "numero": 20,
+          "numero": 18,
           "tipo": "fraccion",
           "identificador": "VI",
           "contenido": "En los demás casos que fijan las leyes.",
@@ -5600,22 +5582,13 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "Por residir durante cinco años continuos en el extranjero.",
+          "contenido": "Por residir durante cinco años continuos en el extranjero. C) La ciudadanía mexicana se pierde:",
           "padre_numero": null,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "C) La ciudadanía mexicana se pierde:",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 6,
           "tipo": "fraccion",
           "identificador": "I",
           "contenido": "Por aceptar o usar títulos nobiliarios de gobiernos extranjeros;",
@@ -5624,7 +5597,7 @@
           "x_texto": 129
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "Por prestar voluntariamente servicios o funciones oficiales a un gobierno extranjero, sin permiso del Ejecutivo Federal;",
@@ -5636,28 +5609,19 @@
           ]
         },
         {
-          "numero": 8,
+          "numero": 7,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Por aceptar o usar condecoraciones extranjeras sin permiso del Ejecutivo Federal.",
+          "contenido": "Por aceptar o usar condecoraciones extranjeras sin permiso del Ejecutivo Federal. El Presidente de la República, los senadores y diputados al Congreso de la Unión y los ministros de la Suprema Corte de Justicia de la Nación podrán libremente aceptar y usar condecoraciones extranjeras;",
           "padre_numero": null,
           "x_id": 107,
-          "x_texto": 129
-        },
-        {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "El Presidente de la República, los senadores y diputados al Congreso de la Unión y los ministros de la Suprema Corte de Justicia de la Nación podrán libremente aceptar y usar condecoraciones extranjeras;",
-          "padre_numero": 8,
-          "x_id": 129,
           "x_texto": 129,
           "referencias": [
             "Fracción reformada DOF 30-09-2013"
           ]
         },
         {
-          "numero": 10,
+          "numero": 8,
           "tipo": "fraccion",
           "identificador": "IV",
           "contenido": "Por admitir del gobierno de otro país títulos o funciones sin previo permiso del Ejecutivo Federal, exceptuando los títulos literarios, científicos o humanitarios que pueden aceptarse libremente;",
@@ -5669,7 +5633,7 @@
           ]
         },
         {
-          "numero": 11,
+          "numero": 9,
           "tipo": "fraccion",
           "identificador": "V",
           "contenido": "Por ayudar, en contra de la Nación, a un extranjero, o a un gobierno extranjero, en cualquier reclamación diplomática o ante un tribunal internacional, y",
@@ -5678,7 +5642,7 @@
           "x_texto": 129
         },
         {
-          "numero": 12,
+          "numero": 10,
           "tipo": "fraccion",
           "identificador": "VI",
           "contenido": "En los demás casos que fijan las leyes.",
@@ -6663,22 +6627,13 @@
           "numero": 88,
           "tipo": "numeral",
           "identificador": "11.",
-          "contenido": "Las que determine la ley.",
+          "contenido": "Las que determine la ley. En los supuestos que establezca la ley y con la aprobación de una mayoría de cuando menos ocho votos del Consejo General, el Instituto Nacional Electoral podrá:",
           "padre_numero": 39,
           "x_id": 128,
           "x_texto": 150
         },
         {
           "numero": 89,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "En los supuestos que establezca la ley y con la aprobación de una mayoría de cuando menos ocho votos del Consejo General, el Instituto Nacional Electoral podrá:",
-          "padre_numero": 39,
-          "x_id": 129,
-          "x_texto": 129
-        },
-        {
-          "numero": 90,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Asumir directamente la realización de las actividades propias de la función electoral que corresponden a los órganos electorales locales;",
@@ -6687,7 +6642,7 @@
           "x_texto": 151
         },
         {
-          "numero": 91,
+          "numero": 90,
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Delegar en dichos órganos electorales las atribuciones a que se refiere el inciso a) del Apartado B de esta Base, sin perjuicio de reasumir su ejercicio directo en cualquier momento, o",
@@ -6696,7 +6651,7 @@
           "x_texto": 151
         },
         {
-          "numero": 92,
+          "numero": 91,
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Atraer a su conocimiento cualquier asunto de la competencia de los órganos electorales locales, cuando su trascendencia así lo amerite o para sentar un criterio de interpretación.",
@@ -6705,7 +6660,7 @@
           "x_texto": 151
         },
         {
-          "numero": 93,
+          "numero": 92,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Corresponde al Instituto Nacional Electoral designar y remover a los integrantes del órgano superior de dirección de los organismos públicos locales, en los términos de esta Constitución.",
@@ -6714,7 +6669,7 @@
           "x_texto": 129
         },
         {
-          "numero": 94,
+          "numero": 93,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Apartado D. El Servicio Profesional Electoral Nacional comprende la selección, ingreso, capacitación, profesionalización, promoción, evaluación, rotación, permanencia y disciplina, de los servidores públicos de los órganos ejecutivos y técnicos del Instituto Nacional Electoral y de los organismos públicos locales de las entidades federativas en materia electoral. El Instituto Nacional Electoral regulará la organización y funcionamiento de este Servicio.",
@@ -6726,7 +6681,7 @@
           ]
         },
         {
-          "numero": 95,
+          "numero": 94,
           "tipo": "fraccion",
           "identificador": "VI",
           "contenido": "Para garantizar los principios de constitucionalidad y legalidad de los actos y resoluciones electorales, incluidos los relativos a los procesos de consulta popular y de revocación de mandato, se establecerá un sistema de medios de impugnación en los términos que señalen esta Constitución y la ley. Dicho sistema dará definitividad a las distintas etapas de los procesos electorales, de consulta popular y de revocación de mandato, y garantizará la protección de los derechos políticos de los ciudadanos de votar, ser votados y de asociación, en los términos del artículo 99 de esta Constitución.",
@@ -6738,38 +6693,38 @@
           ]
         },
         {
-          "numero": 96,
+          "numero": 95,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En materia electoral la interposición de los medios de impugnación, constitucionales o legales, no producirá efectos suspensivos sobre la resolución o el acto impugnado.",
-          "padre_numero": 95,
+          "padre_numero": 94,
+          "x_id": 107,
+          "x_texto": 107
+        },
+        {
+          "numero": 96,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La ley establecerá el sistema de nulidades de las elecciones federales o locales por violaciones graves, dolosas y determinantes en los siguientes casos:",
+          "padre_numero": 94,
           "x_id": 107,
           "x_texto": 107
         },
         {
           "numero": 97,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "La ley establecerá el sistema de nulidades de las elecciones federales o locales por violaciones graves, dolosas y determinantes en los siguientes casos:",
-          "padre_numero": 95,
-          "x_id": 107,
-          "x_texto": 107
-        },
-        {
-          "numero": 98,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Se exceda el gasto de campaña en un cinco por ciento del monto total autorizado;",
-          "padre_numero": 95,
+          "padre_numero": 94,
           "x_id": 107,
           "x_texto": 129
         },
         {
-          "numero": 99,
+          "numero": 98,
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Se compre o adquiera cobertura informativa o tiempos en radio y televisión, fuera de los supuestos previstos en la ley;",
-          "padre_numero": 95,
+          "padre_numero": 94,
           "x_id": 107,
           "x_texto": 129,
           "referencias": [
@@ -6777,11 +6732,11 @@
           ]
         },
         {
-          "numero": 100,
+          "numero": 99,
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Se reciban o utilicen recursos de procedencia ilícita o recursos públicos en las campañas.",
-          "padre_numero": 95,
+          "padre_numero": 94,
           "x_id": 107,
           "x_texto": 129,
           "referencias": [
@@ -6789,11 +6744,11 @@
           ]
         },
         {
-          "numero": 101,
+          "numero": 100,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Dichas violaciones deberán acreditarse de manera objetiva y material. Se presumirá que las violaciones son determinantes cuando la diferencia entre la votación obtenida entre el primero y el segundo lugar sea menor al cinco por ciento.",
-          "padre_numero": 95,
+          "padre_numero": 94,
           "x_id": 107,
           "x_texto": 107,
           "referencias": [
@@ -6801,17 +6756,26 @@
           ]
         },
         {
-          "numero": 102,
+          "numero": 101,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de nulidad de la elección, se convocará a una elección extraordinaria, en la que no podrá participar la persona sancionada.",
-          "padre_numero": 95,
+          "padre_numero": 94,
           "x_id": 106,
           "x_texto": 106,
           "referencias": [
             "Párrafo adicionado DOF 10-02-2014",
             "Artículo reformado DOF 06-12-1977, 06-04-1990, 03-09-1993, 19-04-1994, 22-08-1996, 13-11-2007"
           ]
+        },
+        {
+          "numero": 102,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Partes Integrantes de la Federación y del Territorio Nacional",
+          "padre_numero": 101,
+          "x_id": 131,
+          "x_texto": 131
         }
       ]
     },
@@ -7015,6 +6979,15 @@
           "referencias": [
             "Artículo reformado DOF 20-01-1960"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la División de Poderes",
+          "padre_numero": 1,
+          "x_id": 239,
+          "x_texto": 239
         }
       ]
     },
@@ -7044,6 +7017,15 @@
           "referencias": [
             "Artículo reformado DOF 12-08-1938, 28-03-1951"
           ]
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Poder Legislativo",
+          "padre_numero": 2,
+          "x_id": 250,
+          "x_texto": 250
         }
       ]
     },
@@ -7064,6 +7046,15 @@
           "referencias": [
             "Artículo original DOF 05-02-1917"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Elección e Instalación del Congreso",
+          "padre_numero": 1,
+          "x_id": 197,
+          "x_texto": 197
         }
       ]
     },
@@ -7874,6 +7865,15 @@
           "referencias": [
             "Párrafo adicionado DOF 06-12-1977"
           ]
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Iniciativa y Formación de las Leyes",
+          "padre_numero": 4,
+          "x_id": 199,
+          "x_texto": 199
         }
       ]
     },
@@ -7995,29 +7995,29 @@
         },
         {
           "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. Aprobado un proyecto en la Cámara de su origen, pasará para su discusión a la otra. Si ésta lo aprobare, se remitirá al Ejecutivo, quien, si no tuviere observaciones que hacer, lo publicará inmediatamente.",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "Aprobado un proyecto en la Cámara de su origen, pasará para su discusión a la otra. Si ésta lo aprobare, se remitirá al Ejecutivo, quien, si no tuviere observaciones que hacer, lo publicará inmediatamente.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B. Se reputará aprobado por el Poder Ejecutivo todo proyecto no devuelto con observaciones a la Cámara de su origen dentro de los treinta días naturales siguientes a su recepción; vencido este plazo el Ejecutivo dispondrá de diez días naturales para promulgar y publicar la ley o decreto. Transcurrido este segundo plazo, la ley o decreto será considerado promulgado y el Presidente de la Cámara de origen ordenará dentro de los diez días naturales siguientes su publicación en el Diario Oficial de la Federación, sin que se requiera refrendo. Los plazos a que se refiere esta fracción no se interrumpirán si el Congreso cierra o suspende sus sesiones, en cuyo caso la devolución deberá hacerse a la Comisión Permanente.",
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "Se reputará aprobado por el Poder Ejecutivo todo proyecto no devuelto con observaciones a la Cámara de su origen dentro de los treinta días naturales siguientes a su recepción; vencido este plazo el Ejecutivo dispondrá de diez días naturales para promulgar y publicar la ley o decreto. Transcurrido este segundo plazo, la ley o decreto será considerado promulgado y el Presidente de la Cámara de origen ordenará dentro de los diez días naturales siguientes su publicación en el Diario Oficial de la Federación, sin que se requiera refrendo. Los plazos a que se refiere esta fracción no se interrumpirán si el Congreso cierra o suspende sus sesiones, en cuyo caso la devolución deberá hacerse a la Comisión Permanente.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Inciso reformado DOF 17-08-2011"
           ]
         },
         {
           "numero": 4,
-          "tipo": "fraccion",
-          "identificador": "C",
+          "tipo": "apartado",
+          "identificador": "C.",
           "contenido": "El proyecto de ley o decreto desechado en todo o en parte por el Ejecutivo, será devuelto, con sus observaciones, a la Cámara de su origen. Deberá ser discutido de nuevo por ésta,, (sic DOF 05-02-1917) y si fuese confirmado por las dos terceras partes del número total de votos, pasará otra vez a la Cámara revisora. Si por esta fuese sancionado por la misma mayoría, el proyecto será ley o decreto y volverá al Ejecutivo para su promulgación.",
           "padre_numero": null,
           "x_id": 85,
@@ -8034,53 +8034,53 @@
         },
         {
           "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "D. Si algún proyecto de ley o decreto, fuese desechado en su totalidad por la Cámara de revisión, volverá a la de su origen con las observaciones que aquella le hubiese hecho. Si examinado de nuevo fuese aprobado por la mayoría absoluta de los miembros presentes, volverá a la Cámara que lo desechó, la cual lo tomará otra vez en consideración, y si lo aprobare por la misma mayoría, pasará al Ejecutivo para los efectos de la fracción A; pero si lo reprobase, no podrá volver a presentarse en el mismo período de sesiones.",
+          "tipo": "apartado",
+          "identificador": "D.",
+          "contenido": "Si algún proyecto de ley o decreto, fuese desechado en su totalidad por la Cámara de revisión, volverá a la de su origen con las observaciones que aquella le hubiese hecho. Si examinado de nuevo fuese aprobado por la mayoría absoluta de los miembros presentes, volverá a la Cámara que lo desechó, la cual lo tomará otra vez en consideración, y si lo aprobare por la misma mayoría, pasará al Ejecutivo para los efectos de la fracción A; pero si lo reprobase, no podrá volver a presentarse en el mismo período de sesiones.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "E. Si un proyecto de ley o decreto fuese desechado en parte, o modificado, o adicionado por la Cámara revisora, la nueva discusión de la Cámara de su origen versará únicamente sobre lo desechado o sobre las reformas o adiciones, sin poder alterarse en manera alguna los artículos aprobados. Si las adiciones o reformas hechas por la Cámara revisora fuesen aprobadas por la mayoría absoluta de los votos presentes en la Cámara de su origen, se pasará todo el proyecto al Ejecutivo, para los efectos de la fracción A. Si las adiciones o reformas hechas por la Cámara revisora fueren reprobadas por la mayoría de votos en la Cámara de su origen, volverán a aquella para que tome en consideración las razones de ésta, y si por mayoría absoluta de votos presentes se desecharen en esta segunda revisión dichas adiciones o reformas, el proyecto, en lo que haya sido aprobado por ambas Cámaras, se pasará al Ejecutivo para los efectos de la fracción A. Si la Cámara revisora insistiere, por la mayoría absoluta de votos presentes, en dichas adiciones o reformas, todo el proyecto no volverá a presentarse sino hasta el siguiente período de sesiones, a no ser que ambas Cámaras acuerden, por la mayoría absoluta de sus miembros presentes, que se expida la ley o decreto sólo con los artículos aprobados, y que se reserven los adicionados o reformados para su examen y votación en las sesiones siguientes.",
+          "tipo": "apartado",
+          "identificador": "E.",
+          "contenido": "Si un proyecto de ley o decreto fuese desechado en parte, o modificado, o adicionado por la Cámara revisora, la nueva discusión de la Cámara de su origen versará únicamente sobre lo desechado o sobre las reformas o adiciones, sin poder alterarse en manera alguna los artículos aprobados. Si las adiciones o reformas hechas por la Cámara revisora fuesen aprobadas por la mayoría absoluta de los votos presentes en la Cámara de su origen, se pasará todo el proyecto al Ejecutivo, para los efectos de la fracción A. Si las adiciones o reformas hechas por la Cámara revisora fueren reprobadas por la mayoría de votos en la Cámara de su origen, volverán a aquella para que tome en consideración las razones de ésta, y si por mayoría absoluta de votos presentes se desecharen en esta segunda revisión dichas adiciones o reformas, el proyecto, en lo que haya sido aprobado por ambas Cámaras, se pasará al Ejecutivo para los efectos de la fracción A. Si la Cámara revisora insistiere, por la mayoría absoluta de votos presentes, en dichas adiciones o reformas, todo el proyecto no volverá a presentarse sino hasta el siguiente período de sesiones, a no ser que ambas Cámaras acuerden, por la mayoría absoluta de sus miembros presentes, que se expida la ley o decreto sólo con los artículos aprobados, y que se reserven los adicionados o reformados para su examen y votación en las sesiones siguientes.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "F. En la interpretación, reforma o derogación de las leyes o decretos, se observarán los mismos trámites establecidos para su formación.",
+          "tipo": "apartado",
+          "identificador": "F.",
+          "contenido": "En la interpretación, reforma o derogación de las leyes o decretos, se observarán los mismos trámites establecidos para su formación.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "G. Todo proyecto de ley o decreto que fuere desechado en la Cámara de su origen, no podrá volver a presentarse en las sesiones del año.",
+          "tipo": "apartado",
+          "identificador": "G.",
+          "contenido": "Todo proyecto de ley o decreto que fuere desechado en la Cámara de su origen, no podrá volver a presentarse en las sesiones del año.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 10,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "H. La formación de las leyes o decretos puede comenzar indistintamente en cualquiera de las dos Cámaras, con excepción de los proyectos que versaren sobre empréstitos, contribuciones o impuestos, o sobre reclutamiento de tropas, todos los cuales deberán discutirse primero en la Cámara de Diputados.",
+          "tipo": "apartado",
+          "identificador": "H.",
+          "contenido": "La formación de las leyes o decretos puede comenzar indistintamente en cualquiera de las dos Cámaras, con excepción de los proyectos que versaren sobre empréstitos, contribuciones o impuestos, o sobre reclutamiento de tropas, todos los cuales deberán discutirse primero en la Cámara de Diputados.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 11,
-          "tipo": "fraccion",
-          "identificador": "I",
+          "tipo": "apartado",
+          "identificador": "I.",
           "contenido": "Las iniciativas de leyes o decretos se discutirán preferentemente en la Cámara en que se presenten, a menos que transcurra un mes desde que se pasen a la Comisión dictaminadora sin que ésta rinda dictamen, pues en tal caso el mismo proyecto de ley o decreto puede presentarse y discutirse en la otra Cámara.",
           "padre_numero": null,
           "x_id": 85,
@@ -8106,6 +8106,15 @@
           "referencias": [
             "Inciso reformado DOF 24-11-1923"
           ]
+        },
+        {
+          "numero": 14,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Facultades del Congreso",
+          "padre_numero": 13,
+          "x_id": 223,
+          "x_texto": 223
         }
       ]
     },
@@ -8270,7 +8279,7 @@
           "numero": 15,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "En materia de deuda pública, para: 1o. Dar bases sobre las cuales el Ejecutivo pueda celebrar empréstitos y otorgar garantías sobre el crédito de la Nación, para aprobar esos mismos empréstitos y para reconocer y mandar pagar la deuda nacional. Ningún empréstito podrá celebrarse sino para la ejecución de obras que directamente produzcan un incremento en los ingresos públicos o, en términos de la ley de la materia, los que se realicen con propósitos de regulación monetaria, las operaciones de refinanciamiento o reestructura de deuda que deberán realizarse bajo las mejores condiciones de mercado; así como los que se contraten durante alguna emergencia declarada por el Presidente de la República en los términos del artículo 29.",
+          "contenido": "En materia de deuda pública, para: 1o.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -8279,16 +8288,16 @@
           "numero": 16,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "2o. Aprobar anualmente los montos de endeudamiento que deberán incluirse en la ley de ingresos, que en su caso requiera el Gobierno del Distrito Federal y las entidades de su sector público, conforme a las bases de la ley correspondiente. El Ejecutivo Federal informará anualmente al Congreso de la Unión sobre el ejercicio de dicha deuda a cuyo efecto el Jefe de Gobierno le hará llegar el informe que sobre el ejercicio de los recursos correspondientes hubiere realizado. El Jefe de Gobierno informará igualmente a la Asamblea Legislativa del Distrito Federal, al rendir la cuenta pública.",
+          "contenido": "Dar bases sobre las cuales el Ejecutivo pueda celebrar empréstitos y otorgar garantías sobre el crédito de la Nación, para aprobar esos mismos empréstitos y para reconocer y mandar pagar la deuda nacional. Ningún empréstito podrá celebrarse sino para la ejecución de obras que directamente produzcan un incremento en los ingresos públicos o, en términos de la ley de la materia, los que se realicen con propósitos de regulación monetaria, las operaciones de refinanciamiento o reestructura de deuda que deberán realizarse bajo las mejores condiciones de mercado; así como los que se contraten durante alguna emergencia declarada por el Presidente de la República en los términos del artículo 29.",
           "padre_numero": 15,
-          "x_id": 125,
-          "x_texto": 125
+          "x_id": 165,
+          "x_texto": 165
         },
         {
           "numero": 17,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "3o. Establecer en las leyes las bases generales, para que los Estados, el Distrito Federal y los Municipios puedan incurrir en endeudamiento; los límites y modalidades bajo los cuales dichos órdenes de gobierno podrán afectar sus respectivas participaciones para cubrir los empréstitos y obligaciones de pago que contraigan; la obligación de dichos órdenes de gobierno de inscribir y publicar la totalidad de sus empréstitos y obligaciones de pago en un registro público único, de manera oportuna y transparente; un sistema de alertas sobre el manejo de la deuda; así como las sanciones aplicables a los servidores públicos que no cumplan sus disposiciones. Dichas leyes deberán discutirse primero en la Cámara de Diputados conforme a lo dispuesto por la fracción H del artículo 72 de esta Constitución.",
+          "contenido": "2o.",
           "padre_numero": 15,
           "x_id": 125,
           "x_texto": 125
@@ -8297,16 +8306,52 @@
           "numero": 18,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "4o. El Congreso de la Unión, a través de la comisión legislativa bicameral competente, analizará la estrategia de ajuste para fortalecer las finanzas públicas de los Estados, planteada en los convenios que pretendan celebrar con el Gobierno Federal para obtener garantías y, en su caso, emitirá las observaciones que estime pertinentes en un plazo máximo de quince días hábiles, inclusive durante los períodos de receso del Congreso de la Unión. Lo anterior aplicará en el caso de los Estados que tengan niveles elevados de deuda en los términos de la ley. Asimismo, de manera inmediata a la suscripción del convenio correspondiente, será informado de la estrategia de ajuste para los Municipios que se encuentren en el mismo supuesto, así como de los convenios que, en su caso, celebren los Estados que no tengan un nivel elevado de deuda;",
+          "contenido": "Aprobar anualmente los montos de endeudamiento que deberán incluirse en la ley de ingresos, que en su caso requiera el Gobierno del Distrito Federal y las entidades de su sector público, conforme a las bases de la ley correspondiente. El Ejecutivo Federal informará anualmente al Congreso de la Unión sobre el ejercicio de dicha deuda a cuyo efecto el Jefe de Gobierno le hará llegar el informe que sobre el ejercicio de los recursos correspondientes hubiere realizado. El Jefe de Gobierno informará igualmente a la Asamblea Legislativa del Distrito Federal, al rendir la cuenta pública.",
+          "padre_numero": 17,
+          "x_id": 165,
+          "x_texto": 165
+        },
+        {
+          "numero": 19,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "3o.",
           "padre_numero": 15,
           "x_id": 125,
-          "x_texto": 125,
+          "x_texto": 125
+        },
+        {
+          "numero": 20,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Establecer en las leyes las bases generales, para que los Estados, el Distrito Federal y los Municipios puedan incurrir en endeudamiento; los límites y modalidades bajo los cuales dichos órdenes de gobierno podrán afectar sus respectivas participaciones para cubrir los empréstitos y obligaciones de pago que contraigan; la obligación de dichos órdenes de gobierno de inscribir y publicar la totalidad de sus empréstitos y obligaciones de pago en un registro público único, de manera oportuna y transparente; un sistema de alertas sobre el manejo de la deuda; así como las sanciones aplicables a los servidores públicos que no cumplan sus disposiciones. Dichas leyes deberán discutirse primero en la Cámara de Diputados conforme a lo dispuesto por la fracción H del artículo 72 de esta Constitución.",
+          "padre_numero": 19,
+          "x_id": 165,
+          "x_texto": 165
+        },
+        {
+          "numero": 21,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "4o.",
+          "padre_numero": 15,
+          "x_id": 125,
+          "x_texto": 125
+        },
+        {
+          "numero": 22,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Congreso de la Unión, a través de la comisión legislativa bicameral competente, analizará la estrategia de ajuste para fortalecer las finanzas públicas de los Estados, planteada en los convenios que pretendan celebrar con el Gobierno Federal para obtener garantías y, en su caso, emitirá las observaciones que estime pertinentes en un plazo máximo de quince días hábiles, inclusive durante los períodos de receso del Congreso de la Unión. Lo anterior aplicará en el caso de los Estados que tengan niveles elevados de deuda en los términos de la ley. Asimismo, de manera inmediata a la suscripción del convenio correspondiente, será informado de la estrategia de ajuste para los Municipios que se encuentren en el mismo supuesto, así como de los convenios que, en su caso, celebren los Estados que no tengan un nivel elevado de deuda;",
+          "padre_numero": 21,
+          "x_id": 165,
+          "x_texto": 165,
           "referencias": [
             "Fracción reformada DOF 30-12-1946, 25-10-1993, 26-05-2015"
           ]
         },
         {
-          "numero": 19,
+          "numero": 23,
           "tipo": "fraccion",
           "identificador": "IX",
           "contenido": "Para impedir que en el comercio entre entidades federativas se establezcan restricciones.",
@@ -8318,7 +8363,7 @@
           ]
         },
         {
-          "numero": 20,
+          "numero": 24,
           "tipo": "fraccion",
           "identificador": "X",
           "contenido": "Para legislar en toda la República sobre hidrocarburos, minería, sustancias químicas, explosivos, pirotecnia, industria cinematográfica, comercio, juegos con apuestas y sorteos, intermediación y servicios financieros, energía eléctrica y nuclear y para expedir las leyes del trabajo reglamentarias del artículo 123;",
@@ -8331,7 +8376,7 @@
           ]
         },
         {
-          "numero": 21,
+          "numero": 25,
           "tipo": "fraccion",
           "identificador": "XI",
           "contenido": "Para crear y suprimir empleos públicos de la Federación y señalar, aumentar o disminuir sus dotaciones.",
@@ -8340,7 +8385,7 @@
           "x_texto": 107
         },
         {
-          "numero": 22,
+          "numero": 26,
           "tipo": "fraccion",
           "identificador": "XII",
           "contenido": "Para declarar la guerra, en vista de los datos que le presente el Ejecutivo.",
@@ -8349,7 +8394,7 @@
           "x_texto": 107
         },
         {
-          "numero": 23,
+          "numero": 27,
           "tipo": "fraccion",
           "identificador": "XIII",
           "contenido": "Para dictar leyes según las cuales deben declararse buenas o malas las presas de mar y tierra, y para expedir leyes relativas al derecho marítimo de paz y guerra.",
@@ -8361,7 +8406,7 @@
           ]
         },
         {
-          "numero": 24,
+          "numero": 28,
           "tipo": "fraccion",
           "identificador": "XIV",
           "contenido": "Para levantar y sostener a las instituciones armadas de la Unión, a saber: Ejército, Marina de Guerra y Fuerza Aérea Nacionales, y para reglamentar su organización y servicio.",
@@ -8373,7 +8418,7 @@
           ]
         },
         {
-          "numero": 25,
+          "numero": 29,
           "tipo": "fraccion",
           "identificador": "XV",
           "contenido": "Derogada.",
@@ -8386,7 +8431,7 @@
           ]
         },
         {
-          "numero": 26,
+          "numero": 30,
           "tipo": "fraccion",
           "identificador": "XVI",
           "contenido": "Para dictar leyes sobre nacionalidad, condición jurídica de los extranjeros, ciudadanía, naturalización, colonización, emigración e inmigración y salubridad general de la República. 1a. El Consejo de Salubridad General dependerá directamente del Presidente de la República, sin intervención de ninguna Secretaría de Estado, y sus disposiciones generales serán obligatorias en el país.",
@@ -8395,11 +8440,11 @@
           "x_texto": 107
         },
         {
-          "numero": 27,
+          "numero": 31,
           "tipo": "texto",
           "identificador": null,
           "contenido": "2a. En caso de epidemias de carácter grave o peligro de invasión de enfermedades exóticas en el país, la Secretaría de Salud tendrá obligación de dictar inmediatamente las medidas preventivas indispensables, a reserva de ser después sancionadas por el Presidente de la República.",
-          "padre_numero": 26,
+          "padre_numero": 30,
           "x_id": 125,
           "x_texto": 125,
           "referencias": [
@@ -8407,20 +8452,20 @@
           ]
         },
         {
-          "numero": 28,
+          "numero": 32,
           "tipo": "texto",
           "identificador": null,
           "contenido": "3a. La autoridad sanitaria será ejecutiva y sus disposiciones serán obedecidas por las autoridades administrativas del País.",
-          "padre_numero": 26,
+          "padre_numero": 30,
           "x_id": 125,
           "x_texto": 125
         },
         {
-          "numero": 29,
+          "numero": 33,
           "tipo": "texto",
           "identificador": null,
           "contenido": "4a. Las medidas que el Consejo haya puesto en vigor en la Campaña contra el alcoholismo y la venta de sustancias que envenenan al individuo o degeneran la especie humana, así como las adoptadas para prevenir y combatir la contaminación ambiental, serán después revisadas por el Congreso de la Unión en los casos que le competan.",
-          "padre_numero": 26,
+          "padre_numero": 30,
           "x_id": 125,
           "x_texto": 125,
           "referencias": [
@@ -8428,7 +8473,7 @@
           ]
         },
         {
-          "numero": 30,
+          "numero": 34,
           "tipo": "fraccion",
           "identificador": "XVII",
           "contenido": "Para dictar leyes sobre vías generales de comunicación, tecnologías de la información y la comunicación, radiodifusión, telecomunicaciones, incluida la banda ancha e Internet, postas y correos, y sobre el uso y aprovechamiento de las aguas de jurisdicción federal.",
@@ -8440,7 +8485,7 @@
           ]
         },
         {
-          "numero": 31,
+          "numero": 35,
           "tipo": "fraccion",
           "identificador": "XVIII",
           "contenido": "Para establecer casas de moneda, fijar las condiciones que ésta deba tener, dictar reglas para determinar el valor relativo de la moneda extranjera y adoptar un sistema general de pesas y medidas;",
@@ -8452,7 +8497,7 @@
           ]
         },
         {
-          "numero": 32,
+          "numero": 36,
           "tipo": "fraccion",
           "identificador": "XIX",
           "contenido": "Para fijar las reglas a que debe sujetarse la ocupación y enajenación de terrenos baldíos y el precio de estos.",
@@ -8461,7 +8506,7 @@
           "x_texto": 107
         },
         {
-          "numero": 33,
+          "numero": 37,
           "tipo": "fraccion",
           "identificador": "XX",
           "contenido": "Para expedir las leyes de organización del Cuerpo Diplomático y del Cuerpo Consular mexicano.",
@@ -8470,7 +8515,7 @@
           "x_texto": 107
         },
         {
-          "numero": 34,
+          "numero": 38,
           "tipo": "fraccion",
           "identificador": "XXI",
           "contenido": "Para expedir:",
@@ -8479,11 +8524,11 @@
           "x_texto": 107
         },
         {
-          "numero": 35,
+          "numero": 39,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Las leyes generales que establezcan como mínimo, los tipos penales y sus sanciones en las materias de secuestro, desaparición forzada de personas, otras formas de privación de la libertad contrarias a la ley, extorsión, trata de personas, tortura y otros tratos o penas crueles, inhumanos o degradantes, así como electoral.",
-          "padre_numero": 34,
+          "padre_numero": 38,
           "x_id": 125,
           "x_texto": 147,
           "referencias": [
@@ -8491,11 +8536,11 @@
           ]
         },
         {
-          "numero": 36,
+          "numero": 40,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las leyes generales contemplarán también la distribución de competencias y las formas de coordinación entre la Federación, las entidades federativas y los Municipios;",
-          "padre_numero": 35,
+          "padre_numero": 39,
           "x_id": 154,
           "x_texto": 154,
           "referencias": [
@@ -8503,20 +8548,20 @@
           ]
         },
         {
-          "numero": 37,
+          "numero": 41,
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "La legislación que establezca los delitos y las faltas contra la Federación y las penas y sanciones que por ellos deban imponerse; así como legislar en materia de delincuencia organizada;",
-          "padre_numero": 34,
+          "padre_numero": 38,
           "x_id": 125,
           "x_texto": 147
         },
         {
-          "numero": 38,
+          "numero": 42,
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "La legislación única en materia procedimental penal, de mecanismos alternativos de solución de controversias en materia penal, de ejecución de penas y de justicia penal para adolescentes, que regirá en la República en el orden federal y en el fuero común.",
-          "padre_numero": 34,
+          "padre_numero": 38,
           "x_id": 125,
           "x_texto": 147,
           "referencias": [
@@ -8524,11 +8569,11 @@
           ]
         },
         {
-          "numero": 39,
+          "numero": 43,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las autoridades federales podrán conocer de los delitos del fuero común, cuando éstos tengan conexidad con delitos federales o delitos contra periodistas, personas o instalaciones que afecten, limiten o menoscaben el derecho a la información o las libertades de expresión o imprenta. También podrán conocer de las medidas u órdenes de protección que deriven de violencias de género en contra de las mujeres o de delitos del fuero común relacionados con las violencias de género contra las mujeres, en términos de las leyes correspondientes.",
-          "padre_numero": 34,
+          "padre_numero": 38,
           "x_id": 125,
           "x_texto": 125,
           "referencias": [
@@ -8536,11 +8581,11 @@
           ]
         },
         {
-          "numero": 40,
+          "numero": 44,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En las materias concurrentes previstas en esta Constitución, las leyes federales establecerán los supuestos en que las autoridades del fuero común podrán conocer y resolver sobre delitos federales;",
-          "padre_numero": 34,
+          "padre_numero": 38,
           "x_id": 125,
           "x_texto": 125,
           "referencias": [
@@ -8548,7 +8593,7 @@
           ]
         },
         {
-          "numero": 41,
+          "numero": 45,
           "tipo": "fraccion",
           "identificador": "XXII",
           "contenido": "Para conceder amnistías por delitos cuyo conocimiento pertenezca a los tribunales de la Federación.",
@@ -8557,7 +8602,7 @@
           "x_texto": 107
         },
         {
-          "numero": 42,
+          "numero": 46,
           "tipo": "fraccion",
           "identificador": "XXIII",
           "contenido": "Para expedir leyes que, con respeto a los derechos humanos, establezcan las bases de coordinación entre la Federación, las entidades federativas y los Municipios; organicen la Guardia Nacional y las demás instituciones de seguridad pública en materia federal, de conformidad con lo establecido en el artículo 21 de esta Constitución; así como la Ley Nacional sobre el Uso de la Fuerza, y la Ley Nacional del Registro de Detenciones;",
@@ -8569,7 +8614,7 @@
           ]
         },
         {
-          "numero": 43,
+          "numero": 47,
           "tipo": "texto",
           "identificador": null,
           "contenido": "XXIII Bis. Para expedir la ley general en materia de seguridad privada, que establezca:",
@@ -8578,38 +8623,38 @@
           "x_texto": 85
         },
         {
-          "numero": 44,
+          "numero": 48,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Las reglas y la autoridad facultada para autorizar y regular a los prestadores de servicios de seguridad privada en todo el territorio nacional;",
-          "padre_numero": 43,
+          "padre_numero": 47,
           "x_id": 125,
           "x_texto": 147
         },
         {
-          "numero": 45,
+          "numero": 49,
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Las reglas de coordinación entre las personas autorizadas a prestar los servicios de seguridad privada y las autoridades correspondientes de la Federación, las entidades federativas y los municipios, para la adecuada organización y funcionamiento como auxiliares de la seguridad pública;",
-          "padre_numero": 43,
+          "padre_numero": 47,
           "x_id": 125,
           "x_texto": 147
         },
         {
-          "numero": 46,
+          "numero": 50,
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "La coordinación de esos prestadores con las instituciones de seguridad pública en situaciones de emergencia y desastre, y",
-          "padre_numero": 43,
+          "padre_numero": 47,
           "x_id": 125,
           "x_texto": 147
         },
         {
-          "numero": 47,
+          "numero": 51,
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "Los aspectos vinculados a la coordinación y supervisión de las policías complementarias en el país;",
-          "padre_numero": 43,
+          "padre_numero": 47,
           "x_id": 125,
           "x_texto": 147,
           "referencias": [
@@ -8617,7 +8662,7 @@
           ]
         },
         {
-          "numero": 48,
+          "numero": 52,
           "tipo": "fraccion",
           "identificador": "XXIV",
           "contenido": "Para expedir las leyes que regulen la organización y facultades de la Auditoría Superior de la Federación y las demás que normen la gestión, control y evaluación de los Poderes de la Unión y de los entes públicos federales; así como para expedir la ley general que establezca las bases de coordinación del Sistema Nacional Anticorrupción a que se refiere el artículo 113 de esta Constitución;",
@@ -8629,7 +8674,7 @@
           ]
         },
         {
-          "numero": 49,
+          "numero": 53,
           "tipo": "fraccion",
           "identificador": "XXV",
           "contenido": "De establecer el Sistema para la Carrera de las Maestras y los Maestros, en términos del",
@@ -9171,6 +9216,15 @@
           "referencias": [
             "Fracción reformada DOF 15-12-1986, 29-10-2003"
           ]
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Comisión Permanente",
+          "padre_numero": 5,
+          "x_id": 233,
+          "x_texto": 233
         }
       ]
     },
@@ -9296,7 +9350,18 @@
           "referencias": [
             "Fracción reformada DOF 15-10-2025",
             "Párrafo con fracciones adicionado DOF 30-07-1999",
-            "Artículo reformado DOF 29-12-1980, 10-08-1987",
+            "Artículo reformado DOF 29-12-1980, 10-08-1987"
+          ]
+        },
+        {
+          "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Fiscalización Superior de la Federación",
+          "padre_numero": 10,
+          "x_id": 188,
+          "x_texto": 188,
+          "referencias": [
             "Sección adicionada DOF 30-07-1999"
           ]
         }
@@ -9561,6 +9626,15 @@
             "Artículo reformado DOF 24-11-1923, 20-08-1928, 29-04-1933, 21-10-1966, 06-07-1971, 08-10-1974, 08-02-1985, 10-08-1987, 25-10-1993,",
             "31-12-1994, 30-07-1999"
           ]
+        },
+        {
+          "numero": 24,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Poder Ejecutivo",
+          "padre_numero": 23,
+          "x_id": 254,
+          "x_texto": 254
         }
       ]
     },
@@ -10380,6 +10454,15 @@
             "Párrafo adicionado DOF 15-08-2008",
             "Artículo reformado DOF 31-01-1974"
           ]
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Poder Judicial",
+          "padre_numero": 5,
+          "x_id": 258,
+          "x_texto": 258
         }
       ]
     },
@@ -11182,32 +11265,21 @@
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción adicionada DOF 10-02-2014"
+            "Fracción adicionada DOF 10-02-2014",
+            "Fracción recorrida DOF 10-02-2014"
           ]
         },
         {
           "numero": 16,
           "tipo": "fraccion",
           "identificador": "X",
-          "contenido": "Las demás que señale la ley.",
+          "contenido": "Las demás que señale la ley. Las salas del Tribunal Electoral harán uso de los medios de apremio necesarios para hacer cumplir de manera expedita sus sentencias y resoluciones, en los términos que fije la ley.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107,
-          "referencias": [
-            "Fracción recorrida DOF 10-02-2014"
-          ]
+          "x_texto": 107
         },
         {
           "numero": 17,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Las salas del Tribunal Electoral harán uso de los medios de apremio necesarios para hacer cumplir de manera expedita sus sentencias y resoluciones, en los términos que fije la ley.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 18,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Sin perjuicio de lo dispuesto por el artículo 105 de esta Constitución, las salas del Tribunal Electoral podrán resolver la no aplicación de leyes sobre la materia electoral contrarias a la presente Constitución. Las resoluciones que se dicten en el ejercicio de esta facultad se limitarán al caso concreto sobre el que verse el juicio. En tales casos la Sala Superior informará a la Suprema Corte de Justicia de la Nación.",
@@ -11216,7 +11288,7 @@
           "x_texto": 85
         },
         {
-          "numero": 19,
+          "numero": 18,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando una sala del Tribunal Electoral sustente un criterio sobre la inconstitucionalidad de algún acto o resolución o sobre la interpretación de un precepto de esta Constitución, y dicho criterio pueda ser contradictorio con uno sostenido por la Suprema Corte de Justicia, cualquiera de las Ministras y Ministros o las partes, podrán denunciar la contradicción en los términos que señale la ley, para que el Pleno de la Suprema Corte de Justicia de la Nación decida en definitiva cuál criterio debe prevalecer. Las resoluciones que se dicten en este supuesto no afectarán los asuntos ya resueltos.",
@@ -11228,7 +11300,7 @@
           ]
         },
         {
-          "numero": 20,
+          "numero": 19,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La organización del Tribunal, la competencia de las salas, los procedimientos para la resolución de los asuntos de su competencia, así como los mecanismos para fijar criterios de jurisprudencia obligatorios en la materia, serán los que determinen esta Constitución y las leyes.",
@@ -11237,7 +11309,7 @@
           "x_texto": 85
         },
         {
-          "numero": 21,
+          "numero": 20,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La Sala Superior podrá, de oficio, a petición de parte o de alguna de las salas regionales, atraer los juicios de que conozcan éstas; asimismo, podrá enviar los asuntos de su competencia a las salas regionales para su conocimiento y resolución. La ley señalará las reglas y los procedimientos para el ejercicio de tales facultades.",
@@ -11246,7 +11318,7 @@
           "x_texto": 85
         },
         {
-          "numero": 22,
+          "numero": 21,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La administración en el Tribunal Electoral corresponderá al órgano de administración judicial, en los términos que señale la ley, mientras que su disciplina corresponderá al Tribunal de Disciplina Judicial. El Tribunal Electoral propondrá su presupuesto al órgano de administración judicial para su inclusión en el proyecto de Presupuesto del Poder Judicial de la Federación. Asimismo, el Tribunal expedirá su Reglamento Interno y los acuerdos generales para su adecuado funcionamiento.",
@@ -11258,7 +11330,7 @@
           ]
         },
         {
-          "numero": 23,
+          "numero": 22,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas magistradas electorales que integren la Sala Superior serán elegidas por la ciudadanía a nivel nacional conforme a las bases y al procedimiento previsto en el artículo 96 de esta Constitución.",
@@ -11270,7 +11342,7 @@
           ]
         },
         {
-          "numero": 24,
+          "numero": 23,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas magistradas electorales que integren la Sala Superior deberán satisfacer los requisitos que se exigen para ser Ministra o Ministro de la Suprema Corte de Justicia de la Nación y durarán en su encargo seis años improrrogables. Las renuncias, ausencias y licencias de personas magistradas electorales de la Sala Superior y las salas regionales serán tramitadas, cubiertas y otorgadas en los términos del artículo 98 de esta Constitución.",
@@ -11282,7 +11354,7 @@
           ]
         },
         {
-          "numero": 25,
+          "numero": 24,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas magistradas electorales que integren las salas regionales deberán satisfacer los requisitos que señale la ley, que no podrán ser menores a los indicados en el párrafo anterior. Serán elegidas por circunscripciones electorales, en los términos y modalidades que determine la ley, conforme al procedimiento aplicable para las magistraturas de Sala Superior, y durarán en su encargo seis años improrrogables.",
@@ -11294,7 +11366,7 @@
           ]
         },
         {
-          "numero": 26,
+          "numero": 25,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El personal del Tribunal regirá sus relaciones de trabajo conforme a las disposiciones aplicables al Poder Judicial de la Federación y a las reglas especiales y excepciones que señale la ley. El ingreso, formación, permanencia y demás aspectos inherentes a las servidoras y los servidores públicos que pertenezcan al servicio de carrera judicial se sujetarán a la regulación establecida en las disposiciones jurídicas aplicables.",
@@ -11601,12 +11673,12 @@
         },
         {
           "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. El Ministerio Público de la Federación se organizará en una Fiscalía General de la República como órgano público autónomo, dotado de personalidad jurídica y patrimonio propio.",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "El Ministerio Público de la Federación se organizará en una Fiscalía General de la República como órgano público autónomo, dotado de personalidad jurídica y patrimonio propio.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 29-01-2016"
           ]
@@ -11630,12 +11702,12 @@
       "parrafos": [
         {
           "numero": 1,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. El Ministerio Público de la Federación se organizará en una Fiscalía General de la República como órgano público autónomo, dotado de personalidad jurídica y patrimonio propio.",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "El Ministerio Público de la Federación se organizará en una Fiscalía General de la República como órgano público autónomo, dotado de personalidad jurídica y patrimonio propio.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 29-01-2016"
           ]
@@ -11737,25 +11809,16 @@
           "numero": 12,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "Las ausencias del Fiscal General serán suplidas en los términos que determine la ley.",
+          "contenido": "Las ausencias del Fiscal General serán suplidas en los términos que determine la ley. Corresponde al Ministerio Público de la Federación la persecución, ante los tribunales, de todos los delitos del orden federal; y, por lo mismo, solicitará las medidas cautelares contra los imputados; buscará y presentará las pruebas que acrediten la participación de éstos en hechos que las leyes señalen como delito; procurará que los juicios federales en materia penal se sigan con toda regularidad para que la impartición de justicia sea pronta y expedita; pedirá la aplicación de las penas, e intervendrá en todos los asuntos que la ley determine.",
           "padre_numero": null,
           "x_id": 107,
-          "x_texto": 129
-        },
-        {
-          "numero": 13,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Corresponde al Ministerio Público de la Federación la persecución, ante los tribunales, de todos los delitos del orden federal; y, por lo mismo, solicitará las medidas cautelares contra los imputados; buscará y presentará las pruebas que acrediten la participación de éstos en hechos que las leyes señalen como delito; procurará que los juicios federales en materia penal se sigan con toda regularidad para que la impartición de justicia sea pronta y expedita; pedirá la aplicación de las penas, e intervendrá en todos los asuntos que la ley determine.",
-          "padre_numero": 1,
-          "x_id": 107,
-          "x_texto": 107,
+          "x_texto": 129,
           "referencias": [
             "Párrafo reformado DOF 29-01-2016"
           ]
         },
         {
-          "numero": 14,
+          "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La Fiscalía General contará, al menos, con las fiscalías especializadas en materia de delitos electorales y de combate a la corrupción, cuyos titulares serán nombrados y removidos por el Fiscal General de la República. El nombramiento y remoción de los fiscales especializados antes referidos podrán ser objetados por el Senado de la República por el voto de las dos terceras partes de los miembros presentes, en el plazo que fije la ley; si el Senado no se pronunciare en este plazo, se entenderá que no tiene objeción.",
@@ -11764,7 +11827,7 @@
           "x_texto": 107
         },
         {
-          "numero": 15,
+          "numero": 14,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La ley establecerá las bases para la formación y actualización de los servidores públicos de la Fiscalía, así como para el desarrollo de la carrera profesional de los mismos, la cual se regirá por los principios de legalidad, objetividad, eficiencia, profesionalismo, honradez y respeto a los derechos humanos.",
@@ -11773,7 +11836,7 @@
           "x_texto": 107
         },
         {
-          "numero": 16,
+          "numero": 15,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Fiscal General presentará anualmente a los Poderes Legislativo y Ejecutivo de la Unión un informe de actividades. Comparecerá ante cualquiera de las Cámaras cuando se le cite a rendir cuentas o a informar sobre su gestión.",
@@ -11782,7 +11845,7 @@
           "x_texto": 107
         },
         {
-          "numero": 17,
+          "numero": 16,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Fiscal General de la República y sus agentes, serán responsables de toda falta, omisión o violación a la ley en que incurran con motivo de sus funciones.",
@@ -11794,20 +11857,32 @@
           ]
         },
         {
+          "numero": 17,
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "El Congreso de la Unión y las legislaturas de las entidades federativas, en el ámbito de sus respectivas competencias, establecerán organismos de protección de los derechos humanos que ampara el orden jurídico mexicano, los que conocerán de quejas en contra de actos u omisiones de naturaleza administrativa provenientes de cualquier autoridad o servidor público, con excepción de los del Poder Judicial de la Federación, que violen estos derechos.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
           "numero": 18,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "B. El Congreso de la Unión y las legislaturas de las entidades federativas, en el ámbito de sus respectivas competencias, establecerán organismos de protección de los derechos humanos que ampara el orden jurídico mexicano, los que conocerán de quejas en contra de actos u omisiones de naturaleza administrativa provenientes de cualquier autoridad o servidor público, con excepción de los del Poder Judicial de la Federación, que violen estos derechos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "contenido": "Los organismos a que se refiere el párrafo anterior, formularán recomendaciones públicas, no vinculatorias, denuncias y quejas ante las autoridades respectivas. Todo servidor público está obligado a responder las recomendaciones que les presenten estos organismos. Cuando las recomendaciones emitidas no sean aceptadas o cumplidas por las autoridades o servidores públicos, éstos deberán fundar, motivar y hacer pública su negativa; además, la Cámara de Senadores o en sus recesos la Comisión Permanente, o las legislaturas de las entidades federativas, según corresponda, podrán llamar, a solicitud de estos organismos, a las autoridades o servidores públicos responsables para que comparezcan ante dichos órganos legislativos, a efecto de que expliquen el motivo de su negativa.",
+          "padre_numero": 17,
+          "x_id": 107,
+          "x_texto": 107,
+          "referencias": [
+            "Párrafo reformado DOF 10-06-2011"
+          ]
         },
         {
           "numero": 19,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los organismos a que se refiere el párrafo anterior, formularán recomendaciones públicas, no vinculatorias, denuncias y quejas ante las autoridades respectivas. Todo servidor público está obligado a responder las recomendaciones que les presenten estos organismos. Cuando las recomendaciones emitidas no sean aceptadas o cumplidas por las autoridades o servidores públicos, éstos deberán fundar, motivar y hacer pública su negativa; además, la Cámara de Senadores o en sus recesos la Comisión Permanente, o las legislaturas de las entidades federativas, según corresponda, podrán llamar, a solicitud de estos organismos, a las autoridades o servidores públicos responsables para que comparezcan ante dichos órganos legislativos, a efecto de que expliquen el motivo de su negativa.",
-          "padre_numero": 18,
+          "contenido": "Estos organismos no serán competentes tratándose de asuntos electorales y jurisdiccionales.",
+          "padre_numero": 17,
           "x_id": 107,
           "x_texto": 107,
           "referencias": [
@@ -11818,29 +11893,17 @@
           "numero": 20,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Estos organismos no serán competentes tratándose de asuntos electorales y jurisdiccionales.",
-          "padre_numero": 18,
+          "contenido": "El organismo que establezca el Congreso de la Unión se denominará Comisión Nacional de los Derechos Humanos; contará con autonomía de gestión y presupuestaria, personalidad jurídica y patrimonio propios.",
+          "padre_numero": 17,
           "x_id": 107,
-          "x_texto": 107,
-          "referencias": [
-            "Párrafo reformado DOF 10-06-2011"
-          ]
+          "x_texto": 107
         },
         {
           "numero": 21,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El organismo que establezca el Congreso de la Unión se denominará Comisión Nacional de los Derechos Humanos; contará con autonomía de gestión y presupuestaria, personalidad jurídica y patrimonio propios.",
-          "padre_numero": 18,
-          "x_id": 107,
-          "x_texto": 107
-        },
-        {
-          "numero": 22,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Las Constituciones de las entidades federativas establecerán y garantizarán la autonomía de los organismos de protección de los derechos humanos.",
-          "padre_numero": 18,
+          "padre_numero": 17,
           "x_id": 107,
           "x_texto": 107,
           "referencias": [
@@ -11848,11 +11911,20 @@
           ]
         },
         {
-          "numero": 23,
+          "numero": 22,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La Comisión Nacional de los Derechos Humanos tendrá un Consejo Consultivo integrado por diez consejeros que serán elegidos por el voto de las dos terceras partes de los miembros presentes de la Cámara de Senadores o, en sus recesos, por la Comisión Permanente del Congreso de la Unión, con la misma votación calificada. La ley determinará los procedimientos a seguir para la presentación de las propuestas por la propia Cámara. Anualmente serán substituidos los dos consejeros de mayor antigüedad en el cargo, salvo que fuesen propuestos y ratificados para un segundo período.",
-          "padre_numero": 18,
+          "padre_numero": 17,
+          "x_id": 107,
+          "x_texto": 107
+        },
+        {
+          "numero": 23,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Presidente de la Comisión Nacional de los Derechos Humanos, quien lo será también del Consejo Consultivo, será elegido en los mismos términos del párrafo anterior. Durará en su encargo cinco años, podrá ser reelecto por una sola vez y sólo podrá ser removido de sus funciones en los términos del Título Cuarto de esta Constitución.",
+          "padre_numero": 17,
           "x_id": 107,
           "x_texto": 107
         },
@@ -11860,17 +11932,8 @@
           "numero": 24,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El Presidente de la Comisión Nacional de los Derechos Humanos, quien lo será también del Consejo Consultivo, será elegido en los mismos términos del párrafo anterior. Durará en su encargo cinco años, podrá ser reelecto por una sola vez y sólo podrá ser removido de sus funciones en los términos del Título Cuarto de esta Constitución.",
-          "padre_numero": 18,
-          "x_id": 107,
-          "x_texto": 107
-        },
-        {
-          "numero": 25,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "La elección del titular de la presidencia de la Comisión Nacional de los Derechos Humanos, así como de los integrantes del Consejo Consultivo, y de titulares de los organismos de protección de los derechos humanos de las entidades federativas, se ajustarán a un procedimiento de consulta pública, que deberá ser transparente, en los términos y condiciones que determine la ley.",
-          "padre_numero": 18,
+          "padre_numero": 17,
           "x_id": 107,
           "x_texto": 107,
           "referencias": [
@@ -11878,11 +11941,20 @@
           ]
         },
         {
-          "numero": 26,
+          "numero": 25,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Presidente de la Comisión Nacional de los Derechos Humanos presentará anualmente a los Poderes de la Unión un informe de actividades. Al efecto comparecerá ante las Cámaras del Congreso en los términos que disponga la ley.",
-          "padre_numero": 18,
+          "padre_numero": 17,
+          "x_id": 107,
+          "x_texto": 107
+        },
+        {
+          "numero": 26,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La Comisión Nacional de los Derechos Humanos conocerá de las inconformidades que se presenten en relación con las recomendaciones, acuerdos u omisiones de los organismos equivalentes en las entidades federativas.",
+          "padre_numero": 17,
           "x_id": 107,
           "x_texto": 107
         },
@@ -11890,17 +11962,8 @@
           "numero": 27,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La Comisión Nacional de los Derechos Humanos conocerá de las inconformidades que se presenten en relación con las recomendaciones, acuerdos u omisiones de los organismos equivalentes en las entidades federativas.",
-          "padre_numero": 18,
-          "x_id": 107,
-          "x_texto": 107
-        },
-        {
-          "numero": 28,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "La Comisión Nacional de los Derechos Humanos podrá investigar hechos que constituyan violaciones graves de derechos humanos, cuando así lo juzgue conveniente o lo pidiere el Ejecutivo Federal, alguna de las Cámaras del Congreso de la Unión, los titulares de los poderes ejecutivos de las entidades federativas o las Legislaturas de éstas.",
-          "padre_numero": 18,
+          "padre_numero": 17,
           "x_id": 107,
           "x_texto": 107,
           "referencias": [
@@ -12238,25 +12301,16 @@
           "numero": 15,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Siempre que las controversias versen sobre disposiciones generales de las entidades federativas, de los Municipios o de las demarcaciones territoriales de la Ciudad de México impugnadas por la Federación; de los Municipios o de las demarcaciones territoriales de la Ciudad de México impugnadas por las entidades federativas, o en los casos a que se refieren los incisos c), h), k) y",
+          "contenido": "Siempre que las controversias versen sobre disposiciones generales de las entidades federativas, de los Municipios o de las demarcaciones territoriales de la Ciudad de México impugnadas por la Federación; de los Municipios o de las demarcaciones territoriales de la Ciudad de México impugnadas por las entidades federativas, o en los casos a que se refieren los incisos c), h), k) y l) anteriores, y la resolución de la Suprema Corte de Justicia de la Nación las declare inválidas, dicha resolución tendrá efectos generales cuando hubiere sido aprobada por una mayoría de por lo menos seis votos.",
           "padre_numero": 2,
           "x_id": 106,
-          "x_texto": 106
-        },
-        {
-          "numero": 16,
-          "tipo": "inciso",
-          "identificador": "l)",
-          "contenido": "anteriores, y la resolución de la Suprema Corte de Justicia de la Nación las declare inválidas, dicha resolución tendrá efectos generales cuando hubiere sido aprobada por una mayoría de por lo menos seis votos.",
-          "padre_numero": 2,
-          "x_id": 107,
-          "x_texto": 129,
+          "x_texto": 106,
           "referencias": [
             "Párrafo reformado DOF 29-01-2016, 11-03-2021, 15-09-2024"
           ]
         },
         {
-          "numero": 17,
+          "numero": 16,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En los demás casos, las resoluciones de la Suprema Corte de Justicia tendrán efectos únicamente respecto de las partes en la controversia.",
@@ -12265,7 +12319,7 @@
           "x_texto": 106
         },
         {
-          "numero": 18,
+          "numero": 17,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En las controversias previstas en esta fracción únicamente podrán hacerse valer violaciones a esta Constitución, así como a los derechos humanos reconocidos en los tratados internacionales de los que el Estado Mexicano sea parte.",
@@ -12277,7 +12331,7 @@
           ]
         },
         {
-          "numero": 19,
+          "numero": 18,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "De las acciones de inconstitucionalidad que tengan por objeto plantear la posible contradicción entre una norma de carácter general y esta Constitución.",
@@ -12289,20 +12343,32 @@
           ]
         },
         {
-          "numero": 20,
+          "numero": 19,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las acciones de inconstitucionalidad podrán ejercitarse, dentro de los treinta días naturales siguientes a la fecha de publicación de la norma, por:",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 106,
           "x_texto": 106
         },
         {
-          "numero": 21,
+          "numero": 20,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "El equivalente al treinta y tres por ciento de los integrantes de la Cámara de Diputados del Congreso de la Unión, en contra de leyes federales;",
-          "padre_numero": 19,
+          "padre_numero": 18,
+          "x_id": 106,
+          "x_texto": 128,
+          "referencias": [
+            "Inciso reformado DOF 29-01-2016"
+          ]
+        },
+        {
+          "numero": 21,
+          "tipo": "inciso",
+          "identificador": "b)",
+          "contenido": "El equivalente al treinta y tres por ciento de los integrantes del Senado, en contra de las leyes federales o de tratados internacionales celebrados por el Estado Mexicano;",
+          "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
           "referencias": [
@@ -12312,21 +12378,9 @@
         {
           "numero": 22,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El equivalente al treinta y tres por ciento de los integrantes del Senado, en contra de las leyes federales o de tratados internacionales celebrados por el Estado Mexicano;",
-          "padre_numero": 19,
-          "x_id": 106,
-          "x_texto": 128,
-          "referencias": [
-            "Inciso reformado DOF 29-01-2016"
-          ]
-        },
-        {
-          "numero": 23,
-          "tipo": "inciso",
           "identificador": "c)",
           "contenido": "El Ejecutivo Federal, por conducto del Consejero Jurídico del Gobierno, en contra de normas generales de carácter federal y de las entidades federativas;",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
           "referencias": [
@@ -12334,11 +12388,11 @@
           ]
         },
         {
-          "numero": 24,
+          "numero": 23,
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "El equivalente al treinta y tres por ciento de los integrantes de alguna de las Legislaturas de las entidades federativas en contra de las leyes expedidas por el propio órgano;",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
           "referencias": [
@@ -12346,11 +12400,11 @@
           ]
         },
         {
-          "numero": 25,
+          "numero": 24,
           "tipo": "inciso",
           "identificador": "e)",
           "contenido": "Se deroga.",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
           "referencias": [
@@ -12358,11 +12412,11 @@
           ]
         },
         {
-          "numero": 26,
+          "numero": 25,
           "tipo": "inciso",
           "identificador": "f)",
           "contenido": "Los partidos políticos con registro ante el Instituto Nacional Electoral, por conducto de sus dirigencias nacionales, en contra de leyes electorales federales o locales; y los partidos políticos con registro en una entidad federativa, a través de sus dirigencias, exclusivamente en contra de leyes electorales expedidas por la Legislatura de la entidad federativa que les otorgó el registro;",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
           "referencias": [
@@ -12370,11 +12424,11 @@
           ]
         },
         {
-          "numero": 27,
+          "numero": 26,
           "tipo": "inciso",
           "identificador": "g)",
           "contenido": "La Comisión Nacional de los Derechos Humanos, en contra de leyes de carácter federal o de las entidades federativas, así como de tratados internacionales celebrados por el Ejecutivo Federal y aprobados por el Senado de la República, que vulneren los derechos humanos consagrados en esta Constitución y en los tratados internacionales de los que México sea parte. Asimismo, los organismos de protección de los derechos humanos equivalentes en las entidades federativas, en contra de leyes expedidas por las Legislaturas;",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
           "referencias": [
@@ -12382,11 +12436,11 @@
           ]
         },
         {
-          "numero": 28,
+          "numero": 27,
           "tipo": "inciso",
           "identificador": "h)",
           "contenido": "Se deroga",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
           "referencias": [
@@ -12394,11 +12448,11 @@
           ]
         },
         {
-          "numero": 29,
+          "numero": 28,
           "tipo": "inciso",
           "identificador": "i)",
           "contenido": "El Fiscal General de la República respecto de leyes federales y de las entidades federativas, en materia penal y procesal penal, así como las relacionadas con el ámbito de sus funciones;",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
           "referencias": [
@@ -12406,11 +12460,23 @@
           ]
         },
         {
-          "numero": 30,
+          "numero": 29,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La única vía para plantear la no conformidad de las leyes electorales a la Constitución es la prevista en este artículo.",
-          "padre_numero": 19,
+          "padre_numero": 18,
+          "x_id": 106,
+          "x_texto": 106,
+          "referencias": [
+            "Párrafo adicionado DOF 22-08-1996"
+          ]
+        },
+        {
+          "numero": 30,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Las leyes electorales federal y locales deberán promulgarse y publicarse por lo menos noventa días antes de que inicie el proceso electoral en que vayan a aplicarse, y durante el mismo no podrá haber modificaciones legales fundamentales.",
+          "padre_numero": 18,
           "x_id": 106,
           "x_texto": 106,
           "referencias": [
@@ -12421,20 +12487,8 @@
           "numero": 31,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Las leyes electorales federal y locales deberán promulgarse y publicarse por lo menos noventa días antes de que inicie el proceso electoral en que vayan a aplicarse, y durante el mismo no podrá haber modificaciones legales fundamentales.",
-          "padre_numero": 19,
-          "x_id": 106,
-          "x_texto": 106,
-          "referencias": [
-            "Párrafo adicionado DOF 22-08-1996"
-          ]
-        },
-        {
-          "numero": 32,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Las resoluciones de la Suprema Corte de Justicia sólo podrán declarar la invalidez de las normas impugnadas, siempre que fueren aprobadas por una mayoría de cuando menos seis votos.",
-          "padre_numero": 19,
+          "padre_numero": 18,
           "x_id": 106,
           "x_texto": 106,
           "referencias": [
@@ -12442,7 +12496,7 @@
           ]
         },
         {
-          "numero": 33,
+          "numero": 32,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "De oficio o a petición fundada del correspondiente Tribunal Colegiado de Apelación o del Ejecutivo Federal, por conducto de la Consejera o Consejero Jurídico del Gobierno, así como de la o el Fiscal General de la República en los asuntos en que intervenga el Ministerio Público, podrá conocer de los recursos de apelación en contra de sentencias de los Juzgados de Distrito dictadas en aquellos procesos en que la Federación sea parte y que por su interés y trascendencia así lo ameriten.",
@@ -12454,7 +12508,7 @@
           ]
         },
         {
-          "numero": 34,
+          "numero": 33,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La declaración de invalidez de las resoluciones a que se refieren las fracciones I y II de este artículo no tendrá efectos retroactivos, salvo en materia penal, en la que regirán los principios generales y disposiciones legales aplicables de esta materia.",
@@ -12463,7 +12517,7 @@
           "x_texto": 85
         },
         {
-          "numero": 35,
+          "numero": 34,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En caso de incumplimiento de las resoluciones a que se refieren las fracciones I y II de este artículo se aplicarán, en lo conducente, los procedimientos establecidos en los dos primeros párrafos de la fracción XVI del artículo 107 de esta Constitución.",
@@ -12472,7 +12526,7 @@
           "x_texto": 85
         },
         {
-          "numero": 36,
+          "numero": 35,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de controversias constitucionales o de acciones de inconstitucionalidad planteadas respecto de normas generales, en ningún caso su admisión dará lugar a la suspensión de la norma cuestionada.",
@@ -12484,7 +12538,7 @@
           ]
         },
         {
-          "numero": 37,
+          "numero": 36,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Son improcedentes las controversias constitucionales o acciones de inconstitucionalidad que tengan por objeto controvertir las adiciones o reformas a esta Constitución.",
@@ -13069,20 +13123,20 @@
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción reformada DOF 06-06-2011"
+            "Fracción reformada DOF 06-06-2011",
+            "Fracción derogada DOF 03-09-1993",
+            "Artículo reformado DOF 19-02-1951"
           ]
         },
         {
           "numero": 51,
           "tipo": "fraccion",
           "identificador": "XVIII",
-          "contenido": "Se deroga.",
+          "contenido": "Se deroga. De las Responsabilidades de los Servidores Públicos, Particulares Vinculados con Faltas Administrativas Graves o Hechos de Corrupción, y Patrimonial del Estado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción derogada DOF 03-09-1993",
-            "Artículo reformado DOF 19-02-1951",
             "Denominación del Título reformada DOF 28-12-1982, 14-06-2002, 27-05-2015"
           ]
         }
@@ -13625,13 +13679,22 @@
           "numero": 10,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Derivado de este informe, podrá emitir recomendaciones no vinculantes a las autoridades, con el objeto de que adopten medidas dirigidas al fortalecimiento institucional para la prevención de faltas administrativas y hechos de corrupción, así como al mejoramiento de su desempeño y del control interno. Las autoridades destinatarias de las recomendaciones informarán al Comité sobre la atención que brinden a las mismas.",
+          "contenido": "Derivado de este informe, podrá emitir recomendaciones no vinculantes a las autoridades, con el objeto de que adopten medidas dirigidas al fortalecimiento institucional para la prevención de faltas administrativas y hechos de corrupción, así como al mejoramiento de su desempeño y del control interno.",
           "padre_numero": 9,
           "x_id": 140,
           "x_texto": 140
         },
         {
           "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Las autoridades destinatarias de las recomendaciones informarán al Comité sobre la atención que brinden a las mismas.",
+          "padre_numero": 10,
+          "x_id": 349,
+          "x_texto": 349
+        },
+        {
+          "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las entidades federativas establecerán sistemas locales anticorrupción con el objeto de coordinar a las autoridades locales competentes en la prevención, detección y sanción de responsabilidades administrativas y hechos de corrupción.",
@@ -13678,7 +13741,18 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 27-05-2015",
-            "Artículo reformado DOF 28-12-1982",
+            "Artículo reformado DOF 28-12-1982"
+          ]
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Estados de la Federación y de la Ciudad de México",
+          "padre_numero": 3,
+          "x_id": 155,
+          "x_texto": 155,
+          "referencias": [
             "Denominación del Título reformada DOF 25-10-1993, 29-01-2016"
           ]
         }
@@ -15291,12 +15365,12 @@
         },
         {
           "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. El gobierno de la Ciudad de México está a cargo de sus poderes locales, en los términos establecidos en la Constitución Política de la Ciudad de México, la cual se ajustará a lo dispuesto en la presente Constitución y a las bases siguientes:",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "El gobierno de la Ciudad de México está a cargo de sus poderes locales, en los términos establecidos en la Constitución Política de la Ciudad de México, la cual se ajustará a lo dispuesto en la presente Constitución y a las bases siguientes:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 3,
@@ -15717,12 +15791,12 @@
         },
         {
           "numero": 46,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B. Los poderes federales tendrán respecto de la Ciudad de México, exclusivamente las facultades que expresamente les confiere esta Constitución.",
-          "padre_numero": null,
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "Los poderes federales tendrán respecto de la Ciudad de México, exclusivamente las facultades que expresamente les confiere esta Constitución.",
+          "padre_numero": 45,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 47,
@@ -15780,8 +15854,8 @@
         },
         {
           "numero": 53,
-          "tipo": "fraccion",
-          "identificador": "C",
+          "tipo": "apartado",
+          "identificador": "C.",
           "contenido": "La Federación, la Ciudad de México, así como sus demarcaciones territoriales, y los Estados y Municipios conurbados en la Zona Metropolitana, establecerán mecanismos de coordinación administrativa en materia de planeación del desarrollo y ejecución de acciones regionales para la prestación de servicios públicos, en términos de la ley que emita el Congreso de la Unión.",
           "padre_numero": null,
           "x_id": 85,
@@ -15837,16 +15911,25 @@
         },
         {
           "numero": 59,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "D. Las prohibiciones y limitaciones que esta Constitución establece para los Estados aplicarán a la Ciudad de México.",
-          "padre_numero": null,
+          "tipo": "apartado",
+          "identificador": "D.",
+          "contenido": "Las prohibiciones y limitaciones que esta Constitución establece para los Estados aplicarán a la Ciudad de México.",
+          "padre_numero": 58,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Artículo reformado DOF 25-10-1993, 31-12-1994. Fe de erratas DOF 03-01-1995. Reformado DOF 22-08-1996, 13-11-2007, 07-05-2008,",
             "24-08-2009, 27-04-2010, 09-08-2012, 27-12-2013, 07-02-2014, 10-02-2014, 27-05-2015, 29-01-2016"
           ]
+        },
+        {
+          "numero": 60,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Trabajo y de la Previsión Social",
+          "padre_numero": 59,
+          "x_id": 214,
+          "x_texto": 214
         }
       ]
     },
@@ -15895,12 +15978,12 @@
         },
         {
           "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. Entre los obreros, jornaleros, empleados domésticos, artesanos y de una manera general, todo contrato de trabajo:",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "Entre los obreros, jornaleros, empleados domésticos, artesanos y de una manera general, todo contrato de trabajo:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Párrafo adicionado (como encabezado de Apartado A) DOF 05-12-1960"
           ]
@@ -16915,12 +16998,12 @@
         },
         {
           "numero": 106,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B. Entre los Poderes de la Unión y sus trabajadores:",
-          "padre_numero": null,
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "Entre los Poderes de la Unión y sus trabajadores:",
+          "padre_numero": 105,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 08-10-1974, 29-01-2016"
           ]
@@ -17039,46 +17122,64 @@
         },
         {
           "numero": 118,
-          "tipo": "fraccion",
-          "identificador": "X",
-          "contenido": "Los trabajadores tendrán el derecho de asociarse para la defensa de sus intereses comunes. Podrán, asimismo, hacer uso del derecho de huelga previo el cumplimiento de los requisitos que determine la ley, respecto de una o varias dependencias de los Poderes Públicos, cuando se violen de manera general y sistemática los derechos que este artículo les consagra;",
-          "padre_numero": null,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "X.",
+          "padre_numero": 106,
           "x_id": 121,
-          "x_texto": 143
+          "x_texto": 121
         },
         {
           "numero": 119,
-          "tipo": "fraccion",
-          "identificador": "XI",
-          "contenido": "La seguridad social se organizará conforme a las siguientes bases mínimas:",
-          "padre_numero": null,
-          "x_id": 121,
-          "x_texto": 143
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los trabajadores tendrán el derecho de asociarse para la defensa de sus intereses comunes. Podrán, asimismo, hacer uso del derecho de huelga previo el cumplimiento de los requisitos que determine la ley, respecto de una o varias dependencias de los Poderes Públicos, cuando se violen de manera general y sistemática los derechos que este artículo les consagra;",
+          "padre_numero": 118,
+          "x_id": 156,
+          "x_texto": 156
         },
         {
           "numero": 120,
-          "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cubrirá los accidentes y enfermedades profesionales; las enfermedades no profesionales y maternidad; y la jubilación, la invalidez, vejez y muerte.",
-          "padre_numero": 119,
-          "x_id": 156,
-          "x_texto": 178
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XI.",
+          "padre_numero": 106,
+          "x_id": 121,
+          "x_texto": 121
         },
         {
           "numero": 121,
-          "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "En caso de accidente o enfermedad, se conservará el derecho al trabajo por el tiempo que determine la ley.",
-          "padre_numero": 119,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La seguridad social se organizará conforme a las siguientes bases mínimas:",
+          "padre_numero": 120,
           "x_id": 156,
-          "x_texto": 178
+          "x_texto": 156
         },
         {
           "numero": 122,
           "tipo": "inciso",
+          "identificador": "a)",
+          "contenido": "Cubrirá los accidentes y enfermedades profesionales; las enfermedades no profesionales y maternidad; y la jubilación, la invalidez, vejez y muerte.",
+          "padre_numero": 120,
+          "x_id": 156,
+          "x_texto": 178
+        },
+        {
+          "numero": 123,
+          "tipo": "inciso",
+          "identificador": "b)",
+          "contenido": "En caso de accidente o enfermedad, se conservará el derecho al trabajo por el tiempo que determine la ley.",
+          "padre_numero": 120,
+          "x_id": 156,
+          "x_texto": 178
+        },
+        {
+          "numero": 124,
+          "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Las mujeres durante el embarazo no realizarán trabajos que exijan un esfuerzo considerable y signifiquen un peligro para su salud en relación con la gestación; gozarán forzosamente de un mes de descanso antes de la fecha fijada aproximadamente para el parto y de otros dos después del mismo, debiendo percibir su salario íntegro y conservar su empleo y los derechos que hubieren adquirido por la relación de trabajo. En el período de lactancia tendrán dos descansos extraordinarios por día, de media hora cada uno, para alimentar a sus hijos. Además, disfrutarán de asistencia médica y obstétrica, de medicinas, de ayudas para la lactancia y del servicio de guarderías infantiles.",
-          "padre_numero": 119,
+          "padre_numero": 120,
           "x_id": 156,
           "x_texto": 178,
           "referencias": [
@@ -17086,38 +17187,38 @@
           ]
         },
         {
-          "numero": 123,
+          "numero": 125,
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "Los familiares de los trabajadores tendrán derecho a asistencia médica y medicinas, en los casos y en la proporción que determine la ley.",
-          "padre_numero": 119,
-          "x_id": 156,
-          "x_texto": 178
-        },
-        {
-          "numero": 124,
-          "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Se establecerán centros para vacaciones y para recuperación, así como tiendas económicas para beneficio de los trabajadores y sus familiares.",
-          "padre_numero": 119,
-          "x_id": 156,
-          "x_texto": 178
-        },
-        {
-          "numero": 125,
-          "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Se proporcionarán a los trabajadores habitaciones baratas, en arrendamiento o venta, conforme a los programas previamente aprobados. Además, el Estado mediante las aportaciones que haga, establecerá un fondo nacional de la vivienda a fin de constituir depósitos en favor de dichos trabajadores y establecer un sistema de financiamiento que permita otorgar a éstos crédito barato y suficiente para que adquieran en propiedad habitaciones cómodas e higiénicas, o bien para construirlas, repararlas, mejorarlas o pagar pasivos adquiridos por estos conceptos.",
-          "padre_numero": 119,
+          "padre_numero": 120,
           "x_id": 156,
           "x_texto": 178
         },
         {
           "numero": 126,
+          "tipo": "inciso",
+          "identificador": "e)",
+          "contenido": "Se establecerán centros para vacaciones y para recuperación, así como tiendas económicas para beneficio de los trabajadores y sus familiares.",
+          "padre_numero": 120,
+          "x_id": 156,
+          "x_texto": 178
+        },
+        {
+          "numero": 127,
+          "tipo": "inciso",
+          "identificador": "f)",
+          "contenido": "Se proporcionarán a los trabajadores habitaciones baratas, en arrendamiento o venta, conforme a los programas previamente aprobados. Además, el Estado mediante las aportaciones que haga, establecerá un fondo nacional de la vivienda a fin de constituir depósitos en favor de dichos trabajadores y establecer un sistema de financiamiento que permita otorgar a éstos crédito barato y suficiente para que adquieran en propiedad habitaciones cómodas e higiénicas, o bien para construirlas, repararlas, mejorarlas o pagar pasivos adquiridos por estos conceptos.",
+          "padre_numero": 120,
+          "x_id": 156,
+          "x_texto": 178
+        },
+        {
+          "numero": 128,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las aportaciones que se hagan a dicho fondo serán enteradas al organismo encargado de la seguridad social regulándose en su Ley y en las que corresponda, la forma y el procedimiento conforme a los cuales se administrará el citado fondo y se otorgarán y adjudicarán los créditos respectivos.",
-          "padre_numero": 125,
+          "padre_numero": 127,
           "x_id": 192,
           "x_texto": 192,
           "referencias": [
@@ -17125,23 +17226,32 @@
           ]
         },
         {
-          "numero": 127,
-          "tipo": "fraccion",
-          "identificador": "XII",
-          "contenido": "Los conflictos individuales, colectivos o intersindicales serán sometidos a un Tribunal Federal de Conciliación y Arbitraje integrado según lo prevenido en la ley reglamentaria. Asimismo, conocerá de los asuntos relacionados con el acceso a la información pública de los sindicatos de los trabajadores al servicio del Estado y de los recursos de revisión que interpongan los particulares respecto de las resoluciones de los mismos.",
-          "padre_numero": null,
+          "numero": 129,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XII.",
+          "padre_numero": 106,
           "x_id": 121,
-          "x_texto": 143,
+          "x_texto": 121
+        },
+        {
+          "numero": 130,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los conflictos individuales, colectivos o intersindicales serán sometidos a un Tribunal Federal de Conciliación y Arbitraje integrado según lo prevenido en la ley reglamentaria. Asimismo, conocerá de los asuntos relacionados con el acceso a la información pública de los sindicatos de los trabajadores al servicio del Estado y de los recursos de revisión que interpongan los particulares respecto de las resoluciones de los mismos.",
+          "padre_numero": 129,
+          "x_id": 156,
+          "x_texto": 156,
           "referencias": [
             "Párrafo reformado DOF 20-12-2024"
           ]
         },
         {
-          "numero": 128,
+          "numero": 131,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los conflictos entre el Poder Judicial de la Federación y sus servidores, así como los que se susciten entre la Suprema Corte de Justicia y sus empleados, serán resueltos por el Tribunal de Disciplina Judicial.",
-          "padre_numero": 127,
+          "padre_numero": 129,
           "x_id": 156,
           "x_texto": 156,
           "referencias": [
@@ -17149,23 +17259,32 @@
           ]
         },
         {
-          "numero": 129,
-          "tipo": "fraccion",
-          "identificador": "XIII",
-          "contenido": "Los militares, marinos, integrantes de la Guardia Nacional, personal del servicio exterior, agentes del Ministerio Público, peritos y los miembros de las instituciones policiales, se regirán por sus propias leyes.",
-          "padre_numero": null,
+          "numero": 132,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XIII.",
+          "padre_numero": 106,
           "x_id": 121,
-          "x_texto": 143,
+          "x_texto": 121
+        },
+        {
+          "numero": 133,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los militares, marinos, integrantes de la Guardia Nacional, personal del servicio exterior, agentes del Ministerio Público, peritos y los miembros de las instituciones policiales, se regirán por sus propias leyes.",
+          "padre_numero": 132,
+          "x_id": 156,
+          "x_texto": 156,
           "referencias": [
             "Párrafo reformado DOF 30-09-2024"
           ]
         },
         {
-          "numero": 130,
+          "numero": 134,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los agentes del Ministerio Público, los peritos y los miembros de las instituciones policiales de la Federación, las entidades federativas y los Municipios, podrán ser separados de sus cargos si no cumplen con los requisitos que las leyes vigentes en el momento del acto señalen para permanecer en dichas instituciones, o removidos por incurrir en responsabilidad en el desempeño de sus funciones. Si la autoridad jurisdiccional resolviere que la separación, remoción, baja, cese o cualquier otra forma de terminación del servicio fue injustificada, el Estado sólo estará obligado a pagar la indemnización y demás prestaciones a que tenga derecho, sin que en ningún caso proceda su reincorporación al servicio, cualquiera que sea el resultado del juicio o medio de defensa que se hubiere promovido.",
-          "padre_numero": 129,
+          "padre_numero": 132,
           "x_id": 156,
           "x_texto": 156,
           "referencias": [
@@ -17173,11 +17292,11 @@
           ]
         },
         {
-          "numero": 131,
+          "numero": 135,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las autoridades federales, de las entidades federativas y municipales, a fin de propiciar el fortalecimiento del sistema de seguridad social del personal del Ministerio Público, de las corporaciones policiales y de los servicios periciales, de sus familias y dependientes, instrumentarán sistemas complementarios de seguridad social.",
-          "padre_numero": 129,
+          "padre_numero": 132,
           "x_id": 156,
           "x_texto": 156,
           "referencias": [
@@ -17185,11 +17304,11 @@
           ]
         },
         {
-          "numero": 132,
+          "numero": 136,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Estado proporcionará a los miembros en el activo del Ejército, Fuerza Aérea, Armada y Guardia Nacional, las prestaciones a que se refiere el inciso f) de la fracción XI de este apartado, en términos similares y a través del organismo encargado de la seguridad social de los componentes de dichas instituciones;",
-          "padre_numero": 129,
+          "padre_numero": 132,
           "x_id": 156,
           "x_texto": 156,
           "referencias": [
@@ -17198,7 +17317,7 @@
           ]
         },
         {
-          "numero": 133,
+          "numero": 137,
           "tipo": "texto",
           "identificador": null,
           "contenido": "XIII bis. El banco central y las entidades de la Administración Pública Federal que formen parte del sistema bancario mexicano regirán sus relaciones laborales con sus trabajadores por lo dispuesto en el presente Apartado.",
@@ -17210,16 +17329,34 @@
           ]
         },
         {
-          "numero": 134,
-          "tipo": "fraccion",
-          "identificador": "XIV",
-          "contenido": "La ley determinará los cargos que serán considerados de confianza. Las personas que los desempeñen disfrutarán de las medidas de protección al salario y gozarán de los beneficios de la seguridad social.",
-          "padre_numero": null,
+          "numero": 138,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XIV.",
+          "padre_numero": 106,
           "x_id": 121,
-          "x_texto": 143,
+          "x_texto": 121
+        },
+        {
+          "numero": 139,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La ley determinará los cargos que serán considerados de confianza. Las personas que los desempeñen disfrutarán de las medidas de protección al salario y gozarán de los beneficios de la seguridad social.",
+          "padre_numero": 138,
+          "x_id": 156,
+          "x_texto": 156,
           "referencias": [
             "Apartado B con fracciones adicionado DOF 05-12-1960"
           ]
+        },
+        {
+          "numero": 140,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Prevenciones Generales",
+          "padre_numero": 139,
+          "x_id": 242,
+          "x_texto": 242
         }
       ]
     },
@@ -17719,6 +17856,15 @@
             "Párrafo adicionado DOF 13-11-2007",
             "Artículo reformado DOF 28-12-1982"
           ]
+        },
+        {
+          "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Reformas de la Constitución",
+          "padre_numero": 10,
+          "x_id": 214,
+          "x_texto": 214
         }
       ]
     },
@@ -17752,6 +17898,15 @@
           "referencias": [
             "Párrafo adicionado DOF 21-10-1966"
           ]
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Inviolabilidad de la Constitución",
+          "padre_numero": 2,
+          "x_id": 207,
+          "x_texto": 207
         }
       ]
     },
@@ -17776,5 +17931,6 @@
       ]
     }
   ],
-  "ultima_reforma_dof": "2025-10-15"
+  "ultima_reforma_dof": "2025-10-15",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
 }

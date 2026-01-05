@@ -1,20 +1,20 @@
 {
   "_advertencia": [
-    "╔══════════════════════════════════════════════════════════════════╗",
-    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
-    "║                                                                  ║",
-    "║  NO MODIFICAR MANUALMENTE                                        ║",
-    "║                                                                  ║",
-    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
-    "║  La base de datos se regenera desde aquí.                       ║",
-    "║                                                                  ║",
-    "║  Si el contenido es incorrecto:                                 ║",
-    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
-    "║                                                                  ║",
-    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
-    "╚══════════════════════════════════════════════════════════════════╝"
+    "=====================================================================",
+    "  ARCHIVO SAGRADO - FUENTE UNICA DE VERDAD",
+    "",
+    "  NO MODIFICAR MANUALMENTE",
+    "",
+    "  Este archivo es la UNICA fuente de verdad para el contenido.",
+    "  La base de datos se regenera desde aqui.",
+    "",
+    "  Si el contenido es incorrecto:",
+    "    -> CORRIGE EL SCRIPT, no este archivo",
+    "",
+    "  Modificarlo manualmente es SABOTAJE al sistema.",
+    "====================================================================="
   ],
-  "_generado_por": "extraer.py",
+  "_generado_por": "extractor/ExtractorGeneral",
   "ley": "LISSSTE",
   "tipo_contenido": "articulo",
   "articulos": [
@@ -1112,6 +1112,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL RÉGIMEN OBLIGATORIO",
+          "padre_numero": 2,
+          "x_id": 227,
+          "x_texto": 227
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "SUELDOS, CUOTAS Y APORTACIONES",
+          "padre_numero": 2,
+          "x_id": 202,
+          "x_texto": 202
         }
       ]
     },
@@ -1638,6 +1656,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "SEGURO DE SALUD",
+          "padre_numero": 2,
+          "x_id": 253,
+          "x_texto": 253
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Generalidades",
+          "padre_numero": 3,
+          "x_id": 268,
+          "x_texto": 268
         }
       ]
     },
@@ -1800,6 +1836,15 @@
           "referencias": [
             "Artículo adicionado DOF 12-11-2015"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Comité de Evaluación y Seguimiento de los Servicios de Salud",
+          "padre_numero": 1,
+          "x_id": 132,
+          "x_texto": 132
         }
       ]
     },
@@ -1835,6 +1880,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Atención Médica Preventiva",
+          "padre_numero": 3,
+          "x_id": 233,
+          "x_texto": 233
         }
       ]
     },
@@ -1995,6 +2049,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 16,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Atención Médica Curativa y de Maternidad y Rehabilitación Física y Mental",
+          "padre_numero": 15,
+          "x_id": 111,
+          "x_texto": 111
         }
       ]
     },
@@ -2569,6 +2632,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 13,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Régimen Financiero",
+          "padre_numero": 12,
+          "x_id": 253,
+          "x_texto": 253
         }
       ]
     },
@@ -2601,7 +2673,7 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Una Cuota de dos punto setenta y cinco por ciento del Sueldo Básico para financiar al seguro de salud de los Trabajadores en activo y Familiares Derechohabientes, y",
-          "padre_numero": null,
+          "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
         },
@@ -2610,7 +2682,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Una Cuota de cero punto seiscientos veinticinco por ciento del Sueldo Básico para financiar al seguro de salud de los Pensionados y Familiares Derechohabientes;",
-          "padre_numero": null,
+          "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
         },
@@ -2628,7 +2700,7 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "El equivalente al siete punto trescientos setenta y cinco por ciento del Sueldo Básico financiará al seguro de salud de los Trabajadores en activo y sus Familiares Derechohabientes, y",
-          "padre_numero": null,
+          "padre_numero": 5,
           "x_id": 85,
           "x_texto": 107
         },
@@ -2637,7 +2709,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "El equivalente al cero punto setenta y dos por ciento del Sueldo Básico para financiar el seguro de salud de los Pensionados y sus Familiares Derechohabientes;",
-          "padre_numero": null,
+          "padre_numero": 5,
           "x_id": 85,
           "x_texto": 107
         },
@@ -2658,6 +2730,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 10,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "CONSERVACIÓN DE DERECHOS",
+          "padre_numero": 9,
+          "x_id": 219,
+          "x_texto": 219
         }
       ]
     },
@@ -2687,6 +2768,15 @@
           "referencias": [
             "Párrafo adicionado DOF 22-06-2018"
           ]
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LAS PENSIONES",
+          "padre_numero": 2,
+          "x_id": 252,
+          "x_texto": 252
         }
       ]
     },
@@ -2892,6 +2982,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "SEGURO DE RIESGOS DEL TRABAJO",
+          "padre_numero": 1,
+          "x_id": 206,
+          "x_texto": 206
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Generalidades",
+          "padre_numero": 2,
+          "x_id": 268,
+          "x_texto": 268
         }
       ]
     },
@@ -3824,6 +3932,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Incremento Periódico de las Pensiones",
+          "padre_numero": 2,
+          "x_id": 204,
+          "x_texto": 204
         }
       ]
     },
@@ -3850,6 +3967,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Régimen Financiero",
+          "padre_numero": 2,
+          "x_id": 253,
+          "x_texto": 253
         }
       ]
     },
@@ -3867,6 +3993,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "SEGURO DE RETIRO, CESANTÍA EN EDAD AVANZADA Y VEJEZ",
+          "padre_numero": 1,
+          "x_id": 137,
+          "x_texto": 137
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Generalidades",
+          "padre_numero": 2,
+          "x_id": 268,
+          "x_texto": 268
         }
       ]
     },
@@ -4149,6 +4293,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pensión por Cesantía en Edad Avanzada",
+          "padre_numero": 3,
+          "x_id": 200,
+          "x_texto": 200
         }
       ]
     },
@@ -4289,6 +4442,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pensión por Vejez",
+          "padre_numero": 5,
+          "x_id": 259,
+          "x_texto": 259
         }
       ]
     },
@@ -4420,6 +4582,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Pensión Garantizada",
+          "padre_numero": 5,
+          "x_id": 237,
+          "x_texto": 237
         }
       ]
     },
@@ -4577,6 +4748,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Cuenta Individual",
+          "padre_numero": 3,
+          "x_id": 245,
+          "x_texto": 245
         }
       ]
     },
@@ -4664,6 +4844,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Ahorro Solidario para el Incremento de las Pensiones",
+          "padre_numero": 1,
+          "x_id": 156,
+          "x_texto": 156
         }
       ]
     },
@@ -4708,6 +4897,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Régimen Financiero",
+          "padre_numero": 4,
+          "x_id": 253,
+          "x_texto": 253
         }
       ]
     },
@@ -4786,7 +4984,16 @@
           "contenido": "Los recursos a que se refiere este artículo se depositarán en las Subcuentas de retiro, cesantía en edad avanzada y vejez.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Créditos otorgados por entidades financieras con cargo a las pensiones",
+          "padre_numero": 6,
+          "x_id": 99,
+          "x_texto": 99,
           "referencias": [
             "Sección adicionada DOF 28-05-2012"
           ]
@@ -4837,6 +5044,15 @@
           "referencias": [
             "Artículo adicionado DOF 28-05-2012"
           ]
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del PENSIONISSSTE",
+          "padre_numero": 4,
+          "x_id": 252,
+          "x_texto": 252
         }
       ]
     },
@@ -5150,19 +5366,10 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "La construcción de carreteras.",
+          "contenido": "La construcción de carreteras. El PENSIONISSSTE deberá invertir en valores, documentos, efectivo y los demás instrumentos que se establezcan en el régimen de inversión determinado por su Comisión Ejecutiva, el cual deberá observar en todo momento las reglas de carácter general que establezca la Comisión Nacional del Sistema de Ahorro para el Retiro para la inversión de los recursos invertidos en las sociedades de inversión especializadas de fondos para el retiro.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "El PENSIONISSSTE deberá invertir en valores, documentos, efectivo y los demás instrumentos que se establezcan en el régimen de inversión determinado por su Comisión Ejecutiva, el cual deberá observar en todo momento las reglas de carácter general que establezca la Comisión Nacional del Sistema de Ahorro para el Retiro para la inversión de los recursos invertidos en las sociedades de inversión especializadas de fondos para el retiro.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
         }
       ]
     },
@@ -5212,7 +5419,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "Nueve vocales nombrados por las organizaciones de Trabajadores.",
+          "contenido": "Nueve vocales nombrados por las organizaciones de Trabajadores. Por cada vocal propietario se designará un suplente que actuará en caso de faltas temporales del propietario, debiendo tratarse de un funcionario con el rango inmediato inferior al del vocal propietario. En el caso de los representantes de las organizaciones de Trabajadores, la designación del suplente se hará en los términos de las disposiciones estatutarias aplicables.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5221,7 +5428,7 @@
           "numero": 6,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Por cada vocal propietario se designará un suplente que actuará en caso de faltas temporales del propietario, debiendo tratarse de un funcionario con el rango inmediato inferior al del vocal propietario. En el caso de los representantes de las organizaciones de Trabajadores, la designación del suplente se hará en los términos de las disposiciones estatutarias aplicables.",
+          "contenido": "Los integrantes de la Comisión Ejecutiva del PENSIONISSSTE no podrán ser miembros de la Junta Directiva del Instituto, con excepción del Director General.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -5230,22 +5437,13 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los integrantes de la Comisión Ejecutiva del PENSIONISSSTE no podrán ser miembros de la Junta Directiva del Instituto, con excepción del Director General.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
           "contenido": "Para ocupar el cargo de vocal se requiere ser mexicano, estar en pleno goce y ejercicio de sus derechos civiles y políticos, y ser de reconocida honorabilidad y experiencia técnica y administrativa.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
-          "numero": 9,
+          "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los vocales de la Comisión Ejecutiva del PENSIONISSSTE durarán en sus funciones por todo el tiempo que subsista su designación y podrán ser removidos libremente a petición de quienes los hayan propuesto.",
@@ -5425,10 +5623,19 @@
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "Las demás que le señalen esta Ley y sus disposiciones reglamentarias.",
+          "contenido": "Las demás que le señalen esta Ley y sus disposiciones reglamentarias. SEGURO DE INVALIDEZ Y VIDA",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Generalidades",
+          "padre_numero": 10,
+          "x_id": 268,
+          "x_texto": 268
         }
       ]
     },
@@ -5506,6 +5713,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pensión por Invalidez",
+          "padre_numero": 1,
+          "x_id": 250,
+          "x_texto": 250
         }
       ]
     },
@@ -5936,6 +6152,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Pensión por Causa de Muerte",
+          "padre_numero": 3,
+          "x_id": 229,
+          "x_texto": 229
         }
       ]
     },
@@ -6337,6 +6562,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Incremento Periódico de las Pensiones",
+          "padre_numero": 2,
+          "x_id": 204,
+          "x_texto": 204
         }
       ]
     },
@@ -6363,6 +6597,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Régimen Financiero",
+          "padre_numero": 2,
+          "x_id": 253,
+          "x_texto": 253
         }
       ]
     },
@@ -6398,6 +6641,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Transferencia de los Derechos",
+          "padre_numero": 3,
+          "x_id": 211,
+          "x_texto": 211
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Transferencia de Derechos entre el Instituto y el IMSS",
+          "padre_numero": 3,
+          "x_id": 151,
+          "x_texto": 151
         }
       ]
     },
@@ -6606,6 +6867,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Transferencia de Derechos al Instituto provenientes de otros Institutos de Seguridad Social",
+          "padre_numero": 2,
+          "x_id": 98,
+          "x_texto": 98
         }
       ]
     },
@@ -6637,22 +6907,13 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "Mecanismos de traspaso de recursos de las Subcuentas que integran la Cuenta Individual.",
+          "contenido": "Mecanismos de traspaso de recursos de las Subcuentas que integran la Cuenta Individual. Los convenios de portabilidad a que se refiere esta Sección establecerán el tratamiento que se dará, en su caso, a los recursos de la Subcuenta del Fondo de la Vivienda.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Los convenios de portabilidad a que se refiere esta Sección establecerán el tratamiento que se dará, en su caso, a los recursos de la Subcuenta del Fondo de la Vivienda.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, para la celebración de dichos convenios de portabilidad, se deberá contar con dictamen de un actuario independiente en que conste la equivalencia de la portabilidad de derechos que se pretenda convenir, así como la suficiencia de las Reservas que se deban afectar para hacer frente a las obligaciones que resulten a cargo del Instituto.",
@@ -6745,6 +7006,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Transferencia de Derechos entre el Instituto y el Instituto del Fondo Nacional de la Vivienda para los Trabajadores",
+          "padre_numero": null,
+          "x_id": 76,
+          "x_texto": 76
         }
       ]
     },
@@ -6814,6 +7084,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Sistema Integral de Crédito",
+          "padre_numero": 2,
+          "x_id": 225,
+          "x_texto": 225
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Préstamos Personales",
+          "padre_numero": 3,
+          "x_id": 247,
+          "x_texto": 247
         }
       ]
     },
@@ -6985,7 +7273,7 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Ordinarios. Su monto será hasta por el importe de cuatro meses del Sueldo Básico, de acuerdo con la antigüedad de quien lo solicite;",
-          "padre_numero": null,
+          "padre_numero": 3,
           "x_id": 85,
           "x_texto": 107
         },
@@ -6994,7 +7282,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Especiales. Su monto será hasta por el importe de seis meses del Sueldo Básico, de acuerdo con la antigüedad de quien lo solicite;",
-          "padre_numero": null,
+          "padre_numero": 3,
           "x_id": 85,
           "x_texto": 107
         },
@@ -7003,7 +7291,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Para adquisición de bienes de uso duradero. Su monto será hasta por el importe de ocho meses de Sueldo Básico, de acuerdo con la antigüedad de quien lo solicite, y",
-          "padre_numero": null,
+          "padre_numero": 3,
           "x_id": 85,
           "x_texto": 107
         },
@@ -7012,7 +7300,7 @@
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "Extraordinarios para damnificados por desastres naturales. Su monto será establecido por la Junta Directiva del Instituto;",
-          "padre_numero": null,
+          "padre_numero": 3,
           "x_id": 85,
           "x_texto": 107
         },
@@ -7128,6 +7416,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Crédito para Vivienda",
+          "padre_numero": 1,
+          "x_id": 239,
+          "x_texto": 239
         }
       ]
     },
@@ -8326,6 +8623,15 @@
           "referencias": [
             "Párrafo adicionado DOF 30-04-2024"
           ]
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Régimen Financiero",
+          "padre_numero": 3,
+          "x_id": 253,
+          "x_texto": 253
         }
       ]
     },
@@ -8360,6 +8666,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Servicios Sociales y Culturales",
+          "padre_numero": 1,
+          "x_id": 207,
+          "x_texto": 207
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Servicios Sociales",
+          "padre_numero": 2,
+          "x_id": 258,
+          "x_texto": 258
         }
       ]
     },
@@ -8439,6 +8763,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Servicios Culturales",
+          "padre_numero": 6,
+          "x_id": 253,
+          "x_texto": 253
         }
       ]
     },
@@ -8518,6 +8851,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Régimen Financiero",
+          "padre_numero": 6,
+          "x_id": 253,
+          "x_texto": 253
         }
       ]
     },
@@ -8562,6 +8904,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL RÉGIMEN VOLUNTARIO",
+          "padre_numero": 4,
+          "x_id": 230,
+          "x_texto": 230
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "CONTINUACIÓN VOLUNTARIA EN EL RÉGIMEN OBLIGATORIO",
+          "padre_numero": 4,
+          "x_id": 140,
+          "x_texto": 140
         }
       ]
     },
@@ -8687,6 +9047,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "INCORPORACIÓN VOLUNTARIA AL RÉGIMEN OBLIGATORIO",
+          "padre_numero": 1,
+          "x_id": 145,
+          "x_texto": 145
         }
       ]
     },
@@ -8820,6 +9189,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DISPOSICIONES ESPECIALES",
+          "padre_numero": 7,
+          "x_id": 226,
+          "x_texto": 226
         }
       ]
     },
@@ -8855,6 +9233,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LAS FUNCIONES Y ORGANIZACIÓN DEL INSTITUTO",
+          "padre_numero": 3,
+          "x_id": 159,
+          "x_texto": 159
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "FUNCIONES",
+          "padre_numero": 4,
+          "x_id": 274,
+          "x_texto": 274
         }
       ]
     },
@@ -8992,29 +9388,27 @@
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción adicionada DOF 23-04-2024"
+            "Fracción adicionada DOF 23-04-2024",
+            "Fracción recorrida DOF 23-04-2024"
           ]
         },
         {
           "numero": 13,
           "tipo": "fraccion",
           "identificador": "XII",
-          "contenido": "Las demás funciones que le confieran esta Ley y sus reglamentos.",
+          "contenido": "Las demás funciones que le confieran esta Ley y sus reglamentos. El financiamiento de los gastos generales de administración del Instituto que no estén estrictamente relacionados con la prestación de algún seguro, prestación o servicio no deberá rebasar del equivalente a la cantidad que resultaría de la aplicación de una Aportación de uno punto cinco por ciento del Sueldo Básico al total de los Trabajadores.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107,
-          "referencias": [
-            "Fracción recorrida DOF 23-04-2024"
-          ]
+          "x_texto": 107
         },
         {
           "numero": 14,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "El financiamiento de los gastos generales de administración del Instituto que no estén estrictamente relacionados con la prestación de algún seguro, prestación o servicio no deberá rebasar del equivalente a la cantidad que resultaría de la aplicación de una Aportación de uno punto cinco por ciento del Sueldo Básico al total de los Trabajadores.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "contenido": "ÓRGANOS DE GOBIERNO",
+          "padre_numero": 13,
+          "x_id": 237,
+          "x_texto": 237
         }
       ]
     },
@@ -9372,7 +9766,7 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Examinar y, en su caso, aprobar el presupuesto de ingresos y egresos, así como los programas de labores y de financiamiento del Fondo de la Vivienda para el siguiente año;",
-          "padre_numero": null,
+          "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9381,7 +9775,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Examinar y, en su caso, aprobar, en el primer bimestre del año, el informe de actividades de la Comisión Ejecutiva del Fondo de la Vivienda y, dentro de los cuatro primeros meses del año, los estados financieros que resulten de la operación en el último ejercicio;",
-          "padre_numero": null,
+          "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9390,7 +9784,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Establecer las reglas para el otorgamiento de créditos;",
-          "padre_numero": null,
+          "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9399,7 +9793,7 @@
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "Examinar y, en su caso, aprobar anualmente el presupuesto de gastos de administración, operación y vigilancia del Fondo de la Vivienda, los que no deberán exceder del cero punto setenta y cinco por ciento de los recursos totales que maneje;",
-          "padre_numero": null,
+          "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9408,7 +9802,7 @@
           "tipo": "inciso",
           "identificador": "e)",
           "contenido": "Aprobar los programas de inversión y de Reservas que deben constituirse para asegurar la operación del Fondo de la Vivienda y el cumplimiento de los demás fines y obligaciones del mismo;",
-          "padre_numero": null,
+          "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9417,7 +9811,7 @@
           "tipo": "inciso",
           "identificador": "f)",
           "contenido": "Vigilar que los créditos y los financiamientos que se otorguen se destinen a los fines para los que fueron programados, y",
-          "padre_numero": null,
+          "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9426,7 +9820,7 @@
           "tipo": "inciso",
           "identificador": "g)",
           "contenido": "Las demás funciones necesarias para el cumplimiento de los fines del Fondo de la Vivienda;",
-          "padre_numero": null,
+          "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9444,7 +9838,7 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Examinar y, en su caso, aprobar el presupuesto de ingresos y egresos, así como los programas de labores y de inversión del Fondo Nacional de Pensiones de los Trabajadores al Servicio del Estado;",
-          "padre_numero": null,
+          "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9453,7 +9847,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Examinar y, en su caso, aprobar en el primer bimestre del año, el informe de actividades de la Comisión Ejecutiva del PENSIONISSSTE y, dentro de los cuatro primeros meses del año, los estados financieros que resulten de la operación en el último ejercicio;",
-          "padre_numero": null,
+          "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9462,7 +9856,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Examinar y, en su caso, aprobar a propuesta de la Comisión Ejecutiva del PENSIONISSSTE, la estrategia de inversión de los recursos;",
-          "padre_numero": null,
+          "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9471,7 +9865,7 @@
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "Examinar y, en su caso, aprobar anualmente el presupuesto de gastos de administración, operación y vigilancia del PENSIONISSSTE;",
-          "padre_numero": null,
+          "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9480,7 +9874,7 @@
           "tipo": "inciso",
           "identificador": "e)",
           "contenido": "Examinar y, en su caso, aprobar a propuesta de la Comisión Ejecutiva del PENSIONISSSTE, el programa de Reservas que deben constituirse para asegurar la operación del PENSIONISSSTE y el cumplimiento de los demás fines y obligaciones del mismo;",
-          "padre_numero": null,
+          "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9489,7 +9883,7 @@
           "tipo": "inciso",
           "identificador": "f)",
           "contenido": "Autorizar la constitución de sociedades de inversión especializadas de fondos para el retiro, y",
-          "padre_numero": null,
+          "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9498,7 +9892,7 @@
           "tipo": "inciso",
           "identificador": "g)",
           "contenido": "Las demás funciones necesarias para el cumplimiento de los fines del PENSIONISSSTE;",
-          "padre_numero": null,
+          "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9525,7 +9919,7 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "La situación financiera de cada uno de los seguros ofrecidos por el Instituto, y actuarial de sus reservas, aportando elementos de juicio para evaluar si las primas correspondientes son suficientes para cubrir los gastos actuales y futuros de los beneficios derivados de cada seguro;",
-          "padre_numero": null,
+          "padre_numero": 34,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9534,7 +9928,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "Los posibles riesgos, contingencias y pasivos que se están tomando en cada seguro y la capacidad financiera del Instituto para responder a ellos en función de sus ingresos y las reservas disponibles;",
-          "padre_numero": null,
+          "padre_numero": 34,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9543,7 +9937,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Estimaciones sobre las posibles modificaciones a las Cuotas y Aportaciones de cada seguro, en su caso, que se puedan prever, para mantener la viabilidad financiera del Instituto, y de las fechas estimadas en que dichas modificaciones puedan ser requeridas, y",
-          "padre_numero": null,
+          "padre_numero": 34,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9552,7 +9946,7 @@
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "La situación de sus pasivos laborales totales y de cualquier otra índole que comprometan su gasto por más de un ejercicio fiscal.",
-          "padre_numero": null,
+          "padre_numero": 34,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9726,7 +10120,7 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "El programa institucional;",
-          "padre_numero": null,
+          "padre_numero": 4,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9735,7 +10129,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "El programa de administración y constitución de Reservas;",
-          "padre_numero": null,
+          "padre_numero": 4,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9744,7 +10138,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "El programa operativo anual de acuerdo con lo establecido en la Ley de Planeación;",
-          "padre_numero": null,
+          "padre_numero": 4,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9753,7 +10147,7 @@
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "El programa anual de préstamos;",
-          "padre_numero": null,
+          "padre_numero": 4,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9762,7 +10156,7 @@
           "tipo": "inciso",
           "identificador": "e)",
           "contenido": "Los estados financieros del Instituto, y",
-          "padre_numero": null,
+          "padre_numero": 4,
           "x_id": 85,
           "x_texto": 107
         },
@@ -9771,7 +10165,7 @@
           "tipo": "inciso",
           "identificador": "f)",
           "contenido": "El informe financiero y actuarial;",
-          "padre_numero": null,
+          "padre_numero": 4,
           "x_id": 85,
           "x_texto": 107
         },
@@ -10002,22 +10396,13 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "Cinco representantes designados por las organizaciones de Trabajadores.",
+          "contenido": "Cinco representantes designados por las organizaciones de Trabajadores. La Junta Directiva cada doce meses designará de entre los miembros de la Comisión de Vigilancia representantes del Gobierno Federal, a quien deba presidirla. La Presidencia será rotativa; en caso de inasistencia del Presidente y su suplente, el Secretario Técnico presidirá la sesión de trabajo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
         },
         {
           "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "La Junta Directiva cada doce meses designará de entre los miembros de la Comisión de Vigilancia representantes del Gobierno Federal, a quien deba presidirla. La Presidencia será rotativa; en caso de inasistencia del Presidente y su suplente, el Secretario Técnico presidirá la sesión de trabajo.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Por cada miembro de la Comisión de Vigilancia, se nombrará un suplente que actuará en caso de faltas temporales del titular debiendo tratarse de un funcionario con el rango inmediato inferior al del miembro propietario.",
@@ -10165,6 +10550,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "COMITÉ DE INVERSIONES",
+          "padre_numero": 1,
+          "x_id": 236,
+          "x_texto": 236
         }
       ]
     },
@@ -10199,6 +10593,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "PATRIMONIO",
+          "padre_numero": 1,
+          "x_id": 271,
+          "x_texto": 271
         }
       ]
     },
@@ -10384,6 +10787,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "RESERVAS E INVERSIONES",
+          "padre_numero": 3,
+          "x_id": 231,
+          "x_texto": 231
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Generalidades",
+          "padre_numero": 4,
+          "x_id": 268,
+          "x_texto": 268
         }
       ]
     },
@@ -10476,7 +10897,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "Reservas general financiera y actuarial.",
+          "contenido": "Reservas general financiera y actuarial. Los recursos afectos a las Reservas señaladas quedan fuera de las disposiciones de anualidad presupuestal, por lo que podrán financiar obligaciones y contingencias más allá de un solo ejercicio fiscal. Del manejo multianual que haga el Instituto de estos Fondos deberá informarse a la Secretaría de Hacienda y Crédito Público a más tardar el día veintiocho de febrero del año siguiente.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10485,10 +10906,10 @@
           "numero": 6,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los recursos afectos a las Reservas señaladas quedan fuera de las disposiciones de anualidad presupuestal, por lo que podrán financiar obligaciones y contingencias más allá de un solo ejercicio fiscal. Del manejo multianual que haga el Instituto de estos Fondos deberá informarse a la Secretaría de Hacienda y Crédito Público a más tardar el día veintiocho de febrero del año siguiente.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
+          "contenido": "De las Reservas de los Seguros",
+          "padre_numero": 5,
+          "x_id": 223,
+          "x_texto": 223
         }
       ]
     },
@@ -10724,6 +11145,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Programa Anual de Administración y Constitución de Reservas",
+          "padre_numero": 1,
+          "x_id": 130,
+          "x_texto": 130
         }
       ]
     },
@@ -10786,6 +11216,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Inversión de las Reservas y de su Uso para la Operación",
+          "padre_numero": 6,
+          "x_id": 143,
+          "x_texto": 143
         }
       ]
     },
@@ -10855,6 +11294,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Contabilidad",
+          "padre_numero": 2,
+          "x_id": 258,
+          "x_texto": 258
         }
       ]
     },
@@ -10881,6 +11329,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA PRESCRIPCIÓN",
+          "padre_numero": 2,
+          "x_id": 246,
+          "x_texto": 246
         }
       ]
     },
@@ -11015,6 +11472,15 @@
           "referencias": [
             "Artículo reformado DOF 30-04-2024"
           ]
+        },
+        {
+          "numero": 9,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LAS RESPONSABILIDADES Y SANCIONES",
+          "padre_numero": 8,
+          "x_id": 184,
+          "x_texto": 184
         }
       ]
     },
@@ -11070,5 +11536,6 @@
       ]
     }
   ],
-  "ultima_reforma_dof": "2024-06-07"
+  "ultima_reforma_dof": "2024-06-07",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISSSTE.pdf"
 }

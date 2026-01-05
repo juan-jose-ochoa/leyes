@@ -1,20 +1,20 @@
 {
   "_advertencia": [
-    "╔══════════════════════════════════════════════════════════════════╗",
-    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
-    "║                                                                  ║",
-    "║  NO MODIFICAR MANUALMENTE                                        ║",
-    "║                                                                  ║",
-    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
-    "║  La base de datos se regenera desde aquí.                       ║",
-    "║                                                                  ║",
-    "║  Si el contenido es incorrecto:                                 ║",
-    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
-    "║                                                                  ║",
-    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
-    "╚══════════════════════════════════════════════════════════════════╝"
+    "=====================================================================",
+    "  ARCHIVO SAGRADO - FUENTE UNICA DE VERDAD",
+    "",
+    "  NO MODIFICAR MANUALMENTE",
+    "",
+    "  Este archivo es la UNICA fuente de verdad para el contenido.",
+    "  La base de datos se regenera desde aqui.",
+    "",
+    "  Si el contenido es incorrecto:",
+    "    -> CORRIGE EL SCRIPT, no este archivo",
+    "",
+    "  Modificarlo manualmente es SABOTAJE al sistema.",
+    "====================================================================="
   ],
-  "_generado_por": "extraer.py",
+  "_generado_por": "extractor/ExtractorGeneral",
   "ley": "LIVA",
   "tipo_contenido": "articulo",
   "articulos": [
@@ -40,7 +40,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Enajenen bienes.",
+          "contenido": "Enajenen bienes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -49,7 +49,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Presten servicios independientes.",
+          "contenido": "Presten servicios independientes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -58,7 +58,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Otorguen el uso o goce temporal de bienes.",
+          "contenido": "Otorguen el uso o goce temporal de bienes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -67,25 +67,16 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Importen bienes o servicios.",
+          "contenido": "Importen bienes o servicios. El impuesto se calculará aplicando a los valores que señala esta Ley, la tasa del 16%. El impuesto al valor agregado en ningún caso se considerará que forma parte de dichos valores.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "El impuesto se calculará aplicando a los valores que señala esta Ley, la tasa del 16%. El impuesto al valor agregado en ningún caso se considerará que forma parte de dichos valores.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 31-12-1982, 21-11-1991, 27-03-1995, 07-12-2009"
           ]
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El contribuyente trasladará dicho impuesto, en forma expresa y por separado, a las personas que adquieran los bienes, los usen o gocen temporalmente, o reciban los servicios. Se entenderá por traslado del impuesto el cobro o cargo que el contribuyente debe hacer a dichas personas de un monto equivalente al impuesto establecido en esta Ley, inclusive cuando se retenga en los términos de los artículos 1o.-A, 3o., tercer párrafo o 18-J, fracción II, inciso a) de la misma.",
@@ -97,7 +88,7 @@
           ]
         },
         {
-          "numero": 8,
+          "numero": 7,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El contribuyente pagará en las oficinas autorizadas la diferencia entre el impuesto a su cargo y el que le hubieran trasladado o el que él hubiese pagado en la importación de bienes o servicios, siempre que sean acreditables en los términos de esta Ley. En su caso, el contribuyente disminuirá del impuesto a su cargo, el impuesto que se le hubiere retenido.",
@@ -109,7 +100,7 @@
           ]
         },
         {
-          "numero": 9,
+          "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El traslado del impuesto a que se refiere este artículo no se considerará violatorio de precios o tarifas, incluyendo los oficiales.",
@@ -203,33 +194,22 @@
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción reformada DOF 30-12-2002"
+            "Fracción reformada DOF 30-12-2002",
+            "Fracción adicionada DOF 30-12-2002. Reformada DOF 01-12-2004, 07-06-2005. Derogada DOF 11-12-2013. Adicionada DOF 09-12-2019.",
+            "Derogada DOF 23-04-2021"
           ]
         },
         {
           "numero": 9,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "(Se deroga).",
+          "contenido": "(Se deroga). No efectuarán la retención a que se refiere este artículo las personas físicas o morales que estén obligadas al pago del impuesto exclusivamente por la importación de bienes.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107,
-          "referencias": [
-            "Fracción adicionada DOF 30-12-2002. Reformada DOF 01-12-2004, 07-06-2005. Derogada DOF 11-12-2013. Adicionada DOF 09-12-2019.",
-            "Derogada DOF 23-04-2021"
-          ]
+          "x_texto": 107
         },
         {
           "numero": 10,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "No efectuarán la retención a que se refiere este artículo las personas físicas o morales que estén obligadas al pago del impuesto exclusivamente por la importación de bienes.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 11,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Quienes efectúen la retención a que se refiere este artículo sustituirán al enajenante, prestador de servicio u otorgante del uso o goce temporal de bienes en la obligación de pago y entero del impuesto.",
@@ -238,7 +218,7 @@
           "x_texto": 85
         },
         {
-          "numero": 12,
+          "numero": 11,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El retenedor efectuará la retención del impuesto en el momento en el que pague el precio o la contraprestación y sobre el monto de lo efectivamente pagado y lo enterará mediante declaración en las oficinas autorizadas, conjuntamente con el pago del impuesto correspondiente al mes en el cual se efectúe la retención o, en su defecto, a más tardar el día 17 del mes siguiente a aquél en el que hubiese efectuado la retención, sin que contra el entero de la retención pueda realizarse acreditamiento, compensación o disminución alguna.",
@@ -250,7 +230,7 @@
           ]
         },
         {
-          "numero": 13,
+          "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Ejecutivo Federal, en el reglamento de esta ley, podrá autorizar una retención menor al total del impuesto causado, tomando en consideración las características del sector o de la cadena productiva de que se trate, el control del cumplimiento de obligaciones fiscales, así como la necesidad demostrada de recuperar con mayor oportunidad el impuesto acreditable.",
@@ -542,7 +522,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- La enajenación de:",
+          "contenido": "La enajenación de:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -652,7 +632,7 @@
           "numero": 12,
           "tipo": "inciso",
           "identificador": "c)",
-          "contenido": ".- Hielo y agua no gaseosa ni compuesta, excepto cuando en este último caso, su presentación sea en envases menores de diez litros.",
+          "contenido": "Hielo y agua no gaseosa ni compuesta, excepto cuando en este último caso, su presentación sea en envases menores de diez litros.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129,
@@ -664,7 +644,7 @@
           "numero": 13,
           "tipo": "inciso",
           "identificador": "d)",
-          "contenido": ".- Ixtle, palma y lechuguilla.",
+          "contenido": "Ixtle, palma y lechuguilla.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -673,7 +653,7 @@
           "numero": 14,
           "tipo": "inciso",
           "identificador": "e)",
-          "contenido": ".- Tractores para accionar implementos agrícolas, a excepción de los de oruga, así como llantas para dichos tractores; motocultores para superficies reducidas; arados; rastras para desterronar la tierra arada; cultivadoras para esparcir y desyerbar; cosechadoras; aspersoras y espolvoreadoras para rociar o esparcir fertilizantes, plaguicidas, herbicidas y fungicidas; equipo mecánico, eléctrico o hidráulico para riego agricola; sembradoras; ensiladoras, cortadoras y empacadoras de forraje; desgranadoras; abonadoras y fertilizadoras de terrenos de cultivo; aviones fumigadores; motosierras manuales de cadena, así como embarcaciones para pesca comercial, siempre que se reúnan los requisitos y condiciones que señale el Reglamento.",
+          "contenido": "Tractores para accionar implementos agrícolas, a excepción de los de oruga, así como llantas para dichos tractores; motocultores para superficies reducidas; arados; rastras para desterronar la tierra arada; cultivadoras para esparcir y desyerbar; cosechadoras; aspersoras y espolvoreadoras para rociar o esparcir fertilizantes, plaguicidas, herbicidas y fungicidas; equipo mecánico, eléctrico o hidráulico para riego agricola; sembradoras; ensiladoras, cortadoras y empacadoras de forraje; desgranadoras; abonadoras y fertilizadoras de terrenos de cultivo; aviones fumigadores; motosierras manuales de cadena, así como embarcaciones para pesca comercial, siempre que se reúnan los requisitos y condiciones que señale el Reglamento.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129,
@@ -694,7 +674,7 @@
           "numero": 16,
           "tipo": "inciso",
           "identificador": "f)",
-          "contenido": ".- Fertilizantes, plaguicidas, herbicidas y fungicidas, siempre que estén destinados para ser utilizados en la agricultura o ganadería.",
+          "contenido": "Fertilizantes, plaguicidas, herbicidas y fungicidas, siempre que estén destinados para ser utilizados en la agricultura o ganadería.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -703,7 +683,7 @@
           "numero": 17,
           "tipo": "inciso",
           "identificador": "g)",
-          "contenido": ".- Invernaderos hiropónicos y equipos integrados a ellos para producir temperatura y humedad controladas o para proteger los cultivos de elementos naturales, así como equipos de irrigación.",
+          "contenido": "Invernaderos hiropónicos y equipos integrados a ellos para producir temperatura y humedad controladas o para proteger los cultivos de elementos naturales, así como equipos de irrigación.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129,
@@ -715,7 +695,7 @@
           "numero": 18,
           "tipo": "inciso",
           "identificador": "h)",
-          "contenido": ".- Oro, joyería, orfebrería, piezas artísticas u ornamentales y lingotes, cuyo contenido mínimo de dicho material sea del 80%, siempre que su enajenación no se efectúe en ventas al menudeo con el público en general.",
+          "contenido": "Oro, joyería, orfebrería, piezas artísticas u ornamentales y lingotes, cuyo contenido mínimo de dicho material sea del 80%, siempre que su enajenación no se efectúe en ventas al menudeo con el público en general.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129,
@@ -727,7 +707,7 @@
           "numero": 19,
           "tipo": "inciso",
           "identificador": "i)",
-          "contenido": ".- Libros, periódicos y revistas, que editen los propios contribuyentes. Para los efectos de esta Ley, se considera libro toda publicación, unitaria, no periódica, impresa en cualquier soporte, cuya edición se haga en un volumen o en varios volúmenes. Dentro del concepto de libros, no quedan comprendidas aquellas publicaciones periódicas amparadas bajo el mismo título o denominación y con diferente contenido entre una publicación y otra.",
+          "contenido": "Libros, periódicos y revistas, que editen los propios contribuyentes. Para los efectos de esta Ley, se considera libro toda publicación, unitaria, no periódica, impresa en cualquier soporte, cuya edición se haga en un volumen o en varios volúmenes. Dentro del concepto de libros, no quedan comprendidas aquellas publicaciones periódicas amparadas bajo el mismo título o denominación y con diferente contenido entre una publicación y otra.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -772,7 +752,7 @@
           "numero": 23,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- La prestación de servicios independientes:",
+          "contenido": "La prestación de servicios independientes:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -781,7 +761,7 @@
           "numero": 24,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": ".- Los prestados directamente a los agricultores y ganaderos, siempre que sean destinados para actividades agropecuarias, por concepto de perforaciones de pozos, alumbramiento y formación de retenes de agua; suministro de energía eléctrica para usos agrícolas aplicados al bombeo de agua para riego; desmontes y caminos en el interior de las fincas agropecuarias; preparación de terrenos; riego y fumigación agrícolas; erradicación de plagas; cosecha y recolección; vacunación, desinfección e inseminación de ganado, así como los de captura y extracción de especies marinas y de agua dulce.",
+          "contenido": "Los prestados directamente a los agricultores y ganaderos, siempre que sean destinados para actividades agropecuarias, por concepto de perforaciones de pozos, alumbramiento y formación de retenes de agua; suministro de energía eléctrica para usos agrícolas aplicados al bombeo de agua para riego; desmontes y caminos en el interior de las fincas agropecuarias; preparación de terrenos; riego y fumigación agrícolas; erradicación de plagas; cosecha y recolección; vacunación, desinfección e inseminación de ganado, así como los de captura y extracción de especies marinas y de agua dulce.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129,
@@ -793,7 +773,7 @@
           "numero": 25,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": ".- Los de molienda o trituración de maíz o de trigo.",
+          "contenido": "Los de molienda o trituración de maíz o de trigo.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129
@@ -802,7 +782,7 @@
           "numero": 26,
           "tipo": "inciso",
           "identificador": "c)",
-          "contenido": ".- Los de pasteurización de leche.",
+          "contenido": "Los de pasteurización de leche.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129
@@ -811,7 +791,7 @@
           "numero": 27,
           "tipo": "inciso",
           "identificador": "d)",
-          "contenido": ".- Los prestados en invernaderos hidropónicos.",
+          "contenido": "Los prestados en invernaderos hidropónicos.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129,
@@ -823,7 +803,7 @@
           "numero": 28,
           "tipo": "inciso",
           "identificador": "e)",
-          "contenido": ".- Los de despepite de algodón en rama.",
+          "contenido": "Los de despepite de algodón en rama.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129,
@@ -835,7 +815,7 @@
           "numero": 29,
           "tipo": "inciso",
           "identificador": "f)",
-          "contenido": ".- Los de sacrificio de ganado y aves de corral.",
+          "contenido": "Los de sacrificio de ganado y aves de corral.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129,
@@ -847,7 +827,7 @@
           "numero": 30,
           "tipo": "inciso",
           "identificador": "g)",
-          "contenido": ".- Los de reaseguro.",
+          "contenido": "Los de reaseguro.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129,
@@ -859,7 +839,7 @@
           "numero": 31,
           "tipo": "inciso",
           "identificador": "h)",
-          "contenido": ".- Los de suministro de agua para uso doméstico.",
+          "contenido": "Los de suministro de agua para uso doméstico.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129,
@@ -871,7 +851,7 @@
           "numero": 32,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- El uso o goce temporal de la maquinaria y equipo a que se refieren los incisos e) y g) de la fracción I de este artículo.",
+          "contenido": "El uso o goce temporal de la maquinaria y equipo a que se refieren los incisos e) y g) de la fracción I de este artículo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -883,19 +863,10 @@
           "numero": 33,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- La exportación de bienes o servicios, en los términos del artículo 29 de esta Ley.",
+          "contenido": "La exportación de bienes o servicios, en los términos del artículo 29 de esta Ley. Los actos o actividades a los que se les aplica la tasa del 0%, producirán los mismos efectos legales que aquellos por los que se deba pagar el impuesto conforme a esta Ley.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
-        },
-        {
-          "numero": 34,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Los actos o actividades a los que se les aplica la tasa del 0%, producirán los mismos efectos legales que aquellos por los que se deba pagar el impuesto conforme a esta Ley.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
+          "x_texto": 107,
           "referencias": [
             "Artículo adicionado DOF 30-12-1980"
           ]
@@ -1293,7 +1264,7 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Al impuesto al valor agregado que haya sido trasladado al contribuyente o pagado en la importación, correspondiente a la inversión, se le aplicará el por ciento máximo de deducción por ejercicio que para el bien de que se trate se establece en el Título II de la Ley del Impuesto sobre la Renta.",
-          "padre_numero": null,
+          "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
         },
@@ -1302,7 +1273,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "El monto obtenido conforme al inciso anterior se dividirá entre doce.",
-          "padre_numero": null,
+          "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
         },
@@ -1311,7 +1282,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Al monto determinado conforme al inciso precedente, se le aplicará la proporción que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, representó en el valor total de las actividades que el contribuyente realizó en el mes en el que llevó a cabo el acreditamiento.",
-          "padre_numero": null,
+          "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
         },
@@ -1320,7 +1291,7 @@
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "Al monto determinado conforme al inciso b) de esta fracción, se le aplicará la proporción que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, represente en el valor total de las actividades que el contribuyente realice en el mes por el que se lleve a cabo el ajuste.",
-          "padre_numero": null,
+          "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
         },
@@ -1329,7 +1300,7 @@
           "tipo": "inciso",
           "identificador": "e)",
           "contenido": "A la cantidad obtenida conforme al inciso c) de esta fracción se le disminuirá la cantidad obtenida conforme al inciso d) de esta fracción. El resultado será la cantidad que deberá reintegrarse, actualizada desde el mes en el que se acreditó y hasta el mes de que se trate, y",
-          "padre_numero": null,
+          "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
         },
@@ -1347,7 +1318,7 @@
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Al impuesto al valor agregado que haya sido trasladado al contribuyente o pagado en la importación, correspondiente a la inversión, se le aplicará el por ciento máximo de deducción por ejercicio que para el bien de que se trate se establece en el Título II de la Ley del Impuesto sobre la Renta.",
-          "padre_numero": null,
+          "padre_numero": 8,
           "x_id": 85,
           "x_texto": 107
         },
@@ -1356,7 +1327,7 @@
           "tipo": "inciso",
           "identificador": "b)",
           "contenido": "El monto obtenido conforme al inciso anterior se dividirá entre doce.",
-          "padre_numero": null,
+          "padre_numero": 8,
           "x_id": 85,
           "x_texto": 107
         },
@@ -1365,7 +1336,7 @@
           "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Al monto determinado conforme al inciso precedente, se le aplicará la proporción que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, representó en el valor total de las actividades que el contribuyente realizó en el mes en el que llevó a cabo el acreditamiento.",
-          "padre_numero": null,
+          "padre_numero": 8,
           "x_id": 85,
           "x_texto": 107
         },
@@ -1374,7 +1345,7 @@
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "Al monto determinado conforme al inciso b) de esta fracción, se le aplicará la proporción que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, represente en el valor total de las actividades que el contribuyente realice en el mes por el que se lleve a cabo el ajuste.",
-          "padre_numero": null,
+          "padre_numero": 8,
           "x_id": 85,
           "x_texto": 107
         },
@@ -1383,7 +1354,7 @@
           "tipo": "inciso",
           "identificador": "e)",
           "contenido": "A la cantidad obtenida conforme al inciso d) de esta fracción se le disminuirá la cantidad obtenida conforme al inciso c) de esta fracción. El resultado será la cantidad que podrá acreditarse, actualizada desde el mes en que se realizó el acreditamiento correspondiente y hasta el mes de que se trate.",
-          "padre_numero": null,
+          "padre_numero": 8,
           "x_id": 85,
           "x_texto": 107
         },
@@ -1420,22 +1391,13 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Los contribuyentes, en lugar de aplicar lo previsto en el artículo 5o., fracción V, incisos",
+          "contenido": "Los contribuyentes, en lugar de aplicar lo previsto en el artículo 5o., fracción V, incisos c) y d), numeral 3 y en el artículo 5o.-A de esta Ley, podrán acreditar el impuesto al valor agregado que les haya sido trasladado al realizar erogaciones por la adquisición de bienes, adquisición de servicios o por el uso o goce temporal de bienes o el pagado en su importación, en la cantidad que resulte de aplicar al impuesto mencionado la proporción que el valor de las actividades por las que se deba pagar el impuesto o a las que se les aplique la tasa de 0%, correspondientes al año de calendario inmediato anterior al mes por el que se calcula el impuesto acreditable, represente en el valor total de las actividades, realizadas por el contribuyente en dicho año de calendario.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
           "numero": 2,
-          "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "y d), numeral 3 y en el artículo 5o.-A de esta Ley, podrán acreditar el impuesto al valor agregado que les haya sido trasladado al realizar erogaciones por la adquisición de bienes, adquisición de servicios o por el uso o goce temporal de bienes o el pagado en su importación, en la cantidad que resulte de aplicar al impuesto mencionado la proporción que el valor de las actividades por las que se deba pagar el impuesto o a las que se les aplique la tasa de 0%, correspondientes al año de calendario inmediato anterior al mes por el que se calcula el impuesto acreditable, represente en el valor total de las actividades, realizadas por el contribuyente en dicho año de calendario.",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
-        },
-        {
-          "numero": 3,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Durante el año de calendario en el que los contribuyentes inicien las actividades por las que deban pagar el impuesto que establece esta Ley y en el siguiente, la proporción aplicable en cada uno de los meses de dichos años se calculará considerando los valores mencionados en el párrafo anterior, correspondientes al periodo comprendido desde el mes en el que se iniciaron las actividades y hasta el mes por el que se calcula el impuesto acreditable. Tratándose de inversiones, el impuesto acreditable se calculará tomando en cuenta la proporción del periodo mencionado y deberá efectuarse un ajuste en el doceavo mes, contado a partir del mes inmediato posterior a aquél en el que el contribuyente inició actividades, de conformidad con las reglas de carácter general que al efecto emita el Servicio de Administración Tributaria. Para ello, se deberá considerar la proporción correspondiente al periodo de los primeros doce meses de actividades del contribuyente, misma que se comparará con la proporción inicialmente aplicada al impuesto trasladado o pagado en la importación de la inversión realizada. En caso de existir una modificación en más del 3%, se deberá ajustar dicho acreditamiento en la forma siguiente:",
@@ -1444,7 +1406,7 @@
           "x_texto": 85
         },
         {
-          "numero": 4,
+          "numero": 3,
           "tipo": "fraccion",
           "identificador": "I",
           "contenido": "Cuando disminuya la proporción del valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, respecto del valor de las actividades totales, el contribuyente deberá reintegrar el acreditamiento efectuado en exceso, actualizado desde el mes en el que se realizó el acreditamiento y hasta el mes en el que se haga el reintegro. En este caso, el monto del acreditamiento en exceso será la cantidad que resulte de disminuir del monto del impuesto efectivamente acreditado en el mes de que se trate, la cantidad que resulte de aplicar la proporción correspondiente al periodo de doce meses al monto del impuesto que le haya sido trasladado al contribuyente o el pagado en la importación en las inversiones realizadas en el citado mes.",
@@ -1453,7 +1415,7 @@
           "x_texto": 115
         },
         {
-          "numero": 5,
+          "numero": 4,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "Cuando aumente la proporción del valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, respecto del valor de las actividades totales, el contribuyente podrá incrementar el acreditamiento realizado, actualizado desde el mes en el que se realizó el acreditamiento y hasta el doceavo mes, contado a partir del mes en el que se iniciaron las actividades. En este caso, el monto del acreditamiento a incrementar será la cantidad que resulte de disminuir de la cantidad que resulte de aplicar la proporción correspondiente al periodo de doce meses al monto del impuesto que le haya sido trasladado al contribuyente o el pagado en la importación en las inversiones en el mes de que se trate, el monto del impuesto efectivamente acreditado en dicho mes.",
@@ -1465,7 +1427,7 @@
           ]
         },
         {
-          "numero": 6,
+          "numero": 5,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La actualización a que se refieren las fracciones I y II del párrafo anterior, deberá calcularse aplicando el factor de actualización que se obtenga de conformidad con el artículo 17-A del Código Fiscal de la Federación.",
@@ -1477,7 +1439,7 @@
           ]
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El reintegro o el incremento del acreditamiento, que corresponda de conformidad con las fracciones I y II del párrafo segundo de este artículo, según se trate, deberá realizarse en el mes en el que deba efectuarse el ajuste del acreditamiento a que se refiere dicho párrafo, de conformidad con las reglas de carácter general que al efecto emita el Servicio de Administración Tributaria.",
@@ -1489,7 +1451,7 @@
           ]
         },
         {
-          "numero": 8,
+          "numero": 7,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los contribuyentes que ejerzan la opción prevista en este artículo deberán aplicarla respecto de todas las erogaciones por la adquisición de bienes, adquisición de servicios o por el uso o goce temporal de bienes, que se utilicen indistintamente para realizar las actividades por las que se deba o no pagar el impuesto al valor agregado o a las que se les aplique la tasa de 0%, en un período de sesenta meses, contados a partir del mes en el que se haya realizado el acreditamiento en los términos del presente artículo.",
@@ -1498,7 +1460,7 @@
           "x_texto": 85
         },
         {
-          "numero": 9,
+          "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "A las inversiones cuyo acreditamiento se haya realizado conforme a lo dispuesto en el artículo 5o., fracción V, inciso d), numeral 3 de esta Ley, no les será aplicable el procedimiento establecido en este artículo.",
@@ -1521,22 +1483,13 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Para calcular la proporción a que se refieren los artículos 5o., fracción V, incisos c) y",
+          "contenido": "Para calcular la proporción a que se refieren los artículos 5o., fracción V, incisos c) y d), numeral 3; 5o.-A, fracción I, incisos c) y d), fracción II, incisos c) y d), y 5o.-B de esta Ley, no se deberán incluir en los valores a que se refieren dichos preceptos, los conceptos siguientes:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
           "numero": 2,
-          "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": ", numeral 3; 5o.-A, fracción I, incisos c) y d), fracción II, incisos c) y d), y 5o.-B de esta Ley, no se deberán incluir en los valores a que se refieren dichos preceptos, los conceptos siguientes:",
-          "padre_numero": null,
-          "x_id": 71,
-          "x_texto": 93
-        },
-        {
-          "numero": 3,
           "tipo": "fraccion",
           "identificador": "I",
           "contenido": "Las importaciones de bienes o servicios, inclusive cuando sean temporales en los términos de la Ley Aduanera;",
@@ -1545,7 +1498,7 @@
           "x_texto": 107
         },
         {
-          "numero": 4,
+          "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "Las enajenaciones de sus activos fijos y gastos y cargos diferidos a que se refiere el artículo 32 de la Ley del Impuesto sobre la Renta, así como la enajenación del suelo, salvo que sea parte del activo circulante del contribuyente, aun cuando se haga a través de certificados de participación inmobiliaria;",
@@ -1557,7 +1510,7 @@
           ]
         },
         {
-          "numero": 5,
+          "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "Los dividendos percibidos en moneda, en acciones, en partes sociales o en títulos de crédito, siempre que en este último caso su enajenación no implique la transmisión de dominio de un bien tangible o del derecho para adquirirlo, salvo que se trate de personas morales que perciban ingresos preponderantemente por este concepto;",
@@ -1566,7 +1519,7 @@
           "x_texto": 107
         },
         {
-          "numero": 6,
+          "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
           "contenido": "Las enajenaciones de acciones o partes sociales, documentos pendientes de cobro y títulos de crédito, siempre que su enajenación no implique la transmisión de dominio de un bien tangible o del derecho para adquirirlo;",
@@ -1575,7 +1528,7 @@
           "x_texto": 107
         },
         {
-          "numero": 7,
+          "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
           "contenido": "Las enajenaciones de moneda nacional y extranjera, así como la de piezas de oro o de plata que hubieran tenido tal carácter y la de piezas denominadas \"onza troy\";",
@@ -1584,7 +1537,7 @@
           "x_texto": 107
         },
         {
-          "numero": 8,
+          "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
           "contenido": "Los intereses percibidos ni la ganancia cambiaria;",
@@ -1593,7 +1546,7 @@
           "x_texto": 107
         },
         {
-          "numero": 9,
+          "numero": 8,
           "tipo": "fraccion",
           "identificador": "VII",
           "contenido": "Las enajenaciones realizadas a través de arrendamiento financiero. En estos casos el valor que se deberá excluir será el valor del bien objeto de la operación que se consigne expresamente en el contrato respectivo;",
@@ -1602,7 +1555,7 @@
           "x_texto": 107
         },
         {
-          "numero": 10,
+          "numero": 9,
           "tipo": "fraccion",
           "identificador": "VIII",
           "contenido": "Las enajenaciones de bienes adquiridos por dación en pago o adjudicación judicial o fiduciaria, siempre que dichas enajenaciones sean realizadas por contribuyentes que por disposición legal no puedan conservar en propiedad los citados bienes, y",
@@ -1611,7 +1564,7 @@
           "x_texto": 107
         },
         {
-          "numero": 11,
+          "numero": 10,
           "tipo": "fraccion",
           "identificador": "IX",
           "contenido": "Los que se deriven de operaciones financieras derivadas a que se refiere el artículo 16-A del Código Fiscal de la Federación.",
@@ -1620,7 +1573,7 @@
           "x_texto": 107
         },
         {
-          "numero": 12,
+          "numero": 11,
           "tipo": "fraccion",
           "identificador": "X",
           "contenido": "La enajenación de los certificados de participación inmobiliarios no amortizables a que se refiere el segundo párrafo de la fracción VII del artículo 9o. de esta Ley.",
@@ -1632,7 +1585,7 @@
           ]
         },
         {
-          "numero": 13,
+          "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las instituciones de crédito, de seguros y de fianzas, almacenes generales de depósito, administradoras de fondos para el retiro, arrendadoras financieras, sociedades de ahorro y préstamo, uniones de crédito, empresas de factoraje financiero, casas de bolsa, casas de cambio, sociedades financieras de objeto limitado, sociedades financieras de objeto múltiple que para los efectos del impuesto sobre la renta formen parte del sistema financiero y las sociedades para el depósito de valores, no deberán excluir los conceptos señalados en las fracciones IV, V, VI y IX que anteceden.",
@@ -1854,6 +1807,15 @@
             "Párrafo adicionado DOF 31-12-1998. Reformado DOF 11-12-2013, 09-12-2019",
             "Artículo reformado DOF 31-12-1979, 30-12-1980, 26-12-1990"
           ]
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la enajenación",
+          "padre_numero": 4,
+          "x_id": 260,
+          "x_texto": 260
         }
       ]
     },
@@ -1918,7 +1880,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- El suelo.",
+          "contenido": "El suelo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1927,7 +1889,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Construcciones adheridas al suelo, destinadas o utilizadas para casa habitación. Cuando sólo parte de las construcciones se utilicen o destinen a casa habitación, no se pagará el impuesto por dicha parte. Los hoteles no quedan comprendidos en esta fracción.",
+          "contenido": "Construcciones adheridas al suelo, destinadas o utilizadas para casa habitación. Cuando sólo parte de las construcciones se utilicen o destinen a casa habitación, no se pagará el impuesto por dicha parte. Los hoteles no quedan comprendidos en esta fracción.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1936,7 +1898,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Libros, periódicos y revistas, así como el derecho para usar o explotar una obra, que realice su autor.",
+          "contenido": "Libros, periódicos y revistas, así como el derecho para usar o explotar una obra, que realice su autor.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1945,7 +1907,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Bienes muebles usados, a excepción de los enajenados por empresas.",
+          "contenido": "Bienes muebles usados, a excepción de los enajenados por empresas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1954,7 +1916,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Billetes y demás comprobantes que permitan participar en loterías, rifas, sorteos o juegos con apuestas y concursos de toda clase, así como los premios respectivos, a que se refiere la Ley del Impuesto sobre la Renta.",
+          "contenido": "Billetes y demás comprobantes que permitan participar en loterías, rifas, sorteos o juegos con apuestas y concursos de toda clase, así como los premios respectivos, a que se refiere la Ley del Impuesto sobre la Renta.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1963,7 +1925,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Moneda nacional y moneda extranjera, así como las piezas de oro o de plata que hubieran tenido tal carácter y las piezas denominadas onza troy.",
+          "contenido": "Moneda nacional y moneda extranjera, así como las piezas de oro o de plata que hubieran tenido tal carácter y las piezas denominadas onza troy.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1972,7 +1934,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- Partes sociales, documentos pendientes de cobro y títulos de crédito, con excepción de certificados de depósito de bienes cuando por la enajenación de dichos bienes se esté obligado a pagar este impuesto y de certificados de participación inmobiliaria no amortizables u otros títulos que otorguen a su titular derechos sobre inmuebles distintos a casa habitación o suelo. En la enajenación de documentos pendientes de cobro, no queda comprendida la enajenación del bien que ampare el documento.",
+          "contenido": "Partes sociales, documentos pendientes de cobro y títulos de crédito, con excepción de certificados de depósito de bienes cuando por la enajenación de dichos bienes se esté obligado a pagar este impuesto y de certificados de participación inmobiliaria no amortizables u otros títulos que otorguen a su titular derechos sobre inmuebles distintos a casa habitación o suelo. En la enajenación de documentos pendientes de cobro, no queda comprendida la enajenación del bien que ampare el documento.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1994,7 +1956,7 @@
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "- Lingotes de oro con un contenido mínimo de 99% de dicho material, siempre que su enajenación se efectúe en ventas al menudeo con el público en general.",
+          "contenido": "Lingotes de oro con un contenido mínimo de 99% de dicho material, siempre que su enajenación se efectúe en ventas al menudeo con el público en general.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2135,6 +2097,15 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1979. Derogado 30-12-1980. Adicionado 13-12-1996. Derogado DOF 31-12-1998"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la prestación de servicios",
+          "padre_numero": 1,
+          "x_id": 230,
+          "x_texto": 230
         }
       ]
     },
@@ -2157,7 +2128,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- La prestación de obligaciones de hacer que realice una persona a favor de otra, cualquiera que sea el acto que le dé origen y el nombre o clasificación que a dicho acto le den otras leyes.",
+          "contenido": "La prestación de obligaciones de hacer que realice una persona a favor de otra, cualquiera que sea el acto que le dé origen y el nombre o clasificación que a dicho acto le den otras leyes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2166,7 +2137,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- El transporte de personas o bienes.",
+          "contenido": "El transporte de personas o bienes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2175,7 +2146,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- El seguro, el afianzamiento y el reafianzamiento.",
+          "contenido": "El seguro, el afianzamiento y el reafianzamiento.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2187,7 +2158,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- El mandato, la comisión, la mediación, la agencia, la representación, la correduría, la consignación y la distribución.",
+          "contenido": "El mandato, la comisión, la mediación, la agencia, la representación, la correduría, la consignación y la distribución.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2196,7 +2167,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- La asistencia técnica y la transferencia de tecnología.",
+          "contenido": "La asistencia técnica y la transferencia de tecnología.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2205,7 +2176,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Toda otra obligación de dar, de no hacer o de permitir, asumida por una persona en beneficio de otra, siempre que no esté considerada por esta Ley como enajenación o uso o goce temporal de bienes.",
+          "contenido": "Toda otra obligación de dar, de no hacer o de permitir, asumida por una persona en beneficio de otra, siempre que no esté considerada por esta Ley como enajenación o uso o goce temporal de bienes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2252,7 +2223,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Las comisiones y otras contraprestaciones que cubra el acreditado a su acreedor con motivo del otorgamiento de créditos hipotecarios para la adquisición, ampliación, construcción o reparación de bienes inmuebles destinados a casa habitación, salvo aquéllas que se originen con posterioridad a la autorización del citado crédito o que se deban pagar a terceros por el acreditado.",
+          "contenido": "Las comisiones y otras contraprestaciones que cubra el acreditado a su acreedor con motivo del otorgamiento de créditos hipotecarios para la adquisición, ampliación, construcción o reparación de bienes inmuebles destinados a casa habitación, salvo aquéllas que se originen con posterioridad a la autorización del citado crédito o que se deban pagar a terceros por el acreditado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2264,7 +2235,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Las comisiones que cobren las administradoras de fondos para el retiro o, en su caso, las instituciones de crédito, a los trabajadores por la administración de sus recursos provenientes de los sistemas de ahorro para el retiro y por los servicios relacionados con dicha administración, a que se refieren la Ley de los Sistemas de Ahorro para el Retiro y la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado, así como las demás disposiciones derivadas de éstas.",
+          "contenido": "Las comisiones que cobren las administradoras de fondos para el retiro o, en su caso, las instituciones de crédito, a los trabajadores por la administración de sus recursos provenientes de los sistemas de ahorro para el retiro y por los servicios relacionados con dicha administración, a que se refieren la Ley de los Sistemas de Ahorro para el Retiro y la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado, así como las demás disposiciones derivadas de éstas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2276,7 +2247,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Los prestados en forma gratuita, excepto cuando los beneficiarios sean los miembros, socios o asociados de la persona moral que preste el servicio.",
+          "contenido": "Los prestados en forma gratuita, excepto cuando los beneficiarios sean los miembros, socios o asociados de la persona moral que preste el servicio.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2288,7 +2259,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Los de enseñanza que preste la Federación, el Distrito Federal, los Estados, los Municipios y sus organismos descentralizados, y los establecimientos de particulares que tengan autorización o reconocimiento de validez oficial de estudios, en los términos de la Ley General de Educación, así como los servicios educativos de nivel preescolar.",
+          "contenido": "Los de enseñanza que preste la Federación, el Distrito Federal, los Estados, los Municipios y sus organismos descentralizados, y los establecimientos de particulares que tengan autorización o reconocimiento de validez oficial de estudios, en los términos de la Ley General de Educación, así como los servicios educativos de nivel preescolar.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2312,7 +2283,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- El transporte marítimo internacional de bienes prestado por personas residentes en el extranjero sin establecimiento permanente en el país. En ningún caso será aplicable lo dispuesto en esta fracción tratándose de los servicios de cabotaje en territorio nacional.",
+          "contenido": "El transporte marítimo internacional de bienes prestado por personas residentes en el extranjero sin establecimiento permanente en el país. En ningún caso será aplicable lo dispuesto en esta fracción tratándose de los servicios de cabotaje en territorio nacional.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2336,7 +2307,7 @@
           "numero": 9,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "- (Se deroga).",
+          "contenido": "(Se deroga).",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2348,7 +2319,7 @@
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "- El aseguramiento contra riesgos agropecuarios, los seguros de crédito a la vivienda que cubran el riesgo de incumplimiento de los deudores de créditos hipotecarios o con garantía fiduciaria para la adquisición, ampliación, construcción o reparación de bienes inmuebles, destinados a casa habitación, los seguros de garantía financiera que cubran el pago por incumplimiento de los emisores de valores, títulos de crédito o documentos que sean objeto de oferta pública o de intermediación en mercados de valores, siempre que los recursos provenientes de la colocación de dichos valores, títulos de crédito o documentos, se utilicen para el financiamiento de créditos hipotecarios o con garantía fiduciaria para la adquisición, ampliación, construcción o reparación de bienes inmuebles destinados a casa habitación y los seguros de vida ya sea que cubran el riesgo de muerte u otorguen rentas vitalicias o pensiones, así como las comisiones de agentes que correspondan a los seguros citados.",
+          "contenido": "El aseguramiento contra riesgos agropecuarios, los seguros de crédito a la vivienda que cubran el riesgo de incumplimiento de los deudores de créditos hipotecarios o con garantía fiduciaria para la adquisición, ampliación, construcción o reparación de bienes inmuebles, destinados a casa habitación, los seguros de garantía financiera que cubran el pago por incumplimiento de los emisores de valores, títulos de crédito o documentos que sean objeto de oferta pública o de intermediación en mercados de valores, siempre que los recursos provenientes de la colocación de dichos valores, títulos de crédito o documentos, se utilicen para el financiamiento de créditos hipotecarios o con garantía fiduciaria para la adquisición, ampliación, construcción o reparación de bienes inmuebles destinados a casa habitación y los seguros de vida ya sea que cubran el riesgo de muerte u otorguen rentas vitalicias o pensiones, así como las comisiones de agentes que correspondan a los seguros citados.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2360,7 +2331,7 @@
           "numero": 11,
           "tipo": "fraccion",
           "identificador": "X",
-          "contenido": "- Por los que deriven intereses que:",
+          "contenido": "Por los que deriven intereses que:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2497,7 +2468,7 @@
           "numero": 23,
           "tipo": "fraccion",
           "identificador": "XI",
-          "contenido": "- Por los que se deriven de operaciones financieras derivadas a que se refiere el artículo 16-A del Código Fiscal de la Federación.",
+          "contenido": "Por los que se deriven de operaciones financieras derivadas a que se refiere el artículo 16-A del Código Fiscal de la Federación.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2509,7 +2480,7 @@
           "numero": 24,
           "tipo": "fraccion",
           "identificador": "XII",
-          "contenido": "- Los proporcionados a sus miembros como contraprestación normal por sus cuotas y siempre que los servicios que presten sean únicamente los relativos a los fines que les sean propios, tratándose de:",
+          "contenido": "Los proporcionados a sus miembros como contraprestación normal por sus cuotas y siempre que los servicios que presten sean únicamente los relativos a los fines que les sean propios, tratándose de:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2518,7 +2489,7 @@
           "numero": 25,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": ".- Partidos, asociaciones, coaliciones y frentes políticos legalmente reconocidos.",
+          "contenido": "Partidos, asociaciones, coaliciones y frentes políticos legalmente reconocidos.",
           "padre_numero": 24,
           "x_id": 107,
           "x_texto": 129
@@ -2527,7 +2498,7 @@
           "numero": 26,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": ".- Sindicatos obreros y organismos que los agrupen.",
+          "contenido": "Sindicatos obreros y organismos que los agrupen.",
           "padre_numero": 24,
           "x_id": 107,
           "x_texto": 129
@@ -2536,7 +2507,7 @@
           "numero": 27,
           "tipo": "inciso",
           "identificador": "c)",
-          "contenido": ".- Cámaras de comercio e industria, agrupaciones agrícolas, ganaderas, pesqueras o silvícolas, así como organismos que las reúnan.",
+          "contenido": "Cámaras de comercio e industria, agrupaciones agrícolas, ganaderas, pesqueras o silvícolas, así como organismos que las reúnan.",
           "padre_numero": 24,
           "x_id": 107,
           "x_texto": 129,
@@ -2548,7 +2519,7 @@
           "numero": 28,
           "tipo": "inciso",
           "identificador": "d)",
-          "contenido": ".- Asociaciones patronales y colegios de profesionales.",
+          "contenido": "Asociaciones patronales y colegios de profesionales.",
           "padre_numero": 24,
           "x_id": 107,
           "x_texto": 129
@@ -2557,7 +2528,7 @@
           "numero": 29,
           "tipo": "inciso",
           "identificador": "e)",
-          "contenido": ".- Asociaciones o sociedades civiles organizadas con fines científicos, políticos, religiosos y culturales, a excepción de aquéllas que proporcionen servicios con instalaciones deportivas cuando el valor de éstas representen más del 25% del total de las instalaciones.",
+          "contenido": "Asociaciones o sociedades civiles organizadas con fines científicos, políticos, religiosos y culturales, a excepción de aquéllas que proporcionen servicios con instalaciones deportivas cuando el valor de éstas representen más del 25% del total de las instalaciones.",
           "padre_numero": 24,
           "x_id": 107,
           "x_texto": 129,
@@ -2569,7 +2540,7 @@
           "numero": 30,
           "tipo": "fraccion",
           "identificador": "XIII",
-          "contenido": "- Los de espectáculos públicos por el boleto de entrada, salvo los de teatro y circo, cuando el convenio con el Estado o Acuerdo con el Departamento del Distrito Federal, donde se presente el espectáculo no se ajuste a lo previsto en la fracción VI del artículo 41 de esta Ley. La exención prevista en esta fracción no será aplicable a las funciones de cine, por el boleto de entrada.",
+          "contenido": "Los de espectáculos públicos por el boleto de entrada, salvo los de teatro y circo, cuando el convenio con el Estado o Acuerdo con el Departamento del Distrito Federal, donde se presente el espectáculo no se ajuste a lo previsto en la fracción VI del artículo 41 de esta Ley. La exención prevista en esta fracción no será aplicable a las funciones de cine, por el boleto de entrada.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2605,7 +2576,7 @@
           "numero": 33,
           "tipo": "fraccion",
           "identificador": "XV",
-          "contenido": "- Los servicios profesionales de medicina, hospitalarios, de radiología, de laboratorios y estudios clínicos, que presten los organismos descentralizados de la Administración Pública Federal o del Distrito Federal, o de los gobiernos estatales o municipales.",
+          "contenido": "Los servicios profesionales de medicina, hospitalarios, de radiología, de laboratorios y estudios clínicos, que presten los organismos descentralizados de la Administración Pública Federal o del Distrito Federal, o de los gobiernos estatales o municipales.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -2617,7 +2588,7 @@
           "numero": 34,
           "tipo": "fraccion",
           "identificador": "XVI",
-          "contenido": "- Por los que obtengan contraprestaciones los autores en los casos siguientes:",
+          "contenido": "Por los que obtengan contraprestaciones los autores en los casos siguientes:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2927,8 +2898,30 @@
           "referencias": [
             "Párrafo adicionado DOF 29-12-1997",
             "Reforma DOF 30-12-2002: Derogó del artículo el entonces párrafo quinto (antes reformado por DOF 29-12-1997)",
-            "Artículo adicionado DOF 15-12-1995",
-            "Capítulo adicionado DOF 09-12-2019",
+            "Artículo adicionado DOF 15-12-1995"
+          ]
+        },
+        {
+          "numero": 13,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México",
+          "padre_numero": null,
+          "x_id": 72,
+          "x_texto": 72,
+          "referencias": [
+            "Capítulo adicionado DOF 09-12-2019"
+          ]
+        },
+        {
+          "numero": 14,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Disposiciones generales",
+          "padre_numero": 13,
+          "x_id": 242,
+          "x_texto": 242,
+          "referencias": [
             "Sección adicionada DOF 09-12-2019"
           ]
         }
@@ -3470,7 +3463,18 @@
           "x_id": 85,
           "x_texto": 85,
           "referencias": [
-            "Artículo adicionado DOF 09-12-2019",
+            "Artículo adicionado DOF 09-12-2019"
+          ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los servicios digitales de intermediación entre terceros",
+          "padre_numero": 1,
+          "x_id": 154,
+          "x_texto": 154,
+          "referencias": [
             "Sección adicionada DOF 09-12-2019"
           ]
         }
@@ -3830,6 +3834,15 @@
           "referencias": [
             "Artículo adicionado DOF 09-12-2019"
           ]
+        },
+        {
+          "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del uso o goce temporal de bienes",
+          "padre_numero": 10,
+          "x_id": 215,
+          "x_texto": 215
         }
       ]
     },
@@ -3905,7 +3918,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Inmuebles destinados o utilizados exclusivamente para casa- habitación. Si un inmueble tuviere varios destinos o usos, no se pagará el impuesto por la parte destinada o utilizada para casa- habitación. Lo dispuesto en esta fracción no es aplicable a los inmuebles o parte de ellos que se proporcionen amueblados o se destinen o utilicen como hoteles o casas de hospedaje.",
+          "contenido": "Inmuebles destinados o utilizados exclusivamente para casa- habitación. Si un inmueble tuviere varios destinos o usos, no se pagará el impuesto por la parte destinada o utilizada para casa- habitación. Lo dispuesto en esta fracción no es aplicable a los inmuebles o parte de ellos que se proporcionen amueblados o se destinen o utilicen como hoteles o casas de hospedaje.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3914,7 +3927,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Fincas dedicadas o utilizadas sólo a fines agrícolas o ganaderos.",
+          "contenido": "Fincas dedicadas o utilizadas sólo a fines agrícolas o ganaderos.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3935,7 +3948,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Libros, periódicos y revistas.",
+          "contenido": "Libros, periódicos y revistas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3999,6 +4012,15 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1979"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la importación de bienes y servicios",
+          "padre_numero": 1,
+          "x_id": 203,
+          "x_texto": 203
         }
       ]
     },
@@ -4021,7 +4043,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- La introducción al país de bienes.",
+          "contenido": "La introducción al país de bienes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4055,7 +4077,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- La adquisición por personas residentes en el país de bienes intangibles enajenados por personas no residentes en él.",
+          "contenido": "La adquisición por personas residentes en el país de bienes intangibles enajenados por personas no residentes en él.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4064,7 +4086,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- El uso o goce temporal, en territorio nacional, de bienes intangibles proporcionados por personas no residentes en el país.",
+          "contenido": "El uso o goce temporal, en territorio nacional, de bienes intangibles proporcionados por personas no residentes en el país.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4085,7 +4107,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- El aprovechamiento en territorio nacional de los servicios a que se refiere el artículo 14, cuando se presten por no residentes en el país. Esta fracción no es aplicable al transporte internacional.",
+          "contenido": "El aprovechamiento en territorio nacional de los servicios a que se refiere el artículo 14, cuando se presten por no residentes en el país. Esta fracción no es aplicable al transporte internacional.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4123,7 +4145,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Las que, en los términos de la legislación aduanera, no lleguen a consumarse, sean temporales, tengan el carácter de retorno de bienes exportados temporalmente o sean objeto de tránsito o transbordo. Si los bienes importados temporalmente son objeto de uso o goce en el país, se estará a lo dispuesto en el Capítulo IV de esta Ley.",
+          "contenido": "Las que, en los términos de la legislación aduanera, no lleguen a consumarse, sean temporales, tengan el carácter de retorno de bienes exportados temporalmente o sean objeto de tránsito o transbordo. Si los bienes importados temporalmente son objeto de uso o goce en el país, se estará a lo dispuesto en el Capítulo IV de esta Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4145,7 +4167,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Las de equipajes y menajes de casa a que se refiere la legislación aduanera.",
+          "contenido": "Las de equipajes y menajes de casa a que se refiere la legislación aduanera.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4157,7 +4179,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Las de bienes cuya enajenación en el país y las de servicios por cuya prestación en territorio nacional no den lugar al pago del impuesto al valor agregado o cuando sean de los señalados en el artículo 2o. A de esta Ley.",
+          "contenido": "Las de bienes cuya enajenación en el país y las de servicios por cuya prestación en territorio nacional no den lugar al pago del impuesto al valor agregado o cuando sean de los señalados en el artículo 2o. A de esta Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4169,7 +4191,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Las de bienes donados por residentes en el extranjero a la Federación, entidades federativas, municipios o a cualquier otra persona que mediante reglas de carácter general autorice la Secretaría de Hacienda y Crédito Público.",
+          "contenido": "Las de bienes donados por residentes en el extranjero a la Federación, entidades federativas, municipios o a cualquier otra persona que mediante reglas de carácter general autorice la Secretaría de Hacienda y Crédito Público.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4181,7 +4203,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Las de obras de arte que por su calidad y valor cultural sean reconocidas como tales por las instituciones oficiales competentes, siempre que se destinen a exhibición pública en forma permanente.",
+          "contenido": "Las de obras de arte que por su calidad y valor cultural sean reconocidas como tales por las instituciones oficiales competentes, siempre que se destinen a exhibición pública en forma permanente.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4193,7 +4215,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "- Las de obras de arte creadas en el extranjero por mexicanos o residentes en territorio nacional, que por su calidad y valor cultural sean reconocidas como tales por las instituciones oficiales competentes, siempre que la importación sea realizada por su autor.",
+          "contenido": "Las de obras de arte creadas en el extranjero por mexicanos o residentes en territorio nacional, que por su calidad y valor cultural sean reconocidas como tales por las instituciones oficiales competentes, siempre que la importación sea realizada por su autor.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4205,7 +4227,7 @@
           "numero": 9,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- Oro, con un contenido mínimo de dicho material del 80%.",
+          "contenido": "Oro, con un contenido mínimo de dicho material del 80%.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4217,7 +4239,7 @@
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "- La de vehículos, que se realice de conformidad con el artículo 62, fracción I de la Ley Aduanera, siempre que se cumpla con los requisitos y condiciones que señale la Secretaría de Hacienda y Crédito Público mediante reglas de carácter general.",
+          "contenido": "La de vehículos, que se realice de conformidad con el artículo 62, fracción I de la Ley Aduanera, siempre que se cumpla con los requisitos y condiciones que señale la Secretaría de Hacienda y Crédito Público mediante reglas de carácter general.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4258,7 +4280,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- En el momento en que el importador presente el pedimento para su trámite en los términos de la legislación aduanera.",
+          "contenido": "En el momento en que el importador presente el pedimento para su trámite en los términos de la legislación aduanera.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4270,7 +4292,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- En caso de importación temporal al convertirse en definitiva.",
+          "contenido": "En caso de importación temporal al convertirse en definitiva.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4279,7 +4301,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Tratándose de los casos previstos en las fracciones II a IV del artículo 24 de esta Ley, en el momento en el que se pague efectivamente la contraprestación.",
+          "contenido": "Tratándose de los casos previstos en las fracciones II a IV del artículo 24 de esta Ley, en el momento en el que se pague efectivamente la contraprestación.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4484,6 +4506,15 @@
           "referencias": [
             "Artículo adicionado DOF 28-12-1989. Derogado DOF 26-12-1990. Adicionado DOF 11-12-2013"
           ]
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la exportación de bienes o servicios",
+          "padre_numero": 5,
+          "x_id": 203,
+          "x_texto": 203
         }
       ]
     },
@@ -4518,7 +4549,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- La que tenga el carácter de definitiva en los términos de la Ley Aduanera.",
+          "contenido": "La que tenga el carácter de definitiva en los términos de la Ley Aduanera.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4530,7 +4561,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- La enajenación de bienes intangibles realizada por persona residente en el país a quien resida en el extranjero.",
+          "contenido": "La enajenación de bienes intangibles realizada por persona residente en el país a quien resida en el extranjero.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4539,7 +4570,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- El uso o goce temporal, en el extranjero de bienes intangibles proporcionados por personas residentes en el país.",
+          "contenido": "El uso o goce temporal, en el extranjero de bienes intangibles proporcionados por personas residentes en el país.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4548,7 +4579,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- El aprovechamiento en el extranjero de servicios prestados por residentes en el país, por concepto de:",
+          "contenido": "El aprovechamiento en el extranjero de servicios prestados por residentes en el país, por concepto de:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4557,7 +4588,7 @@
           "numero": 7,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": ".- Asistencia técnica, servicios técnicos relacionados con ésta e informaciones relativas a experiencias industriales, comerciales o científicas.",
+          "contenido": "Asistencia técnica, servicios técnicos relacionados con ésta e informaciones relativas a experiencias industriales, comerciales o científicas.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4569,7 +4600,7 @@
           "numero": 8,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": ".- Operaciones de maquila y submaquila para exportación en los términos de la legislación aduanera y del Decreto para el Fomento y Operación de la Industria Maquiladora de Exportación. Para los efectos anteriores, se entenderá que los servicios se aprovechan en el extranjero cuando los bienes objeto de la maquila o submaquila sean exportados por la empresa maquiladora.",
+          "contenido": "Operaciones de maquila y submaquila para exportación en los términos de la legislación aduanera y del Decreto para el Fomento y Operación de la Industria Maquiladora de Exportación. Para los efectos anteriores, se entenderá que los servicios se aprovechan en el extranjero cuando los bienes objeto de la maquila o submaquila sean exportados por la empresa maquiladora.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4581,7 +4612,7 @@
           "numero": 9,
           "tipo": "inciso",
           "identificador": "c)",
-          "contenido": ".- Publicidad.",
+          "contenido": "Publicidad.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4593,7 +4624,7 @@
           "numero": 10,
           "tipo": "inciso",
           "identificador": "d)",
-          "contenido": ".- Comisiones y mediaciones.",
+          "contenido": "Comisiones y mediaciones.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4605,7 +4636,7 @@
           "numero": 11,
           "tipo": "inciso",
           "identificador": "e)",
-          "contenido": ".- Seguros y reaseguros, así como afianzamientos y reafianzamientos.",
+          "contenido": "Seguros y reaseguros, así como afianzamientos y reafianzamientos.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4617,7 +4648,7 @@
           "numero": 12,
           "tipo": "inciso",
           "identificador": "f)",
-          "contenido": ".- Operaciones de financiamiento.",
+          "contenido": "Operaciones de financiamiento.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4629,7 +4660,7 @@
           "numero": 13,
           "tipo": "inciso",
           "identificador": "g)",
-          "contenido": ".- Filmación o grabación, siempre que cumplan con los requisitos que al efecto se señalen en el reglamento de esta Ley.",
+          "contenido": "Filmación o grabación, siempre que cumplan con los requisitos que al efecto se señalen en el reglamento de esta Ley.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4801,7 +4832,7 @@
           "numero": 31,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- La transportación internacional de bienes prestada por residentes en el país y los servicios portuarios de carga, descarga, alijo, almacenaje, custodia, estiba y acarreo dentro de los puertos e instalaciones portuarias, siempre que se presten en maniobras para la exportación de mercancías.",
+          "contenido": "La transportación internacional de bienes prestada por residentes en el país y los servicios portuarios de carga, descarga, alijo, almacenaje, custodia, estiba y acarreo dentro de los puertos e instalaciones portuarias, siempre que se presten en maniobras para la exportación de mercancías.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4830,29 +4861,18 @@
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción adicionada DOF 15-12-1995. Reformada DOF 30-12-2002. Derogada DOF 11-12-2013"
+            "Fracción adicionada DOF 15-12-1995. Reformada DOF 30-12-2002. Derogada DOF 11-12-2013",
+            "Fracción adicionada DOF 31-12-1998. Reformada 31-12-2000. Derogada DOF 30-12-2002"
           ]
         },
         {
           "numero": 34,
           "tipo": "fraccion",
           "identificador": "VIII",
-          "contenido": "(Se deroga).",
+          "contenido": "(Se deroga). Lo previsto en el primer párrafo de este artículo se aplicará a los residentes en el país que presten servicios personales independientes que sean aprovechados en su totalidad en el extranjero por residentes en el extranjero sin establecimiento en el país.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
-          "referencias": [
-            "Fracción adicionada DOF 31-12-1998. Reformada 31-12-2000. Derogada DOF 30-12-2002"
-          ]
-        },
-        {
-          "numero": 35,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Lo previsto en el primer párrafo de este artículo se aplicará a los residentes en el país que presten servicios personales independientes que sean aprovechados en su totalidad en el extranjero por residentes en el extranjero sin establecimiento en el país.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 29-12-1993. Reformado DOF 30-12-2002"
           ]
@@ -4966,6 +4986,15 @@
             "Artículo reformado DOF 31-12-1979. Derogado DOF 31-12-1981. Adicionado DOF 28-12-1989. Reformado DOF 26-12-1990, 15-12-1995,",
             "30-12-1996, Derogado DOF 31-12-1998. Adicionado DOF 08-12-2005"
           ]
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las obligaciones de los contribuyentes",
+          "padre_numero": 6,
+          "x_id": 196,
+          "x_texto": 196
         }
       ]
     },
@@ -5003,7 +5032,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Realizar, tratándose de comisionistas, la separación en su contabilidad y registros de las operaciones que lleven a cabo por cuenta propia de las que efectúen por cuenta del comitente.",
+          "contenido": "Realizar, tratándose de comisionistas, la separación en su contabilidad y registros de las operaciones que lleven a cabo por cuenta propia de las que efectúen por cuenta del comitente.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5120,14 +5149,15 @@
           "x_id": 85,
           "x_texto": 85,
           "referencias": [
-            "Párrafo adicionado DOF 30-12-1980. Derogado DOF 31-12-1981"
+            "Párrafo adicionado DOF 30-12-1980. Derogado DOF 31-12-1981",
+            "Nota: El párrafo anterior que a la letra establecía: “Los contribuyentes dedicados a la agricultura, ganadería o"
           ]
         },
         {
           "numero": 14,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Nota: El párrafo anterior que a la letra establecía: “Los contribuyentes dedicados a la agricultura, ganadería o pesca, comercial, por cuyas actividades únicamente sea aplicable la tasa del 0%, podrán optar por quedar liberados de las obligaciones establecidas en las fracciones I, II y IV, de este artículo y en ese caso, no tendrán derecho a devolución”, fue expresamente derogado por Decreto DOF 31-12-1981. Sin embargo, en el Decreto de fecha 31-12-1987, se hace referencia a la frase inicial de dicho párrafo: “Los contribuyentes dedicados a:”, como si el mismo no hubiera sido previamente derogado.",
+          "contenido": "pesca, comercial, por cuyas actividades únicamente sea aplicable la tasa del 0%, podrán optar por quedar liberados de las obligaciones establecidas en las fracciones I, II y IV, de este artículo y en ese caso, no tendrán derecho a devolución”, fue expresamente derogado por Decreto DOF 31-12-1981. Sin embargo, en el Decreto de fecha 31-12-1987, se hace referencia a la frase inicial de dicho párrafo: “Los contribuyentes dedicados a:”, como si el mismo no hubiera sido previamente derogado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -5339,6 +5369,15 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1981, 28-12-1989. Derogado DOF 29-12-1997"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las facultades de las autoridades",
+          "padre_numero": 1,
+          "x_id": 211,
+          "x_texto": 211
         }
       ]
     },
@@ -5399,6 +5438,15 @@
           "referencias": [
             "Artículo derogado DOF 31-12-1981"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las participaciones a las entidades federativas",
+          "padre_numero": 1,
+          "x_id": 176,
+          "x_texto": 176
         }
       ]
     },
@@ -5412,26 +5460,35 @@
           "numero": 1,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La Secretaría de Hacienda y Crédito Público celebrará convenio con los Estados que soliciten adherirse al Sistema Nacional de Coordinación Fiscal para recibir participaciones en los términos de la Ley de Coordinación Fiscal, conviniendo en no mantener impuestos locales o municipales sobre: l.- Los actos o actividades por los que deba pagarse el impuesto al valor agregado o sobre las prestaciones o contraprestaciones que deriven de los mismos, ni sobre la producción de bienes cuando por su enajenación deba pagarse dicho impuesto, excepto la prestación de servicios de hospedaje, campamentos, paraderos de casas rodantes y de tiempo compartido.",
+          "contenido": "La Secretaría de Hacienda y Crédito Público celebrará convenio con los Estados que soliciten adherirse al Sistema Nacional de Coordinación Fiscal para recibir participaciones en los términos de la Ley de Coordinación Fiscal, conviniendo en no mantener impuestos locales o municipales sobre:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
         },
         {
           "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Para los efectos de esta fracción, en los servicios de hospedaje, campamentos, paraderos de casas rodantes y de tiempo compartido, sólo se considerará el albergue sin incluir a los alimentos y demás servicios relacionados con los mismos.",
-          "padre_numero": 1,
-          "x_id": 113,
-          "x_texto": 113
+          "tipo": "fraccion",
+          "identificador": "I",
+          "contenido": "l.- Los actos o actividades por los que deba pagarse el impuesto al valor agregado o sobre las prestaciones o contraprestaciones que deriven de los mismos, ni sobre la producción de bienes cuando por su enajenación deba pagarse dicho impuesto, excepto la prestación de servicios de hospedaje, campamentos, paraderos de casas rodantes y de tiempo compartido.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
         },
         {
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
+          "contenido": "Para los efectos de esta fracción, en los servicios de hospedaje, campamentos, paraderos de casas rodantes y de tiempo compartido, sólo se considerará el albergue sin incluir a los alimentos y demás servicios relacionados con los mismos.",
+          "padre_numero": 2,
+          "x_id": 113,
+          "x_texto": 113
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
           "contenido": "Los impuestos locales o municipales que establezcan las entidades federativas en la enajenación de bienes o prestación de servicios mencionados en esta fracción, no se considerarán como valor para calcular el impuesto a que se refiere esta Ley.",
-          "padre_numero": 1,
+          "padre_numero": 2,
           "x_id": 113,
           "x_texto": 113,
           "referencias": [
@@ -5439,7 +5496,7 @@
           ]
         },
         {
-          "numero": 4,
+          "numero": 5,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "La enajenación de bienes o prestación de servicios cuando una u otras se exporten o sean de los señalados en el artículo 2o.-A de esta Ley.",
@@ -5451,10 +5508,10 @@
           ]
         },
         {
-          "numero": 5,
+          "numero": 6,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Los bienes que integren el activo o sobre la utilidad o el capital de las empresas, excepto por la tenencia o uso de automóviles, ómnibuses, camiones y tractores no agrícolas tipo quinta rueda, aeronaves, embarcaciones, veleros, esquíes acuáticos motorizados, motocicleta acuática, tabla de oleaje con motor, automóviles eléctricos y motocicletas.",
+          "contenido": "Los bienes que integren el activo o sobre la utilidad o el capital de las empresas, excepto por la tenencia o uso de automóviles, ómnibuses, camiones y tractores no agrícolas tipo quinta rueda, aeronaves, embarcaciones, veleros, esquíes acuáticos motorizados, motocicleta acuática, tabla de oleaje con motor, automóviles eléctricos y motocicletas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -5463,10 +5520,10 @@
           ]
         },
         {
-          "numero": 6,
+          "numero": 7,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Intereses, los títulos de crédito, las operaciones financieras derivadas y los productos o rendimientos derivados de su propiedad o enajenación.",
+          "contenido": "Intereses, los títulos de crédito, las operaciones financieras derivadas y los productos o rendimientos derivados de su propiedad o enajenación.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -5475,10 +5532,10 @@
           ]
         },
         {
-          "numero": 7,
+          "numero": 8,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- El uso o goce temporal de casa habitación.",
+          "contenido": "El uso o goce temporal de casa habitación.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -5487,7 +5544,7 @@
           ]
         },
         {
-          "numero": 8,
+          "numero": 9,
           "tipo": "fraccion",
           "identificador": "VI",
           "contenido": "Espectáculos públicos consistentes en obras de teatro y funciones de circo, que en su conjunto superen un gravamen a nivel local del 8% calculado sobre el ingreso total que derive de dichas actividades.",
@@ -5499,11 +5556,11 @@
           ]
         },
         {
-          "numero": 9,
+          "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Queda comprendido dentro de esta limitante cualquier gravamen adicional que se les establezca con motivo de las citadas actividades.",
-          "padre_numero": 8,
+          "padre_numero": 9,
           "x_id": 113,
           "x_texto": 113,
           "referencias": [
@@ -5511,10 +5568,10 @@
           ]
         },
         {
-          "numero": 10,
+          "numero": 11,
           "tipo": "fraccion",
           "identificador": "VII",
-          "contenido": "- La enajenación de billetes y demás comprobantes que permitan participar en loterías, rifas, sorteos y concursos de toda clase, organizados por organismos públicos descentralizados de la Administración Pública Federal, cuyo objeto social sea la obtención de recursos para destinarlos a la asistencia pública.",
+          "contenido": "La enajenación de billetes y demás comprobantes que permitan participar en loterías, rifas, sorteos y concursos de toda clase, organizados por organismos públicos descentralizados de la Administración Pública Federal, cuyo objeto social sea la obtención de recursos para destinarlos a la asistencia pública.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -5523,7 +5580,7 @@
           ]
         },
         {
-          "numero": 11,
+          "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tampoco mantendrán impuestos locales o municipales de carácter adicional sobre las participaciones en gravámenes federales que les correspondan.",
@@ -5532,7 +5589,7 @@
           "x_texto": 85
         },
         {
-          "numero": 12,
+          "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Distrito Federal no establecerá ni mantendrá en vigor los gravámenes a que se refiere este artículo.",
@@ -5597,7 +5654,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Producción, introducción, transmisión, distribución, venta o consumo de energía eléctrica.",
+          "contenido": "Producción, introducción, transmisión, distribución, venta o consumo de energía eléctrica.",
           "padre_numero": null,
           "x_id": 100,
           "x_texto": 122,
@@ -5609,7 +5666,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Actos de organización de empresas generadoras o importadoras de energía eléctrica.",
+          "contenido": "Actos de organización de empresas generadoras o importadoras de energía eléctrica.",
           "padre_numero": null,
           "x_id": 100,
           "x_texto": 122,
@@ -5621,7 +5678,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Capitales invertidos en los fines que expresa la fracción I.",
+          "contenido": "Capitales invertidos en los fines que expresa la fracción I.",
           "padre_numero": null,
           "x_id": 100,
           "x_texto": 122,
@@ -5633,7 +5690,7 @@
           "numero": 8,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Expedición o emisión por empresas generadoras e importadoras de energía eléctrica, de títulos, acciones u obligaciones y operaciones relativas a los mismos.",
+          "contenido": "Expedición o emisión por empresas generadoras e importadoras de energía eléctrica, de títulos, acciones u obligaciones y operaciones relativas a los mismos.",
           "padre_numero": null,
           "x_id": 100,
           "x_texto": 122,
@@ -5645,7 +5702,7 @@
           "numero": 9,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- Dividendos, intereses o utilidades que representan o perciban las empresas que señala la fracción anterior.",
+          "contenido": "Dividendos, intereses o utilidades que representan o perciban las empresas que señala la fracción anterior.",
           "padre_numero": null,
           "x_id": 100,
           "x_texto": 122,
@@ -5835,5 +5892,6 @@
       ]
     }
   ],
-  "ultima_reforma_dof": "2021-11-12"
+  "ultima_reforma_dof": "2021-11-12",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf"
 }

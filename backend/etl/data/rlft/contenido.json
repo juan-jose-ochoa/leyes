@@ -1,20 +1,20 @@
 {
   "_advertencia": [
-    "╔══════════════════════════════════════════════════════════════════╗",
-    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
-    "║                                                                  ║",
-    "║  NO MODIFICAR MANUALMENTE                                        ║",
-    "║                                                                  ║",
-    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
-    "║  La base de datos se regenera desde aquí.                       ║",
-    "║                                                                  ║",
-    "║  Si el contenido es incorrecto:                                 ║",
-    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
-    "║                                                                  ║",
-    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
-    "╚══════════════════════════════════════════════════════════════════╝"
+    "=====================================================================",
+    "  ARCHIVO SAGRADO - FUENTE UNICA DE VERDAD",
+    "",
+    "  NO MODIFICAR MANUALMENTE",
+    "",
+    "  Este archivo es la UNICA fuente de verdad para el contenido.",
+    "  La base de datos se regenera desde aqui.",
+    "",
+    "  Si el contenido es incorrecto:",
+    "    -> CORRIGE EL SCRIPT, no este archivo",
+    "",
+    "  Modificarlo manualmente es SABOTAJE al sistema.",
+    "====================================================================="
   ],
-  "_generado_por": "extraer.py",
+  "_generado_por": "extractor/ExtractorGeneral",
   "ley": "RLFT",
   "tipo_contenido": "articulo",
   "articulos": [
@@ -223,6 +223,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Información a los Trabajadores",
+          "padre_numero": 1,
+          "x_id": 210,
+          "x_texto": 210
         }
       ]
     },
@@ -309,6 +318,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Objeciones de los Trabajadores",
+          "padre_numero": 1,
+          "x_id": 205,
+          "x_texto": 205
         }
       ]
     },
@@ -472,6 +490,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Repartos Adicionales",
+          "padre_numero": 1,
+          "x_id": 232,
+          "x_texto": 232
         }
       ]
     },
@@ -515,6 +542,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Autoridades Laborales",
+          "padre_numero": 1,
+          "x_id": 229,
+          "x_texto": 229
         }
       ]
     },
@@ -575,6 +611,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Comisión Intersecretarial",
+          "padre_numero": 1,
+          "x_id": 225,
+          "x_texto": 225
         }
       ]
     },
@@ -642,19 +687,10 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "VI",
-          "contenido": "Las demás que le encomienden los titulares de las unidades administrativas que la integran.",
+          "contenido": "Las demás que le encomienden los titulares de las unidades administrativas que la integran. La Comisión Intersecretarial para la Participación de Utilidades a los Trabajadores contará con un Secretario Técnico, que será designado por los integrantes de la misma.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "La Comisión Intersecretarial para la Participación de Utilidades a los Trabajadores contará con un Secretario Técnico, que será designado por los integrantes de la misma.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
         }
       ]
     },
@@ -681,6 +717,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Medios de Defensa de los Trabajadores",
+          "padre_numero": 2,
+          "x_id": 185,
+          "x_texto": 185
         }
       ]
     },
@@ -719,5 +764,6 @@
       ]
     }
   ],
-  "ultima_reforma_dof": "2014-06-05"
+  "ultima_reforma_dof": "2014-06-05",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_Art121-122_LFT_050614.pdf"
 }

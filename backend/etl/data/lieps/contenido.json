@@ -1,20 +1,20 @@
 {
   "_advertencia": [
-    "╔══════════════════════════════════════════════════════════════════╗",
-    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
-    "║                                                                  ║",
-    "║  NO MODIFICAR MANUALMENTE                                        ║",
-    "║                                                                  ║",
-    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
-    "║  La base de datos se regenera desde aquí.                       ║",
-    "║                                                                  ║",
-    "║  Si el contenido es incorrecto:                                 ║",
-    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
-    "║                                                                  ║",
-    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
-    "╚══════════════════════════════════════════════════════════════════╝"
+    "=====================================================================",
+    "  ARCHIVO SAGRADO - FUENTE UNICA DE VERDAD",
+    "",
+    "  NO MODIFICAR MANUALMENTE",
+    "",
+    "  Este archivo es la UNICA fuente de verdad para el contenido.",
+    "  La base de datos se regenera desde aqui.",
+    "",
+    "  Si el contenido es incorrecto:",
+    "    -> CORRIGE EL SCRIPT, no este archivo",
+    "",
+    "  Modificarlo manualmente es SABOTAJE al sistema.",
+    "====================================================================="
   ],
-  "_generado_por": "extraer.py",
+  "_generado_por": "extractor/ExtractorGeneral",
   "ley": "LIEPS",
   "tipo_contenido": "articulo",
   "articulos": [
@@ -276,7 +276,7 @@
           "numero": 17,
           "tipo": "numeral",
           "identificador": "1.",
-          "contenido": "Combustibles fósiles Cuota Unidad de medida a. Gasolina menor a 91 octanos .................. 6.4555 pesos por litro.",
+          "contenido": "Combustibles fósiles Cuota Unidad de medida a.",
           "padre_numero": 16,
           "x_id": 140,
           "x_texto": 162,
@@ -290,7 +290,16 @@
           "numero": 18,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "b. Gasolina mayor o igual a 91 octanos ...... 5.4513 pesos por litro.",
+          "contenido": "Gasolina menor a 91 octanos .................. 6.4555 pesos por litro.",
+          "padre_numero": 17,
+          "x_id": 183,
+          "x_texto": 183
+        },
+        {
+          "numero": 19,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "b.",
           "padre_numero": 17,
           "x_id": 161,
           "x_texto": 161,
@@ -301,10 +310,19 @@
           ]
         },
         {
-          "numero": 19,
+          "numero": 20,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "c. Diésel ....................................................... 7.0946 pesos por litro.",
+          "contenido": "Gasolina mayor o igual a 91 octanos ...... 5.4513 pesos por litro.",
+          "padre_numero": 19,
+          "x_id": 183,
+          "x_texto": 183
+        },
+        {
+          "numero": 21,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "c.",
           "padre_numero": 17,
           "x_id": 161,
           "x_texto": 161,
@@ -314,7 +332,16 @@
           ]
         },
         {
-          "numero": 20,
+          "numero": 22,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Diésel ....................................................... 7.0946 pesos por litro.",
+          "padre_numero": 21,
+          "x_id": 183,
+          "x_texto": 183
+        },
+        {
+          "numero": 23,
           "tipo": "numeral",
           "identificador": "2.",
           "contenido": "Combustibles no fósiles ................................... 5.4513 pesos por litro.",
@@ -327,7 +354,7 @@
           ]
         },
         {
-          "numero": 21,
+          "numero": 24,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de fracciones de las unidades de medida, la cuota se aplicará en la proporción en que corresponda a dichas fracciones respecto de la unidad de medida.",
@@ -336,7 +363,7 @@
           "x_texto": 140
         },
         {
-          "numero": 22,
+          "numero": 25,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las cantidades señaladas en el presente inciso, se actualizarán anualmente y entrarán en vigor a partir del 1 de enero de cada año, con el factor de actualización correspondiente al periodo comprendido desde el mes de diciembre del penúltimo año hasta el mes de diciembre inmediato anterior a aquél por el cual se efectúa la actualización, mismo que se obtendrá de conformidad con el artículo 17-A del Código Fiscal de la Federación. La Secretaría de Hacienda y Crédito Público publicará el factor de actualización en el Diario Oficial de la Federación durante el mes de diciembre de cada año, así como la cuota actualizada, misma que se expresará hasta el diezmilésimo.",
@@ -348,7 +375,7 @@
           ]
         },
         {
-          "numero": 23,
+          "numero": 26,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando los bienes a que se refiere este inciso estén mezclados, la cuota se calculará conforme a la cantidad que en la mezcla tenga cada combustible. Tratándose de la importación o enajenación de dichas mezclas, los contribuyentes deberán consignar la cantidad de cada uno de los combustibles que se contengan en la mezcla en el pedimento de importación o en el comprobante fiscal, según corresponda.",
@@ -360,7 +387,7 @@
           ]
         },
         {
-          "numero": 24,
+          "numero": 27,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando la autoridad aduanera o fiscal, en ejercicio de sus facultades de comprobación, detecte que por las características de la mercancía que se introduce o pretende introducir a territorio nacional, se trata de los bienes a que se refiere este inciso, respecto de los cuales se ha omitido el pago total o parcial del impuesto a que se refiere el presente inciso, se aplicará la cuota que corresponda según el tipo de combustible de que se trate, sin perjuicio de las sanciones administrativas y penales que sean procedentes.",
@@ -373,7 +400,7 @@
           ]
         },
         {
-          "numero": 25,
+          "numero": 28,
           "tipo": "texto",
           "identificador": null,
           "contenido": "E) (Se deroga).",
@@ -385,7 +412,7 @@
           ]
         },
         {
-          "numero": 26,
+          "numero": 29,
           "tipo": "texto",
           "identificador": null,
           "contenido": "F) Bebidas energetizantes, así como concentrados, polvos y jarabes para preparar bebidas energetizantes ..................................................................................................... 25%",
@@ -397,7 +424,7 @@
           ]
         },
         {
-          "numero": 27,
+          "numero": 30,
           "tipo": "texto",
           "identificador": null,
           "contenido": "G) Bebidas saborizadas; concentrados, polvos, jarabes, esencias o extractos de sabores, que al diluirse permitan obtener bebidas saborizadas; y jarabes o concentrados para preparar bebidas saborizadas que se expendan en envases abiertos utilizando aparatos automáticos, eléctricos o mecánicos, siempre que los bienes a que se refiere este inciso contengan cualquier tipo de azúcares o edulcorantes añadidos.",
@@ -406,29 +433,29 @@
           "x_texto": 113
         },
         {
-          "numero": 28,
+          "numero": 31,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las cuotas aplicables serán de $3.0818 por litro cuando se trate de bebidas saborizadas que contengan cualquier tipo de azúcares añadidos y de $1.5000 por litro cuando contengan cualquier tipo de edulcorantes añadidos. Tratándose de concentrados, polvos, jarabes, esencias o extractos de sabores, el impuesto se calculará tomando en cuenta el número de litros de bebidas saborizadas que, de conformidad con las especificaciones del fabricante, se puedan obtener.",
-          "padre_numero": 27,
+          "padre_numero": 30,
           "x_id": 140,
           "x_texto": 140
         },
         {
-          "numero": 29,
+          "numero": 32,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Lo dispuesto en este inciso también será aplicable a los bienes mencionados en el inciso F) de esta fracción, cuando contengan azúcares o edulcorantes añadidos, en adición al impuesto establecido en dicho inciso F).",
-          "padre_numero": 27,
+          "padre_numero": 30,
           "x_id": 140,
           "x_texto": 140
         },
         {
-          "numero": 30,
+          "numero": 33,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las cuotas a que se refiere este inciso se actualizarán anualmente y entrarán en vigor a partir del 1 de enero de cada año, con el factor de actualización correspondiente al periodo comprendido desde el mes de diciembre del penúltimo año hasta el mes de diciembre inmediato anterior a aquél por el cual se efectúa la actualización, mismo que se obtendrá de conformidad con el artículo 17-A del Código Fiscal de la Federación. La Secretaría de Hacienda y Crédito Público publicará el factor de actualización en el Diario Oficial de la Federación durante el mes de diciembre de cada año, así como las cuotas actualizadas, mismas que se expresarán hasta el diezmilésimo.",
-          "padre_numero": 27,
+          "padre_numero": 30,
           "x_id": 140,
           "x_texto": 140,
           "referencias": [
@@ -439,92 +466,101 @@
           ]
         },
         {
-          "numero": 31,
-          "tipo": "numeral",
-          "identificador": "1.",
-          "contenido": "Propano ....................................... 9.7551 centavos por litro.",
-          "padre_numero": 27,
-          "x_id": 145,
-          "x_texto": 167
-        },
-        {
-          "numero": 32,
-          "tipo": "numeral",
-          "identificador": "2.",
-          "contenido": "Butano ......................................... 12.6241 centavos por litro.",
-          "padre_numero": 27,
-          "x_id": 145,
-          "x_texto": 167
-        },
-        {
-          "numero": 33,
-          "tipo": "numeral",
-          "identificador": "3.",
-          "contenido": "Gasolinas y gasavión .................. 17.1107 centavos por litro.",
-          "padre_numero": 27,
-          "x_id": 145,
-          "x_texto": 167
-        },
-        {
           "numero": 34,
-          "tipo": "numeral",
-          "identificador": "4.",
-          "contenido": "Turbosina y otros kerosenos ....... 20.4363 centavos por litro.",
-          "padre_numero": 27,
-          "x_id": 145,
-          "x_texto": 167
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "H) Combustibles Fósiles Cuota Unidad de medida",
+          "padre_numero": 2,
+          "x_id": 113,
+          "x_texto": 113
         },
         {
           "numero": 35,
           "tipo": "numeral",
-          "identificador": "5.",
-          "contenido": "Diesel ........................................... 20.7623 centavos por litro.",
-          "padre_numero": 27,
+          "identificador": "1.",
+          "contenido": "Propano ....................................... 9.7551 centavos por litro.",
+          "padre_numero": 34,
           "x_id": 145,
           "x_texto": 167
         },
         {
           "numero": 36,
           "tipo": "numeral",
-          "identificador": "6.",
-          "contenido": "Combustóleo ............................... 22.1578 centavos por litro.",
-          "padre_numero": 27,
+          "identificador": "2.",
+          "contenido": "Butano ......................................... 12.6241 centavos por litro.",
+          "padre_numero": 34,
           "x_id": 145,
           "x_texto": 167
         },
         {
           "numero": 37,
           "tipo": "numeral",
-          "identificador": "7.",
-          "contenido": "Coque de petróleo ....................... 25.7183 pesos por tonelada.",
-          "padre_numero": 27,
+          "identificador": "3.",
+          "contenido": "Gasolinas y gasavión .................. 17.1107 centavos por litro.",
+          "padre_numero": 34,
           "x_id": 145,
           "x_texto": 167
         },
         {
           "numero": 38,
           "tipo": "numeral",
-          "identificador": "8.",
-          "contenido": "Coque de carbón ......................... 60.2921 pesos por tonelada.",
-          "padre_numero": 27,
+          "identificador": "4.",
+          "contenido": "Turbosina y otros kerosenos ....... 20.4363 centavos por litro.",
+          "padre_numero": 34,
           "x_id": 145,
           "x_texto": 167
         },
         {
           "numero": 39,
           "tipo": "numeral",
-          "identificador": "9.",
-          "contenido": "Carbón mineral ............................ 45.3984 pesos por tonelada.",
-          "padre_numero": 27,
+          "identificador": "5.",
+          "contenido": "Diesel ........................................... 20.7623 centavos por litro.",
+          "padre_numero": 34,
           "x_id": 145,
           "x_texto": 167
         },
         {
           "numero": 40,
           "tipo": "numeral",
+          "identificador": "6.",
+          "contenido": "Combustóleo ............................... 22.1578 centavos por litro.",
+          "padre_numero": 34,
+          "x_id": 145,
+          "x_texto": 167
+        },
+        {
+          "numero": 41,
+          "tipo": "numeral",
+          "identificador": "7.",
+          "contenido": "Coque de petróleo ....................... 25.7183 pesos por tonelada.",
+          "padre_numero": 34,
+          "x_id": 145,
+          "x_texto": 167
+        },
+        {
+          "numero": 42,
+          "tipo": "numeral",
+          "identificador": "8.",
+          "contenido": "Coque de carbón ......................... 60.2921 pesos por tonelada.",
+          "padre_numero": 34,
+          "x_id": 145,
+          "x_texto": 167
+        },
+        {
+          "numero": 43,
+          "tipo": "numeral",
+          "identificador": "9.",
+          "contenido": "Carbón mineral ............................ 45.3984 pesos por tonelada.",
+          "padre_numero": 34,
+          "x_id": 145,
+          "x_texto": 167
+        },
+        {
+          "numero": 44,
+          "tipo": "numeral",
           "identificador": "10.",
           "contenido": "Otros combustibles fósiles ......... 65.6262 pesos por tonelada de carbono que contenga el combustible.",
-          "padre_numero": 27,
+          "padre_numero": 34,
           "x_id": 145,
           "x_texto": 167,
           "referencias": [
@@ -533,20 +569,20 @@
           ]
         },
         {
-          "numero": 41,
+          "numero": 45,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de fracciones de las unidades de medida, la cuota se aplicará en la proporción que corresponda a dichas fracciones respecto de la unidad de medida de que se trate.",
-          "padre_numero": 27,
+          "padre_numero": 34,
           "x_id": 140,
           "x_texto": 140
         },
         {
-          "numero": 42,
+          "numero": 46,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando los bienes a que se refiere este inciso estén mezclados, la cuota se calculará conforme a la cantidad que en la mezcla tenga cada combustible. Tratándose de la importación o enajenación de dichas mezclas, los contribuyentes deberán consignar la cantidad de cada uno de los combustibles que se contengan en la mezcla en el pedimento de importación o en el comprobante fiscal, según corresponda.",
-          "padre_numero": 27,
+          "padre_numero": 34,
           "x_id": 140,
           "x_texto": 140,
           "referencias": [
@@ -554,11 +590,11 @@
           ]
         },
         {
-          "numero": 43,
+          "numero": 47,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las cantidades señaladas en el presente inciso, se actualizarán anualmente y entrarán en vigor a partir del 1 de enero de cada año, con el factor de actualización correspondiente al periodo comprendido desde el mes de diciembre del penúltimo año hasta el mes de diciembre inmediato anterior a aquél por el cual se efectúa la actualización, mismo que se obtendrá de conformidad con el artículo 17-A del Código Fiscal de la Federación. La Secretaría de Hacienda y Crédito Público publicará el factor de actualización en el Diario Oficial de la Federación durante el mes de diciembre de cada año, así como la cuota actualizada, misma que se expresará hasta el diezmilésimo.",
-          "padre_numero": 27,
+          "padre_numero": 34,
           "x_id": 140,
           "x_texto": 140,
           "referencias": [
@@ -567,7 +603,7 @@
           ]
         },
         {
-          "numero": 44,
+          "numero": 48,
           "tipo": "texto",
           "identificador": null,
           "contenido": "I) Plaguicidas. La tasa se aplicará conforme a la categoría de peligro de toxicidad aguda, en la forma siguiente:",
@@ -576,56 +612,65 @@
           "x_texto": 113
         },
         {
-          "numero": 45,
+          "numero": 49,
           "tipo": "numeral",
           "identificador": "1.",
           "contenido": "Categorías 1 y 2 .............................................................................................. 9%",
-          "padre_numero": 44,
+          "padre_numero": 48,
           "x_id": 139,
           "x_texto": 161
         },
         {
-          "numero": 46,
+          "numero": 50,
           "tipo": "numeral",
           "identificador": "2.",
           "contenido": "Categoría 3 ..................................................................................................... 7%",
-          "padre_numero": 44,
+          "padre_numero": 48,
           "x_id": 139,
           "x_texto": 161
         },
         {
-          "numero": 47,
+          "numero": 51,
           "tipo": "numeral",
           "identificador": "3.",
           "contenido": "Categoría 4 ..................................................................................................... 6%",
-          "padre_numero": 44,
+          "padre_numero": 48,
           "x_id": 139,
           "x_texto": 161
         },
         {
-          "numero": 48,
+          "numero": 52,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La categoría de peligro de toxicidad aguda se determinará conforme a la siguiente tabla: Categoría Categoría Categoría Categoría Categoría Vía de exposición 1 2 3 4 5 Oral (mg/kg) 5 50 300 2000 5000 Dérmica (mg/kg) 50 200 1000 2000 -",
-          "padre_numero": 44,
+          "contenido": "La categoría de peligro de toxicidad aguda se determinará conforme a la siguiente tabla: Tabla 1. Categorías de peligro de toxicidad aguda",
+          "padre_numero": 48,
           "x_id": 140,
           "x_texto": 140
         },
         {
-          "numero": 49,
+          "numero": 53,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Categoría Categoría Categoría Categoría Categoría Vía de exposición 1 2 3 4 5 Oral (mg/kg) 5 50 300 2000 5000 Dérmica (mg/kg) 50 200 1000 2000 -",
+          "padre_numero": 52,
+          "x_id": 251,
+          "x_texto": 251
+        },
+        {
+          "numero": 54,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Inhalatoria 100 500 2500 5000 Gases (ppmV) Inhalatoria 0,5 2 10 20 Vapores (mg/l) Inhalatoria 0,05 0,5 1 5 Polvos y nieblas (mg/l)",
-          "padre_numero": 44,
+          "padre_numero": 48,
           "x_id": 145,
           "x_texto": 145
         },
         {
-          "numero": 50,
+          "numero": 55,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La aplicación de la tabla se sujetará a lo dispuesto a la Norma Oficial Mexicana “NOM- 232-SSA1-2009, Plaguicidas: que establece los requisitos del envase, embalaje y etiquetado de productos grado técnico y para uso agrícola, forestal, pecuario, jardinería, urbano, industrial y doméstico”, publicada en el Diario Oficial de la Federación el 13 de abril de 2010, emitida por la autoridad competente.",
-          "padre_numero": 44,
+          "padre_numero": 48,
           "x_id": 139,
           "x_texto": 139,
           "referencias": [
@@ -633,7 +678,7 @@
           ]
         },
         {
-          "numero": 51,
+          "numero": 56,
           "tipo": "texto",
           "identificador": null,
           "contenido": "J) Alimentos no básicos que se listan a continuación, con una densidad calórica de 275 kilocalorías o mayor por cada 100 gramos ........................................................... 8%",
@@ -642,101 +687,101 @@
           "x_texto": 113
         },
         {
-          "numero": 52,
+          "numero": 57,
           "tipo": "numeral",
           "identificador": "1.",
           "contenido": "Botanas.",
-          "padre_numero": 51,
-          "x_id": 139,
-          "x_texto": 161
-        },
-        {
-          "numero": 53,
-          "tipo": "numeral",
-          "identificador": "2.",
-          "contenido": "Productos de confitería.",
-          "padre_numero": 51,
-          "x_id": 139,
-          "x_texto": 161
-        },
-        {
-          "numero": 54,
-          "tipo": "numeral",
-          "identificador": "3.",
-          "contenido": "Chocolate y demás productos derivados del cacao.",
-          "padre_numero": 51,
-          "x_id": 139,
-          "x_texto": 161
-        },
-        {
-          "numero": 55,
-          "tipo": "numeral",
-          "identificador": "4.",
-          "contenido": "Flanes y pudines.",
-          "padre_numero": 51,
-          "x_id": 139,
-          "x_texto": 161
-        },
-        {
-          "numero": 56,
-          "tipo": "numeral",
-          "identificador": "5.",
-          "contenido": "Dulces de frutas y hortalizas.",
-          "padre_numero": 51,
-          "x_id": 139,
-          "x_texto": 161
-        },
-        {
-          "numero": 57,
-          "tipo": "numeral",
-          "identificador": "6.",
-          "contenido": "Cremas de cacahuate y avellanas.",
-          "padre_numero": 51,
+          "padre_numero": 56,
           "x_id": 139,
           "x_texto": 161
         },
         {
           "numero": 58,
           "tipo": "numeral",
-          "identificador": "7.",
-          "contenido": "Dulces de leche.",
-          "padre_numero": 51,
+          "identificador": "2.",
+          "contenido": "Productos de confitería.",
+          "padre_numero": 56,
           "x_id": 139,
           "x_texto": 161
         },
         {
           "numero": 59,
           "tipo": "numeral",
-          "identificador": "8.",
-          "contenido": "Alimentos preparados a base de cereales.",
-          "padre_numero": 51,
+          "identificador": "3.",
+          "contenido": "Chocolate y demás productos derivados del cacao.",
+          "padre_numero": 56,
           "x_id": 139,
           "x_texto": 161
         },
         {
           "numero": 60,
           "tipo": "numeral",
-          "identificador": "9.",
-          "contenido": "Helados, nieves y paletas de hielo.",
-          "padre_numero": 51,
+          "identificador": "4.",
+          "contenido": "Flanes y pudines.",
+          "padre_numero": 56,
           "x_id": 139,
           "x_texto": 161
         },
         {
           "numero": 61,
+          "tipo": "numeral",
+          "identificador": "5.",
+          "contenido": "Dulces de frutas y hortalizas.",
+          "padre_numero": 56,
+          "x_id": 139,
+          "x_texto": 161
+        },
+        {
+          "numero": 62,
+          "tipo": "numeral",
+          "identificador": "6.",
+          "contenido": "Cremas de cacahuate y avellanas.",
+          "padre_numero": 56,
+          "x_id": 139,
+          "x_texto": 161
+        },
+        {
+          "numero": 63,
+          "tipo": "numeral",
+          "identificador": "7.",
+          "contenido": "Dulces de leche.",
+          "padre_numero": 56,
+          "x_id": 139,
+          "x_texto": 161
+        },
+        {
+          "numero": 64,
+          "tipo": "numeral",
+          "identificador": "8.",
+          "contenido": "Alimentos preparados a base de cereales.",
+          "padre_numero": 56,
+          "x_id": 139,
+          "x_texto": 161
+        },
+        {
+          "numero": 65,
+          "tipo": "numeral",
+          "identificador": "9.",
+          "contenido": "Helados, nieves y paletas de hielo.",
+          "padre_numero": 56,
+          "x_id": 139,
+          "x_texto": 161
+        },
+        {
+          "numero": 66,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando los alimentos mencionados cumplan con las disposiciones relativas a las especificaciones generales de etiquetado para alimentos, los contribuyentes podrán tomar en consideración las kilocalorías manifestadas en la etiqueta. Tratándose de alimentos que no tengan la etiqueta mencionada, se presumirá, salvo prueba en contrario, que tienen una densidad calórica igual o superior a 275 kilocalorías por cada 100 gramos.",
-          "padre_numero": 51,
+          "padre_numero": 56,
           "x_id": 139,
           "x_texto": 139
         },
         {
-          "numero": 62,
+          "numero": 67,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Servicio de Administración Tributaria, mediante reglas de carácter general, dará a conocer los alimentos de consumo básico, considerando su importancia en la alimentación de la población, que no quedan comprendidos en este inciso.",
-          "padre_numero": 51,
+          "padre_numero": 56,
           "x_id": 139,
           "x_texto": 139,
           "referencias": [
@@ -744,7 +789,7 @@
           ]
         },
         {
-          "numero": 63,
+          "numero": 68,
           "tipo": "texto",
           "identificador": null,
           "contenido": "K) Videojuegos con contenido violento, extremo o para adulto, no apto para personas menores de 18 años, en formato físico, siempre que la enajenación se efectúe al público en general ............................................................................................................... 8%",
@@ -753,11 +798,11 @@
           "x_texto": 113
         },
         {
-          "numero": 64,
+          "numero": 69,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Lo dispuesto en este inciso no será aplicable tratándose de la importación de los videojuegos mencionados.",
-          "padre_numero": 63,
+          "padre_numero": 68,
           "x_id": 140,
           "x_texto": 140,
           "referencias": [
@@ -765,7 +810,7 @@
           ]
         },
         {
-          "numero": 65,
+          "numero": 70,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "En la prestación de los siguientes servicios:",
@@ -774,11 +819,11 @@
           "x_texto": 107
         },
         {
-          "numero": 66,
+          "numero": 71,
           "tipo": "texto",
           "identificador": null,
           "contenido": "A) Comisión, mediación, agencia, representación, correduría, consignación y distribución, con motivo de la enajenación de los bienes señalados en los incisos A), B), C), F), I) y J) de la fracción I de este artículo. En estos casos, la tasa aplicable será la que le corresponda a la enajenación en territorio nacional del bien de que se trate en los términos que para tal efecto dispone esta Ley. No se pagará el impuesto cuando los servicios a que se refiere este inciso, sean con motivo de las enajenaciones de bienes por los que no se esté obligado al pago de este impuesto en los términos del artículo 8o. de la propia Ley.",
-          "padre_numero": 65,
+          "padre_numero": 70,
           "x_id": 113,
           "x_texto": 113,
           "referencias": [
@@ -786,38 +831,38 @@
           ]
         },
         {
-          "numero": 67,
+          "numero": 72,
           "tipo": "texto",
           "identificador": null,
           "contenido": "B) Realización de juegos con apuestas y sorteos, independientemente del nombre con el que se les designe, que requieran permiso de conformidad con lo dispuesto en la Ley Federal de Juegos y Sorteos y su Reglamento, los que realicen los organismos descentralizados, así como la realización de juegos o concursos en los que el premio se obtenga por la destreza del participante en el uso de máquinas, que en el desarrollo de aquéllos utilicen imágenes visuales electrónicas como números, símbolos, figuras u otras similares, que se efectúen en el territorio nacional. Quedan comprendidos en los juegos con apuestas, aquéllos en los que sólo se reciban, capten, crucen o exploten apuestas. Asimismo, quedan comprendidos en los sorteos, los concursos en los que se ofrezcan premios y en alguna etapa de su desarrollo intervenga directa o indirectamente el azar. ...... . 50%",
-          "padre_numero": 65,
+          "padre_numero": 70,
           "x_id": 113,
           "x_texto": 113
         },
         {
-          "numero": 68,
+          "numero": 73,
           "tipo": "texto",
           "identificador": null,
           "contenido": "También quedan comprendidos en este inciso, los juegos con apuestas y sorteos que se realicen a través de Internet o medios electrónicos por residentes en el extranjero sin establecimiento en México en términos del artículo 18-B, primer párrafo, fracciones I y II de la Ley del Impuesto al Valor Agregado. Para efectos de este párrafo, los residentes en el extranjero o, en su caso, las plataformas digitales de intermediación a que se refieren los artículos 1o.-A BIS y 18-B, fracción II de la Ley del Impuesto al Valor Agregado, deberán cumplir con las obligaciones establecidas en los artículos 5o.-A BIS y 20-A de esta Ley, según corresponda, por los servicios digitales a que se refiere este párrafo.",
-          "padre_numero": 67,
+          "padre_numero": 72,
           "x_id": 140,
           "x_texto": 140
         },
         {
-          "numero": 69,
+          "numero": 74,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La omisión en el pago del impuesto o del entero de las retenciones que, en su caso, deban efectuar y en la presentación de la declaración de pago y de la información, a que se refieren este inciso y el artículo 5o.-A BIS de esta Ley, se sancionará de conformidad con lo dispuesto en la presente Ley y en el Código Fiscal de la Federación.",
-          "padre_numero": 67,
+          "padre_numero": 72,
           "x_id": 140,
           "x_texto": 140
         },
         {
-          "numero": 70,
+          "numero": 75,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Asimismo, el incumplimiento a las obligaciones a que se refiere el párrafo anterior y las fracciones III, inciso a) y IV, inciso a) del artículo 20-A de esta Ley, dará lugar al bloqueo temporal del acceso al servicio digital del prestador de los servicios digitales, bloqueo que se realizará de conformidad con lo dispuesto en los artículos 18-H BIS a 18-H QUINTUS de la Ley del Impuesto al Valor Agregado.",
-          "padre_numero": 67,
+          "padre_numero": 72,
           "x_id": 140,
           "x_texto": 140,
           "referencias": [
@@ -825,11 +870,11 @@
           ]
         },
         {
-          "numero": 71,
+          "numero": 76,
           "tipo": "texto",
           "identificador": null,
           "contenido": "C) Los que se proporcionen en territorio nacional a través de una o más redes públicas de telecomunicaciones. .............................................................................................. 3%",
-          "padre_numero": 65,
+          "padre_numero": 70,
           "x_id": 113,
           "x_texto": 113,
           "referencias": [
@@ -837,47 +882,47 @@
           ]
         },
         {
-          "numero": 72,
+          "numero": 77,
           "tipo": "texto",
           "identificador": null,
           "contenido": "D) Los que se proporcionen en territorio nacional que permitan el acceso o descarga de videojuegos con contenido violento, extremo o para adulto, no apto para personas menores de 18 años, proporcionados por residentes en el extranjero sin establecimiento en México y residentes en el país, en términos del artículo 18-B, primer párrafo y fracción I de la Ley del Impuesto al Valor Agregado, en los siguientes supuestos: ............. 8%",
-          "padre_numero": 65,
+          "padre_numero": 70,
           "x_id": 113,
           "x_texto": 113
         },
         {
-          "numero": 73,
+          "numero": 78,
           "tipo": "numeral",
           "identificador": "1.",
           "contenido": "El acceso o descarga permitido directamente por el prestador del servicio digital.",
-          "padre_numero": 72,
+          "padre_numero": 77,
           "x_id": 140,
           "x_texto": 162
         },
         {
-          "numero": 74,
+          "numero": 79,
           "tipo": "numeral",
           "identificador": "2.",
           "contenido": "El acceso o descarga permitido a través de plataformas digitales de intermediación a que se refieren los artículos 1o.-A BIS y 18-B, fracción II de la Ley del Impuesto al Valor Agregado.",
-          "padre_numero": 72,
+          "padre_numero": 77,
           "x_id": 140,
           "x_texto": 162
         },
         {
-          "numero": 75,
+          "numero": 80,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Quedan comprendidos en este inciso los videojuegos con contenido violento, extremo o para adulto, no apto para personas menores de 18 años, cuyo acceso o descarga se realice sin el pago de una contraprestación, pero que oferten cualquier contenido adicional dentro del videojuego. En este caso, la tasa se aplicará sobre el precio pagado por el contenido adicional.",
-          "padre_numero": 72,
+          "padre_numero": 77,
           "x_id": 140,
           "x_texto": 140
         },
         {
-          "numero": 76,
+          "numero": 81,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando el acceso o descarga a que se refiere este inciso, se realice mediante el pago de una membresía o suscripción, periódica o no, que dé acceso a un catálogo de videojuegos que incluya videojuegos con contenido violento, extremo o para adulto, no apto para personas menores de 18 años, ya sea exclusivamente o conjuntamente con otro tipo de contenido o servicio digital, la tasa se aplicará únicamente al precio que corresponda por el acceso o descarga de cada videojuego por el que se deba pagar el impuesto en términos de este inciso, siempre que en el comprobante respectivo se haga la separación de cada uno de ellos. Cuando no se haga la separación mencionada, la contraprestación cobrada se entenderá que corresponde a un 70% del monto de los servicios a que se refiere este inciso, en cuyo caso dicho impuesto no podrá ser menor que el que corresponda al servicio digital de videojuegos que se hubiera pagado de manera separada al precio de la membresía o suscripción.",
-          "padre_numero": 72,
+          "padre_numero": 77,
           "x_id": 140,
           "x_texto": 140,
           "referencias": [
@@ -885,7 +930,7 @@
           ]
         },
         {
-          "numero": 77,
+          "numero": 82,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "En la exportación definitiva que realicen las empresas residentes en el país en los términos de la Ley Aduanera, de los bienes a que se refiere la fracción I, inciso J) de este artículo, siempre que sean fabricantes o productoras de dichos bienes y hayan utilizado insumos gravados de conformidad con el inciso J) citado, por los que hayan pagado el impuesto en la importación o les hayan trasladado el gravamen en la adquisición de los mismos .............................. 0%",
@@ -894,20 +939,20 @@
           "x_texto": 107
         },
         {
-          "numero": 78,
+          "numero": 83,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos de esta fracción, la tasa se aplicará al valor de la enajenación a que se refiere el artículo 11 de esta Ley y, en su defecto, a la base gravable del impuesto general de exportación en términos de la Ley Aduanera.",
-          "padre_numero": 77,
+          "padre_numero": 82,
           "x_id": 114,
           "x_texto": 114
         },
         {
-          "numero": 79,
+          "numero": 84,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las exportaciones a las que se les aplica la tasa del 0%, producirán los mismos efectos legales que los actos o actividades por los que se deba pagar el impuesto conforme a esta Ley y los productores que exporten serán considerados como contribuyentes del impuesto que establece esta Ley por los bienes a que se refiere esta fracción.",
-          "padre_numero": 77,
+          "padre_numero": 82,
           "x_id": 114,
           "x_texto": 114,
           "referencias": [
@@ -2779,6 +2824,15 @@
           "referencias": [
             "Artículo adicionado DOF 28-12-1994. Derogado DOF 31-12-1998"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Enajenación",
+          "padre_numero": 1,
+          "x_id": 259,
+          "x_texto": 259
         }
       ]
     },
@@ -3046,6 +3100,15 @@
             "Artículo reformado DOF 30-12-1983, 31-12-1987, 20-12-1991, 20-07-1992, 03-12-1993, 28-12-1994, 15-12-1995, 10-05-1996, 30-12-1996,",
             "29-12-1997, 31-12-1998, 31-12-1999, 01-01-2002, 30-12-2002, 23-12-2005, 27-11-2009, 11-12-2013, 18-11-2015"
           ]
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Importación de Bienes",
+          "padre_numero": 4,
+          "x_id": 232,
+          "x_texto": 232
         }
       ]
     },
@@ -3071,7 +3134,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- En el momento en que el importador presente el pedimento para su trámite en los términos de la legislación aduanera.",
+          "contenido": "En el momento en que el importador presente el pedimento para su trámite en los términos de la legislación aduanera.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3083,7 +3146,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- En caso de importación temporal al convertirse en definitiva.",
+          "contenido": "En caso de importación temporal al convertirse en definitiva.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3124,7 +3187,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Las que en los términos de la legislación aduanera no lleguen a consumarse, sean temporales, tengan el carácter de retorno de bienes exportados temporalmente o sean objeto de tránsito o transbordo.",
+          "contenido": "Las que en los términos de la legislación aduanera no lleguen a consumarse, sean temporales, tengan el carácter de retorno de bienes exportados temporalmente o sean objeto de tránsito o transbordo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3145,7 +3208,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Las efectuadas por pasajeros en los términos de la legislación aduanera y por las misiones diplomáticas acreditadas en México, con los controles y limitaciones que mediante disposiciones de carácter general, en su caso, establezca la Secretaría de Hacienda y Crédito Público.",
+          "contenido": "Las efectuadas por pasajeros en los términos de la legislación aduanera y por las misiones diplomáticas acreditadas en México, con los controles y limitaciones que mediante disposiciones de carácter general, en su caso, establezca la Secretaría de Hacienda y Crédito Público.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3154,7 +3217,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Las de aguamiel y productos derivados de su fermentación.",
+          "contenido": "Las de aguamiel y productos derivados de su fermentación.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3405,6 +3468,15 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1998, 31-12-1999, 01-01-2002, 18-11-2015"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Prestación de Servicios",
+          "padre_numero": 1,
+          "x_id": 229,
+          "x_texto": 229
         }
       ]
     },
@@ -3549,6 +3621,15 @@
           "referencias": [
             "Artículo adicionado DOF 07-11-2025"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Obligaciones de los Contribuyentes",
+          "padre_numero": 1,
+          "x_id": 194,
+          "x_texto": 194
         }
       ]
     },
@@ -4176,6 +4257,15 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1982, 30-12-1983, 28-12-1989, 20-12-1991, 28-12-1994, 01-01-2002, 18-11-2015"
           ]
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Facultades de las Autoridades",
+          "padre_numero": 2,
+          "x_id": 209,
+          "x_texto": 209
         }
       ]
     },
@@ -4352,7 +4442,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Los precios corrientes en el mercado interior o exterior y en defecto de éstos el de avalúo que practiquen u ordenen practicar las autoridades fiscales.",
+          "contenido": "Los precios corrientes en el mercado interior o exterior y en defecto de éstos el de avalúo que practiquen u ordenen practicar las autoridades fiscales.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4361,7 +4451,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- El costo de los bienes incrementado con el por ciento de utilidad bruta con que opere el contribuyente. Dicho por ciento se obtendrá de los datos contenidos en la declaración presentada para efectos del impuesto sobre la renta en el ejercicio de que se trate o de la última que se hubiere presentado y se determinará dividiendo la utilidad bruta declarada entre el costo declarado. A falta de declaración se entenderá que la utilidad bruta es de 50%.",
+          "contenido": "El costo de los bienes incrementado con el por ciento de utilidad bruta con que opere el contribuyente. Dicho por ciento se obtendrá de los datos contenidos en la declaración presentada para efectos del impuesto sobre la renta en el ejercicio de que se trate o de la última que se hubiere presentado y se determinará dividiendo la utilidad bruta declarada entre el costo declarado. A falta de declaración se entenderá que la utilidad bruta es de 50%.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4373,7 +4463,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- El precio en que una persona enajene bienes adquiridos del contribuyente o de intermediarios, disminuido con el coeficiente que para determinar la utilidad fiscal les correspondería, conforme a la Ley del Impuesto sobre la Renta.",
+          "contenido": "El precio en que una persona enajene bienes adquiridos del contribuyente o de intermediarios, disminuido con el coeficiente que para determinar la utilidad fiscal les correspondería, conforme a la Ley del Impuesto sobre la Renta.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4385,7 +4475,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- Tratándose de productos sujetos a precio máximo al público, el que resulte de restarle, el margen máximo autorizado al comercio y el impuesto correspondiente.",
+          "contenido": "Tratándose de productos sujetos a precio máximo al público, el que resulte de restarle, el margen máximo autorizado al comercio y el impuesto correspondiente.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4394,7 +4484,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "V",
-          "contenido": "- (Se deroga).",
+          "contenido": "(Se deroga).",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4439,7 +4529,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- (Se deroga).",
+          "contenido": "(Se deroga).",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4451,7 +4541,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- 12.3%, en cerveza.",
+          "contenido": "12.3%, en cerveza.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4460,37 +4550,26 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- 5%, en las bebidas alcohólicas que se añejen en barricas que se encuentren en lugares cubiertos, 10% cuando dichas barricas se encuentren en lugares descubiertos y 1.5% cuando el añejamiento se realice por otros sistemas; y 1% por su envasamiento.",
+          "contenido": "5%, en las bebidas alcohólicas que se añejen en barricas que se encuentren en lugares cubiertos, 10% cuando dichas barricas se encuentren en lugares descubiertos y 1.5% cuando el añejamiento se realice por otros sistemas; y 1% por su envasamiento.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción reformada DOF 31-12-1998, 31-12-1999, 01-01-2002"
+            "Fracción reformada DOF 31-12-1998, 31-12-1999, 01-01-2002",
+            "Fracción derogada DOF 28-12-1989. Adicionada DOF 26-12-1990. Derogada DOF 31-12-1998"
           ]
         },
         {
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "- (Se deroga).",
+          "contenido": "(Se deroga). Para determinar el valor en que se enajenaron los bienes, se considerará que éstos se enajenaron al precio más alto en que el contribuyente venda dichos productos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107,
-          "referencias": [
-            "Fracción derogada DOF 28-12-1989. Adicionada DOF 26-12-1990. Derogada DOF 31-12-1998"
-          ]
+          "x_texto": 107
         },
         {
           "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Para determinar el valor en que se enajenaron los bienes, se considerará que éstos se enajenaron al precio más alto en que el contribuyente venda dichos productos.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 7,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los porcientos a que se refieren las fracciones anteriores, únicamente son aplicables a los fabricantes, productores o envasadores de los bienes a que se refiere este artículo, según sea el caso.",
@@ -4910,7 +4989,18 @@
           "x_id": 85,
           "x_texto": 85,
           "referencias": [
-            "Artículo adicionado DOF 31-12-1999. Derogado DOF 01-01-2002",
+            "Artículo adicionado DOF 31-12-1999. Derogado DOF 01-01-2002"
+          ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Participaciones a las Entidades Federativas",
+          "padre_numero": 1,
+          "x_id": 174,
+          "x_texto": 174,
+          "referencias": [
             "Denominación del Capítulo reformada DOF 31-12-1999 (queda como “Título III”). Denominación reformada DOF 01-01-2002",
             "(antes Título III “De las Participaciones a las Entidades Federativas”)"
           ]
@@ -4952,7 +5042,7 @@
           "numero": 3,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Los actos de organización de los contribuyentes del impuesto establecido en esta Ley.",
+          "contenido": "Los actos de organización de los contribuyentes del impuesto establecido en esta Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4961,7 +5051,7 @@
           "numero": 4,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- La expedición o emisión de títulos, acciones u obligaciones y las operaciones relativas a los mismos por los contribuyentes del impuesto que esta Ley establece.",
+          "contenido": "La expedición o emisión de títulos, acciones u obligaciones y las operaciones relativas a los mismos por los contribuyentes del impuesto que esta Ley establece.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5011,7 +5101,7 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "- Del importe recaudado sobre cerveza:",
+          "contenido": "Del importe recaudado sobre cerveza:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5020,7 +5110,7 @@
           "numero": 3,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": ".- 2.8% a las entidades que la produzcan.",
+          "contenido": "2.8% a las entidades que la produzcan.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -5029,7 +5119,7 @@
           "numero": 4,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": ".- 36.6% a las entidades donde se consuma.",
+          "contenido": "36.6% a las entidades donde se consuma.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -5038,7 +5128,7 @@
           "numero": 5,
           "tipo": "inciso",
           "identificador": "c)",
-          "contenido": ".- 7.9% a los municipios de las entidades donde se consuma.",
+          "contenido": "7.9% a los municipios de las entidades donde se consuma.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -5047,7 +5137,7 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "- Del importe recaudado sobre gasolina:",
+          "contenido": "Del importe recaudado sobre gasolina:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5056,7 +5146,7 @@
           "numero": 7,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": ".- 8% a las entidades federativas.",
+          "contenido": "8% a las entidades federativas.",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -5065,7 +5155,7 @@
           "numero": 8,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": ".- 2% a sus municipios.",
+          "contenido": "2% a sus municipios.",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -5074,7 +5164,7 @@
           "numero": 9,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "- Del importe recaudado sobre tabacos:",
+          "contenido": "Del importe recaudado sobre tabacos:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -5083,7 +5173,7 @@
           "numero": 10,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": ".- 2% a las entidades productoras.",
+          "contenido": "2% a las entidades productoras.",
           "padre_numero": 9,
           "x_id": 114,
           "x_texto": 136
@@ -5092,7 +5182,7 @@
           "numero": 11,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": ".- 13% a las entidades consumidoras.",
+          "contenido": "13% a las entidades consumidoras.",
           "padre_numero": 9,
           "x_id": 114,
           "x_texto": 136
@@ -5101,22 +5191,13 @@
           "numero": 12,
           "tipo": "inciso",
           "identificador": "c)",
-          "contenido": ".- 5% a los municipios de las entidades consumidoras.",
+          "contenido": "5% a los municipios de las entidades consumidoras. La Secretaría de Hacienda y Crédito Público cubrirá directamente las cantidades que correspondan a los municipios, de acuerdo con la distribución que señale la legislatura local respectiva y en su defecto, en función del número de sus habitantes según los datos del último censo.",
           "padre_numero": 9,
           "x_id": 114,
           "x_texto": 136
         },
         {
           "numero": 13,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "La Secretaría de Hacienda y Crédito Público cubrirá directamente las cantidades que correspondan a los municipios, de acuerdo con la distribución que señale la legislatura local respectiva y en su defecto, en función del número de sus habitantes según los datos del último censo.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 14,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los Estados que no se adhieran al Sistema Nacional de Coordinación Fiscal, podrán gravar la producción, acopio o venta de tabaco en rama con impuestos locales o municipales que en conjunto no excederán de un peso cincuenta y cinco centavos por kilo, que sólo podrán decretar las entidades en que aquél se cultive.",
@@ -5147,5 +5228,6 @@
       ]
     }
   ],
-  "ultima_reforma_dof": "2025-11-07"
+  "ultima_reforma_dof": "2025-11-07",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIEPS.pdf"
 }

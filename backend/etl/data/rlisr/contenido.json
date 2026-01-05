@@ -1,20 +1,20 @@
 {
   "_advertencia": [
-    "╔══════════════════════════════════════════════════════════════════╗",
-    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
-    "║                                                                  ║",
-    "║  NO MODIFICAR MANUALMENTE                                        ║",
-    "║                                                                  ║",
-    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
-    "║  La base de datos se regenera desde aquí.                       ║",
-    "║                                                                  ║",
-    "║  Si el contenido es incorrecto:                                 ║",
-    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
-    "║                                                                  ║",
-    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
-    "╚══════════════════════════════════════════════════════════════════╝"
+    "=====================================================================",
+    "  ARCHIVO SAGRADO - FUENTE UNICA DE VERDAD",
+    "",
+    "  NO MODIFICAR MANUALMENTE",
+    "",
+    "  Este archivo es la UNICA fuente de verdad para el contenido.",
+    "  La base de datos se regenera desde aqui.",
+    "",
+    "  Si el contenido es incorrecto:",
+    "    -> CORRIGE EL SCRIPT, no este archivo",
+    "",
+    "  Modificarlo manualmente es SABOTAJE al sistema.",
+    "====================================================================="
   ],
-  "_generado_por": "extraer.py",
+  "_generado_por": "extractor/ExtractorGeneral",
   "ley": "RLISR",
   "tipo_contenido": "articulo",
   "articulos": [
@@ -366,6 +366,24 @@
           "referencias": [
             "Artículo reformado DOF 06-05-2016"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Personas Morales",
+          "padre_numero": 1,
+          "x_id": 241,
+          "x_texto": 241
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Disposiciones Generales",
+          "padre_numero": 1,
+          "x_id": 241,
+          "x_texto": 241
         }
       ]
     },
@@ -400,6 +418,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Ingresos",
+          "padre_numero": 1,
+          "x_id": 265,
+          "x_texto": 265
         }
       ]
     },
@@ -781,6 +808,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Deducciones",
+          "padre_numero": 6,
+          "x_id": 254,
+          "x_texto": 254
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Deducciones en General",
+          "padre_numero": 6,
+          "x_id": 224,
+          "x_texto": 224
         }
       ]
     },
@@ -2169,6 +2214,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Inversiones",
+          "padre_numero": 2,
+          "x_id": 258,
+          "x_texto": 258
         }
       ]
     },
@@ -2264,6 +2318,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Costo de lo Vendido",
+          "padre_numero": 2,
+          "x_id": 243,
+          "x_texto": 243
         }
       ]
     },
@@ -2499,6 +2562,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Ajuste por Inflación",
+          "padre_numero": 1,
+          "x_id": 245,
+          "x_texto": 245
         }
       ]
     },
@@ -2648,6 +2720,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 9,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Instituciones de Crédito, de Seguros y de Fianzas, de los Almacenes Generales de Depósito, Arrendadoras Financieras y Uniones de Crédito",
+          "padre_numero": null,
+          "x_id": 73,
+          "x_texto": 73
         }
       ]
     },
@@ -2865,6 +2946,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Régimen Opcional para Grupos de Sociedades",
+          "padre_numero": 1,
+          "x_id": 173,
+          "x_texto": 173
         }
       ]
     },
@@ -2882,6 +2972,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Coordinados",
+          "padre_numero": 1,
+          "x_id": 254,
+          "x_texto": 254
         }
       ]
     },
@@ -3049,6 +3148,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Régimen de Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras",
+          "padre_numero": 1,
+          "x_id": 112,
+          "x_texto": 112
         }
       ]
     },
@@ -3251,6 +3359,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 9,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Obligaciones de las Personas Morales",
+          "padre_numero": 8,
+          "x_id": 188,
+          "x_texto": 188
         }
       ]
     },
@@ -3844,6 +3961,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del Régimen de las Personas Morales con Fines no Lucrativos",
+          "padre_numero": 1,
+          "x_id": 142,
+          "x_texto": 142
         }
       ]
     },
@@ -4392,12 +4518,12 @@
         },
         {
           "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A. Los donativos y sus rendimientos deberán destinarse única y exclusivamente a los fines propios del objeto social autorizado de las donatarias. En ningún caso podrán dichas donatarias destinar más del 5% de los donativos y, en su caso, de los rendimientos que perciban para cubrir sus gastos de administración.",
+          "tipo": "apartado",
+          "identificador": "A.",
+          "contenido": "Los donativos y sus rendimientos deberán destinarse única y exclusivamente a los fines propios del objeto social autorizado de las donatarias. En ningún caso podrán dichas donatarias destinar más del 5% de los donativos y, en su caso, de los rendimientos que perciban para cubrir sus gastos de administración.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 3,
@@ -4410,12 +4536,12 @@
         },
         {
           "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B. Las personas morales y fideicomisos autorizados para recibir donativos deducibles que realicen inversiones se considerarán que destinan sus activos exclusivamente a los fines propios de su objeto social, cuando adquieran acciones u otros títulos de crédito, colocados entre el gran público inversionista, o realicen operaciones financieras derivadas referidas a dichas acciones o títulos de crédito, en los mercados reconocidos a que se refiere el artículo 16-C, fracciones I y II del Código Fiscal de la Federación, siempre que:",
+          "tipo": "apartado",
+          "identificador": "B.",
+          "contenido": "Las personas morales y fideicomisos autorizados para recibir donativos deducibles que realicen inversiones se considerarán que destinan sus activos exclusivamente a los fines propios de su objeto social, cuando adquieran acciones u otros títulos de crédito, colocados entre el gran público inversionista, o realicen operaciones financieras derivadas referidas a dichas acciones o títulos de crédito, en los mercados reconocidos a que se refiere el artículo 16-C, fracciones I y II del Código Fiscal de la Federación, siempre que:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 5,
@@ -4437,10 +4563,10 @@
         },
         {
           "numero": 7,
-          "tipo": "fraccion",
-          "identificador": "C",
+          "tipo": "apartado",
+          "identificador": "C.",
           "contenido": "Las personas morales con fines no lucrativos y los fideicomisos que cuenten con autorización para recibir donativos deducibles considerarán que destinan sus activos a fines distintos a su objeto social cuando directamente o a través de la figura del fideicomiso o por conducto de terceros:",
-          "padre_numero": null,
+          "padre_numero": 6,
           "x_id": 85,
           "x_texto": 107
         },
@@ -4482,21 +4608,21 @@
         },
         {
           "numero": 12,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "D. Las instituciones de enseñanza autorizadas para recibir donativos en los términos de la Ley, únicamente podrán a su vez donarlos a otras instituciones de enseñanza que cuenten con la autorización antes mencionada. En el caso a que se refiere este apartado, las instituciones de enseñanza que efectúen donativos a otras instituciones de enseñanza, no deberán considerar el monto de dichos donativos para determinar el porcentaje que podrán destinar a cubrir sus gastos de administración, y",
-          "padre_numero": null,
+          "tipo": "apartado",
+          "identificador": "D.",
+          "contenido": "Las instituciones de enseñanza autorizadas para recibir donativos en los términos de la Ley, únicamente podrán a su vez donarlos a otras instituciones de enseñanza que cuenten con la autorización antes mencionada. En el caso a que se refiere este apartado, las instituciones de enseñanza que efectúen donativos a otras instituciones de enseñanza, no deberán considerar el monto de dichos donativos para determinar el porcentaje que podrán destinar a cubrir sus gastos de administración, y",
+          "padre_numero": 11,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         },
         {
           "numero": 13,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "E. Al recibir los donativos, las donatarias deberán expedir los comprobantes fiscales correspondientes.",
-          "padre_numero": null,
+          "tipo": "apartado",
+          "identificador": "E.",
+          "contenido": "Al recibir los donativos, las donatarias deberán expedir los comprobantes fiscales correspondientes.",
+          "padre_numero": 11,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 107
         }
       ]
     },
@@ -4611,6 +4737,24 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Personas Físicas",
+          "padre_numero": 4,
+          "x_id": 243,
+          "x_texto": 243
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Disposiciones Generales",
+          "padre_numero": 4,
+          "x_id": 241,
+          "x_texto": 241
         }
       ]
     },
@@ -5149,6 +5293,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+          "padre_numero": null,
+          "x_id": 87,
+          "x_texto": 87
         }
       ]
     },
@@ -5910,6 +6063,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Ingresos por Actividades Empresariales y Profesionales",
+          "padre_numero": 1,
+          "x_id": 141,
+          "x_texto": 141
         }
       ]
     },
@@ -5927,6 +6089,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las Personas Físicas con Actividades Empresariales y Profesionales",
+          "padre_numero": 1,
+          "x_id": 118,
+          "x_texto": 118
         }
       ]
     },
@@ -6143,6 +6314,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Ingresos por Arrendamiento y en General por Otorgar el Uso o Goce Temporal de Bienes Inmuebles",
+          "padre_numero": null,
+          "x_id": 75,
+          "x_texto": 75
         }
       ]
     },
@@ -6281,6 +6461,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Ingresos por Enajenación de Bienes",
+          "padre_numero": 2,
+          "x_id": 193,
+          "x_texto": 193
         }
       ]
     },
@@ -6873,13 +7062,31 @@
           "numero": 10,
           "tipo": "numeral",
           "identificador": "3.",
-          "contenido": "Determinación de las pérdidas fiscales pendientes de deducir, los reembolsos pagados y la diferencia a que se refiere el artículo 77, párrafo quinto de la Ley, asignadas en la proporción que de dichos conceptos le correspondan al enajenante, considerando el periodo comprendido desde el mes de adquisición de las acciones y hasta la fecha de enajenación señalando: i. Tratándose de las pérdidas fiscales pendientes de disminuir a la fecha de la enajenación de las acciones: El análisis por año y factores de actualización aplicados a cada una de las pérdidas pendientes de disminuir, así como al periodo al que corresponde; ii. Tratándose de los reembolsos pagados: Los factores de actualización aplicados, así como el periodo a que corresponden, y iii. Tratándose de la diferencia a que se refiere el artículo 77, párrafo quinto de la Ley: Los factores de actualización aplicados, así como el periodo al que corresponden, y",
+          "contenido": "Determinación de las pérdidas fiscales pendientes de deducir, los reembolsos pagados y la diferencia a que se refiere el artículo 77, párrafo quinto de la Ley, asignadas en la proporción que de dichos conceptos le correspondan al enajenante, considerando el periodo comprendido desde el mes de adquisición de las acciones y hasta la fecha de enajenación señalando: i.",
           "padre_numero": 6,
           "x_id": 136,
           "x_texto": 158
         },
         {
           "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Tratándose de las pérdidas fiscales pendientes de disminuir a la fecha de la enajenación de las acciones: El análisis por año y factores de actualización aplicados a cada una de las pérdidas pendientes de disminuir, así como al periodo al que corresponde; ii.",
+          "padre_numero": 10,
+          "x_id": 179,
+          "x_texto": 179
+        },
+        {
+          "numero": 12,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Tratándose de los reembolsos pagados: Los factores de actualización aplicados, así como el periodo a que corresponden, y iii. Tratándose de la diferencia a que se refiere el artículo 77, párrafo quinto de la Ley: Los factores de actualización aplicados, así como el periodo al que corresponden, y",
+          "padre_numero": 10,
+          "x_id": 179,
+          "x_texto": 179
+        },
+        {
+          "numero": 13,
           "tipo": "numeral",
           "identificador": "4.",
           "contenido": "Tratándose de las pérdidas fiscales obtenidas por la emisora antes de la fecha en la que el enajenante adquirió las acciones: El análisis de las pérdidas disminuidas durante el periodo de tenencia del enajenante, en la proporción que de las mismas le corresponden de acuerdo a su tenencia accionaria;",
@@ -6888,7 +7095,7 @@
           "x_texto": 158
         },
         {
-          "numero": 12,
+          "numero": 14,
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "Monto original ajustado determinado; número total de acciones que tenga el enajenante de la misma emisora a la fecha de la enajenación; número de acciones que enajena; utilidad o pérdida obtenida por acción y ganancia total obtenida en la operación, y",
@@ -6897,7 +7104,7 @@
           "x_texto": 136
         },
         {
-          "numero": 13,
+          "numero": 15,
           "tipo": "inciso",
           "identificador": "e)",
           "contenido": "Cálculo del Impuesto a cargo del contribuyente, que se determinará aplicando a la cantidad que resulte de dividir el total de la ganancia entre el número de años transcurridos entre la fecha de adquisición y la de enajenación, sin exceder de 20 años, la tarifa calculada en términos del artículo 126, párrafo segundo de la Ley, y multiplicando el resultado obtenido por el número de años antes citado;",
@@ -6906,7 +7113,7 @@
           "x_texto": 136
         },
         {
-          "numero": 14,
+          "numero": 16,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "El texto del dictamen relativo a la enajenación de acciones elaborado por contador público inscrito en el SAT en términos del artículo 52, fracción I del Código Fiscal de la Federación, deberá contener:",
@@ -6915,106 +7122,106 @@
           "x_texto": 107
         },
         {
-          "numero": 15,
+          "numero": 17,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "La afirmación de que examinó la determinación del costo promedio por acción de las acciones enajenadas y la declaración del Impuesto correspondiente y de si ambos procedimientos se llevaron a cabo en términos de la Ley y de este Reglamento.",
-          "padre_numero": 14,
-          "x_id": 114,
-          "x_texto": 136
-        },
-        {
-          "numero": 16,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "En el caso de que el Impuesto retenido al enajenante sea menor que el que se determinaría de aplicar a la ganancia en la enajenación de acciones la tasa máxima de la tarifa del artículo 96 de la Ley, el enajenante deberá calcular el Impuesto sobre dicha ganancia efectuando el entero correspondiente en la declaración de pago provisional que deba presentar, en su caso, por sus demás ingresos, acumulando a los mismos dicho ingreso, en el mes en el que se presente el dictamen respectivo, señalando en el referido dictamen la fecha en la que se efectuó el pago señalado. En este caso el enajenante podrá acreditar contra el Impuesto que resulte a su cargo el monto que le hayan retenido conforme a este artículo;",
-          "padre_numero": 15,
-          "x_id": 136,
-          "x_texto": 136
-        },
-        {
-          "numero": 17,
-          "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Nombre del enajenante;",
-          "padre_numero": 14,
+          "padre_numero": 16,
           "x_id": 114,
           "x_texto": 136
         },
         {
           "numero": 18,
-          "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Nombre del adquirente;",
-          "padre_numero": 14,
-          "x_id": 114,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En el caso de que el Impuesto retenido al enajenante sea menor que el que se determinaría de aplicar a la ganancia en la enajenación de acciones la tasa máxima de la tarifa del artículo 96 de la Ley, el enajenante deberá calcular el Impuesto sobre dicha ganancia efectuando el entero correspondiente en la declaración de pago provisional que deba presentar, en su caso, por sus demás ingresos, acumulando a los mismos dicho ingreso, en el mes en el que se presente el dictamen respectivo, señalando en el referido dictamen la fecha en la que se efectuó el pago señalado. En este caso el enajenante podrá acreditar contra el Impuesto que resulte a su cargo el monto que le hayan retenido conforme a este artículo;",
+          "padre_numero": 17,
+          "x_id": 136,
           "x_texto": 136
         },
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Nombre de la sociedad emisora de las acciones;",
-          "padre_numero": 14,
+          "identificador": "b)",
+          "contenido": "Nombre del enajenante;",
+          "padre_numero": 16,
           "x_id": 114,
           "x_texto": 136
         },
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Fecha de la enajenación de las acciones, y",
-          "padre_numero": 14,
+          "identificador": "c)",
+          "contenido": "Nombre del adquirente;",
+          "padre_numero": 16,
           "x_id": 114,
           "x_texto": 136
         },
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Mención en forma específica del alcance del trabajo realizado consistente en la verificación de:",
-          "padre_numero": 14,
+          "identificador": "d)",
+          "contenido": "Nombre de la sociedad emisora de las acciones;",
+          "padre_numero": 16,
           "x_id": 114,
           "x_texto": 136
         },
         {
           "numero": 22,
-          "tipo": "numeral",
-          "identificador": "1.",
-          "contenido": "La antigüedad en la tenencia de las acciones;",
-          "padre_numero": 21,
-          "x_id": 136,
-          "x_texto": 158
+          "tipo": "inciso",
+          "identificador": "e)",
+          "contenido": "Fecha de la enajenación de las acciones, y",
+          "padre_numero": 16,
+          "x_id": 114,
+          "x_texto": 136
         },
         {
           "numero": 23,
-          "tipo": "numeral",
-          "identificador": "2.",
-          "contenido": "Los medios a través de los cuales se cercioró del costo de adquisición de las acciones;",
-          "padre_numero": 21,
-          "x_id": 136,
-          "x_texto": 158
+          "tipo": "inciso",
+          "identificador": "f)",
+          "contenido": "Mención en forma específica del alcance del trabajo realizado consistente en la verificación de:",
+          "padre_numero": 16,
+          "x_id": 114,
+          "x_texto": 136
         },
         {
           "numero": 24,
           "tipo": "numeral",
-          "identificador": "3.",
-          "contenido": "La determinación de los saldos de la cuenta de utilidad fiscal neta a la fecha de adquisición y a la fecha de enajenación, de las acciones, con base en los datos contenidos en las constancias que deben emitir las sociedades emisoras de las acciones, y",
-          "padre_numero": 21,
+          "identificador": "1.",
+          "contenido": "La antigüedad en la tenencia de las acciones;",
+          "padre_numero": 23,
           "x_id": 136,
           "x_texto": 158
         },
         {
           "numero": 25,
           "tipo": "numeral",
-          "identificador": "4.",
-          "contenido": "Las utilidades o dividendos distribuidos que correspondan por acción, mediante la revisión de las actas de asamblea de accionistas respectivas, así como las utilidades o dividendos percibidos por la sociedad;",
-          "padre_numero": 21,
+          "identificador": "2.",
+          "contenido": "Los medios a través de los cuales se cercioró del costo de adquisición de las acciones;",
+          "padre_numero": 23,
           "x_id": 136,
           "x_texto": 158
         },
         {
           "numero": 26,
+          "tipo": "numeral",
+          "identificador": "3.",
+          "contenido": "La determinación de los saldos de la cuenta de utilidad fiscal neta a la fecha de adquisición y a la fecha de enajenación, de las acciones, con base en los datos contenidos en las constancias que deben emitir las sociedades emisoras de las acciones, y",
+          "padre_numero": 23,
+          "x_id": 136,
+          "x_texto": 158
+        },
+        {
+          "numero": 27,
+          "tipo": "numeral",
+          "identificador": "4.",
+          "contenido": "Las utilidades o dividendos distribuidos que correspondan por acción, mediante la revisión de las actas de asamblea de accionistas respectivas, así como las utilidades o dividendos percibidos por la sociedad;",
+          "padre_numero": 23,
+          "x_id": 136,
+          "x_texto": 158
+        },
+        {
+          "numero": 28,
           "tipo": "fraccion",
           "identificador": "IV",
           "contenido": "Con base en los documentos a que se refiere este artículo y a los resultados obtenidos, el contador público inscrito emitirá el dictamen señalando la ganancia o pérdida que resulte en la enajenación, el Impuesto correspondiente, así como su fecha de pago y que no se encuentra con impedimento profesional para emitirlo;",
@@ -7023,7 +7230,7 @@
           "x_texto": 107
         },
         {
-          "numero": 27,
+          "numero": 29,
           "tipo": "fraccion",
           "identificador": "V",
           "contenido": "En el caso de observar incumplimiento a las disposiciones fiscales, el contador público inscrito deberá mencionar claramente en qué consiste y cuantificar su efecto sobre la operación, y",
@@ -7032,7 +7239,7 @@
           "x_texto": 107
         },
         {
-          "numero": 28,
+          "numero": 30,
           "tipo": "fraccion",
           "identificador": "VI",
           "contenido": "Que el dictamen se formule de acuerdo con las disposiciones del Reglamento del Código Fiscal de la Federación y demás disposiciones aplicables en materia de contabilidad.",
@@ -7041,7 +7248,7 @@
           "x_texto": 107
         },
         {
-          "numero": 29,
+          "numero": 31,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Lo dispuesto en este artículo también será aplicable cuando el adquirente de las acciones no sea residente en el país o sea residente en el extranjero sin establecimiento permanente en México, en cuyo caso el enajenante podrá efectuar un pago provisional menor, siempre que se dictamine la operación relativa por contador público inscrito y se cumpla con los requisitos establecidos en este artículo.",
@@ -7050,13 +7257,22 @@
           "x_texto": 85
         },
         {
-          "numero": 30,
+          "numero": 32,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El adquirente podrá no efectuar la retención a que se refiere el artículo 126, párrafo cuarto de la Ley, o efectuar una menor, cuando se trate de acciones emitidas por las personas morales a que se refiere el artículo 79 de la Ley y siempre que la persona moral de que se trate emita constancia en la que se determine la ganancia o pérdida que resulte de la enajenación en términos de este artículo, sin que sea necesario efectuar dictamen por contador público inscrito. Lo dispuesto en este párrafo no será aplicable tratándose de operaciones superiores al monto establecido en el artículo 126, párrafo quinto de la Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 33,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Ingresos por Adquisición de Bienes",
+          "padre_numero": 32,
+          "x_id": 194,
+          "x_texto": 194
         }
       ]
     },
@@ -7215,6 +7431,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Ingresos por Intereses",
+          "padre_numero": 1,
+          "x_id": 229,
+          "x_texto": 229
         }
       ]
     },
@@ -7529,7 +7754,7 @@
           "numero": 8,
           "tipo": "inciso",
           "identificador": "a)",
-          "contenido": "El monto de los intereses nominales devengados diarios correspondiente a cada uno de sus inversionistas se calculará multiplicando la suma de los intereses nominales devengados diarios a favor de la sociedad, calculados conforme a la fracción I, incisos a) y",
+          "contenido": "El monto de los intereses nominales devengados diarios correspondiente a cada uno de sus inversionistas se calculará multiplicando la suma de los intereses nominales devengados diarios a favor de la sociedad, calculados conforme a la fracción I, incisos a) y b) de este artículo, por la participación diaria que en dicha sociedad tenga cada uno de sus inversionistas, y",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -7538,22 +7763,13 @@
           "numero": 9,
           "tipo": "inciso",
           "identificador": "b)",
-          "contenido": "de este artículo, por la participación diaria que en dicha sociedad tenga cada uno de sus inversionistas, y",
-          "padre_numero": 8,
-          "x_id": 136,
-          "x_texto": 158
-        },
-        {
-          "numero": 10,
-          "tipo": "inciso",
-          "identificador": "b)",
           "contenido": "Para calcular los intereses nominales del ejercicio correspondientes a cada inversionista, las sociedades sumarán o restarán, según corresponda, los intereses nominales devengados diarios, a favor de cada uno de sus inversionistas, calculados conforme al inciso a) de esta fracción, correspondientes a cada uno de los días del ejercicio en los que dichos inversionistas hayan tenido participación en la sociedad de que se trate, y",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
         },
         {
-          "numero": 11,
+          "numero": 10,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "Para calcular los intereses reales acumulables de sus inversionistas, las sociedades a que se refiere este artículo estarán a lo siguiente:",
@@ -7562,29 +7778,29 @@
           "x_texto": 107
         },
         {
-          "numero": 12,
+          "numero": 11,
           "tipo": "inciso",
           "identificador": "a)",
           "contenido": "Restarán de los intereses nominales devengados diarios correspondientes a los instrumentos de deuda que estén gravados, calculados conforme a la fracción I, inciso a) del presente artículo, la cantidad que resulte de multiplicar el valor al final de cada día de la cartera de instrumentos de deuda gravados, por el factor que se obtenga de acuerdo con el artículo 227 de este Reglamento. El resultado que se obtenga serán los intereses acumulables diarios de los inversionistas;",
-          "padre_numero": 11,
+          "padre_numero": 10,
+          "x_id": 114,
+          "x_texto": 136
+        },
+        {
+          "numero": 12,
+          "tipo": "inciso",
+          "identificador": "b)",
+          "contenido": "Los intereses reales acumulables diarios de cada uno de sus inversionistas se obtendrán multiplicando el resultado obtenido conforme al inciso anterior, por la participación que en dicha sociedad tenga cada uno de sus inversionistas al final de cada día, y",
+          "padre_numero": 10,
           "x_id": 114,
           "x_texto": 136
         },
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los intereses reales acumulables diarios de cada uno de sus inversionistas se obtendrán multiplicando el resultado obtenido conforme al inciso anterior, por la participación que en dicha sociedad tenga cada uno de sus inversionistas al final de cada día, y",
-          "padre_numero": 11,
-          "x_id": 114,
-          "x_texto": 136
-        },
-        {
-          "numero": 14,
-          "tipo": "inciso",
           "identificador": "c)",
           "contenido": "Para determinar los intereses reales acumulables del ejercicio correspondientes a cada inversionista, las sociedades sumarán o restarán, según corresponda, los intereses reales acumulables diarios a favor de cada inversionista, correspondientes a cada uno de los días del ejercicio en el que dicho inversionista haya invertido en la sociedad de que se trate.",
-          "padre_numero": 11,
+          "padre_numero": 10,
           "x_id": 114,
           "x_texto": 136
         }
@@ -8038,6 +8254,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Ingresos por Obtención de Premios",
+          "padre_numero": 7,
+          "x_id": 195,
+          "x_texto": 195
         }
       ]
     },
@@ -8081,6 +8306,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Demás Ingresos que Obtengan las Personas Físicas",
+          "padre_numero": 2,
+          "x_id": 151,
+          "x_texto": 151
         }
       ]
     },
@@ -8184,6 +8418,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Requisitos de las Deducciones",
+          "padre_numero": 1,
+          "x_id": 207,
+          "x_texto": 207
         }
       ]
     },
@@ -8786,6 +9029,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la Declaración Anual",
+          "padre_numero": 7,
+          "x_id": 243,
+          "x_texto": 243
         }
       ]
     },
@@ -9073,6 +9325,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+          "padre_numero": null,
+          "x_id": 86,
+          "x_texto": 86
         }
       ]
     },
@@ -9970,6 +10231,15 @@
           "referencias": [
             "Artículo derogado DOF 06-05-2016"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales",
+          "padre_numero": 1,
+          "x_id": 111,
+          "x_texto": 111
         }
       ]
     },
@@ -10447,6 +10717,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 24,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los Estímulos Fiscales",
+          "padre_numero": 23,
+          "x_id": 238,
+          "x_texto": 238
         }
       ]
     },
@@ -10965,22 +11244,13 @@
           "numero": 10,
           "tipo": "inciso",
           "identificador": "c)",
-          "contenido": "Dividirán por cada inversionista, el saldo que tenga en la cuenta a que se refiere el inciso",
+          "contenido": "Dividirán por cada inversionista, el saldo que tenga en la cuenta a que se refiere el inciso a) de la presente fracción, entre el monto que resulte como inversión total del fideicomiso conforme al inciso b) de dicha fracción;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
         },
         {
           "numero": 11,
-          "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "de la presente fracción, entre el monto que resulte como inversión total del fideicomiso conforme al inciso b) de dicha fracción;",
-          "padre_numero": 10,
-          "x_id": 136,
-          "x_texto": 158
-        },
-        {
-          "numero": 12,
           "tipo": "inciso",
           "identificador": "d)",
           "contenido": "Identificarán el saldo que tenga la institución fiduciaria en cada una de las cuentas a que se refiere el artículo 193, fracción II de la Ley, al momento de la distribución de los ingresos del fideicomiso;",
@@ -10989,7 +11259,7 @@
           "x_texto": 136
         },
         {
-          "numero": 13,
+          "numero": 12,
           "tipo": "inciso",
           "identificador": "e)",
           "contenido": "Sumarán los saldos totales por cada una de las cuentas a que se refiere el inciso d) de esta fracción. El resultado obtenido corresponderá a los ingresos totales del fideicomiso;",
@@ -10998,7 +11268,7 @@
           "x_texto": 136
         },
         {
-          "numero": 14,
+          "numero": 13,
           "tipo": "inciso",
           "identificador": "f)",
           "contenido": "Obtendrán el monto total de los gastos netos de descuentos, bonificaciones o devoluciones que hayan sido efectivamente erogados en el ejercicio de que se trate y que sean estrictamente indispensables para la obtención de los ingresos que reciba el fideicomiso;",
@@ -11007,7 +11277,7 @@
           "x_texto": 136
         },
         {
-          "numero": 15,
+          "numero": 14,
           "tipo": "inciso",
           "identificador": "g)",
           "contenido": "Disminuirá de los ingresos totales determinados en el inciso e) de esta fracción, el monto obtenido conforme al inciso f) de dicha fracción. El resultado constituirá los ingresos netos del fideicomiso;",
@@ -11016,7 +11286,7 @@
           "x_texto": 136
         },
         {
-          "numero": 16,
+          "numero": 15,
           "tipo": "inciso",
           "identificador": "h)",
           "contenido": "Multiplicarán los ingresos netos del fideicomiso obtenidos conforme al inciso anterior, por el porcentaje que se distribuya en términos del artículo 192, fracción V de la Ley;",
@@ -11025,7 +11295,7 @@
           "x_texto": 136
         },
         {
-          "numero": 17,
+          "numero": 16,
           "tipo": "inciso",
           "identificador": "i)",
           "contenido": "Multiplicarán el resultado obtenido conforme al inciso anterior, por el resultado obtenido en términos del inciso c) de esta fracción, para cada persona que participe como fideicomitente o fideicomisario en el fideicomiso de que se trate, y",
@@ -11034,7 +11304,7 @@
           "x_texto": 136
         },
         {
-          "numero": 18,
+          "numero": 17,
           "tipo": "inciso",
           "identificador": "j)",
           "contenido": "Multiplicarán el resultado obtenido en el inciso anterior, por la proporción que resulte de dividir el saldo de cada una de las cuentas a que se refiere el inciso d) de esta fracción entre los ingresos totales obtenidos conforme al inciso e) de dicha fracción.",
@@ -11043,7 +11313,7 @@
           "x_texto": 136
         },
         {
-          "numero": 19,
+          "numero": 18,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En ningún caso la institución fiduciaria podrá reinvertir los recursos obtenidos en el ejercicio fiscal de que se trate en acciones de las sociedades promovidas a que se refiere el artículo 192, fracción II de la Ley.",
@@ -11052,7 +11322,7 @@
           "x_texto": 85
         },
         {
-          "numero": 20,
+          "numero": 19,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas que inviertan a través de fideicomisos a que se refiere el presente artículo causarán el Impuesto que les corresponda por la distribución de los ingresos del fideicomiso en términos de los artículos 193, fracción I de la Ley y 312 de este Reglamento.",
@@ -11097,5 +11367,6 @@
       ]
     }
   ],
-  "ultima_reforma_dof": "2016-05-06"
+  "ultima_reforma_dof": "2016-05-06",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR_060516.pdf"
 }

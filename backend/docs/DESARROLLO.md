@@ -5,7 +5,7 @@
 ```
 PDF (fuente oficial)
     │
-    ▼ pdfplumber (coordenadas X)
+    ▼ PyMuPDF (coordenadas X, bold flags)
 JSON (estructura jerárquica)
     │
     ▼ importar.py

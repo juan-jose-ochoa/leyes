@@ -1,20 +1,20 @@
 {
   "_advertencia": [
-    "╔══════════════════════════════════════════════════════════════════╗",
-    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
-    "║                                                                  ║",
-    "║  NO MODIFICAR MANUALMENTE                                        ║",
-    "║                                                                  ║",
-    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
-    "║  La base de datos se regenera desde aquí.                       ║",
-    "║                                                                  ║",
-    "║  Si el contenido es incorrecto:                                 ║",
-    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
-    "║                                                                  ║",
-    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
-    "╚══════════════════════════════════════════════════════════════════╝"
+    "=====================================================================",
+    "  ARCHIVO SAGRADO - FUENTE UNICA DE VERDAD",
+    "",
+    "  NO MODIFICAR MANUALMENTE",
+    "",
+    "  Este archivo es la UNICA fuente de verdad para el contenido.",
+    "  La base de datos se regenera desde aqui.",
+    "",
+    "  Si el contenido es incorrecto:",
+    "    -> CORRIGE EL SCRIPT, no este archivo",
+    "",
+    "  Modificarlo manualmente es SABOTAJE al sistema.",
+    "====================================================================="
   ],
-  "_generado_por": "extraer.py",
+  "_generado_por": "extractor/ExtractorGeneral",
   "ley": "RLSS",
   "tipo_contenido": "articulo",
   "articulos": [
@@ -85,6 +85,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA CONSTITUCIÓN DE LAS RESERVAS Y DE LA RESERVA GENERAL",
+          "padre_numero": 5,
+          "x_id": 113,
+          "x_texto": 113
         }
       ]
     },
@@ -128,6 +137,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LA INVERSIÓN DE LAS RESERVAS Y DE LA RESERVA GENERAL",
+          "padre_numero": 1,
+          "x_id": 124,
+          "x_texto": 124
         }
       ]
     },
@@ -230,22 +248,13 @@
           "numero": 6,
           "tipo": "inciso",
           "identificador": "c)",
-          "contenido": "Los que sean reconocidos conforme a las disposiciones emitidas por el Banco de México.",
+          "contenido": "Los que sean reconocidos conforme a las disposiciones emitidas por el Banco de México. Tratándose de títulos representativos del capital social de sociedades, cuando estas tengan un objeto social complementario o afín al del propio Instituto, así como en el de administradoras de fondos para el retiro, en términos del artículo 251, fracción XXII, de la Ley no será necesario que se cumpla con lo dispuesto en la fracción II de este artículo.",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129
         },
         {
           "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Tratándose de títulos representativos del capital social de sociedades, cuando estas tengan un objeto social complementario o afín al del propio Instituto, así como en el de administradoras de fondos para el retiro, en términos del artículo 251, fracción XXII, de la Ley no será necesario que se cumpla con lo dispuesto en la fracción II de este artículo.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Tratándose de títulos de deuda emitidos por personas distintas al Gobierno Federal y sus sociedades nacionales de crédito, se requerirá que los emisores o títulos cuenten con la calificación mínima, otorgada por una empresa calificadora de riesgo crediticio, que se determine en las políticas y directrices a que se refiere el artículo 8 de este Reglamento.",
@@ -490,6 +499,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DEL USO PARA LA OPERACIÓN DE LAS RESERVAS Y DE LA RESERVA GENERAL",
+          "padre_numero": null,
+          "x_id": 88,
+          "x_texto": 88
         }
       ]
     },
@@ -611,6 +629,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE OPERACIÓN PARA CONTINGENCIAS Y FINANCIAMIENTO",
+          "padre_numero": null,
+          "x_id": 82,
+          "x_texto": 82
         }
       ]
     },
@@ -655,6 +682,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "DISPOSICIONES FINALES",
+          "padre_numero": 4,
+          "x_id": 238,
+          "x_texto": 238
         }
       ]
     },
@@ -676,5 +712,6 @@
       ]
     }
   ],
-  "ultima_reforma_dof": "2013-08-20"
+  "ultima_reforma_dof": "2013-08-20",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_RFARGFA.pdf"
 }

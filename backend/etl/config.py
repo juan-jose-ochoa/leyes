@@ -2,6 +2,20 @@
 Configuración por ley para extracción.
 
 Cada ley tiene sus propios patrones de detección y estructura.
+
+Secciones por ley:
+- nombre, nombre_corto, tipo: Metadatos
+- url_fuente, pdf_path: Ubicación del PDF
+- fecha_dof_patron: Regex para extraer fecha DOF
+- divisiones_permitidas, parrafos_permitidos: Estructura jerárquica
+- patrones: Regex de detección
+- filtro_y, ruido_lineas: Filtrado de contenido
+- referencias: Detección de notas DOF
+- excepciones: Artículos con modo especial (ej: "texto_plano")
+- excepciones_pendientes: Artículos que requieren corrección manual futura
+  Formato: lista de dicts con "articulo" y "descripcion"
+- requiere_bold: Si los identificadores requieren estar en bold (default: True)
+  False para PDFs donde fracciones/incisos no están en bold (ej: CPEUM)
 """
 
 LEYES = {
@@ -43,6 +57,14 @@ LEYES = {
             "numeral": r'^(\d{1,2})\.\s+',
         },
 
+        # Coordenadas X para validar identificadores (rechaza texto continuación)
+        "coordenadas_x": {
+            "fraccion": {"min": 70, "max": 120},
+            "apartado": {"min": 80, "max": 125},
+            "inciso": {"min": 100, "max": 135},
+            "numeral": {"min": 80, "max": 150},
+        },
+
         # Filtro por coordenada Y para eliminar header/footer
         "filtro_y": {
             "header_max": 80,   # y < 80: encabezados institucionales
@@ -71,12 +93,18 @@ LEYES = {
                 r"^\d{2}-\d{2}-\d{4}$", # Fechas solas (DD-MM-YYYY) con características DOF
             ],
         },
+
+        # Excepciones pendientes: artículos que requieren corrección manual
+        "excepciones_pendientes": [
+            {"articulo": "53", "descripcion": "II.- sin fracción I (derogada). Detector espera secuencia I->II"},
+        ],
     },
 
     "RMF": {
         "nombre": "Resolución Miscelánea Fiscal",
         "nombre_corto": "Miscelánea Fiscal 2026",
         "tipo": "resolucion",
+        "tipo_extractor": "rmf",  # Usa ExtractorRMF en lugar de ExtractorGeneral
         "url_fuente": "https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf",
         "pdf_path": "backend/etl/data/rmf/rmf_2026_original.pdf",
 
@@ -128,6 +156,9 @@ LEYES = {
         # Tipo de contenido principal
         "tipo_contenido": "articulo",
 
+        # No requiere bold para identificadores (fracciones no son bold en este PDF)
+        "requiere_bold": False,
+
         # Patrones de detección
         # NOTA: La CPEUM usa Title Case para títulos/capítulos, no MAYÚSCULAS
         "patrones": {
@@ -144,6 +175,14 @@ LEYES = {
             "inciso": r'^([a-z])\)\s+',
             "numeral": r'^(\d{1,2})\.\s+',
             "apartado": r'^([A-Z])\.\s+',  # Art. 123 tiene Apartado A y B
+        },
+
+        # Coordenadas X para validar identificadores
+        "coordenadas_x": {
+            "fraccion": {"min": 80, "max": 125},
+            "apartado": {"min": 80, "max": 90},
+            "inciso": {"min": 100, "max": 135},
+            "numeral": {"min": 125, "max": 200},
         },
 
         # Filtro por coordenada Y para eliminar header/footer
@@ -173,6 +212,12 @@ LEYES = {
                 r"Denominación.*reformada.*DOF",
             ],
         },
+
+        # Excepciones pendientes: artículos que requieren corrección manual
+        "excepciones_pendientes": [
+            {"articulo": "72", "descripcion": "Apartado I (sic DOF 24-11-1923) duplicado. Error histórico en texto legal"},
+            {"articulo": "123", "descripcion": "Apartado B: XI (sic 05-12-1960) aparece dos veces, falta IX. Error histórico en texto legal"},
+        ],
     },
 
     "LISR": {
@@ -443,6 +488,11 @@ LEYES = {
         # Tipo de contenido principal
         "tipo_contenido": "articulo",
 
+        # Excepciones: artículos con extractor especial
+        "excepciones": {
+            "513": "texto_plano",  # Tabla de Enfermedades de Trabajo (estructura atípica)
+        },
+
         # Patrones de detección
         "patrones": {
             # Artículo: "Artículo 1o.-" o "Artículo 153-A" o "Artículo 153-F Bis" o "Artículo 10.-"
@@ -711,6 +761,11 @@ LEYES = {
         "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
 
         "tipo_contenido": "articulo",
+
+        # Excepciones: artículos con extractor especial
+        "excepciones": {
+            "1": "texto_plano",  # Estado de resultados presupuestal
+        },
 
         "patrones": {
             # Formato: "Artículo 1o." o "Artículo 10."

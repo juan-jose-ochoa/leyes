@@ -1,20 +1,20 @@
 {
   "_advertencia": [
-    "╔══════════════════════════════════════════════════════════════════╗",
-    "║  ⚠️  ARCHIVO SAGRADO - FUENTE ÚNICA DE VERDAD  ⚠️                 ║",
-    "║                                                                  ║",
-    "║  NO MODIFICAR MANUALMENTE                                        ║",
-    "║                                                                  ║",
-    "║  Este archivo es la ÚNICA fuente de verdad para el contenido.   ║",
-    "║  La base de datos se regenera desde aquí.                       ║",
-    "║                                                                  ║",
-    "║  Si el contenido es incorrecto:                                 ║",
-    "║    → CORRIGE EL SCRIPT, no este archivo                         ║",
-    "║                                                                  ║",
-    "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
-    "╚══════════════════════════════════════════════════════════════════╝"
+    "=====================================================================",
+    "  ARCHIVO SAGRADO - FUENTE UNICA DE VERDAD",
+    "",
+    "  NO MODIFICAR MANUALMENTE",
+    "",
+    "  Este archivo es la UNICA fuente de verdad para el contenido.",
+    "  La base de datos se regenera desde aqui.",
+    "",
+    "  Si el contenido es incorrecto:",
+    "    -> CORRIGE EL SCRIPT, no este archivo",
+    "",
+    "  Modificarlo manualmente es SABOTAJE al sistema.",
+    "====================================================================="
   ],
-  "_generado_por": "extraer.py",
+  "_generado_por": "extractor/ExtractorGeneral",
   "ley": "RLIVA",
   "tipo_contenido": "articulo",
   "articulos": [
@@ -729,6 +729,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la enajenación",
+          "padre_numero": 2,
+          "x_id": 260,
+          "x_texto": 260
         }
       ]
     },
@@ -914,6 +923,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la prestación de servicios",
+          "padre_numero": 1,
+          "x_id": 230,
+          "x_texto": 230
         }
       ]
     },
@@ -1170,6 +1188,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Del uso o goce temporal de bienes",
+          "padre_numero": 1,
+          "x_id": 215,
+          "x_texto": 215
         }
       ]
     },
@@ -1196,6 +1223,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la importación de bienes y servicios",
+          "padre_numero": 2,
+          "x_id": 203,
+          "x_texto": 203
         }
       ]
     },
@@ -1419,6 +1455,24 @@
           "referencias": [
             "Artículo reformado DOF 25-09-2014"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De la exportación de bienes y servicios",
+          "padre_numero": 1,
+          "x_id": 203,
+          "x_texto": 203
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las disposiciones generales",
+          "padre_numero": 2,
+          "x_id": 224,
+          "x_texto": 224
         }
       ]
     },
@@ -1516,6 +1570,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De los servicios de filmación o grabación",
+          "padre_numero": 1,
+          "x_id": 198,
+          "x_texto": 198
         }
       ]
     },
@@ -1615,10 +1678,10 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Derogada.",
-          "padre_numero": 6,
-          "x_id": 283,
-          "x_texto": 283,
+          "contenido": "De los servicios de hotelería y conexos para congresos, convenciones, exposiciones o ferias Derogada.",
+          "padre_numero": null,
+          "x_id": 78,
+          "x_texto": 78,
           "referencias": [
             "Sección derogada DOF 25-09-2014"
           ]
@@ -1762,6 +1825,15 @@
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las obligaciones de los contribuyentes",
+          "padre_numero": 1,
+          "x_id": 196,
+          "x_texto": 196
         }
       ]
     },
@@ -1979,6 +2051,15 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "De las facultades de las autoridades",
+          "padre_numero": 3,
+          "x_id": 211,
+          "x_texto": 211
         }
       ]
     },
@@ -2000,5 +2081,6 @@
       ]
     }
   ],
-  "ultima_reforma_dof": "2014-09-25"
+  "ultima_reforma_dof": "2014-09-25",
+  "fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA_250914.pdf"
 }
