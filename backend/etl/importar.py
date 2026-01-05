@@ -48,11 +48,15 @@ def normalizar_numero(numero: str) -> str:
     - Eliminar sufijo ordinal: '1o' -> '1', '4o A' -> '4 A'
     - Guiones y espacios tratados igual: '4-A' == '4 A'
     - Múltiples espacios -> uno solo
+
+    NOTA: Solo elimina 'O' como sufijo ordinal, NO 'A' que puede ser
+    parte del identificador (ej: 10a, 22a son artículos diferentes de 10, 22)
     """
     import re
     s = numero.upper().strip()
-    # Eliminar sufijo ordinal (1O -> 1, 4O A -> 4 A)
-    s = re.sub(r'^(\d+)[OA](?=\s|$)', r'\1', s)
+    # Eliminar sufijo ordinal español (1O -> 1, 4O -> 4)
+    # Solo 'O', no 'A' que puede ser parte del identificador
+    s = re.sub(r'^(\d+)O(?=\s|$)', r'\1', s)
     # Reemplazar guiones por espacios
     s = s.replace('-', ' ')
     # Colapsar múltiples espacios
