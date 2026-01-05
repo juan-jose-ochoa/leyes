@@ -132,7 +132,7 @@
         {
           "numero": 4,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Con una graduación alcohólica de hasta 14° G.L. .................................... 26.5%",
           "padre_numero": 3,
           "x_id": 139,
@@ -144,7 +144,7 @@
         {
           "numero": 5,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Con una graduación alcohólica de más de 14° y hasta 20°G.L. .................. 30%",
           "padre_numero": 3,
           "x_id": 140,
@@ -156,7 +156,7 @@
         {
           "numero": 6,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Con una graduación alcohólica de más de 20°G.L ...................................... 53%",
           "padre_numero": 3,
           "x_id": 139,
@@ -189,7 +189,7 @@
         {
           "numero": 9,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Cigarros. .................................................................................................. 200%",
           "padre_numero": 8,
           "x_id": 140,
@@ -198,7 +198,7 @@
         {
           "numero": 10,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Puros y otros tabacos labrados. .............................................................. 200%",
           "padre_numero": 8,
           "x_id": 140,
@@ -207,7 +207,7 @@
         {
           "numero": 11,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Puros y otros tabacos labrados hechos enteramente a mano. ................. 32%",
           "padre_numero": 8,
           "x_id": 140,
@@ -216,7 +216,7 @@
         {
           "numero": 12,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Otros productos que contengan nicotina. ................................................ 100%",
           "padre_numero": 8,
           "x_id": 140,
@@ -275,7 +275,7 @@
         {
           "numero": 17,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Combustibles fósiles Cuota Unidad de medida a.",
           "padre_numero": 16,
           "x_id": 140,
@@ -343,7 +343,7 @@
         {
           "numero": 23,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Combustibles no fósiles ................................... 5.4513 pesos por litro.",
           "padre_numero": 16,
           "x_id": 140,
@@ -477,7 +477,7 @@
         {
           "numero": 35,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Propano ....................................... 9.7551 centavos por litro.",
           "padre_numero": 34,
           "x_id": 145,
@@ -486,7 +486,7 @@
         {
           "numero": 36,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Butano ......................................... 12.6241 centavos por litro.",
           "padre_numero": 34,
           "x_id": 145,
@@ -495,7 +495,7 @@
         {
           "numero": 37,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Gasolinas y gasavión .................. 17.1107 centavos por litro.",
           "padre_numero": 34,
           "x_id": 145,
@@ -504,7 +504,7 @@
         {
           "numero": 38,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Turbosina y otros kerosenos ....... 20.4363 centavos por litro.",
           "padre_numero": 34,
           "x_id": 145,
@@ -513,7 +513,7 @@
         {
           "numero": 39,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "Diesel ........................................... 20.7623 centavos por litro.",
           "padre_numero": 34,
           "x_id": 145,
@@ -522,7 +522,7 @@
         {
           "numero": 40,
           "tipo": "numeral",
-          "identificador": "6.",
+          "identificador": "6",
           "contenido": "Combustóleo ............................... 22.1578 centavos por litro.",
           "padre_numero": 34,
           "x_id": 145,
@@ -531,7 +531,7 @@
         {
           "numero": 41,
           "tipo": "numeral",
-          "identificador": "7.",
+          "identificador": "7",
           "contenido": "Coque de petróleo ....................... 25.7183 pesos por tonelada.",
           "padre_numero": 34,
           "x_id": 145,
@@ -540,7 +540,7 @@
         {
           "numero": 42,
           "tipo": "numeral",
-          "identificador": "8.",
+          "identificador": "8",
           "contenido": "Coque de carbón ......................... 60.2921 pesos por tonelada.",
           "padre_numero": 34,
           "x_id": 145,
@@ -549,7 +549,7 @@
         {
           "numero": 43,
           "tipo": "numeral",
-          "identificador": "9.",
+          "identificador": "9",
           "contenido": "Carbón mineral ............................ 45.3984 pesos por tonelada.",
           "padre_numero": 34,
           "x_id": 145,
@@ -558,7 +558,7 @@
         {
           "numero": 44,
           "tipo": "numeral",
-          "identificador": "10.",
+          "identificador": "10",
           "contenido": "Otros combustibles fósiles ......... 65.6262 pesos por tonelada de carbono que contenga el combustible.",
           "padre_numero": 34,
           "x_id": 145,
@@ -614,7 +614,7 @@
         {
           "numero": 49,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Categorías 1 y 2 .............................................................................................. 9%",
           "padre_numero": 48,
           "x_id": 139,
@@ -623,7 +623,7 @@
         {
           "numero": 50,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Categoría 3 ..................................................................................................... 7%",
           "padre_numero": 48,
           "x_id": 139,
@@ -632,7 +632,7 @@
         {
           "numero": 51,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Categoría 4 ..................................................................................................... 6%",
           "padre_numero": 48,
           "x_id": 139,
@@ -689,7 +689,7 @@
         {
           "numero": 57,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Botanas.",
           "padre_numero": 56,
           "x_id": 139,
@@ -698,7 +698,7 @@
         {
           "numero": 58,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Productos de confitería.",
           "padre_numero": 56,
           "x_id": 139,
@@ -707,7 +707,7 @@
         {
           "numero": 59,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Chocolate y demás productos derivados del cacao.",
           "padre_numero": 56,
           "x_id": 139,
@@ -716,7 +716,7 @@
         {
           "numero": 60,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Flanes y pudines.",
           "padre_numero": 56,
           "x_id": 139,
@@ -725,7 +725,7 @@
         {
           "numero": 61,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "Dulces de frutas y hortalizas.",
           "padre_numero": 56,
           "x_id": 139,
@@ -734,7 +734,7 @@
         {
           "numero": 62,
           "tipo": "numeral",
-          "identificador": "6.",
+          "identificador": "6",
           "contenido": "Cremas de cacahuate y avellanas.",
           "padre_numero": 56,
           "x_id": 139,
@@ -743,7 +743,7 @@
         {
           "numero": 63,
           "tipo": "numeral",
-          "identificador": "7.",
+          "identificador": "7",
           "contenido": "Dulces de leche.",
           "padre_numero": 56,
           "x_id": 139,
@@ -752,7 +752,7 @@
         {
           "numero": 64,
           "tipo": "numeral",
-          "identificador": "8.",
+          "identificador": "8",
           "contenido": "Alimentos preparados a base de cereales.",
           "padre_numero": 56,
           "x_id": 139,
@@ -761,7 +761,7 @@
         {
           "numero": 65,
           "tipo": "numeral",
-          "identificador": "9.",
+          "identificador": "9",
           "contenido": "Helados, nieves y paletas de hielo.",
           "padre_numero": 56,
           "x_id": 139,
@@ -893,7 +893,7 @@
         {
           "numero": 78,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "El acceso o descarga permitido directamente por el prestador del servicio digital.",
           "padre_numero": 77,
           "x_id": 140,
@@ -902,7 +902,7 @@
         {
           "numero": 79,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "El acceso o descarga permitido a través de plataformas digitales de intermediación a que se refieren los artículos 1o.-A BIS y 18-B, fracción II de la Ley del Impuesto al Valor Agregado.",
           "padre_numero": 77,
           "x_id": 140,
@@ -1161,8 +1161,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La densidad en kilogramos por litro (kg/lt);",
+          "identificador": "a",
+          "contenido": ") La densidad en kilogramos por litro (kg/lt);",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -1170,8 +1170,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El poder calorífico promedio de mil toneladas del combustible expresado en Terajoules, y",
+          "identificador": "b",
+          "contenido": ") El poder calorífico promedio de mil toneladas del combustible expresado en Terajoules, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -1179,8 +1179,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El factor de emisión de carbono expresado en toneladas de carbono por Terajoules.",
+          "identificador": "c",
+          "contenido": ") El factor de emisión de carbono expresado en toneladas de carbono por Terajoules.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -1597,8 +1597,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Bebidas alcohólicas, las que a la temperatura de 15° centígrados tengan una graduación alcohólica de más de 3°G.L., hasta 55°G.L., incluyendo el aguardiente y a los concentrados de bebidas alcohólicas aun cuando tengan una graduación alcohólica mayor.",
+          "identificador": "a",
+          "contenido": ") Bebidas alcohólicas, las que a la temperatura de 15° centígrados tengan una graduación alcohólica de más de 3°G.L., hasta 55°G.L., incluyendo el aguardiente y a los concentrados de bebidas alcohólicas aun cuando tengan una graduación alcohólica mayor.",
           "padre_numero": 2,
           "x_id": 121,
           "x_texto": 143
@@ -1606,8 +1606,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Bebidas refrescantes, las elaboradas con un mínimo de 50% a base de vino de mesa, producto de la fermentación natural de frutas, pudiéndose adicionar agua, bióxido de carbono o agua carbonatada, jugo de frutas, extracto de frutas, aceites esenciales, ácido cítrico, azúcar, ácido benzoico o ácido sórbico o sus sales como conservadores, así como aquéllas que se elaboran de destilados alcohólicos diversos de los antes señalados.",
+          "identificador": "b",
+          "contenido": ") Bebidas refrescantes, las elaboradas con un mínimo de 50% a base de vino de mesa, producto de la fermentación natural de frutas, pudiéndose adicionar agua, bióxido de carbono o agua carbonatada, jugo de frutas, extracto de frutas, aceites esenciales, ácido cítrico, azúcar, ácido benzoico o ácido sórbico o sus sales como conservadores, así como aquéllas que se elaboran de destilados alcohólicos diversos de los antes señalados.",
           "padre_numero": 2,
           "x_id": 121,
           "x_texto": 143
@@ -1693,8 +1693,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cigarros, los cigarros con o sin filtro, elaborados con mezcla de tabacos rubios o de tabacos obscuros, envueltos con papel o cualquier otra sustancia que no contenga tabaco.",
+          "identificador": "a",
+          "contenido": ") Cigarros, los cigarros con o sin filtro, elaborados con mezcla de tabacos rubios o de tabacos obscuros, envueltos con papel o cualquier otra sustancia que no contenga tabaco.",
           "padre_numero": 11,
           "x_id": 121,
           "x_texto": 143
@@ -1702,8 +1702,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Puros, los tabacos labrados confeccionados y enrollados al 100% con hojas de tabaco o cualquier otra sustancia que contenga tabaco.",
+          "identificador": "b",
+          "contenido": ") Puros, los tabacos labrados confeccionados y enrollados al 100% con hojas de tabaco o cualquier otra sustancia que contenga tabaco.",
           "padre_numero": 11,
           "x_id": 121,
           "x_texto": 143
@@ -1711,8 +1711,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Otros tabacos labrados, los que no están comprendidos en los incisos anteriores. Se consideran tabacos labrados, entre otros, a los tabacos cernidos, picados, de hebra, de mascar, así como al rapé.",
+          "identificador": "c",
+          "contenido": ") Otros tabacos labrados, los que no están comprendidos en los incisos anteriores. Se consideran tabacos labrados, entre otros, a los tabacos cernidos, picados, de hebra, de mascar, así como al rapé.",
           "padre_numero": 11,
           "x_id": 121,
           "x_texto": 143
@@ -1720,8 +1720,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Otros productos que contengan nicotina, los que contengan nicotina ya sea natural o artificial, cualquiera que sea su presentación, independientemente de que pudieran contener otras sustancias en su elaboración, que no contengan tabaco cortado, molido, en polvo o en hoja y no estén diseñados para calentarse o quemarse.",
+          "identificador": "d",
+          "contenido": ") Otros productos que contengan nicotina, los que contengan nicotina ya sea natural o artificial, cualquiera que sea su presentación, independientemente de que pudieran contener otras sustancias en su elaboración, que no contengan tabaco cortado, molido, en polvo o en hoja y no estén diseñados para calentarse o quemarse.",
           "padre_numero": 11,
           "x_id": 121,
           "x_texto": 143,
@@ -1741,8 +1741,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Combustibles automotrices: gasolinas, diésel, combustibles no fósiles o la mezcla de cualquiera de los combustibles mencionados.",
+          "identificador": "a",
+          "contenido": ") Combustibles automotrices: gasolinas, diésel, combustibles no fósiles o la mezcla de cualquiera de los combustibles mencionados.",
           "padre_numero": 16,
           "x_id": 121,
           "x_texto": 143
@@ -1750,8 +1750,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Gasolina, combustible líquido que se puede obtener del proceso de refinación del petróleo crudo o mediante procesos alternativos que pueden utilizar como insumo materias primas que tuvieron su origen en el petróleo formado por la mezcla de hidrocarburos líquidos volátiles, principalmente parafinas ramificadas, aromáticos, naftenos y olefinas, pudiendo contener otros compuestos provenientes de otras fuentes, que se clasifica en función del número de octano.",
+          "identificador": "b",
+          "contenido": ") Gasolina, combustible líquido que se puede obtener del proceso de refinación del petróleo crudo o mediante procesos alternativos que pueden utilizar como insumo materias primas que tuvieron su origen en el petróleo formado por la mezcla de hidrocarburos líquidos volátiles, principalmente parafinas ramificadas, aromáticos, naftenos y olefinas, pudiendo contener otros compuestos provenientes de otras fuentes, que se clasifica en función del número de octano.",
           "padre_numero": 16,
           "x_id": 121,
           "x_texto": 143
@@ -1759,8 +1759,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Diésel, combustible líquido que puede obtenerse del proceso de refinación del petróleo crudo o mediante procesos alternativos que pueden utilizar como insumo materias primas que tuvieron su origen en el petróleo, formado por la mezcla compleja de hidrocarburos, principalmente parafinas no ramificadas, pudiendo contener otros compuestos provenientes de otras fuentes, con independencia del uso al que se destine.",
+          "identificador": "c",
+          "contenido": ") Diésel, combustible líquido que puede obtenerse del proceso de refinación del petróleo crudo o mediante procesos alternativos que pueden utilizar como insumo materias primas que tuvieron su origen en el petróleo, formado por la mezcla compleja de hidrocarburos, principalmente parafinas no ramificadas, pudiendo contener otros compuestos provenientes de otras fuentes, con independencia del uso al que se destine.",
           "padre_numero": 16,
           "x_id": 121,
           "x_texto": 143
@@ -1768,8 +1768,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Combustibles no fósiles, combustibles o componentes de combustibles que no se obtienen o derivan de un proceso de destilación de petróleo crudo o del procesamiento de gas natural.",
+          "identificador": "d",
+          "contenido": ") Combustibles no fósiles, combustibles o componentes de combustibles que no se obtienen o derivan de un proceso de destilación de petróleo crudo o del procesamiento de gas natural.",
           "padre_numero": 16,
           "x_id": 121,
           "x_texto": 143,
@@ -2002,8 +2002,8 @@
         {
           "numero": 41,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Gas Natural, hidrocarburo que se presenta como una mezcla de gases, constituida principalmente por metano, pero que comúnmente puede contener otros alcanos y otros gases como nitrógeno, ácido sulfhídrico, helio y mercaptanos.",
+          "identificador": "a",
+          "contenido": ") Gas Natural, hidrocarburo que se presenta como una mezcla de gases, constituida principalmente por metano, pero que comúnmente puede contener otros alcanos y otros gases como nitrógeno, ácido sulfhídrico, helio y mercaptanos.",
           "padre_numero": 40,
           "x_id": 121,
           "x_texto": 143
@@ -2011,8 +2011,8 @@
         {
           "numero": 42,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Propano, gas incoloro e inodoro, perteneciente a los hidrocarburos alifáticos con enlaces simples de tres carbonos.",
+          "identificador": "b",
+          "contenido": ") Propano, gas incoloro e inodoro, perteneciente a los hidrocarburos alifáticos con enlaces simples de tres carbonos.",
           "padre_numero": 40,
           "x_id": 121,
           "x_texto": 143
@@ -2020,8 +2020,8 @@
         {
           "numero": 43,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Butano, también conocido como n-butano, hidrocarburo saturado, parafínico o alifático, inflamable que se presenta comúnmente en estado gaseoso, incoloro e inodoro, compuesto por cuatro átomos de carbono y por diez de hidrógeno.",
+          "identificador": "c",
+          "contenido": ") Butano, también conocido como n-butano, hidrocarburo saturado, parafínico o alifático, inflamable que se presenta comúnmente en estado gaseoso, incoloro e inodoro, compuesto por cuatro átomos de carbono y por diez de hidrógeno.",
           "padre_numero": 40,
           "x_id": 121,
           "x_texto": 143
@@ -2029,8 +2029,8 @@
         {
           "numero": 44,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Gasolina, el producto definido conforme a lo dispuesto en la fracción IX, inciso b) de este artículo.",
+          "identificador": "d",
+          "contenido": ") Gasolina, el producto definido conforme a lo dispuesto en la fracción IX, inciso b) de este artículo.",
           "padre_numero": 40,
           "x_id": 121,
           "x_texto": 143,
@@ -2041,8 +2041,8 @@
         {
           "numero": 45,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Gasavión, alquilado o gasolina de alto octanaje, de alta volatilidad y estabilidad y de un bajo punto de congelación, con contenido de tetraetilo de plomo utilizado en aeronaves equipadas con motores de combustión interna.",
+          "identificador": "e",
+          "contenido": ") Gasavión, alquilado o gasolina de alto octanaje, de alta volatilidad y estabilidad y de un bajo punto de congelación, con contenido de tetraetilo de plomo utilizado en aeronaves equipadas con motores de combustión interna.",
           "padre_numero": 40,
           "x_id": 121,
           "x_texto": 143
@@ -2050,8 +2050,8 @@
         {
           "numero": 46,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Turbosina y kerosenos, combustibles líquidos e incoloros insolubles en agua, que se obtienen del proceso de refinación del petróleo crudo al fraccionarse típicamente a temperaturas entre los 157° y los 233° Celsius, utilizados principalmente como combustibles para aviones de retropropulsión, en los motores a reacción y de turbina de gas.",
+          "identificador": "f",
+          "contenido": ") Turbosina y kerosenos, combustibles líquidos e incoloros insolubles en agua, que se obtienen del proceso de refinación del petróleo crudo al fraccionarse típicamente a temperaturas entre los 157° y los 233° Celsius, utilizados principalmente como combustibles para aviones de retropropulsión, en los motores a reacción y de turbina de gas.",
           "padre_numero": 40,
           "x_id": 121,
           "x_texto": 143
@@ -2059,8 +2059,8 @@
         {
           "numero": 47,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Diésel, el producto definido conforme a lo dispuesto en la fracción IX, inciso c) de este artículo.",
+          "identificador": "g",
+          "contenido": ") Diésel, el producto definido conforme a lo dispuesto en la fracción IX, inciso c) de este artículo.",
           "padre_numero": 40,
           "x_id": 121,
           "x_texto": 143,
@@ -2071,8 +2071,8 @@
         {
           "numero": 48,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Combustóleo, también llamado fuel oil, combustible más pesado de los que se puede destilar a presión atmosférica, es una fracción del petróleo que se obtiene como residuo de la destilación fraccionada a temperaturas típicamente por encima de los 426° Celsius, está compuesto por moléculas con más de 20 átomos de carbono, y su color es negro, se usa como combustible para plantas de energía eléctrica, calderas y hornos.",
+          "identificador": "h",
+          "contenido": ") Combustóleo, también llamado fuel oil, combustible más pesado de los que se puede destilar a presión atmosférica, es una fracción del petróleo que se obtiene como residuo de la destilación fraccionada a temperaturas típicamente por encima de los 426° Celsius, está compuesto por moléculas con más de 20 átomos de carbono, y su color es negro, se usa como combustible para plantas de energía eléctrica, calderas y hornos.",
           "padre_numero": 40,
           "x_id": 121,
           "x_texto": 143
@@ -2080,8 +2080,8 @@
         {
           "numero": 49,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "Coque de Petróleo, combustible sólido carbonoso formado por la coquización del petróleo crudo procesado en refinerías o en procesos de craqueo.",
+          "identificador": "i",
+          "contenido": ") Coque de Petróleo, combustible sólido carbonoso formado por la coquización del petróleo crudo procesado en refinerías o en procesos de craqueo.",
           "padre_numero": 40,
           "x_id": 121,
           "x_texto": 143
@@ -2089,8 +2089,8 @@
         {
           "numero": 50,
           "tipo": "inciso",
-          "identificador": "j)",
-          "contenido": "Coque de Carbón, combustible sólido carbonoso formado por la destilación de carbón bituminoso calentado a temperaturas de 500° a 1,100° Celsius sin contacto con el aire.",
+          "identificador": "j",
+          "contenido": ") Coque de Carbón, combustible sólido carbonoso formado por la destilación de carbón bituminoso calentado a temperaturas de 500° a 1,100° Celsius sin contacto con el aire.",
           "padre_numero": 40,
           "x_id": 121,
           "x_texto": 143
@@ -2098,8 +2098,8 @@
         {
           "numero": 51,
           "tipo": "inciso",
-          "identificador": "k)",
-          "contenido": "Carbón Mineral, roca sedimentaria utilizada como combustible sólido, compuesto principalmente por carbono y otros elementos en cantidades variables como hidrógeno, azufre, oxígeno y nitrógeno.",
+          "identificador": "k",
+          "contenido": ") Carbón Mineral, roca sedimentaria utilizada como combustible sólido, compuesto principalmente por carbono y otros elementos en cantidades variables como hidrógeno, azufre, oxígeno y nitrógeno.",
           "padre_numero": 40,
           "x_id": 121,
           "x_texto": 143
@@ -2107,8 +2107,8 @@
         {
           "numero": 52,
           "tipo": "inciso",
-          "identificador": "l)",
-          "contenido": "Otros combustibles fósiles, cualquier otro derivado del petróleo, carbón mineral o gas natural que se destinen a un proceso de combustión y que no estén listados en los incisos anteriores.",
+          "identificador": "l",
+          "contenido": ") Otros combustibles fósiles, cualquier otro derivado del petróleo, carbón mineral o gas natural que se destinen a un proceso de combustión y que no estén listados en los incisos anteriores.",
           "padre_numero": 40,
           "x_id": 121,
           "x_texto": 143,
@@ -2941,8 +2941,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "(Se deroga).",
+          "identificador": "a",
+          "contenido": ") (Se deroga).",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129,
@@ -2953,8 +2953,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Aguamiel y productos derivados de su fermentación.",
+          "identificador": "b",
+          "contenido": ") Aguamiel y productos derivados de su fermentación.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -2962,8 +2962,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las que realicen personas diferentes de los fabricantes, productores o importadores, de los bienes a que se refieren los incisos C), D), G) y H) de la fracción I del artículo 2o. y el",
+          "identificador": "c",
+          "contenido": ") Las que realicen personas diferentes de los fabricantes, productores o importadores, de los bienes a que se refieren los incisos C), D), G) y H) de la fracción I del artículo 2o. y el",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -3995,8 +3995,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Sistema central de apuestas en el que se registren y totalicen las transacciones efectuadas con motivo de los juegos con apuestas y sorteos que realicen.",
+          "identificador": "a",
+          "contenido": ") Sistema central de apuestas en el que se registren y totalicen las transacciones efectuadas con motivo de los juegos con apuestas y sorteos que realicen.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -4004,8 +4004,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Sistema de caja y control de efectivo en el que se registren cada una de las cantidades efectivamente percibidas de los participantes por las actividades a que se refiere el inciso B) de la fracción II del artículo 2o. de esta Ley.",
+          "identificador": "b",
+          "contenido": ") Sistema de caja y control de efectivo en el que se registren cada una de las cantidades efectivamente percibidas de los participantes por las actividades a que se refiere el inciso B) de la fracción II del artículo 2o. de esta Ley.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -4121,8 +4121,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cumplir las obligaciones previstas en el artículo 18-D, fracciones I, VI y VII de la Ley del Impuesto al Valor Agregado.",
+          "identificador": "a",
+          "contenido": ") Cumplir las obligaciones previstas en el artículo 18-D, fracciones I, VI y VII de la Ley del Impuesto al Valor Agregado.",
           "padre_numero": 4,
           "x_id": 129,
           "x_texto": 151
@@ -4130,8 +4130,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Ofertar y cobrar, conjuntamente con el precio de sus servicios digitales, el impuesto especial sobre producción y servicios incluido en el precio.",
+          "identificador": "b",
+          "contenido": ") Ofertar y cobrar, conjuntamente con el precio de sus servicios digitales, el impuesto especial sobre producción y servicios incluido en el precio.",
           "padre_numero": 4,
           "x_id": 129,
           "x_texto": 151
@@ -4139,8 +4139,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Proporcionar al Servicio de Administración Tributaria la información sobre el número de servicios prestados en cada mes de calendario a los receptores ubicados en territorio nacional que reciban sus servicios digitales gravados con el impuesto especial sobre producción y servicios, así como el número de los receptores mencionados, y mantener los registros base de la información presentada. Dicha información se deberá presentar de manera mensual, conjuntamente con la declaración de pago a que se refiere el siguiente inciso.",
+          "identificador": "c",
+          "contenido": ") Proporcionar al Servicio de Administración Tributaria la información sobre el número de servicios prestados en cada mes de calendario a los receptores ubicados en territorio nacional que reciban sus servicios digitales gravados con el impuesto especial sobre producción y servicios, así como el número de los receptores mencionados, y mantener los registros base de la información presentada. Dicha información se deberá presentar de manera mensual, conjuntamente con la declaración de pago a que se refiere el siguiente inciso.",
           "padre_numero": 4,
           "x_id": 129,
           "x_texto": 151
@@ -4148,8 +4148,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Calcular en cada mes de calendario el impuesto especial sobre producción y servicios correspondiente, aplicando la tasa que corresponda a las contraprestaciones efectivamente cobradas en dicho mes y efectuar su pago mediante declaración electrónica que presentarán a más tardar el día 17 del mes siguiente de que se trate.",
+          "identificador": "d",
+          "contenido": ") Calcular en cada mes de calendario el impuesto especial sobre producción y servicios correspondiente, aplicando la tasa que corresponda a las contraprestaciones efectivamente cobradas en dicho mes y efectuar su pago mediante declaración electrónica que presentarán a más tardar el día 17 del mes siguiente de que se trate.",
           "padre_numero": 4,
           "x_id": 129,
           "x_texto": 151
@@ -4157,8 +4157,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Emitir y enviar vía electrónica a los receptores de los servicios digitales en territorio nacional los comprobantes correspondientes al pago de las contraprestaciones con el impuesto incluido en el precio, cuando lo solicite el receptor de los servicios, mismos que deberán reunir los requisitos que permitan identificar a los prestadores de los servicios y a los receptores de los mismos, de conformidad con las reglas de carácter general que para tal efecto emita el Servicio de Administración Tributaria.",
+          "identificador": "e",
+          "contenido": ") Emitir y enviar vía electrónica a los receptores de los servicios digitales en territorio nacional los comprobantes correspondientes al pago de las contraprestaciones con el impuesto incluido en el precio, cuando lo solicite el receptor de los servicios, mismos que deberán reunir los requisitos que permitan identificar a los prestadores de los servicios y a los receptores de los mismos, de conformidad con las reglas de carácter general que para tal efecto emita el Servicio de Administración Tributaria.",
           "padre_numero": 4,
           "x_id": 129,
           "x_texto": 151
@@ -4175,8 +4175,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cumplir las obligaciones previstas en el artículo 18-D, fracciones I, VI y VII de la Ley del Impuesto al Valor Agregado, cuando se trate de residentes en el extranjero sin establecimiento en México.",
+          "identificador": "a",
+          "contenido": ") Cumplir las obligaciones previstas en el artículo 18-D, fracciones I, VI y VII de la Ley del Impuesto al Valor Agregado, cuando se trate de residentes en el extranjero sin establecimiento en México.",
           "padre_numero": 10,
           "x_id": 129,
           "x_texto": 151
@@ -4184,8 +4184,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Publicar en su página de Internet, aplicación, plataforma o cualquier otro medio similar, el precio con el impuesto especial sobre producción y servicios incluido en que se ofertan los servicios digitales por los prestadores de servicios, en los que operan como intermediarios.",
+          "identificador": "b",
+          "contenido": ") Publicar en su página de Internet, aplicación, plataforma o cualquier otro medio similar, el precio con el impuesto especial sobre producción y servicios incluido en que se ofertan los servicios digitales por los prestadores de servicios, en los que operan como intermediarios.",
           "padre_numero": 10,
           "x_id": 129,
           "x_texto": 151
@@ -4193,8 +4193,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Proporcionar al Servicio de Administración Tributaria, en el apartado correspondiente, la información a que se refiere el artículo 18-J, fracción III de la Ley del Impuesto al Valor Agregado, en cuyas operaciones hayan actuado como intermediarios.",
+          "identificador": "c",
+          "contenido": ") Proporcionar al Servicio de Administración Tributaria, en el apartado correspondiente, la información a que se refiere el artículo 18-J, fracción III de la Ley del Impuesto al Valor Agregado, en cuyas operaciones hayan actuado como intermediarios.",
           "padre_numero": 10,
           "x_id": 129,
           "x_texto": 151
@@ -5109,8 +5109,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "2.8% a las entidades que la produzcan.",
+          "identificador": "a",
+          "contenido": ").- 2.8% a las entidades que la produzcan.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -5118,8 +5118,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "36.6% a las entidades donde se consuma.",
+          "identificador": "b",
+          "contenido": ").- 36.6% a las entidades donde se consuma.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -5127,8 +5127,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "7.9% a los municipios de las entidades donde se consuma.",
+          "identificador": "c",
+          "contenido": ").- 7.9% a los municipios de las entidades donde se consuma.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -5145,8 +5145,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "8% a las entidades federativas.",
+          "identificador": "a",
+          "contenido": ").- 8% a las entidades federativas.",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -5154,8 +5154,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "2% a sus municipios.",
+          "identificador": "b",
+          "contenido": ").- 2% a sus municipios.",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -5172,8 +5172,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "2% a las entidades productoras.",
+          "identificador": "a",
+          "contenido": ").- 2% a las entidades productoras.",
           "padre_numero": 9,
           "x_id": 114,
           "x_texto": 136
@@ -5181,8 +5181,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "13% a las entidades consumidoras.",
+          "identificador": "b",
+          "contenido": ").- 13% a las entidades consumidoras.",
           "padre_numero": 9,
           "x_id": 114,
           "x_texto": 136
@@ -5190,8 +5190,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "5% a los municipios de las entidades consumidoras. La Secretaría de Hacienda y Crédito Público cubrirá directamente las cantidades que correspondan a los municipios, de acuerdo con la distribución que señale la legislatura local respectiva y en su defecto, en función del número de sus habitantes según los datos del último censo.",
+          "identificador": "c",
+          "contenido": ").- 5% a los municipios de las entidades consumidoras. La Secretaría de Hacienda y Crédito Público cubrirá directamente las cantidades que correspondan a los municipios, de acuerdo con la distribución que señale la legislatura local respectiva y en su defecto, en función del número de sus habitantes según los datos del último censo.",
           "padre_numero": 9,
           "x_id": 114,
           "x_texto": 136

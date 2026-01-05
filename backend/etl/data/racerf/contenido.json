@@ -1168,8 +1168,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Por cada registro patronal a sustituir, se multiplicará la prima asignada por el total de los salarios base de cotización de los trabajadores comprendidos en el mismo.",
+          "identificador": "a",
+          "contenido": "). Por cada registro patronal a sustituir, se multiplicará la prima asignada por el total de los salarios base de cotización de los trabajadores comprendidos en el mismo.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -1177,8 +1177,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Se sumarán los productos obtenidos conforme al inciso anterior y el resultado se dividirá entre la suma de los salarios base de cotización del total de los trabajadores comprendidos en todos los registros patronales a sustituir.",
+          "identificador": "b",
+          "contenido": "). Se sumarán los productos obtenidos conforme al inciso anterior y el resultado se dividirá entre la suma de los salarios base de cotización del total de los trabajadores comprendidos en todos los registros patronales a sustituir.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -1186,8 +1186,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La prima así obtenida se aplicará al registro patronal único y estará vigente hasta que entre en vigor la prima derivada de la revisión anual de siniestralidad a que se refiere el artículo 32 de este Reglamento, y",
+          "identificador": "c",
+          "contenido": "). La prima así obtenida se aplicará al registro patronal único y estará vigente hasta que entre en vigor la prima derivada de la revisión anual de siniestralidad a que se refiere el artículo 32 de este Reglamento, y",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -1338,8 +1338,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cuando la empresa escindente se extinga por efectos de la escisión, por haber transmitido la totalidad de sus bienes a dos o más empresas escindidas, la empresa escindente deberá manifestar su baja al Instituto y las empresas escindidas se ubicarán en la prima media de la clase que les corresponda, de acuerdo a la actividad a la que se dediquen, en términos de este Reglamento, conservando dicha prima hasta que hayan completado un periodo anual del primero de enero al treinta y uno de diciembre.",
+          "identificador": "a",
+          "contenido": ") Cuando la empresa escindente se extinga por efectos de la escisión, por haber transmitido la totalidad de sus bienes a dos o más empresas escindidas, la empresa escindente deberá manifestar su baja al Instituto y las empresas escindidas se ubicarán en la prima media de la clase que les corresponda, de acuerdo a la actividad a la que se dediquen, en términos de este Reglamento, conservando dicha prima hasta que hayan completado un periodo anual del primero de enero al treinta y uno de diciembre.",
           "padre_numero": 14,
           "x_id": 107,
           "x_texto": 129
@@ -1347,8 +1347,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando la empresa escindente no se extinga por efectos de la escisión, por haber transmitido solamente una parte de sus bienes a una o más empresas escindidas y la escisión no implique cambio de actividad para la empresa escindente, ésta continuará con la misma clasificación que tenía hasta antes de la escisión y las empresas escindidas se ubicarán en la prima media de la clase que les corresponda, de acuerdo a la actividad a la que se dediquen, en términos de este Reglamento, conservando dicha prima hasta que hayan completado un periodo anual del primero de enero al treinta y uno de diciembre, y",
+          "identificador": "b",
+          "contenido": ") Cuando la empresa escindente no se extinga por efectos de la escisión, por haber transmitido solamente una parte de sus bienes a una o más empresas escindidas y la escisión no implique cambio de actividad para la empresa escindente, ésta continuará con la misma clasificación que tenía hasta antes de la escisión y las empresas escindidas se ubicarán en la prima media de la clase que les corresponda, de acuerdo a la actividad a la que se dediquen, en términos de este Reglamento, conservando dicha prima hasta que hayan completado un periodo anual del primero de enero al treinta y uno de diciembre, y",
           "padre_numero": 14,
           "x_id": 107,
           "x_texto": 129
@@ -3593,8 +3593,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Litotripcia.",
+          "identificador": "a",
+          "contenido": ").- Litotripcia.",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -3602,8 +3602,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cirugía de padecimientos ginecológicos, excepto neoplasias malignas de útero, ovarios y piso perineal.",
+          "identificador": "b",
+          "contenido": ").- Cirugía de padecimientos ginecológicos, excepto neoplasias malignas de útero, ovarios y piso perineal.",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -3611,8 +3611,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Cirugía de insuficiencia venosa y várices.",
+          "identificador": "c",
+          "contenido": ").- Cirugía de insuficiencia venosa y várices.",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -3620,8 +3620,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Cirugía de senos paranasales y nariz.",
+          "identificador": "d",
+          "contenido": ").- Cirugía de senos paranasales y nariz.",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -3629,8 +3629,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Cirugía de varicocele.",
+          "identificador": "e",
+          "contenido": ").- Cirugía de varicocele.",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -3638,8 +3638,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Hemorroidectomía y cirugía de fístulas rectales y prolapso de recto.",
+          "identificador": "f",
+          "contenido": ").- Hemorroidectomía y cirugía de fístulas rectales y prolapso de recto.",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -3647,8 +3647,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Amigdalectomía y adenoidectomía.",
+          "identificador": "g",
+          "contenido": ").- Amigdalectomía y adenoidectomía.",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -3656,8 +3656,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Cirugía de hernias, excepto hernia de disco intervertebral.",
+          "identificador": "h",
+          "contenido": ").- Cirugía de hernias, excepto hernia de disco intervertebral.",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -3665,8 +3665,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "Cirugía de hallux valgus.",
+          "identificador": "i",
+          "contenido": ").- Cirugía de hallux valgus.",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -3674,8 +3674,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "j)",
-          "contenido": "Cirugía de estrabismo.",
+          "identificador": "j",
+          "contenido": ").- Cirugía de estrabismo.",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -3984,8 +3984,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Declaración expresa firmada por el asegurado, surtiendo efecto al término de la anualidad pagada, y",
+          "identificador": "a",
+          "contenido": ").- Declaración expresa firmada por el asegurado, surtiendo efecto al término de la anualidad pagada, y",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -3993,8 +3993,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "No pagar la cuota anual al momento en que corresponda la renovación.",
+          "identificador": "b",
+          "contenido": ").- No pagar la cuota anual al momento en que corresponda la renovación.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -4011,8 +4011,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Por declaración expresa firmada por el grupo de asegurados, la que surtirá efectos al término de la anualidad o parcialidad pagada;",
+          "identificador": "a",
+          "contenido": ").- Por declaración expresa firmada por el grupo de asegurados, la que surtirá efectos al término de la anualidad o parcialidad pagada;",
           "padre_numero": 5,
           "x_id": 107,
           "x_texto": 129
@@ -4020,8 +4020,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Por no pagar la cuota anual al momento en que corresponda la renovación o, en su caso, dos o más parcialidades, y",
+          "identificador": "b",
+          "contenido": ").- Por no pagar la cuota anual al momento en que corresponda la renovación o, en su caso, dos o más parcialidades, y",
           "padre_numero": 5,
           "x_id": 107,
           "x_texto": 129
@@ -4029,8 +4029,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Por incumplimiento en la renovación del requisito del número mínimo de asegurados establecido en el artículo 75 de este Reglamento.",
+          "identificador": "c",
+          "contenido": ").- Por incumplimiento en la renovación del requisito del número mínimo de asegurados establecido en el artículo 75 de este Reglamento.",
           "padre_numero": 5,
           "x_id": 107,
           "x_texto": 129
@@ -4787,8 +4787,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La determinación se haya efectuado mediante el programa informático autorizado por el Instituto y el pago se realice al momento de presentar la cédula de determinación. En este caso, el patrón deberá entregar el medio magnético que contenga la cédula de determinación recabando el comprobante de pago correspondiente.",
+          "identificador": "a",
+          "contenido": ").- La determinación se haya efectuado mediante el programa informático autorizado por el Instituto y el pago se realice al momento de presentar la cédula de determinación. En este caso, el patrón deberá entregar el medio magnético que contenga la cédula de determinación recabando el comprobante de pago correspondiente.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -4796,8 +4796,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El patrón utilice la cédula de determinación elaborada por el Instituto sin hacer ajustes a ésta y el pago se realice al momento de presentar dicha cédula, recabando copia sellada como comprobante del pago efectuado.",
+          "identificador": "b",
+          "contenido": ").- El patrón utilice la cédula de determinación elaborada por el Instituto sin hacer ajustes a ésta y el pago se realice al momento de presentar dicha cédula, recabando copia sellada como comprobante del pago efectuado.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -4823,8 +4823,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La determinación se efectúe mediante el programa informático autorizado por el Instituto y el pago no se realice al momento de presentar la cédula de determinación. En este caso, el patrón deberá exhibir la tarjeta de identificación patronal expedida por el Instituto y entregar lo señalado en el inciso a) de la fracción I de este artículo, recabando acuse de recibo por parte del Instituto;",
+          "identificador": "a",
+          "contenido": ").- La determinación se efectúe mediante el programa informático autorizado por el Instituto y el pago no se realice al momento de presentar la cédula de determinación. En este caso, el patrón deberá exhibir la tarjeta de identificación patronal expedida por el Instituto y entregar lo señalado en el inciso a) de la fracción I de este artículo, recabando acuse de recibo por parte del Instituto;",
           "padre_numero": 6,
           "x_id": 107,
           "x_texto": 129
@@ -4832,8 +4832,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El patrón elabore la cédula de determinación conforme a los formatos autorizados por el Instituto, independientemente de que al momento de la presentación de la cédula realice o no el pago correspondiente. Para este efecto, se deberá exhibir la tarjeta de identificación patronal expedida por el Instituto y recabar copia de la cédula de determinación sellada de recibida por éste, como comprobante de la presentación y del pago, en su caso, y",
+          "identificador": "b",
+          "contenido": ").- El patrón elabore la cédula de determinación conforme a los formatos autorizados por el Instituto, independientemente de que al momento de la presentación de la cédula realice o no el pago correspondiente. Para este efecto, se deberá exhibir la tarjeta de identificación patronal expedida por el Instituto y recabar copia de la cédula de determinación sellada de recibida por éste, como comprobante de la presentación y del pago, en su caso, y",
           "padre_numero": 6,
           "x_id": 107,
           "x_texto": 129
@@ -4841,8 +4841,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El patrón utilice la cédula de determinación elaborada por el Instituto haciendo ajustes a la misma, independientemente de que al momento de la presentación de la cédula realice o no el pago correspondiente. En este caso, se deberá exhibir la tarjeta de identificación patronal expedida por el Instituto y recabar copia de la cédula de determinación sellada de recibida por éste, como comprobante de la presentación y del pago, en su caso.",
+          "identificador": "c",
+          "contenido": ").- El patrón utilice la cédula de determinación elaborada por el Instituto haciendo ajustes a la misma, independientemente de que al momento de la presentación de la cédula realice o no el pago correspondiente. En este caso, se deberá exhibir la tarjeta de identificación patronal expedida por el Instituto y recabar copia de la cédula de determinación sellada de recibida por éste, como comprobante de la presentación y del pago, en su caso.",
           "padre_numero": 6,
           "x_id": 107,
           "x_texto": 129
@@ -6638,8 +6638,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Limpia;",
+          "identificador": "a",
+          "contenido": ").- Limpia;",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6647,8 +6647,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Sin salvedades;",
+          "identificador": "b",
+          "contenido": ").- Sin salvedades;",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6656,8 +6656,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Con salvedades;",
+          "identificador": "c",
+          "contenido": ").- Con salvedades;",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6665,8 +6665,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Con abstención de opinión, o",
+          "identificador": "d",
+          "contenido": ").- Con abstención de opinión, o",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6674,8 +6674,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Con opinión negativa.",
+          "identificador": "e",
+          "contenido": ").- Con opinión negativa.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6771,8 +6771,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Descripción de las características generales del patrón y específicas sobre las modalidades de aseguramiento que le sean aplicables, y",
+          "identificador": "a",
+          "contenido": ").- Descripción de las características generales del patrón y específicas sobre las modalidades de aseguramiento que le sean aplicables, y",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6780,8 +6780,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Clases y características de los contratos de trabajo colectivos e individuales tipo, en su caso. Si existieran contratos de naturaleza diversa o de prestación de servicios se indicarán las características generales de los mismos;",
+          "identificador": "b",
+          "contenido": ").- Clases y características de los contratos de trabajo colectivos e individuales tipo, en su caso. Si existieran contratos de naturaleza diversa o de prestación de servicios se indicarán las características generales de los mismos;",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6913,8 +6913,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Su registro ante el Instituto se encuentre vigente, y",
+          "identificador": "a",
+          "contenido": ").- Su registro ante el Instituto se encuentre vigente, y",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6922,8 +6922,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "No tenga impedimento;",
+          "identificador": "b",
+          "contenido": ").- No tenga impedimento;",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6940,8 +6940,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La planeación del trabajo y la supervisión de sus auxiliares le permita allegarse los elementos de juicio suficientes para fundamentar su dictamen;",
+          "identificador": "a",
+          "contenido": ").- La planeación del trabajo y la supervisión de sus auxiliares le permita allegarse los elementos de juicio suficientes para fundamentar su dictamen;",
           "padre_numero": 5,
           "x_id": 107,
           "x_texto": 129
@@ -6949,8 +6949,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El estudio y evaluación del sistema de control interno del patrón le permita determinar el alcance y naturaleza de los procedimientos de auditoría que habrán de emplearse, y",
+          "identificador": "b",
+          "contenido": ").- El estudio y evaluación del sistema de control interno del patrón le permita determinar el alcance y naturaleza de los procedimientos de auditoría que habrán de emplearse, y",
           "padre_numero": 5,
           "x_id": 107,
           "x_texto": 129
@@ -6958,8 +6958,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los elementos probatorios e información contenida en los registros contables del patrón, cuando sean suficientes y adecuados para su razonable interpretación.",
+          "identificador": "c",
+          "contenido": ").- Los elementos probatorios e información contenida en los registros contables del patrón, cuando sean suficientes y adecuados para su razonable interpretación.",
           "padre_numero": 5,
           "x_id": 107,
           "x_texto": 129
@@ -7045,8 +7045,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La información o documentación que conforme a este Reglamento deba incluirse en el dictamen. El plazo para la presentación de la misma será dentro de los cinco días hábiles siguientes a la fecha de notificación del requerimiento;",
+          "identificador": "a",
+          "contenido": ").- La información o documentación que conforme a este Reglamento deba incluirse en el dictamen. El plazo para la presentación de la misma será dentro de los cinco días hábiles siguientes a la fecha de notificación del requerimiento;",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -7054,8 +7054,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los papeles de trabajo elaborados con motivo de la auditoría practicada, los cuales, en todo caso, se entiende que son propiedad del contador público, y",
+          "identificador": "b",
+          "contenido": ").- Los papeles de trabajo elaborados con motivo de la auditoría practicada, los cuales, en todo caso, se entiende que son propiedad del contador público, y",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -7063,8 +7063,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Información y documentación correspondientes a las partidas sujetas a aclaración, para cerciorarse del cumplimiento de las obligaciones del patrón.",
+          "identificador": "c",
+          "contenido": ").- Información y documentación correspondientes a las partidas sujetas a aclaración, para cerciorarse del cumplimiento de las obligaciones del patrón.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -7160,8 +7160,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Que se haya concluido y presentado el dictamen correspondiente;",
+          "identificador": "a",
+          "contenido": ").- Que se haya concluido y presentado el dictamen correspondiente;",
           "padre_numero": 4,
           "x_id": 107,
           "x_texto": 129
@@ -7169,8 +7169,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Que los avisos afiliatorios y las modificaciones salariales derivados del referido dictamen se hubieran presentado por el patrón en los formatos o medios electrónicos dispuestos para ello, y",
+          "identificador": "b",
+          "contenido": ").- Que los avisos afiliatorios y las modificaciones salariales derivados del referido dictamen se hubieran presentado por el patrón en los formatos o medios electrónicos dispuestos para ello, y",
           "padre_numero": 4,
           "x_id": 107,
           "x_texto": 129
@@ -7178,8 +7178,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Que las cuotas obrero patronales a cargo del patrón, derivadas del dictamen, se hubiesen liquidado en su totalidad o se haya agotado el plazo de doce meses establecido en el artículo 149 de este Reglamento, de conformidad con el artículo 40 C de la Ley.",
+          "identificador": "c",
+          "contenido": ").- Que las cuotas obrero patronales a cargo del patrón, derivadas del dictamen, se hubiesen liquidado en su totalidad o se haya agotado el plazo de doce meses establecido en el artículo 149 de este Reglamento, de conformidad con el artículo 40 C de la Ley.",
           "padre_numero": 4,
           "x_id": 107,
           "x_texto": 129
@@ -7265,8 +7265,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Si presenta incompleta la información a que se refieren los artículos 163, 165, 166 y 167 del presente Reglamento;",
+          "identificador": "a",
+          "contenido": ").- Si presenta incompleta la información a que se refieren los artículos 163, 165, 166 y 167 del presente Reglamento;",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -7274,8 +7274,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "En caso de que no cumpla con los requerimientos que le formule el Instituto o no presente la totalidad de la documentación o información solicitada en los términos de este Reglamento, y",
+          "identificador": "b",
+          "contenido": ").- En caso de que no cumpla con los requerimientos que le formule el Instituto o no presente la totalidad de la documentación o información solicitada en los términos de este Reglamento, y",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -7283,8 +7283,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "No cumpla con lo establecido en el artículo 154, fracciones I, II y III de este Reglamento.",
+          "identificador": "c",
+          "contenido": ").- No cumpla con lo establecido en el artículo 154, fracciones I, II y III de este Reglamento.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -7301,8 +7301,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Por un año, cuando acumule tres amonestaciones, dentro de un periodo de cuatro años consecutivos;",
+          "identificador": "a",
+          "contenido": ").- Por un año, cuando acumule tres amonestaciones, dentro de un periodo de cuatro años consecutivos;",
           "padre_numero": 6,
           "x_id": 107,
           "x_texto": 129
@@ -7310,8 +7310,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Por dos años, en las siguientes situaciones: 1) Cuando no formule el dictamen y anexos debiendo hacerlo; 2) Cuando habiendo presentado incompletos bien sea el dictamen o los anexos, el contador público autorizado no hiciera las aclaraciones que le solicite el Instituto, y 3) Cuando la documentación aclaratoria solicitada por el Instituto no se presente dentro del plazo que se otorgue para tal efecto, independientemente de las prórrogas o nuevos requerimientos autorizados o formulados por el Instituto que sean diversos al requerimiento de documentación.",
+          "identificador": "b",
+          "contenido": ").- Por dos años, en las siguientes situaciones: 1) Cuando no formule el dictamen y anexos debiendo hacerlo; 2) Cuando habiendo presentado incompletos bien sea el dictamen o los anexos, el contador público autorizado no hiciera las aclaraciones que le solicite el Instituto, y 3) Cuando la documentación aclaratoria solicitada por el Instituto no se presente dentro del plazo que se otorgue para tal efecto, independientemente de las prórrogas o nuevos requerimientos autorizados o formulados por el Instituto que sean diversos al requerimiento de documentación.",
           "padre_numero": 6,
           "x_id": 107,
           "x_texto": 129
@@ -7319,8 +7319,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Por tres años, cuando del dictamen presentado o de su revisión, se resuelva que lo hizo en contravención a lo dispuesto en la Ley, sus reglamentos o a las normas de auditoría generalmente aceptadas;",
+          "identificador": "c",
+          "contenido": ").- Por tres años, cuando del dictamen presentado o de su revisión, se resuelva que lo hizo en contravención a lo dispuesto en la Ley, sus reglamentos o a las normas de auditoría generalmente aceptadas;",
           "padre_numero": 6,
           "x_id": 107,
           "x_texto": 129
@@ -7328,8 +7328,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Cuando esté sujeto a proceso por presunta comisión de un delito de carácter fiscal o por delitos intencionales que ameriten pena corporal. En este caso, la suspensión durará hasta la resolución definitiva de dicho proceso, y",
+          "identificador": "d",
+          "contenido": ").- Cuando esté sujeto a proceso por presunta comisión de un delito de carácter fiscal o por delitos intencionales que ameriten pena corporal. En este caso, la suspensión durará hasta la resolución definitiva de dicho proceso, y",
           "padre_numero": 6,
           "x_id": 107,
           "x_texto": 129
@@ -7346,8 +7346,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cuando hubiere reincidencia a la violación a las disposiciones que rigen la formulación del dictamen y demás información para efectos fiscales. Se entiende que hay reincidencia cuando el contador público autorizado acumule tres suspensiones;",
+          "identificador": "a",
+          "contenido": ").- Cuando hubiere reincidencia a la violación a las disposiciones que rigen la formulación del dictamen y demás información para efectos fiscales. Se entiende que hay reincidencia cuando el contador público autorizado acumule tres suspensiones;",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129
@@ -7355,8 +7355,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando la sentencia que ponga fin al proceso a que se refiere el inciso d) de la fracción anterior le sea condenatoria;",
+          "identificador": "b",
+          "contenido": ").- Cuando la sentencia que ponga fin al proceso a que se refiere el inciso d) de la fracción anterior le sea condenatoria;",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129
@@ -7364,8 +7364,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Al dejar de ser socio activo del colegio de la contaduría pública al que pertenezca, reconocido por la autoridad competente;",
+          "identificador": "c",
+          "contenido": ").- Al dejar de ser socio activo del colegio de la contaduría pública al que pertenezca, reconocido por la autoridad competente;",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129
@@ -7373,8 +7373,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Al establecer relación laboral con el Instituto;",
+          "identificador": "d",
+          "contenido": ").- Al establecer relación laboral con el Instituto;",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129
@@ -7382,8 +7382,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Si omitiera informar al Instituto en el caso de encontrarse en los supuestos que señala el artículo 155 de este Reglamento, y",
+          "identificador": "e",
+          "contenido": ").- Si omitiera informar al Instituto en el caso de encontrarse en los supuestos que señala el artículo 155 de este Reglamento, y",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129
@@ -7391,8 +7391,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Por no dar el aviso correspondiente al patrón en el caso de la suspensión, a que se refiere la fracción IV del artículo 154 de este Reglamento.",
+          "identificador": "f",
+          "contenido": ").- Por no dar el aviso correspondiente al patrón en el caso de la suspensión, a que se refiere la fracción IV del artículo 154 de este Reglamento.",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129

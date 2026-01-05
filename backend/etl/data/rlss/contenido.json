@@ -229,8 +229,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los referidos en la Ley del Mercado de Valores;",
+          "identificador": "a",
+          "contenido": ") Los referidos en la Ley del Mercado de Valores;",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129
@@ -238,8 +238,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los que sean reconocidos por la Comisión Nacional Bancaria y de Valores en términos de la Ley del Mercado de Valores, o",
+          "identificador": "b",
+          "contenido": ") Los que sean reconocidos por la Comisión Nacional Bancaria y de Valores en términos de la Ley del Mercado de Valores, o",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129
@@ -247,8 +247,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los que sean reconocidos conforme a las disposiciones emitidas por el Banco de México. Tratándose de títulos representativos del capital social de sociedades, cuando estas tengan un objeto social complementario o afín al del propio Instituto, así como en el de administradoras de fondos para el retiro, en términos del artículo 251, fracción XXII, de la Ley no será necesario que se cumpla con lo dispuesto en la fracción II de este artículo.",
+          "identificador": "c",
+          "contenido": ") Los que sean reconocidos conforme a las disposiciones emitidas por el Banco de México. Tratándose de títulos representativos del capital social de sociedades, cuando estas tengan un objeto social complementario o afín al del propio Instituto, así como en el de administradoras de fondos para el retiro, en términos del artículo 251, fracción XXII, de la Ley no será necesario que se cumpla con lo dispuesto en la fracción II de este artículo.",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129
@@ -380,8 +380,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los valores, títulos de crédito y otros derechos en los que se podrán invertir las Reservas y la Reserva General en términos del artículo 6 del presente Reglamento;",
+          "identificador": "a",
+          "contenido": ") Los valores, títulos de crédito y otros derechos en los que se podrán invertir las Reservas y la Reserva General en términos del artículo 6 del presente Reglamento;",
           "padre_numero": 5,
           "x_id": 107,
           "x_texto": 129
@@ -389,8 +389,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los límites de tolerancia al riesgo asociados a las inversiones y la metodología de medición correspondiente;",
+          "identificador": "b",
+          "contenido": ") Los límites de tolerancia al riesgo asociados a las inversiones y la metodología de medición correspondiente;",
           "padre_numero": 5,
           "x_id": 107,
           "x_texto": 129
@@ -398,8 +398,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los criterios para las operaciones de reporto y para la contratación de los servicios financieros auxiliares para las inversiones, y",
+          "identificador": "c",
+          "contenido": ") Los criterios para las operaciones de reporto y para la contratación de los servicios financieros auxiliares para las inversiones, y",
           "padre_numero": 5,
           "x_id": 107,
           "x_texto": 129
@@ -407,8 +407,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Los mecanismos para evaluar el desempeño de las inversiones y el cumplimiento de los objetivos establecidos en el artículo 5 del presente Reglamento;",
+          "identificador": "d",
+          "contenido": ") Los mecanismos para evaluar el desempeño de las inversiones y el cumplimiento de los objetivos establecidos en el artículo 5 del presente Reglamento;",
           "padre_numero": 5,
           "x_id": 107,
           "x_texto": 129

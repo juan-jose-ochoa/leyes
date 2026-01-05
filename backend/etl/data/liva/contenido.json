@@ -146,8 +146,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Reciban servicios personales independientes, o usen o gocen temporalmente bienes, prestados u otorgados por personas físicas, respectivamente.",
+          "identificador": "a",
+          "contenido": ") Reciban servicios personales independientes, o usen o gocen temporalmente bienes, prestados u otorgados por personas físicas, respectivamente.",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129
@@ -155,8 +155,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Adquieran desperdicios para ser utilizados como insumo de su actividad industrial o para su comercialización.",
+          "identificador": "b",
+          "contenido": ") Adquieran desperdicios para ser utilizados como insumo de su actividad industrial o para su comercialización.",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129
@@ -164,8 +164,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Reciban servicios de autotransporte terrestre de bienes, prestados por personas físicas o morales.",
+          "identificador": "c",
+          "contenido": ") Reciban servicios de autotransporte terrestre de bienes, prestados por personas físicas o morales.",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129,
@@ -176,8 +176,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Reciban servicios prestados por comisionistas, cuando éstos sean personas físicas.",
+          "identificador": "d",
+          "contenido": ") Reciban servicios prestados por comisionistas, cuando éstos sean personas físicas.",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129,
@@ -530,8 +530,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Animales y vegetales que no estén industrializados, salvo el hule, perros, gatos y pequeñas especies, utilizadas como mascotas en el hogar.",
+          "identificador": "a",
+          "contenido": ") Animales y vegetales que no estén industrializados, salvo el hule, perros, gatos y pequeñas especies, utilizadas como mascotas en el hogar.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129,
@@ -555,8 +555,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Medicinas de patente y productos destinados a la alimentación humana y animal, a excepción de:",
+          "identificador": "b",
+          "contenido": ") Medicinas de patente y productos destinados a la alimentación humana y animal, a excepción de:",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129,
@@ -567,7 +567,7 @@
         {
           "numero": 6,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Bebidas distintas de la leche, inclusive cuando las mismas tengan la naturaleza de alimentos. Quedan comprendidos en este numeral los jugos, los néctares y los concentrados de frutas o de verduras, cualquiera que sea su presentación, densidad o el peso del contenido de estas materias.",
           "padre_numero": 5,
           "x_id": 129,
@@ -576,7 +576,7 @@
         {
           "numero": 7,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Jarabes o concentrados para preparar refrescos que se expendan en envases abiertos utilizando aparatos eléctricos o mecánicos, así como los concentrados, polvos, jarabes, esencias o extractos de sabores que al diluirse permitan obtener refrescos.",
           "padre_numero": 5,
           "x_id": 129,
@@ -585,7 +585,7 @@
         {
           "numero": 8,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Caviar, salmón ahumado y angulas.",
           "padre_numero": 5,
           "x_id": 129,
@@ -594,7 +594,7 @@
         {
           "numero": 9,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Saborizantes, microencapsulados y aditivos alimenticios.",
           "padre_numero": 5,
           "x_id": 129,
@@ -606,7 +606,7 @@
         {
           "numero": 10,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "Chicles o gomas de mascar.",
           "padre_numero": 5,
           "x_id": 129,
@@ -618,7 +618,7 @@
         {
           "numero": 11,
           "tipo": "numeral",
-          "identificador": "6.",
+          "identificador": "6",
           "contenido": "Alimentos procesados para perros, gatos y pequeñas especies, utilizadas como mascotas en el hogar.",
           "padre_numero": 5,
           "x_id": 129,
@@ -631,8 +631,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Hielo y agua no gaseosa ni compuesta, excepto cuando en este último caso, su presentación sea en envases menores de diez litros.",
+          "identificador": "c",
+          "contenido": ").- Hielo y agua no gaseosa ni compuesta, excepto cuando en este último caso, su presentación sea en envases menores de diez litros.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129,
@@ -643,8 +643,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Ixtle, palma y lechuguilla.",
+          "identificador": "d",
+          "contenido": ").- Ixtle, palma y lechuguilla.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -652,8 +652,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Tractores para accionar implementos agrícolas, a excepción de los de oruga, así como llantas para dichos tractores; motocultores para superficies reducidas; arados; rastras para desterronar la tierra arada; cultivadoras para esparcir y desyerbar; cosechadoras; aspersoras y espolvoreadoras para rociar o esparcir fertilizantes, plaguicidas, herbicidas y fungicidas; equipo mecánico, eléctrico o hidráulico para riego agricola; sembradoras; ensiladoras, cortadoras y empacadoras de forraje; desgranadoras; abonadoras y fertilizadoras de terrenos de cultivo; aviones fumigadores; motosierras manuales de cadena, así como embarcaciones para pesca comercial, siempre que se reúnan los requisitos y condiciones que señale el Reglamento.",
+          "identificador": "e",
+          "contenido": ").- Tractores para accionar implementos agrícolas, a excepción de los de oruga, así como llantas para dichos tractores; motocultores para superficies reducidas; arados; rastras para desterronar la tierra arada; cultivadoras para esparcir y desyerbar; cosechadoras; aspersoras y espolvoreadoras para rociar o esparcir fertilizantes, plaguicidas, herbicidas y fungicidas; equipo mecánico, eléctrico o hidráulico para riego agricola; sembradoras; ensiladoras, cortadoras y empacadoras de forraje; desgranadoras; abonadoras y fertilizadoras de terrenos de cultivo; aviones fumigadores; motosierras manuales de cadena, así como embarcaciones para pesca comercial, siempre que se reúnan los requisitos y condiciones que señale el Reglamento.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129,
@@ -673,8 +673,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Fertilizantes, plaguicidas, herbicidas y fungicidas, siempre que estén destinados para ser utilizados en la agricultura o ganadería.",
+          "identificador": "f",
+          "contenido": ").- Fertilizantes, plaguicidas, herbicidas y fungicidas, siempre que estén destinados para ser utilizados en la agricultura o ganadería.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -682,8 +682,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Invernaderos hiropónicos y equipos integrados a ellos para producir temperatura y humedad controladas o para proteger los cultivos de elementos naturales, así como equipos de irrigación.",
+          "identificador": "g",
+          "contenido": ").- Invernaderos hiropónicos y equipos integrados a ellos para producir temperatura y humedad controladas o para proteger los cultivos de elementos naturales, así como equipos de irrigación.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129,
@@ -694,8 +694,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Oro, joyería, orfebrería, piezas artísticas u ornamentales y lingotes, cuyo contenido mínimo de dicho material sea del 80%, siempre que su enajenación no se efectúe en ventas al menudeo con el público en general.",
+          "identificador": "h",
+          "contenido": ").- Oro, joyería, orfebrería, piezas artísticas u ornamentales y lingotes, cuyo contenido mínimo de dicho material sea del 80%, siempre que su enajenación no se efectúe en ventas al menudeo con el público en general.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129,
@@ -706,8 +706,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "Libros, periódicos y revistas, que editen los propios contribuyentes. Para los efectos de esta Ley, se considera libro toda publicación, unitaria, no periódica, impresa en cualquier soporte, cuya edición se haga en un volumen o en varios volúmenes. Dentro del concepto de libros, no quedan comprendidas aquellas publicaciones periódicas amparadas bajo el mismo título o denominación y con diferente contenido entre una publicación y otra.",
+          "identificador": "i",
+          "contenido": ").- Libros, periódicos y revistas, que editen los propios contribuyentes. Para los efectos de esta Ley, se considera libro toda publicación, unitaria, no periódica, impresa en cualquier soporte, cuya edición se haga en un volumen o en varios volúmenes. Dentro del concepto de libros, no quedan comprendidas aquellas publicaciones periódicas amparadas bajo el mismo título o denominación y con diferente contenido entre una publicación y otra.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -727,8 +727,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "j)",
-          "contenido": "Toallas sanitarias, tampones y copas, para la gestión menstrual.",
+          "identificador": "j",
+          "contenido": ") Toallas sanitarias, tampones y copas, para la gestión menstrual.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129,
@@ -760,8 +760,8 @@
         {
           "numero": 24,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los prestados directamente a los agricultores y ganaderos, siempre que sean destinados para actividades agropecuarias, por concepto de perforaciones de pozos, alumbramiento y formación de retenes de agua; suministro de energía eléctrica para usos agrícolas aplicados al bombeo de agua para riego; desmontes y caminos en el interior de las fincas agropecuarias; preparación de terrenos; riego y fumigación agrícolas; erradicación de plagas; cosecha y recolección; vacunación, desinfección e inseminación de ganado, así como los de captura y extracción de especies marinas y de agua dulce.",
+          "identificador": "a",
+          "contenido": ").- Los prestados directamente a los agricultores y ganaderos, siempre que sean destinados para actividades agropecuarias, por concepto de perforaciones de pozos, alumbramiento y formación de retenes de agua; suministro de energía eléctrica para usos agrícolas aplicados al bombeo de agua para riego; desmontes y caminos en el interior de las fincas agropecuarias; preparación de terrenos; riego y fumigación agrícolas; erradicación de plagas; cosecha y recolección; vacunación, desinfección e inseminación de ganado, así como los de captura y extracción de especies marinas y de agua dulce.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129,
@@ -772,8 +772,8 @@
         {
           "numero": 25,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los de molienda o trituración de maíz o de trigo.",
+          "identificador": "b",
+          "contenido": ").- Los de molienda o trituración de maíz o de trigo.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129
@@ -781,8 +781,8 @@
         {
           "numero": 26,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los de pasteurización de leche.",
+          "identificador": "c",
+          "contenido": ").- Los de pasteurización de leche.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129
@@ -790,8 +790,8 @@
         {
           "numero": 27,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Los prestados en invernaderos hidropónicos.",
+          "identificador": "d",
+          "contenido": ").- Los prestados en invernaderos hidropónicos.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129,
@@ -802,8 +802,8 @@
         {
           "numero": 28,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Los de despepite de algodón en rama.",
+          "identificador": "e",
+          "contenido": ").- Los de despepite de algodón en rama.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129,
@@ -814,8 +814,8 @@
         {
           "numero": 29,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Los de sacrificio de ganado y aves de corral.",
+          "identificador": "f",
+          "contenido": ").- Los de sacrificio de ganado y aves de corral.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129,
@@ -826,8 +826,8 @@
         {
           "numero": 30,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Los de reaseguro.",
+          "identificador": "g",
+          "contenido": ").- Los de reaseguro.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129,
@@ -838,8 +838,8 @@
         {
           "numero": 31,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Los de suministro de agua para uso doméstico.",
+          "identificador": "h",
+          "contenido": ").- Los de suministro de agua para uso doméstico.",
           "padre_numero": 23,
           "x_id": 107,
           "x_texto": 129,
@@ -1194,8 +1194,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cuando el impuesto al valor agregado trasladado o pagado en la importación, corresponda a erogaciones por la adquisición de bienes distintos a las inversiones a que se refiere el inciso d) de esta fracción, por la adquisición de servicios o por el uso o goce temporal de bienes, que se utilicen exclusivamente para realizar las actividades por las que se deba pagar el impuesto al valor agregado o les sea aplicable la tasa de 0%, dicho impuesto será acreditable en su totalidad;",
+          "identificador": "a",
+          "contenido": ") Cuando el impuesto al valor agregado trasladado o pagado en la importación, corresponda a erogaciones por la adquisición de bienes distintos a las inversiones a que se refiere el inciso d) de esta fracción, por la adquisición de servicios o por el uso o goce temporal de bienes, que se utilicen exclusivamente para realizar las actividades por las que se deba pagar el impuesto al valor agregado o les sea aplicable la tasa de 0%, dicho impuesto será acreditable en su totalidad;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -1203,8 +1203,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando el impuesto al valor agregado trasladado o pagado en la importación corresponda a erogaciones por la adquisición de bienes distintos a las inversiones a que se refiere el inciso d) de esta fracción, por la adquisición de servicios o por el uso o goce temporal de bienes, que se utilicen exclusivamente para realizar las actividades por las que no se deba pagar el impuesto al valor agregado, incluyendo aquéllas a que se refiere el artículo 4o.-A de esta Ley, dicho impuesto no será acreditable;",
+          "identificador": "b",
+          "contenido": ") Cuando el impuesto al valor agregado trasladado o pagado en la importación corresponda a erogaciones por la adquisición de bienes distintos a las inversiones a que se refiere el inciso d) de esta fracción, por la adquisición de servicios o por el uso o goce temporal de bienes, que se utilicen exclusivamente para realizar las actividades por las que no se deba pagar el impuesto al valor agregado, incluyendo aquéllas a que se refiere el artículo 4o.-A de esta Ley, dicho impuesto no será acreditable;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136,
@@ -1215,8 +1215,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Cuando el contribuyente utilice indistintamente bienes diferentes a las inversiones a que se refiere el inciso d) de esta fracción, servicios o el uso o goce temporal de bienes, para realizar las actividades por las que se deba pagar el impuesto al valor agregado, para realizar actividades a las que conforme esta Ley les sea aplicable la tasa de 0%, para realizar las actividades por las que no se deba pagar el impuesto que establece esta Ley, incluyendo aquéllas a que se refiere el artículo 4o.-A de la misma, el acreditamiento procederá únicamente en la proporción en la que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o a las que se aplique la tasa de 0%, represente en el valor total de las actividades mencionadas que el contribuyente realice en el mes de que se trate, incluyendo los actos o actividades a que se refiere el artículo 4o.-A de esta Ley, y",
+          "identificador": "c",
+          "contenido": ") Cuando el contribuyente utilice indistintamente bienes diferentes a las inversiones a que se refiere el inciso d) de esta fracción, servicios o el uso o goce temporal de bienes, para realizar las actividades por las que se deba pagar el impuesto al valor agregado, para realizar actividades a las que conforme esta Ley les sea aplicable la tasa de 0%, para realizar las actividades por las que no se deba pagar el impuesto que establece esta Ley, incluyendo aquéllas a que se refiere el artículo 4o.-A de la misma, el acreditamiento procederá únicamente en la proporción en la que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o a las que se aplique la tasa de 0%, represente en el valor total de las actividades mencionadas que el contribuyente realice en el mes de que se trate, incluyendo los actos o actividades a que se refiere el artículo 4o.-A de esta Ley, y",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136,
@@ -1227,8 +1227,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Tratándose de las inversiones a que se refiere la Ley del Impuesto sobre la Renta, el impuesto al valor agregado que le haya sido trasladado al contribuyente en su adquisición o el pagado en su importación será acreditable considerando el destino habitual que dichas inversiones tengan para realizar las actividades por las que se deba o no pagar el impuesto establecido en esta Ley, incluyendo aquéllas a que se refiere el",
+          "identificador": "d",
+          "contenido": ") Tratándose de las inversiones a que se refiere la Ley del Impuesto sobre la Renta, el impuesto al valor agregado que le haya sido trasladado al contribuyente en su adquisición o el pagado en su importación será acreditable considerando el destino habitual que dichas inversiones tengan para realizar las actividades por las que se deba o no pagar el impuesto establecido en esta Ley, incluyendo aquéllas a que se refiere el",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -1262,8 +1262,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Al impuesto al valor agregado que haya sido trasladado al contribuyente o pagado en la importación, correspondiente a la inversión, se le aplicará el por ciento máximo de deducción por ejercicio que para el bien de que se trate se establece en el Título II de la Ley del Impuesto sobre la Renta.",
+          "identificador": "a",
+          "contenido": ") Al impuesto al valor agregado que haya sido trasladado al contribuyente o pagado en la importación, correspondiente a la inversión, se le aplicará el por ciento máximo de deducción por ejercicio que para el bien de que se trate se establece en el Título II de la Ley del Impuesto sobre la Renta.",
           "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
@@ -1271,8 +1271,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El monto obtenido conforme al inciso anterior se dividirá entre doce.",
+          "identificador": "b",
+          "contenido": ") El monto obtenido conforme al inciso anterior se dividirá entre doce.",
           "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
@@ -1280,8 +1280,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Al monto determinado conforme al inciso precedente, se le aplicará la proporción que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, representó en el valor total de las actividades que el contribuyente realizó en el mes en el que llevó a cabo el acreditamiento.",
+          "identificador": "c",
+          "contenido": ") Al monto determinado conforme al inciso precedente, se le aplicará la proporción que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, representó en el valor total de las actividades que el contribuyente realizó en el mes en el que llevó a cabo el acreditamiento.",
           "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
@@ -1289,8 +1289,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Al monto determinado conforme al inciso b) de esta fracción, se le aplicará la proporción que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, represente en el valor total de las actividades que el contribuyente realice en el mes por el que se lleve a cabo el ajuste.",
+          "identificador": "d",
+          "contenido": ") Al monto determinado conforme al inciso b) de esta fracción, se le aplicará la proporción que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, represente en el valor total de las actividades que el contribuyente realice en el mes por el que se lleve a cabo el ajuste.",
           "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
@@ -1298,8 +1298,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "A la cantidad obtenida conforme al inciso c) de esta fracción se le disminuirá la cantidad obtenida conforme al inciso d) de esta fracción. El resultado será la cantidad que deberá reintegrarse, actualizada desde el mes en el que se acreditó y hasta el mes de que se trate, y",
+          "identificador": "e",
+          "contenido": ") A la cantidad obtenida conforme al inciso c) de esta fracción se le disminuirá la cantidad obtenida conforme al inciso d) de esta fracción. El resultado será la cantidad que deberá reintegrarse, actualizada desde el mes en el que se acreditó y hasta el mes de que se trate, y",
           "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
@@ -1316,8 +1316,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Al impuesto al valor agregado que haya sido trasladado al contribuyente o pagado en la importación, correspondiente a la inversión, se le aplicará el por ciento máximo de deducción por ejercicio que para el bien de que se trate se establece en el Título II de la Ley del Impuesto sobre la Renta.",
+          "identificador": "a",
+          "contenido": ") Al impuesto al valor agregado que haya sido trasladado al contribuyente o pagado en la importación, correspondiente a la inversión, se le aplicará el por ciento máximo de deducción por ejercicio que para el bien de que se trate se establece en el Título II de la Ley del Impuesto sobre la Renta.",
           "padre_numero": 8,
           "x_id": 85,
           "x_texto": 107
@@ -1325,8 +1325,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El monto obtenido conforme al inciso anterior se dividirá entre doce.",
+          "identificador": "b",
+          "contenido": ") El monto obtenido conforme al inciso anterior se dividirá entre doce.",
           "padre_numero": 8,
           "x_id": 85,
           "x_texto": 107
@@ -1334,8 +1334,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Al monto determinado conforme al inciso precedente, se le aplicará la proporción que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, representó en el valor total de las actividades que el contribuyente realizó en el mes en el que llevó a cabo el acreditamiento.",
+          "identificador": "c",
+          "contenido": ") Al monto determinado conforme al inciso precedente, se le aplicará la proporción que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, representó en el valor total de las actividades que el contribuyente realizó en el mes en el que llevó a cabo el acreditamiento.",
           "padre_numero": 8,
           "x_id": 85,
           "x_texto": 107
@@ -1343,8 +1343,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Al monto determinado conforme al inciso b) de esta fracción, se le aplicará la proporción que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, represente en el valor total de las actividades que el contribuyente realice en el mes por el que se lleve a cabo el ajuste.",
+          "identificador": "d",
+          "contenido": ") Al monto determinado conforme al inciso b) de esta fracción, se le aplicará la proporción que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, represente en el valor total de las actividades que el contribuyente realice en el mes por el que se lleve a cabo el ajuste.",
           "padre_numero": 8,
           "x_id": 85,
           "x_texto": 107
@@ -1352,8 +1352,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "A la cantidad obtenida conforme al inciso d) de esta fracción se le disminuirá la cantidad obtenida conforme al inciso c) de esta fracción. El resultado será la cantidad que podrá acreditarse, actualizada desde el mes en que se realizó el acreditamiento correspondiente y hasta el mes de que se trate.",
+          "identificador": "e",
+          "contenido": ") A la cantidad obtenida conforme al inciso d) de esta fracción se le disminuirá la cantidad obtenida conforme al inciso c) de esta fracción. El resultado será la cantidad que podrá acreditarse, actualizada desde el mes en que se realizó el acreditamiento correspondiente y hasta el mes de que se trate.",
           "padre_numero": 8,
           "x_id": 85,
           "x_texto": 107
@@ -2342,8 +2342,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Deriven de operaciones en las que el enajenante, el prestador del servicio o quien conceda el uso o goce temporal de bienes, proporcione financiamiento relacionado con actos o actividades por los que no se esté obligado al pago de este impuesto o a los que se les aplique la tasa del 0%.",
+          "identificador": "a",
+          "contenido": ") Deriven de operaciones en las que el enajenante, el prestador del servicio o quien conceda el uso o goce temporal de bienes, proporcione financiamiento relacionado con actos o actividades por los que no se esté obligado al pago de este impuesto o a los que se les aplique la tasa del 0%.",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129
@@ -2351,8 +2351,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Reciban o paguen las instituciones de crédito, las uniones de crédito, las sociedades financieras de objeto limitado, las sociedades de ahorro y préstamo y las empresas de factoraje financiero, en operaciones de financiamiento, para las que requieran de autorización y por concepto de descuento en documentos pendientes de cobro; los que reciban y paguen las sociedades financieras de objeto múltiple que para los efectos del impuesto sobre la renta formen parte del sistema financiero, por el otorgamiento de crédito, de factoraje financiero o descuento en documentos pendientes de cobro; los que reciban los almacenes generales de depósito por créditos otorgados que hayan sido garantizados con bonos de prenda; los que reciban o paguen las sociedades cooperativas de ahorro y préstamo a que hace referencia la Ley para Regular las Actividades de las Sociedades Cooperativas de Ahorro y Préstamo, así como las sociedades financieras populares, las sociedades financieras comunitarias y los organismos de integración financiera rural, a que hace referencia la Ley de Ahorro y Crédito Popular, a sus socios o clientes, según se trate, y que cumplan con los requisitos para operar como tales de conformidad con los citados ordenamientos; los que reciban o paguen en operaciones de financiamiento, los organismos descentralizados de la Administración Pública Federal y los fideicomisos de fomento económico del Gobierno Federal, que estén sujetos a la supervisión de la Comisión Nacional Bancaria y de Valores; así como las comisiones de los agentes y corresponsales de las instituciones de crédito por dichas operaciones.",
+          "identificador": "b",
+          "contenido": ") Reciban o paguen las instituciones de crédito, las uniones de crédito, las sociedades financieras de objeto limitado, las sociedades de ahorro y préstamo y las empresas de factoraje financiero, en operaciones de financiamiento, para las que requieran de autorización y por concepto de descuento en documentos pendientes de cobro; los que reciban y paguen las sociedades financieras de objeto múltiple que para los efectos del impuesto sobre la renta formen parte del sistema financiero, por el otorgamiento de crédito, de factoraje financiero o descuento en documentos pendientes de cobro; los que reciban los almacenes generales de depósito por créditos otorgados que hayan sido garantizados con bonos de prenda; los que reciban o paguen las sociedades cooperativas de ahorro y préstamo a que hace referencia la Ley para Regular las Actividades de las Sociedades Cooperativas de Ahorro y Préstamo, así como las sociedades financieras populares, las sociedades financieras comunitarias y los organismos de integración financiera rural, a que hace referencia la Ley de Ahorro y Crédito Popular, a sus socios o clientes, según se trate, y que cumplan con los requisitos para operar como tales de conformidad con los citados ordenamientos; los que reciban o paguen en operaciones de financiamiento, los organismos descentralizados de la Administración Pública Federal y los fideicomisos de fomento económico del Gobierno Federal, que estén sujetos a la supervisión de la Comisión Nacional Bancaria y de Valores; así como las comisiones de los agentes y corresponsales de las instituciones de crédito por dichas operaciones.",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129,
@@ -2388,8 +2388,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Reciban las instituciones de fianzas, las de seguros y las sociedades mutualistas de seguros, en operaciones de financiamiento, excepto tratándose de créditos otorgados a personas físicas que no gozarían de la exención prevista en el inciso anterior.",
+          "identificador": "c",
+          "contenido": ") Reciban las instituciones de fianzas, las de seguros y las sociedades mutualistas de seguros, en operaciones de financiamiento, excepto tratándose de créditos otorgados a personas físicas que no gozarían de la exención prevista en el inciso anterior.",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129,
@@ -2400,8 +2400,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Provengan de créditos hipotecarios o con garantía fiduciaria para la adquisición, ampliación, construcción o reparación de bienes inmuebles destinados a casa habitación.",
+          "identificador": "d",
+          "contenido": ") Provengan de créditos hipotecarios o con garantía fiduciaria para la adquisición, ampliación, construcción o reparación de bienes inmuebles destinados a casa habitación.",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129,
@@ -2412,8 +2412,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Provengan de cajas de ahorro de los trabajadores, y de fondos de ahorro establecido por las empresas siempre que reúna los requisitos de deducibilidad en los términos de la Ley del Impuesto sobre la Renta.",
+          "identificador": "e",
+          "contenido": ") Provengan de cajas de ahorro de los trabajadores, y de fondos de ahorro establecido por las empresas siempre que reúna los requisitos de deducibilidad en los términos de la Ley del Impuesto sobre la Renta.",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129
@@ -2421,8 +2421,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Deriven de obligaciones emitidas conforme a lo dispuesto en la Ley General de Títulos y Operaciones de Crédito.",
+          "identificador": "f",
+          "contenido": ") Deriven de obligaciones emitidas conforme a lo dispuesto en la Ley General de Títulos y Operaciones de Crédito.",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129
@@ -2430,8 +2430,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Reciban o paguen las instituciones públicas que emitan bonos y administren planes de ahorro con la garantía incondicional de pago del Gobierno Federal, conforme a la Ley.",
+          "identificador": "g",
+          "contenido": ") Reciban o paguen las instituciones públicas que emitan bonos y administren planes de ahorro con la garantía incondicional de pago del Gobierno Federal, conforme a la Ley.",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129,
@@ -2442,8 +2442,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Deriven de valores a cargo del Gobierno Federal e inscritos en el Registro Nacional de Valores e Intermediarios.",
+          "identificador": "h",
+          "contenido": ") Deriven de valores a cargo del Gobierno Federal e inscritos en el Registro Nacional de Valores e Intermediarios.",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129,
@@ -2454,8 +2454,8 @@
         {
           "numero": 22,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "Deriven de títulos de crédito que sean de los que se consideran como colocados entre el gran público inversionista, conforme a las reglas generales que al efecto expida la Secretaría de Hacienda y Crédito Público o de operaciones de préstamo de títulos, valores y otros bienes fungibles a que se refiere la fracción III del artículo 14-A del Código Fiscal de la Federación.",
+          "identificador": "i",
+          "contenido": ") Deriven de títulos de crédito que sean de los que se consideran como colocados entre el gran público inversionista, conforme a las reglas generales que al efecto expida la Secretaría de Hacienda y Crédito Público o de operaciones de préstamo de títulos, valores y otros bienes fungibles a que se refiere la fracción III del artículo 14-A del Código Fiscal de la Federación.",
           "padre_numero": 11,
           "x_id": 107,
           "x_texto": 129,
@@ -2488,8 +2488,8 @@
         {
           "numero": 25,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Partidos, asociaciones, coaliciones y frentes políticos legalmente reconocidos.",
+          "identificador": "a",
+          "contenido": ").- Partidos, asociaciones, coaliciones y frentes políticos legalmente reconocidos.",
           "padre_numero": 24,
           "x_id": 107,
           "x_texto": 129
@@ -2497,8 +2497,8 @@
         {
           "numero": 26,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Sindicatos obreros y organismos que los agrupen.",
+          "identificador": "b",
+          "contenido": ").- Sindicatos obreros y organismos que los agrupen.",
           "padre_numero": 24,
           "x_id": 107,
           "x_texto": 129
@@ -2506,8 +2506,8 @@
         {
           "numero": 27,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Cámaras de comercio e industria, agrupaciones agrícolas, ganaderas, pesqueras o silvícolas, así como organismos que las reúnan.",
+          "identificador": "c",
+          "contenido": ").- Cámaras de comercio e industria, agrupaciones agrícolas, ganaderas, pesqueras o silvícolas, así como organismos que las reúnan.",
           "padre_numero": 24,
           "x_id": 107,
           "x_texto": 129,
@@ -2518,8 +2518,8 @@
         {
           "numero": 28,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Asociaciones patronales y colegios de profesionales.",
+          "identificador": "d",
+          "contenido": ").- Asociaciones patronales y colegios de profesionales.",
           "padre_numero": 24,
           "x_id": 107,
           "x_texto": 129
@@ -2527,8 +2527,8 @@
         {
           "numero": 29,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Asociaciones o sociedades civiles organizadas con fines científicos, políticos, religiosos y culturales, a excepción de aquéllas que proporcionen servicios con instalaciones deportivas cuando el valor de éstas representen más del 25% del total de las instalaciones.",
+          "identificador": "e",
+          "contenido": ").- Asociaciones o sociedades civiles organizadas con fines científicos, políticos, religiosos y culturales, a excepción de aquéllas que proporcionen servicios con instalaciones deportivas cuando el valor de éstas representen más del 25% del total de las instalaciones.",
           "padre_numero": 24,
           "x_id": 107,
           "x_texto": 129,
@@ -2596,8 +2596,8 @@
         {
           "numero": 35,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Por autorizar a terceros la publicación de obras escritas de su creación en periódicos y revistas, siempre que los periódicos y revistas se destinen para su enajenación al público por la persona que efectúa los pagos por estos conceptos.",
+          "identificador": "a",
+          "contenido": ") Por autorizar a terceros la publicación de obras escritas de su creación en periódicos y revistas, siempre que los periódicos y revistas se destinen para su enajenación al público por la persona que efectúa los pagos por estos conceptos.",
           "padre_numero": 34,
           "x_id": 107,
           "x_texto": 129
@@ -2605,8 +2605,8 @@
         {
           "numero": 36,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Por transmitir temporalmente los derechos patrimoniales u otorgar temporalmente licencias de uso a terceros, correspondientes a obras de su autoría a que se refieren las fracciones I a VII, IX, X, XII, XIII y XIV del artículo 13 y el artículo 78 de la Ley Federal del Derecho de Autor, que estén inscritas en el Registro Público del Derecho de Autor de la Secretaría de Educación Pública.",
+          "identificador": "b",
+          "contenido": ") Por transmitir temporalmente los derechos patrimoniales u otorgar temporalmente licencias de uso a terceros, correspondientes a obras de su autoría a que se refieren las fracciones I a VII, IX, X, XII, XIII y XIV del artículo 13 y el artículo 78 de la Ley Federal del Derecho de Autor, que estén inscritas en el Registro Público del Derecho de Autor de la Secretaría de Educación Pública.",
           "padre_numero": 34,
           "x_id": 107,
           "x_texto": 129
@@ -2614,8 +2614,8 @@
         {
           "numero": 37,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Lo dispuesto en los incisos anteriores no aplicará:",
+          "identificador": "c",
+          "contenido": ") Lo dispuesto en los incisos anteriores no aplicará:",
           "padre_numero": 34,
           "x_id": 107,
           "x_texto": 129
@@ -2623,7 +2623,7 @@
         {
           "numero": 38,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Cuando se trate de ideas o frases publicitarias, logotipos, emblemas, sellos distintivos, diseños o modelos industriales, manuales operativos u obras de arte aplicado.",
           "padre_numero": 37,
           "x_id": 129,
@@ -2632,7 +2632,7 @@
         {
           "numero": 39,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Cuando las contraprestaciones deriven de la explotación de las obras escritas o musicales en actividades empresariales distintas a la enajenación al público de sus obras o en la prestación de servicios.",
           "padre_numero": 37,
           "x_id": 129,
@@ -2821,8 +2821,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La tasa real de interés se calculará restando, a la tasa de interés que corresponda al periodo de que se trate, la inflación del mismo periodo. La inflación se calculará dividiendo el valor de la unidad de inversión determinado por el Banco de México para el último día del periodo, entre el valor de la unidad de inversión para el día inmediato anterior al primer día del periodo, y restando del cociente la unidad.",
+          "identificador": "a",
+          "contenido": ") La tasa real de interés se calculará restando, a la tasa de interés que corresponda al periodo de que se trate, la inflación del mismo periodo. La inflación se calculará dividiendo el valor de la unidad de inversión determinado por el Banco de México para el último día del periodo, entre el valor de la unidad de inversión para el día inmediato anterior al primer día del periodo, y restando del cociente la unidad.",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136
@@ -2830,8 +2830,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando la operación de crédito se encuentre pactada en moneda extranjera, la ganancia cambiaria devengada en el periodo de que se trate, expresada como proporción del saldo promedio del principal en el mismo periodo, se sumará a la tasa de interés correspondiente al mismo periodo. Para expresar la ganancia cambiaria devengada en el periodo de que se trate como proporción del saldo promedio del principal en el mismo periodo, se dividirá aquélla en moneda nacional, entre dicho saldo promedio convertido a moneda nacional al tipo de cambio que el Banco de México publique en el Diario Oficial de la Federación para el último día del periodo de causación de los intereses. En el caso de que el Banco de México no publique dicho tipo de cambio, se aplicará el último tipo de cambio publicado por dicha institución antes de esa fecha. El saldo promedio del principal será la suma de los saldos diarios del principal en el periodo, dividida entre el número de días comprendidos en el mismo periodo de causación.",
+          "identificador": "b",
+          "contenido": ") Cuando la operación de crédito se encuentre pactada en moneda extranjera, la ganancia cambiaria devengada en el periodo de que se trate, expresada como proporción del saldo promedio del principal en el mismo periodo, se sumará a la tasa de interés correspondiente al mismo periodo. Para expresar la ganancia cambiaria devengada en el periodo de que se trate como proporción del saldo promedio del principal en el mismo periodo, se dividirá aquélla en moneda nacional, entre dicho saldo promedio convertido a moneda nacional al tipo de cambio que el Banco de México publique en el Diario Oficial de la Federación para el último día del periodo de causación de los intereses. En el caso de que el Banco de México no publique dicho tipo de cambio, se aplicará el último tipo de cambio publicado por dicha institución antes de esa fecha. El saldo promedio del principal será la suma de los saldos diarios del principal en el periodo, dividida entre el número de días comprendidos en el mismo periodo de causación.",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136,
@@ -3528,8 +3528,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Retener a las personas físicas que enajenen bienes, presten servicios o concedan el uso o goce temporal de bienes, el 50% del impuesto al valor agregado cobrado. Tratándose de las personas a que se refiere este inciso, que no proporcionen a las personas mencionadas en el primer párrafo de este artículo la clave en el registro federal de contribuyentes, prevista en la fracción III, inciso b) del mismo, la retención se deberá efectuar al 100%. El retenedor sustituirá al enajenante, prestador del servicio u otorgante del uso o goce temporal de bienes en la obligación de pago del impuesto, en el monto correspondiente a la retención.",
+          "identificador": "a",
+          "contenido": ") Retener a las personas físicas que enajenen bienes, presten servicios o concedan el uso o goce temporal de bienes, el 50% del impuesto al valor agregado cobrado. Tratándose de las personas a que se refiere este inciso, que no proporcionen a las personas mencionadas en el primer párrafo de este artículo la clave en el registro federal de contribuyentes, prevista en la fracción III, inciso b) del mismo, la retención se deberá efectuar al 100%. El retenedor sustituirá al enajenante, prestador del servicio u otorgante del uso o goce temporal de bienes en la obligación de pago del impuesto, en el monto correspondiente a la retención.",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136
@@ -3549,8 +3549,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Enterar la retención mediante declaración electrónica a más tardar el día 17 del mes siguiente a aquél en el que se hubiese efectuado.",
+          "identificador": "b",
+          "contenido": ") Enterar la retención mediante declaración electrónica a más tardar el día 17 del mes siguiente a aquél en el que se hubiese efectuado.",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136
@@ -3558,8 +3558,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Expedir a cada persona física a la que le hubiera efectuado la retención un comprobante fiscal digital por Internet de Retenciones e información de pagos, a más tardar dentro de los cinco días siguientes al mes en el que se efectuó la retención.",
+          "identificador": "c",
+          "contenido": ") Expedir a cada persona física a la que le hubiera efectuado la retención un comprobante fiscal digital por Internet de Retenciones e información de pagos, a más tardar dentro de los cinco días siguientes al mes en el que se efectuó la retención.",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136
@@ -3567,8 +3567,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Inscribirse en el Registro Federal de Contribuyentes ante el Servicio de Administración Tributaria como personas retenedoras.",
+          "identificador": "d",
+          "contenido": ") Inscribirse en el Registro Federal de Contribuyentes ante el Servicio de Administración Tributaria como personas retenedoras.",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136
@@ -3594,8 +3594,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Nombre completo o razón social.",
+          "identificador": "a",
+          "contenido": ") Nombre completo o razón social.",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -3603,8 +3603,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Clave en el registro federal de contribuyentes.",
+          "identificador": "b",
+          "contenido": ") Clave en el registro federal de contribuyentes.",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -3612,8 +3612,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Clave única de registro de población.",
+          "identificador": "c",
+          "contenido": ") Clave única de registro de población.",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -3621,8 +3621,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Domicilio fiscal.",
+          "identificador": "d",
+          "contenido": ") Domicilio fiscal.",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -3630,8 +3630,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Institución financiera y clave interbancaria estandarizada en la cual se reciben los depósitos de los pagos.",
+          "identificador": "e",
+          "contenido": ") Institución financiera y clave interbancaria estandarizada en la cual se reciben los depósitos de los pagos.",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -3639,8 +3639,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Monto de las operaciones celebradas con su intermediación durante el período de que se trate, por cada enajenante de bienes, prestador de servicios u otorgante del uso o goce temporal de bienes.",
+          "identificador": "f",
+          "contenido": ") Monto de las operaciones celebradas con su intermediación durante el período de que se trate, por cada enajenante de bienes, prestador de servicios u otorgante del uso o goce temporal de bienes.",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -3648,8 +3648,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Tratándose de servicios de hospedaje, la dirección del inmueble.",
+          "identificador": "g",
+          "contenido": ") Tratándose de servicios de hospedaje, la dirección del inmueble.",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -4587,8 +4587,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Asistencia técnica, servicios técnicos relacionados con ésta e informaciones relativas a experiencias industriales, comerciales o científicas.",
+          "identificador": "a",
+          "contenido": ").- Asistencia técnica, servicios técnicos relacionados con ésta e informaciones relativas a experiencias industriales, comerciales o científicas.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4599,8 +4599,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Operaciones de maquila y submaquila para exportación en los términos de la legislación aduanera y del Decreto para el Fomento y Operación de la Industria Maquiladora de Exportación. Para los efectos anteriores, se entenderá que los servicios se aprovechan en el extranjero cuando los bienes objeto de la maquila o submaquila sean exportados por la empresa maquiladora.",
+          "identificador": "b",
+          "contenido": ").- Operaciones de maquila y submaquila para exportación en los términos de la legislación aduanera y del Decreto para el Fomento y Operación de la Industria Maquiladora de Exportación. Para los efectos anteriores, se entenderá que los servicios se aprovechan en el extranjero cuando los bienes objeto de la maquila o submaquila sean exportados por la empresa maquiladora.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4611,8 +4611,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Publicidad.",
+          "identificador": "c",
+          "contenido": ").- Publicidad.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4623,8 +4623,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Comisiones y mediaciones.",
+          "identificador": "d",
+          "contenido": ").- Comisiones y mediaciones.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4635,8 +4635,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Seguros y reaseguros, así como afianzamientos y reafianzamientos.",
+          "identificador": "e",
+          "contenido": ").- Seguros y reaseguros, así como afianzamientos y reafianzamientos.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4647,8 +4647,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Operaciones de financiamiento.",
+          "identificador": "f",
+          "contenido": ").- Operaciones de financiamiento.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4659,8 +4659,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Filmación o grabación, siempre que cumplan con los requisitos que al efecto se señalen en el reglamento de esta Ley.",
+          "identificador": "g",
+          "contenido": ").- Filmación o grabación, siempre que cumplan con los requisitos que al efecto se señalen en el reglamento de esta Ley.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4671,8 +4671,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Servicio de atención en centros telefónicos de llamadas originadas en el extranjero, que sea contratado y pagado por un residente en el extranjero sin establecimiento permanente en México.",
+          "identificador": "h",
+          "contenido": ") Servicio de atención en centros telefónicos de llamadas originadas en el extranjero, que sea contratado y pagado por un residente en el extranjero sin establecimiento permanente en México.",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135,
@@ -4683,8 +4683,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "Servicios de tecnologías de la información siguientes:",
+          "identificador": "i",
+          "contenido": ") Servicios de tecnologías de la información siguientes:",
           "padre_numero": 6,
           "x_id": 113,
           "x_texto": 135
@@ -4692,7 +4692,7 @@
         {
           "numero": 16,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Desarrollo, integración y mantenimiento de aplicaciones informáticas o de sistemas computacionales.",
           "padre_numero": 15,
           "x_id": 140,
@@ -4701,7 +4701,7 @@
         {
           "numero": 17,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Procesamiento, almacenamiento, respaldos de información, así como la administración de bases de datos.",
           "padre_numero": 15,
           "x_id": 140,
@@ -4710,7 +4710,7 @@
         {
           "numero": 18,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Alojamiento de aplicaciones informáticas.",
           "padre_numero": 15,
           "x_id": 140,
@@ -4719,7 +4719,7 @@
         {
           "numero": 19,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Modernización y optimización de sistemas de seguridad de la información.",
           "padre_numero": 15,
           "x_id": 140,
@@ -4728,7 +4728,7 @@
         {
           "numero": 20,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "La continuidad en la operación de los servicios anteriores.",
           "padre_numero": 15,
           "x_id": 140,
@@ -4746,7 +4746,7 @@
         {
           "numero": 22,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Utilicen en su totalidad infraestructura tecnológica, recursos humanos y materiales, ubicados en territorio nacional.",
           "padre_numero": 15,
           "x_id": 140,
@@ -4755,7 +4755,7 @@
         {
           "numero": 23,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Que la dirección IP de los dispositivos electrónicos a través de los cuales se prestan los servicios, así como la de su proveedor del servicio de Internet se encuentren en territorio nacional y que la dirección IP de los dispositivos electrónicos del receptor del servicio y la de su proveedor del servicio de Internet se encuentren en el extranjero.",
           "padre_numero": 15,
           "x_id": 140,
@@ -4773,7 +4773,7 @@
         {
           "numero": 25,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Consignen en el comprobante fiscal el registro o número fiscal del residente en el extranjero que contrató y pagó el servicio, sin perjuicio de los demás requisitos que deban cumplir de conformidad con las disposiciones fiscales.",
           "padre_numero": 15,
           "x_id": 140,
@@ -4782,7 +4782,7 @@
         {
           "numero": 26,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Que el pago se realice a través de medios electrónicos y provenga de cuentas de instituciones financieras ubicadas en el extranjero, mismo que deberá realizarse a una cuenta del prestador del servicio en instituciones de crédito en México.",
           "padre_numero": 15,
           "x_id": 140,
@@ -4809,7 +4809,7 @@
         {
           "numero": 29,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Cuando para proporcionar dichos servicios se utilicen redes privadas virtuales. Para los efectos de esta Ley se considera como red privada virtual la tecnología de red que permite una extensión de una red local sobre una red pública, creando una conexión privada segura a través de una red pública y admitiendo la conexión de usuarios externos desde otro lugar geográfico de donde se encuentre el servidor o los aplicativos de la organización.",
           "padre_numero": 15,
           "x_id": 140,
@@ -4818,7 +4818,7 @@
         {
           "numero": 30,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Cuando los servicios se proporcionen, recaigan o se apliquen en bienes ubicados en el territorio nacional.",
           "padre_numero": 15,
           "x_id": 140,

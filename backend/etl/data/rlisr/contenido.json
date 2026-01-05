@@ -883,8 +883,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los folios correspondientes a los comprobantes mencionados y el concepto que ampara cada comprobante, el monto total de dichos comprobantes y el impuesto al valor agregado respectivo, y",
+          "identificador": "a",
+          "contenido": ") Los folios correspondientes a los comprobantes mencionados y el concepto que ampara cada comprobante, el monto total de dichos comprobantes y el impuesto al valor agregado respectivo, y",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -892,8 +892,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La parte proporcional que corresponde al condómino de que se trate, del gasto total, conforme al por ciento de indiviso que represente cada unidad de propiedad exclusiva en el condominio de que se trate. No se considerará en el total del gasto, el impuesto al valor agregado que se hubiere causado sobre dicho gasto, excepto cuando el contribuyente por la actividad que realice en el inmueble, se encuentre exento de este último gravamen.",
+          "identificador": "b",
+          "contenido": ") La parte proporcional que corresponde al condómino de que se trate, del gasto total, conforme al por ciento de indiviso que represente cada unidad de propiedad exclusiva en el condominio de que se trate. No se considerará en el total del gasto, el impuesto al valor agregado que se hubiere causado sobre dicho gasto, excepto cuando el contribuyente por la actividad que realice en el inmueble, se encuentre exento de este último gravamen.",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -972,8 +972,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El monto de las devoluciones, descuentos o bonificaciones, en caso de aplicarse en el ejercicio en que se efectuó la adquisición, no modifique en más de un 10% el coeficiente de utilidad determinado conforme al artículo 14 de la Ley, que se esté utilizando para calcular los pagos provisionales del ejercicio en que se efectúe la devolución, el descuento o bonificación, o",
+          "identificador": "a",
+          "contenido": ") El monto de las devoluciones, descuentos o bonificaciones, en caso de aplicarse en el ejercicio en que se efectuó la adquisición, no modifique en más de un 10% el coeficiente de utilidad determinado conforme al artículo 14 de la Ley, que se esté utilizando para calcular los pagos provisionales del ejercicio en que se efectúe la devolución, el descuento o bonificación, o",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -981,8 +981,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El monto de las devoluciones, descuentos o bonificaciones que se efectúen, de aplicarse en el ejercicio en que se realizaron las adquisiciones, no tenga como consecuencia determinar utilidad fiscal en lugar de la pérdida fiscal determinada.",
+          "identificador": "b",
+          "contenido": ") El monto de las devoluciones, descuentos o bonificaciones que se efectúen, de aplicarse en el ejercicio en que se realizaron las adquisiciones, no tenga como consecuencia determinar utilidad fiscal en lugar de la pérdida fiscal determinada.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -1294,8 +1294,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El que los pagos efectuados a proveedores se realicen en poblaciones o en zonas rurales, sin servicios financieros, y",
+          "identificador": "a",
+          "contenido": ") El que los pagos efectuados a proveedores se realicen en poblaciones o en zonas rurales, sin servicios financieros, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -1303,8 +1303,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El grado de aislamiento del proveedor respecto de las poblaciones o zonas rurales donde hubiera servicios financieros, así como los medios o infraestructura de transporte disponibles para llegar a dichas poblaciones o zonas.",
+          "identificador": "b",
+          "contenido": ") El grado de aislamiento del proveedor respecto de las poblaciones o zonas rurales donde hubiera servicios financieros, así como los medios o infraestructura de transporte disponibles para llegar a dichas poblaciones o zonas.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -1330,8 +1330,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El desarrollo de los medios o de la infraestructura del transporte;",
+          "identificador": "a",
+          "contenido": ") El desarrollo de los medios o de la infraestructura del transporte;",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -1339,8 +1339,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El grado de acceso a los servicios financieros en la población o zonas rurales de que se trate, y",
+          "identificador": "b",
+          "contenido": ") El grado de acceso a los servicios financieros en la población o zonas rurales de que se trate, y",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -1348,8 +1348,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los cambios en las circunstancias que hubieren motivado la emisión de la autorización.",
+          "identificador": "c",
+          "contenido": ") Los cambios en las circunstancias que hubieren motivado la emisión de la autorización.",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -2688,8 +2688,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Restarán el promedio de los saldos que el crédito que se cancela haya tenido al final de cada uno de los meses que abarque el periodo comprendido desde la fecha en la que se acumuló el ingreso del cual proviene el crédito que se cancela hasta el mes en el que se cancela la operación respectiva, del saldo promedio anual de los créditos del ejercicio en el cual se cancele la operación, y",
+          "identificador": "a",
+          "contenido": ") Restarán el promedio de los saldos que el crédito que se cancela haya tenido al final de cada uno de los meses que abarque el periodo comprendido desde la fecha en la que se acumuló el ingreso del cual proviene el crédito que se cancela hasta el mes en el que se cancela la operación respectiva, del saldo promedio anual de los créditos del ejercicio en el cual se cancele la operación, y",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136
@@ -2697,8 +2697,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Restarán el promedio de los saldos que la deuda que se cancela haya tenido al final de cada uno de los meses que abarque el periodo comprendido desde la fecha en la que se contrajo la deuda que se cancela hasta el mes en el que se cancela la operación respectiva, del saldo promedio anual de las deudas del ejercicio en el cual se cancele la operación.",
+          "identificador": "b",
+          "contenido": ") Restarán el promedio de los saldos que la deuda que se cancela haya tenido al final de cada uno de los meses que abarque el periodo comprendido desde la fecha en la que se contrajo la deuda que se cancela hasta el mes en el que se cancela la operación respectiva, del saldo promedio anual de las deudas del ejercicio en el cual se cancele la operación.",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136
@@ -3442,8 +3442,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La fecha de caducidad, así como el plazo adicional a partir de dicha fecha, en el que el bien de que se trate pueda ser consumido o usado sin que sea perjudicial para la salud. En el caso de productos que no estén sujetos a una fecha de caducidad, de conformidad con las disposiciones sanitarias, el contribuyente deberá informar la fecha máxima en que pueden ser consumidos;",
+          "identificador": "a",
+          "contenido": ") La fecha de caducidad, así como el plazo adicional a partir de dicha fecha, en el que el bien de que se trate pueda ser consumido o usado sin que sea perjudicial para la salud. En el caso de productos que no estén sujetos a una fecha de caducidad, de conformidad con las disposiciones sanitarias, el contribuyente deberá informar la fecha máxima en que pueden ser consumidos;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -3451,8 +3451,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las condiciones especiales que, en su caso, se requieran para la conservación del bien, y",
+          "identificador": "b",
+          "contenido": ") Las condiciones especiales que, en su caso, se requieran para la conservación del bien, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -3460,8 +3460,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El tipo de población o regiones hacia las cuales están enfocados sus productos, y",
+          "identificador": "c",
+          "contenido": ") El tipo de población o regiones hacia las cuales están enfocados sus productos, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -4210,8 +4210,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La promoción y protección de las personas con discapacidad a fin de asegurar el pleno ejercicio de sus derechos humanos fundamentales asegurando su plena inclusión;",
+          "identificador": "a",
+          "contenido": ") La promoción y protección de las personas con discapacidad a fin de asegurar el pleno ejercicio de sus derechos humanos fundamentales asegurando su plena inclusión;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -4219,8 +4219,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Llevar a cabo actividades que permitan mejorar su desarrollo integral, así como su protección física, mental y social;",
+          "identificador": "b",
+          "contenido": ") Llevar a cabo actividades que permitan mejorar su desarrollo integral, así como su protección física, mental y social;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -4228,8 +4228,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Ofrecer ayudas técnicas entendidas como los dispositivos tecnológicos y materiales que permitan habilitar, rehabilitar o compensar sus limitaciones;",
+          "identificador": "c",
+          "contenido": ") Ofrecer ayudas técnicas entendidas como los dispositivos tecnológicos y materiales que permitan habilitar, rehabilitar o compensar sus limitaciones;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -4237,8 +4237,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Ofrecer educación especial o inclusiva;",
+          "identificador": "d",
+          "contenido": ") Ofrecer educación especial o inclusiva;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -4246,8 +4246,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Promover la integración social a través del establecimiento de medidas contra la discriminación;",
+          "identificador": "e",
+          "contenido": ") Promover la integración social a través del establecimiento de medidas contra la discriminación;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -4255,8 +4255,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Difundir el conocimiento en materia de discapacidad para sensibilizar a la población, y",
+          "identificador": "f",
+          "contenido": ") Difundir el conocimiento en materia de discapacidad para sensibilizar a la población, y",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -4264,8 +4264,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Accesibilidad en espacios públicos, y",
+          "identificador": "g",
+          "contenido": ") Accesibilidad en espacios públicos, y",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -4360,8 +4360,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Actos o resoluciones de organismos y autoridades electorales;",
+          "identificador": "a",
+          "contenido": ") Actos o resoluciones de organismos y autoridades electorales;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -4369,8 +4369,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Resoluciones de carácter jurisdiccional;",
+          "identificador": "b",
+          "contenido": ") Resoluciones de carácter jurisdiccional;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -4378,8 +4378,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Conflictos de carácter laboral;",
+          "identificador": "c",
+          "contenido": ") Conflictos de carácter laboral;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -4387,8 +4387,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "La interpretación de las disposiciones constitucionales o legales, y",
+          "identificador": "d",
+          "contenido": ") La interpretación de las disposiciones constitucionales o legales, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -4396,8 +4396,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Actos u omisiones entre particulares, y",
+          "identificador": "e",
+          "contenido": ") Actos u omisiones entre particulares, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -4519,7 +4519,7 @@
         {
           "numero": 2,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "Los donativos y sus rendimientos deberán destinarse única y exclusivamente a los fines propios del objeto social autorizado de las donatarias. En ningún caso podrán dichas donatarias destinar más del 5% de los donativos y, en su caso, de los rendimientos que perciban para cubrir sus gastos de administración.",
           "padre_numero": null,
           "x_id": 85,
@@ -4537,7 +4537,7 @@
         {
           "numero": 4,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "Las personas morales y fideicomisos autorizados para recibir donativos deducibles que realicen inversiones se considerarán que destinan sus activos exclusivamente a los fines propios de su objeto social, cuando adquieran acciones u otros títulos de crédito, colocados entre el gran público inversionista, o realicen operaciones financieras derivadas referidas a dichas acciones o títulos de crédito, en los mercados reconocidos a que se refiere el artículo 16-C, fracciones I y II del Código Fiscal de la Federación, siempre que:",
           "padre_numero": null,
           "x_id": 85,
@@ -4564,7 +4564,7 @@
         {
           "numero": 7,
           "tipo": "apartado",
-          "identificador": "C.",
+          "identificador": "C",
           "contenido": "Las personas morales con fines no lucrativos y los fideicomisos que cuenten con autorización para recibir donativos deducibles considerarán que destinan sus activos a fines distintos a su objeto social cuando directamente o a través de la figura del fideicomiso o por conducto de terceros:",
           "padre_numero": 6,
           "x_id": 85,
@@ -4609,7 +4609,7 @@
         {
           "numero": 12,
           "tipo": "apartado",
-          "identificador": "D.",
+          "identificador": "D",
           "contenido": "Las instituciones de enseñanza autorizadas para recibir donativos en los términos de la Ley, únicamente podrán a su vez donarlos a otras instituciones de enseñanza que cuenten con la autorización antes mencionada. En el caso a que se refiere este apartado, las instituciones de enseñanza que efectúen donativos a otras instituciones de enseñanza, no deberán considerar el monto de dichos donativos para determinar el porcentaje que podrán destinar a cubrir sus gastos de administración, y",
           "padre_numero": 11,
           "x_id": 85,
@@ -4618,7 +4618,7 @@
         {
           "numero": 13,
           "tipo": "apartado",
-          "identificador": "E.",
+          "identificador": "E",
           "contenido": "Al recibir los donativos, las donatarias deberán expedir los comprobantes fiscales correspondientes.",
           "padre_numero": 11,
           "x_id": 85,
@@ -6527,8 +6527,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Al monto de la ganancia acumulable conforme a la fracción III de este artículo se le aplicará la tarifa del artículo 152 de la Ley y el resultado que se obtenga se dividirá entre dicha ganancia acumulable;",
+          "identificador": "a",
+          "contenido": ") Al monto de la ganancia acumulable conforme a la fracción III de este artículo se le aplicará la tarifa del artículo 152 de la Ley y el resultado que se obtenga se dividirá entre dicha ganancia acumulable;",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -6536,8 +6536,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El cociente que se obtenga conforme al inciso a) de esta fracción, se multiplicará por el monto de la ganancia acumulable correspondiente al terreno y a la construcción, respectivamente; cada resultado se multiplicará por el número de años que corresponda, según se trate del terreno o de la construcción, y",
+          "identificador": "b",
+          "contenido": ") El cociente que se obtenga conforme al inciso a) de esta fracción, se multiplicará por el monto de la ganancia acumulable correspondiente al terreno y a la construcción, respectivamente; cada resultado se multiplicará por el número de años que corresponda, según se trate del terreno o de la construcción, y",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -6545,8 +6545,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La suma de los resultados obtenidos en base al inciso anterior, será el monto del pago provisional a enterar.",
+          "identificador": "c",
+          "contenido": ") La suma de los resultados obtenidos en base al inciso anterior, será el monto del pago provisional a enterar.",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -7007,8 +7007,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Dictamen del contador público, el cual deberá estar inscrito en el SAT en términos del artículo 52, fracción I del Código Fiscal de la Federación;",
+          "identificador": "a",
+          "contenido": ") Dictamen del contador público, el cual deberá estar inscrito en el SAT en términos del artículo 52, fracción I del Código Fiscal de la Federación;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -7016,8 +7016,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Determinación del resultado obtenido en la enajenación, señalando por cada sociedad emisora el precio de las acciones, su costo promedio por acción y el resultado parcial obtenido en la operación;",
+          "identificador": "b",
+          "contenido": ") Determinación del resultado obtenido en la enajenación, señalando por cada sociedad emisora el precio de las acciones, su costo promedio por acción y el resultado parcial obtenido en la operación;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -7025,8 +7025,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Análisis del costo promedio por acción, señalando por cada una, los siguientes datos:",
+          "identificador": "c",
+          "contenido": ") Análisis del costo promedio por acción, señalando por cada una, los siguientes datos:",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -7034,7 +7034,7 @@
         {
           "numero": 7,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Tratándose de la determinación del costo comprobado de adquisición actualizado: Fecha de adquisición, número de acciones, valor nominal, costo comprobado de adquisición y factor de actualización que corresponda.",
           "padre_numero": 6,
           "x_id": 136,
@@ -7052,7 +7052,7 @@
         {
           "numero": 9,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Tratándose de la diferencia de los saldos de la cuenta de utilidad fiscal neta a la fecha de adquisición y a la fecha de la enajenación: Saldo a la fecha de adquisición de las acciones, factor de actualización aplicado, determinación del saldo de la cuenta de utilidad fiscal neta a la fecha de adquisición y de enajenación, de las acciones. Para estos efectos los saldos de la cuenta de referencia deberán considerarse en la proporción que le corresponda al enajenante por las acciones adquiridas en la misma fecha;",
           "padre_numero": 6,
           "x_id": 136,
@@ -7061,7 +7061,7 @@
         {
           "numero": 10,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Determinación de las pérdidas fiscales pendientes de deducir, los reembolsos pagados y la diferencia a que se refiere el artículo 77, párrafo quinto de la Ley, asignadas en la proporción que de dichos conceptos le correspondan al enajenante, considerando el periodo comprendido desde el mes de adquisición de las acciones y hasta la fecha de enajenación señalando: i.",
           "padre_numero": 6,
           "x_id": 136,
@@ -7088,7 +7088,7 @@
         {
           "numero": 13,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Tratándose de las pérdidas fiscales obtenidas por la emisora antes de la fecha en la que el enajenante adquirió las acciones: El análisis de las pérdidas disminuidas durante el periodo de tenencia del enajenante, en la proporción que de las mismas le corresponden de acuerdo a su tenencia accionaria;",
           "padre_numero": 6,
           "x_id": 136,
@@ -7097,8 +7097,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Monto original ajustado determinado; número total de acciones que tenga el enajenante de la misma emisora a la fecha de la enajenación; número de acciones que enajena; utilidad o pérdida obtenida por acción y ganancia total obtenida en la operación, y",
+          "identificador": "d",
+          "contenido": ") Monto original ajustado determinado; número total de acciones que tenga el enajenante de la misma emisora a la fecha de la enajenación; número de acciones que enajena; utilidad o pérdida obtenida por acción y ganancia total obtenida en la operación, y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -7106,8 +7106,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Cálculo del Impuesto a cargo del contribuyente, que se determinará aplicando a la cantidad que resulte de dividir el total de la ganancia entre el número de años transcurridos entre la fecha de adquisición y la de enajenación, sin exceder de 20 años, la tarifa calculada en términos del artículo 126, párrafo segundo de la Ley, y multiplicando el resultado obtenido por el número de años antes citado;",
+          "identificador": "e",
+          "contenido": ") Cálculo del Impuesto a cargo del contribuyente, que se determinará aplicando a la cantidad que resulte de dividir el total de la ganancia entre el número de años transcurridos entre la fecha de adquisición y la de enajenación, sin exceder de 20 años, la tarifa calculada en términos del artículo 126, párrafo segundo de la Ley, y multiplicando el resultado obtenido por el número de años antes citado;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -7124,8 +7124,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La afirmación de que examinó la determinación del costo promedio por acción de las acciones enajenadas y la declaración del Impuesto correspondiente y de si ambos procedimientos se llevaron a cabo en términos de la Ley y de este Reglamento.",
+          "identificador": "a",
+          "contenido": ") La afirmación de que examinó la determinación del costo promedio por acción de las acciones enajenadas y la declaración del Impuesto correspondiente y de si ambos procedimientos se llevaron a cabo en términos de la Ley y de este Reglamento.",
           "padre_numero": 16,
           "x_id": 114,
           "x_texto": 136
@@ -7142,8 +7142,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Nombre del enajenante;",
+          "identificador": "b",
+          "contenido": ") Nombre del enajenante;",
           "padre_numero": 16,
           "x_id": 114,
           "x_texto": 136
@@ -7151,8 +7151,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Nombre del adquirente;",
+          "identificador": "c",
+          "contenido": ") Nombre del adquirente;",
           "padre_numero": 16,
           "x_id": 114,
           "x_texto": 136
@@ -7160,8 +7160,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Nombre de la sociedad emisora de las acciones;",
+          "identificador": "d",
+          "contenido": ") Nombre de la sociedad emisora de las acciones;",
           "padre_numero": 16,
           "x_id": 114,
           "x_texto": 136
@@ -7169,8 +7169,8 @@
         {
           "numero": 22,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Fecha de la enajenación de las acciones, y",
+          "identificador": "e",
+          "contenido": ") Fecha de la enajenación de las acciones, y",
           "padre_numero": 16,
           "x_id": 114,
           "x_texto": 136
@@ -7178,8 +7178,8 @@
         {
           "numero": 23,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Mención en forma específica del alcance del trabajo realizado consistente en la verificación de:",
+          "identificador": "f",
+          "contenido": ") Mención en forma específica del alcance del trabajo realizado consistente en la verificación de:",
           "padre_numero": 16,
           "x_id": 114,
           "x_texto": 136
@@ -7187,7 +7187,7 @@
         {
           "numero": 24,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "La antigüedad en la tenencia de las acciones;",
           "padre_numero": 23,
           "x_id": 136,
@@ -7196,7 +7196,7 @@
         {
           "numero": 25,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Los medios a través de los cuales se cercioró del costo de adquisición de las acciones;",
           "padre_numero": 23,
           "x_id": 136,
@@ -7205,7 +7205,7 @@
         {
           "numero": 26,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "La determinación de los saldos de la cuenta de utilidad fiscal neta a la fecha de adquisición y a la fecha de enajenación, de las acciones, con base en los datos contenidos en las constancias que deben emitir las sociedades emisoras de las acciones, y",
           "padre_numero": 23,
           "x_id": 136,
@@ -7214,7 +7214,7 @@
         {
           "numero": 27,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Las utilidades o dividendos distribuidos que correspondan por acción, mediante la revisión de las actas de asamblea de accionistas respectivas, así como las utilidades o dividendos percibidos por la sociedad;",
           "padre_numero": 23,
           "x_id": 136,
@@ -7347,8 +7347,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Que el contrato de promesa de compraventa se hubiera celebrado ante fedatario público;",
+          "identificador": "a",
+          "contenido": ") Que el contrato de promesa de compraventa se hubiera celebrado ante fedatario público;",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136
@@ -7356,8 +7356,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Que tratándose de contratos privados de promesa de compraventa o de compraventa de inmuebles, se hubieran timbrado para efectos fiscales y registrado dentro de los seis meses siguientes al día de su celebración ante las autoridades fiscales donde se encuentre ubicado el inmueble a fin de que se expidieran a cargo del promitente comprador o del adquirente las boletas de cobro de contribuciones locales que correspondan a dicho inmueble, o bien, se hubiera pagado el impuesto local de adquisición de inmuebles correspondiente a dicho contrato, y",
+          "identificador": "b",
+          "contenido": ") Que tratándose de contratos privados de promesa de compraventa o de compraventa de inmuebles, se hubieran timbrado para efectos fiscales y registrado dentro de los seis meses siguientes al día de su celebración ante las autoridades fiscales donde se encuentre ubicado el inmueble a fin de que se expidieran a cargo del promitente comprador o del adquirente las boletas de cobro de contribuciones locales que correspondan a dicho inmueble, o bien, se hubiera pagado el impuesto local de adquisición de inmuebles correspondiente a dicho contrato, y",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136
@@ -7365,8 +7365,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Que en su caso, el valor del inmueble que se consideró para efectos de registrar el contrato privado de promesa o de compraventa ante las autoridades locales, o bien para pagar el impuesto local de adquisición de inmuebles correspondiente a dicho contrato, no exceda en más de un 10%, al precio de la enajenación sin considerar el importe de los intereses como parte de dicho precio, y",
+          "identificador": "c",
+          "contenido": ") Que en su caso, el valor del inmueble que se consideró para efectos de registrar el contrato privado de promesa o de compraventa ante las autoridades locales, o bien para pagar el impuesto local de adquisición de inmuebles correspondiente a dicho contrato, no exceda en más de un 10%, al precio de la enajenación sin considerar el importe de los intereses como parte de dicho precio, y",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136
@@ -7470,8 +7470,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El interés nominal devengado a favor del fondo de inversión de que se trate, correspondiente a los instrumentos de deuda que estén gravados para las personas físicas conforme a la Ley, y",
+          "identificador": "a",
+          "contenido": ") El interés nominal devengado a favor del fondo de inversión de que se trate, correspondiente a los instrumentos de deuda que estén gravados para las personas físicas conforme a la Ley, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -7479,8 +7479,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El interés nominal devengado a favor del fondo de inversión de que se trate, por los instrumentos de deuda que estén exentos para las personas físicas.",
+          "identificador": "b",
+          "contenido": ") El interés nominal devengado a favor del fondo de inversión de que se trate, por los instrumentos de deuda que estén exentos para las personas físicas.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -7506,8 +7506,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Dividirán el valor de la cartera de instrumentos de deuda gravados para personas físicas entre el valor de la cartera total;",
+          "identificador": "a",
+          "contenido": ") Dividirán el valor de la cartera de instrumentos de deuda gravados para personas físicas entre el valor de la cartera total;",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -7515,8 +7515,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Dividirán el valor de la cartera de instrumentos de deuda exentos para personas físicas entre el valor de la cartera total, y",
+          "identificador": "b",
+          "contenido": ") Dividirán el valor de la cartera de instrumentos de deuda exentos para personas físicas entre el valor de la cartera total, y",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -7524,8 +7524,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los resultados de los incisos a) y b) de esta fracción, se multiplicarán por el importe de los gastos administrativos deducibles diarios de la cartera total para obtener la parte de éstos que se adjudicará a la operación de cada tipo de instrumento.",
+          "identificador": "c",
+          "contenido": ") Los resultados de los incisos a) y b) de esta fracción, se multiplicarán por el importe de los gastos administrativos deducibles diarios de la cartera total para obtener la parte de éstos que se adjudicará a la operación de cada tipo de instrumento.",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -7708,8 +7708,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El interés nominal devengado a su favor, correspondiente a los instrumentos de deuda que estén gravados para sus inversionistas;",
+          "identificador": "a",
+          "contenido": ") El interés nominal devengado a su favor, correspondiente a los instrumentos de deuda que estén gravados para sus inversionistas;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -7717,8 +7717,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El interés nominal devengado a su favor, por los instrumentos de deuda que estén exentos para sus inversionistas, y",
+          "identificador": "b",
+          "contenido": ") El interés nominal devengado a su favor, por los instrumentos de deuda que estén exentos para sus inversionistas, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -7726,8 +7726,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La ganancia por la enajenación de su cartera accionaria y la variación en la valuación de dicha cartera, al final de cada día.",
+          "identificador": "c",
+          "contenido": ") La ganancia por la enajenación de su cartera accionaria y la variación en la valuación de dicha cartera, al final de cada día.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -7753,8 +7753,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El monto de los intereses nominales devengados diarios correspondiente a cada uno de sus inversionistas se calculará multiplicando la suma de los intereses nominales devengados diarios a favor de la sociedad, calculados conforme a la fracción I, incisos a) y b) de este artículo, por la participación diaria que en dicha sociedad tenga cada uno de sus inversionistas, y",
+          "identificador": "a",
+          "contenido": ") El monto de los intereses nominales devengados diarios correspondiente a cada uno de sus inversionistas se calculará multiplicando la suma de los intereses nominales devengados diarios a favor de la sociedad, calculados conforme a la fracción I, incisos a) y b) de este artículo, por la participación diaria que en dicha sociedad tenga cada uno de sus inversionistas, y",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -7762,8 +7762,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Para calcular los intereses nominales del ejercicio correspondientes a cada inversionista, las sociedades sumarán o restarán, según corresponda, los intereses nominales devengados diarios, a favor de cada uno de sus inversionistas, calculados conforme al inciso a) de esta fracción, correspondientes a cada uno de los días del ejercicio en los que dichos inversionistas hayan tenido participación en la sociedad de que se trate, y",
+          "identificador": "b",
+          "contenido": ") Para calcular los intereses nominales del ejercicio correspondientes a cada inversionista, las sociedades sumarán o restarán, según corresponda, los intereses nominales devengados diarios, a favor de cada uno de sus inversionistas, calculados conforme al inciso a) de esta fracción, correspondientes a cada uno de los días del ejercicio en los que dichos inversionistas hayan tenido participación en la sociedad de que se trate, y",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -7780,8 +7780,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Restarán de los intereses nominales devengados diarios correspondientes a los instrumentos de deuda que estén gravados, calculados conforme a la fracción I, inciso a) del presente artículo, la cantidad que resulte de multiplicar el valor al final de cada día de la cartera de instrumentos de deuda gravados, por el factor que se obtenga de acuerdo con el artículo 227 de este Reglamento. El resultado que se obtenga serán los intereses acumulables diarios de los inversionistas;",
+          "identificador": "a",
+          "contenido": ") Restarán de los intereses nominales devengados diarios correspondientes a los instrumentos de deuda que estén gravados, calculados conforme a la fracción I, inciso a) del presente artículo, la cantidad que resulte de multiplicar el valor al final de cada día de la cartera de instrumentos de deuda gravados, por el factor que se obtenga de acuerdo con el artículo 227 de este Reglamento. El resultado que se obtenga serán los intereses acumulables diarios de los inversionistas;",
           "padre_numero": 10,
           "x_id": 114,
           "x_texto": 136
@@ -7789,8 +7789,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los intereses reales acumulables diarios de cada uno de sus inversionistas se obtendrán multiplicando el resultado obtenido conforme al inciso anterior, por la participación que en dicha sociedad tenga cada uno de sus inversionistas al final de cada día, y",
+          "identificador": "b",
+          "contenido": ") Los intereses reales acumulables diarios de cada uno de sus inversionistas se obtendrán multiplicando el resultado obtenido conforme al inciso anterior, por la participación que en dicha sociedad tenga cada uno de sus inversionistas al final de cada día, y",
           "padre_numero": 10,
           "x_id": 114,
           "x_texto": 136
@@ -7798,8 +7798,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Para determinar los intereses reales acumulables del ejercicio correspondientes a cada inversionista, las sociedades sumarán o restarán, según corresponda, los intereses reales acumulables diarios a favor de cada inversionista, correspondientes a cada uno de los días del ejercicio en el que dicho inversionista haya invertido en la sociedad de que se trate.",
+          "identificador": "c",
+          "contenido": ") Para determinar los intereses reales acumulables del ejercicio correspondientes a cada inversionista, las sociedades sumarán o restarán, según corresponda, los intereses reales acumulables diarios a favor de cada inversionista, correspondientes a cada uno de los días del ejercicio en el que dicho inversionista haya invertido en la sociedad de que se trate.",
           "padre_numero": 10,
           "x_id": 114,
           "x_texto": 136
@@ -9094,8 +9094,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los comprendidos en el Título IV, Capítulos I y III de la Ley, así como los derivados de la prestación de servicios profesionales a que se refiere el Título IV, Capítulo II de la Ley, estarán exceptuados del pago del Impuesto para los herederos o legatarios por considerarse comprendidos en el artículo 93, fracción XXII de la Ley, y",
+          "identificador": "a",
+          "contenido": ") Los comprendidos en el Título IV, Capítulos I y III de la Ley, así como los derivados de la prestación de servicios profesionales a que se refiere el Título IV, Capítulo II de la Ley, estarán exceptuados del pago del Impuesto para los herederos o legatarios por considerarse comprendidos en el artículo 93, fracción XXII de la Ley, y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -9103,8 +9103,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Tratándose de los ingresos a que se refiere el Título IV, Capítulos IV a IX de la Ley, así como los derivados de la realización de actividades empresariales, podrán considerarse como ingresos percibidos por el autor de la sucesión y declararse, excepto los señalados en el Título IV, Capítulo VII de la Ley, en términos de la fracción que antecede, o bien cuando los herederos o legatarios opten por acumularlos a sus demás ingresos conforme al artículo 146 de este Reglamento.",
+          "identificador": "b",
+          "contenido": ") Tratándose de los ingresos a que se refiere el Título IV, Capítulos IV a IX de la Ley, así como los derivados de la realización de actividades empresariales, podrán considerarse como ingresos percibidos por el autor de la sucesión y declararse, excepto los señalados en el Título IV, Capítulo VII de la Ley, en términos de la fracción que antecede, o bien cuando los herederos o legatarios opten por acumularlos a sus demás ingresos conforme al artículo 146 de este Reglamento.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -10568,8 +10568,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Se obtendrá la diferencia entre el precio, monto de la contraprestación o margen de utilidad a que se refiere el primer párrafo de esta fracción y el precio, monto de la contraprestación o margen de utilidad inmediato superior, considerando para estos efectos su valor;",
+          "identificador": "a",
+          "contenido": ") Se obtendrá la diferencia entre el precio, monto de la contraprestación o margen de utilidad a que se refiere el primer párrafo de esta fracción y el precio, monto de la contraprestación o margen de utilidad inmediato superior, considerando para estos efectos su valor;",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -10577,8 +10577,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El resultado obtenido en el inciso anterior se multiplicará por el número decimal correspondiente a la mediana, y",
+          "identificador": "b",
+          "contenido": ") El resultado obtenido en el inciso anterior se multiplicará por el número decimal correspondiente a la mediana, y",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -10586,8 +10586,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Al resultado obtenido en el inciso anterior se le adicionará el resultado obtenido en el primer párrafo de esta fracción;",
+          "identificador": "c",
+          "contenido": ") Al resultado obtenido en el inciso anterior se le adicionará el resultado obtenido en el primer párrafo de esta fracción;",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -10622,8 +10622,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Se obtendrá la diferencia entre el precio, monto de la contraprestación o margen de utilidad a que se refiere el primer párrafo de esta fracción y el precio, monto de la contraprestación o margen de utilidad inmediato superior, considerando para estos efectos su valor;",
+          "identificador": "a",
+          "contenido": ") Se obtendrá la diferencia entre el precio, monto de la contraprestación o margen de utilidad a que se refiere el primer párrafo de esta fracción y el precio, monto de la contraprestación o margen de utilidad inmediato superior, considerando para estos efectos su valor;",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -10631,8 +10631,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El resultado obtenido en el inciso anterior se multiplicará por el número decimal del percentil vigésimo quinto, y",
+          "identificador": "b",
+          "contenido": ") El resultado obtenido en el inciso anterior se multiplicará por el número decimal del percentil vigésimo quinto, y",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -10640,8 +10640,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Al resultado obtenido en el inciso anterior se le adicionará el resultado obtenido en el primer párrafo de esta fracción;",
+          "identificador": "c",
+          "contenido": ") Al resultado obtenido en el inciso anterior se le adicionará el resultado obtenido en el primer párrafo de esta fracción;",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -10676,8 +10676,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Se obtendrá la diferencia entre el precio, monto de la contraprestación o margen de utilidad a que se refiere el primer párrafo de esta fracción y el precio, monto de la contraprestación o margen de utilidad inmediato superior, considerando para tales efectos su valor;",
+          "identificador": "a",
+          "contenido": ") Se obtendrá la diferencia entre el precio, monto de la contraprestación o margen de utilidad a que se refiere el primer párrafo de esta fracción y el precio, monto de la contraprestación o margen de utilidad inmediato superior, considerando para tales efectos su valor;",
           "padre_numero": 17,
           "x_id": 114,
           "x_texto": 136
@@ -10685,8 +10685,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El resultado obtenido conforme al inciso anterior, se multiplicará por el número decimal del percentil septuagésimo quinto, y",
+          "identificador": "b",
+          "contenido": ") El resultado obtenido conforme al inciso anterior, se multiplicará por el número decimal del percentil septuagésimo quinto, y",
           "padre_numero": 17,
           "x_id": 114,
           "x_texto": 136
@@ -10694,8 +10694,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Al resultado obtenido en el inciso anterior, se le adicionará el resultado obtenido en el primer párrafo de esta fracción.",
+          "identificador": "c",
+          "contenido": ") Al resultado obtenido en el inciso anterior, se le adicionará el resultado obtenido en el primer párrafo de esta fracción.",
           "padre_numero": 17,
           "x_id": 114,
           "x_texto": 136
@@ -11180,8 +11180,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los intereses provenientes de valores, cuando efectivamente se cobren;",
+          "identificador": "a",
+          "contenido": ") Los intereses provenientes de valores, cuando efectivamente se cobren;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -11189,8 +11189,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los intereses provenientes de financiamientos otorgados a sociedades promovidas, cuando efectivamente se cobren;",
+          "identificador": "b",
+          "contenido": ") Los intereses provenientes de financiamientos otorgados a sociedades promovidas, cuando efectivamente se cobren;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -11198,8 +11198,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las ganancias por la enajenación de valores y las derivadas de acciones de sociedades promovidas, cuando se enajenen, y",
+          "identificador": "c",
+          "contenido": ") Las ganancias por la enajenación de valores y las derivadas de acciones de sociedades promovidas, cuando se enajenen, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -11207,8 +11207,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Los dividendos cuando se perciban, y",
+          "identificador": "d",
+          "contenido": ") Los dividendos cuando se perciban, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -11225,8 +11225,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Identificarán el saldo promedio invertido de cada persona que participe como fideicomitente o fideicomisario en la cuenta a que se refiere el artículo 193, fracción III de la Ley, al momento de la distribución de los ingresos del fideicomiso;",
+          "identificador": "a",
+          "contenido": ") Identificarán el saldo promedio invertido de cada persona que participe como fideicomitente o fideicomisario en la cuenta a que se refiere el artículo 193, fracción III de la Ley, al momento de la distribución de los ingresos del fideicomiso;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -11234,8 +11234,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Sumarán cada uno de los saldos a que se refiere el inciso anterior. El resultado corresponderá a la inversión total del fideicomiso;",
+          "identificador": "b",
+          "contenido": ") Sumarán cada uno de los saldos a que se refiere el inciso anterior. El resultado corresponderá a la inversión total del fideicomiso;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -11243,8 +11243,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Dividirán por cada inversionista, el saldo que tenga en la cuenta a que se refiere el inciso a) de la presente fracción, entre el monto que resulte como inversión total del fideicomiso conforme al inciso b) de dicha fracción;",
+          "identificador": "c",
+          "contenido": ") Dividirán por cada inversionista, el saldo que tenga en la cuenta a que se refiere el inciso a) de la presente fracción, entre el monto que resulte como inversión total del fideicomiso conforme al inciso b) de dicha fracción;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -11252,8 +11252,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Identificarán el saldo que tenga la institución fiduciaria en cada una de las cuentas a que se refiere el artículo 193, fracción II de la Ley, al momento de la distribución de los ingresos del fideicomiso;",
+          "identificador": "d",
+          "contenido": ") Identificarán el saldo que tenga la institución fiduciaria en cada una de las cuentas a que se refiere el artículo 193, fracción II de la Ley, al momento de la distribución de los ingresos del fideicomiso;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -11261,8 +11261,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Sumarán los saldos totales por cada una de las cuentas a que se refiere el inciso d) de esta fracción. El resultado obtenido corresponderá a los ingresos totales del fideicomiso;",
+          "identificador": "e",
+          "contenido": ") Sumarán los saldos totales por cada una de las cuentas a que se refiere el inciso d) de esta fracción. El resultado obtenido corresponderá a los ingresos totales del fideicomiso;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -11270,8 +11270,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Obtendrán el monto total de los gastos netos de descuentos, bonificaciones o devoluciones que hayan sido efectivamente erogados en el ejercicio de que se trate y que sean estrictamente indispensables para la obtención de los ingresos que reciba el fideicomiso;",
+          "identificador": "f",
+          "contenido": ") Obtendrán el monto total de los gastos netos de descuentos, bonificaciones o devoluciones que hayan sido efectivamente erogados en el ejercicio de que se trate y que sean estrictamente indispensables para la obtención de los ingresos que reciba el fideicomiso;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -11279,8 +11279,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Disminuirá de los ingresos totales determinados en el inciso e) de esta fracción, el monto obtenido conforme al inciso f) de dicha fracción. El resultado constituirá los ingresos netos del fideicomiso;",
+          "identificador": "g",
+          "contenido": ") Disminuirá de los ingresos totales determinados en el inciso e) de esta fracción, el monto obtenido conforme al inciso f) de dicha fracción. El resultado constituirá los ingresos netos del fideicomiso;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -11288,8 +11288,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Multiplicarán los ingresos netos del fideicomiso obtenidos conforme al inciso anterior, por el porcentaje que se distribuya en términos del artículo 192, fracción V de la Ley;",
+          "identificador": "h",
+          "contenido": ") Multiplicarán los ingresos netos del fideicomiso obtenidos conforme al inciso anterior, por el porcentaje que se distribuya en términos del artículo 192, fracción V de la Ley;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -11297,8 +11297,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "Multiplicarán el resultado obtenido conforme al inciso anterior, por el resultado obtenido en términos del inciso c) de esta fracción, para cada persona que participe como fideicomitente o fideicomisario en el fideicomiso de que se trate, y",
+          "identificador": "i",
+          "contenido": ") Multiplicarán el resultado obtenido conforme al inciso anterior, por el resultado obtenido en términos del inciso c) de esta fracción, para cada persona que participe como fideicomitente o fideicomisario en el fideicomiso de que se trate, y",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -11306,8 +11306,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "j)",
-          "contenido": "Multiplicarán el resultado obtenido en el inciso anterior, por la proporción que resulte de dividir el saldo de cada una de las cuentas a que se refiere el inciso d) de esta fracción entre los ingresos totales obtenidos conforme al inciso e) de dicha fracción.",
+          "identificador": "j",
+          "contenido": ") Multiplicarán el resultado obtenido en el inciso anterior, por la proporción que resulte de dividir el saldo de cada una de las cuentas a que se refiere el inciso d) de esta fracción entre los ingresos totales obtenidos conforme al inciso e) de dicha fracción.",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136

@@ -426,8 +426,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "De rayos “X”, “gamma” o de cualquier otro medio tecnológico, que permita la revisión de las mercancías que se encuentren en los contenedores, bultos o furgones, sin causarles daño, de conformidad con los requisitos que establezca el Reglamento.",
+          "identificador": "a",
+          "contenido": ") De rayos “X”, “gamma” o de cualquier otro medio tecnológico, que permita la revisión de las mercancías que se encuentren en los contenedores, bultos o furgones, sin causarles daño, de conformidad con los requisitos que establezca el Reglamento.",
           "padre_numero": 4,
           "x_id": 106,
           "x_texto": 128
@@ -435,8 +435,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "De pesaje de las mercancías que se encuentren en camiones, remolques, furgones, contenedores y cualquier otro medio que las contenga, así como proporcionar a las autoridades aduaneras en los términos que el Servicio de Administración Tributaria establezca mediante reglas de carácter general, la información que se obtenga del pesaje de las mercancías y de la tara.",
+          "identificador": "b",
+          "contenido": ") De pesaje de las mercancías que se encuentren en camiones, remolques, furgones, contenedores y cualquier otro medio que las contenga, así como proporcionar a las autoridades aduaneras en los términos que el Servicio de Administración Tributaria establezca mediante reglas de carácter general, la información que se obtenga del pesaje de las mercancías y de la tara.",
           "padre_numero": 4,
           "x_id": 106,
           "x_texto": 128
@@ -444,8 +444,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "De cámaras de circuito cerrado de video y audio para el control, seguridad y vigilancia.",
+          "identificador": "c",
+          "contenido": ") De cámaras de circuito cerrado de video y audio para el control, seguridad y vigilancia.",
           "padre_numero": 4,
           "x_id": 106,
           "x_texto": 128
@@ -453,8 +453,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "De generación de energía eléctrica, de seguridad y de telecomunicaciones que permitan la operación continua e ininterrumpida del sistema informático de las aduanas, de conformidad con los lineamientos que el Servicio de Administración Tributaria señale mediante reglas de carácter general.",
+          "identificador": "d",
+          "contenido": ") De generación de energía eléctrica, de seguridad y de telecomunicaciones que permitan la operación continua e ininterrumpida del sistema informático de las aduanas, de conformidad con los lineamientos que el Servicio de Administración Tributaria señale mediante reglas de carácter general.",
           "padre_numero": 4,
           "x_id": 106,
           "x_texto": 128
@@ -462,8 +462,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "De sistemas automatizados para el control de las entradas y salidas del recinto fiscal de personas, mercancías y medios de transporte, así como los demás medios de control, autorizados previamente por las autoridades aduaneras.",
+          "identificador": "e",
+          "contenido": ") De sistemas automatizados para el control de las entradas y salidas del recinto fiscal de personas, mercancías y medios de transporte, así como los demás medios de control, autorizados previamente por las autoridades aduaneras.",
           "padre_numero": 4,
           "x_id": 107,
           "x_texto": 129,
@@ -1281,8 +1281,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Tratándose de mercancía que haya pasado a propiedad del Fisco Federal, hasta que deba ser retirada por la autoridad competente para administrar y dar destino a dichas mercancías de conformidad con la Ley Federal para la Administración y Enajenación de Bienes del Sector Público.",
+          "identificador": "a",
+          "contenido": ") Tratándose de mercancía que haya pasado a propiedad del Fisco Federal, hasta que deba ser retirada por la autoridad competente para administrar y dar destino a dichas mercancías de conformidad con la Ley Federal para la Administración y Enajenación de Bienes del Sector Público.",
           "padre_numero": 6,
           "x_id": 138,
           "x_texto": 160,
@@ -1293,8 +1293,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando las mercancías sean retiradas por los asignatarios o donatarios, quienes contarán para tales efectos con un plazo de hasta diez días, contado a partir de la firma del acta de asignación o donación, tratándose de las mercancías de las que dispongan las autoridades aduaneras.",
+          "identificador": "b",
+          "contenido": ") Cuando las mercancías sean retiradas por los asignatarios o donatarios, quienes contarán para tales efectos con un plazo de hasta diez días, contado a partir de la firma del acta de asignación o donación, tratándose de las mercancías de las que dispongan las autoridades aduaneras.",
           "padre_numero": 6,
           "x_id": 138,
           "x_texto": 160,
@@ -1305,8 +1305,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "En la fecha que se instruya al recinto fiscalizado la destrucción de las mercancías.",
+          "identificador": "c",
+          "contenido": ") En la fecha que se instruya al recinto fiscalizado la destrucción de las mercancías.",
           "padre_numero": 6,
           "x_id": 138,
           "x_texto": 160,
@@ -1365,8 +1365,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "En mercancías de importación, dos días, excepto en recintos fiscalizados que se encuentren en aduanas de tráfico marítimo, en cuyo caso el plazo será de siete días.",
+          "identificador": "a",
+          "contenido": ") En mercancías de importación, dos días, excepto en recintos fiscalizados que se encuentren en aduanas de tráfico marítimo, en cuyo caso el plazo será de siete días.",
           "padre_numero": 15,
           "x_id": 138,
           "x_texto": 160,
@@ -1377,8 +1377,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "En mercancías de exportación, quince días, excepto minerales, en cuyo caso el plazo será de treinta días.",
+          "identificador": "b",
+          "contenido": ") En mercancías de exportación, quince días, excepto minerales, en cuyo caso el plazo será de treinta días.",
           "padre_numero": 15,
           "x_id": 138,
           "x_texto": 160
@@ -2565,8 +2565,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Tres meses, tratándose de la exportación.",
+          "identificador": "a",
+          "contenido": ") Tres meses, tratándose de la exportación.",
           "padre_numero": 3,
           "x_id": 138,
           "x_texto": 160
@@ -2574,8 +2574,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Tres días, tratándose de mercancías explosivas, inflamables, contaminantes, radiactivas, radioactivas o corrosivas, así como de mercancías perecederas o de fácil descomposición y de animales vivos.",
+          "identificador": "b",
+          "contenido": ") Tres días, tratándose de mercancías explosivas, inflamables, contaminantes, radiactivas, radioactivas o corrosivas, así como de mercancías perecederas o de fácil descomposición y de animales vivos.",
           "padre_numero": 3,
           "x_id": 138,
           "x_texto": 160,
@@ -2598,8 +2598,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Dos meses, en los demás casos.",
+          "identificador": "c",
+          "contenido": ") Dos meses, en los demás casos.",
           "padre_numero": 3,
           "x_id": 138,
           "x_texto": 160
@@ -2933,8 +2933,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La relativa al valor y demás datos relacionados con la comercialización de las mercancías, contenidos en el comprobante fiscal digital o documento equivalente, cuando el valor en aduana de las mismas se determine conforme al valor de transacción, declarando el acuse correspondiente que se prevé en el artículo 59-A de la presente Ley.",
+          "identificador": "a",
+          "contenido": ") La relativa al valor y demás datos relacionados con la comercialización de las mercancías, contenidos en el comprobante fiscal digital o documento equivalente, cuando el valor en aduana de las mismas se determine conforme al valor de transacción, declarando el acuse correspondiente que se prevé en el artículo 59-A de la presente Ley.",
           "padre_numero": 2,
           "x_id": 121,
           "x_texto": 143,
@@ -2945,8 +2945,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La contenida en el conocimiento de embarque, lista de empaque, guía o demás documentos de transporte, y que requiera el Servicio de Administración Tributaria mediante reglas, declarando el acuse que se prevé en el artículo 20, fracción VII de la presente Ley o el número de documento de transporte que corresponda.",
+          "identificador": "b",
+          "contenido": ") La contenida en el conocimiento de embarque, lista de empaque, guía o demás documentos de transporte, y que requiera el Servicio de Administración Tributaria mediante reglas, declarando el acuse que se prevé en el artículo 20, fracción VII de la presente Ley o el número de documento de transporte que corresponda.",
           "padre_numero": 2,
           "x_id": 121,
           "x_texto": 143,
@@ -2957,8 +2957,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La que compruebe el cumplimiento de las regulaciones y restricciones no arancelarias a la importación, que se hubieran expedido de acuerdo con la Ley de Comercio Exterior, siempre que las mismas se publiquen en el Diario Oficial de la Federación y se identifiquen en términos de la fracción arancelaria y de la nomenclatura que les corresponda conforme a la Tarifa de la Ley de los Impuestos Generales de Importación y de Exportación.",
+          "identificador": "c",
+          "contenido": ") La que compruebe el cumplimiento de las regulaciones y restricciones no arancelarias a la importación, que se hubieran expedido de acuerdo con la Ley de Comercio Exterior, siempre que las mismas se publiquen en el Diario Oficial de la Federación y se identifiquen en términos de la fracción arancelaria y de la nomenclatura que les corresponda conforme a la Tarifa de la Ley de los Impuestos Generales de Importación y de Exportación.",
           "padre_numero": 2,
           "x_id": 121,
           "x_texto": 143
@@ -2966,8 +2966,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "La que determine la procedencia y el origen de las mercancías para efectos de la aplicación de preferencias arancelarias de conformidad con los tratados internacionales de los que México sea Parte, así como para las cuotas compensatorias, cupos, marcado de país de origen y otras medidas que al efecto se establezcan, de conformidad con las disposiciones aplicables.",
+          "identificador": "d",
+          "contenido": ") La que determine la procedencia y el origen de las mercancías para efectos de la aplicación de preferencias arancelarias de conformidad con los tratados internacionales de los que México sea Parte, así como para las cuotas compensatorias, cupos, marcado de país de origen y otras medidas que al efecto se establezcan, de conformidad con las disposiciones aplicables.",
           "padre_numero": 2,
           "x_id": 121,
           "x_texto": 143
@@ -2987,8 +2987,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "La del documento digital en el que conste la garantía efectuada en la cuenta aduanera de garantía a que se refiere el artículo 84-A de esta Ley, cuando el valor declarado sea inferior al precio estimado que establezca la Secretaría.",
+          "identificador": "e",
+          "contenido": ") La del documento digital en el que conste la garantía efectuada en la cuenta aduanera de garantía a que se refiere el artículo 84-A de esta Ley, cuando el valor declarado sea inferior al precio estimado que establezca la Secretaría.",
           "padre_numero": 2,
           "x_id": 121,
           "x_texto": 143
@@ -2996,8 +2996,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "El dictamen que avale el peso, volumen u otras características inherentes a las mercancías o, en su caso, el certificado vigente que avale que los mecanismos de medición con los que cuente el importador, están debidamente calibrados, cumpliendo con los requisitos que se establezcan mediante reglas.",
+          "identificador": "f",
+          "contenido": ") El dictamen que avale el peso, volumen u otras características inherentes a las mercancías o, en su caso, el certificado vigente que avale que los mecanismos de medición con los que cuente el importador, están debidamente calibrados, cumpliendo con los requisitos que se establezcan mediante reglas.",
           "padre_numero": 2,
           "x_id": 121,
           "x_texto": 143
@@ -3044,8 +3044,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La relativa al valor y demás datos relacionados con la comercialización de las mercancías, contenidos en el comprobante fiscal digital o documento equivalente, declarando el acuse que se prevé en el artículo 59-A de la presente Ley.",
+          "identificador": "a",
+          "contenido": ") La relativa al valor y demás datos relacionados con la comercialización de las mercancías, contenidos en el comprobante fiscal digital o documento equivalente, declarando el acuse que se prevé en el artículo 59-A de la presente Ley.",
           "padre_numero": 13,
           "x_id": 121,
           "x_texto": 143,
@@ -3056,8 +3056,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La que compruebe el cumplimiento de las regulaciones y restricciones no arancelarias a la exportación, que se hubieran expedido de acuerdo con la Ley de Comercio Exterior, siempre que las mismas se publiquen en el Diario Oficial de la Federación y se identifiquen en términos de la fracción arancelaria y de la nomenclatura que les corresponda conforme a la Tarifa de la Ley de los Impuestos Generales de Importación y de Exportación.",
+          "identificador": "b",
+          "contenido": ") La que compruebe el cumplimiento de las regulaciones y restricciones no arancelarias a la exportación, que se hubieran expedido de acuerdo con la Ley de Comercio Exterior, siempre que las mismas se publiquen en el Diario Oficial de la Federación y se identifiquen en términos de la fracción arancelaria y de la nomenclatura que les corresponda conforme a la Tarifa de la Ley de los Impuestos Generales de Importación y de Exportación.",
           "padre_numero": 13,
           "x_id": 121,
           "x_texto": 143
@@ -4211,8 +4211,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La de fondeo, y cuando éste no se realice, la de amarre o atraque de la embarcación que transporte las mercancías al puerto al que vengan destinadas.",
+          "identificador": "a",
+          "contenido": ") La de fondeo, y cuando éste no se realice, la de amarre o atraque de la embarcación que transporte las mercancías al puerto al que vengan destinadas.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -4220,8 +4220,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "En la que las mercancías crucen la línea divisoria internacional.",
+          "identificador": "b",
+          "contenido": ") En la que las mercancías crucen la línea divisoria internacional.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -4229,8 +4229,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La de arribo de la aeronave que las transporte, al primer aeropuerto nacional.",
+          "identificador": "c",
+          "contenido": ") La de arribo de la aeronave que las transporte, al primer aeropuerto nacional.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -4238,8 +4238,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "En vía postal, en las señaladas en los incisos anteriores, según que las mercancías hayan entrado al país por los litorales, fronteras o por aire.",
+          "identificador": "d",
+          "contenido": ") En vía postal, en las señaladas en los incisos anteriores, según que las mercancías hayan entrado al país por los litorales, fronteras o por aire.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -4247,8 +4247,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "En la que las mercancías pasen a ser propiedad del Fisco Federal, en los casos de abandono.",
+          "identificador": "e",
+          "contenido": ") En la que las mercancías pasen a ser propiedad del Fisco Federal, en los casos de abandono.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -4295,8 +4295,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "En la de comisión de la infracción.",
+          "identificador": "a",
+          "contenido": ") En la de comisión de la infracción.",
           "padre_numero": 11,
           "x_id": 138,
           "x_texto": 160
@@ -4304,8 +4304,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "En la del embargo precautorio de las mercancías, cuando no pueda determinarse la de comisión.",
+          "identificador": "b",
+          "contenido": ") En la del embargo precautorio de las mercancías, cuando no pueda determinarse la de comisión.",
           "padre_numero": 11,
           "x_id": 138,
           "x_texto": 160
@@ -4313,8 +4313,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "En la que sea descubierta, cuando las mercancías no sean embargadas precautoriamente ni se pueda determinar la de comisión.",
+          "identificador": "c",
+          "contenido": ") En la que sea descubierta, cuando las mercancías no sean embargadas precautoriamente ni se pueda determinar la de comisión.",
           "padre_numero": 11,
           "x_id": 138,
           "x_texto": 160
@@ -4545,8 +4545,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La garantía a que se refiere el artículo 36-A, fracción I, inciso e) de esta Ley;",
+          "identificador": "a",
+          "contenido": ") La garantía a que se refiere el artículo 36-A, fracción I, inciso e) de esta Ley;",
           "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
@@ -4554,8 +4554,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los comprobantes fiscales digitales por Internet;",
+          "identificador": "b",
+          "contenido": ") Los comprobantes fiscales digitales por Internet;",
           "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
@@ -4563,8 +4563,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las facturas comerciales o documentos equivalentes;",
+          "identificador": "c",
+          "contenido": ") Las facturas comerciales o documentos equivalentes;",
           "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
@@ -4572,8 +4572,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Las transferencias electrónicas del pago o cartas de crédito;",
+          "identificador": "d",
+          "contenido": ") Las transferencias electrónicas del pago o cartas de crédito;",
           "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
@@ -4581,8 +4581,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Los gastos de transporte, seguros y servicios conexos;",
+          "identificador": "e",
+          "contenido": ") Los gastos de transporte, seguros y servicios conexos;",
           "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
@@ -4590,8 +4590,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Los contratos relacionados con la transacción de la mercancía;",
+          "identificador": "f",
+          "contenido": ") Los contratos relacionados con la transacción de la mercancía;",
           "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
@@ -4599,8 +4599,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "La documentación que sustente los conceptos que se suman al valor de transacción de las mercancías importadas y aquellos que no se comprendan en dicho valor, conforme a los artículos 65 y 66 de esta Ley, y",
+          "identificador": "g",
+          "contenido": ") La documentación que sustente los conceptos que se suman al valor de transacción de las mercancías importadas y aquellos que no se comprendan en dicho valor, conforme a los artículos 65 y 66 de esta Ley, y",
           "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161
@@ -4608,8 +4608,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Cualquier otro documento o registro, que se señale mediante reglas, que demuestre la efectiva realización de la operación de comercio exterior.",
+          "identificador": "h",
+          "contenido": ") Cualquier otro documento o registro, que se señale mediante reglas, que demuestre la efectiva realización de la operación de comercio exterior.",
           "padre_numero": 11,
           "x_id": 139,
           "x_texto": 161,
@@ -4947,8 +4947,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Que formen parte de su patrimonio.",
+          "identificador": "a",
+          "contenido": ") Que formen parte de su patrimonio.",
           "padre_numero": 12,
           "x_id": 126,
           "x_texto": 148
@@ -4956,8 +4956,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Que el donante sea extranjero.",
+          "identificador": "b",
+          "contenido": ") Que el donante sea extranjero.",
           "padre_numero": 12,
           "x_id": 126,
           "x_texto": 148,
@@ -4968,8 +4968,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Que cuenten con autorización del Servicio de Administración Tributaria.",
+          "identificador": "c",
+          "contenido": ") Que cuenten con autorización del Servicio de Administración Tributaria.",
           "padre_numero": 12,
           "x_id": 126,
           "x_texto": 148,
@@ -4980,8 +4980,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Que, en su caso, se cumpla con las demás obligaciones en materia de regulaciones y restricciones no arancelarias.",
+          "identificador": "d",
+          "contenido": ") Que, en su caso, se cumpla con las demás obligaciones en materia de regulaciones y restricciones no arancelarias.",
           "padre_numero": 12,
           "x_id": 126,
           "x_texto": 148
@@ -5141,8 +5141,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Gobiernos extranjeros, con los que el Gobierno Mexicano tenga relaciones diplomáticas.",
+          "identificador": "a",
+          "contenido": ") Gobiernos extranjeros, con los que el Gobierno Mexicano tenga relaciones diplomáticas.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -5150,8 +5150,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Embajadores extranjeros acreditados en el país.",
+          "identificador": "b",
+          "contenido": ") Embajadores extranjeros acreditados en el país.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -5159,8 +5159,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Miembros del personal diplomático y consular extranjero, que no sean nacionales.",
+          "identificador": "c",
+          "contenido": ") Miembros del personal diplomático y consular extranjero, que no sean nacionales.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -5189,8 +5189,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La naturaleza, cantidad y categoría de los vehículos que puedan importarse en franquicia, así como los requisitos necesarios para su enajenación libre del impuesto general de importación cuando hayan transcurrido los plazos correspondientes.",
+          "identificador": "a",
+          "contenido": ") La naturaleza, cantidad y categoría de los vehículos que puedan importarse en franquicia, así como los requisitos necesarios para su enajenación libre del impuesto general de importación cuando hayan transcurrido los plazos correspondientes.",
           "padre_numero": 7,
           "x_id": 138,
           "x_texto": 160
@@ -5198,8 +5198,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los requisitos para la importación de vehículos en franquicia, destinados a permanecer definitivamente en la franja o región fronteriza.",
+          "identificador": "b",
+          "contenido": ") Los requisitos para la importación de vehículos en franquicia, destinados a permanecer definitivamente en la franja o región fronteriza.",
           "padre_numero": 7,
           "x_id": 138,
           "x_texto": 160
@@ -5374,8 +5374,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las comisiones y los gastos de corretaje, salvo las comisiones de compra.",
+          "identificador": "a",
+          "contenido": ") Las comisiones y los gastos de corretaje, salvo las comisiones de compra.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -5383,8 +5383,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El costo de los envases o embalajes que, para efectos aduaneros, se considere que forman un todo con las mercancías de que se trate.",
+          "identificador": "b",
+          "contenido": ") El costo de los envases o embalajes que, para efectos aduaneros, se considere que forman un todo con las mercancías de que se trate.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -5392,8 +5392,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los gastos de embalaje, tanto por concepto de mano de obra como de materiales.",
+          "identificador": "c",
+          "contenido": ") Los gastos de embalaje, tanto por concepto de mano de obra como de materiales.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -5401,8 +5401,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Los gastos de transporte, seguros y gastos conexos tales como manejo, carga y descarga en que se incurra con motivo del transporte de las mercancías hasta que se den los supuestos a que se refiere la fracción I del artículo 56 de esta Ley.",
+          "identificador": "d",
+          "contenido": ") Los gastos de transporte, seguros y gastos conexos tales como manejo, carga y descarga en que se incurra con motivo del transporte de las mercancías hasta que se den los supuestos a que se refiere la fracción I del artículo 56 de esta Ley.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -5419,8 +5419,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los materiales, piezas y elementos, partes y artículos análogos incorporados a las mercancías importadas.",
+          "identificador": "a",
+          "contenido": ") Los materiales, piezas y elementos, partes y artículos análogos incorporados a las mercancías importadas.",
           "padre_numero": 7,
           "x_id": 138,
           "x_texto": 160
@@ -5428,8 +5428,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las herramientas, matrices, moldes y elementos análogos utilizados para la producción de las mercancías importadas.",
+          "identificador": "b",
+          "contenido": ") Las herramientas, matrices, moldes y elementos análogos utilizados para la producción de las mercancías importadas.",
           "padre_numero": 7,
           "x_id": 138,
           "x_texto": 160
@@ -5437,8 +5437,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los materiales consumidos en la producción de las mercancías importadas.",
+          "identificador": "c",
+          "contenido": ") Los materiales consumidos en la producción de las mercancías importadas.",
           "padre_numero": 7,
           "x_id": 138,
           "x_texto": 160
@@ -5446,8 +5446,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Los trabajos de ingeniería, creación y perfeccionamiento, trabajos artísticos, diseños, planos y croquis realizados fuera del territorio nacional que sean necesarios para la producción de las mercancías importadas.",
+          "identificador": "d",
+          "contenido": ") Los trabajos de ingeniería, creación y perfeccionamiento, trabajos artísticos, diseños, planos y croquis realizados fuera del territorio nacional que sean necesarios para la producción de las mercancías importadas.",
           "padre_numero": 7,
           "x_id": 138,
           "x_texto": 160
@@ -5517,8 +5517,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los gastos de construcción, instalación, armado, montaje, mantenimiento o asistencia técnica realizados después de la importación en relación con las mercancías importadas.",
+          "identificador": "a",
+          "contenido": ") Los gastos de construcción, instalación, armado, montaje, mantenimiento o asistencia técnica realizados después de la importación en relación con las mercancías importadas.",
           "padre_numero": 3,
           "x_id": 138,
           "x_texto": 160
@@ -5526,8 +5526,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los gastos de transporte, seguros y gastos conexos tales como manejo, carga y descarga en que se incurra con motivo del transporte de las mercancías, que se realicen con posterioridad a que se den los supuestos a que se refiere la fracción I del artículo 56 de esta Ley.",
+          "identificador": "b",
+          "contenido": ") Los gastos de transporte, seguros y gastos conexos tales como manejo, carga y descarga en que se incurra con motivo del transporte de las mercancías, que se realicen con posterioridad a que se den los supuestos a que se refiere la fracción I del artículo 56 de esta Ley.",
           "padre_numero": 3,
           "x_id": 138,
           "x_texto": 160
@@ -5535,8 +5535,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las contribuciones y las cuotas compensatorias aplicables en territorio nacional, como consecuencia de la importación o enajenación de las mercancías.",
+          "identificador": "c",
+          "contenido": ") Las contribuciones y las cuotas compensatorias aplicables en territorio nacional, como consecuencia de la importación o enajenación de las mercancías.",
           "padre_numero": 3,
           "x_id": 138,
           "x_texto": 160
@@ -5591,8 +5591,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las que impongan o exijan las disposiciones legales vigentes en territorio nacional.",
+          "identificador": "a",
+          "contenido": ") Las que impongan o exijan las disposiciones legales vigentes en territorio nacional.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -5600,8 +5600,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las que limiten el territorio geográfico en donde puedan venderse posteriormente las mercancías.",
+          "identificador": "b",
+          "contenido": ") Las que limiten el territorio geográfico en donde puedan venderse posteriormente las mercancías.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -5609,8 +5609,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las que no afecten el valor de las mercancías.",
+          "identificador": "c",
+          "contenido": ") Las que no afecten el valor de las mercancías.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -6214,8 +6214,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El costo y gastos a que se refieren los incisos b) y c) de la fracción I del artículo 65 de esta Ley.",
+          "identificador": "a",
+          "contenido": ") El costo y gastos a que se refieren los incisos b) y c) de la fracción I del artículo 65 de esta Ley.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -6223,8 +6223,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El valor debidamente repartido, de los bienes y servicios a que se refieren los incisos a) a c) de la fracción II, del artículo 65 de esta Ley, siempre que el importador de manera directa o indirecta los haya suministrado para su utilización en la producción de las mercancías importadas.",
+          "identificador": "b",
+          "contenido": ") El valor debidamente repartido, de los bienes y servicios a que se refieren los incisos a) a c) de la fracción II, del artículo 65 de esta Ley, siempre que el importador de manera directa o indirecta los haya suministrado para su utilización en la producción de las mercancías importadas.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -6232,8 +6232,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El valor debidamente repartido, de los trabajos a los que se refiere el inciso d), fracción II del artículo 65 de esta Ley, en la medida que corran a cargo del productor.",
+          "identificador": "c",
+          "contenido": ") El valor debidamente repartido, de los trabajos a los que se refiere el inciso d), fracción II del artículo 65 de esta Ley, en la medida que corran a cargo del productor.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -6344,8 +6344,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "No lleve contabilidad, no conserve o no ponga a disposición de la autoridad la contabilidad o parte de ella, o la documentación que ampare las operaciones de comercio exterior.",
+          "identificador": "a",
+          "contenido": ") No lleve contabilidad, no conserve o no ponga a disposición de la autoridad la contabilidad o parte de ella, o la documentación que ampare las operaciones de comercio exterior.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6353,8 +6353,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Se oponga al ejercicio de las facultades de comprobación de las autoridades aduaneras.",
+          "identificador": "b",
+          "contenido": ") Se oponga al ejercicio de las facultades de comprobación de las autoridades aduaneras.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6362,8 +6362,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Omita o altere los registros de las operaciones de comercio exterior.",
+          "identificador": "c",
+          "contenido": ") Omita o altere los registros de las operaciones de comercio exterior.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6371,8 +6371,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Omita presentar la declaración del ejercicio de cualquier contribución hasta el momento en que se inicie el ejercicio de las facultades de comprobación y siempre que haya transcurrido más de un mes desde el día en que venció el plazo para la presentación de la declaración de que se trate.",
+          "identificador": "d",
+          "contenido": ") Omita presentar la declaración del ejercicio de cualquier contribución hasta el momento en que se inicie el ejercicio de las facultades de comprobación y siempre que haya transcurrido más de un mes desde el día en que venció el plazo para la presentación de la declaración de que se trate.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6380,8 +6380,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Se adviertan otras irregularidades en su contabilidad que imposibiliten el conocimiento de sus operaciones de comercio exterior.",
+          "identificador": "e",
+          "contenido": ") Se adviertan otras irregularidades en su contabilidad que imposibiliten el conocimiento de sus operaciones de comercio exterior.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -6389,8 +6389,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "No cumpla con los requerimientos de las autoridades aduaneras para presentar la documentación e información, que acredite que el valor declarado fue determinado conforme a las disposiciones legales en el plazo otorgado en el requerimiento.",
+          "identificador": "f",
+          "contenido": ") No cumpla con los requerimientos de las autoridades aduaneras para presentar la documentación e información, que acredite que el valor declarado fue determinado conforme a las disposiciones legales en el plazo otorgado en el requerimiento.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -7353,7 +7353,7 @@
         {
           "numero": 2,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "Definitivos.",
           "padre_numero": null,
           "x_id": 98,
@@ -7380,7 +7380,7 @@
         {
           "numero": 5,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "Temporales.",
           "padre_numero": 4,
           "x_id": 98,
@@ -7398,8 +7398,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Para retornar al extranjero en el mismo estado.",
+          "identificador": "a",
+          "contenido": ") Para retornar al extranjero en el mismo estado.",
           "padre_numero": 6,
           "x_id": 170,
           "x_texto": 192
@@ -7407,8 +7407,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Para elaboración, transformación o reparación en programas de maquila o de exportación.",
+          "identificador": "b",
+          "contenido": ") Para elaboración, transformación o reparación en programas de maquila o de exportación.",
           "padre_numero": 6,
           "x_id": 170,
           "x_texto": 192
@@ -7425,8 +7425,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Para retornar al país en el mismo estado.",
+          "identificador": "a",
+          "contenido": ") Para retornar al país en el mismo estado.",
           "padre_numero": 9,
           "x_id": 174,
           "x_texto": 196
@@ -7434,8 +7434,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Para elaboración, transformación o reparación.",
+          "identificador": "b",
+          "contenido": ") Para elaboración, transformación o reparación.",
           "padre_numero": 9,
           "x_id": 174,
           "x_texto": 196
@@ -7443,7 +7443,7 @@
         {
           "numero": 12,
           "tipo": "apartado",
-          "identificador": "C.",
+          "identificador": "C",
           "contenido": "Depósito Fiscal.",
           "padre_numero": 11,
           "x_id": 98,
@@ -7452,7 +7452,7 @@
         {
           "numero": 13,
           "tipo": "apartado",
-          "identificador": "D.",
+          "identificador": "D",
           "contenido": "Tránsito de mercancías.",
           "padre_numero": 11,
           "x_id": 98,
@@ -7479,7 +7479,7 @@
         {
           "numero": 16,
           "tipo": "apartado",
-          "identificador": "E.",
+          "identificador": "E",
           "contenido": "Elaboración, transformación o reparación en recinto fiscalizado.",
           "padre_numero": 15,
           "x_id": 98,
@@ -7488,7 +7488,7 @@
         {
           "numero": 17,
           "tipo": "apartado",
-          "identificador": "F.",
+          "identificador": "F",
           "contenido": "Recinto fiscalizado estratégico.",
           "padre_numero": 15,
           "x_id": 98,
@@ -8429,8 +8429,8 @@
         {
           "numero": 2,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cuando se dejen de cumplir los requisitos previstos para el otorgamiento de la autorización o de su prórroga.",
+          "identificador": "a",
+          "contenido": ") Cuando se dejen de cumplir los requisitos previstos para el otorgamiento de la autorización o de su prórroga.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -8438,8 +8438,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando se incumpla con las obligaciones previstas en esta Ley o en la autorización.",
+          "identificador": "b",
+          "contenido": ") Cuando se incumpla con las obligaciones previstas en esta Ley o en la autorización.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -8447,8 +8447,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Cuando incurran en alguna causal de cancelación establecida en esta Ley o en la autorización.",
+          "identificador": "c",
+          "contenido": ") Cuando incurran en alguna causal de cancelación establecida en esta Ley o en la autorización.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -8758,8 +8758,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las que realicen los residentes en el extranjero, siempre que sean utilizados directamente por ellos o por personas con las que tengan relación laboral, excepto tratándose de vehículos.",
+          "identificador": "a",
+          "contenido": ") Las que realicen los residentes en el extranjero, siempre que sean utilizados directamente por ellos o por personas con las que tengan relación laboral, excepto tratándose de vehículos.",
           "padre_numero": 3,
           "x_id": 126,
           "x_texto": 148
@@ -8767,8 +8767,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las de envases de mercancías, siempre que contengan en territorio nacional las mercancías que en ellos se hubieran introducido al país.",
+          "identificador": "b",
+          "contenido": ") Las de envases de mercancías, siempre que contengan en territorio nacional las mercancías que en ellos se hubieran introducido al país.",
           "padre_numero": 3,
           "x_id": 126,
           "x_texto": 148
@@ -8776,8 +8776,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las de vehículos de las misiones diplomáticas y consulares extranjeras y de las oficinas de sede o representación de organismos internacionales, así como de los funcionarios y empleados del servicio exterior mexicano, para su importación en franquicia diplomática, siempre que cumplan con los requisitos que señale el Servicio de Administración Tributaria mediante reglas.",
+          "identificador": "c",
+          "contenido": ") Las de vehículos de las misiones diplomáticas y consulares extranjeras y de las oficinas de sede o representación de organismos internacionales, así como de los funcionarios y empleados del servicio exterior mexicano, para su importación en franquicia diplomática, siempre que cumplan con los requisitos que señale el Servicio de Administración Tributaria mediante reglas.",
           "padre_numero": 3,
           "x_id": 126,
           "x_texto": 148,
@@ -8788,8 +8788,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Las de muestras o muestrarios destinados a dar a conocer mercancías, siempre que cumplan con los requisitos que señale el Servicio de Administración Tributaria mediante reglas.",
+          "identificador": "d",
+          "contenido": ") Las de muestras o muestrarios destinados a dar a conocer mercancías, siempre que cumplan con los requisitos que señale el Servicio de Administración Tributaria mediante reglas.",
           "padre_numero": 3,
           "x_id": 126,
           "x_texto": 148,
@@ -8800,8 +8800,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Las de vehículos, siempre que la importación sea efectuada por mexicanos con residencia en el extranjero o que acrediten estar laborando en el extranjero por un año o más, comprueben mediante documentación oficial su calidad migratoria que los autorice para tal fin y se trate de un solo vehículo en cada periodo de doce meses. En estos casos, los seis meses se computarán en entradas y salidas múltiples efectuadas dentro del periodo de doce meses contados a partir de la primera entrada. Los vehículos podrán ser conducidos en territorio nacional por el importador, su cónyuge, sus ascendientes, descendientes o hermanos siempre y cuando sean residentes permanentes en el extranjero, o por un extranjero con las calidades migratorias indicadas en el inciso a) de la fracción IV de este artículo. Cuando sea conducido por alguna persona distinta de las autorizadas, invariablemente deberá viajar a bordo el importador del vehículo. Los vehículos a que se refiere este inciso deberán cumplir con los requisitos que señale el Reglamento.",
+          "identificador": "e",
+          "contenido": ") Las de vehículos, siempre que la importación sea efectuada por mexicanos con residencia en el extranjero o que acrediten estar laborando en el extranjero por un año o más, comprueben mediante documentación oficial su calidad migratoria que los autorice para tal fin y se trate de un solo vehículo en cada periodo de doce meses. En estos casos, los seis meses se computarán en entradas y salidas múltiples efectuadas dentro del periodo de doce meses contados a partir de la primera entrada. Los vehículos podrán ser conducidos en territorio nacional por el importador, su cónyuge, sus ascendientes, descendientes o hermanos siempre y cuando sean residentes permanentes en el extranjero, o por un extranjero con las calidades migratorias indicadas en el inciso a) de la fracción IV de este artículo. Cuando sea conducido por alguna persona distinta de las autorizadas, invariablemente deberá viajar a bordo el importador del vehículo. Los vehículos a que se refiere este inciso deberán cumplir con los requisitos que señale el Reglamento.",
           "padre_numero": 3,
           "x_id": 126,
           "x_texto": 148,
@@ -8821,8 +8821,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las destinadas a convenciones y congresos internacionales.",
+          "identificador": "a",
+          "contenido": ") Las destinadas a convenciones y congresos internacionales.",
           "padre_numero": 9,
           "x_id": 126,
           "x_texto": 148
@@ -8830,8 +8830,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las destinadas a eventos culturales o deportivos, patrocinados por entidades públicas, nacionales o extranjeras, así como por universidades o entidades privadas, autorizadas para recibir donativos deducibles en los términos de la Ley del Impuesto sobre la Renta.",
+          "identificador": "b",
+          "contenido": ") Las destinadas a eventos culturales o deportivos, patrocinados por entidades públicas, nacionales o extranjeras, así como por universidades o entidades privadas, autorizadas para recibir donativos deducibles en los términos de la Ley del Impuesto sobre la Renta.",
           "padre_numero": 9,
           "x_id": 126,
           "x_texto": 148
@@ -8839,8 +8839,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las de enseres, utilería y demás equipo necesario para la filmación, siempre que se utilicen en la industria cinematográfica y su internación se efectúe por residentes en el extranjero. En este caso el plazo establecido se podrá ampliar por un año más.",
+          "identificador": "c",
+          "contenido": ") Las de enseres, utilería y demás equipo necesario para la filmación, siempre que se utilicen en la industria cinematográfica y su internación se efectúe por residentes en el extranjero. En este caso el plazo establecido se podrá ampliar por un año más.",
           "padre_numero": 9,
           "x_id": 126,
           "x_texto": 148
@@ -8848,8 +8848,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Las de vehículos de prueba, siempre que la importación se efectúe por un fabricante autorizado, residente en México.",
+          "identificador": "d",
+          "contenido": ") Las de vehículos de prueba, siempre que la importación se efectúe por un fabricante autorizado, residente en México.",
           "padre_numero": 9,
           "x_id": 126,
           "x_texto": 148
@@ -8857,8 +8857,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Las de mercancías previstas por los convenios internacionales de los que México sea parte, así como las que sean para uso oficial de las misiones diplomáticas y consulares extranjeras cuando haya reciprocidad.",
+          "identificador": "e",
+          "contenido": ") Las de mercancías previstas por los convenios internacionales de los que México sea parte, así como las que sean para uso oficial de las misiones diplomáticas y consulares extranjeras cuando haya reciprocidad.",
           "padre_numero": 9,
           "x_id": 126,
           "x_texto": 148,
@@ -8869,8 +8869,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Las de mercancías destinadas a fines de investigación que importen organismos públicos nacionales y extranjeros, así como personas morales no contribuyentes autorizadas para recibir donativos deducibles en el impuesto sobre la renta, de conformidad con los tratados internacionales de los que México sea parte o los acuerdos interinstitucionales aplicables.",
+          "identificador": "f",
+          "contenido": ") Las de mercancías destinadas a fines de investigación que importen organismos públicos nacionales y extranjeros, así como personas morales no contribuyentes autorizadas para recibir donativos deducibles en el impuesto sobre la renta, de conformidad con los tratados internacionales de los que México sea parte o los acuerdos interinstitucionales aplicables.",
           "padre_numero": 9,
           "x_id": 126,
           "x_texto": 148,
@@ -8890,8 +8890,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las de vehículos propiedad de extranjeros que se internen al país, con la condición de estancia de visitante y residente temporal, siempre que se trate de un solo vehículo.",
+          "identificador": "a",
+          "contenido": ") Las de vehículos propiedad de extranjeros que se internen al país, con la condición de estancia de visitante y residente temporal, siempre que se trate de un solo vehículo.",
           "padre_numero": 16,
           "x_id": 126,
           "x_texto": 148
@@ -8917,8 +8917,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los menajes de casa de mercancía usada propiedad de residente temporal y residente temporal estudiante, siempre y cuando cumplan con los requisitos que establezca el Reglamento y el Servicio de Administración Tributaria mediante reglas.",
+          "identificador": "b",
+          "contenido": ") Los menajes de casa de mercancía usada propiedad de residente temporal y residente temporal estudiante, siempre y cuando cumplan con los requisitos que establezca el Reglamento y el Servicio de Administración Tributaria mediante reglas.",
           "padre_numero": 16,
           "x_id": 126,
           "x_texto": 148,
@@ -8938,8 +8938,8 @@
         {
           "numero": 22,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Embarcaciones dedicadas al transporte de pasajeros, de carga y a la pesca comercial, así como las de recreo y deportivas que sean lanchas, yates o veleros turísticos de más de cuatro y medio metros de eslora, incluyendo los remolques para su transporte, siempre que cumplan con los requisitos que establezca el Reglamento.",
+          "identificador": "a",
+          "contenido": ") Embarcaciones dedicadas al transporte de pasajeros, de carga y a la pesca comercial, así como las de recreo y deportivas que sean lanchas, yates o veleros turísticos de más de cuatro y medio metros de eslora, incluyendo los remolques para su transporte, siempre que cumplan con los requisitos que establezca el Reglamento.",
           "padre_numero": 21,
           "x_id": 126,
           "x_texto": 148
@@ -8956,8 +8956,8 @@
         {
           "numero": 24,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las casas rodantes importadas temporalmente por residentes permanentes en el extranjero, siempre y cuando cumplan con los requisitos y condiciones que establezca el Reglamento. Las casas rodantes podrán ser conducidas o transportadas en territorio nacional por el importador, su cónyuge, sus ascendientes, descendientes o hermanos, siempre que sean residentes permanentes en el extranjero o por cualquier otra persona cuando viaje a bordo el importador.",
+          "identificador": "b",
+          "contenido": ") Las casas rodantes importadas temporalmente por residentes permanentes en el extranjero, siempre y cuando cumplan con los requisitos y condiciones que establezca el Reglamento. Las casas rodantes podrán ser conducidas o transportadas en territorio nacional por el importador, su cónyuge, sus ascendientes, descendientes o hermanos, siempre que sean residentes permanentes en el extranjero o por cualquier otra persona cuando viaje a bordo el importador.",
           "padre_numero": 21,
           "x_id": 126,
           "x_texto": 148
@@ -8986,8 +8986,8 @@
         {
           "numero": 27,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Aviones, avionetas y helicópteros, destinados a ser utilizados en las líneas aéreas con concesión o permiso para operar en el país, así como aquéllos de transporte público de pasajeros siempre que, en este último caso, proporcionen, en febrero de cada año y en medios electrónicos, la información que señale mediante reglas el Servicio de Administración Tributaria.",
+          "identificador": "a",
+          "contenido": ") Aviones, avionetas y helicópteros, destinados a ser utilizados en las líneas aéreas con concesión o permiso para operar en el país, así como aquéllos de transporte público de pasajeros siempre que, en este último caso, proporcionen, en febrero de cada año y en medios electrónicos, la información que señale mediante reglas el Servicio de Administración Tributaria.",
           "padre_numero": 26,
           "x_id": 126,
           "x_texto": 148
@@ -8995,8 +8995,8 @@
         {
           "numero": 28,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Contenedores.",
+          "identificador": "b",
+          "contenido": ") Contenedores.",
           "padre_numero": 26,
           "x_id": 126,
           "x_texto": 148
@@ -9004,8 +9004,8 @@
         {
           "numero": 29,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Locomotoras, carros de ferrocarril y equipo especializado relacionado con la industria ferroviaria que establezca el Servicio de Administración Tributaria mediante reglas.",
+          "identificador": "c",
+          "contenido": ") Locomotoras, carros de ferrocarril y equipo especializado relacionado con la industria ferroviaria que establezca el Servicio de Administración Tributaria mediante reglas.",
           "padre_numero": 26,
           "x_id": 126,
           "x_texto": 148
@@ -9013,8 +9013,8 @@
         {
           "numero": 30,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Embarcaciones especiales y los artefactos navales.",
+          "identificador": "d",
+          "contenido": ") Embarcaciones especiales y los artefactos navales.",
           "padre_numero": 26,
           "x_id": 126,
           "x_texto": 148,
@@ -9183,8 +9183,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Lubricantes y otros materiales que se vayan a consumir durante el proceso productivo de la mercancía de exportación, excepto tratándose de petrolíferos.",
+          "identificador": "a",
+          "contenido": ") Lubricantes y otros materiales que se vayan a consumir durante el proceso productivo de la mercancía de exportación, excepto tratándose de petrolíferos.",
           "padre_numero": 4,
           "x_id": 107,
           "x_texto": 129,
@@ -9195,8 +9195,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Materias primas, partes y componentes que se vayan a destinar totalmente a integrar mercancías de exportación.",
+          "identificador": "b",
+          "contenido": ") Materias primas, partes y componentes que se vayan a destinar totalmente a integrar mercancías de exportación.",
           "padre_numero": 4,
           "x_id": 107,
           "x_texto": 129
@@ -9204,8 +9204,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Envases y empaques.",
+          "identificador": "c",
+          "contenido": ") Envases y empaques.",
           "padre_numero": 4,
           "x_id": 107,
           "x_texto": 129
@@ -9213,8 +9213,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Etiquetas y folletos.",
+          "identificador": "d",
+          "contenido": ") Etiquetas y folletos.",
           "padre_numero": 4,
           "x_id": 107,
           "x_texto": 129
@@ -9243,8 +9243,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Maquinaria, equipo, herramientas, instrumentos, moldes y refacciones destinados al proceso productivo.",
+          "identificador": "a",
+          "contenido": ") Maquinaria, equipo, herramientas, instrumentos, moldes y refacciones destinados al proceso productivo.",
           "padre_numero": 10,
           "x_id": 107,
           "x_texto": 129
@@ -9252,8 +9252,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Equipos y aparatos para el control de la contaminación; para la investigación o capacitación, de seguridad industrial, de telecomunicación y cómputo, de laboratorio, de medición, de prueba de productos y control de calidad; así como aquéllos que intervengan en el manejo de materiales relacionados directamente con los bienes de exportación y otros vinculados con el proceso productivo.",
+          "identificador": "b",
+          "contenido": ") Equipos y aparatos para el control de la contaminación; para la investigación o capacitación, de seguridad industrial, de telecomunicación y cómputo, de laboratorio, de medición, de prueba de productos y control de calidad; así como aquéllos que intervengan en el manejo de materiales relacionados directamente con los bienes de exportación y otros vinculados con el proceso productivo.",
           "padre_numero": 10,
           "x_id": 107,
           "x_texto": 129
@@ -9261,8 +9261,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Equipo para el desarrollo administrativo.",
+          "identificador": "c",
+          "contenido": ") Equipo para el desarrollo administrativo.",
           "padre_numero": 10,
           "x_id": 107,
           "x_texto": 129
@@ -9626,8 +9626,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las de envases de mercancías.",
+          "identificador": "a",
+          "contenido": ") Las de envases de mercancías.",
           "padre_numero": 3,
           "x_id": 138,
           "x_texto": 160
@@ -9635,8 +9635,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las que realicen los residentes en México sin establecimiento permanente en el extranjero.",
+          "identificador": "b",
+          "contenido": ") Las que realicen los residentes en México sin establecimiento permanente en el extranjero.",
           "padre_numero": 3,
           "x_id": 138,
           "x_texto": 160
@@ -9644,8 +9644,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las de muestras y muestrarios destinados a dar a conocer mercancías.",
+          "identificador": "c",
+          "contenido": ") Las de muestras y muestrarios destinados a dar a conocer mercancías.",
           "padre_numero": 3,
           "x_id": 138,
           "x_texto": 160
@@ -9653,8 +9653,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Las de enseres, utilería, y demás equipo necesario para la filmación, siempre que se utilicen en la industria cinematográfica y su exportación se efectúe por residentes en el país.",
+          "identificador": "d",
+          "contenido": ") Las de enseres, utilería, y demás equipo necesario para la filmación, siempre que se utilicen en la industria cinematográfica y su exportación se efectúe por residentes en el país.",
           "padre_numero": 3,
           "x_id": 138,
           "x_texto": 160
@@ -10264,8 +10264,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Pagar en las oficinas autorizadas, a más tardar el día diecisiete del mes de que se trate un aprovechamiento del 5% sobre los ingresos brutos obtenidos por la venta de las mercancías en el mes inmediato anterior.",
+          "identificador": "a",
+          "contenido": ") Pagar en las oficinas autorizadas, a más tardar el día diecisiete del mes de que se trate un aprovechamiento del 5% sobre los ingresos brutos obtenidos por la venta de las mercancías en el mes inmediato anterior.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -10273,8 +10273,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Contar con equipo de cómputo y de transmisión de datos enlazado con el del SAT.",
+          "identificador": "b",
+          "contenido": ") Contar con equipo de cómputo y de transmisión de datos enlazado con el del SAT.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -10282,8 +10282,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Llevar un registro diario de las operaciones realizadas, mediante un sistema automatizado de control de inventarios, debiendo otorgar a la autoridad aduanera acceso electrónico en línea de manera permanente e ininterrumpida.",
+          "identificador": "c",
+          "contenido": ") Llevar un registro diario de las operaciones realizadas, mediante un sistema automatizado de control de inventarios, debiendo otorgar a la autoridad aduanera acceso electrónico en línea de manera permanente e ininterrumpida.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -10291,8 +10291,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Instalar y mantener en funcionamiento permanente un sistema de circuito cerrado a través del cual la autoridad aduanera tenga acceso a los puntos de venta y entrega de la mercancía, así como de los puntos de salida del territorio nacional poniendo a disposición del SAT terminales de monitoreo.",
+          "identificador": "d",
+          "contenido": ") Instalar y mantener en funcionamiento permanente un sistema de circuito cerrado a través del cual la autoridad aduanera tenga acceso a los puntos de venta y entrega de la mercancía, así como de los puntos de salida del territorio nacional poniendo a disposición del SAT terminales de monitoreo.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -10300,8 +10300,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Transmitir al sistema electrónico a cargo de la autoridad aduanera, dentro de los diez días naturales al mes siguiente, la información relativa a la venta de las mercancías realizadas en el mes inmediato anterior, en los términos que se establezcan mediante reglas, especificando cantidades, descripción y código del producto, fracción arancelaria, número de identificación comercial y valor de la venta de la mercancía.",
+          "identificador": "e",
+          "contenido": ") Transmitir al sistema electrónico a cargo de la autoridad aduanera, dentro de los diez días naturales al mes siguiente, la información relativa a la venta de las mercancías realizadas en el mes inmediato anterior, en los términos que se establezcan mediante reglas, especificando cantidades, descripción y código del producto, fracción arancelaria, número de identificación comercial y valor de la venta de la mercancía.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160,
@@ -10312,8 +10312,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Presentar ante la Administración General de Aduanas la documentación comprobatoria que acredite el pago del aprovechamiento del 5% de sus ingresos brutos obtenido por la venta de mercancías efectuadas mensualmente y la que acredite que se ha efectuado el pago del derecho por el otorgamiento de la autorización del establecimiento respectivo, conforme al Artículo 40, inciso k) de la Ley Federal de Derechos.",
+          "identificador": "f",
+          "contenido": ") Presentar ante la Administración General de Aduanas la documentación comprobatoria que acredite el pago del aprovechamiento del 5% de sus ingresos brutos obtenido por la venta de mercancías efectuadas mensualmente y la que acredite que se ha efectuado el pago del derecho por el otorgamiento de la autorización del establecimiento respectivo, conforme al Artículo 40, inciso k) de la Ley Federal de Derechos.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -10321,8 +10321,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Cumplir con los mecanismos de control de ventas y entrega de mercancías que se establezcan mediante reglas.",
+          "identificador": "g",
+          "contenido": ") Cumplir con los mecanismos de control de ventas y entrega de mercancías que se establezcan mediante reglas.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -10330,8 +10330,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Cumplir con las demás condiciones y lineamientos que establezca el SAT.",
+          "identificador": "h",
+          "contenido": ") Cumplir con las demás condiciones y lineamientos que establezca el SAT.",
           "padre_numero": 2,
           "x_id": 138,
           "x_texto": 160
@@ -10580,8 +10580,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Formular el pedimento de tránsito interno.",
+          "identificador": "a",
+          "contenido": ") Formular el pedimento de tránsito interno.",
           "padre_numero": 3,
           "x_id": 121,
           "x_texto": 143
@@ -10589,8 +10589,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Determinar provisionalmente las contribuciones, aplicando la tasa máxima señalada en la tarifa de la Ley de los Impuestos Generales de Importación y de Exportación y la que corresponda tratándose de las demás contribuciones que se causen, así como las cuotas compensatorias.",
+          "identificador": "b",
+          "contenido": ") Determinar provisionalmente las contribuciones, aplicando la tasa máxima señalada en la tarifa de la Ley de los Impuestos Generales de Importación y de Exportación y la que corresponda tratándose de las demás contribuciones que se causen, así como las cuotas compensatorias.",
           "padre_numero": 3,
           "x_id": 121,
           "x_texto": 143
@@ -10598,8 +10598,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Anexar al pedimento la documentación que acredite el cumplimiento de regulaciones y restricciones no arancelarias, aplicables al régimen de importación y, en su caso, el documento en el que conste el depósito efectuado en la cuenta aduanera de garantía a que se refiere el artículo 84-A de esta Ley, excepto en los casos que establezca el Servicio de Administración Tributaria mediante reglas.",
+          "identificador": "c",
+          "contenido": ") Anexar al pedimento la documentación que acredite el cumplimiento de regulaciones y restricciones no arancelarias, aplicables al régimen de importación y, en su caso, el documento en el que conste el depósito efectuado en la cuenta aduanera de garantía a que se refiere el artículo 84-A de esta Ley, excepto en los casos que establezca el Servicio de Administración Tributaria mediante reglas.",
           "padre_numero": 3,
           "x_id": 121,
           "x_texto": 143
@@ -10616,8 +10616,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Pagar las contribuciones actualizadas desde la entrada de las mercancías al país y hasta que se efectúe dicho pago, así como las cuotas compensatorias, antes de activar el mecanismo de selección automatizado en la aduana de despacho.",
+          "identificador": "d",
+          "contenido": ") Pagar las contribuciones actualizadas desde la entrada de las mercancías al país y hasta que se efectúe dicho pago, así como las cuotas compensatorias, antes de activar el mecanismo de selección automatizado en la aduana de despacho.",
           "padre_numero": 3,
           "x_id": 121,
           "x_texto": 143
@@ -10625,8 +10625,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Efectuar el traslado de las mercancías utilizando los servicios de las empresas inscritas en el registro de empresas transportistas que disponga el Reglamento.",
+          "identificador": "e",
+          "contenido": ") Efectuar el traslado de las mercancías utilizando los servicios de las empresas inscritas en el registro de empresas transportistas que disponga el Reglamento.",
           "padre_numero": 3,
           "x_id": 121,
           "x_texto": 143,
@@ -10741,8 +10741,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cuando señale en el pedimento el nombre, domicilio fiscal o la clave del registro federal de contribuyentes de alguna persona que no hubiere solicitado la operación, o cuando estos datos resulten falsos o inexistentes.",
+          "identificador": "a",
+          "contenido": ") Cuando señale en el pedimento el nombre, domicilio fiscal o la clave del registro federal de contribuyentes de alguna persona que no hubiere solicitado la operación, o cuando estos datos resulten falsos o inexistentes.",
           "padre_numero": 3,
           "x_id": 121,
           "x_texto": 143
@@ -10750,8 +10750,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando no pueda ser localizado en el domicilio que señaló para oír y recibir notificaciones.",
+          "identificador": "b",
+          "contenido": ") Cuando no pueda ser localizado en el domicilio que señaló para oír y recibir notificaciones.",
           "padre_numero": 3,
           "x_id": 121,
           "x_texto": 143
@@ -10759,8 +10759,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Cuando determine provisionalmente las contribuciones, sin aplicar la tasa máxima señalada en la tarifa de la Ley de los Impuestos Generales de Importación y de Exportación, y la que corresponda tratándose de las demás contribuciones o cuotas compensatorias, conforme a lo dispuesto en las disposiciones jurídicas aplicables.",
+          "identificador": "c",
+          "contenido": ") Cuando determine provisionalmente las contribuciones, sin aplicar la tasa máxima señalada en la tarifa de la Ley de los Impuestos Generales de Importación y de Exportación, y la que corresponda tratándose de las demás contribuciones o cuotas compensatorias, conforme a lo dispuesto en las disposiciones jurídicas aplicables.",
           "padre_numero": 3,
           "x_id": 121,
           "x_texto": 143,
@@ -10771,8 +10771,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Cuando formule el pedimento para destinar al régimen de tránsito interno mercancías que no están permitidas para destinarse a dicho régimen, conforme a las disposiciones jurídicas aplicables.",
+          "identificador": "d",
+          "contenido": ") Cuando formule el pedimento para destinar al régimen de tránsito interno mercancías que no están permitidas para destinarse a dicho régimen, conforme a las disposiciones jurídicas aplicables.",
           "padre_numero": 3,
           "x_id": 121,
           "x_texto": 143,
@@ -10783,8 +10783,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Cuando no declare la fracción arancelaria o número de identificación comercial de la mercancía o la declare de manera incorrecta.",
+          "identificador": "e",
+          "contenido": ") Cuando no declare la fracción arancelaria o número de identificación comercial de la mercancía o la declare de manera incorrecta.",
           "padre_numero": 3,
           "x_id": 121,
           "x_texto": 143,
@@ -12789,8 +12789,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "69 del Código Fiscal de la Federación, con excepción de la fracción VI;",
+          "identificador": "a",
+          "contenido": ") 69 del Código Fiscal de la Federación, con excepción de la fracción VI;",
           "padre_numero": 10,
           "x_id": 107,
           "x_texto": 129
@@ -12798,8 +12798,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "69-B, cuarto párrafo del Código Fiscal de la Federación, o",
+          "identificador": "b",
+          "contenido": ") 69-B, cuarto párrafo del Código Fiscal de la Federación, o",
           "padre_numero": 10,
           "x_id": 107,
           "x_texto": 129
@@ -12807,8 +12807,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "69-B Bis, noveno párrafo del Código Fiscal de la Federación.",
+          "identificador": "c",
+          "contenido": ") 69-B Bis, noveno párrafo del Código Fiscal de la Federación.",
           "padre_numero": 10,
           "x_id": 107,
           "x_texto": 129,
@@ -15340,8 +15340,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "69 del Código Fiscal de la Federación, con excepción de la fracción VI;",
+          "identificador": "a",
+          "contenido": ") 69 del Código Fiscal de la Federación, con excepción de la fracción VI;",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -15349,8 +15349,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "69-B, cuarto párrafo del Código Fiscal de la Federación, o",
+          "identificador": "b",
+          "contenido": ") 69-B, cuarto párrafo del Código Fiscal de la Federación, o",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -15358,8 +15358,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "69-B Bis, noveno párrafo del Código Fiscal de la Federación.",
+          "identificador": "c",
+          "contenido": ") 69-B Bis, noveno párrafo del Código Fiscal de la Federación.",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -15465,8 +15465,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La omisión en el pago de impuestos al comercio exterior, las demás contribuciones y cuotas compensatorias, en su caso, exceda de $330,900.00 y dicha omisión represente más del 10% del total de los que debieron pagarse.",
+          "identificador": "a",
+          "contenido": ") La omisión en el pago de impuestos al comercio exterior, las demás contribuciones y cuotas compensatorias, en su caso, exceda de $330,900.00 y dicha omisión represente más del 10% del total de los que debieron pagarse.",
           "padre_numero": 3,
           "x_id": 126,
           "x_texto": 148,
@@ -15480,8 +15480,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Efectuar los trámites del despacho aduanero sin el permiso de las autoridades competentes, sin contar con la asignación del cupo de las mismas, o sin cumplir cualquier otra regulación o restricción no arancelaria emitidas conforme a la Ley de Comercio Exterior, cuando se requiera, o sin realizar el descargo total o parcial sobre el permiso o cupo antes de activar el mecanismo de selección automatizado.",
+          "identificador": "b",
+          "contenido": ") Efectuar los trámites del despacho aduanero sin el permiso de las autoridades competentes, sin contar con la asignación del cupo de las mismas, o sin cumplir cualquier otra regulación o restricción no arancelaria emitidas conforme a la Ley de Comercio Exterior, cuando se requiera, o sin realizar el descargo total o parcial sobre el permiso o cupo antes de activar el mecanismo de selección automatizado.",
           "padre_numero": 3,
           "x_id": 126,
           "x_texto": 148,
@@ -15492,8 +15492,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Se trate de mercancía de importación o exportación prohibida.",
+          "identificador": "c",
+          "contenido": ") Se trate de mercancía de importación o exportación prohibida.",
           "padre_numero": 3,
           "x_id": 126,
           "x_texto": 148,
@@ -15573,8 +15573,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La omisión exceda de $330,900.00 y del 10% de los impuestos al comercio exterior, las demás contribuciones y, en su caso, cuotas compensatorias causadas.",
+          "identificador": "a",
+          "contenido": ") La omisión exceda de $330,900.00 y del 10% de los impuestos al comercio exterior, las demás contribuciones y, en su caso, cuotas compensatorias causadas.",
           "padre_numero": 12,
           "x_id": 126,
           "x_texto": 148,
@@ -15588,8 +15588,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Efectuar los trámites del despacho sin el permiso de las autoridades competentes, sin contar con la asignación del cupo de las mismas o sin cumplir cualquier otra regulación o restricción no arancelaria emitidas conforme a la Ley de Comercio Exterior, cuando se requieran, o sin realizar el descargo total o parcial sobre el permiso o cupo antes de activar el mecanismo de selección automatizado.",
+          "identificador": "b",
+          "contenido": ") Efectuar los trámites del despacho sin el permiso de las autoridades competentes, sin contar con la asignación del cupo de las mismas o sin cumplir cualquier otra regulación o restricción no arancelaria emitidas conforme a la Ley de Comercio Exterior, cuando se requieran, o sin realizar el descargo total o parcial sobre el permiso o cupo antes de activar el mecanismo de selección automatizado.",
           "padre_numero": 12,
           "x_id": 126,
           "x_texto": 148,
@@ -15600,8 +15600,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Se trate de mercancías de importación o exportación prohibida.",
+          "identificador": "c",
+          "contenido": ") Se trate de mercancías de importación o exportación prohibida.",
           "padre_numero": 12,
           "x_id": 126,
           "x_texto": 148
@@ -15779,8 +15779,8 @@
         {
           "numero": 2,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Se deje de satisfacer alguno de los requisitos señalados en el artículo 159 de esta Ley, por más de noventa días hábiles, sin causa justificada, contados a partir de que la autoridad tenga conocimiento de los hechos u omisiones que la configuren.",
+          "identificador": "a",
+          "contenido": ") Se deje de satisfacer alguno de los requisitos señalados en el artículo 159 de esta Ley, por más de noventa días hábiles, sin causa justificada, contados a partir de que la autoridad tenga conocimiento de los hechos u omisiones que la configuren.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -15788,8 +15788,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El agente aduanal deje de ejercer la patente por más de seis meses. Se entenderá que deja de ejercer la patente cuando el agente aduanal no realice más de diez despachos aduaneros en dicho periodo, salvo en el caso de suspensión de actividades que haya sido autorizada por la autoridad aduanera.",
+          "identificador": "b",
+          "contenido": ") El agente aduanal deje de ejercer la patente por más de seis meses. Se entenderá que deja de ejercer la patente cuando el agente aduanal no realice más de diez despachos aduaneros en dicho periodo, salvo en el caso de suspensión de actividades que haya sido autorizada por la autoridad aduanera.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -16127,8 +16127,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Vigilar la operación de la sociedad para asegurar el debido cumplimiento de la normatividad que le es aplicable.",
+          "identificador": "a",
+          "contenido": ") Vigilar la operación de la sociedad para asegurar el debido cumplimiento de la normatividad que le es aplicable.",
           "padre_numero": 9,
           "x_id": 121,
           "x_texto": 143
@@ -16136,8 +16136,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Mantener los procesos que permitan contar con una debida transparencia en la administración mediante el manejo responsable de la información financiera y la comunicación entre los socios, así como implementar mecanismos para la identificación, administración y control de riesgos.",
+          "identificador": "b",
+          "contenido": ") Mantener los procesos que permitan contar con una debida transparencia en la administración mediante el manejo responsable de la información financiera y la comunicación entre los socios, así como implementar mecanismos para la identificación, administración y control de riesgos.",
           "padre_numero": 9,
           "x_id": 121,
           "x_texto": 143
@@ -16145,8 +16145,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La emisión de un Código de Ética que deban observar los integrantes de la sociedad.",
+          "identificador": "c",
+          "contenido": ") La emisión de un Código de Ética que deban observar los integrantes de la sociedad.",
           "padre_numero": 9,
           "x_id": 121,
           "x_texto": 143
@@ -16154,8 +16154,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Contar con un procedimiento que contribuya a la continuidad de la sociedad y de los servicios especializados que ésta preste, ante el retiro voluntario o por incapacidad permanente, fallecimiento, renuncia o cualquier separación de funciones de los socios o integrantes de los órganos de dirección y administración de la sociedad.",
+          "identificador": "d",
+          "contenido": ") Contar con un procedimiento que contribuya a la continuidad de la sociedad y de los servicios especializados que ésta preste, ante el retiro voluntario o por incapacidad permanente, fallecimiento, renuncia o cualquier separación de funciones de los socios o integrantes de los órganos de dirección y administración de la sociedad.",
           "padre_numero": 9,
           "x_id": 121,
           "x_texto": 143
@@ -16163,8 +16163,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Asegurar que el modelo de gobierno de la sociedad, contribuya al adecuado y cabal cumplimiento de su objeto social.",
+          "identificador": "e",
+          "contenido": ") Asegurar que el modelo de gobierno de la sociedad, contribuya al adecuado y cabal cumplimiento de su objeto social.",
           "padre_numero": 9,
           "x_id": 121,
           "x_texto": 143
@@ -16607,8 +16607,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "69 del Código Fiscal de la Federación, con excepción de la fracción VI;",
+          "identificador": "a",
+          "contenido": ") 69 del Código Fiscal de la Federación, con excepción de la fracción VI;",
           "padre_numero": 6,
           "x_id": 121,
           "x_texto": 143
@@ -16616,8 +16616,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "69-B, cuarto párrafo del Código Fiscal de la Federación, o",
+          "identificador": "b",
+          "contenido": ") 69-B, cuarto párrafo del Código Fiscal de la Federación, o",
           "padre_numero": 6,
           "x_id": 121,
           "x_texto": 143
@@ -16625,8 +16625,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "69-B Bis, noveno párrafo del Código Fiscal de la Federación.",
+          "identificador": "c",
+          "contenido": ") 69-B Bis, noveno párrafo del Código Fiscal de la Federación.",
           "padre_numero": 6,
           "x_id": 121,
           "x_texto": 143,
@@ -17446,8 +17446,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Examen de conocimientos técnicos;",
+          "identificador": "a",
+          "contenido": ") Examen de conocimientos técnicos;",
           "padre_numero": 7,
           "x_id": 138,
           "x_texto": 160
@@ -17455,8 +17455,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Psicológico, y",
+          "identificador": "b",
+          "contenido": ") Psicológico, y",
           "padre_numero": 7,
           "x_id": 138,
           "x_texto": 160
@@ -17464,8 +17464,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Confiabilidad.",
+          "identificador": "c",
+          "contenido": ") Confiabilidad.",
           "padre_numero": 7,
           "x_id": 138,
           "x_texto": 160,
@@ -18305,8 +18305,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Destinen las mercancías por cuya importación fue concedida alguna franquicia, exención o reducción de contribuciones o se haya eximido del cumplimiento de alguna regulación o restricción no arancelaria, a una finalidad distinta de la que determinó su otorgamiento.",
+          "identificador": "a",
+          "contenido": ") Destinen las mercancías por cuya importación fue concedida alguna franquicia, exención o reducción de contribuciones o se haya eximido del cumplimiento de alguna regulación o restricción no arancelaria, a una finalidad distinta de la que determinó su otorgamiento.",
           "padre_numero": 2,
           "x_id": 126,
           "x_texto": 148
@@ -18314,8 +18314,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Trasladen las mercancías a que se refiere el inciso anterior a lugar distinto del señalado al otorgar el beneficio.",
+          "identificador": "b",
+          "contenido": ") Trasladen las mercancías a que se refiere el inciso anterior a lugar distinto del señalado al otorgar el beneficio.",
           "padre_numero": 2,
           "x_id": 126,
           "x_texto": 148
@@ -18323,8 +18323,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las enajenen o permitan que las usen personas diferentes del beneficiario.",
+          "identificador": "c",
+          "contenido": ") Las enajenen o permitan que las usen personas diferentes del beneficiario.",
           "padre_numero": 2,
           "x_id": 126,
           "x_texto": 148
@@ -18332,8 +18332,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Enajenen o adquieran vehículos importados o internados temporalmente; así como faciliten su uso a terceros no autorizados.",
+          "identificador": "d",
+          "contenido": ") Enajenen o adquieran vehículos importados o internados temporalmente; así como faciliten su uso a terceros no autorizados.",
           "padre_numero": 2,
           "x_id": 126,
           "x_texto": 148
@@ -18341,8 +18341,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Enajenen o adquieran vehículos importados en franquicia, o a la franja fronteriza sin ser residente o estar establecido en ellas.",
+          "identificador": "e",
+          "contenido": ") Enajenen o adquieran vehículos importados en franquicia, o a la franja fronteriza sin ser residente o estar establecido en ellas.",
           "padre_numero": 2,
           "x_id": 126,
           "x_texto": 148
@@ -18350,8 +18350,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Faciliten a terceros no autorizados su uso, tratándose de vehículos importados a franja o región fronteriza, cuando se encuentren fuera de dichas zonas.",
+          "identificador": "f",
+          "contenido": ") Faciliten a terceros no autorizados su uso, tratándose de vehículos importados a franja o región fronteriza, cuando se encuentren fuera de dichas zonas.",
           "padre_numero": 2,
           "x_id": 126,
           "x_texto": 148
@@ -18790,8 +18790,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La relativa a cada pasajero, tripulante y medio de transporte a que se refiere el primer párrafo del artículo 7o. de esta Ley.",
+          "identificador": "a",
+          "contenido": ") La relativa a cada pasajero, tripulante y medio de transporte a que se refiere el primer párrafo del artículo 7o. de esta Ley.",
           "padre_numero": 12,
           "x_id": 138,
           "x_texto": 160
@@ -18799,8 +18799,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La relativa a las mercancías que por cada medio de transporte vayan a arribar a territorio nacional a que se refiere la fracción VII del artículo 20 de esta Ley.",
+          "identificador": "b",
+          "contenido": ") La relativa a las mercancías que por cada medio de transporte vayan a arribar a territorio nacional a que se refiere la fracción VII del artículo 20 de esta Ley.",
           "padre_numero": 12,
           "x_id": 138,
           "x_texto": 160,

@@ -187,8 +187,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Se determinará el valor del bien a la fecha en que se practique el avalúo;",
+          "identificador": "a",
+          "contenido": ") Se determinará el valor del bien a la fecha en que se practique el avalúo;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -196,8 +196,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La cantidad obtenida conforme a la fracción anterior se dividirá entre el factor que se obtenga de dividir el Índice Nacional de Precios al Consumidor del mes inmediato anterior a aquél en que se practique el avalúo, entre el índice del mes al cual es referido el mismo, y",
+          "identificador": "b",
+          "contenido": ") La cantidad obtenida conforme a la fracción anterior se dividirá entre el factor que se obtenga de dividir el Índice Nacional de Precios al Consumidor del mes inmediato anterior a aquél en que se practique el avalúo, entre el índice del mes al cual es referido el mismo, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -205,8 +205,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El resultado que se obtenga conforme a la operación a que se refiere el inciso anterior será el valor del bien a la fecha a la que el avalúo sea referido. El valuador podrá efectuar ajustes a este valor cuando existan razones que así lo justifiquen, antes de la presentación del avalúo, las cuales deberán señalarse expresamente en el mismo documento.",
+          "identificador": "c",
+          "contenido": ") El resultado que se obtenga conforme a la operación a que se refiere el inciso anterior será el valor del bien a la fecha a la que el avalúo sea referido. El valuador podrá efectuar ajustes a este valor cuando existan razones que así lo justifiquen, antes de la presentación del avalúo, las cuales deberán señalarse expresamente en el mismo documento.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -1303,8 +1303,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "De suspensión, cuando el contribuyente persona física interrumpa todas sus actividades económicas que den lugar a la presentación de declaraciones periódicas, siempre que no deba cumplir con otras obligaciones fiscales periódicas de pago, por sí mismo o por cuenta de terceros.",
+          "identificador": "a",
+          "contenido": ") De suspensión, cuando el contribuyente persona física interrumpa todas sus actividades económicas que den lugar a la presentación de declaraciones periódicas, siempre que no deba cumplir con otras obligaciones fiscales periódicas de pago, por sí mismo o por cuenta de terceros.",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -1339,8 +1339,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "De reanudación, cuando el contribuyente después de estar en suspensión de actividades que den lugar a la presentación de declaraciones periódicas, vuelva a iniciar alguna actividad económica o tenga alguna obligación fiscal periódica de pago, por sí mismo o por cuenta de terceros.",
+          "identificador": "b",
+          "contenido": ") De reanudación, cuando el contribuyente después de estar en suspensión de actividades que den lugar a la presentación de declaraciones periódicas, vuelva a iniciar alguna actividad económica o tenga alguna obligación fiscal periódica de pago, por sí mismo o por cuenta de terceros.",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -1366,8 +1366,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Inicie o deje de realizar una actividad económica que tenga como consecuencia la modificación de la clave del catálogo de actividades económicas que emita el Servicio de Administración Tributaria o cambie su actividad preponderante;",
+          "identificador": "a",
+          "contenido": ") Inicie o deje de realizar una actividad económica que tenga como consecuencia la modificación de la clave del catálogo de actividades económicas que emita el Servicio de Administración Tributaria o cambie su actividad preponderante;",
           "padre_numero": 13,
           "x_id": 114,
           "x_texto": 136
@@ -1375,8 +1375,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Opte por una periodicidad de cumplimiento diferente respecto de una actividad u obligación ya manifestada en el registro federal de contribuyentes, o bien, cuando opte por no efectuar pagos provisionales o definitivos, en términos de las disposiciones fiscales;",
+          "identificador": "b",
+          "contenido": ") Opte por una periodicidad de cumplimiento diferente respecto de una actividad u obligación ya manifestada en el registro federal de contribuyentes, o bien, cuando opte por no efectuar pagos provisionales o definitivos, en términos de las disposiciones fiscales;",
           "padre_numero": 13,
           "x_id": 114,
           "x_texto": 136
@@ -1384,8 +1384,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Elija una opción de tributación diferente a la que viene aplicando, respecto de la misma actividad económica y que dé lugar a un cambio de obligaciones fiscales, que implique un régimen de tributación diferente, y",
+          "identificador": "c",
+          "contenido": ") Elija una opción de tributación diferente a la que viene aplicando, respecto de la misma actividad económica y que dé lugar a un cambio de obligaciones fiscales, que implique un régimen de tributación diferente, y",
           "padre_numero": 13,
           "x_id": 114,
           "x_texto": 136
@@ -1393,8 +1393,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Tenga una nueva obligación fiscal periódica de pago por cuenta propia o de terceros o cuando deje de tener alguna de éstas.",
+          "identificador": "d",
+          "contenido": ") Tenga una nueva obligación fiscal periódica de pago por cuenta propia o de terceros o cuando deje de tener alguna de éstas.",
           "padre_numero": 13,
           "x_id": 114,
           "x_texto": 136
@@ -1633,7 +1633,7 @@
         {
           "numero": 2,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "Los documentos e información que integran la contabilidad son:",
           "padre_numero": null,
           "x_id": 85,
@@ -1723,7 +1723,7 @@
         {
           "numero": 12,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "Los registros o asientos contables deberán:",
           "padre_numero": 11,
           "x_id": 85,
@@ -1930,8 +1930,8 @@
         {
           "numero": 35,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La adquisición de bienes, de servicios y el uso o goce temporal de bienes, que se utilicen exclusivamente para realizar sus actividades por las que deban pagar el impuesto;",
+          "identificador": "a",
+          "contenido": ") La adquisición de bienes, de servicios y el uso o goce temporal de bienes, que se utilicen exclusivamente para realizar sus actividades por las que deban pagar el impuesto;",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136
@@ -1939,8 +1939,8 @@
         {
           "numero": 36,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La adquisición de bienes, de servicios y el uso o goce temporal de bienes, que se utilicen exclusivamente para realizar sus actividades por las que no deban pagar el impuesto, y",
+          "identificador": "b",
+          "contenido": ") La adquisición de bienes, de servicios y el uso o goce temporal de bienes, que se utilicen exclusivamente para realizar sus actividades por las que no deban pagar el impuesto, y",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136
@@ -1948,8 +1948,8 @@
         {
           "numero": 37,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La adquisición de bienes, de servicios y el uso o goce temporal de bienes, que se utilicen indistintamente para realizar tanto actividades por las que se deba pagar el impuesto, como aquéllas por las que no se está obligado al pago del mismo.",
+          "identificador": "c",
+          "contenido": ") La adquisición de bienes, de servicios y el uso o goce temporal de bienes, que se utilicen indistintamente para realizar tanto actividades por las que se deba pagar el impuesto, como aquéllas por las que no se está obligado al pago del mismo.",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136
@@ -2514,8 +2514,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Asalariados obligados a presentar declaración anual conforme al Capítulo I del Título IV de la Ley del Impuesto sobre la Renta;",
+          "identificador": "a",
+          "contenido": ") Asalariados obligados a presentar declaración anual conforme al Capítulo I del Título IV de la Ley del Impuesto sobre la Renta;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -2523,8 +2523,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Otros ingresos por salarios o ingresos asimilados a salarios conforme al Capítulo I del Título IV de la Ley del Impuesto sobre la Renta, y",
+          "identificador": "b",
+          "contenido": ") Otros ingresos por salarios o ingresos asimilados a salarios conforme al Capítulo I del Título IV de la Ley del Impuesto sobre la Renta, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -2532,8 +2532,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Servicios profesionales para los efectos del Régimen de las Personas Físicas con Actividades Empresariales y Profesionales conforme al Capítulo II del Título IV de la Ley del Impuesto sobre la Renta;",
+          "identificador": "c",
+          "contenido": ") Servicios profesionales para los efectos del Régimen de las Personas Físicas con Actividades Empresariales y Profesionales conforme al Capítulo II del Título IV de la Ley del Impuesto sobre la Renta;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -2835,8 +2835,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "No proporcione o presente incompleta la información a que se refiere el artículo 52-A, fracción I, incisos a) y c) del Código.",
+          "identificador": "a",
+          "contenido": ") No proporcione o presente incompleta la información a que se refiere el artículo 52-A, fracción I, incisos a) y c) del Código.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -2853,8 +2853,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "No cumpla con lo establecido en los artículos 52, último párrafo, excepto cuando se trate de cambio de domicilio fiscal y 53, fracción I de este Reglamento, y",
+          "identificador": "b",
+          "contenido": ") No cumpla con lo establecido en los artículos 52, último párrafo, excepto cuando se trate de cambio de domicilio fiscal y 53, fracción I de este Reglamento, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -2862,8 +2862,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "No hubiera integrado en el dictamen la información que para efectos del proceso de envío se determine en las reglas de carácter general que emita el Servicio de Administración Tributaria.",
+          "identificador": "c",
+          "contenido": ") No hubiera integrado en el dictamen la información que para efectos del proceso de envío se determine en las reglas de carácter general que emita el Servicio de Administración Tributaria.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -2889,8 +2889,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "De uno a tres años cuando el contador público inscrito:",
+          "identificador": "a",
+          "contenido": ") De uno a tres años cuando el contador público inscrito:",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -2898,7 +2898,7 @@
         {
           "numero": 10,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Formule el dictamen en contravención a los artículos 52 del Código, 57 de este Reglamento, al Reglamento de la Ley del Impuesto sobre la Renta, o a las reglas de carácter general que al efecto emita el Servicio de Administración Tributaria;",
           "padre_numero": 9,
           "x_id": 136,
@@ -2907,7 +2907,7 @@
         {
           "numero": 11,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "No aplique las normas de auditoría a que se refiere el artículo 60 de este Reglamento;",
           "padre_numero": 9,
           "x_id": 136,
@@ -2916,7 +2916,7 @@
         {
           "numero": 12,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Formule dictamen estando impedido para hacerlo de acuerdo a lo previsto en el artículo 60 de este Reglamento;",
           "padre_numero": 9,
           "x_id": 136,
@@ -2925,7 +2925,7 @@
         {
           "numero": 13,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "No exhiba a requerimiento de la Autoridad Fiscal, los papeles de trabajo que elaboró con motivo del dictamen de las operaciones de enajenación de acciones o de cualquier otro dictamen que tenga repercusión fiscal, distinto al dictamen de los estados financieros del contribuyente;",
           "padre_numero": 9,
           "x_id": 136,
@@ -2934,7 +2934,7 @@
         {
           "numero": 14,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "No informe su cambio de domicilio fiscal en términos de lo establecido en el artículo 52, último párrafo de este Reglamento, y",
           "padre_numero": 9,
           "x_id": 136,
@@ -2943,7 +2943,7 @@
         {
           "numero": 15,
           "tipo": "numeral",
-          "identificador": "6.",
+          "identificador": "6",
           "contenido": "No presentar o hacerlo de manera incompleta la evidencia que demuestre la aplicación de los procedimientos de revisión de la situación fiscal del contribuyente a que se refiere el artículo 57, último párrafo de este Reglamento.",
           "padre_numero": 9,
           "x_id": 136,
@@ -2961,8 +2961,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Acumule tres amonestaciones de las previstas en la fracción I de este artículo. En este caso la suspensión será de tres meses a un año y se aplicará una vez notificada la tercera amonestación;",
+          "identificador": "b",
+          "contenido": ") Acumule tres amonestaciones de las previstas en la fracción I de este artículo. En este caso la suspensión será de tres meses a un año y se aplicará una vez notificada la tercera amonestación;",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -2970,8 +2970,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Se dicte en su contra auto de sujeción a proceso por la comisión de delitos de carácter fiscal. En este caso la suspensión durará el tiempo en el que el contador público se encuentre sujeto al proceso penal, en cuyo caso no podrá exceder del término de tres años.",
+          "identificador": "c",
+          "contenido": ") Se dicte en su contra auto de sujeción a proceso por la comisión de delitos de carácter fiscal. En este caso la suspensión durará el tiempo en el que el contador público se encuentre sujeto al proceso penal, en cuyo caso no podrá exceder del término de tres años.",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -2979,8 +2979,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "No cumpla con lo establecido en el artículo 53, segundo párrafo de este Reglamento. En este caso la suspensión durará hasta que se obtenga el refrendo o recertificación a que se refiere el citado artículo;",
+          "identificador": "d",
+          "contenido": ") No cumpla con lo establecido en el artículo 53, segundo párrafo de este Reglamento. En este caso la suspensión durará hasta que se obtenga el refrendo o recertificación a que se refiere el citado artículo;",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -2988,8 +2988,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Emita dictamen sin contar con la certificación, a que se refiere el artículo 52, fracción I, inciso a), segundo párrafo del Código, la suspensión durará hasta que se obtenga la certificación, o en su caso, refrendo o recertificación correspondiente, a que se refiere el artículo 53, segundo párrafo de este Reglamento, y",
+          "identificador": "e",
+          "contenido": ") Emita dictamen sin contar con la certificación, a que se refiere el artículo 52, fracción I, inciso a), segundo párrafo del Código, la suspensión durará hasta que se obtenga la certificación, o en su caso, refrendo o recertificación correspondiente, a que se refiere el artículo 53, segundo párrafo de este Reglamento, y",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -2997,8 +2997,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "No cumpla con lo establecido en el artículo 53, fracción II de este Reglamento. En este caso, la suspensión será de seis meses a tres años.",
+          "identificador": "f",
+          "contenido": ") No cumpla con lo establecido en el artículo 53, fracción II de este Reglamento. En este caso, la suspensión será de seis meses a tres años.",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -3307,8 +3307,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Preparación de manera permanente de la contabilidad del contribuyente;",
+          "identificador": "a",
+          "contenido": ") Preparación de manera permanente de la contabilidad del contribuyente;",
           "padre_numero": 10,
           "x_id": 114,
           "x_texto": 136
@@ -3316,8 +3316,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Implementación, operación y supervisión de los sistemas del contribuyente que generen información significativa para la elaboración de los estados financieros a dictaminar. En la implementación de sistemas, se permitirá la participación del contador público inscrito o de la sociedad o asociación civil que conforme el despacho en el que funja como socio, o bien, en el que preste sus servicios, siempre que el contribuyente conserve la responsabilidad del proyecto y asigne la dirección del mismo a un empleado con la competencia y nivel adecuado para tomar decisiones de planeación, coordinación y supervisión;",
+          "identificador": "b",
+          "contenido": ") Implementación, operación y supervisión de los sistemas del contribuyente que generen información significativa para la elaboración de los estados financieros a dictaminar. En la implementación de sistemas, se permitirá la participación del contador público inscrito o de la sociedad o asociación civil que conforme el despacho en el que funja como socio, o bien, en el que preste sus servicios, siempre que el contribuyente conserve la responsabilidad del proyecto y asigne la dirección del mismo a un empleado con la competencia y nivel adecuado para tomar decisiones de planeación, coordinación y supervisión;",
           "padre_numero": 10,
           "x_id": 114,
           "x_texto": 136
@@ -3325,8 +3325,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Auditoría interna relativa a estados financieros y controles contables, cuando el contador público inscrito toma la responsabilidad de dicha función, excepto si el personal del contribuyente con competencia y nivel adecuado para planear, supervisar y coordinar las funciones, emite los informes correspondientes, y",
+          "identificador": "c",
+          "contenido": ") Auditoría interna relativa a estados financieros y controles contables, cuando el contador público inscrito toma la responsabilidad de dicha función, excepto si el personal del contribuyente con competencia y nivel adecuado para planear, supervisar y coordinar las funciones, emite los informes correspondientes, y",
           "padre_numero": 10,
           "x_id": 114,
           "x_texto": 136
@@ -3334,8 +3334,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Preparación de avalúos o estimaciones de valor que tengan efectos en registros contables y sean relevantes, en relación a los activos, pasivos o ventas totales del contribuyente a dictaminar;",
+          "identificador": "d",
+          "contenido": ") Preparación de avalúos o estimaciones de valor que tengan efectos en registros contables y sean relevantes, en relación a los activos, pasivos o ventas totales del contribuyente a dictaminar;",
           "padre_numero": 10,
           "x_id": 114,
           "x_texto": 136
@@ -4262,8 +4262,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Otros títulos valor;",
+          "identificador": "a",
+          "contenido": ") Otros títulos valor;",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -4271,8 +4271,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Piezas de oro o de plata que hubieren tenido el carácter de moneda nacional o extranjera y las piezas denominadas “onzas troy”, y",
+          "identificador": "b",
+          "contenido": ") Piezas de oro o de plata que hubieren tenido el carácter de moneda nacional o extranjera y las piezas denominadas “onzas troy”, y",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -4280,8 +4280,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Cualquier bien intangible, aun cuando se trate de inversiones o bienes que no estén afectos a las actividades por las cuales se generó el crédito fiscal, especificando las características de las inversiones que permitan su identificación, y",
+          "identificador": "c",
+          "contenido": ") Cualquier bien intangible, aun cuando se trate de inversiones o bienes que no estén afectos a las actividades por las cuales se generó el crédito fiscal, especificando las características de las inversiones que permitan su identificación, y",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -4824,8 +4824,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Verificar la existencia y estado físico del activo fijo embargado, levantando constancia de hechos en los casos en que falten bienes. De existir bienes que no se encuentren señalados en el acta de embargo o en la relación de activo fijo y el crédito fiscal no se encuentre totalmente garantizado, deberá informar a la Autoridad Fiscal para que proceda a la ampliación del embargo;",
+          "identificador": "a",
+          "contenido": ") Verificar la existencia y estado físico del activo fijo embargado, levantando constancia de hechos en los casos en que falten bienes. De existir bienes que no se encuentren señalados en el acta de embargo o en la relación de activo fijo y el crédito fiscal no se encuentre totalmente garantizado, deberá informar a la Autoridad Fiscal para que proceda a la ampliación del embargo;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -4833,8 +4833,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Analizar el estado de resultados del ejercicio inmediato anterior al del inicio de la intervención de la negociación y el estado de posición financiera o balance general correspondiente al último día del mes inmediato anterior al del inicio de la intervención de la negociación;",
+          "identificador": "b",
+          "contenido": ") Analizar el estado de resultados del ejercicio inmediato anterior al del inicio de la intervención de la negociación y el estado de posición financiera o balance general correspondiente al último día del mes inmediato anterior al del inicio de la intervención de la negociación;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -4842,8 +4842,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Realizar un informe detallado del número, nombre y monto de los salarios que perciban los trabajadores, con base en la nómina de la propia negociación;",
+          "identificador": "c",
+          "contenido": ") Realizar un informe detallado del número, nombre y monto de los salarios que perciban los trabajadores, con base en la nómina de la propia negociación;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -4851,8 +4851,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Obtener una copia de los estados de cuenta bancarios de los doce meses anteriores al del inicio de la intervención de la negociación, en los que se visualice el detalle de los movimientos, así como copia de los talones o pólizas respecto de los cheques expedidos, a fin de verificar los ingresos y egresos de la negociación;",
+          "identificador": "d",
+          "contenido": ") Obtener una copia de los estados de cuenta bancarios de los doce meses anteriores al del inicio de la intervención de la negociación, en los que se visualice el detalle de los movimientos, así como copia de los talones o pólizas respecto de los cheques expedidos, a fin de verificar los ingresos y egresos de la negociación;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -4860,8 +4860,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Obtener, en su caso, una copia del acta constitutiva y de sus modificaciones, y",
+          "identificador": "e",
+          "contenido": ") Obtener, en su caso, una copia del acta constitutiva y de sus modificaciones, y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -4869,8 +4869,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Integrar una relación de los acreedores cuyos créditos tengan preferencia sobre los del fisco federal, misma que deberá contener concepto, importe y plazo del crédito, así como nombre, razón o denominación social del acreedor;",
+          "identificador": "f",
+          "contenido": ") Integrar una relación de los acreedores cuyos créditos tengan preferencia sobre los del fisco federal, misma que deberá contener concepto, importe y plazo del crédito, así como nombre, razón o denominación social del acreedor;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136

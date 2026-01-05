@@ -100,8 +100,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La adquisición en propiedad de habitaciones cómodas e higiénicas,",
+          "identificador": "a",
+          "contenido": ").- La adquisición en propiedad de habitaciones cómodas e higiénicas,",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -109,8 +109,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La construcción, reparación, ampliación o mejoramiento de sus viviendas, y",
+          "identificador": "b",
+          "contenido": ").- La construcción, reparación, ampliación o mejoramiento de sus viviendas, y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136,
@@ -121,8 +121,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El pago de pasivos contraídos por los conceptos anteriores;",
+          "identificador": "c",
+          "contenido": ").- El pago de pasivos contraídos por los conceptos anteriores;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -130,8 +130,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "La adquisición en propiedad de suelo destinado para la construcción de sus habitaciones;",
+          "identificador": "d",
+          "contenido": ").- La adquisición en propiedad de suelo destinado para la construcción de sus habitaciones;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136,
@@ -1163,7 +1163,7 @@
         {
           "numero": 7,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Ser una persona de reconocido prestigio.",
           "padre_numero": null,
           "x_id": 85,
@@ -1172,7 +1172,7 @@
         {
           "numero": 8,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Contar con conocimientos y experiencia mínima de cinco años en materia financiera, legal o administrativa.",
           "padre_numero": null,
           "x_id": 85,
@@ -1181,7 +1181,7 @@
         {
           "numero": 9,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "No haber sido condenado por sentencia irrevocable por delito patrimonial o intencional que haya ameritado pena corporal, y",
           "padre_numero": null,
           "x_id": 85,
@@ -1190,7 +1190,7 @@
         {
           "numero": 10,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "No estar inhabilitado para ejercer el comercio o para desempeñar un empleo, cargo o comisión en el servicio público o en el sistema financiero mexicano, así como no haber sido declarado como quebrado o concursado.",
           "padre_numero": null,
           "x_id": 85,
@@ -1401,7 +1401,7 @@
         {
           "numero": 4,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Ser una persona de reconocido prestigio.",
           "padre_numero": null,
           "x_id": 85,
@@ -1410,7 +1410,7 @@
         {
           "numero": 5,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Contar con Título y Cédula Profesional.",
           "padre_numero": null,
           "x_id": 85,
@@ -1419,7 +1419,7 @@
         {
           "numero": 6,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Contar con conocimientos y experiencia profesional mínima de cinco años en materia de auditoría relacionada con entidades financieras.",
           "padre_numero": null,
           "x_id": 85,
@@ -1428,7 +1428,7 @@
         {
           "numero": 7,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "No haber sido condenado por sentencia irrevocable por delito patrimonial o intencional que haya ameritado pena corporal, y",
           "padre_numero": null,
           "x_id": 85,
@@ -1437,7 +1437,7 @@
         {
           "numero": 8,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "No estar inhabilitado para ejercer el comercio o para desempeñar un empleo, cargo o comisión en el servicio público, o en el sistema financiero mexicano, así como no haber sido declarado como quebrado o concursado.",
           "padre_numero": null,
           "x_id": 85,
@@ -1612,7 +1612,7 @@
         {
           "numero": 2,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Ser una persona de reconocido prestigio.",
           "padre_numero": null,
           "x_id": 85,
@@ -1621,7 +1621,7 @@
         {
           "numero": 3,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Contar con Título y Cédula Profesional de Contador Público o Licenciado en Contaduría.",
           "padre_numero": null,
           "x_id": 85,
@@ -1630,7 +1630,7 @@
         {
           "numero": 4,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Estar debidamente certificado.",
           "padre_numero": null,
           "x_id": 85,
@@ -1639,7 +1639,7 @@
         {
           "numero": 5,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Contar con conocimientos y experiencia profesional mínima de cinco años en materia de auditoría relacionada con entidades financieras.",
           "padre_numero": null,
           "x_id": 85,
@@ -1648,7 +1648,7 @@
         {
           "numero": 6,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "No haber sido condenado por sentencia irrevocable por delito patrimonial o intencional que haya ameritado pena corporal.",
           "padre_numero": null,
           "x_id": 85,
@@ -1657,7 +1657,7 @@
         {
           "numero": 7,
           "tipo": "numeral",
-          "identificador": "6.",
+          "identificador": "6",
           "contenido": "No estar inhabilitado para ejercer el comercio o para desempeñar un empleo, cargo o comisión en el servicio público, o en el sistema financiero mexicano, así como no haber sido declarado como quebrado o concursado.",
           "padre_numero": null,
           "x_id": 85,
@@ -1666,7 +1666,7 @@
         {
           "numero": 8,
           "tipo": "numeral",
-          "identificador": "7.",
+          "identificador": "7",
           "contenido": "Ser socio de una firma de contadores públicos de reconocido prestigio. Esta firma no podrá ser la misma que aquélla a la que hubiera pertenecido el Auditor, en el período inmediato anterior, y",
           "padre_numero": null,
           "x_id": 85,
@@ -1675,7 +1675,7 @@
         {
           "numero": 9,
           "tipo": "numeral",
-          "identificador": "8.",
+          "identificador": "8",
           "contenido": "No desempeñar ningún cargo o comisión en el servicio público. El Comité de Auditoría propondrá al Consejo de Administración una firma de reconocido prestigio para que se autorice la contratación del Auditor Externo. Para este efecto podrá solicitar a un Colegio o Instituto de Contadores Públicos ampliamente representativo de la profesión, le proponga una terna de firmas.",
           "padre_numero": null,
           "x_id": 85,
@@ -2064,7 +2064,7 @@
         {
           "numero": 4,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Ser una persona de reconocido prestigio.",
           "padre_numero": null,
           "x_id": 85,
@@ -2073,7 +2073,7 @@
         {
           "numero": 5,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Contar con conocimientos y experiencia profesional mínima de cinco años.",
           "padre_numero": null,
           "x_id": 85,
@@ -2082,7 +2082,7 @@
         {
           "numero": 6,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "No haber sido condenado por sentencia irrevocable por delito patrimonial o intencional que haya ameritado pena corporal, y",
           "padre_numero": null,
           "x_id": 85,
@@ -2091,7 +2091,7 @@
         {
           "numero": 7,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "No estar inhabilitado para ejercer el comercio o para desempeñar un empleo, cargo o comisión en el servicio público o en el sistema financiero mexicano, así como no haber sido declarado como quebrado o concursado.",
           "padre_numero": null,
           "x_id": 85,
@@ -2174,7 +2174,7 @@
         {
           "numero": 4,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Ser una persona de reconocido prestigio.",
           "padre_numero": null,
           "x_id": 85,
@@ -2183,7 +2183,7 @@
         {
           "numero": 5,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Contar con conocimientos y experiencia profesional mínima de cinco años.",
           "padre_numero": null,
           "x_id": 85,
@@ -2192,7 +2192,7 @@
         {
           "numero": 6,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "No haber sido condenado por sentencia irrevocable por delito patrimonial o intencional que haya ameritado pena corporal, y",
           "padre_numero": null,
           "x_id": 85,
@@ -2201,7 +2201,7 @@
         {
           "numero": 7,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "No estar inhabilitado para ejercer el comercio o para desempeñar un empleo, cargo o comisión en el servicio público o en el sistema financiero mexicano, así como no haber sido declarado como quebrado o concursado.",
           "padre_numero": null,
           "x_id": 85,
@@ -2676,8 +2676,8 @@
         {
           "numero": 2,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Datos Generales;",
+          "identificador": "a",
+          "contenido": ") Datos Generales;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2685,8 +2685,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Contratos de servicio;",
+          "identificador": "b",
+          "contenido": ") Contratos de servicio;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2694,8 +2694,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los Montos de las Aportaciones y Amortizaciones;",
+          "identificador": "c",
+          "contenido": ") Los Montos de las Aportaciones y Amortizaciones;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2703,8 +2703,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Información de los trabajadores;",
+          "identificador": "d",
+          "contenido": ") Información de los trabajadores;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2712,8 +2712,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Determinación del salario base de aportación, y",
+          "identificador": "e",
+          "contenido": ") Determinación del salario base de aportación, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2721,8 +2721,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Copia simple del registro emitido por la Secretaría del Trabajo y Previsión Social.",
+          "identificador": "f",
+          "contenido": ") Copia simple del registro emitido por la Secretaría del Trabajo y Previsión Social.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3763,8 +3763,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "En línea dos a la adquisición en propiedad de habitaciones o suelo que sea destinado a la construcción de vivienda;",
+          "identificador": "a",
+          "contenido": ") En línea dos a la adquisición en propiedad de habitaciones o suelo que sea destinado a la construcción de vivienda;",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -3772,8 +3772,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "En línea tres a la construcción o autoproducción de vivienda;",
+          "identificador": "b",
+          "contenido": ") En línea tres a la construcción o autoproducción de vivienda;",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -3781,8 +3781,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "En línea cuatro a la reparación, ampliación o mejoras de habitaciones;",
+          "identificador": "c",
+          "contenido": ") En línea cuatro a la reparación, ampliación o mejoras de habitaciones;",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -3790,8 +3790,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "En línea cinco al pago de pasivos adquiridos por cualquiera de los conceptos anteriores, y",
+          "identificador": "d",
+          "contenido": ") En línea cinco al pago de pasivos adquiridos por cualquiera de los conceptos anteriores, y",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -3799,8 +3799,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "En línea seis al refinanciamiento de un crédito ya adquirido con el Instituto o con alguna otra institución financiera, por cualquiera de los conceptos anteriores.",
+          "identificador": "e",
+          "contenido": ") En línea seis al refinanciamiento de un crédito ya adquirido con el Instituto o con alguna otra institución financiera, por cualquiera de los conceptos anteriores.",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136,
@@ -4897,8 +4897,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Sin perjuicio de la vigencia que se establezca, deberán pactarse esquemas de renovación con base en el cumplimiento oportuno de las obligaciones de la persona trabajadora derechohabiente;",
+          "identificador": "a",
+          "contenido": ") Sin perjuicio de la vigencia que se establezca, deberán pactarse esquemas de renovación con base en el cumplimiento oportuno de las obligaciones de la persona trabajadora derechohabiente;",
           "padre_numero": 5,
           "x_id": 121,
           "x_texto": 143
@@ -4906,8 +4906,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El monto de las rentas a cargo de las personas trabajadoras derechohabientes podrá pactarse con o sin actualización y su cálculo deberá determinarse bajo criterios sociales, sin fines de lucro o especulación comercial y considerando el nivel salarial de las personas trabajadoras derechohabientes, debiendo ser suficiente para que el Instituto cubra el pago del impuesto predial y los derechos de agua;",
+          "identificador": "b",
+          "contenido": ") El monto de las rentas a cargo de las personas trabajadoras derechohabientes podrá pactarse con o sin actualización y su cálculo deberá determinarse bajo criterios sociales, sin fines de lucro o especulación comercial y considerando el nivel salarial de las personas trabajadoras derechohabientes, debiendo ser suficiente para que el Instituto cubra el pago del impuesto predial y los derechos de agua;",
           "padre_numero": 5,
           "x_id": 121,
           "x_texto": 143
@@ -4915,8 +4915,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El derecho de las personas trabajadoras a ejercer la opción a compra de la vivienda en cualquier momento, siempre que cuente con el nivel de ahorro en su subcuenta de vivienda o recursos propios necesarios para ello, pudiendo reconocerse el pago de rentas a cuenta del precio final de venta, y",
+          "identificador": "c",
+          "contenido": ") El derecho de las personas trabajadoras a ejercer la opción a compra de la vivienda en cualquier momento, siempre que cuente con el nivel de ahorro en su subcuenta de vivienda o recursos propios necesarios para ello, pudiendo reconocerse el pago de rentas a cuenta del precio final de venta, y",
           "padre_numero": 5,
           "x_id": 121,
           "x_texto": 143
@@ -4924,8 +4924,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Establecer mecanismos de terminación anticipada y rescisión para que el Instituto, sin necesidad de declaración judicial, en caso de que la persona trabajadora derechohabiente incumpla con sus obligaciones, recupere la posesión de las viviendas de su propiedad o bajo su administración.",
+          "identificador": "d",
+          "contenido": ") Establecer mecanismos de terminación anticipada y rescisión para que el Instituto, sin necesidad de declaración judicial, en caso de que la persona trabajadora derechohabiente incumpla con sus obligaciones, recupere la posesión de las viviendas de su propiedad o bajo su administración.",
           "padre_numero": 5,
           "x_id": 121,
           "x_texto": 143

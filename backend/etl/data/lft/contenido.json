@@ -183,8 +183,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cuando se trate de sustituir o se sustituya definitivamente a un trabajador que reclame la reinstalación en su empleo sin haberse resuelto el caso por el Tribunal.",
+          "identificador": "a",
+          "contenido": ") Cuando se trate de sustituir o se sustituya definitivamente a un trabajador que reclame la reinstalación en su empleo sin haberse resuelto el caso por el Tribunal.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136,
@@ -195,8 +195,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando se niegue el derecho de ocupar su mismo puesto a un trabajador que haya estado separado de sus labores por causa de enfermedad o de fuerza mayor, o con permiso, al presentarse nuevamente a sus labores; y",
+          "identificador": "b",
+          "contenido": ") Cuando se niegue el derecho de ocupar su mismo puesto a un trabajador que haya estado separado de sus labores por causa de enfermedad o de fuerza mayor, o con permiso, al presentarse nuevamente a sus labores; y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -213,8 +213,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cuando declarada una huelga en los términos que establece esta Ley, se trate de substituir o se substituya a los huelguistas en el trabajo que desempeñan, sin haberse resuelto el conflicto motivo de la huelga, salvo lo que dispone el artículo 468.",
+          "identificador": "a",
+          "contenido": ") Cuando declarada una huelga en los términos que establece esta Ley, se trate de substituir o se substituya a los huelguistas en el trabajo que desempeñan, sin haberse resuelto el conflicto motivo de la huelga, salvo lo que dispone el artículo 468.",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -222,8 +222,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando declarada una huelga en iguales términos de licitud por la mayoría de los trabajadores de una empresa, la minoría pretenda reanudar sus labores o siga trabajando.",
+          "identificador": "b",
+          "contenido": ") Cuando declarada una huelga en iguales términos de licitud por la mayoría de los trabajadores de una empresa, la minoría pretenda reanudar sus labores o siga trabajando.",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -1243,8 +1243,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Indicar que los gastos de repatriación quedan a cargo del empresario contratante;",
+          "identificador": "a",
+          "contenido": ") Indicar que los gastos de repatriación quedan a cargo del empresario contratante;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -1252,8 +1252,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las condiciones de vivienda decorosa e higiénica que disfrutará el trabajador, mediante arrendamiento o cualquier otra forma;",
+          "identificador": "b",
+          "contenido": ") Las condiciones de vivienda decorosa e higiénica que disfrutará el trabajador, mediante arrendamiento o cualquier otra forma;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -1261,8 +1261,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La forma y condiciones en las que se le otorgará al trabajador y de su familia, en su caso, la atención médica correspondiente; y",
+          "identificador": "c",
+          "contenido": ") La forma y condiciones en las que se le otorgará al trabajador y de su familia, en su caso, la atención médica correspondiente; y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -1270,8 +1270,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Los mecanismos para informar al trabajador acerca de las autoridades consulares y diplomáticas mexicanas a las que podrá acudir en el extranjero y de las autoridades competentes del país a donde se prestarán los servicios, cuando el trabajador considere que sus derechos han sido menoscabados, a fin de ejercer la acción legal conducente;",
+          "identificador": "d",
+          "contenido": ") Los mecanismos para informar al trabajador acerca de las autoridades consulares y diplomáticas mexicanas a las que podrá acudir en el extranjero y de las autoridades competentes del país a donde se prestarán los servicios, cuando el trabajador considere que sus derechos han sido menoscabados, a fin de ejercer la acción legal conducente;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -1431,8 +1431,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La veracidad de las condiciones generales de trabajo que se ofrecen, así como de las relativas a vivienda, seguridad social y repatriación a que estarán sujetos los trabajadores. Dichas condiciones deberán ser dignas y no implicar discriminación de cualquier tipo; y",
+          "identificador": "a",
+          "contenido": ") La veracidad de las condiciones generales de trabajo que se ofrecen, así como de las relativas a vivienda, seguridad social y repatriación a que estarán sujetos los trabajadores. Dichas condiciones deberán ser dignas y no implicar discriminación de cualquier tipo; y",
           "padre_numero": 3,
           "x_id": 85,
           "x_texto": 107
@@ -1440,8 +1440,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Que los aspirantes hayan realizado los trámites para la expedición de visa o permiso de trabajo por la autoridad consular o migratoria del país donde se prestará el servicio;",
+          "identificador": "b",
+          "contenido": ") Que los aspirantes hayan realizado los trámites para la expedición de visa o permiso de trabajo por la autoridad consular o migratoria del país donde se prestará el servicio;",
           "padre_numero": 3,
           "x_id": 85,
           "x_texto": 107
@@ -2598,8 +2598,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Ofrecer algún beneficio personal, dádiva o soborno a funcionarios del Centro Federal de Conciliación y Registro Laboral, Centros de Conciliación Locales o Tribunales; así como a terceros de un procedimiento laboral;",
+          "identificador": "a",
+          "contenido": ") Ofrecer algún beneficio personal, dádiva o soborno a funcionarios del Centro Federal de Conciliación y Registro Laboral, Centros de Conciliación Locales o Tribunales; así como a terceros de un procedimiento laboral;",
           "padre_numero": 2,
           "x_id": 103,
           "x_texto": 125
@@ -2607,8 +2607,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Alterar un documento firmado por el trabajador con un fin distinto para incorporar la renuncia;",
+          "identificador": "b",
+          "contenido": ") Alterar un documento firmado por el trabajador con un fin distinto para incorporar la renuncia;",
           "padre_numero": 2,
           "x_id": 103,
           "x_texto": 125
@@ -2616,8 +2616,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Exigir la firma de papeles en blanco en la contratación o en cualquier momento de la relación laboral;",
+          "identificador": "c",
+          "contenido": ") Exigir la firma de papeles en blanco en la contratación o en cualquier momento de la relación laboral;",
           "padre_numero": 2,
           "x_id": 103,
           "x_texto": 125
@@ -2625,8 +2625,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Presentación de hechos notoriamente falsos en el juicio laboral, por cualquiera de las partes o sus representantes, sobre el salario, la jornada de trabajo o la antigüedad de la relación de trabajo;",
+          "identificador": "d",
+          "contenido": ") Presentación de hechos notoriamente falsos en el juicio laboral, por cualquiera de las partes o sus representantes, sobre el salario, la jornada de trabajo o la antigüedad de la relación de trabajo;",
           "padre_numero": 2,
           "x_id": 103,
           "x_texto": 125
@@ -2634,8 +2634,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Negar el acceso a un establecimiento o centro de trabajo al actuario o notificador de la autoridad laboral, cuando éste solicite realizar una notificación o diligencia. Asimismo, negarse a recibir los documentos relativos a la notificación ordenada por la autoridad laboral cuando se trate del domicilio de la razón social o de la persona física o moral buscada. También se considera conducta infractora simular con cédulas fiscales o documentación oficial de otras razones sociales, aun cuando tengan el mismo domicilio, con objeto de evadir la citación al procedimiento de conciliación prejudicial, el emplazamiento a juicio o el desahogo de una prueba, y",
+          "identificador": "e",
+          "contenido": ") Negar el acceso a un establecimiento o centro de trabajo al actuario o notificador de la autoridad laboral, cuando éste solicite realizar una notificación o diligencia. Asimismo, negarse a recibir los documentos relativos a la notificación ordenada por la autoridad laboral cuando se trate del domicilio de la razón social o de la persona física o moral buscada. También se considera conducta infractora simular con cédulas fiscales o documentación oficial de otras razones sociales, aun cuando tengan el mismo domicilio, con objeto de evadir la citación al procedimiento de conciliación prejudicial, el emplazamiento a juicio o el desahogo de una prueba, y",
           "padre_numero": 2,
           "x_id": 103,
           "x_texto": 125
@@ -2643,8 +2643,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Demandar la titularidad de un contrato colectivo de trabajo sin tener trabajadores afiliados al sindicato que labore en el centro de trabajo de cuyo contrato se reclame.",
+          "identificador": "f",
+          "contenido": ") Demandar la titularidad de un contrato colectivo de trabajo sin tener trabajadores afiliados al sindicato que labore en el centro de trabajo de cuyo contrato se reclame.",
           "padre_numero": 2,
           "x_id": 103,
           "x_texto": 125
@@ -2661,8 +2661,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Levantar razón de una notificación haciendo constar que se constituyó en el domicilio que se le ordenó realizar la notificación, sin haberse constituido en el mismo;",
+          "identificador": "a",
+          "contenido": ") Levantar razón de una notificación haciendo constar que se constituyó en el domicilio que se le ordenó realizar la notificación, sin haberse constituido en el mismo;",
           "padre_numero": 9,
           "x_id": 103,
           "x_texto": 125
@@ -2670,8 +2670,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Levantar razón de una notificación o cédula de emplazamiento sin que éstas se hayan realizado;",
+          "identificador": "b",
+          "contenido": ") Levantar razón de una notificación o cédula de emplazamiento sin que éstas se hayan realizado;",
           "padre_numero": 9,
           "x_id": 103,
           "x_texto": 125
@@ -2679,8 +2679,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Omitir efectuar una notificación dentro del plazo establecido por la Ley u ordenado por la autoridad laboral;",
+          "identificador": "c",
+          "contenido": ") Omitir efectuar una notificación dentro del plazo establecido por la Ley u ordenado por la autoridad laboral;",
           "padre_numero": 9,
           "x_id": 103,
           "x_texto": 125
@@ -2688,8 +2688,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Dilatar de manera deliberada la notificación de una audiencia de conciliación, el emplazamiento de un juicio laboral o cualquier notificación personal del procedimiento laboral, para beneficiar a alguna de las partes del procedimiento o para recibir un beneficio de alguna de las partes;",
+          "identificador": "d",
+          "contenido": ") Dilatar de manera deliberada la notificación de una audiencia de conciliación, el emplazamiento de un juicio laboral o cualquier notificación personal del procedimiento laboral, para beneficiar a alguna de las partes del procedimiento o para recibir un beneficio de alguna de las partes;",
           "padre_numero": 9,
           "x_id": 103,
           "x_texto": 125
@@ -2697,8 +2697,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Recibir una dádiva de alguna de las partes o tercero interesado;",
+          "identificador": "e",
+          "contenido": ") Recibir una dádiva de alguna de las partes o tercero interesado;",
           "padre_numero": 9,
           "x_id": 103,
           "x_texto": 125
@@ -2706,8 +2706,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Retrasar deliberadamente la ejecución de sentencias y convenios que sean cosa juzgada;",
+          "identificador": "f",
+          "contenido": ") Retrasar deliberadamente la ejecución de sentencias y convenios que sean cosa juzgada;",
           "padre_numero": 9,
           "x_id": 103,
           "x_texto": 125
@@ -2715,8 +2715,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Admitir pruebas no relacionadas con la litis que dilaten el procedimiento;",
+          "identificador": "g",
+          "contenido": ") Admitir pruebas no relacionadas con la litis que dilaten el procedimiento;",
           "padre_numero": 9,
           "x_id": 103,
           "x_texto": 125
@@ -2724,8 +2724,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Retrasar un acuerdo o resolución más de ocho días de los plazos establecidos en la ley;",
+          "identificador": "h",
+          "contenido": ") Retrasar un acuerdo o resolución más de ocho días de los plazos establecidos en la ley;",
           "padre_numero": 9,
           "x_id": 103,
           "x_texto": 125
@@ -2733,8 +2733,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "Ocultar expedientes con el fin de retrasar el juicio o impedir la celebración de una audiencia o diligencia;",
+          "identificador": "i",
+          "contenido": ") Ocultar expedientes con el fin de retrasar el juicio o impedir la celebración de una audiencia o diligencia;",
           "padre_numero": 9,
           "x_id": 103,
           "x_texto": 125
@@ -2742,8 +2742,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "j)",
-          "contenido": "Retrasar y obstruir la entrega de la constancia de representatividad sin causa justificada, y",
+          "identificador": "j",
+          "contenido": ") Retrasar y obstruir la entrega de la constancia de representatividad sin causa justificada, y",
           "padre_numero": 9,
           "x_id": 103,
           "x_texto": 125
@@ -2751,8 +2751,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "k)",
-          "contenido": "Negarse a recibir injustificadamente el trabajador de un organismo público o paraestatal una notificación de un Centro de Conciliación o un Tribunal, o bien obstaculizar su realización, en cuyo caso deberá darse vista al Órgano de Control Interno correspondiente, independientemente de las sanciones que se establecen en la presente Ley.",
+          "identificador": "k",
+          "contenido": ") Negarse a recibir injustificadamente el trabajador de un organismo público o paraestatal una notificación de un Centro de Conciliación o un Tribunal, o bien obstaculizar su realización, en cuyo caso deberá darse vista al Órgano de Control Interno correspondiente, independientemente de las sanciones que se establecen en la presente Ley.",
           "padre_numero": 9,
           "x_id": 103,
           "x_texto": 125
@@ -6645,8 +6645,8 @@
         {
           "numero": 2,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los instrumentos de trabajo, tales como herramientas, ropa y otros similares;",
+          "identificador": "a",
+          "contenido": ") Los instrumentos de trabajo, tales como herramientas, ropa y otros similares;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -6654,8 +6654,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El ahorro, cuando se integre por un depósito de cantidad semanaria o mensual igual del trabajador y de la empresa; y las cantidades otorgadas por el patrón para fines sociales o sindicales;",
+          "identificador": "b",
+          "contenido": ") El ahorro, cuando se integre por un depósito de cantidad semanaria o mensual igual del trabajador y de la empresa; y las cantidades otorgadas por el patrón para fines sociales o sindicales;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -6663,8 +6663,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las aportaciones al Instituto de Fondo Nacional de la Vivienda para los Trabajadores y las participaciones en las utilidades de las empresas;",
+          "identificador": "c",
+          "contenido": ") Las aportaciones al Instituto de Fondo Nacional de la Vivienda para los Trabajadores y las participaciones en las utilidades de las empresas;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -6672,8 +6672,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "La alimentación y la habitación cuando no se proporcionen gratuitamente al trabajador, así como las despensas;",
+          "identificador": "d",
+          "contenido": ") La alimentación y la habitación cuando no se proporcionen gratuitamente al trabajador, así como las despensas;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -6681,8 +6681,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Los premios por asistencia;",
+          "identificador": "e",
+          "contenido": ") Los premios por asistencia;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -6690,8 +6690,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Los pagos por tiempo extraordinario, salvo cuando este tipo de servicios esté pactado en forma de tiempo fijo;",
+          "identificador": "f",
+          "contenido": ") Los pagos por tiempo extraordinario, salvo cuando este tipo de servicios esté pactado en forma de tiempo fijo;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -6699,8 +6699,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Las cuotas al Instituto Mexicano del Seguro Social a cargo del trabajador que cubran las empresas.",
+          "identificador": "g",
+          "contenido": ") Las cuotas al Instituto Mexicano del Seguro Social a cargo del trabajador que cubran las empresas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -6951,8 +6951,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Pagar las rentas.",
+          "identificador": "a",
+          "contenido": "). Pagar las rentas.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -6960,8 +6960,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuidar de la habitación como si fuera propia.",
+          "identificador": "b",
+          "contenido": "). Cuidar de la habitación como si fuera propia.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -6969,8 +6969,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Poner en conocimiento de la empresa los defectos o deterioros que observen.",
+          "identificador": "c",
+          "contenido": "). Poner en conocimiento de la empresa los defectos o deterioros que observen.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -6978,8 +6978,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Desocupar las habitaciones a la terminación de las relaciones de trabajo dentro de un término de cuarenta y cinco días y",
+          "identificador": "d",
+          "contenido": "). Desocupar las habitaciones a la terminación de las relaciones de trabajo dentro de un término de cuarenta y cinco días y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -6996,8 +6996,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Usar la habitación para fines distintos de los señalados en este capítulo.",
+          "identificador": "a",
+          "contenido": "). Usar la habitación para fines distintos de los señalados en este capítulo.",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -7005,8 +7005,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Subarrendar las habitaciones.",
+          "identificador": "b",
+          "contenido": "). Subarrendar las habitaciones.",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136,
@@ -8418,8 +8418,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Si el número de trabajadores que se retire dentro del término de un año no excede del diez por ciento del total de los trabajadores de la empresa o establecimiento, o de los de una categoría determinada, el pago se hará en el momento del retiro.",
+          "identificador": "a",
+          "contenido": ") Si el número de trabajadores que se retire dentro del término de un año no excede del diez por ciento del total de los trabajadores de la empresa o establecimiento, o de los de una categoría determinada, el pago se hará en el momento del retiro.",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -8427,8 +8427,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Si el número de trabajadores que se retire excede del diez por ciento, se pagará a los que primeramente se retiren y podrá diferirse para el año siguiente el pago a los trabajadores que excedan de dicho porcentaje.",
+          "identificador": "b",
+          "contenido": ") Si el número de trabajadores que se retire excede del diez por ciento, se pagará a los que primeramente se retiren y podrá diferirse para el año siguiente el pago a los trabajadores que excedan de dicho porcentaje.",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -8436,8 +8436,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Si el retiro se efectúa al mismo tiempo por un número de trabajadores mayor del porcentaje mencionado, se cubrirá la prima a los que tengan mayor antigüedad y podrá diferirse para el año siguiente el pago de la que corresponda a los restantes trabajadores;",
+          "identificador": "c",
+          "contenido": ") Si el retiro se efectúa al mismo tiempo por un número de trabajadores mayor del porcentaje mencionado, se cubrirá la prima a los que tengan mayor antigüedad y podrá diferirse para el año siguiente el pago de la que corresponda a los restantes trabajadores;",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136,
@@ -9011,8 +9011,8 @@
         {
           "numero": 2,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La relación establecida con el solicitante deberá constar por escrito y contendrá el consentimiento expreso que en nombre del menor manifiesten los padres, tutores o quienes ejerzan la patria potestad, así como la incorporación del compromiso que asuma el solicitante de respetar a favor del mismo menor los derechos que la Constitución, los convenios internacionales y las leyes federales y locales reconozcan a favor de la niñez;",
+          "identificador": "a",
+          "contenido": ") La relación establecida con el solicitante deberá constar por escrito y contendrá el consentimiento expreso que en nombre del menor manifiesten los padres, tutores o quienes ejerzan la patria potestad, así como la incorporación del compromiso que asuma el solicitante de respetar a favor del mismo menor los derechos que la Constitución, los convenios internacionales y las leyes federales y locales reconozcan a favor de la niñez;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -9020,8 +9020,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las actividades que realice el menor no podrán interferir con su educación, esparcimiento y recreación en los términos que establezca el derecho aplicable, tampoco implicarán riesgo para su integridad o salud y en todo caso, incentivarán el desarrollo de sus habilidades y talentos; y",
+          "identificador": "b",
+          "contenido": ") Las actividades que realice el menor no podrán interferir con su educación, esparcimiento y recreación en los términos que establezca el derecho aplicable, tampoco implicarán riesgo para su integridad o salud y en todo caso, incentivarán el desarrollo de sus habilidades y talentos; y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -9029,8 +9029,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las contraprestaciones que reciba el menor por las actividades que realice nunca serán menores a las que por concepto de salario recibiría un mayor de quince y menor de dieciocho años.",
+          "identificador": "c",
+          "contenido": ") Las contraprestaciones que reciba el menor por las actividades que realice nunca serán menores a las que por concepto de salario recibiría un mayor de quince y menor de dieciocho años.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -9071,7 +9071,7 @@
         {
           "numero": 3,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Ruido, vibraciones, radiaciones ionizantes y no ionizantes infrarrojas o ultravioletas, condiciones térmicas elevadas o abatidas o presiones ambientales anormales.",
           "padre_numero": 2,
           "x_id": 114,
@@ -9080,7 +9080,7 @@
         {
           "numero": 4,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Agentes químicos contaminantes del ambiente laboral.",
           "padre_numero": 2,
           "x_id": 114,
@@ -9089,7 +9089,7 @@
         {
           "numero": 5,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Residuos peligrosos, agentes biológicos o enfermedades infecto contagiosas.",
           "padre_numero": 2,
           "x_id": 114,
@@ -9098,7 +9098,7 @@
         {
           "numero": 6,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Fauna peligrosa o flora nociva.",
           "padre_numero": 2,
           "x_id": 114,
@@ -9116,7 +9116,7 @@
         {
           "numero": 8,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Nocturnas industriales o el trabajo después de las veintidós horas.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9125,7 +9125,7 @@
         {
           "numero": 9,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "De rescate, salvamento y brigadas contra siniestros.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9134,7 +9134,7 @@
         {
           "numero": 10,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "En altura o espacios confinados.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9143,7 +9143,7 @@
         {
           "numero": 11,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "En las cuales se operen equipos y procesos críticos donde se manejen sustancias químicas peligrosas que puedan ocasionar accidentes mayores.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9152,7 +9152,7 @@
         {
           "numero": 12,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "De soldadura y corte.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9161,7 +9161,7 @@
         {
           "numero": 13,
           "tipo": "numeral",
-          "identificador": "6.",
+          "identificador": "6",
           "contenido": "En condiciones climáticas extremas en campo abierto, que los expongan a deshidratación, golpe de calor, hipotermia o congelación.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9170,7 +9170,7 @@
         {
           "numero": 14,
           "tipo": "numeral",
-          "identificador": "7.",
+          "identificador": "7",
           "contenido": "En vialidades con amplio volumen de tránsito vehicular (vías primarias).",
           "padre_numero": 7,
           "x_id": 114,
@@ -9179,7 +9179,7 @@
         {
           "numero": 15,
           "tipo": "numeral",
-          "identificador": "8.",
+          "identificador": "8",
           "contenido": "Agrícolas, forestales, de aserrado, silvícolas, de caza y pesca, que impliquen el uso de químicos, manejo de maquinaria, vehículos pesados, y los que determine la autoridad competente;",
           "padre_numero": 7,
           "x_id": 114,
@@ -9191,7 +9191,7 @@
         {
           "numero": 16,
           "tipo": "numeral",
-          "identificador": "9.",
+          "identificador": "9",
           "contenido": "Productivas de las industrias gasera, del cemento, minera, del hierro y el acero, petrolera y nuclear.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9200,7 +9200,7 @@
         {
           "numero": 17,
           "tipo": "numeral",
-          "identificador": "10.",
+          "identificador": "10",
           "contenido": "Productivas de las industrias ladrillera, vidriera, cerámica y cerera.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9209,7 +9209,7 @@
         {
           "numero": 18,
           "tipo": "numeral",
-          "identificador": "11.",
+          "identificador": "11",
           "contenido": "Productivas de la industria tabacalera.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9218,7 +9218,7 @@
         {
           "numero": 19,
           "tipo": "numeral",
-          "identificador": "12.",
+          "identificador": "12",
           "contenido": "Relacionadas con la generación, transmisión y distribución de electricidad y el mantenimiento de instalaciones eléctricas.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9227,7 +9227,7 @@
         {
           "numero": 20,
           "tipo": "numeral",
-          "identificador": "13.",
+          "identificador": "13",
           "contenido": "En obras de construcción.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9236,7 +9236,7 @@
         {
           "numero": 21,
           "tipo": "numeral",
-          "identificador": "14.",
+          "identificador": "14",
           "contenido": "Que tengan responsabilidad directa sobre el cuidado de personas o la custodia de bienes y valores.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9245,7 +9245,7 @@
         {
           "numero": 22,
           "tipo": "numeral",
-          "identificador": "15.",
+          "identificador": "15",
           "contenido": "Con alto grado de dificultad; en apremio de tiempo; que demandan alta responsabilidad, o que requieren de concentración y atención sostenidas.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9254,7 +9254,7 @@
         {
           "numero": 23,
           "tipo": "numeral",
-          "identificador": "16.",
+          "identificador": "16",
           "contenido": "Relativas a la operación, revisión, mantenimiento y pruebas de recipientes sujetos a presión, recipientes criogénicos y generadores de vapor o calderas.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9263,7 +9263,7 @@
         {
           "numero": 24,
           "tipo": "numeral",
-          "identificador": "17.",
+          "identificador": "17",
           "contenido": "En buques.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9272,7 +9272,7 @@
         {
           "numero": 25,
           "tipo": "numeral",
-          "identificador": "18.",
+          "identificador": "18",
           "contenido": "En minas.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9281,7 +9281,7 @@
         {
           "numero": 26,
           "tipo": "numeral",
-          "identificador": "19.",
+          "identificador": "19",
           "contenido": "Submarinas y subterráneas.",
           "padre_numero": 7,
           "x_id": 114,
@@ -9290,7 +9290,7 @@
         {
           "numero": 27,
           "tipo": "numeral",
-          "identificador": "20.",
+          "identificador": "20",
           "contenido": "Trabajos ambulantes, salvo autorización especial de la Inspección de Trabajo.",
           "padre_numero": 7,
           "x_id": 114,
@@ -11033,8 +11033,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "En las estaciones previamente designadas, o en las de pernoctación extraordinaria, la transportación se hará en automóvil y el alojamiento será cubierto directamente por el patrón. La transportación se proporcionará entre los aeropuertos y el lugar de alojamiento y viceversa, excepto en aquellos lugares de base permanente de residencia de los tripulantes.",
+          "identificador": "a",
+          "contenido": ") En las estaciones previamente designadas, o en las de pernoctación extraordinaria, la transportación se hará en automóvil y el alojamiento será cubierto directamente por el patrón. La transportación se proporcionará entre los aeropuertos y el lugar de alojamiento y viceversa, excepto en aquellos lugares de base permanente de residencia de los tripulantes.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -11042,8 +11042,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando los alimentos no puedan tomarse a bordo, los tripulantes percibirán una asignación en efectivo, que se fijará según el número de comidas que deban hacerse en cada viaje o en los lugares de pernoctación extraordinaria. El monto de estas asignaciones se fijará de común acuerdo;",
+          "identificador": "b",
+          "contenido": ") Cuando los alimentos no puedan tomarse a bordo, los tripulantes percibirán una asignación en efectivo, que se fijará según el número de comidas que deban hacerse en cada viaje o en los lugares de pernoctación extraordinaria. El monto de estas asignaciones se fijará de común acuerdo;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -13077,8 +13077,8 @@
         {
           "numero": 30,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Aplicar únicamente agroquímicos con Registro Sanitario de Plaguicidas y Nutrientes Vegetales vigente, no caducos, en las dosis recomendadas y sin mezclar productos incompatibles, según lo establecido en las etiquetas;",
+          "identificador": "a",
+          "contenido": ") Aplicar únicamente agroquímicos con Registro Sanitario de Plaguicidas y Nutrientes Vegetales vigente, no caducos, en las dosis recomendadas y sin mezclar productos incompatibles, según lo establecido en las etiquetas;",
           "padre_numero": 29,
           "x_id": 114,
           "x_texto": 136
@@ -13086,8 +13086,8 @@
         {
           "numero": 31,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Verificar que todos los envases que contienen agroquímicos cuenten con la etiqueta original, y contar con las hojas de datos de seguridad impresas de cada uno de los agroquímicos y sustancias químicas que se utilicen;",
+          "identificador": "b",
+          "contenido": ") Verificar que todos los envases que contienen agroquímicos cuenten con la etiqueta original, y contar con las hojas de datos de seguridad impresas de cada uno de los agroquímicos y sustancias químicas que se utilicen;",
           "padre_numero": 29,
           "x_id": 114,
           "x_texto": 136
@@ -13095,8 +13095,8 @@
         {
           "numero": 32,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Señalizar las áreas de almacenamiento, manejo, de mezclado o llenado de sustancias químicas o biológicas, así como de los envases que hubieran contenido dichas sustancias, y",
+          "identificador": "c",
+          "contenido": ") Señalizar las áreas de almacenamiento, manejo, de mezclado o llenado de sustancias químicas o biológicas, así como de los envases que hubieran contenido dichas sustancias, y",
           "padre_numero": 29,
           "x_id": 114,
           "x_texto": 136
@@ -13104,8 +13104,8 @@
         {
           "numero": 33,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Observar las demás disposiciones de conformidad con las disposiciones legales aplicables;",
+          "identificador": "d",
+          "contenido": ") Observar las demás disposiciones de conformidad con las disposiciones legales aplicables;",
           "padre_numero": 29,
           "x_id": 114,
           "x_texto": 136,
@@ -13125,8 +13125,8 @@
         {
           "numero": 35,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La exposición a agroquímicos o cualquier otra sustancia química peligrosa;",
+          "identificador": "a",
+          "contenido": ") La exposición a agroquímicos o cualquier otra sustancia química peligrosa;",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136
@@ -13134,8 +13134,8 @@
         {
           "numero": 36,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La operación, manejo, revisión, transporte o mantenimiento de tractores, maquinaria agrícola, equipos, vehículos y herramientas;",
+          "identificador": "b",
+          "contenido": ") La operación, manejo, revisión, transporte o mantenimiento de tractores, maquinaria agrícola, equipos, vehículos y herramientas;",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136
@@ -13143,8 +13143,8 @@
         {
           "numero": 37,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los trabajos en alturas y espacios confinados, incluyendo silos y tanques de almacenamiento de productos agrícolas;",
+          "identificador": "c",
+          "contenido": ") Los trabajos en alturas y espacios confinados, incluyendo silos y tanques de almacenamiento de productos agrícolas;",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136
@@ -13152,8 +13152,8 @@
         {
           "numero": 38,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "El manejo manual de cargas y otros factores de riesgo ergonómico;",
+          "identificador": "d",
+          "contenido": ") El manejo manual de cargas y otros factores de riesgo ergonómico;",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136
@@ -13161,8 +13161,8 @@
         {
           "numero": 39,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "La exposición a ruido, vibraciones y radiación solar;",
+          "identificador": "e",
+          "contenido": ") La exposición a ruido, vibraciones y radiación solar;",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136
@@ -13170,8 +13170,8 @@
         {
           "numero": 40,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "La exposición a polvos generados en actividades como el arado de la tierra, la producción de diversos granos, legumbres y otros productos agrícolas; el envasado y traslado de los cultivos;",
+          "identificador": "f",
+          "contenido": ") La exposición a polvos generados en actividades como el arado de la tierra, la producción de diversos granos, legumbres y otros productos agrícolas; el envasado y traslado de los cultivos;",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136
@@ -13179,8 +13179,8 @@
         {
           "numero": 41,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Los peligros biológicos, tales como flora y fauna nociva, así como riesgo de contraer enfermedades por picadura o mordedura de insectos o animales transmisores de éstas;",
+          "identificador": "g",
+          "contenido": ") Los peligros biológicos, tales como flora y fauna nociva, así como riesgo de contraer enfermedades por picadura o mordedura de insectos o animales transmisores de éstas;",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136
@@ -13188,8 +13188,8 @@
         {
           "numero": 42,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Las condiciones ambientales extremas, así como exposición a descargas eléctricas atmosféricas;",
+          "identificador": "h",
+          "contenido": ") Las condiciones ambientales extremas, así como exposición a descargas eléctricas atmosféricas;",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136
@@ -13197,8 +13197,8 @@
         {
           "numero": 43,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "La generación de electricidad estática y el riesgo de incendio y/o explosión en silos y tanques de almacenamiento de productos agrícolas, y",
+          "identificador": "i",
+          "contenido": ") La generación de electricidad estática y el riesgo de incendio y/o explosión en silos y tanques de almacenamiento de productos agrícolas, y",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136
@@ -13206,8 +13206,8 @@
         {
           "numero": 44,
           "tipo": "inciso",
-          "identificador": "j)",
-          "contenido": "Los factores de riesgo psicosocial que pudieran afectar a las personas trabajadoras del campo;",
+          "identificador": "j",
+          "contenido": ") Los factores de riesgo psicosocial que pudieran afectar a las personas trabajadoras del campo;",
           "padre_numero": 34,
           "x_id": 114,
           "x_texto": 136,
@@ -18797,8 +18797,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cuando se trate de aquellos conformados por trabajadores, el nombre y domicilio de los patrones, empresas o establecimientos en los que se prestan los servicios.",
+          "identificador": "a",
+          "contenido": ") Cuando se trate de aquellos conformados por trabajadores, el nombre y domicilio de los patrones, empresas o establecimientos en los que se prestan los servicios.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -18806,8 +18806,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando se trate de aquellos conformados por patrones, el nombre y domicilios de las empresas, en donde se cuente con trabajadores.",
+          "identificador": "b",
+          "contenido": ") Cuando se trate de aquellos conformados por patrones, el nombre y domicilios de las empresas, en donde se cuente con trabajadores.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136,
@@ -19277,8 +19277,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La asamblea de trabajadores se reunirá para el solo efecto de conocer de la expulsión.",
+          "identificador": "a",
+          "contenido": ") La asamblea de trabajadores se reunirá para el solo efecto de conocer de la expulsión.",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -19286,8 +19286,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando se trate de sindicatos integrados por secciones, el procedimiento de expulsión se llevará a cabo ante la asamblea de la sección correspondiente, pero el acuerdo de expulsión deberá someterse a la decisión de los trabajadores de cada una de las secciones que integren el sindicato.",
+          "identificador": "b",
+          "contenido": ") Cuando se trate de sindicatos integrados por secciones, el procedimiento de expulsión se llevará a cabo ante la asamblea de la sección correspondiente, pero el acuerdo de expulsión deberá someterse a la decisión de los trabajadores de cada una de las secciones que integren el sindicato.",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -19295,8 +19295,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El trabajador afectado será oído en defensa, de conformidad con las disposiciones contenidas en los estatutos.",
+          "identificador": "c",
+          "contenido": ") El trabajador afectado será oído en defensa, de conformidad con las disposiciones contenidas en los estatutos.",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -19304,8 +19304,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "La asamblea conocerá de las pruebas que sirvan de base al procedimiento y de las que ofrezca el afectado.",
+          "identificador": "d",
+          "contenido": ") La asamblea conocerá de las pruebas que sirvan de base al procedimiento y de las que ofrezca el afectado.",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -19313,8 +19313,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Los trabajadores no podrán hacerse representar ni emitir su voto por escrito.",
+          "identificador": "e",
+          "contenido": ") Los trabajadores no podrán hacerse representar ni emitir su voto por escrito.",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -19322,8 +19322,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "La expulsión deberá ser aprobada por mayoría de las dos terceras partes del total de los miembros del sindicato.",
+          "identificador": "f",
+          "contenido": ") La expulsión deberá ser aprobada por mayoría de las dos terceras partes del total de los miembros del sindicato.",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -19331,8 +19331,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "La expulsión sólo podrá decretarse por los casos expresamente consignados en los estatutos, debidamente comprobados y exactamente aplicables al caso;",
+          "identificador": "g",
+          "contenido": ") La expulsión sólo podrá decretarse por los casos expresamente consignados en los estatutos, debidamente comprobados y exactamente aplicables al caso;",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -19379,8 +19379,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La convocatoria de elección se emitirá con firma autógrafa de las personas facultadas para ello, debiendo precisar fecha, hora, lugar del proceso y demás requisitos estatutariamente exigidos;",
+          "identificador": "a",
+          "contenido": ") La convocatoria de elección se emitirá con firma autógrafa de las personas facultadas para ello, debiendo precisar fecha, hora, lugar del proceso y demás requisitos estatutariamente exigidos;",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
@@ -19388,8 +19388,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La convocatoria deberá publicarse en el local sindical y en los lugares de mayor afluencia de los miembros en el centro de trabajo, con una anticipación mínima de diez días;",
+          "identificador": "b",
+          "contenido": ") La convocatoria deberá publicarse en el local sindical y en los lugares de mayor afluencia de los miembros en el centro de trabajo, con una anticipación mínima de diez días;",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
@@ -19397,8 +19397,8 @@
         {
           "numero": 22,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El lugar que se determine para la celebración del proceso electoral, así como la documentación y materiales que se elaboren para la realización, deberán garantizar que la votación se desarrolle de forma segura, directa, personal, libre y secreta;",
+          "identificador": "c",
+          "contenido": ") El lugar que se determine para la celebración del proceso electoral, así como la documentación y materiales que se elaboren para la realización, deberán garantizar que la votación se desarrolle de forma segura, directa, personal, libre y secreta;",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
@@ -19406,8 +19406,8 @@
         {
           "numero": 23,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Se integrará un padrón completo y actualizado de los miembros del sindicato con derecho a votar, que deberá publicarse y darse a conocer entre éstos con al menos tres días de antelación a la elección;",
+          "identificador": "d",
+          "contenido": ") Se integrará un padrón completo y actualizado de los miembros del sindicato con derecho a votar, que deberá publicarse y darse a conocer entre éstos con al menos tres días de antelación a la elección;",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
@@ -19415,8 +19415,8 @@
         {
           "numero": 24,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Establecer un procedimiento que asegure la identificación de los afiliados que tengan derecho a votar, y",
+          "identificador": "e",
+          "contenido": ") Establecer un procedimiento que asegure la identificación de los afiliados que tengan derecho a votar, y",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
@@ -19424,8 +19424,8 @@
         {
           "numero": 25,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "La documentación, material y boletas para la elección de integración de los órganos internos de los sindicatos a que se refiere este inciso, contendrá cuando menos los siguientes datos y requisitos:",
+          "identificador": "f",
+          "contenido": ") La documentación, material y boletas para la elección de integración de los órganos internos de los sindicatos a que se refiere este inciso, contendrá cuando menos los siguientes datos y requisitos:",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
@@ -19433,7 +19433,7 @@
         {
           "numero": 26,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Municipio y entidad federativa en que se realice la votación;",
           "padre_numero": 25,
           "x_id": 142,
@@ -19442,7 +19442,7 @@
         {
           "numero": 27,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Cargo para el que se postula al candidato o candidatos;",
           "padre_numero": 25,
           "x_id": 142,
@@ -19451,7 +19451,7 @@
         {
           "numero": 28,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Emblema y color de cada una de las planillas que participan con candidatos en la elección de que se trate;",
           "padre_numero": 25,
           "x_id": 142,
@@ -19460,7 +19460,7 @@
         {
           "numero": 29,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "El nombre completo del candidato o candidatos a elegir, y",
           "padre_numero": 25,
           "x_id": 142,
@@ -19469,7 +19469,7 @@
         {
           "numero": 30,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "Las boletas deberán validarse en el reverso con las firmas de por lo menos dos integrantes de la Comisión Electoral que para tales efectos acuerde el sindicato.",
           "padre_numero": 25,
           "x_id": 142,
@@ -20501,8 +20501,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La documentación con la que las partes contratantes acrediten su personalidad;",
+          "identificador": "a",
+          "contenido": ") La documentación con la que las partes contratantes acrediten su personalidad;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -20510,8 +20510,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El contrato colectivo de trabajo;",
+          "identificador": "b",
+          "contenido": ") El contrato colectivo de trabajo;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -20519,8 +20519,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La Constancia de Representatividad a que se refiere el artículo 390 Bis de esta Ley, y",
+          "identificador": "c",
+          "contenido": ") La Constancia de Representatividad a que se refiere el artículo 390 Bis de esta Ley, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -20531,8 +20531,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "El ámbito de aplicación del contrato colectivo de trabajo. Una vez entregada la documentación anterior, el Centro Federal de Conciliación y Registro Laboral deberá de resolver sobre el registro del contrato colectivo de trabajo dentro de los treinta días siguientes, dicha resolución será notificada a las partes.",
+          "identificador": "d",
+          "contenido": ") El ámbito de aplicación del contrato colectivo de trabajo. Una vez entregada la documentación anterior, el Centro Federal de Conciliación y Registro Laboral deberá de resolver sobre el registro del contrato colectivo de trabajo dentro de los treinta días siguientes, dicha resolución será notificada a las partes.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -20607,8 +20607,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El sindicato deberá poner oportunamente a disposición de los trabajadores un ejemplar impreso o electrónico del contrato colectivo inicial o del convenio de revisión que se someterá a consulta;",
+          "identificador": "a",
+          "contenido": ") El sindicato deberá poner oportunamente a disposición de los trabajadores un ejemplar impreso o electrónico del contrato colectivo inicial o del convenio de revisión que se someterá a consulta;",
           "padre_numero": 4,
           "x_id": 111,
           "x_texto": 133
@@ -20616,8 +20616,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La votación se llevará a cabo el día, hora y lugar señalados en la convocatoria;",
+          "identificador": "b",
+          "contenido": ") La votación se llevará a cabo el día, hora y lugar señalados en la convocatoria;",
           "padre_numero": 4,
           "x_id": 111,
           "x_texto": 133
@@ -20625,8 +20625,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Se garantizará que el lugar que se designe para la votación sea accesible a los trabajadores y reúna las condiciones necesarias para que éstos emitan su voto de forma libre, pacífica, ágil y segura, sin que puedan ser coaccionados de forma alguna;",
+          "identificador": "c",
+          "contenido": ") Se garantizará que el lugar que se designe para la votación sea accesible a los trabajadores y reúna las condiciones necesarias para que éstos emitan su voto de forma libre, pacífica, ágil y segura, sin que puedan ser coaccionados de forma alguna;",
           "padre_numero": 4,
           "x_id": 111,
           "x_texto": 133
@@ -20634,8 +20634,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "El empleador no podrá tener intervención alguna durante el procedimiento de consulta;",
+          "identificador": "d",
+          "contenido": ") El empleador no podrá tener intervención alguna durante el procedimiento de consulta;",
           "padre_numero": 4,
           "x_id": 111,
           "x_texto": 133
@@ -20643,8 +20643,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "El resultado de la votación será publicado por la directiva sindical en lugares visibles y de fácil acceso del centro de trabajo y en el local sindical correspondiente en un plazo no mayor a dos días de la fecha que se realice la consulta;",
+          "identificador": "e",
+          "contenido": ") El resultado de la votación será publicado por la directiva sindical en lugares visibles y de fácil acceso del centro de trabajo y en el local sindical correspondiente en un plazo no mayor a dos días de la fecha que se realice la consulta;",
           "padre_numero": 4,
           "x_id": 111,
           "x_texto": 133
@@ -20652,8 +20652,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "El sindicato dará aviso del resultado de la votación al Centro Federal de Conciliación y Registro Laboral dentro de los tres días hábiles siguientes a la fecha en que se realice la consulta, a efecto de que dicho Centro lo publique en su sitio de Internet.",
+          "identificador": "f",
+          "contenido": ") El sindicato dará aviso del resultado de la votación al Centro Federal de Conciliación y Registro Laboral dentro de los tres días hábiles siguientes a la fecha en que se realice la consulta, a efecto de que dicho Centro lo publique en su sitio de Internet.",
           "padre_numero": 4,
           "x_id": 111,
           "x_texto": 133
@@ -20670,8 +20670,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Las actas de votación serán resguardadas durante cinco años para acreditar el cumplimiento de esta obligación, para efectos de verificación de la autoridad laboral o registral. El sindicato promovente deberá manifestar bajo protesta de decir verdad que dio cumplimiento a esta obligación, y",
+          "identificador": "g",
+          "contenido": ") Las actas de votación serán resguardadas durante cinco años para acreditar el cumplimiento de esta obligación, para efectos de verificación de la autoridad laboral o registral. El sindicato promovente deberá manifestar bajo protesta de decir verdad que dio cumplimiento a esta obligación, y",
           "padre_numero": 4,
           "x_id": 111,
           "x_texto": 133
@@ -20679,8 +20679,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "El Centro Federal de Conciliación y Registro Laboral podrá verificar que el procedimiento de consulta se realice conforme a los requisitos antes señalados;",
+          "identificador": "h",
+          "contenido": ") El Centro Federal de Conciliación y Registro Laboral podrá verificar que el procedimiento de consulta se realice conforme a los requisitos antes señalados;",
           "padre_numero": 4,
           "x_id": 111,
           "x_texto": 133
@@ -20697,8 +20697,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Para contratos colectivos de trabajo inicial, el sindicato procederá a realizar la solicitud de registro ante la Autoridad Registral conforme a lo previsto en el artículo 390 de la presente Ley, y",
+          "identificador": "a",
+          "contenido": ") Para contratos colectivos de trabajo inicial, el sindicato procederá a realizar la solicitud de registro ante la Autoridad Registral conforme a lo previsto en el artículo 390 de la presente Ley, y",
           "padre_numero": 14,
           "x_id": 111,
           "x_texto": 133
@@ -20706,8 +20706,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Para convenios de revisión o modificaciones del contrato colectivo de trabajo, se estará a lo dispuesto en el artículo 399 Ter;",
+          "identificador": "b",
+          "contenido": ") Para convenios de revisión o modificaciones del contrato colectivo de trabajo, se estará a lo dispuesto en el artículo 399 Ter;",
           "padre_numero": 14,
           "x_id": 111,
           "x_texto": 133
@@ -20724,8 +20724,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Ejercer su derecho a huelga, en caso de haber promovido el emplazamiento correspondiente, y",
+          "identificador": "a",
+          "contenido": ") Ejercer su derecho a huelga, en caso de haber promovido el emplazamiento correspondiente, y",
           "padre_numero": 17,
           "x_id": 111,
           "x_texto": 133
@@ -20733,8 +20733,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Prorrogar o ampliar el periodo de prehuelga con el objeto de continuar con la negociación y someter el acuerdo a nueva consulta, observando lo establecido en la fracción V del artículo 927 de esta Ley.",
+          "identificador": "b",
+          "contenido": ") Prorrogar o ampliar el periodo de prehuelga con el objeto de continuar con la negociación y someter el acuerdo a nueva consulta, observando lo establecido en la fracción V del artículo 927 de esta Ley.",
           "padre_numero": 17,
           "x_id": 111,
           "x_texto": 133
@@ -21718,8 +21718,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los trabajadores y los patrones dispondrán de un término de quince días para presentar por escrito sus observaciones, acompañadas de las pruebas que las justifiquen.",
+          "identificador": "a",
+          "contenido": ") Los trabajadores y los patrones dispondrán de un término de quince días para presentar por escrito sus observaciones, acompañadas de las pruebas que las justifiquen.",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -21727,8 +21727,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El Presidente de la República, el Gobernador del Estado o el Jefe de Gobierno de la Ciudad de México, tomando en consideración los datos del expediente, podrá declarar la obligatoriedad del contrato-ley.",
+          "identificador": "b",
+          "contenido": ") El Presidente de la República, el Gobernador del Estado o el Jefe de Gobierno de la Ciudad de México, tomando en consideración los datos del expediente, podrá declarar la obligatoriedad del contrato-ley.",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136,
@@ -24717,8 +24717,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Nombre y domicilio de la empresa;",
+          "identificador": "a",
+          "contenido": ") Nombre y domicilio de la empresa;",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -24726,8 +24726,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Nombre y domicilio del trabajador; así como su puesto o categoría y el monto de su salario;",
+          "identificador": "b",
+          "contenido": ") Nombre y domicilio del trabajador; así como su puesto o categoría y el monto de su salario;",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -24735,8 +24735,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Lugar y hora del accidente, con expresión sucinta de los hechos;",
+          "identificador": "c",
+          "contenido": ") Lugar y hora del accidente, con expresión sucinta de los hechos;",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -24744,8 +24744,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Nombre y domicilio de las personas que presenciaron el accidente; y,",
+          "identificador": "d",
+          "contenido": ") Nombre y domicilio de las personas que presenciaron el accidente; y,",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -24753,8 +24753,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Lugar en que se presta o haya prestado atención médica al accidentado.",
+          "identificador": "e",
+          "contenido": ") Lugar en que se presta o haya prestado atención médica al accidentado.",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -34887,7 +34887,7 @@
         {
           "numero": 3,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Textil;",
           "padre_numero": 2,
           "x_id": 114,
@@ -34896,7 +34896,7 @@
         {
           "numero": 4,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Eléctrica;",
           "padre_numero": 2,
           "x_id": 114,
@@ -34905,7 +34905,7 @@
         {
           "numero": 5,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Cinematográfica;",
           "padre_numero": 2,
           "x_id": 114,
@@ -34914,7 +34914,7 @@
         {
           "numero": 6,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Hulera;",
           "padre_numero": 2,
           "x_id": 114,
@@ -34923,7 +34923,7 @@
         {
           "numero": 7,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "Azucarera;",
           "padre_numero": 2,
           "x_id": 114,
@@ -34932,7 +34932,7 @@
         {
           "numero": 8,
           "tipo": "numeral",
-          "identificador": "6.",
+          "identificador": "6",
           "contenido": "Minera;",
           "padre_numero": 2,
           "x_id": 114,
@@ -34941,7 +34941,7 @@
         {
           "numero": 9,
           "tipo": "numeral",
-          "identificador": "7.",
+          "identificador": "7",
           "contenido": "Metalúrgica y siderúrgica, abarcando la explotación de los minerales básicos, el beneficio y la fundición de los mismos, así como la obtención de hierro metálico y acero a todas sus formas y ligas y los productos laminados de los mismos;",
           "padre_numero": 2,
           "x_id": 114,
@@ -34950,7 +34950,7 @@
         {
           "numero": 10,
           "tipo": "numeral",
-          "identificador": "8.",
+          "identificador": "8",
           "contenido": "De hidrocarburos;",
           "padre_numero": 2,
           "x_id": 114,
@@ -34959,7 +34959,7 @@
         {
           "numero": 11,
           "tipo": "numeral",
-          "identificador": "9.",
+          "identificador": "9",
           "contenido": "Petroquímica;",
           "padre_numero": 2,
           "x_id": 114,
@@ -34968,7 +34968,7 @@
         {
           "numero": 12,
           "tipo": "numeral",
-          "identificador": "10.",
+          "identificador": "10",
           "contenido": "Cementera;",
           "padre_numero": 2,
           "x_id": 114,
@@ -34977,7 +34977,7 @@
         {
           "numero": 13,
           "tipo": "numeral",
-          "identificador": "11.",
+          "identificador": "11",
           "contenido": "Calera;",
           "padre_numero": 2,
           "x_id": 114,
@@ -34986,7 +34986,7 @@
         {
           "numero": 14,
           "tipo": "numeral",
-          "identificador": "12.",
+          "identificador": "12",
           "contenido": "Automotriz, incluyendo autopartes mecánicas o eléctricas;",
           "padre_numero": 2,
           "x_id": 114,
@@ -34995,7 +34995,7 @@
         {
           "numero": 15,
           "tipo": "numeral",
-          "identificador": "13.",
+          "identificador": "13",
           "contenido": "Química, incluyendo la química farmacéutica y medicamentos;",
           "padre_numero": 2,
           "x_id": 114,
@@ -35004,7 +35004,7 @@
         {
           "numero": 16,
           "tipo": "numeral",
-          "identificador": "14.",
+          "identificador": "14",
           "contenido": "De celulosa y papel;",
           "padre_numero": 2,
           "x_id": 114,
@@ -35013,7 +35013,7 @@
         {
           "numero": 17,
           "tipo": "numeral",
-          "identificador": "15.",
+          "identificador": "15",
           "contenido": "De aceites y grasas vegetales;",
           "padre_numero": 2,
           "x_id": 114,
@@ -35022,7 +35022,7 @@
         {
           "numero": 18,
           "tipo": "numeral",
-          "identificador": "16.",
+          "identificador": "16",
           "contenido": "Productora de alimentos, abarcando exclusivamente la fabricación de los que sean empacados, enlatados o envasados o que se destinen a ello;",
           "padre_numero": 2,
           "x_id": 114,
@@ -35031,7 +35031,7 @@
         {
           "numero": 19,
           "tipo": "numeral",
-          "identificador": "17.",
+          "identificador": "17",
           "contenido": "Elaboradora de bebidas que sean envasadas o enlatadas o que se destinen a ello;",
           "padre_numero": 2,
           "x_id": 114,
@@ -35040,7 +35040,7 @@
         {
           "numero": 20,
           "tipo": "numeral",
-          "identificador": "18.",
+          "identificador": "18",
           "contenido": "Ferrocarrilera;",
           "padre_numero": 2,
           "x_id": 114,
@@ -35049,7 +35049,7 @@
         {
           "numero": 21,
           "tipo": "numeral",
-          "identificador": "19.",
+          "identificador": "19",
           "contenido": "Maderera básica que comprende la producción de aserradero y la fabricación de triplay o aglutinados de madera;",
           "padre_numero": 2,
           "x_id": 114,
@@ -35058,7 +35058,7 @@
         {
           "numero": 22,
           "tipo": "numeral",
-          "identificador": "20.",
+          "identificador": "20",
           "contenido": "Vidriera, exclusivamente por lo que toca a la fabricación de vidrio plano, liso o labrado o de envases de vidrio;",
           "padre_numero": 2,
           "x_id": 114,
@@ -35070,7 +35070,7 @@
         {
           "numero": 23,
           "tipo": "numeral",
-          "identificador": "21.",
+          "identificador": "21",
           "contenido": "Tabacalera, que comprende el beneficio o fabricación de productos de tabaco; y",
           "padre_numero": 2,
           "x_id": 114,
@@ -35082,7 +35082,7 @@
         {
           "numero": 24,
           "tipo": "numeral",
-          "identificador": "22.",
+          "identificador": "22",
           "contenido": "Servicios de banca y crédito.",
           "padre_numero": 2,
           "x_id": 114,
@@ -35103,7 +35103,7 @@
         {
           "numero": 26,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Aquéllas que sean administradas en forma directa o descentralizada por el Gobierno Federal;",
           "padre_numero": 25,
           "x_id": 114,
@@ -35112,7 +35112,7 @@
         {
           "numero": 27,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Aquellas que actúen en virtud de un contrato, o concesión federal y las industrias que les sean conexas. Para los efectos de esta disposición, se considera que actúan bajo concesión federal aquellas empresas que tengan por objeto la administración y explotación de servicios públicos o bienes del Estado en forma regular y continua, para la satisfacción del interés colectivo, a través de cualquier acto administrativo emitido por el gobierno federal, y",
           "padre_numero": 25,
           "x_id": 114,
@@ -35124,7 +35124,7 @@
         {
           "numero": 28,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Aquéllas que ejecuten trabajos en zonas federales o que se encuentren bajo jurisdicción federal, en las aguas territoriales o en las comprendidas en la zona económica exclusiva de la Nación.",
           "padre_numero": 25,
           "x_id": 114,
@@ -35716,8 +35716,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Practicar estudios para determinar las causas del desempleo y del subempleo de la mano de obra rural y urbana;",
+          "identificador": "a",
+          "contenido": ") Practicar estudios para determinar las causas del desempleo y del subempleo de la mano de obra rural y urbana;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -35725,8 +35725,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Analizar permanentemente el mercado de trabajo, a través de la generación y procesamiento de información que dé seguimiento a la dinámica del empleo, desempleo y subempleo en el país;",
+          "identificador": "b",
+          "contenido": ") Analizar permanentemente el mercado de trabajo, a través de la generación y procesamiento de información que dé seguimiento a la dinámica del empleo, desempleo y subempleo en el país;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136,
@@ -35737,8 +35737,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Formular y actualizar permanentemente el Sistema Nacional de Ocupaciones, en coordinación con la Secretaría de Educación Pública y demás autoridades competentes;",
+          "identificador": "c",
+          "contenido": ") Formular y actualizar permanentemente el Sistema Nacional de Ocupaciones, en coordinación con la Secretaría de Educación Pública y demás autoridades competentes;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136,
@@ -35749,8 +35749,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Promover la articulación entre los actores del mercado de trabajo para mejorar las oportunidades de empleo;",
+          "identificador": "d",
+          "contenido": ") Promover la articulación entre los actores del mercado de trabajo para mejorar las oportunidades de empleo;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136,
@@ -35761,8 +35761,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Elaborar informes y formular programas para impulsar la ocupación en el país, así como procurar su ejecución;",
+          "identificador": "e",
+          "contenido": ") Elaborar informes y formular programas para impulsar la ocupación en el país, así como procurar su ejecución;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136,
@@ -35773,8 +35773,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Orientar la formación profesional hacia las áreas con mayor demanda de mano de obra;",
+          "identificador": "f",
+          "contenido": ") Orientar la formación profesional hacia las áreas con mayor demanda de mano de obra;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136,
@@ -35785,8 +35785,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Proponer la celebración de convenios en materia de empleo, entre la Federación y las Entidades Federativas; y,",
+          "identificador": "g",
+          "contenido": ") Proponer la celebración de convenios en materia de empleo, entre la Federación y las Entidades Federativas; y,",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -35794,8 +35794,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "En general, realizar todas las que las Leyes y reglamentos encomienden a la Secretaría del Trabajo y Previsión Social en esta materia.",
+          "identificador": "h",
+          "contenido": ") En general, realizar todas las que las Leyes y reglamentos encomienden a la Secretaría del Trabajo y Previsión Social en esta materia.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136,
@@ -35815,8 +35815,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Orientar a los buscadores de empleo hacia las vacantes ofertadas por los empleadores con base a su formación y aptitudes;",
+          "identificador": "a",
+          "contenido": ") Orientar a los buscadores de empleo hacia las vacantes ofertadas por los empleadores con base a su formación y aptitudes;",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136,
@@ -35827,8 +35827,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Autorizar y registrar, en su caso, el funcionamiento de agencias privadas que se dediquen a la colocación de personas;",
+          "identificador": "b",
+          "contenido": ") Autorizar y registrar, en su caso, el funcionamiento de agencias privadas que se dediquen a la colocación de personas;",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -35836,8 +35836,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Vigilar que las entidades privadas a que alude el inciso anterior, cumplan las obligaciones que les impongan esta ley, sus reglamentos y las disposiciones administrativas de las autoridades laborales;",
+          "identificador": "c",
+          "contenido": ") Vigilar que las entidades privadas a que alude el inciso anterior, cumplan las obligaciones que les impongan esta ley, sus reglamentos y las disposiciones administrativas de las autoridades laborales;",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -35845,8 +35845,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Intervenir, en coordinación con las Secretarías de Gobernación, Economía y Relaciones Exteriores, dentro del ámbito de sus respectivas competencias, en la contratación de los nacionales que vayan a prestar sus servicios al extranjero;",
+          "identificador": "d",
+          "contenido": ") Intervenir, en coordinación con las Secretarías de Gobernación, Economía y Relaciones Exteriores, dentro del ámbito de sus respectivas competencias, en la contratación de los nacionales que vayan a prestar sus servicios al extranjero;",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136,
@@ -35857,8 +35857,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Proponer la celebración de convenios en materia de colocación de trabajadores, entre la Federación y las Entidades Federativas; y,",
+          "identificador": "e",
+          "contenido": ") Proponer la celebración de convenios en materia de colocación de trabajadores, entre la Federación y las Entidades Federativas; y,",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136
@@ -35866,8 +35866,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "En general, realizar todas las que las Leyes y reglamentos encomienden a la Secretaría del Trabajo y Previsión Social en esta materia.",
+          "identificador": "f",
+          "contenido": ") En general, realizar todas las que las Leyes y reglamentos encomienden a la Secretaría del Trabajo y Previsión Social en esta materia.",
           "padre_numero": 11,
           "x_id": 114,
           "x_texto": 136,
@@ -35887,8 +35887,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "(Se deroga).",
+          "identificador": "a",
+          "contenido": ") (Se deroga).",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136,
@@ -35899,8 +35899,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Emitir Convocatorias para formar Comités Nacionales de Capacitación, Adiestramiento y Productividad en las ramas industriales o actividades en que lo juzgue conveniente, así como fijar las bases relativas a la integración y el funcionamiento de dichos comités;",
+          "identificador": "b",
+          "contenido": ") Emitir Convocatorias para formar Comités Nacionales de Capacitación, Adiestramiento y Productividad en las ramas industriales o actividades en que lo juzgue conveniente, así como fijar las bases relativas a la integración y el funcionamiento de dichos comités;",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136,
@@ -35911,8 +35911,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Estudiar y, en su caso, sugerir, en relación con cada rama industrial o actividad, la expedición de criterios generales idóneos para los planes y programas de capacitación y adiestramiento, oyendo la opinión del Comité Nacional de Capacitación, Adiestramiento y Productividad que corresponda;",
+          "identificador": "c",
+          "contenido": ") Estudiar y, en su caso, sugerir, en relación con cada rama industrial o actividad, la expedición de criterios generales idóneos para los planes y programas de capacitación y adiestramiento, oyendo la opinión del Comité Nacional de Capacitación, Adiestramiento y Productividad que corresponda;",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136,
@@ -35923,8 +35923,8 @@
         {
           "numero": 22,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Autorizar y registrar, en los términos del artículo 153-C, a las instituciones, escuelas u organismos especializados, así como a los instructores independientes que deseen impartir formación, capacitación o adiestramiento a los trabajadores; supervisar su correcto desempeño; y, en su caso, revocar la autorización y cancelar el registro concedido;",
+          "identificador": "d",
+          "contenido": ") Autorizar y registrar, en los términos del artículo 153-C, a las instituciones, escuelas u organismos especializados, así como a los instructores independientes que deseen impartir formación, capacitación o adiestramiento a los trabajadores; supervisar su correcto desempeño; y, en su caso, revocar la autorización y cancelar el registro concedido;",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136,
@@ -35935,8 +35935,8 @@
         {
           "numero": 23,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "(Se deroga).",
+          "identificador": "e",
+          "contenido": ") (Se deroga).",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136,
@@ -35947,8 +35947,8 @@
         {
           "numero": 24,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Estudiar y sugerir el establecimiento de sistemas generales que permitan, capacitar o adiestrar a los trabajadores, conforme al procedimiento de adhesión, convencional a que se refiere el artículo 153-B;",
+          "identificador": "f",
+          "contenido": ") Estudiar y sugerir el establecimiento de sistemas generales que permitan, capacitar o adiestrar a los trabajadores, conforme al procedimiento de adhesión, convencional a que se refiere el artículo 153-B;",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
@@ -35956,8 +35956,8 @@
         {
           "numero": 25,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Dictaminar sobre las sanciones que deban imponerse por infracciones a las normas contenidas en el Capítulo III Bis del Título Cuarto;",
+          "identificador": "g",
+          "contenido": ") Dictaminar sobre las sanciones que deban imponerse por infracciones a las normas contenidas en el Capítulo III Bis del Título Cuarto;",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
@@ -35965,8 +35965,8 @@
         {
           "numero": 26,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Establecer coordinación con la Secretaría de Educación Pública para sugerir, promover y organizar planes o programas sobre capacitación y adiestramiento para el trabajo y, en su caso, para la expedición de certificados, conforme a lo dispuesto en esta Ley, en los ordenamientos educativos y demás disposiciones en vigor; e",
+          "identificador": "h",
+          "contenido": ") Establecer coordinación con la Secretaría de Educación Pública para sugerir, promover y organizar planes o programas sobre capacitación y adiestramiento para el trabajo y, en su caso, para la expedición de certificados, conforme a lo dispuesto en esta Ley, en los ordenamientos educativos y demás disposiciones en vigor; e",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136,
@@ -35977,8 +35977,8 @@
         {
           "numero": 27,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "En general, realizar todas aquéllas que las leyes y reglamentos encomienden a la Secretaría del Trabajo y Previsión Social en esta materia.",
+          "identificador": "i",
+          "contenido": ") En general, realizar todas aquéllas que las leyes y reglamentos encomienden a la Secretaría del Trabajo y Previsión Social en esta materia.",
           "padre_numero": 18,
           "x_id": 114,
           "x_texto": 136
@@ -35995,8 +35995,8 @@
         {
           "numero": 29,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Establecer registros de constancias relativas a trabajadores capacitados o adiestrados, dentro de cada una de las ramas industriales o actividades; y",
+          "identificador": "a",
+          "contenido": ") Establecer registros de constancias relativas a trabajadores capacitados o adiestrados, dentro de cada una de las ramas industriales o actividades; y",
           "padre_numero": 28,
           "x_id": 114,
           "x_texto": 136
@@ -36004,8 +36004,8 @@
         {
           "numero": 30,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "En general, realizar todas aquéllas que las leyes y reglamentos confieran a la Secretaría del Trabajo y Previsión Social en esta materia.",
+          "identificador": "b",
+          "contenido": ") En general, realizar todas aquéllas que las leyes y reglamentos confieran a la Secretaría del Trabajo y Previsión Social en esta materia.",
           "padre_numero": 28,
           "x_id": 114,
           "x_texto": 136
@@ -36034,8 +36034,8 @@
         {
           "numero": 33,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Determinar los lineamientos generales aplicables en toda la República para la definición de aquellos conocimientos, habilidades o destrezas susceptibles de certificación, así como de los procedimientos de evaluación correspondientes. Para la fijación de dichos lineamientos, se establecerán procedimientos que permitan considerar las necesidades, propuestas y opiniones de los diversos sectores productivos; y",
+          "identificador": "a",
+          "contenido": ") Determinar los lineamientos generales aplicables en toda la República para la definición de aquellos conocimientos, habilidades o destrezas susceptibles de certificación, así como de los procedimientos de evaluación correspondientes. Para la fijación de dichos lineamientos, se establecerán procedimientos que permitan considerar las necesidades, propuestas y opiniones de los diversos sectores productivos; y",
           "padre_numero": 32,
           "x_id": 114,
           "x_texto": 136
@@ -36043,8 +36043,8 @@
         {
           "numero": 34,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Establecer un régimen de certificación, aplicable a toda la República, conforme al cual sea posible acreditar conocimientos, habilidades o destrezas, intermedios o terminales, de manera parcial y acumulativa, que requiere un individuo para la ejecución de una actividad productiva, independientemente de la forma en que hayan sido adquiridos.",
+          "identificador": "b",
+          "contenido": ") Establecer un régimen de certificación, aplicable a toda la República, conforme al cual sea posible acreditar conocimientos, habilidades o destrezas, intermedios o terminales, de manera parcial y acumulativa, que requiere un individuo para la ejecución de una actividad productiva, independientemente de la forma en que hayan sido adquiridos.",
           "padre_numero": 32,
           "x_id": 114,
           "x_texto": 136,
@@ -37591,8 +37591,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La situación económica general del país.",
+          "identificador": "a",
+          "contenido": ") La situación económica general del país.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -37600,8 +37600,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los cambios de mayor importancia que se hayan observado en las diversas actividades económicas.",
+          "identificador": "b",
+          "contenido": ") Los cambios de mayor importancia que se hayan observado en las diversas actividades económicas.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -37609,8 +37609,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las variaciones en el costo de la vida por familia.",
+          "identificador": "c",
+          "contenido": ") Las variaciones en el costo de la vida por familia.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -37618,8 +37618,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Las condiciones del mercado de trabajo y las estructuras salariales.",
+          "identificador": "d",
+          "contenido": ") Las condiciones del mercado de trabajo y las estructuras salariales.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -37636,8 +37636,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El presupuesto indispensable para la satisfacción de las siguientes necesidades de cada familia, entre otras: las de orden material, tales como la habitación, menaje de casa, alimentación, vestido y transporte; las de carácter social y cultural, tales como concurrencia a espectáculos, práctica de deportes, asistencia a escuelas de capacitación, bibliotecas y otros centros de cultura; y las relacionadas con la educación de los hijos.",
+          "identificador": "a",
+          "contenido": ") El presupuesto indispensable para la satisfacción de las siguientes necesidades de cada familia, entre otras: las de orden material, tales como la habitación, menaje de casa, alimentación, vestido y transporte; las de carácter social y cultural, tales como concurrencia a espectáculos, práctica de deportes, asistencia a escuelas de capacitación, bibliotecas y otros centros de cultura; y las relacionadas con la educación de los hijos.",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -37645,8 +37645,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las condiciones de vida y de trabajo de los trabajadores de salario mínimo.",
+          "identificador": "b",
+          "contenido": ") Las condiciones de vida y de trabajo de los trabajadores de salario mínimo.",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136
@@ -38156,8 +38156,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La solicitud deberá presentarse a la Secretaría del Trabajo y Previsión Social por los sindicatos, federaciones y confederaciones que representen el cincuenta y uno por ciento de los trabajadores sindicalizados, por lo menos, o por los patrones que tengan a su servicio por lo menos dicho Porcentaje de trabajadores.",
+          "identificador": "a",
+          "contenido": ") La solicitud deberá presentarse a la Secretaría del Trabajo y Previsión Social por los sindicatos, federaciones y confederaciones que representen el cincuenta y uno por ciento de los trabajadores sindicalizados, por lo menos, o por los patrones que tengan a su servicio por lo menos dicho Porcentaje de trabajadores.",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136
@@ -38165,8 +38165,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La solicitud contendrá una exposición de los fundamentos que la justifiquen y podrá acompañarse de los estudios y documentos que correspondan.",
+          "identificador": "b",
+          "contenido": ") La solicitud contendrá una exposición de los fundamentos que la justifiquen y podrá acompañarse de los estudios y documentos que correspondan.",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136
@@ -38174,8 +38174,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El Secretario del Trabajo y Previsión Social, dentro de los cinco días siguientes a la fecha en que reciba la solicitud correspondiente y previa certificación de la mayoría a que se refiere el inciso a) de este artículo, la hará llegar al Presidente de la Comisión Nacional de los Salarios Mínimos con los estudios y documentos que la acompañen.",
+          "identificador": "c",
+          "contenido": ") El Secretario del Trabajo y Previsión Social, dentro de los cinco días siguientes a la fecha en que reciba la solicitud correspondiente y previa certificación de la mayoría a que se refiere el inciso a) de este artículo, la hará llegar al Presidente de la Comisión Nacional de los Salarios Mínimos con los estudios y documentos que la acompañen.",
           "padre_numero": 4,
           "x_id": 114,
           "x_texto": 136,
@@ -38985,8 +38985,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La solicitud deberá presentarse a la Secretaría del Trabajo y Previsión Social por los sindicatos, federaciones o confederaciones que representen el cincuenta y uno por ciento de los trabajadores sindicalizados, por lo menos, o por los patrones que tengan a su servicio dicho porcentaje de trabajadores.",
+          "identificador": "a",
+          "contenido": ") La solicitud deberá presentarse a la Secretaría del Trabajo y Previsión Social por los sindicatos, federaciones o confederaciones que representen el cincuenta y uno por ciento de los trabajadores sindicalizados, por lo menos, o por los patrones que tengan a su servicio dicho porcentaje de trabajadores.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -38994,8 +38994,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La solicitud contendrá una exposición de las causas y fundamentos que la justifiquen e irá acompañada de los estudios y documentos correspondientes.",
+          "identificador": "b",
+          "contenido": ") La solicitud contendrá una exposición de las causas y fundamentos que la justifiquen e irá acompañada de los estudios y documentos correspondientes.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -39003,8 +39003,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La Secretaría del Trabajo y Previsión Social, dentro de los noventa días siguientes, verificará el requisito de la mayoría.",
+          "identificador": "c",
+          "contenido": ") La Secretaría del Trabajo y Previsión Social, dentro de los noventa días siguientes, verificará el requisito de la mayoría.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -39012,8 +39012,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Verificado dicho requisito, la misma Secretaría, dentro de los treinta días siguientes, convocará a los trabajadores y patrones para la elección de sus representantes.",
+          "identificador": "d",
+          "contenido": ") Verificado dicho requisito, la misma Secretaría, dentro de los treinta días siguientes, convocará a los trabajadores y patrones para la elección de sus representantes.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -39332,8 +39332,8 @@
         {
           "numero": 2,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El titular de la Secretaría del Trabajo y Previsión Social como miembro propietario o su suplente, quien fungirá como Presidente de dicha Junta de Gobierno;",
+          "identificador": "a",
+          "contenido": ") El titular de la Secretaría del Trabajo y Previsión Social como miembro propietario o su suplente, quien fungirá como Presidente de dicha Junta de Gobierno;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -39341,8 +39341,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El titular de la Secretaría de Hacienda y Crédito Público como miembro propietario o su suplente;",
+          "identificador": "b",
+          "contenido": ") El titular de la Secretaría de Hacienda y Crédito Público como miembro propietario o su suplente;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -39350,8 +39350,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El titular del Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales como miembro propietario o su suplente;",
+          "identificador": "c",
+          "contenido": ") El titular del Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales como miembro propietario o su suplente;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -39359,8 +39359,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "El Presidente del Instituto Nacional de Estadística y Geografía como miembro propietario o su suplente, y",
+          "identificador": "d",
+          "contenido": ") El Presidente del Instituto Nacional de Estadística y Geografía como miembro propietario o su suplente, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -39368,8 +39368,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "El Presidente del Instituto Nacional Electoral como miembro propietario o su suplente.",
+          "identificador": "e",
+          "contenido": ") El Presidente del Instituto Nacional Electoral como miembro propietario o su suplente.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -39467,8 +39467,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "En la estructura básica del Organismo, deberá contemplar la instalación y funcionamiento de las Delegaciones del mismo en todas las entidades federativas, excepto en la Ciudad de México, en razón de que tiene establecida su Matriz y domicilio legal principal en dicha ciudad;",
+          "identificador": "a",
+          "contenido": ") En la estructura básica del Organismo, deberá contemplar la instalación y funcionamiento de las Delegaciones del mismo en todas las entidades federativas, excepto en la Ciudad de México, en razón de que tiene establecida su Matriz y domicilio legal principal en dicha ciudad;",
           "padre_numero": 16,
           "x_id": 114,
           "x_texto": 136
@@ -39476,8 +39476,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Deberá contar con el personal suficiente y adecuado, así como de una Oficina Especializada de Asesoría a los o las trabajadoras para que los asista en la conciliación;",
+          "identificador": "b",
+          "contenido": ") Deberá contar con el personal suficiente y adecuado, así como de una Oficina Especializada de Asesoría a los o las trabajadoras para que los asista en la conciliación;",
           "padre_numero": 16,
           "x_id": 114,
           "x_texto": 136
@@ -41222,8 +41222,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los sindicatos de trabajadores debidamente registrados.",
+          "identificador": "a",
+          "contenido": ") Los sindicatos de trabajadores debidamente registrados.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -41231,8 +41231,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los trabajadores libres que hubiesen prestado servicios a un patrón, por un período no menor de seis meses durante el año anterior a la fecha de la convocatoria, cuando no existan sindicatos registrados;",
+          "identificador": "b",
+          "contenido": ") Los trabajadores libres que hubiesen prestado servicios a un patrón, por un período no menor de seis meses durante el año anterior a la fecha de la convocatoria, cuando no existan sindicatos registrados;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -41249,8 +41249,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Estén prestando servicios a un patrón.",
+          "identificador": "a",
+          "contenido": ") Estén prestando servicios a un patrón.",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -41258,8 +41258,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Hubiesen prestado servicios a un patrón por un período de seis meses durante el año anterior a la fecha de la convocatoria;",
+          "identificador": "b",
+          "contenido": ") Hubiesen prestado servicios a un patrón por un período de seis meses durante el año anterior a la fecha de la convocatoria;",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -41311,8 +41311,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los sindicatos de patrones debidamente registrados, cuyos miembros tengan trabajadores a su servicio.",
+          "identificador": "a",
+          "contenido": ") Los sindicatos de patrones debidamente registrados, cuyos miembros tengan trabajadores a su servicio.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -41320,8 +41320,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los patrones independientes que tengan trabajadores a su servicio;",
+          "identificador": "b",
+          "contenido": ") Los patrones independientes que tengan trabajadores a su servicio;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -43114,8 +43114,8 @@
         {
           "numero": 2,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Conocimientos generales de derecho y específicos en materia laboral;",
+          "identificador": "a",
+          "contenido": ") Conocimientos generales de derecho y específicos en materia laboral;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -43123,8 +43123,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Análisis y resolución de controversias;",
+          "identificador": "b",
+          "contenido": ") Análisis y resolución de controversias;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -43132,8 +43132,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Gestión del conflicto, y",
+          "identificador": "c",
+          "contenido": ") Gestión del conflicto, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -43141,8 +43141,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Aptitudes en la función conciliatoria.",
+          "identificador": "d",
+          "contenido": ") Aptitudes en la función conciliatoria.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -43235,8 +43235,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Formato de inscripción, que se pondrá a disposición en las instalaciones del Centro de Conciliación y en su portal de Internet;",
+          "identificador": "a",
+          "contenido": ") Formato de inscripción, que se pondrá a disposición en las instalaciones del Centro de Conciliación y en su portal de Internet;",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -43244,8 +43244,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Currículum vitae actualizado del aspirante, acompañado con los documentos que soporten la información;",
+          "identificador": "b",
+          "contenido": ") Currículum vitae actualizado del aspirante, acompañado con los documentos que soporten la información;",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -43253,8 +43253,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Copia certificada del acta de nacimiento;",
+          "identificador": "c",
+          "contenido": ") Copia certificada del acta de nacimiento;",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -43262,8 +43262,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Copia del Título y de la cédula profesional;",
+          "identificador": "d",
+          "contenido": ") Copia del Título y de la cédula profesional;",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -43271,8 +43271,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Escrito en el que, bajo protesta de decir verdad, manifieste encontrarse en pleno goce de sus derechos, y",
+          "identificador": "e",
+          "contenido": ") Escrito en el que, bajo protesta de decir verdad, manifieste encontrarse en pleno goce de sus derechos, y",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -43280,8 +43280,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Comprobante de domicilio.",
+          "identificador": "f",
+          "contenido": ") Comprobante de domicilio.",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -43652,8 +43652,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La libertad de asociación, libertad sindical y el reconocimiento efectivo de la negociación colectiva;",
+          "identificador": "a",
+          "contenido": ") La libertad de asociación, libertad sindical y el reconocimiento efectivo de la negociación colectiva;",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -43661,8 +43661,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Trata laboral, así como trabajo forzoso y obligatorio, y",
+          "identificador": "b",
+          "contenido": ") Trata laboral, así como trabajo forzoso y obligatorio, y",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -43670,8 +43670,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Trabajo infantil.",
+          "identificador": "c",
+          "contenido": ") Trabajo infantil.",
           "padre_numero": 5,
           "x_id": 114,
           "x_texto": 136
@@ -44191,8 +44191,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El Tribunal del lugar de celebración del contrato;",
+          "identificador": "a",
+          "contenido": ") El Tribunal del lugar de celebración del contrato;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136,
@@ -44203,8 +44203,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El Tribunal del domicilio de cualquiera de los demandados, y",
+          "identificador": "b",
+          "contenido": ") El Tribunal del domicilio de cualquiera de los demandados, y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136,
@@ -44215,8 +44215,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El Tribunal del lugar de prestación de los servicios; si éstos se prestaron en varios lugares, será el Tribunal del último de ellos.",
+          "identificador": "c",
+          "contenido": ") El Tribunal del lugar de prestación de los servicios; si éstos se prestaron en varios lugares, será el Tribunal del último de ellos.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136,
@@ -44422,8 +44422,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Tribunales Federales y Locales;",
+          "identificador": "a",
+          "contenido": ") Tribunales Federales y Locales;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -44431,8 +44431,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Tribunales Locales de diversas entidades federativas;",
+          "identificador": "b",
+          "contenido": ") Tribunales Locales de diversas entidades federativas;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -44440,8 +44440,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Tribunales Locales y otro órgano jurisdiccional federal o de diversa entidad federativa;",
+          "identificador": "c",
+          "contenido": ") Tribunales Locales y otro órgano jurisdiccional federal o de diversa entidad federativa;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -44449,8 +44449,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Tribunales Federales, y",
+          "identificador": "d",
+          "contenido": ") Tribunales Federales, y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -44458,8 +44458,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Tribunales Federales y otro órgano jurisdiccional.",
+          "identificador": "e",
+          "contenido": ") Tribunales Federales y otro órgano jurisdiccional.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -46243,8 +46243,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "A las autoridades a que se refiere el artículo 742 Ter de esta Ley, salvo que se trate de la primera notificación, en cuyo caso se observará lo establecido en el artículo 742 de esta Ley, y",
+          "identificador": "a",
+          "contenido": ") A las autoridades a que se refiere el artículo 742 Ter de esta Ley, salvo que se trate de la primera notificación, en cuyo caso se observará lo establecido en el artículo 742 de esta Ley, y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -46252,8 +46252,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "A la autoridad que tenga el carácter de tercero interesado;",
+          "identificador": "b",
+          "contenido": ") A la autoridad que tenga el carácter de tercero interesado;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -48593,8 +48593,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "No se cumplan las hipótesis previstas en el primer párrafo del presente artículo;",
+          "identificador": "a",
+          "contenido": ") No se cumplan las hipótesis previstas en el primer párrafo del presente artículo;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -48602,8 +48602,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Sea sobreabundante o se trate de absolventes cuya confesión o declaración verse sobre los mismos hechos;",
+          "identificador": "b",
+          "contenido": ") Sea sobreabundante o se trate de absolventes cuya confesión o declaración verse sobre los mismos hechos;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -48611,8 +48611,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Cuando los hechos sobre los que se pretenda que declare, resulten inverosímiles a criterio del juez, y",
+          "identificador": "c",
+          "contenido": ") Cuando los hechos sobre los que se pretenda que declare, resulten inverosímiles a criterio del juez, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -48620,8 +48620,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Su comparecencia resulte innecesaria o su desahogo pueda causar una dilación indebida del juicio.",
+          "identificador": "d",
+          "contenido": ") Su comparecencia resulte innecesaria o su desahogo pueda causar una dilación indebida del juicio.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -50188,8 +50188,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las partes y sus apoderados podrán concurrir a la diligencia de inspección y formular las objeciones u observaciones que estimen pertinentes;",
+          "identificador": "a",
+          "contenido": ") Las partes y sus apoderados podrán concurrir a la diligencia de inspección y formular las objeciones u observaciones que estimen pertinentes;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -50197,8 +50197,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El juez o el funcionario actuante requerirá se le pongan a la vista los documentos y objetos que deben inspeccionarse, y",
+          "identificador": "b",
+          "contenido": ") El juez o el funcionario actuante requerirá se le pongan a la vista los documentos y objetos que deben inspeccionarse, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -50206,8 +50206,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "De la diligencia se levantará acta circunstanciada, que firmarán los que en ella intervengan, la cual se agregará al expediente, previa razón en autos; a la misma podrán anexarse los elementos que se estimen pertinentes para robustecer los medios de convicción del desahogo de la diligencia.",
+          "identificador": "c",
+          "contenido": ") De la diligencia se levantará acta circunstanciada, que firmarán los que en ella intervengan, la cual se agregará al expediente, previa razón en autos; a la misma podrán anexarse los elementos que se estimen pertinentes para robustecer los medios de convicción del desahogo de la diligencia.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136,
@@ -50227,8 +50227,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El juez requerirá se le pongan a la vista los documentos y objetos que deben inspeccionarse, y",
+          "identificador": "a",
+          "contenido": ") El juez requerirá se le pongan a la vista los documentos y objetos que deben inspeccionarse, y",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136
@@ -50236,8 +50236,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las partes podrán formular las objeciones u observaciones que estimen pertinentes.",
+          "identificador": "b",
+          "contenido": ") Las partes podrán formular las objeciones u observaciones que estimen pertinentes.",
           "padre_numero": 6,
           "x_id": 114,
           "x_texto": 136,
@@ -50495,8 +50495,8 @@
         {
           "numero": 2,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Autoridad Certificadora: a las dependencias y entidades de la Administración Pública Federal y a los prestadores de servicios de certificación que, conforme a las disposiciones jurídicas, tengan reconocida esta calidad y cuenten con la infraestructura tecnológica para la emisión, administración y registro de certificados digitales, así como para proporcionar servicios relacionados con los mismos;",
+          "identificador": "a",
+          "contenido": ") Autoridad Certificadora: a las dependencias y entidades de la Administración Pública Federal y a los prestadores de servicios de certificación que, conforme a las disposiciones jurídicas, tengan reconocida esta calidad y cuenten con la infraestructura tecnológica para la emisión, administración y registro de certificados digitales, así como para proporcionar servicios relacionados con los mismos;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50504,8 +50504,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Clave de acceso: al conjunto único de caracteres alfanuméricos que un usuario emplea para acceder a un servicio, sistema o programa y que puede estar asociado a un medio físico, magnético o biométrico;",
+          "identificador": "b",
+          "contenido": ") Clave de acceso: al conjunto único de caracteres alfanuméricos que un usuario emplea para acceder a un servicio, sistema o programa y que puede estar asociado a un medio físico, magnético o biométrico;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50513,8 +50513,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Certificado Digital: a la constancia digital emitida por una Autoridad Certificadora que garantiza la autenticidad de los datos de identidad del titular del certificado;",
+          "identificador": "c",
+          "contenido": ") Certificado Digital: a la constancia digital emitida por una Autoridad Certificadora que garantiza la autenticidad de los datos de identidad del titular del certificado;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50522,8 +50522,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Contraseña: al conjunto único de caracteres secretos que permite validar la identificación de la persona a la que se le asignó una Clave de Acceso para ingresar a un servicio, sistema o programa;",
+          "identificador": "d",
+          "contenido": ") Contraseña: al conjunto único de caracteres secretos que permite validar la identificación de la persona a la que se le asignó una Clave de Acceso para ingresar a un servicio, sistema o programa;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50531,8 +50531,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Clave privada: el conjunto de caracteres que genera el titular del certificado digital de manera exclusiva y secreta para crear su firma electrónica avanzada;",
+          "identificador": "e",
+          "contenido": ") Clave privada: el conjunto de caracteres que genera el titular del certificado digital de manera exclusiva y secreta para crear su firma electrónica avanzada;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50540,8 +50540,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Clave pública: los datos contenidos en un certificado digital que permiten la identificación del firmante y la verificación de la autenticidad de su firma electrónica avanzada;",
+          "identificador": "f",
+          "contenido": ") Clave pública: los datos contenidos en un certificado digital que permiten la identificación del firmante y la verificación de la autenticidad de su firma electrónica avanzada;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50549,8 +50549,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Destinatario: la persona designada por el emisor para recibir el mensaje de datos;",
+          "identificador": "g",
+          "contenido": ") Destinatario: la persona designada por el emisor para recibir el mensaje de datos;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50558,8 +50558,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Documento Digital: la información que sólo puede ser generada, consultada, modificada y procesada por medios electrónicos, y enviada a través de un mensaje de datos;",
+          "identificador": "h",
+          "contenido": ") Documento Digital: la información que sólo puede ser generada, consultada, modificada y procesada por medios electrónicos, y enviada a través de un mensaje de datos;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50567,8 +50567,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "Emisor: a la persona que envía un documento digital o un mensaje de datos;",
+          "identificador": "i",
+          "contenido": ") Emisor: a la persona que envía un documento digital o un mensaje de datos;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50576,8 +50576,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "j)",
-          "contenido": "Firma electrónica: Conjunto de datos que en forma electrónica son vinculados o asociados a un mensaje de datos por cualquier tecnología y que son utilizados para identificar al firmante en relación con el mensaje de datos para indicar que aprueba la información contenida en el mensaje de datos;",
+          "identificador": "j",
+          "contenido": ") Firma electrónica: Conjunto de datos que en forma electrónica son vinculados o asociados a un mensaje de datos por cualquier tecnología y que son utilizados para identificar al firmante en relación con el mensaje de datos para indicar que aprueba la información contenida en el mensaje de datos;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50585,8 +50585,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "k)",
-          "contenido": "Firma Electrónica Avanzada: al conjunto de caracteres que permite la identificación del firmante en los documentos electrónicos o en los mensajes de datos, como resultado de utilizar su certificado digital y clave privada y que produce los mismos efectos jurídicos que la firma autógrafa;",
+          "identificador": "k",
+          "contenido": ") Firma Electrónica Avanzada: al conjunto de caracteres que permite la identificación del firmante en los documentos electrónicos o en los mensajes de datos, como resultado de utilizar su certificado digital y clave privada y que produce los mismos efectos jurídicos que la firma autógrafa;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50594,8 +50594,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "l)",
-          "contenido": "Firmante: a toda persona que utiliza su firma electrónica o firma electrónica avanzada para suscribir documentos digitales y, en su caso, mensajes de datos;",
+          "identificador": "l",
+          "contenido": ") Firmante: a toda persona que utiliza su firma electrónica o firma electrónica avanzada para suscribir documentos digitales y, en su caso, mensajes de datos;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50603,8 +50603,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "m)",
-          "contenido": "Medios de Comunicación Electrónica: a los dispositivos tecnológicos para efectuar la transmisión y recepción de mensajes de datos y documentos digitales;",
+          "identificador": "m",
+          "contenido": ") Medios de Comunicación Electrónica: a los dispositivos tecnológicos para efectuar la transmisión y recepción de mensajes de datos y documentos digitales;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50612,8 +50612,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "n)",
-          "contenido": "Medios Electrónicos: a los dispositivos tecnológicos para el procesamiento, impresión, despliegue, almacenamiento, reproducción, recuperación, extracción y conservación de la información; ñ) Mensaje de Datos: al intercambio de información entre un emisor y un receptor a través de medios de comunicación electrónica;",
+          "identificador": "n",
+          "contenido": ") Medios Electrónicos: a los dispositivos tecnológicos para el procesamiento, impresión, despliegue, almacenamiento, reproducción, recuperación, extracción y conservación de la información; ñ) Mensaje de Datos: al intercambio de información entre un emisor y un receptor a través de medios de comunicación electrónica;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50621,8 +50621,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "o)",
-          "contenido": "Número de identificación personal (NIP): la contraseña que se utiliza en los servicios, sistemas o programas, para obtener acceso, o identificarse; y",
+          "identificador": "o",
+          "contenido": ") Número de identificación personal (NIP): la contraseña que se utiliza en los servicios, sistemas o programas, para obtener acceso, o identificarse; y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50630,8 +50630,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "p)",
-          "contenido": "Sistema de información: conjunto de elementos tecnológicos para generar, enviar, recibir, almacenar o procesar información.",
+          "identificador": "p",
+          "contenido": ") Sistema de información: conjunto de elementos tecnológicos para generar, enviar, recibir, almacenar o procesar información.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -50639,8 +50639,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "q)",
-          "contenido": "CFDI: Comprobante Fiscal Digital por Internet o documento equivalente en términos de las disposiciones fiscales aplicables.",
+          "identificador": "q",
+          "contenido": ") CFDI: Comprobante Fiscal Digital por Internet o documento equivalente en términos de las disposiciones fiscales aplicables.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -51852,8 +51852,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Admitir o prevenir la demanda y en su caso subsanarla conforme a las normas del trabajo y lo establecido en la presente Ley;",
+          "identificador": "a",
+          "contenido": ") Admitir o prevenir la demanda y en su caso subsanarla conforme a las normas del trabajo y lo establecido en la presente Ley;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -51861,8 +51861,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Ordenar la notificación al demandado;",
+          "identificador": "b",
+          "contenido": ") Ordenar la notificación al demandado;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -51870,8 +51870,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Ordenar las vistas, traslados y notificaciones;",
+          "identificador": "c",
+          "contenido": ") Ordenar las vistas, traslados y notificaciones;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -51879,8 +51879,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Admitir y en su caso proveer respecto de las pruebas ofrecidas para acreditar las excepciones dilatorias;",
+          "identificador": "d",
+          "contenido": ") Admitir y en su caso proveer respecto de las pruebas ofrecidas para acreditar las excepciones dilatorias;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -51888,8 +51888,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Dictar las providencias cautelares, y",
+          "identificador": "e",
+          "contenido": ") Dictar las providencias cautelares, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -51897,8 +51897,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Las demás que el juez le ordene.",
+          "identificador": "f",
+          "contenido": ") Las demás que el juez le ordene.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -51935,7 +51935,7 @@
         {
           "numero": 2,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "La demanda deberá estar firmada y señalar lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
@@ -52007,7 +52007,7 @@
         {
           "numero": 10,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "A la demanda deberá anexarse lo siguiente:",
           "padre_numero": 9,
           "x_id": 85,
@@ -52373,8 +52373,8 @@
         {
           "numero": 2,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Depurar el procedimiento y resolver las excepciones dilatorias planteadas por las partes;",
+          "identificador": "a",
+          "contenido": ") Depurar el procedimiento y resolver las excepciones dilatorias planteadas por las partes;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -52382,8 +52382,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Establecer los hechos no controvertidos;",
+          "identificador": "b",
+          "contenido": ") Establecer los hechos no controvertidos;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -52391,8 +52391,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Admitir o desechar las pruebas ofrecidas por las partes, según sea el caso;",
+          "identificador": "c",
+          "contenido": ") Admitir o desechar las pruebas ofrecidas por las partes, según sea el caso;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -52400,8 +52400,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Citar para audiencia de juicio;",
+          "identificador": "d",
+          "contenido": ") Citar para audiencia de juicio;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -52409,8 +52409,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Resolver el recurso de reconsideración contra los actos u omisiones del secretario instructor.",
+          "identificador": "e",
+          "contenido": ") Resolver el recurso de reconsideración contra los actos u omisiones del secretario instructor.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -52539,8 +52539,8 @@
         {
           "numero": 2,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Si se tratare de autoridades, el Tribunal las requerirá para que envíen los documentos o copias; si no cumplieren con ello, el Tribunal dictará las medidas de apremio conducentes, sin perjuicio de dar vista del incumplimiento al superior jerárquico del servidor público omiso, y en su caso al órgano de control competente, y",
+          "identificador": "a",
+          "contenido": ") Si se tratare de autoridades, el Tribunal las requerirá para que envíen los documentos o copias; si no cumplieren con ello, el Tribunal dictará las medidas de apremio conducentes, sin perjuicio de dar vista del incumplimiento al superior jerárquico del servidor público omiso, y en su caso al órgano de control competente, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -52548,8 +52548,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Si se trata de terceros, el Tribunal dictará las medidas de apremio correspondientes, hasta que se logre la presentación de las copias o documentos requeridos.",
+          "identificador": "b",
+          "contenido": ") Si se trata de terceros, el Tribunal dictará las medidas de apremio correspondientes, hasta que se logre la presentación de las copias o documentos requeridos.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -53530,8 +53530,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Al Instituto Mexicano del Seguro Social o institución de seguridad social homologa, Servicio de Administración Tributaria, Instituto del Fondo Nacional de la Vivienda para los Trabajadores y demás autoridades que por la naturaleza de su actividad puedan tener información de los trabajadores del centro de trabajo, la información necesaria a fin de elaborar el padrón que servirá de base en la prueba de recuento; esta información abarcará el período de tres meses de anticipación a la fecha de presentación de la demanda;",
+          "identificador": "a",
+          "contenido": ") Al Instituto Mexicano del Seguro Social o institución de seguridad social homologa, Servicio de Administración Tributaria, Instituto del Fondo Nacional de la Vivienda para los Trabajadores y demás autoridades que por la naturaleza de su actividad puedan tener información de los trabajadores del centro de trabajo, la información necesaria a fin de elaborar el padrón que servirá de base en la prueba de recuento; esta información abarcará el período de tres meses de anticipación a la fecha de presentación de la demanda;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -53539,8 +53539,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Al patrón, para que bajo protesta de decir verdad, informe el nombre de todos sus trabajadores, distinguiendo los de confianza, los sindicalizables y sindicalizados, además de precisar puesto, salario y fecha de ingreso. Asimismo, señalará los nombres de los trabajadores que hayan ingresado a laborar, hayan sido despedidos o dejado de prestar sus servicios con tres meses de anterioridad a la fecha de la presentación de la demanda, y anexará un ejemplar del contrato colectivo de trabajo;",
+          "identificador": "b",
+          "contenido": ") Al patrón, para que bajo protesta de decir verdad, informe el nombre de todos sus trabajadores, distinguiendo los de confianza, los sindicalizables y sindicalizados, además de precisar puesto, salario y fecha de ingreso. Asimismo, señalará los nombres de los trabajadores que hayan ingresado a laborar, hayan sido despedidos o dejado de prestar sus servicios con tres meses de anterioridad a la fecha de la presentación de la demanda, y anexará un ejemplar del contrato colectivo de trabajo;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -53548,8 +53548,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Al Centro Federal de Conciliación y Registro Laboral, la documentación e información relativa al registro del contrato colectivo o de la administración del contrato-ley, tabuladores, padrones de trabajadores afiliados a los sindicatos contendientes y toda aquella información que posea.",
+          "identificador": "c",
+          "contenido": ") Al Centro Federal de Conciliación y Registro Laboral, la documentación e información relativa al registro del contrato colectivo o de la administración del contrato-ley, tabuladores, padrones de trabajadores afiliados a los sindicatos contendientes y toda aquella información que posea.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -56403,8 +56403,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Por la presentación de la solicitud de ejecución debidamente requisitada, mediante la cual la parte que obtuvo sentencia favorable, solicite al juez dicte el auto de requerimiento y embargo correspondiente, o bien que abra el Incidente de Liquidación, y",
+          "identificador": "a",
+          "contenido": ") Por la presentación de la solicitud de ejecución debidamente requisitada, mediante la cual la parte que obtuvo sentencia favorable, solicite al juez dicte el auto de requerimiento y embargo correspondiente, o bien que abra el Incidente de Liquidación, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -56412,8 +56412,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando alguna de las partes interponga el medio de impugnación correspondiente. Independientemente de lo anterior, las partes pueden convenir en las modalidades de su cumplimiento.",
+          "identificador": "b",
+          "contenido": ") Cuando alguna de las partes interponga el medio de impugnación correspondiente. Independientemente de lo anterior, las partes pueden convenir en las modalidades de su cumplimiento.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -57101,8 +57101,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Vigilar la contabilidad:",
+          "identificador": "a",
+          "contenido": ") Vigilar la contabilidad:",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -57110,8 +57110,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Administrar el manejo de la negociación o empresa y las operaciones que en ella se practiquen, a fin de que produzcan el mejor rendimiento posible; y los demás actos inherentes a su cargo.",
+          "identificador": "b",
+          "contenido": ") Administrar el manejo de la negociación o empresa y las operaciones que en ella se practiquen, a fin de que produzcan el mejor rendimiento posible; y los demás actos inherentes a su cargo.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -57405,7 +57405,7 @@
         {
           "numero": 2,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "Si los bienes embargados son muebles:",
           "padre_numero": null,
           "x_id": 85,
@@ -57447,7 +57447,7 @@
         {
           "numero": 6,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "Si los bienes embargados son inmuebles:",
           "padre_numero": 5,
           "x_id": 85,
@@ -57776,8 +57776,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El anterior propietario entregará al Tribunal, toda la documentación relacionada con el inmueble que se remató.",
+          "identificador": "a",
+          "contenido": ") El anterior propietario entregará al Tribunal, toda la documentación relacionada con el inmueble que se remató.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136,
@@ -57788,8 +57788,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Si se lo adjudica el trabajador, deberá ser libre de todo gravamen, impuestos y derechos fiscales.",
+          "identificador": "b",
+          "contenido": ") Si se lo adjudica el trabajador, deberá ser libre de todo gravamen, impuestos y derechos fiscales.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -57797,8 +57797,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La escritura deberá firmarla el anterior propietario, dentro de los cinco días siguientes a la notificación que le haga el notario público respectivo. Si no lo hace, el Tribunal lo hará en su rebeldía, y",
+          "identificador": "c",
+          "contenido": ") La escritura deberá firmarla el anterior propietario, dentro de los cinco días siguientes a la notificación que le haga el notario público respectivo. Si no lo hace, el Tribunal lo hará en su rebeldía, y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136,
@@ -58215,8 +58215,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La cantidad adicional a repartir a los trabajadores.",
+          "identificador": "a",
+          "contenido": ") La cantidad adicional a repartir a los trabajadores.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -58224,8 +58224,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los intereses legales computados por un año.",
+          "identificador": "b",
+          "contenido": ") Los intereses legales computados por un año.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136

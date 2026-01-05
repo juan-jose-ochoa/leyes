@@ -449,7 +449,7 @@
         {
           "numero": 4,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "De los pagos a plazos en parcialidades de hasta 12 meses, la tasa de recargos será del 1.42 por ciento mensual.",
           "padre_numero": 3,
           "x_id": 129,
@@ -458,7 +458,7 @@
         {
           "numero": 5,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "De los pagos a plazos en parcialidades de más de 12 meses y hasta de 24 meses, la tasa de recargos será de 1.63 por ciento mensual.",
           "padre_numero": 3,
           "x_id": 129,
@@ -467,7 +467,7 @@
         {
           "numero": 6,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "De los pagos a plazos en parcialidades superiores a 24 meses, así como tratándose de pagos a plazo diferido, la tasa de recargos será de 1.97 por ciento mensual.",
           "padre_numero": 3,
           "x_id": 129,
@@ -1313,7 +1313,7 @@
         {
           "numero": 2,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "En materia de estímulos fiscales:",
           "padre_numero": null,
           "x_id": 100,
@@ -1358,7 +1358,7 @@
         {
           "numero": 7,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "El monto que se podrá acreditar será el que resulte de multiplicar la cuota del impuesto especial sobre producción y servicios que corresponda conforme al artículo 2o., fracción I, inciso D), numeral 1, subinciso c) o numeral 2 de la Ley del Impuesto Especial sobre Producción y Servicios, según corresponda al tipo de combustible, con los ajustes que, en su caso, correspondan, vigente en el momento en que se haya realizado la importación o adquisición del diésel o el biodiésel y sus mezclas, por el número de litros de diésel o de biodiésel y sus mezclas importados o adquiridos.",
           "padre_numero": 6,
           "x_id": 150,
@@ -1376,7 +1376,7 @@
         {
           "numero": 9,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Las personas dedicadas a las actividades agropecuarias o silvícolas que se dediquen exclusivamente a estas actividades conforme al párrafo sexto del artículo 74 de la Ley del Impuesto sobre la Renta, que utilicen el diésel o el biodiésel y sus mezclas en dichas actividades, podrán acreditar un monto equivalente a la cantidad que resulte de multiplicar el valor en aduana del pedimento de importación o el precio consignado en el comprobante fiscal de adquisición del diésel o del biodiésel y sus mezclas en las estaciones de servicio, incluido el impuesto al valor agregado, por el factor de 0.355, en lugar de aplicar lo dispuesto en el numeral anterior. Para la determinación del estímulo en los términos de este párrafo, no se considerará el impuesto correspondiente al artículo 2o.-A de la Ley del Impuesto Especial sobre Producción y Servicios, incluido dentro del precio señalado.",
           "padre_numero": 6,
           "x_id": 150,
@@ -1682,7 +1682,7 @@
         {
           "numero": 43,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "En materia de exenciones:",
           "padre_numero": null,
           "x_id": 100,
@@ -1700,7 +1700,7 @@
         {
           "numero": 45,
           "tipo": "apartado",
-          "identificador": "C.",
+          "identificador": "C",
           "contenido": "La persona titular del Ejecutivo Federal podrá otorgar los beneficios fiscales que sean necesarios para dar debido cumplimiento a las resoluciones derivadas de la aplicación de mecanismos internacionales para la solución de controversias legales que determinen una violación a un tratado internacional.",
           "padre_numero": null,
           "x_id": 100,
@@ -1947,8 +1947,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Tratándose de las organizaciones civiles y fideicomisos autorizados para recibir donativos, se deberá cumplir con lo siguiente:",
+          "identificador": "a",
+          "contenido": ") Tratándose de las organizaciones civiles y fideicomisos autorizados para recibir donativos, se deberá cumplir con lo siguiente:",
           "padre_numero": 2,
           "x_id": 129,
           "x_texto": 151
@@ -1956,7 +1956,7 @@
         {
           "numero": 4,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Contar con autorización vigente para recibir donativos al menos durante los 5 años previos al momento en que se realice la donación, y que durante ese periodo la autorización correspondiente no haya sido revocada o no renovada.",
           "padre_numero": 3,
           "x_id": 150,
@@ -1965,7 +1965,7 @@
         {
           "numero": 5,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Haber obtenido ingresos en el ejercicio inmediato anterior cuando menos de 5 millones de pesos.",
           "padre_numero": 3,
           "x_id": 150,
@@ -1974,7 +1974,7 @@
         {
           "numero": 6,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Auditar sus estados financieros.",
           "padre_numero": 3,
           "x_id": 150,
@@ -1983,7 +1983,7 @@
         {
           "numero": 7,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Presentar un informe respecto de los donativos que se otorguen a organizaciones o fideicomisos que no tengan el carácter de donatarias autorizadas que se dediquen a realizar labores de rescate y reconstrucción ocasionados por desastres naturales.",
           "padre_numero": 3,
           "x_id": 150,
@@ -1992,7 +1992,7 @@
         {
           "numero": 8,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "No otorgar donativos a partidos políticos, sindicatos, instituciones religiosas o de gobierno.",
           "padre_numero": 3,
           "x_id": 150,
@@ -2001,7 +2001,7 @@
         {
           "numero": 9,
           "tipo": "numeral",
-          "identificador": "6.",
+          "identificador": "6",
           "contenido": "Presentar un listado con el nombre, denominación o razón social y Registro Federal de Contribuyentes de las organizaciones civiles o fideicomisos que no cuenten con la autorización para recibir donativos a las cuales se les otorgó el donativo.",
           "padre_numero": 3,
           "x_id": 150,
@@ -2010,8 +2010,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Tratándose de las organizaciones civiles y fideicomisos que no cuenten con autorización para recibir donativos, a que se refiere el párrafo primero de esta fracción, deberán cumplir con lo siguiente:",
+          "identificador": "b",
+          "contenido": ") Tratándose de las organizaciones civiles y fideicomisos que no cuenten con autorización para recibir donativos, a que se refiere el párrafo primero de esta fracción, deberán cumplir con lo siguiente:",
           "padre_numero": 2,
           "x_id": 129,
           "x_texto": 151
@@ -2019,7 +2019,7 @@
         {
           "numero": 11,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Estar inscritas en el Registro Federal de Contribuyentes.",
           "padre_numero": 10,
           "x_id": 150,
@@ -2028,7 +2028,7 @@
         {
           "numero": 12,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Comprobar que han efectuado operaciones de atención de desastres, emergencias o contingencias por lo menos durante 3 años anteriores a la fecha de recepción del donativo.",
           "padre_numero": 10,
           "x_id": 150,
@@ -2037,7 +2037,7 @@
         {
           "numero": 13,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "No haber sido donataria autorizada a la que se le haya revocado o no renovado la autorización.",
           "padre_numero": 10,
           "x_id": 150,
@@ -2046,7 +2046,7 @@
         {
           "numero": 14,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Ubicarse en alguno de los municipios o en las demarcaciones territoriales de la Ciudad de México, de las zonas afectadas por el desastre natural de que se trate.",
           "padre_numero": 10,
           "x_id": 150,
@@ -2055,7 +2055,7 @@
         {
           "numero": 15,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "Presentar un informe ante el Servicio de Administración Tributaria, en el que se detalle el uso y destino de los bienes o recursos recibidos, incluyendo una relación de los folios de los Comprobantes Fiscales Digitales por Internet y la documentación con la que compruebe la realización de las operaciones que amparan dichos comprobantes.",
           "padre_numero": 10,
           "x_id": 150,
@@ -2064,7 +2064,7 @@
         {
           "numero": 16,
           "tipo": "numeral",
-          "identificador": "6.",
+          "identificador": "6",
           "contenido": "Devolver los remanentes de los recursos recibidos no utilizados para el fin que fueron otorgados a la donataria autorizada.",
           "padre_numero": 10,
           "x_id": 150,
@@ -2073,7 +2073,7 @@
         {
           "numero": 17,
           "tipo": "numeral",
-          "identificador": "7.",
+          "identificador": "7",
           "contenido": "Hacer pública la información de los donativos recibidos en su página de Internet o, en caso de no contar con una, en la página de la donataria autorizada.",
           "padre_numero": 10,
           "x_id": 150,
@@ -2109,8 +2109,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "750 millones de pesos como monto total a distribuir entre los proyectos de inversión en la producción cinematográfica nacional, sin que exceda de 25 millones de pesos por cada persona contribuyente o proyecto de inversión;",
+          "identificador": "a",
+          "contenido": ") 750 millones de pesos como monto total a distribuir entre los proyectos de inversión en la producción cinematográfica nacional, sin que exceda de 25 millones de pesos por cada persona contribuyente o proyecto de inversión;",
           "padre_numero": 20,
           "x_id": 129,
           "x_texto": 151
@@ -2118,8 +2118,8 @@
         {
           "numero": 22,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "65 millones de pesos como monto total a distribuir entre los proyectos de inversión en la distribución de películas cinematográficas nacionales, sin que exceda de 3 millones de pesos por cada persona contribuyente o proyecto de inversión, y",
+          "identificador": "b",
+          "contenido": ") 65 millones de pesos como monto total a distribuir entre los proyectos de inversión en la distribución de películas cinematográficas nacionales, sin que exceda de 3 millones de pesos por cada persona contribuyente o proyecto de inversión, y",
           "padre_numero": 20,
           "x_id": 129,
           "x_texto": 151
@@ -2127,8 +2127,8 @@
         {
           "numero": 23,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "250 millones de pesos para los proyectos de inversión en la producción teatral nacional; en la edición y publicación de obras literarias nacionales; de artes visuales; danza; música en los campos específicos de dirección de orquesta, ejecución instrumental y vocal de la música de concierto, y jazz;",
+          "identificador": "c",
+          "contenido": ") 250 millones de pesos para los proyectos de inversión en la producción teatral nacional; en la edición y publicación de obras literarias nacionales; de artes visuales; danza; música en los campos específicos de dirección de orquesta, ejecución instrumental y vocal de la música de concierto, y jazz;",
           "padre_numero": 20,
           "x_id": 129,
           "x_texto": 151
@@ -2154,8 +2154,8 @@
         {
           "numero": 26,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Que en el caso de pérdidas por créditos incobrables, estas se consideren realizadas en el mes en el que se consuma el plazo de prescripción, que corresponda, o antes si fuera notoria la imposibilidad práctica de cobro.",
+          "identificador": "a",
+          "contenido": ") Que en el caso de pérdidas por créditos incobrables, estas se consideren realizadas en el mes en el que se consuma el plazo de prescripción, que corresponda, o antes si fuera notoria la imposibilidad práctica de cobro.",
           "padre_numero": 25,
           "x_id": 129,
           "x_texto": 151
@@ -2163,8 +2163,8 @@
         {
           "numero": 27,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Para efectos de esta fracción, se considera que existe notoria imposibilidad práctica de cobro, entre otros, en los siguientes casos:",
+          "identificador": "b",
+          "contenido": ") Para efectos de esta fracción, se considera que existe notoria imposibilidad práctica de cobro, entre otros, en los siguientes casos:",
           "padre_numero": 25,
           "x_id": 129,
           "x_texto": 151
@@ -2172,7 +2172,7 @@
         {
           "numero": 28,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Tratándose de créditos cuya suerte principal al día de su vencimiento no exceda de treinta mil unidades de inversión, cuando en el plazo de un año contado a partir de que incurra en mora, no se hubiera logrado su cobro. En este caso, se considerarán incobrables en el mes en que se cumpla un año de haber incurrido en mora.",
           "padre_numero": 27,
           "x_id": 150,
@@ -2199,7 +2199,7 @@
         {
           "numero": 31,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Tratándose de créditos cuya suerte principal al día de su vencimiento sea mayor a treinta mil unidades de inversión, cuando la persona acreedora obtenga resolución definitiva emitida por la autoridad competente, con la que demuestre haber agotado las gestiones de cobro o, en su caso, que fue imposible la ejecución de la resolución favorable y, además, se cumpla con lo establecido en el párrafo final del numeral anterior, y",
           "padre_numero": 27,
           "x_id": 150,
@@ -2208,7 +2208,7 @@
         {
           "numero": 32,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Se compruebe que la persona deudora ha sido declarada en quiebra o concurso. En el primer supuesto, debe existir sentencia que declare concluida la quiebra por pago concursal o por falta de activos.",
           "padre_numero": 27,
           "x_id": 150,
@@ -2298,8 +2298,8 @@
         {
           "numero": 42,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Retener y enterar el impuesto sobre la renta, aplicando la tasa del 20 por ciento sobre el monto de los intereses nominales pagados a las personas físicas y morales de los Títulos II y III de la Ley del Impuesto sobre la Renta, que aportaron los recursos para las operaciones de financiamiento.",
+          "identificador": "a",
+          "contenido": ") Retener y enterar el impuesto sobre la renta, aplicando la tasa del 20 por ciento sobre el monto de los intereses nominales pagados a las personas físicas y morales de los Títulos II y III de la Ley del Impuesto sobre la Renta, que aportaron los recursos para las operaciones de financiamiento.",
           "padre_numero": 41,
           "x_id": 129,
           "x_texto": 151
@@ -2334,8 +2334,8 @@
         {
           "numero": 46,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Retener a las personas que reciban el pago de intereses y enterar, el impuesto al valor agregado que corresponda a dichos pagos, sustituyéndolas en la obligación de pago y entero del mencionado impuesto. Dicha retención deberá efectuarse aplicando la tasa del 16 por ciento sobre el valor nominal de los intereses devengados.",
+          "identificador": "b",
+          "contenido": ") Retener a las personas que reciban el pago de intereses y enterar, el impuesto al valor agregado que corresponda a dichos pagos, sustituyéndolas en la obligación de pago y entero del mencionado impuesto. Dicha retención deberá efectuarse aplicando la tasa del 16 por ciento sobre el valor nominal de los intereses devengados.",
           "padre_numero": 41,
           "x_id": 129,
           "x_texto": 151
@@ -2370,8 +2370,8 @@
         {
           "numero": 50,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Expedir los comprobantes fiscales a las personas a quienes les retengan el impuesto sobre la renta y el impuesto al valor agregado, en los que se señale el monto de los intereses pagados y las retenciones efectuadas, a más tardar dentro de los 5 días siguientes al mes en el que se efectuó la retención;",
+          "identificador": "c",
+          "contenido": ") Expedir los comprobantes fiscales a las personas a quienes les retengan el impuesto sobre la renta y el impuesto al valor agregado, en los que se señale el monto de los intereses pagados y las retenciones efectuadas, a más tardar dentro de los 5 días siguientes al mes en el que se efectuó la retención;",
           "padre_numero": 41,
           "x_id": 129,
           "x_texto": 151
@@ -2388,8 +2388,8 @@
         {
           "numero": 52,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Retener a las personas morales que enajenen bienes, presten servicios o concedan el uso o goce temporal de bienes, el impuesto al valor agregado, en términos de lo previsto en el artículo 18-J, fracción II, inciso a), párrafo primero, de la Ley del Impuesto al Valor Agregado;",
+          "identificador": "a",
+          "contenido": ") Retener a las personas morales que enajenen bienes, presten servicios o concedan el uso o goce temporal de bienes, el impuesto al valor agregado, en términos de lo previsto en el artículo 18-J, fracción II, inciso a), párrafo primero, de la Ley del Impuesto al Valor Agregado;",
           "padre_numero": 51,
           "x_id": 129,
           "x_texto": 151
@@ -2397,8 +2397,8 @@
         {
           "numero": 53,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Retener el 100 por ciento del impuesto al valor agregado cobrado, tratándose de residentes en el extranjero sin establecimiento en México, que enajenen bienes en territorio nacional en términos del artículo 10 de la Ley del Impuesto al Valor Agregado;",
+          "identificador": "b",
+          "contenido": ") Retener el 100 por ciento del impuesto al valor agregado cobrado, tratándose de residentes en el extranjero sin establecimiento en México, que enajenen bienes en territorio nacional en términos del artículo 10 de la Ley del Impuesto al Valor Agregado;",
           "padre_numero": 51,
           "x_id": 129,
           "x_texto": 151
@@ -2406,8 +2406,8 @@
         {
           "numero": 54,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Retener el 100 por ciento del impuesto al valor agregado cobrado, tratándose de personas enajenantes de bienes, prestadoras de servicios u otorgantes del uso o goce temporal de bienes, cuando depositen los montos de las operaciones realizadas en cuentas bancarias o de depósito ubicadas en el extranjero;",
+          "identificador": "c",
+          "contenido": ") Retener el 100 por ciento del impuesto al valor agregado cobrado, tratándose de personas enajenantes de bienes, prestadoras de servicios u otorgantes del uso o goce temporal de bienes, cuando depositen los montos de las operaciones realizadas en cuentas bancarias o de depósito ubicadas en el extranjero;",
           "padre_numero": 51,
           "x_id": 129,
           "x_texto": 151
@@ -2415,8 +2415,8 @@
         {
           "numero": 55,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Enterar la retención y expedir a cada persona a que se refieren los incisos a), b) y c) de la presente fracción, el comprobante fiscal digital por Internet de Retenciones e información de pagos, de conformidad con lo dispuesto en el artículo 18-J, fracción II, incisos b) y c), de la Ley del Impuesto al Valor Agregado, y",
+          "identificador": "d",
+          "contenido": ") Enterar la retención y expedir a cada persona a que se refieren los incisos a), b) y c) de la presente fracción, el comprobante fiscal digital por Internet de Retenciones e información de pagos, de conformidad con lo dispuesto en el artículo 18-J, fracción II, incisos b) y c), de la Ley del Impuesto al Valor Agregado, y",
           "padre_numero": 51,
           "x_id": 129,
           "x_texto": 151
@@ -2424,8 +2424,8 @@
         {
           "numero": 56,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Proporcionar la información de las personas a que se refieren los incisos a), b) y c) de la presente fracción, en términos de lo establecido en el artículo 18-J, fracción III, de la Ley del Impuesto al Valor Agregado, según corresponda.",
+          "identificador": "e",
+          "contenido": ") Proporcionar la información de las personas a que se refieren los incisos a), b) y c) de la presente fracción, en términos de lo establecido en el artículo 18-J, fracción III, de la Ley del Impuesto al Valor Agregado, según corresponda.",
           "padre_numero": 51,
           "x_id": 129,
           "x_texto": 151
@@ -2469,8 +2469,8 @@
         {
           "numero": 61,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La persona administradora de la figura jurídica extranjera podrá ser residente fiscal en México. En cuyo caso, dicha figura jurídica extranjera conservará la transparencia fiscal, y",
+          "identificador": "a",
+          "contenido": ") La persona administradora de la figura jurídica extranjera podrá ser residente fiscal en México. En cuyo caso, dicha figura jurídica extranjera conservará la transparencia fiscal, y",
           "padre_numero": 60,
           "x_id": 129,
           "x_texto": 151
@@ -2478,8 +2478,8 @@
         {
           "numero": 62,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Tratándose de sociedades de inversión especializadas de fondos para el retiro, que sean integrantes o miembros de las figuras jurídicas extranjeras, podrán no aplicar lo dispuesto en la fracción VI de dicho artículo. Para estos efectos, las figuras jurídicas extranjeras conservarán la transparencia fiscal;",
+          "identificador": "b",
+          "contenido": ") Tratándose de sociedades de inversión especializadas de fondos para el retiro, que sean integrantes o miembros de las figuras jurídicas extranjeras, podrán no aplicar lo dispuesto en la fracción VI de dicho artículo. Para estos efectos, las figuras jurídicas extranjeras conservarán la transparencia fiscal;",
           "padre_numero": 60,
           "x_id": 129,
           "x_texto": 151
@@ -2601,7 +2601,7 @@
         {
           "numero": 2,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "El documento denominado Renuncias Recaudatorias, a más tardar el 30 de junio de 2026, que comprenderá los montos que deja de recaudar el erario federal por conceptos de tasas diferenciadas en los distintos impuestos, exenciones, subsidios y créditos fiscales, condonaciones, facilidades administrativas, estímulos fiscales, deducciones autorizadas, tratamientos y regímenes especiales establecidos en las distintas leyes que en materia tributaria aplican a nivel federal.",
           "padre_numero": null,
           "x_id": 100,
@@ -2664,7 +2664,7 @@
         {
           "numero": 9,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "Un reporte de las personas morales y fideicomisos autorizados para recibir donativos deducibles para los efectos del impuesto sobre la renta, a más tardar el 30 de septiembre de 2026, en el que se deberá señalar, para cada una la siguiente información:",
           "padre_numero": 8,
           "x_id": 100,
@@ -2817,7 +2817,7 @@
         {
           "numero": 26,
           "tipo": "apartado",
-          "identificador": "C.",
+          "identificador": "C",
           "contenido": "Para la generación del reporte a que se refiere el Apartado B de este artículo, la información se obtendrá de aquella que las donatarias autorizadas estén obligadas a presentar en la declaración de las personas morales con fines no lucrativos correspondiente al ejercicio fiscal de 2025, a la que se refiere el párrafo tercero del artículo 86 de la Ley del Impuesto sobre la Renta.",
           "padre_numero": null,
           "x_id": 100,

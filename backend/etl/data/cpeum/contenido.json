@@ -162,7 +162,7 @@
         {
           "numero": 7,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "Esta Constitución reconoce y garantiza el derecho de los pueblos y las comunidades indígenas a la libre determinación y, en consecuencia, a la autonomía para:",
           "padre_numero": null,
           "x_id": 85,
@@ -382,7 +382,7 @@
         {
           "numero": 27,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "La Federación, las entidades federativas, los Municipios y, en su caso, las demarcaciones territoriales de la Ciudad de México, deberán establecer las instituciones y determinar las políticas públicas que garanticen el ejercicio efectivo de los derechos de los pueblos indígenas y su desarrollo integral, intercultural y sostenible, las cuales deben ser diseñadas y operadas conjuntamente con ellos.",
           "padre_numero": null,
           "x_id": 85,
@@ -460,8 +460,8 @@
         {
           "numero": 34,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La alfabetización y la educación en todos los niveles, gratuita, integral y con pertinencia cultural y lingüística;",
+          "identificador": "a",
+          "contenido": ") La alfabetización y la educación en todos los niveles, gratuita, integral y con pertinencia cultural y lingüística;",
           "padre_numero": 33,
           "x_id": 142,
           "x_texto": 164
@@ -469,8 +469,8 @@
         {
           "numero": 35,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La formación de profesionales indígenas y la implementación de la educación comunitaria;",
+          "identificador": "b",
+          "contenido": ") La formación de profesionales indígenas y la implementación de la educación comunitaria;",
           "padre_numero": 33,
           "x_id": 142,
           "x_texto": 164
@@ -478,8 +478,8 @@
         {
           "numero": 36,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El establecimiento de un sistema de becas para las personas indígenas que cursen cualquier nivel educativo;",
+          "identificador": "c",
+          "contenido": ") El establecimiento de un sistema de becas para las personas indígenas que cursen cualquier nivel educativo;",
           "padre_numero": 33,
           "x_id": 142,
           "x_texto": 164
@@ -487,8 +487,8 @@
         {
           "numero": 37,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "La promoción de programas educativos bilingües, en concordancia con los métodos de enseñanza y aprendizaje de los pueblos y comunidades indígenas, y",
+          "identificador": "d",
+          "contenido": ") La promoción de programas educativos bilingües, en concordancia con los métodos de enseñanza y aprendizaje de los pueblos y comunidades indígenas, y",
           "padre_numero": 33,
           "x_id": 142,
           "x_texto": 164
@@ -496,8 +496,8 @@
         {
           "numero": 38,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "La definición y desarrollo de programas educativos que reconozcan e impulsen la herencia cultural de los pueblos y comunidades indígenas y su importancia para la Nación; así como, la promoción de una relación intercultural, de no discriminación y libre de racismo.",
+          "identificador": "e",
+          "contenido": ") La definición y desarrollo de programas educativos que reconozcan e impulsen la herencia cultural de los pueblos y comunidades indígenas y su importancia para la Nación; así como, la promoción de una relación intercultural, de no discriminación y libre de racismo.",
           "padre_numero": 33,
           "x_id": 142,
           "x_texto": 164,
@@ -613,8 +613,8 @@
         {
           "numero": 48,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Reconocer las formas organizativas de las comunidades indígenas residentes y de las personas indígenas migrantes en sus contextos de destino en el territorio nacional;",
+          "identificador": "a",
+          "contenido": ") Reconocer las formas organizativas de las comunidades indígenas residentes y de las personas indígenas migrantes en sus contextos de destino en el territorio nacional;",
           "padre_numero": 47,
           "x_id": 142,
           "x_texto": 164
@@ -622,8 +622,8 @@
         {
           "numero": 49,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Garantizar los derechos laborales de las personas jornaleras agrícolas, trabajadoras del hogar y con discapacidad;",
+          "identificador": "b",
+          "contenido": ") Garantizar los derechos laborales de las personas jornaleras agrícolas, trabajadoras del hogar y con discapacidad;",
           "padre_numero": 47,
           "x_id": 142,
           "x_texto": 164
@@ -631,8 +631,8 @@
         {
           "numero": 50,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Mejorar las condiciones de salud de las mujeres, así como apoyar con programas especiales de educación y nutrición a niñas, niños, adolescentes y jóvenes de familias migrantes;",
+          "identificador": "c",
+          "contenido": ") Mejorar las condiciones de salud de las mujeres, así como apoyar con programas especiales de educación y nutrición a niñas, niños, adolescentes y jóvenes de familias migrantes;",
           "padre_numero": 47,
           "x_id": 142,
           "x_texto": 164
@@ -640,8 +640,8 @@
         {
           "numero": 51,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Velar permanentemente por el respeto de sus derechos humanos, y",
+          "identificador": "d",
+          "contenido": ") Velar permanentemente por el respeto de sus derechos humanos, y",
           "padre_numero": 47,
           "x_id": 142,
           "x_texto": 164
@@ -649,8 +649,8 @@
         {
           "numero": 52,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Promover, con pleno respeto a su identidad, la difusión de sus culturas y la inclusión social en los lugares de destino que propicien acciones de fortalecimiento del vínculo familiar y comunitario.",
+          "identificador": "e",
+          "contenido": ") Promover, con pleno respeto a su identidad, la difusión de sus culturas y la inclusión social en los lugares de destino que propicien acciones de fortalecimiento del vínculo familiar y comunitario.",
           "padre_numero": 47,
           "x_id": 142,
           "x_texto": 164
@@ -715,7 +715,7 @@
         {
           "numero": 58,
           "tipo": "apartado",
-          "identificador": "C.",
+          "identificador": "C",
           "contenido": "Esta Constitución reconoce a los pueblos y comunidades afromexicanas, cualquiera que sea su autodenominación, como parte de la composición pluricultural de la Nación. Tendrán en lo conducente los derechos señalados en los apartados anteriores de este artículo, a fin de garantizar su desarrollo e inclusión social, en los términos que establezca esta Constitución, así como su libre determinación que se ejercerá en un marco constitucional de autonomía que asegure la unidad nacional.",
           "padre_numero": null,
           "x_id": 85,
@@ -772,7 +772,7 @@
         {
           "numero": 64,
           "tipo": "apartado",
-          "identificador": "D.",
+          "identificador": "D",
           "contenido": "Esta Constitución reconoce y el Estado garantiza el derecho de las mujeres indígenas y afromexicanas a participar de manera efectiva y en condiciones de igualdad sustantiva en los procesos de desarrollo integral de sus pueblos y comunidades; en la toma de decisiones de carácter público; en la promoción y respeto de sus derechos de acceso a la educación, a la salud, a la propiedad y a la posesión de la tierra y demás derechos humanos.",
           "padre_numero": 63,
           "x_id": 85,
@@ -1000,8 +1000,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Será democrático, considerando a la democracia no solamente como una estructura jurídica y un régimen político, sino como un sistema de vida fundado en el constante mejoramiento económico, social y cultural del pueblo;",
+          "identificador": "a",
+          "contenido": ") Será democrático, considerando a la democracia no solamente como una estructura jurídica y un régimen político, sino como un sistema de vida fundado en el constante mejoramiento económico, social y cultural del pueblo;",
           "padre_numero": 14,
           "x_id": 113,
           "x_texto": 135
@@ -1009,8 +1009,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Será nacional, en cuanto –sin hostilidades ni exclusivismos– atenderá a la comprensión de nuestros problemas, al aprovechamiento de nuestros recursos, a la defensa de nuestra independencia política, al aseguramiento de nuestra independencia económica y a la continuidad y acrecentamiento de nuestra cultura;",
+          "identificador": "b",
+          "contenido": ") Será nacional, en cuanto –sin hostilidades ni exclusivismos– atenderá a la comprensión de nuestros problemas, al aprovechamiento de nuestros recursos, a la defensa de nuestra independencia política, al aseguramiento de nuestra independencia económica y a la continuidad y acrecentamiento de nuestra cultura;",
           "padre_numero": 14,
           "x_id": 113,
           "x_texto": 135,
@@ -1021,8 +1021,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Contribuirá a la mejor convivencia humana, a fin de fortalecer el aprecio y respeto por la naturaleza, la diversidad cultural, la dignidad de la persona, la integridad de las familias, la convicción del interés general de la sociedad, los ideales de fraternidad e igualdad de derechos de todos, evitando los privilegios de razas, de religión, de grupos, de sexos o de individuos;",
+          "identificador": "c",
+          "contenido": ") Contribuirá a la mejor convivencia humana, a fin de fortalecer el aprecio y respeto por la naturaleza, la diversidad cultural, la dignidad de la persona, la integridad de las familias, la convicción del interés general de la sociedad, los ideales de fraternidad e igualdad de derechos de todos, evitando los privilegios de razas, de religión, de grupos, de sexos o de individuos;",
           "padre_numero": 14,
           "x_id": 113,
           "x_texto": 135,
@@ -1033,8 +1033,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Se deroga.",
+          "identificador": "d",
+          "contenido": ") Se deroga.",
           "padre_numero": 14,
           "x_id": 113,
           "x_texto": 135,
@@ -1045,8 +1045,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Será equitativo, para lo cual el Estado implementará medidas que favorezcan el ejercicio pleno del derecho a la educación de las personas y combatan las desigualdades socioeconómicas, regionales y de género en el acceso, tránsito y permanencia en los servicios educativos.",
+          "identificador": "e",
+          "contenido": ") Será equitativo, para lo cual el Estado implementará medidas que favorezcan el ejercicio pleno del derecho a la educación de las personas y combatan las desigualdades socioeconómicas, regionales y de género en el acceso, tránsito y permanencia en los servicios educativos.",
           "padre_numero": 14,
           "x_id": 113,
           "x_texto": 135
@@ -1084,8 +1084,8 @@
         {
           "numero": 24,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Será inclusivo, al tomar en cuenta las diversas capacidades, circunstancias y necesidades de los educandos. Con base en el principio de accesibilidad se realizarán ajustes razonables y se implementarán medidas específicas con el objetivo de eliminar las barreras para el aprendizaje y la participación;",
+          "identificador": "f",
+          "contenido": ") Será inclusivo, al tomar en cuenta las diversas capacidades, circunstancias y necesidades de los educandos. Con base en el principio de accesibilidad se realizarán ajustes razonables y se implementarán medidas específicas con el objetivo de eliminar las barreras para el aprendizaje y la participación;",
           "padre_numero": 14,
           "x_id": 113,
           "x_texto": 135,
@@ -1096,8 +1096,8 @@
         {
           "numero": 25,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Será intercultural, al promover la convivencia armónica entre personas y comunidades para el respeto y reconocimiento de sus diferencias y derechos, en un marco de inclusión social;",
+          "identificador": "g",
+          "contenido": ") Será intercultural, al promover la convivencia armónica entre personas y comunidades para el respeto y reconocimiento de sus diferencias y derechos, en un marco de inclusión social;",
           "padre_numero": 14,
           "x_id": 113,
           "x_texto": 135,
@@ -1108,8 +1108,8 @@
         {
           "numero": 26,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Será integral, educará para la vida, con el objeto de desarrollar en las personas capacidades cognitivas, socioemocionales y físicas que les permitan alcanzar su bienestar, e",
+          "identificador": "h",
+          "contenido": ") Será integral, educará para la vida, con el objeto de desarrollar en las personas capacidades cognitivas, socioemocionales y físicas que les permitan alcanzar su bienestar, e",
           "padre_numero": 14,
           "x_id": 113,
           "x_texto": 135,
@@ -1120,8 +1120,8 @@
         {
           "numero": 27,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "Será de excelencia, entendida como el mejoramiento integral constante que promueve el máximo logro de aprendizaje de los educandos, para el desarrollo de su pensamiento crítico y el fortalecimiento de los lazos entre escuela y comunidad;",
+          "identificador": "i",
+          "contenido": ") Será de excelencia, entendida como el mejoramiento integral constante que promueve el máximo logro de aprendizaje de los educandos, para el desarrollo de su pensamiento crítico y el fortalecimiento de los lazos entre escuela y comunidad;",
           "padre_numero": 14,
           "x_id": 113,
           "x_texto": 135,
@@ -1177,8 +1177,8 @@
         {
           "numero": 32,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Impartir la educación con apego a los mismos fines y criterios que establece el párrafo cuarto, y la fracción II, así como cumplir los planes y programas a que se refieren los párrafos décimo primero y décimo segundo, y",
+          "identificador": "a",
+          "contenido": ") Impartir la educación con apego a los mismos fines y criterios que establece el párrafo cuarto, y la fracción II, así como cumplir los planes y programas a que se refieren los párrafos décimo primero y décimo segundo, y",
           "padre_numero": 31,
           "x_id": 113,
           "x_texto": 135,
@@ -1189,8 +1189,8 @@
         {
           "numero": 33,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Obtener previamente, en cada caso, la autorización expresa del poder público, en los términos que establezca la ley;",
+          "identificador": "b",
+          "contenido": ") Obtener previamente, en cada caso, la autorización expresa del poder público, en los términos que establezca la ley;",
           "padre_numero": 31,
           "x_id": 113,
           "x_texto": 135
@@ -1702,7 +1702,7 @@
         {
           "numero": 5,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "Para el ejercicio del derecho de acceso a la información, la Federación y las entidades federativas, en el ámbito de sus respectivas competencias, se regirán por los siguientes principios y bases:",
           "padre_numero": null,
           "x_id": 85,
@@ -1849,7 +1849,7 @@
         {
           "numero": 18,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "En materia de radiodifusión y telecomunicaciones:",
           "padre_numero": null,
           "x_id": 85,
@@ -2672,7 +2672,7 @@
         {
           "numero": 2,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "De los principios generales:",
           "padre_numero": null,
           "x_id": 85,
@@ -2789,7 +2789,7 @@
         {
           "numero": 14,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "De los derechos de toda persona imputada:",
           "padre_numero": 13,
           "x_id": 85,
@@ -2936,7 +2936,7 @@
         {
           "numero": 30,
           "tipo": "apartado",
-          "identificador": "C.",
+          "identificador": "C",
           "contenido": "De los derechos de la víctima o del ofendido:",
           "padre_numero": null,
           "x_id": 85,
@@ -3160,8 +3160,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La regulación de la selección, ingreso, formación, permanencia, evaluación, reconocimiento y certificación de los integrantes de las instituciones de seguridad pública. La operación y desarrollo de estas acciones será competencia de la Federación, las entidades federativas y los Municipios en el ámbito de sus respectivas atribuciones.",
+          "identificador": "a",
+          "contenido": ") La regulación de la selección, ingreso, formación, permanencia, evaluación, reconocimiento y certificación de los integrantes de las instituciones de seguridad pública. La operación y desarrollo de estas acciones será competencia de la Federación, las entidades federativas y los Municipios en el ámbito de sus respectivas atribuciones.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3172,8 +3172,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El establecimiento de un sistema nacional de información en seguridad pública a cargo de la Federación al que ésta, las entidades federativas y los Municipios, a través de las dependencias responsables de la seguridad pública, proporcionarán la información de que dispongan en la materia, conforme a la ley. El sistema contendrá también las bases de datos criminalísticos y de personal para las instituciones de seguridad pública. Ninguna persona podrá ingresar a las instituciones de seguridad pública si no ha sido debidamente certificada y registrada en el sistema.",
+          "identificador": "b",
+          "contenido": ") El establecimiento de un sistema nacional de información en seguridad pública a cargo de la Federación al que ésta, las entidades federativas y los Municipios, a través de las dependencias responsables de la seguridad pública, proporcionarán la información de que dispongan en la materia, conforme a la ley. El sistema contendrá también las bases de datos criminalísticos y de personal para las instituciones de seguridad pública. Ninguna persona podrá ingresar a las instituciones de seguridad pública si no ha sido debidamente certificada y registrada en el sistema.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3184,8 +3184,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La formulación de políticas públicas tendientes a prevenir la comisión de delitos.",
+          "identificador": "c",
+          "contenido": ") La formulación de políticas públicas tendientes a prevenir la comisión de delitos.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3193,8 +3193,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Se determinará la participación de la comunidad que coadyuvará, entre otros, en los procesos de evaluación de las políticas de prevención del delito así como de las instituciones de seguridad pública.",
+          "identificador": "d",
+          "contenido": ") Se determinará la participación de la comunidad que coadyuvará, entre otros, en los procesos de evaluación de las políticas de prevención del delito así como de las instituciones de seguridad pública.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3202,8 +3202,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Los fondos de ayuda federal para la seguridad pública, a nivel nacional serán aportados a las entidades federativas y municipios para ser destinados exclusivamente a estos fines. Estos fondos serán auditados y su debido ejercicio vigilado por el Sistema a través de su Secretariado Ejecutivo.",
+          "identificador": "e",
+          "contenido": ") Los fondos de ayuda federal para la seguridad pública, a nivel nacional serán aportados a las entidades federativas y municipios para ser destinados exclusivamente a estos fines. Estos fondos serán auditados y su debido ejercicio vigilado por el Sistema a través de su Secretariado Ejecutivo.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3214,8 +3214,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "El Sistema contará con un Secretariado Ejecutivo, el cual podrá ampliar las bases, emitir acuerdos y lineamientos, así como realizar las acciones necesarias para lograr la homologación de estándares y criterios, así como una coordinación eficiente, transparente y responsable, en el ejercicio de las atribuciones concurrentes de los tres órdenes de gobierno; en todo momento en atención a los fines del Sistema y los objetivos de la Estrategia Nacional de Seguridad Pública.",
+          "identificador": "f",
+          "contenido": ") El Sistema contará con un Secretariado Ejecutivo, el cual podrá ampliar las bases, emitir acuerdos y lineamientos, así como realizar las acciones necesarias para lograr la homologación de estándares y criterios, así como una coordinación eficiente, transparente y responsable, en el ejercicio de las atribuciones concurrentes de los tres órdenes de gobierno; en todo momento en atención a los fines del Sistema y los objetivos de la Estrategia Nacional de Seguridad Pública.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -3516,7 +3516,7 @@
         {
           "numero": 12,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "El Estado organizará un sistema de planeación democrática del desarrollo nacional que imprima solidez, dinamismo, competitividad, permanencia y equidad al crecimiento de la economía para la independencia y la democratización política, social y cultural de la nación.",
           "padre_numero": null,
           "x_id": 85,
@@ -3564,7 +3564,7 @@
         {
           "numero": 16,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "El Estado contará con un Sistema Nacional de Información Estadística y Geográfica cuyos datos serán considerados oficiales. Para la Federación, las entidades federativas, los Municipios y las demarcaciones territoriales de la Ciudad de México, los datos contenidos en el Sistema serán de uso obligatorio en los términos que establezca la ley.",
           "padre_numero": null,
           "x_id": 85,
@@ -3614,7 +3614,7 @@
         {
           "numero": 1,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "El Estado organizará un sistema de planeación democrática del desarrollo nacional que imprima solidez, dinamismo, competitividad, permanencia y equidad al crecimiento de la economía para la independencia y la democratización política, social y cultural de la nación.",
           "padre_numero": null,
           "x_id": 85,
@@ -3662,7 +3662,7 @@
         {
           "numero": 5,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "El Estado contará con un Sistema Nacional de Información Estadística y Geográfica cuyos datos serán considerados oficiales. Para la Federación, las entidades federativas, los Municipios y las demarcaciones territoriales de la Ciudad de México, los datos contenidos en el Sistema serán de uso obligatorio en los términos que establezca la ley.",
           "padre_numero": null,
           "x_id": 85,
@@ -3746,7 +3746,7 @@
         {
           "numero": 13,
           "tipo": "apartado",
-          "identificador": "C.",
+          "identificador": "C",
           "contenido": "Se deroga",
           "padre_numero": null,
           "x_id": 85,
@@ -4073,8 +4073,8 @@
         {
           "numero": 30,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Todas las enajenaciones de tierras, aguas y montes pertenecientes a los pueblos, rancherías, congregaciones o comunidades, hechas por los jefes políticos, Gobernadores de los Estados, o cualquiera otra autoridad local en contravención a lo dispuesto en la Ley de 25 de junio de 1856 y demás leyes y disposiciones relativas;",
+          "identificador": "a",
+          "contenido": ") Todas las enajenaciones de tierras, aguas y montes pertenecientes a los pueblos, rancherías, congregaciones o comunidades, hechas por los jefes políticos, Gobernadores de los Estados, o cualquiera otra autoridad local en contravención a lo dispuesto en la Ley de 25 de junio de 1856 y demás leyes y disposiciones relativas;",
           "padre_numero": 29,
           "x_id": 114,
           "x_texto": 136
@@ -4082,8 +4082,8 @@
         {
           "numero": 31,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Todas las concesiones: composiciones o ventas de tierras, aguas y montes, hechas por las Secretarías de Fomento, Hacienda o cualquiera otra autoridad federal, desde el día primero de diciembre de 1876, hasta la fecha, con las cuales se hayan invadido y ocupado ilegalmente los ejidos, terrenos de común repartimiento o cualquiera otra clase, pertenecientes a los pueblos, rancherías, congregaciones o comunidades, y núcleos de población.",
+          "identificador": "b",
+          "contenido": ") Todas las concesiones: composiciones o ventas de tierras, aguas y montes, hechas por las Secretarías de Fomento, Hacienda o cualquiera otra autoridad federal, desde el día primero de diciembre de 1876, hasta la fecha, con las cuales se hayan invadido y ocupado ilegalmente los ejidos, terrenos de común repartimiento o cualquiera otra clase, pertenecientes a los pueblos, rancherías, congregaciones o comunidades, y núcleos de población.",
           "padre_numero": 29,
           "x_id": 114,
           "x_texto": 136
@@ -4091,8 +4091,8 @@
         {
           "numero": 32,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Todas las diligencias de apeo o deslinde, transacciones, enajenaciones o remates practicados durante el período de tiempo a que se refiere la fracción anterior, por compañías, jueces u otras autoridades de los Estados o de la Federación, con los cuales se hayan invadido u ocupado ilegalmente tierras, aguas y montes de los ejidos, terrenos de común repartimiento, o de cualquiera otra clase, pertenecientes a núcleos de población.",
+          "identificador": "c",
+          "contenido": ") Todas las diligencias de apeo o deslinde, transacciones, enajenaciones o remates practicados durante el período de tiempo a que se refiere la fracción anterior, por compañías, jueces u otras autoridades de los Estados o de la Federación, con los cuales se hayan invadido u ocupado ilegalmente tierras, aguas y montes de los ejidos, terrenos de común repartimiento, o de cualquiera otra clase, pertenecientes a núcleos de población.",
           "padre_numero": 29,
           "x_id": 114,
           "x_texto": 136
@@ -4353,8 +4353,8 @@
         {
           "numero": 57,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Un jornal seguro, justo y permanente a campesinos que cultiven sus tierras con árboles frutales, maderables y especies que requieren ser procesadas;",
+          "identificador": "a",
+          "contenido": ") Un jornal seguro, justo y permanente a campesinos que cultiven sus tierras con árboles frutales, maderables y especies que requieren ser procesadas;",
           "padre_numero": 54,
           "x_id": 114,
           "x_texto": 136
@@ -4362,8 +4362,8 @@
         {
           "numero": 58,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Un apoyo anual directo y fertilizantes gratuitos a productores de pequeña escala, y",
+          "identificador": "b",
+          "contenido": ") Un apoyo anual directo y fertilizantes gratuitos a productores de pequeña escala, y",
           "padre_numero": 54,
           "x_id": 114,
           "x_texto": 136,
@@ -4374,8 +4374,8 @@
         {
           "numero": 59,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Un apoyo anual directo a pescadores de pequeña escala. El Estado mantendrá precios de garantía para el maíz, frijol, leche, arroz y trigo harinero o panificable, en los términos de las disposiciones aplicables.",
+          "identificador": "c",
+          "contenido": ") Un apoyo anual directo a pescadores de pequeña escala. El Estado mantendrá precios de garantía para el maíz, frijol, leche, arroz y trigo harinero o panificable, en los términos de las disposiciones aplicables.",
           "padre_numero": 54,
           "x_id": 114,
           "x_texto": 136,
@@ -5146,8 +5146,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El Presidente de la República;",
+          "identificador": "a",
+          "contenido": ") El Presidente de la República;",
           "padre_numero": 9,
           "x_id": 129,
           "x_texto": 151
@@ -5155,8 +5155,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El equivalente al treinta y tres por ciento de los integrantes de cualquiera de las Cámaras del Congreso de la Unión; o",
+          "identificador": "b",
+          "contenido": ") El equivalente al treinta y tres por ciento de los integrantes de cualquiera de las Cámaras del Congreso de la Unión; o",
           "padre_numero": 9,
           "x_id": 129,
           "x_texto": 151
@@ -5164,8 +5164,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Para el caso de las consultas populares de temas de trascendencia nacional, los ciudadanos, en un número equivalente, al menos, al dos por ciento de los inscritos en la lista nominal de electores, en los términos que determine la ley.",
+          "identificador": "c",
+          "contenido": ") Para el caso de las consultas populares de temas de trascendencia nacional, los ciudadanos, en un número equivalente, al menos, al dos por ciento de los inscritos en la lista nominal de electores, en los términos que determine la ley.",
           "padre_numero": 9,
           "x_id": 129,
           "x_texto": 151
@@ -5861,8 +5861,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El financiamiento público para el sostenimiento de sus actividades ordinarias permanentes se fijará anualmente, multiplicando el número total de ciudadanos inscritos en el padrón electoral por el sesenta y cinco por ciento del valor diario de la Unidad de Medida y Actualización. El treinta por ciento de la cantidad que resulte de acuerdo a lo señalado anteriormente, se distribuirá entre los partidos políticos en forma igualitaria y el setenta por ciento restante de acuerdo con el porcentaje de votos que hubieren obtenido en la elección de diputados inmediata anterior.",
+          "identificador": "a",
+          "contenido": ") El financiamiento público para el sostenimiento de sus actividades ordinarias permanentes se fijará anualmente, multiplicando el número total de ciudadanos inscritos en el padrón electoral por el sesenta y cinco por ciento del valor diario de la Unidad de Medida y Actualización. El treinta por ciento de la cantidad que resulte de acuerdo a lo señalado anteriormente, se distribuirá entre los partidos políticos en forma igualitaria y el setenta por ciento restante de acuerdo con el porcentaje de votos que hubieren obtenido en la elección de diputados inmediata anterior.",
           "padre_numero": 9,
           "x_id": 107,
           "x_texto": 129,
@@ -5873,8 +5873,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El financiamiento público para las actividades tendientes a la obtención del voto durante el año en que se elijan Presidente de la República, senadores y diputados federales, equivaldrá al cincuenta por ciento del financiamiento público que le corresponda a cada partido político por actividades ordinarias en ese mismo año; cuando sólo se elijan diputados federales, equivaldrá al treinta por ciento de dicho financiamiento por actividades ordinarias.",
+          "identificador": "b",
+          "contenido": ") El financiamiento público para las actividades tendientes a la obtención del voto durante el año en que se elijan Presidente de la República, senadores y diputados federales, equivaldrá al cincuenta por ciento del financiamiento público que le corresponda a cada partido político por actividades ordinarias en ese mismo año; cuando sólo se elijan diputados federales, equivaldrá al treinta por ciento de dicho financiamiento por actividades ordinarias.",
           "padre_numero": 9,
           "x_id": 107,
           "x_texto": 129
@@ -5882,8 +5882,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El financiamiento público por actividades específicas, relativas a la educación, capacitación, investigación socioeconómica y política, así como a las tareas editoriales, equivaldrá al tres por ciento del monto total del financiamiento público que corresponda en cada año por actividades ordinarias. El treinta por ciento de la cantidad que resulte de acuerdo a lo señalado anteriormente, se distribuirá entre los partidos políticos en forma igualitaria y el setenta por ciento restante de acuerdo con el porcentaje de votos que hubieren obtenido en la elección de diputados inmediata anterior.",
+          "identificador": "c",
+          "contenido": ") El financiamiento público por actividades específicas, relativas a la educación, capacitación, investigación socioeconómica y política, así como a las tareas editoriales, equivaldrá al tres por ciento del monto total del financiamiento público que corresponda en cada año por actividades ordinarias. El treinta por ciento de la cantidad que resulte de acuerdo a lo señalado anteriormente, se distribuirá entre los partidos políticos en forma igualitaria y el setenta por ciento restante de acuerdo con el porcentaje de votos que hubieren obtenido en la elección de diputados inmediata anterior.",
           "padre_numero": 9,
           "x_id": 107,
           "x_texto": 129
@@ -5936,8 +5936,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "A partir del inicio de las precampañas y hasta el día de la jornada electoral quedarán a disposición del Instituto Nacional Electoral cuarenta y ocho minutos diarios, que serán distribuidos en dos y hasta tres minutos por cada hora de transmisión en cada estación de radio y canal de televisión, en el horario referido en el inciso d) de este apartado. En el período comprendido entre el fin de las precampañas y el inicio de las campañas, el cincuenta por ciento de los tiempos en radio y televisión se destinará a los fines propios de las autoridades electorales, y el resto a la difusión de mensajes genéricos de los partidos políticos, conforme a lo que establezca la ley;",
+          "identificador": "a",
+          "contenido": ") A partir del inicio de las precampañas y hasta el día de la jornada electoral quedarán a disposición del Instituto Nacional Electoral cuarenta y ocho minutos diarios, que serán distribuidos en dos y hasta tres minutos por cada hora de transmisión en cada estación de radio y canal de televisión, en el horario referido en el inciso d) de este apartado. En el período comprendido entre el fin de las precampañas y el inicio de las campañas, el cincuenta por ciento de los tiempos en radio y televisión se destinará a los fines propios de las autoridades electorales, y el resto a la difusión de mensajes genéricos de los partidos políticos, conforme a lo que establezca la ley;",
           "padre_numero": 16,
           "x_id": 129,
           "x_texto": 151,
@@ -5948,8 +5948,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Durante sus precampañas, los partidos políticos dispondrán en conjunto de un minuto por cada hora de transmisión en cada estación de radio y canal de televisión; el tiempo restante se utilizará conforme a lo que determine la ley;",
+          "identificador": "b",
+          "contenido": ") Durante sus precampañas, los partidos políticos dispondrán en conjunto de un minuto por cada hora de transmisión en cada estación de radio y canal de televisión; el tiempo restante se utilizará conforme a lo que determine la ley;",
           "padre_numero": 16,
           "x_id": 129,
           "x_texto": 151
@@ -5957,8 +5957,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Durante las campañas electorales deberá destinarse para cubrir el derecho de los partidos políticos y los candidatos al menos el ochenta y cinco por ciento del tiempo total disponible a que se refiere el inciso a) de este apartado;",
+          "identificador": "c",
+          "contenido": ") Durante las campañas electorales deberá destinarse para cubrir el derecho de los partidos políticos y los candidatos al menos el ochenta y cinco por ciento del tiempo total disponible a que se refiere el inciso a) de este apartado;",
           "padre_numero": 16,
           "x_id": 129,
           "x_texto": 151,
@@ -5969,8 +5969,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Las transmisiones en cada estación de radio y canal de televisión se distribuirán dentro del horario de programación comprendido entre las seis y las veinticuatro horas;",
+          "identificador": "d",
+          "contenido": ") Las transmisiones en cada estación de radio y canal de televisión se distribuirán dentro del horario de programación comprendido entre las seis y las veinticuatro horas;",
           "padre_numero": 16,
           "x_id": 129,
           "x_texto": 151
@@ -5978,8 +5978,8 @@
         {
           "numero": 22,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "El tiempo establecido como derecho de los partidos políticos y, en su caso, de los candidatos independientes, se distribuirá entre los mismos conforme a lo siguiente: el setenta por ciento será distribuido entre los partidos políticos de acuerdo a los resultados de la elección para diputados federales inmediata anterior y el treinta por ciento restante será dividido en partes iguales, de las cuales, hasta una de ellas podrá ser asignada a los candidatos independientes en su conjunto;",
+          "identificador": "e",
+          "contenido": ") El tiempo establecido como derecho de los partidos políticos y, en su caso, de los candidatos independientes, se distribuirá entre los mismos conforme a lo siguiente: el setenta por ciento será distribuido entre los partidos políticos de acuerdo a los resultados de la elección para diputados federales inmediata anterior y el treinta por ciento restante será dividido en partes iguales, de las cuales, hasta una de ellas podrá ser asignada a los candidatos independientes en su conjunto;",
           "padre_numero": 16,
           "x_id": 129,
           "x_texto": 151,
@@ -5990,8 +5990,8 @@
         {
           "numero": 23,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "A cada partido político nacional sin representación en el Congreso de la Unión se le asignará para radio y televisión solamente la parte correspondiente al porcentaje igualitario establecido en el inciso anterior, y",
+          "identificador": "f",
+          "contenido": ") A cada partido político nacional sin representación en el Congreso de la Unión se le asignará para radio y televisión solamente la parte correspondiente al porcentaje igualitario establecido en el inciso anterior, y",
           "padre_numero": 16,
           "x_id": 129,
           "x_texto": 151
@@ -5999,8 +5999,8 @@
         {
           "numero": 24,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Con independencia de lo dispuesto en los apartados A y B de esta base y fuera de los períodos de precampañas y campañas electorales federales, al Instituto Nacional Electoral le será asignado hasta el doce por ciento del tiempo total de que el Estado disponga en radio y televisión, conforme a las leyes y bajo cualquier modalidad; del total asignado, el Instituto distribuirá entre los partidos políticos nacionales en forma igualitaria un cincuenta por ciento; el tiempo restante lo utilizará para fines propios o de otras autoridades electorales, tanto federales como de las entidades federativas. Cada partido político nacional utilizará el tiempo que por este concepto le corresponda en los formatos que establezca la ley. En todo caso, las transmisiones a que se refiere este inciso se harán en el horario que determine el Instituto conforme a lo señalado en el inciso d) del presente Apartado. En situaciones especiales, el Instituto podrá disponer de los tiempos correspondientes a mensajes partidistas a favor de un partido político, cuando así se justifique.",
+          "identificador": "g",
+          "contenido": ") Con independencia de lo dispuesto en los apartados A y B de esta base y fuera de los períodos de precampañas y campañas electorales federales, al Instituto Nacional Electoral le será asignado hasta el doce por ciento del tiempo total de que el Estado disponga en radio y televisión, conforme a las leyes y bajo cualquier modalidad; del total asignado, el Instituto distribuirá entre los partidos políticos nacionales en forma igualitaria un cincuenta por ciento; el tiempo restante lo utilizará para fines propios o de otras autoridades electorales, tanto federales como de las entidades federativas. Cada partido político nacional utilizará el tiempo que por este concepto le corresponda en los formatos que establezca la ley. En todo caso, las transmisiones a que se refiere este inciso se harán en el horario que determine el Instituto conforme a lo señalado en el inciso d) del presente Apartado. En situaciones especiales, el Instituto podrá disponer de los tiempos correspondientes a mensajes partidistas a favor de un partido político, cuando así se justifique.",
           "padre_numero": 16,
           "x_id": 129,
           "x_texto": 151,
@@ -6056,8 +6056,8 @@
         {
           "numero": 29,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Para los casos de los procesos electorales locales con jornadas comiciales coincidentes con la federal, el tiempo asignado en cada entidad federativa estará comprendido dentro del total disponible conforme a los incisos a), b) y c) del apartado A de esta base;",
+          "identificador": "a",
+          "contenido": ") Para los casos de los procesos electorales locales con jornadas comiciales coincidentes con la federal, el tiempo asignado en cada entidad federativa estará comprendido dentro del total disponible conforme a los incisos a), b) y c) del apartado A de esta base;",
           "padre_numero": 16,
           "x_id": 129,
           "x_texto": 151
@@ -6065,8 +6065,8 @@
         {
           "numero": 30,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Para los demás procesos electorales, la asignación se hará en los términos de la ley, conforme a los criterios de esta base constitucional, y",
+          "identificador": "b",
+          "contenido": ") Para los demás procesos electorales, la asignación se hará en los términos de la ley, conforme a los criterios de esta base constitucional, y",
           "padre_numero": 16,
           "x_id": 129,
           "x_texto": 151
@@ -6074,8 +6074,8 @@
         {
           "numero": 31,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La distribución de los tiempos entre los partidos políticos, incluyendo a los de registro local, y los candidatos independientes se realizará de acuerdo con los criterios señalados en el apartado A de esta base y lo que determine la legislación aplicable.",
+          "identificador": "c",
+          "contenido": ") La distribución de los tiempos entre los partidos políticos, incluyendo a los de registro local, y los candidatos independientes se realizará de acuerdo con los criterios señalados en el apartado A de esta base y lo que determine la legislación aplicable.",
           "padre_numero": 16,
           "x_id": 129,
           "x_texto": 151,
@@ -6221,8 +6221,8 @@
         {
           "numero": 45,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La Cámara de Diputados emitirá el acuerdo para la elección del consejero Presidente y los consejeros electorales, que contendrá la convocatoria pública, las etapas completas para el procedimiento, sus fechas límites y plazos improrrogables, así como el proceso para la designación de un comité técnico de evaluación, integrado por cinco personas de reconocido prestigio, de las cuales tres serán nombradas por el órgano de dirección política de la Cámara de Diputados y dos por la Comisión Nacional de los Derechos Humanos;",
+          "identificador": "a",
+          "contenido": ") La Cámara de Diputados emitirá el acuerdo para la elección del consejero Presidente y los consejeros electorales, que contendrá la convocatoria pública, las etapas completas para el procedimiento, sus fechas límites y plazos improrrogables, así como el proceso para la designación de un comité técnico de evaluación, integrado por cinco personas de reconocido prestigio, de las cuales tres serán nombradas por el órgano de dirección política de la Cámara de Diputados y dos por la Comisión Nacional de los Derechos Humanos;",
           "padre_numero": 39,
           "x_id": 129,
           "x_texto": 151,
@@ -6233,8 +6233,8 @@
         {
           "numero": 46,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El comité recibirá la lista completa de los aspirantes que concurran a la convocatoria pública, evaluará el cumplimiento de los requisitos constitucionales y legales, así como su idoneidad para desempeñar el cargo; seleccionará a los mejor evaluados en una proporción de cinco personas por cada cargo vacante, y remitirá la relación correspondiente al órgano de dirección política de la Cámara de Diputados;",
+          "identificador": "b",
+          "contenido": ") El comité recibirá la lista completa de los aspirantes que concurran a la convocatoria pública, evaluará el cumplimiento de los requisitos constitucionales y legales, así como su idoneidad para desempeñar el cargo; seleccionará a los mejor evaluados en una proporción de cinco personas por cada cargo vacante, y remitirá la relación correspondiente al órgano de dirección política de la Cámara de Diputados;",
           "padre_numero": 39,
           "x_id": 129,
           "x_texto": 151
@@ -6242,8 +6242,8 @@
         {
           "numero": 47,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El órgano de dirección política impulsará la construcción de los acuerdos para la elección del consejero Presidente y los consejeros electorales, a fin de que una vez realizada la votación por este órgano en los términos de la ley, se remita al Pleno de la Cámara la propuesta con las designaciones correspondientes;",
+          "identificador": "c",
+          "contenido": ") El órgano de dirección política impulsará la construcción de los acuerdos para la elección del consejero Presidente y los consejeros electorales, a fin de que una vez realizada la votación por este órgano en los términos de la ley, se remita al Pleno de la Cámara la propuesta con las designaciones correspondientes;",
           "padre_numero": 39,
           "x_id": 129,
           "x_texto": 151
@@ -6251,8 +6251,8 @@
         {
           "numero": 48,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Vencido el plazo que para el efecto se establezca en el acuerdo a que se refiere el inciso a), sin que el órgano de dirección política de la Cámara haya realizado la votación o remisión previstas en el inciso anterior, o habiéndolo hecho, no se alcance la votación requerida en el Pleno, se deberá convocar a éste a una sesión en la que se realizará la elección mediante insaculación de la lista conformada por el comité de evaluación;",
+          "identificador": "d",
+          "contenido": ") Vencido el plazo que para el efecto se establezca en el acuerdo a que se refiere el inciso a), sin que el órgano de dirección política de la Cámara haya realizado la votación o remisión previstas en el inciso anterior, o habiéndolo hecho, no se alcance la votación requerida en el Pleno, se deberá convocar a éste a una sesión en la que se realizará la elección mediante insaculación de la lista conformada por el comité de evaluación;",
           "padre_numero": 39,
           "x_id": 129,
           "x_texto": 151
@@ -6260,8 +6260,8 @@
         {
           "numero": 49,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Al vencimiento del plazo fijado en el acuerdo referido en el inciso a), sin que se hubiere concretado la elección en los términos de los incisos c) y d), el Pleno de la Suprema Corte de Justicia de la Nación realizará, en sesión pública, la designación mediante insaculación de la lista conformada por el comité de evaluación.",
+          "identificador": "e",
+          "contenido": ") Al vencimiento del plazo fijado en el acuerdo referido en el inciso a), sin que se hubiere concretado la elección en los términos de los incisos c) y d), el Pleno de la Suprema Corte de Justicia de la Nación realizará, en sesión pública, la designación mediante insaculación de la lista conformada por el comité de evaluación.",
           "padre_numero": 39,
           "x_id": 129,
           "x_texto": 151
@@ -6338,8 +6338,8 @@
         {
           "numero": 57,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Para los procesos electorales federales y locales:",
+          "identificador": "a",
+          "contenido": ") Para los procesos electorales federales y locales:",
           "padre_numero": 39,
           "x_id": 129,
           "x_texto": 151
@@ -6347,7 +6347,7 @@
         {
           "numero": 58,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "La capacitación electoral;",
           "padre_numero": 57,
           "x_id": 150,
@@ -6356,7 +6356,7 @@
         {
           "numero": 59,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "La geografía electoral, así como el diseño y determinación de los distritos electorales y división del territorio en secciones electorales;",
           "padre_numero": 57,
           "x_id": 150,
@@ -6365,7 +6365,7 @@
         {
           "numero": 60,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "El padrón y la lista de electores;",
           "padre_numero": 57,
           "x_id": 150,
@@ -6374,7 +6374,7 @@
         {
           "numero": 61,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "La ubicación de las casillas y la designación de los funcionarios de sus mesas directivas;",
           "padre_numero": 57,
           "x_id": 150,
@@ -6383,7 +6383,7 @@
         {
           "numero": 62,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "Las reglas, lineamientos, criterios y formatos en materia de resultados preliminares; encuestas o sondeos de opinión; observación electoral; conteos rápidos; impresión de documentos y producción de materiales electorales;",
           "padre_numero": 57,
           "x_id": 150,
@@ -6392,7 +6392,7 @@
         {
           "numero": 63,
           "tipo": "numeral",
-          "identificador": "6.",
+          "identificador": "6",
           "contenido": "La fiscalización de los ingresos y egresos de los partidos políticos y candidatos, y",
           "padre_numero": 57,
           "x_id": 150,
@@ -6401,7 +6401,7 @@
         {
           "numero": 64,
           "tipo": "numeral",
-          "identificador": "7.",
+          "identificador": "7",
           "contenido": "Las demás que determine la ley.",
           "padre_numero": 57,
           "x_id": 150,
@@ -6410,8 +6410,8 @@
         {
           "numero": 65,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Para los procesos electorales federales:",
+          "identificador": "b",
+          "contenido": ") Para los procesos electorales federales:",
           "padre_numero": 39,
           "x_id": 129,
           "x_texto": 151
@@ -6419,7 +6419,7 @@
         {
           "numero": 66,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Los derechos y el acceso a las prerrogativas de los candidatos y partidos políticos;",
           "padre_numero": 65,
           "x_id": 150,
@@ -6428,7 +6428,7 @@
         {
           "numero": 67,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "La preparación de la jornada electoral;",
           "padre_numero": 65,
           "x_id": 150,
@@ -6437,7 +6437,7 @@
         {
           "numero": 68,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "La impresión de documentos y la producción de materiales electorales;",
           "padre_numero": 65,
           "x_id": 150,
@@ -6446,7 +6446,7 @@
         {
           "numero": 69,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Los escrutinios y cómputos en los términos que señale la ley;",
           "padre_numero": 65,
           "x_id": 150,
@@ -6455,7 +6455,7 @@
         {
           "numero": 70,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "La declaración de validez y el otorgamiento de constancias en las elecciones de diputados y senadores;",
           "padre_numero": 65,
           "x_id": 150,
@@ -6464,7 +6464,7 @@
         {
           "numero": 71,
           "tipo": "numeral",
-          "identificador": "6.",
+          "identificador": "6",
           "contenido": "El cómputo de la elección de Presidente de los Estados Unidos Mexicanos en cada uno de los distritos electorales uninominales, y",
           "padre_numero": 65,
           "x_id": 150,
@@ -6473,7 +6473,7 @@
         {
           "numero": 72,
           "tipo": "numeral",
-          "identificador": "7.",
+          "identificador": "7",
           "contenido": "Las demás que determine la ley.",
           "padre_numero": 65,
           "x_id": 150,
@@ -6482,8 +6482,8 @@
         {
           "numero": 73,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Para los procesos de revocación de mandato, en los términos del artículo 35, fracción IX, el Instituto Nacional Electoral deberá realizar aquellas funciones que correspondan para su debida implementación.",
+          "identificador": "c",
+          "contenido": ") Para los procesos de revocación de mandato, en los términos del artículo 35, fracción IX, el Instituto Nacional Electoral deberá realizar aquellas funciones que correspondan para su debida implementación.",
           "padre_numero": 39,
           "x_id": 129,
           "x_texto": 151,
@@ -6536,7 +6536,7 @@
         {
           "numero": 78,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Derechos y el acceso a las prerrogativas de los candidatos y partidos políticos;",
           "padre_numero": 39,
           "x_id": 128,
@@ -6545,7 +6545,7 @@
         {
           "numero": 79,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Educación cívica;",
           "padre_numero": 39,
           "x_id": 128,
@@ -6554,7 +6554,7 @@
         {
           "numero": 80,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Preparación de la jornada electoral;",
           "padre_numero": 39,
           "x_id": 128,
@@ -6563,7 +6563,7 @@
         {
           "numero": 81,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Impresión de documentos y la producción de materiales electorales;",
           "padre_numero": 39,
           "x_id": 128,
@@ -6572,7 +6572,7 @@
         {
           "numero": 82,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "Escrutinios y cómputos en los términos que señale la ley;",
           "padre_numero": 39,
           "x_id": 128,
@@ -6581,7 +6581,7 @@
         {
           "numero": 83,
           "tipo": "numeral",
-          "identificador": "6.",
+          "identificador": "6",
           "contenido": "Declaración de validez y el otorgamiento de constancias en las elecciones locales;",
           "padre_numero": 39,
           "x_id": 128,
@@ -6590,7 +6590,7 @@
         {
           "numero": 84,
           "tipo": "numeral",
-          "identificador": "7.",
+          "identificador": "7",
           "contenido": "Cómputo de la elección del titular del poder ejecutivo;",
           "padre_numero": 39,
           "x_id": 128,
@@ -6599,7 +6599,7 @@
         {
           "numero": 85,
           "tipo": "numeral",
-          "identificador": "8.",
+          "identificador": "8",
           "contenido": "Resultados preliminares; encuestas o sondeos de opinión; observación electoral, y conteos rápidos, conforme a los lineamientos establecidos en el Apartado anterior;",
           "padre_numero": 39,
           "x_id": 128,
@@ -6608,7 +6608,7 @@
         {
           "numero": 86,
           "tipo": "numeral",
-          "identificador": "9.",
+          "identificador": "9",
           "contenido": "Organización, desarrollo, cómputo y declaración de resultados en los mecanismos de participación ciudadana que prevea la legislación local;",
           "padre_numero": 39,
           "x_id": 128,
@@ -6617,7 +6617,7 @@
         {
           "numero": 87,
           "tipo": "numeral",
-          "identificador": "10.",
+          "identificador": "10",
           "contenido": "Todas las no reservadas al Instituto Nacional Electoral, y",
           "padre_numero": 39,
           "x_id": 128,
@@ -6626,7 +6626,7 @@
         {
           "numero": 88,
           "tipo": "numeral",
-          "identificador": "11.",
+          "identificador": "11",
           "contenido": "Las que determine la ley. En los supuestos que establezca la ley y con la aprobación de una mayoría de cuando menos ocho votos del Consejo General, el Instituto Nacional Electoral podrá:",
           "padre_numero": 39,
           "x_id": 128,
@@ -6635,8 +6635,8 @@
         {
           "numero": 89,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Asumir directamente la realización de las actividades propias de la función electoral que corresponden a los órganos electorales locales;",
+          "identificador": "a",
+          "contenido": ") Asumir directamente la realización de las actividades propias de la función electoral que corresponden a los órganos electorales locales;",
           "padre_numero": 39,
           "x_id": 129,
           "x_texto": 151
@@ -6644,8 +6644,8 @@
         {
           "numero": 90,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Delegar en dichos órganos electorales las atribuciones a que se refiere el inciso a) del Apartado B de esta Base, sin perjuicio de reasumir su ejercicio directo en cualquier momento, o",
+          "identificador": "b",
+          "contenido": ") Delegar en dichos órganos electorales las atribuciones a que se refiere el inciso a) del Apartado B de esta Base, sin perjuicio de reasumir su ejercicio directo en cualquier momento, o",
           "padre_numero": 39,
           "x_id": 129,
           "x_texto": 151
@@ -6653,8 +6653,8 @@
         {
           "numero": 91,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Atraer a su conocimiento cualquier asunto de la competencia de los órganos electorales locales, cuando su trascendencia así lo amerite o para sentar un criterio de interpretación.",
+          "identificador": "c",
+          "contenido": ") Atraer a su conocimiento cualquier asunto de la competencia de los órganos electorales locales, cuando su trascendencia así lo amerite o para sentar un criterio de interpretación.",
           "padre_numero": 39,
           "x_id": 129,
           "x_texto": 151
@@ -6713,8 +6713,8 @@
         {
           "numero": 97,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Se exceda el gasto de campaña en un cinco por ciento del monto total autorizado;",
+          "identificador": "a",
+          "contenido": ") Se exceda el gasto de campaña en un cinco por ciento del monto total autorizado;",
           "padre_numero": 94,
           "x_id": 107,
           "x_texto": 129
@@ -6722,8 +6722,8 @@
         {
           "numero": 98,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Se compre o adquiera cobertura informativa o tiempos en radio y televisión, fuera de los supuestos previstos en la ley;",
+          "identificador": "b",
+          "contenido": ") Se compre o adquiera cobertura informativa o tiempos en radio y televisión, fuera de los supuestos previstos en la ley;",
           "padre_numero": 94,
           "x_id": 107,
           "x_texto": 129,
@@ -6734,8 +6734,8 @@
         {
           "numero": 99,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Se reciban o utilicen recursos de procedencia ilícita o recursos públicos en las campañas.",
+          "identificador": "c",
+          "contenido": ") Se reciban o utilicen recursos de procedencia ilícita o recursos públicos en las campañas.",
           "padre_numero": 94,
           "x_id": 107,
           "x_texto": 129,
@@ -7996,7 +7996,7 @@
         {
           "numero": 2,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "Aprobado un proyecto en la Cámara de su origen, pasará para su discusión a la otra. Si ésta lo aprobare, se remitirá al Ejecutivo, quien, si no tuviere observaciones que hacer, lo publicará inmediatamente.",
           "padre_numero": null,
           "x_id": 85,
@@ -8005,7 +8005,7 @@
         {
           "numero": 3,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "Se reputará aprobado por el Poder Ejecutivo todo proyecto no devuelto con observaciones a la Cámara de su origen dentro de los treinta días naturales siguientes a su recepción; vencido este plazo el Ejecutivo dispondrá de diez días naturales para promulgar y publicar la ley o decreto. Transcurrido este segundo plazo, la ley o decreto será considerado promulgado y el Presidente de la Cámara de origen ordenará dentro de los diez días naturales siguientes su publicación en el Diario Oficial de la Federación, sin que se requiera refrendo. Los plazos a que se refiere esta fracción no se interrumpirán si el Congreso cierra o suspende sus sesiones, en cuyo caso la devolución deberá hacerse a la Comisión Permanente.",
           "padre_numero": null,
           "x_id": 85,
@@ -8017,7 +8017,7 @@
         {
           "numero": 4,
           "tipo": "apartado",
-          "identificador": "C.",
+          "identificador": "C",
           "contenido": "El proyecto de ley o decreto desechado en todo o en parte por el Ejecutivo, será devuelto, con sus observaciones, a la Cámara de su origen. Deberá ser discutido de nuevo por ésta,, (sic DOF 05-02-1917) y si fuese confirmado por las dos terceras partes del número total de votos, pasará otra vez a la Cámara revisora. Si por esta fuese sancionado por la misma mayoría, el proyecto será ley o decreto y volverá al Ejecutivo para su promulgación.",
           "padre_numero": null,
           "x_id": 85,
@@ -8035,7 +8035,7 @@
         {
           "numero": 6,
           "tipo": "apartado",
-          "identificador": "D.",
+          "identificador": "D",
           "contenido": "Si algún proyecto de ley o decreto, fuese desechado en su totalidad por la Cámara de revisión, volverá a la de su origen con las observaciones que aquella le hubiese hecho. Si examinado de nuevo fuese aprobado por la mayoría absoluta de los miembros presentes, volverá a la Cámara que lo desechó, la cual lo tomará otra vez en consideración, y si lo aprobare por la misma mayoría, pasará al Ejecutivo para los efectos de la fracción A; pero si lo reprobase, no podrá volver a presentarse en el mismo período de sesiones.",
           "padre_numero": null,
           "x_id": 85,
@@ -8044,7 +8044,7 @@
         {
           "numero": 7,
           "tipo": "apartado",
-          "identificador": "E.",
+          "identificador": "E",
           "contenido": "Si un proyecto de ley o decreto fuese desechado en parte, o modificado, o adicionado por la Cámara revisora, la nueva discusión de la Cámara de su origen versará únicamente sobre lo desechado o sobre las reformas o adiciones, sin poder alterarse en manera alguna los artículos aprobados. Si las adiciones o reformas hechas por la Cámara revisora fuesen aprobadas por la mayoría absoluta de los votos presentes en la Cámara de su origen, se pasará todo el proyecto al Ejecutivo, para los efectos de la fracción A. Si las adiciones o reformas hechas por la Cámara revisora fueren reprobadas por la mayoría de votos en la Cámara de su origen, volverán a aquella para que tome en consideración las razones de ésta, y si por mayoría absoluta de votos presentes se desecharen en esta segunda revisión dichas adiciones o reformas, el proyecto, en lo que haya sido aprobado por ambas Cámaras, se pasará al Ejecutivo para los efectos de la fracción A. Si la Cámara revisora insistiere, por la mayoría absoluta de votos presentes, en dichas adiciones o reformas, todo el proyecto no volverá a presentarse sino hasta el siguiente período de sesiones, a no ser que ambas Cámaras acuerden, por la mayoría absoluta de sus miembros presentes, que se expida la ley o decreto sólo con los artículos aprobados, y que se reserven los adicionados o reformados para su examen y votación en las sesiones siguientes.",
           "padre_numero": null,
           "x_id": 85,
@@ -8053,7 +8053,7 @@
         {
           "numero": 8,
           "tipo": "apartado",
-          "identificador": "F.",
+          "identificador": "F",
           "contenido": "En la interpretación, reforma o derogación de las leyes o decretos, se observarán los mismos trámites establecidos para su formación.",
           "padre_numero": null,
           "x_id": 85,
@@ -8062,7 +8062,7 @@
         {
           "numero": 9,
           "tipo": "apartado",
-          "identificador": "G.",
+          "identificador": "G",
           "contenido": "Todo proyecto de ley o decreto que fuere desechado en la Cámara de su origen, no podrá volver a presentarse en las sesiones del año.",
           "padre_numero": null,
           "x_id": 85,
@@ -8071,7 +8071,7 @@
         {
           "numero": 10,
           "tipo": "apartado",
-          "identificador": "H.",
+          "identificador": "H",
           "contenido": "La formación de las leyes o decretos puede comenzar indistintamente en cualquiera de las dos Cámaras, con excepción de los proyectos que versaren sobre empréstitos, contribuciones o impuestos, o sobre reclutamiento de tropas, todos los cuales deberán discutirse primero en la Cámara de Diputados.",
           "padre_numero": null,
           "x_id": 85,
@@ -8080,7 +8080,7 @@
         {
           "numero": 11,
           "tipo": "apartado",
-          "identificador": "I.",
+          "identificador": "I",
           "contenido": "Las iniciativas de leyes o decretos se discutirán preferentemente en la Cámara en que se presenten, a menos que transcurra un mes desde que se pasen a la Comisión dictaminadora sin que ésta rinda dictamen, pues en tal caso el mismo proyecto de ley o decreto puede presentarse y discutirse en la otra Cámara.",
           "padre_numero": null,
           "x_id": 85,
@@ -8526,8 +8526,8 @@
         {
           "numero": 39,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las leyes generales que establezcan como mínimo, los tipos penales y sus sanciones en las materias de secuestro, desaparición forzada de personas, otras formas de privación de la libertad contrarias a la ley, extorsión, trata de personas, tortura y otros tratos o penas crueles, inhumanos o degradantes, así como electoral.",
+          "identificador": "a",
+          "contenido": ") Las leyes generales que establezcan como mínimo, los tipos penales y sus sanciones en las materias de secuestro, desaparición forzada de personas, otras formas de privación de la libertad contrarias a la ley, extorsión, trata de personas, tortura y otros tratos o penas crueles, inhumanos o degradantes, así como electoral.",
           "padre_numero": 38,
           "x_id": 125,
           "x_texto": 147,
@@ -8550,8 +8550,8 @@
         {
           "numero": 41,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La legislación que establezca los delitos y las faltas contra la Federación y las penas y sanciones que por ellos deban imponerse; así como legislar en materia de delincuencia organizada;",
+          "identificador": "b",
+          "contenido": ") La legislación que establezca los delitos y las faltas contra la Federación y las penas y sanciones que por ellos deban imponerse; así como legislar en materia de delincuencia organizada;",
           "padre_numero": 38,
           "x_id": 125,
           "x_texto": 147
@@ -8559,8 +8559,8 @@
         {
           "numero": 42,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La legislación única en materia procedimental penal, de mecanismos alternativos de solución de controversias en materia penal, de ejecución de penas y de justicia penal para adolescentes, que regirá en la República en el orden federal y en el fuero común.",
+          "identificador": "c",
+          "contenido": ") La legislación única en materia procedimental penal, de mecanismos alternativos de solución de controversias en materia penal, de ejecución de penas y de justicia penal para adolescentes, que regirá en la República en el orden federal y en el fuero común.",
           "padre_numero": 38,
           "x_id": 125,
           "x_texto": 147,
@@ -8625,8 +8625,8 @@
         {
           "numero": 48,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las reglas y la autoridad facultada para autorizar y regular a los prestadores de servicios de seguridad privada en todo el territorio nacional;",
+          "identificador": "a",
+          "contenido": ") Las reglas y la autoridad facultada para autorizar y regular a los prestadores de servicios de seguridad privada en todo el territorio nacional;",
           "padre_numero": 47,
           "x_id": 125,
           "x_texto": 147
@@ -8634,8 +8634,8 @@
         {
           "numero": 49,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las reglas de coordinación entre las personas autorizadas a prestar los servicios de seguridad privada y las autoridades correspondientes de la Federación, las entidades federativas y los municipios, para la adecuada organización y funcionamiento como auxiliares de la seguridad pública;",
+          "identificador": "b",
+          "contenido": ") Las reglas de coordinación entre las personas autorizadas a prestar los servicios de seguridad privada y las autoridades correspondientes de la Federación, las entidades federativas y los municipios, para la adecuada organización y funcionamiento como auxiliares de la seguridad pública;",
           "padre_numero": 47,
           "x_id": 125,
           "x_texto": 147
@@ -8643,8 +8643,8 @@
         {
           "numero": 50,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La coordinación de esos prestadores con las instituciones de seguridad pública en situaciones de emergencia y desastre, y",
+          "identificador": "c",
+          "contenido": ") La coordinación de esos prestadores con las instituciones de seguridad pública en situaciones de emergencia y desastre, y",
           "padre_numero": 47,
           "x_id": 125,
           "x_texto": 147
@@ -8652,8 +8652,8 @@
         {
           "numero": 51,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Los aspectos vinculados a la coordinación y supervisión de las policías complementarias en el país;",
+          "identificador": "d",
+          "contenido": ") Los aspectos vinculados a la coordinación y supervisión de las policías complementarias en el país;",
           "padre_numero": 47,
           "x_id": 125,
           "x_texto": 147,
@@ -10779,8 +10779,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los Poderes establecerán mecanismos públicos, abiertos, transparentes, inclusivos y accesibles que permitan la participación de todas las personas interesadas que acrediten los requisitos establecidos en esta Constitución y en las leyes, presenten un ensayo de tres cuartillas donde justifiquen los motivos de su postulación y remitan cinco cartas de referencia de sus vecinos, colegas o personas que respalden su idoneidad para desempeñar el cargo;",
+          "identificador": "a",
+          "contenido": ") Los Poderes establecerán mecanismos públicos, abiertos, transparentes, inclusivos y accesibles que permitan la participación de todas las personas interesadas que acrediten los requisitos establecidos en esta Constitución y en las leyes, presenten un ensayo de tres cuartillas donde justifiquen los motivos de su postulación y remitan cinco cartas de referencia de sus vecinos, colegas o personas que respalden su idoneidad para desempeñar el cargo;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -10788,8 +10788,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cada Poder integrará un Comité de Evaluación conformado por cinco personas reconocidas en la actividad jurídica, que recibirá los expedientes de las personas aspirantes, evaluará el cumplimiento de los requisitos constitucionales y legales e identificará a las personas mejor evaluadas que cuenten con los conocimientos técnicos necesarios para el desempeño del cargo y se hayan distinguido por su honestidad, buena fama pública, competencia y antecedentes académicos y profesionales en el ejercicio de la actividad jurídica, y",
+          "identificador": "b",
+          "contenido": ") Cada Poder integrará un Comité de Evaluación conformado por cinco personas reconocidas en la actividad jurídica, que recibirá los expedientes de las personas aspirantes, evaluará el cumplimiento de los requisitos constitucionales y legales e identificará a las personas mejor evaluadas que cuenten con los conocimientos técnicos necesarios para el desempeño del cargo y se hayan distinguido por su honestidad, buena fama pública, competencia y antecedentes académicos y profesionales en el ejercicio de la actividad jurídica, y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -10797,8 +10797,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los Comités de Evaluación integrarán un listado de las diez personas mejor evaluadas para cada cargo en los casos de Ministras y Ministros de la Suprema Corte de Justicia de la Nación, Magistradas y Magistrados de la Sala Superior y salas regionales del Tribunal Electoral e integrantes del Tribunal de Disciplina Judicial, y de las seis personas mejor evaluadas para cada cargo en los casos de Magistradas y Magistrados de Circuito y Juezas y Jueces de Distrito. Posteriormente, depurarán dicho listado mediante insaculación pública para ajustarlo al número de postulaciones para cada cargo, observando la paridad de género. Ajustados los listados, los Comités los remitirán a la autoridad que represente a cada Poder de la Unión para su aprobación y envío al Senado.",
+          "identificador": "c",
+          "contenido": ") Los Comités de Evaluación integrarán un listado de las diez personas mejor evaluadas para cada cargo en los casos de Ministras y Ministros de la Suprema Corte de Justicia de la Nación, Magistradas y Magistrados de la Sala Superior y salas regionales del Tribunal Electoral e integrantes del Tribunal de Disciplina Judicial, y de las seis personas mejor evaluadas para cada cargo en los casos de Magistradas y Magistrados de Circuito y Juezas y Jueces de Distrito. Posteriormente, depurarán dicho listado mediante insaculación pública para ajustarlo al número de postulaciones para cada cargo, observando la paridad de género. Ajustados los listados, los Comités los remitirán a la autoridad que represente a cada Poder de la Unión para su aprobación y envío al Senado.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -11480,8 +11480,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Medidas de fortalecimiento, consistentes en actividades de capacitación y otras tendientes a reforzar los conocimientos o competencias de la persona evaluada, a cuyo término se aplicará una nueva evaluación, y",
+          "identificador": "a",
+          "contenido": ") Medidas de fortalecimiento, consistentes en actividades de capacitación y otras tendientes a reforzar los conocimientos o competencias de la persona evaluada, a cuyo término se aplicará una nueva evaluación, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -11489,8 +11489,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando la persona servidora pública no acredite favorablemente la evaluación que derive de las medidas correctivas ordenadas o se niegue a acatarlas, el Tribunal podrá ordenar su suspensión de hasta un año y determinar las acciones y condiciones para su restitución. Transcurrido el año de suspensión sin acreditar satisfactoriamente la evaluación, el Tribunal resolverá de manera fundada y motivada la destitución de la persona servidora pública, sin responsabilidad para el Poder Judicial.",
+          "identificador": "b",
+          "contenido": ") Cuando la persona servidora pública no acredite favorablemente la evaluación que derive de las medidas correctivas ordenadas o se niegue a acatarlas, el Tribunal podrá ordenar su suspensión de hasta un año y determinar las acciones y condiciones para su restitución. Transcurrido el año de suspensión sin acreditar satisfactoriamente la evaluación, el Tribunal resolverá de manera fundada y motivada la destitución de la persona servidora pública, sin responsabilidad para el Poder Judicial.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -11674,7 +11674,7 @@
         {
           "numero": 7,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "El Ministerio Público de la Federación se organizará en una Fiscalía General de la República como órgano público autónomo, dotado de personalidad jurídica y patrimonio propio.",
           "padre_numero": null,
           "x_id": 85,
@@ -11703,7 +11703,7 @@
         {
           "numero": 1,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "El Ministerio Público de la Federación se organizará en una Fiscalía General de la República como órgano público autónomo, dotado de personalidad jurídica y patrimonio propio.",
           "padre_numero": null,
           "x_id": 85,
@@ -11859,7 +11859,7 @@
         {
           "numero": 17,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "El Congreso de la Unión y las legislaturas de las entidades federativas, en el ámbito de sus respectivas competencias, establecerán organismos de protección de los derechos humanos que ampara el orden jurídico mexicano, los que conocerán de quejas en contra de actos u omisiones de naturaleza administrativa provenientes de cualquier autoridad o servidor público, con excepción de los del Poder Judicial de la Federación, que violen estos derechos.",
           "padre_numero": null,
           "x_id": 85,
@@ -12162,8 +12162,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La Federación y una entidad federativa;",
+          "identificador": "a",
+          "contenido": ") La Federación y una entidad federativa;",
           "padre_numero": 2,
           "x_id": 106,
           "x_texto": 128,
@@ -12174,8 +12174,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La Federación y un municipio;",
+          "identificador": "b",
+          "contenido": ") La Federación y un municipio;",
           "padre_numero": 2,
           "x_id": 106,
           "x_texto": 128
@@ -12183,8 +12183,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El Poder Ejecutivo y el Congreso de la Unión; aquél y cualquiera de las Cámaras de éste o, en su caso, la Comisión Permanente;",
+          "identificador": "c",
+          "contenido": ") El Poder Ejecutivo y el Congreso de la Unión; aquél y cualquiera de las Cámaras de éste o, en su caso, la Comisión Permanente;",
           "padre_numero": 2,
           "x_id": 106,
           "x_texto": 128,
@@ -12195,8 +12195,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Una entidad federativa y otra;",
+          "identificador": "d",
+          "contenido": ") Una entidad federativa y otra;",
           "padre_numero": 2,
           "x_id": 106,
           "x_texto": 128,
@@ -12207,8 +12207,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Se deroga.",
+          "identificador": "e",
+          "contenido": ") Se deroga.",
           "padre_numero": 2,
           "x_id": 106,
           "x_texto": 128,
@@ -12219,8 +12219,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Se deroga.",
+          "identificador": "f",
+          "contenido": ") Se deroga.",
           "padre_numero": 2,
           "x_id": 106,
           "x_texto": 128,
@@ -12231,8 +12231,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Dos municipios de diversos Estados;",
+          "identificador": "g",
+          "contenido": ") Dos municipios de diversos Estados;",
           "padre_numero": 2,
           "x_id": 106,
           "x_texto": 128
@@ -12240,8 +12240,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Dos Poderes de una misma entidad federativa;",
+          "identificador": "h",
+          "contenido": ") Dos Poderes de una misma entidad federativa;",
           "padre_numero": 2,
           "x_id": 106,
           "x_texto": 128,
@@ -12252,8 +12252,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "Un Estado y uno de sus Municipios;",
+          "identificador": "i",
+          "contenido": ") Un Estado y uno de sus Municipios;",
           "padre_numero": 2,
           "x_id": 106,
           "x_texto": 128,
@@ -12264,8 +12264,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "j)",
-          "contenido": "Una Entidad Federativa y un Municipio de otra o una demarcación territorial de la Ciudad de México;",
+          "identificador": "j",
+          "contenido": ") Una Entidad Federativa y un Municipio de otra o una demarcación territorial de la Ciudad de México;",
           "padre_numero": 2,
           "x_id": 106,
           "x_texto": 128,
@@ -12276,8 +12276,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "k)",
-          "contenido": "Dos órganos constitucionales autónomos de una entidad federativa, y entre uno de éstos y el Poder Ejecutivo o el Poder Legislativo de esa entidad federativa, y",
+          "identificador": "k",
+          "contenido": ") Dos órganos constitucionales autónomos de una entidad federativa, y entre uno de éstos y el Poder Ejecutivo o el Poder Legislativo de esa entidad federativa, y",
           "padre_numero": 2,
           "x_id": 106,
           "x_texto": 128,
@@ -12288,8 +12288,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "l)",
-          "contenido": "Dos órganos constitucionales autónomos federales, y entre uno de éstos y el Poder Ejecutivo de la Unión o el Congreso de la Unión.",
+          "identificador": "l",
+          "contenido": ") Dos órganos constitucionales autónomos federales, y entre uno de éstos y el Poder Ejecutivo de la Unión o el Congreso de la Unión.",
           "padre_numero": 2,
           "x_id": 106,
           "x_texto": 128,
@@ -12354,8 +12354,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El equivalente al treinta y tres por ciento de los integrantes de la Cámara de Diputados del Congreso de la Unión, en contra de leyes federales;",
+          "identificador": "a",
+          "contenido": ") El equivalente al treinta y tres por ciento de los integrantes de la Cámara de Diputados del Congreso de la Unión, en contra de leyes federales;",
           "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
@@ -12366,8 +12366,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El equivalente al treinta y tres por ciento de los integrantes del Senado, en contra de las leyes federales o de tratados internacionales celebrados por el Estado Mexicano;",
+          "identificador": "b",
+          "contenido": ") El equivalente al treinta y tres por ciento de los integrantes del Senado, en contra de las leyes federales o de tratados internacionales celebrados por el Estado Mexicano;",
           "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
@@ -12378,8 +12378,8 @@
         {
           "numero": 22,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El Ejecutivo Federal, por conducto del Consejero Jurídico del Gobierno, en contra de normas generales de carácter federal y de las entidades federativas;",
+          "identificador": "c",
+          "contenido": ") El Ejecutivo Federal, por conducto del Consejero Jurídico del Gobierno, en contra de normas generales de carácter federal y de las entidades federativas;",
           "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
@@ -12390,8 +12390,8 @@
         {
           "numero": 23,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "El equivalente al treinta y tres por ciento de los integrantes de alguna de las Legislaturas de las entidades federativas en contra de las leyes expedidas por el propio órgano;",
+          "identificador": "d",
+          "contenido": ") El equivalente al treinta y tres por ciento de los integrantes de alguna de las Legislaturas de las entidades federativas en contra de las leyes expedidas por el propio órgano;",
           "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
@@ -12402,8 +12402,8 @@
         {
           "numero": 24,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Se deroga.",
+          "identificador": "e",
+          "contenido": ") Se deroga.",
           "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
@@ -12414,8 +12414,8 @@
         {
           "numero": 25,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Los partidos políticos con registro ante el Instituto Nacional Electoral, por conducto de sus dirigencias nacionales, en contra de leyes electorales federales o locales; y los partidos políticos con registro en una entidad federativa, a través de sus dirigencias, exclusivamente en contra de leyes electorales expedidas por la Legislatura de la entidad federativa que les otorgó el registro;",
+          "identificador": "f",
+          "contenido": ") Los partidos políticos con registro ante el Instituto Nacional Electoral, por conducto de sus dirigencias nacionales, en contra de leyes electorales federales o locales; y los partidos políticos con registro en una entidad federativa, a través de sus dirigencias, exclusivamente en contra de leyes electorales expedidas por la Legislatura de la entidad federativa que les otorgó el registro;",
           "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
@@ -12426,8 +12426,8 @@
         {
           "numero": 26,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "La Comisión Nacional de los Derechos Humanos, en contra de leyes de carácter federal o de las entidades federativas, así como de tratados internacionales celebrados por el Ejecutivo Federal y aprobados por el Senado de la República, que vulneren los derechos humanos consagrados en esta Constitución y en los tratados internacionales de los que México sea parte. Asimismo, los organismos de protección de los derechos humanos equivalentes en las entidades federativas, en contra de leyes expedidas por las Legislaturas;",
+          "identificador": "g",
+          "contenido": ") La Comisión Nacional de los Derechos Humanos, en contra de leyes de carácter federal o de las entidades federativas, así como de tratados internacionales celebrados por el Ejecutivo Federal y aprobados por el Senado de la República, que vulneren los derechos humanos consagrados en esta Constitución y en los tratados internacionales de los que México sea parte. Asimismo, los organismos de protección de los derechos humanos equivalentes en las entidades federativas, en contra de leyes expedidas por las Legislaturas;",
           "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
@@ -12438,8 +12438,8 @@
         {
           "numero": 27,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Se deroga",
+          "identificador": "h",
+          "contenido": ") Se deroga",
           "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
@@ -12450,8 +12450,8 @@
         {
           "numero": 28,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "El Fiscal General de la República respecto de leyes federales y de las entidades federativas, en materia penal y procesal penal, así como las relacionadas con el ámbito de sus funciones;",
+          "identificador": "i",
+          "contenido": ") El Fiscal General de la República respecto de leyes federales y de las entidades federativas, en materia penal y procesal penal, así como las relacionadas con el ámbito de sus funciones;",
           "padre_numero": 18,
           "x_id": 106,
           "x_texto": 128,
@@ -12698,8 +12698,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Contra sentencias definitivas, laudos y resoluciones que pongan fin al juicio, ya sea que la violación se cometa en ellos o que, cometida durante el procedimiento, afecte las defensas del quejoso trascendiendo al resultado del fallo. En relación con el amparo al que se refiere este inciso y la fracción V de este artículo, el Tribunal Colegiado de Circuito deberá decidir respecto de todas las violaciones procesales que se hicieron valer y aquéllas que, cuando proceda, advierta en suplencia de la queja, y fijará los términos precisos en que deberá pronunciarse la nueva resolución. Si las violaciones procesales no se invocaron en un primer amparo, ni el Tribunal Colegiado correspondiente las hizo valer de oficio en los casos en que proceda la suplencia de la queja, no podrán ser materia de concepto de violación, ni de estudio oficioso en juicio de amparo posterior.",
+          "identificador": "a",
+          "contenido": ") Contra sentencias definitivas, laudos y resoluciones que pongan fin al juicio, ya sea que la violación se cometa en ellos o que, cometida durante el procedimiento, afecte las defensas del quejoso trascendiendo al resultado del fallo. En relación con el amparo al que se refiere este inciso y la fracción V de este artículo, el Tribunal Colegiado de Circuito deberá decidir respecto de todas las violaciones procesales que se hicieron valer y aquéllas que, cuando proceda, advierta en suplencia de la queja, y fijará los términos precisos en que deberá pronunciarse la nueva resolución. Si las violaciones procesales no se invocaron en un primer amparo, ni el Tribunal Colegiado correspondiente las hizo valer de oficio en los casos en que proceda la suplencia de la queja, no podrán ser materia de concepto de violación, ni de estudio oficioso en juicio de amparo posterior.",
           "padre_numero": 11,
           "x_id": 113,
           "x_texto": 135
@@ -12737,8 +12737,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Contra actos en juicio cuya ejecución sea de imposible reparación, fuera de juicio o después de concluido, una vez agotados los recursos que en su caso procedan, y",
+          "identificador": "b",
+          "contenido": ") Contra actos en juicio cuya ejecución sea de imposible reparación, fuera de juicio o después de concluido, una vez agotados los recursos que en su caso procedan, y",
           "padre_numero": 11,
           "x_id": 113,
           "x_texto": 135
@@ -12746,8 +12746,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Contra actos que afecten a personas extrañas al juicio;",
+          "identificador": "c",
+          "contenido": ") Contra actos que afecten a personas extrañas al juicio;",
           "padre_numero": 11,
           "x_id": 113,
           "x_texto": 135,
@@ -12791,8 +12791,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "En materia penal, contra resoluciones definitivas dictadas por tribunales judiciales, sean éstos federales, del orden común o militares.",
+          "identificador": "a",
+          "contenido": ") En materia penal, contra resoluciones definitivas dictadas por tribunales judiciales, sean éstos federales, del orden común o militares.",
           "padre_numero": 20,
           "x_id": 113,
           "x_texto": 135
@@ -12800,8 +12800,8 @@
         {
           "numero": 22,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "En materia administrativa, cuando se reclamen por particulares sentencias definitivas y resoluciones que ponen fin al juicio dictadas por tribunales administrativos o judiciales, no reparables por algún recurso, juicio o medio ordinario de defensa legal;",
+          "identificador": "b",
+          "contenido": ") En materia administrativa, cuando se reclamen por particulares sentencias definitivas y resoluciones que ponen fin al juicio dictadas por tribunales administrativos o judiciales, no reparables por algún recurso, juicio o medio ordinario de defensa legal;",
           "padre_numero": 20,
           "x_id": 113,
           "x_texto": 135,
@@ -12812,8 +12812,8 @@
         {
           "numero": 23,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "En materia civil, cuando se reclamen sentencias definitivas dictadas en juicios del orden federal o en juicios mercantiles, sea federal o local la autoridad que dicte el fallo, o en juicios del orden común.",
+          "identificador": "c",
+          "contenido": ") En materia civil, cuando se reclamen sentencias definitivas dictadas en juicios del orden federal o en juicios mercantiles, sea federal o local la autoridad que dicte el fallo, o en juicios del orden común.",
           "padre_numero": 20,
           "x_id": 113,
           "x_texto": 135
@@ -12830,8 +12830,8 @@
         {
           "numero": 25,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "En materia laboral, cuando se reclamen resoluciones o sentencias definitivas que pongan fin al juicio dictadas por los tribunales laborales locales o federales o laudos del Tribunal Federal de Conciliación y Arbitraje de los Trabajadores al Servicio del Estado y sus homólogos en las entidades federativas;",
+          "identificador": "d",
+          "contenido": ") En materia laboral, cuando se reclamen resoluciones o sentencias definitivas que pongan fin al juicio dictadas por los tribunales laborales locales o federales o laudos del Tribunal Federal de Conciliación y Arbitraje de los Trabajadores al Servicio del Estado y sus homólogos en las entidades federativas;",
           "padre_numero": 20,
           "x_id": 113,
           "x_texto": 135,
@@ -12891,8 +12891,8 @@
         {
           "numero": 30,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cuando habiéndose impugnado en la demanda de amparo normas generales por estimarlas directamente violatorias de esta Constitución, subsista en el recurso el problema de constitucionalidad.",
+          "identificador": "a",
+          "contenido": ") Cuando habiéndose impugnado en la demanda de amparo normas generales por estimarlas directamente violatorias de esta Constitución, subsista en el recurso el problema de constitucionalidad.",
           "padre_numero": 29,
           "x_id": 113,
           "x_texto": 135,
@@ -12903,8 +12903,8 @@
         {
           "numero": 31,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Cuando se trate de los casos comprendidos en las fracciones II y III del artículo 103 de esta Constitución.",
+          "identificador": "b",
+          "contenido": ") Cuando se trate de los casos comprendidos en las fracciones II y III del artículo 103 de esta Constitución.",
           "padre_numero": 29,
           "x_id": 113,
           "x_texto": 135
@@ -13633,8 +13633,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El establecimiento de mecanismos de coordinación con los sistemas locales;",
+          "identificador": "a",
+          "contenido": ") El establecimiento de mecanismos de coordinación con los sistemas locales;",
           "padre_numero": 4,
           "x_id": 113,
           "x_texto": 135
@@ -13642,8 +13642,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El diseño y promoción de políticas integrales en materia de fiscalización y control de recursos públicos, de prevención, control y disuasión de faltas administrativas y hechos de corrupción, en especial sobre las causas que los generan;",
+          "identificador": "b",
+          "contenido": ") El diseño y promoción de políticas integrales en materia de fiscalización y control de recursos públicos, de prevención, control y disuasión de faltas administrativas y hechos de corrupción, en especial sobre las causas que los generan;",
           "padre_numero": 4,
           "x_id": 113,
           "x_texto": 135
@@ -13651,8 +13651,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La determinación de los mecanismos de suministro, intercambio, sistematización y actualización de la información que sobre estas materias generen las instituciones competentes de los órdenes de gobierno;",
+          "identificador": "c",
+          "contenido": ") La determinación de los mecanismos de suministro, intercambio, sistematización y actualización de la información que sobre estas materias generen las instituciones competentes de los órdenes de gobierno;",
           "padre_numero": 4,
           "x_id": 113,
           "x_texto": 135
@@ -13660,8 +13660,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "El establecimiento de bases y principios para la efectiva coordinación de las autoridades de los órdenes de gobierno en materia de fiscalización y control de los recursos públicos;",
+          "identificador": "d",
+          "contenido": ") El establecimiento de bases y principios para la efectiva coordinación de las autoridades de los órdenes de gobierno en materia de fiscalización y control de los recursos públicos;",
           "padre_numero": 4,
           "x_id": 113,
           "x_texto": 135
@@ -13669,8 +13669,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "La elaboración de un informe anual que contenga los avances y resultados del ejercicio de sus funciones y de la aplicación de políticas y programas en la materia.",
+          "identificador": "e",
+          "contenido": ") La elaboración de un informe anual que contenga los avances y resultados del ejercicio de sus funciones y de la aplicación de políticas y programas en la materia.",
           "padre_numero": 4,
           "x_id": 113,
           "x_texto": 135
@@ -13866,8 +13866,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las bases generales de la administración pública municipal y del procedimiento administrativo, incluyendo los medios de impugnación y los órganos para dirimir las controversias entre dicha administración y los particulares, con sujeción a los principios de igualdad, publicidad, audiencia y legalidad;",
+          "identificador": "a",
+          "contenido": ") Las bases generales de la administración pública municipal y del procedimiento administrativo, incluyendo los medios de impugnación y los órganos para dirimir las controversias entre dicha administración y los particulares, con sujeción a los principios de igualdad, publicidad, audiencia y legalidad;",
           "padre_numero": 7,
           "x_id": 113,
           "x_texto": 135
@@ -13875,8 +13875,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los casos en que se requiera el acuerdo de las dos terceras partes de los miembros de los ayuntamientos para dictar resoluciones que afecten el patrimonio inmobiliario municipal o para celebrar actos o convenios que comprometan al Municipio por un plazo mayor al periodo del Ayuntamiento;",
+          "identificador": "b",
+          "contenido": ") Los casos en que se requiera el acuerdo de las dos terceras partes de los miembros de los ayuntamientos para dictar resoluciones que afecten el patrimonio inmobiliario municipal o para celebrar actos o convenios que comprometan al Municipio por un plazo mayor al periodo del Ayuntamiento;",
           "padre_numero": 7,
           "x_id": 113,
           "x_texto": 135
@@ -13884,8 +13884,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las normas de aplicación general para celebrar los convenios a que se refieren tanto las fracciones III y IV de este artículo, como el segundo párrafo de la fracción VII del artículo 116 de esta Constitución;",
+          "identificador": "c",
+          "contenido": ") Las normas de aplicación general para celebrar los convenios a que se refieren tanto las fracciones III y IV de este artículo, como el segundo párrafo de la fracción VII del artículo 116 de esta Constitución;",
           "padre_numero": 7,
           "x_id": 113,
           "x_texto": 135
@@ -13893,8 +13893,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "El procedimiento y condiciones para que el gobierno estatal asuma una función o servicio municipal cuando, al no existir el convenio correspondiente, la legislatura estatal considere que el municipio de que se trate esté imposibilitado para ejercerlos o prestarlos; en este caso, será necesaria solicitud previa del ayuntamiento respectivo, aprobada por cuando menos las dos terceras partes de sus integrantes; y",
+          "identificador": "d",
+          "contenido": ") El procedimiento y condiciones para que el gobierno estatal asuma una función o servicio municipal cuando, al no existir el convenio correspondiente, la legislatura estatal considere que el municipio de que se trate esté imposibilitado para ejercerlos o prestarlos; en este caso, será necesaria solicitud previa del ayuntamiento respectivo, aprobada por cuando menos las dos terceras partes de sus integrantes; y",
           "padre_numero": 7,
           "x_id": 113,
           "x_texto": 135
@@ -13902,8 +13902,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Las disposiciones aplicables en aquellos municipios que no cuenten con los bandos o reglamentos correspondientes.",
+          "identificador": "e",
+          "contenido": ") Las disposiciones aplicables en aquellos municipios que no cuenten con los bandos o reglamentos correspondientes.",
           "padre_numero": 7,
           "x_id": 113,
           "x_texto": 135,
@@ -13938,8 +13938,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Agua potable, drenaje, alcantarillado, tratamiento y disposición de sus aguas residuales;",
+          "identificador": "a",
+          "contenido": ") Agua potable, drenaje, alcantarillado, tratamiento y disposición de sus aguas residuales;",
           "padre_numero": 16,
           "x_id": 113,
           "x_texto": 135,
@@ -13950,8 +13950,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Alumbrado público.",
+          "identificador": "b",
+          "contenido": ") Alumbrado público.",
           "padre_numero": 16,
           "x_id": 113,
           "x_texto": 135
@@ -13959,8 +13959,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Limpia, recolección, traslado, tratamiento y disposición final de residuos;",
+          "identificador": "c",
+          "contenido": ") Limpia, recolección, traslado, tratamiento y disposición final de residuos;",
           "padre_numero": 16,
           "x_id": 113,
           "x_texto": 135,
@@ -13971,8 +13971,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Mercados y centrales de abasto.",
+          "identificador": "d",
+          "contenido": ") Mercados y centrales de abasto.",
           "padre_numero": 16,
           "x_id": 113,
           "x_texto": 135
@@ -13980,8 +13980,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Panteones.",
+          "identificador": "e",
+          "contenido": ") Panteones.",
           "padre_numero": 16,
           "x_id": 113,
           "x_texto": 135
@@ -13989,8 +13989,8 @@
         {
           "numero": 22,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Rastro.",
+          "identificador": "f",
+          "contenido": ") Rastro.",
           "padre_numero": 16,
           "x_id": 113,
           "x_texto": 135
@@ -13998,8 +13998,8 @@
         {
           "numero": 23,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Calles, parques y jardines y su equipamiento;",
+          "identificador": "g",
+          "contenido": ") Calles, parques y jardines y su equipamiento;",
           "padre_numero": 16,
           "x_id": 113,
           "x_texto": 135,
@@ -14010,8 +14010,8 @@
         {
           "numero": 24,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Seguridad pública, en los términos del artículo 21 de esta Constitución, policía preventiva municipal y tránsito; e",
+          "identificador": "h",
+          "contenido": ") Seguridad pública, en los términos del artículo 21 de esta Constitución, policía preventiva municipal y tránsito; e",
           "padre_numero": 16,
           "x_id": 113,
           "x_texto": 135,
@@ -14022,8 +14022,8 @@
         {
           "numero": 25,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "Los demás que las Legislaturas locales determinen según las condiciones territoriales y socio-económicas de los Municipios, así como su capacidad administrativa y financiera.",
+          "identificador": "i",
+          "contenido": ") Los demás que las Legislaturas locales determinen según las condiciones territoriales y socio-económicas de los Municipios, así como su capacidad administrativa y financiera.",
           "padre_numero": 16,
           "x_id": 113,
           "x_texto": 135
@@ -14076,8 +14076,8 @@
         {
           "numero": 30,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Percibirán las contribuciones, incluyendo tasas adicionales, que establezcan los Estados sobre la propiedad inmobiliaria, de su fraccionamiento, división, consolidación, traslación y mejora así como las que tengan por base el cambio de valor de los inmuebles.",
+          "identificador": "a",
+          "contenido": ") Percibirán las contribuciones, incluyendo tasas adicionales, que establezcan los Estados sobre la propiedad inmobiliaria, de su fraccionamiento, división, consolidación, traslación y mejora así como las que tengan por base el cambio de valor de los inmuebles.",
           "padre_numero": 29,
           "x_id": 113,
           "x_texto": 135
@@ -14094,8 +14094,8 @@
         {
           "numero": 32,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las participaciones federales, que serán cubiertas por la Federación a los Municipios con arreglo a las bases, montos y plazos que anualmente se determinen por las Legislaturas de los Estados.",
+          "identificador": "b",
+          "contenido": ") Las participaciones federales, que serán cubiertas por la Federación a los Municipios con arreglo a las bases, montos y plazos que anualmente se determinen por las Legislaturas de los Estados.",
           "padre_numero": 29,
           "x_id": 113,
           "x_texto": 135
@@ -14103,8 +14103,8 @@
         {
           "numero": 33,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los ingresos derivados de la prestación de servicios públicos a su cargo.",
+          "identificador": "c",
+          "contenido": ") Los ingresos derivados de la prestación de servicios públicos a su cargo.",
           "padre_numero": 29,
           "x_id": 113,
           "x_texto": 135
@@ -14169,8 +14169,8 @@
         {
           "numero": 39,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Formular, aprobar y administrar la zonificación y planes de desarrollo urbano municipal, así como los planes en materia de movilidad y seguridad vial;",
+          "identificador": "a",
+          "contenido": ") Formular, aprobar y administrar la zonificación y planes de desarrollo urbano municipal, así como los planes en materia de movilidad y seguridad vial;",
           "padre_numero": 38,
           "x_id": 113,
           "x_texto": 135,
@@ -14181,8 +14181,8 @@
         {
           "numero": 40,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Participar en la creación y administración de sus reservas territoriales;",
+          "identificador": "b",
+          "contenido": ") Participar en la creación y administración de sus reservas territoriales;",
           "padre_numero": 38,
           "x_id": 113,
           "x_texto": 135
@@ -14190,8 +14190,8 @@
         {
           "numero": 41,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Participar en la formulación de planes de desarrollo regional, los cuales deberán estar en concordancia con los planes generales de la materia. Cuando la Federación o los Estados elaboren proyectos de desarrollo regional deberán asegurar la participación de los municipios;",
+          "identificador": "c",
+          "contenido": ") Participar en la formulación de planes de desarrollo regional, los cuales deberán estar en concordancia con los planes generales de la materia. Cuando la Federación o los Estados elaboren proyectos de desarrollo regional deberán asegurar la participación de los municipios;",
           "padre_numero": 38,
           "x_id": 113,
           "x_texto": 135
@@ -14199,8 +14199,8 @@
         {
           "numero": 42,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Autorizar, controlar y vigilar la utilización del suelo, en el ámbito de su competencia, en sus jurisdicciones territoriales;",
+          "identificador": "d",
+          "contenido": ") Autorizar, controlar y vigilar la utilización del suelo, en el ámbito de su competencia, en sus jurisdicciones territoriales;",
           "padre_numero": 38,
           "x_id": 113,
           "x_texto": 135
@@ -14208,8 +14208,8 @@
         {
           "numero": 43,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Intervenir en la regularización de la tenencia de la tierra urbana;",
+          "identificador": "e",
+          "contenido": ") Intervenir en la regularización de la tenencia de la tierra urbana;",
           "padre_numero": 38,
           "x_id": 113,
           "x_texto": 135
@@ -14217,8 +14217,8 @@
         {
           "numero": 44,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Otorgar licencias y permisos para construcciones;",
+          "identificador": "f",
+          "contenido": ") Otorgar licencias y permisos para construcciones;",
           "padre_numero": 38,
           "x_id": 113,
           "x_texto": 135
@@ -14226,8 +14226,8 @@
         {
           "numero": 45,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Participar en la creación y administración de zonas de reservas ecológicas y en la elaboración y aplicación de programas de ordenamiento en esta materia;",
+          "identificador": "g",
+          "contenido": ") Participar en la creación y administración de zonas de reservas ecológicas y en la elaboración y aplicación de programas de ordenamiento en esta materia;",
           "padre_numero": 38,
           "x_id": 113,
           "x_texto": 135
@@ -14235,8 +14235,8 @@
         {
           "numero": 46,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Intervenir en la formulación y aplicación de programas de transporte público de pasajeros cuando aquellos afecten su ámbito territorial; e",
+          "identificador": "h",
+          "contenido": ") Intervenir en la formulación y aplicación de programas de transporte público de pasajeros cuando aquellos afecten su ámbito territorial; e",
           "padre_numero": 38,
           "x_id": 113,
           "x_texto": 135
@@ -14244,8 +14244,8 @@
         {
           "numero": 47,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "Celebrar convenios para la administración y custodia de las zonas federales.",
+          "identificador": "i",
+          "contenido": ") Celebrar convenios para la administración y custodia de las zonas federales.",
           "padre_numero": 38,
           "x_id": 113,
           "x_texto": 135
@@ -14413,8 +14413,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El gobernador sustituto constitucional, o el designado para concluir el período en caso de falta absoluta del constitucional, aun cuando tenga distinta denominación;",
+          "identificador": "a",
+          "contenido": ") El gobernador sustituto constitucional, o el designado para concluir el período en caso de falta absoluta del constitucional, aun cuando tenga distinta denominación;",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129
@@ -14422,8 +14422,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El gobernador interino, el provisional o el ciudadano que, bajo cualquier denominación, supla las faltas temporales del gobernador, siempre que desempeñe el cargo los dos últimos años del periodo.",
+          "identificador": "b",
+          "contenido": ") El gobernador interino, el provisional o el ciudadano que, bajo cualquier denominación, supla las faltas temporales del gobernador, siempre que desempeñe el cargo los dos últimos años del periodo.",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129,
@@ -14434,8 +14434,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La persona que tenga o haya tenido en los últimos tres años anteriores al día de la elección un vínculo de matrimonio o concubinato o unión de hecho, o de parentesco por consanguinidad o civil en línea recta sin limitación de grado y en línea colateral hasta el cuarto grado o de afinidad hasta el segundo grado, con la persona que está ejerciendo la titularidad de la gubernatura.",
+          "identificador": "c",
+          "contenido": ") La persona que tenga o haya tenido en los últimos tres años anteriores al día de la elección un vínculo de matrimonio o concubinato o unión de hecho, o de parentesco por consanguinidad o civil en línea recta sin limitación de grado y en línea colateral hasta el cuarto grado o de afinidad hasta el segundo grado, con la persona que está ejerciendo la titularidad de la gubernatura.",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129,
@@ -14645,8 +14645,8 @@
         {
           "numero": 27,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las elecciones de los gobernadores, de los miembros de las legislaturas locales y de los integrantes de los ayuntamientos se realicen mediante sufragio universal, libre, secreto y directo; y que la jornada comicial tenga lugar el primer domingo de junio del año que corresponda. Los Estados cuyas jornadas electorales se celebren en el año de los comicios federales y no coincidan en la misma fecha de la jornada federal, no estarán obligados por esta última disposición;",
+          "identificador": "a",
+          "contenido": ") Las elecciones de los gobernadores, de los miembros de las legislaturas locales y de los integrantes de los ayuntamientos se realicen mediante sufragio universal, libre, secreto y directo; y que la jornada comicial tenga lugar el primer domingo de junio del año que corresponda. Los Estados cuyas jornadas electorales se celebren en el año de los comicios federales y no coincidan en la misma fecha de la jornada federal, no estarán obligados por esta última disposición;",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129,
@@ -14657,8 +14657,8 @@
         {
           "numero": 28,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "En el ejercicio de la función electoral, a cargo de las autoridades electorales, sean principios rectores los de certeza, imparcialidad, independencia, legalidad, máxima publicidad y objetividad;",
+          "identificador": "b",
+          "contenido": ") En el ejercicio de la función electoral, a cargo de las autoridades electorales, sean principios rectores los de certeza, imparcialidad, independencia, legalidad, máxima publicidad y objetividad;",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129,
@@ -14669,8 +14669,8 @@
         {
           "numero": 29,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las autoridades que tengan a su cargo la organización de las elecciones y las jurisdiccionales que resuelvan las controversias en la materia, gocen de autonomía en su funcionamiento, e independencia en sus decisiones, conforme a lo siguiente y lo que determinen las leyes: 1o. Los organismos públicos locales electorales contarán con un órgano de dirección superior integrado por un consejero Presidente y seis consejeros electorales, con derecho a voz y voto; el Secretario Ejecutivo y los representantes de los partidos políticos concurrirán a las sesiones sólo con derecho a voz; cada partido político contará con un representante en dicho órgano.",
+          "identificador": "c",
+          "contenido": ") Las autoridades que tengan a su cargo la organización de las elecciones y las jurisdiccionales que resuelvan las controversias en la materia, gocen de autonomía en su funcionamiento, e independencia en sus decisiones, conforme a lo siguiente y lo que determinen las leyes: 1o. Los organismos públicos locales electorales contarán con un órgano de dirección superior integrado por un consejero Presidente y seis consejeros electorales, con derecho a voz y voto; el Secretario Ejecutivo y los representantes de los partidos políticos concurrirán a las sesiones sólo con derecho a voz; cada partido político contará con un representante en dicho órgano.",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129
@@ -14735,8 +14735,8 @@
         {
           "numero": 36,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Las autoridades electorales competentes de carácter administrativo puedan convenir con el Instituto Nacional Electoral se haga cargo de la organización de los procesos electorales locales;",
+          "identificador": "d",
+          "contenido": ") Las autoridades electorales competentes de carácter administrativo puedan convenir con el Instituto Nacional Electoral se haga cargo de la organización de los procesos electorales locales;",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129,
@@ -14747,8 +14747,8 @@
         {
           "numero": 37,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Los partidos políticos sólo se constituyan por ciudadanos sin intervención de organizaciones gremiales, o con objeto social diferente y sin que haya afiliación corporativa. Asimismo tengan reconocido el derecho para solicitar el registro de candidatos a cargos de elección popular, con excepción de lo dispuesto en el artículo 2°., apartado A, fracciones III y VII, de esta Constitución.",
+          "identificador": "e",
+          "contenido": ") Los partidos políticos sólo se constituyan por ciudadanos sin intervención de organizaciones gremiales, o con objeto social diferente y sin que haya afiliación corporativa. Asimismo tengan reconocido el derecho para solicitar el registro de candidatos a cargos de elección popular, con excepción de lo dispuesto en el artículo 2°., apartado A, fracciones III y VII, de esta Constitución.",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129,
@@ -14759,8 +14759,8 @@
         {
           "numero": 38,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Las autoridades electorales solamente puedan intervenir en los asuntos internos de los partidos en los términos que expresamente señalen;",
+          "identificador": "f",
+          "contenido": ") Las autoridades electorales solamente puedan intervenir en los asuntos internos de los partidos en los términos que expresamente señalen;",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129
@@ -14780,8 +14780,8 @@
         {
           "numero": 40,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Los partidos políticos reciban, en forma equitativa, financiamiento público para sus actividades ordinarias permanentes y las tendientes a la obtención del voto durante los procesos electorales. Del mismo modo se establezca el procedimiento para la liquidación de los partidos que pierdan su registro y el destino de sus bienes y remanentes;",
+          "identificador": "g",
+          "contenido": ") Los partidos políticos reciban, en forma equitativa, financiamiento público para sus actividades ordinarias permanentes y las tendientes a la obtención del voto durante los procesos electorales. Del mismo modo se establezca el procedimiento para la liquidación de los partidos que pierdan su registro y el destino de sus bienes y remanentes;",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129
@@ -14789,8 +14789,8 @@
         {
           "numero": 41,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Se fijen los criterios para establecer los límites a las erogaciones de los partidos políticos en sus precampañas y campañas electorales, así como los montos máximos que tengan las aportaciones de sus militantes y simpatizantes;",
+          "identificador": "h",
+          "contenido": ") Se fijen los criterios para establecer los límites a las erogaciones de los partidos políticos en sus precampañas y campañas electorales, así como los montos máximos que tengan las aportaciones de sus militantes y simpatizantes;",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129,
@@ -14801,8 +14801,8 @@
         {
           "numero": 42,
           "tipo": "inciso",
-          "identificador": "i)",
-          "contenido": "Los partidos políticos accedan a la radio y la televisión, conforme a las normas establecidas por el apartado B de la base III del artículo 41 de esta Constitución;",
+          "identificador": "i",
+          "contenido": ") Los partidos políticos accedan a la radio y la televisión, conforme a las normas establecidas por el apartado B de la base III del artículo 41 de esta Constitución;",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129
@@ -14810,8 +14810,8 @@
         {
           "numero": 43,
           "tipo": "inciso",
-          "identificador": "j)",
-          "contenido": "Se fijen las reglas para las precampañas y las campañas electorales de los partidos políticos, así como las sanciones para quienes las infrinjan. En todo caso, la duración de las campañas será de sesenta a noventa días para la elección de gobernador y de treinta a sesenta días cuando sólo se elijan diputados locales o ayuntamientos; las precampañas no podrán durar más de las dos terceras partes de las respectivas campañas electorales;",
+          "identificador": "j",
+          "contenido": ") Se fijen las reglas para las precampañas y las campañas electorales de los partidos políticos, así como las sanciones para quienes las infrinjan. En todo caso, la duración de las campañas será de sesenta a noventa días para la elección de gobernador y de treinta a sesenta días cuando sólo se elijan diputados locales o ayuntamientos; las precampañas no podrán durar más de las dos terceras partes de las respectivas campañas electorales;",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129,
@@ -14822,8 +14822,8 @@
         {
           "numero": 44,
           "tipo": "inciso",
-          "identificador": "k)",
-          "contenido": "Se regule el régimen aplicable a la postulación, registro, derechos y obligaciones de los candidatos independientes, garantizando su derecho al financiamiento público y al acceso a la radio y la televisión en los términos establecidos en esta Constitución y en las leyes correspondientes;",
+          "identificador": "k",
+          "contenido": ") Se regule el régimen aplicable a la postulación, registro, derechos y obligaciones de los candidatos independientes, garantizando su derecho al financiamiento público y al acceso a la radio y la televisión en los términos establecidos en esta Constitución y en las leyes correspondientes;",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129,
@@ -14834,8 +14834,8 @@
         {
           "numero": 45,
           "tipo": "inciso",
-          "identificador": "l)",
-          "contenido": "Se establezca un sistema de medios de impugnación para que todos los actos y resoluciones electorales se sujeten invariablemente al principio de legalidad. Igualmente, que se señalen los supuestos y las reglas para la realización, en los ámbitos administrativo y jurisdiccional, de recuentos totales o parciales de votación;",
+          "identificador": "l",
+          "contenido": ") Se establezca un sistema de medios de impugnación para que todos los actos y resoluciones electorales se sujeten invariablemente al principio de legalidad. Igualmente, que se señalen los supuestos y las reglas para la realización, en los ámbitos administrativo y jurisdiccional, de recuentos totales o parciales de votación;",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129
@@ -14843,8 +14843,8 @@
         {
           "numero": 46,
           "tipo": "inciso",
-          "identificador": "m)",
-          "contenido": "Se fijen las causales de nulidad de las elecciones de gobernador, diputados locales y ayuntamientos, así como los plazos convenientes para el desahogo de todas las instancias impugnativas, tomando en cuenta el principio de definitividad de las etapas de los procesos electorales, y",
+          "identificador": "m",
+          "contenido": ") Se fijen las causales de nulidad de las elecciones de gobernador, diputados locales y ayuntamientos, así como los plazos convenientes para el desahogo de todas las instancias impugnativas, tomando en cuenta el principio de definitividad de las etapas de los procesos electorales, y",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129
@@ -14852,8 +14852,8 @@
         {
           "numero": 47,
           "tipo": "inciso",
-          "identificador": "n)",
-          "contenido": "Se verifique, al menos, una elección local en la misma fecha en que tenga lugar alguna de las elecciones federales;",
+          "identificador": "n",
+          "contenido": ") Se verifique, al menos, una elección local en la misma fecha en que tenga lugar alguna de las elecciones federales;",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129,
@@ -14864,8 +14864,8 @@
         {
           "numero": 48,
           "tipo": "inciso",
-          "identificador": "o)",
-          "contenido": "Se tipifiquen los delitos y determinen las faltas en materia electoral, así como las sanciones que por ellos deban imponerse.",
+          "identificador": "o",
+          "contenido": ") Se tipifiquen los delitos y determinen las faltas en materia electoral, así como las sanciones que por ellos deban imponerse.",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129,
@@ -14876,8 +14876,8 @@
         {
           "numero": 49,
           "tipo": "inciso",
-          "identificador": "p)",
-          "contenido": "Se fijen las bases y requisitos para que en las elecciones los ciudadanos soliciten su registro como candidatos para poder ser votados en forma independiente a todos los cargos de elección popular, en los términos del artículo 35 de esta Constitución.",
+          "identificador": "p",
+          "contenido": ") Se fijen las bases y requisitos para que en las elecciones los ciudadanos soliciten su registro como candidatos para poder ser votados en forma independiente a todos los cargos de elección popular, en los términos del artículo 35 de esta Constitución.",
           "padre_numero": 26,
           "x_id": 107,
           "x_texto": 129,
@@ -15366,7 +15366,7 @@
         {
           "numero": 2,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "El gobierno de la Ciudad de México está a cargo de sus poderes locales, en los términos establecidos en la Constitución Política de la Ciudad de México, la cual se ajustará a lo dispuesto en la presente Constitución y a las bases siguientes:",
           "padre_numero": null,
           "x_id": 85,
@@ -15627,8 +15627,8 @@
         {
           "numero": 29,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las Alcaldías son órganos político administrativos que se integran por un Alcalde y por un Concejo electos por votación universal, libre, secreta y directa, para un periodo de tres años. Los integrantes de la Alcaldía se elegirán por planillas de entre siete y diez candidatos, según corresponda, ordenadas en forma progresiva, iniciando con el candidato a Alcalde y después los Concejales con sus respectivos suplentes, en el número que para cada demarcación territorial determine la Constitución Política de la Ciudad de México. En ningún caso el número de Concejales podrá ser menor de diez ni mayor de quince. Los integrantes de los Concejos serán electos según los principios de mayoría relativa y de representación proporcional, en la proporción de sesenta por ciento por el primer principio y cuarenta por ciento por el segundo. Ningún partido político o coalición electoral podrá contar con más del sesenta por ciento de los concejales.",
+          "identificador": "a",
+          "contenido": ") Las Alcaldías son órganos político administrativos que se integran por un Alcalde y por un Concejo electos por votación universal, libre, secreta y directa, para un periodo de tres años. Los integrantes de la Alcaldía se elegirán por planillas de entre siete y diez candidatos, según corresponda, ordenadas en forma progresiva, iniciando con el candidato a Alcalde y después los Concejales con sus respectivos suplentes, en el número que para cada demarcación territorial determine la Constitución Política de la Ciudad de México. En ningún caso el número de Concejales podrá ser menor de diez ni mayor de quince. Los integrantes de los Concejos serán electos según los principios de mayoría relativa y de representación proporcional, en la proporción de sesenta por ciento por el primer principio y cuarenta por ciento por el segundo. Ningún partido político o coalición electoral podrá contar con más del sesenta por ciento de los concejales.",
           "padre_numero": 26,
           "x_id": 142,
           "x_texto": 164
@@ -15636,8 +15636,8 @@
         {
           "numero": 30,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La Constitución Política de la Ciudad de México deberá establecer la prohibición de la reelección consecutiva para el mismo cargo de personas Alcaldes y Concejales. Las personas funcionarias antes mencionadas, cuando tengan el carácter de propietarias, no podrán ser electas para el periodo inmediato con el carácter de suplentes, pero las que tengan el carácter de suplentes sí podrán ser electas para el periodo inmediato como propietarias a menos que hayan estado en ejercicio.",
+          "identificador": "b",
+          "contenido": ") La Constitución Política de la Ciudad de México deberá establecer la prohibición de la reelección consecutiva para el mismo cargo de personas Alcaldes y Concejales. Las personas funcionarias antes mencionadas, cuando tengan el carácter de propietarias, no podrán ser electas para el periodo inmediato con el carácter de suplentes, pero las que tengan el carácter de suplentes sí podrán ser electas para el periodo inmediato como propietarias a menos que hayan estado en ejercicio.",
           "padre_numero": 26,
           "x_id": 142,
           "x_texto": 164,
@@ -15648,8 +15648,8 @@
         {
           "numero": 31,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La administración pública de las demarcaciones territoriales corresponde a los Alcaldes.",
+          "identificador": "c",
+          "contenido": ") La administración pública de las demarcaciones territoriales corresponde a los Alcaldes.",
           "padre_numero": 26,
           "x_id": 142,
           "x_texto": 164
@@ -15684,8 +15684,8 @@
         {
           "numero": 35,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "La Constitución Política de la Ciudad de México establecerá las bases para que la ley correspondiente prevea los criterios o fórmulas para la asignación del presupuesto de las demarcaciones territoriales, el cual se compondrá, al menos, de los montos que conforme a la ley les correspondan por concepto de participaciones federales, impuestos locales que recaude la hacienda de la Ciudad de México e ingresos derivados de la prestación de servicios a su cargo.",
+          "identificador": "d",
+          "contenido": ") La Constitución Política de la Ciudad de México establecerá las bases para que la ley correspondiente prevea los criterios o fórmulas para la asignación del presupuesto de las demarcaciones territoriales, el cual se compondrá, al menos, de los montos que conforme a la ley les correspondan por concepto de participaciones federales, impuestos locales que recaude la hacienda de la Ciudad de México e ingresos derivados de la prestación de servicios a su cargo.",
           "padre_numero": 26,
           "x_id": 142,
           "x_texto": 164
@@ -15693,8 +15693,8 @@
         {
           "numero": 36,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Las demarcaciones territoriales no podrán, en ningún caso, contraer directa o indirectamente obligaciones o empréstitos.",
+          "identificador": "e",
+          "contenido": ") Las demarcaciones territoriales no podrán, en ningún caso, contraer directa o indirectamente obligaciones o empréstitos.",
           "padre_numero": 26,
           "x_id": 142,
           "x_texto": 164
@@ -15702,8 +15702,8 @@
         {
           "numero": 37,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Las personas Alcaldes y Concejales deberán reunir los requisitos que establezca la Constitución Política de la Ciudad de México. En ningún caso, podrán participar en la elección de estos cargos la persona que tenga o haya tenido en los últimos tres años anteriores al día de la elección un vínculo de matrimonio o concubinato o unión de hecho, o de parentesco por consanguinidad o civil en línea recta sin limitación de grado y en línea colateral hasta el cuarto grado o de afinidad hasta el segundo grado, con la persona que está ejerciendo la titularidad del cargo para el que se postula.",
+          "identificador": "f",
+          "contenido": ") Las personas Alcaldes y Concejales deberán reunir los requisitos que establezca la Constitución Política de la Ciudad de México. En ningún caso, podrán participar en la elección de estos cargos la persona que tenga o haya tenido en los últimos tres años anteriores al día de la elección un vínculo de matrimonio o concubinato o unión de hecho, o de parentesco por consanguinidad o civil en línea recta sin limitación de grado y en línea colateral hasta el cuarto grado o de afinidad hasta el segundo grado, con la persona que está ejerciendo la titularidad del cargo para el que se postula.",
           "padre_numero": 26,
           "x_id": 142,
           "x_texto": 164,
@@ -15792,7 +15792,7 @@
         {
           "numero": 46,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "Los poderes federales tendrán respecto de la Ciudad de México, exclusivamente las facultades que expresamente les confiere esta Constitución.",
           "padre_numero": 45,
           "x_id": 85,
@@ -15855,7 +15855,7 @@
         {
           "numero": 53,
           "tipo": "apartado",
-          "identificador": "C.",
+          "identificador": "C",
           "contenido": "La Federación, la Ciudad de México, así como sus demarcaciones territoriales, y los Estados y Municipios conurbados en la Zona Metropolitana, establecerán mecanismos de coordinación administrativa en materia de planeación del desarrollo y ejecución de acciones regionales para la prestación de servicios públicos, en términos de la ley que emita el Congreso de la Unión.",
           "padre_numero": null,
           "x_id": 85,
@@ -15885,8 +15885,8 @@
         {
           "numero": 56,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La delimitación de los ámbitos territoriales y las acciones de coordinación para la operación y funcionamiento de obras y servicios públicos de alcance metropolitano;",
+          "identificador": "a",
+          "contenido": ") La delimitación de los ámbitos territoriales y las acciones de coordinación para la operación y funcionamiento de obras y servicios públicos de alcance metropolitano;",
           "padre_numero": 53,
           "x_id": 114,
           "x_texto": 136
@@ -15894,8 +15894,8 @@
         {
           "numero": 57,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los compromisos que asuma cada una de las partes para la asignación de recursos a los proyectos metropolitanos; y",
+          "identificador": "b",
+          "contenido": ") Los compromisos que asuma cada una de las partes para la asignación de recursos a los proyectos metropolitanos; y",
           "padre_numero": 53,
           "x_id": 114,
           "x_texto": 136
@@ -15903,8 +15903,8 @@
         {
           "numero": 58,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La proyección conjunta y coordinada del desarrollo de las zonas conurbadas y de prestación de servicios públicos.",
+          "identificador": "c",
+          "contenido": ") La proyección conjunta y coordinada del desarrollo de las zonas conurbadas y de prestación de servicios públicos.",
           "padre_numero": 53,
           "x_id": 114,
           "x_texto": 136
@@ -15912,7 +15912,7 @@
         {
           "numero": 59,
           "tipo": "apartado",
-          "identificador": "D.",
+          "identificador": "D",
           "contenido": "Las prohibiciones y limitaciones que esta Constitución establece para los Estados aplicarán a la Ciudad de México.",
           "padre_numero": 58,
           "x_id": 85,
@@ -15979,7 +15979,7 @@
         {
           "numero": 4,
           "tipo": "apartado",
-          "identificador": "A.",
+          "identificador": "A",
           "contenido": "Entre los obreros, jornaleros, empleados domésticos, artesanos y de una manera general, todo contrato de trabajo:",
           "padre_numero": null,
           "x_id": 85,
@@ -16108,8 +16108,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Una Comisión Nacional, integrada con representantes de los trabajadores, de los patronos y del Gobierno, fijará el porcentaje de utilidades que deba repartirse entre los trabajadores;",
+          "identificador": "a",
+          "contenido": ") Una Comisión Nacional, integrada con representantes de los trabajadores, de los patronos y del Gobierno, fijará el porcentaje de utilidades que deba repartirse entre los trabajadores;",
           "padre_numero": 15,
           "x_id": 156,
           "x_texto": 178
@@ -16117,8 +16117,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La Comisión Nacional practicará las investigaciones y realizará los estudios necesarios y apropiados para conocer las condiciones generales de la economía nacional. Tomará asimismo en consideración la necesidad de fomentar el desarrollo industrial del País, el interés razonable que debe percibir el capital y la necesaria reinversión de capitales;",
+          "identificador": "b",
+          "contenido": ") La Comisión Nacional practicará las investigaciones y realizará los estudios necesarios y apropiados para conocer las condiciones generales de la economía nacional. Tomará asimismo en consideración la necesidad de fomentar el desarrollo industrial del País, el interés razonable que debe percibir el capital y la necesaria reinversión de capitales;",
           "padre_numero": 15,
           "x_id": 156,
           "x_texto": 178
@@ -16126,8 +16126,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "La misma Comisión podrá revisar el porcentaje fijado cuando existan nuevos estudios e investigaciones que los justifiquen.",
+          "identificador": "c",
+          "contenido": ") La misma Comisión podrá revisar el porcentaje fijado cuando existan nuevos estudios e investigaciones que los justifiquen.",
           "padre_numero": 15,
           "x_id": 156,
           "x_texto": 178
@@ -16135,8 +16135,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "La Ley podrá exceptuar de la obligación de repartir utilidades a las empresas de nueva creación durante un número determinado y limitado de años, a los trabajos de exploración y a otras actividades cuando lo justifique su naturaleza y condiciones particulares;",
+          "identificador": "d",
+          "contenido": ") La Ley podrá exceptuar de la obligación de repartir utilidades a las empresas de nueva creación durante un número determinado y limitado de años, a los trabajos de exploración y a otras actividades cuando lo justifique su naturaleza y condiciones particulares;",
           "padre_numero": 15,
           "x_id": 156,
           "x_texto": 178
@@ -16144,8 +16144,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Para determinar el monto de las utilidades de cada empresa se tomará como base la renta gravable de conformidad con las disposiciones de la Ley del Impuesto sobre la Renta. Los trabajadores podrán formular ante la Oficina correspondiente de la Secretaría de Hacienda y Crédito Público las objeciones que juzguen convenientes, ajustándose al procedimiento que determine la ley;",
+          "identificador": "e",
+          "contenido": ") Para determinar el monto de las utilidades de cada empresa se tomará como base la renta gravable de conformidad con las disposiciones de la Ley del Impuesto sobre la Renta. Los trabajadores podrán formular ante la Oficina correspondiente de la Secretaría de Hacienda y Crédito Público las objeciones que juzguen convenientes, ajustándose al procedimiento que determine la ley;",
           "padre_numero": 15,
           "x_id": 156,
           "x_texto": 178
@@ -16153,8 +16153,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "El derecho de los trabajadores a participar en las utilidades no implica la facultad de intervenir en la dirección o administración de las empresas.",
+          "identificador": "f",
+          "contenido": ") El derecho de los trabajadores a participar en las utilidades no implica la facultad de intervenir en la dirección o administración de las empresas.",
           "padre_numero": 15,
           "x_id": 156,
           "x_texto": 178,
@@ -16484,8 +16484,8 @@
         {
           "numero": 52,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Representatividad de las organizaciones sindicales, y",
+          "identificador": "a",
+          "contenido": ") Representatividad de las organizaciones sindicales, y",
           "padre_numero": 51,
           "x_id": 156,
           "x_texto": 178
@@ -16493,8 +16493,8 @@
         {
           "numero": 53,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Certeza en la firma, registro y depósito de los contratos colectivos de trabajo.",
+          "identificador": "b",
+          "contenido": ") Certeza en la firma, registro y depósito de los contratos colectivos de trabajo.",
           "padre_numero": 51,
           "x_id": 156,
           "x_texto": 178
@@ -16571,8 +16571,8 @@
         {
           "numero": 61,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las que estipulen una jornada inhumana por lo notoriamente excesiva, dada la índole del trabajo.",
+          "identificador": "a",
+          "contenido": ") Las que estipulen una jornada inhumana por lo notoriamente excesiva, dada la índole del trabajo.",
           "padre_numero": 60,
           "x_id": 156,
           "x_texto": 178
@@ -16580,8 +16580,8 @@
         {
           "numero": 62,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las que fijen un salario que no sea remunerador a juicio de los tribunales laborales.",
+          "identificador": "b",
+          "contenido": ") Las que fijen un salario que no sea remunerador a juicio de los tribunales laborales.",
           "padre_numero": 60,
           "x_id": 156,
           "x_texto": 178,
@@ -16592,8 +16592,8 @@
         {
           "numero": 63,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las que estipulen un plazo mayor de una semana para la percepción del jornal.",
+          "identificador": "c",
+          "contenido": ") Las que estipulen un plazo mayor de una semana para la percepción del jornal.",
           "padre_numero": 60,
           "x_id": 156,
           "x_texto": 178
@@ -16601,8 +16601,8 @@
         {
           "numero": 64,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Las que señalen un lugar de recreo, fonda, café, taberna, cantina o tienda para efectuar el pago del salario, cuando no se trate de empleados en esos establecimientos.",
+          "identificador": "d",
+          "contenido": ") Las que señalen un lugar de recreo, fonda, café, taberna, cantina o tienda para efectuar el pago del salario, cuando no se trate de empleados en esos establecimientos.",
           "padre_numero": 60,
           "x_id": 156,
           "x_texto": 178
@@ -16610,8 +16610,8 @@
         {
           "numero": 65,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Las que entrañen obligación directa o indirecta de adquirir los artículos de consumo en tiendas o lugares determinados.",
+          "identificador": "e",
+          "contenido": ") Las que entrañen obligación directa o indirecta de adquirir los artículos de consumo en tiendas o lugares determinados.",
           "padre_numero": 60,
           "x_id": 156,
           "x_texto": 178
@@ -16619,8 +16619,8 @@
         {
           "numero": 66,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Las que permitan retener el salario en concepto de multa.",
+          "identificador": "f",
+          "contenido": ") Las que permitan retener el salario en concepto de multa.",
           "padre_numero": 60,
           "x_id": 156,
           "x_texto": 178
@@ -16628,8 +16628,8 @@
         {
           "numero": 67,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Las que constituyan renuncia hecha por el obrero de las indemnizaciones a que tenga derecho por accidente del trabajo, y enfermedades profesionales, perjuicios ocasionados por el incumplimiento del contrato o despedírsele de la obra.",
+          "identificador": "g",
+          "contenido": ") Las que constituyan renuncia hecha por el obrero de las indemnizaciones a que tenga derecho por accidente del trabajo, y enfermedades profesionales, perjuicios ocasionados por el incumplimiento del contrato o despedírsele de la obra.",
           "padre_numero": 60,
           "x_id": 156,
           "x_texto": 178
@@ -16637,8 +16637,8 @@
         {
           "numero": 68,
           "tipo": "inciso",
-          "identificador": "h)",
-          "contenido": "Todas las demás estipulaciones que impliquen renuncia de algún derecho consagrado a favor del obrero en las leyes de protección y auxilio a los trabajadores.",
+          "identificador": "h",
+          "contenido": ") Todas las demás estipulaciones que impliquen renuncia de algún derecho consagrado a favor del obrero en las leyes de protección y auxilio a los trabajadores.",
           "padre_numero": 60,
           "x_id": 156,
           "x_texto": 178
@@ -16688,8 +16688,8 @@
         {
           "numero": 73,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Ramas industriales y servicios.",
+          "identificador": "a",
+          "contenido": ") Ramas industriales y servicios.",
           "padre_numero": 72,
           "x_id": 156,
           "x_texto": 178,
@@ -16700,7 +16700,7 @@
         {
           "numero": 74,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Textil;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16709,7 +16709,7 @@
         {
           "numero": 75,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Eléctrica;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16718,7 +16718,7 @@
         {
           "numero": 76,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Cinematográfica;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16727,7 +16727,7 @@
         {
           "numero": 77,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Hulera;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16736,7 +16736,7 @@
         {
           "numero": 78,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "Azucarera;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16745,7 +16745,7 @@
         {
           "numero": 79,
           "tipo": "numeral",
-          "identificador": "6.",
+          "identificador": "6",
           "contenido": "Minera;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16754,7 +16754,7 @@
         {
           "numero": 80,
           "tipo": "numeral",
-          "identificador": "7.",
+          "identificador": "7",
           "contenido": "Metalúrgica y siderúrgica, abarcando la explotación de los minerales básicos, el beneficio y la fundición de los mismos, así como la obtención de hierro metálico y acero a todas sus formas y ligas y los productos laminados de los mismos;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16763,7 +16763,7 @@
         {
           "numero": 81,
           "tipo": "numeral",
-          "identificador": "8.",
+          "identificador": "8",
           "contenido": "De hidrocarburos;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16772,7 +16772,7 @@
         {
           "numero": 82,
           "tipo": "numeral",
-          "identificador": "9.",
+          "identificador": "9",
           "contenido": "Petroquímica;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16781,7 +16781,7 @@
         {
           "numero": 83,
           "tipo": "numeral",
-          "identificador": "10.",
+          "identificador": "10",
           "contenido": "Cementera;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16790,7 +16790,7 @@
         {
           "numero": 84,
           "tipo": "numeral",
-          "identificador": "11.",
+          "identificador": "11",
           "contenido": "Calera;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16799,7 +16799,7 @@
         {
           "numero": 85,
           "tipo": "numeral",
-          "identificador": "12.",
+          "identificador": "12",
           "contenido": "Automotriz, incluyendo autopartes mecánicas o eléctricas;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16808,7 +16808,7 @@
         {
           "numero": 86,
           "tipo": "numeral",
-          "identificador": "13.",
+          "identificador": "13",
           "contenido": "Química, incluyendo la química farmacéutica y medicamentos;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16817,7 +16817,7 @@
         {
           "numero": 87,
           "tipo": "numeral",
-          "identificador": "14.",
+          "identificador": "14",
           "contenido": "De celulosa y papel;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16826,7 +16826,7 @@
         {
           "numero": 88,
           "tipo": "numeral",
-          "identificador": "15.",
+          "identificador": "15",
           "contenido": "De aceites y grasas vegetales;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16835,7 +16835,7 @@
         {
           "numero": 89,
           "tipo": "numeral",
-          "identificador": "16.",
+          "identificador": "16",
           "contenido": "Productora de alimentos, abarcando exclusivamente la fabricación de los que sean empacados, enlatados o envasados o que se destinen a ello;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16844,7 +16844,7 @@
         {
           "numero": 90,
           "tipo": "numeral",
-          "identificador": "17.",
+          "identificador": "17",
           "contenido": "Elaboradora de bebidas que sean envasadas o enlatadas o que se destinen a ello;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16853,7 +16853,7 @@
         {
           "numero": 91,
           "tipo": "numeral",
-          "identificador": "18.",
+          "identificador": "18",
           "contenido": "Ferrocarrilera;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16862,7 +16862,7 @@
         {
           "numero": 92,
           "tipo": "numeral",
-          "identificador": "19.",
+          "identificador": "19",
           "contenido": "Maderera básica, que comprende la producción de aserradero y la fabricación de triplay o aglutinados de madera;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16874,7 +16874,7 @@
         {
           "numero": 93,
           "tipo": "numeral",
-          "identificador": "20.",
+          "identificador": "20",
           "contenido": "Vidriera, exclusivamente por lo que toca a la fabricación de vidrio plano, liso o labrado, o de envases de vidrio; y",
           "padre_numero": 73,
           "x_id": 192,
@@ -16883,7 +16883,7 @@
         {
           "numero": 94,
           "tipo": "numeral",
-          "identificador": "21.",
+          "identificador": "21",
           "contenido": "Tabacalera, que comprende el beneficio o fabricación de productos de tabaco;",
           "padre_numero": 73,
           "x_id": 192,
@@ -16892,7 +16892,7 @@
         {
           "numero": 95,
           "tipo": "numeral",
-          "identificador": "22.",
+          "identificador": "22",
           "contenido": "Servicios de banca y crédito.",
           "padre_numero": 73,
           "x_id": 192,
@@ -16904,8 +16904,8 @@
         {
           "numero": 96,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Empresas:",
+          "identificador": "b",
+          "contenido": ") Empresas:",
           "padre_numero": 72,
           "x_id": 156,
           "x_texto": 178
@@ -16913,7 +16913,7 @@
         {
           "numero": 97,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "Aquéllas que sean administradas en forma directa o descentralizada por el Gobierno Federal;",
           "padre_numero": 96,
           "x_id": 192,
@@ -16922,7 +16922,7 @@
         {
           "numero": 98,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "Aquéllas que actúen en virtud de un contrato o concesión federal y las industrias que les sean conexas; y",
           "padre_numero": 96,
           "x_id": 192,
@@ -16931,7 +16931,7 @@
         {
           "numero": 99,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Aquéllas que ejecuten trabajos en zonas federales o que se encuentren bajo jurisdicción federal, en las aguas territoriales o en las comprendidas en la zona económica exclusiva de la Nación.",
           "padre_numero": 96,
           "x_id": 192,
@@ -16940,8 +16940,8 @@
         {
           "numero": 100,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Materias:",
+          "identificador": "c",
+          "contenido": ") Materias:",
           "padre_numero": 72,
           "x_id": 156,
           "x_texto": 178
@@ -16949,7 +16949,7 @@
         {
           "numero": 101,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "El registro de todos los contratos colectivos de trabajo y las organizaciones sindicales, así como todos los procesos administrativos relacionados;",
           "padre_numero": 100,
           "x_id": 192,
@@ -16958,7 +16958,7 @@
         {
           "numero": 102,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "La aplicación de las disposiciones de trabajo en los asuntos relativos a conflictos que afecten a dos o más entidades federativas;",
           "padre_numero": 100,
           "x_id": 192,
@@ -16967,7 +16967,7 @@
         {
           "numero": 103,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "Contratos colectivos que hayan sido declarados obligatorios en más de una entidad federativa;",
           "padre_numero": 100,
           "x_id": 192,
@@ -16976,7 +16976,7 @@
         {
           "numero": 104,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "Obligaciones patronales en materia educativa, en los términos de ley, y",
           "padre_numero": 100,
           "x_id": 192,
@@ -16985,7 +16985,7 @@
         {
           "numero": 105,
           "tipo": "numeral",
-          "identificador": "5.",
+          "identificador": "5",
           "contenido": "Obligaciones de los patrones en materia de capacitación y adiestramiento de sus trabajadores, así como de seguridad e higiene en los centros de trabajo, para lo cual, las autoridades federales contarán con el auxilio de las estatales, cuando se trate de ramas o actividades de jurisdicción local, en los términos de la ley correspondiente.",
           "padre_numero": 100,
           "x_id": 192,
@@ -16999,7 +16999,7 @@
         {
           "numero": 106,
           "tipo": "apartado",
-          "identificador": "B.",
+          "identificador": "B",
           "contenido": "Entre los Poderes de la Unión y sus trabajadores:",
           "padre_numero": 105,
           "x_id": 85,
@@ -17159,8 +17159,8 @@
         {
           "numero": 122,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Cubrirá los accidentes y enfermedades profesionales; las enfermedades no profesionales y maternidad; y la jubilación, la invalidez, vejez y muerte.",
+          "identificador": "a",
+          "contenido": ") Cubrirá los accidentes y enfermedades profesionales; las enfermedades no profesionales y maternidad; y la jubilación, la invalidez, vejez y muerte.",
           "padre_numero": 120,
           "x_id": 156,
           "x_texto": 178
@@ -17168,8 +17168,8 @@
         {
           "numero": 123,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "En caso de accidente o enfermedad, se conservará el derecho al trabajo por el tiempo que determine la ley.",
+          "identificador": "b",
+          "contenido": ") En caso de accidente o enfermedad, se conservará el derecho al trabajo por el tiempo que determine la ley.",
           "padre_numero": 120,
           "x_id": 156,
           "x_texto": 178
@@ -17177,8 +17177,8 @@
         {
           "numero": 124,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Las mujeres durante el embarazo no realizarán trabajos que exijan un esfuerzo considerable y signifiquen un peligro para su salud en relación con la gestación; gozarán forzosamente de un mes de descanso antes de la fecha fijada aproximadamente para el parto y de otros dos después del mismo, debiendo percibir su salario íntegro y conservar su empleo y los derechos que hubieren adquirido por la relación de trabajo. En el período de lactancia tendrán dos descansos extraordinarios por día, de media hora cada uno, para alimentar a sus hijos. Además, disfrutarán de asistencia médica y obstétrica, de medicinas, de ayudas para la lactancia y del servicio de guarderías infantiles.",
+          "identificador": "c",
+          "contenido": ") Las mujeres durante el embarazo no realizarán trabajos que exijan un esfuerzo considerable y signifiquen un peligro para su salud en relación con la gestación; gozarán forzosamente de un mes de descanso antes de la fecha fijada aproximadamente para el parto y de otros dos después del mismo, debiendo percibir su salario íntegro y conservar su empleo y los derechos que hubieren adquirido por la relación de trabajo. En el período de lactancia tendrán dos descansos extraordinarios por día, de media hora cada uno, para alimentar a sus hijos. Además, disfrutarán de asistencia médica y obstétrica, de medicinas, de ayudas para la lactancia y del servicio de guarderías infantiles.",
           "padre_numero": 120,
           "x_id": 156,
           "x_texto": 178,
@@ -17189,8 +17189,8 @@
         {
           "numero": 125,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Los familiares de los trabajadores tendrán derecho a asistencia médica y medicinas, en los casos y en la proporción que determine la ley.",
+          "identificador": "d",
+          "contenido": ") Los familiares de los trabajadores tendrán derecho a asistencia médica y medicinas, en los casos y en la proporción que determine la ley.",
           "padre_numero": 120,
           "x_id": 156,
           "x_texto": 178
@@ -17198,8 +17198,8 @@
         {
           "numero": 126,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Se establecerán centros para vacaciones y para recuperación, así como tiendas económicas para beneficio de los trabajadores y sus familiares.",
+          "identificador": "e",
+          "contenido": ") Se establecerán centros para vacaciones y para recuperación, así como tiendas económicas para beneficio de los trabajadores y sus familiares.",
           "padre_numero": 120,
           "x_id": 156,
           "x_texto": 178
@@ -17207,8 +17207,8 @@
         {
           "numero": 127,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Se proporcionarán a los trabajadores habitaciones baratas, en arrendamiento o venta, conforme a los programas previamente aprobados. Además, el Estado mediante las aportaciones que haga, establecerá un fondo nacional de la vivienda a fin de constituir depósitos en favor de dichos trabajadores y establecer un sistema de financiamiento que permita otorgar a éstos crédito barato y suficiente para que adquieran en propiedad habitaciones cómodas e higiénicas, o bien para construirlas, repararlas, mejorarlas o pagar pasivos adquiridos por estos conceptos.",
+          "identificador": "f",
+          "contenido": ") Se proporcionarán a los trabajadores habitaciones baratas, en arrendamiento o venta, conforme a los programas previamente aprobados. Además, el Estado mediante las aportaciones que haga, establecerá un fondo nacional de la vivienda a fin de constituir depósitos en favor de dichos trabajadores y establecer un sistema de financiamiento que permita otorgar a éstos crédito barato y suficiente para que adquieran en propiedad habitaciones cómodas e higiénicas, o bien para construirlas, repararlas, mejorarlas o pagar pasivos adquiridos por estos conceptos.",
           "padre_numero": 120,
           "x_id": 156,
           "x_texto": 178
@@ -17574,8 +17574,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Las iglesias y las agrupaciones religiosas tendrán personalidad jurídica como asociaciones religiosas una vez que obtengan su correspondiente registro. La ley regulará dichas asociaciones y determinará las condiciones y requisitos para el registro constitutivo de las mismas.",
+          "identificador": "a",
+          "contenido": ") Las iglesias y las agrupaciones religiosas tendrán personalidad jurídica como asociaciones religiosas una vez que obtengan su correspondiente registro. La ley regulará dichas asociaciones y determinará las condiciones y requisitos para el registro constitutivo de las mismas.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -17583,8 +17583,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Las autoridades no intervendrán en la vida interna de las asociaciones religiosas;",
+          "identificador": "b",
+          "contenido": ") Las autoridades no intervendrán en la vida interna de las asociaciones religiosas;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -17592,8 +17592,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los mexicanos podrán ejercer el ministerio de cualquier culto. Los mexicanos así como los extranjeros deberán, para ello, satisfacer los requisitos que señale la ley;",
+          "identificador": "c",
+          "contenido": ") Los mexicanos podrán ejercer el ministerio de cualquier culto. Los mexicanos así como los extranjeros deberán, para ello, satisfacer los requisitos que señale la ley;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -17601,8 +17601,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "En los términos de la ley reglamentaria, los ministros de cultos no podrán desempeñar cargos públicos. Como ciudadanos tendrán derecho a votar, pero no a ser votados. Quienes hubieren dejado de ser ministros de cultos con la anticipación y en la forma que establezca la ley, podrán ser votados.",
+          "identificador": "d",
+          "contenido": ") En los términos de la ley reglamentaria, los ministros de cultos no podrán desempeñar cargos públicos. Como ciudadanos tendrán derecho a votar, pero no a ser votados. Quienes hubieren dejado de ser ministros de cultos con la anticipación y en la forma que establezca la ley, podrán ser votados.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -17610,8 +17610,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Los ministros no podrán asociarse con fines políticos ni realizar proselitismo a favor o en contra de candidato, partido o asociación política alguna. Tampoco podrán en reunión pública, en actos del culto o de propaganda religiosa, ni en publicaciones de carácter religioso, oponerse a las leyes del país o a sus instituciones, ni agraviar, de cualquier forma, los símbolos patrios.",
+          "identificador": "e",
+          "contenido": ") Los ministros no podrán asociarse con fines políticos ni realizar proselitismo a favor o en contra de candidato, partido o asociación política alguna. Tampoco podrán en reunión pública, en actos del culto o de propaganda religiosa, ni en publicaciones de carácter religioso, oponerse a las leyes del país o a sus instituciones, ni agraviar, de cualquier forma, los símbolos patrios.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107

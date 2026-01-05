@@ -2330,8 +2330,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Retirar la suma excedente en una sola exhibición de su cuenta individual;",
+          "identificador": "a",
+          "contenido": ") Retirar la suma excedente en una sola exhibición de su cuenta individual;",
           "padre_numero": 6,
           "x_id": 100,
           "x_texto": 122
@@ -2339,8 +2339,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Contratar una renta vitalicia por una cuantía mayor; o",
+          "identificador": "b",
+          "contenido": ") Contratar una renta vitalicia por una cuantía mayor; o",
           "padre_numero": 6,
           "x_id": 100,
           "x_texto": 122
@@ -2348,8 +2348,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Aplicar el excedente a un pago de sobreprima para incrementar los beneficios del seguro de sobrevivencia.",
+          "identificador": "c",
+          "contenido": ") Aplicar el excedente a un pago de sobreprima para incrementar los beneficios del seguro de sobrevivencia.",
           "padre_numero": 6,
           "x_id": 100,
           "x_texto": 122
@@ -2570,8 +2570,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Retirar la suma excedente en una sola exhibición de la cuenta individual del trabajador fallecido, o",
+          "identificador": "a",
+          "contenido": ") Retirar la suma excedente en una sola exhibición de la cuenta individual del trabajador fallecido, o",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2579,8 +2579,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Contratar rentas por una cuantía mayor. Las pensiones y prestaciones a que se refiere la presente Ley serán:",
+          "identificador": "b",
+          "contenido": ") Contratar rentas por una cuantía mayor. Las pensiones y prestaciones a que se refiere la presente Ley serán:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3558,8 +3558,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Incapacidad permanente total o parcial;",
+          "identificador": "a",
+          "contenido": ") Incapacidad permanente total o parcial;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -3567,8 +3567,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Invalidez;",
+          "identificador": "b",
+          "contenido": ") Invalidez;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -3576,8 +3576,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Cesantía en edad avanzada y vejez, y",
+          "identificador": "c",
+          "contenido": ") Cesantía en edad avanzada y vejez, y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -3585,8 +3585,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Viudez, orfandad o ascendencia;",
+          "identificador": "d",
+          "contenido": ") Viudez, orfandad o ascendencia;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -3709,8 +3709,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Que dependan económicamente del asegurado o pensionado, y",
+          "identificador": "a",
+          "contenido": ") Que dependan económicamente del asegurado o pensionado, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3718,8 +3718,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Que el asegurado tenga derecho a las prestaciones consignadas en el artículo 91 de esta Ley.",
+          "identificador": "b",
+          "contenido": ") Que el asegurado tenga derecho a las prestaciones consignadas en el artículo 91 de esta Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -4887,8 +4887,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Retirar la suma excedente en una sola exhibición de su cuenta individual;",
+          "identificador": "a",
+          "contenido": ") Retirar la suma excedente en una sola exhibición de su cuenta individual;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4899,8 +4899,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Contratar una renta vitalicia por una cuantía mayor, o",
+          "identificador": "b",
+          "contenido": ") Contratar una renta vitalicia por una cuantía mayor, o",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -4911,8 +4911,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Aplicar el excedente a un pago de sobreprima para incrementar los beneficios del seguro de sobrevivencia.",
+          "identificador": "c",
+          "contenido": ") Aplicar el excedente a un pago de sobreprima para incrementar los beneficios del seguro de sobrevivencia.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -6916,8 +6916,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los patrones cubrirán la cuota que corresponda sobre el salario base de cotización, calculada conforme a la siguiente tabla:",
+          "identificador": "a",
+          "contenido": ") Los patrones cubrirán la cuota que corresponda sobre el salario base de cotización, calculada conforme a la siguiente tabla:",
           "padre_numero": 3,
           "x_id": 106,
           "x_texto": 128
@@ -6934,7 +6934,7 @@
         {
           "numero": 6,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "00 SM* 3.150%",
           "padre_numero": 5,
           "x_id": 237,
@@ -6943,7 +6943,7 @@
         {
           "numero": 7,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "01 SM a 1.50 UMA** 4.202%",
           "padre_numero": 5,
           "x_id": 207,
@@ -6952,7 +6952,7 @@
         {
           "numero": 8,
           "tipo": "numeral",
-          "identificador": "1.",
+          "identificador": "1",
           "contenido": "51 a 2.00 UMA 6.552%",
           "padre_numero": 5,
           "x_id": 220,
@@ -6961,7 +6961,7 @@
         {
           "numero": 9,
           "tipo": "numeral",
-          "identificador": "2.",
+          "identificador": "2",
           "contenido": "01 a 2.50 UMA 7.962% 2.51 a 3.00 UMA 8.902%",
           "padre_numero": 5,
           "x_id": 220,
@@ -6970,7 +6970,7 @@
         {
           "numero": 10,
           "tipo": "numeral",
-          "identificador": "3.",
+          "identificador": "3",
           "contenido": "01 a 3.50 UMA 9.573% 3.51 a 4.00 UMA 10.077%",
           "padre_numero": 5,
           "x_id": 220,
@@ -6979,7 +6979,7 @@
         {
           "numero": 11,
           "tipo": "numeral",
-          "identificador": "4.",
+          "identificador": "4",
           "contenido": "01 UMA en adelante 11.875% *Salario Mínimo ** Unidad de Medida y Actualización",
           "padre_numero": 5,
           "x_id": 206,
@@ -6988,8 +6988,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los trabajadores cubrirán una cuota del uno punto ciento veinticinco por ciento sobre el salario base de cotización.",
+          "identificador": "b",
+          "contenido": ") Los trabajadores cubrirán una cuota del uno punto ciento veinticinco por ciento sobre el salario base de cotización.",
           "padre_numero": 3,
           "x_id": 106,
           "x_texto": 128,
@@ -7707,8 +7707,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Si su cuenta individual tiene al menos tres años de haber sido abierta y tiene un mínimo de doce bimestres de cotización al Instituto acreditados en dicha cuenta, podrá retirar en una exhibición la cantidad que resulte al equivalente a treinta días de su último salario base de cotización, con un límite de diez veces el salario mínimo mensual general que rija en el Distrito Federal, o",
+          "identificador": "a",
+          "contenido": ") Si su cuenta individual tiene al menos tres años de haber sido abierta y tiene un mínimo de doce bimestres de cotización al Instituto acreditados en dicha cuenta, podrá retirar en una exhibición la cantidad que resulte al equivalente a treinta días de su último salario base de cotización, con un límite de diez veces el salario mínimo mensual general que rija en el Distrito Federal, o",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129
@@ -7716,8 +7716,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Si su cuenta individual tiene cinco años o más de haber sido abierta, podrá retirar la cantidad que resulte menor entre noventa días de su propio salario base de cotización de las últimas doscientas cincuenta semanas o las que tuviere, o el once punto cinco por ciento del saldo de la Subcuenta de Retiro, Cesantía en Edad Avanzada y Vejez.",
+          "identificador": "b",
+          "contenido": ") Si su cuenta individual tiene cinco años o más de haber sido abierta, podrá retirar la cantidad que resulte menor entre noventa días de su propio salario base de cotización de las últimas doscientas cincuenta semanas o las que tuviere, o el once punto cinco por ciento del saldo de la Subcuenta de Retiro, Cesantía en Edad Avanzada y Vejez.",
           "padre_numero": 3,
           "x_id": 107,
           "x_texto": 129
@@ -8605,8 +8605,8 @@
         {
           "numero": 2,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Respecto del seguro de retiro, cesantía en edad avanzada y vejez, el asegurado cubrirá por cuanto hace al ramo primero, la totalidad de la cuota y por los otros dos ramos cubrirá el importe de las cuotas obrero patronales, debiendo el Estado aportar la parte de cuota social que conforme a esta Ley le corresponda, y",
+          "identificador": "a",
+          "contenido": ") Respecto del seguro de retiro, cesantía en edad avanzada y vejez, el asegurado cubrirá por cuanto hace al ramo primero, la totalidad de la cuota y por los otros dos ramos cubrirá el importe de las cuotas obrero patronales, debiendo el Estado aportar la parte de cuota social que conforme a esta Ley le corresponda, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -8617,8 +8617,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "En el seguro de invalidez y vida el asegurado cubrirá las cuotas obrero patronales y el Estado la parte que le corresponda de acuerdo a los porcentajes señalados en esta Ley.",
+          "identificador": "b",
+          "contenido": ") En el seguro de invalidez y vida el asegurado cubrirá las cuotas obrero patronales y el Estado la parte que le corresponda de acuerdo a los porcentajes señalados en esta Ley.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -8778,8 +8778,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Para los sujetos a que se refiere la fracción I del artículo 13 de esta Ley, las prestaciones del seguro de enfermedades y maternidad, por lo que se refiere a las prestaciones en especie estarán sujetos a los tiempos de espera determinados en el reglamento de la ley en la materia, las del seguro de riesgos de trabajo, las correspondientes de los seguros de invalidez y vida, retiro, cesantía en edad avanzada y vejez, así como las del seguro de guarderías y prestaciones sociales, en los términos de los capítulos respectivos;",
+          "identificador": "a",
+          "contenido": ") Para los sujetos a que se refiere la fracción I del artículo 13 de esta Ley, las prestaciones del seguro de enfermedades y maternidad, por lo que se refiere a las prestaciones en especie estarán sujetos a los tiempos de espera determinados en el reglamento de la ley en la materia, las del seguro de riesgos de trabajo, las correspondientes de los seguros de invalidez y vida, retiro, cesantía en edad avanzada y vejez, así como las del seguro de guarderías y prestaciones sociales, en los términos de los capítulos respectivos;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136,
@@ -8790,8 +8790,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Se deroga.",
+          "identificador": "b",
+          "contenido": ") Se deroga.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136,
@@ -8802,8 +8802,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Se deroga.",
+          "identificador": "c",
+          "contenido": ") Se deroga.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136,
@@ -8814,8 +8814,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Para los sujetos a que se refiere la fracción V del artículo 13 de esta Ley, las prestaciones del seguro de riesgos de trabajo, las prestaciones en especie del seguro de enfermedades y maternidad y las correspondientes de los seguros de invalidez y vida, así como de retiro, cesantía en edad avanzada y vejez, en los términos de los capítulos respectivos, y",
+          "identificador": "d",
+          "contenido": ") Para los sujetos a que se refiere la fracción V del artículo 13 de esta Ley, las prestaciones del seguro de riesgos de trabajo, las prestaciones en especie del seguro de enfermedades y maternidad y las correspondientes de los seguros de invalidez y vida, así como de retiro, cesantía en edad avanzada y vejez, en los términos de los capítulos respectivos, y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -8835,8 +8835,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "En caso de muerte del asegurado, se estará a lo dispuesto en el artículo 104 de esta Ley.",
+          "identificador": "e",
+          "contenido": ") En caso de muerte del asegurado, se estará a lo dispuesto en el artículo 104 de esta Ley.",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -10682,8 +10682,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "No podrán aceptarse como pago de las cuotas correspondientes al seguro de retiro, cesantía en edad avanzada y vejez;",
+          "identificador": "a",
+          "contenido": ") No podrán aceptarse como pago de las cuotas correspondientes al seguro de retiro, cesantía en edad avanzada y vejez;",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -10691,8 +10691,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los bienes deberán resultar funcionales para cumplir con las facultades y atribuciones del Instituto, previstas en la presente Ley;",
+          "identificador": "b",
+          "contenido": ") Los bienes deberán resultar funcionales para cumplir con las facultades y atribuciones del Instituto, previstas en la presente Ley;",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -10700,8 +10700,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los bienes inmuebles deberán estar libres de gravamen, carga, proceso judicial o contingencia de cualquier naturaleza;",
+          "identificador": "c",
+          "contenido": ") Los bienes inmuebles deberán estar libres de gravamen, carga, proceso judicial o contingencia de cualquier naturaleza;",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -10709,8 +10709,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "El valor del inmueble se determinará por el Instituto de Administración y Avalúos de Bienes Nacionales, con base en ese avalúo, el área competente del Instituto determinará los saldos de los créditos o el monto de las obligaciones a cubrir, y",
+          "identificador": "d",
+          "contenido": ") El valor del inmueble se determinará por el Instituto de Administración y Avalúos de Bienes Nacionales, con base en ese avalúo, el área competente del Instituto determinará los saldos de los créditos o el monto de las obligaciones a cubrir, y",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -10718,8 +10718,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "El Consejo Técnico del Instituto emitirá los lineamientos que fijen las bases para la incorporación al patrimonio institucional, de los bienes a que se refiere esta fracción.",
+          "identificador": "e",
+          "contenido": ") El Consejo Técnico del Instituto emitirá los lineamientos que fijen las bases para la incorporación al patrimonio institucional, de los bienes a que se refiere esta fracción.",
           "padre_numero": 7,
           "x_id": 107,
           "x_texto": 129
@@ -12811,8 +12811,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Desde la fecha de la vigencia de la prestación, si el error se debió al Instituto o a la Administradora de Fondos para el Retiro, que administre la cuenta individual del trabajador o a la Aseguradora respectiva.",
+          "identificador": "a",
+          "contenido": ") Desde la fecha de la vigencia de la prestación, si el error se debió al Instituto o a la Administradora de Fondos para el Retiro, que administre la cuenta individual del trabajador o a la Aseguradora respectiva.",
           "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
@@ -12820,8 +12820,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Desde la fecha en que se dicte el acuerdo de modificación, si el error se debió a datos falsos suministrados por el interesado.",
+          "identificador": "b",
+          "contenido": ") Desde la fecha en que se dicte el acuerdo de modificación, si el error se debió a datos falsos suministrados por el interesado.",
           "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
@@ -12838,8 +12838,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Desde la fecha en que se dicte el acuerdo de modificación, si el error se debió al Instituto, o a la Administradora de Fondos para el Retiro, que administre la cuenta individual del trabajador o a la Aseguradora respectiva.",
+          "identificador": "a",
+          "contenido": ") Desde la fecha en que se dicte el acuerdo de modificación, si el error se debió al Instituto, o a la Administradora de Fondos para el Retiro, que administre la cuenta individual del trabajador o a la Aseguradora respectiva.",
           "padre_numero": 5,
           "x_id": 85,
           "x_texto": 107
@@ -12847,8 +12847,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Desde la fecha de la vigencia de la prestación, si se comprueba que el interesado proporcionó al Instituto informaciones o datos falsos. En este caso se reintegrarán al Instituto las cantidades que hubiese pagado en exceso con motivo del error.",
+          "identificador": "b",
+          "contenido": ") Desde la fecha de la vigencia de la prestación, si se comprueba que el interesado proporcionó al Instituto informaciones o datos falsos. En este caso se reintegrarán al Instituto las cantidades que hubiese pagado en exceso con motivo del error.",
           "padre_numero": 5,
           "x_id": 85,
           "x_texto": 107

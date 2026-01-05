@@ -126,7 +126,7 @@ class DetectorIdentificadores:
             if es_valido:
                 self.ultimo_inciso = letra
                 self.ultimo_numeral = None  # Reiniciar numerales
-            return ('inciso', letra + ')', contenido, es_valido)
+            return ('inciso', letra, contenido, es_valido)
 
         # 2. Numeral: 1., 2., 3...
         match = re.match(r'^(\d+)\.\s*(.*)', texto, re.DOTALL)
@@ -136,7 +136,7 @@ class DetectorIdentificadores:
             es_valido = self._validar_numeral(num)
             if es_valido:
                 self.ultimo_numeral = num
-            return ('numeral', str(num) + '.', contenido, es_valido)
+            return ('numeral', str(num), contenido, es_valido)
 
         # 3. Romano multi-caracter: II., III., IV., VI... (acepta guión opcional: III.-)
         match = re.match(r'^([IVXLCDM]{2,})\.[-–]?\s*(.*)', texto, re.DOTALL)
@@ -168,7 +168,7 @@ class DetectorIdentificadores:
                 if es_apartado_valido:
                     # Apartado tiene secuencia activa, priorizar
                     self._actualizar_apartado(letra)
-                    return ('apartado', letra + '.', contenido, True)
+                    return ('apartado', letra, contenido, True)
                 elif es_fraccion_valida:
                     # Solo fracción es válida (puede iniciar o continuar)
                     self._actualizar_fraccion(valor_romano)
@@ -180,7 +180,7 @@ class DetectorIdentificadores:
                 es_valido = self._validar_apartado(letra)
                 if es_valido:
                     self._actualizar_apartado(letra)
-                return ('apartado', letra + '.', contenido, es_valido)
+                return ('apartado', letra, contenido, es_valido)
 
         # 5. Texto plano
         return ('texto', None, texto, False)

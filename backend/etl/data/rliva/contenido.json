@@ -124,8 +124,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Prestación de servicios personales independientes;",
+          "identificador": "a",
+          "contenido": ") Prestación de servicios personales independientes;",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -133,8 +133,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Prestación de servicios de comisión, y",
+          "identificador": "b",
+          "contenido": ") Prestación de servicios de comisión, y",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -142,8 +142,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Otorgamiento del uso o goce temporal de bienes.",
+          "identificador": "c",
+          "contenido": ") Otorgamiento del uso o goce temporal de bienes.",
           "padre_numero": 2,
           "x_id": 107,
           "x_texto": 129
@@ -576,8 +576,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Los números correspondientes a los comprobantes mencionados y el concepto que ampara cada comprobante, el monto total de dichos comprobantes y el impuesto respectivo, y",
+          "identificador": "a",
+          "contenido": ") Los números correspondientes a los comprobantes mencionados y el concepto que ampara cada comprobante, el monto total de dichos comprobantes y el impuesto respectivo, y",
           "padre_numero": 5,
           "x_id": 107,
           "x_texto": 129
@@ -585,8 +585,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "La parte proporcional que corresponde al condómino, tanto del gasto total como del impuesto correspondiente, conforme al por ciento de indiviso que represente cada unidad de propiedad exclusiva en el condominio de que se trate.",
+          "identificador": "b",
+          "contenido": ") La parte proporcional que corresponde al condómino, tanto del gasto total como del impuesto correspondiente, conforme al por ciento de indiviso que represente cada unidad de propiedad exclusiva en el condominio de que se trate.",
           "padre_numero": 5,
           "x_id": 107,
           "x_texto": 129

@@ -172,8 +172,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Atención médica preventiva;",
+          "identificador": "a",
+          "contenido": ") Atención médica preventiva;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -181,8 +181,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Atención médica curativa y de maternidad, y",
+          "identificador": "b",
+          "contenido": ") Atención médica curativa y de maternidad, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -190,8 +190,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Rehabilitación física y mental;",
+          "identificador": "c",
+          "contenido": ") Rehabilitación física y mental;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -261,8 +261,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Ordinarios;",
+          "identificador": "a",
+          "contenido": ") Ordinarios;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -270,8 +270,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Especiales;",
+          "identificador": "b",
+          "contenido": ") Especiales;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -279,8 +279,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Para adquisición de bienes de consumo duradero, y",
+          "identificador": "c",
+          "contenido": ") Para adquisición de bienes de consumo duradero, y",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -288,8 +288,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Extraordinarios para damnificados por desastres naturales;",
+          "identificador": "d",
+          "contenido": ") Extraordinarios para damnificados por desastres naturales;",
           "padre_numero": 3,
           "x_id": 114,
           "x_texto": 136
@@ -306,8 +306,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Programas y servicios de apoyo para la adquisición de productos básicos y de consumo para el hogar;",
+          "identificador": "a",
+          "contenido": ") Programas y servicios de apoyo para la adquisición de productos básicos y de consumo para el hogar;",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -315,8 +315,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Servicios turísticos;",
+          "identificador": "b",
+          "contenido": ") Servicios turísticos;",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136
@@ -324,8 +324,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Servicios funerarios;",
+          "identificador": "c",
+          "contenido": ") Servicios funerarios;",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136,
@@ -336,8 +336,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Servicios de atención para el bienestar y desarrollo infantil, y",
+          "identificador": "d",
+          "contenido": ") Servicios de atención para el bienestar y desarrollo infantil, y",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136,
@@ -348,8 +348,8 @@
         {
           "numero": 13,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Casas de día para adultos mayores jubilados y pensionados derechohabientes del Instituto;",
+          "identificador": "e",
+          "contenido": ") Casas de día para adultos mayores jubilados y pensionados derechohabientes del Instituto;",
           "padre_numero": 8,
           "x_id": 114,
           "x_texto": 136,
@@ -369,8 +369,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Programas culturales;",
+          "identificador": "a",
+          "contenido": ") Programas culturales;",
           "padre_numero": 14,
           "x_id": 114,
           "x_texto": 136
@@ -378,8 +378,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Programas educativos y de capacitación;",
+          "identificador": "b",
+          "contenido": ") Programas educativos y de capacitación;",
           "padre_numero": 14,
           "x_id": 114,
           "x_texto": 136
@@ -387,8 +387,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Atención a jubilados, Pensionados y discapacitados, y",
+          "identificador": "c",
+          "contenido": ") Atención a jubilados, Pensionados y discapacitados, y",
           "padre_numero": 14,
           "x_id": 114,
           "x_texto": 136
@@ -396,8 +396,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Programas de fomento deportivo.",
+          "identificador": "d",
+          "contenido": ") Programas de fomento deportivo.",
           "padre_numero": 14,
           "x_id": 114,
           "x_texto": 136
@@ -553,8 +553,8 @@
         {
           "numero": 14,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La o el cónyuge del Trabajador o el Pensionado, o falta de éstos, la concubina o concubinario que haya vivido como si fuera su cónyuge durante los cinco años anteriores o con quien tuviese uno o más hijos (as), siempre que ambos permanezcan libres de matrimonio o de unión civil, o la persona con quien haya suscrito una unión civil. Si la o el Trabajador o la o el Pensionado tiene varias concubinas o concubinarios, ninguno de éstos últimos sujetos tendrá derecho a los seguros, prestaciones y servicios previstos en esta Ley;",
+          "identificador": "a",
+          "contenido": ") La o el cónyuge del Trabajador o el Pensionado, o falta de éstos, la concubina o concubinario que haya vivido como si fuera su cónyuge durante los cinco años anteriores o con quien tuviese uno o más hijos (as), siempre que ambos permanezcan libres de matrimonio o de unión civil, o la persona con quien haya suscrito una unión civil. Si la o el Trabajador o la o el Pensionado tiene varias concubinas o concubinarios, ninguno de éstos últimos sujetos tendrá derecho a los seguros, prestaciones y servicios previstos en esta Ley;",
           "padre_numero": 13,
           "x_id": 119,
           "x_texto": 141,
@@ -565,8 +565,8 @@
         {
           "numero": 15,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los hijos del Trabajador menores de dieciocho años;",
+          "identificador": "b",
+          "contenido": ") Los hijos del Trabajador menores de dieciocho años;",
           "padre_numero": 13,
           "x_id": 119,
           "x_texto": 141
@@ -574,8 +574,8 @@
         {
           "numero": 16,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Los hijos del Trabajador o Pensionado mayores de dieciocho años, cuando no puedan mantenerse por su propio trabajo debido a una enfermedad crónica o discapacidad por deficiencias físicas, mentales, intelectuales o sensoriales, hasta en tanto no desaparezca la incapacidad que padecen, lo que se comprobará mediante certificado médico, expedido por el Instituto y por medios legales procedentes; o hasta la edad de veinticinco años, previa comprobación de que están realizando estudios de nivel medio superior o superior, de cualquier rama del conocimiento en planteles oficiales o reconocidos, y que no tengan un trabajo, y",
+          "identificador": "c",
+          "contenido": ") Los hijos del Trabajador o Pensionado mayores de dieciocho años, cuando no puedan mantenerse por su propio trabajo debido a una enfermedad crónica o discapacidad por deficiencias físicas, mentales, intelectuales o sensoriales, hasta en tanto no desaparezca la incapacidad que padecen, lo que se comprobará mediante certificado médico, expedido por el Instituto y por medios legales procedentes; o hasta la edad de veinticinco años, previa comprobación de que están realizando estudios de nivel medio superior o superior, de cualquier rama del conocimiento en planteles oficiales o reconocidos, y que no tengan un trabajo, y",
           "padre_numero": 13,
           "x_id": 119,
           "x_texto": 141,
@@ -586,8 +586,8 @@
         {
           "numero": 17,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Los ascendientes que dependan económicamente del Trabajador o Pensionado.",
+          "identificador": "d",
+          "contenido": ") Los ascendientes que dependan económicamente del Trabajador o Pensionado.",
           "padre_numero": 13,
           "x_id": 119,
           "x_texto": 141
@@ -2618,8 +2618,8 @@
         {
           "numero": 11,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Que el Trabajador o el Pensionado tenga derecho a los servicios de atención médica curativa y de maternidad, así como de rehabilitación física y mental, y",
+          "identificador": "a",
+          "contenido": ") Que el Trabajador o el Pensionado tenga derecho a los servicios de atención médica curativa y de maternidad, así como de rehabilitación física y mental, y",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2627,8 +2627,8 @@
         {
           "numero": 12,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Que dichos familiares no tengan por sí mismos derecho a las prestaciones señaladas en el inciso anterior.",
+          "identificador": "b",
+          "contenido": ") Que dichos familiares no tengan por sí mismos derecho a las prestaciones señaladas en el inciso anterior.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2671,8 +2671,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Una Cuota de dos punto setenta y cinco por ciento del Sueldo Básico para financiar al seguro de salud de los Trabajadores en activo y Familiares Derechohabientes, y",
+          "identificador": "a",
+          "contenido": ") Una Cuota de dos punto setenta y cinco por ciento del Sueldo Básico para financiar al seguro de salud de los Trabajadores en activo y Familiares Derechohabientes, y",
           "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
@@ -2680,8 +2680,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Una Cuota de cero punto seiscientos veinticinco por ciento del Sueldo Básico para financiar al seguro de salud de los Pensionados y Familiares Derechohabientes;",
+          "identificador": "b",
+          "contenido": ") Una Cuota de cero punto seiscientos veinticinco por ciento del Sueldo Básico para financiar al seguro de salud de los Pensionados y Familiares Derechohabientes;",
           "padre_numero": 2,
           "x_id": 85,
           "x_texto": 107
@@ -2698,8 +2698,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El equivalente al siete punto trescientos setenta y cinco por ciento del Sueldo Básico financiará al seguro de salud de los Trabajadores en activo y sus Familiares Derechohabientes, y",
+          "identificador": "a",
+          "contenido": ") El equivalente al siete punto trescientos setenta y cinco por ciento del Sueldo Básico financiará al seguro de salud de los Trabajadores en activo y sus Familiares Derechohabientes, y",
           "padre_numero": 5,
           "x_id": 85,
           "x_texto": 107
@@ -2707,8 +2707,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El equivalente al cero punto setenta y dos por ciento del Sueldo Básico para financiar el seguro de salud de los Pensionados y sus Familiares Derechohabientes;",
+          "identificador": "b",
+          "contenido": ") El equivalente al cero punto setenta y dos por ciento del Sueldo Básico para financiar el seguro de salud de los Pensionados y sus Familiares Derechohabientes;",
           "padre_numero": 5,
           "x_id": 85,
           "x_texto": 107
@@ -3413,8 +3413,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "En una sola exhibición, pagadera antes del quince de diciembre de cada año, o",
+          "identificador": "a",
+          "contenido": ") En una sola exhibición, pagadera antes del quince de diciembre de cada año, o",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3422,8 +3422,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Conjuntamente con cada mensualidad del pago de la Renta, incrementándose cada exhibición con la doceava parte de la gratificación anual.",
+          "identificador": "b",
+          "contenido": ") Conjuntamente con cada mensualidad del pago de la Renta, incrementándose cada exhibición con la doceava parte de la gratificación anual.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3722,8 +3722,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Retirarlos en una sola exhibición, o",
+          "identificador": "a",
+          "contenido": ") Retirarlos en una sola exhibición, o",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -3731,8 +3731,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Contratar Rentas por una cuantía mayor.",
+          "identificador": "b",
+          "contenido": ") Contratar Rentas por una cuantía mayor.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -7271,8 +7271,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Ordinarios. Su monto será hasta por el importe de cuatro meses del Sueldo Básico, de acuerdo con la antigüedad de quien lo solicite;",
+          "identificador": "a",
+          "contenido": ") Ordinarios. Su monto será hasta por el importe de cuatro meses del Sueldo Básico, de acuerdo con la antigüedad de quien lo solicite;",
           "padre_numero": 3,
           "x_id": 85,
           "x_texto": 107
@@ -7280,8 +7280,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Especiales. Su monto será hasta por el importe de seis meses del Sueldo Básico, de acuerdo con la antigüedad de quien lo solicite;",
+          "identificador": "b",
+          "contenido": ") Especiales. Su monto será hasta por el importe de seis meses del Sueldo Básico, de acuerdo con la antigüedad de quien lo solicite;",
           "padre_numero": 3,
           "x_id": 85,
           "x_texto": 107
@@ -7289,8 +7289,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Para adquisición de bienes de uso duradero. Su monto será hasta por el importe de ocho meses de Sueldo Básico, de acuerdo con la antigüedad de quien lo solicite, y",
+          "identificador": "c",
+          "contenido": ") Para adquisición de bienes de uso duradero. Su monto será hasta por el importe de ocho meses de Sueldo Básico, de acuerdo con la antigüedad de quien lo solicite, y",
           "padre_numero": 3,
           "x_id": 85,
           "x_texto": 107
@@ -7298,8 +7298,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Extraordinarios para damnificados por desastres naturales. Su monto será establecido por la Junta Directiva del Instituto;",
+          "identificador": "d",
+          "contenido": ") Extraordinarios para damnificados por desastres naturales. Su monto será establecido por la Junta Directiva del Instituto;",
           "padre_numero": 3,
           "x_id": 85,
           "x_texto": 107
@@ -7546,8 +7546,8 @@
         {
           "numero": 3,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "A la adquisición o construcción de vivienda;",
+          "identificador": "a",
+          "contenido": ") A la adquisición o construcción de vivienda;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -7555,8 +7555,8 @@
         {
           "numero": 4,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "A la reparación, ampliación o mejoramiento de sus habitaciones, y",
+          "identificador": "b",
+          "contenido": ") A la reparación, ampliación o mejoramiento de sus habitaciones, y",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -7564,8 +7564,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "A los pasivos contraídos por cualquiera de los conceptos anteriores;",
+          "identificador": "c",
+          "contenido": ") A los pasivos contraídos por cualquiera de los conceptos anteriores;",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136
@@ -7573,8 +7573,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "A la adquisición de suelo destinado a la construcción de su vivienda.",
+          "identificador": "d",
+          "contenido": ") A la adquisición de suelo destinado a la construcción de su vivienda.",
           "padre_numero": 2,
           "x_id": 114,
           "x_texto": 136,
@@ -8165,8 +8165,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Créditos en UMA, y",
+          "identificador": "a",
+          "contenido": ") Créditos en UMA, y",
           "padre_numero": 4,
           "x_id": 121,
           "x_texto": 143
@@ -8174,8 +8174,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Créditos en pesos.",
+          "identificador": "b",
+          "contenido": ") Créditos en pesos.",
           "padre_numero": 4,
           "x_id": 121,
           "x_texto": 143
@@ -9764,8 +9764,8 @@
         {
           "numero": 18,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Examinar y, en su caso, aprobar el presupuesto de ingresos y egresos, así como los programas de labores y de financiamiento del Fondo de la Vivienda para el siguiente año;",
+          "identificador": "a",
+          "contenido": ") Examinar y, en su caso, aprobar el presupuesto de ingresos y egresos, así como los programas de labores y de financiamiento del Fondo de la Vivienda para el siguiente año;",
           "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
@@ -9773,8 +9773,8 @@
         {
           "numero": 19,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Examinar y, en su caso, aprobar, en el primer bimestre del año, el informe de actividades de la Comisión Ejecutiva del Fondo de la Vivienda y, dentro de los cuatro primeros meses del año, los estados financieros que resulten de la operación en el último ejercicio;",
+          "identificador": "b",
+          "contenido": ") Examinar y, en su caso, aprobar, en el primer bimestre del año, el informe de actividades de la Comisión Ejecutiva del Fondo de la Vivienda y, dentro de los cuatro primeros meses del año, los estados financieros que resulten de la operación en el último ejercicio;",
           "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
@@ -9782,8 +9782,8 @@
         {
           "numero": 20,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Establecer las reglas para el otorgamiento de créditos;",
+          "identificador": "c",
+          "contenido": ") Establecer las reglas para el otorgamiento de créditos;",
           "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
@@ -9791,8 +9791,8 @@
         {
           "numero": 21,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Examinar y, en su caso, aprobar anualmente el presupuesto de gastos de administración, operación y vigilancia del Fondo de la Vivienda, los que no deberán exceder del cero punto setenta y cinco por ciento de los recursos totales que maneje;",
+          "identificador": "d",
+          "contenido": ") Examinar y, en su caso, aprobar anualmente el presupuesto de gastos de administración, operación y vigilancia del Fondo de la Vivienda, los que no deberán exceder del cero punto setenta y cinco por ciento de los recursos totales que maneje;",
           "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
@@ -9800,8 +9800,8 @@
         {
           "numero": 22,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Aprobar los programas de inversión y de Reservas que deben constituirse para asegurar la operación del Fondo de la Vivienda y el cumplimiento de los demás fines y obligaciones del mismo;",
+          "identificador": "e",
+          "contenido": ") Aprobar los programas de inversión y de Reservas que deben constituirse para asegurar la operación del Fondo de la Vivienda y el cumplimiento de los demás fines y obligaciones del mismo;",
           "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
@@ -9809,8 +9809,8 @@
         {
           "numero": 23,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Vigilar que los créditos y los financiamientos que se otorguen se destinen a los fines para los que fueron programados, y",
+          "identificador": "f",
+          "contenido": ") Vigilar que los créditos y los financiamientos que se otorguen se destinen a los fines para los que fueron programados, y",
           "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
@@ -9818,8 +9818,8 @@
         {
           "numero": 24,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Las demás funciones necesarias para el cumplimiento de los fines del Fondo de la Vivienda;",
+          "identificador": "g",
+          "contenido": ") Las demás funciones necesarias para el cumplimiento de los fines del Fondo de la Vivienda;",
           "padre_numero": 17,
           "x_id": 85,
           "x_texto": 107
@@ -9836,8 +9836,8 @@
         {
           "numero": 26,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "Examinar y, en su caso, aprobar el presupuesto de ingresos y egresos, así como los programas de labores y de inversión del Fondo Nacional de Pensiones de los Trabajadores al Servicio del Estado;",
+          "identificador": "a",
+          "contenido": ") Examinar y, en su caso, aprobar el presupuesto de ingresos y egresos, así como los programas de labores y de inversión del Fondo Nacional de Pensiones de los Trabajadores al Servicio del Estado;",
           "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
@@ -9845,8 +9845,8 @@
         {
           "numero": 27,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Examinar y, en su caso, aprobar en el primer bimestre del año, el informe de actividades de la Comisión Ejecutiva del PENSIONISSSTE y, dentro de los cuatro primeros meses del año, los estados financieros que resulten de la operación en el último ejercicio;",
+          "identificador": "b",
+          "contenido": ") Examinar y, en su caso, aprobar en el primer bimestre del año, el informe de actividades de la Comisión Ejecutiva del PENSIONISSSTE y, dentro de los cuatro primeros meses del año, los estados financieros que resulten de la operación en el último ejercicio;",
           "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
@@ -9854,8 +9854,8 @@
         {
           "numero": 28,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Examinar y, en su caso, aprobar a propuesta de la Comisión Ejecutiva del PENSIONISSSTE, la estrategia de inversión de los recursos;",
+          "identificador": "c",
+          "contenido": ") Examinar y, en su caso, aprobar a propuesta de la Comisión Ejecutiva del PENSIONISSSTE, la estrategia de inversión de los recursos;",
           "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
@@ -9863,8 +9863,8 @@
         {
           "numero": 29,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "Examinar y, en su caso, aprobar anualmente el presupuesto de gastos de administración, operación y vigilancia del PENSIONISSSTE;",
+          "identificador": "d",
+          "contenido": ") Examinar y, en su caso, aprobar anualmente el presupuesto de gastos de administración, operación y vigilancia del PENSIONISSSTE;",
           "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
@@ -9872,8 +9872,8 @@
         {
           "numero": 30,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Examinar y, en su caso, aprobar a propuesta de la Comisión Ejecutiva del PENSIONISSSTE, el programa de Reservas que deben constituirse para asegurar la operación del PENSIONISSSTE y el cumplimiento de los demás fines y obligaciones del mismo;",
+          "identificador": "e",
+          "contenido": ") Examinar y, en su caso, aprobar a propuesta de la Comisión Ejecutiva del PENSIONISSSTE, el programa de Reservas que deben constituirse para asegurar la operación del PENSIONISSSTE y el cumplimiento de los demás fines y obligaciones del mismo;",
           "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
@@ -9881,8 +9881,8 @@
         {
           "numero": 31,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "Autorizar la constitución de sociedades de inversión especializadas de fondos para el retiro, y",
+          "identificador": "f",
+          "contenido": ") Autorizar la constitución de sociedades de inversión especializadas de fondos para el retiro, y",
           "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
@@ -9890,8 +9890,8 @@
         {
           "numero": 32,
           "tipo": "inciso",
-          "identificador": "g)",
-          "contenido": "Las demás funciones necesarias para el cumplimiento de los fines del PENSIONISSSTE;",
+          "identificador": "g",
+          "contenido": ") Las demás funciones necesarias para el cumplimiento de los fines del PENSIONISSSTE;",
           "padre_numero": 25,
           "x_id": 85,
           "x_texto": 107
@@ -9917,8 +9917,8 @@
         {
           "numero": 35,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "La situación financiera de cada uno de los seguros ofrecidos por el Instituto, y actuarial de sus reservas, aportando elementos de juicio para evaluar si las primas correspondientes son suficientes para cubrir los gastos actuales y futuros de los beneficios derivados de cada seguro;",
+          "identificador": "a",
+          "contenido": ") La situación financiera de cada uno de los seguros ofrecidos por el Instituto, y actuarial de sus reservas, aportando elementos de juicio para evaluar si las primas correspondientes son suficientes para cubrir los gastos actuales y futuros de los beneficios derivados de cada seguro;",
           "padre_numero": 34,
           "x_id": 85,
           "x_texto": 107
@@ -9926,8 +9926,8 @@
         {
           "numero": 36,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "Los posibles riesgos, contingencias y pasivos que se están tomando en cada seguro y la capacidad financiera del Instituto para responder a ellos en función de sus ingresos y las reservas disponibles;",
+          "identificador": "b",
+          "contenido": ") Los posibles riesgos, contingencias y pasivos que se están tomando en cada seguro y la capacidad financiera del Instituto para responder a ellos en función de sus ingresos y las reservas disponibles;",
           "padre_numero": 34,
           "x_id": 85,
           "x_texto": 107
@@ -9935,8 +9935,8 @@
         {
           "numero": 37,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "Estimaciones sobre las posibles modificaciones a las Cuotas y Aportaciones de cada seguro, en su caso, que se puedan prever, para mantener la viabilidad financiera del Instituto, y de las fechas estimadas en que dichas modificaciones puedan ser requeridas, y",
+          "identificador": "c",
+          "contenido": ") Estimaciones sobre las posibles modificaciones a las Cuotas y Aportaciones de cada seguro, en su caso, que se puedan prever, para mantener la viabilidad financiera del Instituto, y de las fechas estimadas en que dichas modificaciones puedan ser requeridas, y",
           "padre_numero": 34,
           "x_id": 85,
           "x_texto": 107
@@ -9944,8 +9944,8 @@
         {
           "numero": 38,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "La situación de sus pasivos laborales totales y de cualquier otra índole que comprometan su gasto por más de un ejercicio fiscal.",
+          "identificador": "d",
+          "contenido": ") La situación de sus pasivos laborales totales y de cualquier otra índole que comprometan su gasto por más de un ejercicio fiscal.",
           "padre_numero": 34,
           "x_id": 85,
           "x_texto": 107
@@ -10118,8 +10118,8 @@
         {
           "numero": 5,
           "tipo": "inciso",
-          "identificador": "a)",
-          "contenido": "El programa institucional;",
+          "identificador": "a",
+          "contenido": ") El programa institucional;",
           "padre_numero": 4,
           "x_id": 85,
           "x_texto": 107
@@ -10127,8 +10127,8 @@
         {
           "numero": 6,
           "tipo": "inciso",
-          "identificador": "b)",
-          "contenido": "El programa de administración y constitución de Reservas;",
+          "identificador": "b",
+          "contenido": ") El programa de administración y constitución de Reservas;",
           "padre_numero": 4,
           "x_id": 85,
           "x_texto": 107
@@ -10136,8 +10136,8 @@
         {
           "numero": 7,
           "tipo": "inciso",
-          "identificador": "c)",
-          "contenido": "El programa operativo anual de acuerdo con lo establecido en la Ley de Planeación;",
+          "identificador": "c",
+          "contenido": ") El programa operativo anual de acuerdo con lo establecido en la Ley de Planeación;",
           "padre_numero": 4,
           "x_id": 85,
           "x_texto": 107
@@ -10145,8 +10145,8 @@
         {
           "numero": 8,
           "tipo": "inciso",
-          "identificador": "d)",
-          "contenido": "El programa anual de préstamos;",
+          "identificador": "d",
+          "contenido": ") El programa anual de préstamos;",
           "padre_numero": 4,
           "x_id": 85,
           "x_texto": 107
@@ -10154,8 +10154,8 @@
         {
           "numero": 9,
           "tipo": "inciso",
-          "identificador": "e)",
-          "contenido": "Los estados financieros del Instituto, y",
+          "identificador": "e",
+          "contenido": ") Los estados financieros del Instituto, y",
           "padre_numero": 4,
           "x_id": 85,
           "x_texto": 107
@@ -10163,8 +10163,8 @@
         {
           "numero": 10,
           "tipo": "inciso",
-          "identificador": "f)",
-          "contenido": "El informe financiero y actuarial;",
+          "identificador": "f",
+          "contenido": ") El informe financiero y actuarial;",
           "padre_numero": 4,
           "x_id": 85,
           "x_texto": 107
