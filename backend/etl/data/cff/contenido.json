@@ -1951,15 +1951,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LOS MEDIOS ELECTRÓNICOS",
-          "padre_numero": 4,
-          "x_id": 217,
-          "x_texto": 217
         }
       ]
     },
@@ -3025,15 +3016,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Derechos y Obligaciones de los Contribuyentes",
-          "padre_numero": 2,
-          "x_id": 163,
-          "x_texto": 163
         }
       ]
     },
@@ -3694,8 +3676,8 @@
           "identificador": null,
           "contenido": "= Raíz enésima.",
           "padre_numero": 6,
-          "x_id": 119,
-          "x_texto": 119
+          "x_id": 126,
+          "x_texto": 126
         },
         {
           "numero": 9,
@@ -8292,15 +8274,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Facultades de las Autoridades Fiscales",
-          "padre_numero": 3,
-          "x_id": 186,
-          "x_texto": 186
         }
       ]
     },
@@ -14849,15 +14822,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Acuerdos Conclusivos",
-          "padre_numero": 3,
-          "x_id": 228,
-          "x_texto": 228
         }
       ]
     },
@@ -15074,24 +15038,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Infracciones y Delitos Fiscales",
-          "padre_numero": 2,
-          "x_id": 208,
-          "x_texto": 208
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las infracciones",
-          "padre_numero": 3,
-          "x_id": 256,
-          "x_texto": 256
         }
       ]
     },
@@ -20127,15 +20073,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los delitos fiscales",
-          "padre_numero": 1,
-          "x_id": 249,
-          "x_texto": 249
         }
       ]
     },
@@ -22440,33 +22377,6 @@
           "referencias": [
             "Artículo adicionado DOF 07-11-2025"
           ]
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De Los Procedimientos Administrativos",
-          "padre_numero": 3,
-          "x_id": 202,
-          "x_texto": 202
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del recurso administrativo",
-          "padre_numero": 4,
-          "x_id": 237,
-          "x_texto": 237
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Recurso de Revocación",
-          "padre_numero": 4,
-          "x_id": 234,
-          "x_texto": 234
         }
       ]
     },
@@ -23134,15 +23044,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Impugnación de las Notificaciones",
-          "padre_numero": 1,
-          "x_id": 201,
-          "x_texto": 201
         }
       ]
     },
@@ -23160,15 +23061,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Trámite y Resolución de los Recursos",
-          "padre_numero": 1,
-          "x_id": 196,
-          "x_texto": 196
         }
       ]
     },
@@ -23545,15 +23437,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 16,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Trámite y Resolución del Recurso de Revocación Exclusivo de Fondo",
-          "padre_numero": 15,
-          "x_id": 114,
-          "x_texto": 114
         }
       ]
     },
@@ -23917,15 +23800,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las notificaciones y la garantía del interés fiscal",
-          "padre_numero": 6,
-          "x_id": 173,
-          "x_texto": 173
         }
       ]
     },
@@ -24797,24 +24671,6 @@
           "referencias": [
             "Reforma DOF 12-11-2021: Derogó del artículo el entonces párrafo décimo"
           ]
-        },
-        {
-          "numero": 11,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del procedimiento administrativo de ejecución",
-          "padre_numero": 10,
-          "x_id": 184,
-          "x_texto": 184
-        },
-        {
-          "numero": 12,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Disposiciones Generales",
-          "padre_numero": 11,
-          "x_id": 241,
-          "x_texto": 241
         }
       ]
     },
@@ -25610,15 +25466,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 10,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Embargo",
-          "padre_numero": 9,
-          "x_id": 272,
-          "x_texto": 272
         }
       ]
     },
@@ -26608,15 +26455,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Intervención",
-          "padre_numero": 3,
-          "x_id": 259,
-          "x_texto": 259
         }
       ]
     },
@@ -26851,15 +26689,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Remate",
-          "padre_numero": 1,
-          "x_id": 276,
-          "x_texto": 276
         }
       ]
     },
@@ -27862,15 +27691,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Revelación de Esquemas Reportables",
-          "padre_numero": 5,
-          "x_id": 192,
-          "x_texto": 192
         }
       ]
     },

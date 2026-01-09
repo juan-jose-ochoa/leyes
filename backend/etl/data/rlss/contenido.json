@@ -85,15 +85,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA CONSTITUCIÓN DE LAS RESERVAS Y DE LA RESERVA GENERAL",
-          "padre_numero": 5,
-          "x_id": 113,
-          "x_texto": 113
         }
       ]
     },
@@ -137,15 +128,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA INVERSIÓN DE LAS RESERVAS Y DE LA RESERVA GENERAL",
-          "padre_numero": 1,
-          "x_id": 124,
-          "x_texto": 124
         }
       ]
     },
@@ -499,15 +481,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL USO PARA LA OPERACIÓN DE LAS RESERVAS Y DE LA RESERVA GENERAL",
-          "padre_numero": null,
-          "x_id": 88,
-          "x_texto": 88
         }
       ]
     },
@@ -629,15 +602,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE OPERACIÓN PARA CONTINGENCIAS Y FINANCIAMIENTO",
-          "padre_numero": null,
-          "x_id": 82,
-          "x_texto": 82
         }
       ]
     },
@@ -682,15 +646,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DISPOSICIONES FINALES",
-          "padre_numero": 4,
-          "x_id": 238,
-          "x_texto": 238
         }
       ]
     },

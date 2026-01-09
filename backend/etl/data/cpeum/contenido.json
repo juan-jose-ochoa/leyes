@@ -3503,105 +3503,6 @@
             "Párrafo adicionado DOF 05-02-2017. Reformado DOF 15-04-2025",
             "Artículo reformado DOF 03-02-1983"
           ]
-        },
-        {
-          "numero": 11,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Artículo 26.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 12,
-          "tipo": "apartado",
-          "identificador": "A",
-          "contenido": "El Estado organizará un sistema de planeación democrática del desarrollo nacional que imprima solidez, dinamismo, competitividad, permanencia y equidad al crecimiento de la economía para la independencia y la democratización política, social y cultural de la nación.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 107,
-          "referencias": [
-            "Párrafo reformado DOF 05-06-2013"
-          ]
-        },
-        {
-          "numero": 13,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Los fines del proyecto nacional contenidos en esta Constitución determinarán los objetivos de la planeación. La planeación será democrática y deliberativa. Mediante los mecanismos de participación que establezca la ley, recogerá las aspiraciones y demandas de la sociedad para incorporarlas al plan y los programas de desarrollo. Habrá un plan nacional de desarrollo al que se sujetarán obligatoriamente los programas de la Administración Pública Federal.",
-          "padre_numero": 12,
-          "x_id": 107,
-          "x_texto": 107,
-          "referencias": [
-            "Párrafo reformado DOF 10-02-2014"
-          ]
-        },
-        {
-          "numero": 14,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "La ley facultará al Ejecutivo para que establezca los procedimientos de participación y consulta popular en el sistema nacional de planeación democrática, y los criterios para la formulación, instrumentación, control y evaluación del plan y los programas de desarrollo. Asimismo, determinará los órganos responsables del proceso de planeación y las bases para que el Ejecutivo Federal coordine mediante convenios con los gobiernos de las entidades federativas e induzca y concierte con los particulares las acciones a realizar para su elaboración y ejecución. El plan nacional de desarrollo considerará la continuidad y adaptaciones necesarias de la política nacional para el desarrollo industrial, con vertientes sectoriales y regionales.",
-          "padre_numero": 12,
-          "x_id": 107,
-          "x_texto": 107,
-          "referencias": [
-            "Párrafo reformado DOF 05-06-2013"
-          ]
-        },
-        {
-          "numero": 15,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "En el sistema de planeación democrática y deliberativa, el Congreso de la Unión tendrá la intervención que señale la ley.",
-          "padre_numero": 12,
-          "x_id": 107,
-          "x_texto": 107,
-          "referencias": [
-            "Párrafo reformado DOF 10-02-2014"
-          ]
-        },
-        {
-          "numero": 16,
-          "tipo": "apartado",
-          "identificador": "B",
-          "contenido": "El Estado contará con un Sistema Nacional de Información Estadística y Geográfica cuyos datos serán considerados oficiales. Para la Federación, las entidades federativas, los Municipios y las demarcaciones territoriales de la Ciudad de México, los datos contenidos en el Sistema serán de uso obligatorio en los términos que establezca la ley.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 107,
-          "referencias": [
-            "Párrafo reformado DOF 29-01-2016"
-          ]
-        },
-        {
-          "numero": 17,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "La responsabilidad de normar y coordinar dicho Sistema estará a cargo de un organismo con autonomía técnica y de gestión, personalidad jurídica y patrimonio propios, con las facultades necesarias para regular la captación, procesamiento y publicación de la información que se genere y proveer a su observancia.",
-          "padre_numero": 16,
-          "x_id": 107,
-          "x_texto": 107
-        },
-        {
-          "numero": 18,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "El organismo también estará a cargo de la medición de la pobreza y la evaluación de los programas, objetivos, metas y acciones de la política de desarrollo social, así como de emitir recomendaciones en los términos que disponga la ley, la cual establecerá las formas de coordinación con las autoridades federales, locales y municipales para el ejercicio de estas funciones.",
-          "padre_numero": 16,
-          "x_id": 107,
-          "x_texto": 107,
-          "referencias": [
-            "Párrafo adicionado DOF 20-12-2024"
-          ]
-        },
-        {
-          "numero": 19,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "El organismo tendrá una Junta de Gobierno integrada por cinco miembros, uno de los cuales fungirá como Presidente de ésta y del propio organismo; serán designados por el Presidente de",
-          "padre_numero": 16,
-          "x_id": 107,
-          "x_texto": 107
         }
       ]
     },
@@ -4705,15 +4606,6 @@
           "referencias": [
             "Artículo reformado DOF 21-04-1981, 02-08-2007, 10-06-2011"
           ]
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Mexicanos",
-          "padre_numero": 5,
-          "x_id": 260,
-          "x_texto": 260
         }
       ]
     },
@@ -4937,15 +4829,6 @@
           "referencias": [
             "Artículo reformado DOF 15-12-1934, 10-02-1944, 20-03-1997"
           ]
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Extranjeros",
-          "padre_numero": 5,
-          "x_id": 258,
-          "x_texto": 258
         }
       ]
     },
@@ -4987,15 +4870,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Ciudadanos Mexicanos",
-          "padre_numero": 3,
-          "x_id": 227,
-          "x_texto": 227
         }
       ]
     },
@@ -5430,118 +5304,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Artículo 37.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "A) Ningún mexicano por nacimiento podrá ser privado de su nacionalidad.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 10,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B) La nacionalidad mexicana por naturalización se perderá en los siguientes casos:",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 11,
-          "tipo": "fraccion",
-          "identificador": "I",
-          "contenido": "Por adquisición voluntaria de una nacionalidad extranjera, por hacerse pasar en cualquier instrumento público como extranjero, por usar un pasaporte extranjero, o por aceptar o usar títulos nobiliarios que impliquen sumisión a un Estado extranjero, y",
-          "padre_numero": null,
-          "x_id": 107,
-          "x_texto": 129
-        },
-        {
-          "numero": 12,
-          "tipo": "fraccion",
-          "identificador": "II",
-          "contenido": "Por residir durante cinco años continuos en el extranjero. C) La ciudadanía mexicana se pierde:",
-          "padre_numero": null,
-          "x_id": 107,
-          "x_texto": 129
-        },
-        {
-          "numero": 13,
-          "tipo": "fraccion",
-          "identificador": "I",
-          "contenido": "Por aceptar o usar títulos nobiliarios de gobiernos extranjeros;",
-          "padre_numero": null,
-          "x_id": 107,
-          "x_texto": 129
-        },
-        {
-          "numero": 14,
-          "tipo": "fraccion",
-          "identificador": "II",
-          "contenido": "Por prestar voluntariamente servicios o funciones oficiales a un gobierno extranjero, sin permiso del Ejecutivo Federal;",
-          "padre_numero": null,
-          "x_id": 107,
-          "x_texto": 129,
-          "referencias": [
-            "Fracción reformada DOF 30-09-2013"
-          ]
-        },
-        {
-          "numero": 15,
-          "tipo": "fraccion",
-          "identificador": "III",
-          "contenido": "Por aceptar o usar condecoraciones extranjeras sin permiso del Ejecutivo Federal. El Presidente de la República, los senadores y diputados al Congreso de la Unión y los ministros de la Suprema Corte de Justicia de la Nación podrán libremente aceptar y usar condecoraciones extranjeras;",
-          "padre_numero": null,
-          "x_id": 107,
-          "x_texto": 129,
-          "referencias": [
-            "Fracción reformada DOF 30-09-2013"
-          ]
-        },
-        {
-          "numero": 16,
-          "tipo": "fraccion",
-          "identificador": "IV",
-          "contenido": "Por admitir del gobierno de otro país títulos o funciones sin previo permiso del Ejecutivo Federal, exceptuando los títulos literarios, científicos o humanitarios que pueden aceptarse libremente;",
-          "padre_numero": null,
-          "x_id": 107,
-          "x_texto": 129,
-          "referencias": [
-            "Fracción reformada DOF 30-09-2013"
-          ]
-        },
-        {
-          "numero": 17,
-          "tipo": "fraccion",
-          "identificador": "V",
-          "contenido": "Por ayudar, en contra de la Nación, a un extranjero, o a un gobierno extranjero, en cualquier reclamación diplomática o ante un tribunal internacional, y",
-          "padre_numero": null,
-          "x_id": 107,
-          "x_texto": 129
-        },
-        {
-          "numero": 18,
-          "tipo": "fraccion",
-          "identificador": "VI",
-          "contenido": "En los demás casos que fijan las leyes.",
-          "padre_numero": null,
-          "x_id": 107,
-          "x_texto": 129,
-          "referencias": [
-            "Reforma DOF 30-09-2013: Derogó del Apartado C el entonces último párrafo",
-            "Fe de erratas al artículo DOF 06-02-1917. Artículo reformado DOF 18-01-1934, 20-03-1997"
-          ]
         }
       ]
     },
@@ -5675,10 +5437,100 @@
           "numero": 2,
           "tipo": "fraccion",
           "identificador": "I",
-          "contenido": "Por falta de cumplimiento, sin causa justificada, de cualquiera de las obligaciones que impone el",
+          "contenido": "Por falta de cumplimiento, sin causa justificada, de cualquiera de las obligaciones que impone el artículo 36. Esta suspensión durará un año y se impondrá además de las otras penas que por el mismo hecho señalare la ley;",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 3,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "Por estar sujeto a un proceso criminal por delito que merezca pena corporal, a contar desde la fecha del auto de formal prisión;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 4,
+          "tipo": "fraccion",
+          "identificador": "III",
+          "contenido": "Durante la extinción de una pena corporal;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 5,
+          "tipo": "fraccion",
+          "identificador": "IV",
+          "contenido": "Por vagancia o ebriedad consuetudinaria, declarada en los términos que prevengan las leyes;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 6,
+          "tipo": "fraccion",
+          "identificador": "V",
+          "contenido": "Por estar prófugo de la justicia, desde que se dicte la orden de aprehensión hasta que prescriba la acción penal;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción reformada DOF 29-05-2023"
+          ]
+        },
+        {
+          "numero": 7,
+          "tipo": "fraccion",
+          "identificador": "VI",
+          "contenido": "Por sentencia ejecutoria que imponga como pena esa suspensión, y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción reformada DOF 29-05-2023"
+          ]
+        },
+        {
+          "numero": 8,
+          "tipo": "fraccion",
+          "identificador": "VII",
+          "contenido": "Por tener sentencia firme por la comisión intencional de delitos contra la vida y la integridad corporal; contra la libertad y seguridad sexuales, el normal desarrollo psicosexual; por violencia familiar, violencia familiar equiparada o doméstica, violación a la intimidad sexual; por violencia política contra las mujeres en razón de género, en cualquiera de sus modalidades y tipos.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 9,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Por ser declarada como persona deudora alimentaria morosa.",
+          "padre_numero": 8,
+          "x_id": 106,
+          "x_texto": 106
+        },
+        {
+          "numero": 10,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En los supuestos de esta fracción, la persona no podrá ser registrada como candidata para cualquier cargo de elección popular, ni ser nombrada para empleo, cargo o comisión en el servicio público.",
+          "padre_numero": 8,
+          "x_id": 106,
+          "x_texto": 106,
+          "referencias": [
+            "Fracción adicionada DOF 29-05-2023"
+          ]
+        },
+        {
+          "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La ley fijará los casos en que se pierden, y los demás en que se suspenden los derechos de ciudadano, y la manera de hacer la rehabilitación.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
         }
       ]
     },
@@ -6767,15 +6619,6 @@
             "Párrafo adicionado DOF 10-02-2014",
             "Artículo reformado DOF 06-12-1977, 06-04-1990, 03-09-1993, 19-04-1994, 22-08-1996, 13-11-2007"
           ]
-        },
-        {
-          "numero": 102,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Partes Integrantes de la Federación y del Territorio Nacional",
-          "padre_numero": 101,
-          "x_id": 131,
-          "x_texto": 131
         }
       ]
     },
@@ -6979,15 +6822,6 @@
           "referencias": [
             "Artículo reformado DOF 20-01-1960"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la División de Poderes",
-          "padre_numero": 1,
-          "x_id": 239,
-          "x_texto": 239
         }
       ]
     },
@@ -7017,15 +6851,6 @@
           "referencias": [
             "Artículo reformado DOF 12-08-1938, 28-03-1951"
           ]
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Poder Legislativo",
-          "padre_numero": 2,
-          "x_id": 250,
-          "x_texto": 250
         }
       ]
     },
@@ -7046,15 +6871,6 @@
           "referencias": [
             "Artículo original DOF 05-02-1917"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Elección e Instalación del Congreso",
-          "padre_numero": 1,
-          "x_id": 197,
-          "x_texto": 197
         }
       ]
     },
@@ -7865,15 +7681,6 @@
           "referencias": [
             "Párrafo adicionado DOF 06-12-1977"
           ]
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Iniciativa y Formación de las Leyes",
-          "padre_numero": 4,
-          "x_id": 199,
-          "x_texto": 199
         }
       ]
     },
@@ -8106,15 +7913,6 @@
           "referencias": [
             "Inciso reformado DOF 24-11-1923"
           ]
-        },
-        {
-          "numero": 14,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Facultades del Congreso",
-          "padre_numero": 13,
-          "x_id": 223,
-          "x_texto": 223
         }
       ]
     },
@@ -8677,10 +8475,563 @@
           "numero": 53,
           "tipo": "fraccion",
           "identificador": "XXV",
-          "contenido": "De establecer el Sistema para la Carrera de las Maestras y los Maestros, en términos del",
+          "contenido": "De establecer el Sistema para la Carrera de las Maestras y los Maestros, en términos del artículo 3o. de esta Constitución; establecer, organizar y sostener en toda la República escuelas rurales, elementales, media superiores, superiores, secundarias y profesionales; de investigación científica, de bellas artes y de enseñanza técnica, escuelas prácticas de agricultura y de minería, de artes y oficios, museos, bibliotecas, observatorios y demás institutos concernientes a la cultura general de los habitantes de la nación y legislar en todo lo que se refiere a dichas instituciones; para legislar sobre vestigios o restos fósiles y sobre monumentos arqueológicos, artísticos e históricos, cuya conservación sea de interés nacional; así como para dictar las leyes encaminadas a distribuir convenientemente entre la Federación, las entidades federativas y los Municipios el ejercicio de la función educativa y las aportaciones económicas correspondientes a ese servicio público, buscando unificar y coordinar la educación en toda la República, y para asegurar el cumplimiento de los fines de la educación y su mejora continua en un marco de inclusión y diversidad. Los Títulos que se expidan por los establecimientos de que se trata surtirán sus efectos en toda la República.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 54,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para legislar en materia de derechos de autor y otras figuras de la propiedad intelectual relacionadas con la misma;",
+          "padre_numero": 53,
+          "x_id": 125,
+          "x_texto": 125,
+          "referencias": [
+            "Fracción reformada DOF 08-07-1921. Recorrida (antes fracción XXVII) por derogación de fracciones XXV y XXVI DOF 20-08-1928. Reformada",
+            "DOF 13-12-1934, 13-01-1966, 21-09-2000, 30-04-2009, 26-02-2013, 29-01-2016, 15-05-2019"
+          ]
+        },
+        {
+          "numero": 55,
+          "tipo": "fraccion",
+          "identificador": "XXVI",
+          "contenido": "Para conceder licencia al Presidente de la República y para constituirse en Colegio Electoral y designar al ciudadano que deba substituir al Presidente de la República, ya sea con el carácter de interino o substituto, en los términos de los artículos 84 y 85 de esta Constitución;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción recorrida (antes fracción XXVIII) por derogación de fracciones XXV y XXVI DOF 20-08-1928. Reformada DOF 29-04-1933,",
+            "09-08-2012"
+          ]
+        },
+        {
+          "numero": 56,
+          "tipo": "fraccion",
+          "identificador": "XXVII",
+          "contenido": "Para aceptar la renuncia del cargo de Presidente de la República.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción recorrida (antes fracción XXIX) por derogación de fracciones XXV y XXVI DOF 20-08-1928"
+          ]
+        },
+        {
+          "numero": 57,
+          "tipo": "fraccion",
+          "identificador": "XXVIII",
+          "contenido": "Para expedir leyes en materia de contabilidad gubernamental que regirán la contabilidad pública y la presentación homogénea de información financiera, de ingresos y egresos, así como patrimonial, para la Federación, las entidades federativas, los Municipios y las demarcaciones territoriales de la Ciudad de México, a fin de garantizar su armonización a nivel nacional;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción recorrida (antes fracción XXX) por derogación de fracciones XXV y XXVI DOF 20-08-1928. Derogada DOF 06-12-1977. Adicionada",
+            "DOF 07-05-2008. Reformada DOF 29-01-2016"
+          ]
+        },
+        {
+          "numero": 58,
+          "tipo": "fraccion",
+          "identificador": "XXIX",
+          "contenido": "Para establecer contribuciones: 1o. Sobre el comercio exterior; 2o. Sobre el aprovechamiento y explotación de los recursos naturales comprendidos en los párrafos 4º y 5º del artículo 27; 3o. Sobre instituciones de crédito y sociedades de seguros; 4o. Sobre servicios públicos concesionados o explotados directamente por la Federación; y 5o. Especiales sobre:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 59,
+          "tipo": "inciso",
+          "identificador": "a",
+          "contenido": ") Energía eléctrica;",
+          "padre_numero": 58,
+          "x_id": 147,
+          "x_texto": 169
+        },
+        {
+          "numero": 60,
+          "tipo": "inciso",
+          "identificador": "b",
+          "contenido": ") Producción y consumo de tabacos labrados;",
+          "padre_numero": 58,
+          "x_id": 147,
+          "x_texto": 169
+        },
+        {
+          "numero": 61,
+          "tipo": "inciso",
+          "identificador": "c",
+          "contenido": ") Gasolina y otros productos derivados del petróleo;",
+          "padre_numero": 58,
+          "x_id": 147,
+          "x_texto": 169
+        },
+        {
+          "numero": 62,
+          "tipo": "inciso",
+          "identificador": "d",
+          "contenido": ") Cerillos y fósforos;",
+          "padre_numero": 58,
+          "x_id": 147,
+          "x_texto": 169
+        },
+        {
+          "numero": 63,
+          "tipo": "inciso",
+          "identificador": "e",
+          "contenido": ") Aguamiel y productos de su fermentación; y",
+          "padre_numero": 58,
+          "x_id": 147,
+          "x_texto": 169
+        },
+        {
+          "numero": 64,
+          "tipo": "inciso",
+          "identificador": "f",
+          "contenido": ") Explotación forestal.",
+          "padre_numero": 58,
+          "x_id": 147,
+          "x_texto": 169,
+          "referencias": [
+            "Inciso adicionado DOF 10-02-1949"
+          ]
+        },
+        {
+          "numero": 65,
+          "tipo": "inciso",
+          "identificador": "g",
+          "contenido": ") Producción y consumo de cerveza. Las entidades federativas participarán en el rendimiento de estas contribuciones especiales, en la proporción que la ley secundaria federal determine. Las legislaturas locales fijarán el porcentaje correspondiente a los Municipios, en sus ingresos por concepto del impuesto sobre energía eléctrica.",
+          "padre_numero": 58,
+          "x_id": 147,
+          "x_texto": 169,
+          "referencias": [
+            "Fracción recorrida (antes fracción XXXI) por derogación de fracciones XXV y XXVI DOF 20-08-1928. Fracción reformada DOF 24-10-1942"
+          ]
+        },
+        {
+          "numero": 66,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-A. Para expedir la ley general que establezca los principios y bases en materia de mecanismos alternativos de solución de controversias, con excepción de la materia penal;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 05-02-2017"
+          ]
+        },
+        {
+          "numero": 67,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-B. Para legislar sobre las características y uso de la Bandera, Escudo e Himno Nacionales.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 24-10-1967"
+          ]
+        },
+        {
+          "numero": 68,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-C. Para expedir las leyes que establezcan la concurrencia del Gobierno Federal, de las entidades federativas, de los Municipios y, en su caso, de las demarcaciones territoriales de la Ciudad de México, en el ámbito de sus respectivas competencias, en materia de asentamientos humanos, con objeto de cumplir los fines previstos en el párrafo tercero del artículo 27 de esta Constitución, así como en materia de movilidad y seguridad vial;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 06-02-1976. Reformada DOF 29-01-2016, 18-12-2020"
+          ]
+        },
+        {
+          "numero": 69,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-D. Para expedir leyes sobre planeación nacional del desarrollo económico y social, así como en materia de información estadística y geográfica de interés nacional;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 03-02-1983. Reformada DOF 07-04-2006"
+          ]
+        },
+        {
+          "numero": 70,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-E. Para expedir leyes para la programación, promoción, concertación y ejecución de acciones de orden económico, especialmente las referentes al abasto y otras que tengan como fin la producción suficiente y oportuna de bienes y servicios, social y nacionalmente necesarios.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 03-02-1983"
+          ]
+        },
+        {
+          "numero": 71,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-F. Para expedir leyes tendientes a la promoción de la inversión mexicana, la regulación de la inversión extranjera, la transferencia de tecnología y la generación, difusión y aplicación de los conocimientos científicos y tecnológicos que requiere el desarrollo nacional. Asimismo, para legislar en materia de ciencia, tecnología e innovación, estableciendo bases generales de coordinación entre la Federación, las entidades federativas, los Municipios y las demarcaciones territoriales de la Ciudad de México, en el ámbito de sus respectivas competencias, así como la participación de los sectores social y privado, con el objeto de consolidar el Sistema Nacional de Ciencia, Tecnología e Innovación;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 03-02-1983. Reformada DOF 15-05-2019"
+          ]
+        },
+        {
+          "numero": 72,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-G. Para expedir leyes que establezcan la concurrencia del Gobierno Federal, de los gobiernos de las entidades federativas, de los Municipios y, en su caso, de las demarcaciones territoriales de la Ciudad de México, en el ámbito de sus respectivas competencias, en materia de protección al ambiente, preservación y restauración del equilibrio ecológico; y de protección y bienestar de los animales;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 10-08-1987. Reformada DOF 29-01-2016, 02-12-2024"
+          ]
+        },
+        {
+          "numero": 73,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-H. Para expedir la ley que instituya el Tribunal Federal de Justicia Administrativa, dotado de plena autonomía para dictar sus fallos, y que establezca su organización, su funcionamiento y los recursos para impugnar sus resoluciones.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 74,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Tribunal tendrá a su cargo dirimir las controversias que se susciten entre la administración pública federal y los particulares.",
+          "padre_numero": 73,
+          "x_id": 125,
+          "x_texto": 125
+        },
+        {
+          "numero": 75,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Asimismo, será el órgano competente para imponer las sanciones a los servidores públicos por las responsabilidades administrativas que la ley determine como graves y a los particulares que participen en actos vinculados con dichas responsabilidades, así como fincar a los responsables el pago de las indemnizaciones y sanciones pecuniarias que deriven de los daños y perjuicios que afecten a la Hacienda Pública Federal o al patrimonio de los entes públicos federales.",
+          "padre_numero": 73,
+          "x_id": 125,
+          "x_texto": 125
+        },
+        {
+          "numero": 76,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Tribunal funcionará en Pleno o en Salas Regionales.",
+          "padre_numero": 73,
+          "x_id": 125,
+          "x_texto": 125
+        },
+        {
+          "numero": 77,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La Sala Superior del Tribunal se compondrá de dieciséis Magistrados y actuará en Pleno o en Secciones, de las cuales a una corresponderá la resolución de los procedimientos a que se refiere el párrafo tercero de la presente fracción.",
+          "padre_numero": 73,
+          "x_id": 125,
+          "x_texto": 125
+        },
+        {
+          "numero": 78,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los Magistrados de la Sala Superior serán designados por el Presidente de la República y ratificados por el voto de las dos terceras partes de los miembros presentes del Senado de la República o, en sus recesos, por la Comisión Permanente. Durarán en su encargo quince años improrrogables.",
+          "padre_numero": 73,
+          "x_id": 125,
+          "x_texto": 125
+        },
+        {
+          "numero": 79,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los Magistrados de Sala Regional serán designados por el Presidente de la República y ratificados por mayoría de los miembros presentes del Senado de la República o, en sus recesos, por la Comisión Permanente. Durarán en su encargo diez años pudiendo ser considerados para nuevos nombramientos.",
+          "padre_numero": 73,
+          "x_id": 125,
+          "x_texto": 125
+        },
+        {
+          "numero": 80,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los Magistrados sólo podrán ser removidos de sus cargos por las causas graves que señale la ley.",
+          "padre_numero": 73,
+          "x_id": 125,
+          "x_texto": 125,
+          "referencias": [
+            "Fracción adicionada DOF 10-08-1987. Reformada DOF 25-10-1993, 28-06-1999, 04-12-2006, 27-05-2015"
+          ]
+        },
+        {
+          "numero": 81,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-I. Para expedir leyes que establezcan las bases sobre las cuales la Federación, las entidades federativas, los Municipios y, en su caso, las demarcaciones territoriales de la Ciudad de México, en el ámbito de sus respectivas competencias, coordinarán sus acciones en materia de protección civil;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 28-06-1999. Reformada DOF 29-01-2016"
+          ]
+        },
+        {
+          "numero": 82,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-J. Para legislar en materia de cultura física y deporte con objeto de cumplir lo previsto en el artículo 4o. de esta Constitución, estableciendo la concurrencia entre la Federación, las entidades federativas, los Municipios y, en su caso, las demarcaciones territoriales de la Ciudad de México, en el ámbito de sus respectivas competencias; así como la participación de los sectores social y privado;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 28-06-1999. Reformada DOF 12-10-2011, 29-01-2016"
+          ]
+        },
+        {
+          "numero": 83,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-K. Para expedir leyes en materia de turismo, estableciendo las bases generales de coordinación de las facultades concurrentes entre la Federación, las entidades federativas, los Municipios y, en su caso, las demarcaciones territoriales de la Ciudad de México, en el ámbito de sus respectivas competencias, así como la participación de los sectores social y privado;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 29-09-2003. Reformada DOF 29-01-2016"
+          ]
+        },
+        {
+          "numero": 84,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-L. Para expedir leyes que establezcan la concurrencia del gobierno federal, de los gobiernos de las entidades federativas y de los municipios, en el ámbito de sus respectivas competencias, en materia de pesca y acuacultura, así como la participación de los sectores social y privado, y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 27-09-2004"
+          ]
+        },
+        {
+          "numero": 85,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-M. Para expedir leyes en materia de seguridad nacional, estableciendo los requisitos y límites a las investigaciones correspondientes.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 05-04-2004"
+          ]
+        },
+        {
+          "numero": 86,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-N. Para expedir leyes en materia de constitución, organización, funcionamiento y extinción de las sociedades cooperativas. Estas leyes establecerán las bases para la concurrencia en materia de fomento y desarrollo sustentable de la actividad cooperativa de la Federación, entidades federativas, Municipios y, en su caso, demarcaciones territoriales de la Ciudad de México, en el ámbito de sus respectivas competencias;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 15-08-2007. Reformada DOF 29-01-2016"
+          ]
+        },
+        {
+          "numero": 87,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-Ñ. Para expedir leyes que establezcan las bases sobre las cuales la Federación, las entidades federativas, los Municipios y, en su caso, las demarcaciones territoriales de la Ciudad de México, en el ámbito de sus respectivas competencias, coordinarán sus acciones en materia de cultura, salvo lo dispuesto en la fracción XXV de este artículo. Asimismo, establecerán los mecanismos de participación de los sectores social y privado, con objeto de cumplir los fines previstos en el párrafo décimo segundo del artículo 4o. de esta Constitución.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 30-04-2009. Reformada DOF 29-01-2016"
+          ]
+        },
+        {
+          "numero": 88,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-O. Para legislar en materia de protección de datos personales en posesión de particulares.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 30-04-2009"
+          ]
+        },
+        {
+          "numero": 89,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-P. Expedir leyes que establezcan la concurrencia de la Federación, las entidades federativas, los Municipios y, en su caso, las demarcaciones territoriales de la Ciudad de México, en el ámbito de sus respectivas competencias, en materia de derechos de niñas, niños y adolescentes, velando en todo momento por el interés superior de los mismos, así como en materia de formación y desarrollo integral de la juventud, cumpliendo con los tratados internacionales de la materia de los que México sea parte;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 12-10-2011. Reformada DOF 29-01-2016, 24-12-2020"
+          ]
+        },
+        {
+          "numero": 90,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-Q. Para legislar sobre iniciativa ciudadana y consultas populares.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 09-08-2012"
+          ]
+        },
+        {
+          "numero": 91,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-R. Para expedir las leyes generales que armonicen y homologuen la organización y el funcionamiento de los registros civiles, los registros públicos inmobiliarios y de personas morales de las entidades federativas y los catastros municipales;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 27-12-2013. Reformada DOF 05-02-2017"
+          ]
+        },
+        {
+          "numero": 92,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-S. Para expedir las leyes generales reglamentarias que desarrollen los principios y bases en materia de transparencia gubernamental, acceso a la información y protección de datos personales en posesión de las autoridades, entidades, órganos y organismos gubernamentales de todos los niveles de gobierno.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 07-02-2014"
+          ]
+        },
+        {
+          "numero": 93,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-T. Para expedir la ley general que establezca la organización y administración homogénea de los archivos de la Federación, de las entidades federativas, de los Municipios y de las demarcaciones territoriales de la Ciudad de México, y determine las bases de organización y funcionamiento del Sistema Nacional de Archivos.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 07-02-2014. Reformada DOF 29-01-2016"
+          ]
+        },
+        {
+          "numero": 94,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-U. Para expedir las leyes generales que distribuyan competencias entre la Federación y las entidades federativas en materias de partidos políticos; organismos electorales, y procesos electorales, conforme a las bases previstas en esta Constitución.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 10-02-2014"
+          ]
+        },
+        {
+          "numero": 95,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-V. Para expedir la ley general que distribuya competencias entre los órdenes de gobierno para establecer las responsabilidades administrativas de los servidores públicos, sus obligaciones, las sanciones aplicables por los actos u omisiones en que éstos incurran y las que correspondan a los particulares vinculados con faltas administrativas graves que al efecto prevea, así como los procedimientos para su aplicación.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 27-05-2015"
+          ]
+        },
+        {
+          "numero": 96,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-W. Para expedir leyes en materia de responsabilidad hacendaria que tengan por objeto el manejo sostenible de las finanzas públicas en la Federación, los Estados, Municipios y el Distrito Federal, con base en el principio establecido en el párrafo segundo del artículo 25;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 26-05-2015"
+          ]
+        },
+        {
+          "numero": 97,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-X. Para expedir la ley general que establezca la concurrencia de la federación, las entidades federativas, los municipios y, en su caso, las demarcaciones territoriales de la Ciudad de México, en el ámbito de sus respectivas competencias, en materia de derechos de las víctimas.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 25-07-2016"
+          ]
+        },
+        {
+          "numero": 98,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-Y. Para expedir la ley nacional que establezca los principios y obligaciones a los que deberán sujetarse los órdenes de gobierno, en materia de simplificación administrativa y digitalización de trámites y servicios, buenas prácticas regulatorias, desarrollo y fortalecimiento de capacidades tecnológicas públicas;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 05-02-2017. Reformada DOF 15-04-2025"
+          ]
+        },
+        {
+          "numero": 99,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "XXIX-Z. Para expedir la ley general que establezca los principios y bases a los que deberán sujetarse los órdenes de gobierno, en el ámbito de su respectiva competencia, en materia de justicia cívica e itinerante, y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Fracción adicionada DOF 05-02-2017"
+          ]
+        },
+        {
+          "numero": 100,
+          "tipo": "fraccion",
+          "identificador": "XXX",
+          "contenido": "Para expedir la legislación única en materia procesal civil y familiar, así como sobre extinción de dominio en los términos del artículo 22 de esta Constitución;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción adicionada DOF 15-09-2017. Reformada DOF 14-03-2019, 30-09-2024"
+          ]
+        },
+        {
+          "numero": 101,
+          "tipo": "fraccion",
+          "identificador": "XXXI",
+          "contenido": "Para expedir leyes que regulen y establezcan requisitos y límites para la participación del Ejército, Armada y Fuerza Aérea en materia de seguridad interior y en tareas de apoyo a la seguridad pública, y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción adicionada DOF 30-09-2024"
+          ]
+        },
+        {
+          "numero": 102,
+          "tipo": "fraccion",
+          "identificador": "XXXII",
+          "contenido": "Para expedir todas las leyes que sean necesarias, a objeto de hacer efectivas las facultades anteriores, y todas las otras concedidas por esta Constitución a los Poderes de la Unión.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción adicionada DOF 24-10-1942. Recorrida DOF 15-09-2017, 30-09-2024",
+            "Reforma DOF 20-08-1928: Eliminó del artículo las entonces fracciones XXV y XXVI"
+          ]
         }
       ]
     },
@@ -9216,15 +9567,6 @@
           "referencias": [
             "Fracción reformada DOF 15-12-1986, 29-10-2003"
           ]
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Comisión Permanente",
-          "padre_numero": 5,
-          "x_id": 233,
-          "x_texto": 233
         }
       ]
     },
@@ -9351,18 +9693,6 @@
             "Fracción reformada DOF 15-10-2025",
             "Párrafo con fracciones adicionado DOF 30-07-1999",
             "Artículo reformado DOF 29-12-1980, 10-08-1987"
-          ]
-        },
-        {
-          "numero": 11,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Fiscalización Superior de la Federación",
-          "padre_numero": 10,
-          "x_id": 188,
-          "x_texto": 188,
-          "referencias": [
-            "Sección adicionada DOF 30-07-1999"
           ]
         }
       ]
@@ -9626,15 +9956,6 @@
             "Artículo reformado DOF 24-11-1923, 20-08-1928, 29-04-1933, 21-10-1966, 06-07-1971, 08-10-1974, 08-02-1985, 10-08-1987, 25-10-1993,",
             "31-12-1994, 30-07-1999"
           ]
-        },
-        {
-          "numero": 24,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Poder Ejecutivo",
-          "padre_numero": 23,
-          "x_id": 254,
-          "x_texto": 254
         }
       ]
     },
@@ -10454,15 +10775,6 @@
             "Párrafo adicionado DOF 15-08-2008",
             "Artículo reformado DOF 31-01-1974"
           ]
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Poder Judicial",
-          "padre_numero": 5,
-          "x_id": 258,
-          "x_texto": 258
         }
       ]
     },
@@ -11032,7 +11344,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Presidente: “¿Protestáis desempeñar leal y patrióticamente el cargo de Ministro de la Suprema Corte de Justicia de la Nación que se os ha conferido y guardar y hacer guardar la Constitución Política de los Estados Unidos Mexicanos y las leyes que de ella emanen, mirando en todo por el bien y prosperidad de la Unión?”",
-          "padre_numero": 12,
+          "padre_numero": null,
           "x_id": 100,
           "x_texto": 100
         },
@@ -11041,7 +11353,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Ministro: “Sí protesto”",
-          "padre_numero": 12,
+          "padre_numero": null,
           "x_id": 100,
           "x_texto": 100
         },
@@ -11050,7 +11362,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Presidente: “Si no lo hiciereis así, la Nación os lo demande”.",
-          "padre_numero": 12,
+          "padre_numero": null,
           "x_id": 100,
           "x_texto": 100
         },
@@ -11661,36 +11973,6 @@
           "referencias": [
             "Artículo reformado DOF 10-08-1987, 31-12-1994"
           ]
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Artículo 102.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 7,
-          "tipo": "apartado",
-          "identificador": "A",
-          "contenido": "El Ministerio Público de la Federación se organizará en una Fiscalía General de la República como órgano público autónomo, dotado de personalidad jurídica y patrimonio propio.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 107,
-          "referencias": [
-            "Párrafo reformado DOF 29-01-2016"
-          ]
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Para que una persona pueda ser titular de la Fiscalía General de la República se requiere: ser ciudadana mexicana por nacimiento, en ejercicio de sus derechos; tener cuando menos treinta y cinco años cumplidos el día de la designación; contar, con antigüedad mínima de diez años, con",
-          "padre_numero": 7,
-          "x_id": 107,
-          "x_texto": 107
         }
       ]
     },
@@ -13123,21 +13405,20 @@
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Fracción reformada DOF 06-06-2011",
-            "Fracción derogada DOF 03-09-1993",
-            "Artículo reformado DOF 19-02-1951"
+            "Fracción reformada DOF 06-06-2011"
           ]
         },
         {
           "numero": 51,
           "tipo": "fraccion",
           "identificador": "XVIII",
-          "contenido": "Se deroga. De las Responsabilidades de los Servidores Públicos, Particulares Vinculados con Faltas Administrativas Graves o Hechos de Corrupción, y Patrimonial del Estado.",
+          "contenido": "Se deroga.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
           "referencias": [
-            "Denominación del Título reformada DOF 28-12-1982, 14-06-2002, 27-05-2015"
+            "Fracción derogada DOF 03-09-1993",
+            "Artículo reformado DOF 19-02-1951"
           ]
         }
       ]
@@ -13742,18 +14023,6 @@
           "referencias": [
             "Párrafo reformado DOF 27-05-2015",
             "Artículo reformado DOF 28-12-1982"
-          ]
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Estados de la Federación y de la Ciudad de México",
-          "padre_numero": 3,
-          "x_id": 155,
-          "x_texto": 155,
-          "referencias": [
-            "Denominación del Título reformada DOF 25-10-1993, 29-01-2016"
           ]
         }
       ]
@@ -15921,15 +16190,6 @@
             "Artículo reformado DOF 25-10-1993, 31-12-1994. Fe de erratas DOF 03-01-1995. Reformado DOF 22-08-1996, 13-11-2007, 07-05-2008,",
             "24-08-2009, 27-04-2010, 09-08-2012, 27-12-2013, 07-02-2014, 10-02-2014, 27-05-2015, 29-01-2016"
           ]
-        },
-        {
-          "numero": 60,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Trabajo y de la Previsión Social",
-          "padre_numero": 59,
-          "x_id": 214,
-          "x_texto": 214
         }
       ]
     },
@@ -17348,15 +17608,6 @@
           "referencias": [
             "Apartado B con fracciones adicionado DOF 05-12-1960"
           ]
-        },
-        {
-          "numero": 140,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Prevenciones Generales",
-          "padre_numero": 139,
-          "x_id": 242,
-          "x_texto": 242
         }
       ]
     },
@@ -17856,15 +18107,6 @@
             "Párrafo adicionado DOF 13-11-2007",
             "Artículo reformado DOF 28-12-1982"
           ]
-        },
-        {
-          "numero": 11,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Reformas de la Constitución",
-          "padre_numero": 10,
-          "x_id": 214,
-          "x_texto": 214
         }
       ]
     },
@@ -17898,15 +18140,6 @@
           "referencias": [
             "Párrafo adicionado DOF 21-10-1966"
           ]
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Inviolabilidad de la Constitución",
-          "padre_numero": 2,
-          "x_id": 207,
-          "x_texto": 207
         }
       ]
     },
@@ -17927,6 +18160,360 @@
           "referencias": [
             "Artículo original DOF 05-02-1917"
           ]
+        },
+        {
+          "numero": 2,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículos Transitorios",
+          "padre_numero": 1,
+          "x_id": 249,
+          "x_texto": 249
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Primero. Esta Constitución se publicará desde luego y con la mayor solemnidad se protestará guardarla y hacerla guardar en toda la República; pero con excepción de las disposiciones relativas a las elecciones de los Supremos Poderes Federales y de los Estados, que desde luego entran en vigor, no comenzará a regir sino desde el día 1o. de Mayo de 1917, en cuya fecha deberá instalarse solemnemente el Congreso Constitucional y prestar la protesta de ley el ciudadano que resultare electo en las próximas elecciones para ejercer el cargo de Presidente de la República.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En las elecciones a que debe convocarse, conforme al artículo siguiente, no regirá la fracción V del artículo 82; ni será impedimento para ser diputado o senador, estar en servicio activo en el Ejército, siempre que no se tenga mando de fuerza en el distrito electoral respectivo; tampoco estarán impedidos para poder ser electos al próximo Congreso de la Unión, los Secretarios y Subsecretarios de Estado, siempre que éstos se separen definitivamente de sus puestos el día que se expida la convocatoria respectiva.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Segundo. El Encargado del Poder Ejecutivo de la Nación, inmediatamente que se publique esta Constitución, convocará a elecciones de Poderes Federales, procurando que éstas se efectúen de tal manera que el Congreso quede constituído en tiempo oportuno, a fin de que hecho el cómputo de los votos emitidos en las elecciones presidenciales, pueda declararse quién es la persona designada como Presidente de la República, a efecto de que pueda cumplirse lo dispuesto en el artículo anterior.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Tercero. El próximo período constitucional comenzará a contarse, para los Diputados y Senadores, desde el primero de septiembre próximo pasado, y para el Presidente de la República, desde el 1o. de Diciembre de 1916.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Cuarto. Los Senadores que en las próximas elecciones llevaren el número par, sólo durarán dos años en el ejercicio de su encargo, para que la Cámara de Senadores pueda renovarse en lo sucesivo, por mitad cada dos años.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Quinto. El Congreso de la Unión elegirá a los Magistrados de la Suprema Corte de Justicia de la Nación, en el mes de mayo próximo para que este alto Cuerpo quede solemnemente instalado el primero de Junio.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 9,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En estas elecciones no regirá el artículo 96 en lo relativo a las propuestas de candidatos por las Legislaturas locales; pero los nombrados lo serán sólo para el primer período de dos años que establece el artículo 94.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 10,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Sexto. El Congreso de la Unión tendrá un período extraordinario de sesiones que comenzará el 15 de abril de 1917, para erigirse en Colegio Electoral, hacer el cómputo de votos y calificar las elecciones de Presidente de la República, haciendo la declaratoria respectiva; y además, para expedir la ley Orgánica de los Tribunales de Circuito y de Distrito, la ley Orgánica de los Tribunales del Distrito Federal y Territorios, a fin de que la Suprema Corte de Justicia de la Nación haga inmediatamente los nombramientos de Magistrados de Circuito y Jueces de Distrito, y el mismo Congreso de la Unión las elecciones de Magistrados, Jueces de primera Instancia del Distrito Federal y Territorios; expedirá también todas las leyes que consultare el Poder Ejecutivo de la Nación. Los Magistrados de Circuito y los Jueces de Distrito, y los Magistrados y Jueces del Distrito Federal y Territorios, deberán tomar posesión de su cargo antes del 1o. de Julio de 1917, cesando entonces los que hubieren sido nombrados por el actual Encargado del Poder Ejecutivo de la Nación.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Séptimo. Por esta vez, el cómputo de los votos para Senadores se hará por la Junta Computadora del Primer Distrito Electoral de cada Estado o Distrito Federal, que se formará para la computación de los votos de diputados, expidiéndose por dicha junta a los senadores electos, las credenciales correspondientes.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 12,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Octavo. La Suprema Corte de Justicia de la Nación, resolverá los amparos que estuvieren pendientes, sujetándose a las leyes actuales en vigor.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 13,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Noveno. El C. Primer Jefe del Ejército Constitucionalista, Encargado del Poder Ejecutivo de la Unión, queda facultado para expedir la ley electoral, conforme a la cual deberán celebrarse, esta vez, las elecciones para integrar los Poderes de la Unión.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 14,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Décimo. Los que hubieren figurado en el Gobierno emanado de la rebelión, contra el legítimo de la República, o cooperado a aquélla, combatiendo después con las armas en la mano, o sirviendo empleos o cargos de las facciones que han atacado al Gobierno Constitucionalista, serán juzgados por las leyes vigentes, siempre que no hubieren sido indultados por éste.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 15,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Decimoprimero. Entre tanto el Congreso de la Unión y los de los Estados legislan sobre los problemas agrario y obrero, las bases establecidas por esta Constitución para dichas leyes, se pondrán en vigor en toda la República.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 16,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Decimosegundo. Los mexicanos que hayan militado en el Ejército Constitucionalista, los hijos y viudas de éstos, y las demás personas que hayan prestado servicios a la causa de la Revolución o a la Instrucción Pública, tendrán preferencia para la adquisición de fracciones a que se refiere el artículo 27 y derecho a los descuentos que las leyes señalarán.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 17,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Decimotercero. Quedan extinguidas de pleno derecho las deudas que por razón de trabajo hayan contraído los trabajadores, hasta la fecha de esta Constitución, con los patronos, sus familiares o intermediarios.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 18,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Decimocuarto. Queda suprimida la Secretaría de Justicia.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo reformado DOF 08-07-1921"
+          ]
+        },
+        {
+          "numero": 19,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Decimoquinto. Se faculta al C. Encargado del Poder Ejecutivo de la Unión para que expida la ley de responsabilidad civil aplicable a los autores, cómplices y encubridores de los delitos cometidos contra el orden constitucional en el mes de febrero de 1913 y contra el Gobierno Constitucionalista.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 20,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Decimosexto. El Congreso Constitucional en el período ordinario de sus sesiones, que comenzará el 1o. de septiembre de este año, expedirá todas las leyes orgánicas de la Constitución que no hubieren sido ya expedidas en el período extraordinario a que se refiere el artículo 6o. transitorio, y dará preferencia a las leyes relativas a Garantías Individuales, y artículos 30, 32, 33, 35, 36, 38, 107 y parte final del artículo 111 de esta Constitución.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo original DOF 05-02-1917"
+          ]
+        },
+        {
+          "numero": 21,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Decimoséptimo. Los Templos y demás bienes que, conforme a la fracción II del artículo 27 de la Constitución Política de los Estados Unidos Mexicanos que se reforma por este Decreto, son propiedad de la nación, mantendrán su actual situación jurídica.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo adicionado DOF 07-04-1986. Derogado DOF 06-04-1990. Adicionado DOF 28-01-1992"
+          ]
+        },
+        {
+          "numero": 22,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Decimoctavo. Derogado.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo adicionado DOF 07-04-1986. Reformado DOF 15-12-1986. Derogado DOF 06-04-1990"
+          ]
+        },
+        {
+          "numero": 23,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Artículo Decimonoveno. Derogado.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Artículo adicionado DOF 10-08-1987. Derogado DOF 06-04-1990"
+          ]
+        },
+        {
+          "numero": 24,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Dada en el Salón de Sesiones del Congreso Constituyente en Querétaro, a treinta y uno de enero de mil novecientos diecisiete.- Presidente: Luis Manuel Rojas, Diputado por el Estado de Jalisco.- Primer Vice-Presidente: Gral. de División Cándido Aguilar, Diputado por el Estado de Veracruz.- Segundo Vice- Presidente: Gral. Brigadier Salvador González Torres, Diputado por el Estado de Oaxaca.- Diputado por el Estado de Aguascalientes: Daniel Cervantes.- Diputado por el Territorio de la Baja California: Ignacio Roel.- Diputados por el Estado de Coahuila: M. Aguirre Berlanga, José Ma. Rodríguez, Jorge E. Von Versen, Manuel Cepeda Medrano, José Rodríguez González (Suplente).- Diputado por el Edo. de Colima: Francisco Ramírez Villarreal.- Diputados por el Edo. de Chiapas: Enrique Suárez, Lisandro López, Daniel",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 25,
+          "tipo": "apartado",
+          "identificador": "A",
+          "contenido": "Cepeda, Cristóbal Ll. y Castillo, J. Amilcar Vidal.- Diputado por el Edo. de Chihuahua: Manuel M. Prieto.- Diputados por el Distrito Federal: Gral. Ignacio L. Pesqueira, Lauro López Guerra, Gerzayn Ugarte, Amador Lozano, Félix F. Palavicini, Carlos Duplán, Rafael L. de los Ríos, Arnulfo Silva, Antonio Norzagaray, Ciro B. Ceballos, Alfonso Herrera, Román Rosas y Reyes (Suplente), Lic. Francisco Espinosa (Suplente).- Diputados por el Edo. de Durango: Silvestre Dorador, Lic. Rafael Espeleta, Antonio Gutiérrez, Dr. Fernando Gómez Palacio, Alberto Terrones B., Jesús de la Torre.- Diputados por el Edo. de Guanajuato: Gral. Lic. Ramón Frausto, Ing. Vicente M. Valtierra, José N. Macías, David Peñaflor, José Villaseñor, Santiago Manrique, Lic. Hilario Medina, Manuel G. Aranda, Enrique Colunga, Ing. Ignacio López, Dr. Francisco Díaz Barriga, Nicolás Cano, Tte. Crnl. Gilberto N. Navarro, Luis Fernández Martínez, Luis M. Alcocer (Suplente), Ing. Carlos Ramírez Llaca.- Diputados por el Edo. de Guerrero: Fidel Jiménez, Fidel Guillén, Francisco Figueroa.- Diputados por el Edo. de Hidalgo: Antonio Guerrero, Leopoldo Ruiz, Lic. Alberto M. González, Rafael Vega Sánchez, Alfonso Cravioto, Matías Rodríguez, Ismael Pintado Sánchez, Lic. Refugio M. Mercado, Alfonso Mayorga.- Diputados por el Edo. de Jalisco: Marcelino Dávalos, Federico E. Ibarra, Manuel Dávalos Ornelas, Francisco Martín del Campo, Bruno Moreno, Gaspar Bolaños B., Juan de Dios Robledo, Ramón Castañeda y Castañeda, Jorge Villaseñor, Gral. Amado Aguirre, José I. Solórzano, Francisco Labastida Izquierdo, Ignacio Ramos Praslow, José Manzano, Joaquín Aguirre Berlanga, Gral. Brigadier Esteban B. Calderón, Paulino Machorro y Narváez, Crnl. Sebastián Allende, Jr.- Diputados por el Edo. de México: Aldegundo Villaseñor, Fernando Moreno, Enrique O'Fárril, Guillermo Ordorica, José J. Reynoso, Antonio Aguilar, Juan Manuel Giffard, Manuel A. Hernández, Enrique A. Enríquez, Donato Bravo Izquierdo, Rubén Martí.- Diputados por el Edo. de Michoacán: José P. Ruíz, Alberto Peralta, Cayetano Andrade, Uriel Avilés, Gabriel R. Cervera, Onésimo López Couto, Salvador Alcaraz Romero, Manuel Martínez Solórzano, Martín Castrejón, Lic. Alberto Alvarado, José Alvarez, Rafael Márquez, José Silva Herrera, Amadeo Betancourt, Francisco J. Múgica, Jesús Romero Flores.- Diputados por el Edo. de Morelos: Antonio Garza Zambrano, Alvaro L. Alcázar, José L. Gómez.- Diputados por el Edo. de Nuevo León: Manuel Amaya, Nicéforo Zambrano, Luis Ilizaliturri, Crnl. Ramón Gámez, Reynaldo Garza, Plutarco González, Lorenzo Sepúlveda (Suplente).- Diputados por el Edo. de Oaxaca: Juan Sánchez, Leopoldo Payán, Lic. Manuel Herrera, Lic. Porfirio Sosa, Lic. Celestino Pérez Jr., Crisóforo Rivera Cabrera, Crnl. José F. Gómez, Mayor Luis Espinosa.- Diputados por el Edo. de Puebla: Dr. Salvador R. Guzmán, Lic. Rafael P. Cañete, Miguel Rosales, Gabriel Rojana, Lic. David Pastrana Jaimes, Froylán C. Manjarrez, Tte. Crnl. Antonio de la Barrera, Mayor José Rivera, Crnl. Epigmenio A. Martínez, Pastor Rouaix, Crnl. de Ings. Luis T. Navarro, Tte. Crnl. Federico Dinorín, Gral. Gabino Bandera Mata, Crnl. Porfirio del Castillo, Crnl. Dr. Gilberto de la Fuente, Alfonso Cabrera, José Verástegui.- Diputados por el Edo. de Querétaro: Juan N. Frías, Ernesto Perrusquía.- Diputados por el Edo. de San Luis Potosí: Samuel M. Santos, Dr. Arturo Méndez, Rafael Martínez Mendoza, Rafael Nieto, Dionisio Zavala, Gregorio A. Tello, Rafael Curiel, Cosme Dávila (Suplente).- Diputados por el Edo. de Sinaloa: Pedro R. Zavala, Andrés Magallón, Carlos M. Ezquerro, Cándido Avilés, Emiliano C. García.- Diputados por el Edo. de Sonora: Luis G. Monzón, Ramón Ross.- Diputados por el Edo. de Tabasco: Lic. Rafael Martínez de Escobar, Santiago Ocampo, Carmen Sánchez Magallanes,- Diputados por el Edo. de Tamaulipas: Crnl. Pedro A. Chapa, Ceferino Fajardo, Fortunato de la Híjar, Emiliano Próspero Nafarrete.- Diputados por el Territorio de Tepic: Tte. Crnl. Cristóbal Limón, Mayor Marcelino Sedano, Juan Espinosa Bávara.- Diputados por el Edo. de Tlaxcala: Antonio Hidalgo, Ascensión Tépal, Modesto González y Galindo.- Diputados por el Edo. de Veracruz: Saúl Rodiles, Enrique Meza, Benito Ramírez G., Eliseo L. Céspedes, Adolfo G. García, Josafat F. Márquez, Alfredo Solares, Alberto Román, Silvestre Aguilar, Angel S. Juarico, Heriberto Jara, Victorio N. Góngora, Carlos L. Gracidas (Suplente), Marcelo Torres, Juan de Dios Palma, Galdino H. Casados, Fernando A. Pereyra.- Diputados por el Edo. de Yucatán: Enrique Recio, Miguel Alonso Romero, Héctor Victoria A.- Diputados por el Edo. de Zacatecas: Adolfo Villaseñor, Julián Adame, Jairo R. Dyer, Samuel Castañón, Andrés L. Arteaga, Antonio Cervantes, Crnl. Juan Aguirre Escobar.- Secretario: Fernando Lizardi, Diputado por el Edo. de Guanajuato.- Secretario: Ernesto Meade Fierro, Diputado por el Edo. de Coahuila.- Secretario: José M. Truchuelo, Diputado por el Edo. de Querétaro.- Secretario: Antonio Ancona Albertos, Diputado por el Edo. de Yucatán.- Prosecretario: Dr. Jesús López Lira, Diputado por el Edo. de Guanajuato.- Prosecretario: Fernando Castaños, Diputado por el Edo. de Durango.- Prosecretario: Juan de Dios Bojórquez, Diputado por el Edo. de Sonora.- Prosecretario: Flavio A. Bórquez, Diputado por el Edo. de Sonora.",
+          "padre_numero": null,
+          "x_id": 71,
+          "x_texto": 93
+        },
+        {
+          "numero": 26,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Por tanto, mando se imprima, circule y publique por bando solemne y pregón en toda la República para su debido cumplimiento.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 27,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Dado en el Palacio Nacional de la Ciudad de Querétaro, el 5 de febrero de 1917.- V. CARRANZA.- Rúbrica.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 28,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Al C. Lic. Manuel Aguirre Berlanga, Subsecretario Encargado del Despacho de Gobernación.- México.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 29,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Lo que hónrome en comunicar a usted para su publicación y demás efectos.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 30,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Constitución y Reformas.- México, cinco de febrero de mil novecientos diez y siete.- AGUIRRE BERLANGA.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 31,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Al Ciudadano ……",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
+        },
+        {
+          "numero": 32,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "ARTÍCULOS TRANSITORIOS DE DECRETOS DE REFORMA A partir del 3 de septiembre de 1993 DECRETO por el que se reforman los artículos 65 y 66 de la Constitución Política de los Estados Unidos Mexicanos.",
+          "padre_numero": 31,
+          "x_id": 143,
+          "x_texto": 143
+        },
+        {
+          "numero": 33,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Publicado en el Diario Oficial de la Federación el 3 de septiembre de 1993",
+          "padre_numero": 32,
+          "x_id": 174,
+          "x_texto": 174
+        },
+        {
+          "numero": 34,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "ARTICULO UNICO.- Se reforman el primer párrafo del artículo 65 y el primer párrafo del artículo 66 de la Constitución Política de los Estados Unidos Mexicanos, para quedar como sigue: ………..",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85
         }
       ]
     }

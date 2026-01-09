@@ -729,15 +729,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la enajenación",
-          "padre_numero": 2,
-          "x_id": 260,
-          "x_texto": 260
         }
       ]
     },
@@ -923,15 +914,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la prestación de servicios",
-          "padre_numero": 1,
-          "x_id": 230,
-          "x_texto": 230
         }
       ]
     },
@@ -1188,15 +1170,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del uso o goce temporal de bienes",
-          "padre_numero": 1,
-          "x_id": 215,
-          "x_texto": 215
         }
       ]
     },
@@ -1223,15 +1196,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la importación de bienes y servicios",
-          "padre_numero": 2,
-          "x_id": 203,
-          "x_texto": 203
         }
       ]
     },
@@ -1455,24 +1419,6 @@
           "referencias": [
             "Artículo reformado DOF 25-09-2014"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la exportación de bienes y servicios",
-          "padre_numero": 1,
-          "x_id": 203,
-          "x_texto": 203
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las disposiciones generales",
-          "padre_numero": 2,
-          "x_id": 224,
-          "x_texto": 224
         }
       ]
     },
@@ -1570,15 +1516,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los servicios de filmación o grabación",
-          "padre_numero": 1,
-          "x_id": 198,
-          "x_texto": 198
         }
       ]
     },
@@ -1673,18 +1610,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los servicios de hotelería y conexos para congresos, convenciones, exposiciones o ferias Derogada.",
-          "padre_numero": null,
-          "x_id": 78,
-          "x_texto": 78,
-          "referencias": [
-            "Sección derogada DOF 25-09-2014"
-          ]
         }
       ]
     },
@@ -1825,15 +1750,6 @@
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las obligaciones de los contribuyentes",
-          "padre_numero": 1,
-          "x_id": 196,
-          "x_texto": 196
         }
       ]
     },
@@ -2051,15 +1967,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las facultades de las autoridades",
-          "padre_numero": 3,
-          "x_id": 211,
-          "x_texto": 211
         }
       ]
     },

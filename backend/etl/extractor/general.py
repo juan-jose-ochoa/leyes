@@ -19,6 +19,7 @@ except ImportError:
     raise ImportError("PyMuPDF no instalado. Ejecuta: pip install pymupdf")
 
 from .base import ExtractorBase, Parrafo, Articulo, Division, BASE_DIR, DetectorIdentificadores
+from .fsm import TokenLinea, FSMExtraccion, calcular_all_bold
 
 
 # =============================================================================
@@ -351,10 +352,13 @@ class ExtractorGeneral(ExtractorBase):
     # =========================================================================
 
     def _extraer_parrafos_articulo(self, numero: str, pag_inicio: int, pag_fin: int) -> list[Parrafo]:
-        """Extrae parrafos de un articulo usando coordenadas X/Y."""
-        todas_lineas = []
+        """Extrae parrafos de un articulo usando FSM basada en tokens."""
         referencias = []
-        en_articulo = False
+        lineas_flush = None  # Líneas capturadas cuando FSM hace flush
+
+        # Verificar si este artículo tiene excepción
+        excepciones = self.config.get("excepciones", {})
+        modo = excepciones.get(numero, "normal")
 
         # Construir patron especifico para este articulo
         numero_patron = re.escape(numero).replace(r'\-', r'\.?-')
@@ -365,83 +369,138 @@ class ExtractorGeneral(ExtractorBase):
             flags=re.IGNORECASE
         )
         patron_este = re.compile(
-            rf'(?:ARTICULO|ARTÍCULO|Artículo)\s+{numero_patron}[oa]?\.',
+            rf'(?:ARTICULO|ARTÍCULO|Artículo)\s+{numero_patron}[oa]?\.(?![-–]?[A-Za-z]|\s*(?:Bis|Ter|Quáter|Quinquies|Sexies))',
             re.IGNORECASE
         )
+
+        # Crear FSM con el número del artículo
+        fsm = FSMExtraccion(patron_este, numero_articulo=numero)
+
+        # Obtener page_width para calcular centrado
+        page_width = self.pdf[0].rect.width
 
         # Filtros Y
         y_header_max = self.filtro_y.get("header_max", 0)
         y_footer_min = self.filtro_y.get("footer_min", 999)
         ruido = self.config.get("ruido_lineas", [])
 
+        terminado = False
+
         for pag_num in range(pag_inicio, pag_fin + 1):
-            lineas = self._extraer_lineas_pagina(self.pdf[pag_num])
-            y_offset = (pag_num - pag_inicio) * 800
-
-            for linea in lineas:
-                text = linea['text']
-                y_local = linea['y']
-                y_global = y_local + y_offset
-                linea['y_global'] = y_global
-
-                # Filtrar header/footer
-                if y_local < y_header_max or y_local > y_footer_min:
-                    continue
-
-                # Detectar referencias
-                if self._es_referencia(linea):
-                    if en_articulo:
-                        referencias.append((y_global, text))
-                    continue
-
-                # Filtrar ruido
-                if ruido and self._es_ruido(text, ruido):
-                    continue
-
-                # Detectar TRANSITORIOS
-                if self._es_fin_articulos(text) and linea.get('is_bold') and en_articulo:
-                    en_articulo = False
-                    break
-
-                # Filtrar encabezados de division (TITULO, CAPITULO, SECCION)
-                # Solo filtrar si es bold y empieza con texto de encabezado
-                if linea.get('is_bold'):
-                    texto_upper = text.strip().upper()
-                    es_encabezado = (
-                        texto_upper.startswith('TITULO ') or
-                        texto_upper.startswith('TÍTULO ') or
-                        texto_upper.startswith('CAPITULO ') or
-                        texto_upper.startswith('CAPÍTULO ') or
-                        texto_upper.startswith('SECCION ') or
-                        texto_upper.startswith('SECCIÓN ')
-                    )
-                    if es_encabezado:
-                        continue
-
-                # Detectar inicio
-                match_inicio = patron_este.search(text)
-                if match_inicio and not en_articulo:
-                    en_articulo = True
-                    text = text[match_inicio.end():].strip().lstrip('- ').strip()
-                    if text:
-                        linea['text'] = text
-                        todas_lineas.append(linea)
-                    continue
-
-                # Detectar fin (siguiente articulo)
-                if en_articulo:
-                    match = self._patron_siguiente.match(text)
-                    if match and linea['x'] >= 80:
-                        en_articulo = False
-                        break
-                    todas_lineas.append(linea)
-
-            if not en_articulo and pag_num > pag_inicio:
+            if terminado:
                 break
 
-        # Verificar si este artículo tiene excepción
-        excepciones = self.config.get("excepciones", {})
-        modo = excepciones.get(numero, "normal")
+            page = self.pdf[pag_num]
+            y_offset = (pag_num - pag_inicio) * 800
+
+            # Extraer líneas con información de spans para calcular all_bold
+            for block in page.get_text('dict')['blocks']:
+                if block.get('type') != 0:
+                    continue
+
+                for line in block.get('lines', []):
+                    spans = line.get('spans', [])
+                    if not spans:
+                        continue
+
+                    # Construir texto
+                    text = ''.join(s.get('text', '') for s in spans).strip()
+                    if not text:
+                        continue
+
+                    # Coordenadas
+                    bbox = line.get('bbox', (0, 0, 0, 0))
+                    x_min, y_local, x_max, _ = bbox
+                    y_global = y_local + y_offset
+
+                    # Filtrar por coordenada X mínima
+                    if x_min < 70:
+                        continue
+
+                    # Filtrar header/footer
+                    if y_local < y_header_max or y_local > y_footer_min:
+                        continue
+
+                    # Calcular propiedades
+                    all_bold = calcular_all_bold(spans)
+                    first_flags = spans[0].get('flags', 0) if spans else 0
+                    is_bold_first = bool(first_flags & 16)
+                    font_size = spans[0].get('size', 12) if spans else 12
+
+                    # Crear diccionario de línea para referencias y ruido
+                    linea_dict = {
+                        'x': x_min, 'x_end': x_max, 'y': y_local,
+                        'y_global': y_global, 'text': text,
+                        'is_bold': is_bold_first, 'font_size': font_size,
+                        'is_italic': bool(first_flags & 2),
+                        'is_non_black': spans[0].get('color', 0) != 0 if spans else False
+                    }
+
+                    # Detectar referencias (antes de FSM)
+                    if self._es_referencia(linea_dict):
+                        if fsm.estado.name == 'DENTRO_ARTICULO':
+                            referencias.append((y_global, text))
+                        continue
+
+                    # Filtrar ruido
+                    if ruido and self._es_ruido(text, ruido):
+                        continue
+
+                    # En modo texto_plano, no usar FSM para filtrado estructural
+                    if modo == "texto_plano":
+                        # Lógica simplificada para texto_plano
+                        match_inicio = patron_este.search(text)
+                        if match_inicio:
+                            text = text[match_inicio.end():].strip().lstrip('- ').strip()
+                            if text:
+                                fsm.lineas_articulo.append({
+                                    'x': x_min, 'x_end': x_max, 'y': y_global,
+                                    'text': text, 'is_bold': is_bold_first, 'font_size': font_size
+                                })
+                            fsm.estado = fsm.estado  # Mantener estado
+                            continue
+                        if fsm.lineas_articulo:  # Ya empezamos a capturar
+                            # Detectar fin
+                            if self._patron_siguiente.match(text) and x_min >= 80:
+                                terminado = True
+                                break
+                            fsm.lineas_articulo.append({
+                                'x': x_min, 'x_end': x_max, 'y': y_global,
+                                'text': text, 'is_bold': is_bold_first, 'font_size': font_size
+                            })
+                        continue
+
+                    # Crear token para FSM
+                    token = TokenLinea(
+                        texto=text,
+                        x_min=x_min,
+                        x_max=x_max,
+                        y=y_global,
+                        all_bold=all_bold,
+                        font_size=font_size,
+                        page_width=page_width,
+                        first_bold=is_bold_first
+                    )
+
+                    # Procesar con FSM
+                    resultado = fsm.procesar(token)
+
+                    if resultado:
+                        if resultado.get('accion') == 'fin':
+                            terminado = True
+                            break
+                        if resultado.get('accion') == 'flush':
+                            # Capturar líneas del artículo antes de que se borren
+                            lineas_flush = resultado.get('lineas', [])
+                            terminado = True
+                            break
+
+            # Si la FSM terminó el artículo, salir
+            if fsm.estado.name in ('ENTRE_ARTICULOS', 'FIN') or terminado:
+                break
+
+        # Obtener líneas del artículo: del flush si hubo, o de la FSM
+        todas_lineas = lineas_flush if lineas_flush is not None else fsm.lineas_articulo
 
         # Consolidar lineas en parrafos
         lineas_consolidadas = self._consolidar_lineas(todas_lineas, modo)

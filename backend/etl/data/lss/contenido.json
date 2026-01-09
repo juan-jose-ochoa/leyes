@@ -246,24 +246,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL REGIMEN OBLIGATORIO",
-          "padre_numero": 1,
-          "x_id": 227,
-          "x_texto": 227
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "GENERALIDADES",
-          "padre_numero": 2,
-          "x_id": 258,
-          "x_texto": 258
         }
       ]
     },
@@ -1093,15 +1075,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
-          "padre_numero": 1,
-          "x_id": 169,
-          "x_texto": 169
         }
       ]
     },
@@ -2173,15 +2146,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS PRESTACIONES EN ESPECIE",
-          "padre_numero": 5,
-          "x_id": 206,
-          "x_texto": 206
         }
       ]
     },
@@ -2252,15 +2216,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS PRESTACIONES EN DINERO",
-          "padre_numero": 1,
-          "x_id": 209,
-          "x_texto": 209
         }
       ]
     },
@@ -2332,7 +2287,7 @@
           "tipo": "inciso",
           "identificador": "a",
           "contenido": ") Retirar la suma excedente en una sola exhibición de su cuenta individual;",
-          "padre_numero": 6,
+          "padre_numero": null,
           "x_id": 100,
           "x_texto": 122
         },
@@ -2341,7 +2296,7 @@
           "tipo": "inciso",
           "identificador": "b",
           "contenido": ") Contratar una renta vitalicia por una cuantía mayor; o",
-          "padre_numero": 6,
+          "padre_numero": null,
           "x_id": 100,
           "x_texto": 122
         },
@@ -2350,7 +2305,7 @@
           "tipo": "inciso",
           "identificador": "c",
           "contenido": ") Aplicar el excedente a un pago de sobreprima para incrementar los beneficios del seguro de sobrevivencia.",
-          "padre_numero": 6,
+          "padre_numero": null,
           "x_id": 100,
           "x_texto": 122
         },
@@ -2779,15 +2734,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL INCREMENTO PERIODICO DE LAS PENSIONES",
-          "padre_numero": 1,
-          "x_id": 169,
-          "x_texto": 169
         }
       ]
     },
@@ -2825,15 +2771,6 @@
           "referencias": [
             "Artículo reformado DOF 20-01-2023"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL REGIMEN FINANCIERO",
-          "padre_numero": 1,
-          "x_id": 232,
-          "x_texto": 232
         }
       ]
     },
@@ -3370,15 +3307,6 @@
           "referencias": [
             "Párrafo adicionado DOF 20-12-2001"
           ]
-        },
-        {
-          "numero": 17,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA PREVENCION DE RIESGOS DE TRABAJO",
-          "padre_numero": 16,
-          "x_id": 179,
-          "x_texto": 179
         }
       ]
     },
@@ -3495,24 +3423,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
-          "padre_numero": 4,
-          "x_id": 169,
-          "x_texto": 169
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "GENERALIDADES",
-          "padre_numero": 5,
-          "x_id": 258,
-          "x_texto": 258
         }
       ]
     },
@@ -3936,15 +3846,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS PRESTACIONES EN ESPECIE",
-          "padre_numero": 1,
-          "x_id": 206,
-          "x_texto": 206
         }
       ]
     },
@@ -4093,15 +3994,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS PRESTACIONES EN DINERO",
-          "padre_numero": 1,
-          "x_id": 209,
-          "x_texto": 209
         }
       ]
     },
@@ -4377,15 +4269,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL REGIMEN FINANCIERO",
-          "padre_numero": 1,
-          "x_id": 232,
-          "x_texto": 232
         }
       ]
     },
@@ -4508,15 +4391,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA CONSERVACION DE DERECHOS",
-          "padre_numero": 1,
-          "x_id": 201,
-          "x_texto": 201
         }
       ]
     },
@@ -4584,15 +4458,6 @@
           "referencias": [
             "Artículo adicionado DOF 22-06-2018"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA MEDICINA PREVENTIVA",
-          "padre_numero": 1,
-          "x_id": 224,
-          "x_texto": 224
         }
       ]
     },
@@ -4627,18 +4492,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL REGISTRO DE LAS ACTIVIDADES PARA LA SALUD A LA POBLACIÓN DERECHOHABIENTE",
-          "padre_numero": 1,
-          "x_id": 109,
-          "x_texto": 109,
-          "referencias": [
-            "Sección adicionada DOF 20-12-2001"
-          ]
         }
       ]
     },
@@ -4795,15 +4648,6 @@
           "referencias": [
             "Artículo reformado DOF 28-05-2012"
           ]
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL RAMO DE INVALIDEZ",
-          "padre_numero": 2,
-          "x_id": 237,
-          "x_texto": 237
         }
       ]
     },
@@ -5108,15 +4952,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL RAMO DE VIDA",
-          "padre_numero": 2,
-          "x_id": 253,
-          "x_texto": 253
         }
       ]
     },
@@ -5537,15 +5372,6 @@
           "referencias": [
             "Artículo adicionado DOF 07-11-2019"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS ASIGNACIONES FAMILIARES Y AYUDA ASISTENCIAL",
-          "padre_numero": 1,
-          "x_id": 142,
-          "x_texto": 142
         }
       ]
     },
@@ -5802,19 +5628,19 @@
           "contenido": "Cuando el menor cumpla dieciséis años;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107,
-          "referencias": [
-            "Artículo adicionado DOF 04-06-2019"
-          ]
+          "x_texto": 107
         },
         {
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "Cuando el ascendiente que goza de la licencia, sea contratado por un nuevo patrón. DE LA CUANTIA DE LAS PENSIONES DE INVALIDEZ Y VIDA",
+          "contenido": "Cuando el ascendiente que goza de la licencia, sea contratado por un nuevo patrón.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "referencias": [
+            "Artículo adicionado DOF 04-06-2019"
+          ]
         }
       ]
     },
@@ -5945,15 +5771,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL REGIMEN FINANCIERO",
-          "padre_numero": 1,
-          "x_id": 232,
-          "x_texto": 232
         }
       ]
     },
@@ -6043,15 +5860,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA CONSERVACION Y RECONOCIMIENTO DE DERECHOS",
-          "padre_numero": 3,
-          "x_id": 143,
-          "x_texto": 143
         }
       ]
     },
@@ -6140,24 +5948,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
-          "padre_numero": 6,
-          "x_id": 124,
-          "x_texto": 124
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "GENERALIDADES",
-          "padre_numero": 7,
-          "x_id": 258,
-          "x_texto": 258
         }
       ]
     },
@@ -6201,15 +5991,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL RAMO DE CESANTIA EN EDAD AVANZADA",
-          "padre_numero": 2,
-          "x_id": 179,
-          "x_texto": 179
         }
       ]
     },
@@ -6578,15 +6359,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL RAMO DE VEJEZ",
-          "padre_numero": 1,
-          "x_id": 249,
-          "x_texto": 249
         }
       ]
     },
@@ -6748,15 +6520,6 @@
           "referencias": [
             "Párrafo reformado DOF 16-12-2020"
           ]
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA AYUDA PARA GASTOS DE MATRIMONIO",
-          "padre_numero": 5,
-          "x_id": 180,
-          "x_texto": 180
         }
       ]
     },
@@ -6851,15 +6614,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL REGIMEN FINANCIERO",
-          "padre_numero": 2,
-          "x_id": 232,
-          "x_texto": 232
         }
       ]
     },
@@ -7070,15 +6824,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA PENSION GARANTIZADA",
-          "padre_numero": 2,
-          "x_id": 221,
-          "x_texto": 221
         }
       ]
     },
@@ -7289,15 +7034,6 @@
           "referencias": [
             "Artículo reformado DOF 20-12-2001"
           ]
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA CUENTA INDIVIDUAL Y DE LAS SOCIEDADES DE INVERSION ESPECIALIZADAS DE FONDOS PARA EL RETIRO",
-          "padre_numero": null,
-          "x_id": 77,
-          "x_texto": 77
         }
       ]
     },
@@ -8029,24 +7765,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
-          "padre_numero": 1,
-          "x_id": 120,
-          "x_texto": 120
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL RAMO DE GUARDERIAS",
-          "padre_numero": 2,
-          "x_id": 229,
-          "x_texto": 229
         }
       ]
     },
@@ -8208,15 +7926,6 @@
           "referencias": [
             "Artículo reformado DOF 20-12-2001"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL RAMO DE LAS PRESTACIONES SOCIALES",
-          "padre_numero": 1,
-          "x_id": 180,
-          "x_texto": 180
         }
       ]
     },
@@ -8470,15 +8179,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS PRESTACIONES DE SOLIDARIDAD SOCIAL",
-          "padre_numero": 1,
-          "x_id": 170,
-          "x_texto": 170
         }
       ]
     },
@@ -8572,15 +8272,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA CONTINUACION VOLUNTARIA EN EL REGIMEN OBLIGATORIO",
-          "padre_numero": 2,
-          "x_id": 122,
-          "x_texto": 122
         }
       ]
     },
@@ -8730,15 +8421,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
-          "padre_numero": 1,
-          "x_id": 127,
-          "x_texto": 127
         }
       ]
     },
@@ -9219,15 +8901,6 @@
           "referencias": [
             "Artículo reformado DOF 20-12-2001"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA SEGURIDAD SOCIAL EN EL CAMPO",
-          "padre_numero": 1,
-          "x_id": 193,
-          "x_texto": 193
         }
       ]
     },
@@ -9515,18 +9188,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS PERSONAS TRABAJADORAS DEL HOGAR",
-          "padre_numero": 1,
-          "x_id": 171,
-          "x_texto": 171,
-          "referencias": [
-            "Capítulo adicionado DOF 16-11-2022"
-          ]
         }
       ]
     },
@@ -9813,24 +9474,6 @@
           "referencias": [
             "Artículo adicionado DOF 16-11-2022"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL REGIMEN VOLUNTARIO",
-          "padre_numero": 1,
-          "x_id": 230,
-          "x_texto": 230
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL SEGURO DE SALUD PARA LA FAMILIA",
-          "padre_numero": 1,
-          "x_id": 190,
-          "x_texto": 190
         }
       ]
     },
@@ -9957,15 +9600,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LOS SEGUROS ADICIONALES",
-          "padre_numero": 1,
-          "x_id": 217,
-          "x_texto": 217
         }
       ]
     },
@@ -10060,18 +9694,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "OTROS SEGUROS",
-          "padre_numero": 1,
-          "x_id": 262,
-          "x_texto": 262,
-          "referencias": [
-            "Capítulo adicionado DOF 20-12-2001"
-          ]
         }
       ]
     },
@@ -10860,7 +10482,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "La Dirección General. DE LA ASAMBLEA GENERAL",
+          "contenido": "La Dirección General.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -10985,15 +10607,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL CONSEJO TECNICO",
-          "padre_numero": 2,
-          "x_id": 240,
-          "x_texto": 240
         }
       ]
     },
@@ -11319,15 +10932,6 @@
           "referencias": [
             "Fracción derogada DOF 20-12-2001"
           ]
-        },
-        {
-          "numero": 22,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA COMISION DE VIGILANCIA",
-          "padre_numero": 21,
-          "x_id": 218,
-          "x_texto": 218
         }
       ]
     },
@@ -11431,15 +11035,6 @@
           "referencias": [
             "Fracción adicionada DOF 20-12-2001"
           ]
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA DIRECCION GENERAL",
-          "padre_numero": 7,
-          "x_id": 229,
-          "x_texto": 229
         }
       ]
     },
@@ -11636,18 +11231,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO",
-          "padre_numero": 1,
-          "x_id": 97,
-          "x_texto": 97,
-          "referencias": [
-            "Denominación del Capítulo reformada DOF 20-12-2001"
-          ]
         }
       ]
     },
@@ -12232,18 +11815,6 @@
           "referencias": [
             "Artículo reformado DOF 20-12-2001"
           ]
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS RESERVAS DE LOS SEGUROS",
-          "padre_numero": 5,
-          "x_id": 203,
-          "x_texto": 203,
-          "referencias": [
-            "Sección adicionada DOF 20-12-2001"
-          ]
         }
       ]
     },
@@ -12696,27 +12267,6 @@
             "Párrafo reformado DOF 01-05-2019",
             "Artículo reformado DOF 20-12-2001"
           ]
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LOS PROCEDIMIENTOS",
-          "padre_numero": 6,
-          "x_id": 234,
-          "x_texto": 234
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "PROCEDIMIENTO ADMINISTRATIVO DE EJECUCIÓN",
-          "padre_numero": 6,
-          "x_id": 168,
-          "x_texto": 168,
-          "referencias": [
-            "Sección adicionada DOF 20-12-2001"
-          ]
         }
       ]
     },
@@ -12852,18 +12402,6 @@
           "padre_numero": 5,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LOS MEDIOS DE DEFENSA",
-          "padre_numero": 7,
-          "x_id": 225,
-          "x_texto": 225,
-          "referencias": [
-            "Sección adicionada DOF 20-12-2001"
-          ]
         }
       ]
     },
@@ -12954,15 +12492,6 @@
           "referencias": [
             "Párrafo reformado DOF 20-12-2001"
           ]
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA CADUCIDAD Y PRESCRIPCION",
-          "padre_numero": 3,
-          "x_id": 206,
-          "x_texto": 206
         }
       ]
     },
@@ -13233,30 +12762,6 @@
           "referencias": [
             "Párrafo recorrido y publicado sin cambios DOF 30-04-2024",
             "Artículo reformado DOF 16-12-2020"
-          ]
-        },
-        {
-          "numero": 11,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS",
-          "padre_numero": 10,
-          "x_id": 112,
-          "x_texto": 112,
-          "referencias": [
-            "Denominación del Título reformada DOF 20-12-2001"
-          ]
-        },
-        {
-          "numero": 12,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS RESPONSABILIDADES",
-          "padre_numero": 11,
-          "x_id": 224,
-          "x_texto": 224,
-          "referencias": [
-            "Denominación del Capítulo reformada DOF 20-12-2001"
           ]
         }
       ]

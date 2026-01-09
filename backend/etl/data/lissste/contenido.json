@@ -1112,24 +1112,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL RÉGIMEN OBLIGATORIO",
-          "padre_numero": 2,
-          "x_id": 227,
-          "x_texto": 227
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "SUELDOS, CUOTAS Y APORTACIONES",
-          "padre_numero": 2,
-          "x_id": 202,
-          "x_texto": 202
         }
       ]
     },
@@ -1656,24 +1638,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "SEGURO DE SALUD",
-          "padre_numero": 2,
-          "x_id": 253,
-          "x_texto": 253
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Generalidades",
-          "padre_numero": 3,
-          "x_id": 268,
-          "x_texto": 268
         }
       ]
     },
@@ -1836,15 +1800,6 @@
           "referencias": [
             "Artículo adicionado DOF 12-11-2015"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Comité de Evaluación y Seguimiento de los Servicios de Salud",
-          "padre_numero": 1,
-          "x_id": 132,
-          "x_texto": 132
         }
       ]
     },
@@ -1880,15 +1835,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Atención Médica Preventiva",
-          "padre_numero": 3,
-          "x_id": 233,
-          "x_texto": 233
         }
       ]
     },
@@ -2049,15 +1995,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 16,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Atención Médica Curativa y de Maternidad y Rehabilitación Física y Mental",
-          "padre_numero": 15,
-          "x_id": 111,
-          "x_texto": 111
         }
       ]
     },
@@ -2632,15 +2569,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 13,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Régimen Financiero",
-          "padre_numero": 12,
-          "x_id": 253,
-          "x_texto": 253
         }
       ]
     },
@@ -2730,15 +2658,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 10,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "CONSERVACIÓN DE DERECHOS",
-          "padre_numero": 9,
-          "x_id": 219,
-          "x_texto": 219
         }
       ]
     },
@@ -2768,15 +2687,6 @@
           "referencias": [
             "Párrafo adicionado DOF 22-06-2018"
           ]
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS PENSIONES",
-          "padre_numero": 2,
-          "x_id": 252,
-          "x_texto": 252
         }
       ]
     },
@@ -2982,24 +2892,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "SEGURO DE RIESGOS DEL TRABAJO",
-          "padre_numero": 1,
-          "x_id": 206,
-          "x_texto": 206
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Generalidades",
-          "padre_numero": 2,
-          "x_id": 268,
-          "x_texto": 268
         }
       ]
     },
@@ -3932,15 +3824,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Incremento Periódico de las Pensiones",
-          "padre_numero": 2,
-          "x_id": 204,
-          "x_texto": 204
         }
       ]
     },
@@ -3967,15 +3850,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Régimen Financiero",
-          "padre_numero": 2,
-          "x_id": 253,
-          "x_texto": 253
         }
       ]
     },
@@ -3993,24 +3867,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "SEGURO DE RETIRO, CESANTÍA EN EDAD AVANZADA Y VEJEZ",
-          "padre_numero": 1,
-          "x_id": 137,
-          "x_texto": 137
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Generalidades",
-          "padre_numero": 2,
-          "x_id": 268,
-          "x_texto": 268
         }
       ]
     },
@@ -4293,15 +4149,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Pensión por Cesantía en Edad Avanzada",
-          "padre_numero": 3,
-          "x_id": 200,
-          "x_texto": 200
         }
       ]
     },
@@ -4442,15 +4289,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Pensión por Vejez",
-          "padre_numero": 5,
-          "x_id": 259,
-          "x_texto": 259
         }
       ]
     },
@@ -4582,15 +4420,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Pensión Garantizada",
-          "padre_numero": 5,
-          "x_id": 237,
-          "x_texto": 237
         }
       ]
     },
@@ -4748,15 +4577,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Cuenta Individual",
-          "padre_numero": 3,
-          "x_id": 245,
-          "x_texto": 245
         }
       ]
     },
@@ -4844,15 +4664,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Ahorro Solidario para el Incremento de las Pensiones",
-          "padre_numero": 1,
-          "x_id": 156,
-          "x_texto": 156
         }
       ]
     },
@@ -4897,15 +4708,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Régimen Financiero",
-          "padre_numero": 4,
-          "x_id": 253,
-          "x_texto": 253
         }
       ]
     },
@@ -4985,18 +4787,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Créditos otorgados por entidades financieras con cargo a las pensiones",
-          "padre_numero": 6,
-          "x_id": 99,
-          "x_texto": 99,
-          "referencias": [
-            "Sección adicionada DOF 28-05-2012"
-          ]
         }
       ]
     },
@@ -5044,15 +4834,6 @@
           "referencias": [
             "Artículo adicionado DOF 28-05-2012"
           ]
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del PENSIONISSSTE",
-          "padre_numero": 4,
-          "x_id": 252,
-          "x_texto": 252
         }
       ]
     },
@@ -5623,19 +5404,10 @@
           "numero": 10,
           "tipo": "fraccion",
           "identificador": "IX",
-          "contenido": "Las demás que le señalen esta Ley y sus disposiciones reglamentarias. SEGURO DE INVALIDEZ Y VIDA",
+          "contenido": "Las demás que le señalen esta Ley y sus disposiciones reglamentarias.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 11,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Generalidades",
-          "padre_numero": 10,
-          "x_id": 268,
-          "x_texto": 268
         }
       ]
     },
@@ -5713,15 +5485,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Pensión por Invalidez",
-          "padre_numero": 1,
-          "x_id": 250,
-          "x_texto": 250
         }
       ]
     },
@@ -6152,15 +5915,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Pensión por Causa de Muerte",
-          "padre_numero": 3,
-          "x_id": 229,
-          "x_texto": 229
         }
       ]
     },
@@ -6562,15 +6316,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Incremento Periódico de las Pensiones",
-          "padre_numero": 2,
-          "x_id": 204,
-          "x_texto": 204
         }
       ]
     },
@@ -6597,15 +6342,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Régimen Financiero",
-          "padre_numero": 2,
-          "x_id": 253,
-          "x_texto": 253
         }
       ]
     },
@@ -6641,24 +6377,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Transferencia de los Derechos",
-          "padre_numero": 3,
-          "x_id": 211,
-          "x_texto": 211
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Transferencia de Derechos entre el Instituto y el IMSS",
-          "padre_numero": 3,
-          "x_id": 151,
-          "x_texto": 151
         }
       ]
     },
@@ -6867,15 +6585,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Transferencia de Derechos al Instituto provenientes de otros Institutos de Seguridad Social",
-          "padre_numero": 2,
-          "x_id": 98,
-          "x_texto": 98
         }
       ]
     },
@@ -7006,15 +6715,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Transferencia de Derechos entre el Instituto y el Instituto del Fondo Nacional de la Vivienda para los Trabajadores",
-          "padre_numero": null,
-          "x_id": 76,
-          "x_texto": 76
         }
       ]
     },
@@ -7084,24 +6784,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Sistema Integral de Crédito",
-          "padre_numero": 2,
-          "x_id": 225,
-          "x_texto": 225
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Préstamos Personales",
-          "padre_numero": 3,
-          "x_id": 247,
-          "x_texto": 247
         }
       ]
     },
@@ -7416,15 +7098,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Crédito para Vivienda",
-          "padre_numero": 1,
-          "x_id": 239,
-          "x_texto": 239
         }
       ]
     },
@@ -8623,15 +8296,6 @@
           "referencias": [
             "Párrafo adicionado DOF 30-04-2024"
           ]
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Régimen Financiero",
-          "padre_numero": 3,
-          "x_id": 253,
-          "x_texto": 253
         }
       ]
     },
@@ -8666,24 +8330,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Servicios Sociales y Culturales",
-          "padre_numero": 1,
-          "x_id": 207,
-          "x_texto": 207
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Servicios Sociales",
-          "padre_numero": 2,
-          "x_id": 258,
-          "x_texto": 258
         }
       ]
     },
@@ -8763,15 +8409,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Servicios Culturales",
-          "padre_numero": 6,
-          "x_id": 253,
-          "x_texto": 253
         }
       ]
     },
@@ -8851,15 +8488,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Régimen Financiero",
-          "padre_numero": 6,
-          "x_id": 253,
-          "x_texto": 253
         }
       ]
     },
@@ -8904,24 +8532,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DEL RÉGIMEN VOLUNTARIO",
-          "padre_numero": 4,
-          "x_id": 230,
-          "x_texto": 230
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "CONTINUACIÓN VOLUNTARIA EN EL RÉGIMEN OBLIGATORIO",
-          "padre_numero": 4,
-          "x_id": 140,
-          "x_texto": 140
         }
       ]
     },
@@ -9047,15 +8657,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "INCORPORACIÓN VOLUNTARIA AL RÉGIMEN OBLIGATORIO",
-          "padre_numero": 1,
-          "x_id": 145,
-          "x_texto": 145
         }
       ]
     },
@@ -9189,15 +8790,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DISPOSICIONES ESPECIALES",
-          "padre_numero": 7,
-          "x_id": 226,
-          "x_texto": 226
         }
       ]
     },
@@ -9233,24 +8825,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS FUNCIONES Y ORGANIZACIÓN DEL INSTITUTO",
-          "padre_numero": 3,
-          "x_id": 159,
-          "x_texto": 159
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "FUNCIONES",
-          "padre_numero": 4,
-          "x_id": 274,
-          "x_texto": 274
         }
       ]
     },
@@ -9400,15 +8974,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 14,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "ÓRGANOS DE GOBIERNO",
-          "padre_numero": 13,
-          "x_id": 237,
-          "x_texto": 237
         }
       ]
     },
@@ -10550,15 +10115,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "COMITÉ DE INVERSIONES",
-          "padre_numero": 1,
-          "x_id": 236,
-          "x_texto": 236
         }
       ]
     },
@@ -10593,15 +10149,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "PATRIMONIO",
-          "padre_numero": 1,
-          "x_id": 271,
-          "x_texto": 271
         }
       ]
     },
@@ -10787,24 +10334,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "RESERVAS E INVERSIONES",
-          "padre_numero": 3,
-          "x_id": 231,
-          "x_texto": 231
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Generalidades",
-          "padre_numero": 4,
-          "x_id": 268,
-          "x_texto": 268
         }
       ]
     },
@@ -10901,15 +10430,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Reservas de los Seguros",
-          "padre_numero": 5,
-          "x_id": 223,
-          "x_texto": 223
         }
       ]
     },
@@ -11145,15 +10665,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Programa Anual de Administración y Constitución de Reservas",
-          "padre_numero": 1,
-          "x_id": 130,
-          "x_texto": 130
         }
       ]
     },
@@ -11216,15 +10727,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Inversión de las Reservas y de su Uso para la Operación",
-          "padre_numero": 6,
-          "x_id": 143,
-          "x_texto": 143
         }
       ]
     },
@@ -11294,15 +10796,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Contabilidad",
-          "padre_numero": 2,
-          "x_id": 258,
-          "x_texto": 258
         }
       ]
     },
@@ -11329,15 +10822,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LA PRESCRIPCIÓN",
-          "padre_numero": 2,
-          "x_id": 246,
-          "x_texto": 246
         }
       ]
     },
@@ -11472,15 +10956,6 @@
           "referencias": [
             "Artículo reformado DOF 30-04-2024"
           ]
-        },
-        {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "DE LAS RESPONSABILIDADES Y SANCIONES",
-          "padre_numero": 8,
-          "x_id": 184,
-          "x_texto": 184
         }
       ]
     },

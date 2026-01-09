@@ -1228,10 +1228,244 @@
           "numero": 11,
           "tipo": "inciso",
           "identificador": "d",
-          "contenido": ") Tratándose de las inversiones a que se refiere la Ley del Impuesto sobre la Renta, el impuesto al valor agregado que le haya sido trasladado al contribuyente en su adquisición o el pagado en su importación será acreditable considerando el destino habitual que dichas inversiones tengan para realizar las actividades por las que se deba o no pagar el impuesto establecido en esta Ley, incluyendo aquéllas a que se refiere el",
+          "contenido": ") Tratándose de las inversiones a que se refiere la Ley del Impuesto sobre la Renta, el impuesto al valor agregado que le haya sido trasladado al contribuyente en su adquisición o el pagado en su importación será acreditable considerando el destino habitual que dichas inversiones tengan para realizar las actividades por las que se deba o no pagar el impuesto establecido en esta Ley, incluyendo aquéllas a que se refiere el artículo 4o.-A de la misma, o a las que se les aplique la tasa de 0%, debiendo efectuar el ajuste que proceda cuando se altere el destino mencionado. Para tales efectos se procederá en la forma siguiente:",
           "padre_numero": 7,
           "x_id": 114,
+          "x_texto": 136,
+          "referencias": [
+            "Párrafo reformado DOF 12-11-2021"
+          ]
+        },
+        {
+          "numero": 12,
+          "tipo": "numeral",
+          "identificador": "1",
+          "contenido": "Cuando se trate de inversiones que se destinen en forma exclusiva para realizar actividades por las que el contribuyente esté obligado al pago del impuesto al valor agregado o a las que les sea aplicable la tasa de 0%, el impuesto al valor agregado que haya sido trasladado al contribuyente o el pagado en su importación, será acreditable en su totalidad en el mes de que se trate.",
+          "padre_numero": 11,
+          "x_id": 143,
+          "x_texto": 165
+        },
+        {
+          "numero": 13,
+          "tipo": "numeral",
+          "identificador": "2",
+          "contenido": "Cuando se trate de inversiones que se destinen en forma exclusiva para realizar actividades por las que el contribuyente no esté obligado al pago del impuesto que establece esta Ley, incluyendo aquéllas a que se refiere el artículo 4o.-A de la misma, el impuesto al valor agregado que haya sido efectivamente trasladado al contribuyente o pagado en la importación no será acreditable.",
+          "padre_numero": 11,
+          "x_id": 143,
+          "x_texto": 165,
+          "referencias": [
+            "Numeral reformado DOF 12-11-2021"
+          ]
+        },
+        {
+          "numero": 14,
+          "tipo": "numeral",
+          "identificador": "3",
+          "contenido": "Cuando el contribuyente utilice las inversiones indistintamente para realizar tanto actividades por las que se deba pagar el impuesto al valor agregado o les sea aplicable la tasa de 0%, así como para actividades por las que no esté obligado al pago del impuesto que establece esta Ley, incluyendo aquéllas a que se refiere el artículo 4o.-A de la misma, el impuesto al valor agregado trasladado al contribuyente o el pagado en la importación, será acreditable en la proporción en la que el valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, represente en el valor total de las actividades mencionadas, incluyendo los actos o actividades a que se refiere el artículo 4o.-A de esta Ley, que el contribuyente realice en el mes de que se trate debiendo, en su caso, aplicar el ajuste a que se refiere el artículo 5o.-A de esta Ley.",
+          "padre_numero": 11,
+          "x_id": 143,
+          "x_texto": 165,
+          "referencias": [
+            "Párrafo reformado DOF 12-11-2021"
+          ]
+        },
+        {
+          "numero": 15,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los contribuyentes que efectúen el acreditamiento en los términos previstos en el párrafo anterior, deberán aplicarlo a todas las inversiones que adquieran o importen en un período de cuando menos sesenta meses contados a partir del mes en el que se haya realizado el acreditamiento de que se trate.",
+          "padre_numero": 14,
+          "x_id": 172,
+          "x_texto": 172
+        },
+        {
+          "numero": 16,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "A las inversiones cuyo acreditamiento se haya realizado conforme a lo dispuesto en el artículo 5o.-B de esta Ley, no les será aplicable el procedimiento establecido en el primer párrafo de este numeral.",
+          "padre_numero": 14,
+          "x_id": 172,
+          "x_texto": 172
+        },
+        {
+          "numero": 17,
+          "tipo": "numeral",
+          "identificador": "4",
+          "contenido": "Cuando las inversiones a que se refieren los numerales 1 y 2 de este inciso dejen de destinarse en forma exclusiva a las actividades previstas en dichos numerales, en el mes en el que ello ocurra, se deberá aplicar el ajuste previsto en el artículo 5o.-A de esta Ley.",
+          "padre_numero": 11,
+          "x_id": 143,
+          "x_texto": 165
+        },
+        {
+          "numero": 18,
+          "tipo": "fraccion",
+          "identificador": "VI",
+          "contenido": "Tratándose de gastos e inversiones en periodos preoperativos el impuesto al valor agregado trasladado y el pagado en la importación que corresponda a las actividades por las que se vaya a estar obligado al pago del impuesto que establece esta Ley o a las que se vaya a aplicar la tasa de 0%, será acreditable en la proporción y en los términos establecidos en esta Ley, conforme a las opciones que a continuación se mencionan:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 19,
+          "tipo": "inciso",
+          "identificador": "a",
+          "contenido": ") Realizar el acreditamiento en la declaración correspondiente al primer mes en el que el contribuyente realice las actividades mencionadas, en la proporción y en los términos establecidos en esta Ley. Para estos efectos, el contribuyente podrá actualizar las cantidades del impuesto que proceda acreditar en cada uno de los meses durante el periodo preoperativo, por el periodo comprendido desde el mes en el que se le haya trasladado el impuesto o haya pagado el impuesto en la importación hasta el mes en el que presente la declaración a que se refiere este inciso.",
+          "padre_numero": 18,
+          "x_id": 114,
           "x_texto": 136
+        },
+        {
+          "numero": 20,
+          "tipo": "inciso",
+          "identificador": "b",
+          "contenido": ") Solicitar la devolución del impuesto que corresponda en el mes siguiente a aquél en el que se realicen los gastos e inversiones, conforme a la estimativa que se haga de la proporción en que se destinarán dichos gastos e inversiones a la realización de actividades por las que se vaya a estar obligado al pago del impuesto que establece esta Ley o a las que se vaya a aplicar la tasa de 0%, respecto del total de actividades a realizar. En caso de que se ejerza esta opción, se deberá presentar a la autoridad fiscal, conjuntamente con la primera solicitud de devolución, lo siguiente:",
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 136
+        },
+        {
+          "numero": 21,
+          "tipo": "numeral",
+          "identificador": "1",
+          "contenido": "La estimación y descripción de los gastos e inversiones que se realizarán en el periodo preoperativo, así como una descripción de las actividades que realizará el contribuyente. Para estos efectos, se deberán presentar, entre otros documentos, los títulos de propiedad, contratos, convenios, autorizaciones, licencias, permisos, avisos, registros, planos y licitaciones que, en su caso, sean necesarios para acreditar que se llevarán a cabo las actividades.",
+          "padre_numero": 20,
+          "x_id": 143,
+          "x_texto": 165
+        },
+        {
+          "numero": 22,
+          "tipo": "numeral",
+          "identificador": "2",
+          "contenido": "La estimación de la proporción que representará el valor de las actividades por las que se vaya a estar obligado al pago del impuesto que establece esta Ley o a las que se vaya a aplicar la tasa de 0%, respecto del total de actividades a realizar.",
+          "padre_numero": 20,
+          "x_id": 143,
+          "x_texto": 165
+        },
+        {
+          "numero": 23,
+          "tipo": "numeral",
+          "identificador": "3",
+          "contenido": "Los mecanismos de financiamiento para realizar los gastos e inversiones.",
+          "padre_numero": 20,
+          "x_id": 143,
+          "x_texto": 165
+        },
+        {
+          "numero": 24,
+          "tipo": "numeral",
+          "identificador": "4",
+          "contenido": "La fecha estimada para realizar las actividades objeto de esta Ley, así como, en su caso, el prospecto o proyecto de inversión cuya ejecución dará lugar a la realización de las actividades por las que se vaya a estar obligado al pago del impuesto que establece esta Ley o a las que se vaya a aplicar la tasa de 0%.",
+          "padre_numero": 20,
+          "x_id": 143,
+          "x_texto": 165
+        },
+        {
+          "numero": 25,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La información a que se refiere este inciso deberá presentarse de conformidad con las reglas de carácter general que al efecto emita el Servicio de Administración Tributaria.",
+          "padre_numero": 20,
+          "x_id": 143,
+          "x_texto": 143
+        },
+        {
+          "numero": 26,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cuando se ejerza cualquiera de las opciones a que se refieren los incisos a) o b) de esta fracción, el contribuyente deberá calcular en el decimosegundo mes, contado a partir del mes inmediato posterior a aquél en el que el contribuyente inició actividades, la proporción en la que el valor de las actividades por las que se pagó el impuesto al valor agregado o a las que se aplicó la tasa de 0%, represente en el valor total de las actividades mencionadas que el contribuyente haya realizado en los doce meses anteriores a dicho mes y compararla contra la proporción aplicada para acreditar el impuesto que le fue trasladado o el pagado en la importación en los gastos e inversiones realizados en el periodo preoperativo, conforme a los incisos a) o b) de esta fracción, según se trate. Para identificar el mes en el que se deberá efectuar el ajuste a que se refiere el presente párrafo, los contribuyentes deberán informar a la autoridad el mes en el que inicien sus actividades, de conformidad con las reglas de carácter general que para tal efecto emita el Servicio de Administración Tributaria.",
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 114,
+          "referencias": [
+            "Párrafo reformado DOF 12-11-2021"
+          ]
+        },
+        {
+          "numero": 27,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cuando de la comparación a que se refiere el párrafo anterior, la proporción aplicada para acreditar el impuesto correspondiente a los gastos o inversiones realizados en el periodo preoperativo se modifique en más del 3%, se deberá ajustar dicho acreditamiento en la forma siguiente:",
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 114
+        },
+        {
+          "numero": 28,
+          "tipo": "numeral",
+          "identificador": "1",
+          "contenido": "Cuando disminuya la proporción del valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, respecto del valor de las actividades totales, el contribuyente deberá reintegrar el acreditamiento efectuado en exceso, actualizado desde el mes en el que se realizó el acreditamiento o se obtuvo la devolución y hasta el mes en el que se haga el reintegro. En este caso, el monto del acreditamiento en exceso será la cantidad que resulte de disminuir del monto del impuesto efectivamente acreditado en el mes de que se trate, la cantidad que resulte de aplicar la proporción correspondiente al periodo de doce meses al monto del impuesto que le haya sido trasladado al contribuyente o el pagado en la importación en los gastos e inversiones en el citado mes.",
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 136
+        },
+        {
+          "numero": 29,
+          "tipo": "numeral",
+          "identificador": "2",
+          "contenido": "Cuando aumente la proporción del valor de las actividades por las que deba pagarse el impuesto al valor agregado o se aplique la tasa de 0%, respecto del valor de las actividades totales, el contribuyente podrá incrementar el acreditamiento realizado, actualizado desde el mes en el que se realizó el acreditamiento o se obtuvo la devolución y hasta el doceavo mes, contado a partir del mes en el que se iniciaron las actividades. En este caso, el monto del acreditamiento a incrementar será la cantidad que resulte de disminuir de la cantidad que resulte de aplicar la proporción correspondiente al periodo de doce meses al monto del impuesto que le haya sido trasladado al contribuyente o el pagado en la importación en los gastos e inversiones en el mes de que se trate, el monto del impuesto efectivamente acreditado en dicho mes.",
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 136
+        },
+        {
+          "numero": 30,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El reintegro o el incremento del acreditamiento, que corresponda de conformidad con los numerales 1 y 2, del párrafo anterior, según se trate, deberá realizarse en el mes en el que se calcule la proporción a que se refiere el párrafo segundo de esta fracción, de conformidad con las reglas de carácter general que al efecto emita el Servicio de Administración Tributaria.",
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 114
+        },
+        {
+          "numero": 31,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos de esta Ley, se entenderá como periodo preoperativo aquél en el que se realizan gastos e inversiones en forma previa al inicio de las actividades de enajenación de bienes, prestación de servicios independientes u otorgamiento del uso o goce temporal de bienes, a que se refiere el artículo 1o. de la presente Ley. Tratándose de industrias extractivas comprende la exploración para la localización y cuantificación de nuevos yacimientos susceptibles de explotarse.",
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 114
+        },
+        {
+          "numero": 32,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos de esta fracción, el periodo preoperativo tendrá una duración máxima de un año, contado a partir de que se presente la primera solicitud de devolución del impuesto al valor agregado, salvo que el interesado acredite ante la autoridad fiscal que su periodo preoperativo tendrá una duración mayor conforme al prospecto o proyecto de inversión cuya ejecución dará lugar a la realización de las actividades gravadas por esta Ley.",
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 114
+        },
+        {
+          "numero": 33,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En el caso de que no se inicien las actividades gravadas por esta Ley una vez transcurrido el periodo preoperativo a que se refiere el párrafo anterior, se deberá reintegrar el monto de las devoluciones que se hayan obtenido, actualizado desde el mes en el que se obtuvo la devolución y hasta el mes en el que se efectúe dicho reintegro. Además, se causarán recargos en los términos del artículo 21 del Código Fiscal de la Federación sobre las cantidades actualizadas. Lo dispuesto en este párrafo se aplicará sin perjuicio del derecho del contribuyente a realizar el acreditamiento del impuesto trasladado o el pagado en la importación en el periodo preoperativo, cuando inicie las actividades por las que deba pagar el impuesto que establece esta Ley o a las que se aplique la tasa del 0%, conforme a lo establecido en el inciso a) de esta fracción.",
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 114
+        },
+        {
+          "numero": 34,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Tratándose de la industria extractiva no se aplicará lo dispuesto en el párrafo anterior cuando por causas ajenas a la empresa la extracción de los recursos asociados a los yacimientos no sea factible o cuando por circunstancias económicas no imputables a la empresa resulte incosteable la extracción de los recursos mencionados. Cuando la empresa deje de realizar las actividades previas a la extracción comercial regular de los recursos asociados a los yacimientos por causas diversas a las mencionadas, deberá reintegrar, en el mes inmediato posterior a aquél en que dejó de realizar las actividades mencionadas, el impuesto al valor agregado que le haya sido devuelto. El reintegro del impuesto deberá actualizarse desde el mes en que se obtuvo la devolución y hasta el mes en que realice el reintegro.",
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 114
+        },
+        {
+          "numero": 35,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Las actualizaciones a que se refiere esta fracción, deberán calcularse aplicando el factor de actualización que se obtenga de conformidad con el artículo 17-A del Código Fiscal de la Federación.",
+          "padre_numero": 18,
+          "x_id": 114,
+          "x_texto": 114,
+          "referencias": [
+            "Fracción adicionada DOF 30-11-2016",
+            "Reforma DOF 11-12-2013: Derogó del artículo el entonces último párrafo (antes reformado por DOF 07-12-2009)",
+            "Artículo reformado DOF 30-04-1986, 28-12-1989, 26-12-1990, 21-11-1991, 20-07-1992, 28-12-1994, 31-12-1998, 31-12-1999, 31-12-2000,",
+            "30-12-2002, 07-06-2005"
+          ]
         }
       ]
     },
@@ -1807,15 +2041,6 @@
             "Párrafo adicionado DOF 31-12-1998. Reformado DOF 11-12-2013, 09-12-2019",
             "Artículo reformado DOF 31-12-1979, 30-12-1980, 26-12-1990"
           ]
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la enajenación",
-          "padre_numero": 4,
-          "x_id": 260,
-          "x_texto": 260
         }
       ]
     },
@@ -2097,15 +2322,6 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1979. Derogado 30-12-1980. Adicionado 13-12-1996. Derogado DOF 31-12-1998"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la prestación de servicios",
-          "padre_numero": 1,
-          "x_id": 230,
-          "x_texto": 230
         }
       ]
     },
@@ -2900,30 +3116,6 @@
             "Reforma DOF 30-12-2002: Derogó del artículo el entonces párrafo quinto (antes reformado por DOF 29-12-1997)",
             "Artículo adicionado DOF 15-12-1995"
           ]
-        },
-        {
-          "numero": 13,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México",
-          "padre_numero": null,
-          "x_id": 72,
-          "x_texto": 72,
-          "referencias": [
-            "Capítulo adicionado DOF 09-12-2019"
-          ]
-        },
-        {
-          "numero": 14,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Disposiciones generales",
-          "padre_numero": 13,
-          "x_id": 242,
-          "x_texto": 242,
-          "referencias": [
-            "Sección adicionada DOF 09-12-2019"
-          ]
         }
       ]
     },
@@ -3395,27 +3587,6 @@
           "referencias": [
             "Artículo adicionado DOF 08-12-2020"
           ]
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Artículo 18-H QUINTUS. Para los efectos de lo dispuesto en los artículos 18-H BIS, 18-H TER y 18-H QUÁTER, el Servicio de Administración Tributaria dará a conocer en su página de Internet y en el Diario Oficial de la Federación el nombre del proveedor y la fecha a partir de la cual se deberá realizar el bloqueo temporal del acceso al servicio digital, a efecto de que los receptores de los servicios en territorio nacional se abstengan de contratar servicios futuros.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Cuando el contribuyente cumpla con las obligaciones que dieron lugar al bloqueo temporal del acceso al servicio digital, el Servicio de Administración Tributaria, mediante resolución, emitirá la orden de desbloqueo al concesionario de una red pública de telecomunicaciones en México que corresponda, para que en un plazo máximo de cinco días se cumplimente. Dicha orden deberá ser emitida por el administrador general que haya ordenado el bloqueo temporal. Asimismo, dicho órgano desconcentrado deberá reincorporar al contribuyente en el Registro Federal de Contribuyentes e incluirlo en la lista a que se refiere el artículo 18-D, fracción I, de esta Ley.",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
-          "referencias": [
-            "Artículo adicionado DOF 08-12-2020"
-          ]
         }
       ]
     },
@@ -3464,18 +3635,6 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 09-12-2019"
-          ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los servicios digitales de intermediación entre terceros",
-          "padre_numero": 1,
-          "x_id": 154,
-          "x_texto": 154,
-          "referencias": [
-            "Sección adicionada DOF 09-12-2019"
           ]
         }
       ]
@@ -3834,15 +3993,6 @@
           "referencias": [
             "Artículo adicionado DOF 09-12-2019"
           ]
-        },
-        {
-          "numero": 11,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del uso o goce temporal de bienes",
-          "padre_numero": 10,
-          "x_id": 215,
-          "x_texto": 215
         }
       ]
     },
@@ -4012,15 +4162,6 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1979"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la importación de bienes y servicios",
-          "padre_numero": 1,
-          "x_id": 203,
-          "x_texto": 203
         }
       ]
     },
@@ -4506,15 +4647,6 @@
           "referencias": [
             "Artículo adicionado DOF 28-12-1989. Derogado DOF 26-12-1990. Adicionado DOF 11-12-2013"
           ]
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la exportación de bienes o servicios",
-          "padre_numero": 5,
-          "x_id": 203,
-          "x_texto": 203
         }
       ]
     },
@@ -4986,15 +5118,6 @@
             "Artículo reformado DOF 31-12-1979. Derogado DOF 31-12-1981. Adicionado DOF 28-12-1989. Reformado DOF 26-12-1990, 15-12-1995,",
             "30-12-1996, Derogado DOF 31-12-1998. Adicionado DOF 08-12-2005"
           ]
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las obligaciones de los contribuyentes",
-          "padre_numero": 6,
-          "x_id": 196,
-          "x_texto": 196
         }
       ]
     },
@@ -5149,15 +5272,14 @@
           "x_id": 85,
           "x_texto": 85,
           "referencias": [
-            "Párrafo adicionado DOF 30-12-1980. Derogado DOF 31-12-1981",
-            "Nota: El párrafo anterior que a la letra establecía: “Los contribuyentes dedicados a la agricultura, ganadería o"
+            "Párrafo adicionado DOF 30-12-1980. Derogado DOF 31-12-1981"
           ]
         },
         {
           "numero": 14,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "pesca, comercial, por cuyas actividades únicamente sea aplicable la tasa del 0%, podrán optar por quedar liberados de las obligaciones establecidas en las fracciones I, II y IV, de este artículo y en ese caso, no tendrán derecho a devolución”, fue expresamente derogado por Decreto DOF 31-12-1981. Sin embargo, en el Decreto de fecha 31-12-1987, se hace referencia a la frase inicial de dicho párrafo: “Los contribuyentes dedicados a:”, como si el mismo no hubiera sido previamente derogado.",
+          "contenido": "Nota: El párrafo anterior que a la letra establecía: “Los contribuyentes dedicados a la agricultura, ganadería o pesca, comercial, por cuyas actividades únicamente sea aplicable la tasa del 0%, podrán optar por quedar liberados de las obligaciones establecidas en las fracciones I, II y IV, de este artículo y en ese caso, no tendrán derecho a devolución”, fue expresamente derogado por Decreto DOF 31-12-1981. Sin embargo, en el Decreto de fecha 31-12-1987, se hace referencia a la frase inicial de dicho párrafo: “Los contribuyentes dedicados a:”, como si el mismo no hubiera sido previamente derogado.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
@@ -5369,15 +5491,6 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1981, 28-12-1989. Derogado DOF 29-12-1997"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las facultades de las autoridades",
-          "padre_numero": 1,
-          "x_id": 211,
-          "x_texto": 211
         }
       ]
     },
@@ -5438,15 +5551,6 @@
           "referencias": [
             "Artículo derogado DOF 31-12-1981"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las participaciones a las entidades federativas",
-          "padre_numero": 1,
-          "x_id": 176,
-          "x_texto": 176
         }
       ]
     },

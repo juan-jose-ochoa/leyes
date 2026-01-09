@@ -651,22 +651,40 @@
           "numero": 53,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Categoría Categoría Categoría Categoría Categoría Vía de exposición 1 2 3 4 5 Oral (mg/kg) 5 50 300 2000 5000 Dérmica (mg/kg) 50 200 1000 2000 -",
+          "contenido": "Vía de exposición Categoría 1 Categoría 2 Categoría 3 Categoría 4 Categoría 5 Oral (mg/kg) 5 50 300 2000 5000 Dérmica (mg/kg) 50 200 1000 2000 -",
           "padre_numero": 52,
-          "x_id": 251,
-          "x_texto": 251
+          "x_id": 153,
+          "x_texto": 153
         },
         {
           "numero": 54,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Inhalatoria 100 500 2500 5000 Gases (ppmV) Inhalatoria 0,5 2 10 20 Vapores (mg/l) Inhalatoria 0,05 0,5 1 5 Polvos y nieblas (mg/l)",
+          "contenido": "Inhalatoria Gases (ppmV) 100 500 2500 5000",
           "padre_numero": 48,
           "x_id": 145,
           "x_texto": 145
         },
         {
           "numero": 55,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Inhalatoria Vapores (mg/l) 0,5 2 10 20",
+          "padre_numero": 48,
+          "x_id": 145,
+          "x_texto": 145
+        },
+        {
+          "numero": 56,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Inhalatoria Polvos y nieblas (mg/l) 0,05 0,5 1 5",
+          "padre_numero": 48,
+          "x_id": 145,
+          "x_texto": 145
+        },
+        {
+          "numero": 57,
           "tipo": "texto",
           "identificador": null,
           "contenido": "La aplicación de la tabla se sujetará a lo dispuesto a la Norma Oficial Mexicana “NOM- 232-SSA1-2009, Plaguicidas: que establece los requisitos del envase, embalaje y etiquetado de productos grado técnico y para uso agrícola, forestal, pecuario, jardinería, urbano, industrial y doméstico”, publicada en el Diario Oficial de la Federación el 13 de abril de 2010, emitida por la autoridad competente.",
@@ -678,7 +696,7 @@
           ]
         },
         {
-          "numero": 56,
+          "numero": 58,
           "tipo": "texto",
           "identificador": null,
           "contenido": "J) Alimentos no básicos que se listan a continuación, con una densidad calórica de 275 kilocalorías o mayor por cada 100 gramos ........................................................... 8%",
@@ -687,101 +705,101 @@
           "x_texto": 113
         },
         {
-          "numero": 57,
+          "numero": 59,
           "tipo": "numeral",
           "identificador": "1",
           "contenido": "Botanas.",
-          "padre_numero": 56,
-          "x_id": 139,
-          "x_texto": 161
-        },
-        {
-          "numero": 58,
-          "tipo": "numeral",
-          "identificador": "2",
-          "contenido": "Productos de confitería.",
-          "padre_numero": 56,
-          "x_id": 139,
-          "x_texto": 161
-        },
-        {
-          "numero": 59,
-          "tipo": "numeral",
-          "identificador": "3",
-          "contenido": "Chocolate y demás productos derivados del cacao.",
-          "padre_numero": 56,
+          "padre_numero": 58,
           "x_id": 139,
           "x_texto": 161
         },
         {
           "numero": 60,
           "tipo": "numeral",
-          "identificador": "4",
-          "contenido": "Flanes y pudines.",
-          "padre_numero": 56,
+          "identificador": "2",
+          "contenido": "Productos de confitería.",
+          "padre_numero": 58,
           "x_id": 139,
           "x_texto": 161
         },
         {
           "numero": 61,
           "tipo": "numeral",
-          "identificador": "5",
-          "contenido": "Dulces de frutas y hortalizas.",
-          "padre_numero": 56,
+          "identificador": "3",
+          "contenido": "Chocolate y demás productos derivados del cacao.",
+          "padre_numero": 58,
           "x_id": 139,
           "x_texto": 161
         },
         {
           "numero": 62,
           "tipo": "numeral",
-          "identificador": "6",
-          "contenido": "Cremas de cacahuate y avellanas.",
-          "padre_numero": 56,
+          "identificador": "4",
+          "contenido": "Flanes y pudines.",
+          "padre_numero": 58,
           "x_id": 139,
           "x_texto": 161
         },
         {
           "numero": 63,
           "tipo": "numeral",
-          "identificador": "7",
-          "contenido": "Dulces de leche.",
-          "padre_numero": 56,
+          "identificador": "5",
+          "contenido": "Dulces de frutas y hortalizas.",
+          "padre_numero": 58,
           "x_id": 139,
           "x_texto": 161
         },
         {
           "numero": 64,
           "tipo": "numeral",
-          "identificador": "8",
-          "contenido": "Alimentos preparados a base de cereales.",
-          "padre_numero": 56,
+          "identificador": "6",
+          "contenido": "Cremas de cacahuate y avellanas.",
+          "padre_numero": 58,
           "x_id": 139,
           "x_texto": 161
         },
         {
           "numero": 65,
           "tipo": "numeral",
-          "identificador": "9",
-          "contenido": "Helados, nieves y paletas de hielo.",
-          "padre_numero": 56,
+          "identificador": "7",
+          "contenido": "Dulces de leche.",
+          "padre_numero": 58,
           "x_id": 139,
           "x_texto": 161
         },
         {
           "numero": 66,
+          "tipo": "numeral",
+          "identificador": "8",
+          "contenido": "Alimentos preparados a base de cereales.",
+          "padre_numero": 58,
+          "x_id": 139,
+          "x_texto": 161
+        },
+        {
+          "numero": 67,
+          "tipo": "numeral",
+          "identificador": "9",
+          "contenido": "Helados, nieves y paletas de hielo.",
+          "padre_numero": 58,
+          "x_id": 139,
+          "x_texto": 161
+        },
+        {
+          "numero": 68,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando los alimentos mencionados cumplan con las disposiciones relativas a las especificaciones generales de etiquetado para alimentos, los contribuyentes podrán tomar en consideración las kilocalorías manifestadas en la etiqueta. Tratándose de alimentos que no tengan la etiqueta mencionada, se presumirá, salvo prueba en contrario, que tienen una densidad calórica igual o superior a 275 kilocalorías por cada 100 gramos.",
-          "padre_numero": 56,
+          "padre_numero": 58,
           "x_id": 139,
           "x_texto": 139
         },
         {
-          "numero": 67,
+          "numero": 69,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Servicio de Administración Tributaria, mediante reglas de carácter general, dará a conocer los alimentos de consumo básico, considerando su importancia en la alimentación de la población, que no quedan comprendidos en este inciso.",
-          "padre_numero": 56,
+          "padre_numero": 58,
           "x_id": 139,
           "x_texto": 139,
           "referencias": [
@@ -789,7 +807,7 @@
           ]
         },
         {
-          "numero": 68,
+          "numero": 70,
           "tipo": "texto",
           "identificador": null,
           "contenido": "K) Videojuegos con contenido violento, extremo o para adulto, no apto para personas menores de 18 años, en formato físico, siempre que la enajenación se efectúe al público en general ............................................................................................................... 8%",
@@ -798,11 +816,11 @@
           "x_texto": 113
         },
         {
-          "numero": 69,
+          "numero": 71,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Lo dispuesto en este inciso no será aplicable tratándose de la importación de los videojuegos mencionados.",
-          "padre_numero": 68,
+          "padre_numero": 70,
           "x_id": 140,
           "x_texto": 140,
           "referencias": [
@@ -810,7 +828,7 @@
           ]
         },
         {
-          "numero": 70,
+          "numero": 72,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "En la prestación de los siguientes servicios:",
@@ -819,11 +837,11 @@
           "x_texto": 107
         },
         {
-          "numero": 71,
+          "numero": 73,
           "tipo": "texto",
           "identificador": null,
           "contenido": "A) Comisión, mediación, agencia, representación, correduría, consignación y distribución, con motivo de la enajenación de los bienes señalados en los incisos A), B), C), F), I) y J) de la fracción I de este artículo. En estos casos, la tasa aplicable será la que le corresponda a la enajenación en territorio nacional del bien de que se trate en los términos que para tal efecto dispone esta Ley. No se pagará el impuesto cuando los servicios a que se refiere este inciso, sean con motivo de las enajenaciones de bienes por los que no se esté obligado al pago de este impuesto en los términos del artículo 8o. de la propia Ley.",
-          "padre_numero": 70,
+          "padre_numero": 72,
           "x_id": 113,
           "x_texto": 113,
           "referencias": [
@@ -831,38 +849,38 @@
           ]
         },
         {
-          "numero": 72,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "B) Realización de juegos con apuestas y sorteos, independientemente del nombre con el que se les designe, que requieran permiso de conformidad con lo dispuesto en la Ley Federal de Juegos y Sorteos y su Reglamento, los que realicen los organismos descentralizados, así como la realización de juegos o concursos en los que el premio se obtenga por la destreza del participante en el uso de máquinas, que en el desarrollo de aquéllos utilicen imágenes visuales electrónicas como números, símbolos, figuras u otras similares, que se efectúen en el territorio nacional. Quedan comprendidos en los juegos con apuestas, aquéllos en los que sólo se reciban, capten, crucen o exploten apuestas. Asimismo, quedan comprendidos en los sorteos, los concursos en los que se ofrezcan premios y en alguna etapa de su desarrollo intervenga directa o indirectamente el azar. ...... . 50%",
-          "padre_numero": 70,
-          "x_id": 113,
-          "x_texto": 113
-        },
-        {
-          "numero": 73,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "También quedan comprendidos en este inciso, los juegos con apuestas y sorteos que se realicen a través de Internet o medios electrónicos por residentes en el extranjero sin establecimiento en México en términos del artículo 18-B, primer párrafo, fracciones I y II de la Ley del Impuesto al Valor Agregado. Para efectos de este párrafo, los residentes en el extranjero o, en su caso, las plataformas digitales de intermediación a que se refieren los artículos 1o.-A BIS y 18-B, fracción II de la Ley del Impuesto al Valor Agregado, deberán cumplir con las obligaciones establecidas en los artículos 5o.-A BIS y 20-A de esta Ley, según corresponda, por los servicios digitales a que se refiere este párrafo.",
-          "padre_numero": 72,
-          "x_id": 140,
-          "x_texto": 140
-        },
-        {
           "numero": 74,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "La omisión en el pago del impuesto o del entero de las retenciones que, en su caso, deban efectuar y en la presentación de la declaración de pago y de la información, a que se refieren este inciso y el artículo 5o.-A BIS de esta Ley, se sancionará de conformidad con lo dispuesto en la presente Ley y en el Código Fiscal de la Federación.",
+          "contenido": "B) Realización de juegos con apuestas y sorteos, independientemente del nombre con el que se les designe, que requieran permiso de conformidad con lo dispuesto en la Ley Federal de Juegos y Sorteos y su Reglamento, los que realicen los organismos descentralizados, así como la realización de juegos o concursos en los que el premio se obtenga por la destreza del participante en el uso de máquinas, que en el desarrollo de aquéllos utilicen imágenes visuales electrónicas como números, símbolos, figuras u otras similares, que se efectúen en el territorio nacional. Quedan comprendidos en los juegos con apuestas, aquéllos en los que sólo se reciban, capten, crucen o exploten apuestas. Asimismo, quedan comprendidos en los sorteos, los concursos en los que se ofrezcan premios y en alguna etapa de su desarrollo intervenga directa o indirectamente el azar. ...... . 50%",
           "padre_numero": 72,
-          "x_id": 140,
-          "x_texto": 140
+          "x_id": 113,
+          "x_texto": 113
         },
         {
           "numero": 75,
           "tipo": "texto",
           "identificador": null,
+          "contenido": "También quedan comprendidos en este inciso, los juegos con apuestas y sorteos que se realicen a través de Internet o medios electrónicos por residentes en el extranjero sin establecimiento en México en términos del artículo 18-B, primer párrafo, fracciones I y II de la Ley del Impuesto al Valor Agregado. Para efectos de este párrafo, los residentes en el extranjero o, en su caso, las plataformas digitales de intermediación a que se refieren los artículos 1o.-A BIS y 18-B, fracción II de la Ley del Impuesto al Valor Agregado, deberán cumplir con las obligaciones establecidas en los artículos 5o.-A BIS y 20-A de esta Ley, según corresponda, por los servicios digitales a que se refiere este párrafo.",
+          "padre_numero": 74,
+          "x_id": 140,
+          "x_texto": 140
+        },
+        {
+          "numero": 76,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La omisión en el pago del impuesto o del entero de las retenciones que, en su caso, deban efectuar y en la presentación de la declaración de pago y de la información, a que se refieren este inciso y el artículo 5o.-A BIS de esta Ley, se sancionará de conformidad con lo dispuesto en la presente Ley y en el Código Fiscal de la Federación.",
+          "padre_numero": 74,
+          "x_id": 140,
+          "x_texto": 140
+        },
+        {
+          "numero": 77,
+          "tipo": "texto",
+          "identificador": null,
           "contenido": "Asimismo, el incumplimiento a las obligaciones a que se refiere el párrafo anterior y las fracciones III, inciso a) y IV, inciso a) del artículo 20-A de esta Ley, dará lugar al bloqueo temporal del acceso al servicio digital del prestador de los servicios digitales, bloqueo que se realizará de conformidad con lo dispuesto en los artículos 18-H BIS a 18-H QUINTUS de la Ley del Impuesto al Valor Agregado.",
-          "padre_numero": 72,
+          "padre_numero": 74,
           "x_id": 140,
           "x_texto": 140,
           "referencias": [
@@ -870,11 +888,11 @@
           ]
         },
         {
-          "numero": 76,
+          "numero": 78,
           "tipo": "texto",
           "identificador": null,
           "contenido": "C) Los que se proporcionen en territorio nacional a través de una o más redes públicas de telecomunicaciones. .............................................................................................. 3%",
-          "padre_numero": 70,
+          "padre_numero": 72,
           "x_id": 113,
           "x_texto": 113,
           "referencias": [
@@ -882,47 +900,47 @@
           ]
         },
         {
-          "numero": 77,
+          "numero": 79,
           "tipo": "texto",
           "identificador": null,
           "contenido": "D) Los que se proporcionen en territorio nacional que permitan el acceso o descarga de videojuegos con contenido violento, extremo o para adulto, no apto para personas menores de 18 años, proporcionados por residentes en el extranjero sin establecimiento en México y residentes en el país, en términos del artículo 18-B, primer párrafo y fracción I de la Ley del Impuesto al Valor Agregado, en los siguientes supuestos: ............. 8%",
-          "padre_numero": 70,
+          "padre_numero": 72,
           "x_id": 113,
           "x_texto": 113
         },
         {
-          "numero": 78,
+          "numero": 80,
           "tipo": "numeral",
           "identificador": "1",
           "contenido": "El acceso o descarga permitido directamente por el prestador del servicio digital.",
-          "padre_numero": 77,
+          "padre_numero": 79,
           "x_id": 140,
           "x_texto": 162
         },
         {
-          "numero": 79,
+          "numero": 81,
           "tipo": "numeral",
           "identificador": "2",
           "contenido": "El acceso o descarga permitido a través de plataformas digitales de intermediación a que se refieren los artículos 1o.-A BIS y 18-B, fracción II de la Ley del Impuesto al Valor Agregado.",
-          "padre_numero": 77,
+          "padre_numero": 79,
           "x_id": 140,
           "x_texto": 162
         },
         {
-          "numero": 80,
+          "numero": 82,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Quedan comprendidos en este inciso los videojuegos con contenido violento, extremo o para adulto, no apto para personas menores de 18 años, cuyo acceso o descarga se realice sin el pago de una contraprestación, pero que oferten cualquier contenido adicional dentro del videojuego. En este caso, la tasa se aplicará sobre el precio pagado por el contenido adicional.",
-          "padre_numero": 77,
+          "padre_numero": 79,
           "x_id": 140,
           "x_texto": 140
         },
         {
-          "numero": 81,
+          "numero": 83,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando el acceso o descarga a que se refiere este inciso, se realice mediante el pago de una membresía o suscripción, periódica o no, que dé acceso a un catálogo de videojuegos que incluya videojuegos con contenido violento, extremo o para adulto, no apto para personas menores de 18 años, ya sea exclusivamente o conjuntamente con otro tipo de contenido o servicio digital, la tasa se aplicará únicamente al precio que corresponda por el acceso o descarga de cada videojuego por el que se deba pagar el impuesto en términos de este inciso, siempre que en el comprobante respectivo se haga la separación de cada uno de ellos. Cuando no se haga la separación mencionada, la contraprestación cobrada se entenderá que corresponde a un 70% del monto de los servicios a que se refiere este inciso, en cuyo caso dicho impuesto no podrá ser menor que el que corresponda al servicio digital de videojuegos que se hubiera pagado de manera separada al precio de la membresía o suscripción.",
-          "padre_numero": 77,
+          "padre_numero": 79,
           "x_id": 140,
           "x_texto": 140,
           "referencias": [
@@ -930,7 +948,7 @@
           ]
         },
         {
-          "numero": 82,
+          "numero": 84,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "En la exportación definitiva que realicen las empresas residentes en el país en los términos de la Ley Aduanera, de los bienes a que se refiere la fracción I, inciso J) de este artículo, siempre que sean fabricantes o productoras de dichos bienes y hayan utilizado insumos gravados de conformidad con el inciso J) citado, por los que hayan pagado el impuesto en la importación o les hayan trasladado el gravamen en la adquisición de los mismos .............................. 0%",
@@ -939,20 +957,20 @@
           "x_texto": 107
         },
         {
-          "numero": 83,
+          "numero": 85,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos de esta fracción, la tasa se aplicará al valor de la enajenación a que se refiere el artículo 11 de esta Ley y, en su defecto, a la base gravable del impuesto general de exportación en términos de la Ley Aduanera.",
-          "padre_numero": 82,
+          "padre_numero": 84,
           "x_id": 114,
           "x_texto": 114
         },
         {
-          "numero": 84,
+          "numero": 86,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las exportaciones a las que se les aplica la tasa del 0%, producirán los mismos efectos legales que los actos o actividades por los que se deba pagar el impuesto conforme a esta Ley y los productores que exporten serán considerados como contribuyentes del impuesto que establece esta Ley por los bienes a que se refiere esta fracción.",
-          "padre_numero": 82,
+          "padre_numero": 84,
           "x_id": 114,
           "x_texto": 114,
           "referencias": [
@@ -1198,7 +1216,7 @@
           "numero": 7,
           "tipo": "fraccion",
           "identificador": "II",
-          "contenido": "Con los elementos señalados, se aplicará la siguiente fórmula: 44 a x b x c x d e = x 12 10000",
+          "contenido": "Con los elementos señalados, se aplicará la siguiente fórmula: e = 44 x a x b x c x d 12 10000",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
@@ -2824,15 +2842,6 @@
           "referencias": [
             "Artículo adicionado DOF 28-12-1994. Derogado DOF 31-12-1998"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Enajenación",
-          "padre_numero": 1,
-          "x_id": 259,
-          "x_texto": 259
         }
       ]
     },
@@ -2963,10 +2972,265 @@
           "numero": 5,
           "tipo": "inciso",
           "identificador": "c",
-          "contenido": ") Las que realicen personas diferentes de los fabricantes, productores o importadores, de los bienes a que se refieren los incisos C), D), G) y H) de la fracción I del artículo 2o. y el",
+          "contenido": ") Las que realicen personas diferentes de los fabricantes, productores o importadores, de los bienes a que se refieren los incisos C), D), G) y H) de la fracción I del artículo 2o. y el artículo 2o.-A de esta Ley. En estos casos, las personas distintas de los fabricantes, productores o importadores, no se consideran contribuyentes de este impuesto por dichas enajenaciones.",
           "padre_numero": 2,
           "x_id": 107,
+          "x_texto": 129,
+          "referencias": [
+            "Inciso reformado DOF 31-12-2003, 11-12-2013, 18-11-2015"
+          ]
+        },
+        {
+          "numero": 6,
+          "tipo": "inciso",
+          "identificador": "d",
+          "contenido": ") Las de cerveza, bebidas refrescantes, cigarros, puros y otros tabacos labrados u otros productos que contengan nicotina, así como las de los bienes a que se refiere el inciso F) de la fracción I del artículo 2o. de esta Ley, que se efectúen al público en general, salvo que el enajenante sea fabricante, productor, envasador, distribuidor o importador de los bienes que enajene. No gozarán del beneficio establecido en este inciso, las enajenaciones de los citados bienes efectuadas por comerciantes que obtengan la mayor parte del importe de sus ingresos de enajenaciones a personas que no forman parte del público en general. No se consideran enajenaciones efectuadas con el público en general cuando por las mismas se expidan comprobantes que cumplan con los requisitos a que se refiere el artículo 29-A del Código Fiscal de la Federación.",
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 129,
+          "referencias": [
+            "Inciso reformado DOF 27-12-2006, 19-11-2010, 07-11-2025"
+          ]
+        },
+        {
+          "numero": 7,
+          "tipo": "inciso",
+          "identificador": "e",
+          "contenido": ") Alcohol, alcohol desnaturalizado y mieles incristalizables, siempre que por su enajenación se cumpla con las obligaciones establecidas en el artículo 19, fracciones I, II, primer párrafo, VI, VIII, X, XII y XIV de esta Ley y las demás obligaciones que establezcan las disposiciones fiscales.",
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 129,
+          "referencias": [
+            "Inciso reformado DOF 30-12-2002. Derogado DOF 31-12-2003. Adicionado DOF 28-04-2010"
+          ]
+        },
+        {
+          "numero": 8,
+          "tipo": "inciso",
+          "identificador": "f",
+          "contenido": ") Las de bebidas saborizadas en restaurantes, bares y otros lugares en donde se proporcionen servicios de alimentos y bebidas, bebidas saborizadas que cuenten con registro sanitario como medicamentos emitido por la autoridad sanitaria, la leche en cualquier presentación, incluyendo la que esté mezclada con grasa vegetal y los sueros orales que exclusivamente contengan todas y cada una de las substancias a que se refiere la fracción XXI del artículo 3o. de esta Ley.",
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 129,
+          "referencias": [
+            "Inciso derogado DOF 27-12-2006. Adicionado DOF 11-12-2013. Reformado DOF 07-11-2025"
+          ]
+        },
+        {
+          "numero": 9,
+          "tipo": "inciso",
+          "identificador": "g",
+          "contenido": ") (Se deroga).",
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 129,
+          "referencias": [
+            "Inciso adicionado DOF 30-12-2002. Derogado DOF 11-12-2013"
+          ]
+        },
+        {
+          "numero": 10,
+          "tipo": "inciso",
+          "identificador": "h",
+          "contenido": ") Plaguicidas que conforme a la categoría de peligro de toxicidad aguda correspondan a la categoría 5.",
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 129,
+          "referencias": [
+            "Inciso adicionado DOF 11-12-2013"
+          ]
+        },
+        {
+          "numero": 11,
+          "tipo": "inciso",
+          "identificador": "i",
+          "contenido": ") Petróleo crudo y gas natural.",
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 129,
+          "referencias": [
+            "Inciso adicionado DOF 11-12-2013"
+          ]
+        },
+        {
+          "numero": 12,
+          "tipo": "inciso",
+          "identificador": "j",
+          "contenido": ") Las de otros productos que contengan nicotina que sean utilizados como terapia de reemplazo de nicotina que cuenten con registro sanitario como medicamentos emitido por la autoridad sanitaria.",
+          "padre_numero": 2,
+          "x_id": 107,
+          "x_texto": 129,
+          "referencias": [
+            "Inciso adicionado DOF 07-11-2025"
+          ]
+        },
+        {
+          "numero": 13,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "Por la exportación de los bienes a que se refiere esta Ley. En estos casos, los exportadores estarán a lo dispuesto en la fracción XI del artículo 19 de la misma.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 14,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Lo dispuesto en esta fracción no será aplicable a las exportaciones que se realicen de conformidad con lo dispuesto en el artículo 2o., fracción III de esta Ley.",
+          "padre_numero": 13,
+          "x_id": 107,
+          "x_texto": 107,
+          "referencias": [
+            "Párrafo adicionado DOF 18-11-2015"
+          ]
+        },
+        {
+          "numero": 15,
+          "tipo": "fraccion",
+          "identificador": "III",
+          "contenido": "Por las actividades a que se refiere el artículo 2o., fracción II, inciso B) de esta Ley, en los siguientes supuestos:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 16,
+          "tipo": "inciso",
+          "identificador": "a",
+          "contenido": ") Cuando se lleven a cabo por personas morales sin fines de lucro autorizadas para recibir donativos deducibles para los efectos de la Ley del Impuesto sobre la Renta, a que se refiere el artículo 79, fracciones VI, X y XVII de dicha Ley, siempre que destinen la totalidad de sus ingresos, una vez descontados los premios efectivamente pagados, a los fines para los cuales fueron constituidas.",
+          "padre_numero": 15,
+          "x_id": 107,
+          "x_texto": 129,
+          "referencias": [
+            "Inciso reformado DOF 11-12-2013"
+          ]
+        },
+        {
+          "numero": 17,
+          "tipo": "inciso",
+          "identificador": "b",
+          "contenido": ") Tratándose de sorteos, cuando todos los participantes obtengan dicha calidad sin sujetarse a pago, a la adquisición de un bien o a la contratación de un servicio.",
+          "padre_numero": 15,
+          "x_id": 107,
           "x_texto": 129
+        },
+        {
+          "numero": 18,
+          "tipo": "inciso",
+          "identificador": "c",
+          "contenido": ") Tratándose de sorteos, cuando todos los participantes obtengan dicha calidad a título gratuito por el solo hecho de adquirir un bien o contratar un servicio, siempre que el realizador cumpla los requisitos siguientes:",
+          "padre_numero": 15,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 19,
+          "tipo": "numeral",
+          "identificador": "1",
+          "contenido": "No obtenga más de diez permisos para celebrar sorteos en un año de calendario.",
+          "padre_numero": 18,
+          "x_id": 129,
+          "x_texto": 151
+        },
+        {
+          "numero": 20,
+          "tipo": "numeral",
+          "identificador": "2",
+          "contenido": "El monto total de los premios ofrecidos en un año de calendario no exceda el 3% de los ingresos obtenidos en el año inmediato anterior.",
+          "padre_numero": 18,
+          "x_id": 129,
+          "x_texto": 151
+        },
+        {
+          "numero": 21,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Quienes realicen sorteos en el ejercicio de inicio de actividades, podrán estimar sus ingresos en dicho ejercicio para los efectos de lo dispuesto en este inciso. En el supuesto de que el monto de los premios ofrecidos exceda el por ciento a que se refiere el párrafo anterior, se pagará el impuesto que corresponda de conformidad con lo dispuesto en esta Ley con la actualización y los recargos respectivos.",
+          "padre_numero": 18,
+          "x_id": 129,
+          "x_texto": 129,
+          "referencias": [
+            "Fracción adicionada DOF 01-10-2007"
+          ]
+        },
+        {
+          "numero": 22,
+          "tipo": "fraccion",
+          "identificador": "IV",
+          "contenido": "Por los servicios de telecomunicaciones siguientes:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 23,
+          "tipo": "inciso",
+          "identificador": "a",
+          "contenido": ") De telefonía fija rural, consistente en el servicio de telefonía fija que se presta en poblaciones de hasta 5,000 habitantes, conforme a los últimos resultados definitivos, referidos específicamente a población, provenientes del censo general de población y vivienda que publica el Instituto Nacional de Estadística y Geografía.",
+          "padre_numero": 22,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 24,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "En el caso de que se levante un conteo de población y vivienda o un instrumento de naturaleza similar de conformidad con la Ley del Sistema Nacional de Información Estadística y Geográfica, en forma previa al siguiente censo general de población y vivienda, dicho conteo o instrumento se aplicará para los efectos del párrafo anterior.",
+          "padre_numero": 23,
+          "x_id": 129,
+          "x_texto": 129
+        },
+        {
+          "numero": 25,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Servicio de Administración Tributaria dará a conocer en su página electrónica el listado de las poblaciones a que se refiere este inciso.",
+          "padre_numero": 23,
+          "x_id": 129,
+          "x_texto": 129
+        },
+        {
+          "numero": 26,
+          "tipo": "inciso",
+          "identificador": "b",
+          "contenido": ") De telefonía pública, consistente en el acceso a los servicios proporcionados a través de redes públicas de telecomunicaciones, y que deberá prestarse al público en general, por medio de la instalación, operación y explotación de aparatos telefónicos de uso público.",
+          "padre_numero": 22,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 27,
+          "tipo": "inciso",
+          "identificador": "c",
+          "contenido": ") De interconexión, consistente en la conexión física o virtual, lógica y funcional, entre redes públicas de telecomunicaciones, que permite la conducción de tráfico entre dichas redes y/o entre servicios de telecomunicaciones prestados a través de las mismas, de manera que los usuarios de una de las redes públicas de telecomunicaciones puedan conectarse e intercambiar tráfico con los usuarios de la otra red pública de telecomunicaciones y viceversa, o bien, permite a una red pública de telecomunicaciones y/o a sus usuarios la utilización de servicios de telecomunicaciones y/o capacidad y funciones provistos por o a través de otra red pública de telecomunicaciones. Quedan comprendidos en los servicios de interconexión, los que se lleven a cabo entre residentes en México, así como los que se lleven a cabo por residentes en México con residentes en el extranjero.",
+          "padre_numero": 22,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 28,
+          "tipo": "inciso",
+          "identificador": "d",
+          "contenido": ") De acceso a Internet, a través de una red fija o móvil, consistente en todos los servicios, aplicaciones y contenidos que mediante dicho acceso a Internet se presten a través de una red de telecomunicaciones.",
+          "padre_numero": 22,
+          "x_id": 107,
+          "x_texto": 129
+        },
+        {
+          "numero": 29,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cuando los servicios a que se refiere el párrafo anterior se ofrezcan de manera conjunta con otros servicios que se presten a través de una red pública de telecomunicaciones, la exención a que se refiere este inciso será procedente siempre que en el comprobante fiscal respectivo, se determine la contraprestación correspondiente al servicio de acceso a Internet de manera separada a los demás servicios de telecomunicaciones que se presten a través de una red pública y que dicha contraprestación se determine de acuerdo con los precios y montos de las contraprestaciones que se hubieran cobrado de no haberse proporcionado el servicio en forma conjunta con otros servicios de telecomunicaciones gravados por esta Ley. En este caso los servicios de Internet exentos no podrán exceder del 30% del total de las contraprestaciones antes referidas que se facturen en forma conjunta.",
+          "padre_numero": 28,
+          "x_id": 129,
+          "x_texto": 129,
+          "referencias": [
+            "Párrafo reformado DOF 11-12-2013",
+            "Fracción adicionada DOF 27-11-2009",
+            "Artículo reformado DOF 31-12-1981, 31-12-1982, 30-12-1983, 31-12-1985, 31-12-1987, 31-12-1988, 28-12-1989, 26-12-1990, 20-12-1991,",
+            "20-07-1992, 03-12-1993, 30-12-1996, 31-12-1998, 31-12-1999, 31-12-2000, 01-01-2002"
+          ]
         }
       ]
     },
@@ -3100,15 +3364,6 @@
             "Artículo reformado DOF 30-12-1983, 31-12-1987, 20-12-1991, 20-07-1992, 03-12-1993, 28-12-1994, 15-12-1995, 10-05-1996, 30-12-1996,",
             "29-12-1997, 31-12-1998, 31-12-1999, 01-01-2002, 30-12-2002, 23-12-2005, 27-11-2009, 11-12-2013, 18-11-2015"
           ]
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Importación de Bienes",
-          "padre_numero": 4,
-          "x_id": 232,
-          "x_texto": 232
         }
       ]
     },
@@ -3468,15 +3723,6 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1998, 31-12-1999, 01-01-2002, 18-11-2015"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Prestación de Servicios",
-          "padre_numero": 1,
-          "x_id": 229,
-          "x_texto": 229
         }
       ]
     },
@@ -3621,15 +3867,6 @@
           "referencias": [
             "Artículo adicionado DOF 07-11-2025"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Obligaciones de los Contribuyentes",
-          "padre_numero": 1,
-          "x_id": 194,
-          "x_texto": 194
         }
       ]
     },
@@ -3932,10 +4169,246 @@
           "numero": 27,
           "tipo": "fraccion",
           "identificador": "XIII",
-          "contenido": "Los contribuyentes de los bienes a que se refieren los incisos A), D), F) y H) de la fracción I del",
+          "contenido": "Los contribuyentes de los bienes a que se refieren los incisos A), D), F) y H) de la fracción I del artículo 2o. de esta Ley, obligados al pago del impuesto especial sobre producción y servicios, deberán proporcionar al Servicio de Administración Tributaria, trimestralmente, en los meses de abril, julio, octubre y enero, del año que corresponda, el precio de enajenación de cada producto, valor y volumen de los mismos, efectuado en el trimestre inmediato anterior.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Párrafo reformado DOF 27-12-2006, 19-11-2010, 11-12-2013, 18-11-2015"
+          ]
+        },
+        {
+          "numero": 28,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los contribuyentes que enajenen vinos de mesa, deberán cumplir con la obligación a que se refiere esta fracción en los meses de enero y julio de cada año.",
+          "padre_numero": 27,
+          "x_id": 113,
+          "x_texto": 113,
+          "referencias": [
+            "Párrafo adicionado DOF 01-12-2004",
+            "Fracción reformada DOF 30-12-2002"
+          ]
+        },
+        {
+          "numero": 29,
+          "tipo": "fraccion",
+          "identificador": "XIV",
+          "contenido": "Los fabricantes, productores, envasadores e importadores, de alcohol y de bebidas alcohólicas, deberán estar inscritos en el Padrón de Contribuyentes de Bebidas Alcohólicas, a cargo de la Secretaría de Hacienda y Crédito Público y deberán cumplir con esta obligación para poder solicitar marbetes y precintos, según se trate, debiendo cumplir con las disposiciones del Reglamento de esta Ley y disposiciones de carácter general que para tal efecto se emitan.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción reformada DOF 31-12-2003, 28-06-2006, 12-11-2021"
+          ]
+        },
+        {
+          "numero": 30,
+          "tipo": "fraccion",
+          "identificador": "XV",
+          "contenido": "Los productores, envasadores e importadores de bebidas alcohólicas estarán obligados a presentar a la Secretaría de Hacienda y Crédito Público, trimestralmente, en los meses de abril, julio, octubre y enero, del año que corresponda, un informe de los números de folio de marbetes y precintos, según corresponda, obtenidos, utilizados, destruidos, e inutilizados durante el trimestre inmediato anterior.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 31,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los contribuyentes a que se refiere esta fracción o terceros con ellos relacionados, deberán proporcionar a las autoridades fiscales, con motivo de la solicitud de marbetes o precintos que realicen, la información o documentación que sea necesaria para constatar el uso adecuado de los marbetes o precintos que les hayan sido entregados.",
+          "padre_numero": 30,
+          "x_id": 113,
+          "x_texto": 113,
+          "referencias": [
+            "Párrafo adicionado DOF 01-10-2007",
+            "Fracción reformada DOF 01-12-2004, 23-12-2005, 28-06-2006"
+          ]
+        },
+        {
+          "numero": 32,
+          "tipo": "fraccion",
+          "identificador": "XVI",
+          "contenido": "Los productores o envasadores de los bienes a que se refiere el numeral 3 del inciso A) de la fracción I del artículo 2o. de esta Ley, estarán obligados a llevar un control volumétrico de producción y presentar a la Secretaría de Hacienda y Crédito Público, trimestralmente, en los meses de abril, julio, octubre y enero, del año que corresponda, un informe que contenga el número de litros producidos de conformidad con el citado control, del trimestre inmediato anterior a la fecha en que se informa.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 33,
+          "tipo": "fraccion",
+          "identificador": "XVII",
+          "contenido": "Proporcionar la información que del impuesto especial sobre producción y servicios se les solicite en las declaraciones del impuesto sobre la renta.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 34,
+          "tipo": "fraccion",
+          "identificador": "XVIII",
+          "contenido": "Los contribuyentes que enajenen al público en general bebidas alcohólicas para su consumo en el mismo lugar o establecimiento en el que se enajenen, deberán destruir los envases que las contenían, inmediatamente después de que se haya agotado su contenido. El Servicio de Administración Tributaria, a través de reglas de carácter general, podrá establecer los casos en los que no será aplicable la obligación de destruir envases a que se refiere la presente fracción.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción reformada DOF 12-11-2021"
+          ]
+        },
+        {
+          "numero": 35,
+          "tipo": "fraccion",
+          "identificador": "XIX",
+          "contenido": "Los importadores de los bienes a que se refiere el inciso B) de la fracción I del artículo 2o. de esta Ley, que no elaboren bebidas alcohólicas, deberán estar inscritos en el Padrón de Importadores a que se refiere el artículo 59, fracción IV de la Ley Aduanera.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción reformada DOF 31-12-2003, 09-12-2019"
+          ]
+        },
+        {
+          "numero": 36,
+          "tipo": "fraccion",
+          "identificador": "XX",
+          "contenido": "(Se deroga).",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción adicionada DOF 23-12-2005. Derogada DOF 09-12-2019"
+          ]
+        },
+        {
+          "numero": 37,
+          "tipo": "fraccion",
+          "identificador": "XXI",
+          "contenido": "(Se deroga).",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción adicionada DOF 23-12-2005. Derogada DOF 09-12-2019"
+          ]
+        },
+        {
+          "numero": 38,
+          "tipo": "fraccion",
+          "identificador": "XXII",
+          "contenido": "Los productores, fabricantes e importadores de cigarros y otros tabacos labrados, con excepción de puros y otros tabacos labrados hechos enteramente a mano, deberán imprimir un código de seguridad en cada una de las cajetillas, estuches, empaques, envolturas o cualquier otro objeto que contenga cigarros u otros tabacos labrados para su venta en México, el cual será generado y proporcionado por el Servicio de Administración Tributaria. Asimismo, deberán registrar, almacenar y proporcionar a dicho órgano desconcentrado la información que se genere derivada de los mecanismos o sistemas de impresión del referido código.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 39,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para los efectos del párrafo anterior, los productores, fabricantes e importadores de cigarros y otros tabacos labrados, con excepción de puros y otros tabacos labrados hechos enteramente a mano, deberán cumplir con lo siguiente:",
+          "padre_numero": 38,
+          "x_id": 113,
+          "x_texto": 113
+        },
+        {
+          "numero": 40,
+          "tipo": "inciso",
+          "identificador": "a",
+          "contenido": ") Imprimir el código de seguridad a que se refiere esta fracción con las características técnicas y de seguridad que determine el Servicio de Administración Tributaria, mediante reglas de carácter general.",
+          "padre_numero": 38,
+          "x_id": 113,
+          "x_texto": 135
+        },
+        {
+          "numero": 41,
+          "tipo": "inciso",
+          "identificador": "b",
+          "contenido": ") Imprimir el código de seguridad a que se refiere esta fracción en la línea de producción de las cajetillas, estuches, empaques, envolturas o cualquier otro objeto que contenga cigarros u otros tabacos labrados o antes de la importación a territorio nacional de las mismas, utilizando los mecanismos o sistemas que cumplan las características técnicas y de seguridad que determine el Servicio de Administración Tributaria, mediante reglas de carácter general.",
+          "padre_numero": 38,
+          "x_id": 113,
+          "x_texto": 135
+        },
+        {
+          "numero": 42,
+          "tipo": "inciso",
+          "identificador": "c",
+          "contenido": ") Registrar y almacenar la información contenida en el código de seguridad a que se refiere esta fracción, así como la información de la impresión del mismo en las cajetillas, estuches, empaques, envolturas o cualquier otro objeto que contenga cigarros u otros tabacos labrados, generada por los mecanismos o sistemas de impresión del referido código, en los términos que determine el Servicio de Administración Tributaria, mediante reglas de carácter general.",
+          "padre_numero": 38,
+          "x_id": 113,
+          "x_texto": 135
+        },
+        {
+          "numero": 43,
+          "tipo": "inciso",
+          "identificador": "d",
+          "contenido": ") Proporcionar al Servicio de Administración Tributaria, en forma permanente, la información en línea y en tiempo real de los registros que se realicen conforme al inciso anterior, en los términos que determine dicho órgano desconcentrado, mediante reglas de carácter general.",
+          "padre_numero": 38,
+          "x_id": 113,
+          "x_texto": 135
+        },
+        {
+          "numero": 44,
+          "tipo": "inciso",
+          "identificador": "e",
+          "contenido": ") Instrumentar las demás características técnicas y de seguridad que establezca el Servicio de Administración Tributaria, mediante reglas de carácter general.",
+          "padre_numero": 38,
+          "x_id": 113,
+          "x_texto": 135
+        },
+        {
+          "numero": 45,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "El Servicio de Administración Tributaria podrá requerir a los productores, fabricantes e importadores de cigarros y otros tabacos labrados, con excepción de puros y otros tabacos labrados hechos enteramente a mano, la información o la documentación a que se refieren los párrafos primero y segundo de esta fracción, así como la relativa a sus sistemas, clientes, operaciones y mecanismos, que estime necesaria, relacionada con el cumplimiento de las obligaciones a que se refiere esta fracción. Asimismo, dicho órgano desconcentrado podrá realizar en todo momento verificaciones en los locales, establecimientos o domicilios de los mismos, a efecto de constatar el cumplimiento de las obligaciones a que se encuentran afectos.",
+          "padre_numero": 38,
+          "x_id": 113,
+          "x_texto": 113
+        },
+        {
+          "numero": 46,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Los contribuyentes a que se refiere esta fracción deberán poner a disposición de las autoridades fiscales la información, documentación o dispositivos necesarios, que permitan constatar el cumplimiento de las obligaciones previstas en los párrafos primero y segundo de esta fracción y en las reglas de carácter general que al efecto emita el Servicio de Administración Tributaria. Asimismo, deberán permitir a las autoridades fiscales la realización de las verificaciones a que se refiere el párrafo anterior.",
+          "padre_numero": 38,
+          "x_id": 113,
+          "x_texto": 113
+        },
+        {
+          "numero": 47,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cuando los productores, fabricantes e importadores de cigarros y otros tabacos labrados, con excepción de puros y otros tabacos labrados hechos enteramente a mano, incumplan con alguna de las obligaciones establecidas en esta Ley, o bien, cuando no atiendan lo señalado en las reglas de carácter general que al efecto establezca el Servicio de Administración Tributaria, dicho órgano desconcentrado impondrá las sanciones que procedan, conforme al Código Fiscal de la Federación.",
+          "padre_numero": 38,
+          "x_id": 113,
+          "x_texto": 113,
+          "referencias": [
+            "Fracción adicionada DOF 27-11-2009. Reformada DOF 11-12-2013, 12-11-2021"
+          ]
+        },
+        {
+          "numero": 48,
+          "tipo": "fraccion",
+          "identificador": "XXIII",
+          "contenido": "Los importadores de concentrados, polvos, jarabes, esencias o extractos de sabores, para los efectos de pagar el impuesto en la importación, deberán manifestar bajo protesta de decir verdad, el número de litros de bebidas saborizadas con azúcares o edulcorantes añadidos que, de conformidad con las especificaciones del fabricante, se puedan obtener. Las especificaciones no podrán ser menores a las que el importador manifieste en la enajenación que de dichos bienes haga en el mercado nacional.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción adicionada DOF 11-12-2013. Reformada DOF 07-11-2025"
+          ]
+        },
+        {
+          "numero": 49,
+          "tipo": "fraccion",
+          "identificador": "XXIV",
+          "contenido": "Los establecimientos de consumo final tendrán la obligación de realizar, en presencia del consumidor, la lectura a través de un dispositivo móvil del código QR del marbete que se encuentra adherido a los envases o impreso en la etiqueta o contraetiqueta de los mismos.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción adicionada DOF 12-11-2021",
+            "Fe de erratas al artículo DOF 17-04-1981. Reformado DOF 31-12-1981, 31-12-1982, 30-12-1983, 31-12-1987, 28-12-1989, 26-12-1990,",
+            "20-12-1991, 20-07-1992, 03-12-1993, 28-12-1994, 10-05-1996, 30-12-1996, 29-12-1997, 29-05-1998, 31-12-1998, 31-12-1999, 31-12-2000,",
+            "01-01-2002"
+          ]
         }
       ]
     },
@@ -4257,15 +4730,6 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1982, 30-12-1983, 28-12-1989, 20-12-1991, 28-12-1994, 01-01-2002, 18-11-2015"
           ]
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Facultades de las Autoridades",
-          "padre_numero": 2,
-          "x_id": 209,
-          "x_texto": 209
         }
       ]
     },
@@ -4648,18 +5112,6 @@
           "referencias": [
             "Artículo adicionado DOF 31-12-1999. Reformado DOF 31-12-2000. Derogado DOF 01-01-2002"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Artículo 26-C- (Se deroga).",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
-          "referencias": [
-            "Artículo adicionado DOF 31-12-1999. Reformado DOF 31-12-2000. Derogado DOF 01-01-2002"
-          ]
         }
       ]
     },
@@ -4847,18 +5299,6 @@
           "referencias": [
             "Artículo adicionado DOF 31-12-1999. Derogado DOF 01-01-2002"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Artículo 26-LL.- (Se deroga).",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
-          "referencias": [
-            "Artículo adicionado DOF 31-12-1999. Derogado DOF 01-01-2002"
-          ]
         }
       ]
     },
@@ -4913,18 +5353,6 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "(Se deroga).",
-          "padre_numero": null,
-          "x_id": 85,
-          "x_texto": 85,
-          "referencias": [
-            "Artículo adicionado DOF 31-12-1999. Derogado DOF 01-01-2002"
-          ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Artículo 26-Ñ.- (Se deroga).",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85,
@@ -4990,19 +5418,6 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 31-12-1999. Derogado DOF 01-01-2002"
-          ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Participaciones a las Entidades Federativas",
-          "padre_numero": 1,
-          "x_id": 174,
-          "x_texto": 174,
-          "referencias": [
-            "Denominación del Capítulo reformada DOF 31-12-1999 (queda como “Título III”). Denominación reformada DOF 01-01-2002",
-            "(antes Título III “De las Participaciones a las Entidades Federativas”)"
           ]
         }
       ]

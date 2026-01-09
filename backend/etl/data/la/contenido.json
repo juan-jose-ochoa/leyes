@@ -665,18 +665,6 @@
           "referencias": [
             "Artículo reformado DOF 31-12-1998, 31-12-2000, 01-01-2002"
           ]
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Notificaciones Electrónicas",
-          "padre_numero": 3,
-          "x_id": 234,
-          "x_texto": 234,
-          "referencias": [
-            "Capítulo adicionado DOF 09-12-2013"
-          ]
         }
       ]
     },
@@ -845,19 +833,10 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Control de aduana en el despacho",
+          "contenido": "Título Segundo Control de aduana en el despacho",
           "padre_numero": 2,
-          "x_id": 216,
-          "x_texto": 216
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Entrada, salida y control de mercancías",
-          "padre_numero": 2,
-          "x_id": 202,
-          "x_texto": 202
+          "x_id": 266,
+          "x_texto": 266
         }
       ]
     },
@@ -2178,15 +2157,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Depósito ante la aduana",
-          "padre_numero": 2,
-          "x_id": 243,
-          "x_texto": 243
         }
       ]
     },
@@ -2824,15 +2794,6 @@
           "referencias": [
             "Artículo reformado DOF 25-06-2018"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Despacho de mercancías",
-          "padre_numero": 1,
-          "x_id": 240,
-          "x_texto": 240
         }
       ]
     },
@@ -3919,24 +3880,6 @@
             "Párrafo adicionado DOF 25-06-2018",
             "Artículo reformado DOF 30-12-1996, 31-12-1998, 09-12-2013"
           ]
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Contribuciones, cuotas compensatorias y demás regulaciones y restricciones no arancelarias al comercio exterior",
-          "padre_numero": null,
-          "x_id": 94,
-          "x_texto": 94
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Hechos gravados, contribuyentes y responsables",
-          "padre_numero": 4,
-          "x_id": 176,
-          "x_texto": 176
         }
       ]
     },
@@ -4137,10 +4080,100 @@
           "numero": 6,
           "tipo": "fraccion",
           "identificador": "III",
-          "contenido": "Ill. Los propietarios y empresarios de medios de transporte, los pilotos, capitanes y en general los conductores de los mismos, por los que causen las mercancías que transporten, cuando dichas personas no cumplan las obligaciones que les imponen las leyes a que se refiere el",
+          "contenido": "Ill. Los propietarios y empresarios de medios de transporte, los pilotos, capitanes y en general los conductores de los mismos, por los que causen las mercancías que transporten, cuando dichas personas no cumplan las obligaciones que les imponen las leyes a que se refiere el artículo 1o. de esta Ley, o sus reglamentos. En los casos de tránsito de mercancías, los propietarios y empresarios de medios de transporte público únicamente serán responsables cuando no cuenten con la documentación que acredite la legal estancia en el país de las mercancías que transporten.",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
+        },
+        {
+          "numero": 7,
+          "tipo": "fraccion",
+          "identificador": "IV",
+          "contenido": "Los remitentes de mercancías de la franja o región fronteriza al resto del país, por las diferencias de contribuciones que se deban pagar por este motivo.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 8,
+          "tipo": "fraccion",
+          "identificador": "V",
+          "contenido": "Los que enajenen las mercancías materia de importación o exportación, en los casos de subrogación establecidos por esta Ley, por los causados por las citadas mercancías.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107
+        },
+        {
+          "numero": 9,
+          "tipo": "fraccion",
+          "identificador": "VI",
+          "contenido": "Los almacenes generales de depósito o el titular del local destinado a exposiciones internacionales por las mercancías no arribadas o faltantes, excepto cuando el no arribo de la mercancía o los faltantes se originen por caso fortuito o fuerza mayor, o bien, por las mercancías sobrantes, cuando no presenten los avisos a que se refiere el artículo 119 de esta Ley.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción reformada DOF 25-06-2018, 19-11-2025"
+          ]
+        },
+        {
+          "numero": 10,
+          "tipo": "fraccion",
+          "identificador": "VII",
+          "contenido": "Las personas que hayan obtenido concesión o autorización para prestar los servicios de manejo, almacenaje y custodia de las mercancías de comercio exterior, cuando no cumplan con las obligaciones señaladas en las fracciones VII y VIII del artículo 26 de esta Ley.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción adicionada DOF 01-01-2002"
+          ]
+        },
+        {
+          "numero": 11,
+          "tipo": "fraccion",
+          "identificador": "VIII",
+          "contenido": "Derogada.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción adicionada DOF 09-12-2013. Derogada DOF 25-06-2018"
+          ]
+        },
+        {
+          "numero": 12,
+          "tipo": "fraccion",
+          "identificador": "IX",
+          "contenido": "Los poseedores y tenedores de mercancías importadas temporalmente por residentes en el extranjero.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción adicionada DOF 25-06-2018"
+          ]
+        },
+        {
+          "numero": 13,
+          "tipo": "fraccion",
+          "identificador": "X",
+          "contenido": "Los que transfieran mercancías importadas temporalmente de conformidad con lo previsto en esta Ley y en las demás disposiciones jurídicas aplicables, por los causados por las citadas mercancías, sin importar que éstas se transfieran una o más veces.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Fracción adicionada DOF 25-06-2018. Reformada DOF 19-11-2025"
+          ]
+        },
+        {
+          "numero": 14,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "La responsabilidad solidaria comprenderá los accesorios, con excepción de las multas. Lo dispuesto en este párrafo no impide que los responsables solidarios puedan ser sancionados por los actos u omisiones propios.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "referencias": [
+            "Párrafo reformado DOF 19-11-2025"
+          ]
         }
       ]
     },
@@ -4752,10 +4785,10 @@
           "numero": 10,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Afectación de mercancías y exenciones",
+          "contenido": "CAPITULO II Afectación de mercancías y exenciones",
           "padre_numero": 9,
-          "x_id": 202,
-          "x_texto": 202,
+          "x_id": 273,
+          "x_texto": 273,
           "referencias": [
             "Capítulo reformado DOF 31-12-2000"
           ]
@@ -4764,10 +4797,10 @@
           "numero": 11,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Afectación de las mercancías",
-          "padre_numero": 10,
-          "x_id": 229,
-          "x_texto": 229,
+          "contenido": "SECCION PRIMERA Afectación de las mercancías",
+          "padre_numero": 9,
+          "x_id": 254,
+          "x_texto": 254,
           "referencias": [
             "Sección adicionada DOF 31-12-2000"
           ]
@@ -4806,18 +4839,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Exenciones",
-          "padre_numero": 3,
-          "x_id": 275,
-          "x_texto": 275,
-          "referencias": [
-            "Sección adicionada DOF 31-12-2000"
-          ]
         }
       ]
     },
@@ -5250,18 +5271,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Restricciones a la devolución o exención del impuesto general de importación, conforme a lo previsto en los Tratados de Libre Comercio",
-          "padre_numero": null,
-          "x_id": 73,
-          "x_texto": 73,
-          "referencias": [
-            "Sección adicionada DOF 31-12-2000"
-          ]
         }
       ]
     },
@@ -5282,24 +5291,6 @@
           "referencias": [
             "Artículo adicionado DOF 31-12-2000"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Base gravable",
-          "padre_numero": 1,
-          "x_id": 269,
-          "x_texto": 269
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del impuesto general de importación",
-          "padre_numero": 1,
-          "x_id": 209,
-          "x_texto": 209
         }
       ]
     },
@@ -6540,15 +6531,6 @@
           "referencias": [
             "Artículo adicionado DOF 31-12-1998"
           ]
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del impuesto general de exportación",
-          "padre_numero": 3,
-          "x_id": 210,
-          "x_texto": 210
         }
       ]
     },
@@ -6578,15 +6560,6 @@
           "referencias": [
             "Artículo reformado DOF 09-12-2013, 25-06-2018, 19-11-2025"
           ]
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Determinación y pago",
-          "padre_numero": 2,
-          "x_id": 249,
-          "x_texto": 249
         }
       ]
     },
@@ -7314,24 +7287,6 @@
           "referencias": [
             "Artículo adicionado DOF 19-11-2025"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Regímenes aduaneros",
-          "padre_numero": 1,
-          "x_id": 247,
-          "x_texto": 247
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Disposiciones comunes",
-          "padre_numero": 1,
-          "x_id": 243,
-          "x_texto": 243
         }
       ]
     },
@@ -7657,15 +7612,6 @@
           "referencias": [
             "Artículo reformado DOF 30-12-1996, 19-11-2025"
           ]
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Definitivos de importación y de exportación",
-          "padre_numero": 3,
-          "x_id": 192,
-          "x_texto": 192
         }
       ]
     },
@@ -7686,15 +7632,6 @@
           "referencias": [
             "Artículo reformado DOF 09-12-2013"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De importación",
-          "padre_numero": 1,
-          "x_id": 266,
-          "x_texto": 266
         }
       ]
     },
@@ -8003,10 +7940,10 @@
           "numero": 15,
           "tipo": "texto",
           "identificador": null,
-          "contenido": " ME PCO       CE CDV   100",
+          "contenido": "  CE CDV ME PCO        100",
           "padre_numero": 14,
-          "x_id": 274,
-          "x_texto": 274
+          "x_id": 320,
+          "x_texto": 320
         },
         {
           "numero": 16,
@@ -8525,15 +8462,6 @@
           "referencias": [
             "Artículo adicionado DOF 30-12-2002. Derogado DOF 25-06-2018"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De exportación",
-          "padre_numero": 1,
-          "x_id": 266,
-          "x_texto": 266
         }
       ]
     },
@@ -8613,33 +8541,6 @@
           "referencias": [
             "Párrafo adicionado DOF 30-12-2002"
           ]
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Temporales de importación y de exportación",
-          "padre_numero": 5,
-          "x_id": 189,
-          "x_texto": 189
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Importaciones temporales",
-          "padre_numero": 6,
-          "x_id": 238,
-          "x_texto": 238
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "I Disposiciones generales",
-          "padre_numero": 7,
-          "x_id": 304,
-          "x_texto": 304
         }
       ]
     },
@@ -9479,24 +9380,6 @@
           "referencias": [
             "Párrafo adicionado DOF 19-11-2025"
           ]
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Exportaciones temporales",
-          "padre_numero": 4,
-          "x_id": 237,
-          "x_texto": 237
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "I Disposiciones generales",
-          "padre_numero": 5,
-          "x_id": 304,
-          "x_texto": 304
         }
       ]
     },
@@ -9792,15 +9675,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Depósito fiscal",
-          "padre_numero": 2,
-          "x_id": 267,
-          "x_texto": 267
         }
       ]
     },
@@ -10439,15 +10313,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Tránsito de mercancías",
-          "padre_numero": 1,
-          "x_id": 245,
-          "x_texto": 245
         }
       ]
     },
@@ -10465,15 +10330,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Tránsito interno de mercancías",
-          "padre_numero": 1,
-          "x_id": 224,
-          "x_texto": 224
         }
       ]
     },
@@ -10822,15 +10678,6 @@
             "Párrafo reformado DOF 25-06-2018",
             "Artículo reformado DOF 01-01-2002, 09-12-2013"
           ]
-        },
-        {
-          "numero": 12,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Tránsito internacional de mercancías",
-          "padre_numero": 11,
-          "x_id": 209,
-          "x_texto": 209
         }
       ]
     },
@@ -11054,15 +10901,6 @@
           "referencias": [
             "Artículo derogado DOF 09-12-2013"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Elaboración, transformación o reparación en recinto fiscalizado",
-          "padre_numero": 1,
-          "x_id": 139,
-          "x_texto": 139
         }
       ]
     },
@@ -11172,18 +11010,6 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 01-06-2018. Reformado DOF 19-11-2025"
-          ]
-        },
-        {
-          "numero": 11,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Recinto Fiscalizado Estratégico",
-          "padre_numero": 10,
-          "x_id": 223,
-          "x_texto": 223,
-          "referencias": [
-            "Capítulo adicionado DOF 30-12-2002"
           ]
         }
       ]
@@ -11557,15 +11383,6 @@
           "referencias": [
             "Artículo adicionado DOF 30-12-2002"
           ]
-        },
-        {
-          "numero": 11,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Franja y región fronteriza",
-          "padre_numero": 10,
-          "x_id": 240,
-          "x_texto": 240
         }
       ]
     },
@@ -12109,15 +11926,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Atribuciones del Poder Ejecutivo Federal y de las autoridades fiscales",
-          "padre_numero": 2,
-          "x_id": 123,
-          "x_texto": 123
         }
       ]
     },
@@ -14162,30 +13970,6 @@
           "referencias": [
             "Párrafo reformado DOF 09-12-2013, 19-11-2025",
             "Artículo reformado DOF 31-12-1998, 01-01-2002, 30-12-2002"
-          ]
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Agentes aduanales, agencias aduanales y dictaminadores aduaneros",
-          "padre_numero": 5,
-          "x_id": 125,
-          "x_texto": 125,
-          "referencias": [
-            "Denominación del Título reformada DOF 25-06-2018"
-          ]
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Agentes aduanales y agencias aduanales",
-          "padre_numero": 6,
-          "x_id": 198,
-          "x_texto": 198,
-          "referencias": [
-            "Denominación de la Sección reformada DOF 25-06-2018"
           ]
         }
       ]
@@ -17228,6 +17012,15 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
+          "contenido": "Sección Segunda",
+          "padre_numero": 2,
+          "x_id": 260,
+          "x_texto": 260
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
           "contenido": "Apoderados aduanales (Se deroga)",
           "padre_numero": 2,
           "x_id": 245,
@@ -17356,15 +17149,6 @@
             "Artículo reformado DOF 31-12-1998. Cantidades actualizadas DOF 01-03-2002, 28-04-2003, 04-04-2005, 10-04-2006, 09-05-2007,",
             "09-05-2008, 12-05-2009, 01-07-2010, 03-08-2011, 27-12-2011. Artículo derogado DOF 09-12-2013"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Dictaminadores Aduaneros",
-          "padre_numero": 1,
-          "x_id": 235,
-          "x_texto": 235
         }
       ]
     },
@@ -17645,15 +17429,6 @@
           "referencias": [
             "Artículo adicionado DOF 09-12-2013"
           ]
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Infracciones y sanciones",
-          "padre_numero": 4,
-          "x_id": 241,
-          "x_texto": 241
         }
       ]
     },
@@ -20470,15 +20245,6 @@
           "referencias": [
             "Artículo reformado DOF 09-12-2013, 25-06-2018"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Recursos administrativos",
-          "padre_numero": 1,
-          "x_id": 239,
-          "x_texto": 239
         }
       ]
     },

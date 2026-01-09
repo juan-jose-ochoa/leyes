@@ -223,15 +223,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Información a los Trabajadores",
-          "padre_numero": 1,
-          "x_id": 210,
-          "x_texto": 210
         }
       ]
     },
@@ -318,15 +309,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Objeciones de los Trabajadores",
-          "padre_numero": 1,
-          "x_id": 205,
-          "x_texto": 205
         }
       ]
     },
@@ -490,15 +472,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Repartos Adicionales",
-          "padre_numero": 1,
-          "x_id": 232,
-          "x_texto": 232
         }
       ]
     },
@@ -542,15 +515,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Autoridades Laborales",
-          "padre_numero": 1,
-          "x_id": 229,
-          "x_texto": 229
         }
       ]
     },
@@ -611,15 +575,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Comisión Intersecretarial",
-          "padre_numero": 1,
-          "x_id": 225,
-          "x_texto": 225
         }
       ]
     },
@@ -717,15 +672,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Medios de Defensa de los Trabajadores",
-          "padre_numero": 2,
-          "x_id": 185,
-          "x_texto": 185
         }
       ]
     },

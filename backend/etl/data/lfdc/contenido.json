@@ -245,15 +245,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Información, Difusión y Asistencia al Contribuyente",
-          "padre_numero": 2,
-          "x_id": 171,
-          "x_texto": 171
         }
       ]
     },
@@ -391,15 +382,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Derechos y garantías en los procedimientos de comprobación",
-          "padre_numero": 1,
-          "x_id": 143,
-          "x_texto": 143
         }
       ]
     },
@@ -625,15 +607,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Derechos y garantías en el procedimiento sancionador",
-          "padre_numero": 1,
-          "x_id": 163,
-          "x_texto": 163
         }
       ]
     },
@@ -668,15 +641,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Medios de defensa del contribuyente",
-          "padre_numero": 1,
-          "x_id": 209,
-          "x_texto": 209
         }
       ]
     },

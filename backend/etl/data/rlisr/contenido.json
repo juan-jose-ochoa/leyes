@@ -366,24 +366,6 @@
           "referencias": [
             "Artículo reformado DOF 06-05-2016"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Personas Morales",
-          "padre_numero": 1,
-          "x_id": 241,
-          "x_texto": 241
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Disposiciones Generales",
-          "padre_numero": 1,
-          "x_id": 241,
-          "x_texto": 241
         }
       ]
     },
@@ -418,15 +400,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Ingresos",
-          "padre_numero": 1,
-          "x_id": 265,
-          "x_texto": 265
         }
       ]
     },
@@ -808,24 +781,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 7,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Deducciones",
-          "padre_numero": 6,
-          "x_id": 254,
-          "x_texto": 254
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Deducciones en General",
-          "padre_numero": 6,
-          "x_id": 224,
-          "x_texto": 224
         }
       ]
     },
@@ -2214,15 +2169,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Inversiones",
-          "padre_numero": 2,
-          "x_id": 258,
-          "x_texto": 258
         }
       ]
     },
@@ -2318,15 +2264,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Costo de lo Vendido",
-          "padre_numero": 2,
-          "x_id": 243,
-          "x_texto": 243
         }
       ]
     },
@@ -2562,15 +2499,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Ajuste por Inflación",
-          "padre_numero": 1,
-          "x_id": 245,
-          "x_texto": 245
         }
       ]
     },
@@ -2720,15 +2648,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Instituciones de Crédito, de Seguros y de Fianzas, de los Almacenes Generales de Depósito, Arrendadoras Financieras y Uniones de Crédito",
-          "padre_numero": null,
-          "x_id": 73,
-          "x_texto": 73
         }
       ]
     },
@@ -2946,15 +2865,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Régimen Opcional para Grupos de Sociedades",
-          "padre_numero": 1,
-          "x_id": 173,
-          "x_texto": 173
         }
       ]
     },
@@ -2972,15 +2882,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Coordinados",
-          "padre_numero": 1,
-          "x_id": 254,
-          "x_texto": 254
         }
       ]
     },
@@ -3148,15 +3049,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Régimen de Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras",
-          "padre_numero": 1,
-          "x_id": 112,
-          "x_texto": 112
         }
       ]
     },
@@ -3359,15 +3251,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Obligaciones de las Personas Morales",
-          "padre_numero": 8,
-          "x_id": 188,
-          "x_texto": 188
         }
       ]
     },
@@ -3961,15 +3844,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Régimen de las Personas Morales con Fines no Lucrativos",
-          "padre_numero": 1,
-          "x_id": 142,
-          "x_texto": 142
         }
       ]
     },
@@ -4737,24 +4611,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Personas Físicas",
-          "padre_numero": 4,
-          "x_id": 243,
-          "x_texto": 243
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Disposiciones Generales",
-          "padre_numero": 4,
-          "x_id": 241,
-          "x_texto": 241
         }
       ]
     },
@@ -5293,15 +5149,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
-          "padre_numero": null,
-          "x_id": 87,
-          "x_texto": 87
         }
       ]
     },
@@ -6063,15 +5910,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Ingresos por Actividades Empresariales y Profesionales",
-          "padre_numero": 1,
-          "x_id": 141,
-          "x_texto": 141
         }
       ]
     },
@@ -6089,15 +5927,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Personas Físicas con Actividades Empresariales y Profesionales",
-          "padre_numero": 1,
-          "x_id": 118,
-          "x_texto": 118
         }
       ]
     },
@@ -6314,15 +6143,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Ingresos por Arrendamiento y en General por Otorgar el Uso o Goce Temporal de Bienes Inmuebles",
-          "padre_numero": null,
-          "x_id": 75,
-          "x_texto": 75
         }
       ]
     },
@@ -6461,15 +6281,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Ingresos por Enajenación de Bienes",
-          "padre_numero": 2,
-          "x_id": 193,
-          "x_texto": 193
         }
       ]
     },
@@ -7264,15 +7075,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 33,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Ingresos por Adquisición de Bienes",
-          "padre_numero": 32,
-          "x_id": 194,
-          "x_texto": 194
         }
       ]
     },
@@ -7431,15 +7233,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Ingresos por Intereses",
-          "padre_numero": 1,
-          "x_id": 229,
-          "x_texto": 229
         }
       ]
     },
@@ -8254,15 +8047,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Ingresos por Obtención de Premios",
-          "padre_numero": 7,
-          "x_id": 195,
-          "x_texto": 195
         }
       ]
     },
@@ -8306,15 +8090,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Demás Ingresos que Obtengan las Personas Físicas",
-          "padre_numero": 2,
-          "x_id": 151,
-          "x_texto": 151
         }
       ]
     },
@@ -8418,15 +8193,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Requisitos de las Deducciones",
-          "padre_numero": 1,
-          "x_id": 207,
-          "x_texto": 207
         }
       ]
     },
@@ -9029,15 +8795,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Declaración Anual",
-          "padre_numero": 7,
-          "x_id": 243,
-          "x_texto": 243
         }
       ]
     },
@@ -9325,15 +9082,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
-          "padre_numero": null,
-          "x_id": 86,
-          "x_texto": 86
         }
       ]
     },
@@ -10231,15 +9979,6 @@
           "referencias": [
             "Artículo derogado DOF 06-05-2016"
           ]
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales",
-          "padre_numero": 1,
-          "x_id": 111,
-          "x_texto": 111
         }
       ]
     },
@@ -10717,15 +10456,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 24,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Estímulos Fiscales",
-          "padre_numero": 23,
-          "x_id": 238,
-          "x_texto": 238
         }
       ]
     },

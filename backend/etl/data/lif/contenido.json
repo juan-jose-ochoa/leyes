@@ -38,7 +38,7 @@
           "tipo": "texto",
           "identificador": null,
           "contenido": "Impuestos 5,838,541.1 11.",
-          "padre_numero": 1,
+          "padre_numero": null,
           "x_id": 98,
           "x_texto": 98
         },
@@ -109,10 +109,118 @@
           "numero": 10,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Artículo 2o., fracción I, inciso D). 432,487.9 02.",
+          "contenido": "Artículo 2o., fracción I, inciso D). 432,487.9 02. 02.",
           "padre_numero": 9,
           "x_id": 241,
           "x_texto": 241
+        },
+        {
+          "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Bebidas con contenido alcohólico y cerveza: 81,518.8 01.",
+          "padre_numero": 8,
+          "x_id": 206,
+          "x_texto": 206
+        },
+        {
+          "numero": 12,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Bebidas alcohólicas. 27,780.2 02.",
+          "padre_numero": 11,
+          "x_id": 241,
+          "x_texto": 241
+        },
+        {
+          "numero": 13,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cervezas y bebidas refrescantes. 53,738.6 03.",
+          "padre_numero": 11,
+          "x_id": 241,
+          "x_texto": 241
+        },
+        {
+          "numero": 14,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Tabacos labrados y otros. 62,097.5 04.",
+          "padre_numero": 8,
+          "x_id": 206,
+          "x_texto": 206
+        },
+        {
+          "numero": 15,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Juegos con apuestas y sorteos. 5,024.7 05.",
+          "padre_numero": 8,
+          "x_id": 206,
+          "x_texto": 206
+        },
+        {
+          "numero": 16,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Redes públicas de telecomunicaciones. 8,486.8 06.",
+          "padre_numero": 8,
+          "x_id": 206,
+          "x_texto": 206
+        },
+        {
+          "numero": 17,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Bebidas energetizantes. 100.2 07.",
+          "padre_numero": 8,
+          "x_id": 206,
+          "x_texto": 206
+        },
+        {
+          "numero": 18,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Bebidas saborizadas. 75,290.0 08.",
+          "padre_numero": 8,
+          "x_id": 206,
+          "x_texto": 206
+        },
+        {
+          "numero": 19,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Alimentos no básicos con alta densidad calórica. 42,856.1 09.",
+          "padre_numero": 8,
+          "x_id": 206,
+          "x_texto": 206
+        },
+        {
+          "numero": 20,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Plaguicidas. 2,148.0 10.",
+          "padre_numero": 8,
+          "x_id": 206,
+          "x_texto": 206
+        },
+        {
+          "numero": 21,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Combustibles fósiles. 10,517.7 11.",
+          "padre_numero": 8,
+          "x_id": 206,
+          "x_texto": 206
+        },
+        {
+          "numero": 22,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Videojuegos con violencia. 183.0",
+          "padre_numero": 8,
+          "x_id": 206,
+          "x_texto": 206
         }
       ]
     },
@@ -401,15 +509,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Facilidades Administrativas y Beneficios Fiscales",
-          "padre_numero": 2,
-          "x_id": 185,
-          "x_texto": 185
         }
       ]
     },
@@ -2510,15 +2609,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 66,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Información, la Transparencia, la Evaluación de la Eficiencia Recaudatoria y la Fiscalización",
-          "padre_numero": 65,
-          "x_id": 97,
-          "x_texto": 97
         }
       ]
     },
@@ -3017,15 +3107,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Otras Disposiciones",
-          "padre_numero": 8,
-          "x_id": 262,
-          "x_texto": 262
         }
       ]
     },

@@ -391,15 +391,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Derechos y Obligaciones de los Contribuyentes De los Requisitos de las Promociones y la Representación ante las Autoridades Fiscales",
-          "padre_numero": 1,
-          "x_id": 163,
-          "x_texto": 163
         }
       ]
     },
@@ -434,15 +425,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Pago, de la Devolución y de la Compensación de Contribuciones",
-          "padre_numero": 1,
-          "x_id": 126,
-          "x_texto": 126
         }
       ]
     },
@@ -633,24 +615,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Inscripción y Avisos en el Registro Federal de Contribuyentes",
-          "padre_numero": 2,
-          "x_id": 129,
-          "x_texto": 129
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Inscripción en el Registro Federal de Contribuyentes",
-          "padre_numero": 3,
-          "x_id": 153,
-          "x_texto": 153
         }
       ]
     },
@@ -1040,15 +1004,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 8,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Avisos al Registro Federal de Contribuyentes",
-          "padre_numero": 7,
-          "x_id": 169,
-          "x_texto": 169
         }
       ]
     },
@@ -1603,15 +1558,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Contabilidad",
-          "padre_numero": 4,
-          "x_id": 258,
-          "x_texto": 258
         }
       ]
     },
@@ -2023,15 +1969,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Comprobantes Fiscales Digitales por Internet",
-          "padre_numero": 2,
-          "x_id": 169,
-          "x_texto": 169
         }
       ]
     },
@@ -2171,15 +2108,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Declaraciones, Solicitudes y Avisos",
-          "padre_numero": 2,
-          "x_id": 194,
-          "x_texto": 194
         }
       ]
     },
@@ -2301,24 +2229,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Facultades de las Autoridades Fiscales",
-          "padre_numero": 3,
-          "x_id": 186,
-          "x_texto": 186
-        },
-        {
-          "numero": 5,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Disposiciones Generales",
-          "padre_numero": 4,
-          "x_id": 241,
-          "x_texto": 241
         }
       ]
     },
@@ -2466,24 +2376,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Dictámenes del Contador Público Inscrito",
-          "padre_numero": 1,
-          "x_id": 179,
-          "x_texto": 179
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Inscripción del Contador Público y de las Sociedades y Asociaciones Civiles conformadas por Contadores",
-          "padre_numero": null,
-          "x_id": 90,
-          "x_texto": 90
         }
       ]
     },
@@ -2796,15 +2688,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 9,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Sanciones a los Contadores Públicos Inscritos",
-          "padre_numero": 8,
-          "x_id": 166,
-          "x_texto": 166
         }
       ]
     },
@@ -3037,15 +2920,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Dictámenes",
-          "padre_numero": 3,
-          "x_id": 257,
-          "x_texto": 257
         }
       ]
     },
@@ -3357,15 +3231,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 17,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Revisiones Electrónicas",
-          "padre_numero": 16,
-          "x_id": 225,
-          "x_texto": 225
         }
       ]
     },
@@ -3409,15 +3274,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Presunción de Ingresos",
-          "padre_numero": 1,
-          "x_id": 229,
-          "x_texto": 229
         }
       ]
     },
@@ -3452,15 +3308,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Pago a Plazos",
-          "padre_numero": 1,
-          "x_id": 259,
-          "x_texto": 259
         }
       ]
     },
@@ -3574,15 +3421,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De la Presunción de las Operaciones Inexistentes",
-          "padre_numero": 1,
-          "x_id": 176,
-          "x_texto": 176
         }
       ]
     },
@@ -3653,15 +3491,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Acuerdos Conclusivos",
-          "padre_numero": 1,
-          "x_id": 228,
-          "x_texto": 228
         }
       ]
     },
@@ -3696,15 +3525,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Infracciones Fiscales",
-          "padre_numero": 1,
-          "x_id": 233,
-          "x_texto": 233
         }
       ]
     },
@@ -3773,24 +3593,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 2,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De los Procedimientos Administrativos",
-          "padre_numero": 1,
-          "x_id": 204,
-          "x_texto": 204
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "De las Notificaciones y la Garantía del Interés Fiscal",
-          "padre_numero": 1,
-          "x_id": 170,
-          "x_texto": 170
         }
       ]
     },
@@ -4487,24 +4289,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85
-        },
-        {
-          "numero": 3,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Procedimiento Administrativo de Ejecución",
-          "padre_numero": 2,
-          "x_id": 182,
-          "x_texto": 182
-        },
-        {
-          "numero": 4,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Disposiciones Generales",
-          "padre_numero": 3,
-          "x_id": 241,
-          "x_texto": 241
         }
       ]
     },
@@ -4706,15 +4490,6 @@
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107
-        },
-        {
-          "numero": 6,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Del Embargo, Intervención y Remate",
-          "padre_numero": 5,
-          "x_id": 210,
-          "x_texto": 210
         }
       ]
     },
