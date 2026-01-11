@@ -284,6 +284,8 @@ class Parrafo:
     x_id: Optional[int] = None           # X del identificador (opcional)
     x_texto: Optional[int] = None        # X del contenido (opcional)
     referencias: Optional[str] = None    # Referencias DOF (texto: "CFF 29, LISR 1o.")
+    y: Optional[int] = None              # Coordenada Y (primera linea del parrafo)
+    pagina: Optional[int] = None         # Numero de pagina (1-indexed)
 
     def to_dict(self) -> dict:
         d = {
@@ -299,6 +301,10 @@ class Parrafo:
             d["x_texto"] = self.x_texto
         if self.referencias:
             d["referencias"] = self.referencias
+        if self.y is not None:
+            d["y"] = self.y
+        if self.pagina is not None:
+            d["pagina"] = self.pagina
         return d
 
 

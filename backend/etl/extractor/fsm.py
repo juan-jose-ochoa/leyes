@@ -70,6 +70,8 @@ class TokenLinea:
     font_size: float
     page_width: float
     first_bold: bool = False  # True si el primer span es bold (para identificadores)
+    y_local: float = 0.0    # Coordenada Y local a la pagina (para sincronizacion PDF)
+    pagina: int = 0         # Numero de pagina 1-indexed (para sincronizacion PDF)
 
     # Tolerancia para considerar una línea como centrada (en puntos)
     TOLERANCIA_CENTRADO: float = 3.0
@@ -298,6 +300,8 @@ class FSMExtraccion:
                 'x': token.x_min,
                 'x_end': token.x_max,
                 'y': token.y,
+                'y_local': token.y_local,
+                'pagina': token.pagina,
                 'text': contenido_despues,
                 'is_bold': False,
                 'font_size': token.font_size
@@ -309,6 +313,8 @@ class FSMExtraccion:
             'x': token.x_min,
             'x_end': token.x_max,
             'y': token.y,
+            'y_local': token.y_local,
+            'pagina': token.pagina,
             'text': token.texto,
             'is_bold': token.first_bold,  # Usar first_bold para detección de identificadores
             'font_size': token.font_size

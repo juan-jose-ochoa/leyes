@@ -121,6 +121,10 @@ CREATE TABLE leyesmx.parrafos (
     x_id SMALLINT,                            -- X del identificador (o inicio de línea)
     x_texto SMALLINT,                         -- X donde empieza el contenido
 
+    -- Coordenadas para sincronización con PDF (Y local a página, número de página)
+    y SMALLINT,                               -- Y de primera línea (origen: esquina superior)
+    pagina SMALLINT,                          -- Número de página 1-indexed
+
     -- Referencias (reformas, adiciones, compilaciones)
     referencias TEXT[],
 
@@ -151,6 +155,8 @@ CREATE INDEX parrafos_search_idx ON leyesmx.parrafos
 COMMENT ON TABLE leyesmx.parrafos IS 'Párrafos de artículos: texto, fracciones, incisos, numerales';
 COMMENT ON COLUMN leyesmx.parrafos.x_id IS 'Coordenada X del identificador en el PDF';
 COMMENT ON COLUMN leyesmx.parrafos.x_texto IS 'Coordenada X donde inicia el texto en el PDF';
+COMMENT ON COLUMN leyesmx.parrafos.y IS 'Coordenada Y de primera línea del párrafo (origen: esquina superior de página)';
+COMMENT ON COLUMN leyesmx.parrafos.pagina IS 'Número de página donde inicia el párrafo (1-indexed)';
 
 -- ============================================================
 -- Vistas de conveniencia

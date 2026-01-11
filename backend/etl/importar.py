@@ -369,8 +369,9 @@ def importar_contenido(conn, codigo: str, contenido_path: Path, mapa_path: Path,
                 cur.execute("""
                     INSERT INTO leyesmx.parrafos (
                         ley, articulo_id, numero, padre_numero,
-                        tipo, identificador, contenido, x_id, x_texto, referencias
-                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                        tipo, identificador, contenido, x_id, x_texto,
+                        y, pagina, referencias
+                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 """, (
                     codigo,
                     articulo_id,
@@ -381,6 +382,8 @@ def importar_contenido(conn, codigo: str, contenido_path: Path, mapa_path: Path,
                     parr["contenido"],
                     parr.get("x_id"),
                     parr.get("x_texto"),
+                    parr.get("y"),
+                    parr.get("pagina"),
                     parr.get("referencias")
                 ))
                 total_parrafos += 1

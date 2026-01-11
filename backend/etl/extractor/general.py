@@ -455,6 +455,7 @@ class ExtractorGeneral(ExtractorBase):
                             if text:
                                 fsm.lineas_articulo.append({
                                     'x': x_min, 'x_end': x_max, 'y': y_global,
+                                    'y_local': y_local, 'pagina': pag_num + 1,
                                     'text': text, 'is_bold': is_bold_first, 'font_size': font_size
                                 })
                             fsm.estado = fsm.estado  # Mantener estado
@@ -466,6 +467,7 @@ class ExtractorGeneral(ExtractorBase):
                                 break
                             fsm.lineas_articulo.append({
                                 'x': x_min, 'x_end': x_max, 'y': y_global,
+                                'y_local': y_local, 'pagina': pag_num + 1,
                                 'text': text, 'is_bold': is_bold_first, 'font_size': font_size
                             })
                         continue
@@ -479,7 +481,9 @@ class ExtractorGeneral(ExtractorBase):
                         all_bold=all_bold,
                         font_size=font_size,
                         page_width=page_width,
-                        first_bold=is_bold_first
+                        first_bold=is_bold_first,
+                        y_local=y_local,
+                        pagina=pag_num + 1
                     )
 
                     # Procesar con FSM
@@ -602,6 +606,8 @@ class ExtractorGeneral(ExtractorBase):
         buffer_es_identificador = False  # Track si el buffer es un identificador
         buffer_tipo = None
         buffer_id = None
+        buffer_y_local = None  # Coordenada Y local de primera linea (para sync PDF)
+        buffer_pagina = None   # Numero de pagina de primera linea (para sync PDF)
 
         # Máquina de estados para validar identificadores en secuencia
         detector = DetectorIdentificadores()
@@ -635,7 +641,8 @@ class ExtractorGeneral(ExtractorBase):
                 if buffer_texto:
                     lineas_consolidadas.append({
                         'x': buffer_x, 'y_fin': buffer_y_fin, 'text': buffer_texto,
-                        'tipo_detectado': buffer_tipo, 'id_detectado': buffer_id
+                        'tipo_detectado': buffer_tipo, 'id_detectado': buffer_id,
+                        'y_local': buffer_y_local, 'pagina': buffer_pagina
                     })
                 buffer_texto = text
                 buffer_x = x
@@ -644,6 +651,8 @@ class ExtractorGeneral(ExtractorBase):
                 buffer_es_identificador = True
                 buffer_tipo = tipo_detectado
                 buffer_id = id_detectado
+                buffer_y_local = linea.get('y_local', linea['y'])
+                buffer_pagina = linea.get('pagina')
                 continue
 
             # Si el buffer es un identificador, concatenar contenido sin evaluar puntos
@@ -660,6 +669,8 @@ class ExtractorGeneral(ExtractorBase):
                 buffer_y_fin = y
                 buffer_x_end = x_end
                 buffer_es_identificador = False
+                buffer_y_local = linea.get('y_local', linea['y'])
+                buffer_pagina = linea.get('pagina')
                 continue
 
             # Calcular puntos para decidir si es nuevo parrafo
@@ -680,7 +691,8 @@ class ExtractorGeneral(ExtractorBase):
             if puntos >= 4:
                 lineas_consolidadas.append({
                     'x': buffer_x, 'y_fin': buffer_y_fin, 'text': buffer_texto,
-                    'tipo_detectado': buffer_tipo, 'id_detectado': buffer_id
+                    'tipo_detectado': buffer_tipo, 'id_detectado': buffer_id,
+                    'y_local': buffer_y_local, 'pagina': buffer_pagina
                 })
                 buffer_texto = text
                 buffer_x = x
@@ -688,6 +700,8 @@ class ExtractorGeneral(ExtractorBase):
                 buffer_x_end = x_end
                 buffer_tipo = None
                 buffer_id = None
+                buffer_y_local = linea.get('y_local', linea['y'])
+                buffer_pagina = linea.get('pagina')
             else:
                 buffer_texto += " " + text
                 buffer_y_fin = y
@@ -696,7 +710,8 @@ class ExtractorGeneral(ExtractorBase):
         if buffer_texto:
             lineas_consolidadas.append({
                 'x': buffer_x, 'y_fin': buffer_y_fin, 'text': buffer_texto,
-                'tipo_detectado': buffer_tipo, 'id_detectado': buffer_id
+                'tipo_detectado': buffer_tipo, 'id_detectado': buffer_id,
+                'y_local': buffer_y_local, 'pagina': buffer_pagina
             })
 
         return lineas_consolidadas
@@ -759,6 +774,11 @@ class ExtractorGeneral(ExtractorBase):
             x_id = round(x)
             x_texto = x_id + 22 if identificador else x_id
 
+            # Coordenadas para sincronizacion PDF
+            y_local = linea.get('y_local')
+            y_pdf = round(y_local) if y_local is not None else None
+            pagina_pdf = linea.get('pagina')
+
             parrafos.append(Parrafo(
                 numero=numero,
                 tipo=tipo,
@@ -766,7 +786,9 @@ class ExtractorGeneral(ExtractorBase):
                 contenido=contenido_limpio,
                 padre_numero=padre,
                 x_id=x_id,
-                x_texto=x_texto
+                x_texto=x_texto,
+                y=y_pdf,
+                pagina=pagina_pdf
             ))
 
             # Actualizar tracking
