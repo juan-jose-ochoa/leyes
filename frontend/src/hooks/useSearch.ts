@@ -1,12 +1,31 @@
 import { useQuery } from '@tanstack/react-query'
-import { buscar, getSugerencias, type SearchResult, type Sugerencia, type LeyTipo } from '@/lib/api'
+import {
+  buscar,
+  buscarHibrido,
+  getSugerencias,
+  type SearchResult,
+  type HybridSearchResult,
+  type Sugerencia,
+  type LeyTipo,
+} from '@/lib/api'
 
+// Búsqueda híbrida: artículos + divisiones
 export function useSearch(query: string, leyes?: string[], tipos?: LeyTipo[], enabled = true) {
-  return useQuery<SearchResult[]>({
+  return useQuery<HybridSearchResult[]>({
     queryKey: ['search', query, leyes, tipos],
-    queryFn: () => buscar(query, leyes, tipos),
+    queryFn: () => buscarHibrido(query, leyes, tipos),
     enabled: enabled && query.length >= 2,
     staleTime: 1000 * 60 * 5, // 5 minutos
+  })
+}
+
+// Búsqueda solo artículos (legacy)
+export function useSearchArticulos(query: string, leyes?: string[], tipos?: LeyTipo[], enabled = true) {
+  return useQuery<SearchResult[]>({
+    queryKey: ['search-articulos', query, leyes, tipos],
+    queryFn: () => buscar(query, leyes, tipos),
+    enabled: enabled && query.length >= 2,
+    staleTime: 1000 * 60 * 5,
   })
 }
 

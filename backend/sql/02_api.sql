@@ -808,3 +808,201 @@ END;
 $$ LANGUAGE plpgsql STABLE;
 
 GRANT EXECUTE ON FUNCTION leyesmx.buscar_referencias TO web_anon;
+
+-- ============================================================
+-- Índice: búsqueda full-text en nombres de divisiones
+-- ============================================================
+CREATE INDEX IF NOT EXISTS divisiones_nombre_search_idx ON leyesmx.divisiones
+    USING GIN(to_tsvector('spanish', nombre))
+    WHERE nombre IS NOT NULL;
+
+-- ============================================================
+-- Función: buscar_hibrido
+-- Búsqueda que retorna tanto artículos como divisiones
+-- ============================================================
+CREATE OR REPLACE FUNCTION leyesmx.buscar_hibrido(
+    q TEXT,
+    leyes TEXT DEFAULT NULL,
+    tipos TEXT DEFAULT NULL,
+    limite INTEGER DEFAULT 20,
+    pagina INTEGER DEFAULT 1
+)
+RETURNS TABLE (
+    tipo_resultado VARCHAR,
+    id INTEGER,
+    ley VARCHAR,
+    ley_nombre TEXT,
+    ley_tipo VARCHAR,
+    numero_raw VARCHAR,
+    numero_base INTEGER,
+    tipo VARCHAR,
+    ubicacion TEXT,
+    contenido TEXT,
+    es_transitorio BOOLEAN,
+    reformas TEXT,
+    div_tipo VARCHAR,
+    div_numero VARCHAR,
+    div_nombre TEXT,
+    div_path TEXT,
+    rango_articulos TEXT,
+    total_articulos BIGINT,
+    relevancia REAL,
+    snippet TEXT
+) AS $$
+BEGIN
+    RETURN QUERY
+    WITH RECURSIVE
+    division_paths AS (
+        SELECT
+            d.id,
+            d.ley,
+            d.padre_id,
+            d.tipo,
+            d.numero,
+            d.nombre,
+            d.tipo || '/' || d.numero AS path
+        FROM leyesmx.divisiones d
+        WHERE d.padre_id IS NULL
+
+        UNION ALL
+
+        SELECT
+            d.id,
+            d.ley,
+            d.padre_id,
+            d.tipo,
+            d.numero,
+            d.nombre,
+            dp.path || '/' || d.tipo || '/' || d.numero AS path
+        FROM leyesmx.divisiones d
+        JOIN division_paths dp ON d.padre_id = dp.id AND d.ley = dp.ley
+    ),
+    division_articulos AS (
+        SELECT
+            dp.id,
+            dp.ley,
+            COUNT(a.id) AS total,
+            MIN(a.numero) AS primer_art,
+            MAX(a.numero) AS ultimo_art
+        FROM division_paths dp
+        LEFT JOIN leyesmx.articulos a ON a.division_id = dp.id AND a.ley = dp.ley
+        GROUP BY dp.id, dp.ley
+    ),
+    divisiones_match AS (
+        SELECT
+            'division'::VARCHAR AS res_tipo,
+            dp.id,
+            dp.ley,
+            l.nombre AS ley_nombre,
+            l.tipo AS ley_tipo,
+            NULL::VARCHAR AS numero_raw,
+            NULL::INTEGER AS numero_base,
+            NULL::VARCHAR AS tipo,
+            NULL::TEXT AS ubicacion,
+            NULL::TEXT AS contenido,
+            NULL::BOOLEAN AS es_transitorio,
+            NULL::TEXT AS reformas,
+            dp.tipo AS div_tipo,
+            dp.numero AS div_numero,
+            dp.nombre AS div_nombre,
+            dp.path AS div_path,
+            CASE
+                WHEN da.primer_art = da.ultimo_art THEN 'Art. ' || da.primer_art
+                WHEN da.primer_art IS NOT NULL THEN 'Arts. ' || da.primer_art || ' - ' || da.ultimo_art
+                ELSE NULL
+            END AS rango_articulos,
+            COALESCE(da.total, 0) AS total_articulos,
+            (ts_rank(to_tsvector('spanish', dp.nombre), websearch_to_tsquery('spanish', q)) * 2)::REAL AS relevancia,
+            dp.tipo || ' ' || dp.numero || ' - ' || dp.nombre AS snippet
+        FROM division_paths dp
+        JOIN leyesmx.leyes l ON l.codigo = dp.ley
+        LEFT JOIN division_articulos da ON da.id = dp.id AND da.ley = dp.ley
+        WHERE dp.nombre IS NOT NULL
+          AND to_tsvector('spanish', dp.nombre) @@ websearch_to_tsquery('spanish', q)
+          AND (leyes IS NULL OR dp.ley = ANY(string_to_array(leyes, ',')))
+          AND (tipos IS NULL OR l.tipo = ANY(string_to_array(tipos, ',')))
+    ),
+    contenido_articulos AS (
+        SELECT
+            a.id,
+            a.ley,
+            l.nombre AS ley_nombre,
+            l.tipo AS ley_tipo,
+            a.numero AS numero_raw,
+            COALESCE((regexp_match(a.numero, '^(\d+)'))[1]::integer, 0) AS numero_base,
+            a.tipo,
+            d.tipo || ' ' || d.numero AS ubicacion,
+            string_agg(p.contenido, E'\n\n' ORDER BY p.numero) AS contenido,
+            a.tipo = 'transitorio' AS es_transitorio,
+            a.reformas
+        FROM leyesmx.articulos a
+        JOIN leyesmx.leyes l ON l.codigo = a.ley
+        LEFT JOIN leyesmx.divisiones d ON d.id = a.division_id AND d.ley = a.ley
+        LEFT JOIN leyesmx.parrafos p ON p.ley = a.ley AND p.articulo_id = a.id
+        WHERE (leyes IS NULL OR a.ley = ANY(string_to_array(leyes, ',')))
+          AND (tipos IS NULL OR l.tipo = ANY(string_to_array(tipos, ',')))
+        GROUP BY a.id, a.ley, l.nombre, l.tipo, a.numero, a.tipo, d.tipo, d.numero, a.reformas
+    ),
+    articulos_match AS (
+        SELECT
+            'articulo'::VARCHAR AS res_tipo,
+            ca.id,
+            ca.ley,
+            ca.ley_nombre,
+            ca.ley_tipo,
+            ca.numero_raw,
+            ca.numero_base,
+            ca.tipo,
+            ca.ubicacion,
+            ca.contenido,
+            ca.es_transitorio,
+            ca.reformas,
+            NULL::VARCHAR AS div_tipo,
+            NULL::VARCHAR AS div_numero,
+            NULL::TEXT AS div_nombre,
+            NULL::TEXT AS div_path,
+            NULL::TEXT AS rango_articulos,
+            NULL::BIGINT AS total_articulos,
+            ts_rank(to_tsvector('spanish', ca.contenido), websearch_to_tsquery('spanish', q))::REAL AS relevancia,
+            ts_headline('spanish', ca.contenido, websearch_to_tsquery('spanish', q),
+                'StartSel=<mark>, StopSel=</mark>, MaxWords=50, MinWords=20') AS snippet
+        FROM contenido_articulos ca
+        WHERE to_tsvector('spanish', ca.contenido) @@ websearch_to_tsquery('spanish', q)
+           OR ca.numero_raw ILIKE '%' || q || '%'
+    ),
+    todos_resultados AS (
+        SELECT * FROM divisiones_match
+        UNION ALL
+        SELECT * FROM articulos_match
+    )
+    SELECT
+        tr.res_tipo,
+        tr.id,
+        tr.ley,
+        tr.ley_nombre,
+        tr.ley_tipo,
+        tr.numero_raw,
+        tr.numero_base,
+        tr.tipo,
+        tr.ubicacion,
+        tr.contenido,
+        tr.es_transitorio,
+        tr.reformas,
+        tr.div_tipo,
+        tr.div_numero,
+        tr.div_nombre,
+        tr.div_path,
+        tr.rango_articulos,
+        tr.total_articulos,
+        tr.relevancia,
+        tr.snippet
+    FROM todos_resultados tr
+    ORDER BY
+        CASE WHEN tr.res_tipo = 'division' THEN 0 ELSE 1 END,
+        tr.relevancia DESC
+    LIMIT limite
+    OFFSET (pagina - 1) * limite;
+END;
+$$ LANGUAGE plpgsql STABLE;
+
+GRANT EXECUTE ON FUNCTION leyesmx.buscar_hibrido TO web_anon;

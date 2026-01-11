@@ -1,8 +1,14 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FileText, ChevronRight, ChevronDown, BookOpen } from 'lucide-react'
+import { FileText, ChevronRight, ChevronDown, BookOpen, FolderOpen } from 'lucide-react'
 import DOMPurify from 'dompurify'
-import type { SearchResult, LeyTipo } from '@/lib/api'
+import type {
+  HybridSearchResult,
+  ArticuloSearchResult,
+  DivisionSearchResult,
+  LeyTipo,
+} from '@/lib/api'
+import { isDivisionResult } from '@/lib/api'
 import clsx from 'clsx'
 
 // Sanitizar snippets: solo permitir <mark> para highlighting
@@ -38,10 +44,11 @@ interface GrupoLey {
   ley: string
   ley_nombre: string
   ley_tipo: LeyTipo
-  resultados: SearchResult[]
+  divisiones: DivisionSearchResult[]
+  articulos: ArticuloSearchResult[]
 }
 
-const agruparPorLey = (results: SearchResult[]): GrupoLey[] => {
+const agruparPorLey = (results: HybridSearchResult[]): GrupoLey[] => {
   const grupos: Record<string, GrupoLey> = {}
 
   for (const result of results) {
@@ -50,24 +57,32 @@ const agruparPorLey = (results: SearchResult[]): GrupoLey[] => {
         ley: result.ley,
         ley_nombre: result.ley_nombre,
         ley_tipo: result.ley_tipo,
-        resultados: []
+        divisiones: [],
+        articulos: [],
       }
     }
-    grupos[result.ley].resultados.push(result)
+    if (isDivisionResult(result)) {
+      grupos[result.ley].divisiones.push(result)
+    } else {
+      grupos[result.ley].articulos.push(result)
+    }
   }
 
-  // Ordenar por cantidad de resultados (más relevante primero)
-  return Object.values(grupos).sort((a, b) => b.resultados.length - a.resultados.length)
+  // Ordenar por total de resultados (divisiones + artículos)
+  return Object.values(grupos).sort(
+    (a, b) => (b.divisiones.length + b.articulos.length) - (a.divisiones.length + a.articulos.length)
+  )
 }
 
 interface ResultListProps {
-  results: SearchResult[]
+  results: HybridSearchResult[]
   isLoading?: boolean
   selectedId?: number | null
-  onSelect?: (result: SearchResult) => void
+  selectedType?: 'articulo' | 'division' | null
+  onSelect?: (result: HybridSearchResult) => void
 }
 
-export default function ResultList({ results, isLoading, selectedId, onSelect }: ResultListProps) {
+export default function ResultList({ results, isLoading, selectedId, selectedType, onSelect }: ResultListProps) {
   if (isLoading) {
     return (
       <div className="space-y-4">
@@ -102,15 +117,28 @@ export default function ResultList({ results, isLoading, selectedId, onSelect }:
   }
 
   const grupos = agruparPorLey(results)
+  const totalDivisiones = results.filter(isDivisionResult).length
+  const totalArticulos = results.length - totalDivisiones
 
   return (
     <div className="space-y-6">
       <p className="text-sm text-gray-500">
         {results.length} resultado{results.length !== 1 ? 's' : ''} en {grupos.length} {grupos.length !== 1 ? 'documentos' : 'documento'}
+        {totalDivisiones > 0 && (
+          <span className="ml-2">
+            ({totalDivisiones} {totalDivisiones === 1 ? 'capítulo' : 'capítulos'}, {totalArticulos} {totalArticulos === 1 ? 'artículo' : 'artículos'})
+          </span>
+        )}
       </p>
 
       {grupos.map((grupo) => (
-        <GrupoResultados key={grupo.ley} grupo={grupo} selectedId={selectedId} onSelect={onSelect} />
+        <GrupoResultados
+          key={grupo.ley}
+          grupo={grupo}
+          selectedId={selectedId}
+          selectedType={selectedType}
+          onSelect={onSelect}
+        />
       ))}
     </div>
   )
@@ -119,10 +147,11 @@ export default function ResultList({ results, isLoading, selectedId, onSelect }:
 interface GrupoResultadosProps {
   grupo: GrupoLey
   selectedId?: number | null
-  onSelect?: (result: SearchResult) => void
+  selectedType?: 'articulo' | 'division' | null
+  onSelect?: (result: HybridSearchResult) => void
 }
 
-function GrupoResultados({ grupo, selectedId, onSelect }: GrupoResultadosProps) {
+function GrupoResultados({ grupo, selectedId, selectedType, onSelect }: GrupoResultadosProps) {
   const [expandido, setExpandido] = useState(true)
   const colorClase = grupo.ley_tipo === 'anexo'
     ? 'bg-orange-600'
@@ -131,6 +160,8 @@ function GrupoResultados({ grupo, selectedId, onSelect }: GrupoResultadosProps) 
       : grupo.ley_tipo === 'ley'
         ? 'bg-primary-600'
         : 'bg-blue-600'
+
+  const totalResultados = grupo.divisiones.length + grupo.articulos.length
 
   return (
     <div className="rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
@@ -158,7 +189,7 @@ function GrupoResultados({ grupo, selectedId, onSelect }: GrupoResultadosProps) 
             </span>
           </div>
           <p className="text-sm text-gray-500">
-            {grupo.resultados.length} {grupo.resultados.length === 1 ? 'resultado' : 'resultados'}
+            {totalResultados} {totalResultados === 1 ? 'resultado' : 'resultados'}
           </p>
         </div>
 
@@ -170,11 +201,19 @@ function GrupoResultados({ grupo, selectedId, onSelect }: GrupoResultadosProps) 
         />
       </button>
 
-      {/* Resultados del grupo */}
+      {/* Resultados del grupo: divisiones primero, luego artículos */}
       {expandido && (
         <div className="divide-y divide-gray-100 dark:divide-gray-800">
-          {grupo.resultados.map((result) => (
-            <ResultCard key={result.id} result={result} isSelected={result.id === selectedId} onSelect={onSelect} />
+          {grupo.divisiones.map((result) => (
+            <DivisionCard key={`div-${result.id}`} result={result} />
+          ))}
+          {grupo.articulos.map((result) => (
+            <ResultCard
+              key={`art-${result.id}`}
+              result={result}
+              isSelected={result.id === selectedId && selectedType === 'articulo'}
+              onSelect={onSelect}
+            />
           ))}
         </div>
       )}
@@ -182,10 +221,70 @@ function GrupoResultados({ grupo, selectedId, onSelect }: GrupoResultadosProps) 
   )
 }
 
+// Componente para resultados de división (capítulos)
+// Las divisiones SIEMPRE navegan a su página (no usan panel lateral)
+interface DivisionCardProps {
+  result: DivisionSearchResult
+}
+
+function DivisionCard({ result }: DivisionCardProps) {
+  // URL de navegación: /:ley/:div_path
+  const url = `/${result.ley}/${result.div_path}`
+  const tipoCapitalizado = result.div_tipo.charAt(0).toUpperCase() + result.div_tipo.slice(1)
+
+  return (
+    <Link
+      to={url}
+      className="block p-4 transition-colors group text-left w-full hover:bg-gray-50 dark:hover:bg-gray-800/50"
+    >
+      <div className="flex items-start gap-3">
+        {/* Icono de división */}
+        <div className="shrink-0 w-16 flex justify-end">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-100 dark:bg-indigo-900/30">
+            <FolderOpen className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+          </div>
+        </div>
+
+        <div className="flex-1 min-w-0">
+          {/* Tipo y número */}
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-semibold uppercase tracking-wide text-indigo-600 dark:text-indigo-400">
+              {tipoCapitalizado} {result.div_numero}
+            </span>
+            {result.total_articulos > 0 && (
+              <span className="text-xs text-gray-400">
+                ({result.total_articulos} {result.total_articulos === 1 ? 'artículo' : 'artículos'})
+              </span>
+            )}
+          </div>
+
+          {/* Nombre del capítulo */}
+          {result.div_nombre && (
+            <h4 className="font-medium text-gray-900 dark:text-gray-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400">
+              {result.div_nombre}
+            </h4>
+          )}
+
+          {/* Rango de artículos */}
+          {result.rango_articulos && (
+            <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+              {result.rango_articulos}
+            </p>
+          )}
+        </div>
+
+        {/* Flecha */}
+        <ChevronRight className="h-5 w-5 text-gray-300 dark:text-gray-600 group-hover:text-indigo-500 shrink-0 mt-1" />
+      </div>
+    </Link>
+  )
+}
+
+// Componente para resultados de artículo
 interface ResultCardProps {
-  result: SearchResult
+  result: ArticuloSearchResult
   isSelected?: boolean
-  onSelect?: (result: SearchResult) => void
+  onSelect?: (result: HybridSearchResult) => void
 }
 
 function ResultCard({ result, isSelected, onSelect }: ResultCardProps) {

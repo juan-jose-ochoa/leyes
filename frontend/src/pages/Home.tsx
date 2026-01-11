@@ -8,7 +8,8 @@ import ResultList from '@/components/ResultList'
 import ArticlePanel from '@/components/ArticlePanel'
 import { useSearch } from '@/hooks/useSearch'
 import { useLeyes } from '@/hooks/useArticle'
-import type { SearchResult, LeyTipo, Ley } from '@/lib/api'
+import type { HybridSearchResult, LeyTipo, Ley } from '@/lib/api'
+import { isArticuloResult } from '@/lib/api'
 import { LEY_BASE, CATEGORIA, NOMBRE_DISPLAY, CATEGORIA_INFO, ORDEN_LEYES, type Categoria } from '@/lib/leyesConfig'
 
 // Ley con reglamentos anidados y nombre para mostrar
@@ -110,12 +111,16 @@ export default function Home() {
     setSelectedArticle(null)
   }, [setSearchParams])
 
-  const handleSelectArticle = useCallback((result: SearchResult) => {
-    setSelectedArticle({
-      ley: result.ley,
-      numero: result.numero_raw,
-      id: result.id
-    })
+  const handleSelectArticle = useCallback((result: HybridSearchResult) => {
+    // Solo seleccionar artículos para el panel lateral
+    // Las divisiones navegan directamente via Link
+    if (isArticuloResult(result)) {
+      setSelectedArticle({
+        ley: result.ley,
+        numero: result.numero_raw,
+        id: result.id
+      })
+    }
   }, [])
 
   const handleNavigateArticle = useCallback((numero: string) => {

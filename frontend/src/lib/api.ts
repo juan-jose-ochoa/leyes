@@ -42,6 +42,47 @@ export interface SearchResult extends Articulo {
   snippet: string
 }
 
+// Búsqueda híbrida: artículos + divisiones
+export interface BaseHybridResult {
+  id: number
+  ley: string
+  ley_nombre: string
+  ley_tipo: LeyTipo
+  relevancia: number
+  snippet: string
+}
+
+export interface ArticuloSearchResult extends BaseHybridResult {
+  tipo_resultado: 'articulo'
+  numero_raw: string
+  numero_base: number
+  tipo: ArticuloTipo | null
+  ubicacion: string
+  contenido: string
+  es_transitorio: boolean
+  reformas: string | null
+}
+
+export interface DivisionSearchResult extends BaseHybridResult {
+  tipo_resultado: 'division'
+  div_tipo: string
+  div_numero: string
+  div_nombre: string | null
+  div_path: string
+  rango_articulos: string | null
+  total_articulos: number
+}
+
+export type HybridSearchResult = ArticuloSearchResult | DivisionSearchResult
+
+export function isDivisionResult(r: HybridSearchResult): r is DivisionSearchResult {
+  return r.tipo_resultado === 'division'
+}
+
+export function isArticuloResult(r: HybridSearchResult): r is ArticuloSearchResult {
+  return r.tipo_resultado === 'articulo'
+}
+
 export interface ArticuloDetalle extends Articulo {
   referencias_salientes: Referencia[] | null
   referencias_entrantes: Referencia[] | null
@@ -118,6 +159,25 @@ export async function buscar(
   pagina = 1
 ): Promise<SearchResult[]> {
   return fetchAPI<SearchResult[]>('/rpc/buscar', {
+    method: 'POST',
+    body: JSON.stringify({
+      q: query,
+      leyes: leyes?.join(',') || null,
+      tipos: tipos?.join(',') || null,
+      limite,
+      pagina,
+    }),
+  })
+}
+
+export async function buscarHibrido(
+  query: string,
+  leyes?: string[],
+  tipos?: LeyTipo[],
+  limite = 20,
+  pagina = 1
+): Promise<HybridSearchResult[]> {
+  return fetchAPI<HybridSearchResult[]>('/rpc/buscar_hibrido', {
     method: 'POST',
     body: JSON.stringify({
       q: query,
