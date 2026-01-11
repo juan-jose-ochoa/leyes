@@ -1006,3 +1006,33 @@ END;
 $$ LANGUAGE plpgsql STABLE;
 
 GRANT EXECUTE ON FUNCTION leyesmx.buscar_hibrido TO web_anon;
+
+-- ============================================================
+-- Función: coordenadas_articulo
+-- Retorna página y coordenada Y del primer párrafo de un artículo
+-- Para sincronización con visor PDF
+-- ============================================================
+CREATE OR REPLACE FUNCTION leyesmx.coordenadas_articulo(p_articulo_id INTEGER)
+RETURNS TABLE (
+    pagina SMALLINT,
+    y SMALLINT,
+    ley_codigo VARCHAR
+) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT
+        COALESCE(p.pagina, 1)::SMALLINT,
+        COALESCE(p.y, 50)::SMALLINT,
+        a.ley
+    FROM leyesmx.articulos a
+    LEFT JOIN LATERAL (
+        SELECT p2.pagina, p2.y
+        FROM leyesmx.parrafos p2
+        WHERE p2.articulo_id = a.id AND p2.ley = a.ley
+        ORDER BY p2.numero LIMIT 1
+    ) p ON TRUE
+    WHERE a.id = p_articulo_id;
+END;
+$$ LANGUAGE plpgsql STABLE;
+
+GRANT EXECUTE ON FUNCTION leyesmx.coordenadas_articulo TO web_anon;

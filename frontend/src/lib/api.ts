@@ -409,3 +409,18 @@ export async function buscarReferencias(referencias: string): Promise<Referencia
     body: JSON.stringify({ p_referencias: referencias }),
   })
 }
+
+// Coordenadas PDF para sincronización
+export interface CoordenadasPdf {
+  pagina: number
+  y: number
+  ley_codigo: string
+}
+
+export async function getCoordenadasArticulo(articuloId: number): Promise<CoordenadasPdf | null> {
+  const result = await fetchAPI<CoordenadasPdf[]>('/rpc/coordenadas_articulo', {
+    method: 'POST',
+    body: JSON.stringify({ p_articulo_id: articuloId }),
+  })
+  return result[0] || null
+}

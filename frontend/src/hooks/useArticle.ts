@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionPorTipoNumero, getDivisionPorPath, getArticulosDivision, getDivisionesHijas, getDivisionesArticulo, getFraccionesArticulo, buscarReferencias, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type DivisionHija, type ArticuloDivision, type DivisionAncestro, type Fraccion, type ReferenciaLegal } from '@/lib/api'
+import { getArticulo, getArticuloPorLey, getLeyes, getNavegacion, getEstructuraLey, getDivisionPorTipoNumero, getDivisionPorPath, getArticulosDivision, getDivisionesHijas, getDivisionesArticulo, getFraccionesArticulo, buscarReferencias, getCoordenadasArticulo, type ArticuloDetalle, type Ley, type NavegacionArticulo, type Division, type DivisionInfo, type DivisionHija, type ArticuloDivision, type DivisionAncestro, type Fraccion, type ReferenciaLegal, type CoordenadasPdf } from '@/lib/api'
 
 export function useArticle(id: number | null) {
   return useQuery<ArticuloDetalle | null>({
@@ -140,5 +140,17 @@ export function useReferenciasLegales(referencias: string | null) {
     },
     enabled: referencias !== null && referencias.trim() !== '',
     staleTime: 1000 * 60 * 60,
+  })
+}
+
+export function useArticuloPdf(articuloId: number | null) {
+  return useQuery<CoordenadasPdf | null>({
+    queryKey: ['coordenadas-pdf', articuloId],
+    queryFn: async () => {
+      if (!articuloId) return null
+      return getCoordenadasArticulo(articuloId)
+    },
+    enabled: articuloId !== null,
+    staleTime: 1000 * 60 * 60, // 1 hora - coordenadas no cambian
   })
 }

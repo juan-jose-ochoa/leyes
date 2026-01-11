@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { Copy, Check, ExternalLink, BookOpen, ChevronLeft, ChevronRight, Home } from 'lucide-react'
+import { Copy, Check, ExternalLink, BookOpen, ChevronLeft, ChevronRight, Home, FileText, X } from 'lucide-react'
 import ReferenciasList from '@/components/ReferenciasList'
-import { useArticle, useArticuloPorLey, useNavegacion, useDivisionesArticulo, useFraccionesArticulo } from '@/hooks/useArticle'
+import { useArticle, useArticuloPorLey, useNavegacion, useDivisionesArticulo, useFraccionesArticulo, useArticuloPdf } from '@/hooks/useArticle'
 import ArticleContent from '@/components/ArticleContent'
 import ArticleToc from '@/components/ArticleToc'
+import PdfViewer from '@/components/PdfViewer'
 import clsx from 'clsx'
 
 export default function Article() {
@@ -27,8 +28,10 @@ export default function Article() {
   const { data: navegacion } = useNavegacion(articulo?.id ?? null)
   const { data: divisiones } = useDivisionesArticulo(articulo?.id ?? null)
   const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null, ley ?? undefined)
+  const { data: coordenadasPdf } = useArticuloPdf(articulo?.id ?? null)
   const [copied, setCopied] = useState(false)
   const [mostrarReferencias, setMostrarReferencias] = useState(false)
+  const [mostrarPdf, setMostrarPdf] = useState(false)
 
   // Scroll a hash al cargar la página (después de que carguen las fracciones)
   useEffect(() => {
@@ -97,8 +100,17 @@ export default function Article() {
     ? `${articulo.titulo}. ${articulo.contenido.slice(0, 150)}...`
     : articulo.contenido.slice(0, 200) + '...'
 
+  // URL del PDF basada en el código de ley
+  const pdfUrl = articulo ? `/pdfs/${articulo.ley.toLowerCase()}/documento.pdf` : ''
+
   return (
-    <div className="mx-auto max-w-4xl">
+    <div className={clsx(
+      mostrarPdf ? 'grid lg:grid-cols-2 gap-6' : '',
+      'mx-auto',
+      mostrarPdf ? 'max-w-7xl' : 'max-w-4xl'
+    )}>
+      {/* Contenido del artículo */}
+      <div>
       <Helmet>
         <title>{seoTitle}</title>
         <link rel="canonical" href={`https://leyesfiscalesmexico.com${location.pathname}`} />
@@ -365,6 +377,42 @@ export default function Article() {
           )}
         </div>
       )}
+      </div>
+
+      {/* Panel PDF - Solo visible en pantallas grandes cuando está activado */}
+      {mostrarPdf && (
+        <div className="hidden lg:block sticky top-0 h-[calc(100vh-4rem)] rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
+          <PdfViewer
+            pdfUrl={pdfUrl}
+            pagina={coordenadasPdf?.pagina}
+            y={coordenadasPdf?.y}
+          />
+        </div>
+      )}
+
+      {/* Botón flotante para toggle PDF */}
+      <button
+        onClick={() => setMostrarPdf(!mostrarPdf)}
+        className={clsx(
+          'fixed bottom-6 right-6 z-50 flex items-center gap-2 px-4 py-3 rounded-full shadow-lg transition-all',
+          'bg-primary-600 hover:bg-primary-700 text-white',
+          'focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2',
+          'hidden lg:flex'  // Solo en pantallas grandes
+        )}
+        title={mostrarPdf ? 'Ocultar PDF' : 'Ver PDF original'}
+      >
+        {mostrarPdf ? (
+          <>
+            <X className="h-5 w-5" />
+            <span className="text-sm font-medium">Cerrar PDF</span>
+          </>
+        ) : (
+          <>
+            <FileText className="h-5 w-5" />
+            <span className="text-sm font-medium">Ver PDF</span>
+          </>
+        )}
+      </button>
     </div>
   )
 }

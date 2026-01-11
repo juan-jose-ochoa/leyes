@@ -17,6 +17,11 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/leyesmx/, ''),
       },
+      '/pdfs': {
+        target: 'http://localhost:3011',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/pdfs/, ''),
+      },
     },
   },
 })
