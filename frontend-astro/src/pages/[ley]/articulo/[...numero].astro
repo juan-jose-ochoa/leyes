@@ -221,19 +221,21 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
           <ArticleToc parrafos={articulo.parrafos} />
         )}
 
-        {isDerogado ? (
-          <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-gray-500 dark:text-gray-400 italic">
-            Artículo derogado
-          </div>
-        ) : tieneParrafos ? (
-          <FraccionesView parrafos={articulo.parrafos} />
-        ) : (
-          <div class="prose-legal">
-            <p class="text-gray-800 dark:text-gray-200 whitespace-pre-wrap">
-              {articulo.contenido}
-            </p>
-          </div>
-        )}
+        <div id="legal-content">
+          {isDerogado ? (
+            <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-gray-500 dark:text-gray-400 italic">
+              Artículo derogado
+            </div>
+          ) : tieneParrafos ? (
+            <FraccionesView parrafos={articulo.parrafos} />
+          ) : (
+            <div class="prose-legal">
+              <p class="text-gray-800 dark:text-gray-200 whitespace-pre-wrap">
+                {articulo.contenido}
+              </p>
+            </div>
+          )}
+        </div>
       </article>
     </main>
 
@@ -272,12 +274,12 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
   <!-- Copy script -->
   <script>
     const copyBtn = document.getElementById('copy-btn');
-    const article = document.getElementById('article-content');
+    const legalContent = document.getElementById('legal-content');
 
     copyBtn?.addEventListener('click', async () => {
-      if (!article) return;
+      if (!legalContent) return;
 
-      const text = article.innerText;
+      const text = legalContent.innerText;
       try {
         await navigator.clipboard.writeText(text);
         // Visual feedback
