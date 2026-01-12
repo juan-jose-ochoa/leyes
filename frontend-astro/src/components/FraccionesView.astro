@@ -110,6 +110,17 @@ function getAnclaId(p: Parrafo): string {
   return `p-${p.numero}`;
 }
 
+// Limpiar contenido que empieza con sufijo duplicado
+function limpiarContenido(contenido: string, tipo: string): string {
+  const sufijos = [')', '.', '.-', '-'];
+  for (const s of sufijos) {
+    if (contenido.startsWith(s + ' ') || contenido.startsWith(s)) {
+      return contenido.slice(s.length).trimStart();
+    }
+  }
+  return contenido;
+}
+
 const niveles = calcularNiveles(parrafos);
 ---
 
@@ -131,7 +142,7 @@ const niveles = calcularNiveles(parrafos);
           </span>
         )}
         <span class="text-gray-800 dark:text-gray-200">
-          {p.contenido}
+          {limpiarContenido(p.contenido, p.tipo)}
         </span>
       </div>
     );
