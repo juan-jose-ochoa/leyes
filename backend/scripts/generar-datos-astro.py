@@ -170,7 +170,7 @@ def generar_catalogo() -> dict:
     """
     catalogo = {
         "_generado": datetime.now().isoformat(),
-        "_version": "1.0",
+        "_version": "1.1",
         "leyes": []
     }
 
@@ -179,21 +179,46 @@ def generar_catalogo() -> dict:
         estructura = cargar_estructura(codigo)
         stats = estructura.get("estadisticas", {}) if estructura else {}
 
+        # Cargar contenido para ultima_reforma_dof
+        contenido = cargar_contenido(codigo)
+        ultima_reforma = contenido.get("ultima_reforma_dof") if contenido else None
+
         ley = {
             "codigo": codigo,
             "nombre": config.get("nombre"),
             "nombre_corto": config.get("nombre_corto"),
             "tipo": config.get("tipo"),
+            "categoria": config.get("categoria"),
+            "reglamentos": config.get("reglamentos"),
+            "reglamento_de": config.get("reglamento_de"),
             "url_fuente": config.get("url_fuente"),
             "tipo_contenido": config.get("tipo_contenido", "articulo"),
             "total_articulos": stats.get("total", 0) or stats.get("articulos_vigentes", 0),
             "divisiones_permitidas": config.get("divisiones_permitidas", []),
+            "ultima_reforma_dof": ultima_reforma,
         }
+
+        # Eliminar campos None
+        ley = {k: v for k, v in ley.items() if v is not None}
 
         catalogo["leyes"].append(ley)
 
-    # Ordenar por código
-    catalogo["leyes"].sort(key=lambda x: x["codigo"])
+    # Orden de leyes por frecuencia de consulta (UX priority)
+    ORDEN_LEYES = [
+        'CFF', 'LISR', 'LIVA', 'RMF', 'LIF', 'LIEPS', 'LA', 'LFDC',
+        'LFT', 'LSS', 'LINFONAVIT', 'LISSSTE',
+        'CPEUM',
+        # Reglamentos al final, ordenados por ley base
+        'RCFF', 'RLISR', 'RLIVA', 'RLIEPS', 'RLFT', 'RACERF', 'RLSS',
+    ]
+
+    def orden_key(ley):
+        try:
+            return ORDEN_LEYES.index(ley["codigo"])
+        except ValueError:
+            return 999  # Al final si no está en la lista
+
+    catalogo["leyes"].sort(key=orden_key)
 
     return catalogo
 

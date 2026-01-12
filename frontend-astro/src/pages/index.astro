@@ -3,49 +3,137 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Search from '../components/Search.astro';
 import catalogo from '../data/catalogo.json';
 
-const leyes = catalogo.leyes;
+// Separar leyes principales de reglamentos
+const leyesPrincipales = catalogo.leyes.filter(l => l.tipo !== 'reglamento');
+const reglamentosMap = new Map(
+  catalogo.leyes
+    .filter(l => l.tipo === 'reglamento')
+    .map(r => [r.codigo, r])
+);
+
+// Agrupar por categoría
+const categorias = {
+  fiscal: {
+    titulo: 'Leyes Fiscales',
+    leyes: leyesPrincipales.filter(l => l.categoria === 'fiscal')
+  },
+  laboral: {
+    titulo: 'Leyes Laborales',
+    leyes: leyesPrincipales.filter(l => l.categoria === 'laboral')
+  },
+  constitucional: {
+    titulo: 'Marco Constitucional',
+    leyes: leyesPrincipales.filter(l => l.categoria === 'constitucional')
+  }
+};
+
+// Stats
+const totalLeyes = catalogo.leyes.length;
+const totalArticulos = catalogo.leyes.reduce((sum, l) => sum + l.total_articulos, 0);
+
+// Colors by categoria
+const categoriaStyle = {
+  fiscal: { bg: 'bg-emerald-600', line: 'bg-emerald-500' },
+  laboral: { bg: 'bg-blue-600', line: 'bg-blue-500' },
+  constitucional: { bg: 'bg-orange-600', line: 'bg-orange-500' }
+} as const;
 ---
 
-<BaseLayout title="LeyesMX - Leyes Fiscales de México">
-  <main class="container mx-auto px-4 py-8">
+<BaseLayout title="LeyesMX - Leyes Fiscales y Laborales de México">
+  <main class="container mx-auto px-4 py-8 max-w-6xl">
     <!-- Hero -->
-    <div class="text-center mb-8">
-      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-        <span class="text-primary-600">Leyes</span>MX
+    <div class="text-center mb-10">
+      <!-- Logo -->
+      <div class="flex justify-center mb-4">
+        <svg class="w-16 h-16 text-primary-500" viewBox="0 0 64 64" fill="currentColor">
+          <path d="M32 4L8 16v8l24 12 24-12v-8L32 4zm0 4.5L49.5 16 32 23.5 14.5 16 32 8.5zM12 20.5l20 10v21l-20-10v-21zm40 0v21l-20 10v-21l20-10z"/>
+        </svg>
+      </div>
+
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-2">
+        Leyes fiscales y laborales
       </h1>
-      <p class="text-xl text-gray-600 dark:text-gray-400">
-        Buscador de leyes fiscales y laborales mexicanas
+      <p class="text-xl text-primary-600 dark:text-primary-400 font-medium mb-4">
+        sin buscar en PDFs
+      </p>
+      <p class="text-gray-600 dark:text-gray-400 mb-2">
+        Encuentra cualquier artículo en segundos. Navega fácilmente por la estructura de cada ley.
+      </p>
+      <p class="text-sm text-gray-500 dark:text-gray-500">
+        {totalLeyes} leyes y reglamentos · {totalArticulos.toLocaleString()} artículos
       </p>
     </div>
 
     <!-- Search -->
     <div class="max-w-2xl mx-auto mb-12">
       <Search />
+      <p class="text-center text-sm text-gray-500 dark:text-gray-500 mt-2">
+        Presiona <kbd class="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-800 rounded text-xs">/</kbd> para buscar
+      </p>
     </div>
 
-    <!-- Lista de leyes -->
-    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {leyes.map((ley) => (
-        <a
-          href={`/${ley.codigo.toLowerCase()}`}
-          class="card hover:border-primary-500 transition-colors"
-        >
-          <div class="flex items-start justify-between">
-            <div>
-              <span class={`badge ${ley.tipo === 'codigo' ? 'badge-ley' : 'badge-reglamento'}`}>
-                {ley.codigo}
-              </span>
-              <h2 class="mt-2 font-semibold text-gray-900 dark:text-white">
-                {ley.nombre_corto || ley.nombre}
-              </h2>
-              <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                {ley.total_articulos} artículos
-              </p>
-            </div>
-          </div>
-        </a>
-      ))}
-    </div>
+    <!-- Categorías -->
+    {Object.entries(categorias).map(([key, cat]) => cat.leyes.length > 0 && (
+      <section class="mb-10">
+        <h2 class="flex items-center gap-2 text-lg font-semibold text-gray-900 dark:text-white mb-4">
+          <span class={`w-6 h-0.5 ${categoriaStyle[key as keyof typeof categoriaStyle].line}`}></span>
+          {cat.titulo}
+        </h2>
+
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {cat.leyes.map((ley) => {
+            const reglamentos = (ley.reglamentos || [])
+              .map(codigo => reglamentosMap.get(codigo))
+              .filter(Boolean);
+
+            return (
+              <div class="card hover:border-primary-500 transition-colors overflow-hidden p-0">
+                <a href={`/${ley.codigo.toLowerCase()}`} class="block p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                  <div class="flex items-start gap-3">
+                    <div class={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-sm font-bold text-white ${categoriaStyle[ley.categoria as keyof typeof categoriaStyle].bg}`}>
+                      {ley.codigo.length > 4 ? ley.codigo.slice(0, 3) : ley.codigo}
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <h3 class="font-semibold text-gray-900 dark:text-white">
+                        {ley.nombre_corto}
+                      </h3>
+                      <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400 line-clamp-2">
+                        {ley.nombre}
+                      </p>
+                      <div class="mt-2 flex items-center gap-3 text-xs text-gray-400">
+                        <span>{ley.total_articulos} {ley.tipo_contenido === 'regla' ? 'reglas' : 'arts.'}</span>
+                        {ley.ultima_reforma_dof && (
+                          <span>{ley.ultima_reforma_dof.split('-').reverse().join('/')}</span>
+                        )}
+                      </div>
+                    </div>
+                    <svg class="w-5 h-5 shrink-0 text-gray-300 dark:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </a>
+
+                {/* Reglamentos asociados */}
+                {reglamentos.length > 0 && (
+                  <div class="mt-3 pt-3 border-t border-gray-100 dark:border-gray-700">
+                    {reglamentos.map((reg) => (
+                      <a
+                        href={`/${reg.codigo.toLowerCase()}`}
+                        class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 py-1"
+                      >
+                        <span class="text-gray-400">•</span>
+                        <span>{reg.nombre_corto}</span>
+                        <span class="text-gray-400">{reg.total_articulos} arts.</span>
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    ))}
 
     <!-- Footer -->
     <footer class="mt-16 text-center text-sm text-gray-500 dark:text-gray-400">

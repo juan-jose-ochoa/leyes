@@ -60,6 +60,18 @@
   .badge-reglamento {
     @apply badge bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200;
   }
+
+  .badge-fiscal {
+    @apply badge bg-emerald-600 text-white dark:bg-emerald-700;
+  }
+
+  .badge-laboral {
+    @apply badge bg-blue-600 text-white dark:bg-blue-700;
+  }
+
+  .badge-constitucional {
+    @apply badge bg-orange-600 text-white dark:bg-orange-700;
+  }
 }
 
 @layer utilities {

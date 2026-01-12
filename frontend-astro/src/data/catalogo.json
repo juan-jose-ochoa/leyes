@@ -1,12 +1,16 @@
 {
-  "_generado": "2026-01-11T23:30:07.481256",
-  "_version": "1.0",
+  "_generado": "2026-01-12T02:02:15.545283",
+  "_version": "1.1",
   "leyes": [
     {
       "codigo": "CFF",
       "nombre": "Código Fiscal de la Federación",
       "nombre_corto": "Código Fiscal",
       "tipo": "codigo",
+      "categoria": "fiscal",
+      "reglamentos": [
+        "RCFF"
+      ],
       "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
       "tipo_contenido": "articulo",
       "total_articulos": 421,
@@ -14,104 +18,18 @@
         "titulo",
         "capitulo",
         "seccion"
-      ]
-    },
-    {
-      "codigo": "CPEUM",
-      "nombre": "Constitución Política de los Estados Unidos Mexicanos",
-      "nombre_corto": "Constitución",
-      "tipo": "codigo",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 136,
-      "divisiones_permitidas": [
-        "titulo",
-        "capitulo"
-      ]
-    },
-    {
-      "codigo": "LA",
-      "nombre": "Ley Aduanera",
-      "nombre_corto": "Aduanera",
-      "tipo": "ley",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAdua.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 277,
-      "divisiones_permitidas": [
-        "titulo",
-        "capitulo",
-        "seccion"
-      ]
-    },
-    {
-      "codigo": "LFDC",
-      "nombre": "Ley Federal de los Derechos del Contribuyente",
-      "nombre_corto": "Derechos del Contribuyente",
-      "tipo": "ley",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDC.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 24,
-      "divisiones_permitidas": [
-        "capitulo"
-      ]
-    },
-    {
-      "codigo": "LFT",
-      "nombre": "Ley Federal del Trabajo",
-      "nombre_corto": "Trabajo",
-      "tipo": "ley",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 1264,
-      "divisiones_permitidas": [
-        "titulo",
-        "capitulo"
-      ]
-    },
-    {
-      "codigo": "LIEPS",
-      "nombre": "Ley del Impuesto Especial sobre Producción y Servicios",
-      "nombre_corto": "IEPS",
-      "tipo": "ley",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIEPS.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 70,
-      "divisiones_permitidas": [
-        "titulo",
-        "capitulo"
-      ]
-    },
-    {
-      "codigo": "LIF",
-      "nombre": "Ley de Ingresos de la Federación para el Ejercicio Fiscal de 2026",
-      "nombre_corto": "Ley de Ingresos 2026",
-      "tipo": "ley",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIF_2026.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 34,
-      "divisiones_permitidas": [
-        "capitulo"
-      ]
-    },
-    {
-      "codigo": "LINFONAVIT",
-      "nombre": "Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores",
-      "nombre_corto": "INFONAVIT",
-      "tipo": "ley",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 95,
-      "divisiones_permitidas": [
-        "titulo",
-        "capitulo",
-        "seccion"
-      ]
+      ],
+      "ultima_reforma_dof": "2025-11-14"
     },
     {
       "codigo": "LISR",
       "nombre": "Ley del Impuesto sobre la Renta",
-      "nombre_corto": "ISR",
+      "nombre_corto": "Ley del ISR",
       "tipo": "ley",
+      "categoria": "fiscal",
+      "reglamentos": [
+        "RLISR"
+      ],
       "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf",
       "tipo_contenido": "articulo",
       "total_articulos": 236,
@@ -119,142 +37,33 @@
         "titulo",
         "capitulo",
         "seccion"
-      ]
-    },
-    {
-      "codigo": "LISSSTE",
-      "nombre": "Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado",
-      "nombre_corto": "ISSSTE",
-      "tipo": "ley",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISSSTE.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 259,
-      "divisiones_permitidas": [
-        "titulo",
-        "capitulo",
-        "seccion"
-      ]
+      ],
+      "ultima_reforma_dof": "2024-04-01"
     },
     {
       "codigo": "LIVA",
       "nombre": "Ley del Impuesto al Valor Agregado",
-      "nombre_corto": "IVA",
+      "nombre_corto": "Ley del IVA",
       "tipo": "ley",
+      "categoria": "fiscal",
+      "reglamentos": [
+        "RLIVA"
+      ],
       "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf",
       "tipo_contenido": "articulo",
       "total_articulos": 80,
       "divisiones_permitidas": [
         "titulo",
         "capitulo"
-      ]
-    },
-    {
-      "codigo": "LSS",
-      "nombre": "Ley del Seguro Social",
-      "nombre_corto": "Seguro Social",
-      "tipo": "ley",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 385,
-      "divisiones_permitidas": [
-        "titulo",
-        "capitulo"
-      ]
-    },
-    {
-      "codigo": "RACERF",
-      "nombre": "Reglamento de la Ley del Seguro Social en materia de Afiliación, Clasificación de Empresas, Recaudación y Fiscalización",
-      "nombre_corto": "Reglamento Afiliación SS",
-      "tipo": "reglamento",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_MACERF.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 196,
-      "divisiones_permitidas": [
-        "titulo",
-        "capitulo"
-      ]
-    },
-    {
-      "codigo": "RCFF",
-      "nombre": "Reglamento del Código Fiscal de la Federación",
-      "nombre_corto": "Reglamento CFF",
-      "tipo": "reglamento",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_CFF.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 113,
-      "divisiones_permitidas": [
-        "titulo",
-        "capitulo",
-        "seccion"
-      ]
-    },
-    {
-      "codigo": "RLFT",
-      "nombre": "Reglamento de los Artículos 121 y 122 de la Ley Federal del Trabajo",
-      "nombre_corto": "Reglamento PTU",
-      "tipo": "reglamento",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_Art121-122_LFT_050614.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 29,
-      "divisiones_permitidas": [
-        "capitulo"
-      ]
-    },
-    {
-      "codigo": "RLIEPS",
-      "nombre": "Reglamento de la Ley del Impuesto Especial sobre Producción y Servicios",
-      "nombre_corto": "Reglamento IEPS",
-      "tipo": "reglamento",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIEPS.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 19,
-      "divisiones_permitidas": [
-        "capitulo"
-      ]
-    },
-    {
-      "codigo": "RLISR",
-      "nombre": "Reglamento de la Ley del Impuesto sobre la Renta",
-      "nombre_corto": "Reglamento ISR",
-      "tipo": "reglamento",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR_060516.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 313,
-      "divisiones_permitidas": [
-        "titulo",
-        "capitulo",
-        "seccion"
-      ]
-    },
-    {
-      "codigo": "RLIVA",
-      "nombre": "Reglamento de la Ley del Impuesto al Valor Agregado",
-      "nombre_corto": "Reglamento IVA",
-      "tipo": "reglamento",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA_250914.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 84,
-      "divisiones_permitidas": [
-        "capitulo"
-      ]
-    },
-    {
-      "codigo": "RLSS",
-      "nombre": "Reglamento de la Ley del Seguro Social para Reservas Financieras y Actuariales",
-      "nombre_corto": "Reglamento Reservas SS",
-      "tipo": "reglamento",
-      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_RFARGFA.pdf",
-      "tipo_contenido": "articulo",
-      "total_articulos": 18,
-      "divisiones_permitidas": [
-        "capitulo"
-      ]
+      ],
+      "ultima_reforma_dof": "2021-11-12"
     },
     {
       "codigo": "RMF",
       "nombre": "Resolución Miscelánea Fiscal",
       "nombre_corto": "Miscelánea Fiscal 2026",
       "tipo": "resolucion",
+      "categoria": "fiscal",
       "url_fuente": "https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf",
       "tipo_contenido": "regla",
       "total_articulos": 1106,
@@ -263,7 +72,264 @@
         "titulo",
         "capitulo",
         "seccion"
-      ]
+      ],
+      "ultima_reforma_dof": "2025-12-28"
+    },
+    {
+      "codigo": "LIF",
+      "nombre": "Ley de Ingresos de la Federación para el Ejercicio Fiscal de 2026",
+      "nombre_corto": "Ley de Ingresos 2026",
+      "tipo": "ley",
+      "categoria": "fiscal",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIF_2026.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 34,
+      "divisiones_permitidas": [
+        "capitulo"
+      ],
+      "ultima_reforma_dof": "2025-11-07"
+    },
+    {
+      "codigo": "LIEPS",
+      "nombre": "Ley del Impuesto Especial sobre Producción y Servicios",
+      "nombre_corto": "Ley del IEPS",
+      "tipo": "ley",
+      "categoria": "fiscal",
+      "reglamentos": [
+        "RLIEPS"
+      ],
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIEPS.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 70,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo"
+      ],
+      "ultima_reforma_dof": "2025-11-07"
+    },
+    {
+      "codigo": "LA",
+      "nombre": "Ley Aduanera",
+      "nombre_corto": "Ley Aduanera",
+      "tipo": "ley",
+      "categoria": "fiscal",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAdua.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 277,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo",
+        "seccion"
+      ],
+      "ultima_reforma_dof": "2025-11-19"
+    },
+    {
+      "codigo": "LFDC",
+      "nombre": "Ley Federal de los Derechos del Contribuyente",
+      "nombre_corto": "Derechos del Contribuyente",
+      "tipo": "ley",
+      "categoria": "fiscal",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDC.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 24,
+      "divisiones_permitidas": [
+        "capitulo"
+      ],
+      "ultima_reforma_dof": "2005-06-23"
+    },
+    {
+      "codigo": "LFT",
+      "nombre": "Ley Federal del Trabajo",
+      "nombre_corto": "Ley Federal del Trabajo",
+      "tipo": "ley",
+      "categoria": "laboral",
+      "reglamentos": [
+        "RLFT"
+      ],
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 1264,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo"
+      ],
+      "ultima_reforma_dof": "2025-02-21"
+    },
+    {
+      "codigo": "LSS",
+      "nombre": "Ley del Seguro Social",
+      "nombre_corto": "Ley del Seguro Social",
+      "tipo": "ley",
+      "categoria": "laboral",
+      "reglamentos": [
+        "RACERF",
+        "RLSS"
+      ],
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 385,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo"
+      ],
+      "ultima_reforma_dof": "2024-06-07"
+    },
+    {
+      "codigo": "LINFONAVIT",
+      "nombre": "Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores",
+      "nombre_corto": "Ley del INFONAVIT",
+      "tipo": "ley",
+      "categoria": "laboral",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 95,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo",
+        "seccion"
+      ],
+      "ultima_reforma_dof": "2025-02-21"
+    },
+    {
+      "codigo": "LISSSTE",
+      "nombre": "Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado",
+      "nombre_corto": "Ley del ISSSTE",
+      "tipo": "ley",
+      "categoria": "laboral",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISSSTE.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 259,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo",
+        "seccion"
+      ],
+      "ultima_reforma_dof": "2024-06-07"
+    },
+    {
+      "codigo": "CPEUM",
+      "nombre": "Constitución Política de los Estados Unidos Mexicanos",
+      "nombre_corto": "Constitución",
+      "tipo": "codigo",
+      "categoria": "constitucional",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 136,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo"
+      ],
+      "ultima_reforma_dof": "2025-10-15"
+    },
+    {
+      "codigo": "RCFF",
+      "nombre": "Reglamento del Código Fiscal de la Federación",
+      "nombre_corto": "Reglamento CFF",
+      "tipo": "reglamento",
+      "categoria": "fiscal",
+      "reglamento_de": "CFF",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_CFF.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 113,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo",
+        "seccion"
+      ],
+      "ultima_reforma_dof": "2014-04-02"
+    },
+    {
+      "codigo": "RLISR",
+      "nombre": "Reglamento de la Ley del Impuesto sobre la Renta",
+      "nombre_corto": "Reglamento ISR",
+      "tipo": "reglamento",
+      "categoria": "fiscal",
+      "reglamento_de": "LISR",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR_060516.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 313,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo",
+        "seccion"
+      ],
+      "ultima_reforma_dof": "2016-05-06"
+    },
+    {
+      "codigo": "RLIVA",
+      "nombre": "Reglamento de la Ley del Impuesto al Valor Agregado",
+      "nombre_corto": "Reglamento IVA",
+      "tipo": "reglamento",
+      "categoria": "fiscal",
+      "reglamento_de": "LIVA",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA_250914.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 84,
+      "divisiones_permitidas": [
+        "capitulo"
+      ],
+      "ultima_reforma_dof": "2014-09-25"
+    },
+    {
+      "codigo": "RLIEPS",
+      "nombre": "Reglamento de la Ley del Impuesto Especial sobre Producción y Servicios",
+      "nombre_corto": "Reglamento IEPS",
+      "tipo": "reglamento",
+      "categoria": "fiscal",
+      "reglamento_de": "LIEPS",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIEPS.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 19,
+      "divisiones_permitidas": [
+        "capitulo"
+      ],
+      "ultima_reforma_dof": "2006-12-04"
+    },
+    {
+      "codigo": "RLFT",
+      "nombre": "Reglamento de los Artículos 121 y 122 de la Ley Federal del Trabajo",
+      "nombre_corto": "Reglamento PTU",
+      "tipo": "reglamento",
+      "categoria": "laboral",
+      "reglamento_de": "LFT",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_Art121-122_LFT_050614.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 29,
+      "divisiones_permitidas": [
+        "capitulo"
+      ],
+      "ultima_reforma_dof": "2014-06-05"
+    },
+    {
+      "codigo": "RACERF",
+      "nombre": "Reglamento de la Ley del Seguro Social en materia de Afiliación, Clasificación de Empresas, Recaudación y Fiscalización",
+      "nombre_corto": "Reglamento Afiliación SS",
+      "tipo": "reglamento",
+      "categoria": "laboral",
+      "reglamento_de": "LSS",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_MACERF.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 196,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo"
+      ],
+      "ultima_reforma_dof": "2005-07-15"
+    },
+    {
+      "codigo": "RLSS",
+      "nombre": "Reglamento de la Ley del Seguro Social para Reservas Financieras y Actuariales",
+      "nombre_corto": "Reglamento Reservas SS",
+      "tipo": "reglamento",
+      "categoria": "laboral",
+      "reglamento_de": "LSS",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_RFARGFA.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 18,
+      "divisiones_permitidas": [
+        "capitulo"
+      ],
+      "ultima_reforma_dof": "2013-08-20"
     }
   ]
 }

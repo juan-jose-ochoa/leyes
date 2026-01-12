@@ -4,6 +4,14 @@ export default {
     "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
   ],
   darkMode: 'class',
+  safelist: [
+    'badge-fiscal',
+    'badge-laboral',
+    'badge-constitucional',
+    'bg-emerald-500',
+    'bg-blue-500',
+    'bg-orange-500',
+  ],
   theme: {
     extend: {
       colors: {

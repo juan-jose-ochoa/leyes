@@ -23,6 +23,10 @@ LEYES = {
         "nombre": "Código Fiscal de la Federación",
         "nombre_corto": "Código Fiscal",
         "tipo": "codigo",
+        "categoria": "fiscal",
+        "reglamentos": ['RCFF'],
+        "categoria": "fiscal",
+        "reglamentos": ["RCFF"],
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "pdf_path": "backend/etl/data/cff/cff_codigo_fiscal_de_la_federacion.pdf",
 
@@ -104,7 +108,8 @@ LEYES = {
         "nombre": "Resolución Miscelánea Fiscal",
         "nombre_corto": "Miscelánea Fiscal 2026",
         "tipo": "resolucion",
-        "tipo_extractor": "rmf",  # Usa ExtractorRMF en lugar de ExtractorGeneral
+        "categoria": "fiscal",
+                "tipo_extractor": "rmf",  # Usa ExtractorRMF en lugar de ExtractorGeneral
         "url_fuente": "https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf",
         "pdf_path": "backend/etl/data/rmf/rmf_2026_original.pdf",
 
@@ -143,7 +148,8 @@ LEYES = {
         "nombre": "Constitución Política de los Estados Unidos Mexicanos",
         "nombre_corto": "Constitución",
         "tipo": "codigo",
-        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+        "categoria": "constitucional",
+                "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
         "pdf_path": "backend/etl/data/cpeum/cpeum_constitucion_politica.pdf",
 
         # Patrón para extraer fecha DOF del encabezado
@@ -222,8 +228,12 @@ LEYES = {
 
     "LISR": {
         "nombre": "Ley del Impuesto sobre la Renta",
-        "nombre_corto": "ISR",
+        "nombre_corto": "Ley del ISR",
         "tipo": "ley",
+        "categoria": "fiscal",
+        "reglamentos": ['RLISR'],
+        "categoria": "fiscal",
+        "reglamentos": ["RLISR"],
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf",
         "pdf_path": "backend/etl/data/lisr/lisr_ley_del_impuesto_sobre_la_renta.pdf",
 
@@ -286,8 +296,12 @@ LEYES = {
 
     "LIVA": {
         "nombre": "Ley del Impuesto al Valor Agregado",
-        "nombre_corto": "IVA",
+        "nombre_corto": "Ley del IVA",
         "tipo": "ley",
+        "categoria": "fiscal",
+        "reglamentos": ['RLIVA'],
+        "categoria": "fiscal",
+        "reglamentos": ["RLIVA"],
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf",
         "pdf_path": "backend/etl/data/liva/liva_ley_del_impuesto_al_valor_agregado.pdf",
 
@@ -350,9 +364,10 @@ LEYES = {
 
     "LA": {
         "nombre": "Ley Aduanera",
-        "nombre_corto": "Aduanera",
+        "nombre_corto": "Ley Aduanera",
         "tipo": "ley",
-        "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAdua.pdf",
+        "categoria": "fiscal",
+                "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAdua.pdf",
         "pdf_path": "backend/etl/data/la/la_ley_aduanera.pdf",
 
         "fecha_dof_patron": r"Última Reforma DOF (\d{1,2})-(\d{1,2})-(\d{4})",
@@ -420,8 +435,10 @@ LEYES = {
 
     "LIEPS": {
         "nombre": "Ley del Impuesto Especial sobre Producción y Servicios",
-        "nombre_corto": "IEPS",
+        "nombre_corto": "Ley del IEPS",
         "tipo": "ley",
+        "categoria": "fiscal",
+        "reglamentos": ['RLIEPS'],
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIEPS.pdf",
         "pdf_path": "backend/etl/data/lieps/lieps_ley_del_impuesto_especial.pdf",
 
@@ -474,8 +491,10 @@ LEYES = {
 
     "LFT": {
         "nombre": "Ley Federal del Trabajo",
-        "nombre_corto": "Trabajo",
+        "nombre_corto": "Ley Federal del Trabajo",
         "tipo": "ley",
+        "categoria": "laboral",
+        "reglamentos": ['RLFT'],
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
         "pdf_path": "backend/etl/data/lft/lft_ley_federal_del_trabajo.pdf",
 
@@ -539,8 +558,10 @@ LEYES = {
 
     "LSS": {
         "nombre": "Ley del Seguro Social",
-        "nombre_corto": "Seguro Social",
+        "nombre_corto": "Ley del Seguro Social",
         "tipo": "ley",
+        "categoria": "laboral",
+        "reglamentos": ['RACERF', 'RLSS'],
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
         "pdf_path": "backend/etl/data/lss/lss_ley_del_seguro_social.pdf",
 
@@ -596,8 +617,9 @@ LEYES = {
 
     "LINFONAVIT": {
         "nombre": "Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores",
-        "nombre_corto": "INFONAVIT",
+        "nombre_corto": "Ley del INFONAVIT",
         "tipo": "ley",
+        "categoria": "laboral",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf",
         "pdf_path": "backend/etl/data/linfonavit/linfonavit_ley_del_infonavit.pdf",
 
@@ -650,8 +672,9 @@ LEYES = {
 
     "LISSSTE": {
         "nombre": "Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado",
-        "nombre_corto": "ISSSTE",
+        "nombre_corto": "Ley del ISSSTE",
         "tipo": "ley",
+        "categoria": "laboral",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISSSTE.pdf",
         "pdf_path": "backend/etl/data/lissste/lissste_ley_del_issste.pdf",
 
@@ -705,6 +728,7 @@ LEYES = {
         "nombre": "Ley Federal de los Derechos del Contribuyente",
         "nombre_corto": "Derechos del Contribuyente",
         "tipo": "ley",
+        "categoria": "fiscal",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDC.pdf",
         "pdf_path": "backend/etl/data/lfdc/lfdc.pdf",
 
@@ -749,6 +773,7 @@ LEYES = {
         "nombre": "Ley de Ingresos de la Federación para el Ejercicio Fiscal de 2026",
         "nombre_corto": "Ley de Ingresos 2026",
         "tipo": "ley",
+        "categoria": "fiscal",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIF_2026.pdf",
         "pdf_path": "backend/etl/data/lif/lif_2026.pdf",
 
@@ -804,6 +829,8 @@ LEYES = {
         "nombre": "Reglamento del Código Fiscal de la Federación",
         "nombre_corto": "Reglamento CFF",
         "tipo": "reglamento",
+        "categoria": "fiscal",
+        "reglamento_de": "CFF",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_CFF.pdf",
         "pdf_path": "backend/etl/data/rcff/rcff_reglamento_del_codigo_fiscal_de_la_federacion.pdf",
 
@@ -860,6 +887,8 @@ LEYES = {
         "nombre": "Reglamento de la Ley del Seguro Social en materia de Afiliación, Clasificación de Empresas, Recaudación y Fiscalización",
         "nombre_corto": "Reglamento Afiliación SS",
         "tipo": "reglamento",
+        "categoria": "laboral",
+        "reglamento_de": "LSS",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_MACERF.pdf",
         "pdf_path": "backend/etl/data/racerf/racerf_reglamento_de_la_ley_del_seguro_social_en_materia.pdf",
 
@@ -900,6 +929,8 @@ LEYES = {
         "nombre": "Reglamento de los Artículos 121 y 122 de la Ley Federal del Trabajo",
         "nombre_corto": "Reglamento PTU",
         "tipo": "reglamento",
+        "categoria": "laboral",
+        "reglamento_de": "LFT",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_Art121-122_LFT_050614.pdf",
         "pdf_path": "backend/etl/data/rlft/rlft_reglamento_de_la_ley_federal_del_trabajo.pdf",
 
@@ -933,6 +964,8 @@ LEYES = {
         "nombre": "Reglamento de la Ley del Impuesto Especial sobre Producción y Servicios",
         "nombre_corto": "Reglamento IEPS",
         "tipo": "reglamento",
+        "categoria": "fiscal",
+        "reglamento_de": "LIEPS",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIEPS.pdf",
         "pdf_path": "backend/etl/data/rlieps/rlieps_reglamento_de_la_ley_del_impuesto_especial_sobre_p.pdf",
 
@@ -966,6 +999,8 @@ LEYES = {
         "nombre": "Reglamento de la Ley del Seguro Social para Reservas Financieras y Actuariales",
         "nombre_corto": "Reglamento Reservas SS",
         "tipo": "reglamento",
+        "categoria": "laboral",
+        "reglamento_de": "LSS",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_RFARGFA.pdf",
         "pdf_path": "backend/etl/data/rlss/rlss_reglamento_de_la_ley_del_seguro_social.pdf",
 
@@ -999,6 +1034,8 @@ LEYES = {
         "nombre": "Reglamento de la Ley del Impuesto al Valor Agregado",
         "nombre_corto": "Reglamento IVA",
         "tipo": "reglamento",
+        "categoria": "fiscal",
+        "reglamento_de": "LIVA",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA_250914.pdf",
         "pdf_path": "backend/etl/data/rliva/riva_reglamento_del_impuesto_al_valor_agregado.pdf",
 
@@ -1047,6 +1084,8 @@ LEYES = {
         "nombre": "Reglamento de la Ley del Impuesto sobre la Renta",
         "nombre_corto": "Reglamento ISR",
         "tipo": "reglamento",
+        "categoria": "fiscal",
+        "reglamento_de": "LISR",
         "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR_060516.pdf",
         "pdf_path": "backend/etl/data/rlisr/risr_reglamento_del_impuesto_sobre_la_renta.pdf",
 
