@@ -31,7 +31,9 @@
           "contenido": "Para los efectos de este Reglamento se entiende por:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 364,
+          "pagina": 1
         },
         {
           "numero": 2,
@@ -40,7 +42,9 @@
           "contenido": "Ley: La Ley del Impuesto al Valor Agregado;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 388,
+          "pagina": 1
         },
         {
           "numero": 3,
@@ -49,7 +53,9 @@
           "contenido": "Impuesto: El impuesto al valor agregado;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 411,
+          "pagina": 1
         },
         {
           "numero": 4,
@@ -61,7 +67,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 25-09-2014"
-          ]
+          ],
+          "y": 435,
+          "pagina": 1
         },
         {
           "numero": 5,
@@ -73,7 +81,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 25-09-2014"
-          ]
+          ],
+          "y": 479,
+          "pagina": 1
         }
       ]
     },
@@ -93,7 +103,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 523,
+          "pagina": 1
         }
       ]
     },
@@ -110,7 +122,9 @@
           "contenido": "Para los efectos del artículo 1o.-A, último párrafo de la Ley, las personas morales obligadas a efectuar la retención del impuesto que se les traslade, lo harán en una cantidad menor, en los casos siguientes:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 556,
+          "pagina": 1
         },
         {
           "numero": 2,
@@ -119,7 +133,9 @@
           "contenido": "La retención se hará por las dos terceras partes del impuesto que se les traslade y que haya sido efectivamente pagado, cuando el impuesto le sea trasladado por personas físicas por las operaciones siguientes:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 602,
+          "pagina": 1
         },
         {
           "numero": 3,
@@ -128,7 +144,9 @@
           "contenido": ") Prestación de servicios personales independientes;",
           "padre_numero": 2,
           "x_id": 107,
-          "x_texto": 129
+          "x_texto": 129,
+          "y": 649,
+          "pagina": 1
         },
         {
           "numero": 4,
@@ -137,7 +155,9 @@
           "contenido": ") Prestación de servicios de comisión, y",
           "padre_numero": 2,
           "x_id": 107,
-          "x_texto": 129
+          "x_texto": 129,
+          "y": 672,
+          "pagina": 1
         },
         {
           "numero": 5,
@@ -146,7 +166,9 @@
           "contenido": ") Otorgamiento del uso o goce temporal de bienes.",
           "padre_numero": 2,
           "x_id": 107,
-          "x_texto": 129
+          "x_texto": 129,
+          "y": 696,
+          "pagina": 1
         },
         {
           "numero": 6,
@@ -155,7 +177,9 @@
           "contenido": "La retención se hará por el 4% del valor de la contraprestación pagada efectivamente, cuando reciban los servicios de autotransporte terrestre de bienes que sean considerados como tales en los términos de las leyes de la materia.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 110,
+          "pagina": 2
         },
         {
           "numero": 7,
@@ -164,7 +188,9 @@
           "contenido": "Las personas físicas o morales que presten los servicios de autotransporte de bienes a que se refiere el párrafo anterior, deberán poner a disposición del Servicio de Administración Tributaria la documentación comprobatoria, de conformidad con las disposiciones fiscales, de las cantidades adicionales al valor de la contraprestación pactada por los citados servicios, que efectivamente se cobren a quien los reciba, por contribuciones distintas al impuesto al valor agregado, viáticos, gastos de toda clase, reembolsos, intereses normales o moratorios, penas convencionales y por cualquier otro concepto, identificando dicha documentación con tales erogaciones.",
           "padre_numero": 6,
           "x_id": 107,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 156,
+          "pagina": 2
         }
       ]
     },
@@ -181,7 +207,9 @@
           "contenido": "Para los efectos del artículo 1o.-A, último párrafo de la Ley, la Federación y sus organismos descentralizados, cuando reciban los servicios a que se refiere el artículo 1o.-A, fracción II, inciso c) de la Ley, efectuarán la retención del impuesto en los términos del artículo 3, fracción II de este Reglamento.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 261,
+          "pagina": 2
         }
       ]
     },
@@ -201,7 +229,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 318,
+          "pagina": 2
         }
       ]
     },
@@ -218,7 +248,9 @@
           "contenido": "Para los efectos del artículo 2o.-A, fracción I, inciso a) de la Ley, se considera que los animales y vegetales no están industrializados por el simple hecho de que se presenten cortados, aplanados, en trozos, frescos, salados, secos, refrigerados, congelados o empacados ni los vegetales por el hecho de que sean sometidos a procesos de secado, limpiado, descascarado, despepitado o desgranado.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 351,
+          "pagina": 2
         },
         {
           "numero": 2,
@@ -227,7 +259,9 @@
           "contenido": "La madera cortada en tablas, tablones o en cualquier otra manera que altere su forma, longitud y grosor naturales, se considera sometida a un proceso de industrialización.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 420,
+          "pagina": 2
         }
       ]
     },
@@ -244,7 +278,9 @@
           "contenido": "Para los efectos del artículo 2o.-A, fracción I, inciso b) de la Ley, se consideran medicinas de patente las especialidades farmacéuticas, los estupefacientes, las substancias psicotrópicas y los antígenos o vacunas, incluyendo las homeopáticas y las veterinarias.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 455,
+          "pagina": 2
         },
         {
           "numero": 2,
@@ -253,7 +289,9 @@
           "contenido": "Los medicamentos magistrales y oficinales a que se refiere la legislación sanitaria se consideran medicinas de patente, cuando sean equivalentes a las especialidades farmacéuticas.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 501,
+          "pagina": 2
         }
       ]
     },
@@ -270,7 +308,9 @@
           "contenido": "Para los efectos del artículo 2o.-A, fracción I, inciso e) de la Ley, se considera que una embarcación es destinada a la pesca comercial cuando en la matrícula o el registro de la misma, así se determine, salvo prueba en contrario.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 536,
+          "pagina": 2
         },
         {
           "numero": 2,
@@ -279,7 +319,9 @@
           "contenido": "Asimismo, para los efectos del artículo 25, fracción III de la Ley, tratándose de la importación de las citadas embarcaciones, éstas se consideran destinadas a la pesca comercial, cuando para los efectos del pago del impuesto general de importación se les considere como barcos pesqueros, barcos factoría o demás barcos para la preparación o la conservación de los productos de la pesca.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 582,
+          "pagina": 2
         }
       ]
     },
@@ -296,7 +338,9 @@
           "contenido": "Para los efectos del artículo 2o.-A, fracción I, inciso e) de la Ley, se aplicará la tasa del 0% a la enajenación de la maquinaria y del equipo que tengan una denominación distinta a la mencionada en el citado precepto, siempre que su función cumpla exclusivamente con los supuestos previstos en dicho artículo, conserven su carácter esencial y no puedan ser destinados a otros fines.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 640,
+          "pagina": 2
         }
       ]
     },
@@ -316,7 +360,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 25-09-2014"
-          ]
+          ],
+          "y": 110,
+          "pagina": 3
         }
       ]
     },
@@ -340,7 +386,9 @@
           "contenido": "Para los efectos del artículo 2o.-A, fracción II, inciso a) de la Ley, se entiende que los servicios se prestan directamente a los agricultores o ganaderos inclusive cuando sea en virtud de contratos celebrados con asociaciones u organizaciones que los agrupen o con alguna institución de crédito que actúe en su carácter de fiduciaria y los agricultores, los ganaderos o asociaciones u organizaciones que los agrupen sean fideicomisarios; cuando no se hayan designado fideicomisarios o cuando éstos no puedan individualizarse y siempre que los gobiernos federal, de las Entidades Federativas, municipales o de las delegaciones del Distrito Federal sean los fideicomitentes, tratándose de fideicomisos de apoyo a las personas mencionadas, se considera que el servicio se presta en los términos de este artículo.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 465,
+          "pagina": 3
         }
       ]
     },
@@ -357,7 +405,9 @@
           "contenido": "Para los efectos del artículo 3o. de la Ley, las misiones diplomáticas deberán aceptar invariablemente la traslación del impuesto. Sólo en los casos en que exista reciprocidad, las misiones diplomáticas tendrán derecho a solicitar la devolución del impuesto que les hubiese sido trasladado y que hayan pagado efectivamente, siempre que se reúnan los requisitos que al efecto establezca el Servicio de Administración Tributaria mediante reglas de carácter general.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 581,
+          "pagina": 3
         }
       ]
     },
@@ -374,7 +424,9 @@
           "contenido": "Para los efectos del artículo 3o. de la Ley, los organismos internacionales representados o con sede en territorio nacional, deberán aceptar invariablemente la traslación del impuesto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 650,
+          "pagina": 3
         },
         {
           "numero": 2,
@@ -383,7 +435,9 @@
           "contenido": "Cuando por virtud de los Convenios Internacionales o Acuerdos Sede aplicables a los organismos internacionales antes mencionados, el Gobierno Mexicano esté obligado al reembolso o devolución del impuesto, dichos organismos podrán solicitar la devolución del impuesto que les hubiese sido trasladado y que hayan pagado efectivamente, sólo por la adquisición de los bienes y servicios que se destinen para uso oficial, que establezca el Servicio de Administración Tributaria mediante reglas de carácter general.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 684,
+          "pagina": 3
         }
       ]
     },
@@ -400,7 +454,9 @@
           "contenido": "Para los efectos del artículo 3o., último párrafo de la Ley, podrán tener el mismo tratamiento que el establecimiento en el país, definido como tal en los términos del último párrafo del artículo 16 del Código Fiscal de la Federación, los locales que utilicen las personas físicas en el territorio nacional para prestar servicios personales independientes.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 145,
+          "pagina": 4
         }
       ]
     },
@@ -417,7 +473,9 @@
           "contenido": "Para los efectos de las disposiciones que establece la Ley en materia de acreditamiento, los contribuyentes podrán acreditar el impuesto efectivamente pagado en la aduana por la importación de bienes tangibles, aun cuando no se hubiera pagado el precio de los bienes importados.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 203,
+          "pagina": 4
         }
       ]
     },
@@ -434,7 +492,9 @@
           "contenido": "Para los efectos de las disposiciones que establece la Ley en materia de acreditamiento, los contribuyentes que componen el sistema financiero, podrán incluir en el cálculo de la proporción a que se refieren dichas disposiciones, siempre que lo hagan simultáneamente tanto en el valor de las actividades por las que se deba pagar el impuesto, como en el valor total de sus actividades, la parte de los intereses sobre la cual no paguen el impuesto en los términos del artículo 18-A, fracciones I y II de la Ley, incluso el ajuste sobre el principal cuando el importe del crédito se encuentre denominado en unidades de inversión.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 249,
+          "pagina": 4
         }
       ]
     },
@@ -451,7 +511,9 @@
           "contenido": "Para calcular la proporción a que se refieren las disposiciones que establece la Ley en materia de acreditamiento, se consideran incluidas en el valor de las actividades por las que se deba pagar el impuesto, los cargos que las líneas aéreas realicen por los servicios de transporte que presten amparados con boletos de avión expedidos por una línea aérea distinta. Dichos cargos no serán incluidos por quien los hubiera pagado, en el valor de las actividades por las que se deba pagar el impuesto ni en el valor total de sus actividades.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 341,
+          "pagina": 4
         }
       ]
     },
@@ -468,7 +530,9 @@
           "contenido": "Para los efectos de las disposiciones que establece la Ley en materia de acreditamiento, las casas de bolsa, las instituciones de crédito, de seguros, de fianzas, para el depósito de valores, las casas de cambio, las sociedades de inversión y las organizaciones auxiliares del crédito, para determinar el impuesto acreditable del mes de calendario de que se trate, podrán optar por considerar dentro del valor de sus actividades, la diferencia entre los ingresos que perciban por concepto de premios de reporto y compraventa de valores, y los pagos que efectúen por dichos conceptos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 422,
+          "pagina": 4
         }
       ]
     },
@@ -485,7 +549,9 @@
           "contenido": "Para los efectos de las disposiciones que establece la Ley en materia de acreditamiento, el contribuyente deberá efectuar el reintegro del acreditamiento o el incremento del mismo, según se trate, en la forma siguiente:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 503,
+          "pagina": 4
         },
         {
           "numero": 2,
@@ -494,7 +560,9 @@
           "contenido": "La cantidad que deba reintegrarse de conformidad con el artículo 5o.-A, fracción I, inciso e) de la Ley, se disminuirá del monto del impuesto acreditable en el mes en el que se realice el ajuste. La cantidad que se disminuya en los términos de esta fracción no podrá acreditarse.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 550,
+          "pagina": 4
         },
         {
           "numero": 3,
@@ -503,7 +571,9 @@
           "contenido": "Cuando el monto del impuesto acreditable resulte inferior al monto del impuesto que se deba reintegrar, el contribuyente pagará la diferencia entre dichos montos al presentar la declaración de pago que corresponda al mes en el que se efectúa el ajuste.",
           "padre_numero": 2,
           "x_id": 107,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 596,
+          "pagina": 4
         },
         {
           "numero": 4,
@@ -512,7 +582,9 @@
           "contenido": "La cantidad que podrá acreditarse de conformidad con el artículo 5o.-A, fracción II, inciso e) de la Ley, se sumará al monto del impuesto acreditable en el mes en el que se realiza el ajuste.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 642,
+          "pagina": 4
         }
       ]
     },
@@ -529,7 +601,9 @@
           "contenido": "Para los efectos de las disposiciones que establece la Ley en materia de acreditamiento, éste podrá ser realizado por los contribuyentes que realicen actividades por las que se deba pagar el impuesto en inmuebles sujetos al régimen de propiedad en condominio, en la parte proporcional que les corresponda del impuesto trasladado en las operaciones que amparen los gastos comunes relativos al inmueble de que se trate, siempre que además de los requisitos que establece la Ley, se cumpla con lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 677,
+          "pagina": 4
         },
         {
           "numero": 2,
@@ -538,7 +612,9 @@
           "contenido": "Que los gastos de conservación y mantenimiento sean realizados en nombre y representación de la asamblea general de condóminos por un administrador que cuente con facultades para actuar con el carácter mencionado otorgado por dicha asamblea;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 156,
+          "pagina": 5
         },
         {
           "numero": 3,
@@ -547,7 +623,9 @@
           "contenido": "Que el pago de las cuotas de conservación y mantenimiento las realicen los condóminos mediante depósito en la cuenta bancaria que haya constituido la asamblea general de condóminos para tal efecto;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 203,
+          "pagina": 5
         },
         {
           "numero": 4,
@@ -559,7 +637,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 25-09-2014"
-          ]
+          ],
+          "y": 249,
+          "pagina": 5
         },
         {
           "numero": 5,
@@ -571,7 +651,9 @@
           "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 25-09-2014"
-          ]
+          ],
+          "y": 294,
+          "pagina": 5
         },
         {
           "numero": 6,
@@ -580,7 +662,9 @@
           "contenido": ") Los números correspondientes a los comprobantes mencionados y el concepto que ampara cada comprobante, el monto total de dichos comprobantes y el impuesto respectivo, y",
           "padre_numero": 5,
           "x_id": 107,
-          "x_texto": 129
+          "x_texto": 129,
+          "y": 338,
+          "pagina": 5
         },
         {
           "numero": 7,
@@ -589,7 +673,9 @@
           "contenido": ") La parte proporcional que corresponde al condómino, tanto del gasto total como del impuesto correspondiente, conforme al por ciento de indiviso que represente cada unidad de propiedad exclusiva en el condominio de que se trate.",
           "padre_numero": 5,
           "x_id": 107,
-          "x_texto": 129
+          "x_texto": 129,
+          "y": 373,
+          "pagina": 5
         },
         {
           "numero": 8,
@@ -598,7 +684,9 @@
           "contenido": "Igualmente, el administrador deberá entregar a cada condómino una copia de los comprobantes.",
           "padre_numero": 7,
           "x_id": 125,
-          "x_texto": 125
+          "x_texto": 125,
+          "y": 419,
+          "pagina": 5
         },
         {
           "numero": 9,
@@ -610,7 +698,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 25-09-2014"
-          ]
+          ],
+          "y": 454,
+          "pagina": 5
         },
         {
           "numero": 10,
@@ -619,7 +709,9 @@
           "contenido": "La documentación y registros contables deberán conservarse por la asamblea de condóminos o, en su defecto, por los condóminos que opten por el acreditamiento de los gastos comunes en los términos del presente artículo.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 522,
+          "pagina": 5
         },
         {
           "numero": 11,
@@ -628,7 +720,9 @@
           "contenido": "No se podrá optar por efectuar el acreditamiento del impuesto que corresponda a los gastos comunes en los términos del presente artículo, cuando las personas que presten los servicios de administración carezcan de facultades para actuar en nombre y representación de la asamblea general de condóminos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 568,
+          "pagina": 5
         }
       ]
     },
@@ -645,7 +739,9 @@
           "contenido": "Para los efectos de las disposiciones que establece la Ley en materia de acreditamiento, los contribuyentes podrán acreditar el impuesto trasladado con motivo de los gastos erogados por concepto de combustible, aceite, servicios, reparaciones y refacciones, cuando éstos se efectúen con motivo del uso del automóvil propiedad de una persona que les preste servicios personales subordinados y sean consecuencia de un viaje realizado para desempeñar actividades propias de los contribuyentes. En estos casos, el acreditamiento se podrá efectuar en la proporción que del total de los gastos erogados represente la parte que de los mismos sea deducible para el contribuyente, para los efectos de la Ley del Impuesto sobre la Renta.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 614,
+          "pagina": 5
         }
       ]
     },
@@ -665,7 +761,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 110,
+          "pagina": 6
         }
       ]
     },
@@ -699,7 +797,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 25-09-2014"
-          ]
+          ],
+          "y": 358,
+          "pagina": 6
         }
       ]
     },
@@ -719,7 +819,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 25-09-2014"
-          ]
+          ],
+          "y": 437,
+          "pagina": 6
         },
         {
           "numero": 2,
@@ -728,7 +830,9 @@
           "contenido": "Tratándose de descuentos y bonificaciones, la deducción procederá cuando aquéllos efectivamente se apliquen.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 562,
+          "pagina": 6
         }
       ]
     },
@@ -748,7 +852,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 25-09-2014"
-          ]
+          ],
+          "y": 634,
+          "pagina": 6
         }
       ]
     },
@@ -765,7 +871,9 @@
           "contenido": "Para los efectos del artículo 8o., segundo párrafo de la Ley, se consideran transmisiones de propiedad realizadas por las empresas por las que no se está obligado al pago del impuesto, los obsequios que efectúen, siempre que sean deducibles en los términos de la Ley del Impuesto sobre la Renta.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 110,
+          "pagina": 7
         }
       ]
     },
@@ -782,7 +890,9 @@
           "contenido": "Para los efectos del artículo 8o. de la Ley, para calcular el impuesto tratándose de la enajenación de automóviles y camiones usados, adquiridos de personas físicas que no trasladen en forma expresa y por separado el impuesto, se considerará como valor el determinado conforme al artículo 12 de la Ley, al que podrá restársele el costo de adquisición del bien de que se trate, sin incluir los gastos que se originen con motivo de la reparación o mejoras realizadas en los mismos. El impuesto que haya sido trasladado por dichas reparaciones o mejoras será acreditable en los términos y con los requisitos que establece la Ley.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 168,
+          "pagina": 7
         },
         {
           "numero": 2,
@@ -791,7 +901,9 @@
           "contenido": "El contribuyente al adquirir los automóviles y camiones usados deberá cumplir con los siguientes requisitos:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 260,
+          "pagina": 7
         },
         {
           "numero": 3,
@@ -800,7 +912,9 @@
           "contenido": "Efectuar el pago correspondiente mediante cheque nominativo a nombre del enajenante, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 295,
+          "pagina": 7
         },
         {
           "numero": 4,
@@ -809,7 +923,9 @@
           "contenido": "Conservar copia de la factura, de una identificación oficial del enajenante y de los demás documentos en los que conste el nombre, domicilio y, en su caso, el registro federal de contribuyentes del enajenante, así como la marca, tipo, año modelo, los números de motor y de serie de la carrocería, correspondientes al vehículo.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 319,
+          "pagina": 7
         }
       ]
     },
@@ -826,7 +942,9 @@
           "contenido": "Para los efectos del artículo 9o., fracción II de la Ley, se considera que también son casas habitación los asilos y orfanatorios.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 377,
+          "pagina": 7
         },
         {
           "numero": 2,
@@ -835,7 +953,9 @@
           "contenido": "Tratándose de construcciones nuevas, se atenderá al destino para el cual se construyó, considerando las especificaciones del inmueble y las licencias o permisos de construcción.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 411,
+          "pagina": 7
         },
         {
           "numero": 3,
@@ -844,7 +964,9 @@
           "contenido": "Cuando se enajene una construcción que no estuviera destinada a casa habitación, se podrá considerar que si lo está, cuando se asiente en la escritura pública que el adquirente la destinará a ese fin y se garantice el impuesto que hubiera correspondido ante las autoridades recaudadoras autorizadas para recibir las declaraciones del mismo. Dichas autoridades ordenarán la cancelación de la garantía cuando por más de seis meses contados a partir de la fecha en que el adquirente reciba el inmueble, éste se destine a casa habitación.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 446,
+          "pagina": 7
         },
         {
           "numero": 4,
@@ -853,7 +975,9 @@
           "contenido": "Igualmente se consideran como destinadas a casa habitación las instalaciones y áreas cuyos usos estén exclusivamente dedicados a sus moradores, siempre que sea con fines no lucrativos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 526,
+          "pagina": 7
         }
       ]
     },
@@ -870,7 +994,9 @@
           "contenido": "Para los efectos del artículo 9o., fracción II de la Ley, la prestación de los servicios de construcción de inmuebles destinados a casa habitación, ampliación de ésta, así como la instalación de casas prefabricadas que sean utilizadas para este fin, se consideran comprendidos dentro de lo dispuesto por dicha fracción, siempre y cuando el prestador del servicio proporcione la mano de obra y materiales.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 561,
+          "pagina": 7
         },
         {
           "numero": 2,
@@ -879,7 +1005,9 @@
           "contenido": "Tratándose de unidades habitacionales, no se considera como destinadas a casa habitación las instalaciones y obras de urbanización, mercados, escuelas, centros o locales comerciales, o cualquier otra obra distinta a las señaladas.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 630,
+          "pagina": 7
         }
       ]
     },
@@ -896,7 +1024,9 @@
           "contenido": "Para los efectos del artículo 9o., fracción VII, primer párrafo de la Ley, los dividendos pagados en acciones quedan comprendidos dentro de lo dispuesto en dicho párrafo.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 677,
+          "pagina": 7
         }
       ]
     },
@@ -913,7 +1043,9 @@
           "contenido": "Para los efectos del artículo 10 de la Ley, se entiende que la enajenación se realiza en territorio nacional, aun cuando la entrega material de los bienes se efectúe en los recintos fiscales o fiscalizados considerados como tales en la legislación aduanera.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 110,
+          "pagina": 8
         }
       ]
     },
@@ -930,7 +1062,9 @@
           "contenido": "Para los efectos del artículo 14 de la Ley, se considera que el servicio de transporte que presta una línea aérea amparado con un boleto expedido por una línea distinta, es la misma prestación de servicios por la cual ya se causó el impuesto al expedirse el boleto, por lo que el cargo que la línea que presta el servicio hace por este concepto a la que expidió el boleto, no está sujeto al pago de dicho impuesto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 194,
+          "pagina": 8
         }
       ]
     },
@@ -947,7 +1081,9 @@
           "contenido": "Para los efectos del artículo 14 de la Ley, tratándose de las cuotas que aporten los propietarios de inmuebles sujetos al régimen de propiedad en condominio o a cualquier otra modalidad en la que se realicen gastos comunes, que se destinen para la constitución o el incremento de los fondos con los cuales se solventan dichos gastos, el impuesto se causa sólo por la parte que se destine a cubrir las contraprestaciones de la persona que tenga a su cargo la administración del inmueble.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 264,
+          "pagina": 8
         }
       ]
     },
@@ -964,7 +1100,9 @@
           "contenido": "Para los efectos del artículo 14, fracción I de la Ley, el impuesto en el caso de contratos de obra a precio alzado o por administración, será a cargo del prestador del servicio quien lo trasladará al dueño de la obra. Éste, en su caso, acreditará el impuesto correspondiente a dicha contraprestación y a los gastos efectuados por su cuenta y a su nombre.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 333,
+          "pagina": 8
         }
       ]
     },
@@ -981,7 +1119,9 @@
           "contenido": "Para los efectos del artículo 14, fracción IV de la Ley, el comisionista trasladará en su caso, el impuesto por cuenta del comitente, aplicando al valor de los actos o actividades por los que se deba pagar el impuesto las tasas que correspondan. El comitente considerará a su cargo el impuesto correspondiente a los actos o actividades realizados por su comisionista, sin descontar el valor de la comisión ni los reembolsos de gastos efectuados por cuenta del comitente y otros conceptos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 391,
+          "pagina": 8
         },
         {
           "numero": 2,
@@ -990,7 +1130,9 @@
           "contenido": "El comisionista considerará a su cargo y trasladará al comitente el impuesto correspondiente a la comisión pactada, incluyendo los gastos efectuados en nombre y por cuenta del comitente. Cuando el comisionista sea persona física y el comitente sea persona moral, éste deberá efectuar la retención del impuesto que se le traslade en los términos de la Ley y de este Reglamento.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 460,
+          "pagina": 8
         }
       ]
     },
@@ -1007,7 +1149,9 @@
           "contenido": "Para los efectos del artículo 15, fracción IX de la Ley, se entiende por seguros de vida, los que bajo esta denominación señale la Ley General de Instituciones y Sociedades Mutualistas de Seguros.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 518,
+          "pagina": 8
         }
       ]
     },
@@ -1024,7 +1168,9 @@
           "contenido": "Para los efectos del artículo 15, fracción X, inciso a) de la Ley, no se estará obligado al pago del impuesto, por los intereses derivados de operaciones de financiamiento, aun cuando quien proporcione el financiamiento no sea la misma persona que enajene el bien, siempre que en el contrato correspondiente se condicione el préstamo a la adquisición de un determinado inmueble destinado a casa habitación.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 564,
+          "pagina": 8
         }
       ]
     },
@@ -1041,7 +1187,9 @@
           "contenido": "Para los efectos del artículo 15, fracción X, inciso b), primer párrafo de la Ley, se entenderá por operaciones de financiamiento las que tengan el carácter de activas o pasivas de crédito, entendiéndose como tales aquéllas por las que reciban o paguen intereses las personas que de conformidad con lo dispuesto en dicho inciso realizan las operaciones mencionadas.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 633,
+          "pagina": 8
         },
         {
           "numero": 2,
@@ -1050,7 +1198,9 @@
           "contenido": "También quedan comprendidas en las operaciones de financiamiento de carácter activo, los créditos otorgados por los fondos o fideicomisos que únicamente operen con recursos proporcionados por las personas señaladas en el párrafo anterior o por ellas conjuntamente con los gobiernos de las Entidades Federativas.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 691,
+          "pagina": 8
         }
       ]
     },
@@ -1070,7 +1220,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 25-09-2014"
-          ]
+          ],
+          "y": 145,
+          "pagina": 9
         }
       ]
     },
@@ -1094,7 +1246,9 @@
           "contenido": "Para los efectos del artículo 15, fracción X, inciso i) de la Ley, se consideran colocados entre el gran público inversionista, los títulos de crédito que conforme a la Ley del Impuesto sobre la Renta sean considerados como tales.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 268,
+          "pagina": 9
         }
       ]
     },
@@ -1118,7 +1272,9 @@
           "contenido": "Para los efectos del artículo 15, fracción XIV de la Ley, los servicios profesionales de medicina por los que no se está obligado al pago del impuesto, son los de médico, médico veterinario o cirujano dentista, siempre que cumplan con los requisitos que establece la Ley.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 405,
+          "pagina": 9
         }
       ]
     },
@@ -1135,7 +1291,9 @@
           "contenido": "Para los efectos del artículo 18 de la Ley, cuando las personas que prestan servicios paguen por cuenta y a nombre del prestatario del servicio las contribuciones incluyendo sus accesorios, el reembolso por las mismas no formará parte del valor de sus servicios. El impuesto trasladado en los términos de la Ley no forma parte de las contribuciones a que se refiere este precepto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 451,
+          "pagina": 9
         }
       ]
     },
@@ -1152,7 +1310,9 @@
           "contenido": "Para los efectos del artículo 18 de la Ley, los contribuyentes que en un mismo contrato ofrezcan diversos servicios turísticos por una cuota individual preestablecida y por un tiempo determinado, deberán separar el valor de los servicios que se presten en el país, de los que se proporcionen en el extranjero.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 509,
+          "pagina": 9
         }
       ]
     },
@@ -1169,7 +1329,9 @@
           "contenido": "Para los efectos del artículo 18, último párrafo de la Ley, el premio que derive de una operación de reporto, que se celebre de conformidad con las disposiciones expedidas por el Banco de México, se considera interés.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 567,
+          "pagina": 9
         }
       ]
     },
@@ -1186,7 +1348,9 @@
           "contenido": "Para los efectos del artículo 20, fracción II de la Ley, cuando se otorgue el uso o goce temporal de un bien inmueble destinado a casa habitación y se proporcione amueblado, se pagará el impuesto por el total de las contraprestaciones, aun cuando se celebren contratos distintos por los bienes muebles e inmuebles.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 650,
+          "pagina": 9
         },
         {
           "numero": 2,
@@ -1195,7 +1359,9 @@
           "contenido": "No se considera amueblada la casa habitación cuando se proporcione con bienes adheridos permanentemente a la construcción, y con los de cocina y baño, alfombras y tapices, lámparas, tanques de gas, calentadores para agua, guardarropa y armarios, cortinas, cortineros, teléfono y aparato de intercomunicación, sistema de clima artificial, sistema para la purificación de aire o agua, chimenea no integrada a la construcción y tendederos para el secado de la ropa.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 110,
+          "pagina": 10
         }
       ]
     },
@@ -1215,7 +1381,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 25-09-2014"
-          ]
+          ],
+          "y": 217,
+          "pagina": 10
         },
         {
           "numero": 2,
@@ -1224,7 +1392,9 @@
           "contenido": "El retorno a México de bienes tangibles exportados definitivamente, cuando se efectúe en los términos de la legislación aduanera, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 261,
+          "pagina": 10
         },
         {
           "numero": 3,
@@ -1236,7 +1406,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 25-09-2014"
-          ]
+          ],
+          "y": 296,
+          "pagina": 10
         }
       ]
     },
@@ -1256,7 +1428,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 25-09-2014"
-          ]
+          ],
+          "y": 364,
+          "pagina": 10
         }
       ]
     },
@@ -1273,7 +1447,9 @@
           "contenido": "Para los efectos del artículo 24, fracción V de la Ley, el aprovechamiento en territorio nacional de los servicios prestados por no residentes en él, comprende tanto los prestados desde el extranjero como los que se presten en el país.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 477,
+          "pagina": 10
         }
       ]
     },
@@ -1290,7 +1466,9 @@
           "contenido": "Para los efectos del artículo 24, fracción V de la Ley, no se considera importación de servicios, los prestados en el extranjero por comisionistas y mediadores no residentes en el país, cuando tengan por objeto exportar bienes o servicios.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 523,
+          "pagina": 10
         }
       ]
     },
@@ -1307,7 +1485,9 @@
           "contenido": "Para los efectos de lo dispuesto en el artículo 24 de la Ley, los contribuyentes que importan bienes intangibles o servicios por los que deban pagar el impuesto, podrán efectuar el acreditamiento en los términos de la Ley en la misma declaración de pago mensual a que correspondan dichas importaciones.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 570,
+          "pagina": 10
         }
       ]
     },
@@ -1324,7 +1504,9 @@
           "contenido": "Para los efectos del artículo 25 de la Ley, no pagarán el impuesto por la importación de las mercancías a que se refiere el artículo 61, fracción VIII de la Ley Aduanera, quienes residan dentro de las franjas fronterizas de 20 kilómetros paralelas a las líneas divisorias internacionales del país.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 627,
+          "pagina": 10
         }
       ]
     },
@@ -1344,7 +1526,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 674,
+          "pagina": 10
         }
       ]
     },
@@ -1364,7 +1548,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 25-09-2014"
-          ]
+          ],
+          "y": 110,
+          "pagina": 11
         }
       ]
     },
@@ -1381,7 +1567,9 @@
           "contenido": "Para determinar el incremento de valor a que se refiere el artículo 27, último párrafo de la Ley, se considerará el valor de las materias primas o mercancías de procedencia extranjera incorporadas en el producto, de conformidad con la legislación aduanera.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 224,
+          "pagina": 11
         }
       ]
     },
@@ -1398,7 +1586,9 @@
           "contenido": "Para los efectos de lo dispuesto en el artículo 28 de la Ley, el impuesto que se pague en la importación de bienes tangibles, se enterará utilizando la forma por medio de la cual se efectúe el pago del impuesto general de importación, aun cuando no se deba pagar este último gravamen.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 270,
+          "pagina": 11
         }
       ]
     },
@@ -1418,7 +1608,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 25-09-2014"
-          ]
+          ],
+          "y": 316,
+          "pagina": 11
         }
       ]
     },
@@ -1435,7 +1627,9 @@
           "contenido": "Para los efectos de lo dispuesto en los artículos 29, fracción I, y 30, último párrafo de la Ley, tratándose de bienes tangibles, se entiende que la exportación se consuma, cuando se haya concluido con la totalidad de los actos y las formalidades para su exportación definitiva, de conformidad con la legislación aduanera.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 460,
+          "pagina": 11
         }
       ]
     },
@@ -1452,7 +1646,9 @@
           "contenido": "Para los efectos del artículo 29, fracción IV de la Ley, el aprovechamiento en el extranjero de servicios prestados por personas residentes en el país, comprende tanto los que se presten en el territorio nacional como los que se proporcionen en el extranjero.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 518,
+          "pagina": 11
         },
         {
           "numero": 2,
@@ -1461,7 +1657,9 @@
           "contenido": "Asimismo, se entiende, entre otros supuestos, que los servicios a que se refiere la fracción mencionada, se aprovechan en el extranjero cuando sean contratados y pagados por un residente en el extranjero sin establecimiento en el país, siempre que se paguen mediante cheque nominativo o transferencia de fondos a las cuentas del prestador del servicio en instituciones de crédito o casas de bolsa y el pago provenga de cuentas de instituciones financieras ubicadas en el extranjero.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 564,
+          "pagina": 11
         }
       ]
     },
@@ -1478,7 +1676,9 @@
           "contenido": "Para los efectos del artículo 29, fracción IV, inciso c) de la Ley, se considera que son exportados los servicios de publicidad, en la proporción en que dichos servicios sean aprovechados en el extranjero.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 633,
+          "pagina": 11
         }
       ]
     },
@@ -1498,7 +1698,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 25-09-2014"
-          ]
+          ],
+          "y": 679,
+          "pagina": 11
         }
       ]
     },
@@ -1515,7 +1717,9 @@
           "contenido": "Para los efectos del artículo 29, último párrafo de la Ley, se considera que los servicios personales independientes prestados por residentes en el país, son aprovechados en el extranjero por un residente en el extranjero sin establecimiento en el país, cuando dichos servicios sean contratados y pagados por la persona residente en el extranjero y se cumplan los requisitos previstos en el segundo párrafo del artículo 58 de este Reglamento.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 131,
+          "pagina": 12
         }
       ]
     },
@@ -1535,7 +1739,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 25-09-2014"
-          ]
+          ],
+          "y": 238,
+          "pagina": 12
         },
         {
           "numero": 2,
@@ -1544,7 +1750,9 @@
           "contenido": "Se considera que los servicios de filmación o grabación se exportan, cuando sean prestados por residentes en el país a personas residentes en el extranjero sin establecimiento en el país.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 363,
+          "pagina": 12
         }
       ]
     },
@@ -1561,7 +1769,9 @@
           "contenido": "Conforme a lo dispuesto por el artículo 29, fracción IV, inciso g) de la Ley, los contribuyentes deberán cumplir con los requisitos siguientes:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 398,
+          "pagina": 12
         },
         {
           "numero": 2,
@@ -1570,7 +1780,9 @@
           "contenido": "Celebrar por escrito un contrato de prestación de servicios en el que se especifiquen los servicios de filmación o grabación que serán prestados;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 432,
+          "pagina": 12
         },
         {
           "numero": 3,
@@ -1579,7 +1791,9 @@
           "contenido": "Presentar un aviso de exportación de servicios de filmación o grabación ante el Servicio de Administración Tributaria, previamente a que los mismos se proporcionen, acompañando copia del contrato a que se refiere la fracción anterior, así como el calendario de la filmación o grabación y el listado de los lugares en los que se llevará a cabo.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 467,
+          "pagina": 12
         },
         {
           "numero": 4,
@@ -1588,7 +1802,9 @@
           "contenido": "No tendrá efecto alguno la presentación extemporánea del aviso a que se refiere esta fracción;",
           "padre_numero": 3,
           "x_id": 107,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 525,
+          "pagina": 12
         },
         {
           "numero": 5,
@@ -1600,7 +1816,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción derogada DOF 25-09-2014"
-          ]
+          ],
+          "y": 548,
+          "pagina": 12
         },
         {
           "numero": 6,
@@ -1609,7 +1827,9 @@
           "contenido": "Recibir el pago de los servicios de filmación o grabación mediante cheque nominativo de quien reciba los servicios o mediante transferencia de fondos en cuentas de instituciones de crédito o casas de bolsa, hechos a nombre del contribuyente.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 581,
+          "pagina": 12
         }
       ]
     },
@@ -1629,7 +1849,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 699,
+          "pagina": 12
         }
       ]
     },
@@ -1649,7 +1871,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 122,
+          "pagina": 13
         }
       ]
     },
@@ -1669,7 +1893,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 155,
+          "pagina": 13
         }
       ]
     },
@@ -1689,7 +1915,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 187,
+          "pagina": 13
         }
       ]
     },
@@ -1709,7 +1937,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 220,
+          "pagina": 13
         }
       ]
     },
@@ -1729,7 +1959,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 253,
+          "pagina": 13
         }
       ]
     },
@@ -1749,7 +1981,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 285,
+          "pagina": 13
         }
       ]
     },
@@ -1769,7 +2003,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 356,
+          "pagina": 13
         }
       ]
     },
@@ -1789,7 +2025,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 388,
+          "pagina": 13
         }
       ]
     },
@@ -1809,7 +2047,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 25-09-2014"
-          ]
+          ],
+          "y": 421,
+          "pagina": 13
         }
       ]
     },
@@ -1826,7 +2066,9 @@
           "contenido": "Para los efectos del artículo 32, fracción III de la Ley, cuando las personas realicen actividades por las que se deba pagar el impuesto a través de un fideicomiso, la institución fiduciaria podrá expedir por cuenta de ellas los comprobantes respectivos, trasladando en forma expresa y por separado el impuesto, siempre que se cumpla con lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 454,
+          "pagina": 13
         },
         {
           "numero": 2,
@@ -1835,7 +2077,9 @@
           "contenido": "Que al momento en que se solicite la inscripción del fideicomiso en el Registro Federal de Contribuyentes, los fideicomisarios manifiesten por escrito que ejercen la opción a que se refiere este artículo y las instituciones fiduciarias manifiesten su voluntad de asumir responsabilidad solidaria por el impuesto que se deba pagar con motivo de las actividades realizadas a través de los fideicomisos en los que participan con ese carácter.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 511,
+          "pagina": 13
         },
         {
           "numero": 3,
@@ -1844,7 +2088,9 @@
           "contenido": "Cuando no se hagan las manifestaciones previstas en el párrafo anterior en el momento en que se solicite la inscripción del fideicomiso en el Registro Federal de Contribuyentes, se podrá ejercer la opción a que se refiere este artículo, a partir del mes siguiente a aquél en el que se realicen dichas manifestaciones por escrito ante el Servicio de Administración Tributaria;",
           "padre_numero": 2,
           "x_id": 107,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 581,
+          "pagina": 13
         },
         {
           "numero": 4,
@@ -1853,7 +2099,9 @@
           "contenido": "Que la institución fiduciaria calcule y entere el impuesto que corresponda a las actividades realizadas por el fideicomiso y lleve a cabo el acreditamiento del impuesto en los términos y con los requisitos que establece la Ley. Si en la declaración de pago resulta saldo a favor, la institución fiduciaria de que se trate estará a lo dispuesto en el artículo 6o. de la Ley, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 639,
+          "pagina": 13
         },
         {
           "numero": 5,
@@ -1862,7 +2110,9 @@
           "contenido": "Que la citada institución cumpla con las demás obligaciones previstas en la Ley, incluyendo la de llevar contabilidad por las actividades realizadas a través del fideicomiso y la de recabar comprobantes que reúnan requisitos fiscales.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 110,
+          "pagina": 14
         },
         {
           "numero": 6,
@@ -1871,7 +2121,9 @@
           "contenido": "Tratándose de los fideicomisos a que se refiere este artículo, el adquirente de los derechos de fideicomitente o fideicomisario, podrá efectuar el acreditamiento que corresponda del impuesto que le haya sido trasladado por la adquisición de esos derechos, a través de la institución fiduciaria, de conformidad con lo dispuesto en la Ley.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 156,
+          "pagina": 14
         },
         {
           "numero": 7,
@@ -1880,7 +2132,9 @@
           "contenido": "Quienes se acojan a lo dispuesto en este artículo, en ningún caso podrán considerar como impuesto acreditable el impuesto que sea acreditado por la institución fiduciaria, el que le haya sido trasladado al fideicomiso ni el que éste haya pagado con motivo de la importación. Tampoco podrán compensar, acreditar o solicitar la devolución de los saldos a favor generados por las operaciones del fideicomiso.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 214,
+          "pagina": 14
         }
       ]
     },
@@ -1897,7 +2151,9 @@
           "contenido": "Para los efectos del artículo 32, fracción VI de la Ley, se entiende que los contribuyentes efectúan retenciones de manera regular, cuando realicen dos o más en un mes.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 272,
+          "pagina": 14
         }
       ]
     },
@@ -1914,7 +2170,9 @@
           "contenido": "Para los efectos de lo dispuesto en el artículo 32, antepenúltimo párrafo de la Ley, los copropietarios y los integrantes de una sociedad conyugal, deberán designar un representante común cuando los actos o actividades deriven de bienes en copropiedad o sujetos al régimen de sociedad conyugal.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 307,
+          "pagina": 14
         }
       ]
     },
@@ -1931,7 +2189,9 @@
           "contenido": "Para los efectos de las obligaciones establecidas en la Ley, el Servicio de Administración Tributaria podrá otorgar facilidades administrativas mediante reglas de carácter general para el cumplimiento de las obligaciones mencionadas, tratándose de los sectores de contribuyentes a quienes se les otorgan facilidades administrativas para los efectos del impuesto sobre la renta.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 364,
+          "pagina": 14
         }
       ]
     },
@@ -1948,7 +2208,9 @@
           "contenido": "Para los efectos del artículo 33, segundo párrafo de la Ley, las personas a que se refiere dicho párrafo, quedan relevados de la obligación de efectuar el cálculo y entero del impuesto a que se refiere el citado artículo cuando la enajenación de inmuebles se realice por contribuyentes que deban presentar declaraciones mensuales de este impuesto y exhiban copia sellada de las últimas tres declaraciones de pago mensual. Tratándose de contribuyentes que hayan iniciado actividades en un plazo menor a tres meses anteriores a la fecha en que se expida por el fedatario público el documento que ampara la operación por la que deba pagarse el impuesto, deberán presentar copia sellada de la última declaración de pago mensual o copia del aviso de inscripción al Registro Federal de Contribuyentes, según corresponda.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 423,
+          "pagina": 14
         },
         {
           "numero": 2,
@@ -1957,7 +2219,9 @@
           "contenido": "Cuando los contribuyentes presenten las declaraciones o el aviso a que se refiere este artículo en documentos digitales, deberán exhibir copia del acuse de recibo con sello digital.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 538,
+          "pagina": 14
         },
         {
           "numero": 3,
@@ -1966,7 +2230,9 @@
           "contenido": "No se consideran enajenaciones de bienes efectuadas en forma accidental, aquéllas que realicen los contribuyentes obligados a presentar declaraciones mensuales del impuesto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 572,
+          "pagina": 14
         }
       ]
     },
@@ -1983,7 +2249,9 @@
           "contenido": "Para los efectos del artículo 39 de la Ley, las cantidades acreditables que deben comprobarse en los términos de dicho artículo, serán las que correspondan a los meses en que el valor de los actos o actividades se determine presuntivamente, y siempre que la documentación en que consten éstas reúna los requisitos que establece la Ley, el Código Fiscal de la Federación y su Reglamento.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 645,
+          "pagina": 14
         }
       ]
     }

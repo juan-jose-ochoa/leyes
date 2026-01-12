@@ -31,7 +31,9 @@
           "contenido": "Esta Ley es de utilidad social y de observancia general en toda la República.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 397,
+          "pagina": 1
         }
       ]
     },
@@ -48,7 +50,9 @@
           "contenido": "Se crea un organismo de servicio social con personalidad jurídica y patrimonio propio, que se denomina \"Instituto del Fondo Nacional de la Vivienda para los Trabajadores\", con domicilio en la Ciudad de México.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 420,
+          "pagina": 1
         },
         {
           "numero": 2,
@@ -60,7 +64,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 466,
+          "pagina": 1
         }
       ]
     },
@@ -77,7 +83,9 @@
           "contenido": "El Instituto tiene por objeto:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 521,
+          "pagina": 1
         },
         {
           "numero": 2,
@@ -86,7 +94,9 @@
           "contenido": "Administrar los recursos del Fondo Nacional de la Vivienda;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 544,
+          "pagina": 1
         },
         {
           "numero": 3,
@@ -95,7 +105,9 @@
           "contenido": "Establecer y operar un sistema de financiamiento que permita a los trabajadores obtener crédito barato y suficiente para:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 567,
+          "pagina": 1
         },
         {
           "numero": 4,
@@ -104,7 +116,9 @@
           "contenido": ").- La adquisición en propiedad de habitaciones cómodas e higiénicas,",
           "padre_numero": 3,
           "x_id": 114,
-          "x_texto": 136
+          "x_texto": 136,
+          "y": 602,
+          "pagina": 1
         },
         {
           "numero": 5,
@@ -116,7 +130,9 @@
           "x_texto": 136,
           "referencias": [
             "Inciso reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 625,
+          "pagina": 1
         },
         {
           "numero": 6,
@@ -125,7 +141,9 @@
           "contenido": ").- El pago de pasivos contraídos por los conceptos anteriores;",
           "padre_numero": 3,
           "x_id": 114,
-          "x_texto": 136
+          "x_texto": 136,
+          "y": 657,
+          "pagina": 1
         },
         {
           "numero": 7,
@@ -137,7 +155,9 @@
           "x_texto": 136,
           "referencias": [
             "Inciso adicionado DOF 16-12-2020"
-          ]
+          ],
+          "y": 680,
+          "pagina": 1
         },
         {
           "numero": 8,
@@ -149,7 +169,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 21-02-2025"
-          ]
+          ],
+          "y": 110,
+          "pagina": 2
         },
         {
           "numero": 9,
@@ -161,7 +183,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 21-02-2025"
-          ]
+          ],
+          "y": 165,
+          "pagina": 2
         },
         {
           "numero": 10,
@@ -173,7 +197,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 21-02-2025"
-          ]
+          ],
+          "y": 209,
+          "pagina": 2
         },
         {
           "numero": 11,
@@ -185,7 +211,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada y recorrida DOF 21-02-2025"
-          ]
+          ],
+          "y": 253,
+          "pagina": 2
         },
         {
           "numero": 12,
@@ -197,7 +225,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 21-02-2025"
-          ]
+          ],
+          "y": 308,
+          "pagina": 2
         },
         {
           "numero": 13,
@@ -209,7 +239,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 352,
+          "pagina": 2
         },
         {
           "numero": 14,
@@ -221,7 +253,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 418,
+          "pagina": 2
         }
       ]
     },
@@ -238,7 +272,9 @@
           "contenido": "El Instituto cuidará que sus actividades se realicen dentro de una política integrada de vivienda y desarrollo urbano, considerando criterios ambientales, sociales y de gobierno corporativo. Para ello podrá coordinarse con los sectores público, privado o social.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 508,
+          "pagina": 2
         },
         {
           "numero": 2,
@@ -250,7 +286,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 554,
+          "pagina": 2
         }
       ]
     },
@@ -267,7 +305,9 @@
           "contenido": "El patrimonio del Instituto se integra:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 609,
+          "pagina": 2
         },
         {
           "numero": 2,
@@ -279,7 +319,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción derogada DOF 21-02-2025"
-          ]
+          ],
+          "y": 632,
+          "pagina": 2
         },
         {
           "numero": 3,
@@ -291,7 +333,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 21-02-2025"
-          ]
+          ],
+          "y": 665,
+          "pagina": 2
         },
         {
           "numero": 4,
@@ -300,7 +344,9 @@
           "contenido": "Con los montos que se obtengan de las actualizaciones, recargos, sanciones y multas;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 110,
+          "pagina": 3
         },
         {
           "numero": 5,
@@ -309,7 +355,9 @@
           "contenido": "Con los bienes y derechos que adquiera por cualquier título, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 133,
+          "pagina": 3
         },
         {
           "numero": 6,
@@ -321,7 +369,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 21-02-2025"
-          ]
+          ],
+          "y": 156,
+          "pagina": 3
         },
         {
           "numero": 7,
@@ -334,7 +384,9 @@
           "referencias": [
             "Párrafo reformado DOF 21-02-2025",
             "Artículo reformado DOF 06-01-1997"
-          ]
+          ],
+          "y": 200,
+          "pagina": 3
         }
       ]
     },
@@ -354,7 +406,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 24-01-2017, 21-02-2025"
-          ]
+          ],
+          "y": 253,
+          "pagina": 3
         },
         {
           "numero": 2,
@@ -366,7 +420,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 308,
+          "pagina": 3
         },
         {
           "numero": 3,
@@ -379,7 +435,9 @@
           "referencias": [
             "Párrafo reformado DOF 24-01-2017",
             "Artículo reformado DOF 01-06-2005"
-          ]
+          ],
+          "y": 363,
+          "pagina": 3
         }
       ]
     },
@@ -396,7 +454,9 @@
           "contenido": "La Asamblea General es la autoridad suprema del Instituto, y se integrará en forma tripartita con treinta integrantes, designados:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 474,
+          "pagina": 3
         },
         {
           "numero": 2,
@@ -405,7 +465,9 @@
           "contenido": "Diez por el Ejecutivo Federal;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 508,
+          "pagina": 3
         },
         {
           "numero": 3,
@@ -414,7 +476,9 @@
           "contenido": "Diez por las organizaciones nacionales de personas trabajadoras, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 531,
+          "pagina": 3
         },
         {
           "numero": 4,
@@ -423,7 +487,9 @@
           "contenido": "Diez por las organizaciones nacionales de personas empleadoras.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 554,
+          "pagina": 3
         },
         {
           "numero": 5,
@@ -432,7 +498,9 @@
           "contenido": "Por cada integrante propietario se designará un suplente.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 577,
+          "pagina": 3
         },
         {
           "numero": 6,
@@ -444,7 +512,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 600,
+          "pagina": 3
         }
       ]
     },
@@ -464,7 +534,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 644,
+          "pagina": 3
         }
       ]
     },
@@ -481,7 +553,9 @@
           "contenido": "La Asamblea General deberá reunirse por lo menos dos veces al año.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 122,
+          "pagina": 4
         }
       ]
     },
@@ -501,7 +575,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 01-06-2005"
-          ]
+          ],
+          "y": 145,
+          "pagina": 4
         },
         {
           "numero": 2,
@@ -513,7 +589,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 01-06-2005, 21-02-2025"
-          ]
+          ],
+          "y": 177,
+          "pagina": 4
         },
         {
           "numero": 3,
@@ -525,7 +603,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 01-06-2005"
-          ]
+          ],
+          "y": 232,
+          "pagina": 4
         },
         {
           "numero": 4,
@@ -534,7 +614,9 @@
           "contenido": "Decidir, señalando su jurisdicción, sobre el establecimiento y modificación o supresión de las Comisiones Consultivas Regionales del Instituto;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 287,
+          "pagina": 4
         },
         {
           "numero": 5,
@@ -546,7 +628,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 01-06-2005, 21-02-2025"
-          ]
+          ],
+          "y": 322,
+          "pagina": 4
         },
         {
           "numero": 6,
@@ -558,7 +642,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción derogada DOF 24-02-1992"
-          ]
+          ],
+          "y": 366,
+          "pagina": 4
         },
         {
           "numero": 7,
@@ -570,7 +656,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción derogada DOF 24-02-1992"
-          ]
+          ],
+          "y": 398,
+          "pagina": 4
         },
         {
           "numero": 8,
@@ -582,7 +670,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción derogada DOF 24-02-1992"
-          ]
+          ],
+          "y": 430,
+          "pagina": 4
         },
         {
           "numero": 9,
@@ -594,7 +684,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 01-06-2005, 21-02-2025"
-          ]
+          ],
+          "y": 462,
+          "pagina": 4
         },
         {
           "numero": 10,
@@ -606,7 +698,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 01-06-2005"
-          ]
+          ],
+          "y": 506,
+          "pagina": 4
         },
         {
           "numero": 11,
@@ -618,7 +712,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 01-06-2005. Reformada DOF 24-01-2017"
-          ]
+          ],
+          "y": 538,
+          "pagina": 4
         },
         {
           "numero": 12,
@@ -630,7 +726,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 01-06-2005. Reformada DOF 24-01-2017"
-          ]
+          ],
+          "y": 593,
+          "pagina": 4
         },
         {
           "numero": 13,
@@ -642,7 +740,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 01-06-2005"
-          ]
+          ],
+          "y": 637,
+          "pagina": 4
         },
         {
           "numero": 14,
@@ -654,7 +754,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 01-06-2005"
-          ]
+          ],
+          "y": 681,
+          "pagina": 4
         },
         {
           "numero": 15,
@@ -666,7 +768,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 01-06-2005"
-          ]
+          ],
+          "y": 110,
+          "pagina": 5
         }
       ]
     },
@@ -686,7 +790,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 154,
+          "pagina": 5
         }
       ]
     },
@@ -703,7 +809,9 @@
           "contenido": "El Consejo de Administración estará conformado por doce integrantes, designados por la Asamblea General en la forma siguiente: cuatro a proposición de los representantes del Gobierno Federal, cuatro a proposición de los representantes de las personas trabajadoras y cuatro a proposición de los representantes de las personas empleadoras, ante la misma Asamblea General. Por cada integrante propietario se designará un suplente.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 198,
+          "pagina": 5
         },
         {
           "numero": 2,
@@ -715,7 +823,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 267,
+          "pagina": 5
         }
       ]
     },
@@ -732,7 +842,9 @@
           "contenido": "Los consejeros durarán en su cargo seis años y serán removidos por la Asamblea General, a petición de la representación que los hubiere propuesto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 310,
+          "pagina": 5
         },
         {
           "numero": 2,
@@ -741,7 +853,9 @@
           "contenido": "La solicitud de remoción que presente el Sector se hará por conducto del Director General.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 345,
+          "pagina": 5
         },
         {
           "numero": 3,
@@ -750,7 +864,9 @@
           "contenido": "En tanto se reúne la Asamblea General, los consejeros cuya remoción se haya solicitado, quedarán de inmediato suspendidos en sus funciones.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 368,
+          "pagina": 5
         }
       ]
     },
@@ -770,7 +886,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 402,
+          "pagina": 5
         }
       ]
     },
@@ -790,7 +908,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 24-02-1992, 21-02-2025"
-          ]
+          ],
+          "y": 446,
+          "pagina": 5
         }
       ]
     },
@@ -810,7 +930,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 01-06-2005"
-          ]
+          ],
+          "y": 501,
+          "pagina": 5
         },
         {
           "numero": 2,
@@ -822,7 +944,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 01-06-2005, 21-02-2025"
-          ]
+          ],
+          "y": 533,
+          "pagina": 5
         },
         {
           "numero": 3,
@@ -831,7 +955,9 @@
           "contenido": "Resolver sobre las operaciones del Instituto, excepto aquéllas que por su importancia, a juicio de alguno de los sectores o del Director General, ameriten acuerdo expreso de la Asamblea General; la que deberá celebrarse dentro de los quince días siguientes a la fecha en que se haga la petición correspondiente;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 577,
+          "pagina": 5
         },
         {
           "numero": 4,
@@ -840,7 +966,9 @@
           "contenido": "Proponer a la Asamblea General el establecimiento, modificación, supresión y jurisdicción de las Comisiones Consultivas Regionales del Instituto;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 635,
+          "pagina": 5
         },
         {
           "numero": 5,
@@ -852,7 +980,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 01-06-2005, 21-02-2025"
-          ]
+          ],
+          "y": 669,
+          "pagina": 5
         },
         {
           "numero": 6,
@@ -864,7 +994,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 01-06-2005, 21-02-2025"
-          ]
+          ],
+          "y": 154,
+          "pagina": 6
         },
         {
           "numero": 7,
@@ -876,7 +1008,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 01-06-2005"
-          ]
+          ],
+          "y": 209,
+          "pagina": 6
         },
         {
           "numero": 8,
@@ -888,7 +1022,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 24-02-1992, 06-01-1997, 21-02-2025"
-          ]
+          ],
+          "y": 276,
+          "pagina": 6
         },
         {
           "numero": 9,
@@ -897,7 +1033,9 @@
           "contenido": "Estudiar y en su caso aprobar, los tabuladores y prestaciones correspondientes al personal del Instituto, propuestos por el Director General y conforme al presupuesto de gastos de administración autorizados por la Asamblea General;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 319,
+          "pagina": 6
         },
         {
           "numero": 10,
@@ -906,7 +1044,9 @@
           "contenido": "Proponer para su aprobación a la Asamblea General las políticas generales en materia de crédito, arrendamiento social, administración inmobiliaria, enajenación de vivienda y de control interno.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 366,
+          "pagina": 6
         },
         {
           "numero": 11,
@@ -918,7 +1058,9 @@
           "x_texto": 85,
           "referencias": [
             "Fracción reformada DOF 01-06-2005, 21-02-2025"
-          ]
+          ],
+          "y": 400,
+          "pagina": 6
         },
         {
           "numero": 12,
@@ -930,7 +1072,9 @@
           "x_texto": 85,
           "referencias": [
             "Fracción adicionada DOF 21-02-2025"
-          ]
+          ],
+          "y": 467,
+          "pagina": 6
         },
         {
           "numero": 13,
@@ -942,7 +1086,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 06-01-1997"
-          ]
+          ],
+          "y": 533,
+          "pagina": 6
         },
         {
           "numero": 14,
@@ -954,7 +1100,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 06-01-1997 (se recorre)"
-          ]
+          ],
+          "y": 577,
+          "pagina": 6
         },
         {
           "numero": 15,
@@ -963,7 +1111,9 @@
           "contenido": "Resolver sobre las circunstancias específicas no previstas en la presente Ley y en la Ley de los Sistemas de Ahorro para el Retiro en relación a las subcuentas del Fondo Nacional de la Vivienda de las cuentas individuales del sistema de ahorro para el retiro. Con fines de coordinación, en la elaboración de las resoluciones que se adopten conforme a esta fracción, el Consejo escuchará previamente la opinión de la Comisión Nacional del Sistema de Ahorro para el Retiro. Dichas resoluciones se publicarán en el Diario Oficial de la Federación.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 632,
+          "pagina": 6
         },
         {
           "numero": 16,
@@ -975,7 +1125,9 @@
           "x_texto": 85,
           "referencias": [
             "Fracción reformada DOF 06-01-1997 (se recorre), 01-06-2005"
-          ]
+          ],
+          "y": 110,
+          "pagina": 7
         },
         {
           "numero": 17,
@@ -987,7 +1139,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 06-01-1997 (se recorre), 01-06-2005"
-          ]
+          ],
+          "y": 165,
+          "pagina": 7
         },
         {
           "numero": 18,
@@ -999,7 +1153,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 06-01-1997 (se recorre), 01-06-2005"
-          ]
+          ],
+          "y": 209,
+          "pagina": 7
         },
         {
           "numero": 19,
@@ -1011,7 +1167,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 01-06-2005"
-          ]
+          ],
+          "y": 264,
+          "pagina": 7
         },
         {
           "numero": 20,
@@ -1023,7 +1181,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 01-06-2005"
-          ]
+          ],
+          "y": 308,
+          "pagina": 7
         },
         {
           "numero": 21,
@@ -1035,7 +1195,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 01-06-2005"
-          ]
+          ],
+          "y": 352,
+          "pagina": 7
         },
         {
           "numero": 22,
@@ -1047,7 +1209,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 01-06-2005"
-          ]
+          ],
+          "y": 384,
+          "pagina": 7
         },
         {
           "numero": 23,
@@ -1059,7 +1223,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 01-06-2005. Reformada DOF 21-02-2025"
-          ]
+          ],
+          "y": 428,
+          "pagina": 7
         },
         {
           "numero": 24,
@@ -1072,7 +1238,9 @@
           "referencias": [
             "Fracción adicionada DOF 01-06-2005",
             "Fracción adicionada DOF 01-06-2005. Reformada DOF 21-02-2025"
-          ]
+          ],
+          "y": 483,
+          "pagina": 7
         },
         {
           "numero": 25,
@@ -1084,7 +1252,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 21-02-2025"
-          ]
+          ],
+          "y": 515,
+          "pagina": 7
         },
         {
           "numero": 26,
@@ -1096,7 +1266,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 01-06-2005"
-          ]
+          ],
+          "y": 591,
+          "pagina": 7
         }
       ]
     },
@@ -1113,7 +1285,9 @@
           "contenido": "La Comisión de Vigilancia se integrará con nueve integrantes designados por la Asamblea General propuestos por cada representación sectorial de la siguiente forma:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 623,
+          "pagina": 7
         },
         {
           "numero": 2,
@@ -1122,7 +1296,9 @@
           "contenido": "Tres por el Gobierno Federal;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 658,
+          "pagina": 7
         },
         {
           "numero": 3,
@@ -1131,7 +1307,9 @@
           "contenido": "Tres del sector de las personas trabajadoras, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 681,
+          "pagina": 7
         },
         {
           "numero": 4,
@@ -1140,7 +1318,9 @@
           "contenido": "Tres del sector empresarial.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 704,
+          "pagina": 7
         },
         {
           "numero": 5,
@@ -1149,7 +1329,9 @@
           "contenido": "Por cada integrante propietario deberá haber un suplente.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 122,
+          "pagina": 8
         },
         {
           "numero": 6,
@@ -1158,7 +1340,9 @@
           "contenido": "Los integrantes propietarios y suplentes de esta Comisión no podrán serlo de algún otro Órgano del Instituto y deberán cumplir con los siguientes requisitos:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 145,
+          "pagina": 8
         },
         {
           "numero": 7,
@@ -1167,7 +1351,9 @@
           "contenido": "Ser una persona de reconocido prestigio.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 179,
+          "pagina": 8
         },
         {
           "numero": 8,
@@ -1176,7 +1362,9 @@
           "contenido": "Contar con conocimientos y experiencia mínima de cinco años en materia financiera, legal o administrativa.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 202,
+          "pagina": 8
         },
         {
           "numero": 9,
@@ -1185,7 +1373,9 @@
           "contenido": "No haber sido condenado por sentencia irrevocable por delito patrimonial o intencional que haya ameritado pena corporal, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 237,
+          "pagina": 8
         },
         {
           "numero": 10,
@@ -1194,7 +1384,9 @@
           "contenido": "No estar inhabilitado para ejercer el comercio o para desempeñar un empleo, cargo o comisión en el servicio público o en el sistema financiero mexicano, así como no haber sido declarado como quebrado o concursado.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 271,
+          "pagina": 8
         },
         {
           "numero": 11,
@@ -1203,7 +1395,9 @@
           "contenido": "La Comisión de Vigilancia sesionará de manera ordinaria una vez al trimestre, sin perjuicio de que pueda sesionar en forma extraordinaria en cualquier momento, conforme a los plazos que establezcan sus reglas de operación. La Comisión será presidida en forma rotativa, en el orden en que las representaciones que propusieron el nombramiento de sus integrantes se encuentran mencionadas en el artículo 7o.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 317,
+          "pagina": 8
         },
         {
           "numero": 12,
@@ -1212,7 +1406,9 @@
           "contenido": "Los integrantes de la Comisión de Vigilancia durarán en su cargo seis años y podrán ser removidos por la Asamblea General, a petición de quien les hubiere propuesto. La solicitud de remoción se hará por conducto de la persona titular de la Dirección General.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 386,
+          "pagina": 8
         },
         {
           "numero": 13,
@@ -1224,7 +1420,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 06-01-1997, 01-06-2005, 21-02-2025"
-          ]
+          ],
+          "y": 432,
+          "pagina": 8
         }
       ]
     },
@@ -1244,7 +1442,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 24-01-2017"
-          ]
+          ],
+          "y": 487,
+          "pagina": 8
         },
         {
           "numero": 2,
@@ -1253,7 +1453,9 @@
           "contenido": "Proponer a la Asamblea y al Consejo de Administración, en su caso, las medidas que juzgue convenientes para mejorar el funcionamiento del Instituto;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 520,
+          "pagina": 8
         },
         {
           "numero": 3,
@@ -1262,7 +1464,9 @@
           "contenido": "Proponer para la aprobación de la Asamblea General el Código de Ética del Instituto;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 554,
+          "pagina": 8
         },
         {
           "numero": 4,
@@ -1271,7 +1475,9 @@
           "contenido": "Vigilar que los integrantes de los Órganos del Instituto actúen conforme a la normatividad aplicable y con apego al Código de Ética del Instituto;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 577,
+          "pagina": 8
         },
         {
           "numero": 5,
@@ -1280,7 +1486,9 @@
           "contenido": "Informar, una vez al año, a la Asamblea General sobre el funcionamiento de los Órganos del Instituto;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 612,
+          "pagina": 8
         },
         {
           "numero": 6,
@@ -1292,7 +1500,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 24-01-2017"
-          ]
+          ],
+          "y": 646,
+          "pagina": 8
         },
         {
           "numero": 7,
@@ -1304,7 +1514,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 24-01-2017"
-          ]
+          ],
+          "y": 690,
+          "pagina": 8
         },
         {
           "numero": 8,
@@ -1313,7 +1525,9 @@
           "contenido": "En los casos que a su juicio lo amerite, convocar a Asamblea General;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 122,
+          "pagina": 9
         },
         {
           "numero": 9,
@@ -1322,7 +1536,9 @@
           "contenido": "Enviar al Consejo de Administración su opinión sobre el informe periódico que le remita el Comité de Auditoría;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 145,
+          "pagina": 9
         },
         {
           "numero": 10,
@@ -1331,7 +1547,9 @@
           "contenido": "Emitir dictamen sobre el informe que le remita el Comité de Auditoría en relación a la situación que guarda el sistema de control interno del Instituto, para su presentación al Consejo de Administración o a la Asamblea General;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 179,
+          "pagina": 9
         },
         {
           "numero": 11,
@@ -1340,7 +1558,9 @@
           "contenido": "Enviar al Consejo de Administración su opinión sobre el informe que le presente mensualmente cualquiera de las diferentes áreas de la Administración, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 225,
+          "pagina": 9
         },
         {
           "numero": 12,
@@ -1349,7 +1569,9 @@
           "contenido": "Dictaminar la propuesta para el nombramiento y remoción de los miembros del Comité de Auditoría.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 260,
+          "pagina": 9
         },
         {
           "numero": 13,
@@ -1361,7 +1583,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 01-06-2005"
-          ]
+          ],
+          "y": 294,
+          "pagina": 9
         }
       ]
     },
@@ -1378,7 +1602,9 @@
           "contenido": "El Comité de Auditoría se integrará en forma tripartita con un integrante designado por el Gobierno Federal, uno del sector de los trabajadores y uno del sector empresarial, designados por el Consejo de Administración, previo dictamen de la Comisión de Vigilancia, y sujetos a la ratificación de la Asamblea General.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 338,
+          "pagina": 9
         },
         {
           "numero": 2,
@@ -1387,7 +1613,9 @@
           "contenido": "Por cada integrante propietario deberá haber un suplente.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 396,
+          "pagina": 9
         },
         {
           "numero": 3,
@@ -1396,7 +1624,9 @@
           "contenido": "Los integrantes propietarios y suplentes de este Comité no podrán serlo de algún otro Órgano del Instituto y deberán cumplir con los siguientes requisitos:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 419,
+          "pagina": 9
         },
         {
           "numero": 4,
@@ -1405,7 +1635,9 @@
           "contenido": "Ser una persona de reconocido prestigio.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 453,
+          "pagina": 9
         },
         {
           "numero": 5,
@@ -1414,7 +1646,9 @@
           "contenido": "Contar con Título y Cédula Profesional.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 476,
+          "pagina": 9
         },
         {
           "numero": 6,
@@ -1423,7 +1657,9 @@
           "contenido": "Contar con conocimientos y experiencia profesional mínima de cinco años en materia de auditoría relacionada con entidades financieras.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 499,
+          "pagina": 9
         },
         {
           "numero": 7,
@@ -1432,7 +1668,9 @@
           "contenido": "No haber sido condenado por sentencia irrevocable por delito patrimonial o intencional que haya ameritado pena corporal, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 533,
+          "pagina": 9
         },
         {
           "numero": 8,
@@ -1441,7 +1679,9 @@
           "contenido": "No estar inhabilitado para ejercer el comercio o para desempeñar un empleo, cargo o comisión en el servicio público, o en el sistema financiero mexicano, así como no haber sido declarado como quebrado o concursado.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 568,
+          "pagina": 9
         },
         {
           "numero": 9,
@@ -1450,7 +1690,9 @@
           "contenido": "El Comité de Auditoría será presidido en forma rotativa, en el orden en que las representaciones que propusieron el nombramiento de sus integrantes se encuentran mencionadas en el artículo 7o.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 614,
+          "pagina": 9
         },
         {
           "numero": 10,
@@ -1459,7 +1701,9 @@
           "contenido": "Los integrantes del Comité durarán en su cargo seis años y serán removidos, previo dictamen de la Comisión de Vigilancia, por el Consejo de Administración, a petición de la representación que los hubiere propuesto; dicha remoción deberá ser ratificada por la Asamblea General.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 649,
+          "pagina": 9
         },
         {
           "numero": 11,
@@ -1468,7 +1712,9 @@
           "contenido": "Los integrantes del Comité de Auditoría cuya remoción se haya solicitado, quedarán de inmediato suspendidos en sus funciones, y el suplente tomará su lugar, hasta en tanto la Asamblea General determine lo conducente.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 110,
+          "pagina": 10
         },
         {
           "numero": 12,
@@ -1480,7 +1726,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 01-06-2005. Reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 156,
+          "pagina": 10
         }
       ]
     },
@@ -1497,7 +1745,9 @@
           "contenido": "El Comité de Auditoría deberá desempeñar las actividades siguientes:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 211,
+          "pagina": 10
         },
         {
           "numero": 2,
@@ -1506,7 +1756,9 @@
           "contenido": "Vigilar que la administración de los recursos y los gastos, así como las operaciones se hagan de acuerdo con las disposiciones de esta Ley y de la normatividad que de la misma emane;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 234,
+          "pagina": 10
         },
         {
           "numero": 3,
@@ -1515,7 +1767,9 @@
           "contenido": "Aprobar los dictámenes, opiniones, reportes o informes que elabore el Auditor Externo, para enviarlos al Consejo de Administración. En caso de considerarlo conveniente, solicitar al propio Consejo que se convoque a Asamblea General;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 269,
+          "pagina": 10
         },
         {
           "numero": 4,
@@ -1524,7 +1778,9 @@
           "contenido": "Proponer para aprobación del Consejo de Administración los lineamientos generales en materia de control interno que el Instituto requiera para su adecuado funcionamiento, así como sus actualizaciones;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 315,
+          "pagina": 10
         },
         {
           "numero": 5,
@@ -1533,7 +1789,9 @@
           "contenido": "Aprobar los manuales de operación del Instituto, en la parte relativa a las políticas y procedimientos que en materia de control interno se requieran para el correcto funcionamiento del Instituto, acordes con la normatividad que sobre el particular haya sido aprobada por el Consejo de Administración;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 361,
+          "pagina": 10
         },
         {
           "numero": 6,
@@ -1542,7 +1800,9 @@
           "contenido": "Verificar, cuando menos una vez al año, que el programa de auditoría se desempeñe de conformidad con estándares de calidad adecuados en materia contable y de controles internos;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 418,
+          "pagina": 10
         },
         {
           "numero": 7,
@@ -1551,7 +1811,9 @@
           "contenido": "Evaluar e informar al Consejo de Administración, cuando menos dos veces al año, y una vez al año a la Asamblea General, previo dictamen de la Comisión de Vigilancia, sobre la situación que guarda el sistema de control interno del Instituto;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 453,
+          "pagina": 10
         },
         {
           "numero": 8,
@@ -1560,7 +1822,9 @@
           "contenido": "Verificar la existencia y funcionamiento de un sistema integral de información de la situación patrimonial de los funcionarios del Instituto, aprobado por el Consejo de Administración a propuesta del Director General;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 499,
+          "pagina": 10
         },
         {
           "numero": 9,
@@ -1569,7 +1833,9 @@
           "contenido": "En general, conocer y evaluar las operaciones relevantes del Instituto y la información financiera producida por la administración;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 545,
+          "pagina": 10
         },
         {
           "numero": 10,
@@ -1578,7 +1844,9 @@
           "contenido": "Enviar a la Comisión de Vigilancia un informe periódico sobre la situación financiera del Instituto, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 579,
+          "pagina": 10
         },
         {
           "numero": 11,
@@ -1590,7 +1858,9 @@
           "x_texto": 107,
           "referencias": [
             "Artículo adicionado DOF 01-06-2005"
-          ]
+          ],
+          "y": 602,
+          "pagina": 10
         }
       ]
     },
@@ -1607,7 +1877,9 @@
           "contenido": "El Auditor Externo será designado por el Consejo de Administración de entre tres candidatos propuestos por el Comité de Auditoría, no podrá ocupar el cargo por más de cinco años y deberá reunir los siguientes requisitos:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 635,
+          "pagina": 10
         },
         {
           "numero": 2,
@@ -1616,7 +1888,9 @@
           "contenido": "Ser una persona de reconocido prestigio.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 681,
+          "pagina": 10
         },
         {
           "numero": 3,
@@ -1625,7 +1899,9 @@
           "contenido": "Contar con Título y Cédula Profesional de Contador Público o Licenciado en Contaduría.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 704,
+          "pagina": 10
         },
         {
           "numero": 4,
@@ -1634,7 +1910,9 @@
           "contenido": "Estar debidamente certificado.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 122,
+          "pagina": 11
         },
         {
           "numero": 5,
@@ -1643,7 +1921,9 @@
           "contenido": "Contar con conocimientos y experiencia profesional mínima de cinco años en materia de auditoría relacionada con entidades financieras.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 145,
+          "pagina": 11
         },
         {
           "numero": 6,
@@ -1652,7 +1932,9 @@
           "contenido": "No haber sido condenado por sentencia irrevocable por delito patrimonial o intencional que haya ameritado pena corporal.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 179,
+          "pagina": 11
         },
         {
           "numero": 7,
@@ -1661,7 +1943,9 @@
           "contenido": "No estar inhabilitado para ejercer el comercio o para desempeñar un empleo, cargo o comisión en el servicio público, o en el sistema financiero mexicano, así como no haber sido declarado como quebrado o concursado.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 214,
+          "pagina": 11
         },
         {
           "numero": 8,
@@ -1670,7 +1954,9 @@
           "contenido": "Ser socio de una firma de contadores públicos de reconocido prestigio. Esta firma no podrá ser la misma que aquélla a la que hubiera pertenecido el Auditor, en el período inmediato anterior, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 260,
+          "pagina": 11
         },
         {
           "numero": 9,
@@ -1682,7 +1968,9 @@
           "x_texto": 107,
           "referencias": [
             "Artículo reformado DOF 01-06-2005"
-          ]
+          ],
+          "y": 294,
+          "pagina": 11
         }
       ]
     },
@@ -1699,7 +1987,9 @@
           "contenido": "El Auditor Externo tendrá las siguientes atribuciones y facultades:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 384,
+          "pagina": 11
         },
         {
           "numero": 2,
@@ -1708,7 +1998,9 @@
           "contenido": "Practicar la auditoría de los estados financieros y comprobar, cuando lo estime conveniente los avalúos de los bienes, materia de operación del Instituto;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 407,
+          "pagina": 11
         },
         {
           "numero": 3,
@@ -1717,7 +2009,9 @@
           "contenido": "Emitir anualmente un dictamen al Comité de Auditoría sobre la situación financiera que guarda el Instituto, para su presentación a la Asamblea General por medio del Consejo de Administración.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 441,
+          "pagina": 11
         },
         {
           "numero": 4,
@@ -1726,7 +2020,9 @@
           "contenido": "Para rendir fundadamente dicho dictamen, deberá llevar a cabo el examen de las operaciones, documentación, registros y demás evidencias comprobatorias, en el grado y extensión que sean necesarios;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 476,
+          "pagina": 11
         },
         {
           "numero": 5,
@@ -1735,7 +2031,9 @@
           "contenido": "Hacer del conocimiento del Consejo de Administración, por conducto del Comité de Auditoría, información sobre la situación financiera que guarda el Instituto, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 522,
+          "pagina": 11
         },
         {
           "numero": 6,
@@ -1747,7 +2045,9 @@
           "x_texto": 107,
           "referencias": [
             "Artículo adicionado DOF 01-06-2005"
-          ]
+          ],
+          "y": 556,
+          "pagina": 11
         }
       ]
     },
@@ -1764,7 +2064,9 @@
           "contenido": "El Auditor Externo será responsable para con el Instituto por el cumplimiento de las obligaciones que esta Ley le impone y será solidariamente responsable con el que le haya precedido por las irregularidades en que éste hubiere incurrido si, conociéndolas, no las denunciare por escrito a la Asamblea General.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 600,
+          "pagina": 11
         },
         {
           "numero": 2,
@@ -1776,7 +2078,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 01-06-2005"
-          ]
+          ],
+          "y": 658,
+          "pagina": 11
         }
       ]
     },
@@ -1796,7 +2100,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 01-06-2005"
-          ]
+          ],
+          "y": 701,
+          "pagina": 11
         }
       ]
     },
@@ -1816,7 +2122,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 01-06-2005"
-          ]
+          ],
+          "y": 131,
+          "pagina": 12
         }
       ]
     },
@@ -1836,7 +2144,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 186,
+          "pagina": 12
         }
       ]
     },
@@ -1856,7 +2166,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 01-06-2005"
-          ]
+          ],
+          "y": 241,
+          "pagina": 12
         },
         {
           "numero": 2,
@@ -1868,7 +2180,9 @@
           "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 23-12-1974"
-          ]
+          ],
+          "y": 274,
+          "pagina": 12
         },
         {
           "numero": 3,
@@ -1880,7 +2194,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 13-01-1986, 01-06-2005, 01-05-2019, 21-02-2025"
-          ]
+          ],
+          "y": 352,
+          "pagina": 12
         },
         {
           "numero": 4,
@@ -1893,7 +2209,9 @@
           "referencias": [
             "Párrafo adicionado DOF 13-01-1986. Reformado DOF 24-02-1992, 22-07-1994, 01-06-2005",
             "Fracción reformada DOF 21-02-2025"
-          ]
+          ],
+          "y": 442,
+          "pagina": 12
         },
         {
           "numero": 5,
@@ -1905,7 +2223,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 21-02-2025"
-          ]
+          ],
+          "y": 508,
+          "pagina": 12
         },
         {
           "numero": 6,
@@ -1914,7 +2234,9 @@
           "contenido": "Ejecutar los acuerdos del Consejo de Administración;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 607,
+          "pagina": 12
         },
         {
           "numero": 7,
@@ -1923,7 +2245,9 @@
           "contenido": "Presentar anualmente al Consejo de Administración, dentro de los dos primeros meses del año siguiente, los estados financieros y el informe de actividades del ejercicio anterior;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 630,
+          "pagina": 12
         },
         {
           "numero": 8,
@@ -1935,7 +2259,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 21-02-2025"
-          ]
+          ],
+          "y": 665,
+          "pagina": 12
         },
         {
           "numero": 9,
@@ -1947,7 +2273,9 @@
           "x_texto": 85,
           "referencias": [
             "Fracción adicionada DOF 21-02-2025"
-          ]
+          ],
+          "y": 110,
+          "pagina": 13
         },
         {
           "numero": 10,
@@ -1959,7 +2287,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 21-02-2025"
-          ]
+          ],
+          "y": 188,
+          "pagina": 13
         },
         {
           "numero": 11,
@@ -1971,7 +2301,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 24-02-1992, 01-06-2005, 21-02-2025"
-          ]
+          ],
+          "y": 232,
+          "pagina": 13
         },
         {
           "numero": 12,
@@ -1980,7 +2312,9 @@
           "contenido": "Nombrar y remover al personal del Instituto, señalándole sus funciones y remuneraciones; y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 287,
+          "pagina": 13
         },
         {
           "numero": 13,
@@ -1992,7 +2326,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 01-06-2005. Reformada DOF 21-02-2025"
-          ]
+          ],
+          "y": 310,
+          "pagina": 13
         },
         {
           "numero": 14,
@@ -2004,7 +2340,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 01-06-2005 (se recorre)"
-          ]
+          ],
+          "y": 388,
+          "pagina": 13
         }
       ]
     },
@@ -2024,7 +2362,9 @@
           "x_texto": 85,
           "referencias": [
             "Fracción derogada DOF 21-02-2025"
-          ]
+          ],
+          "y": 421,
+          "pagina": 13
         }
       ]
     },
@@ -2041,7 +2381,9 @@
           "contenido": "La Comisión de Inconformidades se integrará en forma tripartita con un miembro por cada representación, designados por la Asamblea General y durarán en su cargo seis años. Por cada miembro propietario se designará un suplente.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 453,
+          "pagina": 13
         },
         {
           "numero": 2,
@@ -2050,7 +2392,9 @@
           "contenido": "La Comisión será presidida en forma rotativa, en el orden en que las representaciones que propusieron el nombramiento de sus miembros, se encuentran mencionadas en el Artículo 7o.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 499,
+          "pagina": 13
         },
         {
           "numero": 3,
@@ -2059,7 +2403,9 @@
           "contenido": "Los miembros de la Comisión, no podrán serlo de algún otro Órgano del Instituto y deberán cumplir con los siguientes requisitos:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 534,
+          "pagina": 13
         },
         {
           "numero": 4,
@@ -2068,7 +2414,9 @@
           "contenido": "Ser una persona de reconocido prestigio.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 568,
+          "pagina": 13
         },
         {
           "numero": 5,
@@ -2077,7 +2425,9 @@
           "contenido": "Contar con conocimientos y experiencia profesional mínima de cinco años.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 591,
+          "pagina": 13
         },
         {
           "numero": 6,
@@ -2086,7 +2436,9 @@
           "contenido": "No haber sido condenado por sentencia irrevocable por delito patrimonial o intencional que haya ameritado pena corporal, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 614,
+          "pagina": 13
         },
         {
           "numero": 7,
@@ -2095,7 +2447,9 @@
           "contenido": "No estar inhabilitado para ejercer el comercio o para desempeñar un empleo, cargo o comisión en el servicio público o en el sistema financiero mexicano, así como no haber sido declarado como quebrado o concursado.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 648,
+          "pagina": 13
         },
         {
           "numero": 8,
@@ -2104,7 +2458,9 @@
           "contenido": "La Comisión conocerá de las reclamaciones que reciba por parte de patrones, los trabajadores o sus causahabientes y beneficiarios, cuando a juicio de éstos hubiesen recibido un tratamiento incorrecto, injusto o negligente y se asegurará de su debida atención, en los términos de la normatividad correspondiente.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 695,
+          "pagina": 13
         },
         {
           "numero": 9,
@@ -2113,7 +2469,9 @@
           "contenido": "La Comisión conocerá, substanciará y resolverá los recursos que promuevan ante el Instituto, los patrones, los trabajadores o sus causahabientes y beneficiarios; en los términos de la normatividad correspondiente y con sujeción a los criterios que sobre el particular, establezca la Comisión de Vigilancia.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 145,
+          "pagina": 14
         },
         {
           "numero": 10,
@@ -2125,7 +2483,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 06-01-1997, 01-06-2005"
-          ]
+          ],
+          "y": 202,
+          "pagina": 14
         }
       ]
     },
@@ -2145,7 +2505,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 24-01-2017, 21-02-2025"
-          ]
+          ],
+          "y": 303,
+          "pagina": 14
         },
         {
           "numero": 2,
@@ -2157,7 +2519,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 359,
+          "pagina": 14
         },
         {
           "numero": 3,
@@ -2169,7 +2533,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 402,
+          "pagina": 14
         },
         {
           "numero": 4,
@@ -2178,7 +2544,9 @@
           "contenido": "Ser una persona de reconocido prestigio.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 446,
+          "pagina": 14
         },
         {
           "numero": 5,
@@ -2187,7 +2555,9 @@
           "contenido": "Contar con conocimientos y experiencia profesional mínima de cinco años.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 469,
+          "pagina": 14
         },
         {
           "numero": 6,
@@ -2196,7 +2566,9 @@
           "contenido": "No haber sido condenado por sentencia irrevocable por delito patrimonial o intencional que haya ameritado pena corporal, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 492,
+          "pagina": 14
         },
         {
           "numero": 7,
@@ -2208,7 +2580,9 @@
           "x_texto": 107,
           "referencias": [
             "Artículo adicionado DOF 01-06-2005"
-          ]
+          ],
+          "y": 526,
+          "pagina": 14
         }
       ]
     },
@@ -2228,7 +2602,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 24-01-2017"
-          ]
+          ],
+          "y": 582,
+          "pagina": 14
         },
         {
           "numero": 2,
@@ -2237,7 +2613,9 @@
           "contenido": "Proveer lo necesario para que toda persona pueda tener acceso a la información de conformidad con la normatividad vigente del Instituto y apegada a los principios y políticas generales de la materia;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 625,
+          "pagina": 14
         },
         {
           "numero": 3,
@@ -2246,7 +2624,9 @@
           "contenido": "Transparentar la gestión mediante la difusión de la información que genera el Instituto;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 671,
+          "pagina": 14
         },
         {
           "numero": 4,
@@ -2258,7 +2638,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 24-01-2017"
-          ]
+          ],
+          "y": 694,
+          "pagina": 14
         },
         {
           "numero": 5,
@@ -2270,7 +2652,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 24-01-2017"
-          ]
+          ],
+          "y": 131,
+          "pagina": 15
         },
         {
           "numero": 6,
@@ -2279,7 +2663,9 @@
           "contenido": "Mejorar la organización, clasificación y manejo de los documentos;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 175,
+          "pagina": 15
         },
         {
           "numero": 7,
@@ -2288,7 +2674,9 @@
           "contenido": "Contribuir a la democratización de la sociedad mexicana y la plena vigencia del Estado de derecho;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 198,
+          "pagina": 15
         },
         {
           "numero": 8,
@@ -2300,7 +2688,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción derogada DOF 24-01-2017"
-          ]
+          ],
+          "y": 232,
+          "pagina": 15
         },
         {
           "numero": 9,
@@ -2312,7 +2702,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 24-01-2017"
-          ]
+          ],
+          "y": 264,
+          "pagina": 15
         },
         {
           "numero": 10,
@@ -2324,7 +2716,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 01-06-2005"
-          ]
+          ],
+          "y": 320,
+          "pagina": 15
         }
       ]
     },
@@ -2341,7 +2735,9 @@
           "contenido": "Las Comisiones Consultivas Regionales, se integrarán en forma tripartita y actuarán en las áreas territoriales que señale la Asamblea General. Su funcionamiento se determinará conforme al Reglamento que para tales efectos apruebe la propia Asamblea.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 363,
+          "pagina": 15
         }
       ]
     },
@@ -2358,7 +2754,9 @@
           "contenido": "Las Comisiones Consultivas Regionales tendrán las atribuciones y funciones siguientes:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 409,
+          "pagina": 15
         },
         {
           "numero": 2,
@@ -2367,7 +2765,9 @@
           "contenido": "Sugerir al Consejo de Administración, a través del Director General, la localización más adecuada de las áreas y las características de las habitaciones de la región, susceptibles de ser financiadas;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 432,
+          "pagina": 15
         },
         {
           "numero": 3,
@@ -2376,7 +2776,9 @@
           "contenido": "Opinar sobre los proyectos de habitaciones a financiar en sus respectivas regiones;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 467,
+          "pagina": 15
         },
         {
           "numero": 4,
@@ -2385,7 +2787,9 @@
           "contenido": "Las de carácter administrativo que establezca el Reglamento de las Delegaciones Regionales; y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 490,
+          "pagina": 15
         },
         {
           "numero": 5,
@@ -2394,7 +2798,9 @@
           "contenido": "Las demás de carácter consultivo que les encomiende el Director General.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 513,
+          "pagina": 15
         }
       ]
     },
@@ -2414,7 +2820,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 01-06-2005, 24-01-2017"
-          ]
+          ],
+          "y": 536,
+          "pagina": 15
         }
       ]
     },
@@ -2431,7 +2839,9 @@
           "contenido": "Son obligaciones de los patrones:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 591,
+          "pagina": 15
         },
         {
           "numero": 2,
@@ -2440,7 +2850,9 @@
           "contenido": "Proceder a inscribirse e inscribir a sus trabajadores en el Instituto y dar los avisos a que se refiere el Artículo 31 de esta Ley;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 614,
+          "pagina": 15
         },
         {
           "numero": 3,
@@ -2452,7 +2864,9 @@
           "x_texto": 113,
           "referencias": [
             "Párrafo adicionado DOF 06-01-1997"
-          ]
+          ],
+          "y": 649,
+          "pagina": 15
         },
         {
           "numero": 4,
@@ -2464,7 +2878,9 @@
           "x_texto": 113,
           "referencias": [
             "Párrafo adicionado DOF 06-01-1997"
-          ]
+          ],
+          "y": 692,
+          "pagina": 15
         },
         {
           "numero": 5,
@@ -2473,7 +2889,9 @@
           "contenido": "Determinar el monto de las aportaciones del cinco por ciento sobre el salario de los trabajadores a su servicio y efectuar el pago en las entidades receptoras que actúen por cuenta y orden del Instituto, para su abono en la subcuenta de vivienda de las cuentas individuales de los trabajadores previstas en los sistemas de ahorro para el retiro, en los términos de la presente Ley y sus reglamentos, así como en lo conducente, conforme a lo previsto en la Ley del Seguro Social y en la Ley Federal del Trabajo. En lo que corresponde a la integración y cálculo de la base y límite superior salarial para el pago de aportaciones, se aplicará lo contenido en la Ley del Seguro Social.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 131,
+          "pagina": 16
         },
         {
           "numero": 6,
@@ -2482,7 +2900,9 @@
           "contenido": "Estas aportaciones son gastos de previsión de las empresas y forman parte del patrimonio de los trabajadores.",
           "padre_numero": 5,
           "x_id": 113,
-          "x_texto": 113
+          "x_texto": 113,
+          "y": 234,
+          "pagina": 16
         },
         {
           "numero": 7,
@@ -2491,7 +2911,9 @@
           "contenido": "Los patrones, al realizar el pago, deberán proporcionar la información relativa a cada trabajador en la forma y con la periodicidad que al efecto establezca la presente Ley y, en lo aplicable, la Ley del Seguro Social y la Ley de los Sistemas de Ahorro para el Retiro.",
           "padre_numero": 5,
           "x_id": 113,
-          "x_texto": 113
+          "x_texto": 113,
+          "y": 269,
+          "pagina": 16
         },
         {
           "numero": 8,
@@ -2500,7 +2922,9 @@
           "contenido": "El registro sobre la individualización de los recursos de la subcuenta de vivienda de las cuentas individuales de los sistemas de ahorro para el retiro, estará a cargo de las administradoras de fondos para el retiro, en los términos que se establecen en la Ley de los Sistemas de Ahorro para el Retiro y su Reglamento. Lo anterior, independientemente de los registros individuales que determine llevar el Instituto.",
           "padre_numero": 5,
           "x_id": 113,
-          "x_texto": 113
+          "x_texto": 113,
+          "y": 315,
+          "pagina": 16
         },
         {
           "numero": 9,
@@ -2512,7 +2936,9 @@
           "x_texto": 113,
           "referencias": [
             "Fracción reformada DOF 24-02-1992, 22-07-1994, 06-01-1997"
-          ]
+          ],
+          "y": 384,
+          "pagina": 16
         },
         {
           "numero": 10,
@@ -2521,7 +2947,9 @@
           "contenido": "Hacer los descuentos a sus trabajadores en sus salarios, conforme a lo previsto en los artículos 97 y 110 de la Ley Federal del Trabajo, que se destinen al pago de abonos para cubrir préstamos otorgados por el Instituto, así como enterar el importe de dichos descuentos en las entidades receptoras que actúen por cuenta y orden del Instituto, en la forma y términos que establece esta Ley y sus disposiciones reglamentarias. La integración y cálculo de la base salarial para efectos de los descuentos será la contenida en la fracción II del presente artículo.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 462,
+          "pagina": 16
         },
         {
           "numero": 11,
@@ -2533,7 +2961,9 @@
           "x_texto": 113,
           "referencias": [
             "Fracción reformada DOF 07-01-1982, 06-01-1997"
-          ]
+          ],
+          "y": 543,
+          "pagina": 16
         },
         {
           "numero": 12,
@@ -2545,7 +2975,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 06-01-1997"
-          ]
+          ],
+          "y": 598,
+          "pagina": 16
         },
         {
           "numero": 13,
@@ -2557,7 +2989,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 06-01-1997"
-          ]
+          ],
+          "y": 653,
+          "pagina": 16
         },
         {
           "numero": 14,
@@ -2566,7 +3000,9 @@
           "contenido": "Atender los requerimientos de pago e información que les formule el Instituto a través de cualquier medio, incluyendo los electrónicos, que el Instituto ponga a su alcance, de conformidad con las disposiciones legales y reglamentarias correspondientes.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 110,
+          "pagina": 17
         },
         {
           "numero": 15,
@@ -2578,7 +3014,9 @@
           "x_texto": 113,
           "referencias": [
             "Fracción adicionada DOF 06-01-1997. Reformada DOF 06-01-2016"
-          ]
+          ],
+          "y": 156,
+          "pagina": 17
         },
         {
           "numero": 16,
@@ -2587,7 +3025,9 @@
           "contenido": "Expedir y entregar, semanal o quincenalmente, a cada trabajador constancia escrita del número de días trabajados y del salario percibido, conforme a los períodos de pago establecidos, tratándose de patrones que se dediquen en forma permanente o esporádica a la actividad de la construcción.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 200,
+          "pagina": 17
         },
         {
           "numero": 17,
@@ -2596,7 +3036,9 @@
           "contenido": "Asimismo, deberán cubrir las aportaciones, aun en el caso de que no sea posible determinar el o los trabajadores a quienes se deban aplicar, en cuyo caso su monto se depositará en una cuenta específica que se manejará en los mismos términos que los recursos individualizados del Fondo Nacional de la Vivienda, hasta en tanto se esté en posibilidad de individualizar los pagos a favor de sus titulares, en los términos de esta Ley. Lo anterior, sin perjuicio de que aquellos trabajadores que acreditaren sus derechos, se les abonen a sus cuentas individuales de los sistemas de ahorro para el retiro, los importes que les correspondan.",
           "padre_numero": 16,
           "x_id": 113,
-          "x_texto": 113
+          "x_texto": 113,
+          "y": 258,
+          "pagina": 17
         },
         {
           "numero": 18,
@@ -2608,7 +3050,9 @@
           "x_texto": 113,
           "referencias": [
             "Fracción adicionada DOF 06-01-1997"
-          ]
+          ],
+          "y": 350,
+          "pagina": 17
         },
         {
           "numero": 19,
@@ -2617,7 +3061,9 @@
           "contenido": "Presentar al Instituto copia con firma autógrafa del informe sobre la situación fiscal del contribuyente con los anexos referentes a las contribuciones por concepto de aportaciones patronales de conformidad con lo dispuesto en el Reglamento del Código Fiscal de la Federación, cuando en los términos de dicho Código, estén obligados a dictaminar por contador público autorizado sus estados financieros.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 405,
+          "pagina": 17
         },
         {
           "numero": 20,
@@ -2630,7 +3076,9 @@
           "referencias": [
             "Fracción adicionada DOF 06-01-1997",
             "Fracción adicionada DOF 06-01-1997"
-          ]
+          ],
+          "y": 474,
+          "pagina": 17
         },
         {
           "numero": 21,
@@ -2642,7 +3090,9 @@
           "x_texto": 107,
           "referencias": [
             "Párrafo adicionado DOF 06-01-1997. Reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 529,
+          "pagina": 17
         },
         {
           "numero": 22,
@@ -2654,7 +3104,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 06-01-1997. Reformado DOF 23-04-2021"
-          ]
+          ],
+          "y": 651,
+          "pagina": 17
         }
       ]
     },
@@ -2671,7 +3123,9 @@
           "contenido": "Las personas físicas o morales que se encuentren registradas en términos del artículo 15 de la Ley Federal del Trabajo para llevar a cabo la prestación de servicios especializados o la ejecución de obras especializadas que no forman parte del objeto social ni de la actividad económica preponderante de la beneficiaria de los mismos, deberán proporcionar cuatrimestralmente a más tardar el día 17 de los meses de enero, mayo y septiembre, la información de los contratos celebrados en el cuatrimestre de que se trate, conforme a lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 110,
+          "pagina": 18
         },
         {
           "numero": 2,
@@ -2680,7 +3134,9 @@
           "contenido": ") Datos Generales;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 191,
+          "pagina": 18
         },
         {
           "numero": 3,
@@ -2689,7 +3145,9 @@
           "contenido": ") Contratos de servicio;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 214,
+          "pagina": 18
         },
         {
           "numero": 4,
@@ -2698,7 +3156,9 @@
           "contenido": ") Los Montos de las Aportaciones y Amortizaciones;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 237,
+          "pagina": 18
         },
         {
           "numero": 5,
@@ -2707,7 +3167,9 @@
           "contenido": ") Información de los trabajadores;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 260,
+          "pagina": 18
         },
         {
           "numero": 6,
@@ -2716,7 +3178,9 @@
           "contenido": ") Determinación del salario base de aportación, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 283,
+          "pagina": 18
         },
         {
           "numero": 7,
@@ -2725,7 +3189,9 @@
           "contenido": ") Copia simple del registro emitido por la Secretaría del Trabajo y Previsión Social.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 306,
+          "pagina": 18
         },
         {
           "numero": 8,
@@ -2734,7 +3200,9 @@
           "contenido": "Los requisitos antes señalados y las fechas de presentación ante el Instituto deberán cumplirse conforme a los procedimientos que el Instituto publique a través de medios electrónicos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 329,
+          "pagina": 18
         },
         {
           "numero": 9,
@@ -2743,7 +3211,9 @@
           "contenido": "La persona física o moral que contrate la prestación de servicios o la ejecución de obras con una empresa que incumpla las obligaciones contenidas en la presente Ley, será responsable solidaria en relación con los trabajadores utilizados para ejecutar dichas contrataciones.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 363,
+          "pagina": 18
         },
         {
           "numero": 10,
@@ -2752,7 +3222,9 @@
           "contenido": "Para la verificación del cumplimiento de las obligaciones establecidas en la Ley Federal del Trabajo y en el presente ordenamiento, el Instituto y la Secretaría del Trabajo y Previsión Social, deberán celebrar convenios de colaboración, para el intercambio de información y la realización de acciones de verificación conjuntas, en su respectivo ámbito de competencia.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 409,
+          "pagina": 18
         },
         {
           "numero": 11,
@@ -2764,7 +3236,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 04-06-2015. Reformado DOF 23-04-2021"
-          ]
+          ],
+          "y": 467,
+          "pagina": 18
         }
       ]
     },
@@ -2781,7 +3255,9 @@
           "contenido": "Los patrones podrán presentar solicitudes o promociones al Instituto, por escrito o a través de cualquier medio electrónico. El Reglamento de inscripción, Pago de Aportaciones y Entero de Descuentos al Instituto del Fondo Nacional de la Vivienda para los Trabajadores establecerá los requisitos para efectuar las promociones por medios electrónicos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 510,
+          "pagina": 18
         },
         {
           "numero": 2,
@@ -2793,7 +3269,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 06-01-2016"
-          ]
+          ],
+          "y": 568,
+          "pagina": 18
         }
       ]
     },
@@ -2810,7 +3288,9 @@
           "contenido": "El Instituto utilizará medios electrónicos para el cumplimiento de su objeto y podrá tener el carácter de autoridad certificadora, en términos de lo dispuesto por la Ley de Firma Electrónica Avanzada, para emitir certificados digitales a efecto de aplicar el uso de firma electrónica avanzada en las formas y procedimientos a su cargo.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 612,
+          "pagina": 18
         },
         {
           "numero": 2,
@@ -2819,7 +3299,9 @@
           "contenido": "Las disposiciones del Código Fiscal de la Federación en materia de medios electrónicos serán aplicables a las contribuciones administradas por el Instituto como organismo fiscal autónomo, mismo que actuará como autoridad certificadora y proporcionará los servicios de certificación de firmas electrónicas avanzadas en tal contexto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 669,
+          "pagina": 18
         },
         {
           "numero": 3,
@@ -2828,7 +3310,9 @@
           "contenido": "El Instituto podrá reconocer el uso de los certificados digitales emitidos por otras autoridades certificadoras en el ámbito de la competencia a que se refiere esta Ley, surtiendo los mismos efectos jurídicos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 122,
+          "pagina": 19
         },
         {
           "numero": 4,
@@ -2840,7 +3324,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 06-01-2016"
-          ]
+          ],
+          "y": 168,
+          "pagina": 19
         }
       ]
     },
@@ -2857,7 +3343,9 @@
           "contenido": "Las obligaciones de efectuar las aportaciones y enterar los descuentos a que se refiere el Artículo anterior, así como su cobro, tienen el carácter de fiscales.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 234,
+          "pagina": 19
         },
         {
           "numero": 2,
@@ -2866,7 +3354,9 @@
           "contenido": "El Instituto del Fondo Nacional de la Vivienda para los Trabajadores, en su carácter de organismo fiscal autónomo, está facultado, en los términos del Código Fiscal de la Federación, para:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 269,
+          "pagina": 19
         },
         {
           "numero": 3,
@@ -2878,7 +3368,9 @@
           "x_texto": 107,
           "referencias": [
             "Párrafo reformado DOF 22-07-1994"
-          ]
+          ],
+          "y": 303,
+          "pagina": 19
         },
         {
           "numero": 4,
@@ -2890,7 +3382,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 31-12-2000"
-          ]
+          ],
+          "y": 393,
+          "pagina": 19
         },
         {
           "numero": 5,
@@ -2902,7 +3396,9 @@
           "x_texto": 85,
           "referencias": [
             "Fracción adicionada DOF 24-02-1992"
-          ]
+          ],
+          "y": 483,
+          "pagina": 19
         },
         {
           "numero": 6,
@@ -2911,7 +3407,9 @@
           "contenido": "Recibir en sus oficinas o a través de las entidades receptoras, los pagos que deban efectuarse conforme a lo previsto por este artículo.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 526,
+          "pagina": 19
         },
         {
           "numero": 7,
@@ -2920,7 +3418,9 @@
           "contenido": "Las entidades receptoras son aquellas autorizadas por los institutos de seguridad social para recibir el pago de las cuotas del seguro de retiro, cesantía en edad avanzada y vejez, previsto en la Ley del Seguro Social, de aportaciones y descuentos de vivienda al Fondo Nacional de la Vivienda y de aportaciones voluntarias.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 561,
+          "pagina": 19
         },
         {
           "numero": 8,
@@ -2932,7 +3432,9 @@
           "x_texto": 85,
           "referencias": [
             "Fracción adicionada DOF 24-02-1992. Reformada 06-01-1997"
-          ]
+          ],
+          "y": 619,
+          "pagina": 19
         },
         {
           "numero": 9,
@@ -2944,7 +3446,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 24-02-1992"
-          ]
+          ],
+          "y": 110,
+          "pagina": 20
         },
         {
           "numero": 10,
@@ -2956,7 +3460,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 24-02-1992. Reformada 06-01-1997"
-          ]
+          ],
+          "y": 165,
+          "pagina": 20
         },
         {
           "numero": 11,
@@ -2965,7 +3471,9 @@
           "contenido": "Requerir a los patrones que omitan el cumplimiento de las obligaciones que esta Ley establece, la información necesaria para determinar la existencia o no de la relación laboral con las personas a su servicio, así como la que permita establecer en forma presuntiva y conforme al procedimiento que al efecto el Instituto señale, el monto de las aportaciones omitidas.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 221,
+          "pagina": 20
         },
         {
           "numero": 12,
@@ -2977,7 +3485,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 24-02-1992. Reformado DOF 22-07-1994"
-          ]
+          ],
+          "y": 278,
+          "pagina": 20
         },
         {
           "numero": 13,
@@ -2990,7 +3500,9 @@
           "referencias": [
             "Párrafo adicionado DOF 22-07-1994",
             "Fracción adicionada DOF 24-02-1992"
-          ]
+          ],
+          "y": 345,
+          "pagina": 20
         },
         {
           "numero": 14,
@@ -3002,7 +3514,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 06-01-1997"
-          ]
+          ],
+          "y": 455,
+          "pagina": 20
         },
         {
           "numero": 15,
@@ -3014,7 +3528,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 06-01-1997"
-          ]
+          ],
+          "y": 533,
+          "pagina": 20
         },
         {
           "numero": 16,
@@ -3026,7 +3542,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 06-01-1997"
-          ]
+          ],
+          "y": 577,
+          "pagina": 20
         },
         {
           "numero": 17,
@@ -3038,7 +3556,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 06-01-1997"
-          ]
+          ],
+          "y": 621,
+          "pagina": 20
         },
         {
           "numero": 18,
@@ -3050,7 +3570,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción adicionada DOF 06-01-1997"
-          ]
+          ],
+          "y": 665,
+          "pagina": 20
         },
         {
           "numero": 19,
@@ -3065,7 +3587,9 @@
             "Párrafo con fracciones reformado DOF 24-02-1992",
             "Artículo reformado DOF 30-12-1983",
             "Reforma DOF 24-02-1992: Derogó del artículo los entonces párrafos tercero y cuarto"
-          ]
+          ],
+          "y": 708,
+          "pagina": 20
         }
       ]
     },
@@ -3082,7 +3606,9 @@
           "contenido": "Para la inscripción de los patrones y de los trabajadores se deberá proporcionar la información que se determine en esta Ley y sus disposiciones reglamentarias correspondientes.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 159,
+          "pagina": 21
         },
         {
           "numero": 2,
@@ -3091,7 +3617,9 @@
           "contenido": "Los patrones deberán dar aviso al Instituto de los cambios de domicilio y de denominación o razón social, aumento o disminución de obligaciones fiscales, suspensión o reanudación de actividades, clausura, fusión, escisión, enajenación y declaración de quiebra y suspensión de pagos. Asimismo harán del conocimiento del Instituto las altas, bajas, modificaciones de salarios, ausencias e incapacidades y demás datos de los trabajadores, necesarios al Instituto para dar cumplimiento a las obligaciones contenidas en este artículo. El Instituto podrá convenir con el Instituto Mexicano del Seguro Social los términos y requisitos para simplificar y unificar los procesos antes descritos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 193,
+          "pagina": 21
         },
         {
           "numero": 3,
@@ -3100,7 +3628,9 @@
           "contenido": "El registro de los patrones y la inscripción de los trabajadores, así como los demás avisos a que se refieren los párrafos anteriores, deberán presentarse al Instituto dentro de un plazo no mayor de cinco días hábiles, contados a partir de que se den los supuestos a que se refiere el párrafo anterior.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 285,
+          "pagina": 21
         },
         {
           "numero": 4,
@@ -3109,7 +3639,9 @@
           "contenido": "Los cambios en el salario base de aportación y de descuentos, surtirán efectos a partir de la fecha en que éstos ocurran.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 331,
+          "pagina": 21
         },
         {
           "numero": 5,
@@ -3118,7 +3650,9 @@
           "contenido": "La información a que se refiere este artículo, podrá proporcionarse en dispositivos magnéticos o de telecomunicación, en los términos que señale el Instituto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 366,
+          "pagina": 21
         },
         {
           "numero": 6,
@@ -3130,7 +3664,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 06-01-1997"
-          ]
+          ],
+          "y": 400,
+          "pagina": 21
         }
       ]
     },
@@ -3150,7 +3686,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 06-01-1997"
-          ]
+          ],
+          "y": 467,
+          "pagina": 21
         }
       ]
     },
@@ -3170,7 +3708,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 06-01-1997"
-          ]
+          ],
+          "y": 533,
+          "pagina": 21
         }
       ]
     },
@@ -3187,7 +3727,9 @@
           "contenido": "El trabajador tendrá derecho, en todo momento, a solicitar información a las administradoras de fondos para el retiro sobre el monto de las aportaciones registradas a su favor. La información anterior, también podrá solicitarla el trabajador a través del Instituto o del patrón al que preste sus servicios.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 589,
+          "pagina": 21
         },
         {
           "numero": 2,
@@ -3196,7 +3738,9 @@
           "contenido": "Tratándose de los trabajadores que reciban crédito de vivienda por parte del Instituto, tendrán derecho a solicitar y obtener información directa de éste o a través del patrón al que preste sus servicios sobre el monto de los descuentos, incluyendo las aportaciones aplicadas a cubrir su crédito, y el saldo del mismo.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 646,
+          "pagina": 21
         },
         {
           "numero": 3,
@@ -3208,7 +3752,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 07-01-1982, 06-01-1997"
-          ]
+          ],
+          "y": 692,
+          "pagina": 21
         }
       ]
     },
@@ -3228,7 +3774,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 06-01-2016"
-          ]
+          ],
+          "y": 131,
+          "pagina": 22
         },
         {
           "numero": 2,
@@ -3240,7 +3788,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 28-12-1989, 24-02-1992, 06-01-1997"
-          ]
+          ],
+          "y": 186,
+          "pagina": 22
         }
       ]
     },
@@ -3260,7 +3810,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 07-01-1982, 30-12-1983, 24-02-1992"
-          ]
+          ],
+          "y": 253,
+          "pagina": 22
         }
       ]
     },
@@ -3280,7 +3832,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 30-04-2024"
-          ]
+          ],
+          "y": 297,
+          "pagina": 22
         },
         {
           "numero": 2,
@@ -3292,7 +3846,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 30-04-2024"
-          ]
+          ],
+          "y": 340,
+          "pagina": 22
         },
         {
           "numero": 3,
@@ -3304,7 +3860,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 30-04-2024"
-          ]
+          ],
+          "y": 407,
+          "pagina": 22
         },
         {
           "numero": 4,
@@ -3313,7 +3871,9 @@
           "contenido": "Este aviso podrá notificarse disponiendo de cualquier medio que determine el Instituto mediante disposiciones de carácter general que deberán ser publicadas en el Diario Oficial de la Federación y en el portal de Internet del Instituto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 485,
+          "pagina": 22
         },
         {
           "numero": 5,
@@ -3325,7 +3885,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 30-04-2024"
-          ]
+          ],
+          "y": 531,
+          "pagina": 22
         },
         {
           "numero": 6,
@@ -3337,7 +3899,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 30-04-2024"
-          ]
+          ],
+          "y": 632,
+          "pagina": 22
         },
         {
           "numero": 7,
@@ -3349,7 +3913,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 30-04-2024"
-          ]
+          ],
+          "y": 688,
+          "pagina": 22
         },
         {
           "numero": 8,
@@ -3361,7 +3927,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 30-04-2024"
-          ]
+          ],
+          "y": 165,
+          "pagina": 23
         },
         {
           "numero": 9,
@@ -3373,7 +3941,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 30-04-2024"
-          ]
+          ],
+          "y": 232,
+          "pagina": 23
         },
         {
           "numero": 10,
@@ -3385,7 +3955,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 30-04-2024"
-          ]
+          ],
+          "y": 310,
+          "pagina": 23
         },
         {
           "numero": 11,
@@ -3397,7 +3969,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 30-04-2024"
-          ]
+          ],
+          "y": 354,
+          "pagina": 23
         },
         {
           "numero": 12,
@@ -3410,7 +3984,9 @@
           "referencias": [
             "Reforma DOF 30-04-2024: Derogó del artículo el entonces párrafo quinto",
             "Artículo reformado DOF 24-02-1992, 06-01-1997, 16-12-2020"
-          ]
+          ],
+          "y": 409,
+          "pagina": 23
         }
       ]
     },
@@ -3427,7 +4003,9 @@
           "contenido": "Las empresas operadoras de la Base de Datos Nacional SAR proporcionarán al Instituto la información correspondiente a las aportaciones y descuentos realizados en los términos de la Ley de los Sistemas de Ahorro para el Retiro y su Reglamento, así como toda aquélla necesaria para el cumplimiento de sus fines.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 462,
+          "pagina": 23
         },
         {
           "numero": 2,
@@ -3436,7 +4014,9 @@
           "contenido": "El Instituto proporcionará directamente al Instituto Mexicano del Seguro Social y a las empresas operadoras de la Base de Datos Nacional SAR, la información relativa a patrones y trabajadores, así como las actualizaciones periódicas de dicha información.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 520,
+          "pagina": 23
         },
         {
           "numero": 3,
@@ -3445,7 +4025,9 @@
           "contenido": "Las administradoras de fondos para el retiro deberán informar a cada trabajador el estado de su subcuenta de vivienda dentro del estado de la cuenta individual en los términos, periodicidad y forma que al efecto establezca la Ley de los Sistemas de Ahorro para el Retiro, sin perjuicio de que el asegurado en todo tiempo tenga el derecho a solicitar cualquier tipo de información relacionada con la subcuenta de vivienda a la propia administradora.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 566,
+          "pagina": 23
         },
         {
           "numero": 4,
@@ -3454,7 +4036,9 @@
           "contenido": "Los trabajadores titulares de las cuentas individuales y sus beneficiarios, directamente o a través de sus apoderados o representantes sindicales, así como sus patrones, podrán presentar sus reclamaciones en contra de las administradoras de fondos para el retiro o entidades financieras autorizadas por la Comisión Nacional del Sistema de Ahorro para el Retiro, ante esta misma Comisión, en los términos dispuestos por la Ley de los Sistemas de Ahorro para el Retiro.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 635,
+          "pagina": 23
         },
         {
           "numero": 5,
@@ -3463,7 +4047,9 @@
           "contenido": "La información que manejen las administradoras de fondos para el retiro, así como las empresas operadoras estará sujeta, en materia de confidencialidad, a las disposiciones de carácter general que emita la Comisión Nacional del Sistema de Ahorro para el Retiro, en términos de la Ley correspondiente.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 110,
+          "pagina": 24
         },
         {
           "numero": 6,
@@ -3475,7 +4061,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 24-02-1992, 22-07-1994, 06-01-1997"
-          ]
+          ],
+          "y": 156,
+          "pagina": 24
         }
       ]
     },
@@ -3492,7 +4080,9 @@
           "contenido": "Las subcuentas de vivienda recibirán intereses en función del remanente de operación del Instituto del Fondo Nacional de la Vivienda para los Trabajadores.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 200,
+          "pagina": 24
         },
         {
           "numero": 2,
@@ -3501,7 +4091,9 @@
           "contenido": "Al cierre de cada ejercicio, la Administración presentará para aprobación del Consejo de Administración la determinación de los ingresos y egresos, así como el cálculo de las reservas, los recursos que deban destinarse para preservar el patrimonio, y el remanente de operación resultante de restar a los ingresos los demás conceptos señalados.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 234,
+          "pagina": 24
         },
         {
           "numero": 3,
@@ -3510,7 +4102,9 @@
           "contenido": "El Consejo de Administración deberá procurar que la tasa de interés que apruebe anualmente permita conservar el poder adquisitivo de los ahorros de las personas derechohabientes acumulados en las subcuentas de vivienda.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 292,
+          "pagina": 24
         },
         {
           "numero": 4,
@@ -3519,7 +4113,9 @@
           "contenido": "Una vez aprobado el remanente de operación del Instituto por el Consejo de Administración en los términos del párrafo anterior, procederá a aprobar la tasa de interés que deberá pagarse anualmente a las subcuentas de vivienda, procurando que permita conservar el poder adquisitivo de los ahorros de las personas derechohabientes, la cual deberá enterarse a más tardar en el mes de marzo de cada año.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 338,
+          "pagina": 24
         },
         {
           "numero": 5,
@@ -3531,7 +4127,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 24-02-1992, 06-01-1997, 01-06-2005, 27-04-2016, 30-04-2024"
-          ]
+          ],
+          "y": 396,
+          "pagina": 24
         }
       ]
     },
@@ -3548,7 +4146,9 @@
           "contenido": "Los fondos de la subcuenta de vivienda que no hubiesen sido aplicados de acuerdo al artículo 43 Bis, serán transferidos a las administradoras de fondos para el retiro para la contratación de la pensión correspondiente o su entrega, según proceda, en los términos de lo dispuesto por las Leyes del Seguro Social, en particular en sus artículos 119, 120, 127, 154, 159, 170 y 190, 193 y de los Sistemas de Ahorro para el Retiro, particularmente, en sus artículos 3, 18, 80, 82 y 83.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 474,
+          "pagina": 24
         },
         {
           "numero": 2,
@@ -3560,7 +4160,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 13-01-1986, 24-02-1992, 22-07-1994, 06-01-1997"
-          ]
+          ],
+          "y": 543,
+          "pagina": 24
         }
       ]
     },
@@ -3577,7 +4179,9 @@
           "contenido": "Las personas trabajadoras derechohabientes tendrán el derecho de elegir la vivienda nueva o existente, o el suelo que sea destinado para construcción, reparación o ampliación de vivienda a los que se aplique el importe del crédito que reciba con cargo al Fondo Nacional de la Vivienda.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 609,
+          "pagina": 24
         },
         {
           "numero": 2,
@@ -3586,7 +4190,9 @@
           "contenido": "Al cumplir un año de cotización continua, las personas trabajadoras derechohabientes también tendrán el derecho de participar en el programa de arrendamiento social de vivienda construida o administrada por el Instituto que se encuentre cerca de su centro de trabajo, y a participar en los programas de opción de compra de dichas viviendas.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 656,
+          "pagina": 24
         },
         {
           "numero": 3,
@@ -3595,7 +4201,9 @@
           "contenido": "Para los esquemas de arrendamiento social, las personas trabajadoras derechohabientes tendrán derecho a utilizar su subcuenta de vivienda como mecanismo de garantía conforme a los programas, reglas, requisitos y criterios de prelación que establezca el Consejo de Administración.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 110,
+          "pagina": 25
         },
         {
           "numero": 4,
@@ -3604,7 +4212,9 @@
           "contenido": "Previo a ejercer su crédito de vivienda o cualquier beneficio de un programa de vivienda, las personas trabajadoras derechohabientes tendrán derecho a recibir información suficiente sobre las condiciones jurídicas y financieras del mismo, así como recibir directamente y sin intermediarios el crédito o beneficio mencionado, siempre y cuando cumpla con los requisitos que se establezcan. Se entenderá por persona trabajadora derechohabiente a toda aquella que sea titular de depósitos constituidos a su favor en el Instituto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 156,
+          "pagina": 25
         },
         {
           "numero": 5,
@@ -3613,7 +4223,9 @@
           "contenido": "Cuando una persona trabajadora derechohabiente hubiere recibido crédito del Instituto y éste tenga conocimiento de que ha dejado de percibir ingresos salariales, le otorgará prórrogas en los pagos de la amortización que tenga que hacer por concepto de capital e intereses ordinarios, con efectos retroactivos a la fecha en que se suscitó la pérdida del ingreso referido. Durante dichas prórrogas no se generarán intereses ordinarios.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 237,
+          "pagina": 25
         },
         {
           "numero": 6,
@@ -3622,7 +4234,9 @@
           "contenido": "Las prórrogas que se otorguen a la persona trabajadora de conformidad con el párrafo anterior no podrán ser mayores de doce meses cada una, ni exceder en su conjunto más de veinticuatro meses y terminarán anticipadamente cuando la persona trabajadora inicie una nueva relación laboral.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 306,
+          "pagina": 25
         },
         {
           "numero": 7,
@@ -3634,7 +4248,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 30-12-1983, 24-02-1992, 06-01-1997, 16-12-2020, 21-02-2025"
-          ]
+          ],
+          "y": 352,
+          "pagina": 25
         }
       ]
     },
@@ -3651,7 +4267,9 @@
           "contenido": "El Consejo de Administración deberá aprobar anualmente el presupuesto de gastos de administración, operación y vigilancia del Instituto, los que no deberán exceder del 0.55 por ciento de los activos totales que administre, entendiendo por estos el promedio mensual del último año del total de los activos sin disminuir las reservas constituidas en términos de la normativa aplicable. El gasto de administración y operación de la empresa filial deberá estar previsto en este presupuesto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 407,
+          "pagina": 25
         },
         {
           "numero": 2,
@@ -3660,7 +4278,9 @@
           "contenido": "Los gastos de administración, operación y vigilancia serán las erogaciones netas derivadas del cumplimiento de su objeto, que se identifiquen en el estado de resultados conforme a la normativa correspondiente.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 476,
+          "pagina": 25
         },
         {
           "numero": 3,
@@ -3669,7 +4289,9 @@
           "contenido": "El Consejo de Administración deberá someter a dictamen de una auditoría externa el ejercicio del presupuesto de gastos de administración, operación y vigilancia, previamente a que lo presente a la Asamblea General para su aprobación.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 522,
+          "pagina": 25
         },
         {
           "numero": 4,
@@ -3678,7 +4300,9 @@
           "contenido": "Las erogaciones destinadas a la inversión en edificios, terrenos, instalaciones, construcción y mantenimiento de vivienda, equipos, tecnología, vehículos, mobiliario y equipo de oficina no computarán dentro de los gastos de administración, operación y vigilancia del Instituto. Estas inversiones deberán generar valor económico y rentabilidad para el Instituto y el Fondo Nacional de la Vivienda.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 568,
+          "pagina": 25
         },
         {
           "numero": 5,
@@ -3687,7 +4311,9 @@
           "contenido": "El Consejo de Administración aprobará anualmente el presupuesto de inversión en construcción, garantizando en todo momento que se destinen los recursos suficientes para el otorgamiento de crédito a las personas trabajadoras derechohabientes, conforme al programa de inversión habitacional que la Asamblea General apruebe en el plan financiero de cada año.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 626,
+          "pagina": 25
         },
         {
           "numero": 6,
@@ -3699,7 +4325,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 683,
+          "pagina": 25
         }
       ]
     },
@@ -3719,7 +4347,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 122,
+          "pagina": 26
         },
         {
           "numero": 2,
@@ -3728,7 +4358,9 @@
           "contenido": "En línea uno al financiamiento de la construcción de conjuntos de habitaciones para ser adquiridas por los trabajadores, mediante créditos que les otorgue el Instituto. Estos financiamientos sólo se concederán por concurso, tratándose de programas habitacionales aprobados por el Instituto y que se ajusten a las disposiciones aplicables en materia de construcción.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 154,
+          "pagina": 26
         },
         {
           "numero": 3,
@@ -3737,7 +4369,9 @@
           "contenido": "Asimismo, el Instituto podrá descontar a las entidades financieras que cuenten con la respectiva autorización emitida para tal efecto por la Secretaría de Hacienda y Crédito Público, los financiamientos que hayan otorgado para aplicarse a la construcción de conjuntos habitacionales. Estos descuentos serán con la responsabilidad de esas entidades financieras.",
           "padre_numero": 2,
           "x_id": 114,
-          "x_texto": 114
+          "x_texto": 114,
+          "y": 223,
+          "pagina": 26
         },
         {
           "numero": 4,
@@ -3749,7 +4383,9 @@
           "x_texto": 114,
           "referencias": [
             "Fracción reformada DOF 06-01-1997"
-          ]
+          ],
+          "y": 281,
+          "pagina": 26
         },
         {
           "numero": 5,
@@ -3758,7 +4394,9 @@
           "contenido": "Al otorgamiento de créditos a los trabajadores derechohabientes que sean titulares de depósitos constituidos a su favor en el Instituto:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 347,
+          "pagina": 26
         },
         {
           "numero": 6,
@@ -3767,7 +4405,9 @@
           "contenido": ") En línea dos a la adquisición en propiedad de habitaciones o suelo que sea destinado a la construcción de vivienda;",
           "padre_numero": 5,
           "x_id": 114,
-          "x_texto": 136
+          "x_texto": 136,
+          "y": 382,
+          "pagina": 26
         },
         {
           "numero": 7,
@@ -3776,7 +4416,9 @@
           "contenido": ") En línea tres a la construcción o autoproducción de vivienda;",
           "padre_numero": 5,
           "x_id": 114,
-          "x_texto": 136
+          "x_texto": 136,
+          "y": 416,
+          "pagina": 26
         },
         {
           "numero": 8,
@@ -3785,7 +4427,9 @@
           "contenido": ") En línea cuatro a la reparación, ampliación o mejoras de habitaciones;",
           "padre_numero": 5,
           "x_id": 114,
-          "x_texto": 136
+          "x_texto": 136,
+          "y": 439,
+          "pagina": 26
         },
         {
           "numero": 9,
@@ -3794,7 +4438,9 @@
           "contenido": ") En línea cinco al pago de pasivos adquiridos por cualquiera de los conceptos anteriores, y",
           "padre_numero": 5,
           "x_id": 114,
-          "x_texto": 136
+          "x_texto": 136,
+          "y": 462,
+          "pagina": 26
         },
         {
           "numero": 10,
@@ -3806,7 +4452,9 @@
           "x_texto": 136,
           "referencias": [
             "Párrafo con incisos reformado DOF 16-12-2020"
-          ]
+          ],
+          "y": 497,
+          "pagina": 26
         },
         {
           "numero": 11,
@@ -3818,7 +4466,9 @@
           "x_texto": 114,
           "referencias": [
             "Párrafo adicionado DOF 16-12-2020"
-          ]
+          ],
+          "y": 540,
+          "pagina": 26
         },
         {
           "numero": 12,
@@ -3830,7 +4480,9 @@
           "x_texto": 114,
           "referencias": [
             "Fracción reformada DOF 06-01-1997"
-          ]
+          ],
+          "y": 584,
+          "pagina": 26
         },
         {
           "numero": 13,
@@ -3842,7 +4494,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 24-02-1992"
-          ]
+          ],
+          "y": 651,
+          "pagina": 26
         },
         {
           "numero": 14,
@@ -3854,7 +4508,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 06-01-1997"
-          ]
+          ],
+          "y": 694,
+          "pagina": 26
         },
         {
           "numero": 15,
@@ -3866,7 +4522,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 24-02-1992, 21-02-2025"
-          ]
+          ],
+          "y": 122,
+          "pagina": 27
         },
         {
           "numero": 16,
@@ -3878,7 +4536,9 @@
           "x_texto": 107,
           "referencias": [
             "Fracción reformada DOF 21-02-2025"
-          ]
+          ],
+          "y": 165,
+          "pagina": 27
         },
         {
           "numero": 17,
@@ -3891,7 +4551,9 @@
           "referencias": [
             "Fracción adicionada DOF 21-02-2025",
             "Fracción adicionada DOF 21-02-2025"
-          ]
+          ],
+          "y": 198,
+          "pagina": 27
         },
         {
           "numero": 18,
@@ -3903,7 +4565,9 @@
           "x_texto": 107,
           "referencias": [
             "Párrafo adicionado DOF 13-11-1981. Reformado DOF 24-02-1992, 21-02-2025"
-          ]
+          ],
+          "y": 264,
+          "pagina": 27
         },
         {
           "numero": 19,
@@ -3915,7 +4579,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 13-11-1981. Reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 467,
+          "pagina": 27
         },
         {
           "numero": 20,
@@ -3927,7 +4593,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 13-11-1981. Reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 522,
+          "pagina": 27
         },
         {
           "numero": 21,
@@ -3939,7 +4607,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 612,
+          "pagina": 27
         },
         {
           "numero": 22,
@@ -3951,7 +4621,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 690,
+          "pagina": 27
         },
         {
           "numero": 23,
@@ -3963,7 +4635,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 154,
+          "pagina": 28
         },
         {
           "numero": 24,
@@ -3975,7 +4649,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 244,
+          "pagina": 28
         },
         {
           "numero": 25,
@@ -3987,7 +4663,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 322,
+          "pagina": 28
         }
       ]
     },
@@ -4004,7 +4682,9 @@
           "contenido": "En los términos de la fracción XII del apartado \"A\" del artículo 123 de la Constitución Política de los Estados Unidos Mexicanos, la administración de los recursos del Fondo Nacional de la Vivienda para los Trabajadores estará a cargo del Instituto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 423,
+          "pagina": 28
         },
         {
           "numero": 2,
@@ -4016,7 +4696,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 12-01-2012"
-          ]
+          ],
+          "y": 469,
+          "pagina": 28
         },
         {
           "numero": 3,
@@ -4025,7 +4707,9 @@
           "contenido": "Los recursos financieros que no se destinen a los fines señalados en el artículo anterior deberán ser invertidos en valores. Para efectos de cumplir con el mandato anterior, el Consejo de Administración deberá:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 536,
+          "pagina": 28
         },
         {
           "numero": 4,
@@ -4034,7 +4718,9 @@
           "contenido": "Determinar los valores en que podrán invertirse dichos recursos, con base en los previstos para la inversión de los recursos del Sistema de Ahorro para el Retiro;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 582,
+          "pagina": 28
         },
         {
           "numero": 5,
@@ -4043,7 +4729,9 @@
           "contenido": "Aprobar, a través de su comité auxiliar en materia de inversiones, un portafolio de referencia y sus reglas de operación;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 616,
+          "pagina": 28
         },
         {
           "numero": 6,
@@ -4052,7 +4740,9 @@
           "contenido": "Aprobar la normativa que establezca las políticas generales aplicables en materia de inversiones, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 651,
+          "pagina": 28
         },
         {
           "numero": 7,
@@ -4064,7 +4754,9 @@
           "x_texto": 107,
           "referencias": [
             "Párrafo adicionado DOF 12-01-2012. Reformado con fracciones DOF 30-04-2024"
-          ]
+          ],
+          "y": 685,
+          "pagina": 28
         },
         {
           "numero": 8,
@@ -4076,7 +4768,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 12-01-2012"
-          ]
+          ],
+          "y": 122,
+          "pagina": 29
         },
         {
           "numero": 9,
@@ -4088,7 +4782,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 24-02-1992, 22-07-1994, 06-01-1997"
-          ]
+          ],
+          "y": 177,
+          "pagina": 29
         }
       ]
     },
@@ -4105,7 +4801,9 @@
           "contenido": "Al momento en que el trabajador reciba crédito del Instituto, el saldo de la subcuenta de vivienda de su cuenta individual se aplicará como pago inicial de alguno de los conceptos a que se refieren los incisos de la fracción II del artículo 42.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 244,
+          "pagina": 29
         },
         {
           "numero": 2,
@@ -4114,7 +4812,9 @@
           "contenido": "Durante la vigencia del crédito concedido al trabajador, las aportaciones patronales a su favor se aplicarán a reducir el saldo insoluto a cargo del propio trabajador.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 290,
+          "pagina": 29
         },
         {
           "numero": 3,
@@ -4126,7 +4826,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 16-12-2020, 21-02-2025"
-          ]
+          ],
+          "y": 324,
+          "pagina": 29
         },
         {
           "numero": 4,
@@ -4135,7 +4837,9 @@
           "contenido": "El Instituto podrá otorgar créditos a los trabajadores derechohabientes en cofinanciamiento con entidades financieras, en cuyo caso, el trabajador también podrá otorgar la garantía a que se refiere el párrafo inmediato anterior. Dicha garantía se constituirá sobre el saldo que la subcuenta de vivienda registre al momento del otorgamiento del crédito. Las aportaciones que se efectúen a la subcuenta citada con posterioridad al otorgamiento del crédito se aplicarán a cubrir el saldo insoluto del crédito que haya otorgado el Instituto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 437,
+          "pagina": 29
         },
         {
           "numero": 5,
@@ -4144,7 +4848,9 @@
           "contenido": "En el supuesto de cofinanciamiento a que se refiere el párrafo inmediato anterior, el Instituto deberá otorgar crédito al trabajador derechohabiente cuando el crédito que reciba de la entidad financiera de que se trate, se otorgue en base a fondos de ahorro establecidos en planes de previsión social que reúnan los requisitos de deducibilidad que se establezcan en las disposiciones fiscales correspondientes.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 517,
+          "pagina": 29
         },
         {
           "numero": 6,
@@ -4153,7 +4859,9 @@
           "contenido": "En el caso de que el trabajador obtenga crédito de alguna entidad financiera y el Instituto no pueda otorgar crédito en términos de lo dispuesto en el párrafo inmediato anterior, el trabajador tendrá derecho a que durante la vigencia de dicho crédito, las subsecuentes aportaciones patronales a su favor se apliquen a reducir el saldo insoluto a cargo del propio trabajador y a favor de la entidad financiera de que se trate.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 575,
+          "pagina": 29
         },
         {
           "numero": 7,
@@ -4165,7 +4873,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 24-02-1992. Reformado DOF 06-01-1997"
-          ]
+          ],
+          "y": 644,
+          "pagina": 29
         }
       ]
     },
@@ -4182,7 +4892,9 @@
           "contenido": "El Instituto podrá celebrar convenios con las instituciones de seguridad social para definir los procedimientos de transferencia de las aportaciones acumuladas en la subcuenta de vivienda de los trabajadores que por cuestiones laborales o de contratación cambien de sistema.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 110,
+          "pagina": 30
         },
         {
           "numero": 2,
@@ -4191,7 +4903,9 @@
           "contenido": "Los trabajadores que obtengan un crédito de vivienda bajo el régimen de otros institutos de seguridad social o del Instituto del Fondo Nacional de la Vivienda para los Trabajadores, que tengan recursos acumulados por concepto de vivienda en su cuenta individual conforme al régimen de los mismos, podrán solicitar que se acumulen para aplicarse como pago inicial de su crédito y que las aportaciones sucesivas a cualquiera de los institutos sean destinadas a reducir el saldo insoluto a cargo del propio trabajador.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 156,
+          "pagina": 30
         },
         {
           "numero": 3,
@@ -4203,7 +4917,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 19-03-2014"
-          ]
+          ],
+          "y": 225,
+          "pagina": 30
         }
       ]
     },
@@ -4220,7 +4936,9 @@
           "contenido": "Estará prohibida la actualización del saldo, el pago por concepto de amortización o los accesorios de los créditos otorgados a las personas trabajadoras a que se refiere la fracción II del artículo 42.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 292,
+          "pagina": 30
         },
         {
           "numero": 2,
@@ -4229,7 +4947,9 @@
           "contenido": "Los créditos citados devengarán intereses sobre el saldo ajustado de los mismos, a la tasa que determine el Consejo de Administración.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 338,
+          "pagina": 30
         },
         {
           "numero": 3,
@@ -4238,7 +4958,9 @@
           "contenido": "Las reglas que al efecto determine el Consejo de Administración deberán prever medidas para que se preserve la estabilidad financiera del Instituto y se cubran los riesgos de su cartera de créditos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 373,
+          "pagina": 30
         },
         {
           "numero": 4,
@@ -4250,7 +4972,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 13-01-1986, 24-02-1992, 06-01-1997, 12-01-2012, 27-04-2016, 21-02-2025"
-          ]
+          ],
+          "y": 407,
+          "pagina": 30
         }
       ]
     },
@@ -4270,7 +4994,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 24-02-1992, 06-01-1997"
-          ]
+          ],
+          "y": 508,
+          "pagina": 30
         }
       ]
     },
@@ -4287,7 +5013,9 @@
           "contenido": "En la aplicación de los recursos a que se refiere el artículo anterior se considerarán, entre otras, las siguientes circunstancias:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 598,
+          "pagina": 30
         },
         {
           "numero": 2,
@@ -4296,7 +5024,9 @@
           "contenido": "La demanda de habitación y las necesidades de vivienda, dando preferencia a los trabajadores de bajos salarios, en las diversas regiones o localidades del país;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 632,
+          "pagina": 30
         },
         {
           "numero": 3,
@@ -4305,7 +5035,9 @@
           "contenido": "La factibilidad y posibilidades reales de llevar a cabo construcciones habitacionales;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 667,
+          "pagina": 30
         },
         {
           "numero": 4,
@@ -4314,7 +5046,9 @@
           "contenido": "El monto de las aportaciones al Fondo proveniente de las diversas regiones y localidades del país; y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 690,
+          "pagina": 30
         },
         {
           "numero": 5,
@@ -4323,7 +5057,9 @@
           "contenido": "El número de trabajadores en las diferentes regiones o localidades del Territorio Nacional.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 122,
+          "pagina": 31
         }
       ]
     },
@@ -4343,7 +5079,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 06-01-1997"
-          ]
+          ],
+          "y": 145,
+          "pagina": 31
         },
         {
           "numero": 2,
@@ -4355,7 +5093,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 16-12-2020, 21-02-2025"
-          ]
+          ],
+          "y": 200,
+          "pagina": 31
         },
         {
           "numero": 3,
@@ -4367,7 +5107,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 313,
+          "pagina": 31
         },
         {
           "numero": 4,
@@ -4379,7 +5121,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 25-05-2001, 21-02-2025"
-          ]
+          ],
+          "y": 368,
+          "pagina": 31
         },
         {
           "numero": 5,
@@ -4391,7 +5135,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 12-01-2012, 16-12-2020, 21-02-2025"
-          ]
+          ],
+          "y": 446,
+          "pagina": 31
         },
         {
           "numero": 6,
@@ -4404,7 +5150,9 @@
           "referencias": [
             "Párrafo adicionado DOF 12-01-2012. Reformado DOF 16-12-2020, 21-02-2025",
             "Artículo reformado DOF 24-02-1992"
-          ]
+          ],
+          "y": 513,
+          "pagina": 31
         }
       ]
     },
@@ -4424,7 +5172,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 24-02-1992. Fe de erratas DOF 12-03-1992. Reformado DOF 16-12-2020"
-          ]
+          ],
+          "y": 577,
+          "pagina": 31
         }
       ]
     },
@@ -4444,7 +5194,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 06-01-1997, 16-12-2020"
-          ]
+          ],
+          "y": 655,
+          "pagina": 31
         },
         {
           "numero": 2,
@@ -4456,7 +5208,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 16-12-2020"
-          ]
+          ],
+          "y": 122,
+          "pagina": 32
         },
         {
           "numero": 3,
@@ -4468,7 +5222,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 30-12-1983"
-          ]
+          ],
+          "y": 212,
+          "pagina": 32
         }
       ]
     },
@@ -4488,7 +5244,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 16-12-2020"
-          ]
+          ],
+          "y": 267,
+          "pagina": 32
         }
       ]
     },
@@ -4505,7 +5263,9 @@
           "contenido": "Los créditos que el Instituto otorgue a las personas trabajadoras estarán cubiertos por un seguro para los casos de incapacidad total permanente o de muerte, que libere a la persona trabajadora o a sus personas beneficiarias de las obligaciones, gravámenes o limitaciones de dominio a favor del Instituto derivados de esos créditos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 310,
+          "pagina": 32
         },
         {
           "numero": 2,
@@ -4514,7 +5274,9 @@
           "contenido": "Para estos efectos, se entenderá por incapacidad total permanente la pérdida de las facultades o aptitudes de una persona, que la imposibilite para desempeñar cualquier trabajo el resto de su vida, cualquiera que sea la naturaleza del riesgo que la haya producido.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 368,
+          "pagina": 32
         },
         {
           "numero": 3,
@@ -4523,7 +5285,9 @@
           "contenido": "Asimismo, para el caso que la persona trabajadora obtenga o adquiera un crédito con el Instituto con posterioridad a la concesión de una pensión ya sea por incapacidad parcial permanente del 50 por ciento o más, o invalidez definitiva, en los términos de la Ley del Seguro Social, la incapacidad o el estado de invalidez por ningún motivo dará derecho a liberar la obligación de cubrir dicho crédito.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 414,
+          "pagina": 32
         },
         {
           "numero": 4,
@@ -4532,7 +5296,9 @@
           "contenido": "El costo del seguro a que se refieren los párrafos anteriores quedará a cargo del Instituto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 471,
+          "pagina": 32
         },
         {
           "numero": 5,
@@ -4541,7 +5307,9 @@
           "contenido": "A fin de proteger el patrimonio de las personas trabajadoras, el Instituto podrá participar con empresas públicas y privadas para promover el desarrollo así como el abaratamiento de esquemas de aseguramiento a cargo de los acreditados, que permitan ampliar la cobertura de siniestros.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 494,
+          "pagina": 32
         },
         {
           "numero": 6,
@@ -4550,7 +5318,9 @@
           "contenido": "Tratándose de los casos de incapacidad parcial permanente, cuando ésta sea del 50 por ciento o más, o invalidez definitiva, en los términos de la Ley del Seguro Social, se liberará a la persona trabajadora acreditada del adeudo, los gravámenes o limitaciones de dominio a favor del Instituto, siempre y cuando no sea sujeto de una nueva relación de trabajo por un período mínimo de dos años, lapso durante el cual gozará de una prórroga, sin causa de intereses, para el pago de su crédito. La existencia de cualquiera de estos supuestos deberá comprobarse ante el Instituto del Fondo Nacional de la Vivienda para los Trabajadores dentro del mes siguiente a la fecha en que se determinen. El Instituto liberará la cancelación del crédito y procederá a la emisión del instrumento privado a que se refiere el artículo 44, a fin de cancelar los gravámenes o limitaciones de dominio que existan a favor del Instituto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 540,
+          "pagina": 32
         },
         {
           "numero": 7,
@@ -4559,7 +5329,9 @@
           "contenido": "En el acto de otorgamiento del crédito o de forma posterior, las personas trabajadoras acreditadas podrán manifestar expresamente su voluntad ante el Instituto para designar a las personas que, en caso de su muerte, podrán adjudicarse el inmueble objeto del crédito en calidad de beneficiarias, conforme a las formalidades, prelación y condiciones establecidas en los artículos 40 y 42 de esta Ley.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 655,
+          "pagina": 32
         },
         {
           "numero": 8,
@@ -4568,7 +5340,9 @@
           "contenido": "Al suscitarse la muerte del acreditado, sus personas beneficiarias deberán acudir al Instituto a tramitar la cancelación del crédito y la emisión del instrumento privado a que se refiere el artículo 44, a fin de cancelar los gravámenes o limitaciones de dominio que existan a favor del Instituto, para lo cual deberán acreditar la capacidad e identidad de las personas beneficiarias.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 110,
+          "pagina": 33
         },
         {
           "numero": 9,
@@ -4577,7 +5351,9 @@
           "contenido": "En caso de controversia, o en el supuesto de que la persona trabajadora adjudicada no haya manifestado expresamente esa designación ante el Instituto, este último procederá exclusivamente a la cancelación del crédito y solamente emitirá el instrumento privado a que se refiere el artículo 44, cuando las personas beneficiarias le acrediten ese carácter mediante la declaratoria correspondiente dictada por laudo o sentencia firme de autoridad competente, y con los medios con que acrediten su capacidad e identidad.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 168,
+          "pagina": 33
         },
         {
           "numero": 10,
@@ -4589,7 +5365,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 08-02-1985, 13-01-1986, 06-01-1997"
-          ]
+          ],
+          "y": 248,
+          "pagina": 33
         }
       ]
     },
@@ -4606,7 +5384,9 @@
           "contenido": "Los financiamientos para la construcción de conjuntos de habitaciones para ser adquiridas por los trabajadores, se adjudicarán a las personas que estén inscritas en el registro de constructores que al efecto lleve el Instituto, a través de subastas públicas, mediante convocatoria para que libremente se presenten proposiciones en sobre cerrado, que será abierto públicamente.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 280,
+          "pagina": 33
         },
         {
           "numero": 2,
@@ -4619,7 +5399,9 @@
           "referencias": [
             "Párrafo reformado DOF 06-01-1997",
             "Artículo adicionado DOF 24-02-1992"
-          ]
+          ],
+          "y": 338,
+          "pagina": 33
         }
       ]
     },
@@ -4636,7 +5418,9 @@
           "contenido": "Las convocatorias, que podrán referirse a uno o más conjuntos habitacionales, se publicarán en uno de los diarios de mayor circulación en el país y simultáneamente, cuando menos en uno de la entidad federativa donde se ejecutarán las obras y contendrán, como mínimo, los requisitos siguientes:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 402,
+          "pagina": 33
         },
         {
           "numero": 2,
@@ -4645,7 +5429,9 @@
           "contenido": "La descripción general de la obra que se desee ejecutar;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 460,
+          "pagina": 33
         },
         {
           "numero": 3,
@@ -4654,7 +5440,9 @@
           "contenido": "La tasa de interés mínima a pagar por el financiamiento de que se trate;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 483,
+          "pagina": 33
         },
         {
           "numero": 4,
@@ -4663,7 +5451,9 @@
           "contenido": "Las condiciones que deberán cumplir los interesados, particularmente en cuanto al tiempo de terminación de la obra;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 506,
+          "pagina": 33
         },
         {
           "numero": 5,
@@ -4672,7 +5462,9 @@
           "contenido": "El plazo para la inscripción de interesados, que no podrá ser menor de treinta días hábiles contados a partir de la fecha de la publicación de la convocatoria;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 540,
+          "pagina": 33
         },
         {
           "numero": 6,
@@ -4681,7 +5473,9 @@
           "contenido": "El plazo en que el Instituto autorizará a las personas inscritas a participar en la subasta, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 575,
+          "pagina": 33
         },
         {
           "numero": 7,
@@ -4690,7 +5484,9 @@
           "contenido": "El lugar, fecha y hora en que se celebrará el acto de la apertura de los sobres que contengan las posturas.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 598,
+          "pagina": 33
         },
         {
           "numero": 8,
@@ -4703,7 +5499,9 @@
           "referencias": [
             "Párrafo reformado DOF 09-04-2012",
             "Artículo adicionado DOF 24-02-1992"
-          ]
+          ],
+          "y": 632,
+          "pagina": 33
         }
       ]
     },
@@ -4720,7 +5518,9 @@
           "contenido": "Las personas que participen en las subastas, deberán garantizar al Instituto: las posturas, la correcta inversión de los recursos del financiamiento que, en su caso, reciban, y el pago del financiamiento.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 685,
+          "pagina": 33
         },
         {
           "numero": 2,
@@ -4732,7 +5532,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 24-02-1992"
-          ]
+          ],
+          "y": 122,
+          "pagina": 34
         }
       ]
     },
@@ -4752,7 +5554,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 24-02-1992. Fe de erratas DOF 12-03-1992"
-          ]
+          ],
+          "y": 165,
+          "pagina": 34
         }
       ]
     },
@@ -4769,7 +5573,9 @@
           "contenido": "No podrán obtener financiamiento del Instituto las personas siguientes:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 244,
+          "pagina": 34
         },
         {
           "numero": 2,
@@ -4778,7 +5584,9 @@
           "contenido": "Los miembros del Consejo de Administración y trabajadores del Instituto, sus cónyuges o parientes consanguíneos o por afinidad hasta el segundo grado, así como aquéllas en las que participen como accionistas, administradores, gerentes, apoderados o comisarios. El Consejo de Administración podrá autorizar excepciones a lo dispuesto en esta fracción, mediante reglas de carácter general aprobadas por lo menos por tres consejeros de cada uno de los sectores, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 267,
+          "pagina": 34
         },
         {
           "numero": 3,
@@ -4790,7 +5598,9 @@
           "x_texto": 107,
           "referencias": [
             "Artículo adicionado DOF 24-02-1992"
-          ]
+          ],
+          "y": 336,
+          "pagina": 34
         }
       ]
     },
@@ -4807,7 +5617,9 @@
           "contenido": "La adjudicación del financiamiento obligará al Instituto y a la persona en quien la misma recaiga, a formalizar el documento relativo dentro de los veinte días hábiles siguientes al de la adjudicación.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 379,
+          "pagina": 34
         },
         {
           "numero": 2,
@@ -4819,7 +5631,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 24-02-1992"
-          ]
+          ],
+          "y": 425,
+          "pagina": 34
         }
       ]
     },
@@ -4839,7 +5653,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 24-02-1992"
-          ]
+          ],
+          "y": 492,
+          "pagina": 34
         }
       ]
     },
@@ -4856,7 +5672,9 @@
           "contenido": "El Instituto podrá establecer programas que otorguen a las personas trabajadoras acceso a vivienda mediante arrendamiento social, los cuales se regirán por las reglas que emita el Consejo de Administración debiendo cumplir los siguientes principios:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 547,
+          "pagina": 34
         },
         {
           "numero": 2,
@@ -4865,7 +5683,9 @@
           "contenido": "Las operaciones a que se refiere el presente artículo se podrán realizar respecto de viviendas propiedad o en administración del Instituto;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 593,
+          "pagina": 34
         },
         {
           "numero": 3,
@@ -4874,7 +5694,9 @@
           "contenido": "Establecer criterios de prelación de zonas geográficas con altos índices de marginación, baja disponibilidad de vivienda, entre otras, y priorizando la atención de las personas trabajadoras derechohabientes que no tengan vivienda propia y de menor nivel salarial;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 628,
+          "pagina": 34
         },
         {
           "numero": 4,
@@ -4883,7 +5705,9 @@
           "contenido": "El saldo de la subcuenta de vivienda de la persona trabajadora funcionará como garantía de cumplimiento de pago. En los contratos se señalarán los procedimientos para la ejecución de dichas garantías mediante retiros anticipados del saldo de la subcuenta de vivienda que corresponda para cubrir el monto de los incumplimientos de que se trate;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 674,
+          "pagina": 34
         },
         {
           "numero": 5,
@@ -4892,7 +5716,9 @@
           "contenido": "En términos de la legislación aplicable y en estricto apego a los derechos humanos, los modelos de contratos que establezca el Instituto para celebrar en instrumento privado el arrendamiento social de las viviendas a que se refiere este artículo deberán contener, al menos, las siguientes cláusulas:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 122,
+          "pagina": 35
         },
         {
           "numero": 6,
@@ -4901,7 +5727,9 @@
           "contenido": ") Sin perjuicio de la vigencia que se establezca, deberán pactarse esquemas de renovación con base en el cumplimiento oportuno de las obligaciones de la persona trabajadora derechohabiente;",
           "padre_numero": 5,
           "x_id": 121,
-          "x_texto": 143
+          "x_texto": 143,
+          "y": 179,
+          "pagina": 35
         },
         {
           "numero": 7,
@@ -4910,7 +5738,9 @@
           "contenido": ") El monto de las rentas a cargo de las personas trabajadoras derechohabientes podrá pactarse con o sin actualización y su cálculo deberá determinarse bajo criterios sociales, sin fines de lucro o especulación comercial y considerando el nivel salarial de las personas trabajadoras derechohabientes, debiendo ser suficiente para que el Instituto cubra el pago del impuesto predial y los derechos de agua;",
           "padre_numero": 5,
           "x_id": 121,
-          "x_texto": 143
+          "x_texto": 143,
+          "y": 225,
+          "pagina": 35
         },
         {
           "numero": 8,
@@ -4919,7 +5749,9 @@
           "contenido": ") El derecho de las personas trabajadoras a ejercer la opción a compra de la vivienda en cualquier momento, siempre que cuente con el nivel de ahorro en su subcuenta de vivienda o recursos propios necesarios para ello, pudiendo reconocerse el pago de rentas a cuenta del precio final de venta, y",
           "padre_numero": 5,
           "x_id": 121,
-          "x_texto": 143
+          "x_texto": 143,
+          "y": 294,
+          "pagina": 35
         },
         {
           "numero": 9,
@@ -4928,7 +5760,9 @@
           "contenido": ") Establecer mecanismos de terminación anticipada y rescisión para que el Instituto, sin necesidad de declaración judicial, en caso de que la persona trabajadora derechohabiente incumpla con sus obligaciones, recupere la posesión de las viviendas de su propiedad o bajo su administración.",
           "padre_numero": 5,
           "x_id": 121,
-          "x_texto": 143
+          "x_texto": 143,
+          "y": 352,
+          "pagina": 35
         },
         {
           "numero": 10,
@@ -4937,7 +5771,9 @@
           "contenido": "Estará prohibido que el Instituto establezca en los contratos derivados de los programas a que se refiere este artículo cláusulas discriminatorias o contrarias a los derechos humanos.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 409,
+          "pagina": 35
         },
         {
           "numero": 11,
@@ -4946,7 +5782,9 @@
           "contenido": "Los modelos de contratos serán publicados en la página de Internet oficial del Instituto.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 444,
+          "pagina": 35
         },
         {
           "numero": 12,
@@ -4958,7 +5796,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 467,
+          "pagina": 35
         }
       ]
     },
@@ -4975,7 +5815,9 @@
           "contenido": "Las personas trabajadoras derechohabientes tendrán las siguientes obligaciones frente al Instituto en materia de arrendamiento social:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 522,
+          "pagina": 35
         },
         {
           "numero": 2,
@@ -4984,7 +5826,9 @@
           "contenido": "Pagar en tiempo, forma y de manera completa las rentas a que estén obligados. Para tales efectos el monto de las rentas será descontado del salario en los términos de los artículos 97 y 110 de la Ley Federal del Trabajo;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 556,
+          "pagina": 35
         },
         {
           "numero": 3,
@@ -4993,7 +5837,9 @@
           "contenido": "Cuidar diligentemente la vivienda que se le otorgue como si fuera propia;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 602,
+          "pagina": 35
         },
         {
           "numero": 4,
@@ -5002,7 +5848,9 @@
           "contenido": "Notificar al Instituto de cualquier defecto, daño o deterioro que observen, la reparación se realizará conforme a las políticas que establezca el Consejo de Administración, pudiendo establecer cargos a la persona trabajadora derechohabiente que resulte responsable de los daños a la vivienda;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 625,
+          "pagina": 35
         },
         {
           "numero": 5,
@@ -5011,7 +5859,9 @@
           "contenido": "Desocupar y entregar la vivienda que se le otorgue al terminar el arrendamiento, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 683,
+          "pagina": 35
         },
         {
           "numero": 6,
@@ -5023,7 +5873,9 @@
           "x_texto": 107,
           "referencias": [
             "Artículo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 110,
+          "pagina": 36
         }
       ]
     },
@@ -5043,7 +5895,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 154,
+          "pagina": 36
         }
       ]
     },
@@ -5060,7 +5914,9 @@
           "contenido": "En los casos de inconformidad de las empresas, de los trabajadores o sus beneficiarios sobre la inscripción en el Instituto, derecho a créditos, cuantía de aportaciones y de descuentos, así como sobre cualquier acto del Instituto que lesione derechos de los trabajadores inscritos, de sus beneficiarios o de los patrones, se podrá promover ante el propio Instituto un recurso de inconformidad.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 221,
+          "pagina": 36
         },
         {
           "numero": 2,
@@ -5069,7 +5925,9 @@
           "contenido": "El Reglamento correspondiente, determinará la forma y términos en que se podrá interponer el recurso de inconformidad a que se refiere este artículo.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 278,
+          "pagina": 36
         }
       ]
     },
@@ -5089,7 +5947,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 01-05-2019"
-          ]
+          ],
+          "y": 313,
+          "pagina": 36
         },
         {
           "numero": 2,
@@ -5098,7 +5958,9 @@
           "contenido": "Las controversias derivadas de adeudos de los trabajadores al Instituto por créditos que éste les haya concedido, una vez agotado, en su caso, el recurso a que se refiere el artículo anterior, se tramitarán ante los tribunales competentes.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 368,
+          "pagina": 36
         },
         {
           "numero": 3,
@@ -5110,7 +5972,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 01-05-2019"
-          ]
+          ],
+          "y": 414,
+          "pagina": 36
         }
       ]
     },
@@ -5127,7 +5991,9 @@
           "contenido": "Las controversias entre los patrones y el Instituto, una vez agotado, en su caso, el recurso de inconformidad se resolverán por el Tribunal Federal de Justicia Fiscal y Administrativa.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 469,
+          "pagina": 36
         },
         {
           "numero": 2,
@@ -5139,7 +6005,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 31-12-2000"
-          ]
+          ],
+          "y": 504,
+          "pagina": 36
         }
       ]
     },
@@ -5159,7 +6027,9 @@
           "x_texto": 85,
           "referencias": [
             "Párrafo reformado DOF 27-04-2016"
-          ]
+          ],
+          "y": 547,
+          "pagina": 36
         },
         {
           "numero": 2,
@@ -5168,7 +6038,9 @@
           "contenido": "Cuando la infracción consista en la falta de información que impida la individualización de las aportaciones a la subcuenta de vivienda de las cuentas del sistema de ahorro para el retiro, la sanción que se imponga al patrón infractor será la que resulte mayor de entre el cincuenta por ciento de las aportaciones no individualizadas y la que corresponda al máximo en términos del párrafo anterior y del reglamento, independientemente de que se hayan enterado las aportaciones respectivas en los plazos establecidos en ley.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 614,
+          "pagina": 36
         },
         {
           "numero": 3,
@@ -5180,7 +6052,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 30-12-1983, 22-07-1994"
-          ]
+          ],
+          "y": 695,
+          "pagina": 36
         }
       ]
     },
@@ -5197,7 +6071,9 @@
           "contenido": "El incumplimiento de los patrones para enterar puntualmente las aportaciones y los descuentos a que se refiere el artículo 29 causarán actualización y recargos y en su caso, gastos de ejecución, conforme a lo dispuesto por el Código Fiscal de la Federación.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 154,
+          "pagina": 37
         },
         {
           "numero": 2,
@@ -5206,7 +6082,9 @@
           "contenido": "El Instituto, a solicitud de los patrones, podrá conceder prórroga para el pago de los adeudos derivados de aportaciones no cubiertas, en los términos del Código Fiscal de la Federación, de la Ley del Instituto y sus reglamentos. Para tales efectos, el Instituto deberá abonar a la subcuenta de vivienda del trabajador, el importe equivalente a los intereses que correspondan al período de omisión del patrón, así como los que se generen durante el tiempo que comprenda la prórroga, de conformidad a lo previsto en el artículo 39. En estos casos, el término de diez días a que se refiere el artículo 30, correrá a partir de la fecha de cumplimiento de la última parcialidad.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 200,
+          "pagina": 37
         },
         {
           "numero": 3,
@@ -5215,7 +6093,9 @@
           "contenido": "El Instituto deberá informar a la Comisión Nacional del Sistema de Ahorro para el Retiro de las prórrogas otorgadas.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 292,
+          "pagina": 37
         },
         {
           "numero": 4,
@@ -5227,7 +6107,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 06-01-1997"
-          ]
+          ],
+          "y": 327,
+          "pagina": 37
         }
       ]
     },
@@ -5244,7 +6126,9 @@
           "contenido": "Comete delito equiparable al de defraudación fiscal en los términos del Código Fiscal de la Federación, y será sancionado con las penas señaladas para dicho ilícito, quien haga uso de engaño, aproveche error, simule algún acto jurídico u oculte datos, para omitir total o parcialmente el pago de las aportaciones o el entero de los descuentos realizados.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 382,
+          "pagina": 37
         }
       ]
     },
@@ -5264,7 +6148,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 23-12-1974, 01-06-2005"
-          ]
+          ],
+          "y": 439,
+          "pagina": 37
         }
       ]
     },
@@ -5281,7 +6167,9 @@
           "contenido": "Los trabajadores tendrán en todo tiempo el derecho a realizar aportaciones voluntarias a su cuenta individual, ya sea por conducto de su patrón al efectuarse el entero de las aportaciones o por sí mismos. En estos casos las aportaciones se depositarán a la subcuenta de aportaciones voluntarias.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 494,
+          "pagina": 37
         },
         {
           "numero": 2,
@@ -5290,7 +6178,9 @@
           "contenido": "Previo consentimiento del trabajador, el importe de las aportaciones voluntarias a que se refiere el párrafo anterior, podrá ser transferido a la subcuenta de vivienda, a fin de que sea aplicado para el otorgamiento de un crédito a su favor, en los términos de la presente Ley.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 540,
+          "pagina": 37
         },
         {
           "numero": 3,
@@ -5302,7 +6192,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 07-01-1982, 24-02-1992, 06-01-1997"
-          ]
+          ],
+          "y": 586,
+          "pagina": 37
         }
       ]
     },
@@ -5322,7 +6214,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 29-11-2023"
-          ]
+          ],
+          "y": 642,
+          "pagina": 37
         }
       ]
     },
@@ -5342,7 +6236,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 24-02-1992"
-          ]
+          ],
+          "y": 110,
+          "pagina": 38
         }
       ]
     },
@@ -5362,7 +6258,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 24-02-1992"
-          ]
+          ],
+          "y": 142,
+          "pagina": 38
         }
       ]
     },
@@ -5379,7 +6277,9 @@
           "contenido": "Las relaciones de trabajo entre el Instituto y su personal, se regirán por las disposiciones de la Ley Federal del Trabajo.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 175,
+          "pagina": 38
         }
       ]
     },
@@ -5399,7 +6299,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 209,
+          "pagina": 38
         }
       ]
     },
@@ -5419,7 +6321,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 07-01-1982, 06-01-1997, 21-02-2025"
-          ]
+          ],
+          "y": 264,
+          "pagina": 38
         }
       ]
     },
@@ -5439,7 +6343,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo derogado DOF 24-02-1992"
-          ]
+          ],
+          "y": 319,
+          "pagina": 38
         }
       ]
     },
@@ -5456,7 +6362,9 @@
           "contenido": "Con el fin de que el Instituto destine los recursos que integran su patrimonio o que están bajo su administración a la consecución de sus objetivos, estarán sujetos a lo siguiente:",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 352,
+          "pagina": 38
         },
         {
           "numero": 2,
@@ -5465,7 +6373,9 @@
           "contenido": "El Instituto deberá solicitar, en su caso, a la Secretaría de Hacienda y Crédito Público aprobación de los financiamientos que reciba;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 386,
+          "pagina": 38
         },
         {
           "numero": 3,
@@ -5474,7 +6384,9 @@
           "contenido": "La Asamblea General del Instituto deberá establecer las políticas de organización de la contabilidad y auditoría interna del Instituto, conforme a las normas de información financiera vigentes y aplicables, observando su origen constitucional, regulación como organismo de servicio social, objeto, fines y, en general, el régimen interno previsto en esta Ley;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 421,
+          "pagina": 38
         },
         {
           "numero": 4,
@@ -5483,7 +6395,9 @@
           "contenido": "La Secretaría de Hacienda y Crédito Público, auxiliada por la Comisión Nacional Bancaria y de Valores, fijará las normas de carácter prudencial y sanas prácticas a que se sujetarán las operaciones en materia crediticia que realice el Instituto, atendiendo a esta Ley y a la naturaleza social de los fines del Instituto;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 478,
+          "pagina": 38
         },
         {
           "numero": 5,
@@ -5492,7 +6406,9 @@
           "contenido": "La Secretaría de Hacienda y Crédito Público, auxiliada por la Comisión Nacional Bancaria y de Valores, supervisará y vigilará que las operaciones del Instituto en materia crediticia se ajusten a las normas establecidas y a las sanas prácticas.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 536,
+          "pagina": 38
         },
         {
           "numero": 6,
@@ -5501,7 +6417,9 @@
           "contenido": "Ante el incumplimiento por parte del Instituto se deberán establecer programas de autocorrección sujetos a un plazo de ejecución determinado y, en su caso, dará vista a la Contraloría General del Instituto del incumplimiento al programa de autocorrección, para que aplique las sanciones previstas en el Reglamento Interior de Trabajo. La Contraloría informará al Comité de Auditoría, a la Comisión de Vigilancia y a la Comisión Nacional Bancaria y de Valores del procedimiento iniciado y de sus resultados;",
           "padre_numero": 5,
           "x_id": 121,
-          "x_texto": 121
+          "x_texto": 121,
+          "y": 582,
+          "pagina": 38
         },
         {
           "numero": 7,
@@ -5510,7 +6428,9 @@
           "contenido": "La Secretaría de Hacienda y Crédito Público podrá validar sobre el régimen de inversión de los recursos a que se refiere el tercer párrafo del artículo 43 de esta Ley;",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 662,
+          "pagina": 38
         },
         {
           "numero": 8,
@@ -5519,7 +6439,9 @@
           "contenido": "Con base en lo establecido en este artículo, el Instituto deberá presentar al Congreso de la Unión y al Ejecutivo Federal, por conducto de la Secretaría de Hacienda y Crédito Público, a más tardar el 30 de mayo de cada año, un informe dictaminado por una auditoría externa, sobre la situación financiera de sus activos y pasivos, que contenga una evaluación respecto a la suficiencia de los flujos correspondientes para cubrir la operación del Instituto. El informe a que se refiere esta fracción deberá aprobarse por la Asamblea General del Instituto, y",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 697,
+          "pagina": 38
         },
         {
           "numero": 9,
@@ -5528,7 +6450,9 @@
           "contenido": "Las operaciones que realice el Instituto en materia inmobiliaria, estarán basadas en los principios de máxima revelación de información, promoción de la competencia, protección al derechohabiente, preservación de la estabilidad financiera, y prevención de operaciones con recursos de procedencia ilícita y fraudes. Estos principios deben ser respetados por el Instituto y sus Órganos, respecto de su operación, así como por las autoridades que corresponda al ejercer sus facultades.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 107
+          "x_texto": 107,
+          "y": 168,
+          "pagina": 39
         },
         {
           "numero": 10,
@@ -5537,7 +6461,9 @@
           "contenido": "Los informes sobre dichas operaciones que deban presentarse a la Asamblea General y al público a través de la página de Internet del Instituto, así como la forma y términos de revelación de información de dichas operaciones, estarán sujetos a las disposiciones de carácter general que expida el Consejo de Administración.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 248,
+          "pagina": 39
         },
         {
           "numero": 11,
@@ -5549,7 +6475,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 01-06-2005, 21-02-2025"
-          ]
+          ],
+          "y": 306,
+          "pagina": 39
         }
       ]
     },
@@ -5566,7 +6494,9 @@
           "contenido": "La fiscalización del Instituto estará a cargo de la Auditoría Superior de la Federación y será competente para revisar la actividad del Instituto como organismo fiscal autónomo, la debida integración y administración del patrimonio del Instituto, el ejercicio del presupuesto de gastos de administración, operación y vigilancia, así como del presupuesto de inversión en materia de construcción y administración inmobiliaria. Los recursos que se destine a los presupuestos de gastos de administración, operación y vigilancia e inversiones serán considerados recursos públicos para los efectos de la Ley de Fiscalización y Rendición de Cuentas de la Federación cuando no sean reintegrados a las subcuentas de vivienda de las personas trabajadoras derechohabientes. En el desarrollo de sus auditorías y en la formulación de sus observaciones y recomendaciones, la Auditoría Superior de la Federación deberá tener en cuenta el marco legal especial del Instituto, así como los resultados de las revisiones que en el ejercicio de sus funciones realicen los órganos de auditoría y vigilancia en términos de esta Ley.",
           "padre_numero": null,
           "x_id": 85,
-          "x_texto": 85
+          "x_texto": 85,
+          "y": 372,
+          "pagina": 39
         },
         {
           "numero": 2,
@@ -5578,7 +6508,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 21-02-2025"
-          ]
+          ],
+          "y": 522,
+          "pagina": 39
         }
       ]
     },
@@ -5598,7 +6530,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo reformado DOF 07-01-1982, 24-02-1992"
-          ]
+          ],
+          "y": 566,
+          "pagina": 39
         }
       ]
     },
@@ -5618,7 +6552,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 13-11-1981"
-          ]
+          ],
+          "y": 621,
+          "pagina": 39
         }
       ]
     },
@@ -5638,7 +6574,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 06-01-1997"
-          ]
+          ],
+          "y": 665,
+          "pagina": 39
         }
       ]
     },
@@ -5658,7 +6596,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 06-01-1997. Reformado DOF 21-02-2025"
-          ]
+          ],
+          "y": 122,
+          "pagina": 40
         }
       ]
     },
@@ -5678,7 +6618,9 @@
           "x_texto": 85,
           "referencias": [
             "Artículo adicionado DOF 15-01-2014"
-          ]
+          ],
+          "y": 200,
+          "pagina": 40
         }
       ]
     }

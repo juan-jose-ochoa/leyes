@@ -379,13 +379,14 @@ export default function Article() {
       )}
       </div>
 
-      {/* Panel PDF - Solo visible en pantallas grandes cuando está activado */}
-      {mostrarPdf && (
+      {/* Panel PDF - Solo visible en pantallas grandes cuando está activado y coords listas */}
+      {mostrarPdf && coordenadasPdf && (
         <div className="hidden lg:block sticky top-0 h-[calc(100vh-4rem)] rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
           <PdfViewer
+            key={pdfUrl}
             pdfUrl={pdfUrl}
-            pagina={coordenadasPdf?.pagina}
-            y={coordenadasPdf?.y}
+            pagina={coordenadasPdf.pagina}
+            y={coordenadasPdf.y}
           />
         </div>
       )}
