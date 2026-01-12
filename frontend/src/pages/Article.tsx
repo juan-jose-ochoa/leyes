@@ -11,6 +11,7 @@ import PdfViewer from '@/components/PdfViewer'
 import ArticleHeader from '@/components/ArticleHeader'
 import ArticleFooter from '@/components/ArticleFooter'
 import { useViewMode } from '@/hooks/useViewMode'
+import { PDF_BASE } from '@/lib/api'
 
 export default function Article() {
   const params = useParams<{ id?: string; ley?: string; '*'?: string }>()
@@ -109,7 +110,7 @@ export default function Article() {
     : articulo.contenido.slice(0, 200) + '...'
 
   // PDF URL
-  const pdfUrl = `/pdfs/${articulo.ley.toLowerCase()}/documento.pdf`
+  const pdfUrl = `${PDF_BASE}/${articulo.ley.toLowerCase()}/documento.pdf`
   const hasPdf = !!coordenadasPdf
 
   // Determinar qué mostrar según modo

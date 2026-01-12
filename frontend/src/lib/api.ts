@@ -4,6 +4,10 @@ const API_BASE = import.meta.env.PROD
   ? 'https://api.leyesfiscalesmexico.com/leyesmx'
   : '/leyesmx'
 
+export const PDF_BASE = import.meta.env.PROD
+  ? 'https://api.leyesfiscalesmexico.com/pdfs'
+  : '/pdfs'
+
 export type LeyTipo = 'codigo' | 'ley' | 'reglamento' | 'resolucion' | 'anexo'
 
 export interface Ley {
