@@ -87,7 +87,7 @@ function getDivisionUrl(division: any, leyCode: string, parentPath: string = '')
                     </a>
                     {hijo.articulos && hijo.articulos.length > 0 && (
                       <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">
-                        ({hijo.articulos.length} arts.)
+                        · Arts. {hijo.articulos[0]} – {hijo.articulos[hijo.articulos.length - 1]} ({hijo.articulos.length})
                       </span>
                     )}
                   </li>
