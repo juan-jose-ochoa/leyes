@@ -1,0 +1,606 @@
+{
+  "ley": "LA",
+  "estadisticas": {
+    "titulos": 9,
+    "capitulos": 20,
+    "secciones": 8,
+    "articulos_vigentes": 277,
+    "articulos_derogados": 0,
+    "total": 277
+  },
+  "divisiones": [
+    {
+      "tipo": "titulo",
+      "numero": "PRIMERO",
+      "nombre": "Disposiciones Generales",
+      "pagina": 1,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "I",
+          "nombre": "Del ámbito de aplicación y principios generales",
+          "pagina": 1,
+          "articulos": [
+            "1o",
+            "2o",
+            "3o",
+            "4o",
+            "5o",
+            "6o",
+            "7o",
+            "8o",
+            "9o"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "II",
+          "nombre": "Notificaciones Electrónicas",
+          "pagina": 7,
+          "articulos": [
+            "9o-A",
+            "9o-B",
+            "9o-C",
+            "9o-D",
+            "9o-E"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "SEGUNDO",
+      "nombre": "Control de aduana en el despacho",
+      "pagina": 8,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "I",
+          "nombre": "Entrada, salida y control de mercancías",
+          "pagina": 8,
+          "articulos": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "14-A",
+            "14-B",
+            "14-C",
+            "14-D",
+            "15",
+            "16",
+            "16-A",
+            "16-B",
+            "16-C",
+            "16-D",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "II",
+          "nombre": "Depósito ante la aduana",
+          "pagina": 20,
+          "articulos": [
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "III",
+          "nombre": "Despacho de mercancías",
+          "pagina": 24,
+          "articulos": [
+            "35",
+            "36",
+            "36-A",
+            "37",
+            "37-A",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "49 Bis",
+            "50"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "TERCERO",
+      "nombre": "Contribuciones, cuotas compensatorias y demás regulaciones y restricciones no",
+      "pagina": 34,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "I",
+          "nombre": "Hechos gravados, contribuyentes y responsables",
+          "pagina": 34,
+          "articulos": [
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "59-A",
+            "59-B",
+            "60",
+            "61",
+            "62",
+            "63",
+            "63-A"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "III",
+          "nombre": "Base gravable",
+          "pagina": 46,
+          "articulos": [],
+          "hijos": [
+            {
+              "tipo": "seccion",
+              "numero": "PRIMERA",
+              "nombre": "Del impuesto general de importación",
+              "pagina": 46,
+              "articulos": [
+                "64",
+                "65",
+                "66",
+                "67",
+                "68",
+                "69",
+                "70",
+                "71",
+                "72",
+                "73",
+                "74",
+                "75",
+                "76",
+                "77",
+                "78",
+                "78-A",
+                "78-B",
+                "78-C"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEGUNDA",
+              "nombre": "Del impuesto general de exportación",
+              "pagina": 55,
+              "articulos": [
+                "79"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "IV",
+          "nombre": "Determinación y pago",
+          "pagina": 55,
+          "articulos": [
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "84-A",
+            "85",
+            "86",
+            "86-A",
+            "87",
+            "88",
+            "88 Bis",
+            "88 Ter",
+            "89",
+            "89 Bis"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "CUARTO",
+      "nombre": "Regímenes aduaneros",
+      "pagina": 61,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "I",
+          "nombre": "Disposiciones comunes",
+          "pagina": 61,
+          "articulos": [
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "II",
+          "nombre": "Definitivos de importación y de exportación",
+          "pagina": 63,
+          "articulos": [],
+          "hijos": [
+            {
+              "tipo": "seccion",
+              "numero": "PRIMERA",
+              "nombre": "De importación",
+              "pagina": 63,
+              "articulos": [
+                "96",
+                "97",
+                "98",
+                "99",
+                "100",
+                "100-A",
+                "100-B",
+                "100-C",
+                "101",
+                "101-A"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEGUNDA",
+              "nombre": "De exportación",
+              "pagina": 70,
+              "articulos": [
+                "102",
+                "103"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "III",
+          "nombre": "Temporales de importación y de exportación",
+          "pagina": 70,
+          "articulos": [],
+          "hijos": [
+            {
+              "tipo": "seccion",
+              "numero": "PRIMERA",
+              "nombre": "Importaciones temporales",
+              "pagina": 70,
+              "articulos": [
+                "104",
+                "105",
+                "106",
+                "107",
+                "108",
+                "109",
+                "110",
+                "111",
+                "112"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEGUNDA",
+              "nombre": "Exportaciones temporales",
+              "pagina": 78,
+              "articulos": [
+                "113",
+                "114",
+                "115",
+                "116",
+                "117",
+                "118"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "IV",
+          "nombre": "Depósito fiscal",
+          "pagina": 80,
+          "articulos": [
+            "119",
+            "119-A",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "V",
+          "nombre": "Tránsito de mercancías",
+          "pagina": 85,
+          "articulos": [],
+          "hijos": [
+            {
+              "tipo": "seccion",
+              "numero": "PRIMERA",
+              "nombre": "Tránsito interno de mercancías",
+              "pagina": 85,
+              "articulos": [
+                "125",
+                "126",
+                "127",
+                "128",
+                "129"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEGUNDA",
+              "nombre": "Tránsito internacional de mercancías",
+              "pagina": 88,
+              "articulos": [
+                "130",
+                "131",
+                "132",
+                "133",
+                "134"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "VI",
+          "nombre": "Elaboración, transformación o reparación en recinto fiscalizado",
+          "pagina": 90,
+          "articulos": [
+            "135"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "VII",
+          "nombre": "Recinto Fiscalizado Estratégico",
+          "pagina": 90,
+          "articulos": [
+            "135-A",
+            "135-B",
+            "135-C",
+            "135-D"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "QUINTO",
+      "nombre": "Franja y región fronteriza",
+      "pagina": 94,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "UNICO",
+          "nombre": null,
+          "pagina": 94,
+          "articulos": [
+            "136",
+            "137",
+            "137-bis-1",
+            "137-bis-2",
+            "137-bis-3",
+            "137-bis-4",
+            "137-bis-5",
+            "137-bis-6",
+            "137-bis-7",
+            "137-bis-8",
+            "137-bis-9",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "SEXTO",
+      "nombre": "Atribuciones del Poder Ejecutivo Federal y de las autoridades fiscales",
+      "pagina": 97,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "UNICO",
+          "nombre": null,
+          "pagina": 97,
+          "articulos": [
+            "143",
+            "144",
+            "144-A",
+            "144-B",
+            "144-C",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "153-A",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "SÉPTIMO",
+      "nombre": "Agentes aduanales, agencias aduanales y dictaminadores aduaneros",
+      "pagina": 114,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "UNICO",
+          "nombre": null,
+          "pagina": 114,
+          "articulos": [
+            "159",
+            "159-bis",
+            "160",
+            "161",
+            "162",
+            "163",
+            "163-A",
+            "164",
+            "165",
+            "166",
+            "167",
+            "167-A",
+            "167-B",
+            "167-C",
+            "167-D",
+            "167-E",
+            "167-F",
+            "167-G",
+            "167-H",
+            "167-I",
+            "167-J",
+            "167-K",
+            "167-L",
+            "167-M",
+            "167-N",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174",
+            "175",
+            "175-A"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "OCTAVO",
+      "nombre": "Infracciones y sanciones",
+      "pagina": 140,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "UNICO",
+          "nombre": null,
+          "pagina": 140,
+          "articulos": [
+            "176",
+            "177",
+            "178",
+            "179",
+            "180",
+            "180-A",
+            "181",
+            "182",
+            "183",
+            "183-A",
+            "184",
+            "184-A",
+            "184-B",
+            "184-C",
+            "184-D",
+            "185",
+            "185-A",
+            "185-B",
+            "186",
+            "187",
+            "188",
+            "189",
+            "190",
+            "191",
+            "192",
+            "193",
+            "194",
+            "195",
+            "196",
+            "197",
+            "198",
+            "199",
+            "200",
+            "201",
+            "202"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "NOVENO",
+      "nombre": "Recursos administrativos",
+      "pagina": 159,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "UNICO",
+          "nombre": null,
+          "pagina": 159,
+          "articulos": [
+            "203"
+          ],
+          "hijos": []
+        }
+      ]
+    }
+  ]
+}

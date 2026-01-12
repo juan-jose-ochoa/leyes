@@ -1,0 +1,90 @@
+{
+  "ley": "LFDC",
+  "estadisticas": {
+    "titulos": 1,
+    "capitulos": 5,
+    "secciones": 0,
+    "articulos_vigentes": 24,
+    "articulos_derogados": 0,
+    "total": 24
+  },
+  "divisiones": [
+    {
+      "tipo": "titulo",
+      "numero": "PRELIMINAR",
+      "nombre": null,
+      "pagina": 1,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "I",
+          "nombre": "Disposiciones Generales",
+          "pagina": 1,
+          "articulos": [
+            "1o",
+            "2o",
+            "3o",
+            "4o"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "II",
+          "nombre": "Información, Difusión y Asistencia al Contribuyente",
+          "pagina": 2,
+          "articulos": [
+            "5o",
+            "6o",
+            "7o",
+            "8o",
+            "9o",
+            "10",
+            "11"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "III",
+          "nombre": "Derechos y garantías en los procedimientos de comprobación",
+          "pagina": 3,
+          "articulos": [
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "IV",
+          "nombre": "Derechos y garantías en el procedimiento sancionador",
+          "pagina": 5,
+          "articulos": [
+            "21",
+            "22"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "V",
+          "nombre": "Medios de defensa del contribuyente",
+          "pagina": 6,
+          "articulos": [
+            "23",
+            "24"
+          ],
+          "hijos": []
+        }
+      ]
+    }
+  ]
+}

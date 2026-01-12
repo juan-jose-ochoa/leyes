@@ -1,0 +1,405 @@
+{
+  "ley": "CPEUM",
+  "estadisticas": {
+    "titulos": 9,
+    "capitulos": 16,
+    "secciones": 5,
+    "articulos_vigentes": 136,
+    "articulos_derogados": 0,
+    "total": 136
+  },
+  "divisiones": [
+    {
+      "tipo": "titulo",
+      "numero": "PRIMERO",
+      "nombre": null,
+      "pagina": 1,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "I",
+          "nombre": "De los Derechos Humanos y sus Garantías",
+          "pagina": 1,
+          "articulos": [
+            "1o",
+            "2o",
+            "3o",
+            "4o",
+            "5o",
+            "6o",
+            "7o",
+            "8o",
+            "9o",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "II",
+          "nombre": "De los Mexicanos",
+          "pagina": 44,
+          "articulos": [
+            "30",
+            "31",
+            "32"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "III",
+          "nombre": "De los Extranjeros",
+          "pagina": 46,
+          "articulos": [
+            "33"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "IV",
+          "nombre": "De los Ciudadanos Mexicanos",
+          "pagina": 46,
+          "articulos": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "SEGUNDO",
+      "nombre": null,
+      "pagina": 51,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "I",
+          "nombre": "De la Soberanía Nacional y de la Forma de Gobierno",
+          "pagina": 51,
+          "articulos": [
+            "39",
+            "40",
+            "41"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "II",
+          "nombre": "De las Partes Integrantes de la Federación y del Territorio Nacional",
+          "pagina": 61,
+          "articulos": [
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "TERCERO",
+      "nombre": null,
+      "pagina": 62,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "I",
+          "nombre": "De la División de Poderes",
+          "pagina": 62,
+          "articulos": [
+            "49",
+            "50"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "II",
+          "nombre": "Del Poder Legislativo",
+          "pagina": 62,
+          "articulos": [],
+          "hijos": [
+            {
+              "tipo": "seccion",
+              "numero": "I",
+              "nombre": "De la Elección e Instalación del Congreso",
+              "pagina": 62,
+              "articulos": [
+                "51",
+                "52",
+                "53",
+                "54",
+                "55",
+                "56",
+                "57",
+                "58",
+                "59",
+                "60",
+                "61",
+                "62",
+                "63",
+                "64",
+                "65",
+                "66",
+                "67",
+                "68",
+                "69",
+                "70"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "II",
+              "nombre": "De la Iniciativa y Formación de las Leyes",
+              "pagina": 68,
+              "articulos": [
+                "71",
+                "72"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "III",
+              "nombre": "De las Facultades del Congreso",
+              "pagina": 70,
+              "articulos": [
+                "73",
+                "74",
+                "75",
+                "76",
+                "77"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "IV",
+              "nombre": "De la Comisión Permanente",
+              "pagina": 83,
+              "articulos": [
+                "78"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "V",
+              "nombre": "De la Fiscalización Superior de la Federación",
+              "pagina": 84,
+              "articulos": [
+                "79"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "III",
+          "nombre": "Del Poder Ejecutivo",
+          "pagina": 87,
+          "articulos": [
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "IV",
+          "nombre": "Del Poder Judicial",
+          "pagina": 93,
+          "articulos": [
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "CUARTO",
+      "nombre": "De las Responsabilidades de los Servidores Públicos, Particulares Vinculados con Faltas",
+      "pagina": 117,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "UNICO",
+          "nombre": null,
+          "pagina": 117,
+          "articulos": [
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "QUINTO",
+      "nombre": "De los Estados de la Federación y de la Ciudad de México",
+      "pagina": 122,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "UNICO",
+          "nombre": null,
+          "pagina": 122,
+          "articulos": [
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "SEXTO",
+      "nombre": "Del Trabajo y de la Previsión Social",
+      "pagina": 142,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "UNICO",
+          "nombre": null,
+          "pagina": 142,
+          "articulos": [
+            "123"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "SÉPTIMO",
+      "nombre": "Prevenciones Generales",
+      "pagina": 154,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "UNICO",
+          "nombre": null,
+          "pagina": 154,
+          "articulos": [
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "OCTAVO",
+      "nombre": "De las Reformas de la Constitución",
+      "pagina": 158,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "UNICO",
+          "nombre": null,
+          "pagina": 158,
+          "articulos": [
+            "135"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "NOVENO",
+      "nombre": "De la Inviolabilidad de la Constitución",
+      "pagina": 158,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "UNICO",
+          "nombre": null,
+          "pagina": 158,
+          "articulos": [
+            "136"
+          ],
+          "hijos": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "ley": "RLSS",
+  "estadisticas": {
+    "titulos": 1,
+    "capitulos": 6,
+    "secciones": 0,
+    "articulos_vigentes": 18,
+    "articulos_derogados": 0,
+    "total": 18
+  },
+  "divisiones": [
+    {
+      "tipo": "titulo",
+      "numero": "PRELIMINAR",
+      "nombre": null,
+      "pagina": 1,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "I",
+          "nombre": "DISPOSICIONES GENERALES",
+          "pagina": 1,
+          "articulos": [
+            "1",
+            "2"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "II",
+          "nombre": "DE LA CONSTITUCIÓN DE LAS RESERVAS Y DE LA RESERVA GENERAL",
+          "pagina": 2,
+          "articulos": [
+            "3",
+            "4"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "III",
+          "nombre": "DE LA INVERSIÓN DE LAS RESERVAS Y DE LA RESERVA GENERAL",
+          "pagina": 2,
+          "articulos": [
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "IV",
+          "nombre": "DEL USO PARA LA OPERACIÓN DE LAS RESERVAS Y DE LA RESERVA GENERAL",
+          "pagina": 4,
+          "articulos": [
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "V",
+          "nombre": "DE LOS COSTOS FINANCIEROS QUE DEBERÁN REINTEGRARSE A LA RESERVA DE",
+          "pagina": 5,
+          "articulos": [
+            "17"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "VI",
+          "nombre": "DISPOSICIONES FINALES",
+          "pagina": 5,
+          "articulos": [
+            "18"
+          ],
+          "hijos": []
+        }
+      ]
+    }
+  ]
+}

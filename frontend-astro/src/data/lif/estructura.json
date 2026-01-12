@@ -1,0 +1,91 @@
+{
+  "ley": "LIF",
+  "estadisticas": {
+    "titulos": 1,
+    "capitulos": 4,
+    "secciones": 0,
+    "articulos_vigentes": 34,
+    "articulos_derogados": 0,
+    "total": 34
+  },
+  "divisiones": [
+    {
+      "tipo": "titulo",
+      "numero": "PRELIMINAR",
+      "nombre": null,
+      "pagina": 1,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "I",
+          "nombre": "De los Ingresos y el Endeudamiento Público",
+          "pagina": 1,
+          "articulos": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "II",
+          "nombre": "De las Facilidades Administrativas y Beneficios Fiscales",
+          "pagina": 10,
+          "articulos": [
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "III",
+          "nombre": "De la Información, la Transparencia, la Evaluación de la Eficiencia Recaudatoria y la Fiscalización",
+          "pagina": 30,
+          "articulos": [
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+          ],
+          "hijos": []
+        },
+        {
+          "tipo": "capitulo",
+          "numero": "IV",
+          "nombre": "Otras Disposiciones",
+          "pagina": 33,
+          "articulos": [
+            "32",
+            "33",
+            "34"
+          ],
+          "hijos": []
+        }
+      ]
+    }
+  ]
+}

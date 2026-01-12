@@ -1,0 +1,269 @@
+{
+  "_generado": "2026-01-11T23:30:07.481256",
+  "_version": "1.0",
+  "leyes": [
+    {
+      "codigo": "CFF",
+      "nombre": "Código Fiscal de la Federación",
+      "nombre_corto": "Código Fiscal",
+      "tipo": "codigo",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 421,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo",
+        "seccion"
+      ]
+    },
+    {
+      "codigo": "CPEUM",
+      "nombre": "Constitución Política de los Estados Unidos Mexicanos",
+      "nombre_corto": "Constitución",
+      "tipo": "codigo",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 136,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo"
+      ]
+    },
+    {
+      "codigo": "LA",
+      "nombre": "Ley Aduanera",
+      "nombre_corto": "Aduanera",
+      "tipo": "ley",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAdua.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 277,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo",
+        "seccion"
+      ]
+    },
+    {
+      "codigo": "LFDC",
+      "nombre": "Ley Federal de los Derechos del Contribuyente",
+      "nombre_corto": "Derechos del Contribuyente",
+      "tipo": "ley",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDC.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 24,
+      "divisiones_permitidas": [
+        "capitulo"
+      ]
+    },
+    {
+      "codigo": "LFT",
+      "nombre": "Ley Federal del Trabajo",
+      "nombre_corto": "Trabajo",
+      "tipo": "ley",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 1264,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo"
+      ]
+    },
+    {
+      "codigo": "LIEPS",
+      "nombre": "Ley del Impuesto Especial sobre Producción y Servicios",
+      "nombre_corto": "IEPS",
+      "tipo": "ley",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIEPS.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 70,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo"
+      ]
+    },
+    {
+      "codigo": "LIF",
+      "nombre": "Ley de Ingresos de la Federación para el Ejercicio Fiscal de 2026",
+      "nombre_corto": "Ley de Ingresos 2026",
+      "tipo": "ley",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIF_2026.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 34,
+      "divisiones_permitidas": [
+        "capitulo"
+      ]
+    },
+    {
+      "codigo": "LINFONAVIT",
+      "nombre": "Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores",
+      "nombre_corto": "INFONAVIT",
+      "tipo": "ley",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 95,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo",
+        "seccion"
+      ]
+    },
+    {
+      "codigo": "LISR",
+      "nombre": "Ley del Impuesto sobre la Renta",
+      "nombre_corto": "ISR",
+      "tipo": "ley",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 236,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo",
+        "seccion"
+      ]
+    },
+    {
+      "codigo": "LISSSTE",
+      "nombre": "Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado",
+      "nombre_corto": "ISSSTE",
+      "tipo": "ley",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISSSTE.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 259,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo",
+        "seccion"
+      ]
+    },
+    {
+      "codigo": "LIVA",
+      "nombre": "Ley del Impuesto al Valor Agregado",
+      "nombre_corto": "IVA",
+      "tipo": "ley",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 80,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo"
+      ]
+    },
+    {
+      "codigo": "LSS",
+      "nombre": "Ley del Seguro Social",
+      "nombre_corto": "Seguro Social",
+      "tipo": "ley",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 385,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo"
+      ]
+    },
+    {
+      "codigo": "RACERF",
+      "nombre": "Reglamento de la Ley del Seguro Social en materia de Afiliación, Clasificación de Empresas, Recaudación y Fiscalización",
+      "nombre_corto": "Reglamento Afiliación SS",
+      "tipo": "reglamento",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_MACERF.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 196,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo"
+      ]
+    },
+    {
+      "codigo": "RCFF",
+      "nombre": "Reglamento del Código Fiscal de la Federación",
+      "nombre_corto": "Reglamento CFF",
+      "tipo": "reglamento",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_CFF.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 113,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo",
+        "seccion"
+      ]
+    },
+    {
+      "codigo": "RLFT",
+      "nombre": "Reglamento de los Artículos 121 y 122 de la Ley Federal del Trabajo",
+      "nombre_corto": "Reglamento PTU",
+      "tipo": "reglamento",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_Art121-122_LFT_050614.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 29,
+      "divisiones_permitidas": [
+        "capitulo"
+      ]
+    },
+    {
+      "codigo": "RLIEPS",
+      "nombre": "Reglamento de la Ley del Impuesto Especial sobre Producción y Servicios",
+      "nombre_corto": "Reglamento IEPS",
+      "tipo": "reglamento",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIEPS.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 19,
+      "divisiones_permitidas": [
+        "capitulo"
+      ]
+    },
+    {
+      "codigo": "RLISR",
+      "nombre": "Reglamento de la Ley del Impuesto sobre la Renta",
+      "nombre_corto": "Reglamento ISR",
+      "tipo": "reglamento",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR_060516.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 313,
+      "divisiones_permitidas": [
+        "titulo",
+        "capitulo",
+        "seccion"
+      ]
+    },
+    {
+      "codigo": "RLIVA",
+      "nombre": "Reglamento de la Ley del Impuesto al Valor Agregado",
+      "nombre_corto": "Reglamento IVA",
+      "tipo": "reglamento",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA_250914.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 84,
+      "divisiones_permitidas": [
+        "capitulo"
+      ]
+    },
+    {
+      "codigo": "RLSS",
+      "nombre": "Reglamento de la Ley del Seguro Social para Reservas Financieras y Actuariales",
+      "nombre_corto": "Reglamento Reservas SS",
+      "tipo": "reglamento",
+      "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LSS_RFARGFA.pdf",
+      "tipo_contenido": "articulo",
+      "total_articulos": 18,
+      "divisiones_permitidas": [
+        "capitulo"
+      ]
+    },
+    {
+      "codigo": "RMF",
+      "nombre": "Resolución Miscelánea Fiscal",
+      "nombre_corto": "Miscelánea Fiscal 2026",
+      "tipo": "resolucion",
+      "url_fuente": "https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf",
+      "tipo_contenido": "regla",
+      "total_articulos": 1106,
+      "divisiones_permitidas": [
+        "libro",
+        "titulo",
+        "capitulo",
+        "seccion"
+      ]
+    }
+  ]
+}

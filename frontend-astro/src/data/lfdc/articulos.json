@@ -1,0 +1,825 @@
+[
+  {
+    "numero": "1",
+    "tipo": "articulo",
+    "orden": 1,
+    "pagina": 1,
+    "y": 377,
+    "contenido": "La presente Ley tiene por objeto regular los derechos y garantías básicos de los contribuyentes en sus relaciones con las autoridades fiscales. En defecto de lo dispuesto en el presente ordenamiento, se aplicarán las leyes fiscales respectivas y el Código Fiscal de la Federación.\n\nLos derechos y garantías consagradas en la presente Ley en beneficio de los contribuyentes, les serán igualmente aplicables a los responsables solidarios.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "La presente Ley tiene por objeto regular los derechos y garantías básicos de los contribuyentes en sus relaciones con las autoridades fiscales. En defecto de lo dispuesto en el presente ordenamiento, se aplicarán las leyes fiscales respectivas y el Código Fiscal de la Federación.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 377,
+        "pagina": 1
+      },
+      {
+        "numero": 2,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Los derechos y garantías consagradas en la presente Ley en beneficio de los contribuyentes, les serán igualmente aplicables a los responsables solidarios.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 423,
+        "pagina": 1
+      }
+    ]
+  },
+  {
+    "numero": "2",
+    "tipo": "articulo",
+    "orden": 2,
+    "pagina": 1,
+    "y": 458,
+    "contenido": "Son derechos generales de los contribuyentes los siguientes:\n\nDerecho a ser informado y asistido por las autoridades fiscales en el cumplimiento de sus obligaciones tributarias, así como del contenido y alcance de las mismas.\n\nDerecho a obtener, en su beneficio, las devoluciones de impuestos que procedan en términos del Código Fiscal de la Federación y de las leyes fiscales aplicables.\n\nDerecho a conocer el estado de tramitación de los procedimientos en los que sea parte.\n\nDerecho a conocer la identidad de las autoridades fiscales bajo cuya responsabilidad se tramiten los procedimientos en los que tengan condición de interesados.\n\nDerecho a obtener certificación y copia de las declaraciones presentadas por el contribuyente, previo el pago de los derechos que en su caso, establezca la Ley.\n\nDerecho a no aportar los documentos que ya se encuentran en poder de la autoridad fiscal actuante.\n\nDerecho al carácter reservado de los datos, informes o antecedentes que de los contribuyentes y terceros con ellos relacionados, conozcan los servidores públicos de la administración tributaria, los cuales sólo podrán ser utilizados de conformidad con lo dispuesto por el artículo 69 del Código Fiscal de la Federación.\n\nDerecho a ser tratado con el debido respeto y consideración por los servidores públicos de la administración tributaria.\n\nDerecho a que las actuaciones de las autoridades fiscales que requieran su intervención se lleven a cabo en la forma que les resulte menos onerosa.\n\nDerecho a formular alegatos, presentar y ofrecer como pruebas documentos conforme a las disposiciones fiscales aplicables, incluso el expediente administrativo del cual emane el acto impugnado, que serán tenidos en cuenta por los órganos competentes al redactar la correspondiente resolución administrativa.\n\nDerecho a ser oído en el trámite administrativo con carácter previo a la emisión de la resolución determinante del crédito fiscal, en los términos de las leyes respectivas.\n\nDerecho a ser informado, al inicio de las facultades de comprobación de las autoridades fiscales, sobre sus derechos y obligaciones en el curso de tales actuaciones y a que éstas se desarrollen en los plazos previstos en las leyes fiscales.\n\nSe tendrá por informado al contribuyente sobre sus derechos, cuando se le entregue la carta de los derechos del contribuyente y así se asiente en la actuación que corresponda.\n\nLa omisión de lo dispuesto en esta fracción no afectará la validez de las actuaciones que lleve a cabo la autoridad fiscal, pero dará lugar a que se finque responsabilidad administrativa al servidor público que incurrió en la omisión.\n\nDerecho a corregir su situación fiscal con motivo del ejercicio de las facultades de comprobación que lleven a cabo las autoridades fiscales.\n\nDerecho a señalar en el juicio ante el Tribunal Federal de Justicia Fiscal y Administrativa, como domicilio para recibir notificaciones, el ubicado en cualquier parte del territorio nacional, salvo cuando tenga su domicilio dentro de la jurisdicción de la Sala competente de dicho Tribunal, en cuyo caso el señalado para recibir notificaciones deberá estar ubicado dentro de la circunscripción territorial de la Sala.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Son derechos generales de los contribuyentes los siguientes:",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 458,
+        "pagina": 1
+      },
+      {
+        "numero": 2,
+        "tipo": "fraccion",
+        "identificador": "I",
+        "contenido": "Derecho a ser informado y asistido por las autoridades fiscales en el cumplimiento de sus obligaciones tributarias, así como del contenido y alcance de las mismas.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 481,
+        "pagina": 1
+      },
+      {
+        "numero": 3,
+        "tipo": "fraccion",
+        "identificador": "II",
+        "contenido": "Derecho a obtener, en su beneficio, las devoluciones de impuestos que procedan en términos del Código Fiscal de la Federación y de las leyes fiscales aplicables.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 515,
+        "pagina": 1
+      },
+      {
+        "numero": 4,
+        "tipo": "fraccion",
+        "identificador": "III",
+        "contenido": "Derecho a conocer el estado de tramitación de los procedimientos en los que sea parte.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 550,
+        "pagina": 1
+      },
+      {
+        "numero": 5,
+        "tipo": "fraccion",
+        "identificador": "IV",
+        "contenido": "Derecho a conocer la identidad de las autoridades fiscales bajo cuya responsabilidad se tramiten los procedimientos en los que tengan condición de interesados.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 573,
+        "pagina": 1
+      },
+      {
+        "numero": 6,
+        "tipo": "fraccion",
+        "identificador": "V",
+        "contenido": "Derecho a obtener certificación y copia de las declaraciones presentadas por el contribuyente, previo el pago de los derechos que en su caso, establezca la Ley.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 607,
+        "pagina": 1
+      },
+      {
+        "numero": 7,
+        "tipo": "fraccion",
+        "identificador": "VI",
+        "contenido": "Derecho a no aportar los documentos que ya se encuentran en poder de la autoridad fiscal actuante.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 642,
+        "pagina": 1
+      },
+      {
+        "numero": 8,
+        "tipo": "fraccion",
+        "identificador": "VII",
+        "contenido": "Derecho al carácter reservado de los datos, informes o antecedentes que de los contribuyentes y terceros con ellos relacionados, conozcan los servidores públicos de la administración tributaria, los cuales sólo podrán ser utilizados de conformidad con lo dispuesto por el artículo 69 del Código Fiscal de la Federación.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 676,
+        "pagina": 1
+      },
+      {
+        "numero": 9,
+        "tipo": "fraccion",
+        "identificador": "VIII",
+        "contenido": "Derecho a ser tratado con el debido respeto y consideración por los servidores públicos de la administración tributaria.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 144,
+        "pagina": 2
+      },
+      {
+        "numero": 10,
+        "tipo": "fraccion",
+        "identificador": "IX",
+        "contenido": "Derecho a que las actuaciones de las autoridades fiscales que requieran su intervención se lleven a cabo en la forma que les resulte menos onerosa.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 179,
+        "pagina": 2
+      },
+      {
+        "numero": 11,
+        "tipo": "fraccion",
+        "identificador": "X",
+        "contenido": "Derecho a formular alegatos, presentar y ofrecer como pruebas documentos conforme a las disposiciones fiscales aplicables, incluso el expediente administrativo del cual emane el acto impugnado, que serán tenidos en cuenta por los órganos competentes al redactar la correspondiente resolución administrativa.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 213,
+        "pagina": 2
+      },
+      {
+        "numero": 12,
+        "tipo": "fraccion",
+        "identificador": "XI",
+        "contenido": "Derecho a ser oído en el trámite administrativo con carácter previo a la emisión de la resolución determinante del crédito fiscal, en los términos de las leyes respectivas.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 271,
+        "pagina": 2
+      },
+      {
+        "numero": 13,
+        "tipo": "fraccion",
+        "identificador": "XII",
+        "contenido": "Derecho a ser informado, al inicio de las facultades de comprobación de las autoridades fiscales, sobre sus derechos y obligaciones en el curso de tales actuaciones y a que éstas se desarrollen en los plazos previstos en las leyes fiscales.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 305,
+        "pagina": 2
+      },
+      {
+        "numero": 14,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Se tendrá por informado al contribuyente sobre sus derechos, cuando se le entregue la carta de los derechos del contribuyente y así se asiente en la actuación que corresponda.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 351,
+        "pagina": 2
+      },
+      {
+        "numero": 15,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "La omisión de lo dispuesto en esta fracción no afectará la validez de las actuaciones que lleve a cabo la autoridad fiscal, pero dará lugar a que se finque responsabilidad administrativa al servidor público que incurrió en la omisión.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 386,
+        "pagina": 2
+      },
+      {
+        "numero": 16,
+        "tipo": "fraccion",
+        "identificador": "XIII",
+        "contenido": "Derecho a corregir su situación fiscal con motivo del ejercicio de las facultades de comprobación que lleven a cabo las autoridades fiscales.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 432,
+        "pagina": 2
+      },
+      {
+        "numero": 17,
+        "tipo": "fraccion",
+        "identificador": "XIV",
+        "contenido": "Derecho a señalar en el juicio ante el Tribunal Federal de Justicia Fiscal y Administrativa, como domicilio para recibir notificaciones, el ubicado en cualquier parte del territorio nacional, salvo cuando tenga su domicilio dentro de la jurisdicción de la Sala competente de dicho Tribunal, en cuyo caso el señalado para recibir notificaciones deberá estar ubicado dentro de la circunscripción territorial de la Sala.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 107,
+        "y": 466,
+        "pagina": 2
+      }
+    ]
+  },
+  {
+    "numero": "3",
+    "tipo": "articulo",
+    "orden": 3,
+    "pagina": 2,
+    "y": 524,
+    "contenido": "Los contribuyentes podrán acceder a los registros y documentos que formando parte de un expediente abierto a su nombre, obren en los archivos administrativos, siempre que tales expedientes correspondan a procedimientos terminados en la fecha de la solicitud, respetando en todo caso lo dispuesto por el artículo 69 del Código Fiscal de la Federación.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Los contribuyentes podrán acceder a los registros y documentos que formando parte de un expediente abierto a su nombre, obren en los archivos administrativos, siempre que tales expedientes correspondan a procedimientos terminados en la fecha de la solicitud, respetando en todo caso lo dispuesto por el artículo 69 del Código Fiscal de la Federación.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 524,
+        "pagina": 2
+      }
+    ]
+  },
+  {
+    "numero": "4",
+    "tipo": "articulo",
+    "orden": 4,
+    "pagina": 2,
+    "y": 581,
+    "contenido": "Los servidores públicos de la administración tributaria facilitarán en todo momento al contribuyente el ejercicio de sus derechos y el cumplimiento de sus obligaciones.\n\nLas actuaciones de las autoridades fiscales que requieran la intervención de los contribuyentes deberán de llevarse a cabo en la forma que resulte menos gravosa para éstos, siempre que ello no perjudique el cumplimiento de sus obligaciones tributarias.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Los servidores públicos de la administración tributaria facilitarán en todo momento al contribuyente el ejercicio de sus derechos y el cumplimiento de sus obligaciones.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 581,
+        "pagina": 2
+      },
+      {
+        "numero": 2,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Las actuaciones de las autoridades fiscales que requieran la intervención de los contribuyentes deberán de llevarse a cabo en la forma que resulte menos gravosa para éstos, siempre que ello no perjudique el cumplimiento de sus obligaciones tributarias.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 616,
+        "pagina": 2
+      }
+    ]
+  },
+  {
+    "numero": "5",
+    "tipo": "articulo",
+    "orden": 5,
+    "pagina": 3,
+    "y": 110,
+    "contenido": "Las autoridades fiscales deberán prestar a los contribuyentes la necesaria asistencia e información acerca de sus derechos y obligaciones en materia fiscal. Asimismo y sin perjuicio de lo que dispone el Artículo 33 del Código Fiscal de la Federación, las autoridades fiscales deberán publicar los textos actualizados de las normas tributarias en sus páginas de Internet, así como contestar en forma oportuna las consultas tributarias.\n\nLos contribuyentes que apeguen su actuación a los términos establecidos en los criterios emitidos por las autoridades fiscales, que se publiquen en el Diario Oficial de la Federación, quedarán exentos de responsabilidad fiscal.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Las autoridades fiscales deberán prestar a los contribuyentes la necesaria asistencia e información acerca de sus derechos y obligaciones en materia fiscal. Asimismo y sin perjuicio de lo que dispone el Artículo 33 del Código Fiscal de la Federación, las autoridades fiscales deberán publicar los textos actualizados de las normas tributarias en sus páginas de Internet, así como contestar en forma oportuna las consultas tributarias.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 110,
+        "pagina": 3
+      },
+      {
+        "numero": 2,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Los contribuyentes que apeguen su actuación a los términos establecidos en los criterios emitidos por las autoridades fiscales, que se publiquen en el Diario Oficial de la Federación, quedarán exentos de responsabilidad fiscal.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 179,
+        "pagina": 3
+      }
+    ]
+  },
+  {
+    "numero": "6",
+    "tipo": "articulo",
+    "orden": 6,
+    "pagina": 3,
+    "y": 225,
+    "contenido": "Las autoridades fiscales realizarán campañas de difusión a través de medios masivos de comunicación, para fomentar y generar en la población mexicana la cultura contributiva y divulgar los derechos del contribuyente.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Las autoridades fiscales realizarán campañas de difusión a través de medios masivos de comunicación, para fomentar y generar en la población mexicana la cultura contributiva y divulgar los derechos del contribuyente.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 225,
+        "pagina": 3
+      }
+    ]
+  },
+  {
+    "numero": "7",
+    "tipo": "articulo",
+    "orden": 7,
+    "pagina": 3,
+    "y": 271,
+    "contenido": "Las autoridades fiscales tendrán la obligación de publicar periódicamente instructivos de tiraje masivo y comprensión accesible, donde se den a conocer a los contribuyentes, de manera clara y explicativa, las diversas formas de pago de las contribuciones. Las autoridades fiscales, el Tribunal Federal de Justicia Fiscal y Administrativa, así como los órganos jurisdiccionales del Poder Judicial de la Federación que tengan competencia en materia fiscal, deberán suministrar, a petición de los interesados, el texto de las resoluciones recaídas a consultas y las sentencias judiciales, de conformidad con lo dispuesto en la Ley Federal de Transparencia y Acceso a la Información Pública Gubernamental.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Las autoridades fiscales tendrán la obligación de publicar periódicamente instructivos de tiraje masivo y comprensión accesible, donde se den a conocer a los contribuyentes, de manera clara y explicativa, las diversas formas de pago de las contribuciones. Las autoridades fiscales, el Tribunal Federal de Justicia Fiscal y Administrativa, así como los órganos jurisdiccionales del Poder Judicial de la Federación que tengan competencia en materia fiscal, deberán suministrar, a petición de los interesados, el texto de las resoluciones recaídas a consultas y las sentencias judiciales, de conformidad con lo dispuesto en la Ley Federal de Transparencia y Acceso a la Información Pública Gubernamental.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 271,
+        "pagina": 3
+      }
+    ]
+  },
+  {
+    "numero": "8",
+    "tipo": "articulo",
+    "orden": 8,
+    "pagina": 3,
+    "y": 363,
+    "contenido": "Las autoridades fiscales mantendrán oficinas en diversos lugares del territorio nacional para orientar y auxiliar a los contribuyentes en el cumplimiento de sus obligaciones fiscales, facilitando, además, la consulta a la información que dichas autoridades tengan en sus páginas de Internet.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Las autoridades fiscales mantendrán oficinas en diversos lugares del territorio nacional para orientar y auxiliar a los contribuyentes en el cumplimiento de sus obligaciones fiscales, facilitando, además, la consulta a la información que dichas autoridades tengan en sus páginas de Internet.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 363,
+        "pagina": 3
+      }
+    ]
+  },
+  {
+    "numero": "9",
+    "tipo": "articulo",
+    "orden": 9,
+    "pagina": 3,
+    "y": 409,
+    "contenido": "Sin perjuicio de lo establecido en el Código Fiscal de la Federación, los contribuyentes podrán formular a las autoridades fiscales consultas sobre el tratamiento fiscal aplicable a situaciones reales y concretas. Las autoridades fiscales deberán contestar por escrito las consultas así formuladas en un plazo máximo de tres meses.\n\nDicha contestación tendrá carácter vinculatorio para las autoridades fiscales en la forma y términos previstos en el Código Fiscal de la Federación.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Sin perjuicio de lo establecido en el Código Fiscal de la Federación, los contribuyentes podrán formular a las autoridades fiscales consultas sobre el tratamiento fiscal aplicable a situaciones reales y concretas. Las autoridades fiscales deberán contestar por escrito las consultas así formuladas en un plazo máximo de tres meses.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 409,
+        "pagina": 3
+      },
+      {
+        "numero": 2,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Dicha contestación tendrá carácter vinculatorio para las autoridades fiscales en la forma y términos previstos en el Código Fiscal de la Federación.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 466,
+        "pagina": 3
+      }
+    ]
+  },
+  {
+    "numero": "10",
+    "tipo": "articulo",
+    "orden": 10,
+    "pagina": 3,
+    "y": 501,
+    "contenido": "Respetando la confidencialidad de los datos individuales, el Servicio de Administración Tributaria informará al Instituto Nacional de Estadística, Geografía e Informática los datos estadísticos agregados sobre el ingreso, impuestos, deducciones y otros datos relevantes de los contribuyentes.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Respetando la confidencialidad de los datos individuales, el Servicio de Administración Tributaria informará al Instituto Nacional de Estadística, Geografía e Informática los datos estadísticos agregados sobre el ingreso, impuestos, deducciones y otros datos relevantes de los contribuyentes.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 501,
+        "pagina": 3
+      }
+    ]
+  },
+  {
+    "numero": "11",
+    "tipo": "articulo",
+    "orden": 11,
+    "pagina": 3,
+    "y": 547,
+    "contenido": "Para estimular la obligación legal de los contribuyentes de entregar comprobantes fiscales por las operaciones que realicen, las autoridades fiscales organizarán loterías fiscales en las que, con diversos premios, participarán las personas que hayan obtenido los comprobantes fiscales respectivos. Las loterías fiscales se podrán organizar tomando en cuenta los medios de pago, diversos al efectivo, que reciban los contribuyentes.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Para estimular la obligación legal de los contribuyentes de entregar comprobantes fiscales por las operaciones que realicen, las autoridades fiscales organizarán loterías fiscales en las que, con diversos premios, participarán las personas que hayan obtenido los comprobantes fiscales respectivos. Las loterías fiscales se podrán organizar tomando en cuenta los medios de pago, diversos al efectivo, que reciban los contribuyentes.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 547,
+        "pagina": 3
+      }
+    ]
+  },
+  {
+    "numero": "12",
+    "tipo": "articulo",
+    "orden": 12,
+    "pagina": 3,
+    "y": 652,
+    "contenido": "Los contribuyentes tendrán derecho a ser informados, al inicio de cualquier actuación de la autoridad fiscal, para comprobar el cumplimiento de las obligaciones fiscales, de sus derechos y obligaciones en el curso de tales actuaciones.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Los contribuyentes tendrán derecho a ser informados, al inicio de cualquier actuación de la autoridad fiscal, para comprobar el cumplimiento de las obligaciones fiscales, de sus derechos y obligaciones en el curso de tales actuaciones.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 652,
+        "pagina": 3
+      }
+    ]
+  },
+  {
+    "numero": "13",
+    "tipo": "articulo",
+    "orden": 13,
+    "pagina": 4,
+    "y": 110,
+    "contenido": "Cuando las autoridades fiscales ejerzan sus facultades para comprobar el cumplimiento de las obligaciones fiscales previstas en las fracciones II y III del artículo 42 del Código Fiscal de la Federación, deberán informar al contribuyente con el primer acto que implique el inicio de esas facultades, el derecho que tiene para corregir su situación fiscal y los beneficios de ejercer el derecho mencionado.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Cuando las autoridades fiscales ejerzan sus facultades para comprobar el cumplimiento de las obligaciones fiscales previstas en las fracciones II y III del artículo 42 del Código Fiscal de la Federación, deberán informar al contribuyente con el primer acto que implique el inicio de esas facultades, el derecho que tiene para corregir su situación fiscal y los beneficios de ejercer el derecho mencionado.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 110,
+        "pagina": 4
+      }
+    ]
+  },
+  {
+    "numero": "14",
+    "tipo": "articulo",
+    "orden": 14,
+    "pagina": 4,
+    "y": 179,
+    "contenido": "Para los efectos de lo dispuesto en la fracción XIII del artículo 2o. de la presente Ley, los contribuyentes tendrán derecho a corregir su situación fiscal en las distintas contribuciones objeto de la revisión, mediante la presentación de la declaración normal o complementaria que, en su caso, corresponda, de conformidad con lo dispuesto en el Código Fiscal de la Federación.\n\nLos contribuyentes podrán corregir su situación fiscal a partir del momento en el que se dé inicio al ejercicio de las facultades de comprobación y hasta antes de que se les notifique la resolución que determine el monto de las contribuciones omitidas. El ejercicio de este derecho no está sujeto a autorización de la autoridad fiscal.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Para los efectos de lo dispuesto en la fracción XIII del artículo 2o. de la presente Ley, los contribuyentes tendrán derecho a corregir su situación fiscal en las distintas contribuciones objeto de la revisión, mediante la presentación de la declaración normal o complementaria que, en su caso, corresponda, de conformidad con lo dispuesto en el Código Fiscal de la Federación.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 179,
+        "pagina": 4
+      },
+      {
+        "numero": 2,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Los contribuyentes podrán corregir su situación fiscal a partir del momento en el que se dé inicio al ejercicio de las facultades de comprobación y hasta antes de que se les notifique la resolución que determine el monto de las contribuciones omitidas. El ejercicio de este derecho no está sujeto a autorización de la autoridad fiscal.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 236,
+        "pagina": 4
+      }
+    ]
+  },
+  {
+    "numero": "15",
+    "tipo": "articulo",
+    "orden": 15,
+    "pagina": 4,
+    "y": 294,
+    "contenido": "Los contribuyentes deberán entregar a la autoridad revisora, una copia de la declaración de corrección que hayan presentado. Dicha situación deberá ser consignada en una acta parcial cuando se trate de visitas domiciliarias; en los demás casos, incluso cuando haya concluido una visita domiciliaria, la autoridad revisora en un plazo máximo de diez días contados a partir de la entrega, deberá comunicar al contribuyente mediante oficio haber recibido la declaración de corrección, sin que dicha comunicación implique la aceptación de la corrección presentada por el contribuyente.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Los contribuyentes deberán entregar a la autoridad revisora, una copia de la declaración de corrección que hayan presentado. Dicha situación deberá ser consignada en una acta parcial cuando se trate de visitas domiciliarias; en los demás casos, incluso cuando haya concluido una visita domiciliaria, la autoridad revisora en un plazo máximo de diez días contados a partir de la entrega, deberá comunicar al contribuyente mediante oficio haber recibido la declaración de corrección, sin que dicha comunicación implique la aceptación de la corrección presentada por el contribuyente.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 294,
+        "pagina": 4
+      }
+    ]
+  },
+  {
+    "numero": "16",
+    "tipo": "articulo",
+    "orden": 16,
+    "pagina": 4,
+    "y": 374,
+    "contenido": "Cuando durante el ejercicio de las facultades de comprobación de las autoridades fiscales, los contribuyentes corrijan su situación fiscal y haya transcurrido al menos, un plazo de tres meses contados a partir del inicio del ejercicio de dichas facultades, se dará por concluida la visita domiciliaria o la revisión de que se trate, si a juicio de las autoridades fiscales y conforme a la investigación realizada, se desprende que el contribuyente ha corregido en su totalidad las obligaciones fiscales por las que se ejercieron las facultades de comprobación y por el período objeto de revisión. En el supuesto mencionado, se hará constar la corrección fiscal mediante oficio que se hará del conocimiento del contribuyente y la conclusión de la visita domiciliaria o revisión de que se trate.\n\nCuando los contribuyentes corrijan su situación fiscal con posterioridad a la conclusión del ejercicio de las facultades de comprobación y las autoridades fiscales verifiquen que el contribuyente ha corregido en su totalidad las obligaciones fiscales que se conocieron con motivo del ejercicio de las facultades mencionadas, se deberá comunicar al contribuyente mediante oficio dicha situación, en el plazo de un mes contado a partir de la fecha en que la autoridad fiscal haya recibido la declaración de corrección fiscal.\n\nCuando los contribuyentes presenten la declaración de corrección fiscal con posterioridad a la conclusión del ejercicio de las facultades de comprobación y hayan trascurrido al menos cinco meses del plazo a que se refiere el artículo 18 de este ordenamiento, sin que las autoridades fiscales hayan emitido la resolución que determine las contribuciones omitidas, dichas autoridades contarán con un plazo de un mes, adicional al previsto en el numeral mencionado, y contado a partir de la fecha en que los contribuyentes presenten la declaración de referencia para llevar a cabo la determinación de contribuciones omitidas que, en su caso, proceda.\n\nNo se podrán determinar nuevas omisiones de las contribuciones revisadas durante el periodo objeto del ejercicio de las facultades de comprobación, salvo cuando se comprueben hechos diferentes. La comprobación de hechos diferentes deberá estar sustentada en información, datos o documentos de terceros o en la revisión de conceptos específicos que no se hayan revisado con anterioridad.\n\nSi con motivo del ejercicio de las facultades de comprobación se conocen hechos que puedan dar lugar a la determinación de contribuciones mayores a las corregidas por el contribuyente o contribuciones objeto de la revisión por las que no se corrigió el contribuyente, los visitadores o, en su caso, las autoridades fiscales, deberán continuar con la visita domiciliaria o con la revisión prevista en el artículo 48 del Código Fiscal de la Federación, hasta su conclusión.\n\nCuando el contribuyente, en los términos del párrafo anterior, no corrija totalmente su situación fiscal, las autoridades fiscales emitirán la resolución que determine las contribuciones omitidas, de conformidad con el procedimiento establecido en el Código Fiscal de la Federación.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Cuando durante el ejercicio de las facultades de comprobación de las autoridades fiscales, los contribuyentes corrijan su situación fiscal y haya transcurrido al menos, un plazo de tres meses contados a partir del inicio del ejercicio de dichas facultades, se dará por concluida la visita domiciliaria o la revisión de que se trate, si a juicio de las autoridades fiscales y conforme a la investigación realizada, se desprende que el contribuyente ha corregido en su totalidad las obligaciones fiscales por las que se ejercieron las facultades de comprobación y por el período objeto de revisión. En el supuesto mencionado, se hará constar la corrección fiscal mediante oficio que se hará del conocimiento del contribuyente y la conclusión de la visita domiciliaria o revisión de que se trate.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 374,
+        "pagina": 4
+      },
+      {
+        "numero": 2,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Cuando los contribuyentes corrijan su situación fiscal con posterioridad a la conclusión del ejercicio de las facultades de comprobación y las autoridades fiscales verifiquen que el contribuyente ha corregido en su totalidad las obligaciones fiscales que se conocieron con motivo del ejercicio de las facultades mencionadas, se deberá comunicar al contribuyente mediante oficio dicha situación, en el plazo de un mes contado a partir de la fecha en que la autoridad fiscal haya recibido la declaración de corrección fiscal.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 478,
+        "pagina": 4
+      },
+      {
+        "numero": 3,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Cuando los contribuyentes presenten la declaración de corrección fiscal con posterioridad a la conclusión del ejercicio de las facultades de comprobación y hayan trascurrido al menos cinco meses del plazo a que se refiere el artículo 18 de este ordenamiento, sin que las autoridades fiscales hayan emitido la resolución que determine las contribuciones omitidas, dichas autoridades contarán con un plazo de un mes, adicional al previsto en el numeral mencionado, y contado a partir de la fecha en que los contribuyentes presenten la declaración de referencia para llevar a cabo la determinación de contribuciones omitidas que, en su caso, proceda.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 558,
+        "pagina": 4
+      },
+      {
+        "numero": 4,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "No se podrán determinar nuevas omisiones de las contribuciones revisadas durante el periodo objeto del ejercicio de las facultades de comprobación, salvo cuando se comprueben hechos diferentes. La comprobación de hechos diferentes deberá estar sustentada en información, datos o documentos de terceros o en la revisión de conceptos específicos que no se hayan revisado con anterioridad.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 650,
+        "pagina": 4
+      },
+      {
+        "numero": 5,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Si con motivo del ejercicio de las facultades de comprobación se conocen hechos que puedan dar lugar a la determinación de contribuciones mayores a las corregidas por el contribuyente o contribuciones objeto de la revisión por las que no se corrigió el contribuyente, los visitadores o, en su caso, las autoridades fiscales, deberán continuar con la visita domiciliaria o con la revisión prevista en el artículo 48 del Código Fiscal de la Federación, hasta su conclusión.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 110,
+        "pagina": 5
+      },
+      {
+        "numero": 6,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Cuando el contribuyente, en los términos del párrafo anterior, no corrija totalmente su situación fiscal, las autoridades fiscales emitirán la resolución que determine las contribuciones omitidas, de conformidad con el procedimiento establecido en el Código Fiscal de la Federación.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 179,
+        "pagina": 5
+      }
+    ]
+  },
+  {
+    "numero": "17",
+    "tipo": "articulo",
+    "orden": 17,
+    "pagina": 5,
+    "y": 225,
+    "contenido": "Los contribuyentes que corrijan su situación fiscal, pagarán una multa equivalente al 20% de las contribuciones omitidas, cuando el infractor las pague junto con sus accesorios después de que se inicie el ejercicio de las facultades de comprobación de las autoridades fiscales y hasta antes de que se le notifique el acta final de la visita domiciliaria o el oficio de observaciones a que se refiere la fracción VI del artículo 48 del Código Fiscal de la Federación, según sea el caso.\n\nSi el infractor paga las contribuciones omitidas junto con sus accesorios, después de que se notifique el acta final de la visita domiciliaria o el oficio de observaciones, según sea el caso, pero antes de la notificación de la resolución que determine el monto de las contribuciones omitidas, pagará una multa equivalente al 30% de las contribuciones omitidas.\n\nAsí mismo, podrán efectuar el pago en parcialidades de conformidad con lo dispuesto en el Código Fiscal de la Federación, siempre que esté garantizado el interés fiscal.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Los contribuyentes que corrijan su situación fiscal, pagarán una multa equivalente al 20% de las contribuciones omitidas, cuando el infractor las pague junto con sus accesorios después de que se inicie el ejercicio de las facultades de comprobación de las autoridades fiscales y hasta antes de que se le notifique el acta final de la visita domiciliaria o el oficio de observaciones a que se refiere la fracción VI del artículo 48 del Código Fiscal de la Federación, según sea el caso.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 225,
+        "pagina": 5
+      },
+      {
+        "numero": 2,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Si el infractor paga las contribuciones omitidas junto con sus accesorios, después de que se notifique el acta final de la visita domiciliaria o el oficio de observaciones, según sea el caso, pero antes de la notificación de la resolución que determine el monto de las contribuciones omitidas, pagará una multa equivalente al 30% de las contribuciones omitidas.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 294,
+        "pagina": 5
+      },
+      {
+        "numero": 3,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Así mismo, podrán efectuar el pago en parcialidades de conformidad con lo dispuesto en el Código Fiscal de la Federación, siempre que esté garantizado el interés fiscal.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 351,
+        "pagina": 5
+      }
+    ]
+  },
+  {
+    "numero": "18",
+    "tipo": "articulo",
+    "orden": 18,
+    "pagina": 5,
+    "y": 386,
+    "contenido": "Las autoridades fiscales contarán con un plazo de seis meses para determinar las contribuciones omitidas que conozcan con motivo del ejercicio de sus facultades de comprobación, sin perjuicio de lo dispuesto en el tercer párrafo del artículo 16 de esta Ley. El cómputo del plazo se realizará a partir de los supuestos a que se refiere el artículo 50 del Código Fiscal de la Federación y le serán aplicables las reglas de suspensión que dicho numeral contempla. Si no lo hacen en dicho lapso, se entenderá de manera definitiva que no existe crédito fiscal alguno a cargo del contribuyente por los hechos, contribuciones y períodos revisados.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Las autoridades fiscales contarán con un plazo de seis meses para determinar las contribuciones omitidas que conozcan con motivo del ejercicio de sus facultades de comprobación, sin perjuicio de lo dispuesto en el tercer párrafo del artículo 16 de esta Ley. El cómputo del plazo se realizará a partir de los supuestos a que se refiere el artículo 50 del Código Fiscal de la Federación y le serán aplicables las reglas de suspensión que dicho numeral contempla. Si no lo hacen en dicho lapso, se entenderá de manera definitiva que no existe crédito fiscal alguno a cargo del contribuyente por los hechos, contribuciones y períodos revisados.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 386,
+        "pagina": 5
+      }
+    ]
+  },
+  {
+    "numero": "19",
+    "tipo": "articulo",
+    "orden": 19,
+    "pagina": 5,
+    "y": 478,
+    "contenido": "Cuando las autoridades fiscales determinen contribuciones omitidas, no podrán llevar a cabo determinaciones adicionales con base en los mismos hechos conocidos en una revisión, pero podrán hacerlo cuando se comprueben hechos diferentes. La comprobación de hechos diferentes deberá estar sustentada en información, datos o documentos de terceros o en la revisión de conceptos específicos que no se hayan revisado con anterioridad; en este último supuesto, la orden por la que se ejerzan las facultades de comprobación deberá estar debidamente motivada con la expresión de los nuevos conceptos a revisar.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Cuando las autoridades fiscales determinen contribuciones omitidas, no podrán llevar a cabo determinaciones adicionales con base en los mismos hechos conocidos en una revisión, pero podrán hacerlo cuando se comprueben hechos diferentes. La comprobación de hechos diferentes deberá estar sustentada en información, datos o documentos de terceros o en la revisión de conceptos específicos que no se hayan revisado con anterioridad; en este último supuesto, la orden por la que se ejerzan las facultades de comprobación deberá estar debidamente motivada con la expresión de los nuevos conceptos a revisar.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 478,
+        "pagina": 5
+      }
+    ]
+  },
+  {
+    "numero": "20",
+    "tipo": "articulo",
+    "orden": 20,
+    "pagina": 5,
+    "y": 570,
+    "contenido": "Las autoridades fiscales podrán revisar nuevamente los mismos hechos, contribuciones y períodos, por los que se tuvo al contribuyente por corregido de su situación fiscal, o se le determinaron contribuciones omitidas, sin que de dicha revisión pueda derivar crédito fiscal alguno a cargo del contribuyente.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Las autoridades fiscales podrán revisar nuevamente los mismos hechos, contribuciones y períodos, por los que se tuvo al contribuyente por corregido de su situación fiscal, o se le determinaron contribuciones omitidas, sin que de dicha revisión pueda derivar crédito fiscal alguno a cargo del contribuyente.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 570,
+        "pagina": 5
+      }
+    ]
+  },
+  {
+    "numero": "21",
+    "tipo": "articulo",
+    "orden": 21,
+    "pagina": 5,
+    "y": 664,
+    "contenido": "En todo caso la actuación de los contribuyentes se presume realizada de buena fe, correspondiendo a la autoridad fiscal acreditar que concurren las circunstancias agravantes que señala el Código Fiscal de la Federación en la comisión de infracciones tributarias.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "En todo caso la actuación de los contribuyentes se presume realizada de buena fe, correspondiendo a la autoridad fiscal acreditar que concurren las circunstancias agravantes que señala el Código Fiscal de la Federación en la comisión de infracciones tributarias.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 664,
+        "pagina": 5
+      }
+    ]
+  },
+  {
+    "numero": "22",
+    "tipo": "articulo",
+    "orden": 22,
+    "pagina": 6,
+    "y": 110,
+    "contenido": "Los contribuyentes cuyos ingresos en el ejercicio inmediato anterior no hayan superado un monto equivalente a treinta veces el salario mínimo general, correspondiente al área geográfica del contribuyente elevado al año, cuando garanticen el interés fiscal mediante embargo en la vía administrativa, deberán ser designados como depositarios de los bienes y el embargo no podrá comprender las mercancías que integren el inventario circulante del negocio, excepto cuando se trate de mercancías de origen extranjero respecto de la cual no se acredite con la documentación correspondiente su legal estancia en el país.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Los contribuyentes cuyos ingresos en el ejercicio inmediato anterior no hayan superado un monto equivalente a treinta veces el salario mínimo general, correspondiente al área geográfica del contribuyente elevado al año, cuando garanticen el interés fiscal mediante embargo en la vía administrativa, deberán ser designados como depositarios de los bienes y el embargo no podrá comprender las mercancías que integren el inventario circulante del negocio, excepto cuando se trate de mercancías de origen extranjero respecto de la cual no se acredite con la documentación correspondiente su legal estancia en el país.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 110,
+        "pagina": 6
+      }
+    ]
+  },
+  {
+    "numero": "23",
+    "tipo": "articulo",
+    "orden": 23,
+    "pagina": 6,
+    "y": 238,
+    "contenido": "Los contribuyentes tendrán a su alcance los recursos y medios de defensa que procedan, en los términos de las disposiciones legales respectivas, contra los actos dictados por las autoridades fiscales, así como a que en la notificación de dichos actos se indique el recurso o medio de defensa procedente, el plazo para su interposición y el órgano ante el que debe formularse. Cuando en la resolución administrativa se omita el señalamiento de referencia, los contribuyentes contarán con el doble del plazo que establecen las disposiciones legales para interponer el recurso administrativo o el juicio contencioso administrativo.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Los contribuyentes tendrán a su alcance los recursos y medios de defensa que procedan, en los términos de las disposiciones legales respectivas, contra los actos dictados por las autoridades fiscales, así como a que en la notificación de dichos actos se indique el recurso o medio de defensa procedente, el plazo para su interposición y el órgano ante el que debe formularse. Cuando en la resolución administrativa se omita el señalamiento de referencia, los contribuyentes contarán con el doble del plazo que establecen las disposiciones legales para interponer el recurso administrativo o el juicio contencioso administrativo.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 238,
+        "pagina": 6
+      }
+    ]
+  },
+  {
+    "numero": "24",
+    "tipo": "articulo",
+    "orden": 24,
+    "pagina": 6,
+    "y": 330,
+    "contenido": "En el recurso administrativo y en el juicio contencioso administrativo ante el Tribunal Federal de Justicia Fiscal y Administrativa, los contribuyentes podrán ofrecer como prueba el expediente administrativo del cual emane el acto impugnado. Éste será el que contenga toda la documentación relacionada con el procedimiento que dio lugar a la resolución impugnada; dicha documentación será la que corresponda al inicio del procedimiento, los actos jurídicos posteriores y a la resolución impugnada. No se incluirá en el expediente administrativo que se envíe, la información que la Ley señale como información reservada o gubernamental confidencial.\n\nPara los efectos de este artículo, no se considerará expediente administrativo, los documentos antecedentes de una resolución en la que las leyes no establezcan un procedimiento administrativo previo.",
+    "parrafos": [
+      {
+        "numero": 1,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "En el recurso administrativo y en el juicio contencioso administrativo ante el Tribunal Federal de Justicia Fiscal y Administrativa, los contribuyentes podrán ofrecer como prueba el expediente administrativo del cual emane el acto impugnado. Éste será el que contenga toda la documentación relacionada con el procedimiento que dio lugar a la resolución impugnada; dicha documentación será la que corresponda al inicio del procedimiento, los actos jurídicos posteriores y a la resolución impugnada. No se incluirá en el expediente administrativo que se envíe, la información que la Ley señale como información reservada o gubernamental confidencial.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 330,
+        "pagina": 6
+      },
+      {
+        "numero": 2,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Para los efectos de este artículo, no se considerará expediente administrativo, los documentos antecedentes de una resolución en la que las leyes no establezcan un procedimiento administrativo previo.",
+        "padre_numero": null,
+        "x_id": 85,
+        "x_texto": 85,
+        "y": 423,
+        "pagina": 6
+      }
+    ]
+  }
+]
