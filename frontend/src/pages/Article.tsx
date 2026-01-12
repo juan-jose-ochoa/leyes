@@ -153,7 +153,7 @@ export default function Article() {
               viewMode === 'split' && 'lg:border-r border-gray-200 dark:border-gray-700'
             )}>
             <div className={clsx(
-              'px-4 py-6',
+              'px-4 pt-6 pb-16',
               viewMode !== 'split' && 'max-w-4xl mx-auto'
             )}>
                 {/* Header del artículo */}
