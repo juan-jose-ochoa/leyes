@@ -4,6 +4,8 @@ import FraccionesView from '../../../components/FraccionesView.astro';
 import ArticleToc from '../../../components/ArticleToc.astro';
 import ThemeToggle from '../../../components/ThemeToggle.astro';
 import ReferenciasList from '../../../components/ReferenciasList.astro';
+import PdfViewer from '../../../components/PdfViewer.astro';
+import ViewModeToggle from '../../../components/ViewModeToggle.astro';
 import catalogo from '../../../data/catalogo.json';
 
 interface BreadcrumbItem {
@@ -80,6 +82,7 @@ interface Props {
     tipo: string;
     contenido: string;
     pagina: number;
+    y: number;
     referencias?: string;
     parrafos: Array<{
       numero: number;
@@ -102,6 +105,7 @@ const { articulo, leyInfo, prevArticulo, nextArticulo, totalArticulos, indiceAct
 const codigoLower = leyInfo.codigo.toLowerCase();
 const isDerogado = articulo.tipo === 'derogado';
 const tieneParrafos = articulo.parrafos && articulo.parrafos.length > 0;
+const pdfUrl = `/pdfs/${codigoLower}.pdf`;
 
 // Get last breadcrumb item for division indicator
 const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1] : null;
@@ -179,18 +183,8 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
             <span id="copy-text">Copiar</span>
           </button>
 
-          <!-- PDF button -->
-          <a
-            href={`/pdfs/${codigoLower}.pdf#page=${articulo.pagina}`}
-            target="_blank"
-            rel="noopener"
-            class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-gray-600 dark:text-gray-400"
-            title="Ver PDF en página {articulo.pagina}"
-          >
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-            </svg>
-          </a>
+          <!-- View mode toggle -->
+          <ViewModeToggle />
 
           <span class="text-sm text-gray-500 whitespace-nowrap ml-1">
             {indiceActual} / {totalArticulos}
@@ -201,8 +195,10 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
     </header>
 
     <!-- Contenido -->
-    <main class="flex-1 container mx-auto max-w-4xl px-4 py-8 pb-24">
-      <article id="article-content" data-pagefind-body>
+    <main id="article-container" data-viewmode="text" class="flex-1 flex flex-col lg:flex-row">
+      <!-- Panel de texto -->
+      <div id="text-panel" class="flex-1 container mx-auto max-w-4xl px-4 py-8 pb-24">
+        <article id="article-content" data-pagefind-body>
         <!-- Division indicator -->
         {currentDivision && (
           <p class="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">
@@ -248,7 +244,18 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
             </div>
           )}
         </div>
-      </article>
+        </article>
+      </div>
+
+      <!-- Panel de PDF -->
+      <div id="pdf-panel" class="hidden flex-1 h-[calc(100vh-8rem)] sticky top-16 bg-gray-100 dark:bg-gray-800">
+        <PdfViewer
+          pdfUrl={pdfUrl}
+          pagina={articulo.pagina}
+          y={articulo.y}
+          class="h-full"
+        />
+      </div>
     </main>
 
     <!-- Footer fijo con navegación -->
@@ -313,6 +320,69 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
       } catch (err) {
         console.error('Failed to copy:', err);
       }
+    });
+  </script>
+
+  <!-- View mode toggle script -->
+  <script>
+    const container = document.getElementById('article-container');
+    const textPanel = document.getElementById('text-panel');
+    const pdfPanel = document.getElementById('pdf-panel');
+    const toggleBtns = document.querySelectorAll('.view-mode-btn');
+
+    // Get saved preference or default to 'text'
+    const savedMode = localStorage.getItem('viewMode') || 'text';
+
+    function setViewMode(mode: string) {
+      if (!container || !textPanel || !pdfPanel) return;
+
+      container.dataset.viewmode = mode;
+
+      // Update panel visibility
+      switch (mode) {
+        case 'text':
+          textPanel.classList.remove('hidden', 'lg:w-1/2');
+          textPanel.classList.add('flex-1');
+          pdfPanel.classList.add('hidden');
+          pdfPanel.classList.remove('lg:block', 'lg:w-1/2');
+          break;
+        case 'split':
+          textPanel.classList.remove('hidden', 'flex-1');
+          textPanel.classList.add('lg:w-1/2');
+          pdfPanel.classList.remove('hidden');
+          pdfPanel.classList.add('lg:block', 'lg:w-1/2');
+          break;
+        case 'pdf':
+          textPanel.classList.add('hidden');
+          textPanel.classList.remove('flex-1', 'lg:w-1/2');
+          pdfPanel.classList.remove('hidden', 'lg:w-1/2');
+          pdfPanel.classList.add('flex-1');
+          break;
+      }
+
+      // Update button states
+      toggleBtns.forEach(btn => {
+        const btnMode = (btn as HTMLElement).dataset.mode;
+        if (btnMode === mode) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      // Save preference
+      localStorage.setItem('viewMode', mode);
+    }
+
+    // Initialize
+    setViewMode(savedMode);
+
+    // Add click handlers
+    toggleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const mode = (btn as HTMLElement).dataset.mode;
+        if (mode) setViewMode(mode);
+      });
     });
   </script>
 </BaseLayout>
