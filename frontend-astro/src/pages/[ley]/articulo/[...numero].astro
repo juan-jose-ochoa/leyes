@@ -206,9 +206,9 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
     </header>
 
     <!-- Contenido -->
-    <main id="article-container" data-viewmode="text" class="flex-1 flex flex-col lg:flex-row">
+    <main id="article-container" data-viewmode="text" class="article-container flex-1">
       <!-- Panel de texto -->
-      <div id="text-panel" class="flex-1 container mx-auto max-w-4xl px-4 py-8 pb-24">
+      <div id="text-panel" class="text-panel container mx-auto max-w-4xl px-4 py-8 pb-24">
         <article id="article-content" data-pagefind-body>
         <!-- Division indicator -->
         {currentDivision && (
@@ -259,7 +259,7 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
       </div>
 
       <!-- Panel de PDF -->
-      <div id="pdf-panel" class="hidden flex-1 h-[calc(100vh-8rem)] sticky top-16 bg-gray-100 dark:bg-gray-800">
+      <div id="pdf-panel" class="pdf-panel bg-gray-100 dark:bg-gray-800">
         <PdfViewer
           pdfUrl={pdfUrl}
           pagina={articulo.pagina}
@@ -268,6 +268,63 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
         />
       </div>
     </main>
+
+    <style>
+      /* View mode styles */
+      .article-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Default: text mode - hide PDF */
+      .article-container[data-viewmode="text"] .pdf-panel {
+        display: none;
+      }
+
+      .article-container[data-viewmode="text"] .text-panel {
+        display: block;
+      }
+
+      /* PDF mode - hide text, show PDF full height */
+      .article-container[data-viewmode="pdf"] .text-panel {
+        display: none;
+      }
+
+      .article-container[data-viewmode="pdf"] .pdf-panel {
+        display: block;
+        width: 100%;
+        height: calc(100vh - 8rem);
+        min-height: 400px;
+      }
+
+      /* Split mode - only on large screens */
+      .article-container[data-viewmode="split"] .text-panel {
+        display: block;
+      }
+
+      .article-container[data-viewmode="split"] .pdf-panel {
+        display: none;
+      }
+
+      @media (min-width: 1024px) {
+        .article-container[data-viewmode="split"] {
+          flex-direction: row;
+        }
+
+        .article-container[data-viewmode="split"] .text-panel {
+          width: 50%;
+          overflow-y: auto;
+        }
+
+        .article-container[data-viewmode="split"] .pdf-panel {
+          display: block;
+          width: 50%;
+          height: calc(100vh - 7rem);
+          position: sticky;
+          top: 4rem;
+        }
+      }
+    </style>
 
     <!-- Footer fijo con navegación -->
     <footer class="sticky bottom-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-4 py-3">
@@ -337,39 +394,22 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
   <!-- View mode toggle script -->
   <script>
     const container = document.getElementById('article-container');
-    const textPanel = document.getElementById('text-panel');
-    const pdfPanel = document.getElementById('pdf-panel');
     const toggleBtns = document.querySelectorAll('.view-mode-btn');
 
     // Get saved preference or default to 'text'
-    const savedMode = localStorage.getItem('viewMode') || 'text';
+    let savedMode = localStorage.getItem('viewMode') || 'text';
+
+    // If screen is small and saved mode is split, fallback to text
+    const isLargeScreen = window.matchMedia('(min-width: 1024px)').matches;
+    if (savedMode === 'split' && !isLargeScreen) {
+      savedMode = 'text';
+    }
 
     function setViewMode(mode: string) {
-      if (!container || !textPanel || !pdfPanel) return;
+      if (!container) return;
 
+      // Update data attribute - CSS handles the rest
       container.dataset.viewmode = mode;
-
-      // Update panel visibility
-      switch (mode) {
-        case 'text':
-          textPanel.classList.remove('hidden', 'lg:w-1/2');
-          textPanel.classList.add('flex-1');
-          pdfPanel.classList.add('hidden');
-          pdfPanel.classList.remove('lg:block', 'lg:w-1/2');
-          break;
-        case 'split':
-          textPanel.classList.remove('hidden', 'flex-1');
-          textPanel.classList.add('lg:w-1/2');
-          pdfPanel.classList.remove('hidden');
-          pdfPanel.classList.add('lg:block', 'lg:w-1/2');
-          break;
-        case 'pdf':
-          textPanel.classList.add('hidden');
-          textPanel.classList.remove('flex-1', 'lg:w-1/2');
-          pdfPanel.classList.remove('hidden', 'lg:w-1/2');
-          pdfPanel.classList.add('flex-1');
-          break;
-      }
 
       // Update button states
       toggleBtns.forEach(btn => {
