@@ -447,35 +447,52 @@ const categorias = [
       constitucional: 'bg-orange-600'
     };
 
+    const totalLawGroups = lawGroups.length;
+
     if (resultsList) {
       resultsList.innerHTML = lawGroups.map((lawGroup) => {
         const catColor = categoryColors[lawGroup.categoria] || 'bg-primary-600';
         const isExpanded = expandedLaws.has(lawGroup.ley);
+        const canExclude = totalLawGroups > 1;
 
         return `
         <div class="law-group rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
           <!-- Law Header -->
-          <button
-            type="button"
-            data-toggle-law="${lawGroup.ley}"
-            class="w-full flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-left"
-          >
-            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-sm font-bold text-white ${catColor}">
-              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-              </svg>
-            </div>
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap">
-                <span class="font-semibold text-gray-900 dark:text-gray-100">${lawGroup.ley}</span>
-                <span class="text-sm text-gray-500 dark:text-gray-400 truncate">${lawGroup.leyNombreCorto}</span>
+          <div class="flex items-center bg-gray-50 dark:bg-gray-800/50">
+            <button
+              type="button"
+              data-toggle-law="${lawGroup.ley}"
+              class="flex-1 flex items-center gap-3 p-4 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-left"
+            >
+              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-sm font-bold text-white ${catColor}">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
               </div>
-              <p class="text-sm text-gray-500">${lawGroup.totalMatches} ${lawGroup.totalMatches === 1 ? 'coincidencia' : 'coincidencias'} en ${lawGroup.articles.length} ${lawGroup.articles.length === 1 ? 'artículo' : 'artículos'}</p>
-            </div>
-            <svg class="chevron h-5 w-5 text-gray-400 transition-transform ${isExpanded ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-semibold text-gray-900 dark:text-gray-100">${lawGroup.ley}</span>
+                  <span class="text-sm text-gray-500 dark:text-gray-400 truncate">${lawGroup.leyNombreCorto}</span>
+                </div>
+                <p class="text-sm text-gray-500">${lawGroup.totalMatches} ${lawGroup.totalMatches === 1 ? 'coincidencia' : 'coincidencias'} en ${lawGroup.articles.length} ${lawGroup.articles.length === 1 ? 'artículo' : 'artículos'}</p>
+              </div>
+              <svg class="chevron h-5 w-5 text-gray-400 transition-transform ${isExpanded ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            ${canExclude ? `
+            <button
+              type="button"
+              data-exclude-law="${lawGroup.ley}"
+              class="p-3 mr-2 rounded-full hover:bg-red-100 dark:hover:bg-red-900/30 text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors"
+              title="Excluir ${lawGroup.ley} de los resultados"
+            >
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+            ` : ''}
+          </div>
 
           <!-- Articles (collapsible) -->
           <div class="law-content divide-y divide-gray-100 dark:divide-gray-800 ${isExpanded ? '' : 'hidden'}">
@@ -501,7 +518,8 @@ const categorias = [
       document.querySelectorAll('[data-toggle-law]').forEach((btn) => {
         btn.addEventListener('click', () => {
           const ley = (btn as HTMLElement).dataset.toggleLaw!;
-          const content = btn.nextElementSibling as HTMLElement;
+          const lawGroup = btn.closest('.law-group') as HTMLElement;
+          const content = lawGroup?.querySelector('.law-content') as HTMLElement;
           const chevron = btn.querySelector('.chevron') as HTMLElement;
 
           if (expandedLaws.has(ley)) {
@@ -513,6 +531,39 @@ const categorias = [
             content?.classList.remove('hidden');
             chevron?.classList.add('rotate-180');
           }
+        });
+      });
+
+      // Add exclude event listeners
+      document.querySelectorAll('[data-exclude-law]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const leyToExclude = (btn as HTMLElement).dataset.excludeLaw!;
+
+          // Get all laws currently in results
+          const currentLaws = Array.from(document.querySelectorAll('[data-toggle-law]'))
+            .map(el => (el as HTMLElement).dataset.toggleLaw!);
+
+          // Filter out the excluded law
+          const remainingLaws = currentLaws.filter(l => l !== leyToExclude);
+
+          if (remainingLaws.length === 0) return; // Safety check
+
+          // Update selectedLeyes
+          selectedLeyes = remainingLaws;
+
+          // Update chip visual states in filter panel
+          document.querySelectorAll('[data-filter-ley]').forEach((chip) => {
+            const chipLey = (chip as HTMLElement).dataset.filterLey!;
+            updateChipState(chip as HTMLElement, remainingLaws.includes(chipLey));
+          });
+
+          // Show filters panel for feedback
+          filtersPanel?.classList.remove('hidden');
+
+          // Update UI and re-search
+          updateFilterCount();
+          updateURL();
+          doSearch(input.value);
         });
       });
     }
