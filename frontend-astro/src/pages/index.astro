@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Search from '../components/Search.astro';
+import SearchSimple from '../components/SearchSimple.astro';
 import catalogo from '../data/catalogo.json';
 
 // Separar leyes principales de reglamentos
@@ -66,7 +66,7 @@ const categoriaStyle = {
 
     <!-- Search -->
     <div class="max-w-2xl mx-auto mb-12">
-      <Search />
+      <SearchSimple />
       <p class="text-center text-sm text-gray-500 dark:text-gray-500 mt-2">
         Presiona <kbd class="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-800 rounded text-xs">/</kbd> para buscar
       </p>
