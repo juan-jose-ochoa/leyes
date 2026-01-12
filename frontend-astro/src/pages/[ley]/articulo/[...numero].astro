@@ -168,6 +168,17 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
 
         <!-- Right side: actions + counter + toggle -->
         <div class="flex items-center gap-2 flex-shrink-0">
+          <!-- Search link -->
+          <a
+            href="/buscar"
+            class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-gray-600 dark:text-gray-400"
+            title="Buscar"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </a>
+
           <!-- Copy button -->
           <button
             id="copy-btn"
@@ -180,13 +191,13 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
             <svg id="check-icon" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
             </svg>
-            <span id="copy-text">Copiar</span>
+            <span id="copy-text" class="hidden sm:inline">Copiar</span>
           </button>
 
           <!-- View mode toggle -->
           <ViewModeToggle />
 
-          <span class="text-sm text-gray-500 whitespace-nowrap ml-1">
+          <span class="hidden lg:inline text-sm text-gray-500 whitespace-nowrap ml-1">
             {indiceActual} / {totalArticulos}
           </span>
           <ThemeToggle />
