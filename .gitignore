@@ -58,3 +58,4 @@ backend/postgrest.local.conf
 frontend-astro/.astro/
 frontend-astro/dist/
 frontend-astro/node_modules/
+.frontend-astro.pid
