@@ -170,12 +170,34 @@ const categorias = [
   </div>
 </BaseLayout>
 
+<script is:inline define:vars={{ catalogoLeyes: catalogo.leyes }}>
+  window.__CATALOGO_LEYES__ = catalogoLeyes;
+</script>
+
 <script>
+  // Type for catalogo
+  interface CatalogoLey {
+    codigo: string;
+    nombre: string;
+    nombre_corto: string;
+    tipo: string;
+    categoria: string;
+  }
+
   // State
   let pagefind: any = null;
   let selectedCategorias: string[] = [];
   let selectedTipos: string[] = [];
   let selectedLeyes: string[] = [];
+  const expandedLaws = new Set<string>();
+
+  // Get catalogo from window (set by inline script)
+  const catalogoLeyes: CatalogoLey[] = (window as any).__CATALOGO_LEYES__ || [];
+
+  // Helper to get law info from catalogo
+  function getLeyInfo(codigo: string): CatalogoLey | undefined {
+    return catalogoLeyes.find(l => l.codigo.toUpperCase() === codigo?.toUpperCase());
+  }
 
   // Elements
   const form = document.getElementById('search-form') as HTMLFormElement;
@@ -337,6 +359,16 @@ const categorias = [
       subResults: SubResult[];
     }
 
+    interface LawGroup {
+      ley: string;
+      leyNombre: string;
+      leyNombreCorto: string;
+      categoria: string;
+      tipo: string;
+      articles: GroupedResult[];
+      totalMatches: number;
+    }
+
     const groupedResults: GroupedResult[] = loaded.map((result: any) => {
       const subResults: SubResult[] = [];
 
@@ -371,11 +403,41 @@ const categorias = [
       };
     });
 
+    // Group articles by law
+    function groupByLaw(articles: GroupedResult[]): LawGroup[] {
+      const lawGroups: Record<string, LawGroup> = {};
+
+      for (const article of articles) {
+        const ley = article.meta?.ley || 'unknown';
+        if (!lawGroups[ley]) {
+          const leyInfo = getLeyInfo(ley);
+          lawGroups[ley] = {
+            ley,
+            leyNombre: leyInfo?.nombre || ley,
+            leyNombreCorto: leyInfo?.nombre_corto || ley,
+            categoria: leyInfo?.categoria || article.meta?.categoria || '',
+            tipo: leyInfo?.tipo || '',
+            articles: [],
+            totalMatches: 0
+          };
+          // Expand all laws by default
+          expandedLaws.add(ley);
+        }
+        lawGroups[ley].articles.push(article);
+        lawGroups[ley].totalMatches += article.subResults.length;
+      }
+
+      // Sort by total matches descending
+      return Object.values(lawGroups).sort((a, b) => b.totalMatches - a.totalMatches);
+    }
+
+    const lawGroups = groupByLaw(groupedResults);
+
     // Count total sub-results
     const totalSubResults = groupedResults.reduce((acc, g) => acc + g.subResults.length, 0);
 
     if (resultsCount) {
-      resultsCount.textContent = `${totalSubResults} ${totalSubResults === 1 ? 'coincidencia' : 'coincidencias'} en ${groupedResults.length} ${groupedResults.length === 1 ? 'artículo' : 'artículos'}`;
+      resultsCount.textContent = `${totalSubResults} ${totalSubResults === 1 ? 'coincidencia' : 'coincidencias'} en ${groupedResults.length} ${groupedResults.length === 1 ? 'artículo' : 'artículos'} de ${lawGroups.length} ${lawGroups.length === 1 ? 'ley' : 'leyes'}`;
     }
 
     // Category color mapping
@@ -386,25 +448,73 @@ const categorias = [
     };
 
     if (resultsList) {
-      resultsList.innerHTML = groupedResults.map((group) => {
-        const catColor = categoryColors[group.meta?.categoria] || 'bg-primary-600';
+      resultsList.innerHTML = lawGroups.map((lawGroup) => {
+        const catColor = categoryColors[lawGroup.categoria] || 'bg-primary-600';
+        const isExpanded = expandedLaws.has(lawGroup.ley);
+
         return `
-        <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
-          <div class="flex items-center gap-2 mb-1">
-            ${group.meta?.ley ? `<span class="text-xs font-medium px-2 py-0.5 rounded ${catColor} text-white">${group.meta.ley}</span>` : ''}
-          </div>
-          <a href="${group.url}" class="font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400">${group.meta?.title || 'Sin título'}</a>
-          ${group.meta?.seccion ? `<div class="font-semibold text-gray-800 dark:text-gray-200 mb-2">${group.meta.seccion}</div>` : ''}
-          <div class="space-y-2 mt-2">
-            ${group.subResults.map((sub) => `
-              <a href="${sub.url}" class="block p-2 rounded bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                ${sub.title ? `<span class="text-xs font-medium text-primary-600 dark:text-primary-400">${sub.title}</span>` : ''}
-                <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">${sub.excerpt}</p>
-              </a>
+        <div class="law-group rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+          <!-- Law Header -->
+          <button
+            type="button"
+            data-toggle-law="${lawGroup.ley}"
+            class="w-full flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-left"
+          >
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-sm font-bold text-white ${catColor}">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="font-semibold text-gray-900 dark:text-gray-100">${lawGroup.ley}</span>
+                <span class="text-sm text-gray-500 dark:text-gray-400 truncate">${lawGroup.leyNombreCorto}</span>
+              </div>
+              <p class="text-sm text-gray-500">${lawGroup.totalMatches} ${lawGroup.totalMatches === 1 ? 'coincidencia' : 'coincidencias'} en ${lawGroup.articles.length} ${lawGroup.articles.length === 1 ? 'artículo' : 'artículos'}</p>
+            </div>
+            <svg class="chevron h-5 w-5 text-gray-400 transition-transform ${isExpanded ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- Articles (collapsible) -->
+          <div class="law-content divide-y divide-gray-100 dark:divide-gray-800 ${isExpanded ? '' : 'hidden'}">
+            ${lawGroup.articles.map((article) => `
+              <div class="p-4">
+                <a href="${article.url}" class="font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400">${article.meta?.title || 'Sin título'}</a>
+                ${article.meta?.seccion ? `<div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">${article.meta.seccion}</div>` : ''}
+                <div class="space-y-2 mt-2">
+                  ${article.subResults.map((sub) => `
+                    <a href="${sub.url}" class="block p-2 rounded bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                      ${sub.title ? `<span class="text-xs font-medium text-primary-600 dark:text-primary-400">${sub.title}</span>` : ''}
+                      <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">${sub.excerpt}</p>
+                    </a>
+                  `).join('')}
+                </div>
+              </div>
             `).join('')}
           </div>
         </div>`;
       }).join('');
+
+      // Add toggle event listeners to new law headers
+      document.querySelectorAll('[data-toggle-law]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const ley = (btn as HTMLElement).dataset.toggleLaw!;
+          const content = btn.nextElementSibling as HTMLElement;
+          const chevron = btn.querySelector('.chevron') as HTMLElement;
+
+          if (expandedLaws.has(ley)) {
+            expandedLaws.delete(ley);
+            content?.classList.add('hidden');
+            chevron?.classList.remove('rotate-180');
+          } else {
+            expandedLaws.add(ley);
+            content?.classList.remove('hidden');
+            chevron?.classList.add('rotate-180');
+          }
+        });
+      });
     }
 
     updateURL();
