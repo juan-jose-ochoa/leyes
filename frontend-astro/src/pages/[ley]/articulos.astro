@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import catalogo from '../../data/catalogo.json';
+
+export async function getStaticPaths() {
+  const paths = [];
+
+  for (const ley of catalogo.leyes) {
+    const codigoLower = ley.codigo.toLowerCase();
+    const articulosModule = await import(`../../data/${codigoLower}/articulos.json`);
+
+    paths.push({
+      params: { ley: codigoLower },
+      props: {
+        leyInfo: ley,
+        articulos: articulosModule.default
+      }
+    });
+  }
+
+  return paths;
+}
+
+interface Props {
+  leyInfo: typeof catalogo.leyes[0];
+  articulos: Array<{
+    numero: string;
+    tipo: string;
+    contenido: string;
+  }>;
+}
+
+const { leyInfo, articulos } = Astro.props;
+const codigoLower = leyInfo.codigo.toLowerCase();
+
+// Agrupar artículos: vigentes vs derogados
+const vigentes = articulos.filter(a => a.tipo !== 'derogado');
+const derogados = articulos.filter(a => a.tipo === 'derogado');
+---
+
+<BaseLayout title={`Artículos - ${leyInfo.codigo}`}>
+  <main class="container mx-auto px-4 py-8 max-w-4xl">
+    <!-- Breadcrumb -->
+    <nav class="mb-6">
+      <a href="/" class="text-primary-600 hover:underline">Inicio</a>
+      <span class="text-gray-400 mx-2">/</span>
+      <a href={`/${codigoLower}`} class="text-primary-600 hover:underline">{leyInfo.codigo}</a>
+      <span class="text-gray-400 mx-2">/</span>
+      <span class="text-gray-600 dark:text-gray-400">Artículos</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
+        Artículos del {leyInfo.codigo}
+      </h1>
+      <p class="text-gray-600 dark:text-gray-400 mt-2">
+        {vigentes.length} vigentes
+        {derogados.length > 0 && ` · ${derogados.length} derogados`}
+      </p>
+    </header>
+
+    <!-- Lista de artículos vigentes -->
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+        Artículos vigentes
+      </h2>
+      <div class="grid gap-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
+        {vigentes.map(art => (
+          <a
+            href={`/${codigoLower}/articulo/${art.numero}`}
+            class="px-3 py-2 text-center text-sm rounded-lg border border-gray-200 dark:border-gray-700 hover:border-primary-500 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors"
+          >
+            {art.numero}
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- Lista de artículos derogados -->
+    {derogados.length > 0 && (
+      <section>
+        <h2 class="text-xl font-semibold text-gray-500 dark:text-gray-400 mb-4">
+          Artículos derogados
+        </h2>
+        <div class="grid gap-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
+          {derogados.map(art => (
+            <a
+              href={`/${codigoLower}/articulo/${art.numero}`}
+              class="px-3 py-2 text-center text-sm rounded-lg border border-gray-200 dark:border-gray-700 text-gray-400 hover:border-gray-400 transition-colors"
+            >
+              {art.numero}
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </main>
+</BaseLayout>

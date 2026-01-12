@@ -54,3 +54,7 @@ Thumbs.db
 
 # Generated config (created from .env)
 backend/postgrest.local.conf
+# Astro
+frontend-astro/.astro/
+frontend-astro/dist/
+frontend-astro/node_modules/

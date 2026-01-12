@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Search from '../components/Search.astro';
+import catalogo from '../data/catalogo.json';
+
+const leyes = catalogo.leyes;
+---
+
+<BaseLayout title="LeyesMX - Leyes Fiscales de México">
+  <main class="container mx-auto px-4 py-8">
+    <!-- Hero -->
+    <div class="text-center mb-8">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <span class="text-primary-600">Leyes</span>MX
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-400">
+        Buscador de leyes fiscales y laborales mexicanas
+      </p>
+    </div>
+
+    <!-- Search -->
+    <div class="max-w-2xl mx-auto mb-12">
+      <Search />
+    </div>
+
+    <!-- Lista de leyes -->
+    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {leyes.map((ley) => (
+        <a
+          href={`/${ley.codigo.toLowerCase()}`}
+          class="card hover:border-primary-500 transition-colors"
+        >
+          <div class="flex items-start justify-between">
+            <div>
+              <span class={`badge ${ley.tipo === 'codigo' ? 'badge-ley' : 'badge-reglamento'}`}>
+                {ley.codigo}
+              </span>
+              <h2 class="mt-2 font-semibold text-gray-900 dark:text-white">
+                {ley.nombre_corto || ley.nombre}
+              </h2>
+              <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                {ley.total_articulos} artículos
+              </p>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-16 text-center text-sm text-gray-500 dark:text-gray-400">
+      <p>Datos actualizados desde diputados.gob.mx</p>
+    </footer>
+  </main>
+</BaseLayout>

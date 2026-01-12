@@ -1,0 +1,84 @@
+---
+// Search component using Pagefind
+---
+
+<div id="search" class="w-full"></div>
+
+<style is:global>
+  /* Pagefind UI customization */
+  :root {
+    --pagefind-ui-scale: 1;
+    --pagefind-ui-primary: #16a34a;
+    --pagefind-ui-text: #1f2937;
+    --pagefind-ui-background: #ffffff;
+    --pagefind-ui-border: #e5e7eb;
+    --pagefind-ui-tag: #f3f4f6;
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 8px;
+    --pagefind-ui-image-border-radius: 8px;
+    --pagefind-ui-image-box-ratio: 3 / 2;
+    --pagefind-ui-font: 'Inter', system-ui, sans-serif;
+  }
+
+  .dark {
+    --pagefind-ui-primary: #22c55e;
+    --pagefind-ui-text: #f3f4f6;
+    --pagefind-ui-background: #1f2937;
+    --pagefind-ui-border: #374151;
+    --pagefind-ui-tag: #374151;
+  }
+
+  .pagefind-ui__search-input {
+    font-size: 1rem !important;
+    padding: 0.75rem 1rem !important;
+  }
+
+  .pagefind-ui__result {
+    padding: 1rem !important;
+    border-radius: var(--pagefind-ui-border-radius) !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .pagefind-ui__result:hover {
+    background: var(--pagefind-ui-tag) !important;
+  }
+
+  .pagefind-ui__result-link {
+    font-weight: 600 !important;
+  }
+
+  .pagefind-ui__result-excerpt {
+    margin-top: 0.5rem !important;
+  }
+
+  /* Hide images from results */
+  .pagefind-ui__result-image {
+    display: none !important;
+  }
+
+  /* Hide Pagefind branding */
+  .pagefind-ui__suppressed {
+    display: none !important;
+  }
+</style>
+
+<script>
+  import { PagefindUI } from '@pagefind/default-ui';
+
+  // Wait for DOM to be ready
+  document.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({
+      element: '#search',
+      showSubResults: true,
+      showImages: false,
+      translations: {
+        placeholder: 'Buscar artículos...',
+        zero_results: 'No se encontraron resultados para "[SEARCH_TERM]"',
+        many_results: '[COUNT] resultados',
+        one_result: '1 resultado',
+        filters_label: 'Filtros:',
+        clear_search: 'Limpiar'
+      }
+    });
+  });
+</script>

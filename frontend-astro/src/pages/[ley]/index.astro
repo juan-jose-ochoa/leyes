@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import catalogo from '../../data/catalogo.json';
+
+export function getStaticPaths() {
+  return catalogo.leyes.map(ley => ({
+    params: { ley: ley.codigo.toLowerCase() },
+    props: { leyInfo: ley }
+  }));
+}
+
+interface Props {
+  leyInfo: typeof catalogo.leyes[0];
+}
+
+const { leyInfo } = Astro.props;
+const codigoLower = leyInfo.codigo.toLowerCase();
+
+// Import estructura dinámicamente
+const estructuraModule = await import(`../../data/${codigoLower}/estructura.json`);
+const estructura = estructuraModule.default;
+
+// Función para renderizar divisiones recursivamente
+function getDivisionUrl(division: any, leyCode: string): string {
+  const tipoMap: Record<string, string> = {
+    titulo: 'titulo',
+    capitulo: 'capitulo',
+    seccion: 'seccion'
+  };
+  const tipo = tipoMap[division.tipo] || division.tipo;
+  return `/${leyCode}/${tipo}/${division.numero.toLowerCase().replace(/\s+/g, '-')}`;
+}
+---
+
+<BaseLayout title={`${leyInfo.codigo} - ${leyInfo.nombre}`}>
+  <main class="container mx-auto px-4 py-8 max-w-4xl">
+    <!-- Breadcrumb -->
+    <nav class="mb-6">
+      <a href="/" class="text-primary-600 hover:underline">← Inicio</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-8">
+      <span class={`badge ${leyInfo.tipo === 'codigo' ? 'badge-ley' : 'badge-reglamento'} mb-2`}>
+        {leyInfo.codigo}
+      </span>
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
+        {leyInfo.nombre}
+      </h1>
+      <p class="text-gray-600 dark:text-gray-400 mt-2">
+        {estructura.estadisticas.articulos_vigentes} artículos vigentes
+        {estructura.estadisticas.articulos_derogados > 0 &&
+          ` · ${estructura.estadisticas.articulos_derogados} derogados`}
+      </p>
+    </header>
+
+    <!-- Estructura -->
+    <section>
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+        Estructura
+      </h2>
+
+      <div class="space-y-4">
+        {estructura.divisiones.map((division: any) => (
+          <div class="card">
+            <a
+              href={getDivisionUrl(division, codigoLower)}
+              class="block hover:text-primary-600"
+            >
+              <h3 class="font-semibold text-gray-900 dark:text-white">
+                {division.tipo.charAt(0).toUpperCase() + division.tipo.slice(1)} {division.numero}
+                {division.nombre && `: ${division.nombre}`}
+              </h3>
+            </a>
+
+            {division.hijos && division.hijos.length > 0 && (
+              <ul class="mt-3 ml-4 space-y-2">
+                {division.hijos.map((hijo: any) => (
+                  <li>
+                    <a
+                      href={getDivisionUrl(hijo, codigoLower)}
+                      class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
+                    >
+                      {hijo.tipo.charAt(0).toUpperCase() + hijo.tipo.slice(1)} {hijo.numero}
+                      {hijo.nombre && `: ${hijo.nombre}`}
+                    </a>
+                    {hijo.articulos && hijo.articulos.length > 0 && (
+                      <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">
+                        ({hijo.articulos.length} arts.)
+                      </span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Quick access to articles -->
+    <section class="mt-8">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+        Acceso rápido
+      </h2>
+      <p class="text-gray-600 dark:text-gray-400 mb-4">
+        Ir directamente a un artículo:
+      </p>
+      <div class="flex gap-2 flex-wrap">
+        <a
+          href={`/${codigoLower}/articulo/1o`}
+          class="btn-secondary"
+        >
+          Artículo 1o
+        </a>
+        <a
+          href={`/${codigoLower}/articulos`}
+          class="btn-secondary"
+        >
+          Ver todos los artículos
+        </a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

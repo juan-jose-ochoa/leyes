@@ -1,0 +1,158 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import catalogo from '../../../data/catalogo.json';
+
+export async function getStaticPaths() {
+  const paths = [];
+
+  for (const ley of catalogo.leyes) {
+    const codigoLower = ley.codigo.toLowerCase();
+    const articulosModule = await import(`../../../data/${codigoLower}/articulos.json`);
+    const articulos = articulosModule.default;
+
+    for (let i = 0; i < articulos.length; i++) {
+      const articulo = articulos[i];
+      const prevArt = i > 0 ? articulos[i - 1] : null;
+      const nextArt = i < articulos.length - 1 ? articulos[i + 1] : null;
+
+      paths.push({
+        params: { ley: codigoLower, numero: articulo.numero },
+        props: {
+          articulo,
+          leyInfo: ley,
+          prevArticulo: prevArt ? { numero: prevArt.numero } : null,
+          nextArticulo: nextArt ? { numero: nextArt.numero } : null,
+          totalArticulos: articulos.length,
+          indiceActual: i + 1
+        }
+      });
+    }
+  }
+
+  return paths;
+}
+
+interface Props {
+  articulo: {
+    numero: string;
+    tipo: string;
+    contenido: string;
+    pagina: number;
+    parrafos: Array<{
+      numero: number;
+      tipo: string;
+      identificador: string | null;
+      contenido: string;
+      padre_numero: number | null;
+    }>;
+  };
+  leyInfo: typeof catalogo.leyes[0];
+  prevArticulo: { numero: string } | null;
+  nextArticulo: { numero: string } | null;
+  totalArticulos: number;
+  indiceActual: number;
+}
+
+const { articulo, leyInfo, prevArticulo, nextArticulo, totalArticulos, indiceActual } = Astro.props;
+const codigoLower = leyInfo.codigo.toLowerCase();
+const isDerogado = articulo.tipo === 'derogado';
+
+// Agrupar párrafos por jerarquía
+function renderParrafos(parrafos: Props['articulo']['parrafos']) {
+  return parrafos.map(p => {
+    const indent = p.tipo === 'fraccion' ? 'ml-4' : p.tipo === 'inciso' ? 'ml-8' : '';
+    const prefix = p.identificador ? `${p.identificador}. ` : '';
+    return { ...p, indent, prefix };
+  });
+}
+
+const parrafosRenderizados = renderParrafos(articulo.parrafos || []);
+---
+
+<BaseLayout title={`Artículo ${articulo.numero} - ${leyInfo.codigo}`}>
+  <div class="min-h-screen flex flex-col">
+    <!-- Header fijo -->
+    <header class="sticky top-0 z-10 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 px-4 py-3">
+      <div class="container mx-auto max-w-4xl flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <a href={`/${codigoLower}`} class="text-gray-500 hover:text-primary-600">
+            ← {leyInfo.codigo}
+          </a>
+          <span class="text-gray-400">|</span>
+          <span class="font-semibold text-gray-900 dark:text-white">
+            Artículo {articulo.numero}
+          </span>
+        </div>
+        <div class="text-sm text-gray-500">
+          {indiceActual} / {totalArticulos}
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido -->
+    <main class="flex-1 container mx-auto max-w-4xl px-4 py-8 pb-24">
+      <article data-pagefind-body>
+        <h1
+          class="text-2xl font-bold text-gray-900 dark:text-white mb-6"
+          data-pagefind-meta="title"
+        >
+          Artículo {articulo.numero}
+        </h1>
+
+        <p class="hidden" data-pagefind-meta="ley">{leyInfo.codigo}</p>
+
+        {isDerogado ? (
+          <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-gray-500 dark:text-gray-400 italic">
+            Artículo derogado
+          </div>
+        ) : parrafosRenderizados.length > 0 ? (
+          <div class="prose-legal space-y-4">
+            {parrafosRenderizados.map(p => (
+              <p class={`text-gray-800 dark:text-gray-200 ${p.indent}`}>
+                {p.prefix && <strong class="text-gray-900 dark:text-white">{p.prefix}</strong>}
+                {p.contenido}
+              </p>
+            ))}
+          </div>
+        ) : (
+          <div class="prose-legal">
+            <p class="text-gray-800 dark:text-gray-200 whitespace-pre-wrap">
+              {articulo.contenido}
+            </p>
+          </div>
+        )}
+      </article>
+    </main>
+
+    <!-- Footer fijo con navegación -->
+    <footer class="sticky bottom-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-4 py-3">
+      <div class="container mx-auto max-w-4xl flex items-center justify-between">
+        {prevArticulo ? (
+          <a
+            href={`/${codigoLower}/articulo/${prevArticulo.numero}`}
+            class="btn-secondary"
+          >
+            ← Art. {prevArticulo.numero}
+          </a>
+        ) : (
+          <span></span>
+        )}
+
+        <a href={`/${codigoLower}`} class="text-sm text-gray-500 hover:text-primary-600">
+          Ver índice
+        </a>
+
+        {nextArticulo ? (
+          <a
+            href={`/${codigoLower}/articulo/${nextArticulo.numero}`}
+            class="btn-secondary"
+          >
+            Art. {nextArticulo.numero} →
+          </a>
+        ) : (
+          <span></span>
+        )}
+      </div>
+    </footer>
+  </div>
+</BaseLayout>
