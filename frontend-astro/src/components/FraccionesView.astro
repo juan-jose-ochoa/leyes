@@ -1,0 +1,139 @@
+---
+/**
+ * FraccionesView - Renderiza párrafos/fracciones/incisos con estilos jerárquicos
+ *
+ * Estilos por tipo:
+ * - Fracción (I., II.): borde-izq 4px primary, fondo primary-50
+ * - Inciso (a), b)): borde-izq 3px emerald, fondo emerald-50
+ * - Numeral (1., 2.): borde-izq 2px amber, fondo amber-50
+ * - Apartado: borde-izq 4px blue, fondo blue-50
+ * - Texto: sin borde especial
+ */
+
+interface Parrafo {
+  numero: number;
+  tipo: string;
+  identificador: string | null;
+  contenido: string;
+  padre_numero: number | null;
+  x_id?: number;
+  x_texto?: number;
+  y?: number;
+  pagina?: number;
+}
+
+interface Props {
+  parrafos: Parrafo[];
+}
+
+const { parrafos } = Astro.props;
+
+// Calcular nivel de cada párrafo basado en padre_numero
+function calcularNiveles(parrafos: Parrafo[]): Map<number, number> {
+  const niveles = new Map<number, number>();
+
+  for (const p of parrafos) {
+    if (!p.padre_numero) {
+      niveles.set(p.numero, 0);
+    } else {
+      const nivelPadre = niveles.get(p.padre_numero) ?? 0;
+      niveles.set(p.numero, nivelPadre + 1);
+    }
+  }
+
+  return niveles;
+}
+
+// Obtener sufijo según tipo
+function getSufijo(tipo: string): string {
+  switch (tipo) {
+    case 'fraccion':
+    case 'numeral':
+    case 'apartado':
+      return '.';
+    case 'inciso':
+      return ')';
+    default:
+      return '';
+  }
+}
+
+// Obtener estilos según tipo
+function getEstilos(tipo: string, nivel: number): { border: string; bg: string; margin: string; idColor: string } {
+  const marginClasses = ['ml-0', 'ml-6', 'ml-12', 'ml-16'];
+  const margin = marginClasses[Math.min(nivel, 3)];
+
+  switch (tipo) {
+    case 'fraccion':
+      return {
+        border: 'border-l-4 border-primary-500',
+        bg: 'bg-primary-50 dark:bg-primary-900/20',
+        margin,
+        idColor: 'text-primary-700 dark:text-primary-300'
+      };
+    case 'inciso':
+      return {
+        border: 'border-l-[3px] border-emerald-400',
+        bg: 'bg-emerald-50 dark:bg-emerald-900/20',
+        margin,
+        idColor: 'text-emerald-700 dark:text-emerald-300'
+      };
+    case 'numeral':
+      return {
+        border: 'border-l-2 border-amber-400',
+        bg: 'bg-amber-50 dark:bg-amber-900/20',
+        margin,
+        idColor: 'text-amber-700 dark:text-amber-300'
+      };
+    case 'apartado':
+      return {
+        border: 'border-l-4 border-blue-500',
+        bg: 'bg-blue-50 dark:bg-blue-900/20',
+        margin,
+        idColor: 'text-blue-700 dark:text-blue-300'
+      };
+    default:
+      return {
+        border: 'border-l-2 border-gray-200 dark:border-gray-700',
+        bg: '',
+        margin,
+        idColor: 'text-gray-600 dark:text-gray-400'
+      };
+  }
+}
+
+// Generar ID de ancla para navegación
+function getAnclaId(p: Parrafo): string {
+  if (p.identificador) {
+    return `${p.tipo}-${p.identificador}`.toLowerCase();
+  }
+  return `p-${p.numero}`;
+}
+
+const niveles = calcularNiveles(parrafos);
+---
+
+<div class="prose-legal space-y-3">
+  {parrafos.map((p) => {
+    const nivel = niveles.get(p.numero) ?? 0;
+    const estilos = getEstilos(p.tipo, nivel);
+    const sufijo = getSufijo(p.tipo);
+    const anclaId = getAnclaId(p);
+
+    return (
+      <div
+        id={anclaId}
+        class={`p-3 rounded-r-lg ${estilos.border} ${estilos.bg} ${estilos.margin} scroll-mt-20`}
+      >
+        {p.identificador && (
+          <span class={`font-semibold ${estilos.idColor} mr-2`}>
+            {p.identificador}{sufijo}
+          </span>
+        )}
+        <span class="text-gray-800 dark:text-gray-200">
+          {p.contenido}
+        </span>
+      </div>
+    );
+  })}
+</div>

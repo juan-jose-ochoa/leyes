@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import FraccionesView from '../../../components/FraccionesView.astro';
+import ArticleToc from '../../../components/ArticleToc.astro';
 import catalogo from '../../../data/catalogo.json';
 
 export async function getStaticPaths() {
@@ -56,17 +58,7 @@ interface Props {
 const { articulo, leyInfo, prevArticulo, nextArticulo, totalArticulos, indiceActual } = Astro.props;
 const codigoLower = leyInfo.codigo.toLowerCase();
 const isDerogado = articulo.tipo === 'derogado';
-
-// Agrupar párrafos por jerarquía
-function renderParrafos(parrafos: Props['articulo']['parrafos']) {
-  return parrafos.map(p => {
-    const indent = p.tipo === 'fraccion' ? 'ml-4' : p.tipo === 'inciso' ? 'ml-8' : '';
-    const prefix = p.identificador ? `${p.identificador}. ` : '';
-    return { ...p, indent, prefix };
-  });
-}
-
-const parrafosRenderizados = renderParrafos(articulo.parrafos || []);
+const tieneParrafos = articulo.parrafos && articulo.parrafos.length > 0;
 ---
 
 <BaseLayout title={`Artículo ${articulo.numero} - ${leyInfo.codigo}`}>
@@ -101,19 +93,17 @@ const parrafosRenderizados = renderParrafos(articulo.parrafos || []);
 
         <p class="hidden" data-pagefind-meta="ley">{leyInfo.codigo}</p>
 
+        {/* TOC si tiene fracciones */}
+        {tieneParrafos && !isDerogado && (
+          <ArticleToc parrafos={articulo.parrafos} />
+        )}
+
         {isDerogado ? (
           <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-gray-500 dark:text-gray-400 italic">
             Artículo derogado
           </div>
-        ) : parrafosRenderizados.length > 0 ? (
-          <div class="prose-legal space-y-4">
-            {parrafosRenderizados.map(p => (
-              <p class={`text-gray-800 dark:text-gray-200 ${p.indent}`}>
-                {p.prefix && <strong class="text-gray-900 dark:text-white">{p.prefix}</strong>}
-                {p.contenido}
-              </p>
-            ))}
-          </div>
+        ) : tieneParrafos ? (
+          <FraccionesView parrafos={articulo.parrafos} />
         ) : (
           <div class="prose-legal">
             <p class="text-gray-800 dark:text-gray-200 whitespace-pre-wrap">

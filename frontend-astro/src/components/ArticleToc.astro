@@ -1,0 +1,92 @@
+---
+/**
+ * ArticleToc - Tabla de contenido compacta para artículos
+ * Muestra chips clickeables para navegar a fracciones/incisos
+ */
+
+interface Parrafo {
+  numero: number;
+  tipo: string;
+  identificador: string | null;
+  contenido: string;
+  padre_numero: number | null;
+}
+
+interface Props {
+  parrafos: Parrafo[];
+}
+
+const { parrafos } = Astro.props;
+
+// Filtrar solo fracciones (nivel superior)
+const fracciones = parrafos.filter(p => p.tipo === 'fraccion' && p.identificador);
+
+// Agrupar incisos por fracción padre
+const incisosPorFraccion = new Map<number, Parrafo[]>();
+for (const p of parrafos) {
+  if (p.tipo === 'inciso' && p.padre_numero) {
+    const lista = incisosPorFraccion.get(p.padre_numero) || [];
+    lista.push(p);
+    incisosPorFraccion.set(p.padre_numero, lista);
+  }
+}
+
+// Generar ID de ancla
+function getAnclaId(p: Parrafo): string {
+  if (p.identificador) {
+    return `${p.tipo}-${p.identificador}`.toLowerCase();
+  }
+  return `p-${p.numero}`;
+}
+
+// No mostrar TOC si hay pocas fracciones
+const mostrarToc = fracciones.length >= 3;
+---
+
+{mostrarToc && (
+  <nav class="mb-6 p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+    <h2 class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-3">
+      Contenido
+    </h2>
+    <div class="flex flex-wrap gap-2">
+      {fracciones.map((f) => {
+        const incisos = incisosPorFraccion.get(f.numero) || [];
+        const tieneIncisos = incisos.length > 0;
+
+        return (
+          <div class="relative group">
+            <a
+              href={`#${getAnclaId(f)}`}
+              class="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-primary-100 text-primary-800 dark:bg-primary-900/50 dark:text-primary-200 hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors"
+            >
+              {f.identificador}
+              {tieneIncisos && (
+                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              )}
+            </a>
+
+            {/* Dropdown de incisos */}
+            {tieneIncisos && (
+              <div class="absolute left-0 top-full mt-1 hidden group-hover:block z-20">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 p-2 min-w-[120px]">
+                  <div class="flex flex-wrap gap-1">
+                    {incisos.map((inciso) => (
+                      <a
+                        href={`#${getAnclaId(inciso)}`}
+                        class="px-2 py-1 text-xs rounded bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-200 hover:bg-emerald-200 dark:hover:bg-emerald-800 transition-colors"
+                      >
+                        {inciso.identificador})
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  </nav>
+)}

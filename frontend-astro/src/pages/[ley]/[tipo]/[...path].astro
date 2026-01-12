@@ -1,0 +1,220 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+// Función para normalizar número a slug URL
+function toSlug(numero: string): string {
+  return numero.toLowerCase().replace(/\s+/g, '-');
+}
+
+export async function getStaticPaths() {
+  // Importar dentro de getStaticPaths para que Astro lo compile correctamente
+  const catalogo = await import('../../../data/catalogo.json');
+
+  const estructurasMap: Record<string, any> = {
+    cff: (await import('../../../data/cff/estructura.json')).default,
+    cpeum: (await import('../../../data/cpeum/estructura.json')).default,
+    la: (await import('../../../data/la/estructura.json')).default,
+    lfdc: (await import('../../../data/lfdc/estructura.json')).default,
+    lft: (await import('../../../data/lft/estructura.json')).default,
+    lieps: (await import('../../../data/lieps/estructura.json')).default,
+    lif: (await import('../../../data/lif/estructura.json')).default,
+    linfonavit: (await import('../../../data/linfonavit/estructura.json')).default,
+    lisr: (await import('../../../data/lisr/estructura.json')).default,
+    lissste: (await import('../../../data/lissste/estructura.json')).default,
+    liva: (await import('../../../data/liva/estructura.json')).default,
+    lss: (await import('../../../data/lss/estructura.json')).default,
+    racerf: (await import('../../../data/racerf/estructura.json')).default,
+    rcff: (await import('../../../data/rcff/estructura.json')).default,
+    rlft: (await import('../../../data/rlft/estructura.json')).default,
+    rlieps: (await import('../../../data/rlieps/estructura.json')).default,
+    rlisr: (await import('../../../data/rlisr/estructura.json')).default,
+    rliva: (await import('../../../data/rliva/estructura.json')).default,
+    rlss: (await import('../../../data/rlss/estructura.json')).default,
+    rmf: (await import('../../../data/rmf/estructura.json')).default,
+  };
+
+  function toSlugInner(numero: string): string {
+    return numero.toLowerCase().replace(/\s+/g, '-');
+  }
+
+  function extractDivisiones(
+    divisiones: any[],
+    leyCode: string,
+    parentPath: string[] = [],
+    result: any[] = []
+  ): any[] {
+    for (const div of divisiones) {
+      const currentPath = [...parentPath, toSlugInner(div.numero)];
+
+      result.push({
+        ley: leyCode,
+        tipo: div.tipo,
+        path: currentPath.join('/'),
+        division: div,
+        parentPath: parentPath.join('/')
+      });
+
+      if (div.hijos && div.hijos.length > 0) {
+        extractDivisiones(div.hijos, leyCode, currentPath, result);
+      }
+    }
+    return result;
+  }
+
+  const paths: any[] = [];
+
+  for (const ley of catalogo.default.leyes) {
+    const codigoLower = ley.codigo.toLowerCase();
+    const estructura = estructurasMap[codigoLower];
+
+    if (!estructura) {
+      continue;
+    }
+
+    const divisiones = extractDivisiones(estructura.divisiones, codigoLower);
+
+    for (const div of divisiones) {
+      paths.push({
+        params: {
+          ley: codigoLower,
+          tipo: div.tipo,
+          path: div.path
+        },
+        props: {
+          division: div.division,
+          leyInfo: ley,
+          parentPath: div.parentPath
+        }
+      });
+    }
+  }
+
+  return paths;
+}
+
+interface LeyInfo {
+  codigo: string;
+  nombre: string;
+  nombre_corto: string;
+  tipo: string;
+}
+
+interface Props {
+  division: {
+    tipo: string;
+    numero: string;
+    nombre: string | null;
+    pagina: number;
+    articulos?: string[];
+    hijos?: any[];
+  };
+  leyInfo: LeyInfo;
+  parentPath: string;
+}
+
+const { division, leyInfo, parentPath } = Astro.props;
+const { tipo, path } = Astro.params;
+const codigoLower = leyInfo.codigo.toLowerCase();
+
+// Capitalizar tipo para mostrar
+const tipoCapitalizado = tipo!.charAt(0).toUpperCase() + tipo!.slice(1);
+
+// Obtener artículos de esta división y sus hijos
+function getAllArticulos(div: any): string[] {
+  let articulos = [...(div.articulos || [])];
+  if (div.hijos) {
+    for (const hijo of div.hijos) {
+      articulos = articulos.concat(getAllArticulos(hijo));
+    }
+  }
+  return articulos;
+}
+
+const todosArticulos = getAllArticulos(division);
+---
+
+<BaseLayout title={`${tipoCapitalizado} ${division.numero} - ${leyInfo.codigo}`}>
+  <main class="container mx-auto px-4 py-8 max-w-4xl">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm">
+      <a href="/" class="text-primary-600 hover:underline">Inicio</a>
+      <span class="text-gray-400 mx-2">/</span>
+      <a href={`/${codigoLower}`} class="text-primary-600 hover:underline">{leyInfo.codigo}</a>
+      <span class="text-gray-400 mx-2">/</span>
+      <span class="text-gray-600 dark:text-gray-400">{tipoCapitalizado} {division.numero}</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-8">
+      <span class={`badge ${leyInfo.tipo === 'codigo' ? 'badge-ley' : 'badge-reglamento'} mb-2`}>
+        {leyInfo.codigo}
+      </span>
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
+        {tipoCapitalizado} {division.numero}
+      </h1>
+      {division.nombre && (
+        <p class="text-xl text-gray-600 dark:text-gray-400 mt-2">
+          {division.nombre}
+        </p>
+      )}
+      <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
+        {todosArticulos.length} artículos
+      </p>
+    </header>
+
+    <!-- Sub-divisiones (si las hay) -->
+    {division.hijos && division.hijos.length > 0 && (
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+          Contenido
+        </h2>
+        <div class="space-y-3">
+          {division.hijos.map((hijo: any) => (
+            <a
+              href={`/${codigoLower}/${hijo.tipo}/${path}/${toSlug(hijo.numero)}`}
+              class="card block hover:border-primary-500 transition-colors"
+            >
+              <h3 class="font-semibold text-gray-900 dark:text-white">
+                {hijo.tipo.charAt(0).toUpperCase() + hijo.tipo.slice(1)} {hijo.numero}
+                {hijo.nombre && `: ${hijo.nombre}`}
+              </h3>
+              {hijo.articulos && hijo.articulos.length > 0 && (
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                  {hijo.articulos.length} artículos
+                </p>
+              )}
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Artículos directos de esta división -->
+    {division.articulos && division.articulos.length > 0 && (
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+          Artículos
+        </h2>
+        <div class="grid gap-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
+          {division.articulos.map((artNum: string) => (
+            <a
+              href={`/${codigoLower}/articulo/${artNum}`}
+              class="px-3 py-2 text-center text-sm rounded-lg border border-gray-200 dark:border-gray-700 hover:border-primary-500 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors"
+            >
+              {artNum}
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Si no hay artículos directos pero hay en hijos, no mostrar nada aquí -->
+
+    <!-- Navegación -->
+    <nav class="mt-8 pt-4 border-t border-gray-200 dark:border-gray-700">
+      <a href={`/${codigoLower}`} class="text-primary-600 hover:underline">
+        ← Ver estructura completa del {leyInfo.codigo}
+      </a>
+    </nav>
+  </main>
+</BaseLayout>

@@ -20,15 +20,16 @@ const codigoLower = leyInfo.codigo.toLowerCase();
 const estructuraModule = await import(`../../data/${codigoLower}/estructura.json`);
 const estructura = estructuraModule.default;
 
-// Función para renderizar divisiones recursivamente
-function getDivisionUrl(division: any, leyCode: string): string {
-  const tipoMap: Record<string, string> = {
-    titulo: 'titulo',
-    capitulo: 'capitulo',
-    seccion: 'seccion'
-  };
-  const tipo = tipoMap[division.tipo] || division.tipo;
-  return `/${leyCode}/${tipo}/${division.numero.toLowerCase().replace(/\s+/g, '-')}`;
+// Función para normalizar número a slug
+function toSlug(numero: string): string {
+  return numero.toLowerCase().replace(/\s+/g, '-');
+}
+
+// Función para obtener URL de división con path completo
+function getDivisionUrl(division: any, leyCode: string, parentPath: string = ''): string {
+  const slug = toSlug(division.numero);
+  const fullPath = parentPath ? `${parentPath}/${slug}` : slug;
+  return `/${leyCode}/${division.tipo}/${fullPath}`;
 }
 ---
 
@@ -78,7 +79,7 @@ function getDivisionUrl(division: any, leyCode: string): string {
                 {division.hijos.map((hijo: any) => (
                   <li>
                     <a
-                      href={getDivisionUrl(hijo, codigoLower)}
+                      href={getDivisionUrl(hijo, codigoLower, toSlug(division.numero))}
                       class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
                     >
                       {hijo.tipo.charAt(0).toUpperCase() + hijo.tipo.slice(1)} {hijo.numero}
