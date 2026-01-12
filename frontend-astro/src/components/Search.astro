@@ -1,84 +1,337 @@
 ---
-// Search component using Pagefind
+// Custom Search component with filters using Pagefind API
+import catalogo from '../data/catalogo.json';
+
+// Get unique law codes for filter chips
+const leyes = catalogo.leyes.map(l => ({ codigo: l.codigo, nombre: l.nombre }));
+
+// Document types
+const tiposDocumento = [
+  { value: 'ley', label: 'Leyes', color: 'bg-primary-600' },
+  { value: 'codigo', label: 'Códigos', color: 'bg-primary-600' },
+  { value: 'reglamento', label: 'Reglamentos', color: 'bg-blue-600' },
+  { value: 'resolucion', label: 'RMF', color: 'bg-amber-600' },
+];
 ---
 
-<div id="search" class="w-full"></div>
+<div class="w-full max-w-3xl mx-auto">
+  <!-- Search form -->
+  <form id="search-form" class="relative">
+    <div class="relative">
+      <svg class="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Buscar en leyes fiscales y laborales..."
+        class="w-full rounded-xl border-2 border-gray-200 bg-white py-4 pl-12 pr-24 text-lg placeholder-gray-400 transition-colors focus:border-primary-500 focus:outline-none focus:ring-4 focus:ring-primary-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder-gray-500"
+        autocomplete="off"
+      />
+      <div class="absolute right-3 top-1/2 flex -translate-y-1/2 items-center gap-2">
+        <button
+          id="clear-btn"
+          type="button"
+          class="hidden rounded-lg p-1.5 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700"
+        >
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <button
+          type="submit"
+          class="btn-primary px-4 py-2"
+        >
+          Buscar
+        </button>
+      </div>
+    </div>
 
-<style is:global>
-  /* Pagefind UI customization */
-  :root {
-    --pagefind-ui-scale: 1;
-    --pagefind-ui-primary: #16a34a;
-    --pagefind-ui-text: #1f2937;
-    --pagefind-ui-background: #ffffff;
-    --pagefind-ui-border: #e5e7eb;
-    --pagefind-ui-tag: #f3f4f6;
-    --pagefind-ui-border-width: 1px;
-    --pagefind-ui-border-radius: 8px;
-    --pagefind-ui-image-border-radius: 8px;
-    --pagefind-ui-image-box-ratio: 3 / 2;
-    --pagefind-ui-font: 'Inter', system-ui, sans-serif;
-  }
+    <!-- Filters toggle -->
+    <div class="mt-2 flex items-center gap-2 text-sm text-gray-500">
+      <button
+        id="filters-toggle"
+        type="button"
+        class="flex items-center gap-1 rounded-lg px-2 py-1 hover:bg-gray-100 dark:hover:bg-gray-800"
+      >
+        Filtros
+        <span id="filter-count" class="hidden ml-1 rounded-full bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900 dark:text-primary-300">0</span>
+      </button>
+      <span class="text-gray-400">
+        Presiona <kbd class="rounded bg-gray-100 px-1.5 py-0.5 font-mono text-xs dark:bg-gray-700">/</kbd> para buscar
+      </span>
+    </div>
+  </form>
 
-  .dark {
-    --pagefind-ui-primary: #22c55e;
-    --pagefind-ui-text: #f3f4f6;
-    --pagefind-ui-background: #1f2937;
-    --pagefind-ui-border: #374151;
-    --pagefind-ui-tag: #374151;
-  }
+  <!-- Filters panel -->
+  <div id="filters-panel" class="hidden mt-2 rounded-lg border border-gray-200 bg-white p-3 dark:border-gray-700 dark:bg-gray-800 space-y-3">
+    <!-- Filter by document type -->
+    <div>
+      <label class="block text-xs font-medium text-gray-500 mb-2">Tipo de documento</label>
+      <div class="flex flex-wrap gap-2">
+        {tiposDocumento.map((tipo) => (
+          <button
+            type="button"
+            data-filter-tipo={tipo.value}
+            data-color={tipo.color}
+            class="filter-chip rounded-full px-3 py-1 text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
+          >
+            {tipo.label}
+          </button>
+        ))}
+      </div>
+    </div>
 
-  .pagefind-ui__search-input {
-    font-size: 1rem !important;
-    padding: 0.75rem 1rem !important;
-  }
+    <!-- Filter by specific law -->
+    <div>
+      <label class="block text-xs font-medium text-gray-500 mb-2">Ley específica</label>
+      <div class="flex flex-wrap gap-2">
+        {leyes.map((ley) => (
+          <button
+            type="button"
+            data-filter-ley={ley.codigo}
+            title={ley.nombre}
+            class="filter-chip rounded-full px-3 py-1 text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
+          >
+            {ley.codigo}
+          </button>
+        ))}
+      </div>
+    </div>
 
-  .pagefind-ui__result {
-    padding: 1rem !important;
-    border-radius: var(--pagefind-ui-border-radius) !important;
-    margin-bottom: 0.5rem !important;
-  }
+    <!-- Clear filters -->
+    <div id="clear-filters-wrap" class="hidden pt-2 border-t border-gray-200 dark:border-gray-700">
+      <button
+        id="clear-filters"
+        type="button"
+        class="text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+      >
+        Limpiar todos los filtros
+      </button>
+    </div>
+  </div>
 
-  .pagefind-ui__result:hover {
-    background: var(--pagefind-ui-tag) !important;
-  }
-
-  .pagefind-ui__result-link {
-    font-weight: 600 !important;
-  }
-
-  .pagefind-ui__result-excerpt {
-    margin-top: 0.5rem !important;
-  }
-
-  /* Hide images from results */
-  .pagefind-ui__result-image {
-    display: none !important;
-  }
-
-  /* Hide Pagefind branding */
-  .pagefind-ui__suppressed {
-    display: none !important;
-  }
-</style>
+  <!-- Results -->
+  <div id="search-results" class="hidden mt-4">
+    <p id="results-count" class="text-sm text-gray-500 mb-3"></p>
+    <div id="results-list" class="space-y-2"></div>
+  </div>
+</div>
 
 <script>
-  import { PagefindUI } from '@pagefind/default-ui';
+  // State
+  let pagefind: any = null;
+  let selectedTipos: string[] = [];
+  let selectedLeyes: string[] = [];
 
-  // Wait for DOM to be ready
-  document.addEventListener('DOMContentLoaded', () => {
-    new PagefindUI({
-      element: '#search',
-      showSubResults: true,
-      showImages: false,
-      translations: {
-        placeholder: 'Buscar artículos...',
-        zero_results: 'No se encontraron resultados para "[SEARCH_TERM]"',
-        many_results: '[COUNT] resultados',
-        one_result: '1 resultado',
-        filters_label: 'Filtros:',
-        clear_search: 'Limpiar'
+  // Elements
+  const form = document.getElementById('search-form') as HTMLFormElement;
+  const input = document.getElementById('search-input') as HTMLInputElement;
+  const clearBtn = document.getElementById('clear-btn');
+  const filtersToggle = document.getElementById('filters-toggle');
+  const filtersPanel = document.getElementById('filters-panel');
+  const filterCount = document.getElementById('filter-count');
+  const clearFiltersWrap = document.getElementById('clear-filters-wrap');
+  const clearFilters = document.getElementById('clear-filters');
+  const resultsDiv = document.getElementById('search-results');
+  const resultsCount = document.getElementById('results-count');
+  const resultsList = document.getElementById('results-list');
+
+  // Initialize Pagefind lazily (dynamic import at runtime, not build time)
+  async function initPagefind() {
+    if (pagefind) return pagefind;
+    try {
+      // Use Function constructor to prevent Vite from analyzing this import
+      const importPagefind = new Function('return import("/pagefind/pagefind.js")');
+      pagefind = await importPagefind();
+      await pagefind.init();
+      // Debug: show available filters
+      const filters = await pagefind.filters();
+      console.log('Available Pagefind filters:', filters);
+      return pagefind;
+    } catch (e) {
+      console.error('Failed to load Pagefind:', e);
+      return null;
+    }
+  }
+
+  // Perform search
+  async function doSearch(query: string) {
+    if (!query.trim()) {
+      resultsDiv?.classList.add('hidden');
+      return;
+    }
+
+    const pf = await initPagefind();
+    if (!pf) return;
+
+    // Pagefind uses AND for multiple filter values, but we need OR
+    // Solution: do separate searches and combine results
+    let allResults: any[] = [];
+    const seenUrls = new Set<string>();
+
+    // If no filters, do a simple search
+    if (selectedTipos.length === 0 && selectedLeyes.length === 0) {
+      const search = await pf.search(query);
+      allResults = search.results;
+    } else {
+      // Build filter combinations - we need OR between leyes and OR between tipos
+      // Strategy: search for each ley separately, then deduplicate
+      const leyesToSearch = selectedLeyes.length > 0 ? selectedLeyes : [null];
+      const tiposToSearch = selectedTipos.length > 0 ? selectedTipos : [null];
+
+      for (const ley of leyesToSearch) {
+        for (const tipo of tiposToSearch) {
+          const filters: Record<string, string> = {};
+          if (ley) filters.ley = ley;
+          if (tipo) filters.tipo = tipo;
+
+          const search = await pf.search(query, { filters });
+
+          // Add unique results
+          for (const result of search.results) {
+            const data = await result.data();
+            if (!seenUrls.has(data.url)) {
+              seenUrls.add(data.url);
+              allResults.push(result);
+            }
+          }
+        }
       }
+    }
+
+    console.log('Search results:', allResults.length);
+
+    resultsDiv?.classList.remove('hidden');
+
+    if (allResults.length === 0) {
+      if (resultsCount) resultsCount.textContent = `No se encontraron resultados para "${query}"`;
+      if (resultsList) resultsList.innerHTML = '';
+      return;
+    }
+
+    if (resultsCount) {
+      resultsCount.textContent = `${allResults.length} ${allResults.length === 1 ? 'resultado' : 'resultados'}`;
+    }
+
+    // Load first 20 results (increased from 10)
+    const loaded = await Promise.all(
+      allResults.slice(0, 20).map((r: any) => r.data())
+    );
+
+    if (resultsList) {
+      resultsList.innerHTML = loaded.map((result: any) => `
+        <a href="${result.url}" class="block p-3 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+          <div class="flex items-center gap-2 mb-1">
+            ${result.meta?.ley ? `<span class="text-xs font-medium px-2 py-0.5 rounded bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">${result.meta.ley}</span>` : ''}
+            <span class="font-semibold text-gray-900 dark:text-white">${result.meta?.title || 'Sin título'}</span>
+          </div>
+          <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">${result.excerpt}</p>
+        </a>
+      `).join('');
+    }
+  }
+
+  // Update filter count badge
+  function updateFilterCount() {
+    const total = selectedTipos.length + selectedLeyes.length;
+    if (filterCount) {
+      filterCount.textContent = total.toString();
+      filterCount.classList.toggle('hidden', total === 0);
+    }
+    clearFiltersWrap?.classList.toggle('hidden', total === 0);
+  }
+
+  // Update chip visual state
+  function updateChipState(btn: HTMLElement, active: boolean) {
+    if (active) {
+      const color = btn.dataset.color || 'bg-primary-600';
+      btn.classList.remove('bg-gray-100', 'text-gray-700', 'dark:bg-gray-700', 'dark:text-gray-300');
+      btn.classList.add(color, 'text-white');
+    } else {
+      const color = btn.dataset.color || 'bg-primary-600';
+      btn.classList.remove(color, 'text-white');
+      btn.classList.add('bg-gray-100', 'text-gray-700', 'dark:bg-gray-700', 'dark:text-gray-300');
+    }
+  }
+
+  // Event: Form submit
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    doSearch(input.value);
+  });
+
+  // Event: Input change (show/hide clear button)
+  input?.addEventListener('input', () => {
+    clearBtn?.classList.toggle('hidden', !input.value);
+  });
+
+  // Event: Clear input
+  clearBtn?.addEventListener('click', () => {
+    input.value = '';
+    clearBtn.classList.add('hidden');
+    resultsDiv?.classList.add('hidden');
+    input.focus();
+  });
+
+  // Event: Toggle filters
+  filtersToggle?.addEventListener('click', () => {
+    filtersPanel?.classList.toggle('hidden');
+  });
+
+  // Event: Filter chip clicks
+  document.querySelectorAll('[data-filter-tipo]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const tipo = (btn as HTMLElement).dataset.filterTipo!;
+      const idx = selectedTipos.indexOf(tipo);
+      if (idx >= 0) {
+        selectedTipos.splice(idx, 1);
+        updateChipState(btn as HTMLElement, false);
+      } else {
+        selectedTipos.push(tipo);
+        updateChipState(btn as HTMLElement, true);
+      }
+      updateFilterCount();
+      if (input.value) doSearch(input.value);
     });
+  });
+
+  document.querySelectorAll('[data-filter-ley]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const ley = (btn as HTMLElement).dataset.filterLey!;
+      const idx = selectedLeyes.indexOf(ley);
+      if (idx >= 0) {
+        selectedLeyes.splice(idx, 1);
+        updateChipState(btn as HTMLElement, false);
+      } else {
+        selectedLeyes.push(ley);
+        updateChipState(btn as HTMLElement, true);
+      }
+      updateFilterCount();
+      if (input.value) doSearch(input.value);
+    });
+  });
+
+  // Event: Clear all filters
+  clearFilters?.addEventListener('click', () => {
+    selectedTipos = [];
+    selectedLeyes = [];
+    document.querySelectorAll('.filter-chip').forEach((btn) => {
+      updateChipState(btn as HTMLElement, false);
+    });
+    updateFilterCount();
+    if (input.value) doSearch(input.value);
+  });
+
+  // Event: Keyboard shortcut "/"
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && document.activeElement?.tagName !== 'INPUT') {
+      e.preventDefault();
+      input?.focus();
+    }
+    if (e.key === 'Escape') {
+      input?.blur();
+      resultsDiv?.classList.add('hidden');
+    }
   });
 </script>

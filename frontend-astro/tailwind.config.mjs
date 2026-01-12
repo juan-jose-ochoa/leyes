@@ -9,8 +9,12 @@ export default {
     'badge-laboral',
     'badge-constitucional',
     'bg-emerald-500',
+    'bg-emerald-600',
     'bg-blue-500',
+    'bg-blue-600',
     'bg-orange-500',
+    'bg-amber-600',
+    'bg-primary-600',
   ],
   theme: {
     extend: {

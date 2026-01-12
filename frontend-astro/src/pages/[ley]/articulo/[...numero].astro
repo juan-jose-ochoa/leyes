@@ -217,7 +217,8 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
         <!-- Law name -->
         <p class="text-gray-600 dark:text-gray-400 mb-6">{leyInfo.nombre}</p>
 
-        <p class="hidden" data-pagefind-meta="ley">{leyInfo.codigo}</p>
+        <p class="hidden" data-pagefind-meta="ley" data-pagefind-filter="ley">{leyInfo.codigo}</p>
+        <p class="hidden" data-pagefind-filter="tipo">{leyInfo.tipo}</p>
 
         {/* TOC si tiene fracciones */}
         {tieneParrafos && !isDerogado && (
