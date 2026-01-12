@@ -16,6 +16,7 @@ interface Parrafo {
   identificador: string | null;
   contenido: string;
   padre_numero: number | null;
+  referencias?: string[];
   x_id?: number;
   x_texto?: number;
   y?: number;
@@ -24,9 +25,10 @@ interface Parrafo {
 
 interface Props {
   parrafos: Parrafo[];
+  mostrarReferencias?: boolean;
 }
 
-const { parrafos } = Astro.props;
+const { parrafos, mostrarReferencias = true } = Astro.props;
 
 // Calcular nivel de cada párrafo basado en padre_numero
 function calcularNiveles(parrafos: Parrafo[]): Map<number, number> {
@@ -144,6 +146,13 @@ const niveles = calcularNiveles(parrafos);
         <span class="text-gray-800 dark:text-gray-200">
           {limpiarContenido(p.contenido, p.tipo)}
         </span>
+        {mostrarReferencias && p.referencias && p.referencias.length > 0 && (
+          <div class="text-right mt-1">
+            {p.referencias.map((ref) => (
+              <p class="text-xs italic text-blue-600 dark:text-blue-400">{ref}</p>
+            ))}
+          </div>
+        )}
       </div>
     );
   })}

@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import FraccionesView from '../../../components/FraccionesView.astro';
 import ArticleToc from '../../../components/ArticleToc.astro';
 import ThemeToggle from '../../../components/ThemeToggle.astro';
+import ReferenciasList from '../../../components/ReferenciasList.astro';
 import catalogo from '../../../data/catalogo.json';
 
 interface BreadcrumbItem {
@@ -79,12 +80,14 @@ interface Props {
     tipo: string;
     contenido: string;
     pagina: number;
+    referencias?: string;
     parrafos: Array<{
       numero: number;
       tipo: string;
       identificador: string | null;
       contenido: string;
       padre_numero: number | null;
+      referencias?: string[];
     }>;
   };
   leyInfo: typeof catalogo.leyes[0];
@@ -223,6 +226,11 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
         {/* TOC si tiene fracciones */}
         {tieneParrafos && !isDerogado && (
           <ArticleToc parrafos={articulo.parrafos} />
+        )}
+
+        {/* Referencias cruzadas (solo RMF) */}
+        {articulo.referencias && (
+          <ReferenciasList referencias={articulo.referencias} />
         )}
 
         <div id="legal-content">

@@ -81,6 +81,7 @@ def generar_articulos_json(contenido: dict, ley_config: dict) -> list:
             "y": primer_parrafo.get("y", 0),
             "contenido": contenido_texto,
             "parrafos": art.get("parrafos", []),
+            "referencias": art.get("referencias"),
         }
 
         articulos.append(articulo_astro)
