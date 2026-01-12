@@ -1,0 +1,31 @@
+# Cloudflare Pages Headers
+# https://developers.cloudflare.com/pages/configuration/headers/
+
+# Assets inmutables (hashed por Astro)
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Pagefind index (actualiza con cada build)
+/pagefind/*
+  Cache-Control: public, max-age=86400
+
+# Fuentes
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML (siempre revalidar)
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Sitemap y robots
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+
+/robots.txt
+  Cache-Control: public, max-age=86400
+
+# Security headers
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin

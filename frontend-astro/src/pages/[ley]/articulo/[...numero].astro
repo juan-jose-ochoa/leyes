@@ -61,7 +61,21 @@ const isDerogado = articulo.tipo === 'derogado';
 const tieneParrafos = articulo.parrafos && articulo.parrafos.length > 0;
 ---
 
-<BaseLayout title={`Artículo ${articulo.numero} - ${leyInfo.codigo}`}>
+<BaseLayout title={`Artículo ${articulo.numero} - ${leyInfo.codigo}`} article={true} description={`${leyInfo.nombre} - Artículo ${articulo.numero}. Texto completo y actualizado.`}>
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "name": `Artículo ${articulo.numero}`,
+    "description": `${leyInfo.nombre} - Artículo ${articulo.numero}`,
+    "isPartOf": {
+      "@type": "Legislation",
+      "name": leyInfo.nombre,
+      "alternateName": leyInfo.codigo
+    },
+    "inLanguage": "es-MX",
+    "jurisdiction": "MX"
+  })} />
   <div class="min-h-screen flex flex-col">
     <!-- Header fijo -->
     <header class="sticky top-0 z-10 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 px-4 py-3">

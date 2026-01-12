@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leyesmx.com/sitemap.xml
+
+# Crawl-delay para ser amigables con el servidor
+Crawl-delay: 1
