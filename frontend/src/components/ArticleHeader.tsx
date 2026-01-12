@@ -114,9 +114,11 @@ export default function ArticleHeader({
 
         {/* Controles */}
         <div className="flex items-center gap-2 shrink-0">
-          {/* View Mode Toggle */}
+          {/* View Mode Toggle - solo desktop (iOS/Android no sincronizan bien) */}
           {hasPdf && (
-            <ViewModeToggle mode={viewMode} onModeChange={onViewModeChange} />
+            <div className="hidden lg:block">
+              <ViewModeToggle mode={viewMode} onModeChange={onViewModeChange} />
+            </div>
           )}
 
           {/* Theme Toggle */}
