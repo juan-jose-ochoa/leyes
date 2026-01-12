@@ -5,9 +5,10 @@ interface Props {
   title: string;
   description?: string;
   article?: boolean;
+  hideFloatingToggle?: boolean;
 }
 
-const { title, description = 'Buscador de leyes fiscales y laborales mexicanas', article = false } = Astro.props;
+const { title, description = 'Buscador de leyes fiscales y laborales mexicanas', article = false, hideFloatingToggle = false } = Astro.props;
 const canonicalUrl = Astro.url.href;
 const siteName = 'LeyesMX';
 ---
@@ -49,10 +50,12 @@ const siteName = 'LeyesMX';
     <title>{title}</title>
   </head>
   <body class="min-h-screen">
-    <!-- Theme toggle fixed in corner -->
-    <div class="fixed top-4 right-4 z-50">
-      <ThemeToggle />
-    </div>
+    <!-- Theme toggle fixed in corner (hidden when page has its own toggle) -->
+    {!hideFloatingToggle && (
+      <div class="fixed top-4 right-4 z-50">
+        <ThemeToggle />
+      </div>
+    )}
     <slot />
     <script is:inline>
       // Dark mode initialization
