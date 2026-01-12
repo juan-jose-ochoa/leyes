@@ -39,8 +39,8 @@ function getAnclaId(p: Parrafo): string {
   return `p-${p.numero}`;
 }
 
-// No mostrar TOC si hay pocas fracciones
-const mostrarToc = fracciones.length >= 3;
+// Mostrar TOC si hay 2+ fracciones
+const mostrarToc = fracciones.length >= 2;
 ---
 
 {mostrarToc && (
@@ -69,7 +69,7 @@ const mostrarToc = fracciones.length >= 3;
 
             {/* Dropdown de incisos */}
             {tieneIncisos && (
-              <div class="absolute left-0 top-full mt-1 hidden group-hover:block z-20">
+              <div class="absolute left-0 top-full hidden group-hover:block z-20 pt-1">
                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 p-2 min-w-[120px]">
                   <div class="flex flex-wrap gap-1">
                     {incisos.map((inciso) => (
