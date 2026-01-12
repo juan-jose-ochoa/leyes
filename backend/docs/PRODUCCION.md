@@ -1,4 +1,11 @@
-# LeyesMX - Despliegue en Producción
+# LeyesMX - Producción
+
+## Servidor
+
+- **IP:** `54.202.41.70`
+- **SSH:** `ssh jochoa@54.202.41.70`
+- **Dominio API:** `api.leyesfiscalesmexico.com`
+- **Frontend:** `leyes.pages.dev` (Cloudflare Pages)
 
 ## Arquitectura
 
@@ -6,135 +13,134 @@
                     Internet
                         │
                         ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    Caddy Server                             │
-│              (HTTPS, CORS, Rate Limiting)                   │
-│                                                             │
-│  leyesmx.tudominio.com     → /frontend/dist (static)        │
-│  leyesmx.tudominio.com/api → localhost:3010 (PostgREST)     │
-└─────────────────────────────────────────────────────────────┘
-                        │
+                  ┌───────────┐
+                  │Cloudflare │
+                  └─────┬─────┘
           ┌─────────────┴─────────────┐
           ▼                           ▼
-    ┌──────────┐               ┌────────────┐
-    │ PostgREST│               │ PostgreSQL │
-    │  :3010   │──────────────►│   :5432    │
-    └──────────┘               └────────────┘
+   leyes.pages.dev            api.leyesfiscalesmexico.com
+   (Frontend)                         │
+                                      ▼
+                              ┌─────────────┐
+                              │   Caddy     │ :443
+                              │  (54.202.41.70)
+                              └──────┬──────┘
+                                     │
+                    ┌────────────────┼────────────────┐
+                    ▼                ▼                ▼
+              /leyesmx/*        /pdfs/*          / (health)
+                    │                │
+                    ▼                ▼
+              ┌──────────┐    /var/www/leyesmx/pdfs/
+              │PostgREST │
+              │  :3000   │
+              └────┬─────┘
+                   │
+                   ▼
+              ┌──────────┐
+              │PostgreSQL│
+              │  :5432   │
+              └──────────┘
 ```
 
-## Instalación de Caddy
+## Estructura en Servidor
+
+```
+/var/www/leyesmx/
+└── pdfs/
+    ├── cff/documento.pdf
+    ├── lisr/documento.pdf
+    └── ...
+```
+
+---
+
+# Despliegue
+
+## Backend (BD + PDFs)
 
 ```bash
-sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
-sudo apt update && sudo apt install caddy
+./deploy-backend.sh
 ```
 
-## Caddyfile
+El script:
+1. Exporta el schema `leyesmx` de la BD local
+2. Sube el dump al servidor
+3. Restaura la BD en el servidor (pide contraseña sudo)
+4. Reinicia PostgREST
+5. Sube todos los PDFs al servidor
 
-Crear `/etc/caddy/Caddyfile`:
+## Frontend
 
+Cloudflare Pages despliega automáticamente desde el repositorio:
+
+```bash
+git push origin main
+```
+
+---
+
+# Configuración Inicial (solo primera vez)
+
+## Caddy - Agregar ruta de PDFs
+
+```bash
+ssh jochoa@54.202.41.70
+sudo nano /etc/caddy/Caddyfile
+```
+
+Contenido completo:
 ```caddyfile
-leyesmx.tudominio.com {
-    log {
-        output file /var/log/caddy/leyesmx.log
-        format json
+api.leyesfiscalesmexico.com {
+    tls /etc/caddy/certs/leyesfiscalesmexico.pem /etc/caddy/certs/leyesfiscalesmexico-key.pem
+
+    # API
+    handle /leyesmx/* {
+        uri strip_prefix /leyesmx
+        reverse_proxy localhost:3000
     }
 
-    # CORS para API
-    header /api/* {
-        Access-Control-Allow-Origin "https://leyesmx.tudominio.com"
-        Access-Control-Allow-Methods "GET, POST, OPTIONS"
-        Access-Control-Allow-Headers "Content-Type, Authorization"
-    }
-
-    # Preflight CORS
-    @options method OPTIONS
-    handle @options {
-        respond "" 204
-    }
-
-    # API: proxy a PostgREST
-    handle /api/* {
-        uri strip_prefix /api
-        reverse_proxy localhost:3010
-    }
-
-    # Frontend: archivos estáticos
-    handle {
-        root * /var/www/leyesmx/dist
-        try_files {path} /index.html
+    # PDFs
+    handle /pdfs/* {
+        root * /var/www/leyesmx
         file_server
+        header Cache-Control "public, max-age=604800"
     }
 
-    # Seguridad
-    header {
-        X-Content-Type-Options "nosniff"
-        X-Frame-Options "DENY"
-        -Server
+    handle {
+        respond "OK" 200
     }
-
-    encode gzip zstd
 }
 ```
 
-## Despliegue del Frontend
+```bash
+sudo systemctl reload caddy
+exit
+```
+
+---
+
+# Verificación
 
 ```bash
-npm run build
-sudo mkdir -p /var/www/leyesmx
-sudo cp -r frontend/dist/* /var/www/leyesmx/
-sudo chown -R caddy:caddy /var/www/leyesmx
+# API
+curl -s https://api.leyesfiscalesmexico.com/leyesmx/v_leyes | head
+
+# PDF (debe retornar 200)
+curl -I https://api.leyesfiscalesmexico.com/pdfs/cff/documento.pdf
+
+# Frontend
+curl -s https://leyes.pages.dev | head
 ```
 
-## Servicio PostgREST (systemd)
-
-Crear `/etc/systemd/system/postgrest.service`:
-
-```ini
-[Unit]
-Description=PostgREST API Server
-After=postgresql.service
-
-[Service]
-User=postgrest
-ExecStart=/usr/local/bin/postgrest /etc/postgrest/leyesmx.conf
-Restart=always
-EnvironmentFile=/etc/postgrest/env
-
-[Install]
-WantedBy=multi-user.target
-```
+## Verificar Servicios
 
 ```bash
-sudo useradd -r -s /bin/false postgrest
-sudo mkdir -p /etc/postgrest
-sudo cp backend/postgrest.conf /etc/postgrest/leyesmx.conf
-
-# Secretos
-sudo tee /etc/postgrest/env << 'EOF'
-PGRST_DB_URI=postgres://authenticator:PASSWORD@localhost:5432/digiapps
-EOF
-sudo chmod 600 /etc/postgrest/env
-
-sudo systemctl daemon-reload
-sudo systemctl enable --now postgrest
+ssh jochoa@54.202.41.70 "systemctl status postgresql postgrest caddy"
 ```
 
-## Verificación
+---
 
-```bash
-sudo systemctl status caddy postgrest postgresql
+# Instalación Inicial del Servidor
 
-curl -s https://leyesmx.tudominio.com/api/v_leyes | jq
-```
-
-## Checklist de Seguridad
-
-- [ ] Cambiar passwords de PostgreSQL
-- [ ] Firewall: solo puertos 80, 443
-- [ ] PostgREST solo en localhost
-- [ ] PostgreSQL solo en localhost
-- [ ] Backups automáticos
-- [ ] Logs rotativos
+Ver: [docs/production-server.md](../../docs/production-server.md) para instalación desde cero de PostgreSQL, PostgREST, Caddy y certificados SSL.
