@@ -280,24 +280,76 @@ const tiposDocumento = [
       return;
     }
 
-    if (resultsCount) {
-      resultsCount.textContent = `${allResults.length} ${allResults.length === 1 ? 'resultado' : 'resultados'}`;
-    }
-
+    // Load result data with sub_results
     const loaded = await Promise.all(
       allResults.slice(0, 30).map((r: any) => r.data())
     );
 
+    // Build grouped results using sub_results from Pagefind
+    interface SubResult {
+      url: string;
+      title: string;
+      excerpt: string;
+    }
+
+    interface GroupedResult {
+      url: string;
+      meta: any;
+      subResults: SubResult[];
+    }
+
+    const groupedResults: GroupedResult[] = loaded.map((result: any) => {
+      const subResults: SubResult[] = [];
+
+      // If result has sub_results, use them
+      if (result.sub_results && result.sub_results.length > 0) {
+        for (const sub of result.sub_results) {
+          subResults.push({
+            url: sub.url || result.url,
+            title: sub.title || '',
+            excerpt: sub.excerpt || ''
+          });
+        }
+      } else {
+        // Fallback: use main result as single sub-result
+        subResults.push({
+          url: result.url,
+          title: '',
+          excerpt: result.excerpt
+        });
+      }
+
+      return {
+        url: result.url,
+        meta: result.meta,
+        subResults
+      };
+    });
+
+    // Count total sub-results
+    const totalSubResults = groupedResults.reduce((acc, g) => acc + g.subResults.length, 0);
+
+    if (resultsCount) {
+      resultsCount.textContent = `${totalSubResults} ${totalSubResults === 1 ? 'coincidencia' : 'coincidencias'} en ${groupedResults.length} ${groupedResults.length === 1 ? 'artículo' : 'artículos'}`;
+    }
+
     if (resultsList) {
-      resultsList.innerHTML = loaded.map((result: any) => `
-        <a href="${result.url}" class="block p-3 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+      resultsList.innerHTML = groupedResults.map((group) => `
+        <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
           <div class="flex items-center gap-2 mb-1">
-            ${result.meta?.ley ? `<span class="text-xs font-medium px-2 py-0.5 rounded bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">${result.meta.ley}</span>` : ''}
+            ${group.meta?.ley ? `<span class="text-xs font-medium px-2 py-0.5 rounded bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">${group.meta.ley}</span>` : ''}
           </div>
-          <div class="font-semibold text-gray-900 dark:text-white">${result.meta?.title || 'Sin título'}</div>
-          ${result.meta?.seccion ? `<div class="font-semibold text-gray-800 dark:text-gray-200 mb-1">${result.meta.seccion}</div>` : ''}
-          <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">${result.excerpt}</p>
-        </a>
+          <a href="${group.url}" class="font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400">${group.meta?.title || 'Sin título'}</a>
+          ${group.meta?.seccion ? `<div class="font-semibold text-gray-800 dark:text-gray-200 mb-2">${group.meta.seccion}</div>` : ''}
+          <div class="space-y-2 mt-2">
+            ${group.subResults.map((sub) => `
+              <a href="${sub.url}" class="block p-2 rounded bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                ${sub.title ? `<span class="text-xs font-medium text-primary-600 dark:text-primary-400">${sub.title}</span>` : ''}
+                <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">${sub.excerpt}</p>
+              </a>
+            `).join('')}
+          </div>
+        </div>
       `).join('');
     }
 

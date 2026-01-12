@@ -127,17 +127,22 @@ const niveles = calcularNiveles(parrafos);
 ---
 
 <div class="prose-legal space-y-3">
-  {parrafos.map((p) => {
+  {parrafos.map((p, idx) => {
     const nivel = niveles.get(p.numero) ?? 0;
     const estilos = getEstilos(p.tipo, nivel);
     const sufijo = getSufijo(p.tipo);
     const anclaId = getAnclaId(p);
+    const parrafoLabel = p.identificador
+      ? `${p.tipo.charAt(0).toUpperCase() + p.tipo.slice(1)} ${p.identificador}`
+      : `Párrafo ${idx + 1}`;
 
     return (
       <div
         id={anclaId}
         class={`p-3 rounded-r-lg ${estilos.border} ${estilos.bg} ${estilos.margin} scroll-mt-20`}
       >
+        {/* Heading oculto para Pagefind sub-results */}
+        <h6 id={`${anclaId}-h`} class="sr-only">{parrafoLabel}</h6>
         {p.identificador && (
           <span class={`font-semibold ${estilos.idColor} mr-2`}>
             {p.identificador}{sufijo}
