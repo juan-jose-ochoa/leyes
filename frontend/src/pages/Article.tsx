@@ -1,18 +1,20 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { Copy, Check, ExternalLink, BookOpen, ChevronLeft, ChevronRight, Home, FileText, X } from 'lucide-react'
+import { Copy, Check, ExternalLink, BookOpen } from 'lucide-react'
+import clsx from 'clsx'
 import ReferenciasList from '@/components/ReferenciasList'
 import { useArticle, useArticuloPorLey, useNavegacion, useDivisionesArticulo, useFraccionesArticulo, useArticuloPdf } from '@/hooks/useArticle'
 import ArticleContent from '@/components/ArticleContent'
 import ArticleToc from '@/components/ArticleToc'
 import PdfViewer from '@/components/PdfViewer'
-import clsx from 'clsx'
+import ArticleHeader from '@/components/ArticleHeader'
+import ArticleFooter from '@/components/ArticleFooter'
+import { useViewMode } from '@/hooks/useViewMode'
 
 export default function Article() {
   const params = useParams<{ id?: string; ley?: string; '*'?: string }>()
   const { id, ley } = params
-  // El numero viene del wildcard (*) para soportar "/" en el valor (ej: "13/LISH")
   const numero = params['*'] || undefined
   const location = useLocation()
   const pathname = location.pathname
@@ -20,26 +22,26 @@ export default function Article() {
   const esRutaFicha = pathname.includes('/ficha/')
   const esRutaCriterio = pathname.includes('/criterio/')
 
-  // Usar el hook apropiado según los parámetros
+  // Hooks de datos
   const porLey = useArticuloPorLey(ley ?? null, numero ?? null)
   const porId = useArticle(id && !ley ? parseInt(id) : null)
-
   const { data: articulo, isLoading, error } = ley ? porLey : porId
   const { data: navegacion } = useNavegacion(articulo?.id ?? null)
   const { data: divisiones } = useDivisionesArticulo(articulo?.id ?? null)
   const { data: fracciones } = useFraccionesArticulo(articulo?.id ?? null, ley ?? undefined)
   const { data: coordenadasPdf } = useArticuloPdf(articulo?.id ?? null)
+
+  // Estados locales
   const [copied, setCopied] = useState(false)
   const [mostrarReferencias, setMostrarReferencias] = useState(false)
-  const [mostrarPdf, setMostrarPdf] = useState(false)
+  const { mode: viewMode, setMode: setViewMode } = useViewMode('text')
 
-  // Scroll a hash al cargar la página (después de que carguen las fracciones)
+  // Scroll a hash al cargar
   useEffect(() => {
     if (location.hash && fracciones && fracciones.length > 0) {
-      const anchorId = location.hash.slice(1) // Remover '#'
+      const anchorId = location.hash.slice(1)
       const element = document.getElementById(anchorId)
       if (element) {
-        // Pequeño delay para asegurar que el DOM está listo
         setTimeout(() => {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }, 100)
@@ -47,7 +49,7 @@ export default function Article() {
     }
   }, [location.hash, fracciones])
 
-  // Determinar el tipo basándose en el tipo del artículo o la ruta
+  // Determinar tipo
   const esRegla = articulo?.tipo === 'regla' || esRutaRegla
   const esFicha = articulo?.tipo === 'ficha' || esRutaFicha
   const esCriterio = articulo?.tipo === 'criterio' || esRutaCriterio
@@ -63,54 +65,59 @@ export default function Article() {
     setTimeout(() => setCopied(false), 2000)
   }
 
+  // Loading
   if (isLoading) {
     return (
-      <div className="mx-auto max-w-4xl animate-pulse space-y-4">
-        <div className="h-6 w-48 rounded bg-gray-200 dark:bg-gray-700" />
-        <div className="h-10 w-3/4 rounded bg-gray-200 dark:bg-gray-700" />
-        <div className="space-y-2 mt-8">
-          <div className="h-4 rounded bg-gray-200 dark:bg-gray-700" />
-          <div className="h-4 rounded bg-gray-200 dark:bg-gray-700" />
-          <div className="h-4 w-5/6 rounded bg-gray-200 dark:bg-gray-700" />
+      <div className="min-h-screen pt-14 pb-14">
+        <div className="mx-auto max-w-4xl px-4 py-8 animate-pulse space-y-4">
+          <div className="h-6 w-48 rounded bg-gray-200 dark:bg-gray-700" />
+          <div className="h-10 w-3/4 rounded bg-gray-200 dark:bg-gray-700" />
+          <div className="space-y-2 mt-8">
+            <div className="h-4 rounded bg-gray-200 dark:bg-gray-700" />
+            <div className="h-4 rounded bg-gray-200 dark:bg-gray-700" />
+            <div className="h-4 w-5/6 rounded bg-gray-200 dark:bg-gray-700" />
+          </div>
         </div>
       </div>
     )
   }
 
+  // Error
   if (error || !articulo) {
     const tipoTexto = esRutaRegla ? 'regla' : 'artículo'
     return (
-      <div className="py-12 text-center">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-          {esRutaRegla ? 'Regla' : 'Artículo'} no encontrado
-        </h2>
-        <p className="mt-2 text-gray-500">
-          El {tipoTexto} que buscas no existe o ha sido eliminado.
-        </p>
-        <Link to="/" className="btn-primary mt-4 inline-flex">
-          Volver al inicio
-        </Link>
+      <div className="min-h-screen pt-14 pb-14">
+        <div className="py-12 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+            {esRutaRegla ? 'Regla' : 'Artículo'} no encontrado
+          </h2>
+          <p className="mt-2 text-gray-500">
+            El {tipoTexto} que buscas no existe o ha sido eliminado.
+          </p>
+          <Link to="/" className="btn-primary mt-4 inline-flex">
+            Volver al inicio
+          </Link>
+        </div>
       </div>
     )
   }
 
-  // SEO: título y descripción dinámicos
+  // SEO
   const seoTitle = `${etiquetaTipo} ${articulo.numero_raw} ${articulo.ley} - ${articulo.ley_nombre}`
   const seoDescription = articulo.titulo
     ? `${articulo.titulo}. ${articulo.contenido.slice(0, 150)}...`
     : articulo.contenido.slice(0, 200) + '...'
 
-  // URL del PDF basada en el código de ley
-  const pdfUrl = articulo ? `/pdfs/${articulo.ley.toLowerCase()}/documento.pdf` : ''
+  // PDF URL
+  const pdfUrl = `/pdfs/${articulo.ley.toLowerCase()}/documento.pdf`
+  const hasPdf = !!coordenadasPdf
+
+  // Determinar qué mostrar según modo
+  // Texto: siempre visible en móvil, oculto en lg+ solo si modo PDF
+  const showPdf = (viewMode === 'pdf' || viewMode === 'split') && hasPdf
 
   return (
-    <div className={clsx(
-      mostrarPdf ? 'grid lg:grid-cols-2 gap-6' : '',
-      'mx-auto',
-      mostrarPdf ? 'max-w-7xl' : 'max-w-4xl'
-    )}>
-      {/* Contenido del artículo */}
-      <div>
+    <>
       <Helmet>
         <title>{seoTitle}</title>
         <link rel="canonical" href={`https://leyesfiscalesmexico.com${location.pathname}`} />
@@ -120,300 +127,220 @@ export default function Article() {
         <meta property="og:type" content="article" />
       </Helmet>
 
-      {/* Breadcrumbs - Sticky en móvil */}
-      <nav className="sticky top-0 z-10 -mx-4 px-4 py-3 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 mb-6 md:static md:bg-transparent md:dark:bg-transparent md:border-0 md:backdrop-blur-none md:mb-4">
-        <ol className="flex items-center gap-1 text-sm overflow-x-auto">
-          {/* Home */}
-          <li className="shrink-0">
-            <Link
-              to="/"
-              className="flex items-center gap-1 text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
-            >
-              <Home className="h-4 w-4" />
-              <span className="sr-only md:not-sr-only">Inicio</span>
-            </Link>
-          </li>
-
-          <ChevronRight className="h-4 w-4 text-gray-400 shrink-0" />
-
-          {/* Ley */}
-          <li className="shrink-0">
-            <Link
-              to={`/${ley || articulo.ley}`}
-              className={clsx(
-                'inline-flex items-center px-2 py-0.5 rounded text-xs font-medium hover:opacity-80 transition-opacity',
-                articulo.ley_tipo === 'resolucion'
-                  ? 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200'
-                  : articulo.ley_tipo === 'ley'
-                    ? 'bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-200'
-                    : 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
-              )}
-            >
-              {articulo.ley}
-            </Link>
-          </li>
-
-          {/* Divisiones (Título, Capítulo, etc.) */}
-          {divisiones?.map((div, idx) => {
-            // Construir path jerárquico acumulativo: titulo/PRIMERO/capitulo/I
-            const pathParts = divisiones.slice(0, idx + 1).map(d => `${d.tipo}/${d.numero}`)
-            const divPath = `/${ley || articulo.ley}/${pathParts.join('/')}`
-            return (
-              <li key={div.id} className="flex items-center gap-1 shrink-0">
-                <ChevronRight className="h-4 w-4 text-gray-400" />
-                <Link
-                  to={divPath}
-                  className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 whitespace-nowrap transition-colors"
-                >
-                  {div.tipo.charAt(0).toUpperCase() + div.tipo.slice(1)} {div.numero}
-                </Link>
-              </li>
-            )
-          })}
-
-          {/* Artículo actual */}
-          <li className="flex items-center gap-1 shrink-0">
-            <ChevronRight className="h-4 w-4 text-gray-400" />
-            <span className="font-medium text-gray-900 dark:text-white whitespace-nowrap">
-              {etiquetaTipo} {articulo.numero_raw}
-            </span>
-          </li>
-        </ol>
-      </nav>
-
-      {/* Header del artículo */}
-      <div className="mb-8 prose-legal">
-        {/* División padre (Capítulo, Sección, etc.) */}
-        {divisiones && divisiones.length > 0 && (
-          <Link
-            to={`/${ley || articulo.ley}/${divisiones.map(d => `${d.tipo}/${d.numero}`).join('/')}`}
-            className="inline-flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 mb-2"
-          >
-            <span className="uppercase font-medium">
-              {divisiones[divisiones.length - 1].tipo} {divisiones[divisiones.length - 1].numero}
-            </span>
-            <span>-</span>
-            <span>{divisiones[divisiones.length - 1].nombre}</span>
-          </Link>
-        )}
-
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-          {etiquetaTipo} {articulo.numero_raw}
-        </h1>
-
-        {/* Título de la regla (si existe) */}
-        {articulo.titulo && (
-          <p className="mt-2 text-xl font-semibold text-gray-800 dark:text-gray-200 italic">
-            {articulo.titulo}
-          </p>
-        )}
-
-        <p className="mt-2 text-gray-500 dark:text-gray-400">
-          {articulo.ley_nombre}
-        </p>
-
-        <div className="mt-4 flex flex-wrap items-center gap-3">
-          <button
-            onClick={handleCopy}
-            className="btn-secondary inline-flex items-center gap-2"
-          >
-            {copied ? (
-              <>
-                <Check className="h-4 w-4" />
-                Copiado
-              </>
-            ) : (
-              <>
-                <Copy className="h-4 w-4" />
-                Copiar
-              </>
-            )}
-          </button>
-
-          {fracciones && fracciones.length > 0 && (
-            <button
-              onClick={() => setMostrarReferencias(!mostrarReferencias)}
-              className={clsx(
-                'px-3 py-1.5 rounded-lg text-sm font-medium transition-colors',
-                mostrarReferencias
-                  ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'
-                  : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
-              )}
-            >
-              {mostrarReferencias ? 'Ocultar referencias' : 'Mostrar referencias'}
-            </button>
-          )}
-
-          {articulo.es_transitorio && (
-            <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200">
-              Transitorio
-            </span>
-          )}
-        </div>
-      </div>
-
-      {/* Tabla de contenido - Si hay al menos una fracción */}
-      {fracciones && fracciones.length >= 1 && (
-        <ArticleToc fracciones={fracciones} className="mb-6" />
-      )}
+      {/* Header fijo - siempre visible */}
+      <ArticleHeader
+        ley={ley || articulo.ley}
+        leyTipo={articulo.ley_tipo}
+        numeroRaw={articulo.numero_raw}
+        etiquetaTipo={etiquetaTipo}
+        divisiones={divisiones}
+        viewMode={viewMode}
+        onViewModeChange={setViewMode}
+        hasPdf={hasPdf}
+      />
 
       {/* Contenido principal */}
-      <div className="card">
-        <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
-          <ArticleContent articuloId={articulo.id} contenido={articulo.contenido} ley={ley} mostrarReferencias={mostrarReferencias} />
-        </div>
+      <main className="min-h-screen pt-14 pb-14">
+        <div className={clsx(
+          'h-[calc(100vh-7rem)]',
+          viewMode === 'split' && 'lg:grid lg:grid-cols-2',
+        )}>
+          {/* Panel de texto - oculto en modo PDF */}
+          {viewMode !== 'pdf' && (
+            <div className={clsx(
+              'overflow-y-auto',
+              viewMode === 'split' && 'lg:border-r border-gray-200 dark:border-gray-700'
+            )}>
+            <div className={clsx(
+              'px-4 py-6',
+              viewMode !== 'split' && 'max-w-4xl mx-auto'
+            )}>
+                {/* Header del artículo */}
+                <div className="mb-8 prose-legal">
+                  {divisiones && divisiones.length > 0 && (
+                    <Link
+                      to={`/${ley || articulo.ley}/${divisiones.map(d => `${d.tipo}/${d.numero}`).join('/')}`}
+                      className="inline-flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 mb-2"
+                    >
+                      <span className="uppercase font-medium">
+                        {divisiones[divisiones.length - 1].tipo} {divisiones[divisiones.length - 1].numero}
+                      </span>
+                      <span>-</span>
+                      <span>{divisiones[divisiones.length - 1].nombre}</span>
+                    </Link>
+                  )}
 
-        {articulo.reformas && (
-          <div className="mt-6 rounded-lg bg-gray-50 p-4 dark:bg-gray-700/50">
-            <h3 className="mb-2 flex items-center gap-2 font-medium text-gray-900 dark:text-white">
-              <ExternalLink className="h-4 w-4" />
-              Reformas DOF
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              {articulo.reformas}
-            </p>
+                  <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+                    {etiquetaTipo} {articulo.numero_raw}
+                  </h1>
+
+                  {articulo.titulo && (
+                    <p className="mt-2 text-xl font-semibold text-gray-800 dark:text-gray-200 italic">
+                      {articulo.titulo}
+                    </p>
+                  )}
+
+                  <p className="mt-2 text-gray-500 dark:text-gray-400">
+                    {articulo.ley_nombre}
+                  </p>
+
+                  <div className="mt-4 flex flex-wrap items-center gap-3">
+                    <button
+                      onClick={handleCopy}
+                      className="btn-secondary inline-flex items-center gap-2"
+                    >
+                      {copied ? (
+                        <>
+                          <Check className="h-4 w-4" />
+                          Copiado
+                        </>
+                      ) : (
+                        <>
+                          <Copy className="h-4 w-4" />
+                          Copiar
+                        </>
+                      )}
+                    </button>
+
+                    {fracciones && fracciones.length > 0 && (
+                      <button
+                        onClick={() => setMostrarReferencias(!mostrarReferencias)}
+                        className={clsx(
+                          'px-3 py-1.5 rounded-lg text-sm font-medium transition-colors',
+                          mostrarReferencias
+                            ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'
+                            : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+                        )}
+                      >
+                        {mostrarReferencias ? 'Ocultar referencias' : 'Mostrar referencias'}
+                      </button>
+                    )}
+
+                    {articulo.es_transitorio && (
+                      <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200">
+                        Transitorio
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                {/* TOC */}
+                {fracciones && fracciones.length >= 1 && (
+                  <ArticleToc fracciones={fracciones} className="mb-6" />
+                )}
+
+                {/* Contenido */}
+                <div className="card">
+                  <div className="prose prose-gray prose-legal max-w-none dark:prose-invert">
+                    <ArticleContent articuloId={articulo.id} contenido={articulo.contenido} ley={ley} mostrarReferencias={mostrarReferencias} />
+                  </div>
+
+                  {articulo.reformas && (
+                    <div className="mt-6 rounded-lg bg-gray-50 p-4 dark:bg-gray-700/50">
+                      <h3 className="mb-2 flex items-center gap-2 font-medium text-gray-900 dark:text-white">
+                        <ExternalLink className="h-4 w-4" />
+                        Reformas DOF
+                      </h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        {articulo.reformas}
+                      </p>
+                    </div>
+                  )}
+
+                  {articulo.referencias_legales && (
+                    <ReferenciasList referencias={articulo.referencias_legales} />
+                  )}
+                </div>
+
+                {/* Referencias cruzadas */}
+                {(articulo.referencias_salientes || articulo.referencias_entrantes) && (
+                  <div className="mt-8 grid gap-6 md:grid-cols-2">
+                    {articulo.referencias_salientes && articulo.referencias_salientes.length > 0 && (
+                      <div className="card">
+                        <h3 className="mb-4 flex items-center gap-2 font-semibold text-gray-900 dark:text-white">
+                          <BookOpen className="h-5 w-5 text-primary-600" />
+                          {esRegla ? 'Esta regla cita' : 'Este artículo cita'}
+                        </h3>
+                        <ul className="space-y-2">
+                          {articulo.referencias_salientes.map((ref) => (
+                            <li key={ref.id}>
+                              <Link
+                                to={`/${ref.ley}/articulo/${ref.numero_raw}`}
+                                className="flex items-center gap-2 rounded-lg p-2 text-sm hover:bg-gray-50 dark:hover:bg-gray-700"
+                              >
+                                <span className="font-medium text-primary-600 dark:text-primary-400">
+                                  {ref.ley}
+                                </span>
+                                <span className="text-gray-700 dark:text-gray-300">
+                                  Art. {ref.numero_raw}
+                                </span>
+                                <span className="ml-auto text-xs text-gray-400">{ref.tipo}</span>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {articulo.referencias_entrantes && articulo.referencias_entrantes.length > 0 && (
+                      <div className="card">
+                        <h3 className="mb-4 flex items-center gap-2 font-semibold text-gray-900 dark:text-white">
+                          <BookOpen className="h-5 w-5 text-blue-600" />
+                          Citado por
+                        </h3>
+                        <ul className="space-y-2">
+                          {articulo.referencias_entrantes.map((ref) => (
+                            <li key={ref.id}>
+                              <Link
+                                to={`/${ref.ley}/articulo/${ref.numero_raw}`}
+                                className="flex items-center gap-2 rounded-lg p-2 text-sm hover:bg-gray-50 dark:hover:bg-gray-700"
+                              >
+                                <span className="font-medium text-blue-600 dark:text-blue-400">
+                                  {ref.ley}
+                                </span>
+                                <span className="text-gray-700 dark:text-gray-300">
+                                  Art. {ref.numero_raw}
+                                </span>
+                                <span className="ml-auto text-xs text-gray-400">{ref.tipo}</span>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                )}
+            </div>
           </div>
-        )}
-
-        {articulo.referencias_legales && (
-          <ReferenciasList referencias={articulo.referencias_legales} />
-        )}
-      </div>
-
-      {/* Navegación anterior/siguiente */}
-      {navegacion && (navegacion.anterior_numero || navegacion.siguiente_numero) && (
-        <div className="mt-8 flex items-center justify-between gap-4">
-          {navegacion.anterior_numero ? (
-            <Link
-              to={`/${ley || articulo.ley}/${rutaTipo}/${navegacion.anterior_numero}`}
-              className="flex items-center gap-2 px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group flex-1 max-w-xs"
-            >
-              <ChevronLeft className="h-5 w-5 text-gray-400 group-hover:text-primary-500" />
-              <div className="text-left">
-                <span className="block text-xs text-gray-500">Anterior</span>
-                <span className="block font-medium text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400">
-                  {etiquetaTipo} {navegacion.anterior_numero}
-                </span>
-              </div>
-            </Link>
-          ) : (
-            <div />
           )}
 
-          {navegacion.siguiente_numero ? (
-            <Link
-              to={`/${ley || articulo.ley}/${rutaTipo}/${navegacion.siguiente_numero}`}
-              className="flex items-center gap-2 px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group flex-1 max-w-xs ml-auto"
-            >
-              <div className="text-right flex-1">
-                <span className="block text-xs text-gray-500">Siguiente</span>
-                <span className="block font-medium text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400">
-                  {etiquetaTipo} {navegacion.siguiente_numero}
-                </span>
-              </div>
-              <ChevronRight className="h-5 w-5 text-gray-400 group-hover:text-primary-500" />
-            </Link>
-          ) : (
-            <div />
-          )}
-        </div>
-      )}
-
-      {/* Referencias cruzadas */}
-      {(articulo.referencias_salientes || articulo.referencias_entrantes) && (
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {articulo.referencias_salientes && articulo.referencias_salientes.length > 0 && (
-            <div className="card">
-              <h3 className="mb-4 flex items-center gap-2 font-semibold text-gray-900 dark:text-white">
-                <BookOpen className="h-5 w-5 text-primary-600" />
-                {esRegla ? 'Esta regla cita' : 'Este artículo cita'}
-              </h3>
-              <ul className="space-y-2">
-                {articulo.referencias_salientes.map((ref) => (
-                  <li key={ref.id}>
-                    <Link
-                      to={`/${ref.ley}/articulo/${ref.numero_raw}`}
-                      className="flex items-center gap-2 rounded-lg p-2 text-sm hover:bg-gray-50 dark:hover:bg-gray-700"
-                    >
-                      <span className="font-medium text-primary-600 dark:text-primary-400">
-                        {ref.ley}
-                      </span>
-                      <span className="text-gray-700 dark:text-gray-300">
-                        Art. {ref.numero_raw}
-                      </span>
-                      <span className="ml-auto text-xs text-gray-400">{ref.tipo}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {articulo.referencias_entrantes && articulo.referencias_entrantes.length > 0 && (
-            <div className="card">
-              <h3 className="mb-4 flex items-center gap-2 font-semibold text-gray-900 dark:text-white">
-                <BookOpen className="h-5 w-5 text-blue-600" />
-                Citado por
-              </h3>
-              <ul className="space-y-2">
-                {articulo.referencias_entrantes.map((ref) => (
-                  <li key={ref.id}>
-                    <Link
-                      to={`/${ref.ley}/articulo/${ref.numero_raw}`}
-                      className="flex items-center gap-2 rounded-lg p-2 text-sm hover:bg-gray-50 dark:hover:bg-gray-700"
-                    >
-                      <span className="font-medium text-blue-600 dark:text-blue-400">
-                        {ref.ley}
-                      </span>
-                      <span className="text-gray-700 dark:text-gray-300">
-                        Art. {ref.numero_raw}
-                      </span>
-                      <span className="ml-auto text-xs text-gray-400">{ref.tipo}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+          {/* Panel PDF */}
+          {showPdf && coordenadasPdf && (
+            <div className={clsx(
+              'h-full overflow-hidden bg-gray-100 dark:bg-gray-800',
+              viewMode === 'split' && 'hidden lg:block'
+            )}>
+              <PdfViewer
+                key={`${pdfUrl}-${coordenadasPdf.pagina}-${coordenadasPdf.y}`}
+                pdfUrl={pdfUrl}
+                pagina={coordenadasPdf.pagina}
+                y={coordenadasPdf.y}
+                className="h-full"
+              />
             </div>
           )}
         </div>
-      )}
-      </div>
+      </main>
 
-      {/* Panel PDF - Solo visible en pantallas grandes cuando está activado y coords listas */}
-      {mostrarPdf && coordenadasPdf && (
-        <div className="hidden lg:block sticky top-0 h-[calc(100vh-4rem)] rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
-          <PdfViewer
-            key={pdfUrl}
-            pdfUrl={pdfUrl}
-            pagina={coordenadasPdf.pagina}
-            y={coordenadasPdf.y}
-          />
-        </div>
-      )}
-
-      {/* Botón flotante para toggle PDF */}
-      <button
-        onClick={() => setMostrarPdf(!mostrarPdf)}
-        className={clsx(
-          'fixed bottom-6 right-6 z-50 flex items-center gap-2 px-4 py-3 rounded-full shadow-lg transition-all',
-          'bg-primary-600 hover:bg-primary-700 text-white',
-          'focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2',
-          'hidden lg:flex'  // Solo en pantallas grandes
-        )}
-        title={mostrarPdf ? 'Ocultar PDF' : 'Ver PDF original'}
-      >
-        {mostrarPdf ? (
-          <>
-            <X className="h-5 w-5" />
-            <span className="text-sm font-medium">Cerrar PDF</span>
-          </>
-        ) : (
-          <>
-            <FileText className="h-5 w-5" />
-            <span className="text-sm font-medium">Ver PDF</span>
-          </>
-        )}
-      </button>
-    </div>
+      {/* Footer fijo - siempre visible */}
+      <ArticleFooter
+        ley={ley || articulo.ley}
+        rutaTipo={rutaTipo}
+        etiquetaTipo={etiquetaTipo}
+        numeroActual={articulo.numero_raw}
+        anteriorNumero={navegacion?.anterior_numero ?? undefined}
+        siguienteNumero={navegacion?.siguiente_numero ?? undefined}
+      />
+    </>
   )
 }

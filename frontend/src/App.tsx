@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Home from './pages/Home'
 import Article from './pages/Article'
@@ -9,6 +9,7 @@ import ErrorBoundary from './components/ErrorBoundary'
 import TermsBanner from './components/TermsBanner'
 
 function App() {
+  const location = useLocation()
   const [darkMode, setDarkMode] = useState(() => {
     if (typeof window !== 'undefined') {
       return localStorage.getItem('darkMode') === 'true' ||
@@ -26,10 +27,16 @@ function App() {
     localStorage.setItem('darkMode', String(darkMode))
   }, [darkMode])
 
+  // Ocultar Header global en páginas de artículo (tienen su propio header)
+  const isArticlePage = /\/(articulo|regla|ficha|criterio)\//.test(location.pathname) ||
+    location.pathname.startsWith('/articulo/')
+
   return (
     <div className="min-h-screen">
-      <Header darkMode={darkMode} onToggleDarkMode={() => setDarkMode(!darkMode)} />
-      <main className="container mx-auto px-4 py-8">
+      {!isArticlePage && (
+        <Header darkMode={darkMode} onToggleDarkMode={() => setDarkMode(!darkMode)} />
+      )}
+      <main className={isArticlePage ? '' : 'container mx-auto px-4 py-8'}>
         <ErrorBoundary>
           <Routes>
             <Route path="/" element={<Home />} />
