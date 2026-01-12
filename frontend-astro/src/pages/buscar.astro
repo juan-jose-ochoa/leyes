@@ -293,8 +293,9 @@ const tiposDocumento = [
         <a href="${result.url}" class="block p-3 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
           <div class="flex items-center gap-2 mb-1">
             ${result.meta?.ley ? `<span class="text-xs font-medium px-2 py-0.5 rounded bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">${result.meta.ley}</span>` : ''}
-            <span class="font-semibold text-gray-900 dark:text-white">${result.meta?.title || 'Sin título'}</span>
           </div>
+          <div class="font-semibold text-gray-900 dark:text-white">${result.meta?.title || 'Sin título'}</div>
+          ${result.meta?.seccion ? `<div class="font-semibold text-gray-800 dark:text-gray-200 mb-1">${result.meta.seccion}</div>` : ''}
           <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">${result.excerpt}</p>
         </a>
       `).join('');

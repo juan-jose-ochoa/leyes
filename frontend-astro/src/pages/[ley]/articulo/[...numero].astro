@@ -109,6 +109,11 @@ const pdfUrl = `/pdfs/${codigoLower}.pdf`;
 
 // Get last breadcrumb item for division indicator
 const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1] : null;
+
+// Format breadcrumb for search metadata
+const seccionTexto = breadcrumb.length > 0
+  ? breadcrumb.map(b => `${b.tipo.charAt(0).toUpperCase() + b.tipo.slice(1)} ${b.numero}${b.nombre ? ` - ${b.nombre}` : ''}`).join(' › ')
+  : '';
 ---
 
 <BaseLayout title={`Artículo ${articulo.numero} - ${leyInfo.codigo}`} article={true} hideFloatingToggle={true} description={`${leyInfo.nombre} - Artículo ${articulo.numero}. Texto completo y actualizado.`}>
@@ -229,6 +234,7 @@ const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1
 
         <p class="hidden" data-pagefind-meta="ley" data-pagefind-filter="ley">{leyInfo.codigo}</p>
         <p class="hidden" data-pagefind-filter="tipo">{leyInfo.tipo}</p>
+        {seccionTexto && <p class="hidden" data-pagefind-meta="seccion">{seccionTexto}</p>}
 
         {/* TOC si tiene fracciones */}
         {tieneParrafos && !isDerogado && (
