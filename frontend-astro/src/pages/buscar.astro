@@ -304,10 +304,16 @@ const tiposDocumento = [
       // If result has sub_results, use them
       if (result.sub_results && result.sub_results.length > 0) {
         for (const sub of result.sub_results) {
+          // Clean excerpt: remove duplicate title at the start
+          let cleanExcerpt = sub.excerpt || '';
+          const title = sub.title || '';
+          if (title && cleanExcerpt.toLowerCase().startsWith(title.toLowerCase())) {
+            cleanExcerpt = cleanExcerpt.slice(title.length).replace(/^[\s.,;:\-]+/, '');
+          }
           subResults.push({
             url: sub.url || result.url,
-            title: sub.title || '',
-            excerpt: sub.excerpt || ''
+            title: title,
+            excerpt: cleanExcerpt
           });
         }
       } else {
