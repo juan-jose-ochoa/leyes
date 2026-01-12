@@ -12,6 +12,13 @@ const tiposDocumento = [
   { value: 'reglamento', label: 'Reglamentos', color: 'bg-blue-600' },
   { value: 'resolucion', label: 'RMF', color: 'bg-amber-600' },
 ];
+
+// Categories (colors match index.astro)
+const categorias = [
+  { value: 'fiscal', label: 'Fiscal', color: 'bg-emerald-600' },
+  { value: 'laboral', label: 'Laboral', color: 'bg-blue-600' },
+  { value: 'constitucional', label: 'Constitucional', color: 'bg-orange-600' },
+];
 ---
 
 <BaseLayout title="Buscar - LeyesMX" description="Busca artículos en leyes fiscales y laborales de México">
@@ -82,6 +89,23 @@ const tiposDocumento = [
 
       <!-- Filters panel -->
       <div id="filters-panel" class="hidden mt-2 rounded-lg border border-gray-200 bg-white p-3 dark:border-gray-700 dark:bg-gray-800 space-y-3">
+        <!-- Filter by category -->
+        <div>
+          <label class="block text-xs font-medium text-gray-500 mb-2">Categoría</label>
+          <div class="flex flex-wrap gap-2">
+            {categorias.map((cat) => (
+              <button
+                type="button"
+                data-filter-categoria={cat.value}
+                data-color={cat.color}
+                class="filter-chip rounded-full px-3 py-1 text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
         <!-- Filter by document type -->
         <div>
           <label class="block text-xs font-medium text-gray-500 mb-2">Tipo de documento</label>
@@ -149,6 +173,7 @@ const tiposDocumento = [
 <script>
   // State
   let pagefind: any = null;
+  let selectedCategorias: string[] = [];
   let selectedTipos: string[] = [];
   let selectedLeyes: string[] = [];
 
@@ -184,6 +209,7 @@ const tiposDocumento = [
   function updateURL() {
     const params = new URLSearchParams();
     if (input.value) params.set('q', input.value);
+    if (selectedCategorias.length > 0) params.set('categoria', selectedCategorias.join(','));
     if (selectedLeyes.length > 0) params.set('ley', selectedLeyes.join(','));
     if (selectedTipos.length > 0) params.set('tipo', selectedTipos.join(','));
 
@@ -199,6 +225,15 @@ const tiposDocumento = [
     if (q) {
       input.value = q;
       clearBtn?.classList.remove('hidden');
+    }
+
+    const categoriaParam = params.get('categoria');
+    if (categoriaParam) {
+      selectedCategorias = categoriaParam.split(',').filter(Boolean);
+      selectedCategorias.forEach(cat => {
+        const btn = document.querySelector(`[data-filter-categoria="${cat}"]`) as HTMLElement;
+        if (btn) updateChipState(btn, true);
+      });
     }
 
     const leyParam = params.get('ley');
@@ -223,7 +258,7 @@ const tiposDocumento = [
 
     // If there's a query, perform search and show filters panel
     if (q) {
-      if (selectedLeyes.length > 0 || selectedTipos.length > 0) {
+      if (selectedCategorias.length > 0 || selectedLeyes.length > 0 || selectedTipos.length > 0) {
         filtersPanel?.classList.remove('hidden');
       }
       doSearch(q);
@@ -246,26 +281,30 @@ const tiposDocumento = [
     let allResults: any[] = [];
     const seenUrls = new Set<string>();
 
-    if (selectedTipos.length === 0 && selectedLeyes.length === 0) {
+    if (selectedCategorias.length === 0 && selectedTipos.length === 0 && selectedLeyes.length === 0) {
       const search = await pf.search(query);
       allResults = search.results;
     } else {
+      const categoriasToSearch = selectedCategorias.length > 0 ? selectedCategorias : [null];
       const leyesToSearch = selectedLeyes.length > 0 ? selectedLeyes : [null];
       const tiposToSearch = selectedTipos.length > 0 ? selectedTipos : [null];
 
-      for (const ley of leyesToSearch) {
-        for (const tipo of tiposToSearch) {
-          const filters: Record<string, string> = {};
-          if (ley) filters.ley = ley;
-          if (tipo) filters.tipo = tipo;
+      for (const categoria of categoriasToSearch) {
+        for (const ley of leyesToSearch) {
+          for (const tipo of tiposToSearch) {
+            const filters: Record<string, string> = {};
+            if (categoria) filters.categoria = categoria;
+            if (ley) filters.ley = ley;
+            if (tipo) filters.tipo = tipo;
 
-          const search = await pf.search(query, { filters });
+            const search = await pf.search(query, { filters });
 
-          for (const result of search.results) {
-            const data = await result.data();
-            if (!seenUrls.has(data.url)) {
-              seenUrls.add(data.url);
-              allResults.push(result);
+            for (const result of search.results) {
+              const data = await result.data();
+              if (!seenUrls.has(data.url)) {
+                seenUrls.add(data.url);
+                allResults.push(result);
+              }
             }
           }
         }
@@ -339,11 +378,20 @@ const tiposDocumento = [
       resultsCount.textContent = `${totalSubResults} ${totalSubResults === 1 ? 'coincidencia' : 'coincidencias'} en ${groupedResults.length} ${groupedResults.length === 1 ? 'artículo' : 'artículos'}`;
     }
 
+    // Category color mapping
+    const categoryColors: Record<string, string> = {
+      fiscal: 'bg-emerald-600',
+      laboral: 'bg-blue-600',
+      constitucional: 'bg-orange-600'
+    };
+
     if (resultsList) {
-      resultsList.innerHTML = groupedResults.map((group) => `
+      resultsList.innerHTML = groupedResults.map((group) => {
+        const catColor = categoryColors[group.meta?.categoria] || 'bg-primary-600';
+        return `
         <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
           <div class="flex items-center gap-2 mb-1">
-            ${group.meta?.ley ? `<span class="text-xs font-medium px-2 py-0.5 rounded bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">${group.meta.ley}</span>` : ''}
+            ${group.meta?.ley ? `<span class="text-xs font-medium px-2 py-0.5 rounded ${catColor} text-white">${group.meta.ley}</span>` : ''}
           </div>
           <a href="${group.url}" class="font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400">${group.meta?.title || 'Sin título'}</a>
           ${group.meta?.seccion ? `<div class="font-semibold text-gray-800 dark:text-gray-200 mb-2">${group.meta.seccion}</div>` : ''}
@@ -355,8 +403,8 @@ const tiposDocumento = [
               </a>
             `).join('')}
           </div>
-        </div>
-      `).join('');
+        </div>`;
+      }).join('');
     }
 
     updateURL();
@@ -364,7 +412,7 @@ const tiposDocumento = [
 
   // Update filter count badge
   function updateFilterCount() {
-    const total = selectedTipos.length + selectedLeyes.length;
+    const total = selectedCategorias.length + selectedTipos.length + selectedLeyes.length;
     if (filterCount) {
       filterCount.textContent = total.toString();
       filterCount.classList.toggle('hidden', total === 0);
@@ -411,7 +459,25 @@ const tiposDocumento = [
     filtersPanel?.classList.toggle('hidden');
   });
 
-  // Event: Filter chip clicks
+  // Event: Filter chip clicks - Categorias
+  document.querySelectorAll('[data-filter-categoria]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const categoria = (btn as HTMLElement).dataset.filterCategoria!;
+      const idx = selectedCategorias.indexOf(categoria);
+      if (idx >= 0) {
+        selectedCategorias.splice(idx, 1);
+        updateChipState(btn as HTMLElement, false);
+      } else {
+        selectedCategorias.push(categoria);
+        updateChipState(btn as HTMLElement, true);
+      }
+      updateFilterCount();
+      updateURL();
+      if (input.value) doSearch(input.value);
+    });
+  });
+
+  // Event: Filter chip clicks - Tipos
   document.querySelectorAll('[data-filter-tipo]').forEach((btn) => {
     btn.addEventListener('click', () => {
       const tipo = (btn as HTMLElement).dataset.filterTipo!;
@@ -448,6 +514,7 @@ const tiposDocumento = [
 
   // Event: Clear all filters
   clearFiltersBtn?.addEventListener('click', () => {
+    selectedCategorias = [];
     selectedTipos = [];
     selectedLeyes = [];
     document.querySelectorAll('.filter-chip').forEach((btn) => {
