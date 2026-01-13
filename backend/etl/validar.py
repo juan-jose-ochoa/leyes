@@ -44,6 +44,13 @@ class DiferenciaArticulo:
 
 
 @dataclass
+class ArticuloVacio:
+    """Artículo extraído sin contenido (posible error de extracción)."""
+    numero: str
+    pagina: Optional[int] = None
+
+
+@dataclass
 class ResultadoValidacion:
     """Resultado de validación por título/capítulo/sección."""
     titulo: str
@@ -67,6 +74,7 @@ class Validador:
         self.config = get_config(self.codigo)
         self.resultados: list[ResultadoValidacion] = []
         self.diferencias: list[DiferenciaArticulo] = []
+        self.articulos_vacios: list[ArticuloVacio] = []
 
         # Rutas
         if self.config.get("pdf_path"):
@@ -257,6 +265,18 @@ class Validador:
                 tipo="extra"
             ))
 
+    def validar_contenido(self):
+        """Detecta artículos con contenido vacío (posible error de extracción)."""
+        for art in self.contenido.get("articulos", []):
+            tiene_parrafos = bool(art.get("parrafos"))
+            tiene_contenido = bool(art.get("contenido", "").strip())
+
+            if not tiene_parrafos and not tiene_contenido:
+                self.articulos_vacios.append(ArticuloVacio(
+                    numero=art["numero"],
+                    pagina=art.get("pagina")
+                ))
+
     def _sort_articulo(self, num: str) -> tuple:
         """Ordena artículos numéricamente."""
         import re
@@ -268,7 +288,10 @@ class Validador:
     def ejecutar(self) -> bool:
         """Ejecuta todas las validaciones."""
         self.validar_por_capitulo()
-        return all(r.ok for r in self.resultados) and len(self.diferencias) == 0
+        self.validar_contenido()
+        return (all(r.ok for r in self.resultados)
+                and len(self.diferencias) == 0
+                and len(self.articulos_vacios) == 0)
 
     def imprimir_reporte(self, detalle: bool = False):
         """Imprime el reporte de validación."""
@@ -323,6 +346,17 @@ class Validador:
                 print(f"  └─ {', '.join(nums[:10])}{'...' if len(nums) > 10 else ''}")
             total_extras = len(extras)
 
+        # Artículos sin contenido (error de extracción)
+        total_vacios = len(self.articulos_vacios)
+        if self.articulos_vacios:
+            print("-" * 80)
+            print(f"✗ SIN CONTENIDO (error de extracción): {total_vacios} artículos")
+            nums = sorted([v.numero for v in self.articulos_vacios], key=self._sort_articulo)
+            for v in self.articulos_vacios[:10]:
+                print(f"  └─ Art. {v.numero} (pág. {v.pagina or '?'})")
+            if total_vacios > 10:
+                print(f"  └─ ... y {total_vacios - 10} más")
+
         # Resumen
         print("-" * 80)
         total_ok = sum(1 for r in self.resultados if r.ok)
@@ -332,11 +366,14 @@ class Validador:
         print(f"  Capítulos: {total_ok}/{total} OK")
         print(f"  Faltantes: {total_faltantes}")
         print(f"  Extras:    {total_extras}")
+        print(f"  Vacíos:    {total_vacios}")
 
-        if total_faltantes == 0 and total_extras == 0:
-            print("\n✓ VALIDACIÓN EXITOSA - Extracción coincide con estructura esperada")
+        if total_faltantes == 0 and total_extras == 0 and total_vacios == 0:
+            print("\n✓ VALIDACIÓN EXITOSA - Extracción completa y correcta")
         else:
             print("\n✗ VALIDACIÓN FALLIDA - Revisar diferencias")
+            if total_vacios > 0:
+                print("  ⚠ Artículos vacíos indican error en el extractor")
 
         # Aprobaciones pendientes
         aprobaciones = self.esperada.get("aprobaciones", [])
