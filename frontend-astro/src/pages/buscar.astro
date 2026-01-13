@@ -368,7 +368,9 @@ const themeData = { categoryColors, tipoStyles };
     let allResults: any[] = [];
     const seenUrls = new Set<string>();
 
-    if (selectedLeyes.length === 0) {
+    // If no filter OR all laws selected, search without filter
+    const allLawsCount = catalogoLeyes.length;
+    if (selectedLeyes.length === 0 || selectedLeyes.length === allLawsCount) {
       // No filter, search all
       const search = await pf.search(query);
       allResults = search.results;
