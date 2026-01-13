@@ -24,8 +24,12 @@
 /robots.txt
   Cache-Control: public, max-age=86400
 
+# PDFs (permitir iframe para visor)
+/pdfs/*
+  X-Frame-Options: SAMEORIGIN
+
 # Security headers
 /*
   X-Content-Type-Options: nosniff
-  X-Frame-Options: DENY
+  X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
