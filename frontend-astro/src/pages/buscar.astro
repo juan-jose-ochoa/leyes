@@ -79,6 +79,16 @@ const themeData = { categoryColors, tipoStyles };
             Filtros
             <span id="filter-count" class="hidden ml-1 rounded-full bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900 dark:text-primary-300">0</span>
           </button>
+          <button
+            id="clear-filters-inline"
+            type="button"
+            class="hidden items-center gap-1 px-2 py-1 rounded-lg text-sm text-gray-500 hover:text-red-600 hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors"
+          >
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+            Limpiar
+          </button>
           <span class="text-gray-400">
             Presiona <kbd class="rounded bg-gray-100 px-1.5 py-0.5 font-mono text-xs dark:bg-gray-700">/</kbd> para buscar
           </span>
@@ -158,16 +168,6 @@ const themeData = { categoryColors, tipoStyles };
           </div>
         </div>
 
-        <!-- Clear filters -->
-        <div id="clear-filters-wrap" class="hidden pt-2 border-t border-gray-200 dark:border-gray-700">
-          <button
-            id="clear-filters"
-            type="button"
-            class="text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
-          >
-            Limpiar todos los filtros
-          </button>
-        </div>
       </div>
 
       <!-- Results -->
@@ -293,8 +293,7 @@ const themeData = { categoryColors, tipoStyles };
   const filtersToggle = document.getElementById('filters-toggle');
   const filtersPanel = document.getElementById('filters-panel');
   const filterCount = document.getElementById('filter-count');
-  const clearFiltersWrap = document.getElementById('clear-filters-wrap');
-  const clearFiltersBtn = document.getElementById('clear-filters');
+  const clearFiltersInline = document.getElementById('clear-filters-inline');
   const resultsDiv = document.getElementById('search-results');
   const resultsCount = document.getElementById('results-count');
   const resultsList = document.getElementById('results-list');
@@ -646,11 +645,15 @@ const themeData = { categoryColors, tipoStyles };
   // Update filter count badge
   function updateFilterCount() {
     const total = selectedLeyes.length;
+    const hasSelections = total > 0;
     if (filterCount) {
       filterCount.textContent = total.toString();
-      filterCount.classList.toggle('hidden', total === 0);
+      filterCount.classList.toggle('hidden', !hasSelections);
     }
-    clearFiltersWrap?.classList.toggle('hidden', total === 0);
+    if (clearFiltersInline) {
+      clearFiltersInline.classList.toggle('hidden', !hasSelections);
+      clearFiltersInline.classList.toggle('flex', hasSelections);
+    }
   }
 
   // Get theme from window
@@ -788,7 +791,7 @@ const themeData = { categoryColors, tipoStyles };
   });
 
   // Event: Clear all filters
-  clearFiltersBtn?.addEventListener('click', () => {
+  clearFiltersInline?.addEventListener('click', () => {
     selectedLeyes = [];
     syncAllChips();
     updateFilterCount();
