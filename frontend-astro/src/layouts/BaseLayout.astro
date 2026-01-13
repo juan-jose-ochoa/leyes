@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
 import ThemeToggle from '../components/ThemeToggle.astro';
 
 interface Props {
@@ -48,6 +49,9 @@ const siteName = 'LeyesMX';
     <link rel="prefetch" href="/pagefind/pagefind.js" />
 
     <title>{title}</title>
+
+    <!-- View Transitions for smooth navigation -->
+    <ViewTransitions />
   </head>
   <body class="min-h-screen">
     <!-- Theme toggle fixed in corner (hidden when page has its own toggle) -->
