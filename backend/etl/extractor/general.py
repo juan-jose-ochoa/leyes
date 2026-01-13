@@ -69,7 +69,7 @@ class ExtractorGeneral(ExtractorBase):
         )
         self._patron_siguiente = re.compile(
             r'(?:ARTICULO|ARTÍCULO|Artículo)\s+\d+[oa]?(?:[-–_\s]*[A-Z])?'
-            r'(?:[-–_\s]+(?:bis|Bis|Ter|Quáter|Quinquies|Sexies)(?:[-–_\s]+\d+)?)?\.[- –\s]',
+            r'(?:[.\-–_\s]+(?:bis|Bis|Ter|Quáter|Quinquies|Sexies)(?:[-–_\s]+\d+)?)?\.[- –\s]',
             re.IGNORECASE
         )
 
@@ -364,7 +364,7 @@ class ExtractorGeneral(ExtractorBase):
         numero_patron = re.escape(numero).replace(r'\-', r'\.?-')
         numero_patron = re.sub(
             r'\\ (bis|ter|quáter|quinquies|sexies)',
-            '[-–\\\\s]+\\1',
+            '[.\\-–\\\\s]+\\1',
             numero_patron,
             flags=re.IGNORECASE
         )

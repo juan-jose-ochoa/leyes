@@ -167,14 +167,143 @@
       "tipo": "articulo",
       "orden": 4,
       "pagina": 2,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para efectos de esta Ley se entiende por:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "y": 344,
+          "pagina": 2
+        },
+        {
+          "numero": 2,
+          "tipo": "inciso",
+          "identificador": "a",
+          "contenido": ") Hostigamiento, el ejercicio del poder en una relación de subordinación real de la víctima frente al agresor en el ámbito laboral, que se expresa en conductas verbales, físicas o ambas; y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "y": 367,
+          "pagina": 2
+        },
+        {
+          "numero": 3,
+          "tipo": "inciso",
+          "identificador": "b",
+          "contenido": ") Acoso sexual, una forma de violencia en la que, si bien no existe la subordinación, hay un ejercicio abusivo del poder que conlleva a un estado de indefensión y de riesgo para la víctima, independientemente de que se realice en uno o varios eventos.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Artículo adicionado DOF 30-11-2012"
+          ],
+          "y": 402,
+          "pagina": 2
+        }
+      ]
     },
     {
       "numero": "3o Ter",
       "tipo": "articulo",
       "orden": 5,
       "pagina": 2,
-      "parrafos": []
+      "parrafos": [
+        {
+          "numero": 1,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para efectos de esta Ley se entenderá por:",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 85,
+          "y": 457,
+          "pagina": 2
+        },
+        {
+          "numero": 2,
+          "tipo": "fraccion",
+          "identificador": "I",
+          "contenido": "Autoridad Conciliadora: El Centro Federal de Conciliación y Registro Laboral o los Centros de Conciliación de las entidades federativas, según corresponda;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "y": 480,
+          "pagina": 2
+        },
+        {
+          "numero": 3,
+          "tipo": "fraccion",
+          "identificador": "II",
+          "contenido": "Autoridad Registral: El Centro Federal de Conciliación y Registro Laboral;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "y": 514,
+          "pagina": 2
+        },
+        {
+          "numero": 4,
+          "tipo": "fraccion",
+          "identificador": "III",
+          "contenido": "Centros de Conciliación: Los Centros de conciliación de las entidades federativas o el Centro Federal de Conciliación y Registro Laboral, según corresponda;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "y": 537,
+          "pagina": 2
+        },
+        {
+          "numero": 5,
+          "tipo": "fraccion",
+          "identificador": "IV",
+          "contenido": "Constitución: La Constitución Política de los Estados Unidos Mexicanos;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "y": 572,
+          "pagina": 2
+        },
+        {
+          "numero": 6,
+          "tipo": "fraccion",
+          "identificador": "V",
+          "contenido": "Día: Se hace referencia a día hábil, salvo que expresamente se mencione que se trata de días naturales;",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "y": 595,
+          "pagina": 2
+        },
+        {
+          "numero": 7,
+          "tipo": "fraccion",
+          "identificador": "VI",
+          "contenido": "Tribunal: El juez laboral, y",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "y": 629,
+          "pagina": 2
+        },
+        {
+          "numero": 8,
+          "tipo": "fraccion",
+          "identificador": "VII",
+          "contenido": "Correr traslado: poner a disposición de alguna de las partes algún documento o documentos en el local del Tribunal, salvo los casos previstos en esta Ley.",
+          "padre_numero": null,
+          "x_id": 85,
+          "x_texto": 107,
+          "referencias": [
+            "Artículo adicionado DOF 01-05-2019"
+          ],
+          "y": 652,
+          "pagina": 2
+        }
+      ]
     },
     {
       "numero": "4o",

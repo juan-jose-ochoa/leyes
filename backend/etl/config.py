@@ -48,7 +48,7 @@ LEYES = {
             #   - "Artículo 4o.-A.-" (ordinal + letra, con puntos)
             #   - "Artículo 20-Bis." (número + Bis con guión)
             #   - "Artículo 17-H Bis.-" (número + letra + Bis)
-            "articulo": r'^Artículo\s+(\d+)([oa])?\.?(?:[-–\s]*([A-Z]))?(?:[-–\s]+(Bis|Ter|Quáter|Quinquies|Sexies))?\.[- –]',
+            "articulo": r'^Artículo\s+(\d+)([oa])?\.?(?:[-–\s]*([A-Z]))?(?:[.\-–\s]+(Bis|Ter|Quáter|Quinquies|Sexies))?\.[- –]',
 
             # Divisiones estructurales (línea completa, sin acento también)
             "titulo": r'^TITULOS?\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|SEPTIMO|OCTAVO|NOVENO|DECIMO)\s*$',
