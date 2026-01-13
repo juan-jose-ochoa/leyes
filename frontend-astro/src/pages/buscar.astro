@@ -1,24 +1,22 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import catalogo from '../data/catalogo.json';
+import { categoriasDef, tiposDef, categoryColors } from '../lib/theme';
 
-// Get unique law codes for filter chips
-const leyes = catalogo.leyes.map(l => ({ codigo: l.codigo, nombre: l.nombre }));
+// Get law data with categoria and tipo for styling
+const leyes = catalogo.leyes.map(l => ({
+  codigo: l.codigo,
+  nombre: l.nombre,
+  categoria: l.categoria,
+  tipo: l.tipo,
+}));
 
-// Document types
-const tiposDocumento = [
-  { value: 'ley', label: 'Leyes', color: 'bg-primary-600' },
-  { value: 'codigo', label: 'Códigos', color: 'bg-primary-600' },
-  { value: 'reglamento', label: 'Reglamentos', color: 'bg-blue-600' },
-  { value: 'resolucion', label: 'RMF', color: 'bg-amber-600' },
-];
+// Use centralized definitions
+const tiposDocumento = tiposDef;
+const categorias = categoriasDef;
 
-// Categories (colors match index.astro)
-const categorias = [
-  { value: 'fiscal', label: 'Fiscal', color: 'bg-emerald-600' },
-  { value: 'laboral', label: 'Laboral', color: 'bg-blue-600' },
-  { value: 'constitucional', label: 'Constitucional', color: 'bg-orange-600' },
-];
+// Theme data for client-side
+const themeData = { categoryColors };
 ---
 
 <BaseLayout title="Buscar - LeyesMX" description="Busca artículos en leyes fiscales y laborales de México">
@@ -131,6 +129,8 @@ const categorias = [
               <button
                 type="button"
                 data-filter-ley={ley.codigo}
+                data-categoria={ley.categoria}
+                data-tipo={ley.tipo}
                 title={ley.nombre}
                 class="filter-chip rounded-full px-3 py-1 text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
               >
@@ -170,8 +170,9 @@ const categorias = [
   </div>
 </BaseLayout>
 
-<script is:inline define:vars={{ catalogoLeyes: catalogo.leyes }}>
+<script is:inline define:vars={{ catalogoLeyes: catalogo.leyes, themeData }}>
   window.__CATALOGO_LEYES__ = catalogoLeyes;
+  window.__THEME__ = themeData;
 </script>
 
 <script>
@@ -632,14 +633,28 @@ const categorias = [
     clearFiltersWrap?.classList.toggle('hidden', total === 0);
   }
 
+  // Get theme from window
+  const theme = (window as any).__THEME__ || { categoryColors: {} };
+
+  // Get color for a chip based on its type
+  function getChipColor(btn: HTMLElement): string {
+    // For law chips, use category color
+    const categoria = btn.dataset.categoria;
+    if (categoria && theme.categoryColors[categoria]) {
+      return theme.categoryColors[categoria].bg;
+    }
+    // For other chips, use data-color attribute
+    return btn.dataset.color || 'bg-primary-600';
+  }
+
   // Update chip visual state
   function updateChipState(btn: HTMLElement, active: boolean) {
+    const color = getChipColor(btn);
+
     if (active) {
-      const color = btn.dataset.color || 'bg-primary-600';
       btn.classList.remove('bg-gray-100', 'text-gray-700', 'dark:bg-gray-700', 'dark:text-gray-300');
       btn.classList.add(color, 'text-white');
     } else {
-      const color = btn.dataset.color || 'bg-primary-600';
       btn.classList.remove(color, 'text-white');
       btn.classList.add('bg-gray-100', 'text-gray-700', 'dark:bg-gray-700', 'dark:text-gray-300');
     }
