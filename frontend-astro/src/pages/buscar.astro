@@ -367,14 +367,34 @@ const themeData = { categoryColors, tipoStyles };
     let allResults: any[] = [];
     const seenUrls = new Set<string>();
 
-    // If no filter OR all laws selected, search without filter
     const allLawsCount = catalogoLeyes.length;
-    if (selectedLeyes.length === 0 || selectedLeyes.length === allLawsCount) {
+    const allLawCodes = catalogoLeyes.map(l => l.codigo);
+
+    // Determine excluded laws (if any)
+    const excludedLaws = selectedLeyes.length === 0
+      ? []
+      : allLawCodes.filter(l => !selectedLeyes.includes(l));
+
+    // If no exclusions OR all selected, search without filter
+    // If few exclusions (more than half selected), search all and filter client-side
+    // If many exclusions (less than half selected), search individually
+    if (excludedLaws.length === 0) {
       // No filter, search all
       const search = await pf.search(query);
       allResults = search.results;
+    } else if (selectedLeyes.length > allLawsCount / 2) {
+      // More than half selected: search all, filter client-side
+      const search = await pf.search(query);
+      for (const result of search.results) {
+        const data = await result.data();
+        const resultLey = data.meta?.ley;
+        // Include if not in excluded laws
+        if (!excludedLaws.includes(resultLey)) {
+          allResults.push(result);
+        }
+      }
     } else {
-      // Search only in selected laws
+      // Less than half selected: search individually
       for (const ley of selectedLeyes) {
         const search = await pf.search(query, { filters: { ley } });
         for (const result of search.results) {
@@ -610,23 +630,22 @@ const themeData = { categoryColors, tipoStyles };
         btn.addEventListener('click', () => {
           const leyToExclude = (btn as HTMLElement).dataset.excludeLaw!;
 
-          // Get all laws currently in results
-          const currentLaws = Array.from(document.querySelectorAll('[data-toggle-law]'))
-            .map(el => (el as HTMLElement).dataset.toggleLaw!);
+          // If no filters active, start with ALL laws, then exclude
+          // If filters active, just remove from current selection
+          const baseLaws = selectedLeyes.length === 0 || selectedLeyes.length === catalogoLeyes.length
+            ? catalogoLeyes.map(l => l.codigo)
+            : selectedLeyes;
 
           // Filter out the excluded law
-          const remainingLaws = currentLaws.filter(l => l !== leyToExclude);
+          const remainingLaws = baseLaws.filter(l => l !== leyToExclude);
 
           if (remainingLaws.length === 0) return; // Safety check
 
           // Update selectedLeyes
           selectedLeyes = remainingLaws;
 
-          // Update chip visual states in filter panel
-          document.querySelectorAll('[data-filter-ley]').forEach((chip) => {
-            const chipLey = (chip as HTMLElement).dataset.filterLey!;
-            updateChipState(chip as HTMLElement, remainingLaws.includes(chipLey));
-          });
+          // Sync all chips
+          syncAllChips();
 
           // Show filters panel for feedback
           filtersPanel?.classList.remove('hidden');
