@@ -233,10 +233,16 @@ const categorias = [
       // No category context, affect all laws of this type
       return getLeyesByTipo(tipo);
     } else {
-      // Affect only laws within active categories
-      return catalogoLeyes
+      // Try to affect only laws within active categories
+      const scopedLaws = catalogoLeyes
         .filter(l => l.tipo === tipo && activeCategories.includes(l.categoria))
         .map(l => l.codigo);
+
+      // If no laws of this type in active categories, fall back to global
+      if (scopedLaws.length === 0) {
+        return getLeyesByTipo(tipo);
+      }
+      return scopedLaws;
     }
   }
 
