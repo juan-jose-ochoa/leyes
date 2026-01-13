@@ -448,8 +448,6 @@ const categorias = [
             articles: [],
             totalMatches: 0
           };
-          // Expand all laws by default
-          expandedLaws.add(ley);
         }
         lawGroups[ley].articles.push(article);
         lawGroups[ley].totalMatches += article.subResults.length;
@@ -460,6 +458,12 @@ const categorias = [
     }
 
     const lawGroups = groupByLaw(groupedResults);
+
+    // Accordion: only expand the first (most relevant) law group
+    expandedLaws.clear();
+    if (lawGroups.length > 0) {
+      expandedLaws.add(lawGroups[0].ley);
+    }
 
     // Count total sub-results
     const totalSubResults = groupedResults.reduce((acc, g) => acc + g.subResults.length, 0);
@@ -542,19 +546,32 @@ const categorias = [
         </div>`;
       }).join('');
 
-      // Add toggle event listeners to new law headers
+      // Add toggle event listeners to new law headers (exclusive accordion)
       document.querySelectorAll('[data-toggle-law]').forEach((btn) => {
         btn.addEventListener('click', () => {
           const ley = (btn as HTMLElement).dataset.toggleLaw!;
-          const lawGroup = btn.closest('.law-group') as HTMLElement;
-          const content = lawGroup?.querySelector('.law-content') as HTMLElement;
-          const chevron = btn.querySelector('.chevron') as HTMLElement;
+          const isCurrentlyOpen = expandedLaws.has(ley);
 
-          if (expandedLaws.has(ley)) {
-            expandedLaws.delete(ley);
-            content?.classList.add('hidden');
-            chevron?.classList.remove('rotate-180');
-          } else {
+          // Close all law groups first
+          document.querySelectorAll('.law-group').forEach((group) => {
+            const groupContent = group.querySelector('.law-content') as HTMLElement;
+            const groupChevron = group.querySelector('.chevron') as HTMLElement;
+            const groupLey = group.querySelector('[data-toggle-law]') as HTMLElement;
+            const groupLeyCode = groupLey?.dataset.toggleLaw;
+
+            if (groupLeyCode) {
+              expandedLaws.delete(groupLeyCode);
+              groupContent?.classList.add('hidden');
+              groupChevron?.classList.remove('rotate-180');
+            }
+          });
+
+          // If it wasn't open, open it now
+          if (!isCurrentlyOpen) {
+            const lawGroup = btn.closest('.law-group') as HTMLElement;
+            const content = lawGroup?.querySelector('.law-content') as HTMLElement;
+            const chevron = btn.querySelector('.chevron') as HTMLElement;
+
             expandedLaws.add(ley);
             content?.classList.remove('hidden');
             chevron?.classList.add('rotate-180');
