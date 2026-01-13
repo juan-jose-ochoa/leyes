@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import catalogo from '../data/catalogo.json';
-import { categoriasDef, tiposDef, categoryColors } from '../lib/theme';
+import { categoriasDef, tiposDef, tipoStyles, categoryColors } from '../lib/theme';
 
 // Get law data with categoria and tipo for styling
 const leyes = catalogo.leyes.map(l => ({
@@ -15,8 +15,8 @@ const leyes = catalogo.leyes.map(l => ({
 const tiposDocumento = tiposDef;
 const categorias = categoriasDef;
 
-// Theme data for client-side
-const themeData = { categoryColors };
+// Theme data for client-side (incluye tipoStyles para fontClass)
+const themeData = { categoryColors, tipoStyles };
 ---
 
 <BaseLayout title="Buscar - LeyesMX" description="Busca artículos en leyes fiscales y laborales de México">
@@ -91,16 +91,23 @@ const themeData = { categoryColors };
         <div>
           <label class="block text-xs font-medium text-gray-500 mb-2">Categoría</label>
           <div class="flex flex-wrap gap-2">
-            {categorias.map((cat) => (
-              <button
-                type="button"
-                data-filter-categoria={cat.value}
-                data-color={cat.color}
-                class="filter-chip rounded-full px-3 py-1 text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
-              >
-                {cat.label}
-              </button>
-            ))}
+            {categorias.map((cat) => {
+              const catColors = categoryColors[cat.value as keyof typeof categoryColors];
+              const textColor = catColors?.text || 'text-gray-700';
+              const textColorDark = catColors?.textDark || 'dark:text-gray-300';
+              return (
+                <button
+                  type="button"
+                  data-filter-categoria={cat.value}
+                  data-color={cat.color}
+                  data-text-color={textColor}
+                  data-text-color-dark={textColorDark}
+                  class={`filter-chip rounded-full px-3 py-1 text-sm font-semibold transition-colors bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 ${textColor} ${textColorDark}`}
+                >
+                  {cat.label}
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -108,16 +115,19 @@ const themeData = { categoryColors };
         <div>
           <label class="block text-xs font-medium text-gray-500 mb-2">Tipo de documento</label>
           <div class="flex flex-wrap gap-2">
-            {tiposDocumento.map((tipo) => (
-              <button
-                type="button"
-                data-filter-tipo={tipo.value}
-                data-color={tipo.color}
-                class="filter-chip rounded-full px-3 py-1 text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
-              >
-                {tipo.label}
-              </button>
-            ))}
+            {tiposDocumento.map((tipo) => {
+              const fontClass = tipoStyles[tipo.value as keyof typeof tipoStyles]?.fontClass || '';
+              return (
+                <button
+                  type="button"
+                  data-filter-tipo={tipo.value}
+                  data-is-tipo="true"
+                  class={`filter-chip rounded-full px-3 py-1 text-sm transition-colors bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 ${fontClass}`}
+                >
+                  {tipo.label}
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -125,18 +135,26 @@ const themeData = { categoryColors };
         <div>
           <label class="block text-xs font-medium text-gray-500 mb-2">Ley específica</label>
           <div class="flex flex-wrap gap-2">
-            {leyes.map((ley) => (
-              <button
-                type="button"
-                data-filter-ley={ley.codigo}
-                data-categoria={ley.categoria}
-                data-tipo={ley.tipo}
-                title={ley.nombre}
-                class="filter-chip rounded-full px-3 py-1 text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
-              >
-                {ley.codigo}
-              </button>
-            ))}
+            {leyes.map((ley) => {
+              const fontClass = tipoStyles[ley.tipo as keyof typeof tipoStyles]?.fontClass || '';
+              const catColors = categoryColors[ley.categoria as keyof typeof categoryColors];
+              const textColor = catColors?.text || 'text-gray-700';
+              const textColorDark = catColors?.textDark || 'dark:text-gray-300';
+              return (
+                <button
+                  type="button"
+                  data-filter-ley={ley.codigo}
+                  data-categoria={ley.categoria}
+                  data-tipo={ley.tipo}
+                  data-text-color={textColor}
+                  data-text-color-dark={textColorDark}
+                  title={ley.nombre}
+                  class={`filter-chip rounded-full px-3 py-1 text-sm transition-colors bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 ${fontClass} ${textColor} ${textColorDark}`}
+                >
+                  {ley.codigo}
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -649,14 +667,30 @@ const themeData = { categoryColors };
 
   // Update chip visual state
   function updateChipState(btn: HTMLElement, active: boolean) {
-    const color = getChipColor(btn);
+    const isTipoChip = btn.dataset.isTipo === 'true';
 
-    if (active) {
-      btn.classList.remove('bg-gray-100', 'text-gray-700', 'dark:bg-gray-700', 'dark:text-gray-300');
-      btn.classList.add(color, 'text-white');
+    if (isTipoChip) {
+      // Tipo chips: use ring for active state, keep font style
+      if (active) {
+        btn.classList.remove('text-gray-600', 'dark:text-gray-300', 'opacity-50');
+        btn.classList.add('ring-2', 'ring-primary-500', 'text-gray-900', 'dark:text-white');
+      } else {
+        btn.classList.remove('ring-2', 'ring-primary-500', 'text-gray-900', 'dark:text-white');
+        btn.classList.add('text-gray-600', 'dark:text-gray-300', 'opacity-50');
+      }
     } else {
-      btn.classList.remove(color, 'text-white');
-      btn.classList.add('bg-gray-100', 'text-gray-700', 'dark:bg-gray-700', 'dark:text-gray-300');
+      // Category and law chips: use background color for active state
+      const bgColor = getChipColor(btn);
+      const textColor = btn.dataset.textColor || 'text-gray-700';
+      const textColorDark = btn.dataset.textColorDark || 'dark:text-gray-300';
+
+      if (active) {
+        btn.classList.remove('bg-gray-100', 'dark:bg-gray-700', textColor, textColorDark, 'opacity-50');
+        btn.classList.add(bgColor, 'text-white');
+      } else {
+        btn.classList.remove(bgColor, 'text-white');
+        btn.classList.add('bg-gray-100', 'dark:bg-gray-700', textColor, textColorDark, 'opacity-50');
+      }
     }
   }
 

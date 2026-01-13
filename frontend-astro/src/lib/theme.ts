@@ -34,31 +34,28 @@ export const categoryColors = {
   },
 } as const;
 
-// Estilos por tipo de documento (simple y limpio)
+// Estilos por tipo de documento
+// El estilo de fuente indica el tipo de documento
 export const tipoStyles = {
   ley: {
-    border: '',
-    ring: '',
-    label: 'Ley',
+    label: 'Leyes',
     chipColor: 'bg-primary-600',
+    fontClass: 'font-bold',               // Negrita - documento principal
   },
   codigo: {
-    border: '',
-    ring: '',
-    label: 'Código',
+    label: 'Códigos',
     chipColor: 'bg-yellow-600',
+    fontClass: 'font-medium',             // Medium - compilación formal
   },
   reglamento: {
-    border: '',
-    ring: '',
-    label: 'Reglamento',
+    label: 'Reglamentos',
     chipColor: 'bg-purple-600',
+    fontClass: 'font-normal italic',      // Itálica - derivado de leyes
   },
   resolucion: {
-    border: '',
-    ring: '',
     label: 'RMF',
     chipColor: 'bg-amber-600',
+    fontClass: 'font-light tracking-wide', // Light + espaciado - administrativo
   },
 } as const;
 
