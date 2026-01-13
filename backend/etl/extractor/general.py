@@ -687,6 +687,8 @@ class ExtractorGeneral(ExtractorBase):
                 puntos += 1
             if buffer_texto.rstrip().endswith('.'):
                 puntos += 1
+            if is_bold:
+                puntos += 1
 
             if puntos >= 4:
                 lineas_consolidadas.append({
