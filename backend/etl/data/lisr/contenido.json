@@ -17511,7 +17511,7 @@
           "numero": 7,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Monto de los ingresos amparados por comprobantes fiscales efectivamente cobrados, sin impuesto al valor agregado (pesos mensuales) Tasa aplicable",
+          "contenido": "Monto de los ingresos amparados por comprobantes fiscales efectivamente cobrados, sin impuesto al valor agregado (pesos mensuales)",
           "padre_numero": 5,
           "x_id": 121,
           "x_texto": 121,
@@ -17522,6 +17522,17 @@
           "numero": 8,
           "tipo": "texto",
           "identificador": null,
+          "contenido": "Tasa aplicable",
+          "padre_numero": 7,
+          "x_id": 396,
+          "x_texto": 396,
+          "y": 352,
+          "pagina": 146
+        },
+        {
+          "numero": 9,
+          "tipo": "texto",
+          "identificador": null,
           "contenido": "Hasta 25,000.00 1.00% Hasta 50,000.00 1.10% Hasta 83,333.33 1.50% Hasta 208,333.33 2.00% Hasta 3,500,000.00 2.50%",
           "padre_numero": 7,
           "x_id": 166,
@@ -17530,7 +17541,7 @@
           "pagina": 146
         },
         {
-          "numero": 9,
+          "numero": 10,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los contribuyentes a que se refiere este artículo también podrán aplicar lo dispuesto en esta Sección cuando además obtengan ingresos de los señalados en los Capítulos I y VI del Título IV de esta Ley, siempre que el total de los ingresos obtenidos en el ejercicio inmediato anterior por las actividades mencionadas, en su conjunto, no excedan de la cantidad a que se refiere el primer párrafo de este artículo.",
@@ -17541,7 +17552,7 @@
           "pagina": 146
         },
         {
-          "numero": 10,
+          "numero": 11,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando los contribuyentes dejen de tributar conforme a esta Sección, por el incumplimiento de sus obligaciones fiscales, en ningún caso podrán volver a tributar en los términos de la misma. Tratándose de aquellos contribuyentes que hayan excedido el monto de tres millones quinientos mil pesos a que se refiere el primer párrafo de este artículo, podrán volver a tributar conforme a esta Sección, siempre que los ingresos obtenidos en el ejercicio inmediato anterior a aquél de que se trate, no excedan de tres millones quinientos mil pesos y hayan estado al corriente en el cumplimiento de sus obligaciones fiscales.",
@@ -17552,7 +17563,7 @@
           "pagina": 146
         },
         {
-          "numero": 11,
+          "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "No podrán aplicar lo previsto en esta Sección las personas físicas a que se refiere el primer párrafo de este artículo en los supuestos siguientes:",
@@ -17563,7 +17574,7 @@
           "pagina": 146
         },
         {
-          "numero": 12,
+          "numero": 13,
           "tipo": "fraccion",
           "identificador": "I",
           "contenido": "Sean socios, accionistas o integrantes de personas morales o cuando sean partes relacionadas en los términos del artículo 90 de esta Ley.",
@@ -17574,7 +17585,7 @@
           "pagina": 146
         },
         {
-          "numero": 13,
+          "numero": 14,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "Sean residentes en el extranjero que tengan uno o varios establecimientos permanentes en el país.",
@@ -17585,7 +17596,7 @@
           "pagina": 146
         },
         {
-          "numero": 14,
+          "numero": 15,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "Cuenten con ingresos sujetos a regímenes fiscales preferentes.",
@@ -17596,7 +17607,7 @@
           "pagina": 147
         },
         {
-          "numero": 15,
+          "numero": 16,
           "tipo": "fraccion",
           "identificador": "IV",
           "contenido": "Perciban los ingresos a que se refieren las fracciones III, IV, V y VI del artículo 94 de esta Ley.",
@@ -17607,7 +17618,7 @@
           "pagina": 147
         },
         {
-          "numero": 16,
+          "numero": 17,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas físicas que se dediquen exclusivamente a las actividades agrícolas, ganaderas, silvícolas o pesqueras, cuyos ingresos en el ejercicio no excedan de novecientos mil pesos efectivamente cobrados, no pagarán el impuesto sobre la renta por los ingresos provenientes de dichas actividades. En caso de que los referidos ingresos excedan dicho monto, a partir de la declaración mensual correspondiente se deberá pagar el impuesto conforme al Título IV, Capítulo II, Sección IV de esta Ley, en los términos que se determine mediante reglas de carácter general que al efecto emita el Servicio de Administración Tributaria.",
@@ -17618,7 +17629,7 @@
           "pagina": 147
         },
         {
-          "numero": 17,
+          "numero": 18,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para efectos del párrafo anterior, se considera que los contribuyentes se dedican exclusivamente a las actividades agrícolas, ganaderas, silvícolas o pesqueras cuando el total de sus ingresos representan el 100% por estas actividades.",
@@ -17665,7 +17676,7 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Monto de los ingresos amparados por comprobantes fiscales efectivamente cobrados, sin impuesto al valor agregado (pesos anuales) Tasa aplicable",
+          "contenido": "Monto de los ingresos amparados por comprobantes fiscales efectivamente cobrados, sin impuesto al valor agregado (pesos anuales)",
           "padre_numero": 1,
           "x_id": 125,
           "x_texto": 125,
@@ -17676,6 +17687,17 @@
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
+          "contenido": "Tasa aplicable",
+          "padre_numero": 3,
+          "x_id": 400,
+          "x_texto": 400,
+          "y": 407,
+          "pagina": 147
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
           "contenido": "Hasta 300,000.00 1.00% Hasta 600,000.00 1.10% Hasta 1,000,000.00 1.50% Hasta 2,500,000.00 2.00% Hasta 3,500,000.00 2.50%",
           "padre_numero": 3,
           "x_id": 166,
@@ -17684,7 +17706,7 @@
           "pagina": 147
         },
         {
-          "numero": 5,
+          "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los contribuyentes podrán disminuir a la cantidad que resulte, el impuesto sobre la renta pagado en las declaraciones mensuales a que se refiere el artículo 113-E de esta Ley y, en su caso, el que les retuvieron conforme al artículo 113-J de este ordenamiento.",
@@ -17695,7 +17717,7 @@
           "pagina": 147
         },
         {
-          "numero": 6,
+          "numero": 7,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Se considera que se actualiza el supuesto previsto en el artículo 109, fracción I del Código Fiscal de la Federación, cuando los contribuyentes cancelen los comprobantes fiscales digitales por Internet, aún y cuando los receptores hayan dado efectos fiscales a los mismos.",
@@ -26570,7 +26592,7 @@
           "numero": 10,
           "tipo": "numeral",
           "identificador": "2",
-          "contenido": "El valor de los activos fijos será el monto pendiente por deducir, calculado de conformidad con lo siguiente: i) Se considerará como monto original de la inversión el monto de adquisición de dichos bienes por el residente en el extranjero.",
+          "contenido": "El valor de los activos fijos será el monto pendiente por deducir, calculado de conformidad con lo siguiente:",
           "padre_numero": 5,
           "x_id": 143,
           "x_texto": 165,
@@ -26581,6 +26603,17 @@
           "numero": 11,
           "tipo": "texto",
           "identificador": null,
+          "contenido": "i) Se considerará como monto original de la inversión el monto de adquisición de dichos bienes por el residente en el extranjero.",
+          "padre_numero": 10,
+          "x_id": 165,
+          "x_texto": 165,
+          "y": 363,
+          "pagina": 227
+        },
+        {
+          "numero": 12,
+          "tipo": "texto",
+          "identificador": null,
           "contenido": "ii) El monto pendiente por deducir se calculará disminuyendo del monto original de la inversión, determinado conforme a lo dispuesto en el inciso anterior, la cantidad que resulte de aplicar a este último monto los por cientos máximos autorizados previstos en los artículos 34, 35, 36, 37 y demás aplicables de esta Ley, según corresponda al bien de que se trate, sin que en ningún caso se pueda aplicar lo dispuesto en el artículo 51 de la Ley del Impuesto Sobre la Renta vigente hasta 1998 o en el artículo 220 de la Ley citada vigente hasta el 31 de diciembre de 2013. Para efectos de este subinciso, se deberá considerar la deducción por meses completos, desde la fecha en que fueron adquiridos hasta el último mes de la primera mitad del ejercicio por el que se determine la utilidad fiscal. Cuando el bien de que se trate haya sido adquirido durante dicho ejercicio, la deducción se considerará por meses completos, desde la fecha de adquisición del bien hasta el último mes de la primera mitad del periodo en el que el bien haya sido destinado a la operación en cuestión en el referido ejercicio.",
           "padre_numero": 10,
           "x_id": 165,
@@ -26589,29 +26622,29 @@
           "pagina": 227
         },
         {
-          "numero": 12,
+          "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "En el caso del primer y último ejercicio en el que se utilice el bien, el valor promedio del mismo se determinará dividiendo el resultado antes mencionado entre doce y el cociente se multiplicará por el número de meses en el que el bien haya sido utilizado en dichos ejercicios.",
-          "padre_numero": 11,
+          "padre_numero": 12,
           "x_id": 186,
           "x_texto": 186,
           "y": 581,
           "pagina": 227
         },
         {
-          "numero": 13,
+          "numero": 14,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El monto pendiente por deducir calculado conforme a este inciso de los bienes denominados en dólares de los Estados Unidos de América se convertirá a moneda nacional utilizando el tipo de cambio publicado en el Diario Oficial de la Federación vigente en el último día del último mes correspondiente a la primera mitad del ejercicio en el que el bien haya sido utilizado. En el caso de que el Banco de México no hubiere publicado dicho tipo de cambio, se aplicará el último tipo de cambio publicado. La conversión a dólares de los Estados Unidos de América a que se refiere este párrafo, de los valores denominados en otras monedas extranjeras, se efectuará utilizando el equivalente en dólares de los Estados Unidos de América de esta última moneda de acuerdo con la tabla que mensualmente publique el Banco de México durante la primera semana de mes inmediato siguiente a aquél al que corresponda.",
-          "padre_numero": 11,
+          "padre_numero": 12,
           "x_id": 186,
           "x_texto": 186,
           "y": 639,
           "pagina": 227
         },
         {
-          "numero": 14,
+          "numero": 15,
           "tipo": "texto",
           "identificador": null,
           "contenido": "iii) En ningún caso el monto pendiente por deducir será inferior a 10% del monto de adquisición de los bienes.",
@@ -26622,7 +26655,7 @@
           "pagina": 228
         },
         {
-          "numero": 15,
+          "numero": 16,
           "tipo": "numeral",
           "identificador": "3",
           "contenido": "La persona residente en el país podrá optar por incluir gastos y cargos diferidos en el valor de los activos utilizados en la operación de maquila.",
@@ -26633,18 +26666,18 @@
           "pagina": 228
         },
         {
-          "numero": 16,
+          "numero": 17,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas residentes en el país deberán tener a disposición de las autoridades fiscales la documentación correspondiente en la que, en su caso, consten los valores previstos en los numerales 1 y 2 de la fracción I de este artículo. Se considerará que se cumple con la obligación de tener a disposición de las autoridades fiscales la documentación antes referida, cuando se proporcione a dichas autoridades, en su caso, dentro de los plazos señalados en las disposiciones fiscales.",
-          "padre_numero": 15,
+          "padre_numero": 16,
           "x_id": 165,
           "x_texto": 165,
           "y": 248,
           "pagina": 228
         },
         {
-          "numero": 17,
+          "numero": 18,
           "tipo": "fraccion",
           "identificador": "II",
           "contenido": "El 6.5% sobre el monto total de los costos y gastos de operación de la operación en cuestión, incurridos por la persona residente en el país, determinados de conformidad con las normas de información financiera, incluso los incurridos por residentes en el extranjero, excepto por lo siguiente:",
@@ -26655,99 +26688,99 @@
           "pagina": 228
         },
         {
-          "numero": 18,
+          "numero": 19,
           "tipo": "numeral",
           "identificador": "1",
           "contenido": "No se incluirá el valor que corresponda a la adquisición de mercancías, así como de materias primas, productos semiterminados o terminados, utilizados en la operación de maquila, que efectúen por cuenta propia residentes en el extranjero.",
-          "padre_numero": 17,
+          "padre_numero": 18,
           "x_id": 121,
           "x_texto": 143,
           "y": 397,
           "pagina": 228
         },
         {
-          "numero": 19,
+          "numero": 20,
           "tipo": "numeral",
           "identificador": "2",
           "contenido": "La deducción de inversiones de los activos fijos, gastos y cargos diferidos propiedad de la empresa maquiladora, destinados a la operación de maquila, se calcularán aplicando lo dispuesto en esta Ley.",
-          "padre_numero": 17,
+          "padre_numero": 18,
           "x_id": 121,
           "x_texto": 143,
           "y": 443,
           "pagina": 228
         },
         {
-          "numero": 20,
+          "numero": 21,
           "tipo": "numeral",
           "identificador": "3",
           "contenido": "No deberán considerarse los efectos de inflación determinados en las normas de información financiera.",
-          "padre_numero": 17,
+          "padre_numero": 18,
           "x_id": 121,
           "x_texto": 143,
           "y": 489,
           "pagina": 228
         },
         {
-          "numero": 21,
+          "numero": 22,
           "tipo": "numeral",
           "identificador": "4",
           "contenido": "No deberán considerarse los gastos financieros.",
-          "padre_numero": 17,
+          "padre_numero": 18,
           "x_id": 121,
           "x_texto": 143,
           "y": 524,
           "pagina": 228
         },
         {
-          "numero": 22,
+          "numero": 23,
           "tipo": "numeral",
           "identificador": "5",
           "contenido": "No deberán considerarse los gastos extraordinarios o no recurrentes de la operación conforme a las normas de información financiera. No se consideran gastos extraordinarios aquellos respecto de los cuales se hayan creado reservas y provisiones en los términos de las normas de información financiera y para los cuales la empresa maquiladora cuente con fondos líquidos expresamente destinados para efectuar su pago. Cuando los contribuyentes no hubiesen creado las reservas y provisiones citadas y para los cuales la empresa maquiladora cuente con fondos líquidos expresamente para efectuar su pago, tampoco considerarán como gastos extraordinarios los pagos que efectúen por los conceptos respecto de los cuales se debieron constituir las reservas o provisiones citadas.",
-          "padre_numero": 17,
+          "padre_numero": 18,
           "x_id": 121,
           "x_texto": 143,
           "y": 547,
           "pagina": 228
         },
         {
-          "numero": 23,
+          "numero": 24,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los conceptos a que se refiere este numeral se deberán considerar en su valor histórico sin actualización por inflación, con excepción de lo dispuesto en el numeral 2 de esta fracción.",
-          "padre_numero": 22,
+          "padre_numero": 23,
           "x_id": 143,
           "x_texto": 143,
           "y": 673,
           "pagina": 228
         },
         {
-          "numero": 24,
+          "numero": 25,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos de esta fracción sólo deberán considerarse los gastos realizados en el extranjero por residentes en el extranjero por concepto de servicios directamente relacionados con la operación de maquila por erogaciones realizadas por cuenta de la persona residente en el país para cubrir obligaciones propias contraídas en territorio nacional, o erogaciones de gastos incurridos por residentes en el extranjero por servicios personales subordinados que se presten en la operación de maquila, cuando la estancia del prestador del servicio en territorio nacional sea superior a 183 días naturales, consecutivos o no, en los últimos doce meses, en los términos del artículo 154 de esta Ley.",
-          "padre_numero": 17,
+          "padre_numero": 18,
           "x_id": 121,
           "x_texto": 121,
           "y": 110,
           "pagina": 229
         },
         {
-          "numero": 25,
+          "numero": 26,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Para los efectos del cálculo a que se refiere el párrafo anterior, el monto de los gastos incurridos por residentes en el extranjero por servicios personales subordinados relacionados con la operación de maquila, que se presten o aprovechen en territorio nacional, deberá comprender el total del salario pagado en el ejercicio fiscal de que se trate, incluyendo cualesquiera de las prestaciones señaladas en reglas de carácter general que al efecto expida el Servicio de Administración Tributaria, otorgadas a la persona física.",
-          "padre_numero": 17,
+          "padre_numero": 18,
           "x_id": 121,
           "x_texto": 121,
           "y": 213,
           "pagina": 229
         },
         {
-          "numero": 26,
+          "numero": 27,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Cuando la persona física prestadora del servicio personal subordinado sea residente en el extranjero, en lugar de aplicar lo dispuesto en el párrafo anterior se podrá considerar en forma proporcional los gastos referidos en el citado párrafo. Para obtener esta proporción se multiplicará el monto total del salario percibido por la persona física en el ejercicio fiscal de que se trate, por el cociente que resulte de dividir el número de días que haya permanecido en territorio nacional dicha persona entre 365. Se considerará como número de días que la persona física permanece en territorio nacional, aquellos en los que tenga una presencia física en el país, así como los sábados y domingos por cada 5 días hábiles de estancia en territorio nacional, las vacaciones cuando la persona física de que se trate haya permanecido en el país por más de 183 días en un periodo de 12 meses, las interrupciones laborales de corta duración, así como los permisos por enfermedad.",
-          "padre_numero": 17,
+          "padre_numero": 18,
           "x_id": 121,
           "x_texto": 121,
           "referencias": [
@@ -26757,7 +26790,7 @@
           "pagina": 229
         },
         {
-          "numero": 27,
+          "numero": 28,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las empresas con programa de maquila que apliquen lo dispuesto en este artículo deberán presentar anualmente ante las autoridades fiscales, a más tardar en el mes de junio del año de que se trate, declaración informativa de sus operaciones de maquila en la que se refleje que la utilidad fiscal del ejercicio representó, al menos, la cantidad mayor que resulte de aplicar lo dispuesto en las fracciones I y II de este artículo, en términos de lo que establezca el Servicio de Administración Tributaria mediante reglas de carácter general. En caso de que no se presente dicha declaración o no refleje lo dispuesto en este párrafo, no se podrá aplicar lo establecido en este artículo.",
@@ -26771,7 +26804,7 @@
           "pagina": 229
         },
         {
-          "numero": 28,
+          "numero": 29,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas residentes en el país que hayan optado por aplicar lo dispuesto en el presente artículo quedarán exceptuadas de la obligación de presentar la declaración informativa señalada en la fracción X del artículo 76 de esta Ley, únicamente por la operación de maquila.",
@@ -26782,7 +26815,7 @@
           "pagina": 229
         },
         {
-          "numero": 29,
+          "numero": 30,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las personas residentes en el país que realicen, además de la operación de maquila a que se refiere el artículo 181 de la presente Ley, actividades distintas a ésta, podrán acogerse a lo dispuesto en este artículo únicamente por la operación de maquila.",

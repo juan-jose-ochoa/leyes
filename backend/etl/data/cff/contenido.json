@@ -2591,7 +2591,7 @@
           "numero": 8,
           "tipo": "inciso",
           "identificador": "a",
-          "contenido": ") Proporcionar información sobre los certificados emitidos por el Servicio de Administración Tributaria, que permitan a terceros conocer: 1) Que el certificado fue emitido por el Servicio de Administración Tributaria.",
+          "contenido": ") Proporcionar información sobre los certificados emitidos por el Servicio de Administración Tributaria, que permitan a terceros conocer:",
           "padre_numero": 7,
           "x_id": 114,
           "x_texto": 136,
@@ -2602,6 +2602,17 @@
           "numero": 9,
           "tipo": "texto",
           "identificador": null,
+          "contenido": "1) Que el certificado fue emitido por el Servicio de Administración Tributaria.",
+          "padre_numero": 8,
+          "x_id": 142,
+          "x_texto": 142,
+          "y": 213,
+          "pagina": 20
+        },
+        {
+          "numero": 10,
+          "tipo": "texto",
+          "identificador": null,
           "contenido": "2) Si se cuenta con un documento suscrito por el firmante nombrado en el certificado en el que se haga constar que dicho firmante tenía bajo su control el dispositivo y los datos de creación de la firma electrónica avanzada en el momento en que se expidió el certificado y que su uso queda bajo su exclusiva responsabilidad.",
           "padre_numero": 8,
           "x_id": 142,
@@ -2610,7 +2621,7 @@
           "pagina": 20
         },
         {
-          "numero": 10,
+          "numero": 11,
           "tipo": "texto",
           "identificador": null,
           "contenido": "3) Si los datos de creación de la firma eran válidos en la fecha en que se expidió el certificado.",
@@ -2621,7 +2632,7 @@
           "pagina": 20
         },
         {
-          "numero": 11,
+          "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "4) El método utilizado para identificar al firmante.",
@@ -2632,7 +2643,7 @@
           "pagina": 20
         },
         {
-          "numero": 12,
+          "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "5) Cualquier limitación en los fines o el valor respecto de los cuales puedan utilizarse los datos de creación de la firma o el certificado.",
@@ -2643,7 +2654,7 @@
           "pagina": 20
         },
         {
-          "numero": 13,
+          "numero": 14,
           "tipo": "texto",
           "identificador": null,
           "contenido": "6) Cualquier limitación en cuanto al ámbito o el alcance de la responsabilidad del Servicio de Administración Tributaria.",
@@ -2654,7 +2665,7 @@
           "pagina": 20
         },
         {
-          "numero": 14,
+          "numero": 15,
           "tipo": "texto",
           "identificador": null,
           "contenido": "7) Si se ofrece un servicio de terminación de vigencia de los certificados.",
@@ -2665,7 +2676,7 @@
           "pagina": 20
         },
         {
-          "numero": 15,
+          "numero": 16,
           "tipo": "inciso",
           "identificador": "b",
           "contenido": ") Proporcionar los servicios de acceso al registro de certificados. A dicho registro podrá accederse por medios electrónicos.",
@@ -2676,7 +2687,7 @@
           "pagina": 20
         },
         {
-          "numero": 16,
+          "numero": 17,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las facultades mencionadas podrán ser ejercidas directamente en cualquier tiempo por el Servicio de Administración Tributaria, pudiendo hacerlo en forma separada o conjunta con las personas autorizadas en los términos de esta fracción.",
@@ -2687,7 +2698,7 @@
           "pagina": 20
         },
         {
-          "numero": 17,
+          "numero": 18,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los particulares que determinen el uso de la firma electrónica avanzada como medio de autenticación o firmado de documentos digitales, podrán solicitar al Servicio de Administración Tributaria que preste el servicio de verificación y autenticación de los certificados de firmas electrónicas avanzadas. Los requisitos para otorgar la prestación de dicho servicio se establecerán mediante reglas de carácter general que emita dicho órgano administrativo desconcentrado.",
@@ -4319,7 +4330,7 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Donde: d = Día del que se desea conocer el valor de la UDI.",
+          "contenido": "Donde:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85,
@@ -4330,6 +4341,17 @@
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
+          "contenido": "d = Día del que se desea conocer el valor de la UDI.",
+          "padre_numero": 3,
+          "x_id": 113,
+          "x_texto": 113,
+          "y": 526,
+          "pagina": 32
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
           "contenido": "m = Mes del año a que corresponda d.",
           "padre_numero": 3,
           "x_id": 110,
@@ -4338,7 +4360,7 @@
           "pagina": 32
         },
         {
-          "numero": 5,
+          "numero": 6,
           "tipo": "texto",
           "identificador": null,
           "contenido": "UDId,m = Unidad de Inversión correspondiente al día d del mes m.",
@@ -4349,7 +4371,7 @@
           "pagina": 32
         },
         {
-          "numero": 6,
+          "numero": 7,
           "tipo": "texto",
           "identificador": null,
           "contenido": "UDId-1,m = Unidad de Inversión correspondiente al día inmediato anterior al día d del mes m.",
@@ -4360,32 +4382,32 @@
           "pagina": 32
         },
         {
-          "numero": 7,
+          "numero": 8,
           "tipo": "texto",
           "identificador": null,
           "contenido": "* = Operador de multiplicación.",
-          "padre_numero": 6,
+          "padre_numero": 7,
           "x_id": 115,
           "x_texto": 115,
           "y": 618,
           "pagina": 32
         },
         {
-          "numero": 8,
+          "numero": 9,
           "tipo": "texto",
           "identificador": null,
           "contenido": "= Raíz enésima.",
-          "padre_numero": 6,
+          "padre_numero": 7,
           "x_id": 126,
           "x_texto": 126,
           "y": 641,
           "pagina": 32
         },
         {
-          "numero": 9,
+          "numero": 10,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "1. Para determinar el valor de la UDI para los días del 11 al 25 del mes m se utiliza: n = 15",
+          "contenido": "1. Para determinar el valor de la UDI para los días del 11 al 25 del mes m se utiliza:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85,
@@ -4393,7 +4415,18 @@
           "pagina": 32
         },
         {
-          "numero": 10,
+          "numero": 11,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "n = 15",
+          "padre_numero": 10,
+          "x_id": 113,
+          "x_texto": 113,
+          "y": 689,
+          "pagina": 32
+        },
+        {
+          "numero": 12,
           "tipo": "texto",
           "identificador": null,
           "contenido": "INPCq = Índice Nacional de Precios al Consumidor de la segunda quincena del mes inmediato anterior al mes m.",
@@ -4404,7 +4437,7 @@
           "pagina": 33
         },
         {
-          "numero": 11,
+          "numero": 13,
           "tipo": "texto",
           "identificador": null,
           "contenido": "INPCq-1 = Índice Nacional de Precios al Consumidor de la primera quincena del mes inmediato anterior al mes m.",
@@ -4415,10 +4448,10 @@
           "pagina": 33
         },
         {
-          "numero": 12,
+          "numero": 14,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "2. Para obtener el valor de la UDI para los días del 26 de cada mes al 10 del mes inmediato siguiente, se utiliza la siguiente formulación: 2.1. Para determinar el valor de la UDI para los días del 26 al último día del mes m se utiliza: n = Número de días naturales contados desde el 26 del mes m y hasta el día 10 del mes siguiente.",
+          "contenido": "2. Para obtener el valor de la UDI para los días del 26 de cada mes al 10 del mes inmediato siguiente, se utiliza la siguiente formulación: 2.1. Para determinar el valor de la UDI para los días del 26 al último día del mes m se utiliza:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85,
@@ -4426,7 +4459,18 @@
           "pagina": 33
         },
         {
-          "numero": 13,
+          "numero": 15,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "n = Número de días naturales contados desde el 26 del mes m y hasta el día 10 del mes siguiente.",
+          "padre_numero": 14,
+          "x_id": 113,
+          "x_texto": 113,
+          "y": 236,
+          "pagina": 33
+        },
+        {
+          "numero": 16,
           "tipo": "texto",
           "identificador": null,
           "contenido": "INPCq = Índice Nacional de Precios al Consumidor de la primera quincena del mes m.",
@@ -4437,7 +4481,7 @@
           "pagina": 33
         },
         {
-          "numero": 14,
+          "numero": 17,
           "tipo": "texto",
           "identificador": null,
           "contenido": "INPCq-1 = Índice Nacional de Precios al Consumidor de la segunda quincena del mes inmediato anterior al mes m.",
@@ -4448,10 +4492,10 @@
           "pagina": 33
         },
         {
-          "numero": 15,
+          "numero": 18,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "2.2. Para determinar el valor de la UDI para los días del 1 al 10 del mes m se utiliza: n = Número de días naturales contados desde el 26 del mes inmediato anterior al mes m y hasta el día 10 del mes m.",
+          "contenido": "2.2. Para determinar el valor de la UDI para los días del 1 al 10 del mes m se utiliza:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 85,
@@ -4459,7 +4503,18 @@
           "pagina": 33
         },
         {
-          "numero": 16,
+          "numero": 19,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "n = Número de días naturales contados desde el 26 del mes inmediato anterior al mes m y hasta el día 10 del mes m.",
+          "padre_numero": 18,
+          "x_id": 113,
+          "x_texto": 113,
+          "y": 351,
+          "pagina": 33
+        },
+        {
+          "numero": 20,
           "tipo": "texto",
           "identificador": null,
           "contenido": "INPCq = Índice Nacional de Precios al Consumidor de la primera quincena del mes inmediato anterior al mes m.",
@@ -4470,7 +4525,7 @@
           "pagina": 33
         },
         {
-          "numero": 17,
+          "numero": 21,
           "tipo": "texto",
           "identificador": null,
           "contenido": "INPCq-1 = Índice Nacional de Precios al Consumidor de la segunda quincena del mes antepasado al mes m.",

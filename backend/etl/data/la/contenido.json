@@ -965,11 +965,22 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Título Segundo Control de aduana en el despacho",
+          "contenido": "Título Segundo",
           "padre_numero": 2,
           "x_id": 266,
           "x_texto": 266,
           "y": 312,
+          "pagina": 8
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Control de aduana en el despacho",
+          "padre_numero": 2,
+          "x_id": 216,
+          "x_texto": 216,
+          "y": 325,
           "pagina": 8
         }
       ]
@@ -5575,13 +5586,10 @@
           "numero": 10,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "CAPITULO II Afectación de mercancías y exenciones",
+          "contenido": "CAPITULO II",
           "padre_numero": 9,
           "x_id": 273,
           "x_texto": 273,
-          "referencias": [
-            "Capítulo reformado DOF 31-12-2000"
-          ],
           "y": 439,
           "pagina": 41
         },
@@ -5589,14 +5597,39 @@
           "numero": 11,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "SECCION PRIMERA Afectación de las mercancías",
+          "contenido": "Afectación de mercancías y exenciones",
           "padre_numero": 9,
+          "x_id": 202,
+          "x_texto": 202,
+          "referencias": [
+            "Capítulo reformado DOF 31-12-2000"
+          ],
+          "y": 451,
+          "pagina": 41
+        },
+        {
+          "numero": 12,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "SECCION PRIMERA",
+          "padre_numero": 11,
           "x_id": 254,
           "x_texto": 254,
+          "y": 484,
+          "pagina": 41
+        },
+        {
+          "numero": 13,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Afectación de las mercancías",
+          "padre_numero": 11,
+          "x_id": 229,
+          "x_texto": 229,
           "referencias": [
             "Sección adicionada DOF 31-12-2000"
           ],
-          "y": 484,
+          "y": 497,
           "pagina": 41
         }
       ]
@@ -10079,11 +10112,22 @@
           "numero": 2,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "ll Para retornar al extranjero en el mismo estado",
+          "contenido": "ll",
           "padre_numero": 1,
           "x_id": 303,
           "x_texto": 303,
           "y": 360,
+          "pagina": 71
+        },
+        {
+          "numero": 3,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para retornar al extranjero en el mismo estado",
+          "padre_numero": 1,
+          "x_id": 185,
+          "x_texto": 185,
+          "y": 373,
           "pagina": 71
         }
       ]
@@ -10567,11 +10611,22 @@
           "numero": 4,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "III Para elaboración, transformación o reparación en programas de maquila o de exportación",
+          "contenido": "III",
           "padre_numero": 3,
           "x_id": 301,
           "x_texto": 301,
           "y": 130,
+          "pagina": 75
+        },
+        {
+          "numero": 5,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para elaboración, transformación o reparación en programas de maquila o de exportación",
+          "padre_numero": 3,
+          "x_id": 103,
+          "x_texto": 103,
+          "y": 143,
           "pagina": 75
         }
       ]
@@ -11063,11 +11118,22 @@
           "numero": 3,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "II Para retornar al país en el mismo estado",
+          "contenido": "II",
           "padre_numero": 2,
           "x_id": 303,
           "x_texto": 303,
           "y": 433,
+          "pagina": 78
+        },
+        {
+          "numero": 4,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para retornar al país en el mismo estado",
+          "padre_numero": 2,
+          "x_id": 200,
+          "x_texto": 200,
+          "y": 445,
           "pagina": 78
         }
       ]
@@ -11260,11 +11326,22 @@
           "numero": 14,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "III Para elaboración, transformación o reparación",
+          "contenido": "III",
           "padre_numero": 13,
           "x_id": 301,
           "x_texto": 301,
           "y": 567,
+          "pagina": 79
+        },
+        {
+          "numero": 15,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Para elaboración, transformación o reparación",
+          "padre_numero": 13,
+          "x_id": 184,
+          "x_texto": 184,
+          "y": 580,
           "pagina": 79
         }
       ]

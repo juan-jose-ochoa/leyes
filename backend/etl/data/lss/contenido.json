@@ -7750,7 +7750,7 @@
           "numero": 5,
           "tipo": "texto",
           "identificador": null,
-          "contenido": "Salario base de cotización del trabajador Cuota Patronal",
+          "contenido": "Salario base de cotización del trabajador",
           "padre_numero": 4,
           "x_id": 160,
           "x_texto": 160,
@@ -7759,6 +7759,17 @@
         },
         {
           "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "Cuota Patronal",
+          "padre_numero": 5,
+          "x_id": 409,
+          "x_texto": 409,
+          "y": 698,
+          "pagina": 51
+        },
+        {
+          "numero": 7,
           "tipo": "numeral",
           "identificador": "1",
           "contenido": "00 SM* 3.150%",
@@ -7769,7 +7780,7 @@
           "pagina": 52
         },
         {
-          "numero": 7,
+          "numero": 8,
           "tipo": "numeral",
           "identificador": "1",
           "contenido": "01 SM a 1.50 UMA** 4.202%",
@@ -7780,7 +7791,7 @@
           "pagina": 52
         },
         {
-          "numero": 8,
+          "numero": 9,
           "tipo": "numeral",
           "identificador": "1",
           "contenido": "51 a 2.00 UMA 6.552%",
@@ -7791,7 +7802,7 @@
           "pagina": 52
         },
         {
-          "numero": 9,
+          "numero": 10,
           "tipo": "numeral",
           "identificador": "2",
           "contenido": "01 a 2.50 UMA 7.962% 2.51 a 3.00 UMA 8.902%",
@@ -7802,7 +7813,7 @@
           "pagina": 52
         },
         {
-          "numero": 10,
+          "numero": 11,
           "tipo": "numeral",
           "identificador": "3",
           "contenido": "01 a 3.50 UMA 9.573% 3.51 a 4.00 UMA 10.077%",
@@ -7813,7 +7824,7 @@
           "pagina": 52
         },
         {
-          "numero": 11,
+          "numero": 12,
           "tipo": "numeral",
           "identificador": "4",
           "contenido": "01 UMA en adelante 11.875% *Salario Mínimo ** Unidad de Medida y Actualización",
@@ -7824,7 +7835,7 @@
           "pagina": 52
         },
         {
-          "numero": 12,
+          "numero": 13,
           "tipo": "inciso",
           "identificador": "b",
           "contenido": ") Los trabajadores cubrirán una cuota del uno punto ciento veinticinco por ciento sobre el salario base de cotización.",
@@ -7838,7 +7849,7 @@
           "pagina": 52
         },
         {
-          "numero": 13,
+          "numero": 14,
           "tipo": "fraccion",
           "identificador": "III",
           "contenido": "Se deroga.",
@@ -7852,7 +7863,7 @@
           "pagina": 52
         },
         {
-          "numero": 14,
+          "numero": 15,
           "tipo": "fraccion",
           "identificador": "IV",
           "contenido": "El Gobierno Federal, por cada día de salario cotizado, aportará mensualmente una cantidad por concepto de la cuota social, para los trabajadores que ganen hasta cuatro veces la unidad de medida y actualización, que se depositará en la cuenta individual de cada trabajador asegurado conforme a la tabla siguiente:",
@@ -7866,11 +7877,11 @@
           "pagina": 52
         },
         {
-          "numero": 15,
+          "numero": 16,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los valores mencionados del importe de la cuota social, se actualizarán trimestralmente de conformidad con el Índice Nacional de Precios al Consumidor, en los meses de marzo, junio, septiembre y diciembre de cada año.",
-          "padre_numero": 14,
+          "padre_numero": 15,
           "x_id": 107,
           "x_texto": 107,
           "referencias": [
@@ -7880,7 +7891,7 @@
           "pagina": 52
         },
         {
-          "numero": 16,
+          "numero": 17,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Estas cuotas y aportaciones al destinarse al otorgamiento de pensiones y demás beneficios establecidos en esta Ley, se entenderán destinadas al gasto público en materia de seguridad social.",
@@ -13313,7 +13324,7 @@
           "numero": 5,
           "tipo": "fraccion",
           "identificador": "IV",
-          "contenido": "Ingresos totales y en flujo de efectivo, expresados como devengados, por: a. Cuotas de trabajadores y patrones; b. Cuotas, contribuciones y aportaciones del Gobierno Federal, y c. Ingresos financieros de las reservas, y cualesquiera otros.",
+          "contenido": "Ingresos totales y en flujo de efectivo, expresados como devengados, por:",
           "padre_numero": null,
           "x_id": 85,
           "x_texto": 107,
@@ -13322,6 +13333,39 @@
         },
         {
           "numero": 6,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "a. Cuotas de trabajadores y patrones;",
+          "padre_numero": 5,
+          "x_id": 121,
+          "x_texto": 121,
+          "y": 337,
+          "pagina": 87
+        },
+        {
+          "numero": 7,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "b. Cuotas, contribuciones y aportaciones del Gobierno Federal, y",
+          "padre_numero": 5,
+          "x_id": 121,
+          "x_texto": 121,
+          "y": 360,
+          "pagina": 87
+        },
+        {
+          "numero": 8,
+          "tipo": "texto",
+          "identificador": null,
+          "contenido": "c. Ingresos financieros de las reservas, y cualesquiera otros.",
+          "padre_numero": 5,
+          "x_id": 121,
+          "x_texto": 121,
+          "y": 383,
+          "pagina": 87
+        },
+        {
+          "numero": 9,
           "tipo": "fraccion",
           "identificador": "V",
           "contenido": "Gastos totales y por capítulo de gasto, expresados como devengados y en flujo de efectivo;",
@@ -13332,7 +13376,7 @@
           "pagina": 87
         },
         {
-          "numero": 7,
+          "numero": 10,
           "tipo": "fraccion",
           "identificador": "VI",
           "contenido": "Excedentes de operación;",
@@ -13343,7 +13387,7 @@
           "pagina": 87
         },
         {
-          "numero": 8,
+          "numero": 11,
           "tipo": "fraccion",
           "identificador": "VII",
           "contenido": "Excedentes de flujo de efectivo, antes y después de la creación, incremento o decremento del Fondo para el Cumplimiento de Obligaciones Laborales de Carácter Legal y Contractual señalado en el artículo 286 K;",
@@ -13354,7 +13398,7 @@
           "pagina": 87
         },
         {
-          "numero": 9,
+          "numero": 12,
           "tipo": "fraccion",
           "identificador": "VIII",
           "contenido": "Montos en que se proponga incrementar, decrementar o, en su caso, reconstituir las Reservas Financieras y Actuariales y la Reserva General Financiera y Actuarial a que se refieren las fracciones III y IV del artículo 280 de esta Ley, para cada seguro y el Fondo para Cumplimiento de Obligaciones Laborales de Carácter Legal y Contractual, así como el respaldo de inversiones financieras que se dará al mismo;",
@@ -13365,7 +13409,7 @@
           "pagina": 87
         },
         {
-          "numero": 10,
+          "numero": 13,
           "tipo": "fraccion",
           "identificador": "IX",
           "contenido": "Ingresos y gastos totales por seguro expresados como devengados;",
@@ -13376,7 +13420,7 @@
           "pagina": 87
         },
         {
-          "numero": 11,
+          "numero": 14,
           "tipo": "fraccion",
           "identificador": "X",
           "contenido": "Plazas de personal totales a ocupar, incluyendo permanentes y temporales, así como la contratación de servicios profesionales por honorarios;",
@@ -13387,7 +13431,7 @@
           "pagina": 87
         },
         {
-          "numero": 12,
+          "numero": 15,
           "tipo": "fraccion",
           "identificador": "XI",
           "contenido": "Pasivos laborales totales, detallando obligaciones legales y contractuales, y el efecto que sobre dichos pasivos tendría la creación de nuevas plazas de personal en el ejercicio y en un plazo de veintiocho años;",
@@ -13398,7 +13442,7 @@
           "pagina": 87
         },
         {
-          "numero": 13,
+          "numero": 16,
           "tipo": "fraccion",
           "identificador": "XII",
           "contenido": "Programa de Inversiones Físicas, indicando las principales obras y equipamiento. El Programa deberá especificarse por seguro y deberá incluir el análisis de los pasivos y gastos operativos de todo tipo generados por la inversión;",
@@ -13409,7 +13453,7 @@
           "pagina": 87
         },
         {
-          "numero": 14,
+          "numero": 17,
           "tipo": "fraccion",
           "identificador": "XIII",
           "contenido": "Presupuesto de las áreas de administración central del Instituto, y",
@@ -13420,7 +13464,7 @@
           "pagina": 88
         },
         {
-          "numero": 15,
+          "numero": 18,
           "tipo": "fraccion",
           "identificador": "XIV",
           "contenido": "Las demás que considere convenientes el Consejo Técnico.",
