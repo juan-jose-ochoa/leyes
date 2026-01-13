@@ -19,14 +19,17 @@
 
   body {
     @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+    font-size: 1.25rem;       /* 20px base - más legible */
   }
 }
 
 @layer components {
   .prose-legal {
     font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
-    font-size: 1.0625rem; /* 17px - ligeramente más grande para legibilidad */
-    line-height: 1.75;
+    font-size: 1.5rem;        /* 24px - optimizado para lectura prolongada */
+    line-height: 1.85;        /* mayor aire entre líneas */
+    max-width: 70ch;          /* límite ~70 caracteres por línea */
+    margin-inline: auto;      /* centrado si sobra espacio */
   }
 
   .btn {
