@@ -59,11 +59,17 @@ const siteName = 'LeyesMX';
     )}
     <slot />
     <script is:inline>
-      // Dark mode initialization
-      if (localStorage.getItem('darkMode') === 'true' ||
-          (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
+      // Dark mode initialization - runs on initial load and after View Transitions
+      function initDarkMode() {
+        if (localStorage.getItem('darkMode') === 'true' ||
+            (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
       }
+      initDarkMode();
+      document.addEventListener('astro:after-swap', initDarkMode);
     </script>
   </body>
 </html>

@@ -399,48 +399,54 @@ const seccionTexto = breadcrumb.length > 0
   </script>
 
   <!-- View mode toggle script -->
-  <script>
-    const container = document.getElementById('article-container');
-    const toggleBtns = document.querySelectorAll('.view-mode-btn');
-
-    // Get saved preference or default to 'text'
-    let savedMode = localStorage.getItem('viewMode') || 'text';
-
-    // If screen is small and saved mode is split, fallback to text
-    const isLargeScreen = window.matchMedia('(min-width: 1024px)').matches;
-    if (savedMode === 'split' && !isLargeScreen) {
-      savedMode = 'text';
-    }
-
-    function setViewMode(mode: string) {
+  <script is:inline>
+    function initViewMode() {
+      const container = document.getElementById('article-container');
+      const toggleBtns = document.querySelectorAll('.view-mode-btn');
       if (!container) return;
 
-      // Update data attribute - CSS handles the rest
-      container.dataset.viewmode = mode;
+      // Get saved preference or default to 'text'
+      let savedMode = localStorage.getItem('viewMode') || 'text';
 
-      // Update button states
+      // If screen is small and saved mode is split, fallback to text
+      const isLargeScreen = window.matchMedia('(min-width: 1024px)').matches;
+      if (savedMode === 'split' && !isLargeScreen) {
+        savedMode = 'text';
+      }
+
+      function setViewMode(mode) {
+        // Update data attribute - CSS handles the rest
+        container.dataset.viewmode = mode;
+
+        // Update button states
+        toggleBtns.forEach(btn => {
+          const btnMode = btn.dataset.mode;
+          if (btnMode === mode) {
+            btn.classList.add('active');
+          } else {
+            btn.classList.remove('active');
+          }
+        });
+
+        // Save preference
+        localStorage.setItem('viewMode', mode);
+      }
+
+      // Initialize
+      setViewMode(savedMode);
+
+      // Add click handlers (use event delegation to avoid duplicate listeners)
       toggleBtns.forEach(btn => {
-        const btnMode = (btn as HTMLElement).dataset.mode;
-        if (btnMode === mode) {
-          btn.classList.add('active');
-        } else {
-          btn.classList.remove('active');
-        }
+        btn.onclick = () => {
+          const mode = btn.dataset.mode;
+          if (mode) setViewMode(mode);
+        };
       });
-
-      // Save preference
-      localStorage.setItem('viewMode', mode);
     }
 
-    // Initialize
-    setViewMode(savedMode);
-
-    // Add click handlers
-    toggleBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const mode = (btn as HTMLElement).dataset.mode;
-        if (mode) setViewMode(mode);
-      });
-    });
+    // Run on initial load
+    initViewMode();
+    // Run after View Transitions navigation
+    document.addEventListener('astro:page-load', initViewMode);
   </script>
 </BaseLayout>
