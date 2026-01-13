@@ -186,8 +186,6 @@ const categorias = [
 
   // State
   let pagefind: any = null;
-  let selectedCategorias: string[] = [];
-  let selectedTipos: string[] = [];
   let selectedLeyes: string[] = [];
   const expandedLaws = new Set<string>();
 
@@ -197,6 +195,70 @@ const categorias = [
   // Helper to get law info from catalogo
   function getLeyInfo(codigo: string): CatalogoLey | undefined {
     return catalogoLeyes.find(l => l.codigo.toUpperCase() === codigo?.toUpperCase());
+  }
+
+  // Get all law codes by category
+  function getLeyesByCategoria(categoria: string): string[] {
+    return catalogoLeyes.filter(l => l.categoria === categoria).map(l => l.codigo);
+  }
+
+  // Get all law codes by type
+  function getLeyesByTipo(tipo: string): string[] {
+    return catalogoLeyes.filter(l => l.tipo === tipo).map(l => l.codigo);
+  }
+
+  // Check if a category is fully active (all its laws are selected)
+  function isCategoriaActive(categoria: string): boolean {
+    const leyes = getLeyesByCategoria(categoria);
+    return leyes.length > 0 && leyes.every(l => selectedLeyes.includes(l));
+  }
+
+  // Get all active categories
+  function getActiveCategories(): string[] {
+    return ['fiscal', 'laboral', 'constitucional'].filter(cat => isCategoriaActive(cat));
+  }
+
+  // Check if a type is fully active (ALL laws of that type selected, globally)
+  // This is for visual state only - not scoped to categories
+  function isTipoActive(tipo: string): boolean {
+    const leyesOfType = getLeyesByTipo(tipo);
+    return leyesOfType.length > 0 && leyesOfType.every(l => selectedLeyes.includes(l));
+  }
+
+  // Get laws to toggle for a tipo click (scoped to active categories context)
+  function getLeyesToToggleForTipo(tipo: string): string[] {
+    const activeCategories = getActiveCategories();
+
+    if (activeCategories.length === 0) {
+      // No category context, affect all laws of this type
+      return getLeyesByTipo(tipo);
+    } else {
+      // Affect only laws within active categories
+      return catalogoLeyes
+        .filter(l => l.tipo === tipo && activeCategories.includes(l.categoria))
+        .map(l => l.codigo);
+    }
+  }
+
+  // Sync all chip visual states based on selectedLeyes
+  function syncAllChips() {
+    // Category chips
+    document.querySelectorAll('[data-filter-categoria]').forEach((chip) => {
+      const cat = (chip as HTMLElement).dataset.filterCategoria!;
+      updateChipState(chip as HTMLElement, isCategoriaActive(cat));
+    });
+
+    // Type chips
+    document.querySelectorAll('[data-filter-tipo]').forEach((chip) => {
+      const tipo = (chip as HTMLElement).dataset.filterTipo!;
+      updateChipState(chip as HTMLElement, isTipoActive(tipo));
+    });
+
+    // Law chips
+    document.querySelectorAll('[data-filter-ley]').forEach((chip) => {
+      const ley = (chip as HTMLElement).dataset.filterLey!;
+      updateChipState(chip as HTMLElement, selectedLeyes.includes(ley));
+    });
   }
 
   // Elements
@@ -231,9 +293,7 @@ const categorias = [
   function updateURL() {
     const params = new URLSearchParams();
     if (input.value) params.set('q', input.value);
-    if (selectedCategorias.length > 0) params.set('categoria', selectedCategorias.join(','));
     if (selectedLeyes.length > 0) params.set('ley', selectedLeyes.join(','));
-    if (selectedTipos.length > 0) params.set('tipo', selectedTipos.join(','));
 
     const newURL = params.toString() ? `?${params.toString()}` : window.location.pathname;
     window.history.replaceState({}, '', newURL);
@@ -249,38 +309,18 @@ const categorias = [
       clearBtn?.classList.remove('hidden');
     }
 
-    const categoriaParam = params.get('categoria');
-    if (categoriaParam) {
-      selectedCategorias = categoriaParam.split(',').filter(Boolean);
-      selectedCategorias.forEach(cat => {
-        const btn = document.querySelector(`[data-filter-categoria="${cat}"]`) as HTMLElement;
-        if (btn) updateChipState(btn, true);
-      });
-    }
-
     const leyParam = params.get('ley');
     if (leyParam) {
       selectedLeyes = leyParam.split(',').filter(Boolean);
-      selectedLeyes.forEach(ley => {
-        const btn = document.querySelector(`[data-filter-ley="${ley}"]`) as HTMLElement;
-        if (btn) updateChipState(btn, true);
-      });
     }
 
-    const tipoParam = params.get('tipo');
-    if (tipoParam) {
-      selectedTipos = tipoParam.split(',').filter(Boolean);
-      selectedTipos.forEach(tipo => {
-        const btn = document.querySelector(`[data-filter-tipo="${tipo}"]`) as HTMLElement;
-        if (btn) updateChipState(btn, true);
-      });
-    }
-
+    // Sync all chip states based on selectedLeyes
+    syncAllChips();
     updateFilterCount();
 
     // If there's a query, perform search and show filters panel
     if (q) {
-      if (selectedCategorias.length > 0 || selectedLeyes.length > 0 || selectedTipos.length > 0) {
+      if (selectedLeyes.length > 0) {
         filtersPanel?.classList.remove('hidden');
       }
       doSearch(q);
@@ -303,31 +343,19 @@ const categorias = [
     let allResults: any[] = [];
     const seenUrls = new Set<string>();
 
-    if (selectedCategorias.length === 0 && selectedTipos.length === 0 && selectedLeyes.length === 0) {
+    if (selectedLeyes.length === 0) {
+      // No filter, search all
       const search = await pf.search(query);
       allResults = search.results;
     } else {
-      const categoriasToSearch = selectedCategorias.length > 0 ? selectedCategorias : [null];
-      const leyesToSearch = selectedLeyes.length > 0 ? selectedLeyes : [null];
-      const tiposToSearch = selectedTipos.length > 0 ? selectedTipos : [null];
-
-      for (const categoria of categoriasToSearch) {
-        for (const ley of leyesToSearch) {
-          for (const tipo of tiposToSearch) {
-            const filters: Record<string, string> = {};
-            if (categoria) filters.categoria = categoria;
-            if (ley) filters.ley = ley;
-            if (tipo) filters.tipo = tipo;
-
-            const search = await pf.search(query, { filters });
-
-            for (const result of search.results) {
-              const data = await result.data();
-              if (!seenUrls.has(data.url)) {
-                seenUrls.add(data.url);
-                allResults.push(result);
-              }
-            }
+      // Search only in selected laws
+      for (const ley of selectedLeyes) {
+        const search = await pf.search(query, { filters: { ley } });
+        for (const result of search.results) {
+          const data = await result.data();
+          if (!seenUrls.has(data.url)) {
+            seenUrls.add(data.url);
+            allResults.push(result);
           }
         }
       }
@@ -573,7 +601,7 @@ const categorias = [
 
   // Update filter count badge
   function updateFilterCount() {
-    const total = selectedCategorias.length + selectedTipos.length + selectedLeyes.length;
+    const total = selectedLeyes.length;
     if (filterCount) {
       filterCount.textContent = total.toString();
       filterCount.classList.toggle('hidden', total === 0);
@@ -620,53 +648,65 @@ const categorias = [
     filtersPanel?.classList.toggle('hidden');
   });
 
-  // Event: Filter chip clicks - Categorias
+  // Event: Filter chip clicks - Categorias (shortcut to toggle all laws of category)
   document.querySelectorAll('[data-filter-categoria]').forEach((btn) => {
     btn.addEventListener('click', () => {
       const categoria = (btn as HTMLElement).dataset.filterCategoria!;
-      const idx = selectedCategorias.indexOf(categoria);
-      if (idx >= 0) {
-        selectedCategorias.splice(idx, 1);
-        updateChipState(btn as HTMLElement, false);
+      const leyesOfCategoria = getLeyesByCategoria(categoria);
+
+      if (isCategoriaActive(categoria)) {
+        // Remove all laws of this category
+        selectedLeyes = selectedLeyes.filter(l => !leyesOfCategoria.includes(l));
       } else {
-        selectedCategorias.push(categoria);
-        updateChipState(btn as HTMLElement, true);
+        // Add all laws of this category
+        selectedLeyes = [...new Set([...selectedLeyes, ...leyesOfCategoria])];
       }
+
+      syncAllChips();
       updateFilterCount();
       updateURL();
       if (input.value) doSearch(input.value);
     });
   });
 
-  // Event: Filter chip clicks - Tipos
+  // Event: Filter chip clicks - Tipos (shortcut to toggle all laws of type within context)
   document.querySelectorAll('[data-filter-tipo]').forEach((btn) => {
     btn.addEventListener('click', () => {
       const tipo = (btn as HTMLElement).dataset.filterTipo!;
-      const idx = selectedTipos.indexOf(tipo);
-      if (idx >= 0) {
-        selectedTipos.splice(idx, 1);
-        updateChipState(btn as HTMLElement, false);
+      const leyesToToggle = getLeyesToToggleForTipo(tipo);
+
+      if (leyesToToggle.length === 0) return; // Nothing to toggle
+
+      // Check if all laws to toggle are currently selected
+      const allSelected = leyesToToggle.every(l => selectedLeyes.includes(l));
+
+      if (allSelected) {
+        // Remove all laws of this type (within context)
+        selectedLeyes = selectedLeyes.filter(l => !leyesToToggle.includes(l));
       } else {
-        selectedTipos.push(tipo);
-        updateChipState(btn as HTMLElement, true);
+        // Add all laws of this type (within context)
+        selectedLeyes = [...new Set([...selectedLeyes, ...leyesToToggle])];
       }
+
+      syncAllChips();
       updateFilterCount();
       updateURL();
       if (input.value) doSearch(input.value);
     });
   });
 
+  // Event: Filter chip clicks - Leyes (individual law toggle)
   document.querySelectorAll('[data-filter-ley]').forEach((btn) => {
     btn.addEventListener('click', () => {
       const ley = (btn as HTMLElement).dataset.filterLey!;
       const idx = selectedLeyes.indexOf(ley);
       if (idx >= 0) {
         selectedLeyes.splice(idx, 1);
-        updateChipState(btn as HTMLElement, false);
       } else {
         selectedLeyes.push(ley);
-        updateChipState(btn as HTMLElement, true);
       }
+
+      syncAllChips();
       updateFilterCount();
       updateURL();
       if (input.value) doSearch(input.value);
@@ -675,12 +715,8 @@ const categorias = [
 
   // Event: Clear all filters
   clearFiltersBtn?.addEventListener('click', () => {
-    selectedCategorias = [];
-    selectedTipos = [];
     selectedLeyes = [];
-    document.querySelectorAll('.filter-chip').forEach((btn) => {
-      updateChipState(btn as HTMLElement, false);
-    });
+    syncAllChips();
     updateFilterCount();
     updateURL();
     if (input.value) doSearch(input.value);
