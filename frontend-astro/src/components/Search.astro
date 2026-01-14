@@ -1,5 +1,5 @@
 ---
-// Custom Search component with filters using Pagefind API
+// Custom Search component with filters using MiniSearch
 import catalogo from '../data/catalogo.json';
 
 // Get unique law codes for filter chips
@@ -119,8 +119,29 @@ const tiposDocumento = [
 </div>
 
 <script>
+  import MiniSearch from 'minisearch';
+
+  // Types
+  interface SearchResult {
+    id: number;
+    ley: string;
+    tipo: string;
+    categoria: string;
+    numero: string;
+    titulo: string;
+    url: string;
+    score: number;
+  }
+
+  interface ExcerptData {
+    id: number;
+    contenido: string;
+  }
+
   // State
-  let pagefind: any = null;
+  let miniSearch: MiniSearch | null = null;
+  let excerptMap: Map<number, string> = new Map();
+  let searchLoading: Promise<void> | null = null;
   let selectedTipos: string[] = [];
   let selectedLeyes: string[] = [];
 
@@ -137,22 +158,66 @@ const tiposDocumento = [
   const resultsCount = document.getElementById('results-count');
   const resultsList = document.getElementById('results-list');
 
-  // Initialize Pagefind lazily (dynamic import at runtime, not build time)
-  async function initPagefind() {
-    if (pagefind) return pagefind;
-    try {
-      // Use Function constructor to prevent Vite from analyzing this import
-      const importPagefind = new Function('return import("/pagefind/pagefind.js")');
-      pagefind = await importPagefind();
-      await pagefind.init();
-      // Debug: show available filters
-      const filters = await pagefind.filters();
-      console.log('Available Pagefind filters:', filters);
-      return pagefind;
-    } catch (e) {
-      console.error('Failed to load Pagefind:', e);
-      return null;
+  // Initialize MiniSearch
+  async function initSearch(): Promise<void> {
+    if (miniSearch) return;
+    if (searchLoading) return searchLoading;
+
+    searchLoading = (async () => {
+      try {
+        const [indexRes, excerptRes] = await Promise.all([
+          fetch('/search-index.json'),
+          fetch('/search-excerpts.json')
+        ]);
+
+        const indexData = await indexRes.json();
+        const excerptData: ExcerptData[] = await excerptRes.json();
+
+        miniSearch = MiniSearch.loadJSON(JSON.stringify(indexData), {
+          fields: ['contenido', 'titulo', 'numero'],
+          storeFields: ['ley', 'tipo', 'categoria', 'numero', 'titulo', 'seccion', 'url']
+        });
+
+        excerptMap = new Map(excerptData.map(e => [e.id, e.contenido]));
+        console.log('[MiniSearch] Índice cargado:', miniSearch.documentCount, 'documentos');
+      } catch (e) {
+        console.error('[MiniSearch] Error cargando índice:', e);
+        searchLoading = null;
+      }
+    })();
+
+    return searchLoading;
+  }
+
+  // Generate excerpt
+  function generateExcerpt(contenido: string, query: string, maxLength = 150): string {
+    const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+    const contenidoLower = contenido.toLowerCase();
+
+    let bestPos = 0;
+    let bestScore = 0;
+
+    for (let i = 0; i < contenido.length - 50; i += 20) {
+      const window = contenidoLower.substring(i, i + maxLength);
+      const score = terms.filter(t => window.includes(t)).length;
+      if (score > bestScore) {
+        bestScore = score;
+        bestPos = i;
+      }
     }
+
+    let start = Math.max(0, bestPos - 20);
+    let excerpt = contenido.substring(start, start + maxLength);
+
+    if (start > 0) excerpt = '...' + excerpt.replace(/^\S*\s/, '');
+    if (start + maxLength < contenido.length) excerpt = excerpt.replace(/\s\S*$/, '') + '...';
+
+    for (const term of terms) {
+      const regex = new RegExp(`(${term}\\w*)`, 'gi');
+      excerpt = excerpt.replace(regex, '<mark>$1</mark>');
+    }
+
+    return excerpt;
   }
 
   // Perform search
@@ -162,73 +227,53 @@ const tiposDocumento = [
       return;
     }
 
-    const pf = await initPagefind();
-    if (!pf) return;
+    await initSearch();
+    if (!miniSearch) return;
 
-    // Pagefind uses AND for multiple filter values, but we need OR
-    // Solution: do separate searches and combine results
-    let allResults: any[] = [];
-    const seenUrls = new Set<string>();
+    let results = miniSearch.search(query, {
+      prefix: true,
+      fuzzy: 0.2,
+      boost: { titulo: 2, numero: 1.5 }
+    }) as SearchResult[];
 
-    // If no filters, do a simple search
-    if (selectedTipos.length === 0 && selectedLeyes.length === 0) {
-      const search = await pf.search(query);
-      allResults = search.results;
-    } else {
-      // Build filter combinations - we need OR between leyes and OR between tipos
-      // Strategy: search for each ley separately, then deduplicate
-      const leyesToSearch = selectedLeyes.length > 0 ? selectedLeyes : [null];
-      const tiposToSearch = selectedTipos.length > 0 ? selectedTipos : [null];
-
-      for (const ley of leyesToSearch) {
-        for (const tipo of tiposToSearch) {
-          const filters: Record<string, string> = {};
-          if (ley) filters.ley = ley;
-          if (tipo) filters.tipo = tipo;
-
-          const search = await pf.search(query, { filters });
-
-          // Add unique results
-          for (const result of search.results) {
-            const data = await result.data();
-            if (!seenUrls.has(data.url)) {
-              seenUrls.add(data.url);
-              allResults.push(result);
-            }
-          }
-        }
-      }
+    // Apply filters
+    if (selectedLeyes.length > 0) {
+      results = results.filter(r => selectedLeyes.includes(r.ley));
     }
-
-    console.log('Search results:', allResults.length);
+    if (selectedTipos.length > 0) {
+      results = results.filter(r => selectedTipos.includes(r.tipo));
+    }
 
     resultsDiv?.classList.remove('hidden');
 
-    if (allResults.length === 0) {
+    if (results.length === 0) {
       if (resultsCount) resultsCount.textContent = `No se encontraron resultados para "${query}"`;
       if (resultsList) resultsList.innerHTML = '';
       return;
     }
 
     if (resultsCount) {
-      resultsCount.textContent = `${allResults.length} ${allResults.length === 1 ? 'resultado' : 'resultados'}`;
+      resultsCount.textContent = `${results.length} ${results.length === 1 ? 'resultado' : 'resultados'}`;
     }
 
-    // Load first 20 results (increased from 10)
-    const loaded = await Promise.all(
-      allResults.slice(0, 20).map((r: any) => r.data())
-    );
+    // Display first 20 results
+    const displayed = results.slice(0, 20);
 
     if (resultsList) {
-      resultsList.innerHTML = loaded.map((result: any) => `
+      resultsList.innerHTML = displayed.map((result) => {
+        const contenido = excerptMap.get(result.id) || '';
+        const excerpt = generateExcerpt(contenido, query);
+
+        return `
         <a href="${result.url}" class="block p-3 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
           <div class="flex items-center gap-2 mb-1">
-            ${result.meta?.ley ? `<span class="text-xs font-medium px-2 py-0.5 rounded bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">${result.meta.ley}</span>` : ''}
-            <span class="font-semibold text-gray-900 dark:text-white">${result.meta?.title || 'Sin título'}</span>
+            <span class="text-xs font-medium px-2 py-0.5 rounded bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">${result.ley}</span>
+            <span class="font-semibold text-gray-900 dark:text-white">${result.titulo}</span>
           </div>
-          <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">${result.excerpt}</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">${excerpt}</p>
         </a>
-      `).join('');
+      `;
+      }).join('');
     }
   }
 
@@ -261,7 +306,7 @@ const tiposDocumento = [
     doSearch(input.value);
   });
 
-  // Event: Input change (show/hide clear button)
+  // Event: Input change
   input?.addEventListener('input', () => {
     clearBtn?.classList.toggle('hidden', !input.value);
   });
@@ -323,7 +368,7 @@ const tiposDocumento = [
     if (input.value) doSearch(input.value);
   });
 
-  // Event: Keyboard shortcut "/"
+  // Event: Keyboard shortcuts
   document.addEventListener('keydown', (e) => {
     if (e.key === '/' && document.activeElement?.tagName !== 'INPUT') {
       e.preventDefault();

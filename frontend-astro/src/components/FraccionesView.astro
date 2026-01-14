@@ -104,11 +104,8 @@ function getEstilos(tipo: string, nivel: number): { border: string; bg: string; 
   }
 }
 
-// Generar ID de ancla para navegación
+// Generar ID de ancla para navegación (usa numero único del párrafo)
 function getAnclaId(p: Parrafo): string {
-  if (p.identificador) {
-    return `${p.tipo}-${p.identificador}`.toLowerCase();
-  }
   return `p-${p.numero}`;
 }
 

@@ -194,7 +194,9 @@ const themeData = { categoryColors, tipoStyles };
 </script>
 
 <script>
-  // Type for catalogo
+  import MiniSearch from 'minisearch';
+
+  // Types
   interface CatalogoLey {
     codigo: string;
     nombre: string;
@@ -203,156 +205,218 @@ const themeData = { categoryColors, tipoStyles };
     categoria: string;
   }
 
+  interface SearchResult {
+    id: number;
+    ley: string;
+    tipo: string;
+    categoria: string;
+    articuloNumero: string;
+    articuloTitulo: string;
+    parrafoLabel: string;
+    parrafoTipo: string;
+    seccion: string;
+    url: string;
+    score: number;
+    match: Record<string, string[]>;
+  }
+
+  interface ExcerptData {
+    id: number;
+    contenido: string;
+  }
+
   // State
-  let pagefind: any = null;
+  let miniSearch: MiniSearch | null = null;
+  let excerptMap: Map<number, string> = new Map();
+  let searchLoading: Promise<void> | null = null;
   let selectedLeyes: string[] = [];
   const expandedLaws = new Set<string>();
 
-  // Get catalogo from window (set by inline script)
+  // Get catalogo from window
   const catalogoLeyes: CatalogoLey[] = (window as any).__CATALOGO_LEYES__ || [];
 
-  // Helper to get law info from catalogo
+  // Helper functions
   function getLeyInfo(codigo: string): CatalogoLey | undefined {
     return catalogoLeyes.find(l => l.codigo.toUpperCase() === codigo?.toUpperCase());
   }
 
-  // Get all law codes by category
   function getLeyesByCategoria(categoria: string): string[] {
     return catalogoLeyes.filter(l => l.categoria === categoria).map(l => l.codigo);
   }
 
-  // Get all law codes by type
   function getLeyesByTipo(tipo: string): string[] {
     return catalogoLeyes.filter(l => l.tipo === tipo).map(l => l.codigo);
   }
 
-  // Check if a category is fully active (all its laws are selected)
   function isCategoriaActive(categoria: string): boolean {
     const leyes = getLeyesByCategoria(categoria);
     return leyes.length > 0 && leyes.every(l => selectedLeyes.includes(l));
   }
 
-  // Get all active categories
   function getActiveCategories(): string[] {
     return ['fiscal', 'laboral', 'constitucional'].filter(cat => isCategoriaActive(cat));
   }
 
-  // Check if a type is fully active (ALL laws of that type selected, globally)
-  // This is for visual state only - not scoped to categories
   function isTipoActive(tipo: string): boolean {
     const leyesOfType = getLeyesByTipo(tipo);
     return leyesOfType.length > 0 && leyesOfType.every(l => selectedLeyes.includes(l));
   }
 
-  // Get laws to toggle for a tipo click (scoped to active categories context)
   function getLeyesToToggleForTipo(tipo: string): string[] {
     const activeCategories = getActiveCategories();
-
     if (activeCategories.length === 0) {
-      // No category context, affect all laws of this type
       return getLeyesByTipo(tipo);
-    } else {
-      // Try to affect only laws within active categories
-      const scopedLaws = catalogoLeyes
-        .filter(l => l.tipo === tipo && activeCategories.includes(l.categoria))
-        .map(l => l.codigo);
-
-      // If no laws of this type in active categories, fall back to global
-      if (scopedLaws.length === 0) {
-        return getLeyesByTipo(tipo);
-      }
-      return scopedLaws;
     }
+    const scopedLaws = catalogoLeyes
+      .filter(l => l.tipo === tipo && activeCategories.includes(l.categoria))
+      .map(l => l.codigo);
+    return scopedLaws.length === 0 ? getLeyesByTipo(tipo) : scopedLaws;
   }
 
-  // Sync all chip visual states based on selectedLeyes
   function syncAllChips() {
-    // Category chips
     document.querySelectorAll('[data-filter-categoria]').forEach((chip) => {
       const cat = (chip as HTMLElement).dataset.filterCategoria!;
       updateChipState(chip as HTMLElement, isCategoriaActive(cat));
     });
-
-    // Type chips
     document.querySelectorAll('[data-filter-tipo]').forEach((chip) => {
       const tipo = (chip as HTMLElement).dataset.filterTipo!;
       updateChipState(chip as HTMLElement, isTipoActive(tipo));
     });
-
-    // Law chips
     document.querySelectorAll('[data-filter-ley]').forEach((chip) => {
       const ley = (chip as HTMLElement).dataset.filterLey!;
       updateChipState(chip as HTMLElement, selectedLeyes.includes(ley));
     });
   }
 
-  // Elements
-  const form = document.getElementById('search-form') as HTMLFormElement;
-  const input = document.getElementById('search-input') as HTMLInputElement;
-  const clearBtn = document.getElementById('clear-btn');
-  const filtersToggle = document.getElementById('filters-toggle');
-  const filtersPanel = document.getElementById('filters-panel');
-  const filterCount = document.getElementById('filter-count');
-  const clearFiltersInline = document.getElementById('clear-filters-inline');
-  const resultsDiv = document.getElementById('search-results');
-  const resultsCount = document.getElementById('results-count');
-  const resultsList = document.getElementById('results-list');
-  const initialMessage = document.getElementById('initial-message');
-
-  // Initialize Pagefind
-  async function initPagefind() {
-    if (pagefind) return pagefind;
-    try {
-      const importPagefind = new Function('return import("/pagefind/pagefind.js")');
-      pagefind = await importPagefind();
-      await pagefind.init();
-      return pagefind;
-    } catch (e) {
-      console.error('Failed to load Pagefind:', e);
-      return null;
-    }
+  // Get fresh DOM elements (needed for View Transitions)
+  function getElements() {
+    return {
+      form: document.getElementById('search-form') as HTMLFormElement,
+      input: document.getElementById('search-input') as HTMLInputElement,
+      clearBtn: document.getElementById('clear-btn'),
+      filtersToggle: document.getElementById('filters-toggle'),
+      filtersPanel: document.getElementById('filters-panel'),
+      filterCount: document.getElementById('filter-count'),
+      clearFiltersInline: document.getElementById('clear-filters-inline'),
+      resultsDiv: document.getElementById('search-results'),
+      resultsCount: document.getElementById('results-count'),
+      resultsList: document.getElementById('results-list'),
+      initialMessage: document.getElementById('initial-message')
+    };
   }
 
-  // Update URL with current state
-  function updateURL() {
-    const params = new URLSearchParams();
-    if (input.value) params.set('q', input.value);
-    if (selectedLeyes.length > 0) params.set('ley', selectedLeyes.join(','));
+  // Initialize MiniSearch
+  async function initSearch(): Promise<void> {
+    if (miniSearch) return;
+    if (searchLoading) return searchLoading;
 
+    searchLoading = (async () => {
+      try {
+        // Load index and excerpts in parallel
+        const [indexRes, excerptRes] = await Promise.all([
+          fetch('/search-index.json'),
+          fetch('/search-excerpts.json')
+        ]);
+
+        const indexData = await indexRes.json();
+        const excerptData: ExcerptData[] = await excerptRes.json();
+
+        // Load MiniSearch from serialized index
+        miniSearch = MiniSearch.loadJSON(JSON.stringify(indexData), {
+          fields: ['contenido', 'articuloTitulo', 'articuloNumero'],
+          storeFields: [
+            'ley', 'tipo', 'categoria',
+            'articuloNumero', 'articuloTitulo',
+            'parrafoLabel', 'parrafoTipo',
+            'seccion', 'url'
+          ]
+        });
+
+        // Build excerpt map
+        excerptMap = new Map(excerptData.map(e => [e.id, e.contenido]));
+
+        console.log('[MiniSearch] Índice cargado:', miniSearch.documentCount, 'documentos');
+      } catch (e) {
+        console.error('[MiniSearch] Error cargando índice:', e);
+        searchLoading = null;
+      }
+    })();
+
+    return searchLoading;
+  }
+
+  // Generate excerpt with highlighted terms
+  function generateExcerpt(contenido: string, query: string, maxLength = 200): string {
+    const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+    const contenidoLower = contenido.toLowerCase();
+
+    // Find best position (where most terms appear)
+    let bestPos = 0;
+    let bestScore = 0;
+
+    for (let i = 0; i < contenido.length - 50; i += 20) {
+      const window = contenidoLower.substring(i, i + maxLength);
+      const score = terms.filter(t => window.includes(t)).length;
+      if (score > bestScore) {
+        bestScore = score;
+        bestPos = i;
+      }
+    }
+
+    // Extract excerpt
+    let start = Math.max(0, bestPos - 20);
+    let excerpt = contenido.substring(start, start + maxLength);
+
+    // Clean up boundaries
+    if (start > 0) excerpt = '...' + excerpt.replace(/^\S*\s/, '');
+    if (start + maxLength < contenido.length) excerpt = excerpt.replace(/\s\S*$/, '') + '...';
+
+    // Highlight terms
+    for (const term of terms) {
+      const regex = new RegExp(`(${term}\\w*)`, 'gi');
+      excerpt = excerpt.replace(regex, '<mark>$1</mark>');
+    }
+
+    return excerpt;
+  }
+
+  // Update URL
+  function updateURL() {
+    const { input } = getElements();
+    const params = new URLSearchParams();
+    if (input?.value) params.set('q', input.value);
+    if (selectedLeyes.length > 0) params.set('ley', selectedLeyes.join(','));
     const newURL = params.toString() ? `?${params.toString()}` : window.location.pathname;
     window.history.replaceState({}, '', newURL);
   }
 
-  // Read URL params on load
+  // Read URL params and initialize search
   function readURLParams() {
-    const params = new URLSearchParams(window.location.search);
+    const { input, clearBtn, filtersPanel } = getElements();
+    if (!input) return; // Element not found, page not ready
 
+    const params = new URLSearchParams(window.location.search);
     const q = params.get('q');
     if (q) {
       input.value = q;
       clearBtn?.classList.remove('hidden');
     }
-
     const leyParam = params.get('ley');
     if (leyParam) {
       selectedLeyes = leyParam.split(',').filter(Boolean);
     }
-
-    // Sync all chip states based on selectedLeyes
     syncAllChips();
     updateFilterCount();
-
-    // If there's a query, perform search and show filters panel
     if (q) {
-      if (selectedLeyes.length > 0) {
-        filtersPanel?.classList.remove('hidden');
-      }
+      if (selectedLeyes.length > 0) filtersPanel?.classList.remove('hidden');
       doSearch(q);
     }
   }
 
   // Perform search
   async function doSearch(query: string) {
+    const { resultsDiv, initialMessage, resultsCount, resultsList } = getElements();
+
     if (!query.trim()) {
       resultsDiv?.classList.add('hidden');
       initialMessage?.classList.remove('hidden');
@@ -360,77 +424,46 @@ const themeData = { categoryColors, tipoStyles };
     }
 
     initialMessage?.classList.add('hidden');
+    await initSearch();
 
-    const pf = await initPagefind();
-    if (!pf) return;
+    if (!miniSearch) {
+      if (resultsCount) resultsCount.textContent = 'Error cargando el índice de búsqueda';
+      return;
+    }
 
-    let allResults: any[] = [];
-    const seenUrls = new Set<string>();
+    // Search with MiniSearch
+    let results = miniSearch.search(query, {
+      prefix: true,
+      fuzzy: 0.2,
+      boost: { articuloTitulo: 2, articuloNumero: 1.5 }
+    }) as SearchResult[];
 
-    const allLawsCount = catalogoLeyes.length;
-    const allLawCodes = catalogoLeyes.map(l => l.codigo);
-
-    // Determine excluded laws (if any)
-    const excludedLaws = selectedLeyes.length === 0
-      ? []
-      : allLawCodes.filter(l => !selectedLeyes.includes(l));
-
-    // If no exclusions OR all selected, search without filter
-    // If few exclusions (more than half selected), search all and filter client-side
-    // If many exclusions (less than half selected), search individually
-    if (excludedLaws.length === 0) {
-      // No filter, search all
-      const search = await pf.search(query);
-      allResults = search.results;
-    } else if (selectedLeyes.length > allLawsCount / 2) {
-      // More than half selected: search all, filter client-side
-      const search = await pf.search(query);
-      for (const result of search.results) {
-        const data = await result.data();
-        const resultLey = data.meta?.ley;
-        // Include if not in excluded laws
-        if (!excludedLaws.includes(resultLey)) {
-          allResults.push(result);
-        }
-      }
-    } else {
-      // Less than half selected: search individually
-      for (const ley of selectedLeyes) {
-        const search = await pf.search(query, { filters: { ley } });
-        for (const result of search.results) {
-          const data = await result.data();
-          if (!seenUrls.has(data.url)) {
-            seenUrls.add(data.url);
-            allResults.push(result);
-          }
-        }
-      }
+    // Filter by selected laws if any
+    if (selectedLeyes.length > 0) {
+      results = results.filter(r => selectedLeyes.includes(r.ley));
     }
 
     resultsDiv?.classList.remove('hidden');
 
-    if (allResults.length === 0) {
+    if (results.length === 0) {
       if (resultsCount) resultsCount.textContent = `No se encontraron resultados para "${query}"`;
       if (resultsList) resultsList.innerHTML = '';
       return;
     }
 
-    // Load result data with sub_results
-    const loaded = await Promise.all(
-      allResults.slice(0, 30).map((r: any) => r.data())
-    );
-
-    // Build grouped results using sub_results from Pagefind
-    interface SubResult {
-      url: string;
-      title: string;
+    // Types for grouping
+    interface ParrafoMatch {
+      parrafoLabel: string;
       excerpt: string;
+      url: string;
     }
 
-    interface GroupedResult {
+    interface ArticleGroup {
+      articuloNumero: string;
+      articuloTitulo: string;
+      seccion: string;
       url: string;
-      meta: any;
-      subResults: SubResult[];
+      parrafos: ParrafoMatch[];
     }
 
     interface LawGroup {
@@ -438,110 +471,97 @@ const themeData = { categoryColors, tipoStyles };
       leyNombre: string;
       leyNombreCorto: string;
       categoria: string;
-      tipo: string;
-      articles: GroupedResult[];
+      articles: Map<string, ArticleGroup>;
       totalMatches: number;
     }
 
-    const groupedResults: GroupedResult[] = loaded.map((result: any) => {
-      const subResults: SubResult[] = [];
+    // Group by law → article → paragraphs
+    const lawGroups: Record<string, LawGroup> = {};
+    const maxResults = 200; // Limit total results for performance
 
-      // If result has sub_results, use them
-      if (result.sub_results && result.sub_results.length > 0) {
-        for (const sub of result.sub_results) {
-          // Clean excerpt: remove duplicate title at the start
-          let cleanExcerpt = sub.excerpt || '';
-          const title = sub.title || '';
-          if (title && cleanExcerpt.toLowerCase().startsWith(title.toLowerCase())) {
-            cleanExcerpt = cleanExcerpt.slice(title.length).replace(/^[\s.,;:\-]+/, '');
-          }
-          subResults.push({
-            url: sub.url || result.url,
-            title: title,
-            excerpt: cleanExcerpt
-          });
-        }
-      } else {
-        // Fallback: use main result as single sub-result
-        subResults.push({
-          url: result.url,
-          title: '',
-          excerpt: result.excerpt
+    for (const result of results.slice(0, maxResults)) {
+      const ley = result.ley;
+      const artNum = result.articuloNumero;
+
+      // Initialize law group
+      if (!lawGroups[ley]) {
+        const leyInfo = getLeyInfo(ley);
+        lawGroups[ley] = {
+          ley,
+          leyNombre: leyInfo?.nombre || ley,
+          leyNombreCorto: leyInfo?.nombre_corto || ley,
+          categoria: leyInfo?.categoria || result.categoria,
+          articles: new Map(),
+          totalMatches: 0
+        };
+      }
+
+      // Initialize article group (URL base without hash)
+      if (!lawGroups[ley].articles.has(artNum)) {
+        const baseUrl = result.url.split('#')[0];
+        lawGroups[ley].articles.set(artNum, {
+          articuloNumero: artNum,
+          articuloTitulo: result.articuloTitulo,
+          seccion: result.seccion,
+          url: baseUrl,
+          parrafos: []
         });
       }
 
-      return {
-        url: result.url,
-        meta: result.meta,
-        subResults
-      };
-    });
+      // Add paragraph match (with hash URL)
+      const contenido = excerptMap.get(result.id) || '';
+      const excerpt = generateExcerpt(contenido, query);
 
-    // Group articles by law
-    function groupByLaw(articles: GroupedResult[]): LawGroup[] {
-      const lawGroups: Record<string, LawGroup> = {};
-
-      for (const article of articles) {
-        const ley = article.meta?.ley || 'unknown';
-        if (!lawGroups[ley]) {
-          const leyInfo = getLeyInfo(ley);
-          lawGroups[ley] = {
-            ley,
-            leyNombre: leyInfo?.nombre || ley,
-            leyNombreCorto: leyInfo?.nombre_corto || ley,
-            categoria: leyInfo?.categoria || article.meta?.categoria || '',
-            tipo: leyInfo?.tipo || '',
-            articles: [],
-            totalMatches: 0
-          };
-        }
-        lawGroups[ley].articles.push(article);
-        lawGroups[ley].totalMatches += article.subResults.length;
-      }
-
-      // Sort by total matches descending
-      return Object.values(lawGroups).sort((a, b) => b.totalMatches - a.totalMatches);
+      lawGroups[ley].articles.get(artNum)!.parrafos.push({
+        parrafoLabel: result.parrafoLabel,
+        excerpt,
+        url: result.url  // Full URL with hash
+      });
+      lawGroups[ley].totalMatches++;
     }
 
-    const lawGroups = groupByLaw(groupedResults);
+    // Convert to sorted arrays
+    const sortedGroups = Object.values(lawGroups)
+      .map(g => ({
+        ...g,
+        articles: Array.from(g.articles.values())
+      }))
+      .sort((a, b) => b.totalMatches - a.totalMatches);
 
-    // Accordion: only expand the first (most relevant) law group
+    // Count unique articles
+    const totalMatches = results.length;
+    const uniqueArticles = new Set(results.map(r => `${r.ley}-${r.articuloNumero}`)).size;
+
+    // Expand first group
     expandedLaws.clear();
-    if (lawGroups.length > 0) {
-      expandedLaws.add(lawGroups[0].ley);
+    if (sortedGroups.length > 0) {
+      expandedLaws.add(sortedGroups[0].ley);
     }
 
-    // Count total sub-results
-    const totalSubResults = groupedResults.reduce((acc, g) => acc + g.subResults.length, 0);
-
+    // Update count - like Pagefind: "X coincidencias en Y artículos de Z leyes"
     if (resultsCount) {
-      resultsCount.textContent = `${totalSubResults} ${totalSubResults === 1 ? 'coincidencia' : 'coincidencias'} en ${groupedResults.length} ${groupedResults.length === 1 ? 'artículo' : 'artículos'} de ${lawGroups.length} ${lawGroups.length === 1 ? 'ley' : 'leyes'}`;
+      resultsCount.textContent = `${totalMatches} coincidencias en ${uniqueArticles} artículos de ${sortedGroups.length} ${sortedGroups.length === 1 ? 'ley' : 'leyes'}`;
     }
 
-    // Category color mapping
-    const categoryColors: Record<string, string> = {
+    // Category colors
+    const catColors: Record<string, string> = {
       fiscal: 'bg-emerald-600',
       laboral: 'bg-blue-600',
       constitucional: 'bg-orange-600'
     };
 
-    const totalLawGroups = lawGroups.length;
-
+    // Render results
     if (resultsList) {
-      resultsList.innerHTML = lawGroups.map((lawGroup) => {
-        const catColor = categoryColors[lawGroup.categoria] || 'bg-primary-600';
-        const isExpanded = expandedLaws.has(lawGroup.ley);
-        const canExclude = totalLawGroups > 1;
+      resultsList.innerHTML = sortedGroups.map((group) => {
+        const catColor = catColors[group.categoria] || 'bg-primary-600';
+        const isExpanded = expandedLaws.has(group.ley);
+        const canExclude = sortedGroups.length > 1;
 
         return `
         <div class="law-group rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
-          <!-- Law Header -->
           <div class="flex items-center bg-gray-50 dark:bg-gray-800/50">
-            <button
-              type="button"
-              data-toggle-law="${lawGroup.ley}"
-              class="flex-1 flex items-center gap-3 p-4 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-left"
-            >
+            <button type="button" data-toggle-law="${group.ley}"
+              class="flex-1 flex items-center gap-3 p-4 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-left">
               <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-sm font-bold text-white ${catColor}">
                 <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -549,40 +569,37 @@ const themeData = { categoryColors, tipoStyles };
               </div>
               <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-2 flex-wrap">
-                  <span class="font-semibold text-gray-900 dark:text-gray-100">${lawGroup.ley}</span>
-                  <span class="text-sm text-gray-500 dark:text-gray-400 truncate">${lawGroup.leyNombreCorto}</span>
+                  <span class="font-semibold text-gray-900 dark:text-gray-100">${group.ley}</span>
+                  <span class="text-sm text-gray-500 dark:text-gray-400 truncate">${group.leyNombreCorto}</span>
                 </div>
-                <p class="text-sm text-gray-500">${lawGroup.totalMatches} ${lawGroup.totalMatches === 1 ? 'coincidencia' : 'coincidencias'} en ${lawGroup.articles.length} ${lawGroup.articles.length === 1 ? 'artículo' : 'artículos'}</p>
+                <p class="text-sm text-gray-500">${group.totalMatches} coincidencias en ${group.articles.length} artículos</p>
               </div>
               <svg class="chevron h-5 w-5 text-gray-400 transition-transform ${isExpanded ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
             ${canExclude ? `
-            <button
-              type="button"
-              data-exclude-law="${lawGroup.ley}"
+            <button type="button" data-exclude-law="${group.ley}"
               class="p-3 mr-2 rounded-full hover:bg-red-100 dark:hover:bg-red-900/30 text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors"
-              title="Excluir ${lawGroup.ley} de los resultados"
-            >
+              title="Excluir ${group.ley} de los resultados">
               <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
               </svg>
             </button>
             ` : ''}
           </div>
-
-          <!-- Articles (collapsible) -->
           <div class="law-content divide-y divide-gray-100 dark:divide-gray-800 ${isExpanded ? '' : 'hidden'}">
-            ${lawGroup.articles.map((article) => `
-              <div class="p-4">
-                <a href="${article.url}" class="font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400">${article.meta?.title || 'Sin título'}</a>
-                ${article.meta?.seccion ? `<div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">${article.meta.seccion}</div>` : ''}
-                <div class="space-y-2 mt-2">
-                  ${article.subResults.map((sub) => `
-                    <a href="${sub.url}" class="block p-2 rounded bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                      ${sub.title ? `<span class="text-xs font-medium text-primary-600 dark:text-primary-400">${sub.title}</span>` : ''}
-                      <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">${sub.excerpt}</p>
+            ${group.articles.map((article) => `
+              <div class="article-group">
+                <a href="${article.url}" class="block p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors border-b border-gray-100 dark:border-gray-800">
+                  <div class="font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400">${article.articuloTitulo}</div>
+                  ${article.seccion ? `<div class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">${article.seccion}</div>` : ''}
+                </a>
+                <div class="pl-4 divide-y divide-gray-50 dark:divide-gray-800/50">
+                  ${article.parrafos.map((p) => `
+                    <a href="${p.url}" class="block p-3 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                      <span class="text-xs font-medium text-primary-600 dark:text-primary-400">${p.parrafoLabel}</span>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 line-clamp-2">${p.excerpt}</p>
                     </a>
                   `).join('')}
                 </div>
@@ -592,32 +609,29 @@ const themeData = { categoryColors, tipoStyles };
         </div>`;
       }).join('');
 
-      // Add toggle event listeners to new law headers (exclusive accordion)
+      // Add toggle listeners
       document.querySelectorAll('[data-toggle-law]').forEach((btn) => {
         btn.addEventListener('click', () => {
           const ley = (btn as HTMLElement).dataset.toggleLaw!;
-          const isCurrentlyOpen = expandedLaws.has(ley);
+          const isOpen = expandedLaws.has(ley);
 
-          // Close all law groups first
+          // Close all
           document.querySelectorAll('.law-group').forEach((group) => {
-            const groupContent = group.querySelector('.law-content') as HTMLElement;
-            const groupChevron = group.querySelector('.chevron') as HTMLElement;
+            const content = group.querySelector('.law-content') as HTMLElement;
+            const chevron = group.querySelector('.chevron') as HTMLElement;
             const groupLey = group.querySelector('[data-toggle-law]') as HTMLElement;
-            const groupLeyCode = groupLey?.dataset.toggleLaw;
-
-            if (groupLeyCode) {
-              expandedLaws.delete(groupLeyCode);
-              groupContent?.classList.add('hidden');
-              groupChevron?.classList.remove('rotate-180');
+            if (groupLey?.dataset.toggleLaw) {
+              expandedLaws.delete(groupLey.dataset.toggleLaw);
+              content?.classList.add('hidden');
+              chevron?.classList.remove('rotate-180');
             }
           });
 
-          // If it wasn't open, open it now
-          if (!isCurrentlyOpen) {
+          // Open clicked if was closed
+          if (!isOpen) {
             const lawGroup = btn.closest('.law-group') as HTMLElement;
             const content = lawGroup?.querySelector('.law-content') as HTMLElement;
             const chevron = btn.querySelector('.chevron') as HTMLElement;
-
             expandedLaws.add(ley);
             content?.classList.remove('hidden');
             chevron?.classList.add('rotate-180');
@@ -625,35 +639,22 @@ const themeData = { categoryColors, tipoStyles };
         });
       });
 
-      // Add exclude event listeners
+      // Add exclude listeners
       document.querySelectorAll('[data-exclude-law]').forEach((btn) => {
         btn.addEventListener('click', () => {
+          const { input, filtersPanel } = getElements();
           const leyToExclude = (btn as HTMLElement).dataset.excludeLaw!;
-
-          // If no filters active, start with ALL laws, then exclude
-          // If filters active, just remove from current selection
-          const baseLaws = selectedLeyes.length === 0 || selectedLeyes.length === catalogoLeyes.length
+          const baseLaws = selectedLeyes.length === 0
             ? catalogoLeyes.map(l => l.codigo)
             : selectedLeyes;
-
-          // Filter out the excluded law
           const remainingLaws = baseLaws.filter(l => l !== leyToExclude);
-
-          if (remainingLaws.length === 0) return; // Safety check
-
-          // Update selectedLeyes
+          if (remainingLaws.length === 0) return;
           selectedLeyes = remainingLaws;
-
-          // Sync all chips
           syncAllChips();
-
-          // Show filters panel for feedback
           filtersPanel?.classList.remove('hidden');
-
-          // Update UI and re-search
           updateFilterCount();
           updateURL();
-          doSearch(input.value);
+          if (input?.value) doSearch(input.value);
         });
       });
     }
@@ -661,8 +662,9 @@ const themeData = { categoryColors, tipoStyles };
     updateURL();
   }
 
-  // Update filter count badge
+  // Update filter count
   function updateFilterCount() {
+    const { filterCount, clearFiltersInline } = getElements();
     const total = selectedLeyes.length;
     const hasSelections = total > 0;
     if (filterCount) {
@@ -675,26 +677,20 @@ const themeData = { categoryColors, tipoStyles };
     }
   }
 
-  // Get theme from window
+  // Chip state
   const theme = (window as any).__THEME__ || { categoryColors: {} };
 
-  // Get color for a chip based on its type
   function getChipColor(btn: HTMLElement): string {
-    // For law chips, use category color
     const categoria = btn.dataset.categoria;
     if (categoria && theme.categoryColors[categoria]) {
       return theme.categoryColors[categoria].bg;
     }
-    // For other chips, use data-color attribute
     return btn.dataset.color || 'bg-primary-600';
   }
 
-  // Update chip visual state
   function updateChipState(btn: HTMLElement, active: boolean) {
     const isTipoChip = btn.dataset.isTipo === 'true';
-
     if (isTipoChip) {
-      // Tipo chips: use ring for active state, keep font style
       if (active) {
         btn.classList.remove('text-gray-600', 'dark:text-gray-300', 'opacity-50');
         btn.classList.add('ring-2', 'ring-primary-500', 'text-gray-900', 'dark:text-white');
@@ -703,11 +699,9 @@ const themeData = { categoryColors, tipoStyles };
         btn.classList.add('text-gray-600', 'dark:text-gray-300', 'opacity-50');
       }
     } else {
-      // Category and law chips: use background color for active state
       const bgColor = getChipColor(btn);
       const textColor = btn.dataset.textColor || 'text-gray-700';
       const textColorDark = btn.dataset.textColorDark || 'dark:text-gray-300';
-
       if (active) {
         btn.classList.remove('bg-gray-100', 'dark:bg-gray-700', textColor, textColorDark, 'opacity-50');
         btn.classList.add(bgColor, 'text-white');
@@ -718,114 +712,127 @@ const themeData = { categoryColors, tipoStyles };
     }
   }
 
-  // Event: Form submit
-  form?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    doSearch(input.value);
+  // Event listeners using event delegation (works with View Transitions)
+  document.addEventListener('submit', (e) => {
+    const target = e.target as HTMLElement;
+    if (target.id === 'search-form') {
+      e.preventDefault();
+      const { input } = getElements();
+      if (input?.value) doSearch(input.value);
+    }
   });
 
-  // Event: Input change
-  input?.addEventListener('input', () => {
-    clearBtn?.classList.toggle('hidden', !input.value);
+  document.addEventListener('input', (e) => {
+    const target = e.target as HTMLElement;
+    if (target.id === 'search-input') {
+      const { input, clearBtn } = getElements();
+      clearBtn?.classList.toggle('hidden', !input?.value);
+    }
   });
 
-  // Event: Clear input
-  clearBtn?.addEventListener('click', () => {
-    input.value = '';
-    clearBtn.classList.add('hidden');
-    resultsDiv?.classList.add('hidden');
-    initialMessage?.classList.remove('hidden');
-    updateURL();
-    input.focus();
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+
+    // Clear button
+    if (target.id === 'clear-btn' || target.closest('#clear-btn')) {
+      const { input, clearBtn, resultsDiv, initialMessage } = getElements();
+      if (input) {
+        input.value = '';
+        clearBtn?.classList.add('hidden');
+        resultsDiv?.classList.add('hidden');
+        initialMessage?.classList.remove('hidden');
+        updateURL();
+        input.focus();
+      }
+    }
+
+    // Filters toggle
+    if (target.id === 'filters-toggle' || target.closest('#filters-toggle')) {
+      const { filtersPanel } = getElements();
+      filtersPanel?.classList.toggle('hidden');
+    }
   });
 
-  // Event: Toggle filters
-  filtersToggle?.addEventListener('click', () => {
-    filtersPanel?.classList.toggle('hidden');
-  });
+  // Filter clicks using event delegation
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    const { input } = getElements();
 
-  // Event: Filter chip clicks - Categorias (shortcut to toggle all laws of category)
-  document.querySelectorAll('[data-filter-categoria]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const categoria = (btn as HTMLElement).dataset.filterCategoria!;
+    // Category filter
+    const catBtn = target.closest('[data-filter-categoria]') as HTMLElement;
+    if (catBtn) {
+      const categoria = catBtn.dataset.filterCategoria!;
       const leyesOfCategoria = getLeyesByCategoria(categoria);
-
       if (isCategoriaActive(categoria)) {
-        // Remove all laws of this category
         selectedLeyes = selectedLeyes.filter(l => !leyesOfCategoria.includes(l));
       } else {
-        // Add all laws of this category
         selectedLeyes = [...new Set([...selectedLeyes, ...leyesOfCategoria])];
       }
-
       syncAllChips();
       updateFilterCount();
       updateURL();
-      if (input.value) doSearch(input.value);
-    });
-  });
+      if (input?.value) doSearch(input.value);
+      return;
+    }
 
-  // Event: Filter chip clicks - Tipos (shortcut to toggle all laws of type within context)
-  document.querySelectorAll('[data-filter-tipo]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const tipo = (btn as HTMLElement).dataset.filterTipo!;
+    // Type filter
+    const tipoBtn = target.closest('[data-filter-tipo]') as HTMLElement;
+    if (tipoBtn) {
+      const tipo = tipoBtn.dataset.filterTipo!;
       const leyesToToggle = getLeyesToToggleForTipo(tipo);
-
-      if (leyesToToggle.length === 0) return; // Nothing to toggle
-
-      // Check if all laws to toggle are currently selected
+      if (leyesToToggle.length === 0) return;
       const allSelected = leyesToToggle.every(l => selectedLeyes.includes(l));
-
       if (allSelected) {
-        // Remove all laws of this type (within context)
         selectedLeyes = selectedLeyes.filter(l => !leyesToToggle.includes(l));
       } else {
-        // Add all laws of this type (within context)
         selectedLeyes = [...new Set([...selectedLeyes, ...leyesToToggle])];
       }
-
       syncAllChips();
       updateFilterCount();
       updateURL();
-      if (input.value) doSearch(input.value);
-    });
-  });
+      if (input?.value) doSearch(input.value);
+      return;
+    }
 
-  // Event: Filter chip clicks - Leyes (individual law toggle)
-  document.querySelectorAll('[data-filter-ley]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const ley = (btn as HTMLElement).dataset.filterLey!;
+    // Law filter
+    const leyBtn = target.closest('[data-filter-ley]') as HTMLElement;
+    if (leyBtn) {
+      const ley = leyBtn.dataset.filterLey!;
       const idx = selectedLeyes.indexOf(ley);
       if (idx >= 0) {
         selectedLeyes.splice(idx, 1);
       } else {
         selectedLeyes.push(ley);
       }
-
       syncAllChips();
       updateFilterCount();
       updateURL();
-      if (input.value) doSearch(input.value);
-    });
+      if (input?.value) doSearch(input.value);
+      return;
+    }
+
+    // Clear filters inline
+    if (target.id === 'clear-filters-inline' || target.closest('#clear-filters-inline')) {
+      selectedLeyes = [];
+      syncAllChips();
+      updateFilterCount();
+      updateURL();
+      if (input?.value) doSearch(input.value);
+      return;
+    }
   });
 
-  // Event: Clear all filters
-  clearFiltersInline?.addEventListener('click', () => {
-    selectedLeyes = [];
-    syncAllChips();
-    updateFilterCount();
-    updateURL();
-    if (input.value) doSearch(input.value);
-  });
-
-  // Event: Keyboard shortcut "/"
+  // Keyboard shortcut
   document.addEventListener('keydown', (e) => {
     if (e.key === '/' && document.activeElement?.tagName !== 'INPUT') {
       e.preventDefault();
+      const { input } = getElements();
       input?.focus();
     }
   });
 
-  // Initialize on page load
+  // Initialize on page load and View Transitions
+  document.addEventListener('astro:page-load', readURLParams);
+  // Also call directly for initial load (handles race condition with module loading)
   readURLParams();
 </script>
