@@ -215,19 +215,27 @@ const seccionTexto = breadcrumb.length > 0
     <main id="article-container" data-viewmode="text" class="article-container flex-1">
       <!-- Panel de texto -->
       <div id="text-panel" class="text-panel">
-        <!-- Header interno del panel (fijo) -->
+        <!-- Header interno del panel (fijo) - dos columnas -->
         <header class="text-panel-header">
-          <div class="max-w-3xl mx-auto">
-            {/* Division indicator */}
-            {currentDivision && (
-              <p class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">
-                {currentDivision.tipo} {currentDivision.numero} {currentDivision.nombre ? `- ${currentDivision.nombre}` : ''}
-              </p>
-            )}
-            <h1 class="text-xl font-bold text-primary-600 dark:text-primary-400" data-pagefind-meta="title">
-              Artículo {articulo.numero}
-            </h1>
-            <p class="text-sm text-gray-600 dark:text-gray-400">{leyInfo.nombre}</p>
+          <div class="header-two-col">
+            {/* Columna izquierda: contexto jerárquico */}
+            <div class="header-context">
+              <a href={`/${codigoLower}`} class="context-link context-ley">
+                {leyInfo.nombre}
+              </a>
+              {breadcrumb.map((item) => (
+                <a href={item.url} class="context-link">
+                  <span class="capitalize">{item.tipo}</span> {item.numero}
+                  {item.nombre && <span class="context-nombre"> — {item.nombre}</span>}
+                </a>
+              ))}
+            </div>
+
+            {/* Columna derecha: número de artículo gigante */}
+            <div class="header-article">
+              <span class="article-label">Artículo</span>
+              <span class="article-number" data-pagefind-meta="title">{articulo.numero}</span>
+            </div>
           </div>
         </header>
 
@@ -307,7 +315,7 @@ const seccionTexto = breadcrumb.length > 0
       /* Internal header - NEVER scrolls */
       .text-panel-header {
         flex-shrink: 0;
-        padding: 0.75rem 1rem;
+        padding: 1rem 1.5rem;
         border-bottom: 1px solid rgb(229 231 235);
         background-color: rgb(249 250 251);
       }
@@ -315,6 +323,91 @@ const seccionTexto = breadcrumb.length > 0
       :global(.dark) .text-panel-header {
         border-bottom-color: rgb(55 65 81);
         background-color: rgb(17 24 39);
+      }
+
+      /* Two-column header layout */
+      .header-two-col {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+      }
+
+      /* Left column: hierarchical context */
+      .header-context {
+        display: flex;
+        flex-direction: column;
+        gap: 0.125rem;
+        min-width: 0;
+        flex: 1;
+      }
+
+      .context-link {
+        font-size: 1.125rem;
+        color: rgb(75 85 99);
+        text-decoration: none;
+        transition: color 0.15s;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .context-link:hover {
+        color: rgb(37 99 235);
+      }
+
+      :global(.dark) .context-link {
+        color: rgb(156 163 175);
+      }
+
+      :global(.dark) .context-link:hover {
+        color: rgb(96 165 250);
+      }
+
+      .context-ley {
+        font-weight: 600;
+        font-size: 1.375rem;
+        color: rgb(55 65 81);
+      }
+
+      :global(.dark) .context-ley {
+        color: rgb(209 213 219);
+      }
+
+      .context-nombre {
+        font-weight: 400;
+        opacity: 0.8;
+      }
+
+      /* Right column: article number */
+      .header-article {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex-shrink: 0;
+      }
+
+      .article-label {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: rgb(107 114 128);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      :global(.dark) .article-label {
+        color: rgb(156 163 175);
+      }
+
+      .article-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1;
+        color: rgb(37 99 235);
+      }
+
+      :global(.dark) .article-number {
+        color: rgb(96 165 250);
       }
 
       /* Body contains sidebar + content */
