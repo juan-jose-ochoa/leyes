@@ -51,19 +51,36 @@ function buildSeccionMap(estructura) {
   return map;
 }
 
-// Generar etiqueta para el tipo de párrafo
-function getParrafoLabel(parrafo) {
-  const tipo = parrafo.tipo;
-  const id = parrafo.identificador;
+// Capitalizar tipo
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
-  if (tipo === 'fraccion' && id) {
-    return `Fracción ${id}`;
-  } else if (tipo === 'inciso' && id) {
-    return `Inciso ${id}`;
-  } else if (tipo === 'texto') {
-    return `Párrafo ${parrafo.numero}`;
+// Generar etiqueta simple para un párrafo
+function getSimpleLabel(parrafo) {
+  if (parrafo.identificador) {
+    return `${capitalize(parrafo.tipo)} ${parrafo.identificador}`;
   }
   return `Párrafo ${parrafo.numero}`;
+}
+
+// Construir breadcrumb jerárquico para un párrafo
+function buildParrafoBreadcrumb(parrafo, parrafosMap) {
+  const path = [];
+  let current = parrafo;
+
+  while (current) {
+    // Solo agregar si tiene identificador (fracción, inciso, numeral, etc.)
+    if (current.identificador) {
+      path.unshift(`${capitalize(current.tipo)} ${current.identificador}`);
+    } else if (current === parrafo) {
+      // Solo para el párrafo actual sin identificador
+      path.unshift(`Párrafo ${current.numero}`);
+    }
+    current = current.padre_numero ? parrafosMap.get(current.padre_numero) : null;
+  }
+
+  return path.length > 0 ? path.join(' › ') : `Párrafo ${parrafo.numero}`;
 }
 
 // Generar ID de ancla (igual que FraccionesView.astro - usa numero único)
@@ -128,6 +145,12 @@ for (const leyInfo of catalogo.leyes) {
       continue;
     }
 
+    // Construir mapa de párrafos por numero para lookup de padres
+    const parrafosMap = new Map();
+    for (const p of parrafos) {
+      parrafosMap.set(p.numero, p);
+    }
+
     // Indexar cada párrafo por separado
     for (const parrafo of parrafos) {
       if (!parrafo.contenido || !parrafo.contenido.trim()) continue;
@@ -141,7 +164,7 @@ for (const leyInfo of catalogo.leyes) {
         categoria: leyInfo.categoria,
         articuloNumero: art.numero,
         articuloTitulo: `Artículo ${art.numero}`,
-        parrafoLabel: getParrafoLabel(parrafo),
+        parrafoLabel: buildParrafoBreadcrumb(parrafo, parrafosMap),
         parrafoTipo: parrafo.tipo,
         parrafoId: parrafo.identificador || null,
         seccion: seccion,
