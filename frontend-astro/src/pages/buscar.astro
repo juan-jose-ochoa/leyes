@@ -534,6 +534,17 @@ const themeData = { categoryColors, tipoStyles };
       lawGroups[ley].totalMatches++;
     }
 
+    // Sort paragraphs within each article by paragraph number
+    for (const group of Object.values(lawGroups)) {
+      for (const article of group.articles.values()) {
+        article.parrafos.sort((a, b) => {
+          const numA = parseInt(a.url.match(/#p-(\d+)/)?.[1] || '0');
+          const numB = parseInt(b.url.match(/#p-(\d+)/)?.[1] || '0');
+          return numA - numB;
+        });
+      }
+    }
+
     // Convert to sorted arrays
     const sortedGroups = Object.values(lawGroups)
       .map(g => ({
