@@ -18,67 +18,33 @@ interface Props {
 
 const { parrafos } = Astro.props;
 
-// Filtrar solo fracciones (nivel superior)
-const fracciones = parrafos.filter(p => p.tipo === 'fraccion' && p.identificador);
-
-// Agrupar incisos por fracción padre
-const incisosPorFraccion = new Map<number, Parrafo[]>();
-for (const p of parrafos) {
-  if (p.tipo === 'inciso' && p.padre_numero) {
-    const lista = incisosPorFraccion.get(p.padre_numero) || [];
-    lista.push(p);
-    incisosPorFraccion.set(p.padre_numero, lista);
-  }
-}
+// Filtrar fracciones e incisos con identificador, en orden de aparición
+const items = parrafos.filter(p =>
+  (p.tipo === 'fraccion' || p.tipo === 'inciso') && p.identificador
+);
 
 // Generar ID de ancla (debe coincidir con FraccionesView.astro)
 function getAnclaId(p: Parrafo): string {
   return `p-${p.numero}`;
 }
 
-// Mostrar TOC si hay 2+ fracciones
-const mostrarToc = fracciones.length >= 2;
+// Mostrar TOC si hay 2+ items navegables
+const mostrarToc = items.length >= 2;
 ---
 
 {mostrarToc && (
   <nav class="toc-vertical">
     <div class="toc-scroll">
       <div class="toc-items">
-      {fracciones.map((f) => {
-        const incisos = incisosPorFraccion.get(f.numero) || [];
-        const tieneIncisos = incisos.length > 0;
-
-        return (
-          <div class="toc-item group">
-            <a
-              href={`#${getAnclaId(f)}`}
-              class="toc-chip"
-              title={`Fracción ${f.identificador}`}
-            >
-              {f.identificador}
-              {tieneIncisos && (
-                <svg class="w-2.5 h-2.5 ml-0.5 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-              )}
-            </a>
-
-            {/* Dropdown de incisos */}
-            {tieneIncisos && (
-              <div class="toc-dropdown">
-                {incisos.map((inciso) => (
-                  <a
-                    href={`#${getAnclaId(inciso)}`}
-                    class="toc-inciso"
-                  >
-                    {inciso.identificador})
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
-        );
-      })}
+        {items.map((item) => (
+          <a
+            href={`#${getAnclaId(item)}`}
+            class={item.tipo === 'fraccion' ? 'toc-chip' : 'toc-inciso'}
+            title={`${item.tipo === 'fraccion' ? 'Fracción' : 'Inciso'} ${item.identificador}`}
+          >
+            {item.identificador}{item.tipo === 'inciso' ? ')' : ''}
+          </a>
+        ))}
       </div>
     </div>
   </nav>
@@ -106,10 +72,7 @@ const mostrarToc = fracciones.length >= 2;
     gap: 0.25rem;
   }
 
-  .toc-item {
-    position: relative;
-  }
-
+  /* Fracción chip - azul, más prominente */
   .toc-chip {
     display: flex;
     align-items: center;
@@ -138,39 +101,19 @@ const mostrarToc = fracciones.length >= 2;
     background-color: rgb(30 58 138 / 0.7);
   }
 
-  .toc-dropdown {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    z-index: 30;
-    margin-left: 0.25rem;
-    padding: 0.375rem;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-    border: 1px solid rgb(229 231 235);
-    min-width: 120px;
-  }
-
-  :global(.dark) .toc-dropdown {
-    background-color: rgb(31 41 55);
-    border-color: rgb(55 65 81);
-  }
-
-  .group:hover .toc-dropdown {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-  }
-
+  /* Inciso chip - verde, más pequeño */
   .toc-inciso {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.375rem;
+    font-size: 0.7rem;
+    font-weight: 500;
     border-radius: 0.25rem;
     background-color: rgb(209 250 229);
     color: rgb(6 95 70);
-    transition: background-color 0.15s;
+    transition: all 0.15s;
+    white-space: nowrap;
   }
 
   :global(.dark) .toc-inciso {
@@ -180,6 +123,7 @@ const mostrarToc = fracciones.length >= 2;
 
   .toc-inciso:hover {
     background-color: rgb(167 243 208);
+    transform: scale(1.05);
   }
 
   :global(.dark) .toc-inciso:hover {
