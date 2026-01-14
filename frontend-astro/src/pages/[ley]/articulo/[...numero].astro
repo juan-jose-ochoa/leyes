@@ -8,6 +8,7 @@ import ReferenciasList from '../../../components/ReferenciasList.astro';
 import PdfViewer from '../../../components/PdfViewer.astro';
 import ViewModeToggle from '../../../components/ViewModeToggle.astro';
 import catalogo from '../../../data/catalogo.json';
+import epigrafesSat from '../../../data/epigrafes-sat.json';
 
 interface BreadcrumbItem {
   tipo: string;
@@ -108,6 +109,11 @@ const isDerogado = articulo.tipo === 'derogado';
 const tieneParrafos = articulo.parrafos && articulo.parrafos.length > 0;
 const pdfUrl = `/pdfs/${codigoLower}.pdf`;
 
+// Buscar epígrafe del SAT para este artículo
+const epigrafeInfo = epigrafesSat.epigrafes.find(
+  (e: any) => e.ley === leyInfo.codigo && e.articulo === articulo.numero
+);
+
 // Get last breadcrumb item for division indicator
 const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1] : null;
 
@@ -201,6 +207,12 @@ const seccionTexto = breadcrumb.length > 0
                   {item.nombre && <span class="context-nombre"> — {item.nombre}</span>}
                 </a>
               ))}
+              {/* Epígrafe del SAT (solo texto, URLs no verificadas) */}
+              {epigrafeInfo && (
+                <span class="context-epigrafe">
+                  <span class="epigrafe-fuente">SAT:</span> {epigrafeInfo.epigrafe}
+                </span>
+              )}
             </div>
 
             {/* Columna derecha: número de artículo gigante */}
@@ -349,6 +361,34 @@ const seccionTexto = breadcrumb.length > 0
       .context-nombre {
         font-weight: 400;
         opacity: 0.8;
+      }
+
+      /* Epígrafe del SAT */
+      .context-epigrafe {
+        font-style: italic;
+        color: rgb(107 114 128);
+      }
+
+      :global(.dark) .context-epigrafe {
+        color: rgb(156 163 175);
+      }
+
+      .context-epigrafe:hover {
+        color: rgb(37 99 235);
+      }
+
+      :global(.dark) .context-epigrafe:hover {
+        color: rgb(96 165 250);
+      }
+
+      .epigrafe-fuente {
+        font-weight: 600;
+        font-style: normal;
+        color: rgb(234 88 12);
+      }
+
+      :global(.dark) .epigrafe-fuente {
+        color: rgb(251 146 60);
       }
 
       /* Right column: article number */
