@@ -7,6 +7,7 @@ import ThemeToggle from '../../../components/ThemeToggle.astro';
 import ReferenciasList from '../../../components/ReferenciasList.astro';
 import PdfViewer from '../../../components/PdfViewer.astro';
 import ViewModeToggle from '../../../components/ViewModeToggle.astro';
+import ArticleNavigator from '../../../components/ArticleNavigator.astro';
 import catalogo from '../../../data/catalogo.json';
 import epigrafesSat from '../../../data/epigrafes-sat.json';
 
@@ -215,11 +216,13 @@ const seccionTexto = breadcrumb.length > 0
               )}
             </div>
 
-            {/* Columna derecha: número de artículo gigante */}
-            <div class="header-article">
-              <span class="article-label">Artículo</span>
-              <span class="article-number" data-pagefind-meta="title">{articulo.numero}</span>
-            </div>
+            {/* Columna derecha: navegador de artículos */}
+            <ArticleNavigator
+              articuloActual={articulo.numero}
+              prevArticulo={prevArticulo}
+              nextArticulo={nextArticulo}
+              leyCode={codigoLower}
+            />
           </div>
         </header>
 
@@ -363,63 +366,20 @@ const seccionTexto = breadcrumb.length > 0
         opacity: 0.8;
       }
 
-      /* Epígrafe del SAT */
+      /* Epígrafe del SAT - mismo color que número de artículo */
       .context-epigrafe {
         font-style: italic;
-        color: rgb(107 114 128);
+        color: rgb(59 130 246);
       }
 
       :global(.dark) .context-epigrafe {
-        color: rgb(156 163 175);
-      }
-
-      .context-epigrafe:hover {
-        color: rgb(37 99 235);
-      }
-
-      :global(.dark) .context-epigrafe:hover {
         color: rgb(96 165 250);
       }
 
       .epigrafe-fuente {
-        font-weight: 600;
-        font-style: normal;
-        color: rgb(234 88 12);
-      }
-
-      :global(.dark) .epigrafe-fuente {
-        color: rgb(251 146 60);
-      }
-
-      /* Right column: article number */
-      .header-article {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        flex-shrink: 0;
-      }
-
-      .article-label {
-        font-size: 0.75rem;
         font-weight: 500;
-        color: rgb(107 114 128);
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-      }
-
-      :global(.dark) .article-label {
-        color: rgb(156 163 175);
-      }
-
-      .article-number {
-        font-size: 2.5rem;
-        font-weight: 700;
-        line-height: 1;
-        color: rgb(37 99 235);
-      }
-
-      :global(.dark) .article-number {
-        color: rgb(96 165 250);
+        font-style: normal;
+        opacity: 0.7;
       }
 
       /* Body contains sidebar + content */
