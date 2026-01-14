@@ -31,11 +31,8 @@ for (const p of parrafos) {
   }
 }
 
-// Generar ID de ancla
+// Generar ID de ancla (debe coincidir con FraccionesView.astro)
 function getAnclaId(p: Parrafo): string {
-  if (p.identificador) {
-    return `${p.tipo}-${p.identificador}`.toLowerCase();
-  }
   return `p-${p.numero}`;
 }
 
