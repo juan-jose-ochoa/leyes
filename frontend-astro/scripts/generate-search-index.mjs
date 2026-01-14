@@ -182,10 +182,10 @@ miniSearch.addAll(documents);
 const indexJson = JSON.stringify(miniSearch.toJSON());
 writeFileSync(join(outputDir, 'search-index.json'), indexJson);
 
-// Guardar contenido para excerpts
+// Guardar contenido para excerpts (full content for better term matching)
 const excerptData = documents.map(d => ({
   id: d.id,
-  contenido: d.contenido.substring(0, 300)
+  contenido: d.contenido
 }));
 writeFileSync(join(outputDir, 'search-excerpts.json'), JSON.stringify(excerptData));
 

@@ -346,34 +346,48 @@ const themeData = { categoryColors, tipoStyles };
   }
 
   // Generate excerpt with highlighted terms
-  function generateExcerpt(contenido: string, query: string, maxLength = 200): string {
-    const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+  function generateExcerpt(contenido: string, query: string, matchedTerms: string[] = [], maxLength = 200): string {
+    // Use matched terms from MiniSearch if available, otherwise parse query
+    const queryTerms = query.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+    const allTerms = [...new Set([...matchedTerms, ...queryTerms])];
     const contenidoLower = contenido.toLowerCase();
 
-    // Find best position (where most terms appear)
+    // Find first occurrence of any term (try matched terms first)
     let bestPos = 0;
-    let bestScore = 0;
+    let foundTerm = '';
+    for (const term of allTerms) {
+      const pos = contenidoLower.indexOf(term.toLowerCase());
+      if (pos >= 0) {
+        bestPos = Math.max(0, pos - maxLength / 2);
+        foundTerm = term;
+        break;
+      }
+    }
 
-    for (let i = 0; i < contenido.length - 50; i += 20) {
-      const window = contenidoLower.substring(i, i + maxLength);
-      const score = terms.filter(t => window.includes(t)).length;
-      if (score > bestScore) {
-        bestScore = score;
-        bestPos = i;
+    // If no exact match, try partial match (stem)
+    if (!foundTerm) {
+      for (const term of allTerms) {
+        const stem = term.toLowerCase().substring(0, Math.min(5, term.length));
+        const pos = contenidoLower.indexOf(stem);
+        if (pos >= 0) {
+          bestPos = Math.max(0, pos - maxLength / 2);
+          break;
+        }
       }
     }
 
     // Extract excerpt
-    let start = Math.max(0, bestPos - 20);
+    let start = Math.floor(bestPos);
     let excerpt = contenido.substring(start, start + maxLength);
 
     // Clean up boundaries
     if (start > 0) excerpt = '...' + excerpt.replace(/^\S*\s/, '');
     if (start + maxLength < contenido.length) excerpt = excerpt.replace(/\s\S*$/, '') + '...';
 
-    // Highlight terms
-    for (const term of terms) {
-      const regex = new RegExp(`(${term}\\w*)`, 'gi');
+    // Highlight all terms (including stems)
+    for (const term of allTerms) {
+      const stem = term.toLowerCase().substring(0, Math.min(4, term.length));
+      const regex = new RegExp(`(${stem}\\w*)`, 'gi');
       excerpt = excerpt.replace(regex, '<mark>$1</mark>');
     }
 
