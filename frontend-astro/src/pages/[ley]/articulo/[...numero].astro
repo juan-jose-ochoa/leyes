@@ -8,6 +8,7 @@ import ReferenciasList from '../../../components/ReferenciasList.astro';
 import PdfViewer from '../../../components/PdfViewer.astro';
 import ViewModeToggle from '../../../components/ViewModeToggle.astro';
 import ArticleNavigator from '../../../components/ArticleNavigator.astro';
+import BreadcrumbNav from '../../../components/BreadcrumbNav.astro';
 import catalogo from '../../../data/catalogo.json';
 import epigrafesSat from '../../../data/epigrafes-sat.json';
 
@@ -16,6 +17,8 @@ interface BreadcrumbItem {
   numero: string;
   nombre: string | null;
   url: string;
+  prevArticulo?: string | null;
+  nextArticulo?: string | null;
 }
 
 export async function getStaticPaths() {
@@ -42,6 +45,12 @@ export async function getStaticPaths() {
     return null;
   }
 
+  // Get division identifier at a specific level from breadcrumb
+  function getDivisionId(breadcrumb: BreadcrumbItem[] | null, level: number): string | null {
+    if (!breadcrumb || breadcrumb.length <= level) return null;
+    return `${breadcrumb[level].tipo}-${breadcrumb[level].numero}`;
+  }
+
   const paths = [];
 
   for (const ley of catalogo.leyes) {
@@ -51,15 +60,65 @@ export async function getStaticPaths() {
     const articulos = articulosModule.default;
     const estructura = estructuraModule.default;
 
+    // Pre-calculate breadcrumbs for all articles
+    const breadcrumbs: (BreadcrumbItem[] | null)[] = articulos.map((art: any) =>
+      estructura.divisiones
+        ? findArticleBreadcrumb(estructura.divisiones, art.numero, codigoLower)
+        : null
+    );
+
     for (let i = 0; i < articulos.length; i++) {
       const articulo = articulos[i];
       const prevArt = i > 0 ? articulos[i - 1] : null;
       const nextArt = i < articulos.length - 1 ? articulos[i + 1] : null;
+      const breadcrumb = breadcrumbs[i];
 
-      // Find breadcrumb for this article
-      const breadcrumb = estructura.divisiones
-        ? findArticleBreadcrumb(estructura.divisiones, articulo.numero, codigoLower)
-        : null;
+      // Calculate prev/next for each division level (titulo, capitulo, etc.)
+      const breadcrumbWithNav: BreadcrumbItem[] = [];
+
+      if (breadcrumb) {
+        for (let level = 0; level < breadcrumb.length; level++) {
+          const currentDivId = getDivisionId(breadcrumb, level);
+
+          // Find first article of previous division at this level
+          let prevDivArticulo: string | null = null;
+          let prevDivId: string | null = null;
+          // First, find where the previous division starts
+          for (let j = i - 1; j >= 0; j--) {
+            const otherDivId = getDivisionId(breadcrumbs[j], level);
+            if (otherDivId && otherDivId !== currentDivId) {
+              prevDivId = otherDivId;
+              prevDivArticulo = articulos[j].numero;
+              // Keep going back to find the FIRST article of that division
+              for (let k = j - 1; k >= 0; k--) {
+                const kDivId = getDivisionId(breadcrumbs[k], level);
+                if (kDivId === prevDivId) {
+                  prevDivArticulo = articulos[k].numero;
+                } else {
+                  break;
+                }
+              }
+              break;
+            }
+          }
+
+          // Find next article with different division at this level
+          let nextDivArticulo: string | null = null;
+          for (let j = i + 1; j < articulos.length; j++) {
+            const otherDivId = getDivisionId(breadcrumbs[j], level);
+            if (otherDivId && otherDivId !== currentDivId) {
+              nextDivArticulo = articulos[j].numero;
+              break;
+            }
+          }
+
+          breadcrumbWithNav.push({
+            ...breadcrumb[level],
+            prevArticulo: prevDivArticulo,
+            nextArticulo: nextDivArticulo
+          });
+        }
+      }
 
       paths.push({
         params: { ley: codigoLower, numero: articulo.numero },
@@ -70,7 +129,7 @@ export async function getStaticPaths() {
           nextArticulo: nextArt ? { numero: nextArt.numero } : null,
           totalArticulos: articulos.length,
           indiceActual: i + 1,
-          breadcrumb: breadcrumb || []
+          breadcrumb: breadcrumbWithNav
         }
       });
     }
@@ -203,10 +262,7 @@ const seccionTexto = breadcrumb.length > 0
                 {leyInfo.nombre}
               </a>
               {breadcrumb.map((item) => (
-                <a href={item.url} class="context-link">
-                  <span class="capitalize">{item.tipo}</span> {item.numero}
-                  {item.nombre && <span class="context-nombre"> — {item.nombre}</span>}
-                </a>
+                <BreadcrumbNav item={item} leyCode={codigoLower} />
               ))}
               {/* Epígrafe del SAT (solo texto, URLs no verificadas) */}
               {epigrafeInfo && (
