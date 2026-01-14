@@ -169,7 +169,10 @@ for (const leyInfo of catalogo.leyes) {
         parrafoId: parrafo.identificador || null,
         seccion: seccion,
         contenido: parrafo.contenido,
-        url: `${url}#${anclaId}`
+        url: `${url}#${anclaId}`,
+        // Position for sorting (article position, not paragraph)
+        pagina: art.pagina || 0,
+        posY: art.y || 0
       });
       parrafoCount++;
     }
@@ -189,7 +192,8 @@ const miniSearch = new MiniSearch({
     'ley', 'tipo', 'categoria',
     'articuloNumero', 'articuloTitulo',
     'parrafoLabel', 'parrafoTipo',
-    'seccion', 'url'
+    'seccion', 'url',
+    'pagina', 'posY'
   ],
   searchOptions: {
     boost: { articuloTitulo: 2, articuloNumero: 1.5 },

@@ -218,6 +218,8 @@ const themeData = { categoryColors, tipoStyles };
     url: string;
     score: number;
     match: Record<string, string[]>;
+    pagina: number;
+    posY: number;
   }
 
   interface ExcerptData {
@@ -475,9 +477,16 @@ const themeData = { categoryColors, tipoStyles };
     interface ArticleGroup {
       articuloNumero: string;
       articuloTitulo: string;
-      seccion: string;
       url: string;
       parrafos: ParrafoMatch[];
+    }
+
+    interface SectionGroup {
+      seccion: string;
+      articles: Map<string, ArticleGroup>;
+      totalMatches: number;
+      minPagina: number;
+      minPosY: number;
     }
 
     interface LawGroup {
@@ -485,16 +494,17 @@ const themeData = { categoryColors, tipoStyles };
       leyNombre: string;
       leyNombreCorto: string;
       categoria: string;
-      articles: Map<string, ArticleGroup>;
+      sections: Map<string, SectionGroup>;
       totalMatches: number;
     }
 
-    // Group by law → article → paragraphs
+    // Group by law → section → article → paragraphs
     const lawGroups: Record<string, LawGroup> = {};
     const maxResults = 200; // Limit total results for performance
 
     for (const result of results.slice(0, maxResults)) {
       const ley = result.ley;
+      const seccion = result.seccion || 'Sin sección';
       const artNum = result.articuloNumero;
 
       // Initialize law group
@@ -505,18 +515,37 @@ const themeData = { categoryColors, tipoStyles };
           leyNombre: leyInfo?.nombre || ley,
           leyNombreCorto: leyInfo?.nombre_corto || ley,
           categoria: leyInfo?.categoria || result.categoria,
-          articles: new Map(),
+          sections: new Map(),
           totalMatches: 0
         };
       }
 
+      // Initialize section group
+      if (!lawGroups[ley].sections.has(seccion)) {
+        lawGroups[ley].sections.set(seccion, {
+          seccion,
+          articles: new Map(),
+          totalMatches: 0,
+          minPagina: Infinity,
+          minPosY: Infinity
+        });
+      }
+
+      // Update section's minimum position (for sorting by document order)
+      const sectionGroup = lawGroups[ley].sections.get(seccion)!;
+      const pagina = result.pagina || 0;
+      const posY = result.posY || 0;
+      if (pagina < sectionGroup.minPagina || (pagina === sectionGroup.minPagina && posY < sectionGroup.minPosY)) {
+        sectionGroup.minPagina = pagina;
+        sectionGroup.minPosY = posY;
+      }
+
       // Initialize article group (URL base without hash)
-      if (!lawGroups[ley].articles.has(artNum)) {
+      if (!sectionGroup.articles.has(artNum)) {
         const baseUrl = result.url.split('#')[0];
-        lawGroups[ley].articles.set(artNum, {
+        sectionGroup.articles.set(artNum, {
           articuloNumero: artNum,
           articuloTitulo: result.articuloTitulo,
-          seccion: result.seccion,
           url: baseUrl,
           parrafos: []
         });
@@ -526,46 +555,63 @@ const themeData = { categoryColors, tipoStyles };
       const contenido = excerptMap.get(result.id) || '';
       const excerpt = generateExcerpt(contenido, query);
 
-      lawGroups[ley].articles.get(artNum)!.parrafos.push({
+      sectionGroup.articles.get(artNum)!.parrafos.push({
         parrafoLabel: result.parrafoLabel,
         excerpt,
         url: result.url  // Full URL with hash
       });
+      sectionGroup.totalMatches++;
       lawGroups[ley].totalMatches++;
     }
 
     // Sort paragraphs within each article by paragraph number
     for (const group of Object.values(lawGroups)) {
-      for (const article of group.articles.values()) {
-        article.parrafos.sort((a, b) => {
-          const numA = parseInt(a.url.match(/#p-(\d+)/)?.[1] || '0');
-          const numB = parseInt(b.url.match(/#p-(\d+)/)?.[1] || '0');
-          return numA - numB;
-        });
+      for (const section of group.sections.values()) {
+        for (const article of section.articles.values()) {
+          article.parrafos.sort((a, b) => {
+            const numA = parseInt(a.url.match(/#p-(\d+)/)?.[1] || '0');
+            const numB = parseInt(b.url.match(/#p-(\d+)/)?.[1] || '0');
+            return numA - numB;
+          });
+        }
       }
     }
 
-    // Convert to sorted arrays
+    // Convert to sorted arrays (sections sorted by page+y position)
     const sortedGroups = Object.values(lawGroups)
       .map(g => ({
         ...g,
-        articles: Array.from(g.articles.values())
+        sections: Array.from(g.sections.values())
+          .map(s => ({
+            ...s,
+            articles: Array.from(s.articles.values())
+          }))
+          .sort((a, b) => {
+            // Sort by page first, then by y position
+            if (a.minPagina !== b.minPagina) return a.minPagina - b.minPagina;
+            return a.minPosY - b.minPosY;
+          })
       }))
       .sort((a, b) => b.totalMatches - a.totalMatches);
 
-    // Count unique articles
+    // Count unique articles and sections
     const totalMatches = results.length;
     const uniqueArticles = new Set(results.map(r => `${r.ley}-${r.articuloNumero}`)).size;
+    const uniqueSections = new Set(results.map(r => `${r.ley}-${r.seccion}`)).size;
 
-    // Expand first group
+    // Expand first group and first section
     expandedLaws.clear();
+    const expandedSections = new Set<string>();
     if (sortedGroups.length > 0) {
       expandedLaws.add(sortedGroups[0].ley);
+      if (sortedGroups[0].sections.length > 0) {
+        expandedSections.add(`${sortedGroups[0].ley}-${sortedGroups[0].sections[0].seccion}`);
+      }
     }
 
-    // Update count - like Pagefind: "X coincidencias en Y artículos de Z leyes"
+    // Update count
     if (resultsCount) {
-      resultsCount.textContent = `${totalMatches} coincidencias en ${uniqueArticles} artículos de ${sortedGroups.length} ${sortedGroups.length === 1 ? 'ley' : 'leyes'}`;
+      resultsCount.textContent = `${totalMatches} coincidencias en ${uniqueArticles} artículos, ${uniqueSections} secciones de ${sortedGroups.length} ${sortedGroups.length === 1 ? 'ley' : 'leyes'}`;
     }
 
     // Category colors
@@ -575,12 +621,16 @@ const themeData = { categoryColors, tipoStyles };
       constitucional: 'bg-orange-600'
     };
 
+    // Helper to generate section ID for toggling
+    const getSectionId = (ley: string, seccion: string) => `${ley}-${seccion}`.replace(/\s+/g, '_');
+
     // Render results
     if (resultsList) {
       resultsList.innerHTML = sortedGroups.map((group) => {
         const catColor = catColors[group.categoria] || 'bg-primary-600';
         const isExpanded = expandedLaws.has(group.ley);
         const canExclude = sortedGroups.length > 1;
+        const totalArticles = group.sections.reduce((sum, s) => sum + s.articles.length, 0);
 
         return `
         <div class="law-group rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
@@ -597,7 +647,7 @@ const themeData = { categoryColors, tipoStyles };
                   <span class="font-semibold text-gray-900 dark:text-gray-100">${group.ley}</span>
                   <span class="text-sm text-gray-500 dark:text-gray-400 truncate">${group.leyNombreCorto}</span>
                 </div>
-                <p class="text-sm text-gray-500">${group.totalMatches} coincidencias en ${group.articles.length} artículos</p>
+                <p class="text-sm text-gray-500">${group.totalMatches} coincidencias en ${totalArticles} artículos, ${group.sections.length} secciones</p>
               </div>
               <svg class="chevron h-5 w-5 text-gray-400 transition-transform ${isExpanded ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -613,23 +663,41 @@ const themeData = { categoryColors, tipoStyles };
             </button>
             ` : ''}
           </div>
-          <div class="law-content divide-y divide-gray-100 dark:divide-gray-800 ${isExpanded ? '' : 'hidden'}">
-            ${group.articles.map((article) => `
-              <div class="article-group">
-                <a href="${article.url}" class="block p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors border-b border-gray-100 dark:border-gray-800">
-                  <div class="font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400">${article.articuloTitulo}</div>
-                  ${article.seccion ? `<div class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">${article.seccion}</div>` : ''}
-                </a>
-                <div class="pl-4 divide-y divide-gray-50 dark:divide-gray-800/50">
-                  ${article.parrafos.map((p) => `
-                    <a href="${p.url}" class="block p-3 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
-                      <span class="text-xs font-medium text-primary-600 dark:text-primary-400">${p.parrafoLabel}</span>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 line-clamp-2">${p.excerpt}</p>
-                    </a>
+          <div class="law-content ${isExpanded ? '' : 'hidden'}">
+            ${group.sections.map((section, sIdx) => {
+              const sectionId = getSectionId(group.ley, section.seccion);
+              const isSectionExpanded = expandedSections.has(`${group.ley}-${section.seccion}`);
+              return `
+              <div class="section-group border-t border-gray-100 dark:border-gray-800">
+                <button type="button" data-toggle-section="${sectionId}" data-law="${group.ley}" data-seccion="${section.seccion}"
+                  class="w-full flex items-center gap-2 p-3 pl-4 bg-gray-50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-left">
+                  <svg class="section-chevron h-5 w-5 text-primary-500 transition-transform shrink-0 ${isSectionExpanded ? 'rotate-90' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="font-medium text-gray-900 dark:text-gray-100">${section.seccion}</span>
+                  </div>
+                  <span class="text-xs font-medium text-primary-600 dark:text-primary-400 shrink-0">${section.totalMatches} en ${section.articles.length} art.</span>
+                </button>
+                <div class="section-content pl-4 divide-y divide-gray-50 dark:divide-gray-800/50 ${isSectionExpanded ? '' : 'hidden'}">
+                  ${section.articles.map((article) => `
+                    <div class="article-group">
+                      <a href="${article.url}" class="block p-3 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                        <div class="font-medium text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400">${article.articuloTitulo}</div>
+                      </a>
+                      <div class="pl-3 divide-y divide-gray-50 dark:divide-gray-800/50">
+                        ${article.parrafos.map((p) => `
+                          <a href="${p.url}" class="block p-2 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                            <span class="text-xs font-medium text-primary-600 dark:text-primary-400">${p.parrafoLabel}</span>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 line-clamp-2">${p.excerpt}</p>
+                          </a>
+                        `).join('')}
+                      </div>
+                    </div>
                   `).join('')}
                 </div>
-              </div>
-            `).join('')}
+              </div>`;
+            }).join('')}
           </div>
         </div>`;
       }).join('');
@@ -660,6 +728,24 @@ const themeData = { categoryColors, tipoStyles };
             expandedLaws.add(ley);
             content?.classList.remove('hidden');
             chevron?.classList.add('rotate-180');
+          }
+        });
+      });
+
+      // Add section toggle listeners
+      document.querySelectorAll('[data-toggle-section]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const sectionGroup = btn.closest('.section-group') as HTMLElement;
+          const content = sectionGroup?.querySelector('.section-content') as HTMLElement;
+          const chevron = btn.querySelector('.section-chevron') as HTMLElement;
+          const isOpen = !content?.classList.contains('hidden');
+
+          if (isOpen) {
+            content?.classList.add('hidden');
+            chevron?.classList.remove('rotate-90');
+          } else {
+            content?.classList.remove('hidden');
+            chevron?.classList.add('rotate-90');
           }
         });
       });
