@@ -1,0 +1,206 @@
+---
+/**
+ * ArticleTocVertical - TOC vertical fijo para navegación de fracciones
+ * Se muestra como sidebar en el panel de texto
+ */
+
+interface Parrafo {
+  numero: number;
+  tipo: string;
+  identificador: string | null;
+  contenido: string;
+  padre_numero: number | null;
+}
+
+interface Props {
+  parrafos: Parrafo[];
+}
+
+const { parrafos } = Astro.props;
+
+// Filtrar solo fracciones (nivel superior)
+const fracciones = parrafos.filter(p => p.tipo === 'fraccion' && p.identificador);
+
+// Agrupar incisos por fracción padre
+const incisosPorFraccion = new Map<number, Parrafo[]>();
+for (const p of parrafos) {
+  if (p.tipo === 'inciso' && p.padre_numero) {
+    const lista = incisosPorFraccion.get(p.padre_numero) || [];
+    lista.push(p);
+    incisosPorFraccion.set(p.padre_numero, lista);
+  }
+}
+
+// Generar ID de ancla (debe coincidir con FraccionesView.astro)
+function getAnclaId(p: Parrafo): string {
+  return `p-${p.numero}`;
+}
+
+// Mostrar TOC si hay 2+ fracciones
+const mostrarToc = fracciones.length >= 2;
+---
+
+{mostrarToc && (
+  <nav class="toc-vertical">
+    <div class="toc-scroll">
+      <div class="toc-items">
+      {fracciones.map((f) => {
+        const incisos = incisosPorFraccion.get(f.numero) || [];
+        const tieneIncisos = incisos.length > 0;
+
+        return (
+          <div class="toc-item group">
+            <a
+              href={`#${getAnclaId(f)}`}
+              class="toc-chip"
+              title={`Fracción ${f.identificador}`}
+            >
+              {f.identificador}
+              {tieneIncisos && (
+                <svg class="w-2.5 h-2.5 ml-0.5 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              )}
+            </a>
+
+            {/* Dropdown de incisos */}
+            {tieneIncisos && (
+              <div class="toc-dropdown">
+                {incisos.map((inciso) => (
+                  <a
+                    href={`#${getAnclaId(inciso)}`}
+                    class="toc-inciso"
+                  >
+                    {inciso.identificador})
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        );
+      })}
+      </div>
+    </div>
+  </nav>
+)}
+
+<style>
+  .toc-vertical {
+    width: 3.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .toc-scroll {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0.5rem 0.25rem;
+  }
+
+  .toc-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .toc-item {
+    position: relative;
+  }
+
+  .toc-chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.375rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    background-color: rgb(219 234 254);
+    color: rgb(30 64 175);
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+
+  :global(.dark) .toc-chip {
+    background-color: rgb(30 58 138 / 0.5);
+    color: rgb(147 197 253);
+  }
+
+  .toc-chip:hover {
+    background-color: rgb(191 219 254);
+    transform: scale(1.05);
+  }
+
+  :global(.dark) .toc-chip:hover {
+    background-color: rgb(30 58 138 / 0.7);
+  }
+
+  .toc-dropdown {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 30;
+    margin-left: 0.25rem;
+    padding: 0.375rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    border: 1px solid rgb(229 231 235);
+    min-width: 120px;
+  }
+
+  :global(.dark) .toc-dropdown {
+    background-color: rgb(31 41 55);
+    border-color: rgb(55 65 81);
+  }
+
+  .group:hover .toc-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .toc-inciso {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 0.25rem;
+    background-color: rgb(209 250 229);
+    color: rgb(6 95 70);
+    transition: background-color 0.15s;
+  }
+
+  :global(.dark) .toc-inciso {
+    background-color: rgb(6 78 59 / 0.5);
+    color: rgb(167 243 208);
+  }
+
+  .toc-inciso:hover {
+    background-color: rgb(167 243 208);
+  }
+
+  :global(.dark) .toc-inciso:hover {
+    background-color: rgb(6 78 59 / 0.7);
+  }
+
+  /* Scrollbar styling */
+  .toc-scroll::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .toc-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .toc-scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(209 213 219);
+    border-radius: 2px;
+  }
+
+  :global(.dark) .toc-scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(75 85 99);
+  }
+</style>

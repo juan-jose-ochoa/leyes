@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import FraccionesView from '../../../components/FraccionesView.astro';
 import ArticleToc from '../../../components/ArticleToc.astro';
+import ArticleTocVertical from '../../../components/ArticleTocVertical.astro';
 import ThemeToggle from '../../../components/ThemeToggle.astro';
 import ReferenciasList from '../../../components/ReferenciasList.astro';
 import PdfViewer from '../../../components/PdfViewer.astro';
@@ -131,9 +132,9 @@ const seccionTexto = breadcrumb.length > 0
     "inLanguage": "es-MX",
     "jurisdiction": "MX"
   })} />
-  <div class="min-h-screen flex flex-col">
+  <div class="h-screen flex flex-col overflow-hidden">
     <!-- Header fijo -->
-    <header class="sticky top-0 z-20 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 px-4 py-3">
+    <header class="flex-shrink-0 z-20 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 px-4 py-3">
       <div class="container mx-auto max-w-5xl flex items-center justify-between gap-4">
         <!-- Logo + Breadcrumb -->
         <nav class="flex items-center gap-2 text-sm min-w-0 flex-1 overflow-x-auto">
@@ -213,56 +214,64 @@ const seccionTexto = breadcrumb.length > 0
     <!-- Contenido -->
     <main id="article-container" data-viewmode="text" class="article-container flex-1">
       <!-- Panel de texto -->
-      <div id="text-panel" class="text-panel container mx-auto max-w-4xl px-4 py-8 pb-24">
-        <article id="article-content" data-pagefind-body>
-        <!-- Division indicator -->
-        {currentDivision && (
-          <p class="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">
-            {currentDivision.tipo} {currentDivision.numero} {currentDivision.nombre ? `- ${currentDivision.nombre}` : ''}
-          </p>
-        )}
-
-        <h1
-          class="text-2xl font-bold text-primary-600 dark:text-primary-400 mb-2"
-          data-pagefind-meta="title"
-        >
-          Artículo {articulo.numero}
-        </h1>
-
-        <!-- Law name -->
-        <p class="text-gray-600 dark:text-gray-400 mb-6">{leyInfo.nombre}</p>
-
-        <p class="hidden" data-pagefind-meta="ley" data-pagefind-filter="ley">{leyInfo.codigo}</p>
-        <p class="hidden" data-pagefind-filter="tipo">{leyInfo.tipo}</p>
-        <p class="hidden" data-pagefind-meta="categoria" data-pagefind-filter="categoria">{leyInfo.categoria}</p>
-        {seccionTexto && <p class="hidden" data-pagefind-meta="seccion">{seccionTexto}</p>}
-
-        {/* TOC si tiene fracciones */}
-        {tieneParrafos && !isDerogado && (
-          <ArticleToc parrafos={articulo.parrafos} />
-        )}
-
-        {/* Referencias cruzadas (solo RMF) */}
-        {articulo.referencias && (
-          <ReferenciasList referencias={articulo.referencias} />
-        )}
-
-        <div id="legal-content">
-          {isDerogado ? (
-            <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-gray-500 dark:text-gray-400 italic">
-              Artículo derogado
-            </div>
-          ) : tieneParrafos ? (
-            <FraccionesView parrafos={articulo.parrafos} />
-          ) : (
-            <div class="prose-legal">
-              <p class="text-gray-800 dark:text-gray-200 whitespace-pre-wrap">
-                {articulo.contenido}
+      <div id="text-panel" class="text-panel">
+        <!-- Header interno del panel (fijo) -->
+        <header class="text-panel-header">
+          <div class="max-w-3xl mx-auto">
+            {/* Division indicator */}
+            {currentDivision && (
+              <p class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">
+                {currentDivision.tipo} {currentDivision.numero} {currentDivision.nombre ? `- ${currentDivision.nombre}` : ''}
               </p>
-            </div>
+            )}
+            <h1 class="text-xl font-bold text-primary-600 dark:text-primary-400" data-pagefind-meta="title">
+              Artículo {articulo.numero}
+            </h1>
+            <p class="text-sm text-gray-600 dark:text-gray-400">{leyInfo.nombre}</p>
+          </div>
+        </header>
+
+        <!-- Contenedor principal: contenido + sidebar -->
+        <div class="text-panel-body">
+          {/* Área de contenido scrolleable */}
+          <div class="text-panel-content">
+            <article id="article-content" data-pagefind-body>
+              {/* Metadata oculta para búsqueda */}
+              <p class="hidden" data-pagefind-meta="ley" data-pagefind-filter="ley">{leyInfo.codigo}</p>
+              <p class="hidden" data-pagefind-filter="tipo">{leyInfo.tipo}</p>
+              <p class="hidden" data-pagefind-meta="categoria" data-pagefind-filter="categoria">{leyInfo.categoria}</p>
+              {seccionTexto && <p class="hidden" data-pagefind-meta="seccion">{seccionTexto}</p>}
+
+              {/* Referencias cruzadas (solo RMF) */}
+              {articulo.referencias && (
+                <ReferenciasList referencias={articulo.referencias} />
+              )}
+
+              <div id="legal-content">
+                {isDerogado ? (
+                  <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-gray-500 dark:text-gray-400 italic">
+                    Artículo derogado
+                  </div>
+                ) : tieneParrafos ? (
+                  <FraccionesView parrafos={articulo.parrafos} />
+                ) : (
+                  <div class="prose-legal">
+                    <p class="text-gray-800 dark:text-gray-200 whitespace-pre-wrap">
+                      {articulo.contenido}
+                    </p>
+                  </div>
+                )}
+              </div>
+            </article>
+          </div>
+
+          {/* Sidebar con TOC vertical a la derecha (solo si hay fracciones) */}
+          {tieneParrafos && !isDerogado && (
+            <aside class="text-panel-sidebar">
+              <ArticleTocVertical parrafos={articulo.parrafos} />
+            </aside>
           )}
         </div>
-        </article>
       </div>
 
       <!-- Panel de PDF -->
@@ -277,10 +286,65 @@ const seccionTexto = breadcrumb.length > 0
     </main>
 
     <style>
-      /* View mode styles */
+      /* Main container fills available space */
       .article-container {
+        flex: 1;
         display: flex;
         flex-direction: column;
+        min-height: 0; /* Critical for nested flex scroll */
+        overflow: hidden;
+      }
+
+      /* Text panel - column layout with fixed header */
+      .text-panel {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-height: 0;
+        overflow: hidden;
+      }
+
+      /* Internal header - NEVER scrolls */
+      .text-panel-header {
+        flex-shrink: 0;
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid rgb(229 231 235);
+        background-color: rgb(249 250 251);
+      }
+
+      :global(.dark) .text-panel-header {
+        border-bottom-color: rgb(55 65 81);
+        background-color: rgb(17 24 39);
+      }
+
+      /* Body contains sidebar + content */
+      .text-panel-body {
+        display: flex;
+        flex: 1;
+        min-height: 0; /* Critical for nested flex scroll */
+        overflow: hidden;
+      }
+
+      /* Sidebar - NEVER scrolls (TOC handles its own scroll) */
+      .text-panel-sidebar {
+        flex-shrink: 0;
+        overflow: hidden;
+        background-color: rgb(249 250 251);
+        border-left: 1px solid rgb(229 231 235);
+      }
+
+      :global(.dark) .text-panel-sidebar {
+        background-color: rgb(17 24 39);
+        border-left-color: rgb(55 65 81);
+      }
+
+      /* Content - ONLY element that scrolls */
+      .text-panel-content {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 1.5rem;
       }
 
       /* Default: text mode - hide PDF */
@@ -289,7 +353,7 @@ const seccionTexto = breadcrumb.length > 0
       }
 
       .article-container[data-viewmode="text"] .text-panel {
-        display: block;
+        display: flex;
       }
 
       /* PDF mode - hide text, show PDF full height */
@@ -298,15 +362,13 @@ const seccionTexto = breadcrumb.length > 0
       }
 
       .article-container[data-viewmode="pdf"] .pdf-panel {
-        display: block;
-        width: 100%;
-        height: calc(100vh - 8rem);
-        min-height: 400px;
+        flex: 1;
+        min-height: 0;
       }
 
       /* Split mode - only on large screens */
       .article-container[data-viewmode="split"] .text-panel {
-        display: block;
+        display: flex;
       }
 
       .article-container[data-viewmode="split"] .pdf-panel {
@@ -320,21 +382,26 @@ const seccionTexto = breadcrumb.length > 0
 
         .article-container[data-viewmode="split"] .text-panel {
           width: 50%;
-          overflow-y: auto;
+          flex: none;
         }
 
         .article-container[data-viewmode="split"] .pdf-panel {
-          display: block;
+          display: flex;
           width: 50%;
-          height: calc(100vh - 7rem);
-          position: sticky;
-          top: 4rem;
+          flex: none;
+        }
+      }
+
+      /* Mobile: hide sidebar */
+      @media (max-width: 640px) {
+        .text-panel-sidebar {
+          display: none;
         }
       }
     </style>
 
     <!-- Footer fijo con navegación -->
-    <footer class="sticky bottom-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-4 py-3">
+    <footer class="flex-shrink-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-4 py-3">
       <div class="container mx-auto max-w-4xl flex items-center justify-between">
         {prevArticulo ? (
           <a
