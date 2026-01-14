@@ -449,4 +449,52 @@ const seccionTexto = breadcrumb.length > 0
     // Run after View Transitions navigation
     document.addEventListener('astro:page-load', initViewMode);
   </script>
+
+  <!-- PDF sync with hash navigation -->
+  <script is:inline define:vars={{
+    pdfUrl,
+    parrafosData: (articulo.parrafos || []).map(p => ({
+      numero: p.numero,
+      pagina: p.pagina,
+      y: p.y
+    })),
+    articuloPagina: articulo.pagina,
+    articuloY: articulo.y,
+    pageHeight: 792
+  }}>
+    function syncPdfWithHash() {
+      const hash = window.location.hash;
+      const iframe = document.querySelector('#pdf-panel iframe');
+      if (!iframe) return;
+
+      let pagina = articuloPagina;
+      let y = articuloY;
+
+      // Check if hash matches a paragraph
+      if (hash && hash.startsWith('#p-')) {
+        const parrafoNum = parseInt(hash.substring(3), 10);
+        const parrafo = parrafosData.find(p => p.numero === parrafoNum);
+        if (parrafo && parrafo.pagina) {
+          pagina = parrafo.pagina;
+          y = parrafo.y || 0;
+        }
+      }
+
+      // Build PDF URL with position
+      const yFromBottom = Math.max(0, pageHeight - y);
+      const newPdfUrl = y > 0
+        ? `${pdfUrl}#page=${pagina}&zoom=page-width,0,${yFromBottom}`
+        : `${pdfUrl}#page=${pagina}&zoom=page-width`;
+
+      // Update iframe if URL changed
+      if (iframe.src !== newPdfUrl && !iframe.src.endsWith(newPdfUrl)) {
+        iframe.src = newPdfUrl;
+      }
+    }
+
+    // Run on load and hash change
+    syncPdfWithHash();
+    window.addEventListener('hashchange', syncPdfWithHash);
+    document.addEventListener('astro:page-load', syncPdfWithHash);
+  </script>
 </BaseLayout>
