@@ -32,7 +32,36 @@ function getAnclaId(p: Parrafo): string {
 // Mostrar TOC si hay 2+ items navegables
 const mostrarToc = items.length >= 2;
 
-// Mapeos para clases, sufijos y títulos por tipo
+// Mapa de numero -> parrafo para buscar ancestros
+const parrafosPorNumero = new Map<number, Parrafo>();
+for (const p of parrafos) {
+  parrafosPorNumero.set(p.numero, p);
+}
+
+// Construir ruta jerárquica completa para tooltip
+function construirRutaTooltip(p: Parrafo): string {
+  const nombres: Record<string, string> = {
+    apartado: 'Apartado',
+    fraccion: 'Fracción',
+    inciso: 'Inciso',
+    numeral: 'Numeral'
+  };
+  const ruta: string[] = [];
+  let actual: Parrafo | undefined = p;
+
+  while (actual) {
+    if (actual.identificador) {
+      const nombre = nombres[actual.tipo] || 'Párrafo';
+      const sufijo = actual.tipo === 'inciso' ? ')' : '';
+      ruta.unshift(`${nombre} ${actual.identificador}${sufijo}`);
+    }
+    actual = actual.padre_numero ? parrafosPorNumero.get(actual.padre_numero) : undefined;
+  }
+
+  return ruta.join(' → ');
+}
+
+// Mapeos para clases y sufijos por tipo
 const clases: Record<string, string> = {
   apartado: 'toc-apartado',
   fraccion: 'toc-fraccion',
@@ -45,12 +74,6 @@ const sufijos: Record<string, string> = {
   inciso: ')',
   numeral: '.'
 };
-const titulos: Record<string, string> = {
-  apartado: 'Apartado',
-  fraccion: 'Fracción',
-  inciso: 'Inciso',
-  numeral: 'Numeral'
-};
 ---
 
 {mostrarToc && (
@@ -61,7 +84,7 @@ const titulos: Record<string, string> = {
           <a
             href={`#${getAnclaId(item)}`}
             class={clases[item.tipo] || 'toc-fraccion'}
-            title={`${titulos[item.tipo] || 'Párrafo'} ${item.identificador}`}
+            title={construirRutaTooltip(item)}
           >
             {item.identificador}{sufijos[item.tipo] || ''}
           </a>
