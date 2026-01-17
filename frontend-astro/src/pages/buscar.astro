@@ -67,6 +67,44 @@ const themeData = { categoryColors, tipoStyles };
               Buscar
             </button>
           </div>
+
+          <!-- Typeahead dropdown -->
+          <div id="typeahead-dropdown" class="hidden absolute left-0 right-0 top-full mt-1 rounded-xl border-2 border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800 z-30 overflow-hidden">
+            <!-- Quick access section -->
+            <div id="typeahead-quick" class="hidden">
+              <div class="flex items-center justify-between px-4 py-2 bg-gray-50 dark:bg-gray-900/50 border-b border-gray-100 dark:border-gray-700">
+                <span class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                  </svg>
+                  Acceso rápido
+                </span>
+                <span class="text-xs text-gray-400 dark:text-gray-500">↑↓ navegar · Enter ir</span>
+              </div>
+              <ul id="typeahead-results" class="max-h-64 overflow-y-auto"></ul>
+            </div>
+
+            <!-- Ley matches section (when typing partial law code) -->
+            <div id="typeahead-leyes" class="hidden">
+              <div class="px-4 py-2 bg-gray-50 dark:bg-gray-900/50 border-b border-gray-100 dark:border-gray-700">
+                <span class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Leyes</span>
+              </div>
+              <ul id="typeahead-ley-results" class="max-h-48 overflow-y-auto"></ul>
+            </div>
+
+            <!-- Fulltext search hint -->
+            <div id="typeahead-fulltext" class="hidden border-t border-gray-100 dark:border-gray-700">
+              <button type="button" id="typeahead-search-btn" class="w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors text-left">
+                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+                <span class="text-sm text-gray-600 dark:text-gray-300">
+                  Buscar "<span id="typeahead-query" class="font-medium"></span>" en contenido
+                </span>
+                <span class="ml-auto text-xs text-gray-400">Enter</span>
+              </button>
+            </div>
+          </div>
         </div>
 
         <!-- Filters toggle -->
@@ -195,6 +233,7 @@ const themeData = { categoryColors, tipoStyles };
 
 <script>
   import MiniSearch from 'minisearch';
+  import { executeTypeahead, type ArticuloMatch, type LeyMeta, type TypeaheadResult } from '../lib/typeahead';
 
   // Types
   interface CatalogoLey {
@@ -233,6 +272,11 @@ const themeData = { categoryColors, tipoStyles };
   let searchLoading: Promise<void> | null = null;
   let selectedLeyes: string[] = [];
   const expandedLaws = new Set<string>();
+
+  // Typeahead state
+  let typeaheadResult: TypeaheadResult | null = null;
+  let typeaheadSelectedIndex = -1;
+  let typeaheadDebounceTimer: ReturnType<typeof setTimeout> | null = null;
 
   // Get catalogo from window
   const catalogoLeyes: CatalogoLey[] = (window as any).__CATALOGO_LEYES__ || [];
@@ -303,8 +347,179 @@ const themeData = { categoryColors, tipoStyles };
       resultsDiv: document.getElementById('search-results'),
       resultsCount: document.getElementById('results-count'),
       resultsList: document.getElementById('results-list'),
-      initialMessage: document.getElementById('initial-message')
+      initialMessage: document.getElementById('initial-message'),
+      // Typeahead elements
+      typeaheadDropdown: document.getElementById('typeahead-dropdown'),
+      typeaheadQuick: document.getElementById('typeahead-quick'),
+      typeaheadResults: document.getElementById('typeahead-results'),
+      typeaheadLeyes: document.getElementById('typeahead-leyes'),
+      typeaheadLeyResults: document.getElementById('typeahead-ley-results'),
+      typeaheadFulltext: document.getElementById('typeahead-fulltext'),
+      typeaheadQuery: document.getElementById('typeahead-query'),
+      typeaheadSearchBtn: document.getElementById('typeahead-search-btn')
     };
+  }
+
+  // Category colors for typeahead
+  const categoryColors: Record<string, string> = {
+    fiscal: 'bg-emerald-600',
+    laboral: 'bg-blue-600',
+    constitucional: 'bg-orange-600'
+  };
+
+  // Typeahead functions
+  function showTypeahead() {
+    const { typeaheadDropdown } = getElements();
+    typeaheadDropdown?.classList.remove('hidden');
+  }
+
+  function hideTypeahead() {
+    const { typeaheadDropdown } = getElements();
+    typeaheadDropdown?.classList.add('hidden');
+    typeaheadResult = null;
+    typeaheadSelectedIndex = -1;
+  }
+
+  function renderTypeaheadResults(result: TypeaheadResult, query: string) {
+    const { typeaheadQuick, typeaheadResults, typeaheadLeyes, typeaheadLeyResults, typeaheadFulltext, typeaheadQuery } = getElements();
+    if (!typeaheadResults || !typeaheadLeyResults) return;
+
+    typeaheadResult = result;
+    typeaheadSelectedIndex = result.matches.length > 0 ? 0 : -1;
+
+    // Update query text for fulltext option
+    if (typeaheadQuery) {
+      typeaheadQuery.textContent = query;
+    }
+
+    // Show/hide sections based on result type
+    const hasQuickMatches = result.matches.length > 0;
+    const hasLeyMatches = result.leyMatches && result.leyMatches.length > 0;
+
+    typeaheadQuick?.classList.toggle('hidden', !hasQuickMatches);
+    typeaheadLeyes?.classList.toggle('hidden', !hasLeyMatches);
+    typeaheadFulltext?.classList.toggle('hidden', query.length < 2);
+
+    // Render article matches
+    if (hasQuickMatches && result.parsed.leyMeta) {
+      const leyMeta = result.parsed.leyMeta;
+      const catColor = categoryColors[leyMeta.categoria] || 'bg-primary-600';
+
+      typeaheadResults.innerHTML = result.matches.map((match, idx) => `
+        <li>
+          <a href="${match.url}"
+             data-typeahead-idx="${idx}"
+             class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors ${idx === typeaheadSelectedIndex ? 'bg-primary-50 dark:bg-primary-900/20' : ''}">
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-xs font-bold text-white ${catColor}">
+              ${leyMeta.codigo.substring(0, 3)}
+            </span>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2">
+                <span class="font-medium text-gray-900 dark:text-white">${leyMeta.codigo} Art. ${match.n}</span>
+                ${match.matchType === 'exact' ? '<span class="text-xs text-primary-600 dark:text-primary-400 font-medium">exacto</span>' : ''}
+              </div>
+              ${match.t ? `<p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-1">${match.t}</p>` : ''}
+            </div>
+            <svg class="w-4 h-4 text-gray-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </li>
+      `).join('');
+    }
+
+    // Render ley matches (when typing partial law code)
+    if (hasLeyMatches && result.leyMatches) {
+      typeaheadLeyResults.innerHTML = result.leyMatches.map((ley) => {
+        const catColor = categoryColors[ley.categoria] || 'bg-primary-600';
+        return `
+          <li>
+            <button type="button"
+                    data-typeahead-ley="${ley.codigo}"
+                    class="w-full flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-left">
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-xs font-bold text-white ${catColor}">
+                ${ley.codigo.substring(0, 3)}
+              </span>
+              <div class="flex-1 min-w-0">
+                <span class="font-medium text-gray-900 dark:text-white">${ley.codigo}</span>
+                <p class="text-sm text-gray-500 dark:text-gray-400 truncate">${ley.nombre_corto}</p>
+              </div>
+              <span class="text-xs text-gray-400">${ley.total} arts.</span>
+            </button>
+          </li>
+        `;
+      }).join('');
+    }
+
+    showTypeahead();
+  }
+
+  function updateTypeaheadSelection(newIndex: number) {
+    if (!typeaheadResult || typeaheadResult.matches.length === 0) return;
+
+    const maxIndex = typeaheadResult.matches.length - 1;
+    typeaheadSelectedIndex = newIndex < 0 ? maxIndex : (newIndex > maxIndex ? 0 : newIndex);
+
+    // Update visual selection
+    const { typeaheadResults } = getElements();
+    if (!typeaheadResults) return;
+
+    typeaheadResults.querySelectorAll('[data-typeahead-idx]').forEach((el, idx) => {
+      const isSelected = idx === typeaheadSelectedIndex;
+      el.classList.toggle('bg-primary-50', isSelected);
+      el.classList.toggle('dark:bg-primary-900/20', isSelected);
+    });
+
+    // Scroll into view
+    const selectedEl = typeaheadResults.querySelector(`[data-typeahead-idx="${typeaheadSelectedIndex}"]`);
+    selectedEl?.scrollIntoView({ block: 'nearest' });
+  }
+
+  function navigateToSelected() {
+    if (!typeaheadResult || typeaheadSelectedIndex < 0) return false;
+    const match = typeaheadResult.matches[typeaheadSelectedIndex];
+    if (match) {
+      window.location.href = match.url;
+      return true;
+    }
+    return false;
+  }
+
+  async function handleTypeaheadInput(query: string) {
+    if (typeaheadDebounceTimer) {
+      clearTimeout(typeaheadDebounceTimer);
+    }
+
+    if (!query.trim()) {
+      hideTypeahead();
+      return;
+    }
+
+    typeaheadDebounceTimer = setTimeout(async () => {
+      try {
+        const result = await executeTypeahead(query);
+
+        // Only show dropdown if there are matches or it looks like a direct reference
+        if (result.matches.length > 0 || result.leyMatches?.length || result.parsed.type !== 'search') {
+          renderTypeaheadResults(result, query);
+        } else if (query.length >= 2) {
+          // Show only fulltext option
+          const { typeaheadDropdown, typeaheadQuick, typeaheadLeyes, typeaheadFulltext, typeaheadQuery } = getElements();
+          typeaheadQuick?.classList.add('hidden');
+          typeaheadLeyes?.classList.add('hidden');
+          typeaheadFulltext?.classList.remove('hidden');
+          if (typeaheadQuery) typeaheadQuery.textContent = query;
+          typeaheadDropdown?.classList.remove('hidden');
+          typeaheadResult = result;
+          typeaheadSelectedIndex = -1;
+        } else {
+          hideTypeahead();
+        }
+      } catch (e) {
+        console.error('[Typeahead] Error:', e);
+        hideTypeahead();
+      }
+    }, 80);
   }
 
   // Initialize MiniSearch
@@ -828,6 +1043,7 @@ const themeData = { categoryColors, tipoStyles };
     const target = e.target as HTMLElement;
     if (target.id === 'search-form') {
       e.preventDefault();
+      hideTypeahead();
       const { input } = getElements();
       if (input?.value) doSearch(input.value);
     }
@@ -838,6 +1054,12 @@ const themeData = { categoryColors, tipoStyles };
     if (target.id === 'search-input') {
       const { input, clearBtn } = getElements();
       clearBtn?.classList.toggle('hidden', !input?.value);
+      // Trigger typeahead
+      if (input?.value) {
+        handleTypeaheadInput(input.value);
+      } else {
+        hideTypeahead();
+      }
     }
   });
 
@@ -852,6 +1074,7 @@ const themeData = { categoryColors, tipoStyles };
         clearBtn?.classList.add('hidden');
         resultsDiv?.classList.add('hidden');
         initialMessage?.classList.remove('hidden');
+        hideTypeahead();
         updateURL();
         input.focus();
       }
@@ -933,12 +1156,80 @@ const themeData = { categoryColors, tipoStyles };
     }
   });
 
-  // Keyboard shortcut
+  // Keyboard shortcuts and typeahead navigation
   document.addEventListener('keydown', (e) => {
-    if (e.key === '/' && document.activeElement?.tagName !== 'INPUT') {
+    const { input, typeaheadDropdown } = getElements();
+    const isInputFocused = document.activeElement?.id === 'search-input';
+    const isTypeaheadOpen = !typeaheadDropdown?.classList.contains('hidden');
+
+    // "/" to focus search
+    if (e.key === '/' && !isInputFocused) {
       e.preventDefault();
-      const { input } = getElements();
       input?.focus();
+      return;
+    }
+
+    // Typeahead navigation (only when input is focused and typeahead is open)
+    if (isInputFocused && isTypeaheadOpen) {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        updateTypeaheadSelection(typeaheadSelectedIndex + 1);
+        return;
+      }
+
+      if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        updateTypeaheadSelection(typeaheadSelectedIndex - 1);
+        return;
+      }
+
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        hideTypeahead();
+        return;
+      }
+
+      if (e.key === 'Enter') {
+        // If there's a selection, navigate to it
+        if (typeaheadSelectedIndex >= 0 && navigateToSelected()) {
+          e.preventDefault();
+          return;
+        }
+        // Otherwise, let the form submit for fulltext search
+        hideTypeahead();
+      }
+    }
+  });
+
+  // Click outside to close typeahead
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    const { typeaheadDropdown, input } = getElements();
+
+    // Check if click is outside the search form area
+    if (!target.closest('#search-form') && !typeaheadDropdown?.classList.contains('hidden')) {
+      hideTypeahead();
+    }
+
+    // Handle typeahead ley button clicks (autocomplete law code)
+    const leyBtn = target.closest('[data-typeahead-ley]') as HTMLElement;
+    if (leyBtn && input) {
+      const leyCodigo = leyBtn.dataset.typeaheadLey;
+      if (leyCodigo) {
+        input.value = leyCodigo + ' ';
+        input.focus();
+        handleTypeaheadInput(input.value);
+      }
+      return;
+    }
+
+    // Handle typeahead search button click
+    if (target.closest('#typeahead-search-btn')) {
+      hideTypeahead();
+      if (input?.value) {
+        doSearch(input.value);
+      }
+      return;
     }
   });
 

@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build:index": "node scripts/generate-search-index.mjs",
-    "build": "npm run build:index && astro build",
+    "build:search-index": "node scripts/generate-search-index.mjs",
+    "build:quick-access": "node scripts/generate-quick-access-index.mjs",
+    "build:indexes": "npm run build:quick-access && npm run build:search-index",
+    "build": "npm run build:indexes && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
