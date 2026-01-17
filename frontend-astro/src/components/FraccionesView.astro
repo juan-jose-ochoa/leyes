@@ -2,12 +2,12 @@
 /**
  * FraccionesView - Renderiza párrafos/fracciones/incisos con estilos jerárquicos
  *
- * Estilos por tipo:
- * - Fracción (I., II.): borde-izq 4px primary, fondo primary-50
- * - Inciso (a), b)): borde-izq 3px emerald, fondo emerald-50
- * - Numeral (1., 2.): borde-izq 2px amber, fondo amber-50
- * - Apartado: borde-izq 4px blue, fondo blue-50
- * - Texto: sin borde especial
+ * Paleta por jerarquía (de mayor a menor):
+ * - Apartado (A., B.): indigo - nivel superior
+ * - Fracción (I., II.): blue - elemento principal
+ * - Inciso (a), b)): teal - sub-elemento
+ * - Numeral (1., 2.): slate - nivel de detalle
+ * - Texto: gray - sin jerarquía
  */
 
 interface Parrafo {
@@ -60,39 +60,39 @@ function getSufijo(tipo: string): string {
   }
 }
 
-// Obtener estilos según tipo
+// Obtener estilos según tipo (paleta jerárquica: indigo > blue > teal > slate > gray)
 function getEstilos(tipo: string, nivel: number): { border: string; bg: string; margin: string; idColor: string } {
   const marginClasses = ['ml-0', 'ml-6', 'ml-12', 'ml-16'];
   const margin = marginClasses[Math.min(nivel, 3)];
 
   switch (tipo) {
-    case 'fraccion':
-      return {
-        border: 'border-l-4 border-primary-500',
-        bg: 'bg-primary-50 dark:bg-primary-900/20',
-        margin,
-        idColor: 'text-primary-700 dark:text-primary-300'
-      };
-    case 'inciso':
-      return {
-        border: 'border-l-[3px] border-emerald-400',
-        bg: 'bg-emerald-50 dark:bg-emerald-900/20',
-        margin,
-        idColor: 'text-emerald-700 dark:text-emerald-300'
-      };
-    case 'numeral':
-      return {
-        border: 'border-l-2 border-amber-400',
-        bg: 'bg-amber-50 dark:bg-amber-900/20',
-        margin,
-        idColor: 'text-amber-700 dark:text-amber-300'
-      };
     case 'apartado':
+      return {
+        border: 'border-l-4 border-indigo-500',
+        bg: 'bg-indigo-50 dark:bg-indigo-900/20',
+        margin,
+        idColor: 'text-indigo-700 dark:text-indigo-300'
+      };
+    case 'fraccion':
       return {
         border: 'border-l-4 border-blue-500',
         bg: 'bg-blue-50 dark:bg-blue-900/20',
         margin,
         idColor: 'text-blue-700 dark:text-blue-300'
+      };
+    case 'inciso':
+      return {
+        border: 'border-l-[3px] border-teal-500',
+        bg: 'bg-teal-50 dark:bg-teal-900/20',
+        margin,
+        idColor: 'text-teal-700 dark:text-teal-300'
+      };
+    case 'numeral':
+      return {
+        border: 'border-l-2 border-slate-400',
+        bg: 'bg-slate-50 dark:bg-slate-800/20',
+        margin,
+        idColor: 'text-slate-700 dark:text-slate-300'
       };
     default:
       return {

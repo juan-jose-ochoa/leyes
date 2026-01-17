@@ -18,9 +18,10 @@ interface Props {
 
 const { parrafos } = Astro.props;
 
-// Filtrar fracciones e incisos con identificador, en orden de aparición
+// Filtrar elementos navegables con identificador, en orden de aparición
 const items = parrafos.filter(p =>
-  (p.tipo === 'fraccion' || p.tipo === 'inciso') && p.identificador
+  (p.tipo === 'apartado' || p.tipo === 'fraccion' || p.tipo === 'inciso' || p.tipo === 'numeral')
+  && p.identificador
 );
 
 // Generar ID de ancla (debe coincidir con FraccionesView.astro)
@@ -30,6 +31,26 @@ function getAnclaId(p: Parrafo): string {
 
 // Mostrar TOC si hay 2+ items navegables
 const mostrarToc = items.length >= 2;
+
+// Mapeos para clases, sufijos y títulos por tipo
+const clases: Record<string, string> = {
+  apartado: 'toc-apartado',
+  fraccion: 'toc-fraccion',
+  inciso: 'toc-inciso',
+  numeral: 'toc-numeral'
+};
+const sufijos: Record<string, string> = {
+  apartado: '.',
+  fraccion: '',
+  inciso: ')',
+  numeral: '.'
+};
+const titulos: Record<string, string> = {
+  apartado: 'Apartado',
+  fraccion: 'Fracción',
+  inciso: 'Inciso',
+  numeral: 'Numeral'
+};
 ---
 
 {mostrarToc && (
@@ -39,10 +60,10 @@ const mostrarToc = items.length >= 2;
         {items.map((item) => (
           <a
             href={`#${getAnclaId(item)}`}
-            class={item.tipo === 'fraccion' ? 'toc-chip' : 'toc-inciso'}
-            title={`${item.tipo === 'fraccion' ? 'Fracción' : 'Inciso'} ${item.identificador}`}
+            class={clases[item.tipo] || 'toc-fraccion'}
+            title={`${titulos[item.tipo] || 'Párrafo'} ${item.identificador}`}
           >
-            {item.identificador}{item.tipo === 'inciso' ? ')' : ''}
+            {item.identificador}{sufijos[item.tipo] || ''}
           </a>
         ))}
       </div>
@@ -72,8 +93,37 @@ const mostrarToc = items.length >= 2;
     gap: 0.25rem;
   }
 
-  /* Fracción chip - azul, más prominente */
-  .toc-chip {
+  /* Apartado - indigo, nivel superior (máxima jerarquía) */
+  .toc-apartado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-radius: 0.375rem;
+    background-color: rgb(199 210 254); /* indigo-200 */
+    color: rgb(55 48 163); /* indigo-800 */
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+
+  :global(.dark) .toc-apartado {
+    background-color: rgb(49 46 129 / 0.5); /* indigo-900/50 */
+    color: rgb(199 210 254); /* indigo-200 */
+  }
+
+  .toc-apartado:hover {
+    background-color: rgb(165 180 252); /* indigo-300 */
+    transform: scale(1.05);
+  }
+
+  :global(.dark) .toc-apartado:hover {
+    background-color: rgb(49 46 129 / 0.7);
+  }
+
+  /* Fracción - blue, elemento principal */
+  .toc-fraccion {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,27 +131,27 @@ const mostrarToc = items.length >= 2;
     font-size: 0.75rem;
     font-weight: 600;
     border-radius: 0.375rem;
-    background-color: rgb(219 234 254);
-    color: rgb(30 64 175);
+    background-color: rgb(191 219 254); /* blue-200 */
+    color: rgb(30 64 175); /* blue-800 */
     transition: all 0.15s;
     white-space: nowrap;
   }
 
-  :global(.dark) .toc-chip {
-    background-color: rgb(30 58 138 / 0.5);
-    color: rgb(147 197 253);
+  :global(.dark) .toc-fraccion {
+    background-color: rgb(30 58 138 / 0.5); /* blue-900/50 */
+    color: rgb(191 219 254); /* blue-200 */
   }
 
-  .toc-chip:hover {
-    background-color: rgb(191 219 254);
+  .toc-fraccion:hover {
+    background-color: rgb(147 197 253); /* blue-300 */
     transform: scale(1.05);
   }
 
-  :global(.dark) .toc-chip:hover {
+  :global(.dark) .toc-fraccion:hover {
     background-color: rgb(30 58 138 / 0.7);
   }
 
-  /* Inciso chip - verde, más pequeño */
+  /* Inciso - teal, sub-elemento */
   .toc-inciso {
     display: flex;
     align-items: center;
@@ -110,24 +160,53 @@ const mostrarToc = items.length >= 2;
     font-size: 0.7rem;
     font-weight: 500;
     border-radius: 0.25rem;
-    background-color: rgb(209 250 229);
-    color: rgb(6 95 70);
+    background-color: rgb(153 246 228); /* teal-200 */
+    color: rgb(17 94 89); /* teal-800 */
     transition: all 0.15s;
     white-space: nowrap;
   }
 
   :global(.dark) .toc-inciso {
-    background-color: rgb(6 78 59 / 0.5);
-    color: rgb(167 243 208);
+    background-color: rgb(19 78 74 / 0.5); /* teal-900/50 */
+    color: rgb(153 246 228); /* teal-200 */
   }
 
   .toc-inciso:hover {
-    background-color: rgb(167 243 208);
+    background-color: rgb(94 234 212); /* teal-300 */
     transform: scale(1.05);
   }
 
   :global(.dark) .toc-inciso:hover {
-    background-color: rgb(6 78 59 / 0.7);
+    background-color: rgb(19 78 74 / 0.7);
+  }
+
+  /* Numeral - slate, nivel de detalle */
+  .toc-numeral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.375rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    background-color: rgb(226 232 240); /* slate-200 */
+    color: rgb(30 41 59); /* slate-800 */
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+
+  :global(.dark) .toc-numeral {
+    background-color: rgb(51 65 85); /* slate-700 sólido */
+    color: rgb(226 232 240); /* slate-200 */
+  }
+
+  .toc-numeral:hover {
+    background-color: rgb(203 213 225); /* slate-300 */
+    transform: scale(1.05);
+  }
+
+  :global(.dark) .toc-numeral:hover {
+    background-color: rgb(15 23 42 / 0.7);
   }
 
   /* Scrollbar styling */
