@@ -418,6 +418,7 @@ const themeData = { categoryColors, tipoStyles };
                 <span class="font-medium text-gray-900 dark:text-white">${leyMeta.codigo} Art. ${match.n}</span>
                 ${match.matchType === 'exact' ? '<span class="text-xs text-primary-600 dark:text-primary-400 font-medium">exacto</span>' : ''}
               </div>
+              ${match.e ? `<p class="text-sm text-primary-600 dark:text-primary-400">${match.e}</p>` : ''}
               ${match.t ? `<p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-1">${match.t}</p>` : ''}
             </div>
             <svg class="w-4 h-4 text-gray-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

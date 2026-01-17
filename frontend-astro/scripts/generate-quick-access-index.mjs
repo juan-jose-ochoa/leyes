@@ -17,6 +17,17 @@ const outputDir = join(__dirname, '../public');
 // Leer catálogo
 const catalogo = JSON.parse(readFileSync(join(dataDir, 'catalogo.json'), 'utf-8'));
 
+// Leer epígrafes del SAT
+const epigrafesPath = join(dataDir, 'epigrafes-sat.json');
+let epigrafesMap = new Map();
+if (existsSync(epigrafesPath)) {
+  const epigrafesData = JSON.parse(readFileSync(epigrafesPath, 'utf-8'));
+  for (const e of epigrafesData.epigrafes || []) {
+    epigrafesMap.set(`${e.ley}:${e.articulo}`, e.epigrafe);
+  }
+  console.log(`Epígrafes SAT cargados: ${epigrafesMap.size}`);
+}
+
 /**
  * Normaliza un número de artículo para comparación
  * Ejemplos: "1º" → "1o", "17-H Bis" → "17-h bis"
@@ -156,6 +167,7 @@ for (const leyInfo of catalogo.leyes) {
 
   // Procesar artículos
   const articulosMeta = [];
+  let epigrafesCount = 0;
 
   for (const art of articulos) {
     if (art.tipo !== 'articulo') continue;
@@ -163,7 +175,12 @@ for (const leyInfo of catalogo.leyes) {
     const numero = art.numero;
     const normalized = normalizeArticuloNum(numero);
     const variants = generateSearchVariants(numero);
+
+    // Buscar epígrafe del SAT y título de sección
+    const epigrafe = epigrafesMap.get(`${codigo}:${numero}`);
     const titulo = getArticuloTitulo(art, seccionMap);
+
+    if (epigrafe) epigrafesCount++;
 
     const meta = {
       n: numero,  // Número canónico (como aparece en la ley)
@@ -175,16 +192,24 @@ for (const leyInfo of catalogo.leyes) {
       meta.a = variants;
     }
 
-    // Solo agregar título si existe
+    // Agregar epígrafe SAT y título de sección (ambos si existen)
+    if (epigrafe) {
+      meta.e = epigrafe;  // Epígrafe SAT
+    }
     if (titulo) {
-      meta.t = titulo;
+      meta.t = titulo;  // Título de sección
     }
 
     articulosMeta.push(meta);
   }
 
   index.articulos[codigo] = articulosMeta;
-  console.log(`  ${codigo}: ${articulosMeta.length} artículos`);
+
+  if (epigrafesCount > 0) {
+    console.log(`  ${codigo}: ${articulosMeta.length} artículos (${epigrafesCount} con epígrafe SAT)`);
+  } else {
+    console.log(`  ${codigo}: ${articulosMeta.length} artículos`);
+  }
 }
 
 // Agregar aliases adicionales comunes

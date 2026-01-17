@@ -21,7 +21,8 @@ export interface ArticuloMeta {
   n: string;      // Número canónico
   s: string;      // Número normalizado (search)
   a?: string[];   // Aliases/variantes
-  t?: string;     // Título (opcional)
+  e?: string;     // Epígrafe SAT (preferido)
+  t?: string;     // Título sección (fallback)
 }
 
 export interface ArticuloMatch extends ArticuloMeta {
