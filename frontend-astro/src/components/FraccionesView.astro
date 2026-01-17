@@ -32,10 +32,11 @@ interface ReferenciaInfo {
 interface Props {
   parrafos: Parrafo[];
   referencias?: Record<string, ReferenciaInfo>;
+  tooltips?: Record<string, string>;
   mostrarReferencias?: boolean;
 }
 
-const { parrafos, referencias = {}, mostrarReferencias = true } = Astro.props;
+const { parrafos, referencias = {}, tooltips = {}, mostrarReferencias = true } = Astro.props;
 
 // Calcular nivel de cada párrafo basado en padre_numero
 function calcularNiveles(parrafos: Parrafo[]): Map<number, number> {
@@ -137,26 +138,43 @@ function escapeHtml(text: string): string {
     .replace(/'/g, '&#039;');
 }
 
-// Procesar contenido insertando links de referencias
-function procesarContenido(texto: string, refs: Record<string, ReferenciaInfo>): string {
+// Procesar contenido insertando links de referencias y tooltips estructurales
+function procesarContenido(
+  texto: string,
+  refs: Record<string, ReferenciaInfo>,
+  tips: Record<string, string>
+): string {
   // Escapar HTML primero
   let resultado = escapeHtml(texto);
 
-  // Si no hay referencias, retornar texto escapado
-  if (!refs || Object.keys(refs).length === 0) {
-    return resultado;
+  // Procesar referencias (links a artículos)
+  if (refs && Object.keys(refs).length > 0) {
+    // Ordenar keys por longitud descendente (evitar reemplazos parciales)
+    const keys = Object.keys(refs).sort((a, b) => b.length - a.length);
+
+    for (const textoRef of keys) {
+      const ref = refs[textoRef];
+      const textoEscapado = escapeHtml(textoRef);
+      const url = `/${ref.ley}/articulo/${ref.articulo}/#p-${ref.parrafo}`;
+      const link = `<a href="${url}" class="ref-link">${textoEscapado}</a>`;
+      resultado = resultado.replaceAll(textoEscapado, link);
+    }
   }
 
-  // Ordenar keys por longitud descendente (evitar reemplazos parciales)
-  // Ej: "artículo 10" no debe reemplazar parte de "artículo 100"
-  const keys = Object.keys(refs).sort((a, b) => b.length - a.length);
+  // Procesar tooltips estructurales (Título, Capítulo, Sección)
+  if (tips && Object.keys(tips).length > 0) {
+    // Ordenar por longitud descendente
+    const keys = Object.keys(tips).sort((a, b) => b.length - a.length);
 
-  for (const textoRef of keys) {
-    const ref = refs[textoRef];
-    const textoEscapado = escapeHtml(textoRef);
-    const url = `/${ref.ley}/articulo/${ref.articulo}/#p-${ref.parrafo}`;
-    const link = `<a href="${url}" class="ref-link">${textoEscapado}</a>`;
-    resultado = resultado.replaceAll(textoEscapado, link);
+    for (const textoTip of keys) {
+      const nombre = tips[textoTip];
+      const textoEscapado = escapeHtml(textoTip);
+      // Solo procesar si no está ya dentro de un tag (evitar doble procesamiento)
+      if (!resultado.includes(`>${textoEscapado}<`)) {
+        const span = `<span class="ref-estructura" data-tooltip="${escapeHtml(nombre)}">${textoEscapado}</span>`;
+        resultado = resultado.replaceAll(textoEscapado, span);
+      }
+    }
   }
 
   return resultado;
@@ -191,7 +209,7 @@ const niveles = calcularNiveles(parrafos);
             )}
             <span
               class="text-gray-800 dark:text-gray-200"
-              set:html={procesarContenido(limpiarContenido(p.contenido, p.tipo), referencias)}
+              set:html={procesarContenido(limpiarContenido(p.contenido, p.tipo), referencias, tooltips)}
             />
           </div>
           {/* Chevron para sincronizar con PDF */}
@@ -281,5 +299,55 @@ const niveles = calcularNiveles(parrafos);
 
   :global(.dark .ref-link) {
     color: rgb(96 165 250);
+  }
+
+  /* Tooltips para referencias estructurales (Título, Capítulo, Sección) */
+  :global(.ref-estructura) {
+    border-bottom: 1px dotted rgb(107 114 128);
+    cursor: help;
+    position: relative;
+  }
+
+  :global(.ref-estructura:hover) {
+    border-bottom-color: rgb(59 130 246);
+  }
+
+  :global(.ref-estructura::after) {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background: rgb(17 24 39);
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    white-space: normal;
+    max-width: 280px;
+    z-index: 50;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s, visibility 0.15s;
+    pointer-events: none;
+    margin-bottom: 0.25rem;
+  }
+
+  :global(.ref-estructura:hover::after) {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  :global(.dark .ref-estructura) {
+    border-bottom-color: rgb(156 163 175);
+  }
+
+  :global(.dark .ref-estructura:hover) {
+    border-bottom-color: rgb(96 165 250);
+  }
+
+  :global(.dark .ref-estructura::after) {
+    background: rgb(31 41 55);
   }
 </style>

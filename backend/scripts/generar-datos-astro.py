@@ -92,6 +92,16 @@ PATRON_REFERENCIA = re.compile(
     re.IGNORECASE
 )
 
+# Regex para detectar referencias estructurales (títulos, capítulos, secciones)
+# Patrones: "Título II de esta Ley", "Capítulo IV de este Título", "Sección I del Capítulo II"
+PATRON_ESTRUCTURA = re.compile(
+    r'(Títulos?|Capítulos?|Seccione?s?)\s+'
+    r'([IVXLCDM0-9]+(?:[,\s]+[IVXLCDM0-9]+)*(?:\s+y\s+[IVXLCDM0-9]+)?)\s+'
+    r'(?:del?\s+)?'
+    r'(este\s+Título|esta\s+Ley|el\s+Capítulo\s+[IVXLCDM]+|este\s+Capítulo)',
+    re.IGNORECASE
+)
+
 
 def construir_indice_global(contenidos: dict) -> dict:
     """
@@ -377,6 +387,162 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
     return referencias_ley
 
 
+def construir_indice_estructura(estructura: dict) -> dict:
+    """
+    Construye índice de artículo → ubicación estructural.
+
+    Retorna:
+    {
+        "152": {
+            "titulo": {"numero": "IV", "nombre": "DE LAS PERSONAS FÍSICAS"},
+            "capitulo": {"numero": "X", "nombre": "DE LOS REQUISITOS..."},
+            "seccion": None
+        }
+    }
+    """
+    indice = {}
+
+    def procesar_division(div, contexto):
+        """Procesa recursivamente las divisiones."""
+        tipo = div.get("tipo")
+        nuevo_contexto = contexto.copy()
+        nuevo_contexto[tipo] = {
+            "numero": div.get("numero"),
+            "nombre": div.get("nombre")
+        }
+
+        # Registrar artículos de esta división
+        for art_num in div.get("articulos", []):
+            indice[art_num] = nuevo_contexto.copy()
+
+        # Procesar hijos
+        for hijo in div.get("hijos", []):
+            procesar_division(hijo, nuevo_contexto)
+
+    # Procesar todas las divisiones de nivel superior
+    for div in estructura.get("divisiones", []):
+        procesar_division(div, {})
+
+    return indice
+
+
+def buscar_division_por_numero(estructura: dict, tipo: str, numero: str,
+                                titulo_contexto: str = None) -> str | None:
+    """
+    Busca el nombre de una división por su tipo y número.
+
+    Para capítulos, necesita el título como contexto.
+    """
+    numero_upper = numero.upper()
+
+    for div in estructura.get("divisiones", []):
+        # Buscar títulos
+        if tipo == "titulo" and div.get("tipo") == "titulo":
+            if div.get("numero", "").upper() == numero_upper:
+                return div.get("nombre")
+
+        # Buscar capítulos dentro del título correcto
+        if tipo == "capitulo":
+            # Si hay contexto de título, buscar solo en ese título
+            if titulo_contexto:
+                if div.get("tipo") == "titulo" and div.get("numero", "").upper() == titulo_contexto.upper():
+                    for cap in div.get("hijos", []):
+                        if cap.get("tipo") == "capitulo" and cap.get("numero", "").upper() == numero_upper:
+                            return cap.get("nombre")
+            else:
+                # Sin contexto, buscar en todos los títulos
+                if div.get("tipo") == "titulo":
+                    for cap in div.get("hijos", []):
+                        if cap.get("tipo") == "capitulo" and cap.get("numero", "").upper() == numero_upper:
+                            return cap.get("nombre")
+
+        # Buscar secciones
+        if tipo == "seccion":
+            if div.get("tipo") == "titulo":
+                for cap in div.get("hijos", []):
+                    if cap.get("tipo") == "capitulo":
+                        for sec in cap.get("hijos", []):
+                            if sec.get("tipo") == "seccion" and sec.get("numero", "").upper() == numero_upper:
+                                return sec.get("nombre")
+
+    return None
+
+
+def extraer_tooltips(contenido: dict, estructura: dict, indice_estructura: dict) -> dict:
+    """
+    Extrae referencias estructurales y genera mapa de tooltips.
+
+    Estructura de salida:
+    {
+        "152": {
+            "Título II de esta Ley": "DE LAS DEDUCCIONES",
+            "Capítulo IV de este Título": "DE LOS INGRESOS POR ENAJENACIÓN DE BIENES"
+        }
+    }
+    """
+    tooltips_ley = {}
+
+    for art in contenido.get("articulos", []):
+        art_num = art.get("numero")
+        tooltips_articulo = {}
+
+        # Obtener contexto del artículo (en qué título/capítulo está)
+        contexto = indice_estructura.get(art_num, {})
+        titulo_actual = contexto.get("titulo", {}).get("numero")
+
+        for p in art.get("parrafos", []):
+            texto = p.get("contenido", "")
+
+            # Buscar todas las referencias estructurales
+            for match in PATRON_ESTRUCTURA.finditer(texto):
+                texto_original = match.group(0)
+                tipo_ref = match.group(1).lower()  # título, capítulo, sección
+                numeros = match.group(2)           # II, IV, I, III, IV...
+                contexto_ref = match.group(3).lower()  # "este título", "esta ley"
+
+                # Normalizar tipo (singular)
+                if tipo_ref.startswith("título"):
+                    tipo_buscar = "titulo"
+                elif tipo_ref.startswith("capítulo"):
+                    tipo_buscar = "capitulo"
+                elif tipo_ref.startswith("sección") or tipo_ref.startswith("seccion"):
+                    tipo_buscar = "seccion"
+                else:
+                    continue
+
+                # Parsear números (puede ser lista: "I, III, IV y IX")
+                numeros_lista = re.split(r'[,\s]+y\s+|[,\s]+', numeros.strip())
+                numeros_lista = [n.strip() for n in numeros_lista if n.strip()]
+
+                # Determinar contexto de título para capítulos
+                titulo_contexto = None
+                if tipo_buscar == "capitulo" and "este título" in contexto_ref:
+                    titulo_contexto = titulo_actual
+
+                # Buscar nombres para cada número
+                nombres = []
+                for num in numeros_lista:
+                    nombre = buscar_division_por_numero(
+                        estructura, tipo_buscar, num, titulo_contexto
+                    )
+                    if nombre:
+                        nombres.append(nombre)
+
+                # Construir tooltip
+                if nombres:
+                    if len(nombres) == 1:
+                        tooltip = nombres[0]
+                    else:
+                        tooltip = "; ".join(nombres)
+
+                    tooltips_articulo[texto_original] = tooltip
+
+        if tooltips_articulo:
+            tooltips_ley[art_num] = tooltips_articulo
+
+    return tooltips_ley
+
+
 def generar_estructura_json(mapa: dict) -> dict:
     """
     Transforma mapa_estructura.json a formato optimizado para Astro.
@@ -544,11 +710,24 @@ def main():
     indice = construir_indice_global(contenidos)
     print(f"  ✓ Índice construido: {len(indice)} leyes")
 
-    # 3. Generar datos por ley
-    print("\n[3/4] Generando artículos y referencias por ley...")
+    # 3. Cargar estructuras para tooltips
+    print("\n[3/5] Cargando estructuras para tooltips...")
+    estructuras = {}
+    indices_estructura = {}
+    for codigo in LEYES.keys():
+        mapa = cargar_estructura(codigo)
+        if mapa:
+            estructura = generar_estructura_json(mapa)
+            estructuras[codigo] = estructura
+            indices_estructura[codigo] = construir_indice_estructura(estructura)
+    print(f"  ✓ Estructuras cargadas: {len(estructuras)} leyes")
+
+    # 4. Generar datos por ley
+    print("\n[4/5] Generando artículos, referencias y tooltips por ley...")
     leyes_procesadas = 0
     articulos_total = 0
     referencias_total = 0
+    tooltips_total = 0
 
     for codigo in LEYES.keys():
         print(f"\n  Procesando {codigo}...")
@@ -570,12 +749,21 @@ def main():
         if referencias:
             ley_dir = ASTRO_DATA / codigo.lower()
             guardar_json(referencias, ley_dir / "referencias.json")
-            # Contar referencias
             for art_refs in referencias.values():
                 referencias_total += len(art_refs)
 
-    # 4. Generar estructura por ley
-    print("\n[4/4] Generando estructura por ley...")
+        # Generar mapa de tooltips estructurales
+        estructura = estructuras.get(codigo, {})
+        indice_est = indices_estructura.get(codigo, {})
+        tooltips = extraer_tooltips(contenido, estructura, indice_est)
+        if tooltips:
+            ley_dir = ASTRO_DATA / codigo.lower()
+            guardar_json(tooltips, ley_dir / "tooltips.json")
+            for art_tips in tooltips.values():
+                tooltips_total += len(art_tips)
+
+    # 5. Generar estructura por ley
+    print("\n[5/5] Generando estructura por ley...")
 
     for codigo in LEYES.keys():
         mapa = cargar_estructura(codigo)
@@ -593,6 +781,7 @@ def main():
     print(f"  - Leyes procesadas: {leyes_procesadas}")
     print(f"  - Artículos totales: {articulos_total}")
     print(f"  - Referencias mapeadas: {referencias_total}")
+    print(f"  - Tooltips estructurales: {tooltips_total}")
     print(f"  - Destino: {ASTRO_DATA.relative_to(PROJECT_ROOT)}")
     print("=" * 60)
 
