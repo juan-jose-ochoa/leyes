@@ -506,8 +506,8 @@ class ExtractorGeneral(ExtractorBase):
         # Obtener líneas del artículo: del flush si hubo, o de la FSM
         todas_lineas = lineas_flush if lineas_flush is not None else fsm.lineas_articulo
 
-        # Consolidar lineas en parrafos
-        lineas_consolidadas = self._consolidar_lineas(todas_lineas, modo)
+        # Consolidar lineas en parrafos (pasamos número de artículo para excepciones)
+        lineas_consolidadas = self._consolidar_lineas(todas_lineas, modo, articulo=numero)
         parrafos = self._construir_parrafos(lineas_consolidadas, modo)
 
         # Asociar referencias a parrafos
@@ -589,7 +589,8 @@ class ExtractorGeneral(ExtractorBase):
         result.sort(key=lambda r: r['y'])
         return result
 
-    def _consolidar_lineas(self, lineas: list[dict], modo: str = "normal") -> list[dict]:
+    def _consolidar_lineas(self, lineas: list[dict], modo: str = "normal",
+                            articulo: str = None) -> list[dict]:
         """Consolida lineas fisicas en parrafos logicos."""
         if not lineas:
             return []
@@ -610,7 +611,8 @@ class ExtractorGeneral(ExtractorBase):
         buffer_pagina = None   # Numero de pagina de primera linea (para sync PDF)
 
         # Máquina de estados para validar identificadores en secuencia
-        detector = DetectorIdentificadores()
+        # Pasamos contexto de ley y artículo para detectar excepciones conocidas
+        detector = DetectorIdentificadores(ley=self.codigo, articulo=articulo)
 
         for linea in lineas:
             x = linea['x']

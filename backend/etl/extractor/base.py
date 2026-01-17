@@ -57,6 +57,25 @@ ADVERTENCIA_JSON = [
     "====================================================================="
 ]
 
+# =============================================================================
+# EXCEPCIONES DE IDENTIFICADORES (ERRORES HISTORICOS CONOCIDOS)
+# =============================================================================
+
+# Mapa de excepciones conocidas donde el identificador visible difiere del valor de secuencia.
+# Cada excepción especifica el contexto completo para evitar falsos positivos.
+EXCEPCIONES_IDENTIFICADOR = [
+    {
+        "ley": "CPEUM",
+        "articulo": "123",
+        "apartado": "B",           # Solo aplica dentro del Apartado B
+        "patron": r"^XI\s*\(sic 05-12-1960\)\.",
+        "tipo": "fraccion",
+        "identificador": "XI (sic 05-12-1960)",
+        "valor_secuencia": 9,      # Se interpreta como IX para validar secuencia
+        "comentario": "Error histórico en DOF 05-12-1960: fracción IX etiquetada como XI"
+    },
+]
+
 
 # =============================================================================
 # MAQUINA DE ESTADOS PARA DETECCION DE IDENTIFICADORES
@@ -79,11 +98,15 @@ class DetectorIdentificadores:
     LETRAS_ROMANAS = set('IVXLCDM')
     VALORES_ROMANOS = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
 
-    def __init__(self):
+    def __init__(self, ley: Optional[str] = None, articulo: Optional[str] = None):
+        self.ley = ley
+        self.articulo = articulo
         self.reset()
 
-    def reset(self):
+    def reset(self, articulo: Optional[str] = None):
         """Reinicia el estado (al iniciar nuevo artículo)."""
+        if articulo is not None:
+            self.articulo = articulo
         self.ultima_fraccion: Optional[int] = None   # Valor numérico: 1, 2, 5, 10...
         self.ultimo_apartado: Optional[str] = None   # Letra: 'A', 'B', 'C'...
         self.ultimo_inciso: Optional[str] = None     # Letra: 'a', 'b', 'c'...
@@ -117,6 +140,11 @@ class DetectorIdentificadores:
         # Normalizar errores comunes de PDF/Word: l (L minúscula) → I en fracciones
         # Ejemplos: "lI." → "II.", "lll." → "III.", "lV." → "IV."
         texto = self._normalizar_romano_corrupto(texto)
+
+        # 0. Buscar excepciones conocidas (errores históricos)
+        excepcion = self._buscar_excepcion(texto)
+        if excepcion:
+            return self._aplicar_excepcion(texto, excepcion)
 
         # 1. Inciso: a), b), c)...
         match = re.match(r'^([a-z])\)\s*(.*)', texto, re.DOTALL)
@@ -268,6 +296,55 @@ class DetectorIdentificadores:
             if all(c in 'IVXLCDM' for c in normalizado):
                 return normalizado + '.' + guion + resto
         return texto
+
+    def _buscar_excepcion(self, texto: str) -> Optional[dict]:
+        """
+        Busca si el texto coincide con una excepción conocida.
+
+        Verifica contexto completo (ley, artículo, apartado) para evitar falsos positivos.
+
+        Returns:
+            Diccionario de excepción si coincide, None si no hay excepción aplicable.
+        """
+        for exc in EXCEPCIONES_IDENTIFICADOR:
+            # Verificar contexto de ley
+            if exc.get("ley") and exc["ley"] != self.ley:
+                continue
+            # Verificar contexto de artículo
+            if exc.get("articulo") and exc["articulo"] != self.articulo:
+                continue
+            # Verificar contexto de apartado (usa el estado actual del detector)
+            if exc.get("apartado") and exc["apartado"] != self.ultimo_apartado:
+                continue
+
+            # Verificar patrón
+            if re.match(exc["patron"], texto):
+                return exc
+
+        return None
+
+    def _aplicar_excepcion(self, texto: str, exc: dict) -> tuple[str, Optional[str], str, bool]:
+        """
+        Aplica una excepción conocida, actualizando el estado del detector.
+
+        Args:
+            texto: Texto original
+            exc: Diccionario de excepción que coincidió
+
+        Returns:
+            (tipo, identificador, contenido, es_valido)
+        """
+        # Extraer contenido después del patrón
+        match = re.match(exc["patron"] + r"\s*(.*)", texto, re.DOTALL)
+        contenido = match.group(1) if match else ""
+
+        valor = exc["valor_secuencia"]
+        es_valido = self._validar_fraccion(valor)
+
+        if es_valido:
+            self._actualizar_fraccion(valor)
+
+        return (exc["tipo"], exc["identificador"], contenido, es_valido)
 
 
 # =============================================================================

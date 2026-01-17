@@ -20627,12 +20627,12 @@
         },
         {
           "numero": 116,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "XI (sic 05-12-1960). Los trabajadores sólo podrán ser suspendidos o cesados por causa justificada, en los términos que fije la ley.",
+          "tipo": "fraccion",
+          "identificador": "XI (sic 05-12-1960)",
+          "contenido": "Los trabajadores sólo podrán ser suspendidos o cesados por causa justificada, en los términos que fije la ley.",
           "padre_numero": 106,
           "x_id": 121,
-          "x_texto": 121,
+          "x_texto": 143,
           "y": 489,
           "pagina": 152
         },
@@ -20649,76 +20649,54 @@
         },
         {
           "numero": 118,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "X.",
+          "tipo": "fraccion",
+          "identificador": "X",
+          "contenido": "Los trabajadores tendrán el derecho de asociarse para la defensa de sus intereses comunes. Podrán, asimismo, hacer uso del derecho de huelga previo el cumplimiento de los requisitos que determine la ley, respecto de una o varias dependencias de los Poderes Públicos, cuando se violen de manera general y sistemática los derechos que este artículo les consagra;",
           "padre_numero": 106,
           "x_id": 121,
-          "x_texto": 121,
+          "x_texto": 143,
           "y": 581,
           "pagina": 152
         },
         {
           "numero": 119,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Los trabajadores tendrán el derecho de asociarse para la defensa de sus intereses comunes. Podrán, asimismo, hacer uso del derecho de huelga previo el cumplimiento de los requisitos que determine la ley, respecto de una o varias dependencias de los Poderes Públicos, cuando se violen de manera general y sistemática los derechos que este artículo les consagra;",
-          "padre_numero": 118,
-          "x_id": 156,
-          "x_texto": 156,
-          "y": 581,
+          "tipo": "fraccion",
+          "identificador": "XI",
+          "contenido": "La seguridad social se organizará conforme a las siguientes bases mínimas:",
+          "padre_numero": 106,
+          "x_id": 121,
+          "x_texto": 143,
+          "y": 650,
           "pagina": 152
         },
         {
           "numero": 120,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "XI.",
-          "padre_numero": 106,
-          "x_id": 121,
-          "x_texto": 121,
-          "y": 650,
-          "pagina": 152
-        },
-        {
-          "numero": 121,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "La seguridad social se organizará conforme a las siguientes bases mínimas:",
-          "padre_numero": 120,
-          "x_id": 156,
-          "x_texto": 156,
-          "y": 650,
-          "pagina": 152
-        },
-        {
-          "numero": 122,
           "tipo": "inciso",
           "identificador": "a",
           "contenido": ") Cubrirá los accidentes y enfermedades profesionales; las enfermedades no profesionales y maternidad; y la jubilación, la invalidez, vejez y muerte.",
-          "padre_numero": 120,
+          "padre_numero": 119,
           "x_id": 156,
           "x_texto": 178,
           "y": 673,
           "pagina": 152
         },
         {
-          "numero": 123,
+          "numero": 121,
           "tipo": "inciso",
           "identificador": "b",
           "contenido": ") En caso de accidente o enfermedad, se conservará el derecho al trabajo por el tiempo que determine la ley.",
-          "padre_numero": 120,
+          "padre_numero": 119,
           "x_id": 156,
           "x_texto": 178,
           "y": 110,
           "pagina": 153
         },
         {
-          "numero": 124,
+          "numero": 122,
           "tipo": "inciso",
           "identificador": "c",
           "contenido": ") Las mujeres durante el embarazo no realizarán trabajos que exijan un esfuerzo considerable y signifiquen un peligro para su salud en relación con la gestación; gozarán forzosamente de un mes de descanso antes de la fecha fijada aproximadamente para el parto y de otros dos después del mismo, debiendo percibir su salario íntegro y conservar su empleo y los derechos que hubieren adquirido por la relación de trabajo. En el período de lactancia tendrán dos descansos extraordinarios por día, de media hora cada uno, para alimentar a sus hijos. Además, disfrutarán de asistencia médica y obstétrica, de medicinas, de ayudas para la lactancia y del servicio de guarderías infantiles.",
-          "padre_numero": 120,
+          "padre_numero": 119,
           "x_id": 156,
           "x_texto": 178,
           "referencias": [
@@ -20728,44 +20706,44 @@
           "pagina": 153
         },
         {
-          "numero": 125,
+          "numero": 123,
           "tipo": "inciso",
           "identificador": "d",
           "contenido": ") Los familiares de los trabajadores tendrán derecho a asistencia médica y medicinas, en los casos y en la proporción que determine la ley.",
-          "padre_numero": 120,
+          "padre_numero": 119,
           "x_id": 156,
           "x_texto": 178,
           "y": 280,
           "pagina": 153
         },
         {
-          "numero": 126,
+          "numero": 124,
           "tipo": "inciso",
           "identificador": "e",
           "contenido": ") Se establecerán centros para vacaciones y para recuperación, así como tiendas económicas para beneficio de los trabajadores y sus familiares.",
-          "padre_numero": 120,
+          "padre_numero": 119,
           "x_id": 156,
           "x_texto": 178,
           "y": 314,
           "pagina": 153
         },
         {
-          "numero": 127,
+          "numero": 125,
           "tipo": "inciso",
           "identificador": "f",
           "contenido": ") Se proporcionarán a los trabajadores habitaciones baratas, en arrendamiento o venta, conforme a los programas previamente aprobados. Además, el Estado mediante las aportaciones que haga, establecerá un fondo nacional de la vivienda a fin de constituir depósitos en favor de dichos trabajadores y establecer un sistema de financiamiento que permita otorgar a éstos crédito barato y suficiente para que adquieran en propiedad habitaciones cómodas e higiénicas, o bien para construirlas, repararlas, mejorarlas o pagar pasivos adquiridos por estos conceptos.",
-          "padre_numero": 120,
+          "padre_numero": 119,
           "x_id": 156,
           "x_texto": 178,
           "y": 349,
           "pagina": 153
         },
         {
-          "numero": 128,
+          "numero": 126,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las aportaciones que se hagan a dicho fondo serán enteradas al organismo encargado de la seguridad social regulándose en su Ley y en las que corresponda, la forma y el procedimiento conforme a los cuales se administrará el citado fondo y se otorgarán y adjudicarán los créditos respectivos.",
-          "padre_numero": 127,
+          "padre_numero": 125,
           "x_id": 192,
           "x_texto": 192,
           "referencias": [
@@ -20775,24 +20753,13 @@
           "pagina": 153
         },
         {
-          "numero": 129,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "XII.",
+          "numero": 127,
+          "tipo": "fraccion",
+          "identificador": "XII",
+          "contenido": "Los conflictos individuales, colectivos o intersindicales serán sometidos a un Tribunal Federal de Conciliación y Arbitraje integrado según lo prevenido en la ley reglamentaria. Asimismo, conocerá de los asuntos relacionados con el acceso a la información pública de los sindicatos de los trabajadores al servicio del Estado y de los recursos de revisión que interpongan los particulares respecto de las resoluciones de los mismos.",
           "padre_numero": 106,
           "x_id": 121,
-          "x_texto": 121,
-          "y": 531,
-          "pagina": 153
-        },
-        {
-          "numero": 130,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Los conflictos individuales, colectivos o intersindicales serán sometidos a un Tribunal Federal de Conciliación y Arbitraje integrado según lo prevenido en la ley reglamentaria. Asimismo, conocerá de los asuntos relacionados con el acceso a la información pública de los sindicatos de los trabajadores al servicio del Estado y de los recursos de revisión que interpongan los particulares respecto de las resoluciones de los mismos.",
-          "padre_numero": 129,
-          "x_id": 156,
-          "x_texto": 156,
+          "x_texto": 143,
           "referencias": [
             "Párrafo reformado DOF 20-12-2024"
           ],
@@ -20800,11 +20767,11 @@
           "pagina": 153
         },
         {
-          "numero": 131,
+          "numero": 128,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los conflictos entre el Poder Judicial de la Federación y sus servidores, así como los que se susciten entre la Suprema Corte de Justicia y sus empleados, serán resueltos por el Tribunal de Disciplina Judicial.",
-          "padre_numero": 129,
+          "padre_numero": 127,
           "x_id": 156,
           "x_texto": 156,
           "referencias": [
@@ -20814,24 +20781,13 @@
           "pagina": 153
         },
         {
-          "numero": 132,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "XIII.",
+          "numero": 129,
+          "tipo": "fraccion",
+          "identificador": "XIII",
+          "contenido": "Los militares, marinos, integrantes de la Guardia Nacional, personal del servicio exterior, agentes del Ministerio Público, peritos y los miembros de las instituciones policiales, se regirán por sus propias leyes.",
           "padre_numero": 106,
           "x_id": 121,
-          "x_texto": 121,
-          "y": 675,
-          "pagina": 153
-        },
-        {
-          "numero": 133,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "Los militares, marinos, integrantes de la Guardia Nacional, personal del servicio exterior, agentes del Ministerio Público, peritos y los miembros de las instituciones policiales, se regirán por sus propias leyes.",
-          "padre_numero": 132,
-          "x_id": 156,
-          "x_texto": 156,
+          "x_texto": 143,
           "referencias": [
             "Párrafo reformado DOF 30-09-2024"
           ],
@@ -20839,11 +20795,11 @@
           "pagina": 153
         },
         {
-          "numero": 134,
+          "numero": 130,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Los agentes del Ministerio Público, los peritos y los miembros de las instituciones policiales de la Federación, las entidades federativas y los Municipios, podrán ser separados de sus cargos si no cumplen con los requisitos que las leyes vigentes en el momento del acto señalen para permanecer en dichas instituciones, o removidos por incurrir en responsabilidad en el desempeño de sus funciones. Si la autoridad jurisdiccional resolviere que la separación, remoción, baja, cese o cualquier otra forma de terminación del servicio fue injustificada, el Estado sólo estará obligado a pagar la indemnización y demás prestaciones a que tenga derecho, sin que en ningún caso proceda su reincorporación al servicio, cualquiera que sea el resultado del juicio o medio de defensa que se hubiere promovido.",
-          "padre_numero": 132,
+          "padre_numero": 129,
           "x_id": 156,
           "x_texto": 156,
           "referencias": [
@@ -20853,11 +20809,11 @@
           "pagina": 154
         },
         {
-          "numero": 135,
+          "numero": 131,
           "tipo": "texto",
           "identificador": null,
           "contenido": "Las autoridades federales, de las entidades federativas y municipales, a fin de propiciar el fortalecimiento del sistema de seguridad social del personal del Ministerio Público, de las corporaciones policiales y de los servicios periciales, de sus familias y dependientes, instrumentarán sistemas complementarios de seguridad social.",
-          "padre_numero": 132,
+          "padre_numero": 129,
           "x_id": 156,
           "x_texto": 156,
           "referencias": [
@@ -20867,11 +20823,11 @@
           "pagina": 154
         },
         {
-          "numero": 136,
+          "numero": 132,
           "tipo": "texto",
           "identificador": null,
           "contenido": "El Estado proporcionará a los miembros en el activo del Ejército, Fuerza Aérea, Armada y Guardia Nacional, las prestaciones a que se refiere el inciso f) de la fracción XI de este apartado, en términos similares y a través del organismo encargado de la seguridad social de los componentes de dichas instituciones;",
-          "padre_numero": 132,
+          "padre_numero": 129,
           "x_id": 156,
           "x_texto": 156,
           "referencias": [
@@ -20882,7 +20838,7 @@
           "pagina": 154
         },
         {
-          "numero": 137,
+          "numero": 133,
           "tipo": "texto",
           "identificador": null,
           "contenido": "XIII bis. El banco central y las entidades de la Administración Pública Federal que formen parte del sistema bancario mexicano regirán sus relaciones laborales con sus trabajadores por lo dispuesto en el presente Apartado.",
@@ -20896,24 +20852,13 @@
           "pagina": 154
         },
         {
-          "numero": 138,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "XIV.",
+          "numero": 134,
+          "tipo": "fraccion",
+          "identificador": "XIV",
+          "contenido": "La ley determinará los cargos que serán considerados de confianza. Las personas que los desempeñen disfrutarán de las medidas de protección al salario y gozarán de los beneficios de la seguridad social.",
           "padre_numero": 106,
           "x_id": 121,
-          "x_texto": 121,
-          "y": 455,
-          "pagina": 154
-        },
-        {
-          "numero": 139,
-          "tipo": "texto",
-          "identificador": null,
-          "contenido": "La ley determinará los cargos que serán considerados de confianza. Las personas que los desempeñen disfrutarán de las medidas de protección al salario y gozarán de los beneficios de la seguridad social.",
-          "padre_numero": 138,
-          "x_id": 156,
-          "x_texto": 156,
+          "x_texto": 143,
           "referencias": [
             "Apartado B con fracciones adicionado DOF 05-12-1960"
           ],
