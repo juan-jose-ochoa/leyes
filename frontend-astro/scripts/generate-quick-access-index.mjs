@@ -64,15 +64,26 @@ function generateSearchVariants(numero) {
 
 /**
  * Extrae el título/nombre de un artículo desde la estructura
+ * Busca el nombre más descriptivo en el breadcrumb (el último que tenga nombre)
  */
 function getArticuloTitulo(articulo, seccionMap) {
-  // Intentar obtener de la sección
   const seccion = seccionMap.get(articulo.numero);
   if (seccion) {
-    // Extraer solo la última parte del breadcrumb (la más específica)
+    // El breadcrumb viene como "Título VI - Del Trabajo › Capitulo UNICO"
+    // Buscamos la parte más descriptiva (que tenga nombre después del guión)
     const parts = seccion.split(' › ');
-    const lastPart = parts[parts.length - 1];
-    return lastPart;
+
+    // Buscar de atrás hacia adelante la primera parte con nombre descriptivo
+    for (let i = parts.length - 1; i >= 0; i--) {
+      const part = parts[i];
+      // Si tiene " - " significa que tiene nombre descriptivo
+      if (part.includes(' - ')) {
+        return part;
+      }
+    }
+
+    // Si ninguna tiene nombre descriptivo, devolver la última
+    return parts[parts.length - 1];
   }
   return null;
 }
