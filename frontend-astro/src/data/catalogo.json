@@ -1,5 +1,5 @@
 {
-  "_generado": "2026-01-12T12:15:45.667608",
+  "_generado": "2026-01-16T23:16:28.813484",
   "_version": "1.1",
   "leyes": [
     {
@@ -210,7 +210,7 @@
       "codigo": "CPEUM",
       "nombre": "Constitución Política de los Estados Unidos Mexicanos",
       "nombre_corto": "Constitución",
-      "tipo": "ley",
+      "tipo": "codigo",
       "categoria": "constitucional",
       "url_fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
       "tipo_contenido": "articulo",

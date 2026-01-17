@@ -31,12 +31,13 @@ MESES = {
 }
 
 # Jerarquia de tipos de parrafo (menor = mas alto en jerarquia)
+# apartado > fraccion > inciso > numeral > texto
 JERARQUIA_TIPOS = {
-    'texto': 0,
+    'apartado': 0,
     'fraccion': 1,
     'inciso': 2,
     'numeral': 3,
-    'apartado': 4,
+    'texto': 4,
 }
 
 # Advertencia estandar para archivos JSON generados
@@ -569,10 +570,14 @@ class ExtractorBase(ABC):
         """
         Asigna padre_numero a parrafos que no lo tienen.
 
+        Jerarquia: apartado (0) > fraccion (1) > inciso (2) > numeral (3) > texto (4)
+
         Algoritmo:
-        - texto/fraccion: padre = None (raiz)
+        - apartado: padre = None (raiz, contenedor de mas alto nivel)
+        - fraccion: padre = ultimo apartado (si existe), sino None
         - inciso: padre = ultima fraccion
         - numeral: padre = ultimo inciso (o fraccion si no hay inciso)
+        - texto: padre = None (sin jerarquia)
 
         El algoritmo mantiene un registro del ultimo parrafo de cada nivel
         y asigna como padre el elemento mas cercano de nivel superior.
@@ -583,7 +588,7 @@ class ExtractorBase(ABC):
         # Verificar si ya todos tienen padre_numero
         # (extractores como el general ya lo calculan)
         todos_tienen_padre = all(
-            p.padre_numero is not None or p.tipo in ('texto', 'fraccion')
+            p.padre_numero is not None or p.tipo in ('texto', 'apartado')
             for p in parrafos
         )
         if todos_tienen_padre:
@@ -596,23 +601,26 @@ class ExtractorBase(ABC):
         for p in parrafos:
             # Si ya tiene padre asignado, solo actualizar registro
             if p.padre_numero is not None:
-                nivel = JERARQUIA_TIPOS.get(p.tipo, 0)
+                nivel = JERARQUIA_TIPOS.get(p.tipo, 4)
                 ultimo_por_nivel[nivel] = p.numero
                 # Limpiar niveles inferiores (nueva rama)
                 ultimo_por_nivel = {k: v for k, v in ultimo_por_nivel.items() if k <= nivel}
                 continue
 
             tipo = p.tipo
-            nivel = JERARQUIA_TIPOS.get(tipo, 0)
+            nivel = JERARQUIA_TIPOS.get(tipo, 4)
 
             # Determinar padre segun nivel
-            if nivel <= 1:
-                # texto (0) y fraccion (1) son raiz
+            if tipo == 'apartado' or tipo == 'texto':
+                # apartado es raiz, texto no tiene jerarquia
                 p.padre_numero = None
+            elif tipo == 'fraccion':
+                # fraccion: padre = ultimo apartado (si existe)
+                p.padre_numero = ultimo_por_nivel.get(0)  # nivel 0 = apartado
             else:
-                # Buscar padre: el ultimo elemento de nivel estrictamente inferior
+                # inciso/numeral: buscar padre en nivel inmediato superior
                 padre_encontrado = None
-                for n in range(nivel - 1, 0, -1):  # Desde nivel-1 hasta 1 (no 0=texto)
+                for n in range(nivel - 1, -1, -1):  # Desde nivel-1 hasta 0
                     if n in ultimo_por_nivel:
                         padre_encontrado = ultimo_por_nivel[n]
                         break

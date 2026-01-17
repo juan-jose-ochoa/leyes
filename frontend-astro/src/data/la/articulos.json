@@ -956,7 +956,7 @@
     "orden": 14,
     "pagina": 8,
     "y": 199,
-    "contenido": "Para los efectos de las notificaciones electrónicas a través del sistema electrónico aduanero, se considerarán hábiles todos los días del año, con excepción de sábados y domingos, así como de aquéllos que se señalen en el Código Fiscal de la Federación, y en los demás ordenamientos aplicables de comercio exterior.\n\nLos trámites que se realicen en el sistema electrónico aduanero deberán efectuarse entre las siete y las dieciocho horas centro. Los que se lleven a cabo después de las dieciocho horas o en días inhábiles se considerarán realizados al día hábil siguiente.\n\nTítulo Segundo Control de aduana en el despacho",
+    "contenido": "Para los efectos de las notificaciones electrónicas a través del sistema electrónico aduanero, se considerarán hábiles todos los días del año, con excepción de sábados y domingos, así como de aquéllos que se señalen en el Código Fiscal de la Federación, y en los demás ordenamientos aplicables de comercio exterior.\n\nLos trámites que se realicen en el sistema electrónico aduanero deberán efectuarse entre las siete y las dieciocho horas centro. Los que se lleven a cabo después de las dieciocho horas o en días inhábiles se considerarán realizados al día hábil siguiente.\n\nTítulo Segundo\n\nControl de aduana en el despacho",
     "parrafos": [
       {
         "numero": 1,
@@ -987,11 +987,22 @@
         "numero": 3,
         "tipo": "texto",
         "identificador": null,
-        "contenido": "Título Segundo Control de aduana en el despacho",
+        "contenido": "Título Segundo",
         "padre_numero": 2,
         "x_id": 266,
         "x_texto": 266,
         "y": 312,
+        "pagina": 8
+      },
+      {
+        "numero": 4,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Control de aduana en el despacho",
+        "padre_numero": 2,
+        "x_id": 216,
+        "x_texto": 216,
+        "y": 325,
         "pagina": 8
       }
     ],
@@ -5672,7 +5683,7 @@
     "orden": 77,
     "pagina": 40,
     "y": 572,
-    "contenido": "Quienes promuevan el despacho de las mercancías sin la intervención de una agencia aduanal o agente aduanal, deberán cumplir, sin perjuicio de las demás obligaciones previstas en esta Ley y su Reglamento, con las siguientes:\n\nSolicitar ante el Servicio de Administración Tributaria, cumpliendo con los términos y condiciones que se establezcan en el Reglamento, se les asigne un número de autorización con la finalidad de que puedan transmitir pedimentos a través del sistema electrónico aduanero.\n\nTransmitir al sistema electrónico aduanero en la forma y periodicidad que el Servicio de Administración Tributaria determine en reglas, la información estadística de los pedimentos.\n\nRealizar los actos que le correspondan conforme a esta Ley en el despacho de las mercancías, empleando el sistema electrónico aduanero y su firma electrónica avanzada o sello digital, o bien, con el medio tecnológico de identificación que corresponda.\n\nContar con el equipo necesario para promover el despacho electrónico, conforme a las reglas que emita la Secretaría.\n\nUtilizar los candados oficiales o electrónicos en los vehículos y contenedores que transporten las mercancías de los despachos aduaneros que realicen, de conformidad con lo que establezca el Servicio de Administración Tributaria mediante reglas, así como evitar que los candados fiscales que adquieran de los fabricantes autorizados, se utilicen en contenedores o vehículos que transporten mercancías cuyo despacho no hubiere realizado. Así como manifestar en el pedimento o en el aviso consolidado, el número de candado oficial o electrónico utilizado en los vehículos o medios de transporte que contengan las mercancías cuyo despacho realice.\n\nEn los casos de las mercancías sujetas a regulaciones y restricciones no arancelarias cuyo cumplimiento se realice mediante documento electrónico o digital, anotar en el pedimento el acuse correspondiente.\n\nDeclarar, bajo protesta de decir verdad la naturaleza y características de las mercancías y los demás datos relativos a la operación de comercio exterior en que intervenga, en las formas oficiales y documentos en que se requieran o, en su caso, en el sistema electrónico aduanero.\n\nAceptar las visitas que ordenen las autoridades aduaneras, para comprobar que cumple sus obligaciones fiscales y aduaneras, o para investigaciones determinadas.\n\nCAPITULO II Afectación de mercancías y exenciones\n\nSECCION PRIMERA Afectación de las mercancías",
+    "contenido": "Quienes promuevan el despacho de las mercancías sin la intervención de una agencia aduanal o agente aduanal, deberán cumplir, sin perjuicio de las demás obligaciones previstas en esta Ley y su Reglamento, con las siguientes:\n\nSolicitar ante el Servicio de Administración Tributaria, cumpliendo con los términos y condiciones que se establezcan en el Reglamento, se les asigne un número de autorización con la finalidad de que puedan transmitir pedimentos a través del sistema electrónico aduanero.\n\nTransmitir al sistema electrónico aduanero en la forma y periodicidad que el Servicio de Administración Tributaria determine en reglas, la información estadística de los pedimentos.\n\nRealizar los actos que le correspondan conforme a esta Ley en el despacho de las mercancías, empleando el sistema electrónico aduanero y su firma electrónica avanzada o sello digital, o bien, con el medio tecnológico de identificación que corresponda.\n\nContar con el equipo necesario para promover el despacho electrónico, conforme a las reglas que emita la Secretaría.\n\nUtilizar los candados oficiales o electrónicos en los vehículos y contenedores que transporten las mercancías de los despachos aduaneros que realicen, de conformidad con lo que establezca el Servicio de Administración Tributaria mediante reglas, así como evitar que los candados fiscales que adquieran de los fabricantes autorizados, se utilicen en contenedores o vehículos que transporten mercancías cuyo despacho no hubiere realizado. Así como manifestar en el pedimento o en el aviso consolidado, el número de candado oficial o electrónico utilizado en los vehículos o medios de transporte que contengan las mercancías cuyo despacho realice.\n\nEn los casos de las mercancías sujetas a regulaciones y restricciones no arancelarias cuyo cumplimiento se realice mediante documento electrónico o digital, anotar en el pedimento el acuse correspondiente.\n\nDeclarar, bajo protesta de decir verdad la naturaleza y características de las mercancías y los demás datos relativos a la operación de comercio exterior en que intervenga, en las formas oficiales y documentos en que se requieran o, en su caso, en el sistema electrónico aduanero.\n\nAceptar las visitas que ordenen las autoridades aduaneras, para comprobar que cumple sus obligaciones fiscales y aduaneras, o para investigaciones determinadas.\n\nCAPITULO II\n\nAfectación de mercancías y exenciones\n\nSECCION PRIMERA\n\nAfectación de las mercancías",
     "parrafos": [
       {
         "numero": 1,
@@ -5786,13 +5797,10 @@
         "numero": 10,
         "tipo": "texto",
         "identificador": null,
-        "contenido": "CAPITULO II Afectación de mercancías y exenciones",
+        "contenido": "CAPITULO II",
         "padre_numero": 9,
         "x_id": 273,
         "x_texto": 273,
-        "referencias": [
-          "Capítulo reformado DOF 31-12-2000"
-        ],
         "y": 439,
         "pagina": 41
       },
@@ -5800,14 +5808,39 @@
         "numero": 11,
         "tipo": "texto",
         "identificador": null,
-        "contenido": "SECCION PRIMERA Afectación de las mercancías",
+        "contenido": "Afectación de mercancías y exenciones",
         "padre_numero": 9,
+        "x_id": 202,
+        "x_texto": 202,
+        "referencias": [
+          "Capítulo reformado DOF 31-12-2000"
+        ],
+        "y": 451,
+        "pagina": 41
+      },
+      {
+        "numero": 12,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "SECCION PRIMERA",
+        "padre_numero": 11,
         "x_id": 254,
         "x_texto": 254,
+        "y": 484,
+        "pagina": 41
+      },
+      {
+        "numero": 13,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Afectación de las mercancías",
+        "padre_numero": 11,
+        "x_id": 229,
+        "x_texto": 229,
         "referencias": [
           "Sección adicionada DOF 31-12-2000"
         ],
-        "y": 484,
+        "y": 497,
         "pagina": 41
       }
     ],
@@ -10447,7 +10480,7 @@
     "orden": 136,
     "pagina": 71,
     "y": 282,
-    "contenido": "La propiedad o el uso de las mercancías destinadas al régimen de importación temporal no podrá ser objeto de transferencia o enajenación, excepto entre maquiladoras, empresas con programas de exportación autorizados por la Secretaría de Economía y empresas de comercio exterior que cuenten con registro de esta misma dependencia, cuando cumplan con las condiciones que establezca el Reglamento.\n\nll Para retornar al extranjero en el mismo estado",
+    "contenido": "La propiedad o el uso de las mercancías destinadas al régimen de importación temporal no podrá ser objeto de transferencia o enajenación, excepto entre maquiladoras, empresas con programas de exportación autorizados por la Secretaría de Economía y empresas de comercio exterior que cuenten con registro de esta misma dependencia, cuando cumplan con las condiciones que establezca el Reglamento.\n\nll\n\nPara retornar al extranjero en el mismo estado",
     "parrafos": [
       {
         "numero": 1,
@@ -10467,11 +10500,22 @@
         "numero": 2,
         "tipo": "texto",
         "identificador": null,
-        "contenido": "ll Para retornar al extranjero en el mismo estado",
+        "contenido": "ll",
         "padre_numero": 1,
         "x_id": 303,
         "x_texto": 303,
         "y": 360,
+        "pagina": 71
+      },
+      {
+        "numero": 3,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Para retornar al extranjero en el mismo estado",
+        "padre_numero": 1,
+        "x_id": 185,
+        "x_texto": 185,
+        "y": 373,
         "pagina": 71
       }
     ],
@@ -10916,7 +10960,7 @@
     "orden": 138,
     "pagina": 74,
     "y": 547,
-    "contenido": "Tratándose de las importaciones temporales a que se refieren los incisos a), b) y d) de la fracción II, la fracción III, el inciso b) de la fracción IV, el inciso a) de la fracción V y los incisos a), b), c) y d) de la fracción VI del artículo 106 de esta Ley, en el pedimento se señalará la finalidad a la que se destinarán las mercancías y, en su caso, el lugar en donde cumplirán la citada finalidad y se mantendrán las propias mercancías.\n\nEl Servicio de Administración Tributaria podrá, mediante reglas, determinar los casos en que no se requerirá pedimento para la importación temporal de mercancías ni para su retorno, y establecerá en las mismas la forma oficial que deberá presentarse.\n\nNo será necesaria la presentación de pedimento cuando se presente otro documento con el mismo fin previsto en algún tratado internacional del que México sea parte. El Servicio de Administración Tributaria establecerá mediante reglas, los casos y condiciones en que procederá la utilización de ese documento, de conformidad con lo dispuesto en el tratado internacional que corresponda.\n\nIII Para elaboración, transformación o reparación en programas de maquila o de exportación",
+    "contenido": "Tratándose de las importaciones temporales a que se refieren los incisos a), b) y d) de la fracción II, la fracción III, el inciso b) de la fracción IV, el inciso a) de la fracción V y los incisos a), b), c) y d) de la fracción VI del artículo 106 de esta Ley, en el pedimento se señalará la finalidad a la que se destinarán las mercancías y, en su caso, el lugar en donde cumplirán la citada finalidad y se mantendrán las propias mercancías.\n\nEl Servicio de Administración Tributaria podrá, mediante reglas, determinar los casos en que no se requerirá pedimento para la importación temporal de mercancías ni para su retorno, y establecerá en las mismas la forma oficial que deberá presentarse.\n\nNo será necesaria la presentación de pedimento cuando se presente otro documento con el mismo fin previsto en algún tratado internacional del que México sea parte. El Servicio de Administración Tributaria establecerá mediante reglas, los casos y condiciones en que procederá la utilización de ese documento, de conformidad con lo dispuesto en el tratado internacional que corresponda.\n\nIII\n\nPara elaboración, transformación o reparación en programas de maquila o de exportación",
     "parrafos": [
       {
         "numero": 1,
@@ -10961,11 +11005,22 @@
         "numero": 4,
         "tipo": "texto",
         "identificador": null,
-        "contenido": "III Para elaboración, transformación o reparación en programas de maquila o de exportación",
+        "contenido": "III",
         "padre_numero": 3,
         "x_id": 301,
         "x_texto": 301,
         "y": 130,
+        "pagina": 75
+      },
+      {
+        "numero": 5,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Para elaboración, transformación o reparación en programas de maquila o de exportación",
+        "padre_numero": 3,
+        "x_id": 103,
+        "x_texto": 103,
+        "y": 143,
         "pagina": 75
       }
     ],
@@ -11447,7 +11502,7 @@
     "orden": 145,
     "pagina": 78,
     "y": 332,
-    "contenido": "Los contribuyentes podrán cambiar el régimen de exportación temporal a definitiva cumpliendo con los requisitos que establezcan esta Ley y la Secretaría mediante reglas.\n\nCuando las mercancías exportadas temporalmente no retornen a territorio nacional dentro del plazo concedido, se considerará que la exportación se convierte en definitiva a partir de la fecha en que se venza el plazo y se deberá pagar el impuesto general de exportación actualizado desde que se efectuó la exportación temporal y hasta que el mismo se pague.\n\nII Para retornar al país en el mismo estado",
+    "contenido": "Los contribuyentes podrán cambiar el régimen de exportación temporal a definitiva cumpliendo con los requisitos que establezcan esta Ley y la Secretaría mediante reglas.\n\nCuando las mercancías exportadas temporalmente no retornen a territorio nacional dentro del plazo concedido, se considerará que la exportación se convierte en definitiva a partir de la fecha en que se venza el plazo y se deberá pagar el impuesto general de exportación actualizado desde que se efectuó la exportación temporal y hasta que el mismo se pague.\n\nII\n\nPara retornar al país en el mismo estado",
     "parrafos": [
       {
         "numero": 1,
@@ -11478,11 +11533,22 @@
         "numero": 3,
         "tipo": "texto",
         "identificador": null,
-        "contenido": "II Para retornar al país en el mismo estado",
+        "contenido": "II",
         "padre_numero": 2,
         "x_id": 303,
         "x_texto": 303,
         "y": 433,
+        "pagina": 78
+      },
+      {
+        "numero": 4,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Para retornar al país en el mismo estado",
+        "padre_numero": 2,
+        "x_id": 200,
+        "x_texto": 200,
+        "y": 445,
         "pagina": 78
       }
     ],
@@ -11516,7 +11582,7 @@
     "orden": 147,
     "pagina": 78,
     "y": 527,
-    "contenido": "Se autoriza la salida del territorio nacional de las mercancías bajo el régimen a que se refiere el artículo 115 de esta Ley por los siguientes plazos:\n\nl. Hasta por tres meses, las de remolques y semirremolques, incluyendo aquellos diseñados y utilizados exclusivamente para el transporte de contenedores.\n\nll. Hasta por seis meses, en los siguientes casos:\n\n) Las de envases de mercancías.\n\n) Las que realicen los residentes en México sin establecimiento permanente en el extranjero.\n\n) Las de muestras y muestrarios destinados a dar a conocer mercancías.\n\n) Las de enseres, utilería, y demás equipo necesario para la filmación, siempre que se utilicen en la industria cinematográfica y su exportación se efectúe por residentes en el país.\n\nlll. Hasta por un año, las que se destinen a exposiciones, convenciones, congresos internacionales o eventos culturales o deportivos.\n\nPor el periodo que mediante reglas determine la Secretaría y por las mercancías que en las mismas se señalen, cuando las circunstancias económicas así lo ameriten, previa opinión de la Secretaría de Economía. En estos casos la Secretaría podrá autorizar que la obligación de retorno se cumpla con la introducción al país de mercancías que no fueron las que se exportaron temporalmente, siempre que se trate de mercancías fungibles, que no sean susceptibles de identificarse individualmente y se cumpla con las condiciones de control que establezca dicha dependencia.\n\nLos plazos a que se refieren las fracciones I a IV de este artículo, podrán prorrogarse hasta por un lapso igual al previsto en la fracción de que se trate, mediante rectificación al pedimento de exportación temporal, antes del vencimiento del plazo respectivo. En caso de que se requiera un plazo adicional, se deberá solicitar autorización de conformidad con los requisitos que señale la Secretaría mediante reglas. Tratándose de lo señalado en la fracción IV podrá prorrogarse el período establecido, previa opinión de la Secretaría de Economía.\n\nTratándose de las fracciones II, III y IV de este artículo en el pedimento se señalará la finalidad a que se destinarán las mercancías y, en su caso, el lugar donde cumplirán la citada finalidad y mantendrán las propias mercancías.\n\nEn los demás casos, no se requerirá pedimento, pero se deberá presentar la forma oficial que mediante reglas señale el Servicio de Administración Tributaria.\n\nTampoco será necesaria la presentación del pedimento para la exportación temporal, cuando se presente otro documento con el mismo fin previsto en algún tratado internacional del que México sea parte. El Servicio de Administración Tributaria establecerá mediante reglas, los casos y condiciones en que procederá la utilización de ese documento, de conformidad con lo dispuesto en dicho tratado internacional.\n\nIII Para elaboración, transformación o reparación",
+    "contenido": "Se autoriza la salida del territorio nacional de las mercancías bajo el régimen a que se refiere el artículo 115 de esta Ley por los siguientes plazos:\n\nl. Hasta por tres meses, las de remolques y semirremolques, incluyendo aquellos diseñados y utilizados exclusivamente para el transporte de contenedores.\n\nll. Hasta por seis meses, en los siguientes casos:\n\n) Las de envases de mercancías.\n\n) Las que realicen los residentes en México sin establecimiento permanente en el extranjero.\n\n) Las de muestras y muestrarios destinados a dar a conocer mercancías.\n\n) Las de enseres, utilería, y demás equipo necesario para la filmación, siempre que se utilicen en la industria cinematográfica y su exportación se efectúe por residentes en el país.\n\nlll. Hasta por un año, las que se destinen a exposiciones, convenciones, congresos internacionales o eventos culturales o deportivos.\n\nPor el periodo que mediante reglas determine la Secretaría y por las mercancías que en las mismas se señalen, cuando las circunstancias económicas así lo ameriten, previa opinión de la Secretaría de Economía. En estos casos la Secretaría podrá autorizar que la obligación de retorno se cumpla con la introducción al país de mercancías que no fueron las que se exportaron temporalmente, siempre que se trate de mercancías fungibles, que no sean susceptibles de identificarse individualmente y se cumpla con las condiciones de control que establezca dicha dependencia.\n\nLos plazos a que se refieren las fracciones I a IV de este artículo, podrán prorrogarse hasta por un lapso igual al previsto en la fracción de que se trate, mediante rectificación al pedimento de exportación temporal, antes del vencimiento del plazo respectivo. En caso de que se requiera un plazo adicional, se deberá solicitar autorización de conformidad con los requisitos que señale la Secretaría mediante reglas. Tratándose de lo señalado en la fracción IV podrá prorrogarse el período establecido, previa opinión de la Secretaría de Economía.\n\nTratándose de las fracciones II, III y IV de este artículo en el pedimento se señalará la finalidad a que se destinarán las mercancías y, en su caso, el lugar donde cumplirán la citada finalidad y mantendrán las propias mercancías.\n\nEn los demás casos, no se requerirá pedimento, pero se deberá presentar la forma oficial que mediante reglas señale el Servicio de Administración Tributaria.\n\nTampoco será necesaria la presentación del pedimento para la exportación temporal, cuando se presente otro documento con el mismo fin previsto en algún tratado internacional del que México sea parte. El Servicio de Administración Tributaria establecerá mediante reglas, los casos y condiciones en que procederá la utilización de ese documento, de conformidad con lo dispuesto en dicho tratado internacional.\n\nIII\n\nPara elaboración, transformación o reparación",
     "parrafos": [
       {
         "numero": 1,
@@ -11681,11 +11747,22 @@
         "numero": 14,
         "tipo": "texto",
         "identificador": null,
-        "contenido": "III Para elaboración, transformación o reparación",
+        "contenido": "III",
         "padre_numero": 13,
         "x_id": 301,
         "x_texto": 301,
         "y": 567,
+        "pagina": 79
+      },
+      {
+        "numero": 15,
+        "tipo": "texto",
+        "identificador": null,
+        "contenido": "Para elaboración, transformación o reparación",
+        "padre_numero": 13,
+        "x_id": 184,
+        "x_texto": 184,
+        "y": 580,
         "pagina": 79
       }
     ],
