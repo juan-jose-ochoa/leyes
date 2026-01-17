@@ -50,7 +50,6 @@ Thumbs.db
 
 # Runtime files
 .postgrest.pid
-.frontend.pid
 
 # Generated config (created from .env)
 backend/postgrest.local.conf

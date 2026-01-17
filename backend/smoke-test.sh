@@ -106,13 +106,13 @@ fi
 
 echo ""
 
-# --- Frontend ---
-echo "Frontend:"
+# --- Frontend Astro ---
+echo "Frontend Astro:"
 check "package.json existe" \
-    "[ -f '$PROJECT_DIR/frontend/package.json' ]"
+    "[ -f '$PROJECT_DIR/frontend-astro/package.json' ]"
 
-check "TypeScript compila" \
-    "cd '$PROJECT_DIR/frontend' && npm run build"
+check "Astro compila" \
+    "cd '$PROJECT_DIR/frontend-astro' && npm run build"
 
 echo ""
 

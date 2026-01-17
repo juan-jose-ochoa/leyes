@@ -39,12 +39,12 @@ EOF
 ### Iniciar Servicios
 
 ```bash
-./start.sh          # Backend + Frontend
-./start.sh backend  # Solo API (puerto 3010)
-./start.sh frontend # Solo Frontend (puerto 5173)
+./start-astro.sh          # Backend + Frontend Astro
+./start-astro.sh backend  # Solo API (puerto 3010)
+./start-astro.sh frontend # Solo Frontend Astro (puerto 4321)
 ```
 
-**URLs:** Frontend http://localhost:5173 | API http://localhost:3010
+**URLs:** Frontend http://localhost:4321 | API http://localhost:3010
 
 ## Estructura
 
@@ -61,11 +61,11 @@ scripts/
 
 backend/sql/                    # Funciones PostgreSQL/PostgREST
 
-frontend/src/
-├── components/                 # Componentes React reutilizables
-├── pages/                      # Vistas principales
-├── hooks/                      # Custom hooks
-└── lib/                        # API client
+frontend-astro/src/
+├── components/                 # Componentes Astro reutilizables
+├── pages/                      # Rutas y vistas (SSG)
+├── layouts/                    # Layouts base
+└── data/                       # Datos JSON para leyes
 
 doc/leyes/<ley>/
 ├── mapa_estructura.json        # Estructura extraída del outline (fuente de verdad)
