@@ -57,6 +57,13 @@ export async function getStaticPaths() {
     const codigoLower = ley.codigo.toLowerCase();
     const articulosModule = await import(`../../../data/${codigoLower}/articulos.json`);
     const estructuraModule = await import(`../../../data/${codigoLower}/estructura.json`);
+    let referencias = {};
+    try {
+      const referenciasModule = await import(`../../../data/${codigoLower}/referencias.json`);
+      referencias = referenciasModule.default || {};
+    } catch (e) {
+      // No referencias.json for this law, use empty object
+    }
     const articulos = articulosModule.default;
     const estructura = estructuraModule.default;
 
@@ -125,6 +132,7 @@ export async function getStaticPaths() {
         props: {
           articulo,
           leyInfo: ley,
+          referenciasArticulo: referencias[articulo.numero] || {},
           prevArticulo: prevArt ? { numero: prevArt.numero } : null,
           nextArticulo: nextArt ? { numero: nextArt.numero } : null,
           totalArticulos: articulos.length,
@@ -156,6 +164,7 @@ interface Props {
     }>;
   };
   leyInfo: typeof catalogo.leyes[0];
+  referenciasArticulo: Record<string, { ley: string; articulo: string; parrafo: number }>;
   prevArticulo: { numero: string } | null;
   nextArticulo: { numero: string } | null;
   totalArticulos: number;
@@ -163,7 +172,7 @@ interface Props {
   breadcrumb: BreadcrumbItem[];
 }
 
-const { articulo, leyInfo, prevArticulo, nextArticulo, totalArticulos, indiceActual, breadcrumb } = Astro.props;
+const { articulo, leyInfo, referenciasArticulo, prevArticulo, nextArticulo, totalArticulos, indiceActual, breadcrumb } = Astro.props;
 const codigoLower = leyInfo.codigo.toLowerCase();
 const isDerogado = articulo.tipo === 'derogado';
 const tieneParrafos = articulo.parrafos && articulo.parrafos.length > 0;
@@ -304,7 +313,7 @@ const seccionTexto = breadcrumb.length > 0
                     Artículo derogado
                   </div>
                 ) : tieneParrafos ? (
-                  <FraccionesView parrafos={articulo.parrafos} />
+                  <FraccionesView parrafos={articulo.parrafos} referencias={referenciasArticulo} />
                 ) : (
                   <div class="prose-legal">
                     <p class="text-gray-800 dark:text-gray-200 whitespace-pre-wrap">

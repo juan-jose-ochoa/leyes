@@ -13,9 +13,11 @@ Uso:
 
 import json
 import os
+import re
 import sys
 from pathlib import Path
 from datetime import datetime
+from collections import defaultdict
 
 # Agregar backend/etl al path para importar config
 sys.path.insert(0, str(Path(__file__).parent.parent / "etl"))
@@ -25,6 +27,228 @@ from config import LEYES
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 ETL_DATA = PROJECT_ROOT / "backend" / "etl" / "data"
 ASTRO_DATA = PROJECT_ROOT / "frontend-astro" / "src" / "data"
+
+# =============================================================================
+# SISTEMA DE REFERENCIAS DINÁMICAS
+# =============================================================================
+
+# Mapeo de nombres de ley en texto a códigos
+NOMBRE_A_CODIGO = {
+    # Referencias internas
+    'esta ley': '_MISMA_',
+    'la presente ley': '_MISMA_',
+    'la misma': '_MISMA_',
+    'este código': '_MISMA_',
+    'el presente código': '_MISMA_',
+    'esta constitución': 'CPEUM',
+    'la constitución': 'CPEUM',
+    'constitución política': 'CPEUM',
+    # Códigos y leyes específicas
+    'código fiscal de la federación': 'CFF',
+    'código fiscal': 'CFF',
+    'cff': 'CFF',
+    'ley del impuesto sobre la renta': 'LISR',
+    'ley del isr': 'LISR',
+    'lisr': 'LISR',
+    'ley del impuesto al valor agregado': 'LIVA',
+    'ley del iva': 'LIVA',
+    'liva': 'LIVA',
+    'ley aduanera': 'LA',
+    'ley del impuesto especial sobre producción y servicios': 'LIEPS',
+    'ley del ieps': 'LIEPS',
+    'lieps': 'LIEPS',
+    'ley federal del trabajo': 'LFT',
+    'ley del seguro social': 'LSS',
+    'ley del instituto del fondo nacional de la vivienda': 'LINFONAVIT',
+    'ley del infonavit': 'LINFONAVIT',
+    'ley del issste': 'LISSSTE',
+    'ley de ingresos de la federación': 'LIF',
+    'ley de ingresos': 'LIF',
+    'ley federal de derechos del contribuyente': 'LFDC',
+}
+
+# Regex para detectar referencias a artículos
+# Captura: artículo(s) NUM (fracción ROMAN)? (inciso LETRA)? de LEY
+PATRON_REFERENCIA = re.compile(
+    r'artículos?\s+'
+    r'(\d+[o]?(?:-[A-Z]+)?)'                           # Número de artículo (grupo 1)
+    r'(?:\s*,?\s*(?:fraccione?s?)\s+([IVXLCDM]+))?'   # Fracción opcional (grupo 2)
+    r'(?:\s*,?\s*(?:inciso)\s+([a-z])\))?'            # Inciso opcional (grupo 3)
+    r'\s+(?:de\s+|del\s+)'
+    r'(esta\s+ley|la\s+presente\s+ley|la\s+misma|'    # Ley destino (grupo 4)
+    r'este\s+código|el\s+presente\s+código|'
+    r'esta\s+constitución|la\s+constitución|'
+    r'código\s+fiscal(?:\s+de\s+la\s+federación)?|cff|'
+    r'ley\s+del\s+impuesto\s+sobre\s+la\s+renta|ley\s+del\s+isr|lisr|'
+    r'ley\s+del\s+impuesto\s+al\s+valor\s+agregado|ley\s+del\s+iva|liva|'
+    r'ley\s+aduanera|'
+    r'ley\s+del\s+impuesto\s+especial\s+sobre\s+producción\s+y\s+servicios|ley\s+del\s+ieps|lieps|'
+    r'ley\s+federal\s+del\s+trabajo|'
+    r'ley\s+del\s+seguro\s+social|'
+    r'ley\s+del\s+infonavit|'
+    r'ley\s+del\s+issste|'
+    r'ley\s+de\s+ingresos(?:\s+de\s+la\s+federación)?|'
+    r'ley\s+federal\s+de\s+derechos\s+del\s+contribuyente)',
+    re.IGNORECASE
+)
+
+
+def construir_indice_global(contenidos: dict) -> dict:
+    """
+    Construye índice global para resolver referencias.
+
+    Estructura:
+    {
+        "CPEUM": {
+            "123": {
+                "parrafos": [...],  # Lista de todos los párrafos
+                "por_tipo": {
+                    "fraccion": {
+                        "I": [
+                            {"numero": 5, "apartado_padre": "A"},
+                            {"numero": 107, "apartado_padre": "B"}
+                        ]
+                    },
+                    "inciso": { ... }
+                }
+            }
+        }
+    }
+    """
+    indice = {}
+
+    for ley_codigo, contenido in contenidos.items():
+        indice[ley_codigo] = {}
+
+        for articulo in contenido.get("articulos", []):
+            art_num = articulo.get("numero")
+            parrafos = articulo.get("parrafos", [])
+
+            # Construir mapa de párrafos con jerarquía
+            parrafos_por_numero = {p["numero"]: p for p in parrafos}
+
+            # Índice por tipo e identificador
+            por_tipo = defaultdict(lambda: defaultdict(list))
+
+            # Rastrear apartado actual para cada párrafo
+            ultimo_apartado = None
+
+            for p in parrafos:
+                tipo = p.get("tipo")
+                ident = p.get("identificador")
+                numero = p.get("numero")
+
+                if tipo == "apartado":
+                    ultimo_apartado = ident
+
+                if tipo in ("fraccion", "inciso", "numeral") and ident:
+                    # Determinar apartado padre
+                    apartado_padre = None
+                    if p.get("padre_numero"):
+                        padre = parrafos_por_numero.get(p["padre_numero"])
+                        while padre:
+                            if padre.get("tipo") == "apartado":
+                                apartado_padre = padre.get("identificador")
+                                break
+                            padre = parrafos_por_numero.get(padre.get("padre_numero"))
+
+                    # Si no encontramos por jerarquía, usar el último apartado visto
+                    if not apartado_padre:
+                        apartado_padre = ultimo_apartado
+
+                    por_tipo[tipo][ident].append({
+                        "numero": numero,
+                        "apartado_padre": apartado_padre,
+                        "fraccion_padre": None  # TODO: para incisos
+                    })
+
+            indice[ley_codigo][art_num] = {
+                "parrafos": parrafos,
+                "por_tipo": dict(por_tipo)
+            }
+
+    return indice
+
+
+def resolver_referencia(
+    ley_destino: str,
+    articulo: str,
+    fraccion: str | None,
+    inciso: str | None,
+    indice: dict
+) -> int | None:
+    """
+    Resuelve una referencia a un número de párrafo específico.
+
+    Returns:
+        Número de párrafo si se resuelve sin ambigüedad, None si no se encuentra o es ambiguo.
+    """
+    if ley_destino not in indice:
+        return None
+
+    if articulo not in indice[ley_destino]:
+        return None
+
+    art_data = indice[ley_destino][articulo]
+
+    # Si no hay fracción/inciso, enlazar al artículo (primer párrafo)
+    if not fraccion:
+        parrafos = art_data.get("parrafos", [])
+        return parrafos[0]["numero"] if parrafos else None
+
+    # Buscar fracción
+    por_tipo = art_data.get("por_tipo", {})
+    fracciones = por_tipo.get("fraccion", {}).get(fraccion, [])
+
+    if not fracciones:
+        # Fracción no encontrada, enlazar al artículo
+        parrafos = art_data.get("parrafos", [])
+        return parrafos[0]["numero"] if parrafos else None
+
+    if len(fracciones) == 1:
+        # Sin ambigüedad
+        if not inciso:
+            return fracciones[0]["numero"]
+        # TODO: resolver inciso dentro de fracción
+        return fracciones[0]["numero"]
+
+    # Ambiguo: múltiples fracciones con mismo identificador
+    # Retornamos la primera (arbitrario pero consistente)
+    return fracciones[0]["numero"]
+
+
+def procesar_referencias(texto: str, ley_actual: str, indice: dict) -> str:
+    """
+    Detecta referencias en el texto y las convierte a marcadores de link.
+
+    Formato de marcador: [[ref:LEY:ARTICULO:PARRAFO|texto original]]
+    """
+    def reemplazar(match):
+        texto_original = match.group(0)
+        articulo = match.group(1)
+        fraccion = match.group(2)  # Puede ser None
+        inciso = match.group(3)    # Puede ser None
+        ley_texto = match.group(4).lower().strip()
+
+        # Resolver código de ley
+        ley_codigo = NOMBRE_A_CODIGO.get(ley_texto)
+        if not ley_codigo:
+            return texto_original  # No reconocida, dejar como está
+
+        # Si es referencia interna, usar ley actual
+        if ley_codigo == '_MISMA_':
+            ley_codigo = ley_actual
+
+        # Resolver a número de párrafo
+        parrafo_num = resolver_referencia(ley_codigo, articulo, fraccion, inciso, indice)
+
+        if parrafo_num is None:
+            return texto_original  # No se pudo resolver
+
+        # Crear marcador
+        return f"[[ref:{ley_codigo}:{articulo}:{parrafo_num}|{texto_original}]]"
+
+    return PATRON_REFERENCIA.sub(reemplazar, texto)
 
 
 def cargar_contenido(ley_codigo: str) -> dict | None:
@@ -51,6 +275,9 @@ def generar_articulos_json(contenido: dict, ley_config: dict) -> list:
     """
     Transforma contenido.json a formato optimizado para Astro.
 
+    NO modifica el contenido de los párrafos - se mantiene texto puro.
+    Las referencias se generan en archivo separado (referencias.json).
+
     Estructura de salida por artículo:
     {
         "numero": "1o",
@@ -59,19 +286,21 @@ def generar_articulos_json(contenido: dict, ley_config: dict) -> list:
         "pagina": 1,
         "y": 434,  # Coordenada Y del primer párrafo
         "contenido": "Texto completo...",
-        "parrafos": [...]  # Opcional, para vista detallada
+        "parrafos": [...]
     }
     """
     articulos = []
 
     for art in contenido.get("articulos", []):
-        # Concatenar contenido de todos los párrafos
+        parrafos = art.get("parrafos", [])
+
+        # Concatenar contenido de todos los párrafos (texto original)
         contenido_texto = "\n\n".join(
-            p.get("contenido", "") for p in art.get("parrafos", [])
+            p.get("contenido", "") for p in parrafos
         )
 
         # Obtener coordenadas del primer párrafo
-        primer_parrafo = art.get("parrafos", [{}])[0] if art.get("parrafos") else {}
+        primer_parrafo = parrafos[0] if parrafos else {}
 
         articulo_astro = {
             "numero": art.get("numero"),
@@ -80,13 +309,72 @@ def generar_articulos_json(contenido: dict, ley_config: dict) -> list:
             "pagina": art.get("pagina") or primer_parrafo.get("pagina", 1),
             "y": primer_parrafo.get("y", 0),
             "contenido": contenido_texto,
-            "parrafos": art.get("parrafos", []),
+            "parrafos": parrafos,
             "referencias": art.get("referencias"),
         }
 
         articulos.append(articulo_astro)
 
     return articulos
+
+
+def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
+    """
+    Extrae todas las referencias de una ley y genera mapa para renderizado.
+
+    Estructura de salida:
+    {
+        "123": {
+            "artículo 4o de esta Constitución": {
+                "ley": "CPEUM",
+                "articulo": "4",
+                "parrafo": 1
+            }
+        }
+    }
+    """
+    referencias_ley = {}
+
+    for art in contenido.get("articulos", []):
+        art_num = art.get("numero")
+        referencias_articulo = {}
+
+        for p in art.get("parrafos", []):
+            texto = p.get("contenido", "")
+
+            # Buscar todas las referencias en el párrafo
+            for match in PATRON_REFERENCIA.finditer(texto):
+                texto_original = match.group(0)
+                articulo_ref = match.group(1)
+                fraccion = match.group(2)
+                inciso = match.group(3)
+                ley_texto = match.group(4).lower().strip()
+
+                # Resolver código de ley
+                ley_destino = NOMBRE_A_CODIGO.get(ley_texto)
+                if not ley_destino:
+                    continue
+
+                # Si es referencia interna, usar ley actual
+                if ley_destino == '_MISMA_':
+                    ley_destino = ley_codigo
+
+                # Resolver a número de párrafo
+                parrafo_num = resolver_referencia(
+                    ley_destino, articulo_ref, fraccion, inciso, indice
+                )
+
+                if parrafo_num is not None:
+                    referencias_articulo[texto_original] = {
+                        "ley": ley_destino.lower(),
+                        "articulo": articulo_ref,
+                        "parrafo": parrafo_num
+                    }
+
+        if referencias_articulo:
+            referencias_ley[art_num] = referencias_articulo
+
+    return referencias_ley
 
 
 def generar_estructura_json(mapa: dict) -> dict:
@@ -241,22 +529,35 @@ def main():
     ASTRO_DATA.mkdir(parents=True, exist_ok=True)
 
     # 1. Generar catálogo
-    print("\n[1/3] Generando catálogo de leyes...")
+    print("\n[1/4] Generando catálogo de leyes...")
     catalogo = generar_catalogo()
     guardar_json(catalogo, ASTRO_DATA / "catalogo.json")
 
-    # 2. Generar datos por ley
-    print("\n[2/3] Generando artículos por ley...")
+    # 2. Cargar todos los contenidos y construir índice global
+    print("\n[2/4] Construyendo índice global para referencias...")
+    contenidos = {}
+    for codigo in LEYES.keys():
+        contenido = cargar_contenido(codigo)
+        if contenido:
+            contenidos[codigo] = contenido
+
+    indice = construir_indice_global(contenidos)
+    print(f"  ✓ Índice construido: {len(indice)} leyes")
+
+    # 3. Generar datos por ley
+    print("\n[3/4] Generando artículos y referencias por ley...")
     leyes_procesadas = 0
     articulos_total = 0
+    referencias_total = 0
 
     for codigo in LEYES.keys():
         print(f"\n  Procesando {codigo}...")
 
-        contenido = cargar_contenido(codigo)
+        contenido = contenidos.get(codigo)
         if not contenido:
             continue
 
+        # Generar artículos (texto puro, sin marcadores)
         articulos = generar_articulos_json(contenido, LEYES[codigo])
         if articulos:
             ley_dir = ASTRO_DATA / codigo.lower()
@@ -264,8 +565,17 @@ def main():
             leyes_procesadas += 1
             articulos_total += len(articulos)
 
-    # 3. Generar estructura por ley
-    print("\n[3/3] Generando estructura por ley...")
+        # Generar mapa de referencias (archivo separado)
+        referencias = extraer_referencias(contenido, codigo, indice)
+        if referencias:
+            ley_dir = ASTRO_DATA / codigo.lower()
+            guardar_json(referencias, ley_dir / "referencias.json")
+            # Contar referencias
+            for art_refs in referencias.values():
+                referencias_total += len(art_refs)
+
+    # 4. Generar estructura por ley
+    print("\n[4/4] Generando estructura por ley...")
 
     for codigo in LEYES.keys():
         mapa = cargar_estructura(codigo)
@@ -282,6 +592,7 @@ def main():
     print("Resumen:")
     print(f"  - Leyes procesadas: {leyes_procesadas}")
     print(f"  - Artículos totales: {articulos_total}")
+    print(f"  - Referencias mapeadas: {referencias_total}")
     print(f"  - Destino: {ASTRO_DATA.relative_to(PROJECT_ROOT)}")
     print("=" * 60)
 
