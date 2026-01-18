@@ -69,7 +69,7 @@ function extractDivisionUrls(divisiones: any[], leyCode: string, parentPath: str
   const urls: string[] = [];
   for (const div of divisiones) {
     const currentPath = [...parentPath, toSlug(div.numero)];
-    urls.push(`/${leyCode}/${div.tipo}/${currentPath.join('/')}`);
+    urls.push(`/${leyCode}/${div.tipo}/${currentPath.join('/')}/`);
     if (div.hijos && div.hijos.length > 0) {
       urls.push(...extractDivisionUrls(div.hijos, leyCode, currentPath));
     }
@@ -90,16 +90,16 @@ export const GET: APIRoute = async ({ params, site }) => {
   const urls: Array<{ loc: string; priority: string; changefreq: string }> = [];
 
   // Índice de ley
-  urls.push({ loc: `${baseUrl}/${leyCode}`, priority: '0.9', changefreq: 'monthly' });
+  urls.push({ loc: `${baseUrl}/${leyCode}/`, priority: '0.9', changefreq: 'monthly' });
 
   // Lista de artículos
-  urls.push({ loc: `${baseUrl}/${leyCode}/articulos`, priority: '0.7', changefreq: 'monthly' });
+  urls.push({ loc: `${baseUrl}/${leyCode}/articulos/`, priority: '0.7', changefreq: 'monthly' });
 
   // Artículos individuales
   const articulos = articulosMap[leyCode] || [];
   for (const art of articulos) {
     urls.push({
-      loc: `${baseUrl}/${leyCode}/articulo/${encodeURIComponent(art.numero)}`,
+      loc: `${baseUrl}/${leyCode}/articulo/${encodeURIComponent(art.numero)}/`,
       priority: '0.8',
       changefreq: 'yearly'
     });
