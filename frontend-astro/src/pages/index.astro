@@ -88,7 +88,7 @@ const categoriaStyle = {
 
             return (
               <div class="card hover:border-primary-500 transition-colors overflow-hidden p-0">
-                <a href={`/${ley.codigo.toLowerCase()}`} class="block p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                <a href={`/${ley.codigo.toLowerCase()}/`} class="block p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
                   <div class="flex items-start gap-3">
                     <div class={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-sm font-bold text-white ${categoriaStyle[ley.categoria as keyof typeof categoriaStyle].bg}`}>
                       {ley.codigo.length > 4 ? ley.codigo.slice(0, 3) : ley.codigo}
@@ -118,7 +118,7 @@ const categoriaStyle = {
                   <div class="mt-3 pt-3 border-t border-gray-100 dark:border-gray-700">
                     {reglamentos.map((reg) => (
                       <a
-                        href={`/${reg.codigo.toLowerCase()}`}
+                        href={`/${reg.codigo.toLowerCase()}/`}
                         class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 py-1"
                       >
                         <span class="text-gray-400">•</span>

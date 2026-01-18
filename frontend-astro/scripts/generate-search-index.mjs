@@ -122,7 +122,7 @@ for (const leyInfo of catalogo.leyes) {
     if (art.tipo !== 'articulo') continue;
 
     const seccion = seccionMap.get(art.numero) || '';
-    const url = `/${leyCode}/articulo/${art.numero}`;
+    const url = `/${leyCode}/articulo/${art.numero}/`;
     const parrafos = art.parrafos || [];
 
     // Si no hay párrafos estructurados, indexar el contenido completo

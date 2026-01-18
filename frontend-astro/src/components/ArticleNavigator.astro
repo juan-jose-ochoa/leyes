@@ -13,8 +13,8 @@ interface Props {
 
 const { articuloActual, prevArticulo, nextArticulo, leyCode } = Astro.props;
 
-const prevUrl = prevArticulo ? `/${leyCode}/articulo/${prevArticulo.numero}` : null;
-const nextUrl = nextArticulo ? `/${leyCode}/articulo/${nextArticulo.numero}` : null;
+const prevUrl = prevArticulo ? `/${leyCode}/articulo/${prevArticulo.numero}/` : null;
+const nextUrl = nextArticulo ? `/${leyCode}/articulo/${nextArticulo.numero}/` : null;
 ---
 
 <nav class="article-navigator">

@@ -20,8 +20,8 @@ interface Props {
 
 const { item, leyCode } = Astro.props;
 
-const prevUrl = item.prevArticulo ? `/${leyCode}/articulo/${item.prevArticulo}` : null;
-const nextUrl = item.nextArticulo ? `/${leyCode}/articulo/${item.nextArticulo}` : null;
+const prevUrl = item.prevArticulo ? `/${leyCode}/articulo/${item.prevArticulo}/` : null;
+const nextUrl = item.nextArticulo ? `/${leyCode}/articulo/${item.nextArticulo}/` : null;
 const hasPrev = !!prevUrl;
 const hasNext = !!nextUrl;
 ---

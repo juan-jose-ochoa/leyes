@@ -44,7 +44,7 @@ const derogados = articulos.filter(a => a.tipo === 'derogado');
     <nav class="mb-6">
       <a href="/" class="text-primary-600 hover:underline">Inicio</a>
       <span class="text-gray-400 mx-2">/</span>
-      <a href={`/${codigoLower}`} class="text-primary-600 hover:underline">{leyInfo.codigo}</a>
+      <a href={`/${codigoLower}/`} class="text-primary-600 hover:underline">{leyInfo.codigo}</a>
       <span class="text-gray-400 mx-2">/</span>
       <span class="text-gray-600 dark:text-gray-400">Artículos</span>
     </nav>
@@ -68,7 +68,7 @@ const derogados = articulos.filter(a => a.tipo === 'derogado');
       <div class="grid gap-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
         {vigentes.map(art => (
           <a
-            href={`/${codigoLower}/articulo/${art.numero}`}
+            href={`/${codigoLower}/articulo/${art.numero}/`}
             class="px-3 py-2 text-center text-sm rounded-lg border border-gray-200 dark:border-gray-700 hover:border-primary-500 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors"
           >
             {art.numero}
@@ -86,7 +86,7 @@ const derogados = articulos.filter(a => a.tipo === 'derogado');
         <div class="grid gap-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
           {derogados.map(art => (
             <a
-              href={`/${codigoLower}/articulo/${art.numero}`}
+              href={`/${codigoLower}/articulo/${art.numero}/`}
               class="px-3 py-2 text-center text-sm rounded-lg border border-gray-200 dark:border-gray-700 text-gray-400 hover:border-gray-400 transition-colors"
             >
               {art.numero}

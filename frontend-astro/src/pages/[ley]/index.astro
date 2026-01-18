@@ -29,7 +29,7 @@ function toSlug(numero: string): string {
 function getDivisionUrl(division: any, leyCode: string, parentPath: string = ''): string {
   const slug = toSlug(division.numero);
   const fullPath = parentPath ? `${parentPath}/${slug}` : slug;
-  return `/${leyCode}/${division.tipo}/${fullPath}`;
+  return `/${leyCode}/${division.tipo}/${fullPath}/`;
 }
 ---
 
@@ -109,13 +109,13 @@ function getDivisionUrl(division: any, leyCode: string, parentPath: string = '')
       </p>
       <div class="flex gap-2 flex-wrap">
         <a
-          href={`/${codigoLower}/articulo/1o`}
+          href={`/${codigoLower}/articulo/1o/`}
           class="btn-secondary"
         >
           Artículo 1o
         </a>
         <a
-          href={`/${codigoLower}/articulos`}
+          href={`/${codigoLower}/articulos/`}
           class="btn-secondary"
         >
           Ver todos los artículos

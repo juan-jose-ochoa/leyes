@@ -220,7 +220,7 @@ export function findArticuloMatches(
       ...art,
       score: 0.5,
       matchType: 'prefix' as const,
-      url: `/${ley.toLowerCase()}/articulo/${encodeURIComponent(art.n)}`
+      url: `/${ley.toLowerCase()}/articulo/${encodeURIComponent(art.n)}/`
     }));
   }
 
@@ -254,7 +254,7 @@ export function findArticuloMatches(
         ...art,
         score,
         matchType,
-        url: `/${ley.toLowerCase()}/articulo/${encodeURIComponent(art.n)}`
+        url: `/${ley.toLowerCase()}/articulo/${encodeURIComponent(art.n)}/`
       });
     }
   }
@@ -301,5 +301,5 @@ export async function executeTypeahead(query: string): Promise<TypeaheadResult> 
  * Obtiene la URL para un artículo
  */
 export function getArticuloUrl(ley: string, numero: string): string {
-  return `/${ley.toLowerCase()}/articulo/${encodeURIComponent(numero)}`;
+  return `/${ley.toLowerCase()}/articulo/${encodeURIComponent(numero)}/`;
 }
