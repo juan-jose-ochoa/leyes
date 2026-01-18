@@ -4,6 +4,11 @@
       "ley": "liva",
       "articulo": "18-B",
       "parrafo": 1
+    },
+    "fracción II del artículo 18-B de la presente Ley": {
+      "ley": "liva",
+      "articulo": "18-B",
+      "parrafo": 4
     }
   },
   "1o-C": {
@@ -32,6 +37,11 @@
       "ley": "liva",
       "articulo": "32",
       "parrafo": 1
+    },
+    "fracción III del artículo 32 de esta Ley": {
+      "ley": "liva",
+      "articulo": "32",
+      "parrafo": 4
     },
     "artículo 21 del Código Fiscal de la Federación": {
       "ley": "cff",
@@ -71,6 +81,11 @@
       "articulo": "14-A",
       "parrafo": 1
     },
+    "fracción III del artículo 14-A del Código Fiscal de la Federación": {
+      "ley": "cff",
+      "articulo": "14-A",
+      "parrafo": 1
+    },
     "artículo 16-A del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "16-A",
@@ -80,6 +95,11 @@
       "ley": "liva",
       "articulo": "41",
       "parrafo": 1
+    },
+    "fracción VI del artículo 41 de esta Ley": {
+      "ley": "liva",
+      "articulo": "41",
+      "parrafo": 9
     }
   },
   "16": {
@@ -117,6 +137,13 @@
       "parrafo": 1
     }
   },
+  "18-F": {
+    "artículo 18-D, fracción V de esta Ley": {
+      "ley": "liva",
+      "articulo": "18-D",
+      "parrafo": 6
+    }
+  },
   "18-H": {
     "artículo 18-B de esta Ley": {
       "ley": "liva",
@@ -136,16 +163,33 @@
       "parrafo": 1
     }
   },
+  "18-I": {
+    "artículo 18-D, fracción I de esta Ley": {
+      "ley": "liva",
+      "articulo": "18-D",
+      "parrafo": 2
+    }
+  },
   "18-J": {
     "artículo 18-B de la presente Ley": {
       "ley": "liva",
       "articulo": "18-B",
       "parrafo": 1
     },
+    "fracción II del artículo 18-B de la presente Ley": {
+      "ley": "liva",
+      "articulo": "18-B",
+      "parrafo": 4
+    },
     "artículo 18-D de esta Ley": {
       "ley": "liva",
       "articulo": "18-D",
       "parrafo": 1
+    },
+    "fracción V del artículo 18-D de esta Ley": {
+      "ley": "liva",
+      "articulo": "18-D",
+      "parrafo": 6
     }
   },
   "18-K": {
@@ -227,6 +271,11 @@
       "ley": "liva",
       "articulo": "32",
       "parrafo": 1
+    },
+    "fracción III del artículo 32 de esta Ley": {
+      "ley": "liva",
+      "articulo": "32",
+      "parrafo": 4
     }
   },
   "43": {

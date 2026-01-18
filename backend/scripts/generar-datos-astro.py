@@ -67,15 +67,9 @@ NOMBRE_A_CODIGO = {
     'ley federal de derechos del contribuyente': 'LFDC',
 }
 
-# Regex para detectar referencias a artículos
-# Captura: artículo(s) NUM (fracción ROMAN)? (inciso LETRA)? de LEY
-PATRON_REFERENCIA = re.compile(
-    r'artículos?\s+'
-    r'(\d+[o]?(?:-[A-Z]+)?)'                           # Número de artículo (grupo 1)
-    r'(?:\s*,?\s*(?:fraccione?s?)\s+([IVXLCDM]+))?'   # Fracción opcional (grupo 2)
-    r'(?:\s*,?\s*(?:inciso)\s+([a-z])\))?'            # Inciso opcional (grupo 3)
-    r'\s+(?:de\s+|del\s+)'
-    r'(esta\s+ley|la\s+presente\s+ley|la\s+misma|'    # Ley destino (grupo 4)
+# Alternativas de ley para usar en ambos patrones
+_LEY_ALTERNATIVAS = (
+    r'esta\s+ley|la\s+presente\s+ley|la\s+misma|'
     r'este\s+código|el\s+presente\s+código|'
     r'esta\s+constitución|la\s+constitución|'
     r'código\s+fiscal(?:\s+de\s+la\s+federación)?|cff|'
@@ -88,7 +82,32 @@ PATRON_REFERENCIA = re.compile(
     r'ley\s+del\s+infonavit|'
     r'ley\s+del\s+issste|'
     r'ley\s+de\s+ingresos(?:\s+de\s+la\s+federación)?|'
-    r'ley\s+federal\s+de\s+derechos\s+del\s+contribuyente)',
+    r'ley\s+federal\s+de\s+derechos\s+del\s+contribuyente'
+)
+
+# Regex para detectar referencias a artículos (patrón estándar)
+# Captura: artículo(s) NUM (fracción ROMAN)? (inciso LETRA)? de LEY
+PATRON_REFERENCIA = re.compile(
+    r'artículos?\s+'
+    r'(\d+[o]?(?:-[A-Z]+)?)'                           # Número de artículo (grupo 1)
+    r'(?:\s*,?\s*(?:fracci[oó]ne?s?)\s+([IVXLCDM]+))?'  # Fracción opcional (grupo 2)
+    r'(?:\s*,?\s*(?:inciso)\s+([a-z])\))?'            # Inciso opcional (grupo 3)
+    r'\s+(?:de\s+|del\s+)'
+    r'(' + _LEY_ALTERNATIVAS + r')',                   # Ley destino (grupo 4)
+    re.IGNORECASE
+)
+
+# Regex para detectar referencias invertidas
+# Captura: (inciso LETRA de la)? fracción ROMAN del artículo NUM (apartado LETRA)? de LEY
+PATRON_REFERENCIA_INVERTIDO = re.compile(
+    r'(?:inciso\s+([a-z])\)\s+de\s+la\s+)?'           # Inciso opcional (grupo 1)
+    r'fracci[oó]ne?s?\s+([IVXLCDM]+)'                 # Fracción (grupo 2)
+    r'\s+del\s+'
+    r'artículos?\s+'
+    r'(\d+[o]?(?:-[A-Z]+)?)'                          # Número de artículo (grupo 3)
+    r'(?:,?\s*apartado\s+([A-Z]))?'                   # Apartado opcional (grupo 4)
+    r'\s+(?:de\s+|del?\s+)'
+    r'(' + _LEY_ALTERNATIVAS + r')',                  # Ley destino (grupo 5)
     re.IGNORECASE
 )
 
@@ -217,10 +236,18 @@ def resolver_referencia(
 
     if len(fracciones) == 1:
         # Sin ambigüedad
+        fraccion_num = fracciones[0]["numero"]
         if not inciso:
-            return fracciones[0]["numero"]
-        # TODO: resolver inciso dentro de fracción
-        return fracciones[0]["numero"]
+            return fraccion_num
+        # Buscar inciso que sea hijo de esta fracción
+        parrafos = art_data.get("parrafos", [])
+        for p in parrafos:
+            if (p.get("tipo") == "inciso" and
+                p.get("identificador", "").lower() == inciso.lower() and
+                p.get("padre_numero") == fraccion_num):
+                return p["numero"]
+        # Inciso no encontrado, retornar fracción
+        return fraccion_num
 
     # Ambiguo: múltiples fracciones con mismo identificador
     # Retornamos la primera (arbitrario pero consistente)
@@ -333,6 +360,10 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
     """
     Extrae todas las referencias de una ley y genera mapa para renderizado.
 
+    Usa dos patrones:
+    - Estándar: artículo N fracción X de LEY
+    - Invertido: fracción X del artículo N de LEY
+
     Estructura de salida:
     {
         "123": {
@@ -353,7 +384,7 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
         for p in art.get("parrafos", []):
             texto = p.get("contenido", "")
 
-            # Buscar todas las referencias en el párrafo
+            # Buscar referencias con patrón estándar
             for match in PATRON_REFERENCIA.finditer(texto):
                 texto_original = match.group(0)
                 articulo_ref = match.group(1)
@@ -361,31 +392,72 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
                 inciso = match.group(3)
                 ley_texto = match.group(4).lower().strip()
 
-                # Resolver código de ley
-                ley_destino = NOMBRE_A_CODIGO.get(ley_texto)
-                if not ley_destino:
-                    continue
-
-                # Si es referencia interna, usar ley actual
-                if ley_destino == '_MISMA_':
-                    ley_destino = ley_codigo
-
-                # Resolver a número de párrafo
-                parrafo_num = resolver_referencia(
-                    ley_destino, articulo_ref, fraccion, inciso, indice
+                ref = _procesar_match_referencia(
+                    texto_original, articulo_ref, fraccion, inciso, ley_texto,
+                    ley_codigo, indice
                 )
+                if ref:
+                    referencias_articulo[texto_original] = ref
 
-                if parrafo_num is not None:
-                    referencias_articulo[texto_original] = {
-                        "ley": ley_destino.lower(),
-                        "articulo": articulo_ref,
-                        "parrafo": parrafo_num
-                    }
+            # Buscar referencias con patrón invertido
+            for match in PATRON_REFERENCIA_INVERTIDO.finditer(texto):
+                texto_original = match.group(0)
+                # Grupos invertidos: inciso(1), fraccion(2), articulo(3), apartado(4), ley(5)
+                inciso = match.group(1)
+                fraccion = match.group(2)
+                articulo_ref = match.group(3)
+                # apartado = match.group(4)  # Para uso futuro
+                ley_texto = match.group(5).lower().strip()
+
+                ref = _procesar_match_referencia(
+                    texto_original, articulo_ref, fraccion, inciso, ley_texto,
+                    ley_codigo, indice
+                )
+                if ref:
+                    referencias_articulo[texto_original] = ref
 
         if referencias_articulo:
             referencias_ley[art_num] = referencias_articulo
 
     return referencias_ley
+
+
+def _procesar_match_referencia(
+    texto_original: str,
+    articulo_ref: str,
+    fraccion: str | None,
+    inciso: str | None,
+    ley_texto: str,
+    ley_codigo: str,
+    indice: dict
+) -> dict | None:
+    """
+    Procesa un match de referencia y retorna el diccionario de referencia.
+
+    Helper compartido entre patrón estándar e invertido.
+    """
+    # Resolver código de ley
+    ley_destino = NOMBRE_A_CODIGO.get(ley_texto)
+    if not ley_destino:
+        return None
+
+    # Si es referencia interna, usar ley actual
+    if ley_destino == '_MISMA_':
+        ley_destino = ley_codigo
+
+    # Resolver a número de párrafo
+    parrafo_num = resolver_referencia(
+        ley_destino, articulo_ref, fraccion, inciso, indice
+    )
+
+    if parrafo_num is not None:
+        return {
+            "ley": ley_destino.lower(),
+            "articulo": articulo_ref,
+            "parrafo": parrafo_num
+        }
+
+    return None
 
 
 def construir_indice_estructura(estructura: dict) -> dict:

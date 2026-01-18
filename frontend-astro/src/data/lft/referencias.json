@@ -39,6 +39,18 @@
       "ley": "cpeum",
       "articulo": "5o",
       "parrafo": 1
+    },
+    "artículo 31, fracción III de la misma": {
+      "ley": "lft",
+      "articulo": "31",
+      "parrafo": 1
+    }
+  },
+  "42 Bis": {
+    "artículo 429, fracción IV de esta Ley": {
+      "ley": "lft",
+      "articulo": "429",
+      "parrafo": 5
     }
   },
   "48 Bis": {
@@ -79,6 +91,11 @@
       "ley": "lft",
       "articulo": "836-D",
       "parrafo": 1
+    },
+    "fracción I del artículo 836-D de esta Ley": {
+      "ley": "lft",
+      "articulo": "836-D",
+      "parrafo": 2
     }
   },
   "142": {
@@ -95,11 +112,23 @@
       "parrafo": 1
     }
   },
+  "168": {
+    "artículo 429, fracción IV de esta Ley": {
+      "ley": "lft",
+      "articulo": "429",
+      "parrafo": 5
+    }
+  },
   "175": {
     "artículo 176 de esta Ley": {
       "ley": "lft",
       "articulo": "176",
       "parrafo": 1
+    },
+    "artículo 429, fracción IV de esta Ley": {
+      "ley": "lft",
+      "articulo": "429",
+      "parrafo": 5
     }
   },
   "291-B": {
@@ -227,6 +256,11 @@
       "ley": "lft",
       "articulo": "371",
       "parrafo": 1
+    },
+    "fracción IX del artículo 371 de esta Ley": {
+      "ley": "lft",
+      "articulo": "371",
+      "parrafo": 18
     }
   },
   "373": {
@@ -260,6 +294,11 @@
       "ley": "lft",
       "articulo": "927",
       "parrafo": 1
+    },
+    "fracción V del artículo 927 de esta Ley": {
+      "ley": "lft",
+      "articulo": "927",
+      "parrafo": 6
     }
   },
   "451": {
@@ -288,6 +327,11 @@
       "ley": "lft",
       "articulo": "684-B",
       "parrafo": 1
+    },
+    "artículo 521, fracción III de esta Ley": {
+      "ley": "lft",
+      "articulo": "521",
+      "parrafo": 4
     }
   },
   "521": {
@@ -302,6 +346,11 @@
       "ley": "lft",
       "articulo": "562",
       "parrafo": 1
+    },
+    "fracción V del artículo 562 de esta Ley": {
+      "ley": "lft",
+      "articulo": "562",
+      "parrafo": 12
     }
   },
   "641-A": {
@@ -400,6 +449,11 @@
       "ley": "lft",
       "articulo": "747",
       "parrafo": 1
+    },
+    "fracción IV del artículo 747 de esta Ley": {
+      "ley": "lft",
+      "articulo": "747",
+      "parrafo": 5
     }
   },
   "774": {
@@ -414,6 +468,11 @@
       "ley": "lft",
       "articulo": "742",
       "parrafo": 1
+    },
+    "fracción VII del artículo 742 de esta Ley": {
+      "ley": "lft",
+      "articulo": "742",
+      "parrafo": 8
     },
     "artículo 815 de esta Ley": {
       "ley": "lft",
@@ -551,10 +610,20 @@
     }
   },
   "920": {
+    "artículo 450, fracción II de esta Ley": {
+      "ley": "lft",
+      "articulo": "450",
+      "parrafo": 3
+    },
     "artículo 450 de esta Ley": {
       "ley": "lft",
       "articulo": "450",
       "parrafo": 1
+    },
+    "fracción III del artículo 450 de esta Ley": {
+      "ley": "lft",
+      "articulo": "450",
+      "parrafo": 4
     }
   },
   "921 Bis": {
@@ -562,6 +631,18 @@
       "ley": "lft",
       "articulo": "920",
       "parrafo": 1
+    },
+    "fracción II del artículo 920 de esta Ley": {
+      "ley": "lft",
+      "articulo": "920",
+      "parrafo": 3
+    }
+  },
+  "927": {
+    "artículo 920 fracción II de la presente Ley": {
+      "ley": "lft",
+      "articulo": "920",
+      "parrafo": 3
     }
   },
   "929": {
@@ -577,6 +658,11 @@
       "articulo": "459",
       "parrafo": 1
     },
+    "fracción I del artículo 459 de esta Ley": {
+      "ley": "lft",
+      "articulo": "459",
+      "parrafo": 2
+    },
     "artículo 931 de esta Ley": {
       "ley": "lft",
       "articulo": "931",
@@ -588,6 +674,16 @@
       "ley": "lft",
       "articulo": "930",
       "parrafo": 1
+    },
+    "fracción I del artículo 930 de esta Ley": {
+      "ley": "lft",
+      "articulo": "930",
+      "parrafo": 2
+    },
+    "fracción IV del artículo 930 de esta Ley": {
+      "ley": "lft",
+      "articulo": "930",
+      "parrafo": 5
     }
   },
   "933": {
@@ -595,6 +691,20 @@
       "ley": "lft",
       "articulo": "930",
       "parrafo": 1
+    }
+  },
+  "937": {
+    "artículo 450 fracción VI de esta Ley": {
+      "ley": "lft",
+      "articulo": "450",
+      "parrafo": 7
+    }
+  },
+  "938": {
+    "artículo 920 fracción II de esta Ley": {
+      "ley": "lft",
+      "articulo": "920",
+      "parrafo": 3
     }
   },
   "940": {
@@ -642,6 +752,13 @@
       "ley": "lft",
       "articulo": "33",
       "parrafo": 1
+    }
+  },
+  "989": {
+    "artículo 132 fracción VII de esta Ley": {
+      "ley": "lft",
+      "articulo": "132",
+      "parrafo": 8
     }
   },
   "991 Bis": {

@@ -45,6 +45,21 @@
     }
   },
   "2.1.12": {
+    "artículo 82, fracción X del CFF": {
+      "ley": "cff",
+      "articulo": "82",
+      "parrafo": 24
+    },
+    "artículo 82, fracción XXV del CFF": {
+      "ley": "cff",
+      "articulo": "82",
+      "parrafo": 39
+    },
+    "artículo 82, fracción XLI del CFF": {
+      "ley": "cff",
+      "articulo": "82",
+      "parrafo": 64
+    },
     "artículo 123 de la Constitución": {
       "ley": "cpeum",
       "articulo": "123",
@@ -111,10 +126,20 @@
       "articulo": "32-D",
       "parrafo": 1
     },
+    "artículo 32-D, fracción VIII del CFF": {
+      "ley": "cff",
+      "articulo": "32-D",
+      "parrafo": 9
+    },
     "artículo 141 del CFF": {
       "ley": "cff",
       "articulo": "141",
       "parrafo": 1
+    },
+    "artículo 66-A, fracción IV del CFF": {
+      "ley": "cff",
+      "articulo": "66-A",
+      "parrafo": 10
     },
     "artículo 65 del CFF": {
       "ley": "cff",
@@ -156,6 +181,11 @@
     }
   },
   "2.2.2": {
+    "artículo 17-J, fracción III del CFF": {
+      "ley": "cff",
+      "articulo": "17-J",
+      "parrafo": 4
+    },
     "artículo 17-H del CFF": {
       "ley": "cff",
       "articulo": "17-H",
@@ -228,6 +258,13 @@
       "parrafo": 1
     }
   },
+  "2.2.17": {
+    "artículo 17-H, fracción X del CFF": {
+      "ley": "cff",
+      "articulo": "17-H",
+      "parrafo": 11
+    }
+  },
   "2.2.18": {
     "artículos 17-K del CFF": {
       "ley": "cff",
@@ -245,6 +282,13 @@
       "ley": "cff",
       "articulo": "134",
       "parrafo": 1
+    }
+  },
+  "2.3.2": {
+    "artículo 17-H, fracción X del CFF": {
+      "ley": "cff",
+      "articulo": "17-H",
+      "parrafo": 11
     }
   },
   "2.3.3": {
@@ -337,6 +381,11 @@
       "ley": "cff",
       "articulo": "17-H",
       "parrafo": 1
+    },
+    "fracción I del artículo 17-H del CFF": {
+      "ley": "cff",
+      "articulo": "17-H",
+      "parrafo": 2
     }
   },
   "2.5.11": {
@@ -351,6 +400,11 @@
       "ley": "cff",
       "articulo": "29-A",
       "parrafo": 1
+    },
+    "artículo 29-A, fracción III del CFF": {
+      "ley": "cff",
+      "articulo": "29-A",
+      "parrafo": 4
     }
   },
   "2.7.1.11": {
@@ -372,6 +426,20 @@
       "ley": "cff",
       "articulo": "29-A",
       "parrafo": 1
+    }
+  },
+  "2.7.1.16": {
+    "artículo 29-A, fracción IV del CFF": {
+      "ley": "cff",
+      "articulo": "29-A",
+      "parrafo": 5
+    }
+  },
+  "2.7.1.31": {
+    "artículo 29-A, fracción VIII del CFF": {
+      "ley": "cff",
+      "articulo": "29-A",
+      "parrafo": 30
     }
   },
   "2.7.2.1": {
@@ -447,11 +515,35 @@
       "parrafo": 1
     }
   },
+  "2.8.1.4": {
+    "artículo 28, fracción III del CFF": {
+      "ley": "cff",
+      "articulo": "28",
+      "parrafo": 9
+    }
+  },
   "2.8.1.5": {
+    "artículos 28, fracción III del CFF": {
+      "ley": "cff",
+      "articulo": "28",
+      "parrafo": 9
+    },
     "artículo 15-C del CFF": {
       "ley": "cff",
       "articulo": "15-C",
       "parrafo": 1
+    }
+  },
+  "2.8.1.6": {
+    "artículo 28, fracción IV del CFF": {
+      "ley": "cff",
+      "articulo": "28",
+      "parrafo": 10
+    },
+    "artículo 16-C, fracción II del CFF": {
+      "ley": "cff",
+      "articulo": "16-C",
+      "parrafo": 3
     }
   },
   "2.8.1.8": {
@@ -590,7 +682,24 @@
       "parrafo": 1
     }
   },
+  "2.9.6": {
+    "artículo 33, fracción II del CFF": {
+      "ley": "cff",
+      "articulo": "33",
+      "parrafo": 16
+    },
+    "artículo 33, fracción II, inciso a) del CFF": {
+      "ley": "cff",
+      "articulo": "33",
+      "parrafo": 18
+    }
+  },
   "2.9.7": {
+    "artículo 59, fracción III del CFF": {
+      "ley": "cff",
+      "articulo": "59",
+      "parrafo": 4
+    },
     "artículo 58 del CFF": {
       "ley": "cff",
       "articulo": "58",
@@ -605,6 +714,11 @@
     }
   },
   "2.9.11": {
+    "artículo 41, fracción II del CFF": {
+      "ley": "cff",
+      "articulo": "41",
+      "parrafo": 3
+    },
     "artículo 33-A del CFF": {
       "ley": "cff",
       "articulo": "33-A",
@@ -649,7 +763,33 @@
       "parrafo": 1
     }
   },
+  "2.10.4": {
+    "artículo 52, fracción I, inciso a) del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 3
+    }
+  },
+  "2.10.5": {
+    "artículos 52, fracción I, inciso a) del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 3
+    }
+  },
+  "2.10.6": {
+    "artículo 52, fracción IV del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 14
+    }
+  },
   "2.10.7": {
+    "artículo 52, fracción IV del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 14
+    },
     "artículo 32-A del CFF": {
       "ley": "cff",
       "articulo": "32-A",
@@ -661,6 +801,21 @@
       "ley": "cff",
       "articulo": "52",
       "parrafo": 1
+    },
+    "artículo 52, fracción I del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 2
+    },
+    "artículo 52, fracción I, inciso c) del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 6
+    },
+    "artículo 52, fracción I, inciso a) del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 3
     }
   },
   "2.10.14": {
@@ -670,11 +825,37 @@
       "parrafo": 1
     }
   },
+  "2.10.15": {
+    "artículos 52, fracción III del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 11
+    }
+  },
+  "2.10.16": {
+    "artículo 52, fracción IV del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 14
+    }
+  },
   "2.10.18": {
     "artículo 52-A del CFF": {
       "ley": "cff",
       "articulo": "52-A",
       "parrafo": 1
+    },
+    "fracción I del artículo 52-A del CFF": {
+      "ley": "cff",
+      "articulo": "52-A",
+      "parrafo": 2
+    }
+  },
+  "2.10.19": {
+    "artículo 52, fracción I del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 2
     }
   },
   "2.10.24": {
@@ -696,6 +877,41 @@
       "ley": "cff",
       "articulo": "134",
       "parrafo": 1
+    }
+  },
+  "2.12.1": {
+    "artículo 32-B, fracción IV del CFF": {
+      "ley": "cff",
+      "articulo": "32-B",
+      "parrafo": 8
+    }
+  },
+  "2.12.4": {
+    "artículo 141, fracción III del CFF": {
+      "ley": "cff",
+      "articulo": "141",
+      "parrafo": 4
+    }
+  },
+  "2.12.5": {
+    "artículo 141, fracción I del CFF": {
+      "ley": "cff",
+      "articulo": "141",
+      "parrafo": 2
+    }
+  },
+  "2.12.6": {
+    "artículo 141, fracción II del CFF": {
+      "ley": "cff",
+      "articulo": "141",
+      "parrafo": 3
+    }
+  },
+  "2.12.7": {
+    "artículos 141, fracción II del CFF": {
+      "ley": "cff",
+      "articulo": "141",
+      "parrafo": 3
     }
   },
   "2.12.8": {
@@ -795,13 +1011,28 @@
       "ley": "cff",
       "articulo": "70-A",
       "parrafo": 1
+    },
+    "artículo 66-A, fracción IV del CFF": {
+      "ley": "cff",
+      "articulo": "66-A",
+      "parrafo": 10
     }
   },
   "2.14.2": {
+    "artículo 66-A, fracción VI, inciso a) del CFF": {
+      "ley": "cff",
+      "articulo": "66-A",
+      "parrafo": 28
+    },
     "artículo 70-A del CFF": {
       "ley": "cff",
       "articulo": "70-A",
       "parrafo": 1
+    },
+    "artículo 66-A, fracción IV del CFF": {
+      "ley": "cff",
+      "articulo": "66-A",
+      "parrafo": 10
     }
   },
   "2.14.3": {
@@ -810,10 +1041,25 @@
       "articulo": "70-A",
       "parrafo": 1
     },
+    "artículo 70-A, fracción IV del CFF": {
+      "ley": "cff",
+      "articulo": "70-A",
+      "parrafo": 5
+    },
     "artículo 75 del CFF": {
       "ley": "cff",
       "articulo": "75",
       "parrafo": 1
+    },
+    "artículo 70-A, fracción V del CFF": {
+      "ley": "cff",
+      "articulo": "70-A",
+      "parrafo": 6
+    },
+    "artículo 70-A, fracción II del CFF": {
+      "ley": "cff",
+      "articulo": "70-A",
+      "parrafo": 3
     }
   },
   "2.14.4": {
@@ -876,6 +1122,16 @@
       "ley": "cff",
       "articulo": "134",
       "parrafo": 1
+    },
+    "artículo 66-A, fracción IV del CFF": {
+      "ley": "cff",
+      "articulo": "66-A",
+      "parrafo": 10
+    },
+    "artículo 66-A, fracción VI, inciso a) del CFF": {
+      "ley": "cff",
+      "articulo": "66-A",
+      "parrafo": 28
     }
   },
   "2.14.10": {
@@ -904,6 +1160,11 @@
       "ley": "cff",
       "articulo": "74",
       "parrafo": 1
+    },
+    "artículo 82, fracción I, inciso a) del CFF": {
+      "ley": "cff",
+      "articulo": "82",
+      "parrafo": 3
     }
   },
   "2.14.15": {
@@ -1042,6 +1303,20 @@
       "parrafo": 1
     }
   },
+  "2.19.10": {
+    "artículo 199, fracción VI, inciso a) del CFF": {
+      "ley": "cff",
+      "articulo": "199",
+      "parrafo": 8
+    }
+  },
+  "2.19.11": {
+    "artículo 199, fracción VI, inciso b) del CFF": {
+      "ley": "cff",
+      "articulo": "199",
+      "parrafo": 9
+    }
+  },
   "2.19.25": {
     "artículo 199 del CFF": {
       "ley": "cff",
@@ -1054,6 +1329,13 @@
       "ley": "cff",
       "articulo": "199",
       "parrafo": 1
+    }
+  },
+  "3.1.7": {
+    "artículo 16-C, fracción I del CFF": {
+      "ley": "cff",
+      "articulo": "16-C",
+      "parrafo": 2
     }
   },
   "3.1.14": {
@@ -1090,6 +1372,11 @@
       "articulo": "16-C",
       "parrafo": 1
     },
+    "fracción II del artículo 16-C del CFF": {
+      "ley": "cff",
+      "articulo": "16-C",
+      "parrafo": 3
+    },
     "artículo 14-A del CFF": {
       "ley": "cff",
       "articulo": "14-A",
@@ -1101,6 +1388,13 @@
       "ley": "cff",
       "articulo": "14-A",
       "parrafo": 1
+    }
+  },
+  "3.2.22": {
+    "artículo 16-C, fracción I del CFF": {
+      "ley": "cff",
+      "articulo": "16-C",
+      "parrafo": 2
     }
   },
   "3.3.1.2": {
@@ -1143,6 +1437,13 @@
       "parrafo": 1
     }
   },
+  "3.9.5": {
+    "artículo 26, fracción VIII del CFF": {
+      "ley": "cff",
+      "articulo": "26",
+      "parrafo": 20
+    }
+  },
   "3.9.12": {
     "artículo 34-A del CFF": {
       "ley": "cff",
@@ -1181,6 +1482,13 @@
       "parrafo": 1
     }
   },
+  "3.10.1.6": {
+    "artículos 18-A, fracción V del CFF": {
+      "ley": "cff",
+      "articulo": "18-A",
+      "parrafo": 6
+    }
+  },
   "3.10.1.9": {
     "artículo 30 del CFF": {
       "ley": "cff",
@@ -1202,11 +1510,39 @@
       "parrafo": 1
     }
   },
+  "3.10.1.24": {
+    "artículo 29-A, fracción V, inciso b) del CFF": {
+      "ley": "cff",
+      "articulo": "29-A",
+      "parrafo": 11
+    }
+  },
   "3.10.2.5": {
     "artículos 16-A del CFF": {
       "ley": "cff",
       "articulo": "16-A",
       "parrafo": 1
+    }
+  },
+  "3.11.3": {
+    "artículo 26, fracción I del CFF": {
+      "ley": "cff",
+      "articulo": "26",
+      "parrafo": 2
+    }
+  },
+  "3.11.7": {
+    "artículo 16-C, fracción I del CFF": {
+      "ley": "cff",
+      "articulo": "16-C",
+      "parrafo": 2
+    }
+  },
+  "3.13.17": {
+    "artículo 28, fracción IV del CFF": {
+      "ley": "cff",
+      "articulo": "28",
+      "parrafo": 10
     }
   },
   "3.13.20": {
@@ -1221,6 +1557,13 @@
       "ley": "cff",
       "articulo": "27",
       "parrafo": 1
+    }
+  },
+  "3.15.3": {
+    "artículo 26, fracción I del CFF": {
+      "ley": "cff",
+      "articulo": "26",
+      "parrafo": 2
     }
   },
   "3.15.10": {
@@ -1251,6 +1594,27 @@
       "parrafo": 1
     }
   },
+  "3.17.11": {
+    "artículos 81, fracción I del CFF": {
+      "ley": "cff",
+      "articulo": "81",
+      "parrafo": 2
+    }
+  },
+  "3.18.6": {
+    "artículo 16-C, fracción II del CFF": {
+      "ley": "cff",
+      "articulo": "16-C",
+      "parrafo": 3
+    }
+  },
+  "3.18.9": {
+    "artículo 16-C, fracción II del CFF": {
+      "ley": "cff",
+      "articulo": "16-C",
+      "parrafo": 3
+    }
+  },
   "3.18.16": {
     "artículo 16-A del CFF": {
       "ley": "cff",
@@ -1263,11 +1627,25 @@
       "parrafo": 1
     }
   },
+  "3.18.34": {
+    "artículo 16-C, fracción II del CFF": {
+      "ley": "cff",
+      "articulo": "16-C",
+      "parrafo": 3
+    }
+  },
   "3.19.5": {
     "artículo 73 del CFF": {
       "ley": "cff",
       "articulo": "73",
       "parrafo": 1
+    }
+  },
+  "3.21.2.1": {
+    "artículo 26, fracción VIII del CFF": {
+      "ley": "cff",
+      "articulo": "26",
+      "parrafo": 20
     }
   },
   "3.21.2.5": {
@@ -1312,6 +1690,13 @@
       "parrafo": 1
     }
   },
+  "5.2.41": {
+    "artículos 86-A, fracción IV del CFF": {
+      "ley": "cff",
+      "articulo": "86-A",
+      "parrafo": 5
+    }
+  },
   "5.2.43": {
     "artículo 86-A del CFF": {
       "ley": "cff",
@@ -1319,11 +1704,25 @@
       "parrafo": 1
     }
   },
+  "5.2.44": {
+    "artículo 26, fracción VIII del CFF": {
+      "ley": "cff",
+      "articulo": "26",
+      "parrafo": 20
+    }
+  },
   "5.2.45": {
     "artículo 86-A del CFF": {
       "ley": "cff",
       "articulo": "86-A",
       "parrafo": 1
+    }
+  },
+  "5.2.46": {
+    "artículo 86-B, fracción VI del CFF": {
+      "ley": "cff",
+      "articulo": "86-B",
+      "parrafo": 7
     }
   },
   "5.2.47": {
@@ -1338,6 +1737,11 @@
       "ley": "cff",
       "articulo": "86-A",
       "parrafo": 1
+    },
+    "artículo 113, fracción II del CFF": {
+      "ley": "cff",
+      "articulo": "113",
+      "parrafo": 3
     }
   },
   "5.3.2": {
@@ -1355,6 +1759,11 @@
       "ley": "cff",
       "articulo": "29-A",
       "parrafo": 1
+    },
+    "artículo 29-A, fracción V, inciso e) del CFF": {
+      "ley": "cff",
+      "articulo": "29-A",
+      "parrafo": 14
     }
   },
   "9.1.6": {
@@ -1437,6 +1846,11 @@
       "ley": "cff",
       "articulo": "16-C",
       "parrafo": 1
+    },
+    "fracción I del artículo 16-C del CFF": {
+      "ley": "cff",
+      "articulo": "16-C",
+      "parrafo": 2
     }
   },
   "11.9.8": {
@@ -1550,6 +1964,11 @@
     }
   },
   "12.3.18": {
+    "artículo 17-K, fracción I del CFF": {
+      "ley": "cff",
+      "articulo": "17-K",
+      "parrafo": 2
+    },
     "artículo 134 del CFF": {
       "ley": "cff",
       "articulo": "134",
