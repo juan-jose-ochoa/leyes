@@ -314,6 +314,7 @@ def generar_articulos_json(contenido: dict, ley_config: dict) -> list:
 
         articulo_astro = {
             "numero": art.get("numero"),
+            "nombre": art.get("nombre"),  # Título/nombre del artículo (para RMF)
             "tipo": art.get("tipo", "articulo"),
             "orden": art.get("orden"),
             "pagina": art.get("pagina") or primer_parrafo.get("pagina", 1),

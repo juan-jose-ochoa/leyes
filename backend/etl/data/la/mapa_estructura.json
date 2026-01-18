@@ -125,7 +125,7 @@
       }
     },
     "TERCERO": {
-      "nombre": "Contribuciones, cuotas compensatorias y demás regulaciones y restricciones no",
+      "nombre": "Contribuciones, cuotas compensatorias y demás regulaciones y restricciones no arancelarias al comercio exterior",
       "pagina": 34,
       "capitulos": {
         "I": {
@@ -261,7 +261,7 @@
           "pagina": 70,
           "secciones": {
             "PRIMERA": {
-              "nombre": "Importaciones temporales",
+              "nombre": "Importaciones temporales I Disposiciones generales",
               "pagina": 70,
               "articulos": [
                 "104",
@@ -276,7 +276,7 @@
               ]
             },
             "SEGUNDA": {
-              "nombre": "Exportaciones temporales",
+              "nombre": "Exportaciones temporales I Disposiciones generales",
               "pagina": 78,
               "articulos": [
                 "113",
@@ -415,43 +415,61 @@
       "capitulos": {
         "UNICO": {
           "nombre": null,
-          "pagina": 114,
-          "articulos": [
-            "159",
-            "159-bis",
-            "160",
-            "161",
-            "162",
-            "163",
-            "163-A",
-            "164",
-            "165",
-            "166",
-            "167",
-            "167-A",
-            "167-B",
-            "167-C",
-            "167-D",
-            "167-E",
-            "167-F",
-            "167-G",
-            "167-H",
-            "167-I",
-            "167-J",
-            "167-K",
-            "167-L",
-            "167-M",
-            "167-N",
-            "168",
-            "169",
-            "170",
-            "171",
-            "172",
-            "173",
-            "174",
-            "175",
-            "175-A"
-          ]
+          "pagina": 115,
+          "secciones": {
+            "PRIMERA": {
+              "nombre": "Agentes aduanales y agencias aduanales",
+              "pagina": 115,
+              "articulos": [
+                "159",
+                "159-bis",
+                "160",
+                "161",
+                "162",
+                "163",
+                "163-A",
+                "164",
+                "165",
+                "166",
+                "167",
+                "167-A",
+                "167-B",
+                "167-C",
+                "167-D",
+                "167-E",
+                "167-F",
+                "167-G",
+                "167-H",
+                "167-I",
+                "167-J",
+                "167-K",
+                "167-L",
+                "167-M",
+                "167-N"
+              ]
+            },
+            "SEGUNDA": {
+              "nombre": "Apoderados aduanales",
+              "pagina": 137,
+              "articulos": [
+                "168",
+                "169",
+                "170",
+                "171",
+                "172",
+                "173"
+              ]
+            },
+            "TERCERA": {
+              "nombre": "Dictaminadores Aduaneros",
+              "pagina": 138,
+              "articulos": [
+                "174",
+                "175",
+                "175-A"
+              ]
+            }
+          }
         }
       }
     },
@@ -508,7 +526,7 @@
       "capitulos": {
         "UNICO": {
           "nombre": null,
-          "pagina": 159,
+          "pagina": 160,
           "articulos": [
             "203"
           ]
@@ -519,7 +537,7 @@
   "estadisticas": {
     "titulos": 9,
     "capitulos": 20,
-    "secciones": 8,
+    "secciones": 11,
     "articulos_vigentes": 277,
     "articulos_derogados": 0,
     "total": 277

@@ -56,7 +56,7 @@
           ]
         },
         "II": {
-          "nombre": "DE LA CLASIFICACIÓN DE LAS EMPRESAS Y DETERMINACIÓN DE LA PRIMA EN EL",
+          "nombre": "DE LA CLASIFICACIÓN DE LAS EMPRESAS Y DETERMINACIÓN DE LA PRIMA EN EL SEGURO DE RIESGOS DE TRABAJO",
           "pagina": 7,
           "articulos": [
             "18",
@@ -182,18 +182,12 @@
           ]
         },
         "II": {
-          "nombre": "DE LOS TRABAJADORES AL SERVICIO DE LAS DEPENDENCIAS Y ENTIDADES DE LAS",
+          "nombre": "DE LOS TRABAJADORES AL SERVICIO DE LAS DEPENDENCIAS Y ENTIDADES DE LAS ADMINISTRACIONES PÚBLICAS DE LA FEDERACIÓN, ENTIDADES FEDERATIVAS Y MUNICIPIOS QUE ESTÉN EXCLUIDOS O NO COMPRENDIDOS EN OTRAS LEYES O DECRETOS COMO SUJETOS DE SEGURIDAD SOCIAL",
           "pagina": 27,
           "articulos": [
             "90",
             "91",
-            "92"
-          ]
-        },
-        "III": {
-          "nombre": "DE LOS EJIDATARIOS, COMUNEROS, COLONOS Y PEQUEÑOS PROPIETARIOS",
-          "pagina": 27,
-          "articulos": [
+            "92",
             "93",
             "94"
           ]
@@ -434,7 +428,7 @@
       }
     },
     "OCTAVO": {
-      "nombre": "REGLAMENTO DE LA LEY DEL SEGURO SOCIAL EN MATERIA DE AFILIACIÓN, CLASIFICACIÓN DE EMPRESAS, RECAUDACIÓN Y",
+      "nombre": "DEL CATÁLOGO DE ACTIVIDADES PARA LA CLASIFICACIÓN DE LAS EMPRESAS EN EL SEGURO DE RIESGOS DE TRABAJO",
       "pagina": 52,
       "capitulos": {
         "ÚNICO": {
@@ -449,7 +443,7 @@
   },
   "estadisticas": {
     "titulos": 8,
-    "capitulos": 31,
+    "capitulos": 30,
     "secciones": 0,
     "articulos_vigentes": 196,
     "articulos_derogados": 0,

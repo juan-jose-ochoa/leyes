@@ -391,7 +391,7 @@ LEYES = {
 
             # Divisiones estructurales (Title Case: "Título Primero", "Capítulo I")
             "titulo": r'^Título\s+(Primero|Segundo|Tercero|Cuarto|Quinto|Sexto|Séptimo|Octavo|Noveno|Décimo)\s*$',
-            "capitulo": r'^Capítulo\s+([IVX]+|Único)\s*$',
+            "capitulo": r'^Capítulo\s+([IVX]+|[UÚ]nico)\s*$',
             "seccion": r'^Sección\s+(Primera|Segunda|Tercera|Cuarta|Quinta|Sexta|Séptima|Octava|Novena|Décima)\s*$',
 
             # Fracciones dentro de artículos
@@ -506,6 +506,9 @@ LEYES = {
 
         # Tipo de contenido principal
         "tipo_contenido": "articulo",
+
+        # LFT tiene capítulos no centrados en el PDF
+        "requiere_centrado": False,
 
         # Excepciones: artículos con extractor especial
         "excepciones": {

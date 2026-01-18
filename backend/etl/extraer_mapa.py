@@ -173,9 +173,56 @@ def marcar_derogados(doc, articulos: list[ArticuloRef]) -> None:
                     break
 
 
+def _calcular_centrado_bold(line: dict, page_width: float) -> tuple[bool, bool, str]:
+    """
+    Calcula si una línea está centrada y es bold.
+
+    Args:
+        line: Diccionario de línea de PyMuPDF (de get_text('dict'))
+        page_width: Ancho de la página
+
+    Returns:
+        (centrado, all_bold, texto)
+    """
+    TOLERANCIA_CENTRADO = 5.0
+    THRESHOLD_BOLD = 0.8
+
+    bbox = line['bbox']
+    x_min, x_max = bbox[0], bbox[2]
+    text_width = x_max - x_min
+
+    # Centrado
+    if text_width <= 0:
+        centrado = False
+    else:
+        expected_x = (page_width - text_width) / 2
+        centrado = abs(x_min - expected_x) <= TOLERANCIA_CENTRADO
+
+    # Bold y texto
+    total_chars = 0
+    bold_chars = 0
+    text_parts = []
+
+    for span in line.get('spans', []):
+        t = span.get('text', '').strip()
+        if t:
+            total_chars += len(t)
+            if span.get('flags', 0) & 16:  # bit 4 = bold
+                bold_chars += len(t)
+            text_parts.append(t)
+
+    all_bold = total_chars > 0 and (bold_chars / total_chars) >= THRESHOLD_BOLD
+    texto = ' '.join(text_parts)
+
+    return centrado, all_bold, texto
+
+
 def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[TituloRef]:
     """
     Extrae estructura jerárquica (Títulos/Capítulos/Secciones) del texto del PDF.
+
+    Usa información de layout (centrado + bold) para detectar nombres de división
+    que ocupan múltiples líneas, incluso cruzando páginas.
 
     Args:
         doc: Documento PyMuPDF
@@ -191,96 +238,155 @@ def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[Titulo
     patron_titulo = patrones.get("titulo", r'^T[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[EÉ]PTIMO|OCTAVO|NOVENO|D[EÉ]CIMO|[IVX]+)\s*$')
     patron_capitulo = patrones.get("capitulo", r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$')
     patron_seccion = patrones.get("seccion", r'^SECCI[OÓ]N\s+([IVX]+)\s*$')
-    # Ruido: encabezados, pies de página, números de página (SALTAR)
-    patron_ruido = r'^(LEY\s|CÁMARA|Secretaría|Últim|CÓDIGO|CONSTITUCIÓN|\d+\s+de\s+\d+|\[)'
-    # No es nombre de división: artículos, capítulos, títulos, secciones, fracciones
-    patron_no_nombre = r'^(ART|CAP|TITULO|TÍTULO|SECC|[IVX]+\.\s|[a-z]\)\s)'
 
-    def es_ruido(linea):
-        """Línea de encabezado/pie que debe saltarse."""
-        return not linea or len(linea) <= 3 or re.match(patron_ruido, linea, re.IGNORECASE)
+    # Configuración de layout
+    requiere_centrado = config.get("requiere_centrado", True)
 
-    def es_nombre_division(linea):
-        """Línea que puede ser nombre de una división."""
-        return not re.match(patron_no_nombre, linea, re.IGNORECASE)
+    # PASO 1: Construir lista de líneas de TODAS las páginas
+    # Esto permite capturar nombres que cruzan páginas
+    # Filtramos header/footer usando filtro_y de config
+    filtro_y = config.get("filtro_y", {})
+    header_max = filtro_y.get("header_max", 0)
+    footer_min = filtro_y.get("footer_min", 999)
 
-    def buscar_nombre(lineas, idx, doc, page_num):
-        """Busca el primer renglón significativo y evalúa si es nombre."""
-        # Buscar en la misma página
-        for i in range(idx + 1, len(lineas)):
-            linea = lineas[i].strip()
-            if es_ruido(linea):
-                continue
-            # Primer renglón significativo encontrado
-            return linea if es_nombre_division(linea) else None
-
-        # Si no encontró en la misma página, buscar en la siguiente
-        if page_num + 1 < len(doc):
-            texto_sig = doc[page_num + 1].get_text()
-            for linea in texto_sig.split('\n'):
-                linea = linea.strip()
-                if es_ruido(linea):
-                    continue
-                # Primer renglón significativo encontrado
-                return linea if es_nombre_division(linea) else None
-
-        return None
-
+    lineas_layout = []
     for page_num, page in enumerate(doc):
-        # Si hay límite de página, detenerse
         if pagina_fin and (page_num + 1) > pagina_fin:
             break
-        texto = page.get_text()
-        lineas = texto.split('\n')
 
-        for i, linea in enumerate(lineas):
-            linea_limpia = linea.strip()
+        page_width = page.rect.width
+        blocks = page.get_text('dict')['blocks']
 
-            # ¿Es título?
-            match = re.match(patron_titulo, linea_limpia, re.IGNORECASE)
-            if match:
-                nombre = buscar_nombre(lineas, i, doc, page_num)
-
-                titulo_actual = TituloRef(
-                    numero=match.group(1).upper(),
-                    nombre=nombre,
-                    pagina=page_num + 1
-                )
-                titulos.append(titulo_actual)
-                capitulo_actual = None
+        for block in blocks:
+            if 'lines' not in block:
                 continue
+            for line in block['lines']:
+                y = line['bbox'][1]
+                # Filtrar header/footer
+                if y < header_max or y > footer_min:
+                    continue
+                centrado, all_bold, texto = _calcular_centrado_bold(line, page_width)
+                # Filtrar líneas vacías
+                if not texto.strip():
+                    continue
+                lineas_layout.append({
+                    'texto': texto,
+                    'centrado': centrado,
+                    'all_bold': all_bold,
+                    'y': y,
+                    'pagina': page_num + 1
+                })
 
-            # ¿Es capítulo?
-            match = re.match(patron_capitulo, linea_limpia, re.IGNORECASE)
-            if match:
-                if titulo_actual is None:
-                    titulo_actual = TituloRef(numero="PRELIMINAR", nombre=None, pagina=1)
-                    titulos.insert(0, titulo_actual)
+    # PASO 2: Procesar todas las líneas para extraer estructura
+    i = 0
+    while i < len(lineas_layout):
+        linea = lineas_layout[i]
+        texto = linea['texto'].strip()
 
-                nombre = buscar_nombre(lineas, i, doc, page_num)
+        if not texto:
+            i += 1
+            continue
 
-                capitulo_actual = CapituloRef(
-                    numero=match.group(1).upper(),
-                    nombre=nombre,
-                    pagina=page_num + 1
-                )
-                titulo_actual.capitulos.append(capitulo_actual)
-                continue
+        # ¿Es título?
+        match = re.match(patron_titulo, texto, re.IGNORECASE)
+        if match and (not requiere_centrado or linea['centrado']) and linea['all_bold']:
+            # Capturar nombre: líneas siguientes que sean centrado+bold
+            nombre_partes = []
+            j = i + 1
+            while j < len(lineas_layout):
+                sig = lineas_layout[j]
+                if (not requiere_centrado or sig['centrado']) and sig['all_bold'] and sig['texto'].strip():
+                    # Verificar que no sea otro marcador
+                    if (re.match(patron_titulo, sig['texto'], re.IGNORECASE) or
+                        re.match(patron_capitulo, sig['texto'], re.IGNORECASE) or
+                        re.match(patron_seccion, sig['texto'], re.IGNORECASE)):
+                        break
+                    nombre_partes.append(sig['texto'].strip())
+                    j += 1
+                else:
+                    break
 
-            # ¿Es sección?
-            match = re.match(patron_seccion, linea_limpia, re.IGNORECASE)
-            if match:
-                if capitulo_actual is None:
-                    continue  # Ignorar secciones sin capítulo
+            nombre = ' '.join(nombre_partes) if nombre_partes else None
 
-                nombre = buscar_nombre(lineas, i, doc, page_num)
+            titulo_actual = TituloRef(
+                numero=match.group(1).upper(),
+                nombre=nombre,
+                pagina=linea['pagina']
+            )
+            titulos.append(titulo_actual)
+            capitulo_actual = None
+            i = j  # Saltar las líneas del nombre
+            continue
 
-                seccion = SeccionRef(
-                    numero=match.group(1).upper(),
-                    nombre=nombre,
-                    pagina=page_num + 1
-                )
-                capitulo_actual.secciones.append(seccion)
+        # ¿Es capítulo?
+        match = re.match(patron_capitulo, texto, re.IGNORECASE)
+        if match and (not requiere_centrado or linea['centrado']) and linea['all_bold']:
+            if titulo_actual is None:
+                titulo_actual = TituloRef(numero="PRELIMINAR", nombre=None, pagina=1)
+                titulos.insert(0, titulo_actual)
+
+            # Capturar nombre: líneas siguientes que sean centrado+bold
+            nombre_partes = []
+            j = i + 1
+            while j < len(lineas_layout):
+                sig = lineas_layout[j]
+                if (not requiere_centrado or sig['centrado']) and sig['all_bold'] and sig['texto'].strip():
+                    # Verificar que no sea otro marcador
+                    if (re.match(patron_titulo, sig['texto'], re.IGNORECASE) or
+                        re.match(patron_capitulo, sig['texto'], re.IGNORECASE) or
+                        re.match(patron_seccion, sig['texto'], re.IGNORECASE)):
+                        break
+                    nombre_partes.append(sig['texto'].strip())
+                    j += 1
+                else:
+                    break
+
+            nombre = ' '.join(nombre_partes) if nombre_partes else None
+
+            capitulo_actual = CapituloRef(
+                numero=match.group(1).upper(),
+                nombre=nombre,
+                pagina=linea['pagina']
+            )
+            titulo_actual.capitulos.append(capitulo_actual)
+            i = j  # Saltar las líneas del nombre
+            continue
+
+        # ¿Es sección?
+        match = re.match(patron_seccion, texto, re.IGNORECASE)
+        if match and (not requiere_centrado or linea['centrado']) and linea['all_bold']:
+            if capitulo_actual is None:
+                i += 1
+                continue  # Ignorar secciones sin capítulo
+
+            # Capturar nombre: líneas siguientes que sean centrado+bold
+            nombre_partes = []
+            j = i + 1
+            while j < len(lineas_layout):
+                sig = lineas_layout[j]
+                if (not requiere_centrado or sig['centrado']) and sig['all_bold'] and sig['texto'].strip():
+                    # Verificar que no sea otro marcador
+                    if (re.match(patron_titulo, sig['texto'], re.IGNORECASE) or
+                        re.match(patron_capitulo, sig['texto'], re.IGNORECASE) or
+                        re.match(patron_seccion, sig['texto'], re.IGNORECASE)):
+                        break
+                    nombre_partes.append(sig['texto'].strip())
+                    j += 1
+                else:
+                    break
+
+            nombre = ' '.join(nombre_partes) if nombre_partes else None
+
+            seccion = SeccionRef(
+                numero=match.group(1).upper(),
+                nombre=nombre,
+                pagina=linea['pagina']
+            )
+            capitulo_actual.secciones.append(seccion)
+            i = j  # Saltar las líneas del nombre
+            continue
+
+        i += 1
 
     return titulos
 
@@ -372,16 +478,100 @@ def asignar_articulos_a_capitulos(titulos: list[TituloRef], articulos: list[Arti
             puntos_corte[0][2].articulos.append(art)
 
 
+def extraer_mapa_rmf(codigo: str, config: dict) -> list[TituloRef]:
+    """
+    Extrae el mapa estructural para RMF usando ExtractorRMF.
+
+    RMF tiene estructura diferente:
+    - Títulos: "Título 1.", "Título 2."
+    - Capítulos: "Capítulo 2.1.", "Capítulo 2.2."
+    - Reglas: "2.1.1.", "2.1.2." (se asignan por prefijo numérico)
+    """
+    from extractor.rmf import ExtractorRMF
+
+    pdf_path = BASE_DIR / config["pdf_path"]
+    print(f"   PDF: {pdf_path.name} (usando ExtractorRMF)")
+
+    # 1. Cargar artículos desde contenido.json (RMF no tiene outline)
+    contenido_path = pdf_path.parent / "contenido.json"
+    articulos = []
+    if contenido_path.exists():
+        print("   Cargando reglas desde contenido.json...")
+        with open(contenido_path) as f:
+            contenido = json.load(f)
+        for art in contenido.get("articulos", []):
+            articulos.append(ArticuloRef(
+                numero=art["numero"],
+                pagina=art.get("pagina", 1),
+                derogado=False
+            ))
+        print(f"   Cargadas: {len(articulos)} reglas")
+    else:
+        raise FileNotFoundError(f"contenido.json no existe. Ejecuta primero: python extraer.py {codigo}")
+
+    # 2. Extraer estructura usando ExtractorRMF
+    print("   Extrayendo estructura con ExtractorRMF...")
+    extractor = ExtractorRMF(codigo, config)
+    extractor.abrir_pdf()
+    divisiones = extractor.extraer_estructura()
+    extractor.cerrar_pdf()
+
+    # 3. Convertir Division -> TituloRef
+    titulos = []
+    titulo_actual = None
+
+    for div in divisiones:
+        if div.tipo == "titulo":
+            titulo_actual = TituloRef(
+                numero=div.numero,
+                nombre=div.nombre,
+                pagina=div.pagina
+            )
+            titulos.append(titulo_actual)
+        elif div.tipo == "capitulo" and titulo_actual:
+            capitulo = CapituloRef(
+                numero=div.numero,
+                nombre=div.nombre,
+                pagina=div.pagina
+            )
+            titulo_actual.capitulos.append(capitulo)
+
+    print(f"   Encontrados: {len(titulos)} títulos, {sum(len(t.capitulos) for t in titulos)} capítulos")
+
+    # 4. Asignar reglas a capítulos por prefijo numérico (2.1.x → capítulo 2.1)
+    print("   Asignando reglas a capítulos por prefijo...")
+    capitulos_idx = {}
+    for titulo in titulos:
+        for cap in titulo.capitulos:
+            capitulos_idx[cap.numero] = cap
+
+    for art in articulos:
+        # Extraer prefijo del capítulo (2.1.3 → 2.1)
+        partes = art.numero.split('.')
+        if len(partes) >= 2:
+            cap_num = f"{partes[0]}.{partes[1]}"
+            if cap_num in capitulos_idx:
+                capitulos_idx[cap_num].articulos.append(art)
+
+    return titulos
+
+
 def extraer_mapa(codigo: str) -> list[TituloRef]:
     """
     Extrae el mapa estructural completo del PDF.
 
     Usa el outline del PDF como fuente autoritativa para artículos.
+    Para RMF, delega a ExtractorRMF que usa patrones específicos.
 
     Returns:
         Lista de títulos con su estructura jerárquica
     """
     config = get_config(codigo)
+
+    # RMF usa extractor especializado
+    if config.get("tipo_extractor") == "rmf":
+        return extraer_mapa_rmf(codigo, config)
+
     pdf_path = BASE_DIR / config["pdf_path"]
 
     if not pdf_path.exists():
