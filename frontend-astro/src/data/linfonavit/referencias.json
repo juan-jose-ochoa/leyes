@@ -14,15 +14,11 @@
     }
   },
   "42": {
-    "artículo 10 fracción I": {
+    "artículos 10, fracción I y 16, fracción IV, de esta Ley": {
       "ley": "linfonavit",
       "articulo": "10",
-      "parrafo": 2
-    },
-    "artículo 16 fracción IV": {
-      "ley": "linfonavit",
-      "articulo": "16",
-      "parrafo": 5
+      "parrafo": 2,
+      "query": "linfonavit:10/I,16/IV"
     }
   },
   "43": {
@@ -33,15 +29,11 @@
     }
   },
   "51": {
-    "artículo 40": {
+    "artículos 40 y 42 de esta Ley": {
       "ley": "linfonavit",
       "articulo": "40",
-      "parrafo": 1
-    },
-    "artículo 42": {
-      "ley": "linfonavit",
-      "articulo": "42",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "linfonavit:40,42"
     }
   },
   "51 Bis 3": {

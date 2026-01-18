@@ -33,20 +33,11 @@
     }
   },
   "25": {
-    "artículo 54": {
+    "artículos 54, párrafo primero, y 135, de la Ley del Impuesto sobre la Renta, las instituciones que componen el sistema financiero que intervengan como intermediarias en operaciones de préstamo de títulos o valores, por las cuales no se considere que existe enajenación de bienes de conformidad con el artículo 14-A del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "54",
-      "parrafo": 1
-    },
-    "artículo 135": {
-      "ley": "cff",
-      "articulo": "135",
-      "parrafo": 1
-    },
-    "artículo 14-A": {
-      "ley": "cff",
-      "articulo": "14-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:54,135,14-A"
     },
     "artículo 14-A del Código Fiscal de la Federación": {
       "ley": "cff",
@@ -74,20 +65,11 @@
     }
   },
   "29": {
-    "artículo 19 fracción II": {
+    "artículos 19, fracción II, y 107, fracción I, de la Ley Federal de Presupuesto y Responsabilidad Hacendaria, la información del origen de los ingresos generados por los aprovechamientos a que se refiere el numeral 6.61.22.04 del artículo 1o. de la presente Ley": {
       "ley": "lif",
       "articulo": "19",
-      "parrafo": 1
-    },
-    "artículo 6": {
-      "ley": "lif",
-      "articulo": "6",
-      "parrafo": 1
-    },
-    "artículo 22": {
-      "ley": "lif",
-      "articulo": "22",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lif:19/II,107/I,6,61,22,04,1o"
     }
   },
   "32": {

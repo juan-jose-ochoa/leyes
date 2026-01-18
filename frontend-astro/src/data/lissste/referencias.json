@@ -54,27 +54,19 @@
     }
   },
   "145": {
-    "artículo 141": {
+    "artículos 141 y 148 de la presente ley": {
       "ley": "lissste",
       "articulo": "141",
-      "parrafo": 1
-    },
-    "artículo 148": {
-      "ley": "lissste",
-      "articulo": "148",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lissste:141,148"
     }
   },
   "152": {
-    "artículo 144": {
+    "artículos 144 y 148 de esta ley": {
       "ley": "lissste",
       "articulo": "144",
-      "parrafo": 1
-    },
-    "artículo 148": {
-      "ley": "lissste",
-      "articulo": "148",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lissste:144,148"
     }
   },
   "153": {

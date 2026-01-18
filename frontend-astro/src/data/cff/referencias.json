@@ -62,15 +62,11 @@
       "articulo": "29",
       "parrafo": 1
     },
-    "artículo 17-H fracción X": {
+    "artículos 17-H, fracciones X, XI o XII, o 69, decimosegundo párrafo, fracciones I a V de este Código": {
       "ley": "cff",
       "articulo": "17-H",
-      "parrafo": 11
-    },
-    "artículo 69": {
-      "ley": "cff",
-      "articulo": "69",
-      "parrafo": 1
+      "parrafo": 11,
+      "query": "cff:17-H/X,69"
     },
     "artículo 29, fracción II de este Código": {
       "ley": "cff",
@@ -89,15 +85,11 @@
     }
   },
   "17-H": {
-    "artículo 17-H": {
+    "artículos 17-H Bis, 69-B y 69-B Bis de este Código": {
       "ley": "cff",
       "articulo": "17-H",
-      "parrafo": 1
-    },
-    "artículo 69-B": {
-      "ley": "cff",
-      "articulo": "69-B",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-H,69-B"
     }
   },
   "17-H Bis": {
@@ -144,20 +136,11 @@
     }
   },
   "18-A": {
-    "artículo 34": {
+    "artículos 34, 34-A y 36 Bis de este Código": {
       "ley": "cff",
       "articulo": "34",
-      "parrafo": 1
-    },
-    "artículo 34-A": {
-      "ley": "cff",
-      "articulo": "34-A",
-      "parrafo": 1
-    },
-    "artículo 36": {
-      "ley": "cff",
-      "articulo": "36",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:34,34-A,36"
     },
     "artículo 18 de este Código": {
       "ley": "cff",
@@ -292,15 +275,11 @@
       "articulo": "65",
       "parrafo": 1
     },
-    "artículo 22": {
+    "artículos 22 y 146 de este Código": {
       "ley": "cff",
       "articulo": "22",
-      "parrafo": 1
-    },
-    "artículo 146": {
-      "ley": "cff",
-      "articulo": "146",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:22,146"
     }
   },
   "25-A": {
@@ -333,25 +312,22 @@
       "articulo": "10",
       "parrafo": 1
     },
-    "artículo 17-H fracción X": {
+    "artículos 17-H, fracciones X, XI, XII o XIII, o 69, decimosegundo párrafo, fracciones I a IV y IX de este Código": {
       "ley": "cff",
       "articulo": "17-H",
-      "parrafo": 11
-    },
-    "artículo 69": {
-      "ley": "cff",
-      "articulo": "69",
-      "parrafo": 1
+      "parrafo": 11,
+      "query": "cff:17-H/X,69"
     },
     "artículo 50 de este Código": {
       "ley": "cff",
       "articulo": "50",
       "parrafo": 1
     },
-    "artículo 69-B": {
+    "artículos 69, 69-B y 69-B Bis de este Código": {
       "ley": "cff",
-      "articulo": "69-B",
-      "parrafo": 1
+      "articulo": "69",
+      "parrafo": 1,
+      "query": "cff:69,69-B"
     }
   },
   "29": {
@@ -436,27 +412,19 @@
     }
   },
   "32-B": {
-    "artículo 22": {
+    "artículos 22 y 42 de este Código": {
       "ley": "cff",
       "articulo": "22",
-      "parrafo": 1
-    },
-    "artículo 42": {
-      "ley": "cff",
-      "articulo": "42",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:22,42"
     }
   },
   "32-B Bis": {
-    "artículo 82-E": {
+    "artículos 82-E y 82-F de este Código": {
       "ley": "cff",
       "articulo": "82-E",
-      "parrafo": 1
-    },
-    "artículo 82-F": {
-      "ley": "cff",
-      "articulo": "82-F",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:82-E,82-F"
     }
   },
   "32-H": {
@@ -467,25 +435,11 @@
     }
   },
   "33-A": {
-    "artículo 41 fracción I": {
+    "artículos 41, fracciones I y III, 78, 79 y 81, fracciones I, II y VI de este Código": {
       "ley": "cff",
       "articulo": "41",
-      "parrafo": 2
-    },
-    "artículo 78": {
-      "ley": "cff",
-      "articulo": "78",
-      "parrafo": 1
-    },
-    "artículo 79": {
-      "ley": "cff",
-      "articulo": "79",
-      "parrafo": 1
-    },
-    "artículo 81 fracción I": {
-      "ley": "cff",
-      "articulo": "81",
-      "parrafo": 2
+      "parrafo": 2,
+      "query": "cff:41/I,78,79,81/I"
     }
   },
   "34": {
@@ -513,15 +467,11 @@
       "articulo": "40",
       "parrafo": 6
     },
-    "artículo 56": {
+    "artículos 56 y 57 de este Código": {
       "ley": "cff",
       "articulo": "56",
-      "parrafo": 1
-    },
-    "artículo 57": {
-      "ley": "cff",
-      "articulo": "57",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:56,57"
     },
     "artículo 85 de este Código": {
       "ley": "cff",
@@ -555,45 +505,28 @@
       "articulo": "49",
       "parrafo": 1
     },
-    "artículo 197": {
+    "artículos 197 a 202 de este Código": {
       "ley": "cff",
       "articulo": "197",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:197,202"
     },
-    "artículo 202": {
-      "ley": "cff",
-      "articulo": "202",
-      "parrafo": 1
-    },
-    "artículo 32 fracción V": {
+    "artículos 32, fracción V, 32-B Bis, 32-B Ter, 32-B Quáter y 32-B Quinquies de este Código": {
       "ley": "cff",
       "articulo": "32",
-      "parrafo": 1
-    },
-    "artículo 32-B": {
-      "ley": "cff",
-      "articulo": "32-B",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:32/V,32-B"
     },
     "artículo 48-A de este Código": {
       "ley": "cff",
       "articulo": "48-A",
       "parrafo": 1
     },
-    "artículo 46 fracción IV": {
+    "artículos 46, fracción IV, 48, fracciones VI, VII y VIII y 53-B, fracción II y segundo párrafo de este Código": {
       "ley": "cff",
       "articulo": "46",
-      "parrafo": 5
-    },
-    "artículo 48 fracción VI": {
-      "ley": "cff",
-      "articulo": "48",
-      "parrafo": 7
-    },
-    "artículo 53-B fracción II": {
-      "ley": "cff",
-      "articulo": "53-B",
-      "parrafo": 3
+      "parrafo": 5,
+      "query": "cff:46/IV,48/VI,53-B/II"
     },
     "artículo 134 de este Código": {
       "ley": "cff",
@@ -707,15 +640,11 @@
       "articulo": "42",
       "parrafo": 1
     },
-    "artículo 197": {
+    "artículos 197 a 202 de este Código": {
       "ley": "cff",
       "articulo": "197",
-      "parrafo": 1
-    },
-    "artículo 202": {
-      "ley": "cff",
-      "articulo": "202",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:197,202"
     }
   },
   "49 Bis": {
@@ -724,15 +653,11 @@
       "articulo": "42",
       "parrafo": 13
     },
-    "artículo 134 fracción I": {
+    "artículos 134, fracciones I y III y 139 de este Código": {
       "ley": "cff",
       "articulo": "134",
-      "parrafo": 2
-    },
-    "artículo 139": {
-      "ley": "cff",
-      "articulo": "139",
-      "parrafo": 1
+      "parrafo": 2,
+      "query": "cff:134/I,139"
     },
     "artículo 134 de este Código": {
       "ley": "cff",
@@ -855,15 +780,11 @@
     }
   },
   "53-D": {
-    "artículo 46 fracción IV": {
+    "artículos 46, fracción IV, segundo párrafo o 49, fracción VI de este Código": {
       "ley": "cff",
       "articulo": "46",
-      "parrafo": 5
-    },
-    "artículo 49 fracción VI": {
-      "ley": "cff",
-      "articulo": "49",
-      "parrafo": 7
+      "parrafo": 5,
+      "query": "cff:46/IV,49/VI"
     },
     "artículo 42, fracción V, inciso b) de este Código": {
       "ley": "cff",
@@ -936,15 +857,11 @@
     }
   },
   "66-A": {
-    "artículo 17-A": {
+    "artículos 17-A y 21 de este Código": {
       "ley": "cff",
       "articulo": "17-A",
-      "parrafo": 1
-    },
-    "artículo 21": {
-      "ley": "cff",
-      "articulo": "21",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-A,21"
     },
     "artículo 66 de este Código": {
       "ley": "cff",
@@ -1000,40 +917,11 @@
       "articulo": "134",
       "parrafo": 1
     },
-    "artículo 76 fracción IX": {
+    "artículos 76, fracciones IX y XII, 90, penúltimo párrafo, 110, fracción XI, 179 y 180 de la Ley del Impuesto sobre la Renta, la información relativa a la identidad de los terceros independientes en operaciones comparables y la información de los comparables utilizados para motivar la resolución, sólo podrá ser revelada a los tribunales ante los que, en su caso, se impugne el acto de autoridad, sin perjuicio de lo establecido en los artículos 46, fracción IV y 48, fracción VII de este Código": {
       "ley": "cff",
       "articulo": "76",
-      "parrafo": 1
-    },
-    "artículo 90": {
-      "ley": "cff",
-      "articulo": "90",
-      "parrafo": 1
-    },
-    "artículo 110 fracción XI": {
-      "ley": "cff",
-      "articulo": "110",
-      "parrafo": 1
-    },
-    "artículo 179": {
-      "ley": "cff",
-      "articulo": "179",
-      "parrafo": 1
-    },
-    "artículo 180": {
-      "ley": "cff",
-      "articulo": "180",
-      "parrafo": 1
-    },
-    "artículo 46 fracción IV": {
-      "ley": "cff",
-      "articulo": "46",
-      "parrafo": 5
-    },
-    "artículo 48 fracción VII": {
-      "ley": "cff",
-      "articulo": "48",
-      "parrafo": 10
+      "parrafo": 1,
+      "query": "cff:76/IX,90,110/XI,179,180,46/IV,48/VII"
     },
     "artículo 146-A de este Código": {
       "ley": "cff",
@@ -1066,15 +954,11 @@
     }
   },
   "69-C": {
-    "artículo 22": {
+    "artículos 22 y 22-D de este Código": {
       "ley": "cff",
       "articulo": "22",
-      "parrafo": 1
-    },
-    "artículo 22-D": {
-      "ley": "cff",
-      "articulo": "22-D",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:22,22-D"
     },
     "artículo 42 de este Código": {
       "ley": "cff",
@@ -1088,25 +972,11 @@
     }
   },
   "69-F": {
-    "artículo 46-A": {
+    "artículos 46-A, primer párrafo; 50, primer párrafo; 53-B y 67, sexto párrafo de este Código": {
       "ley": "cff",
       "articulo": "46-A",
-      "parrafo": 1
-    },
-    "artículo 50": {
-      "ley": "cff",
-      "articulo": "50",
-      "parrafo": 1
-    },
-    "artículo 53-B": {
-      "ley": "cff",
-      "articulo": "53-B",
-      "parrafo": 1
-    },
-    "artículo 67": {
-      "ley": "cff",
-      "articulo": "67",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:46-A,50,53-B,67"
     }
   },
   "70": {
@@ -1134,15 +1004,11 @@
     }
   },
   "75": {
-    "artículo 46 fracción IV": {
+    "artículos 46, fracción IV y 48, fracción VII de este Código": {
       "ley": "cff",
       "articulo": "46",
-      "parrafo": 5
-    },
-    "artículo 48 fracción VII": {
-      "ley": "cff",
-      "articulo": "48",
-      "parrafo": 10
+      "parrafo": 5,
+      "query": "cff:46/IV,48/VII"
     }
   },
   "76": {
@@ -1343,30 +1209,11 @@
     }
   },
   "84-A": {
-    "artículo 32-B": {
+    "artículos 32-B, 32- E, 40-A, 145, 151 y 156-Bis de este Código": {
       "ley": "cff",
       "articulo": "32-B",
-      "parrafo": 1
-    },
-    "artículo 32": {
-      "ley": "cff",
-      "articulo": "32",
-      "parrafo": 1
-    },
-    "artículo 40-A": {
-      "ley": "cff",
-      "articulo": "40-A",
-      "parrafo": 1
-    },
-    "artículo 145": {
-      "ley": "cff",
-      "articulo": "145",
-      "parrafo": 1
-    },
-    "artículo 151": {
-      "ley": "cff",
-      "articulo": "151",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:32-B,32,40-A,145,151,156-Bis"
     },
     "artículo 141-A, fracción II de este Código": {
       "ley": "cff",
@@ -1377,6 +1224,12 @@
       "ley": "cff",
       "articulo": "32-B",
       "parrafo": 1
+    },
+    "artículos 40-A, 145, 151 y 156-Bis de este Código": {
+      "ley": "cff",
+      "articulo": "40-A",
+      "parrafo": 1,
+      "query": "cff:40-A,145,151,156-Bis"
     },
     "fracción IX del artículo 32-B de este Código": {
       "ley": "cff",
@@ -1485,15 +1338,11 @@
       "articulo": "53-B",
       "parrafo": 1
     },
-    "artículo 46 fracción IV": {
+    "artículos 46, fracción IV y 48, fracción VII de este Código": {
       "ley": "cff",
       "articulo": "46",
-      "parrafo": 5
-    },
-    "artículo 48 fracción VII": {
-      "ley": "cff",
-      "articulo": "48",
-      "parrafo": 10
+      "parrafo": 5,
+      "query": "cff:46/IV,48/VII"
     },
     "artículo 70-A de este Código": {
       "ley": "cff",
@@ -1547,15 +1396,11 @@
     }
   },
   "87": {
-    "artículo 46 fracción IV": {
+    "artículos 46, fracción IV y 48, fracción VII de este Código": {
       "ley": "cff",
       "articulo": "46",
-      "parrafo": 5
-    },
-    "artículo 48 fracción VII": {
-      "ley": "cff",
-      "articulo": "48",
-      "parrafo": 10
+      "parrafo": 5,
+      "query": "cff:46/IV,48/VII"
     },
     "artículo 69 de este Código": {
       "ley": "cff",
@@ -1617,30 +1462,11 @@
     }
   },
   "101": {
-    "artículo 102": {
+    "artículos 102 y 105 fracciones I a la IV cuando les correspondan las sanciones previstas en las fracciones II y III segundo párrafo del artículo 104; 108 y 109 cuando les correspondan las sanciones dispuestas en la fracción III del artículo 108, todos de este Código": {
       "ley": "cff",
       "articulo": "102",
-      "parrafo": 1
-    },
-    "artículo 105 fracción I": {
-      "ley": "cff",
-      "articulo": "105",
-      "parrafo": 2
-    },
-    "artículo 104": {
-      "ley": "cff",
-      "articulo": "104",
-      "parrafo": 1
-    },
-    "artículo 108": {
-      "ley": "cff",
-      "articulo": "108",
-      "parrafo": 1
-    },
-    "artículo 109": {
-      "ley": "cff",
-      "articulo": "109",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:102,105/I,104,108,109,108"
     }
   },
   "103": {
@@ -1661,15 +1487,11 @@
       "articulo": "131",
       "parrafo": 1
     },
-    "artículo 103 fracción IX": {
+    "artículos 103, fracciones IX, XIV, XIX, XX, XXII y XXIII y 105, fracciones V, XII, XIII, XV, XVI y XVII de este Código": {
       "ley": "cff",
       "articulo": "103",
-      "parrafo": 10
-    },
-    "artículo 105 fracción V": {
-      "ley": "cff",
-      "articulo": "105",
-      "parrafo": 6
+      "parrafo": 10,
+      "query": "cff:103/IX,105/V"
     }
   },
   "107": {
@@ -1687,15 +1509,11 @@
     }
   },
   "109": {
-    "artículo 29": {
+    "artículos 29 y 29-A de este Código": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "110": {
@@ -1711,15 +1529,11 @@
     }
   },
   "111": {
-    "artículo 46 fracción IV": {
+    "artículos 46, fracción IV y 48, fracción VII de este Código": {
       "ley": "cff",
       "articulo": "46",
-      "parrafo": 5
-    },
-    "artículo 48 fracción VII": {
-      "ley": "cff",
-      "articulo": "48",
-      "parrafo": 10
+      "parrafo": 5,
+      "query": "cff:46/IV,48/VII"
     }
   },
   "113 Bis": {
@@ -1737,20 +1551,11 @@
     }
   },
   "117": {
-    "artículo 33-A": {
+    "artículos 33-A, 36 y 74 de este Código": {
       "ley": "cff",
       "articulo": "33-A",
-      "parrafo": 1
-    },
-    "artículo 36": {
-      "ley": "cff",
-      "articulo": "36",
-      "parrafo": 1
-    },
-    "artículo 74": {
-      "ley": "cff",
-      "articulo": "74",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:33-A,36,74"
     },
     "artículo 21 de este Código": {
       "ley": "cff",
@@ -1809,15 +1614,11 @@
     }
   },
   "133-A": {
-    "artículo 46-A": {
+    "artículos 46-A y 67 de este Código": {
       "ley": "cff",
       "articulo": "46-A",
-      "parrafo": 1
-    },
-    "artículo 67": {
-      "ley": "cff",
-      "articulo": "67",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:46-A,67"
     },
     "artículo 46-A de este Código": {
       "ley": "cff",
@@ -1826,52 +1627,19 @@
     }
   },
   "133-C": {
-    "artículo 18": {
+    "artículos 18, 121, 122, 123, 124, 124-A y 126 de este Código": {
       "ley": "cff",
       "articulo": "18",
-      "parrafo": 1
-    },
-    "artículo 121": {
-      "ley": "cff",
-      "articulo": "121",
-      "parrafo": 1
-    },
-    "artículo 122": {
-      "ley": "cff",
-      "articulo": "122",
-      "parrafo": 1
-    },
-    "artículo 123": {
-      "ley": "cff",
-      "articulo": "123",
-      "parrafo": 1
-    },
-    "artículo 124": {
-      "ley": "cff",
-      "articulo": "124",
-      "parrafo": 1
-    },
-    "artículo 124-A": {
-      "ley": "cff",
-      "articulo": "124-A",
-      "parrafo": 1
-    },
-    "artículo 126": {
-      "ley": "cff",
-      "articulo": "126",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:18,121,122,123,124,124-A,126"
     }
   },
   "133-D": {
-    "artículo 18": {
+    "artículos 18 y 122 de este Código": {
       "ley": "cff",
       "articulo": "18",
-      "parrafo": 1
-    },
-    "artículo 122": {
-      "ley": "cff",
-      "articulo": "122",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:18,122"
     }
   },
   "133-G": {
@@ -1887,15 +1655,11 @@
       "articulo": "17-K",
       "parrafo": 1
     },
-    "artículo 17-D": {
+    "artículos 17-D y 38, fracción V de este Código": {
       "ley": "cff",
       "articulo": "17-D",
-      "parrafo": 1
-    },
-    "artículo 38 fracción V": {
-      "ley": "cff",
-      "articulo": "38",
-      "parrafo": 7
+      "parrafo": 1,
+      "query": "cff:17-D,38/V"
     },
     "artículo 110 de este Código": {
       "ley": "cff",
@@ -1923,15 +1687,11 @@
     }
   },
   "141": {
-    "artículo 74": {
+    "artículos 74 y 142 de este Código": {
       "ley": "cff",
       "articulo": "74",
-      "parrafo": 1
-    },
-    "artículo 142": {
-      "ley": "cff",
-      "articulo": "142",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:74,142"
     }
   },
   "141-A": {
@@ -1987,15 +1747,17 @@
       "articulo": "151",
       "parrafo": 1
     },
-    "artículo 41 fracción II": {
+    "artículos 41, fracción II y 141, fracción VI de este Código": {
       "ley": "cff",
       "articulo": "41",
-      "parrafo": 3
+      "parrafo": 3,
+      "query": "cff:41/II,141/VI"
     },
-    "artículo 141 fracción VI": {
+    "artículos 41, fracción II y 141, fracción VI, de este Código": {
       "ley": "cff",
-      "articulo": "141",
-      "parrafo": 8
+      "articulo": "41",
+      "parrafo": 3,
+      "query": "cff:41/II,141/VI"
     },
     "artículo 191 de este Código": {
       "ley": "cff",
@@ -2004,20 +1766,11 @@
     }
   },
   "153": {
-    "artículo 165": {
+    "Artículos 165, 166 y 167 de este Código": {
       "ley": "cff",
       "articulo": "165",
-      "parrafo": 1
-    },
-    "artículo 166": {
-      "ley": "cff",
-      "articulo": "166",
-      "parrafo": 1
-    },
-    "artículo 167": {
-      "ley": "cff",
-      "articulo": "167",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:165,166,167"
     },
     "artículo 152 de este Código": {
       "ley": "cff",
@@ -2114,32 +1867,19 @@
     }
   },
   "181": {
-    "artículo 184": {
+    "artículos 184, 185 y 186 de este Código": {
       "ley": "cff",
       "articulo": "184",
-      "parrafo": 1
-    },
-    "artículo 185": {
-      "ley": "cff",
-      "articulo": "185",
-      "parrafo": 1
-    },
-    "artículo 186": {
-      "ley": "cff",
-      "articulo": "186",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:184,185,186"
     }
   },
   "183": {
-    "artículo 185": {
+    "artículos 185 y 186 de este Código": {
       "ley": "cff",
       "articulo": "185",
-      "parrafo": 1
-    },
-    "artículo 186": {
-      "ley": "cff",
-      "articulo": "186",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:185,186"
     }
   },
   "188 Bis": {

@@ -1,19 +1,10 @@
 {
   "1o": {
-    "artículo 1o": {
+    "artículos 1o.-A, 3o., tercer párrafo o 18-J, fracción II, inciso a) de la misma": {
       "ley": "liva",
       "articulo": "1o",
-      "parrafo": 1
-    },
-    "artículo 3o": {
-      "ley": "liva",
-      "articulo": "3o",
-      "parrafo": 1
-    },
-    "artículo 18-J fracción II": {
-      "ley": "liva",
-      "articulo": "18-J",
-      "parrafo": 4
+      "parrafo": 1,
+      "query": "liva:1o,3o,18-J/II"
     }
   },
   "1o-A Bis": {
@@ -27,20 +18,11 @@
       "articulo": "18-B",
       "parrafo": 4
     },
-    "artículo 18-K": {
+    "artículos 18-K, 18-L y 18-M de esta Ley": {
       "ley": "liva",
       "articulo": "18-K",
-      "parrafo": 1
-    },
-    "artículo 18-L": {
-      "ley": "liva",
-      "articulo": "18-L",
-      "parrafo": 1
-    },
-    "artículo 18-M": {
-      "ley": "liva",
-      "articulo": "18-M",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "liva:18-K,18-L,18-M"
     }
   },
   "1o-C": {
@@ -65,25 +47,11 @@
     }
   },
   "4o-A": {
-    "artículo 10": {
+    "artículos 10, 16 y 21 de este ordenamiento, así como aquéllos diferentes a los establecidos en el artículo 1o. de esta Ley": {
       "ley": "liva",
       "articulo": "10",
-      "parrafo": 1
-    },
-    "artículo 16": {
-      "ley": "liva",
-      "articulo": "16",
-      "parrafo": 1
-    },
-    "artículo 21": {
-      "ley": "liva",
-      "articulo": "21",
-      "parrafo": 1
-    },
-    "artículo 1o": {
-      "ley": "liva",
-      "articulo": "1o",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "liva:10,16,21,1o"
     }
   },
   "5o": {
@@ -97,15 +65,11 @@
       "articulo": "32",
       "parrafo": 4
     },
-    "artículo 1o": {
+    "artículos 1o.-A y 18-J, fracción II, inciso a) de esta Ley": {
       "ley": "liva",
       "articulo": "1o",
-      "parrafo": 1
-    },
-    "artículo 18-J fracción II": {
-      "ley": "liva",
-      "articulo": "18-J",
-      "parrafo": 4
+      "parrafo": 1,
+      "query": "liva:1o,18-J/II"
     },
     "artículo 21 del Código Fiscal de la Federación": {
       "ley": "cff",
@@ -126,10 +90,11 @@
     }
   },
   "5o-C": {
-    "artículo 5o": {
+    "artículos 5o., fracción V, incisos c) y d), numeral 3; 5o.-A, fracción I, incisos c) y d), fracción II, incisos c) y d), y 5o.-B de esta Ley": {
       "ley": "liva",
       "articulo": "5o",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "liva:5o,3,5o"
     },
     "artículo 16-A del Código Fiscal de la Federación": {
       "ley": "cff",
@@ -138,32 +103,19 @@
     }
   },
   "5o-D": {
-    "artículo 5o": {
+    "artículos 5o.-F y 33 de esta Ley": {
       "ley": "liva",
       "articulo": "5o",
-      "parrafo": 1
-    },
-    "artículo 33": {
-      "ley": "liva",
-      "articulo": "33",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "liva:5o,33"
     }
   },
   "7o": {
-    "artículo 1o": {
+    "artículos 1o.- A, 3o., tercer párrafo o 18-J, fracción II, inciso a) de esta Ley": {
       "ley": "liva",
       "articulo": "1o",
-      "parrafo": 1
-    },
-    "artículo 3o": {
-      "ley": "liva",
-      "articulo": "3o",
-      "parrafo": 1
-    },
-    "artículo 18-J fracción II": {
-      "ley": "liva",
-      "articulo": "18-J",
-      "parrafo": 4
+      "parrafo": 1,
+      "query": "liva:1o,3o,18-J/II"
     },
     "artículo 32 del Código Fiscal de la Federación": {
       "ley": "cff",
@@ -172,20 +124,11 @@
     }
   },
   "8o": {
-    "artículo 1o": {
+    "artículos 1o.-A, 3o., tercer párrafo y 18-J, fracción II, inciso a) de esta Ley": {
       "ley": "liva",
       "articulo": "1o",
-      "parrafo": 1
-    },
-    "artículo 3o": {
-      "ley": "liva",
-      "articulo": "3o",
-      "parrafo": 1
-    },
-    "artículo 18-J fracción II": {
-      "ley": "liva",
-      "articulo": "18-J",
-      "parrafo": 4
+      "parrafo": 1,
+      "query": "liva:1o,3o,18-J/II"
     }
   },
   "15": {
@@ -258,15 +201,11 @@
     }
   },
   "18-G": {
-    "artículo 18-D fracción III": {
+    "artículos 18-D, fracciones III y IV, y 18-J, fracciones II, inciso b) y III de esta Ley": {
       "ley": "liva",
       "articulo": "18-D",
-      "parrafo": 4
-    },
-    "artículo 18-J fracción II": {
-      "ley": "liva",
-      "articulo": "18-J",
-      "parrafo": 4
+      "parrafo": 4,
+      "query": "liva:18-D/III,18-J/II"
     }
   },
   "18-H": {
@@ -282,15 +221,11 @@
       "articulo": "18-D",
       "parrafo": 1
     },
-    "artículo 18-D fracción III": {
+    "artículos 18-D, fracciones III y IV y 18-J, fracciones II, inciso b) y III de esta Ley": {
       "ley": "liva",
       "articulo": "18-D",
-      "parrafo": 4
-    },
-    "artículo 18-J fracción II": {
-      "ley": "liva",
-      "articulo": "18-J",
-      "parrafo": 4
+      "parrafo": 4,
+      "query": "liva:18-D/III,18-J/II"
     },
     "artículo 18-G de esta Ley": {
       "ley": "liva",
@@ -299,20 +234,17 @@
     }
   },
   "18-H Ter": {
-    "artículo 18-D fracción III": {
+    "artículos 18-D, fracciones III y IV, y 18-J, fracciones II, inciso b) y III de esta Ley": {
       "ley": "liva",
       "articulo": "18-D",
-      "parrafo": 4
+      "parrafo": 4,
+      "query": "liva:18-D/III,18-J/II"
     },
-    "artículo 18-J fracción II": {
-      "ley": "liva",
-      "articulo": "18-J",
-      "parrafo": 4
-    },
-    "artículo 18-D fracción I": {
+    "artículos 18-D, fracciones I, III, IV, VI y VII, y 18-J, fracciones II, inciso b) y III, de esta Ley": {
       "ley": "liva",
       "articulo": "18-D",
-      "parrafo": 2
+      "parrafo": 2,
+      "query": "liva:18-D/I,18-J/II"
     }
   },
   "18-I": {
@@ -409,47 +341,31 @@
     }
   },
   "30": {
-    "artículo 9o": {
+    "artículos 9o. y 15 de esta Ley": {
       "ley": "liva",
       "articulo": "9o",
-      "parrafo": 1
-    },
-    "artículo 15": {
-      "ley": "liva",
-      "articulo": "15",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "liva:9o,15"
     }
   },
   "32": {
-    "artículo 28": {
+    "artículos 28 y 33 de esta Ley": {
       "ley": "liva",
       "articulo": "28",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "liva:28,33"
     },
-    "artículo 33": {
-      "ley": "liva",
-      "articulo": "33",
-      "parrafo": 1
-    },
-    "artículo 29": {
+    "artículos 29 y 29-A del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
-    },
-    "artículo 1o": {
+    "artículos 1o.-A y 3o., tercer párrafo de esta Ley": {
       "ley": "liva",
       "articulo": "1o",
-      "parrafo": 1
-    },
-    "artículo 3o": {
-      "ley": "liva",
-      "articulo": "3o",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "liva:1o,3o"
     }
   },
   "33": {

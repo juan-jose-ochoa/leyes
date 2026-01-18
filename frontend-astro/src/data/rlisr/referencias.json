@@ -52,15 +52,11 @@
       "articulo": "27",
       "parrafo": 1
     },
-    "artículo 29": {
+    "artículos 29 y 30 del Reglamento del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,30"
     }
   },
   "180": {

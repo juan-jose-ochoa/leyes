@@ -382,15 +382,11 @@
     }
   },
   "706": {
-    "artículo 704": {
+    "artículos 704 y 928 fracción V de esta Ley": {
       "ley": "lft",
       "articulo": "704",
-      "parrafo": 1
-    },
-    "artículo 928 fracción V": {
-      "ley": "lft",
-      "articulo": "928",
-      "parrafo": 6
+      "parrafo": 1,
+      "query": "lft:704,928/V"
     }
   },
   "712 Bis": {
@@ -436,15 +432,11 @@
     }
   },
   "742": {
-    "artículo 772": {
+    "artículos 772 y 774 de esta Ley": {
       "ley": "lft",
       "articulo": "772",
-      "parrafo": 1
-    },
-    "artículo 774": {
-      "ley": "lft",
-      "articulo": "774",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:772,774"
     },
     "artículo 684-E de esta Ley": {
       "ley": "lft",
@@ -486,27 +478,19 @@
     }
   },
   "784": {
-    "artículo 37 fracción I": {
+    "artículos 37, fracción I, y 53, fracción III, de esta Ley": {
       "ley": "lft",
       "articulo": "37",
-      "parrafo": 2
-    },
-    "artículo 53 fracción III": {
-      "ley": "lft",
-      "articulo": "53",
-      "parrafo": 4
+      "parrafo": 2,
+      "query": "lft:37/I,53/III"
     }
   },
   "798": {
-    "artículo 827": {
+    "artículos 827 y 829 de esta Ley": {
       "ley": "lft",
       "articulo": "827",
-      "parrafo": 1
-    },
-    "artículo 829": {
-      "ley": "lft",
-      "articulo": "829",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:827,829"
     }
   },
   "800": {
@@ -527,15 +511,11 @@
     }
   },
   "801": {
-    "artículo 827": {
+    "artículos 827 y 829 de esta Ley": {
       "ley": "lft",
       "articulo": "827",
-      "parrafo": 1
-    },
-    "artículo 829": {
-      "ley": "lft",
-      "articulo": "829",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:827,829"
     }
   },
   "802": {
@@ -584,15 +564,11 @@
     }
   },
   "830": {
-    "artículo 2o": {
+    "artículos 2o. y 3o. de esta Ley": {
       "ley": "lft",
       "articulo": "2o",
-      "parrafo": 1
-    },
-    "artículo 3o": {
-      "ley": "lft",
-      "articulo": "3o",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:2o,3o"
     }
   },
   "836-D": {
@@ -645,82 +621,19 @@
     }
   },
   "892": {
-    "artículo 5o": {
+    "artículos 5o. fracción III; 28, fracción III; 151; 153-X; 158; 162; 204, fracción IX; 209, fracción V; 210; 236, fracciones II y III, 484, 503 y 505 de esta Ley": {
       "ley": "lft",
       "articulo": "5o",
-      "parrafo": 1
-    },
-    "artículo 28 fracción III": {
-      "ley": "lft",
-      "articulo": "28",
-      "parrafo": 8
-    },
-    "artículo 151": {
-      "ley": "lft",
-      "articulo": "151",
-      "parrafo": 1
-    },
-    "artículo 153-X": {
-      "ley": "lft",
-      "articulo": "153-X",
-      "parrafo": 1
-    },
-    "artículo 158": {
-      "ley": "lft",
-      "articulo": "158",
-      "parrafo": 1
-    },
-    "artículo 162": {
-      "ley": "lft",
-      "articulo": "162",
-      "parrafo": 1
-    },
-    "artículo 204 fracción IX": {
-      "ley": "lft",
-      "articulo": "204",
-      "parrafo": 10
-    },
-    "artículo 209 fracción V": {
-      "ley": "lft",
-      "articulo": "209",
-      "parrafo": 6
-    },
-    "artículo 210": {
-      "ley": "lft",
-      "articulo": "210",
-      "parrafo": 1
-    },
-    "artículo 236 fracción II": {
-      "ley": "lft",
-      "articulo": "236",
-      "parrafo": 5
-    },
-    "artículo 484": {
-      "ley": "lft",
-      "articulo": "484",
-      "parrafo": 1
-    },
-    "artículo 503": {
-      "ley": "lft",
-      "articulo": "503",
-      "parrafo": 1
-    },
-    "artículo 505": {
-      "ley": "lft",
-      "articulo": "505",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:5o,28/III,151,153-X,158,162,204/IX,209/V,210,236/II,484,503,505"
     }
   },
   "893": {
-    "artículo 872": {
+    "artículos 872 y 873-A de esta Ley": {
       "ley": "lft",
       "articulo": "872",
-      "parrafo": 1
-    },
-    "artículo 873-A": {
-      "ley": "lft",
-      "articulo": "873-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:872,873-A"
     }
   },
   "894": {
@@ -731,67 +644,31 @@
     }
   },
   "897": {
-    "artículo 389": {
+    "artículos 389; 418; 424, fracción IV; 427, fracciones I, II y VI; 434, fracciones I, III y V; y 439, de esta Ley": {
       "ley": "lft",
       "articulo": "389",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:389,418,424/IV,427/I,434/I,439"
     },
-    "artículo 418": {
-      "ley": "lft",
-      "articulo": "418",
-      "parrafo": 1
-    },
-    "artículo 424 fracción IV": {
-      "ley": "lft",
-      "articulo": "424",
-      "parrafo": 5
-    },
-    "artículo 427 fracción I": {
-      "ley": "lft",
-      "articulo": "427",
-      "parrafo": 2
-    },
-    "artículo 434 fracción I": {
-      "ley": "lft",
-      "articulo": "434",
-      "parrafo": 2
-    },
-    "artículo 439": {
-      "ley": "lft",
-      "articulo": "439",
-      "parrafo": 1
-    },
-    "artículo 897-A": {
+    "artículos 897-A al 897-G de esta Ley": {
       "ley": "lft",
       "articulo": "897-A",
-      "parrafo": 1
-    },
-    "artículo 897-G": {
-      "ley": "lft",
-      "articulo": "897-G",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:897-A,897-G"
     }
   },
   "897-A": {
-    "artículo 872": {
+    "artículos 872 y 873-A de esta Ley": {
       "ley": "lft",
       "articulo": "872",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:872,873-A"
     },
-    "artículo 873-A": {
-      "ley": "lft",
-      "articulo": "873-A",
-      "parrafo": 1
-    },
-    "artículo 389": {
+    "artículos 389 y 418 de esta Ley": {
       "ley": "lft",
       "articulo": "389",
-      "parrafo": 1
-    },
-    "artículo 418": {
-      "ley": "lft",
-      "articulo": "418",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:389,418"
     }
   },
   "897-B": {
@@ -809,15 +686,11 @@
     }
   },
   "897-G": {
-    "artículo 389": {
+    "artículos 389 y 418 de esta Ley": {
       "ley": "lft",
       "articulo": "389",
-      "parrafo": 1
-    },
-    "artículo 418": {
-      "ley": "lft",
-      "articulo": "418",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:389,418"
     }
   },
   "899-E": {
@@ -919,15 +792,11 @@
     }
   },
   "936": {
-    "artículo 466": {
+    "artículos 466 y 935 de esta Ley": {
       "ley": "lft",
       "articulo": "466",
-      "parrafo": 1
-    },
-    "artículo 935": {
-      "ley": "lft",
-      "articulo": "935",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:466,935"
     }
   },
   "937": {
@@ -1028,30 +897,22 @@
     }
   },
   "1004-C": {
-    "artículo 14": {
+    "artículos 14 y 15 de esta Ley": {
       "ley": "lft",
       "articulo": "14",
-      "parrafo": 1
-    },
-    "artículo 15": {
-      "ley": "lft",
-      "articulo": "15",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:14,15"
     },
     "artículo 12 de esta Ley": {
       "ley": "lft",
       "articulo": "12",
       "parrafo": 1
     },
-    "artículo 12": {
+    "artículos 12, 13, 14 y 15 de esta Ley": {
       "ley": "lft",
       "articulo": "12",
-      "parrafo": 1
-    },
-    "artículo 13": {
-      "ley": "lft",
-      "articulo": "13",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lft:12,13,14,15"
     }
   }
 }

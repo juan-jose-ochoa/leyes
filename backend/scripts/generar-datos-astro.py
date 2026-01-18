@@ -439,21 +439,38 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
                 # Parsear cada elemento de la lista
                 elementos = _parsear_lista_articulos(lista_texto)
                 if len(elementos) >= 2:  # Solo si hay múltiples artículos
-                    for articulo_ref, apartado, fraccion in elementos:
-                        # Crear texto de sub-referencia para cada artículo
-                        sub_texto = f"artículo {articulo_ref}"
-                        if apartado:
-                            sub_texto += f" Apartado {apartado}"
-                        if fraccion:
-                            sub_texto += f" fracción {fraccion}"
+                    # Resolver ley destino
+                    ley_destino = NOMBRE_A_CODIGO.get(ley_texto)
+                    if ley_destino == '_MISMA_':
+                        ley_destino = ley_codigo
 
-                        ref = _procesar_match_referencia(
-                            sub_texto, articulo_ref, fraccion, None, ley_texto,
-                            ley_codigo, indice
-                        )
-                        if ref:
-                            # Usar el sub_texto como clave para cada referencia
-                            referencias_articulo[sub_texto] = ref
+                    if ley_destino:
+                        # Construir DSL query con todos los artículos
+                        partes_dsl = []
+                        primer_parrafo = None
+                        for articulo_ref, apartado, fraccion in elementos:
+                            parte = articulo_ref
+                            if apartado:
+                                parte += f"/{apartado}"
+                            if fraccion:
+                                parte += f"/{fraccion}"
+                            partes_dsl.append(parte)
+
+                            # Obtener párrafo del primer artículo para el link
+                            if primer_parrafo is None:
+                                primer_parrafo = resolver_referencia(
+                                    ley_destino, articulo_ref, fraccion, None, indice
+                                ) or 1
+
+                        query_dsl = f"{ley_destino.lower()}:{','.join(partes_dsl)}"
+
+                        # Usar texto completo como clave, incluir query DSL
+                        referencias_articulo[texto_original] = {
+                            "ley": ley_destino.lower(),
+                            "articulo": elementos[0][0],  # Primer artículo
+                            "parrafo": primer_parrafo,
+                            "query": query_dsl
+                        }
 
             # Buscar referencias con patrón estándar
             for match in PATRON_REFERENCIA.finditer(texto):

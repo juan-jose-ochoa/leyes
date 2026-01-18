@@ -17,15 +17,11 @@
       "articulo": "73",
       "parrafo": 32
     },
-    "artículo 21": {
+    "artículos 21, párrafo noveno y 73, fracción XXI, penúltimo párrafo de esta Constitución": {
       "ley": "cpeum",
       "articulo": "21",
-      "parrafo": 1
-    },
-    "artículo 73 fracción XXI": {
-      "ley": "cpeum",
-      "articulo": "73",
-      "parrafo": 41
+      "parrafo": 1,
+      "query": "cpeum:21,73/XXI"
     }
   },
   "6o": {
@@ -72,25 +68,17 @@
       "articulo": "110",
       "parrafo": 1
     },
-    "artículo 6o": {
+    "artículos 6o. y 7o. de esta Constitución": {
       "ley": "cpeum",
       "articulo": "6o",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cpeum:6o,7o"
     },
-    "artículo 7o": {
-      "ley": "cpeum",
-      "articulo": "7o",
-      "parrafo": 1
-    },
-    "artículo 2o": {
+    "artículos 2o., 3o., 6o. y 7o. de esta Constitución": {
       "ley": "cpeum",
       "articulo": "2o",
-      "parrafo": 1
-    },
-    "artículo 3o": {
-      "ley": "cpeum",
-      "articulo": "3o",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cpeum:2o,3o,6o,7o"
     },
     "artículo 94 de esta Constitución": {
       "ley": "cpeum",
@@ -186,15 +174,11 @@
       "articulo": "113",
       "parrafo": 1
     },
-    "artículo 84": {
+    "artículos 84 y 85 de esta Constitución": {
       "ley": "cpeum",
       "articulo": "84",
-      "parrafo": 1
-    },
-    "artículo 85": {
-      "ley": "cpeum",
-      "articulo": "85",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cpeum:84,85"
     },
     "artículo 27 de esta Constitución": {
       "ley": "cpeum",
@@ -369,15 +353,11 @@
     }
   },
   "104": {
-    "artículo 103": {
+    "artículos 103 y 107 de esta Constitución": {
       "ley": "cpeum",
       "articulo": "103",
-      "parrafo": 1
-    },
-    "artículo 107": {
-      "ley": "cpeum",
-      "articulo": "107",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cpeum:103,107"
     },
     "artículo 73 de esta Constitución": {
       "ley": "cpeum",
@@ -410,15 +390,11 @@
       "articulo": "94",
       "parrafo": 1
     },
-    "artículo 20": {
+    "artículos 20, Apartado C, fracción VII, y 104, fracción III de esta Constitución": {
       "ley": "cpeum",
       "articulo": "20",
-      "parrafo": 1
-    },
-    "artículo 104 fracción III": {
-      "ley": "cpeum",
-      "articulo": "104",
-      "parrafo": 5
+      "parrafo": 1,
+      "query": "cpeum:20,104/III"
     }
   },
   "115": {
@@ -518,25 +494,11 @@
     }
   },
   "123": {
-    "artículo 94": {
+    "artículos 94, 97, 116 fracción III, y 122 Apartado A, fracción IV de esta Constitución": {
       "ley": "cpeum",
       "articulo": "94",
-      "parrafo": 1
-    },
-    "artículo 97": {
-      "ley": "cpeum",
-      "articulo": "97",
-      "parrafo": 1
-    },
-    "artículo 116 fracción III": {
-      "ley": "cpeum",
-      "articulo": "116",
-      "parrafo": 20
-    },
-    "artículo 122 Apartado A fracción IV": {
-      "ley": "cpeum",
-      "articulo": "122",
-      "parrafo": 17
+      "parrafo": 1,
+      "query": "cpeum:94,97,116/III,122/A/IV"
     },
     "artículo 127 de esta Constitución": {
       "ley": "cpeum",
@@ -545,62 +507,19 @@
     }
   },
   "134": {
-    "artículo 26": {
+    "artículos 26, Apartado C, 74, fracción VI y 79 de esta Constitución": {
       "ley": "cpeum",
       "articulo": "26",
-      "parrafo": 1
-    },
-    "artículo 74 fracción VI": {
-      "ley": "cpeum",
-      "articulo": "74",
-      "parrafo": 12
-    },
-    "artículo 79": {
-      "ley": "cpeum",
-      "articulo": "79",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cpeum:26,74/VI,79"
     }
   },
   "136": {
-    "artículo 30": {
+    "artículos 30, 32, 33, 35, 36, 38, 107 y parte final del artículo 111 de esta Constitución": {
       "ley": "cpeum",
       "articulo": "30",
-      "parrafo": 1
-    },
-    "artículo 32": {
-      "ley": "cpeum",
-      "articulo": "32",
-      "parrafo": 1
-    },
-    "artículo 33": {
-      "ley": "cpeum",
-      "articulo": "33",
-      "parrafo": 1
-    },
-    "artículo 35": {
-      "ley": "cpeum",
-      "articulo": "35",
-      "parrafo": 1
-    },
-    "artículo 36": {
-      "ley": "cpeum",
-      "articulo": "36",
-      "parrafo": 1
-    },
-    "artículo 38": {
-      "ley": "cpeum",
-      "articulo": "38",
-      "parrafo": 1
-    },
-    "artículo 107": {
-      "ley": "cpeum",
-      "articulo": "107",
-      "parrafo": 1
-    },
-    "artículo 111": {
-      "ley": "cpeum",
-      "articulo": "111",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cpeum:30,32,33,35,36,38,107,111"
     },
     "artículo 111 de esta Constitución": {
       "ley": "cpeum",
@@ -617,15 +536,11 @@
       "articulo": "27",
       "parrafo": 13
     },
-    "artículo 65": {
+    "artículos 65 y 66 de la Constitución": {
       "ley": "cpeum",
       "articulo": "65",
-      "parrafo": 1
-    },
-    "artículo 66": {
-      "ley": "cpeum",
-      "articulo": "66",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cpeum:65,66"
     },
     "artículo 66 de la Constitución": {
       "ley": "cpeum",

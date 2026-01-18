@@ -62,20 +62,11 @@
       "articulo": "58",
       "parrafo": 2
     },
-    "artículo 58 fracción II": {
+    "artículos 58 fracciones II y III, 61 y 159 fracciones IV y VI de esta Ley": {
       "ley": "lss",
       "articulo": "58",
-      "parrafo": 4
-    },
-    "artículo 61": {
-      "ley": "lss",
-      "articulo": "61",
-      "parrafo": 1
-    },
-    "artículo 159 fracción IV": {
-      "ley": "lss",
-      "articulo": "159",
-      "parrafo": 6
+      "parrafo": 4,
+      "query": "lss:58/II,61,159/IV"
     }
   },
   "63": {
@@ -119,15 +110,11 @@
     }
   },
   "88": {
-    "artículo 15 fracción I": {
+    "artículos 15, fracción I y 34 de esta Ley": {
       "ley": "lss",
       "articulo": "15",
-      "parrafo": 2
-    },
-    "artículo 34": {
-      "ley": "lss",
-      "articulo": "34",
-      "parrafo": 1
+      "parrafo": 2,
+      "query": "lss:15/I,34"
     }
   },
   "93": {
@@ -246,15 +233,11 @@
     }
   },
   "185": {
-    "artículo 15 fracción V": {
+    "artículos 15 fracción V, 251 fracciones XIV y XVIII, y demás relativos de esta Ley": {
       "ley": "lss",
       "articulo": "15",
-      "parrafo": 6
-    },
-    "artículo 251 fracción XIV": {
-      "ley": "lss",
-      "articulo": "251",
-      "parrafo": 15
+      "parrafo": 6,
+      "query": "lss:15/V,251/XIV"
     }
   },
   "186": {
@@ -272,15 +255,11 @@
     }
   },
   "193": {
-    "artículo 129": {
+    "artículos 129 al 137 de esta Ley": {
       "ley": "lss",
       "articulo": "129",
-      "parrafo": 1
-    },
-    "artículo 137": {
-      "ley": "lss",
-      "articulo": "137",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lss:129,137"
     }
   },
   "194": {
@@ -305,15 +284,11 @@
     }
   },
   "214": {
-    "artículo 215": {
+    "artículos 215 al 217 de esta Ley": {
       "ley": "lss",
       "articulo": "215",
-      "parrafo": 1
-    },
-    "artículo 217": {
-      "ley": "lss",
-      "articulo": "217",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lss:215,217"
     }
   },
   "218": {
@@ -459,15 +434,11 @@
     }
   },
   "238": {
-    "artículo 214": {
+    "artículos 214 a 217 de esta Ley": {
       "ley": "lss",
       "articulo": "214",
-      "parrafo": 1
-    },
-    "artículo 217": {
-      "ley": "lss",
-      "articulo": "217",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lss:214,217"
     }
   },
   "239": {
@@ -587,15 +558,11 @@
       "articulo": "275",
       "parrafo": 1
     },
-    "artículo 273": {
+    "artículos 273 y 275 de esta Ley": {
       "ley": "lss",
       "articulo": "273",
-      "parrafo": 1
-    },
-    "artículo 275": {
-      "ley": "lss",
-      "articulo": "275",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lss:273,275"
     }
   },
   "277": {
@@ -646,15 +613,11 @@
     }
   },
   "301": {
-    "artículo 150": {
+    "artículos 150 o 151 de esta Ley": {
       "ley": "lss",
       "articulo": "150",
-      "parrafo": 1
-    },
-    "artículo 151": {
-      "ley": "lss",
-      "articulo": "151",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lss:150,151"
     }
   }
 }

@@ -172,39 +172,27 @@
       "articulo": "59-A",
       "parrafo": 1
     },
-    "artículo 36": {
+    "artículos 36 y 36-A de esta Ley": {
       "ley": "la",
       "articulo": "36",
-      "parrafo": 1
-    },
-    "artículo 36-A": {
-      "ley": "la",
-      "articulo": "36-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:36,36-A"
     }
   },
   "39": {
-    "artículo 36": {
+    "artículos 36 y 36-A de esta Ley": {
       "ley": "la",
       "articulo": "36",
-      "parrafo": 1
-    },
-    "artículo 36-A": {
-      "ley": "la",
-      "articulo": "36-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:36,36-A"
     }
   },
   "41": {
-    "artículo 150": {
+    "artículos 150 y 152 de esta Ley": {
       "ley": "la",
       "articulo": "150",
-      "parrafo": 1
-    },
-    "artículo 152": {
-      "ley": "la",
-      "articulo": "152",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:150,152"
     }
   },
   "43": {
@@ -220,42 +208,25 @@
     }
   },
   "46": {
-    "artículo 150": {
+    "artículos 150 a 153 de esta Ley": {
       "ley": "la",
       "articulo": "150",
-      "parrafo": 1
-    },
-    "artículo 153": {
-      "ley": "la",
-      "articulo": "153",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:150,153"
     }
   },
   "47": {
-    "artículo 18": {
+    "artículos 18, 18-A y 34 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "18",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:18,18-A,34"
     },
-    "artículo 18-A": {
-      "ley": "cff",
-      "articulo": "18-A",
-      "parrafo": 1
-    },
-    "artículo 34": {
-      "ley": "cff",
-      "articulo": "34",
-      "parrafo": 1
-    },
-    "artículo 152": {
+    "artículos 152 y 153 de esta Ley": {
       "ley": "la",
       "articulo": "152",
-      "parrafo": 1
-    },
-    "artículo 153": {
-      "ley": "la",
-      "articulo": "153",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:152,153"
     }
   },
   "48": {
@@ -278,25 +249,11 @@
     }
   },
   "52": {
-    "artículo 63-A": {
+    "artículos 63-A, 108, fracción III, 110 y 135-B, fracción I de esta Ley": {
       "ley": "la",
       "articulo": "63-A",
-      "parrafo": 1
-    },
-    "artículo 108 fracción III": {
-      "ley": "la",
-      "articulo": "108",
-      "parrafo": 10
-    },
-    "artículo 110": {
-      "ley": "la",
-      "articulo": "110",
-      "parrafo": 1
-    },
-    "artículo 135-B fracción I": {
-      "ley": "la",
-      "articulo": "135-B",
-      "parrafo": 2
+      "parrafo": 1,
+      "query": "la:63-A,108/III,110,135-B/I"
     }
   },
   "53": {
@@ -339,15 +296,11 @@
       "articulo": "36-A",
       "parrafo": 8
     },
-    "artículo 65": {
+    "artículos 65 y 66 de esta Ley": {
       "ley": "la",
       "articulo": "65",
-      "parrafo": 1
-    },
-    "artículo 66": {
-      "ley": "la",
-      "articulo": "66",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:65,66"
     }
   },
   "59-A": {
@@ -575,25 +528,11 @@
     }
   },
   "76": {
-    "artículo 70": {
+    "artículos 70, 72, 73, y 74 de esta Ley": {
       "ley": "la",
       "articulo": "70",
-      "parrafo": 1
-    },
-    "artículo 72": {
-      "ley": "la",
-      "articulo": "72",
-      "parrafo": 1
-    },
-    "artículo 73": {
-      "ley": "la",
-      "articulo": "73",
-      "parrafo": 1
-    },
-    "artículo 74": {
-      "ley": "la",
-      "articulo": "74",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:70,72,73,74"
     }
   },
   "77": {
@@ -614,15 +553,11 @@
     }
   },
   "78": {
-    "artículo 64": {
+    "Artículos 64 y 71, fracciones I, II, III y IV, de esta Ley": {
       "ley": "la",
       "articulo": "64",
-      "parrafo": 1
-    },
-    "artículo 71 fracción I": {
-      "ley": "la",
-      "articulo": "71",
-      "parrafo": 2
+      "parrafo": 1,
+      "query": "la:64,71/I"
     },
     "Artículo 64 de esta Ley": {
       "ley": "la",
@@ -631,30 +566,17 @@
     }
   },
   "78-A": {
-    "artículo 150": {
+    "artículos 150 a 153 de esta Ley": {
       "ley": "la",
       "articulo": "150",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:150,153"
     },
-    "artículo 153": {
-      "ley": "la",
-      "articulo": "153",
-      "parrafo": 1
-    },
-    "artículo 36-A": {
+    "artículos 36-A, 37-A, fracción I y 59-A de esta Ley": {
       "ley": "la",
       "articulo": "36-A",
-      "parrafo": 1
-    },
-    "artículo 37-A fracción I": {
-      "ley": "la",
-      "articulo": "37-A",
-      "parrafo": 2
-    },
-    "artículo 59-A": {
-      "ley": "la",
-      "articulo": "59-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:36-A,37-A/I,59-A"
     }
   },
   "78-C": {
@@ -663,27 +585,19 @@
       "articulo": "151",
       "parrafo": 8
     },
-    "artículo 46": {
+    "artículos 46 y 48 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "46",
-      "parrafo": 1
-    },
-    "artículo 48": {
-      "ley": "cff",
-      "articulo": "48",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:46,48"
     }
   },
   "79": {
-    "artículo 36-A fracción II": {
+    "artículos 36-A, fracción II, inciso a) y 59-A de esta Ley": {
       "ley": "la",
       "articulo": "36-A",
-      "parrafo": 13
-    },
-    "artículo 59-A": {
-      "ley": "la",
-      "articulo": "59-A",
-      "parrafo": 1
+      "parrafo": 13,
+      "query": "la:36-A/II,59-A"
     }
   },
   "81": {
@@ -720,15 +634,11 @@
     }
   },
   "86-A": {
-    "artículo 72": {
+    "artículos 72 y 73 de esta Ley": {
       "ley": "la",
       "articulo": "72",
-      "parrafo": 1
-    },
-    "artículo 73": {
-      "ley": "la",
-      "articulo": "73",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:72,73"
     },
     "artículo 135-D de esta Ley": {
       "ley": "la",
@@ -737,15 +647,11 @@
     }
   },
   "87": {
-    "artículo 85": {
+    "artículos 85 y 86 de esta Ley": {
       "ley": "la",
       "articulo": "85",
-      "parrafo": 1
-    },
-    "artículo 86": {
-      "ley": "la",
-      "articulo": "86",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:85,86"
     },
     "artículo 86-A de esta Ley": {
       "ley": "la",
@@ -869,30 +775,11 @@
     }
   },
   "104": {
-    "artículo 63-A": {
+    "artículos 63-A, 105, 108, fracción III, 110 y 112 de esta Ley": {
       "ley": "la",
       "articulo": "63-A",
-      "parrafo": 1
-    },
-    "artículo 105": {
-      "ley": "la",
-      "articulo": "105",
-      "parrafo": 1
-    },
-    "artículo 108 fracción III": {
-      "ley": "la",
-      "articulo": "108",
-      "parrafo": 10
-    },
-    "artículo 110": {
-      "ley": "la",
-      "articulo": "110",
-      "parrafo": 1
-    },
-    "artículo 112": {
-      "ley": "la",
-      "articulo": "112",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:63-A,105,108/III,110,112"
     }
   },
   "107": {
@@ -915,15 +802,11 @@
     }
   },
   "110": {
-    "artículo 56": {
+    "artículos 56 y 104 de esta Ley": {
       "ley": "la",
       "articulo": "56",
-      "parrafo": 1
-    },
-    "artículo 104": {
-      "ley": "la",
-      "articulo": "104",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:56,104"
     },
     "artículo 108, fracción III de esta Ley": {
       "ley": "la",
@@ -1062,15 +945,11 @@
       "articulo": "68",
       "parrafo": 1
     },
-    "artículo 15": {
+    "artículos 15, 26 y demás relativos de esta Ley": {
       "ley": "la",
       "articulo": "15",
-      "parrafo": 1
-    },
-    "artículo 26": {
-      "ley": "la",
-      "articulo": "26",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:15,26"
     },
     "artículo 144-A de esta Ley": {
       "ley": "la",
@@ -1170,30 +1049,17 @@
       "articulo": "176",
       "parrafo": 1
     },
-    "artículo 36-A": {
+    "artículos 36-A, 37-A, fracción I y 59-A de esta Ley": {
       "ley": "la",
       "articulo": "36-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:36-A,37-A/I,59-A"
     },
-    "artículo 37-A fracción I": {
-      "ley": "la",
-      "articulo": "37-A",
-      "parrafo": 2
-    },
-    "artículo 59-A": {
-      "ley": "la",
-      "articulo": "59-A",
-      "parrafo": 1
-    },
-    "artículo 72": {
+    "artículos 72 y 73 de esta Ley": {
       "ley": "la",
       "articulo": "72",
-      "parrafo": 1
-    },
-    "artículo 73": {
-      "ley": "la",
-      "articulo": "73",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:72,73"
     },
     "artículo 86-A de esta Ley": {
       "ley": "la",
@@ -1212,27 +1078,19 @@
       "articulo": "150",
       "parrafo": 1
     },
-    "artículo 123": {
+    "Artículos 123 y 130 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "123",
-      "parrafo": 1
-    },
-    "artículo 130": {
-      "ley": "cff",
-      "articulo": "130",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:123,130"
     }
   },
   "153": {
-    "artículo 123": {
+    "artículos 123 y 130 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "123",
-      "parrafo": 1
-    },
-    "artículo 130": {
-      "ley": "cff",
-      "articulo": "130",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:123,130"
     },
     "artículo 150 de esta Ley": {
       "ley": "la",
@@ -1246,15 +1104,11 @@
     }
   },
   "153-A": {
-    "artículo 150": {
+    "artículos 150 a 153 de esta Ley": {
       "ley": "la",
       "articulo": "150",
-      "parrafo": 1
-    },
-    "artículo 153": {
-      "ley": "la",
-      "articulo": "153",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:150,153"
     }
   },
   "154": {
@@ -1263,15 +1117,11 @@
       "articulo": "183-A",
       "parrafo": 1
     },
-    "artículo 72": {
+    "artículos 72 y 73 de esta Ley": {
       "ley": "la",
       "articulo": "72",
-      "parrafo": 1
-    },
-    "artículo 73": {
-      "ley": "la",
-      "articulo": "73",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:72,73"
     },
     "artículo 151, fracción VII de esta Ley": {
       "ley": "la",
@@ -1285,30 +1135,22 @@
     }
   },
   "155": {
-    "artículo 123": {
+    "artículos 123 y 130 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "123",
-      "parrafo": 1
-    },
-    "artículo 130": {
-      "ley": "cff",
-      "articulo": "130",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:123,130"
     },
     "artículo 150 de esta Ley": {
       "ley": "la",
       "articulo": "150",
       "parrafo": 1
     },
-    "artículo 152": {
+    "artículos 152 y 153 de esta Ley": {
       "ley": "la",
       "articulo": "152",
-      "parrafo": 1
-    },
-    "artículo 153": {
-      "ley": "la",
-      "articulo": "153",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:152,153"
     }
   },
   "157": {
@@ -1331,15 +1173,11 @@
     }
   },
   "159": {
-    "artículo 160": {
+    "artículos 160 y 164 de esta Ley": {
       "ley": "la",
       "articulo": "160",
-      "parrafo": 1
-    },
-    "artículo 164": {
-      "ley": "la",
-      "articulo": "164",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:160,164"
     }
   },
   "160": {
@@ -1370,30 +1208,11 @@
       "articulo": "68",
       "parrafo": 1
     },
-    "artículo 6o": {
+    "artículos 6o., 36, 36-A, 37 y 37-A de la presente Ley": {
       "ley": "la",
       "articulo": "6o",
-      "parrafo": 1
-    },
-    "artículo 36": {
-      "ley": "la",
-      "articulo": "36",
-      "parrafo": 1
-    },
-    "artículo 36-A": {
-      "ley": "la",
-      "articulo": "36-A",
-      "parrafo": 1
-    },
-    "artículo 37": {
-      "ley": "la",
-      "articulo": "37",
-      "parrafo": 1
-    },
-    "artículo 37-A": {
-      "ley": "la",
-      "articulo": "37-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:6o,36,36-A,37,37-A"
     },
     "artículo 59, fracción III de esta Ley": {
       "ley": "la",
@@ -1429,15 +1248,11 @@
       "articulo": "165",
       "parrafo": 3
     },
-    "artículo 127 fracción II": {
+    "artículos 127, fracción II y 131, fracción II de esta Ley": {
       "ley": "la",
       "articulo": "127",
-      "parrafo": 3
-    },
-    "artículo 131 fracción II": {
-      "ley": "la",
-      "articulo": "131",
-      "parrafo": 3
+      "parrafo": 3,
+      "query": "la:127/II,131/II"
     },
     "artículo 162 de esta Ley": {
       "ley": "la",
@@ -1451,20 +1266,17 @@
       "articulo": "59",
       "parrafo": 6
     },
-    "artículo 127 fracción II": {
+    "artículos 127, fracción II y 131, fracción II de esta Ley": {
       "ley": "la",
       "articulo": "127",
-      "parrafo": 3
+      "parrafo": 3,
+      "query": "la:127/II,131/II"
     },
-    "artículo 131 fracción II": {
+    "artículos 28-A, primer párrafo de la Ley del Impuesto al Valor Agregado, 15-A, primer párrafo de la Ley del Impuesto Especial sobre Producción y Servicios y 100-A de esta Ley": {
       "ley": "la",
-      "articulo": "131",
-      "parrafo": 3
-    },
-    "artículo 100-A": {
-      "ley": "la",
-      "articulo": "100-A",
-      "parrafo": 1
+      "articulo": "28-A",
+      "parrafo": 1,
+      "query": "la:28-A,15-A,100-A"
     }
   },
   "166": {
@@ -1533,37 +1345,19 @@
       "articulo": "165",
       "parrafo": 3
     },
-    "artículo 127 fracción II": {
+    "artículos 127, fracción II y 131, fracción II de esta Ley": {
       "ley": "la",
       "articulo": "127",
-      "parrafo": 3
-    },
-    "artículo 131 fracción II": {
-      "ley": "la",
-      "articulo": "131",
-      "parrafo": 3
+      "parrafo": 3,
+      "query": "la:127/II,131/II"
     }
   },
   "167-H": {
-    "artículo 6o": {
+    "artículos 6o., 36, 36-A, 37 y 37- A de la presente Ley": {
       "ley": "la",
       "articulo": "6o",
-      "parrafo": 1
-    },
-    "artículo 36": {
-      "ley": "la",
-      "articulo": "36",
-      "parrafo": 1
-    },
-    "artículo 36-A": {
-      "ley": "la",
-      "articulo": "36-A",
-      "parrafo": 1
-    },
-    "artículo 37": {
-      "ley": "la",
-      "articulo": "37",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:6o,36,36-A,37"
     }
   },
   "167-I": {
@@ -1584,25 +1378,11 @@
       "articulo": "165",
       "parrafo": 1
     },
-    "artículo 167": {
+    "artículos 167, 167-A, 167-B y 167-C de esta Ley": {
       "ley": "la",
       "articulo": "167",
-      "parrafo": 1
-    },
-    "artículo 167-A": {
-      "ley": "la",
-      "articulo": "167-A",
-      "parrafo": 1
-    },
-    "artículo 167-B": {
-      "ley": "la",
-      "articulo": "167-B",
-      "parrafo": 1
-    },
-    "artículo 167-C": {
-      "ley": "la",
-      "articulo": "167-C",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:167,167-A,167-B,167-C"
     }
   },
   "167-K": {
@@ -1613,25 +1393,17 @@
     }
   },
   "167-N": {
-    "artículo 167-J fracción I": {
+    "artículos 167-J, fracciones I, II, III, IV, VI y VII y 167-L, se entenderán desincorporados de la misma": {
       "ley": "la",
       "articulo": "167-J",
-      "parrafo": 2
+      "parrafo": 2,
+      "query": "la:167-J/I,167-L"
     },
-    "artículo 167-L": {
-      "ley": "la",
-      "articulo": "167-L",
-      "parrafo": 1
-    },
-    "artículo 160": {
+    "artículos 160 y 164 de esta Ley": {
       "ley": "la",
       "articulo": "160",
-      "parrafo": 1
-    },
-    "artículo 164": {
-      "ley": "la",
-      "articulo": "164",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:160,164"
     }
   },
   "175": {
@@ -1654,20 +1426,11 @@
       "articulo": "108",
       "parrafo": 1
     },
-    "artículo 36-A": {
+    "artículos 36-A, 37-A, fracción I y 59-A de la presente Ley": {
       "ley": "la",
       "articulo": "36-A",
-      "parrafo": 1
-    },
-    "artículo 37-A fracción I": {
-      "ley": "la",
-      "articulo": "37-A",
-      "parrafo": 2
-    },
-    "artículo 59-A": {
-      "ley": "la",
-      "articulo": "59-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:36-A,37-A/I,59-A"
     },
     "artículo 59 de esta Ley": {
       "ley": "la",
@@ -1706,15 +1469,11 @@
       "articulo": "86",
       "parrafo": 1
     },
-    "artículo 72": {
+    "artículos 72 y 73 de esta Ley": {
       "ley": "la",
       "articulo": "72",
-      "parrafo": 1
-    },
-    "artículo 73": {
-      "ley": "la",
-      "articulo": "73",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:72,73"
     }
   },
   "178": {
@@ -1755,15 +1514,11 @@
     }
   },
   "181": {
-    "artículo 180": {
+    "artículos 180 y 180-A de esta Ley": {
       "ley": "la",
       "articulo": "180",
-      "parrafo": 1
-    },
-    "artículo 180-A": {
-      "ley": "la",
-      "articulo": "180-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:180,180-A"
     },
     "artículo 202 de esta Ley": {
       "ley": "la",
@@ -1796,25 +1551,17 @@
       "articulo": "144-A",
       "parrafo": 1
     },
-    "artículo 36-A": {
+    "artículos 36-A, 37-A, fracción I y 59-A de esta Ley": {
       "ley": "la",
       "articulo": "36-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:36-A,37-A/I,59-A"
     },
-    "artículo 37-A fracción I": {
-      "ley": "la",
-      "articulo": "37-A",
-      "parrafo": 2
-    },
-    "artículo 59-A": {
-      "ley": "la",
-      "articulo": "59-A",
-      "parrafo": 1
-    },
-    "artículo 36": {
+    "artículos 36 y 36-A de esta Ley": {
       "ley": "la",
       "articulo": "36",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:36,36-A"
     },
     "artículo 178, fracción IV de esta Ley": {
       "ley": "la",
@@ -1828,15 +1575,11 @@
     }
   },
   "184": {
-    "artículo 36": {
+    "artículos 36 y 36-A de esta Ley": {
       "ley": "la",
       "articulo": "36",
-      "parrafo": 1
-    },
-    "artículo 36-A": {
-      "ley": "la",
-      "articulo": "36-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:36,36-A"
     },
     "artículo 20 de esta Ley": {
       "ley": "la",
@@ -1855,32 +1598,19 @@
     }
   },
   "184-A": {
-    "artículo 20 fracción VII": {
+    "artículos 20, fracción VII y 59-A de esta Ley": {
       "ley": "la",
       "articulo": "20",
-      "parrafo": 8
-    },
-    "artículo 59-A": {
-      "ley": "la",
-      "articulo": "59-A",
-      "parrafo": 1
+      "parrafo": 8,
+      "query": "la:20/VII,59-A"
     }
   },
   "184-C": {
-    "artículo 36-A fracción I": {
+    "artículos 36-A, fracción I, inciso e), 84-A y 86-A, fracción I de esta Ley": {
       "ley": "la",
       "articulo": "36-A",
-      "parrafo": 2
-    },
-    "artículo 84-A": {
-      "ley": "la",
-      "articulo": "84-A",
-      "parrafo": 1
-    },
-    "artículo 86-A fracción I": {
-      "ley": "la",
-      "articulo": "86-A",
-      "parrafo": 2
+      "parrafo": 2,
+      "query": "la:36-A/I,84-A,86-A/I"
     }
   },
   "184-D": {
@@ -2012,30 +1742,11 @@
     }
   },
   "194": {
-    "artículo 15 fracción VII": {
+    "artículos 15, fracción VII, 16-A, penúltimo párrafo, 16-B, último párrafo, 21, fracción IV y 120, penúltimo párrafo de esta Ley": {
       "ley": "la",
       "articulo": "15",
-      "parrafo": 22
-    },
-    "artículo 16-A": {
-      "ley": "la",
-      "articulo": "16-A",
-      "parrafo": 1
-    },
-    "artículo 16-B": {
-      "ley": "la",
-      "articulo": "16-B",
-      "parrafo": 1
-    },
-    "artículo 21 fracción IV": {
-      "ley": "la",
-      "articulo": "21",
-      "parrafo": 6
-    },
-    "artículo 120": {
-      "ley": "la",
-      "articulo": "120",
-      "parrafo": 1
+      "parrafo": 22,
+      "query": "la:15/VII,16-A,16-B,21/IV,120"
     }
   },
   "195": {
@@ -2051,20 +1762,11 @@
       "articulo": "48",
       "parrafo": 1
     },
-    "artículo 86": {
+    "artículos 86, 106 y 108 de esta Ley": {
       "ley": "la",
       "articulo": "86",
-      "parrafo": 1
-    },
-    "artículo 106": {
-      "ley": "la",
-      "articulo": "106",
-      "parrafo": 1
-    },
-    "artículo 108": {
-      "ley": "la",
-      "articulo": "108",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:86,106,108"
     },
     "artículo 152 de esta Ley": {
       "ley": "la",
@@ -2078,20 +1780,11 @@
     }
   },
   "202": {
-    "artículo 181": {
+    "artículos 181, 191 y 193 de esta Ley": {
       "ley": "la",
       "articulo": "181",
-      "parrafo": 1
-    },
-    "artículo 191": {
-      "ley": "la",
-      "articulo": "191",
-      "parrafo": 1
-    },
-    "artículo 193": {
-      "ley": "la",
-      "articulo": "193",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "la:181,191,193"
     }
   }
 }

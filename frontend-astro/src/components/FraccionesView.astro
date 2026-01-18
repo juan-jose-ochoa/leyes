@@ -27,6 +27,7 @@ interface ReferenciaInfo {
   ley: string;
   articulo: string;
   parrafo: number;
+  query?: string;  // DSL query para listas de artículos
 }
 
 interface Props {
@@ -155,7 +156,10 @@ function procesarContenido(
     for (const textoRef of keys) {
       const ref = refs[textoRef];
       const textoEscapado = escapeHtml(textoRef);
-      const url = `/${ref.ley}/articulo/${ref.articulo}/#p-${ref.parrafo}`;
+      // Si tiene query DSL (lista de artículos), ir a búsqueda; sino, al artículo directo
+      const url = ref.query
+        ? `/buscar/?q=${encodeURIComponent(ref.query)}`
+        : `/${ref.ley}/articulo/${ref.articulo}/#p-${ref.parrafo}`;
       const link = `<a href="${url}" class="ref-link">${textoEscapado}</a>`;
       resultado = resultado.replaceAll(textoEscapado, link);
     }

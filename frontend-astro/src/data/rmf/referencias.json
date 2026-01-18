@@ -45,270 +45,111 @@
     }
   },
   "2.1.12": {
-    "artículo 22-C": {
+    "artículos 22-C y 59, fracción III, tercer párrafo del CFF": {
       "ley": "cff",
       "articulo": "22-C",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:22-C,59/III"
     },
-    "artículo 59 fracción III": {
-      "ley": "cff",
-      "articulo": "59",
-      "parrafo": 4
-    },
-    "artículo 82 fracción X": {
+    "artículos 82, fracciones X y XXXII y 84-B, fracción X del CFF": {
       "ley": "cff",
       "articulo": "82",
-      "parrafo": 24
+      "parrafo": 24,
+      "query": "cff:82/X,84-B/X"
     },
-    "artículo 84-B fracción X": {
-      "ley": "cff",
-      "articulo": "84-B",
-      "parrafo": 11
-    },
-    "artículo 82 fracción XXXV": {
+    "artículos 82, fracción XXXV; 84, fracción IV, incisos a), b) y c); 84-B, fracción VII; 84-J y 84-L del CFF": {
       "ley": "cff",
       "articulo": "82",
-      "parrafo": 58
+      "parrafo": 58,
+      "query": "cff:82/XXXV,84/IV,84-B/VII,84-J,84-L"
     },
-    "artículo 84 fracción IV": {
-      "ley": "cff",
-      "articulo": "84",
-      "parrafo": 5
-    },
-    "artículo 84-B fracción VII": {
-      "ley": "cff",
-      "articulo": "84-B",
-      "parrafo": 8
-    },
-    "artículo 84-J": {
-      "ley": "cff",
-      "articulo": "84-J",
-      "parrafo": 1
-    },
-    "artículo 84-L": {
-      "ley": "cff",
-      "articulo": "84-L",
-      "parrafo": 1
-    },
-    "artículo 32-A fracción I": {
+    "artículos 32-A, fracción I; 80, fracción II; 82, fracción XXXIV; 84, fracción VI; 84-B, fracciones VIII y IX, y 84-H del CFF": {
       "ley": "cff",
       "articulo": "32-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:32-A/I,80/II,82/XXXIV,84/VI,84-B/VIII,84-H"
     },
-    "artículo 80 fracción II": {
-      "ley": "cff",
-      "articulo": "80",
-      "parrafo": 3
-    },
-    "artículo 82 fracción XXXIV": {
-      "ley": "cff",
-      "articulo": "82",
-      "parrafo": 57
-    },
-    "artículo 84 fracción VI": {
-      "ley": "cff",
-      "articulo": "84",
-      "parrafo": 11
-    },
-    "artículo 84-B fracción VIII": {
-      "ley": "cff",
-      "articulo": "84-B",
-      "parrafo": 9
-    },
-    "artículo 84-H": {
-      "ley": "cff",
-      "articulo": "84-H",
-      "parrafo": 1
-    },
-    "artículo 20": {
+    "artículos 20, séptimo párrafo; 32-A, primer párrafo; 32-H, fracción I; 80, fracción II; 82, fracciones XI, XVI, XXVI y XXXVI; 84, fracciones IV, incisos b) y c), VI, IX, XV, XVI; 84-B, fracciones VIII, IX, X, XI, XII; 86- B, fracciones I, III y V; 86-H, primero, segundo y tercer párrafo y 86-J, primer párrafo del CFF": {
       "ley": "cff",
       "articulo": "20",
-      "parrafo": 1
-    },
-    "artículo 32-A": {
-      "ley": "cff",
-      "articulo": "32-A",
-      "parrafo": 1
-    },
-    "artículo 32-H fracción I": {
-      "ley": "cff",
-      "articulo": "32-H",
-      "parrafo": 2
-    },
-    "artículo 82 fracción XI": {
-      "ley": "cff",
-      "articulo": "82",
-      "parrafo": 25
-    },
-    "artículo 86": {
-      "ley": "cff",
-      "articulo": "86",
-      "parrafo": 1
-    },
-    "artículo 86-H": {
-      "ley": "cff",
-      "articulo": "86-H",
-      "parrafo": 1
-    },
-    "artículo 86-J": {
-      "ley": "cff",
-      "articulo": "86-J",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:20,32-A,32-H/I,80/II,82/XI,84/IV,84-B/VIII,86,86-H,86-J"
     },
     "artículo 82, fracción X del CFF": {
       "ley": "cff",
       "articulo": "82",
       "parrafo": 24
     },
-    "artículo 80 fracción I": {
+    "artículos 80, fracciones I, III, incisos a) y b), IV, V y VI; 82 fracciones I, incisos a), b), c), d) y e), II, incisos a), b), c), d), e), f) y g), III, IV, V, VI, VII, VIII, IX, XII, XIII, XIV, XV, XVII, XVIII, XIX, XX, XXI, XXII, XXIII, XXIV, XXV, XXVII, XXVIII, XXIX, XXX y XXXI; 84 fracciones I, II, III, IV, inciso a), V, VIII, XI y XIII; 84-B fracciones I, III, IV, V, VI y VII; 84-D; 84-F; 84-J; 84-L; 86 fracciones I, II, III, IV y V; 86-B fracciones II y IV; 86-F; 88; 91; 102 penúltimo párrafo; 104 fracciones I y II; 108 fracciones I, II y III; 112; 115 y 150 del CFF": {
       "ley": "cff",
       "articulo": "80",
-      "parrafo": 2
+      "parrafo": 2,
+      "query": "cff:80/I,82/I,84/I,84-B/I,84-D,84-F,84-J,84-L,86/I,86-B/II,86-F,88,91,102,104/I,108/I,112,115,150"
     },
-    "artículo 82 fracción I": {
+    "artículos 82, fracción XXXIV; 84-H y 90 del CFF": {
       "ley": "cff",
       "articulo": "82",
-      "parrafo": 2
+      "parrafo": 57,
+      "query": "cff:82/XXXIV,84-H,90"
     },
-    "artículo 84 fracción I": {
+    "artículos 20, séptimo párrafo;  22- C; 32-A, primer párrafo; 32-H, fracción I, primer párrafo; 59, fracción III; 80, fracción II; 82, fracciones X, XI, XVI y XXVI; 84, fracciones IV, incisos b) y c), VI, IX, XV y XVI; 84-B, fracciones VIII a XII; 86-B, fracciones I y V, así como; 86-H, segundo y tercer párrafos del CFF": {
       "ley": "cff",
-      "articulo": "84",
-      "parrafo": 2
+      "articulo": "20",
+      "parrafo": 1,
+      "query": "cff:20,22,32-A,32-H/I,59/III,80/II,82/X,84/IV,84-B/VIII,86-B/I,86-H"
     },
-    "artículo 84-B fracción I": {
+    "artículos 80, fracciones I, III, incisos a) y b), IV, V y VI; 82 fracciones I, incisos a) a e), II, incisos a) a g), III a IX, XII a XV, XVII a XXV, XXVII a XXXI; 84, fracciones I a IV, inciso a), V, VIII, XI, XIII; 84-B, fracciones I, III a VII; 84-D; 84-F; 84-J; 84-L; 86, fracciones I a V; 86-B, fracciones II y IV; 86-F; 88; 91; 102, último párrafo; 104, fracciones I y II; 108, fracciones I a III; 112; 115 y 150 del CFF": {
       "ley": "cff",
-      "articulo": "84-B",
-      "parrafo": 2
+      "articulo": "80",
+      "parrafo": 2,
+      "query": "cff:80/I,82/I,84/I,84-B/I,84-D,84-F,84-J,84-L,86/I,86-B/II,86-F,88,91,102,104/I,108/I,112,115,150"
     },
-    "artículo 84-D": {
+    "artículos 82, fracción XXXIV;  84- H y 90 del CFF": {
       "ley": "cff",
-      "articulo": "84-D",
-      "parrafo": 1
+      "articulo": "82",
+      "parrafo": 57,
+      "query": "cff:82/XXXIV,84,90"
     },
-    "artículo 84-F": {
+    "artículos 20, séptimo párrafo;  22- C; 32-A, primer párrafo; 59, fracción III, tercer párrafo; 80, fracción II; 82, fracciones X, XI, XVI y XXVI; 84, fracciones IV, incisos b) y c), VI, IX, XV y XVI; 84-B, fracciones VIII a XII; 86-B, fracciones I y V, y 86-H del CFF": {
       "ley": "cff",
-      "articulo": "84-F",
-      "parrafo": 1
+      "articulo": "20",
+      "parrafo": 1,
+      "query": "cff:20,22,32-A,59/III,80/II,82/X,84/IV,84-B/VIII,86-B/I,86-H"
     },
-    "artículo 86 fracción I": {
-      "ley": "cff",
-      "articulo": "86",
-      "parrafo": 2
-    },
-    "artículo 86-B fracción II": {
-      "ley": "cff",
-      "articulo": "86-B",
-      "parrafo": 3
-    },
-    "artículo 86-F": {
-      "ley": "cff",
-      "articulo": "86-F",
-      "parrafo": 1
-    },
-    "artículo 88": {
-      "ley": "cff",
-      "articulo": "88",
-      "parrafo": 1
-    },
-    "artículo 91": {
-      "ley": "cff",
-      "articulo": "91",
-      "parrafo": 1
-    },
-    "artículo 102": {
-      "ley": "cff",
-      "articulo": "102",
-      "parrafo": 1
-    },
-    "artículo 104 fracción I": {
-      "ley": "cff",
-      "articulo": "104",
-      "parrafo": 2
-    },
-    "artículo 108 fracción I": {
-      "ley": "cff",
-      "articulo": "108",
-      "parrafo": 5
-    },
-    "artículo 112": {
-      "ley": "cff",
-      "articulo": "112",
-      "parrafo": 1
-    },
-    "artículo 115": {
-      "ley": "cff",
-      "articulo": "115",
-      "parrafo": 1
-    },
-    "artículo 150": {
-      "ley": "cff",
-      "articulo": "150",
-      "parrafo": 1
-    },
-    "artículo 90": {
-      "ley": "cff",
-      "articulo": "90",
-      "parrafo": 1
-    },
-    "artículo 22": {
-      "ley": "cff",
-      "articulo": "22",
-      "parrafo": 1
-    },
-    "artículo 86-B fracción I": {
+    "artículos 86-B, fracción III y 86-J del CFF": {
       "ley": "cff",
       "articulo": "86-B",
-      "parrafo": 2
-    },
-    "artículo 84": {
-      "ley": "cff",
-      "articulo": "84",
-      "parrafo": 1
-    },
-    "artículo 86-B fracción III": {
-      "ley": "cff",
-      "articulo": "86-B",
-      "parrafo": 4
+      "parrafo": 4,
+      "query": "cff:86-B/III,86-J"
     },
     "artículo 82, fracción XXV del CFF": {
       "ley": "cff",
       "articulo": "82",
       "parrafo": 39
     },
-    "artículo 26 fracción X": {
+    "artículos 26, fracción X, inciso h); 80, fracción VI; 82-B, fracciones I a VII; 82- D, fracciones II a IV; 84 fracción III y 86-D del CFF": {
       "ley": "cff",
       "articulo": "26",
-      "parrafo": 22
+      "parrafo": 22,
+      "query": "cff:26/X,80/VI,82-B/I,82,84/III,86-D"
     },
-    "artículo 80 fracción VI": {
+    "artículos 20, séptimo párrafo; 32-A, primer párrafo; 59, fracción III, tercer párrafo; 80, fracción II; 82, fracciones X, XI, XVI, XXVI, XXXVI y XXXIX; 84, fracciones IV, incisos b) y c), VI, IX y XV; 84-B, fracciones VIII a XII; 86-B, fracciones I, III y V; 86- H y 86-J del CFF": {
       "ley": "cff",
-      "articulo": "80",
-      "parrafo": 9
+      "articulo": "20",
+      "parrafo": 1,
+      "query": "cff:20,32-A,59/III,80/II,82/X,84/IV,84-B/VIII,86-B/I,86,86-J"
     },
-    "artículo 82-B fracción I": {
+    "artículos 26, fracción X, inciso h); 80, fracción VI; 82-B, fracciones I a VII; 82-D, fracciones II a IV; 84 fracción III y 86-D del CFF": {
       "ley": "cff",
-      "articulo": "82-B",
-      "parrafo": 2
+      "articulo": "26",
+      "parrafo": 22,
+      "query": "cff:26/X,80/VI,82-B/I,82-D/II,84/III,86-D"
     },
-    "artículo 82": {
+    "artículos 32-A, segundo párrafo y 32-H, fracción I, primer párrafo, del CFF": {
       "ley": "cff",
-      "articulo": "82",
-      "parrafo": 1
-    },
-    "artículo 84 fracción III": {
-      "ley": "cff",
-      "articulo": "84",
-      "parrafo": 4
-    },
-    "artículo 86-D": {
-      "ley": "cff",
-      "articulo": "86-D",
-      "parrafo": 1
-    },
-    "artículo 82-D fracción II": {
-      "ley": "cff",
-      "articulo": "82-D",
-      "parrafo": 3
+      "articulo": "32-A",
+      "parrafo": 1,
+      "query": "cff:32-A,32-H/I"
     },
     "artículo 82, fracción XLI del CFF": {
       "ley": "cff",
@@ -320,47 +161,37 @@
       "articulo": "123",
       "parrafo": 1
     },
-    "artículo 82 fracción XXV": {
+    "artículos 20, séptimo párrafo; 26, fracción X, inciso h), 32-A, primer párrafo; 59, fracción III, tercer párrafo; 80, fracciones II y VI; 82, fracciones X, XI, XVI, XXVI, XXXVI y XXXIX; 82-B, fracciones I a VII; 82-D, fracciones II a IV; 84, fracciones III, IV, incisos b) y c), VI, IX y XV; 84-B, fracciones VIII a XII; 86-B, fracciones I, III y V; 86-D; 86-H y 86-J del CFF": {
+      "ley": "cff",
+      "articulo": "20",
+      "parrafo": 1,
+      "query": "cff:20,26/X,32-A,59/III,80/II,82/X,82-B/I,82-D/II,84/III,84-B/VIII,86-B/I,86-D,86-H,86-J"
+    },
+    "artículos 82, fracción XXV, incisos a) a h); 82-F, fracciones I a VI; 82-H, fracciones I y II; 84, fracción IV, inciso d); 84-N, fracciones I a III; 86-B, fracciones VI y VII; del CFF": {
       "ley": "cff",
       "articulo": "82",
-      "parrafo": 39
+      "parrafo": 39,
+      "query": "cff:82/XXV,82-F/I,82-H/I,84/IV,84-N/I,86-B/VI"
     },
-    "artículo 82-F fracción I": {
+    "artículos 32-A, segundo párrafo, y 32-H, fracción I, primer párrafo del CFF": {
       "ley": "cff",
-      "articulo": "82-F",
-      "parrafo": 2
+      "articulo": "32-A",
+      "parrafo": 1,
+      "query": "cff:32-A,32-H/I"
     },
-    "artículo 82-H fracción I": {
+    "artículos 32-A, segundo párrafo y 32-H, fracción I, primer párrafo del CFF": {
       "ley": "cff",
-      "articulo": "82-H",
-      "parrafo": 2
-    },
-    "artículo 84-N fracción I": {
-      "ley": "cff",
-      "articulo": "84-N",
-      "parrafo": 2
-    },
-    "artículo 86-B fracción VI": {
-      "ley": "cff",
-      "articulo": "86-B",
-      "parrafo": 7
+      "articulo": "32-A",
+      "parrafo": 1,
+      "query": "cff:32-A,32-H/I"
     }
   },
   "2.1.14": {
-    "artículo 18": {
+    "artículos 18, 18-A y 19 del CFF": {
       "ley": "cff",
       "articulo": "18",
-      "parrafo": 1
-    },
-    "artículo 18-A": {
-      "ley": "cff",
-      "articulo": "18-A",
-      "parrafo": 1
-    },
-    "artículo 19": {
-      "ley": "cff",
-      "articulo": "19",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:18,18-A,19"
     }
   },
   "2.1.15": {
@@ -376,15 +207,11 @@
     }
   },
   "2.1.19": {
-    "artículo 20": {
+    "artículos 20, séptimo párrafo y 22-B del CFF": {
       "ley": "cff",
       "articulo": "20",
-      "parrafo": 1
-    },
-    "artículo 22-B": {
-      "ley": "cff",
-      "articulo": "22-B",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:20,22-B"
     }
   },
   "2.1.20": {
@@ -409,15 +236,11 @@
     }
   },
   "2.1.25": {
-    "artículo 19": {
+    "artículos 19 y 34 del CFF": {
       "ley": "cff",
       "articulo": "19",
-      "parrafo": 1
-    },
-    "artículo 34": {
-      "ley": "cff",
-      "articulo": "34",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:19,34"
     }
   },
   "2.1.28": {
@@ -447,15 +270,11 @@
       "articulo": "32-D",
       "parrafo": 1
     },
-    "artículo 32-B": {
+    "artículos 32-B Ter y 32- B Quinquies del CFF": {
       "ley": "cff",
       "articulo": "32-B",
-      "parrafo": 1
-    },
-    "artículo 32": {
-      "ley": "cff",
-      "articulo": "32",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:32-B,32"
     },
     "artículo 32-D, fracción VIII del CFF": {
       "ley": "cff",
@@ -486,15 +305,11 @@
     }
   },
   "2.1.38": {
-    "artículo 17-A": {
+    "artículos 17-A y 21 del CFF": {
       "ley": "cff",
       "articulo": "17-A",
-      "parrafo": 1
-    },
-    "artículo 21": {
-      "ley": "cff",
-      "articulo": "21",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-A,21"
     }
   },
   "2.1.40": {
@@ -503,15 +318,11 @@
       "articulo": "34",
       "parrafo": 1
     },
-    "artículo 82-A": {
+    "artículos 82-A a 82-D del CFF": {
       "ley": "cff",
       "articulo": "82-A",
-      "parrafo": 1
-    },
-    "artículo 82-D": {
-      "ley": "cff",
-      "articulo": "82-D",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:82-A,82-D"
     },
     "artículo 69 del CFF": {
       "ley": "cff",
@@ -525,54 +336,33 @@
       "articulo": "34",
       "parrafo": 1
     },
-    "artículo 5o": {
+    "artículos 5o.-A y 14-B del CFF": {
       "ley": "cff",
       "articulo": "5o",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:5o,14-B"
     },
-    "artículo 14-B": {
-      "ley": "cff",
-      "articulo": "14-B",
-      "parrafo": 1
-    },
-    "artículo 82-A": {
+    "artículos 82-A al 82-D del CFF": {
       "ley": "cff",
       "articulo": "82-A",
-      "parrafo": 1
-    },
-    "artículo 82-D": {
-      "ley": "cff",
-      "articulo": "82-D",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:82-A,82-D"
     }
   },
   "2.1.47": {
-    "artículo 6o": {
+    "artículos 6o., párrafo séptimo y 65 del CFF": {
       "ley": "cff",
       "articulo": "6o",
-      "parrafo": 1
-    },
-    "artículo 65": {
-      "ley": "cff",
-      "articulo": "65",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:6o,65"
     }
   },
   "2.1.49": {
-    "artículo 20": {
+    "artículos 20, octavo párrafo, 31, primer párrafo y 145 del CFF": {
       "ley": "cff",
       "articulo": "20",
-      "parrafo": 1
-    },
-    "artículo 31": {
-      "ley": "cff",
-      "articulo": "31",
-      "parrafo": 1
-    },
-    "artículo 145": {
-      "ley": "cff",
-      "articulo": "145",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:20,31,145"
     }
   },
   "2.2.1": {
@@ -607,59 +397,33 @@
       "articulo": "17-H",
       "parrafo": 1
     },
-    "artículo 17-K": {
+    "artículos 17-K, último párrafo y 139 del CFF": {
       "ley": "cff",
       "articulo": "17-K",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-K,139"
     },
-    "artículo 139": {
-      "ley": "cff",
-      "articulo": "139",
-      "parrafo": 1
-    },
-    "artículo 17-H": {
+    "artículos 17-H, tercer párrafo, 29, tercer párrafo y 69, primer párrafo del CFF": {
       "ley": "cff",
       "articulo": "17-H",
-      "parrafo": 1
-    },
-    "artículo 29": {
-      "ley": "cff",
-      "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 69": {
-      "ley": "cff",
-      "articulo": "69",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-H,29,69"
     }
   },
   "2.2.6": {
-    "artículo 17-K fracción II": {
+    "artículos 17-K, fracción II; 18 y 18-A del CFF": {
       "ley": "cff",
       "articulo": "17-K",
-      "parrafo": 3
-    },
-    "artículo 18": {
-      "ley": "cff",
-      "articulo": "18",
-      "parrafo": 1
-    },
-    "artículo 18-A": {
-      "ley": "cff",
-      "articulo": "18-A",
-      "parrafo": 1
+      "parrafo": 3,
+      "query": "cff:17-K/II,18,18-A"
     }
   },
   "2.2.7": {
-    "artículo 17-H": {
+    "artículos 17-H Bis, fracción VIII y 17-K del CFF": {
       "ley": "cff",
       "articulo": "17-H",
-      "parrafo": 1
-    },
-    "artículo 17-K": {
-      "ley": "cff",
-      "articulo": "17-K",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-H,17-K"
     }
   },
   "2.2.9": {
@@ -708,37 +472,25 @@
     }
   },
   "2.2.15": {
-    "artículo 17-K": {
+    "artículos 17-K, último párrafo y 139 del CFF": {
       "ley": "cff",
       "articulo": "17-K",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-K,139"
     },
-    "artículo 139": {
+    "artículos 17-K, último párrafo y 139, todos del CFF": {
       "ley": "cff",
-      "articulo": "139",
-      "parrafo": 1
+      "articulo": "17-K",
+      "parrafo": 1,
+      "query": "cff:17-K,139"
     }
   },
   "2.2.16": {
-    "artículo 17-H": {
+    "artículos 17-H, 17-H Bis y 134, en relación con el 17-K, último párrafo y 139 del CFF": {
       "ley": "cff",
       "articulo": "17-H",
-      "parrafo": 1
-    },
-    "artículo 134": {
-      "ley": "cff",
-      "articulo": "134",
-      "parrafo": 1
-    },
-    "artículo 17-K": {
-      "ley": "cff",
-      "articulo": "17-K",
-      "parrafo": 1
-    },
-    "artículo 139": {
-      "ley": "cff",
-      "articulo": "139",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-H,134,17-K,139"
     },
     "artículo 134 del CFF": {
       "ley": "cff",
@@ -766,25 +518,11 @@
     }
   },
   "2.2.21": {
-    "artículo 17-D": {
+    "artículos 17-D, 19, 19-A y 27, apartado C, fracción VI del CFF": {
       "ley": "cff",
       "articulo": "17-D",
-      "parrafo": 1
-    },
-    "artículo 19": {
-      "ley": "cff",
-      "articulo": "19",
-      "parrafo": 1
-    },
-    "artículo 19-A": {
-      "ley": "cff",
-      "articulo": "19-A",
-      "parrafo": 1
-    },
-    "artículo 27": {
-      "ley": "cff",
-      "articulo": "27",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-D,19,19-A,27"
     },
     "artículo 134 del CFF": {
       "ley": "cff",
@@ -793,42 +531,31 @@
     }
   },
   "2.2.22": {
-    "artículo 17-K": {
+    "artículos 17-K, tercer párrafo respecto a la habilitación del buzón tributario, 27, apartado C, fracción IV, y 86-C del CFF": {
       "ley": "cff",
       "articulo": "17-K",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-K,27,86-C"
     },
-    "artículo 27": {
+    "artículos 17-K, tercer párrafo y 86-C del CFF": {
       "ley": "cff",
-      "articulo": "27",
-      "parrafo": 1
-    },
-    "artículo 86-C": {
-      "ley": "cff",
-      "articulo": "86-C",
-      "parrafo": 1
+      "articulo": "17-K",
+      "parrafo": 1,
+      "query": "cff:17-K,86-C"
     }
   },
   "2.3.2": {
-    "artículo 22": {
+    "artículos 22 y 22-B del CFF": {
       "ley": "cff",
       "articulo": "22",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:22,22-B"
     },
-    "artículo 22-B": {
-      "ley": "cff",
-      "articulo": "22-B",
-      "parrafo": 1
-    },
-    "artículo 69": {
+    "artículos 69 o 69-B del CFF": {
       "ley": "cff",
       "articulo": "69",
-      "parrafo": 1
-    },
-    "artículo 69-B": {
-      "ley": "cff",
-      "articulo": "69-B",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:69,69-B"
     },
     "artículo 17-H, fracción X del CFF": {
       "ley": "cff",
@@ -847,27 +574,19 @@
       "articulo": "69-B",
       "parrafo": 1
     },
-    "artículo 49": {
+    "artículos 49 Bis y 69-B del CFF": {
       "ley": "cff",
       "articulo": "49",
-      "parrafo": 1
-    },
-    "artículo 69-B": {
-      "ley": "cff",
-      "articulo": "69-B",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:49,69-B"
     }
   },
   "2.3.5": {
-    "artículo 22": {
+    "artículos 22, séptimo párrafo y 22-B del CFF": {
       "ley": "cff",
       "articulo": "22",
-      "parrafo": 1
-    },
-    "artículo 22-B": {
-      "ley": "cff",
-      "articulo": "22-B",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:22,22-B"
     }
   },
   "2.3.6": {
@@ -878,15 +597,11 @@
     }
   },
   "2.3.7": {
-    "artículo 22": {
+    "artículos 22 y 22-C del CFF": {
       "ley": "cff",
       "articulo": "22",
-      "parrafo": 1
-    },
-    "artículo 22-C": {
-      "ley": "cff",
-      "articulo": "22-C",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:22,22-C"
     }
   },
   "2.3.8": {
@@ -897,40 +612,22 @@
     }
   },
   "2.3.11": {
-    "artículo 2o": {
+    "artículos 2o.-A, fracción I, inciso b), 6o. de la Ley del IVA, y 22, primer y séptimo párrafos del CFF": {
       "ley": "cff",
       "articulo": "2o",
-      "parrafo": 1
-    },
-    "artículo 6o": {
-      "ley": "cff",
-      "articulo": "6o",
-      "parrafo": 1
-    },
-    "artículo 22": {
-      "ley": "cff",
-      "articulo": "22",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:2o,6o,22"
     },
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
       "parrafo": 1
     },
-    "artículo 49": {
+    "artículos 49 Bis, 69 o 69-B del CFF": {
       "ley": "cff",
       "articulo": "49",
-      "parrafo": 1
-    },
-    "artículo 69": {
-      "ley": "cff",
-      "articulo": "69",
-      "parrafo": 1
-    },
-    "artículo 69-B": {
-      "ley": "cff",
-      "articulo": "69-B",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:49,69,69-B"
     },
     "artículo 69-B del CFF": {
       "ley": "cff",
@@ -939,105 +636,62 @@
     }
   },
   "2.3.12": {
-    "artículo 2o": {
+    "artículos 2o.-A, fracción I, inciso b), 6o. de la Ley del IVA, y 22, primer y séptimo párrafos del CFF": {
       "ley": "cff",
       "articulo": "2o",
-      "parrafo": 1
-    },
-    "artículo 6o": {
-      "ley": "cff",
-      "articulo": "6o",
-      "parrafo": 1
-    },
-    "artículo 22": {
-      "ley": "cff",
-      "articulo": "22",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:2o,6o,22"
     },
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
       "parrafo": 1
     },
-    "artículo 49": {
+    "artículos 49 Bis, 69, párrafos penúltimo, fracciones I, II, III y IV, y último o 69-B del CFF": {
       "ley": "cff",
       "articulo": "49",
-      "parrafo": 1
-    },
-    "artículo 69": {
-      "ley": "cff",
-      "articulo": "69",
-      "parrafo": 1
-    },
-    "artículo 69-B": {
-      "ley": "cff",
-      "articulo": "69-B",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:49,69,69-B"
     }
   },
   "2.3.13": {
-    "artículo 1o": {
+    "artículos 1o., fracción I de la Ley del IVA, 22 del CFF": {
       "ley": "cff",
       "articulo": "1o",
-      "parrafo": 1
-    },
-    "artículo 22": {
-      "ley": "cff",
-      "articulo": "22",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:1o,22"
     }
   },
   "2.3.14": {
-    "artículo 5o": {
+    "artículos 5o., fracción VI, párrafos primero, inciso b) y sexto de la Ley del IVA y 22, primer y séptimo párrafos del CFF": {
       "ley": "cff",
       "articulo": "5o",
-      "parrafo": 1
-    },
-    "artículo 22": {
-      "ley": "cff",
-      "articulo": "22",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:5o,22"
     }
   },
   "2.4.1": {
-    "artículo 15-C": {
+    "artículos 15-C, 27 y 32-B, fracciones V, IX y X del CFF": {
       "ley": "cff",
       "articulo": "15-C",
-      "parrafo": 1
-    },
-    "artículo 27": {
-      "ley": "cff",
-      "articulo": "27",
-      "parrafo": 1
-    },
-    "artículo 32-B fracción V": {
-      "ley": "cff",
-      "articulo": "32-B",
-      "parrafo": 10
+      "parrafo": 1,
+      "query": "cff:15-C,27,32-B/V"
     }
   },
   "2.4.6": {
-    "artículo 29": {
+    "artículos 29, primer párrafo, fracción V, y penúltimo párrafo y 30, fracción IV, inciso a), segundo párrafo del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 30 fracción IV": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,30/IV"
     }
   },
   "2.4.10": {
-    "artículo 22": {
+    "artículos 22 y 24 del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "22",
-      "parrafo": 1
-    },
-    "artículo 24": {
-      "ley": "cff",
-      "articulo": "24",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:22,24"
     }
   },
   "2.4.14": {
@@ -1048,32 +702,27 @@
     }
   },
   "2.4.15": {
-    "artículo 15-C": {
+    "artículos 15-C, 27, apartados A, fracción I, segundo párrafo, y B, fracción II, así como 32-B, fracciones V, IX y X del CFF": {
       "ley": "cff",
       "articulo": "15-C",
-      "parrafo": 1
-    },
-    "artículo 27": {
-      "ley": "cff",
-      "articulo": "27",
-      "parrafo": 1
-    },
-    "artículo 32-B fracción V": {
-      "ley": "cff",
-      "articulo": "32-B",
-      "parrafo": 10
+      "parrafo": 1,
+      "query": "cff:15-C,27,32-B/V"
+    }
+  },
+  "2.5.2": {
+    "artículos 9o., último párrafo de dicho ordenamiento y 12 de la Ley del ISR, las personas morales que tributen conforme al Título II de la misma": {
+      "ley": "rmf",
+      "articulo": "9o",
+      "parrafo": 1,
+      "query": "rmf:9o,12"
     }
   },
   "2.5.5": {
-    "artículo 27": {
+    "artículos 27, apartados A, fracción III, B, fracción II y C, fracción V y 63 del CFF": {
       "ley": "cff",
       "articulo": "27",
-      "parrafo": 1
-    },
-    "artículo 63": {
-      "ley": "cff",
-      "articulo": "63",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:27,63"
     },
     "artículo 27 del CFF": {
       "ley": "cff",
@@ -1120,15 +769,11 @@
     }
   },
   "2.5.11": {
-    "artículo 29 fracción VII": {
+    "artículos 29, fracción VII y 30, fracción V del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 30 fracción V": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29/VII,30/V"
     },
     "artículo 27 del CFF": {
       "ley": "cff",
@@ -1137,63 +782,43 @@
     }
   },
   "2.5.18": {
-    "artículo 27": {
+    "artículos 27 apartados A, fracción II; B, fracción II y C, fracción V y 63 del CFF": {
       "ley": "cff",
       "articulo": "27",
-      "parrafo": 1
-    },
-    "artículo 63": {
-      "ley": "cff",
-      "articulo": "63",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:27,63"
     }
   },
   "2.5.20": {
-    "artículo 27": {
+    "artículos 27, apartados B, fracción II y C, fracciones V y XII y 63 del CFF": {
       "ley": "cff",
       "articulo": "27",
-      "parrafo": 1
-    },
-    "artículo 63": {
-      "ley": "cff",
-      "articulo": "63",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:27,63"
     }
   },
   "2.6.2.1": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.7.1.1": {
-    "artículo 28 fracción I": {
+    "artículos 28, fracción I, apartado A y 30, octavo párrafo del CFF": {
       "ley": "cff",
       "articulo": "28",
-      "parrafo": 2
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 2,
+      "query": "cff:28/I,30"
     }
   },
   "2.7.1.3": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.7.1.7": {
@@ -1223,39 +848,27 @@
     }
   },
   "2.7.1.13": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.7.1.14": {
-    "artículo 29": {
+    "artículos 29 y 29-A, antepenúltimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.7.1.15": {
-    "artículo 29": {
+    "artículos 7, tercer párrafo de la Ley del ISR y 29, en relación con el artículo 29-A del CFF": {
       "ley": "cff",
-      "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "articulo": "7",
+      "parrafo": 1,
+      "query": "cff:7,29,29-A"
     },
     "artículo 29-A del CFF": {
       "ley": "cff",
@@ -1264,15 +877,11 @@
     }
   },
   "2.7.1.16": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     },
     "artículo 29-A, fracción IV del CFF": {
       "ley": "cff",
@@ -1281,75 +890,51 @@
     }
   },
   "2.7.1.17": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.7.1.18": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.7.1.20": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.7.1.21": {
-    "artículo 29": {
+    "artículos 29 y 29-A, fracción IV, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A fracción IV": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 5
+      "parrafo": 1,
+      "query": "cff:29,29-A/IV"
     }
   },
   "2.7.1.22": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.7.1.30": {
-    "artículo 29-A fracción VII": {
+    "artículos 29-A, fracción VII, inciso c) y 32-E del CFF": {
       "ley": "cff",
       "articulo": "29-A",
-      "parrafo": 24
-    },
-    "artículo 32-E": {
-      "ley": "cff",
-      "articulo": "32-E",
-      "parrafo": 1
+      "parrafo": 24,
+      "query": "cff:29-A/VII,32-E"
     }
   },
   "2.7.1.31": {
@@ -1360,99 +945,67 @@
     }
   },
   "2.7.1.37": {
-    "artículo 29": {
+    "artículos 29 y 29-A, fracción VII, inciso c) del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A fracción VII": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 24
+      "parrafo": 1,
+      "query": "cff:29,29-A/VII"
     }
   },
   "2.7.1.38": {
-    "artículo 28 fracción I": {
+    "artículos 28, fracción I, apartado A y 29, segundo párrafo, fracción V del CFF": {
       "ley": "cff",
       "articulo": "28",
-      "parrafo": 2
-    },
-    "artículo 29": {
-      "ley": "cff",
-      "articulo": "29",
-      "parrafo": 1
+      "parrafo": 2,
+      "query": "cff:28/I,29"
     }
   },
   "2.7.1.40": {
-    "artículo 29": {
+    "artículos 29, primer y penúltimo párrafos y 29-A, fracción IX del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A fracción IX": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 33
+      "parrafo": 1,
+      "query": "cff:29,29-A/IX"
     }
   },
   "2.7.1.41": {
-    "artículo 29": {
+    "artículos 29 y 59 del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 59": {
-      "ley": "cff",
-      "articulo": "59",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,59"
     }
   },
   "2.7.1.44": {
-    "artículo 29": {
+    "artículos 29, primer párrafo y 29-A, cuarto, quinto y sexto párrafos del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.7.1.45": {
-    "artículo 29": {
+    "artículos 29 y 29-A fracción IV, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A fracción IV": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 5
+      "parrafo": 1,
+      "query": "cff:29,29-A/IV"
     }
   },
   "2.7.1.47": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.7.1.48": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.7.2.1": {
@@ -1475,37 +1028,25 @@
     }
   },
   "2.7.2.8": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.7.3.8": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
-    },
-    "artículo 17-H": {
+    "artículos 17-H, primer párrafo, fracción X o 17- H Bis, último párrafo del CFF": {
       "ley": "cff",
       "articulo": "17-H",
-      "parrafo": 1
-    },
-    "artículo 17": {
-      "ley": "cff",
-      "articulo": "17",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-H,17"
     }
   },
   "2.7.4.2": {
@@ -1530,39 +1071,27 @@
     }
   },
   "2.7.5.1": {
-    "artículo 29": {
+    "artículos 29 y 39 del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 39": {
-      "ley": "cff",
-      "articulo": "39",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,39"
     }
   },
   "2.7.5.5": {
-    "artículo 82-G": {
+    "artículos 82-G y 82-H del CFF": {
       "ley": "cff",
       "articulo": "82-G",
-      "parrafo": 1
-    },
-    "artículo 82-H": {
-      "ley": "cff",
-      "articulo": "82-H",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:82-G,82-H"
     }
   },
   "2.7.6.1": {
-    "artículo 29": {
+    "artículos 29, primer y penúltimo párrafos y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.7.6.4": {
@@ -1571,15 +1100,11 @@
       "articulo": "29-A",
       "parrafo": 1
     },
-    "artículo 29": {
+    "artículos 29, penúltimo párrafo y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "2.8.1.1": {
@@ -1640,20 +1165,17 @@
     }
   },
   "2.8.1.8": {
-    "artículo 22": {
+    "artículos 22, décimo párrafo y 42, fracciones II, III, IV o IX del CFF": {
       "ley": "cff",
       "articulo": "22",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:22,42/II"
     },
-    "artículo 42 fracción II": {
+    "artículos 22 o 23 del CFF": {
       "ley": "cff",
-      "articulo": "42",
-      "parrafo": 3
-    },
-    "artículo 23": {
-      "ley": "cff",
-      "articulo": "23",
-      "parrafo": 1
+      "articulo": "22",
+      "parrafo": 1,
+      "query": "cff:22,23"
     },
     "artículo 30-A del CFF": {
       "ley": "cff",
@@ -1676,15 +1198,11 @@
     }
   },
   "2.8.1.11": {
-    "artículo 6o": {
+    "artículos 6o. y 31 del CFF": {
       "ley": "cff",
       "articulo": "6o",
-      "parrafo": 1
-    },
-    "artículo 31": {
-      "ley": "cff",
-      "articulo": "31",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:6o,31"
     }
   },
   "2.8.1.12": {
@@ -1754,32 +1272,19 @@
     }
   },
   "2.8.3.1": {
-    "artículo 20": {
+    "artículos 20, séptimo párrafo, 31, primer párrafo del CFF": {
       "ley": "cff",
       "articulo": "20",
-      "parrafo": 1
-    },
-    "artículo 31": {
-      "ley": "cff",
-      "articulo": "31",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:20,31"
     }
   },
   "2.8.3.2": {
-    "artículo 9o": {
+    "artículos 9o., 11 y 31 del CFF": {
       "ley": "cff",
       "articulo": "9o",
-      "parrafo": 1
-    },
-    "artículo 11": {
-      "ley": "cff",
-      "articulo": "11",
-      "parrafo": 1
-    },
-    "artículo 31": {
-      "ley": "cff",
-      "articulo": "31",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:9o,11,31"
     }
   },
   "2.8.3.3": {
@@ -1788,44 +1293,27 @@
       "articulo": "32",
       "parrafo": 1
     },
-    "artículo 17-A": {
+    "artículos 17-A y 21 del CFF": {
       "ley": "cff",
       "articulo": "17-A",
-      "parrafo": 1
-    },
-    "artículo 21": {
-      "ley": "cff",
-      "articulo": "21",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-A,21"
     }
   },
   "2.8.3.6": {
-    "artículo 9o": {
+    "artículos 9o., 11 y 31 del CFF": {
       "ley": "cff",
       "articulo": "9o",
-      "parrafo": 1
-    },
-    "artículo 11": {
-      "ley": "cff",
-      "articulo": "11",
-      "parrafo": 1
-    },
-    "artículo 31": {
-      "ley": "cff",
-      "articulo": "31",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:9o,11,31"
     }
   },
   "2.8.3.7": {
-    "artículo 20": {
+    "artículos 20, séptimo párrafo, 31, primer párrafo del CFF": {
       "ley": "cff",
       "articulo": "20",
-      "parrafo": 1
-    },
-    "artículo 31": {
-      "ley": "cff",
-      "articulo": "31",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:20,31"
     }
   },
   "2.8.4.1": {
@@ -1848,27 +1336,25 @@
       "articulo": "32",
       "parrafo": 1
     },
-    "artículo 17-A": {
+    "artículos 17-A y 21  del CFF": {
       "ley": "cff",
       "articulo": "17-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-A,21"
     },
-    "artículo 21": {
+    "artículos 17-A y 21 del CFF": {
       "ley": "cff",
-      "articulo": "21",
-      "parrafo": 1
+      "articulo": "17-A",
+      "parrafo": 1,
+      "query": "cff:17-A,21"
     }
   },
   "2.9.1": {
-    "artículo 10": {
+    "artículos 10 y 27, apartado C, fracción V del CFF": {
       "ley": "cff",
       "articulo": "10",
-      "parrafo": 1
-    },
-    "artículo 27": {
-      "ley": "cff",
-      "articulo": "27",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:10,27"
     },
     "artículo 10 del CFF": {
       "ley": "cff",
@@ -1877,25 +1363,11 @@
     }
   },
   "2.9.2": {
-    "artículo 12": {
+    "artículos 12, 13, 17-K, fracción I y 134, fracción I del CFF": {
       "ley": "cff",
       "articulo": "12",
-      "parrafo": 1
-    },
-    "artículo 13": {
-      "ley": "cff",
-      "articulo": "13",
-      "parrafo": 1
-    },
-    "artículo 17-K fracción I": {
-      "ley": "cff",
-      "articulo": "17-K",
-      "parrafo": 2
-    },
-    "artículo 134 fracción I": {
-      "ley": "cff",
-      "articulo": "134",
-      "parrafo": 2
+      "parrafo": 1,
+      "query": "cff:12,13,17-K/I,134/I"
     },
     "artículo 134 del CFF": {
       "ley": "cff",
@@ -1904,15 +1376,11 @@
     }
   },
   "2.9.3": {
-    "artículo 17-I": {
+    "artículos 17-I y 38, tercer a quinto párrafos del CFF": {
       "ley": "cff",
       "articulo": "17-I",
-      "parrafo": 1
-    },
-    "artículo 38": {
-      "ley": "cff",
-      "articulo": "38",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-I,38"
     }
   },
   "2.9.4": {
@@ -1935,15 +1403,11 @@
     }
   },
   "2.9.7": {
-    "artículo 55": {
+    "artículos 55 y 56 del CFF": {
       "ley": "cff",
       "articulo": "55",
-      "parrafo": 1
-    },
-    "artículo 56": {
-      "ley": "cff",
-      "articulo": "56",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:55,56"
     },
     "artículo 59, fracción III del CFF": {
       "ley": "cff",
@@ -1981,25 +1445,11 @@
     }
   },
   "2.9.13": {
-    "artículo 33 fracción IV": {
+    "artículos 33, fracción IV, inciso b), 41, 81 y 82 del CFF": {
       "ley": "cff",
       "articulo": "33",
-      "parrafo": 23
-    },
-    "artículo 41": {
-      "ley": "cff",
-      "articulo": "41",
-      "parrafo": 1
-    },
-    "artículo 81": {
-      "ley": "cff",
-      "articulo": "81",
-      "parrafo": 1
-    },
-    "artículo 82": {
-      "ley": "cff",
-      "articulo": "82",
-      "parrafo": 1
+      "parrafo": 23,
+      "query": "cff:33/IV,41,81,82"
     }
   },
   "2.9.17": {
@@ -2091,27 +1541,19 @@
     }
   },
   "2.10.10": {
-    "artículo 52": {
+    "artículos 52 y 54 del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "52",
-      "parrafo": 1
-    },
-    "artículo 54": {
-      "ley": "cff",
-      "articulo": "54",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:52,54"
     }
   },
   "2.10.13": {
-    "artículo 29 fracción V": {
+    "artículos 29, fracción V y 30, fracción IV, inciso a), tercer párrafo del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 13
-    },
-    "artículo 30 fracción IV": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 13,
+      "query": "cff:29/V,30/IV"
     }
   },
   "2.10.14": {
@@ -2136,15 +1578,11 @@
     }
   },
   "2.10.17": {
-    "artículo 32-A": {
+    "artículos 32-A, quinto párrafo y 52, fracción IV del CFF": {
       "ley": "cff",
       "articulo": "32-A",
-      "parrafo": 1
-    },
-    "artículo 52 fracción IV": {
-      "ley": "cff",
-      "articulo": "52",
-      "parrafo": 14
+      "parrafo": 1,
+      "query": "cff:32-A,52/IV"
     }
   },
   "2.10.18": {
@@ -2174,27 +1612,19 @@
     }
   },
   "2.10.25": {
-    "artículo 32-A": {
+    "artículos 32-A, quinto párrafo y 52 del CFF": {
       "ley": "cff",
       "articulo": "32-A",
-      "parrafo": 1
-    },
-    "artículo 52": {
-      "ley": "cff",
-      "articulo": "52",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:32-A,52"
     }
   },
   "2.10.26": {
-    "artículo 29": {
+    "artículos 29 y 30 del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,30"
     }
   },
   "2.10.27": {
@@ -2205,15 +1635,11 @@
     }
   },
   "2.11.1": {
-    "artículo 66": {
+    "artículos 66, primer párrafo y 66-A del CFF": {
       "ley": "cff",
       "articulo": "66",
-      "parrafo": 1
-    },
-    "artículo 66-A": {
-      "ley": "cff",
-      "articulo": "66-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:66,66-A"
     },
     "artículo 134 del CFF": {
       "ley": "cff",
@@ -2222,51 +1648,35 @@
     }
   },
   "2.11.2": {
-    "artículo 66": {
+    "artículos 66 primer párrafo y 66-A del CFF": {
       "ley": "cff",
       "articulo": "66",
-      "parrafo": 1
-    },
-    "artículo 66-A": {
-      "ley": "cff",
-      "articulo": "66-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:66,66-A"
     }
   },
   "2.11.3": {
-    "artículo 66": {
+    "artículos 66, primer párrafo y 66-A del CFF": {
       "ley": "cff",
       "articulo": "66",
-      "parrafo": 1
-    },
-    "artículo 66-A": {
-      "ley": "cff",
-      "articulo": "66-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:66,66-A"
     }
   },
   "2.11.6": {
-    "artículo 66": {
+    "artículos 66 y 66-A del CFF": {
       "ley": "cff",
       "articulo": "66",
-      "parrafo": 1
-    },
-    "artículo 66-A": {
-      "ley": "cff",
-      "articulo": "66-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:66,66-A"
     }
   },
   "2.11.7": {
-    "artículo 66-A fracción III": {
+    "artículos 66-A, fracción III, primer párrafo, en relación con el 151-Bis, 152 y 156-Bis del CFF": {
       "ley": "cff",
       "articulo": "66-A",
-      "parrafo": 8
-    },
-    "artículo 152": {
-      "ley": "cff",
-      "articulo": "152",
-      "parrafo": 1
+      "parrafo": 8,
+      "query": "cff:66-A/III,151-Bis,152,156-Bis"
     }
   },
   "2.12.1": {
@@ -2277,32 +1687,19 @@
     }
   },
   "2.12.2": {
-    "artículo 135": {
+    "artículos 135, 136 y 137 del CFF": {
       "ley": "cff",
       "articulo": "135",
-      "parrafo": 1
-    },
-    "artículo 136": {
-      "ley": "cff",
-      "articulo": "136",
-      "parrafo": 1
-    },
-    "artículo 137": {
-      "ley": "cff",
-      "articulo": "137",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:135,136,137"
     }
   },
   "2.12.3": {
-    "artículo 139": {
+    "artículos 139 y 140 del CFF": {
       "ley": "cff",
       "articulo": "139",
-      "parrafo": 1
-    },
-    "artículo 140": {
-      "ley": "cff",
-      "articulo": "140",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:139,140"
     }
   },
   "2.12.4": {
@@ -2313,15 +1710,11 @@
     }
   },
   "2.12.5": {
-    "artículo 103": {
+    "artículos 103 y 107 de la Constitución": {
       "ley": "cpeum",
       "articulo": "103",
-      "parrafo": 1
-    },
-    "artículo 107": {
-      "ley": "cpeum",
-      "articulo": "107",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cpeum:103,107"
     },
     "artículo 141, fracción I del CFF": {
       "ley": "cff",
@@ -2330,15 +1723,11 @@
     }
   },
   "2.12.6": {
-    "artículo 77": {
+    "artículos 77, primer y segundo párrafos y 80 del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "77",
-      "parrafo": 1
-    },
-    "artículo 80": {
-      "ley": "cff",
-      "articulo": "80",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:77,80"
     },
     "artículo 141, fracción II del CFF": {
       "ley": "cff",
@@ -2354,35 +1743,17 @@
     }
   },
   "2.12.8": {
-    "artículo 66-A": {
+    "artículos 66-A, 74 y 141, fracción IV del CFF": {
       "ley": "cff",
       "articulo": "66-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:66-A,74,141/IV"
     },
-    "artículo 74": {
-      "ley": "cff",
-      "articulo": "74",
-      "parrafo": 1
-    },
-    "artículo 141 fracción IV": {
-      "ley": "cff",
-      "articulo": "141",
-      "parrafo": 5
-    },
-    "artículo 17": {
+    "artículos 17- A, 20 y 21 del CFF": {
       "ley": "cff",
       "articulo": "17",
-      "parrafo": 1
-    },
-    "artículo 20": {
-      "ley": "cff",
-      "articulo": "20",
-      "parrafo": 1
-    },
-    "artículo 21": {
-      "ley": "cff",
-      "articulo": "21",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17,20,21"
     },
     "artículo 143, inciso b) del CFF": {
       "ley": "cff",
@@ -2394,10 +1765,11 @@
       "articulo": "143",
       "parrafo": 1
     },
-    "artículo 17-A": {
+    "artículos 17-A, 20 y 21 del CFF": {
       "ley": "cff",
       "articulo": "17-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-A,20,21"
     },
     "artículo 143, inciso a) del CFF": {
       "ley": "cff",
@@ -2425,27 +1797,19 @@
       "articulo": "183",
       "parrafo": 1
     },
-    "artículo 185": {
+    "artículos 185 y 186 del CFF": {
       "ley": "cff",
       "articulo": "185",
-      "parrafo": 1
-    },
-    "artículo 186": {
-      "ley": "cff",
-      "articulo": "186",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:185,186"
     }
   },
   "2.13.6": {
-    "artículo 185": {
+    "artículos 185 y 186 del CFF": {
       "ley": "cff",
       "articulo": "185",
-      "parrafo": 1
-    },
-    "artículo 186": {
-      "ley": "cff",
-      "articulo": "186",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:185,186"
     },
     "artículo 184 del CFF": {
       "ley": "cff",
@@ -2454,15 +1818,11 @@
     }
   },
   "2.13.10": {
-    "artículo 108": {
+    "artículos 108 y 109 del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "108",
-      "parrafo": 1
-    },
-    "artículo 109": {
-      "ley": "cff",
-      "articulo": "109",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:108,109"
     }
   },
   "2.13.11": {
@@ -2473,15 +1833,11 @@
     }
   },
   "2.13.12": {
-    "artículo 174": {
+    "artículos 174 y 176 del CFF": {
       "ley": "cff",
       "articulo": "174",
-      "parrafo": 1
-    },
-    "artículo 176": {
-      "ley": "cff",
-      "articulo": "176",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:174,176"
     }
   },
   "2.13.14": {
@@ -2502,20 +1858,11 @@
       "articulo": "196",
       "parrafo": 1
     },
-    "artículo 18": {
+    "artículos 18, 18-A y 19 del CFF": {
       "ley": "cff",
       "articulo": "18",
-      "parrafo": 1
-    },
-    "artículo 18-A": {
-      "ley": "cff",
-      "articulo": "18-A",
-      "parrafo": 1
-    },
-    "artículo 19": {
-      "ley": "cff",
-      "articulo": "19",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:18,18-A,19"
     }
   },
   "2.13.17": {
@@ -2526,20 +1873,11 @@
     }
   },
   "2.13.18": {
-    "artículo 4o": {
+    "artículos 4o., 5o. y 145 del CFF": {
       "ley": "cff",
       "articulo": "4o",
-      "parrafo": 1
-    },
-    "artículo 5o": {
-      "ley": "cff",
-      "articulo": "5o",
-      "parrafo": 1
-    },
-    "artículo 145": {
-      "ley": "cff",
-      "articulo": "145",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:4o,5o,145"
     }
   },
   "2.13.19": {
@@ -2550,10 +1888,11 @@
     }
   },
   "2.13.20": {
-    "artículo 157": {
+    "artículos 156-Bis, segundo y quinto párrafos y 157, primer párrafo, fracciones X, XI y XIII del CFF": {
       "ley": "cff",
-      "articulo": "157",
-      "parrafo": 1
+      "articulo": "156-Bis",
+      "parrafo": 1,
+      "query": "cff:156-Bis,157"
     }
   },
   "2.13.21": {
@@ -2564,35 +1903,22 @@
     }
   },
   "2.14.1": {
-    "artículo 66": {
+    "artículos 66, 66-A, fracción VI, inciso c), y 70-A, primer párrafo del CFF": {
       "ley": "cff",
       "articulo": "66",
-      "parrafo": 1
-    },
-    "artículo 66-A fracción VI": {
-      "ley": "cff",
-      "articulo": "66-A",
-      "parrafo": 27
-    },
-    "artículo 70-A": {
-      "ley": "cff",
-      "articulo": "70-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:66,66-A/VI,70-A"
     },
     "artículo 70-A del CFF": {
       "ley": "cff",
       "articulo": "70-A",
       "parrafo": 1
     },
-    "artículo 17-A": {
+    "artículos 17-A y 21 del CFF": {
       "ley": "cff",
       "articulo": "17-A",
-      "parrafo": 1
-    },
-    "artículo 21": {
-      "ley": "cff",
-      "articulo": "21",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-A,21"
     },
     "artículo 66-A, fracción IV del CFF": {
       "ley": "cff",
@@ -2601,25 +1927,11 @@
     }
   },
   "2.14.2": {
-    "artículo 1o": {
+    "artículos 1o., tercer párrafo de la Ley del IVA, 19, fracción II de la Ley del IEPS, 66, primer párrafo y 70-A, párrafos primero y tercero del CFF": {
       "ley": "cff",
       "articulo": "1o",
-      "parrafo": 1
-    },
-    "artículo 19 fracción II": {
-      "ley": "cff",
-      "articulo": "19",
-      "parrafo": 1
-    },
-    "artículo 66": {
-      "ley": "cff",
-      "articulo": "66",
-      "parrafo": 1
-    },
-    "artículo 70-A": {
-      "ley": "cff",
-      "articulo": "70-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:1o,19/II,66,70-A"
     },
     "artículo 66-A, fracción VI, inciso a) del CFF": {
       "ley": "cff",
@@ -2631,15 +1943,11 @@
       "articulo": "70-A",
       "parrafo": 1
     },
-    "artículo 17-A": {
+    "artículos 17-A y 21 del CFF": {
       "ley": "cff",
       "articulo": "17-A",
-      "parrafo": 1
-    },
-    "artículo 21": {
-      "ley": "cff",
-      "articulo": "21",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-A,21"
     },
     "artículo 66-A, fracción IV del CFF": {
       "ley": "cff",
@@ -2730,15 +2038,11 @@
       "articulo": "74",
       "parrafo": 1
     },
-    "artículo 66": {
+    "artículos 66 y 66-A del CFF": {
       "ley": "cff",
       "articulo": "66",
-      "parrafo": 1
-    },
-    "artículo 66-A": {
-      "ley": "cff",
-      "articulo": "66-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:66,66-A"
     },
     "artículo 134 del CFF": {
       "ley": "cff",
@@ -2757,42 +2061,30 @@
     }
   },
   "2.14.10": {
-    "artículo 50": {
+    "artículos 50, primer párrafo  y 53-B, último párrafo del CFF": {
       "ley": "cff",
       "articulo": "50",
-      "parrafo": 1
-    },
-    "artículo 53-B": {
-      "ley": "cff",
-      "articulo": "53-B",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:50,53-B"
     },
     "artículo 74 del CFF": {
       "ley": "cff",
       "articulo": "74",
       "parrafo": 1
     },
-    "artículo 66": {
+    "artículos 66 y 66-A del CFF": {
       "ley": "cff",
       "articulo": "66",
-      "parrafo": 1
-    },
-    "artículo 66-A": {
-      "ley": "cff",
-      "articulo": "66-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:66,66-A"
     }
   },
   "2.14.11": {
-    "artículo 66": {
+    "artículos 66 y 66-A del CFF": {
       "ley": "cff",
       "articulo": "66",
-      "parrafo": 1
-    },
-    "artículo 66-A": {
-      "ley": "cff",
-      "articulo": "66-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:66,66-A"
     }
   },
   "2.14.12": {
@@ -2822,15 +2114,11 @@
     }
   },
   "2.14.15": {
-    "artículo 82-F": {
+    "artículos 82-F y 84-N del CFF": {
       "ley": "cff",
       "articulo": "82-F",
-      "parrafo": 1
-    },
-    "artículo 84-N": {
-      "ley": "cff",
-      "articulo": "84-N",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:82-F,84-N"
     },
     "artículo 74 del CFF": {
       "ley": "cff",
@@ -2853,15 +2141,11 @@
     }
   },
   "2.16.2": {
-    "artículo 29": {
+    "artículos 29 y 30 del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,30"
     }
   },
   "2.16.3": {
@@ -2872,15 +2156,11 @@
     }
   },
   "2.16.4": {
-    "artículo 29": {
+    "artículos 29 y 30 del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,30"
     }
   },
   "2.16.5": {
@@ -2985,25 +2265,11 @@
     }
   },
   "2.19.1": {
-    "artículo 197": {
+    "artículos 197, 198, 200 y 201 del CFF": {
       "ley": "cff",
       "articulo": "197",
-      "parrafo": 1
-    },
-    "artículo 198": {
-      "ley": "cff",
-      "articulo": "198",
-      "parrafo": 1
-    },
-    "artículo 200": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 1
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:197,198,200,201"
     }
   },
   "2.19.2": {
@@ -3014,122 +2280,59 @@
     }
   },
   "2.19.4": {
-    "artículo 199 fracción I": {
+    "artículos 199, fracción I, y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 2
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 2,
+      "query": "cff:199/I,200/VI,201"
     }
   },
   "2.19.5": {
-    "artículo 199 fracción II": {
+    "artículos 199, fracción II y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 3
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 3,
+      "query": "cff:199/II,200/VI,201"
     }
   },
   "2.19.6": {
-    "artículo 199 fracción II": {
+    "artículos 199, fracción II y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 3
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 3,
+      "query": "cff:199/II,200/VI,201"
     }
   },
   "2.19.7": {
-    "artículo 199 fracción III": {
+    "artículos 199, fracción III y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 4
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 4,
+      "query": "cff:199/III,200/VI,201"
     }
   },
   "2.19.8": {
-    "artículo 199 fracción IV": {
+    "artículos 199, fracción IV y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 5
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 5,
+      "query": "cff:199/IV,200/VI,201"
     }
   },
   "2.19.9": {
-    "artículo 199 fracción V": {
+    "artículos 199, fracción V y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 6
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 6,
+      "query": "cff:199/V,200/VI,201"
     }
   },
   "2.19.10": {
-    "artículo 199 fracción VI": {
+    "artículos 199, fracción VI, inciso a) y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 7
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 7,
+      "query": "cff:199/VI,200/VI,201"
     },
     "artículo 199, fracción VI, inciso a) del CFF": {
       "ley": "cff",
@@ -3138,20 +2341,11 @@
     }
   },
   "2.19.11": {
-    "artículo 199 fracción VI": {
+    "artículos 199, fracción VI, inciso b) y cuarto párrafo 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 7
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 7,
+      "query": "cff:199/VI,200/VI,201"
     },
     "artículo 199, fracción VI, inciso b) del CFF": {
       "ley": "cff",
@@ -3160,190 +2354,91 @@
     }
   },
   "2.19.12": {
-    "artículo 199 fracción VI": {
+    "artículos 199, fracción VI, inciso c) y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 7
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 7,
+      "query": "cff:199/VI,200/VI,201"
     }
   },
   "2.19.13": {
-    "artículo 199 fracción VI": {
+    "artículos 199, fracción VI, inciso d) y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 7
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 7,
+      "query": "cff:199/VI,200/VI,201"
     }
   },
   "2.19.14": {
-    "artículo 199 fracción VI": {
+    "artículos 199, fracción VI, inciso e) y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 7
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 7,
+      "query": "cff:199/VI,200/VI,201"
     }
   },
   "2.19.15": {
-    "artículo 199 fracción VII": {
+    "artículos 199, fracción VII y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 13
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 13,
+      "query": "cff:199/VII,200/VI,201"
     }
   },
   "2.19.16": {
-    "artículo 199 fracción VIII": {
+    "artículos 199, fracción VIII y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 14
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 14,
+      "query": "cff:199/VIII,200/VI,201"
     }
   },
   "2.19.17": {
-    "artículo 199 fracción IX": {
+    "artículos 199, fracción IX y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 15
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 15,
+      "query": "cff:199/IX,200/VI,201"
     }
   },
   "2.19.18": {
-    "artículo 199 fracción X": {
+    "artículos 199, fracción X y cuarto párrafo, 200 y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 16
-    },
-    "artículo 200": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 1
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 16,
+      "query": "cff:199/X,200,201"
     }
   },
   "2.19.19": {
-    "artículo 199 fracción XI": {
+    "artículos 199, fracción XI y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 17
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 17,
+      "query": "cff:199/XI,200/VI,201"
     }
   },
   "2.19.20": {
-    "artículo 199 fracción XII": {
+    "artículos 199, fracción XII y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 18
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 18,
+      "query": "cff:199/XII,200/VI,201"
     }
   },
   "2.19.21": {
-    "artículo 199 fracción XIII": {
+    "artículos 199, fracción XIII y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 19
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 19,
+      "query": "cff:199/XIII,200/VI,201"
     }
   },
   "2.19.22": {
-    "artículo 199 fracción XIV": {
+    "artículos 199, fracción XIV y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "199",
-      "parrafo": 20
-    },
-    "artículo 200 fracción VI": {
-      "ley": "cff",
-      "articulo": "200",
-      "parrafo": 7
-    },
-    "artículo 201": {
-      "ley": "cff",
-      "articulo": "201",
-      "parrafo": 1
+      "parrafo": 20,
+      "query": "cff:199/XIV,200/VI,201"
     }
   },
   "2.19.25": {
@@ -3361,15 +2456,11 @@
     }
   },
   "3.1.6": {
-    "artículo 2o": {
+    "artículos 2o. y 3o. del CFF": {
       "ley": "cff",
       "articulo": "2o",
-      "parrafo": 1
-    },
-    "artículo 3o": {
-      "ley": "cff",
-      "articulo": "3o",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:2o,3o"
     }
   },
   "3.1.7": {
@@ -3401,15 +2492,11 @@
     }
   },
   "3.2.1": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "3.2.4": {
@@ -3444,30 +2531,11 @@
     }
   },
   "3.2.22": {
-    "artículo 20": {
+    "artículos 20, 146 y 163 de la Ley del ISR, las personas físicas residentes en el país y las personas físicas y morales residentes en el extranjero, para efectos de determinar las ganancias obtenidas en operaciones financieras derivadas de capital que se liquiden en efectivo, que estén referidas a acciones o a índices que representen dichas acciones y que se hayan contratado con anterioridad al 1 de enero de 2014, en lugar de considerar las cantidades previas, las cantidades iniciales o las cantidades que hubieran pagado o recibido, podrán considerar el valor del contrato correspondiente a la operación financiera derivada de capital de que se trate que se haya publicado el 31 de diciembre de 2013 en los sistemas electrónicos de los mercados reconocidos a que se refiere el artículo 16-C, fracción I del CFF": {
       "ley": "cff",
       "articulo": "20",
-      "parrafo": 1
-    },
-    "artículo 146": {
-      "ley": "cff",
-      "articulo": "146",
-      "parrafo": 1
-    },
-    "artículo 163": {
-      "ley": "cff",
-      "articulo": "163",
-      "parrafo": 1
-    },
-    "artículo 31": {
-      "ley": "cff",
-      "articulo": "31",
-      "parrafo": 1
-    },
-    "artículo 16-C fracción I": {
-      "ley": "cff",
-      "articulo": "16-C",
-      "parrafo": 2
+      "parrafo": 1,
+      "query": "cff:20,146,163,1,2014,31,2013,16-C/I"
     },
     "artículo 16-C, fracción I del CFF": {
       "ley": "cff",
@@ -3476,20 +2544,11 @@
     }
   },
   "3.2.24": {
-    "artículo 14": {
+    "artículos 14 y 17, fracción I de la Ley del ISR y 29, primer párrafo del CFF": {
       "ley": "cff",
       "articulo": "14",
-      "parrafo": 1
-    },
-    "artículo 17 fracción I": {
-      "ley": "cff",
-      "articulo": "17",
-      "parrafo": 1
-    },
-    "artículo 29": {
-      "ley": "cff",
-      "articulo": "29",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:14,17/I,29"
     }
   },
   "3.3.1.2": {
@@ -3533,54 +2592,27 @@
     }
   },
   "3.3.1.34": {
-    "artículo 27 fracción III": {
+    "artículos 27, fracción III, primer párrafo, y 147, fracción IV, primer párrafo de la Ley del ISR y 112, fracción V, primer párrafo de la Ley del ISR vigente hasta el 31 de diciembre de 2021, en relación con lo señalado en el artículo Segundo, fracción IX del “Decreto por el que se reforman, adicionan y derogan diversas disposiciones de la Ley del Impuesto sobre la Renta, de la Ley del Impuesto al Valor Agregado, de la Ley del Impuesto Especial sobre Producción y Servicios, de la Ley Federal del Impuesto sobre Automóviles Nuevos, del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "27",
-      "parrafo": 8
-    },
-    "artículo 147 fracción IV": {
-      "ley": "cff",
-      "articulo": "147",
-      "parrafo": 1
-    },
-    "artículo 112 fracción V": {
-      "ley": "cff",
-      "articulo": "112",
-      "parrafo": 1
-    },
-    "artículo 31": {
-      "ley": "cff",
-      "articulo": "31",
-      "parrafo": 1
+      "parrafo": 8,
+      "query": "cff:27/III,147/IV,112/V,31,2021"
     }
   },
   "3.9.1": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "3.9.5": {
-    "artículo 146": {
+    "artículos 146 y 163 de la Ley del ISR, el operador que administre cuentas globales podrá asumir la obligación de retener el ISR que, en su caso, corresponda a los intereses o las ganancias que provengan de las operaciones financieras derivadas de deuda o de capital que se realicen a través de dichas cuentas, siempre que el operador manifieste que asume dicha obligación solidaria en términos del artículo 26, fracción VIII del CFF": {
       "ley": "cff",
       "articulo": "146",
-      "parrafo": 1
-    },
-    "artículo 163": {
-      "ley": "cff",
-      "articulo": "163",
-      "parrafo": 1
-    },
-    "artículo 26 fracción VIII": {
-      "ley": "cff",
-      "articulo": "26",
-      "parrafo": 20
+      "parrafo": 1,
+      "query": "cff:146,163,26/VIII"
     },
     "artículo 26, fracción VIII del CFF": {
       "ley": "cff",
@@ -3589,27 +2621,19 @@
     }
   },
   "3.9.8": {
-    "artículo 29 fracción V": {
+    "artículos 29, fracción V y 30, fracción IV, inciso a) del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 13
-    },
-    "artículo 30 fracción IV": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 13,
+      "query": "cff:29/V,30/IV"
     }
   },
   "3.9.9": {
-    "artículo 32-A": {
+    "artículos 32-A, segundo párrafo y 32-H, fracciones I, II, III, IV y VI del CFF": {
       "ley": "cff",
       "articulo": "32-A",
-      "parrafo": 1
-    },
-    "artículo 32-H fracción I": {
-      "ley": "cff",
-      "articulo": "32-H",
-      "parrafo": 2
+      "parrafo": 1,
+      "query": "cff:32-A,32-H/I"
     }
   },
   "3.9.12": {
@@ -3627,25 +2651,17 @@
     }
   },
   "3.9.1.3": {
-    "artículo 31-A": {
+    "artículos 31-A y 32-H del CFF": {
       "ley": "cff",
       "articulo": "31-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:31-A,32-H"
     },
-    "artículo 32-H": {
-      "ley": "cff",
-      "articulo": "32-H",
-      "parrafo": 1
-    },
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     },
     "artículos 28 del CFF": {
       "ley": "cff",
@@ -3657,20 +2673,11 @@
       "articulo": "32-A",
       "parrafo": 1
     },
-    "artículo 76 fracción X": {
+    "artículos 76, fracción X y 110, fracción X de la Ley del ISR, siempre que en este último caso, dicha información sea coincidente con la presentada para dar cumplimiento al artículo 32- H del CFF": {
       "ley": "cff",
       "articulo": "76",
-      "parrafo": 1
-    },
-    "artículo 110 fracción X": {
-      "ley": "cff",
-      "articulo": "110",
-      "parrafo": 1
-    },
-    "artículo 32": {
-      "ley": "cff",
-      "articulo": "32",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:76/X,110/X,32"
     }
   },
   "3.9.1.5": {
@@ -3686,25 +2693,11 @@
     }
   },
   "3.10.1.3": {
-    "artículo 27 fracción I": {
+    "artículos 27, fracción I y 151, fracción III de la Ley del ISR, 36 de su Reglamento y 69, quinto párrafo del CFF": {
       "ley": "cff",
       "articulo": "27",
-      "parrafo": 3
-    },
-    "artículo 151 fracción III": {
-      "ley": "cff",
-      "articulo": "151",
-      "parrafo": 1
-    },
-    "artículo 36": {
-      "ley": "cff",
-      "articulo": "36",
-      "parrafo": 1
-    },
-    "artículo 69": {
-      "ley": "cff",
-      "articulo": "69",
-      "parrafo": 1
+      "parrafo": 3,
+      "query": "cff:27/I,151/III,36,69"
     }
   },
   "3.10.1.6": {
@@ -3728,16 +2721,20 @@
       "parrafo": 1
     }
   },
+  "3.10.1.15": {
+    "artículos 82, fracción VIII y 151, fracción III, último párrafo de la Ley del ISR, las donatarias autorizadas para recibir donativos deducibles en los términos de la misma": {
+      "ley": "rmf",
+      "articulo": "82",
+      "parrafo": 1,
+      "query": "rmf:82/VIII,151/III"
+    }
+  },
   "3.10.1.17": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     },
     "artículo 28 del CFF": {
       "ley": "cff",
@@ -3760,10 +2757,11 @@
     }
   },
   "3.11.3": {
-    "artículo 93 fracción XIX": {
+    "artículos 93, fracción XIX, inciso a) de la Ley del ISR y 9, fracción I, inciso a) del CFF": {
       "ley": "cff",
       "articulo": "93",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:93/XIX,9/I"
     },
     "artículo 26, fracción I del CFF": {
       "ley": "cff",
@@ -3779,34 +2777,27 @@
     }
   },
   "3.13.2": {
-    "artículo 29 fracción VI": {
+    "artículos 113-E y 113-H, fracción II de la Ley del ISR y 29, fracción VI del Reglamento del CFF": {
       "ley": "cff",
-      "articulo": "29",
-      "parrafo": 14
+      "articulo": "113-E",
+      "parrafo": 1,
+      "query": "cff:113-E,113-H/II,29/VI"
     }
   },
   "3.13.10": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "3.13.13": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "3.13.17": {
@@ -3838,47 +2829,19 @@
     }
   },
   "3.15.6": {
-    "artículo 18 fracción XII": {
+    "artículos 18, fracción XII, 126, tercer párrafo, 132, último párrafo y 160, tercer párrafo de la Ley del ISR, así como el artículo 27, apartados A, fracción V, B, fracción X y D, fracción VI del CFF": {
       "ley": "cff",
       "articulo": "18",
-      "parrafo": 1
-    },
-    "artículo 126": {
-      "ley": "cff",
-      "articulo": "126",
-      "parrafo": 1
-    },
-    "artículo 132": {
-      "ley": "cff",
-      "articulo": "132",
-      "parrafo": 1
-    },
-    "artículo 160": {
-      "ley": "cff",
-      "articulo": "160",
-      "parrafo": 1
-    },
-    "artículo 27": {
-      "ley": "cff",
-      "articulo": "27",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:18/XII,126,132,160,27"
     }
   },
   "3.15.10": {
-    "artículo 129": {
+    "artículos 129, tercer párrafo, inciso a) y cuarto párrafo, así como 161, décimo primer párrafo de la Ley del ISR, siempre que obtengan el documento señalado en el primer párrafo de esta regla. El titular de la cuenta que proporcione el costo referido deberá conservar a disposición de las autoridades fiscales y durante el plazo establecido en el artículo 30 del CFF": {
       "ley": "cff",
       "articulo": "129",
-      "parrafo": 1
-    },
-    "artículo 161": {
-      "ley": "cff",
-      "articulo": "161",
-      "parrafo": 1
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:129,161,30"
     },
     "artículo 30 del CFF": {
       "ley": "cff",
@@ -3929,20 +2892,11 @@
     }
   },
   "3.18.16": {
-    "artículo 163": {
+    "artículos 163, décimo párrafo y 166, octavo párrafo de la Ley del ISR, en el caso de operaciones financieras derivadas de deuda a que se refiere el artículo 16-A del CFF": {
       "ley": "cff",
       "articulo": "163",
-      "parrafo": 1
-    },
-    "artículo 166": {
-      "ley": "cff",
-      "articulo": "166",
-      "parrafo": 1
-    },
-    "artículo 16-A": {
-      "ley": "cff",
-      "articulo": "16-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:163,166,16-A"
     },
     "artículo 16-A del CFF": {
       "ley": "cff",
@@ -3956,30 +2910,11 @@
     }
   },
   "3.18.34": {
-    "artículo 76 fracción XI": {
+    "artículos 76, fracción XI, inciso b), 140, primer y segundo párrafo y 164, fracción I, quinto párrafo de la Ley del ISR, y Noveno, fracción XXX del “Decreto por el que se reforman, adicionan y derogan diversas disposiciones de la Ley del Impuesto al Valor Agregado; de la Ley del Impuesto Especial sobre Producción y Servicios; de la Ley Federal de Derechos, se expide la Ley del Impuesto sobre la Renta, y se abrogan la Ley del Impuesto Empresarial a Tasa Única, y la Ley del Impuesto a los Depósitos en Efectivo”, publicado en el DOF el 11 de diciembre de 2013, las personas morales residentes en México cuyas acciones coticen en un mercado reconocido a que se refiere el artículo 16-C, fracción II del CFF": {
       "ley": "cff",
       "articulo": "76",
-      "parrafo": 1
-    },
-    "artículo 140": {
-      "ley": "cff",
-      "articulo": "140",
-      "parrafo": 1
-    },
-    "artículo 164 fracción I": {
-      "ley": "cff",
-      "articulo": "164",
-      "parrafo": 1
-    },
-    "artículo 11": {
-      "ley": "cff",
-      "articulo": "11",
-      "parrafo": 1
-    },
-    "artículo 16-C fracción II": {
-      "ley": "cff",
-      "articulo": "16-C",
-      "parrafo": 3
+      "parrafo": 1,
+      "query": "cff:76/XI,140,164/I,11,2013,16-C/II"
     },
     "artículo 16-C, fracción II del CFF": {
       "ley": "cff",
@@ -3988,6 +2923,12 @@
     }
   },
   "3.19.5": {
+    "artículos 4-B y 177, séptimo párrafo de la Ley del ISR, los contribuyentes podrán considerar presentada, dentro del plazo, la declaración informativa a que se refiere el artículo 178 de la misma": {
+      "ley": "rmf",
+      "articulo": "4-B",
+      "parrafo": 1,
+      "query": "rmf:4-B,177,178"
+    },
     "artículo 73 del CFF": {
       "ley": "cff",
       "articulo": "73",
@@ -3995,60 +2936,22 @@
     }
   },
   "3.21.2.1": {
-    "artículo 6o": {
+    "artículos 6o., 7o., 27, 28, 73, 78, 94 y 105 de la Constitución": {
       "ley": "cpeum",
       "articulo": "6o",
-      "parrafo": 1
-    },
-    "artículo 7o": {
-      "ley": "cpeum",
-      "articulo": "7o",
-      "parrafo": 1
-    },
-    "artículo 27": {
-      "ley": "cpeum",
-      "articulo": "27",
-      "parrafo": 1
-    },
-    "artículo 28": {
-      "ley": "cpeum",
-      "articulo": "28",
-      "parrafo": 1
-    },
-    "artículo 73": {
-      "ley": "cpeum",
-      "articulo": "73",
-      "parrafo": 1
-    },
-    "artículo 78": {
-      "ley": "cpeum",
-      "articulo": "78",
-      "parrafo": 1
-    },
-    "artículo 94": {
-      "ley": "cpeum",
-      "articulo": "94",
-      "parrafo": 1
-    },
-    "artículo 105": {
-      "ley": "cpeum",
-      "articulo": "105",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cpeum:6o,7o,27,28,73,78,94,105"
     },
     "artículo 26, fracción VIII del CFF": {
       "ley": "cff",
       "articulo": "26",
       "parrafo": 20
     },
-    "artículo 32 fracción III": {
+    "artículos 32, fracción III de la Ley del IVA y 22, fracción X del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "32",
-      "parrafo": 5
-    },
-    "artículo 22 fracción X": {
-      "ley": "cff",
-      "articulo": "22",
-      "parrafo": 1
+      "parrafo": 5,
+      "query": "cff:32/III,22/X"
     }
   },
   "3.21.2.5": {
@@ -4066,47 +2969,36 @@
     }
   },
   "4.1.5": {
-    "artículo 222": {
+    "artículos 222 y 276 de la LFD. Se considerará que no es aplicable lo señalado en el artículo 22, octavo párrafo del CFF": {
       "ley": "cff",
       "articulo": "222",
-      "parrafo": 1
-    },
-    "artículo 22": {
-      "ley": "cff",
-      "articulo": "22",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:222,276,22"
     }
   },
   "4.1.6": {
-    "artículo 6o": {
+    "artículos 6o. de la Ley del IVA, 22, primer y séptimo párrafos del CFF": {
       "ley": "cff",
       "articulo": "6o",
-      "parrafo": 1
-    },
-    "artículo 22": {
-      "ley": "cff",
-      "articulo": "22",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:6o,22"
     },
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
       "parrafo": 1
     },
-    "artículo 49": {
+    "artículos 49 Bis, 69 o 69-B del CFF": {
       "ley": "cff",
       "articulo": "49",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:49,69,69-B"
     },
-    "artículo 69": {
+    "artículos 49 Bis, 69-B, cuarto párrafo o 69-B Bis, séptimo párrafo del CFF": {
       "ley": "cff",
-      "articulo": "69",
-      "parrafo": 1
-    },
-    "artículo 69-B": {
-      "ley": "cff",
-      "articulo": "69-B",
-      "parrafo": 1
+      "articulo": "49",
+      "parrafo": 1,
+      "query": "cff:49,69-B"
     }
   },
   "4.1.8": {
@@ -4131,15 +3023,11 @@
     }
   },
   "5.2.23": {
-    "artículo 69": {
+    "artículos 69 y 69-B, cuarto párrafo del CFF": {
       "ley": "cff",
       "articulo": "69",
-      "parrafo": 1
-    },
-    "artículo 69-B": {
-      "ley": "cff",
-      "articulo": "69-B",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:69,69-B"
     }
   },
   "5.2.41": {
@@ -4185,15 +3073,11 @@
     }
   },
   "5.3.1": {
-    "artículo 108": {
+    "artículos 108 y 109 del CFF": {
       "ley": "cff",
       "articulo": "108",
-      "parrafo": 1
-    },
-    "artículo 109": {
-      "ley": "cff",
-      "articulo": "109",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:108,109"
     },
     "artículo 86-A del CFF": {
       "ley": "cff",
@@ -4229,37 +3113,25 @@
     }
   },
   "9.1.2": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "9.1.5": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
-    },
-    "artículo 22": {
+    "artículos 22 y 42 del CFF": {
       "ley": "cff",
       "articulo": "22",
-      "parrafo": 1
-    },
-    "artículo 42": {
-      "ley": "cff",
-      "articulo": "42",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:22,42"
     }
   },
   "9.1.6": {
@@ -4277,15 +3149,11 @@
     }
   },
   "9.1.21": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "9.1.22": {
@@ -4310,35 +3178,11 @@
     }
   },
   "9.2.7": {
-    "artículo 150": {
+    "artículos 150, 151, 152 y 153 de la LA, los interesados podrán presentar escrito libre dentro del procedimiento respectivo, cumpliendo con los requisitos que establecen los artículos 18 y 19 del CFF": {
       "ley": "cff",
       "articulo": "150",
-      "parrafo": 1
-    },
-    "artículo 151": {
-      "ley": "cff",
-      "articulo": "151",
-      "parrafo": 1
-    },
-    "artículo 152": {
-      "ley": "cff",
-      "articulo": "152",
-      "parrafo": 1
-    },
-    "artículo 153": {
-      "ley": "cff",
-      "articulo": "153",
-      "parrafo": 1
-    },
-    "artículo 18": {
-      "ley": "cff",
-      "articulo": "18",
-      "parrafo": 1
-    },
-    "artículo 19": {
-      "ley": "cff",
-      "articulo": "19",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:150,151,152,153,18,19"
     }
   },
   "9.2.9": {
@@ -4349,57 +3193,49 @@
     }
   },
   "9.4.6": {
-    "artículo 6o": {
+    "artículos 6o. de la Ley del IVA y 22, primer y séptimo párrafos del CFF": {
       "ley": "cff",
       "articulo": "6o",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:6o,22"
     },
-    "artículo 22": {
-      "ley": "cff",
-      "articulo": "22",
-      "parrafo": 1
-    },
-    "artículo 69": {
+    "artículos 69 y 69-B del CFF": {
       "ley": "cff",
       "articulo": "69",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:69,69-B"
     },
-    "artículo 69-B": {
+    "artículos 4, segundo párrafo de la LISH, 58-A, fracción II del CFF": {
       "ley": "cff",
-      "articulo": "69-B",
-      "parrafo": 1
+      "articulo": "4",
+      "parrafo": 1,
+      "query": "cff:4,58-A/II"
     },
-    "artículo 58-A fracción II": {
-      "ley": "cff",
-      "articulo": "58-A",
-      "parrafo": 3
-    },
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     },
-    "artículo 29-A": {
+    "artículos 4, segundo párrafo de la LISH, 29 y 29-A del CFF": {
       "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "articulo": "4",
+      "parrafo": 1,
+      "query": "cff:4,29,29-A"
     },
-    "artículo 86 fracción II": {
+    "artículos 86, fracción II de la LISR, 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "86",
-      "parrafo": 3
+      "parrafo": 3,
+      "query": "cff:86/II,29,29-A"
     }
   },
   "11.1.3": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "11.1.5": {
@@ -4417,40 +3253,23 @@
     }
   },
   "11.7.1": {
-    "artículo 18": {
+    "artículos Cuarto y Quinto del Decreto IEPS combustibles y el artículo Tercero, primer párrafo del Decreto IEPS combustibles frontera sur, distinguidas de la enajenación de dicho combustible en el resto del territorio nacional, respecto del periodo por el que se solicita la devolución. d) Escrito firmado por el contribuyente o su representante legal en el que se manifieste, bajo protesta de decir verdad, si la totalidad del suministro de las gasolinas sujetas al estímulo se realizó directamente en los tanques de gasolina de los vehículos para el empleo en su motor, conforme a lo señalado en el artículo Tercero del Decreto IEPS combustibles y el artículo Segundo del Decreto IEPS combustibles frontera sur, detallando, en su caso, las enajenaciones efectuadas en forma distinta en las zonas geográficas a que se refieren los decretos mencionados. e) Estado de cuenta expedido por institución financiera, que no exceda de dos meses de antigüedad y que contenga el nombre, denominación o razón social y la clave en el RFC del contribuyente que tramita la solicitud y el número de la cuenta bancaria activa (CLABE) a 18 dígitos para efectuar transferencias electrónicas, misma que deberá corresponder a la que se indique en el FED para el depósito del importe de la devolución que resulte procedente. f) Papel de trabajo en el que se distinga, para los efectos del cálculo del ISR, que el contribuyente beneficiario del estímulo realizó la correspondiente disminución del costo de adquisición de las gasolinas por cuya enajenación aplicó el estímulo fiscal, el monto del estímulo que le haya sido devuelto o el que haya acreditado en el mes inmediato anterior, al cual anexarán: 1. Escrito firmado por el contribuyente o su representante legal, manifestando bajo protesta de decir verdad, que el costo de adquisición que resulte del procedimiento descrito en el párrafo que antecede, será el que considerará, tratándose de personas físicas, para el cálculo del pago provisional del periodo por el que se solicite la devolución o para el cálculo de la declaración anual del ejercicio que corresponda tratándose de personas morales. 2. Las personas físicas que opten por solicitar la devolución de manera anual, deberán presentar un papel de trabajo a través del cual se precise el cálculo de la declaración anual del ejercicio que corresponda. El requisito a que se refiere este inciso, no se presentará tratándose de la primera solicitud de devolución. g) Tratándose de la primera solicitud de devolución, adicionalmente se anexarán: 1. Permiso(s) vigente(s) y no suspendido(s) expedido(s) por la CNE, para el expendio al público de petrolíferos en estaciones de servicio, que comprendan cada una de las estaciones de servicio ubicadas en las zonas geográficas sujetas a los estímulos, debiendo asimismo, presentarse cada vez que se modifique(n) o actualice(n). 2. Relación de las estaciones de servicio susceptibles al estímulo con permiso a nombre del contribuyente que solicita la devolución en los términos del numeral anterior, indicando su número de registro para poder operar como tales otorgado por la autoridad competente, su domicilio y fecha de apertura ante el RFC, así como la zona geográfica donde se ubiquen conforme a los artículos Cuarto y Quinto del Decreto IEPS combustibles y el artículo Tercero, primer párrafo del Decreto IEPS combustibles frontera sur, debiendo presentarse asimismo, cuando se actualice esta información. 3. Tratándose del Decreto IEPS combustibles, las pólizas, papeles de trabajo y reportes de los controles volumétricos, en donde se refleje el registro y movimientos del inventario final de gasolinas al 31 de diciembre de 2023 o 2024 según corresponda, así como de las gasolinas suministradas durante el ejercicio 2024 o 2025 a la estación de servicio de que se trate, cuando se hayan adquirido conforme a las disposiciones vigentes hasta 2024 o 2025, respectivamente, y para el caso del Decreto IEPS combustibles frontera sur, inventario final de gasolinas al 31 de diciembre de 2022 o 2023, así como de las gasolinas suministradas durante el ejercicio 2023 o 2024 a la estación de servicio de que se trate, cuando se hayan adquirido conforme a las disposiciones vigentes hasta 2023 o 2024. Lo establecido en esta regla no impide el ejercicio de las facultades de comprobación de las autoridades fiscales de conformidad con lo establecido en los artículos 22 o 42 del CFF": {
       "ley": "cff",
       "articulo": "18",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:18,1,2,1,2,3,31,2023,2024,2025,2024,2025,31,2022,2023,2024,2023,2024,22,42"
     },
-    "artículo 31": {
-      "ley": "cff",
-      "articulo": "31",
-      "parrafo": 1
-    },
-    "artículo 22": {
-      "ley": "cff",
-      "articulo": "22",
-      "parrafo": 1
-    },
-    "artículo 42": {
-      "ley": "cff",
-      "articulo": "42",
-      "parrafo": 1
-    },
-    "artículo 49": {
+    "artículos 49 Bis, 69, 69-B o 69-B Bis del CFF": {
       "ley": "cff",
       "articulo": "49",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:49,69,69-B"
     },
-    "artículo 69": {
+    "artículos 49 Bis, 69-B, cuarto párrafo o 69-B Bis, séptimo párrafo del CFF": {
       "ley": "cff",
-      "articulo": "69",
-      "parrafo": 1
-    },
-    "artículo 69-B": {
-      "ley": "cff",
-      "articulo": "69-B",
-      "parrafo": 1
+      "articulo": "49",
+      "parrafo": 1,
+      "query": "cff:49,69-B"
     },
     "artículo 22 del CFF": {
       "ley": "cff",
@@ -4464,15 +3283,11 @@
     }
   },
   "11.7.2": {
-    "artículo 11": {
+    "artículos Segundo, penúltimo párrafo del Decreto IEPS combustibles y Primero, penúltimo párrafo del Decreto IEPS combustibles frontera sur y en la regla 11.7.1., en relación con el artículo 22, décimo segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "11",
-      "parrafo": 1
-    },
-    "artículo 22": {
-      "ley": "cff",
-      "articulo": "22",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:11,7,1,22"
     },
     "artículo 17-A del CFF": {
       "ley": "cff",
@@ -4493,42 +3308,19 @@
     }
   },
   "11.9.3": {
-    "artículo 1o": {
+    "artículos Décimo Primero del Decreto región fronteriza norte; Décimo del Decreto región fronteriza sur; 1o., primer párrafo, fracciones I, II y III, segundo párrafo, 1o.-A, primer párrafo, fracción II y 3o., tercer párrafo de la Ley del IVA; 3o. del Reglamento de la Ley del IVA, y 29, párrafos segundo, fracción IV, quinto y penúltimo y 29-A, fracción X del CFF": {
       "ley": "cff",
       "articulo": "1o",
-      "parrafo": 1
-    },
-    "artículo 3o": {
-      "ley": "cff",
-      "articulo": "3o",
-      "parrafo": 1
-    },
-    "artículo 29": {
-      "ley": "cff",
-      "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A fracción X": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 35
+      "parrafo": 1,
+      "query": "cff:1o,3o,29,29-A/X"
     }
   },
   "11.9.7": {
-    "artículo 22": {
+    "artículos Séptimo, segundo párrafo, fracción I, párrafo primero, Tercero, primer párrafo y Octavo, segundo párrafo del Decreto región fronteriza norte se considerará, salvo prueba en contrario, que los contribuyentes tienen su domicilio fiscal y cuentan con una antigüedad en su domicilio fiscal, sucursal, agencia o establecimiento en la región fronteriza norte, cuando el registro ante el RFC de dicho domicilio o la presentación del aviso de apertura de conformidad con los artículos 22, 23 y 29 del Reglamento del CFF": {
       "ley": "cff",
       "articulo": "22",
-      "parrafo": 1
-    },
-    "artículo 23": {
-      "ley": "cff",
-      "articulo": "23",
-      "parrafo": 1
-    },
-    "artículo 29": {
-      "ley": "cff",
-      "articulo": "29",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:22,23,29"
     }
   },
   "11.9.8": {
@@ -4539,20 +3331,11 @@
     }
   },
   "11.9.9": {
-    "artículo 90": {
+    "artículos Segundo, Tercero, segundo párrafo, Cuarto y Séptimo, segundo párrafo, fracción I, segundo y tercer párrafos del Decreto región fronteriza norte y Segundo del Decreto región fronteriza sur, los contribuyentes podrán comprobar que sus ingresos totales del ejercicio fiscal inmediato anterior y, en su caso, del ejercicio, obtenidos en la región fronteriza norte o sur, según corresponda, representan al menos el 90% del monto total de sus ingresos obtenidos, en México o en el extranjero, por cualquier concepto, de conformidad con lo establecido en el artículo 1 de la Ley del ISR, a través de la declaración anual del ejercicio inmediato anterior o del pago provisional, según corresponda, así como el papel de trabajo mediante el cual se integren los ingresos obtenidos en el ejercicio inmediato anterior en la región fronteriza norte o sur, conforme a la regla 11.9.5., diferenciando los montos de los ingresos obtenidos en la región fronteriza norte o sur y los obtenidos fuera de la región que corresponda; en su caso, la integración de los montos de los ingresos deberá indicarse por sucursal, agencia o establecimiento y la suma de estos deberá coincidir con el monto reportado en la balanza de comprobación del periodo por el cual se integran los ingresos en la región fronteriza norte o sur. La documentación a que se refiere esta regla deberá conservarse como parte de la contabilidad en términos del artículo 28 del CFF": {
       "ley": "cff",
       "articulo": "90",
-      "parrafo": 1
-    },
-    "artículo 11": {
-      "ley": "cff",
-      "articulo": "11",
-      "parrafo": 1
-    },
-    "artículo 28": {
-      "ley": "cff",
-      "articulo": "28",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:90,1,11,9,5,28"
     },
     "artículo 28 del CFF": {
       "ley": "cff",
@@ -4568,37 +3351,19 @@
     }
   },
   "11.9.20": {
-    "artículo 11": {
+    "artículos Sexto, fracción XI, segundo párrafo y Décimo Tercero, fracción IV, segundo párrafo del Decreto de estímulos fiscales región fronteriza norte, las personas físicas o morales que con posterioridad a la presentación de los avisos de inscripción o renovación a que se refieren las reglas 11.9.1., 11.9.2. y 11.9.14., para obtener los beneficios del estímulo fiscal para la región fronteriza norte en materia del ISR o del IVA en dicha región, hubieran realizado operaciones con los contribuyentes a que se refiere el artículo 69-B, cuarto párrafo del CFF": {
       "ley": "cff",
       "articulo": "11",
-      "parrafo": 1
-    },
-    "artículo 14": {
-      "ley": "cff",
-      "articulo": "14",
-      "parrafo": 1
-    },
-    "artículo 69-B": {
-      "ley": "cff",
-      "articulo": "69-B",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:11,9,1,11,9,2,11,9,14,69-B"
     }
   },
   "11.9.21": {
-    "artículo 11": {
+    "artículos Sexto, fracción X, Octavo, segundo párrafo y Décimo Tercero, fracción III del Decreto región fronteriza norte y Sexto, fracción X, Octavo, segundo párrafo y Décimo Segundo, fracción IV del Decreto región fronteriza sur, las personas físicas y morales que con posterioridad a la presentación de los avisos de inscripción o renovación a que se refieren las reglas 11.9.1., 11.9.2. y 11.9.14., se hubieran ubicado en el supuesto del artículo 69, penúltimo párrafo, fracción VI del CFF": {
       "ley": "cff",
       "articulo": "11",
-      "parrafo": 1
-    },
-    "artículo 14": {
-      "ley": "cff",
-      "articulo": "14",
-      "parrafo": 1
-    },
-    "artículo 69": {
-      "ley": "cff",
-      "articulo": "69",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:11,9,1,11,9,2,11,9,14,69"
     }
   },
   "11.10.1": {
@@ -4612,15 +3377,11 @@
       "articulo": "32-D",
       "parrafo": 1
     },
-    "artículo 69": {
+    "artículos 69, 69-B o 69-B Bis del CFF": {
       "ley": "cff",
       "articulo": "69",
-      "parrafo": 1
-    },
-    "artículo 69-B": {
-      "ley": "cff",
-      "articulo": "69-B",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:69,69-B"
     }
   },
   "11.10.2": {
@@ -4643,54 +3404,27 @@
       "articulo": "29-A",
       "parrafo": 1
     },
-    "artículo 28": {
+    "artículos 28 y 30 del CFF": {
       "ley": "cff",
       "articulo": "28",
-      "parrafo": 1
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:28,30"
     }
   },
   "11.11.11": {
-    "artículo 1o": {
+    "artículos Décimo del Decreto a que se refiere este Capítulo, 1o., primer párrafo, fracciones I, II y III, segundo párrafo, 1o.-A, primer párrafo, fracción II y 3o., tercer párrafo de la Ley del IVA, 3 del Reglamento de la Ley del IVA, 29, párrafos segundo, fracción IV, tercero y cuarto y 29-A, fracción X del CFF": {
       "ley": "cff",
       "articulo": "1o",
-      "parrafo": 1
-    },
-    "artículo 3o": {
-      "ley": "cff",
-      "articulo": "3o",
-      "parrafo": 1
-    },
-    "artículo 29": {
-      "ley": "cff",
-      "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A fracción X": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 35
+      "parrafo": 1,
+      "query": "cff:1o,3o,3,29,29-A/X"
     }
   },
   "11.12.1": {
-    "artículo 1o": {
+    "artículos Noveno del Decreto a que se refiere este Capítulo, 1o., párrafo primero, fracción I de la Ley del IVA, 29, segundo, fracción IV, tercero y cuarto párrafos y 29-A, fracción X del CFF": {
       "ley": "cff",
       "articulo": "1o",
-      "parrafo": 1
-    },
-    "artículo 29": {
-      "ley": "cff",
-      "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A fracción X": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 35
+      "parrafo": 1,
+      "query": "cff:1o,29,29-A/X"
     }
   },
   "11.12.4": {
@@ -4713,49 +3447,27 @@
       "articulo": "29-A",
       "parrafo": 1
     },
-    "artículo 28": {
+    "artículos 28 y 30 del CFF": {
       "ley": "cff",
       "articulo": "28",
-      "parrafo": 1
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:28,30"
     }
   },
   "11.13.11": {
-    "artículo 1o": {
+    "artículos Décimo del Decreto a que se refiere este Capítulo, 1o., primer párrafo, fracciones I, II y III, segundo párrafo, 1o.-A, primer párrafo, fracción II y 3o., tercer párrafo de la Ley del IVA, 3 del Reglamento de la Ley del IVA y 29, párrafos segundo, fracción IV, tercero y cuarto y 29-A, fracción X del CFF": {
       "ley": "cff",
       "articulo": "1o",
-      "parrafo": 1
-    },
-    "artículo 3o": {
-      "ley": "cff",
-      "articulo": "3o",
-      "parrafo": 1
-    },
-    "artículo 29": {
-      "ley": "cff",
-      "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A fracción X": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 35
+      "parrafo": 1,
+      "query": "cff:1o,3o,3,29,29-A/X"
     }
   },
   "11.14.1": {
-    "artículo 28": {
+    "artículos 28 y 30 del CFF": {
       "ley": "cff",
       "articulo": "28",
-      "parrafo": 1
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:28,30"
     }
   },
   "11.14.4": {
@@ -4764,27 +3476,19 @@
       "articulo": "29-A",
       "parrafo": 1
     },
-    "artículo 28": {
+    "artículos 28 y 30 del CFF": {
       "ley": "cff",
       "articulo": "28",
-      "parrafo": 1
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:28,30"
     }
   },
   "11.16.2": {
-    "artículo 28": {
+    "artículos 28 y 30 del CFF": {
       "ley": "cff",
       "articulo": "28",
-      "parrafo": 1
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:28,30"
     }
   },
   "11.16.4": {
@@ -4793,27 +3497,19 @@
       "articulo": "29-A",
       "parrafo": 1
     },
-    "artículo 28": {
+    "artículos 28 y 30 del CFF": {
       "ley": "cff",
       "articulo": "28",
-      "parrafo": 1
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:28,30"
     }
   },
   "11.17.1": {
-    "artículo 28": {
+    "artículos 28 y 30 del CFF": {
       "ley": "cff",
       "articulo": "28",
-      "parrafo": 1
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:28,30"
     }
   },
   "11.17.3": {
@@ -4822,51 +3518,35 @@
       "articulo": "29-A",
       "parrafo": 1
     },
-    "artículo 28": {
+    "artículos 28 y 30 del CFF": {
       "ley": "cff",
       "articulo": "28",
-      "parrafo": 1
-    },
-    "artículo 30": {
-      "ley": "cff",
-      "articulo": "30",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:28,30"
     }
   },
   "12.2.2": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "12.2.9": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "12.3.4": {
-    "artículo 29": {
+    "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
-      "parrafo": 1
-    },
-    "artículo 29-A": {
-      "ley": "cff",
-      "articulo": "29-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:29,29-A"
     }
   },
   "12.3.5": {
@@ -4884,15 +3564,11 @@
     }
   },
   "12.3.18": {
-    "artículo 17-K": {
+    "artículos 17-K y 86-C del CFF": {
       "ley": "cff",
       "articulo": "17-K",
-      "parrafo": 1
-    },
-    "artículo 86-C": {
-      "ley": "cff",
-      "articulo": "86-C",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "cff:17-K,86-C"
     },
     "artículo 17-K, fracción I del CFF": {
       "ley": "cff",

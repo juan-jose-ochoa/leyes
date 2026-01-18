@@ -5,25 +5,11 @@
       "articulo": "17-A",
       "parrafo": 1
     },
-    "artículo 1o": {
+    "artículos 1o.-A BIS y 18-B, fracción II de la Ley del Impuesto al Valor Agregado, deberán cumplir con las obligaciones establecidas en los artículos 5o.-A BIS y 20-A de esta Ley": {
       "ley": "lieps",
       "articulo": "1o",
-      "parrafo": 1
-    },
-    "artículo 18-B fracción II": {
-      "ley": "lieps",
-      "articulo": "18-B",
-      "parrafo": 1
-    },
-    "artículo 5o": {
-      "ley": "lieps",
-      "articulo": "5o",
-      "parrafo": 1
-    },
-    "artículo 20-A": {
-      "ley": "lieps",
-      "articulo": "20-A",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lieps:1o,18-B/II,5o,20-A"
     },
     "artículo 20-A de esta Ley": {
       "ley": "lieps",
@@ -56,15 +42,11 @@
     }
   },
   "5o": {
-    "artículo 15": {
+    "artículos 15 y 16 de esta Ley": {
       "ley": "lieps",
       "articulo": "15",
-      "parrafo": 1
-    },
-    "artículo 16": {
-      "ley": "lieps",
-      "articulo": "16",
-      "parrafo": 1
+      "parrafo": 1,
+      "query": "lieps:15,16"
     },
     "artículo 22 del Código Fiscal de la Federación": {
       "ley": "cff",
@@ -121,15 +103,11 @@
       "articulo": "29",
       "parrafo": 1
     },
-    "artículo 42 fracción V": {
+    "artículos 42, fracción V y 49 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "42",
-      "parrafo": 6
-    },
-    "artículo 49": {
-      "ley": "cff",
-      "articulo": "49",
-      "parrafo": 1
+      "parrafo": 6,
+      "query": "cff:42/V,49"
     }
   },
   "23-A": {
