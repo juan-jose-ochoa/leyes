@@ -1,35 +1,16 @@
 ---
-// Simple search input for homepage - redirects to /buscar
+/**
+ * SearchSimple - Buscador del homepage con typeahead
+ * Usa el componente SearchInput reutilizable
+ */
+import SearchInput from './SearchInput.astro';
 ---
 
-<form id="search-form-simple" action="/buscar" method="get" class="relative w-full max-w-2xl mx-auto">
-  <div class="relative">
-    <svg class="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-    </svg>
-    <input
-      id="search-input-simple"
-      type="text"
-      name="q"
-      placeholder="Buscar en leyes fiscales y laborales..."
-      class="w-full rounded-xl border-2 border-gray-200 bg-white py-4 pl-12 pr-28 text-lg placeholder-gray-400 transition-colors focus:border-primary-500 focus:outline-none focus:ring-4 focus:ring-primary-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder-gray-500"
-      autocomplete="off"
-    />
-    <button
-      type="submit"
-      class="absolute right-3 top-1/2 -translate-y-1/2 btn-primary px-4 py-2"
-    >
-      Buscar
-    </button>
-  </div>
-</form>
-
-<script>
-  // Keyboard shortcut "/" to focus search
-  document.addEventListener('keydown', (e) => {
-    if (e.key === '/' && document.activeElement?.tagName !== 'INPUT') {
-      e.preventDefault();
-      document.getElementById('search-input-simple')?.focus();
-    }
-  });
-</script>
+<div class="max-w-2xl mx-auto">
+  <SearchInput
+    id="search-input-home"
+    placeholder="Buscar en leyes fiscales y laborales..."
+    showSubmitButton={true}
+    onSubmit="redirect"
+  />
+</div>
