@@ -51,6 +51,8 @@ PATRON_NUMERAL = re.compile(r'^(\d+)\.\s*')
 PATRON_REFERENCIAS = re.compile(
     r'^(CFF|LISR|LIVA|LIEPS|LIF|RCFF|RMF|RISR|RLISR|Ley|CPEUM|LCF|LSS|Convención)\s'
 )
+# Patrón para detectar encabezados de tabla numerados (ej: "1. 2. 3. 4. 5.")
+PATRON_ENCABEZADO_TABLA = re.compile(r'^(\d+\.\s*)+$')
 
 
 # =============================================================================
@@ -431,6 +433,9 @@ class ExtractorRMF(ExtractorBase):
                     # Bold en X_TEXTO que NO es fraccion -> titulo de siguiente regla
                     if es_bold and abs(x_min - X_TEXTO) < X_TOLERANCIA:
                         if not PATRON_FRACCION.match(texto_linea):
+                            # Ignorar encabezados de tabla numerados (ej: "1. 2. 3. 4.")
+                            if PATRON_ENCABEZADO_TABLA.match(texto_linea):
+                                continue
                             if titulo_pendiente:
                                 titulo_pendiente += " " + texto_linea
                             else:
