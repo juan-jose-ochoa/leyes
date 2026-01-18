@@ -350,7 +350,18 @@ const seccionTexto = breadcrumb.length > 0
       </div>
 
       <!-- Panel de PDF -->
-      <div id="pdf-panel" class="pdf-panel bg-gray-100 dark:bg-gray-800">
+      <div
+        id="pdf-panel"
+        class="pdf-panel bg-gray-100 dark:bg-gray-800"
+        data-pdf-url={pdfUrl}
+        data-pagina={articulo.pagina}
+        data-y={articulo.y}
+        data-parrafos={JSON.stringify((articulo.parrafos || []).map(p => ({
+          numero: p.numero,
+          pagina: p.pagina,
+          y: p.y
+        })))}
+      >
         <PdfViewer
           pdfUrl={pdfUrl}
           pagina={articulo.pagina}
@@ -674,28 +685,34 @@ const seccionTexto = breadcrumb.length > 0
   </script>
 
   <!-- PDF sync with hash navigation -->
-  <script is:inline define:vars={{
-    pdfUrl,
-    parrafosData: (articulo.parrafos || []).map(p => ({
-      numero: p.numero,
-      pagina: p.pagina,
-      y: p.y
-    })),
-    articuloPagina: articulo.pagina,
-    articuloY: articulo.y,
-    pageHeight: 792
-  }}>
+  <script is:inline>
+    const PAGE_HEIGHT = 792;
     let syncTimeout = null;
+    let pdfSyncInitialized = false;
+
+    function getPdfData() {
+      const panel = document.getElementById('pdf-panel');
+      if (!panel) return null;
+      return {
+        pdfUrl: panel.dataset.pdfUrl,
+        articuloPagina: parseInt(panel.dataset.pagina, 10) || 1,
+        articuloY: parseInt(panel.dataset.y, 10) || 0,
+        parrafosData: JSON.parse(panel.dataset.parrafos || '[]')
+      };
+    }
 
     function syncPdfToParrafo(parrafoNum) {
+      const data = getPdfData();
+      if (!data) return;
+
       const iframe = document.querySelector('#pdf-panel iframe');
       if (!iframe) return;
 
-      let pagina = articuloPagina;
-      let y = articuloY;
+      let pagina = data.articuloPagina;
+      let y = data.articuloY;
 
       if (parrafoNum) {
-        const parrafo = parrafosData.find(p => p.numero === parrafoNum);
+        const parrafo = data.parrafosData.find(p => p.numero === parrafoNum);
         if (parrafo && parrafo.pagina) {
           pagina = parrafo.pagina;
           y = parrafo.y || 0;
@@ -703,10 +720,10 @@ const seccionTexto = breadcrumb.length > 0
       }
 
       // Build PDF URL with position
-      const yFromBottom = Math.max(0, pageHeight - y);
+      const yFromBottom = Math.max(0, PAGE_HEIGHT - y);
       const newPdfUrl = y > 0
-        ? `${pdfUrl}#page=${pagina}&zoom=page-width,0,${yFromBottom}`
-        : `${pdfUrl}#page=${pagina}&zoom=page-width`;
+        ? `${data.pdfUrl}#page=${pagina}&zoom=page-width,0,${yFromBottom}`
+        : `${data.pdfUrl}#page=${pagina}&zoom=page-width`;
 
       // Debounce to avoid PDF.js errors from rapid changes
       if (syncTimeout) clearTimeout(syncTimeout);
@@ -725,25 +742,30 @@ const seccionTexto = breadcrumb.length > 0
       }
     }
 
-    function initPdfSync() {
-      // Listen for clicks on paragraph links (chips)
-      document.addEventListener('click', (e) => {
-        const link = e.target.closest('a[href^="#p-"]');
-        if (link) {
-          const hash = link.getAttribute('href');
-          const parrafoNum = parseInt(hash.substring(3), 10);
-          // Small delay to let the browser update the hash first
-          setTimeout(() => syncPdfToParrafo(parrafoNum), 50);
-        }
-      });
+    function handleChipClick(e) {
+      const link = e.target.closest('a[href^="#p-"]');
+      if (link) {
+        const hash = link.getAttribute('href');
+        const parrafoNum = parseInt(hash.substring(3), 10);
+        // Small delay to let the browser update the hash first
+        setTimeout(() => syncPdfToParrafo(parrafoNum), 50);
+      }
+    }
 
+    function initPdfSync() {
+      // Only add listener once (persists across View Transitions)
+      if (!pdfSyncInitialized) {
+        document.addEventListener('click', handleChipClick);
+        window.addEventListener('hashchange', syncPdfWithHash);
+        pdfSyncInitialized = true;
+      }
       // Initial sync based on current hash
       syncPdfWithHash();
     }
 
-    // Run on load and hash change
+    // Run on load
     requestAnimationFrame(initPdfSync);
-    window.addEventListener('hashchange', syncPdfWithHash);
+    // Run after View Transitions navigation
     document.addEventListener('astro:page-load', () => {
       requestAnimationFrame(initPdfSync);
     });
