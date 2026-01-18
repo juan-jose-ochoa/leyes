@@ -14,7 +14,7 @@
     "║  Modificarlo manualmente es SABOTAJE al sistema.                ║",
     "╚══════════════════════════════════════════════════════════════════╝"
   ],
-  "_generado_por": "extraer_rmf.py",
+  "_generado_por": "extraer_mapa.py",
   "titulos": {
     "1": {
       "nombre": "Disposiciones generales",
@@ -1644,13 +1644,13 @@
     "titulos": 12,
     "capitulos": 75,
     "secciones": 0,
+    "subsecciones": 0,
     "articulos_vigentes": 1106,
     "articulos_derogados": 0,
-    "articulos_transitorios": 0,
     "total": 1106
   },
   "ley": "RMF",
   "fuente": "https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf",
-  "metodo": "texto",
-  "notas": "Extraído del texto del PDF (sin outline)."
+  "metodo": "outline",
+  "notas": "Extraído del outline del PDF. Fuente autoritativa."
 }

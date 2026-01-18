@@ -261,31 +261,67 @@
           "pagina": 70,
           "secciones": {
             "PRIMERA": {
-              "nombre": "Importaciones temporales I Disposiciones generales",
+              "nombre": "Importaciones temporales",
               "pagina": 70,
-              "articulos": [
-                "104",
-                "105",
-                "106",
-                "107",
-                "108",
-                "109",
-                "110",
-                "111",
-                "112"
-              ]
+              "subsecciones": {
+                "I": {
+                  "nombre": "Disposiciones generales",
+                  "pagina": 71,
+                  "articulos": [
+                    "104",
+                    "105"
+                  ]
+                },
+                "II": {
+                  "nombre": "Para retornar al extranjero en el mismo estado",
+                  "pagina": 71,
+                  "articulos": [
+                    "106",
+                    "107"
+                  ]
+                },
+                "III": {
+                  "nombre": "Para elaboración, transformación o reparación en programas de maquila o de exportación",
+                  "pagina": 75,
+                  "articulos": [
+                    "108",
+                    "109",
+                    "110",
+                    "111",
+                    "112"
+                  ]
+                }
+              }
             },
             "SEGUNDA": {
-              "nombre": "Exportaciones temporales I Disposiciones generales",
+              "nombre": "Exportaciones temporales",
               "pagina": 78,
-              "articulos": [
-                "113",
-                "114",
-                "115",
-                "116",
-                "117",
-                "118"
-              ]
+              "subsecciones": {
+                "I": {
+                  "nombre": "Disposiciones generales",
+                  "pagina": 78,
+                  "articulos": [
+                    "113",
+                    "114"
+                  ]
+                },
+                "II": {
+                  "nombre": "Para retornar al país en el mismo estado",
+                  "pagina": 78,
+                  "articulos": [
+                    "115",
+                    "116"
+                  ]
+                },
+                "III": {
+                  "nombre": "Para elaboración, transformación o reparación",
+                  "pagina": 79,
+                  "articulos": [
+                    "117",
+                    "118"
+                  ]
+                }
+              }
             }
           }
         },
@@ -538,6 +574,7 @@
     "titulos": 9,
     "capitulos": 20,
     "secciones": 11,
+    "subsecciones": 6,
     "articulos_vigentes": 277,
     "articulos_derogados": 0,
     "total": 277

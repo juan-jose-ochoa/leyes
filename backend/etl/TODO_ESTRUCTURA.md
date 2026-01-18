@@ -2,20 +2,20 @@
 
 ## Problemas detectados (pre-existentes, no regresiones)
 
-### 1. Subsecciones no soportadas
-**Leyes afectadas**: LA, LISR, LSS
+### 1. ~~Subsecciones no soportadas~~ ✅ RESUELTO PARCIALMENTE
+**Leyes afectadas**: ~~LA~~, LISR
 
 Las leyes tienen subdivisiones dentro de secciones/capítulos que no se detectan como marcadores:
-- LA: "I", "II" dentro de secciones (ej: Sección Primera > I Disposiciones generales)
-- LISR: "DISPOSICIONES GENERALES" capturado como parte del nombre del título
-- LSS: "SECCION PRIMERA GENERALIDADES" capturado como nombre de capítulo
+- ~~LA: "I", "II" dentro de secciones~~ ✅ RESUELTO (2024-01-18)
+- LISR: "DISPOSICIONES GENERALES" capturado como parte del nombre del título (sin marcador automático)
 
 **Artículos ejemplo**:
-- LA: Artículo 104 (página 70-71)
+- ~~LA: Artículo 104 (página 70-71)~~ ✅ RESUELTO
 - LISR: Artículo 9 (página 13) - se muestra en Título I pero pertenece a Título II
-- LSS: Capítulo III del Título II
 
-**Solución propuesta**: Agregar soporte para subsecciones o detectar patrones de subdivisión como marcadores.
+**Solución LA**: Agregado `detectar_subsecciones: True` en config de LA. Detecta romanos sueltos (I, II, III) como subsecciones.
+
+**LISR pendiente**: Requiere solución manual o detección de encabezados implícitos.
 
 ### 2. Artículos sin capítulo explícito
 **Leyes afectadas**: LISR
@@ -24,12 +24,21 @@ Artículos 9-15 de LISR están bajo "DISPOSICIONES GENERALES" sin capítulo. Se 
 
 **Solución propuesta**: Crear capítulo virtual "DISPOSICIONES GENERALES" o similar cuando hay artículos antes del primer capítulo de un título.
 
-### 3. Patrón de sección con ordinales
-**Leyes afectadas**: LSS
+### 3. ~~Patrón de sección con ordinales~~ ✅ RESUELTO
+**Leyes afectadas**: ~~LSS, LFT, CFF~~
 
-LSS usa "SECCION PRIMERA", "SECCION SEGUNDA" (ordinales) en lugar de "SECCION I", "SECCION II" (romanos). El patrón default solo detecta romanos.
+~~LSS usa "SECCION PRIMERA", "SECCION SEGUNDA" (ordinales) en lugar de "SECCION I", "SECCION II" (romanos).~~
 
-**Solución propuesta**: Configurar patrón de sección por ley, o agregar ordinales al patrón default.
+**Solución**: Agregado soporte para ordinales en patrón de sección default (2024-01-17).
+- LSS: 0 → 37 secciones
+- LFT: 0 → 17 secciones
+
+## Cambios realizados (2024-01-18)
+
+1. Agregado soporte para subsecciones en LA (`detectar_subsecciones: True`)
+2. Agregado `SubseccionRef` dataclass para representar subsecciones
+3. Modificado `generar_json` para incluir subsecciones en el JSON
+4. LA ahora tiene 6 subsecciones correctamente detectadas
 
 ## Cambios realizados (2024-01-17)
 

@@ -373,7 +373,7 @@ LEYES = {
         "fecha_dof_patron": r"Última Reforma DOF (\d{1,2})-(\d{1,2})-(\d{4})",
 
         # Estructura jerárquica permitida
-        "divisiones_permitidas": ["titulo", "capitulo", "seccion"],
+        "divisiones_permitidas": ["titulo", "capitulo", "seccion", "subseccion"],
         "parrafos_permitidos": ["texto", "fraccion", "inciso", "numeral"],
 
         # Tipo de contenido principal
@@ -381,6 +381,13 @@ LEYES = {
 
         # Marcador de transitorios en outline (default: "TRANSITORIOS")
         "transitorios_marcador": "TRANSITORIOS_DE_LA_LEY",
+
+        # Detectar subsecciones (romanos sueltos: I, II, III sin palabra SUBSECCION)
+        # LA tiene secciones con subsecciones como:
+        #   Sección Primera - Importaciones temporales
+        #     I - Disposiciones generales
+        #     II - Para retornar al extranjero en el mismo estado
+        "detectar_subsecciones": True,
 
         # Patrones de detección
         "patrones": {

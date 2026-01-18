@@ -66,6 +66,28 @@ def obtener_variantes_numero(numero: str) -> list[str]:
     return VARIANTES_NUMERO.get(numero_upper, [numero_upper])
 
 
+def normalizar_romano_subseccion(texto: str) -> Optional[str]:
+    """
+    Normaliza texto a número romano para subsecciones.
+    Maneja el caso de 'll' (dos eles) que a veces aparece en PDFs en lugar de 'II'.
+
+    Returns:
+        Número romano normalizado o None si no es válido.
+    """
+    texto = texto.strip()
+
+    # Mapeo de caracteres confusos
+    # 'l' minúscula → 'I' (común en PDFs mal codificados)
+    normalizado = texto.replace('l', 'I').replace('L', 'I').upper()
+
+    # Verificar que sea un romano válido (I-X para subsecciones)
+    romanos_validos = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
+    if normalizado in romanos_validos:
+        return normalizado
+
+    return None
+
+
 def obtener_coordenada_y(page, patron: str) -> float:
     """
     Obtiene la coordenada Y de un texto en la página usando el patrón regex.
@@ -93,12 +115,22 @@ class ArticuloRef:
 
 
 @dataclass
+class SubseccionRef:
+    """Referencia a una subsección dentro de sección (ej: LA usa I, II, III sin palabra SUBSECCION)."""
+    numero: str
+    nombre: Optional[str]
+    pagina: int
+    articulos: list[ArticuloRef] = field(default_factory=list)
+
+
+@dataclass
 class SeccionRef:
     """Referencia a una sección dentro de capítulo."""
     numero: str
     nombre: Optional[str]
     pagina: int
     articulos: list[ArticuloRef] = field(default_factory=list)
+    subsecciones: list[SubseccionRef] = field(default_factory=list)
 
 
 @dataclass
@@ -278,6 +310,10 @@ def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[Titulo
     patron_capitulo = patrones.get("capitulo", r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$')
     patron_seccion = patrones.get("seccion", r'^SECCI[OÓ]N\s+([IVX]+|PRIMERA|SEGUNDA|TERCERA|CUARTA|QUINTA|SEXTA|S[EÉ]PTIMA|OCTAVA|NOVENA|D[EÉ]CIMA|[UÚ]NICA)\s*$')
 
+    # Patrón de subsección (solo para leyes como LA que usan romanos sueltos)
+    # Si está habilitado, detecta líneas que son solo números romanos (I, II, III, etc.)
+    detectar_subsecciones = config.get("detectar_subsecciones", False)
+
     # Configuración de layout
     requiere_centrado = config.get("requiere_centrado", True)
 
@@ -409,6 +445,9 @@ def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[Titulo
                         re.match(patron_capitulo, sig['texto'], re.IGNORECASE) or
                         re.match(patron_seccion, sig['texto'], re.IGNORECASE)):
                         break
+                    # Verificar que no sea una subsección (romano solo)
+                    if detectar_subsecciones and normalizar_romano_subseccion(sig['texto'].strip()):
+                        break
                     nombre_partes.append(sig['texto'].strip())
                     j += 1
                 else:
@@ -424,6 +463,48 @@ def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[Titulo
             capitulo_actual.secciones.append(seccion)
             i = j  # Saltar las líneas del nombre
             continue
+
+        # ¿Es subsección? (solo si está habilitado - ej: LA)
+        # Las subsecciones son líneas que son solo un número romano (I, II, III, etc.)
+        # seguido de una línea con el nombre
+        if detectar_subsecciones:
+            romano = normalizar_romano_subseccion(texto)
+            if romano and linea['centrado'] and linea['all_bold']:
+                # Verificar que haya una sección actual donde añadir la subsección
+                seccion_actual = None
+                if capitulo_actual and capitulo_actual.secciones:
+                    seccion_actual = capitulo_actual.secciones[-1]
+
+                if seccion_actual:
+                    # Capturar nombre: líneas siguientes que sean centrado+bold
+                    nombre_partes = []
+                    j = i + 1
+                    while j < len(lineas_layout):
+                        sig = lineas_layout[j]
+                        if (sig['centrado'] and sig['all_bold'] and sig['texto'].strip()):
+                            # Verificar que no sea otro marcador
+                            if (re.match(patron_titulo, sig['texto'], re.IGNORECASE) or
+                                re.match(patron_capitulo, sig['texto'], re.IGNORECASE) or
+                                re.match(patron_seccion, sig['texto'], re.IGNORECASE)):
+                                break
+                            # Verificar que no sea otra subsección (romano solo)
+                            if normalizar_romano_subseccion(sig['texto'].strip()):
+                                break
+                            nombre_partes.append(sig['texto'].strip())
+                            j += 1
+                        else:
+                            break
+
+                    nombre = ' '.join(nombre_partes) if nombre_partes else None
+
+                    subseccion = SubseccionRef(
+                        numero=romano,
+                        nombre=nombre,
+                        pagina=linea['pagina']
+                    )
+                    seccion_actual.subsecciones.append(subseccion)
+                    i = j  # Saltar las líneas del nombre
+                    continue
 
         i += 1
 
@@ -469,16 +550,34 @@ def asignar_articulos_a_capitulos(titulos: list[TituloRef], articulos: list[Arti
             # Si el capítulo tiene secciones, agregar las secciones como puntos de corte
             if cap.secciones:
                 for sec in cap.secciones:
-                    page_idx = sec.pagina - 1
-                    if page_idx >= 0 and page_idx < len(doc):
-                        page = doc[page_idx]
-                        # Buscar con todas las variantes del número (romano y ordinales)
-                        variantes = obtener_variantes_numero(sec.numero)
-                        patron = rf'SECCI[OÓ]N\s+({"|".join(variantes)})\b'
-                        coord_y_sec = obtener_coordenada_y(page, patron)
+                    # Si la sección tiene subsecciones, agregar subsecciones como puntos de corte
+                    if sec.subsecciones:
+                        for subsec in sec.subsecciones:
+                            page_idx = subsec.pagina - 1
+                            if page_idx >= 0 and page_idx < len(doc):
+                                page = doc[page_idx]
+                                # Buscar el número romano solo (I, II, III, etc.)
+                                # Incluir variantes por si el PDF tiene 'll' en lugar de 'II'
+                                variantes = [subsec.numero]
+                                if subsec.numero == 'II':
+                                    variantes.extend(['ll', 'lI', 'Il'])  # Posibles confusiones de caracteres
+                                patron = rf'^({"|".join(variantes)})\s*$'
+                                coord_y_subsec = obtener_coordenada_y(page, patron)
+                            else:
+                                coord_y_subsec = 0
+                            puntos_corte.append((subsec.pagina, coord_y_subsec, subsec, 'subseccion'))
                     else:
-                        coord_y_sec = 0
-                    puntos_corte.append((sec.pagina, coord_y_sec, sec, 'seccion'))
+                        # Sin subsecciones, la sección es el punto de corte
+                        page_idx = sec.pagina - 1
+                        if page_idx >= 0 and page_idx < len(doc):
+                            page = doc[page_idx]
+                            # Buscar con todas las variantes del número (romano y ordinales)
+                            variantes = obtener_variantes_numero(sec.numero)
+                            patron = rf'SECCI[OÓ]N\s+({"|".join(variantes)})\b'
+                            coord_y_sec = obtener_coordenada_y(page, patron)
+                        else:
+                            coord_y_sec = 0
+                        puntos_corte.append((sec.pagina, coord_y_sec, sec, 'seccion'))
             else:
                 # Sin secciones, el capítulo es el punto de corte
                 puntos_corte.append((cap.pagina, coord_y, cap, 'capitulo'))
@@ -686,6 +785,7 @@ def imprimir_mapa(titulos: list[TituloRef]):
     total_articulos = 0
     total_derogados = 0
     total_secciones = 0
+    total_subsecciones = 0
 
     for titulo in titulos:
         nombre = f" - {titulo.nombre}" if titulo.nombre else ""
@@ -700,18 +800,37 @@ def imprimir_mapa(titulos: list[TituloRef]):
                 total_secciones += len(cap.secciones)
                 for sec in cap.secciones:
                     nombre_sec = f" - {sec.nombre}" if sec.nombre else ""
-                    arts = [a.numero for a in sec.articulos]
-                    derogados_sec = sum(1 for a in sec.articulos if a.derogado)
-                    total_articulos += len(arts)
-                    total_derogados += derogados_sec
-                    if arts:
-                        rango = f"{arts[0]} ... {arts[-1]}" if len(arts) > 2 else ", ".join(arts)
-                        print(f"    SECCION {sec.numero}{nombre_sec}")
-                        derog_info = f", {derogados_sec} derogados" if derogados_sec else ""
-                        print(f"      Artículos: {rango} ({len(arts)} arts{derog_info})")
+                    print(f"    SECCION {sec.numero}{nombre_sec}")
+
+                    # Si tiene subsecciones, mostrar artículos por subsección
+                    if sec.subsecciones:
+                        total_subsecciones += len(sec.subsecciones)
+                        for subsec in sec.subsecciones:
+                            nombre_subsec = f" - {subsec.nombre}" if subsec.nombre else ""
+                            arts = [a.numero for a in subsec.articulos]
+                            derogados_subsec = sum(1 for a in subsec.articulos if a.derogado)
+                            total_articulos += len(arts)
+                            total_derogados += derogados_subsec
+                            if arts:
+                                rango = f"{arts[0]} ... {arts[-1]}" if len(arts) > 2 else ", ".join(arts)
+                                derog_info = f", {derogados_subsec} derogados" if derogados_subsec else ""
+                                print(f"      SUBSEC {subsec.numero}{nombre_subsec}")
+                                print(f"        Artículos: {rango} ({len(arts)} arts{derog_info})")
+                            else:
+                                print(f"      SUBSEC {subsec.numero}{nombre_subsec}")
+                                print(f"        (sin artículos)")
                     else:
-                        print(f"    SECCION {sec.numero}{nombre_sec}")
-                        print(f"      (sin artículos)")
+                        # Sin subsecciones, mostrar artículos de la sección
+                        arts = [a.numero for a in sec.articulos]
+                        derogados_sec = sum(1 for a in sec.articulos if a.derogado)
+                        total_articulos += len(arts)
+                        total_derogados += derogados_sec
+                        if arts:
+                            rango = f"{arts[0]} ... {arts[-1]}" if len(arts) > 2 else ", ".join(arts)
+                            derog_info = f", {derogados_sec} derogados" if derogados_sec else ""
+                            print(f"      Artículos: {rango} ({len(arts)} arts{derog_info})")
+                        else:
+                            print(f"      (sin artículos)")
             else:
                 # Sin secciones, mostrar artículos del capítulo
                 arts = [a.numero for a in cap.articulos]
@@ -731,6 +850,8 @@ def imprimir_mapa(titulos: list[TituloRef]):
     print(f"  Capítulos:   {sum(len(t.capitulos) for t in titulos)}")
     if total_secciones > 0:
         print(f"  Secciones:   {total_secciones}")
+    if total_subsecciones > 0:
+        print(f"  Subsecciones: {total_subsecciones}")
     print(f"  Artículos:   {total_articulos} ({total_articulos - total_derogados} vigentes, {total_derogados} derogados)")
 
 
@@ -741,6 +862,7 @@ def generar_json(titulos: list[TituloRef]) -> dict:
     }
 
     total_secciones = 0
+    total_subsecciones = 0
     total_articulos = 0
     total_derogados = 0
 
@@ -765,10 +887,26 @@ def generar_json(titulos: list[TituloRef]) -> dict:
                     sec_data = {
                         "nombre": sec.nombre,
                         "pagina": sec.pagina,
-                        "articulos": [a.numero for a in sec.articulos]
                     }
-                    total_articulos += len(sec.articulos)
-                    total_derogados += sum(1 for a in sec.articulos if a.derogado)
+
+                    # Si tiene subsecciones, incluirlas
+                    if sec.subsecciones:
+                        total_subsecciones += len(sec.subsecciones)
+                        sec_data["subsecciones"] = {}
+                        for subsec in sec.subsecciones:
+                            subsec_data = {
+                                "nombre": subsec.nombre,
+                                "pagina": subsec.pagina,
+                                "articulos": [a.numero for a in subsec.articulos]
+                            }
+                            total_articulos += len(subsec.articulos)
+                            total_derogados += sum(1 for a in subsec.articulos if a.derogado)
+                            sec_data["subsecciones"][subsec.numero] = subsec_data
+                    else:
+                        sec_data["articulos"] = [a.numero for a in sec.articulos]
+                        total_articulos += len(sec.articulos)
+                        total_derogados += sum(1 for a in sec.articulos if a.derogado)
+
                     cap_data["secciones"][sec.numero] = sec_data
             else:
                 cap_data["articulos"] = [a.numero for a in cap.articulos]
@@ -784,6 +922,7 @@ def generar_json(titulos: list[TituloRef]) -> dict:
         "titulos": len(titulos),
         "capitulos": sum(len(t.capitulos) for t in titulos),
         "secciones": total_secciones,
+        "subsecciones": total_subsecciones,
         "articulos_vigentes": total_articulos - total_derogados,
         "articulos_derogados": total_derogados,
         "total": total_articulos
