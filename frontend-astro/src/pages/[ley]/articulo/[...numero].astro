@@ -282,6 +282,12 @@ const seccionTexto = breadcrumb.length > 0
               {breadcrumb.map((item) => (
                 <BreadcrumbNav item={item} leyCode={codigoLower} />
               ))}
+              {/* Nombre del artículo/regla */}
+              {articulo.nombre && (
+                <span class="context-nombre-articulo">
+                  {articulo.nombre}
+                </span>
+              )}
               {/* Epígrafe del SAT (solo texto, URLs no verificadas) */}
               {epigrafeInfo && (
                 <span class="context-epigrafe">
@@ -438,6 +444,17 @@ const seccionTexto = breadcrumb.length > 0
       .context-nombre {
         font-weight: 400;
         opacity: 0.8;
+      }
+
+      /* Nombre del artículo/regla - destacado */
+      .context-nombre-articulo {
+        font-weight: 500;
+        color: rgb(55 65 81);
+        font-size: 1rem;
+      }
+
+      :global(.dark) .context-nombre-articulo {
+        color: rgb(209 213 219);
       }
 
       /* Epígrafe del SAT - azul oscuro para mejor contraste */
