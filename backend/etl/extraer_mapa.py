@@ -26,6 +26,45 @@ from config import get_config
 
 BASE_DIR = Path(__file__).parent.parent.parent
 
+# Variantes de números para búsqueda en PDF (romano ↔ ordinal)
+VARIANTES_NUMERO = {
+    'I': ['I', 'PRIMERA', 'PRIMERO'],
+    'PRIMERA': ['I', 'PRIMERA', 'PRIMERO'],
+    'PRIMERO': ['I', 'PRIMERA', 'PRIMERO'],
+    'II': ['II', 'SEGUNDA', 'SEGUNDO'],
+    'SEGUNDA': ['II', 'SEGUNDA', 'SEGUNDO'],
+    'SEGUNDO': ['II', 'SEGUNDA', 'SEGUNDO'],
+    'III': ['III', 'TERCERA', 'TERCERO'],
+    'TERCERA': ['III', 'TERCERA', 'TERCERO'],
+    'TERCERO': ['III', 'TERCERA', 'TERCERO'],
+    'IV': ['IV', 'CUARTA', 'CUARTO'],
+    'CUARTA': ['IV', 'CUARTA', 'CUARTO'],
+    'CUARTO': ['IV', 'CUARTA', 'CUARTO'],
+    'V': ['V', 'QUINTA', 'QUINTO'],
+    'QUINTA': ['V', 'QUINTA', 'QUINTO'],
+    'QUINTO': ['V', 'QUINTA', 'QUINTO'],
+    'VI': ['VI', 'SEXTA', 'SEXTO'],
+    'SEXTA': ['VI', 'SEXTA', 'SEXTO'],
+    'SEXTO': ['VI', 'SEXTA', 'SEXTO'],
+    'VII': ['VII', 'SEPTIMA', 'SÉPTIMA', 'SEPTIMO', 'SÉPTIMO'],
+    'SEPTIMA': ['VII', 'SEPTIMA', 'SÉPTIMA', 'SEPTIMO', 'SÉPTIMO'],
+    'SÉPTIMA': ['VII', 'SEPTIMA', 'SÉPTIMA', 'SEPTIMO', 'SÉPTIMO'],
+    'VIII': ['VIII', 'OCTAVA', 'OCTAVO'],
+    'OCTAVA': ['VIII', 'OCTAVA', 'OCTAVO'],
+    'OCTAVO': ['VIII', 'OCTAVA', 'OCTAVO'],
+    'IX': ['IX', 'NOVENA', 'NOVENO'],
+    'NOVENA': ['IX', 'NOVENA', 'NOVENO'],
+    'NOVENO': ['IX', 'NOVENA', 'NOVENO'],
+    'X': ['X', 'DECIMA', 'DÉCIMA', 'DECIMO', 'DÉCIMO'],
+    'DECIMA': ['X', 'DECIMA', 'DÉCIMA', 'DECIMO', 'DÉCIMO'],
+    'DÉCIMA': ['X', 'DECIMA', 'DÉCIMA', 'DECIMO', 'DÉCIMO'],
+}
+
+def obtener_variantes_numero(numero: str) -> list[str]:
+    """Devuelve todas las variantes posibles de un número (romano + ordinales)."""
+    numero_upper = numero.upper().strip()
+    return VARIANTES_NUMERO.get(numero_upper, [numero_upper])
+
 
 def obtener_coordenada_y(page, patron: str) -> float:
     """
@@ -237,7 +276,7 @@ def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[Titulo
     patrones = config.get("patrones", {})
     patron_titulo = patrones.get("titulo", r'^T[IÍ]TULO\s+(PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[EÉ]PTIMO|OCTAVO|NOVENO|D[EÉ]CIMO|[IVX]+)\s*$')
     patron_capitulo = patrones.get("capitulo", r'^CAP[IÍ]TULO\s+([IVX]+(?:\s+BIS)?|[UÚ]NICO)\s*$')
-    patron_seccion = patrones.get("seccion", r'^SECCI[OÓ]N\s+([IVX]+)\s*$')
+    patron_seccion = patrones.get("seccion", r'^SECCI[OÓ]N\s+([IVX]+|PRIMERA|SEGUNDA|TERCERA|CUARTA|QUINTA|SEXTA|S[EÉ]PTIMA|OCTAVA|NOVENA|D[EÉ]CIMA|[UÚ]NICA)\s*$')
 
     # Configuración de layout
     requiere_centrado = config.get("requiere_centrado", True)
@@ -433,7 +472,9 @@ def asignar_articulos_a_capitulos(titulos: list[TituloRef], articulos: list[Arti
                     page_idx = sec.pagina - 1
                     if page_idx >= 0 and page_idx < len(doc):
                         page = doc[page_idx]
-                        patron = rf'SECCI[OÓ]N\s+{re.escape(sec.numero)}'
+                        # Buscar con todas las variantes del número (romano y ordinales)
+                        variantes = obtener_variantes_numero(sec.numero)
+                        patron = rf'SECCI[OÓ]N\s+({"|".join(variantes)})\b'
                         coord_y_sec = obtener_coordenada_y(page, patron)
                     else:
                         coord_y_sec = 0

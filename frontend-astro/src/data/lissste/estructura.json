@@ -204,7 +204,9 @@
               "numero": "II",
               "nombre": "Incremento Periódico de las Pensiones",
               "pagina": 28,
-              "articulos": []
+              "articulos": [
+                "74"
+              ]
             },
             {
               "tipo": "seccion",
@@ -212,16 +214,7 @@
               "nombre": "Régimen Financiero",
               "pagina": 28,
               "articulos": [
-                "75",
-                "76",
-                "77",
-                "78",
-                "78 Bis",
-                "79",
-                "80",
-                "81",
-                "82",
-                "83"
+                "75"
               ]
             }
           ]
@@ -239,7 +232,15 @@
               "nombre": "Generalidades",
               "pagina": 28,
               "articulos": [
-                "74"
+                "76",
+                "77",
+                "78",
+                "78 Bis",
+                "79",
+                "80",
+                "81",
+                "82",
+                "83"
               ]
             },
             {
@@ -520,7 +521,10 @@
               "numero": "III",
               "nombre": "Régimen Financiero",
               "pagina": 60,
-              "articulos": []
+              "articulos": [
+                "193",
+                "194"
+              ]
             }
           ]
         },
@@ -536,7 +540,10 @@
               "numero": "I",
               "nombre": "Servicios Sociales",
               "pagina": 60,
-              "articulos": []
+              "articulos": [
+                "195",
+                "196"
+              ]
             },
             {
               "tipo": "seccion",
@@ -544,10 +551,6 @@
               "nombre": "Servicios Culturales",
               "pagina": 60,
               "articulos": [
-                "193",
-                "194",
-                "195",
-                "196",
                 "197",
                 "198"
               ]

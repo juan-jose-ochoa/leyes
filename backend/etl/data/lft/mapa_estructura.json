@@ -1615,76 +1615,130 @@
         "XII": {
           "nombre": "De las Pruebas",
           "pagina": 332,
-          "articulos": [
-            "776",
-            "777",
-            "778",
-            "779",
-            "780",
-            "781",
-            "782",
-            "783",
-            "784",
-            "785",
-            "786",
-            "787",
-            "788",
-            "789",
-            "790",
-            "790 Bis",
-            "791",
-            "792",
-            "793",
-            "794",
-            "795",
-            "796",
-            "797",
-            "798",
-            "799",
-            "800",
-            "801",
-            "802",
-            "803",
-            "804",
-            "805",
-            "806",
-            "807",
-            "808",
-            "809",
-            "810",
-            "811",
-            "812",
-            "813",
-            "814",
-            "815",
-            "816",
-            "817",
-            "818",
-            "819",
-            "820",
-            "821",
-            "822",
-            "823",
-            "824",
-            "824 Bis",
-            "825",
-            "826",
-            "826 Bis",
-            "827",
-            "828",
-            "829",
-            "830",
-            "831",
-            "832",
-            "833",
-            "834",
-            "835",
-            "836",
-            "836-A",
-            "836-B",
-            "836-C",
-            "836-D"
-          ]
+          "secciones": {
+            "PRIMERA": {
+              "nombre": "Reglas Generales",
+              "pagina": 332,
+              "articulos": [
+                "776",
+                "777",
+                "778",
+                "779",
+                "780",
+                "781",
+                "782",
+                "783",
+                "784",
+                "785"
+              ]
+            },
+            "SEGUNDA": {
+              "nombre": "De la Confesional",
+              "pagina": 335,
+              "articulos": [
+                "786",
+                "787",
+                "788",
+                "789",
+                "790",
+                "790 Bis",
+                "791",
+                "792",
+                "793",
+                "794"
+              ]
+            },
+            "TERCERA": {
+              "nombre": "De las documentales",
+              "pagina": 337,
+              "articulos": [
+                "795",
+                "796",
+                "797",
+                "798",
+                "799",
+                "800",
+                "801",
+                "802",
+                "803",
+                "804",
+                "805",
+                "806",
+                "807",
+                "808",
+                "809",
+                "810",
+                "811",
+                "812"
+              ]
+            },
+            "CUARTA": {
+              "nombre": "De la Testimonial",
+              "pagina": 340,
+              "articulos": [
+                "813",
+                "814",
+                "815",
+                "816",
+                "817",
+                "818",
+                "819",
+                "820"
+              ]
+            },
+            "QUINTA": {
+              "nombre": "De la Pericial",
+              "pagina": 343,
+              "articulos": [
+                "821",
+                "822",
+                "823",
+                "824",
+                "824 Bis",
+                "825",
+                "826",
+                "826 Bis"
+              ]
+            },
+            "SEXTA": {
+              "nombre": "De la Inspección",
+              "pagina": 344,
+              "articulos": [
+                "827",
+                "828",
+                "829"
+              ]
+            },
+            "SÉPTIMA": {
+              "nombre": "De la Presuncional",
+              "pagina": 345,
+              "articulos": [
+                "830",
+                "831",
+                "832",
+                "833",
+                "834"
+              ]
+            },
+            "OCTAVA": {
+              "nombre": "De la Instrumental",
+              "pagina": 346,
+              "articulos": [
+                "835",
+                "836"
+              ]
+            },
+            "NOVENA": {
+              "nombre": "De los Elementos Aportados por los Avances de la Ciencia .",
+              "pagina": 346,
+              "articulos": [
+                "836-A",
+                "836-B",
+                "836-C",
+                "836-D"
+              ]
+            }
+          }
         },
         "XIII": {
           "nombre": "De las Resoluciones Laborales",
@@ -1740,13 +1794,7 @@
             "866",
             "867",
             "868",
-            "869"
-          ]
-        },
-        "XVII": {
-          "nombre": "Del procedimiento ordinario",
-          "pagina": 353,
-          "articulos": [
+            "869",
             "870",
             "870 Bis",
             "871",
@@ -1755,61 +1803,85 @@
             "873-A",
             "873-B",
             "873-C",
-            "873-D",
-            "873-E",
-            "873-F",
-            "873-G",
-            "873-H",
-            "873-I",
-            "873-J",
-            "873-K",
-            "874",
-            "875",
-            "876",
-            "877",
-            "878",
-            "879",
-            "880",
-            "881",
-            "882",
-            "883",
-            "884",
-            "885",
-            "886",
-            "887",
-            "888",
-            "889",
-            "890",
-            "891"
+            "873-D"
           ]
+        },
+        "XVII": {
+          "nombre": "Del procedimiento ordinario",
+          "pagina": 353,
+          "secciones": {
+            "PRIMERA": {
+              "nombre": "Audiencia Preliminar",
+              "pagina": 357,
+              "articulos": [
+                "873-E",
+                "873-F",
+                "873-G"
+              ]
+            },
+            "SEGUNDA": {
+              "nombre": "Audiencia de Juicio",
+              "pagina": 359,
+              "articulos": [
+                "873-H",
+                "873-I",
+                "873-J",
+                "873-K",
+                "874",
+                "875",
+                "876",
+                "877",
+                "878",
+                "879",
+                "880",
+                "881",
+                "882",
+                "883",
+                "884",
+                "885",
+                "886",
+                "887",
+                "888",
+                "889",
+                "890",
+                "891",
+                "892",
+                "893",
+                "894",
+                "895",
+                "896",
+                "897",
+                "897-A",
+                "897-B",
+                "897-C",
+                "897-D",
+                "897-E",
+                "897-F",
+                "897-G",
+                "898",
+                "899"
+              ]
+            }
+          }
         },
         "XVIII": {
           "nombre": "Del Procedimiento Especial",
           "pagina": 361,
-          "articulos": [
-            "892",
-            "893",
-            "894",
-            "895",
-            "896",
-            "897",
-            "897-A",
-            "897-B",
-            "897-C",
-            "897-D",
-            "897-E",
-            "897-F",
-            "897-G",
-            "898",
-            "899",
-            "899-A",
-            "899-B",
-            "899-C",
-            "899-D",
-            "899-E",
-            "899-F",
-            "899-G"
-          ]
+          "secciones": {
+            "PRIMERA": {
+              "nombre": "Conflictos Individuales de Seguridad Social",
+              "pagina": 366,
+              "articulos": [
+                "899-A",
+                "899-B",
+                "899-C",
+                "899-D",
+                "899-E",
+                "899-F",
+                "899-G"
+              ]
+            }
+          }
         },
         "XIX": {
           "nombre": "Procedimientos de los Conflictos Colectivos de Naturaleza Económica",
@@ -1872,59 +1944,89 @@
         "I": {
           "nombre": null,
           "pagina": 381,
-          "articulos": [
-            "939",
-            "940",
-            "941",
-            "942",
-            "943",
-            "944",
-            "945",
-            "946",
-            "947",
-            "948",
-            "949",
-            "950",
-            "951",
-            "952",
-            "953",
-            "954",
-            "955",
-            "956",
-            "957",
-            "958",
-            "959",
-            "960",
-            "961",
-            "962",
-            "963",
-            "964",
-            "965",
-            "966",
-            "966 Bis",
-            "966 Ter",
-            "967",
-            "968",
-            "969",
-            "970",
-            "971",
-            "972",
-            "973",
-            "974",
-            "975"
-          ]
+          "secciones": {
+            "PRIMERA": {
+              "nombre": "Disposiciones Generales",
+              "pagina": 381,
+              "articulos": [
+                "939",
+                "940",
+                "941",
+                "942",
+                "943",
+                "944",
+                "945",
+                "946",
+                "947",
+                "948",
+                "949"
+              ]
+            },
+            "SEGUNDA": {
+              "nombre": "Del procedimiento del embargo",
+              "pagina": 383,
+              "articulos": [
+                "950",
+                "951",
+                "952",
+                "953",
+                "954",
+                "955",
+                "956",
+                "957",
+                "958",
+                "959",
+                "960",
+                "961",
+                "962",
+                "963",
+                "964",
+                "965",
+                "966",
+                "966 Bis",
+                "966 Ter"
+              ]
+            },
+            "TERCERA": {
+              "nombre": "Remates",
+              "pagina": 388,
+              "articulos": [
+                "967",
+                "968",
+                "969",
+                "970",
+                "971",
+                "972",
+                "973",
+                "974",
+                "975"
+              ]
+            }
+          }
         },
         "II": {
           "nombre": "Procedimiento de las tercerías y preferencias de crédito",
           "pagina": 390,
-          "articulos": [
-            "976",
-            "977",
-            "978",
-            "979",
-            "980",
-            "981"
-          ]
+          "secciones": {
+            "PRIMERA": {
+              "nombre": "De las tercerías",
+              "pagina": 390,
+              "articulos": [
+                "976",
+                "977",
+                "978"
+              ]
+            },
+            "SEGUNDA": {
+              "nombre": "De la preferencia de créditos",
+              "pagina": 391,
+              "articulos": [
+                "979",
+                "980",
+                "981"
+              ]
+            }
+          }
         },
         "III": {
           "nombre": "Procedimientos paraprocesales o voluntarios",
@@ -1986,7 +2088,7 @@
   "estadisticas": {
     "titulos": 18,
     "capitulos": 99,
-    "secciones": 0,
+    "secciones": 17,
     "articulos_vigentes": 1115,
     "articulos_derogados": 149,
     "total": 1264

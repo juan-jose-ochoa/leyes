@@ -3,7 +3,7 @@
   "estadisticas": {
     "titulos": 6,
     "capitulos": 30,
-    "secciones": 0,
+    "secciones": 37,
     "articulos_vigentes": 385,
     "articulos_derogados": 0,
     "total": 385
@@ -106,234 +106,482 @@
         {
           "tipo": "capitulo",
           "numero": "III",
-          "nombre": "DEL SEGURO DE RIESGOS DE TRABAJO SECCION PRIMERA GENERALIDADES",
+          "nombre": "DEL SEGURO DE RIESGOS DE TRABAJO",
           "pagina": 18,
-          "articulos": [
-            "40-F",
-            "41",
-            "42",
-            "43",
-            "44",
-            "45",
-            "46",
-            "47",
-            "48",
-            "49",
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            "60",
-            "61",
-            "62",
-            "63",
-            "64",
-            "65",
-            "66",
-            "67",
-            "68",
-            "69",
-            "70",
-            "71",
-            "72",
-            "73",
-            "74",
-            "75",
-            "76",
-            "77",
-            "78",
-            "79",
-            "80",
-            "81",
-            "82",
-            "83"
-          ],
-          "hijos": []
+          "articulos": [],
+          "hijos": [
+            {
+              "tipo": "seccion",
+              "numero": "PRIMERA",
+              "nombre": "GENERALIDADES",
+              "pagina": 18,
+              "articulos": [
+                "40-F",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46",
+                "47",
+                "48",
+                "49",
+                "50",
+                "51",
+                "52",
+                "53",
+                "54",
+                "55"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEGUNDA",
+              "nombre": "DE LAS PRESTACIONES EN ESPECIE",
+              "pagina": 20,
+              "articulos": [
+                "56",
+                "57"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "TERCERA",
+              "nombre": "DE LAS PRESTACIONES EN DINERO",
+              "pagina": 20,
+              "articulos": [
+                "58",
+                "59",
+                "60",
+                "61",
+                "62",
+                "63",
+                "64",
+                "65",
+                "66",
+                "67"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "CUARTA",
+              "nombre": "DEL INCREMENTO PERIODICO DE LAS PENSIONES",
+              "pagina": 25,
+              "articulos": [
+                "68",
+                "69"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "QUINTA",
+              "nombre": "DEL REGIMEN FINANCIERO",
+              "pagina": 25,
+              "articulos": [
+                "70",
+                "71",
+                "72",
+                "73",
+                "74",
+                "75",
+                "76",
+                "77",
+                "78",
+                "79"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEXTA",
+              "nombre": "DE LA PREVENCION DE RIESGOS DE TRABAJO",
+              "pagina": 29,
+              "articulos": [
+                "80",
+                "81",
+                "82",
+                "83"
+              ]
+            }
+          ]
         },
         {
           "tipo": "capitulo",
           "numero": "IV",
-          "nombre": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD SECCION PRIMERA GENERALIDADES",
+          "nombre": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
           "pagina": 29,
-          "articulos": [
-            "84",
-            "85",
-            "86",
-            "87",
-            "88",
-            "89",
-            "90",
-            "91",
-            "92",
-            "93",
-            "94",
-            "95",
-            "96",
-            "97",
-            "98",
-            "99",
-            "100",
-            "101",
-            "102",
-            "102 Bis",
-            "103",
-            "104",
-            "105",
-            "106",
-            "107",
-            "108",
-            "109",
-            "109 Bis",
-            "110",
-            "111",
-            "111-A"
-          ],
-          "hijos": []
+          "articulos": [],
+          "hijos": [
+            {
+              "tipo": "seccion",
+              "numero": "PRIMERA",
+              "nombre": "GENERALIDADES",
+              "pagina": 29,
+              "articulos": [
+                "84",
+                "85",
+                "86",
+                "87",
+                "88",
+                "89",
+                "90"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEGUNDA",
+              "nombre": "DE LAS PRESTACIONES EN ESPECIE",
+              "pagina": 32,
+              "articulos": [
+                "91",
+                "92",
+                "93",
+                "94",
+                "95"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "TERCERA",
+              "nombre": "DE LAS PRESTACIONES EN DINERO",
+              "pagina": 33,
+              "articulos": [
+                "96",
+                "97",
+                "98",
+                "99",
+                "100",
+                "101",
+                "102",
+                "102 Bis",
+                "103",
+                "104"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "CUARTA",
+              "nombre": "DEL REGIMEN FINANCIERO",
+              "pagina": 35,
+              "articulos": [
+                "105",
+                "106",
+                "107",
+                "108"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "QUINTA",
+              "nombre": "DE LA CONSERVACION DE DERECHOS",
+              "pagina": 35,
+              "articulos": [
+                "109",
+                "109 Bis"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEXTA",
+              "nombre": "DE LA MEDICINA PREVENTIVA",
+              "pagina": 36,
+              "articulos": [
+                "110",
+                "111"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SÉPTIMA",
+              "nombre": "DEL REGISTRO DE LAS ACTIVIDADES PARA LA SALUD A LA POBLACIÓN DERECHOHABIENTE",
+              "pagina": 36,
+              "articulos": [
+                "111-A"
+              ]
+            }
+          ]
         },
         {
           "tipo": "capitulo",
           "numero": "V",
-          "nombre": "DEL SEGURO DE INVALIDEZ Y VIDA SECCION PRIMERA GENERALIDADES",
+          "nombre": "DEL SEGURO DE INVALIDEZ Y VIDA",
           "pagina": 37,
-          "articulos": [
-            "112",
-            "113",
-            "114",
-            "115",
-            "116",
-            "117",
-            "118",
-            "119",
-            "120",
-            "121",
-            "122",
-            "123",
-            "124",
-            "125",
-            "126",
-            "127",
-            "128",
-            "129",
-            "130",
-            "131",
-            "132",
-            "133",
-            "134",
-            "135",
-            "136",
-            "137",
-            "137 Bis",
-            "138",
-            "139",
-            "140",
-            "140 Bis",
-            "141",
-            "142",
-            "143",
-            "144",
-            "145",
-            "146",
-            "147",
-            "148",
-            "149",
-            "150",
-            "151"
-          ],
-          "hijos": []
+          "articulos": [],
+          "hijos": [
+            {
+              "tipo": "seccion",
+              "numero": "PRIMERA",
+              "nombre": "GENERALIDADES",
+              "pagina": 37,
+              "articulos": [
+                "112",
+                "113",
+                "114",
+                "115",
+                "116",
+                "117",
+                "118"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEGUNDA",
+              "nombre": "DEL RAMO DE INVALIDEZ",
+              "pagina": 38,
+              "articulos": [
+                "119",
+                "120",
+                "121",
+                "122",
+                "123",
+                "124",
+                "125",
+                "126"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "TERCERA",
+              "nombre": "DEL RAMO DE VIDA",
+              "pagina": 40,
+              "articulos": [
+                "127",
+                "128",
+                "129",
+                "130",
+                "131",
+                "132",
+                "133",
+                "134",
+                "135",
+                "136",
+                "137",
+                "137 Bis"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "CUARTA",
+              "nombre": "DE LAS ASIGNACIONES FAMILIARES Y AYUDA ASISTENCIAL",
+              "pagina": 43,
+              "articulos": [
+                "138",
+                "139",
+                "140",
+                "140 Bis"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "QUINTA",
+              "nombre": "DE LA CUANTIA DE LAS PENSIONES DE INVALIDEZ Y VIDA",
+              "pagina": 45,
+              "articulos": [
+                "141",
+                "142",
+                "143",
+                "144",
+                "145"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEXTA",
+              "nombre": "DEL REGIMEN FINANCIERO",
+              "pagina": 46,
+              "articulos": [
+                "146",
+                "147",
+                "148",
+                "149"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEPTIMA",
+              "nombre": "DE LA CONSERVACION Y RECONOCIMIENTO DE DERECHOS",
+              "pagina": 46,
+              "articulos": [
+                "150",
+                "151"
+              ]
+            }
+          ]
         },
         {
           "tipo": "capitulo",
           "numero": "VI",
-          "nombre": "DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ SECCION PRIMERA GENERALIDADES",
+          "nombre": "DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
           "pagina": 47,
-          "articulos": [
-            "152",
-            "153",
-            "154",
-            "155",
-            "156",
-            "157",
-            "158",
-            "159",
-            "160",
-            "161",
-            "162",
-            "163",
-            "164",
-            "165",
-            "166",
-            "167",
-            "168",
-            "169",
-            "170",
-            "171",
-            "172",
-            "172-A",
-            "173",
-            "174",
-            "175",
-            "176",
-            "177",
-            "178",
-            "179",
-            "180",
-            "181",
-            "182",
-            "183",
-            "184",
-            "185",
-            "186",
-            "187",
-            "188",
-            "189",
-            "190",
-            "191",
-            "192",
-            "193",
-            "193 Bis",
-            "194",
-            "195",
-            "196",
-            "197",
-            "198",
-            "199",
-            "200"
-          ],
-          "hijos": []
+          "articulos": [],
+          "hijos": [
+            {
+              "tipo": "seccion",
+              "numero": "PRIMERA",
+              "nombre": "GENERALIDADES",
+              "pagina": 47,
+              "articulos": [
+                "152",
+                "153"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEGUNDA",
+              "nombre": "DEL RAMO DE CESANTIA EN EDAD AVANZADA",
+              "pagina": 47,
+              "articulos": [
+                "154",
+                "155",
+                "156",
+                "157",
+                "158",
+                "159",
+                "160"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "TERCERA",
+              "nombre": "DEL RAMO DE VEJEZ",
+              "pagina": 50,
+              "articulos": [
+                "161",
+                "162",
+                "163",
+                "164"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "CUARTA",
+              "nombre": "DE LA AYUDA PARA GASTOS DE MATRIMONIO",
+              "pagina": 51,
+              "articulos": [
+                "165",
+                "166"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "QUINTA",
+              "nombre": "DEL REGIMEN FINANCIERO",
+              "pagina": 51,
+              "articulos": [
+                "167",
+                "168",
+                "169"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEXTA",
+              "nombre": "DE LA PENSION GARANTIZADA",
+              "pagina": 53,
+              "articulos": [
+                "170",
+                "171",
+                "172",
+                "173"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEPTIMA",
+              "nombre": "DE LA CUENTA INDIVIDUAL Y DE LAS SOCIEDADES DE INVERSION ESPECIALIZADAS DE FONDOS PARA EL RETIRO",
+              "pagina": 55,
+              "articulos": [
+                "172-A",
+                "174",
+                "175",
+                "176",
+                "177",
+                "178",
+                "179",
+                "180",
+                "181",
+                "182",
+                "183",
+                "184",
+                "185",
+                "186",
+                "187",
+                "188",
+                "189",
+                "190",
+                "191",
+                "192",
+                "193",
+                "193 Bis",
+                "194",
+                "195",
+                "196",
+                "197",
+                "198",
+                "199",
+                "200"
+              ]
+            }
+          ]
         },
         {
           "tipo": "capitulo",
           "numero": "VII",
-          "nombre": "DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES SECCION PRIMERA DEL RAMO DE GUARDERIAS",
+          "nombre": "DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
           "pagina": 60,
-          "articulos": [
-            "201",
-            "202",
-            "203",
-            "204",
-            "205",
-            "206",
-            "207",
-            "208",
-            "209",
-            "210",
-            "210-A",
-            "211",
-            "212",
-            "213",
-            "214",
-            "215",
-            "216",
-            "216-A",
-            "217"
-          ],
-          "hijos": []
+          "articulos": [],
+          "hijos": [
+            {
+              "tipo": "seccion",
+              "numero": "PRIMERA",
+              "nombre": "DEL RAMO DE GUARDERIAS",
+              "pagina": 60,
+              "articulos": [
+                "201",
+                "202",
+                "203",
+                "204",
+                "205",
+                "206",
+                "207"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEGUNDA",
+              "nombre": "DEL RAMO DE LAS PRESTACIONES SOCIALES",
+              "pagina": 61,
+              "articulos": [
+                "208",
+                "209",
+                "210"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "TERCERA",
+              "nombre": "DEL REGIMEN FINANCIERO",
+              "pagina": 62,
+              "articulos": [
+                "210-A",
+                "211",
+                "212",
+                "213"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "CUARTA",
+              "nombre": "DE LAS PRESTACIONES DE SOLIDARIDAD SOCIAL",
+              "pagina": 63,
+              "articulos": [
+                "214",
+                "215",
+                "216",
+                "216-A",
+                "217"
+              ]
+            }
+          ]
         },
         {
           "tipo": "capitulo",
@@ -556,22 +804,53 @@
           "numero": "VII",
           "nombre": "DE LA CONSTITUCIÓN DE RESERVAS",
           "pagina": 91,
-          "articulos": [
-            "277-G",
-            "278",
-            "279",
-            "280",
-            "281",
-            "282",
-            "283",
-            "284",
-            "285",
-            "286",
-            "286-A",
-            "286-B",
-            "286-C"
-          ],
-          "hijos": []
+          "articulos": [],
+          "hijos": [
+            {
+              "tipo": "seccion",
+              "numero": "PRIMERA",
+              "nombre": "GENERALIDADES",
+              "pagina": 91,
+              "articulos": [
+                "277-G",
+                "278",
+                "279",
+                "280"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEGUNDA",
+              "nombre": "DE LAS RESERVAS DE LOS SEGUROS",
+              "pagina": 92,
+              "articulos": [
+                "281",
+                "282",
+                "283",
+                "284",
+                "285",
+                "286",
+                "286-A"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "TERCERA",
+              "nombre": "DEL PROGRAMA ANUAL DE ADMINISTRACIÓN Y CONSTITUCIÓN DE RESERVAS",
+              "pagina": 94,
+              "articulos": []
+            },
+            {
+              "tipo": "seccion",
+              "numero": "CUARTA",
+              "nombre": "DE LA INVERSIÓN DE LAS RESERVAS Y DE SU USO PARA LA OPERACIÓN",
+              "pagina": 94,
+              "articulos": [
+                "286-B",
+                "286-C"
+              ]
+            }
+          ]
         },
         {
           "tipo": "capitulo",
@@ -626,17 +905,33 @@
         {
           "tipo": "capitulo",
           "numero": "II",
-          "nombre": "DE LOS PROCEDIMIENTOS SECCIÓN PRIMERA PROCEDIMIENTO ADMINISTRATIVO DE EJECUCIÓN",
+          "nombre": "DE LOS PROCEDIMIENTOS",
           "pagina": 99,
-          "articulos": [
-            "291",
-            "292",
-            "293",
-            "294",
-            "295",
-            "296"
-          ],
-          "hijos": []
+          "articulos": [],
+          "hijos": [
+            {
+              "tipo": "seccion",
+              "numero": "PRIMERA",
+              "nombre": "PROCEDIMIENTO ADMINISTRATIVO DE EJECUCIÓN",
+              "pagina": 99,
+              "articulos": [
+                "291",
+                "292",
+                "293"
+              ]
+            },
+            {
+              "tipo": "seccion",
+              "numero": "SEGUNDA",
+              "nombre": "DE LOS MEDIOS DE DEFENSA",
+              "pagina": 100,
+              "articulos": [
+                "294",
+                "295",
+                "296"
+              ]
+            }
+          ]
         },
         {
           "tipo": "capitulo",
