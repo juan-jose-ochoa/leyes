@@ -1,0 +1,5 @@
+# Cloudflare Pages Redirects
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Redirect trailing slash to non-trailing (canonical URLs without slash)
+/*/  /:splat  301
