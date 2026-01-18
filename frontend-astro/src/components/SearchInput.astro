@@ -178,6 +178,7 @@ const dropdownId = `${id}-dropdown`;
       const leyMeta = result.parsed.leyMeta;
       const catColor = categoryColors[leyMeta.categoria] || 'bg-primary-600';
 
+      const tipoLabel = leyMeta.tipo_contenido === 'regla' ? 'Regla' : 'Art.';
       els.resultsUl.innerHTML = result.matches.map((match, idx) => `
         <li>
           <a href="${match.url}/"
@@ -188,10 +189,11 @@ const dropdownId = `${id}-dropdown`;
             </span>
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2">
-                <span class="font-medium text-gray-900 dark:text-white">${leyMeta.codigo} Art. ${match.n}</span>
+                <span class="font-medium text-gray-900 dark:text-white">${leyMeta.codigo} ${tipoLabel} ${match.n}</span>
                 ${match.matchType === 'exact' ? '<span class="text-xs text-primary-600 dark:text-primary-400 font-medium">exacto</span>' : ''}
               </div>
-              ${match.e ? `<p class="text-sm text-primary-600 dark:text-primary-400">${match.e}</p>` : ''}
+              ${match.m ? `<p class="text-sm text-primary-600 dark:text-primary-400">${match.m}</p>` : ''}
+              ${match.e ? `<p class="text-sm text-primary-600/80 dark:text-primary-400/80">${match.e}</p>` : ''}
               ${match.t ? `<p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-1">${match.t}</p>` : ''}
             </div>
             <svg class="w-4 h-4 text-gray-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

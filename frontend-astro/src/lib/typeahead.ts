@@ -15,14 +15,16 @@ export interface LeyMeta {
   nombre_corto: string;
   categoria: string;
   total: number;
+  tipo_contenido?: 'articulo' | 'regla';
 }
 
 export interface ArticuloMeta {
   n: string;      // Número canónico
   s: string;      // Número normalizado (search)
   a?: string[];   // Aliases/variantes
-  e?: string;     // Epígrafe SAT (preferido)
-  t?: string;     // Título sección (fallback)
+  m?: string;     // Nombre del artículo/regla
+  e?: string;     // Epígrafe SAT
+  t?: string;     // Título sección
 }
 
 export interface ArticuloMatch extends ArticuloMeta {
@@ -140,12 +142,12 @@ export function parseQuery(input: string, index: QuickAccessIndex): ParsedRefere
   }
 
   // Patrón: {CÓDIGO_LEY} {NÚMERO_ARTÍCULO}
-  // Ejemplos: "LISR 96", "cff 17-h bis", "CPEUM 123", "lisr96"
+  // Ejemplos: "LISR 96", "cff 17-h bis", "CPEUM 123", "lisr96", "RMF 2.1.1", "RMF 2.1."
   const patterns = [
-    // Con espacio: "LISR 96", "CFF 17-H Bis"
-    /^([a-záéíóú]{2,12})\s+(\d+(?:o|º|°)?(?:[-\s]?[a-záéíóú]+)?(?:\s+(?:bis|ter|qu[aá]ter|quinquies))?)$/i,
+    // Con espacio: "LISR 96", "CFF 17-H Bis", "RMF 2.1.1", "RMF 2.1." (trailing dot para prefijo)
+    /^([a-záéíóú]{2,12})\s+(\d+(?:\.\d+)*\.?(?:o|º|°)?(?:[-\s]?[a-záéíóú]+)?(?:\s+(?:bis|ter|qu[aá]ter|quinquies))?)$/i,
     // Sin espacio pero con número: "LISR96", "CFF32"
-    /^([a-záéíóú]{2,12})(\d+(?:o|º|°)?(?:[-]?[a-záéíóú]+)?(?:\s*(?:bis|ter|qu[aá]ter|quinquies))?)$/i,
+    /^([a-záéíóú]{2,12})(\d+(?:\.\d+)*\.?(?:o|º|°)?(?:[-]?[a-záéíóú]+)?(?:\s*(?:bis|ter|qu[aá]ter|quinquies))?)$/i,
   ];
 
   for (const pattern of patterns) {

@@ -136,7 +136,8 @@ for (const leyInfo of catalogo.leyes) {
     codigo,
     nombre_corto: leyInfo.nombre_corto,
     categoria: leyInfo.categoria,
-    total: leyInfo.total_articulos || 0
+    total: leyInfo.total_articulos || 0,
+    tipo_contenido: leyInfo.tipo_contenido || 'articulo'  // 'articulo' o 'regla'
   };
 
   // Aliases para la ley (para búsqueda fuzzy)
@@ -164,7 +165,8 @@ for (const leyInfo of catalogo.leyes) {
   let epigrafesCount = 0;
 
   for (const art of articulos) {
-    if (art.tipo !== 'articulo') continue;
+    // Incluir artículos y reglas (RMF usa tipo 'regla')
+    if (art.tipo !== 'articulo' && art.tipo !== 'regla') continue;
 
     const numero = art.numero;
     const normalized = normalizeArticuloNum(numero);
@@ -184,6 +186,11 @@ for (const leyInfo of catalogo.leyes) {
     // Solo agregar variantes si hay alguna diferente
     if (variants.length > 0) {
       meta.a = variants;
+    }
+
+    // Agregar nombre del artículo/regla si existe
+    if (art.nombre) {
+      meta.m = art.nombre;  // Nombre/título del artículo o regla
     }
 
     // Agregar epígrafe SAT y título de sección (ambos si existen)
@@ -221,7 +228,11 @@ const aliasesAdicionales = {
   'aduanera': 'LA',
   'aduana': 'LA',
   'miscelanea': 'RMF',
-  'rmf': 'RMF'
+  'rmf': 'RMF',
+  'regla': 'RMF',
+  'res': 'RMF',
+  'resol': 'RMF',
+  'resolucion': 'RMF'
 };
 
 for (const [alias, codigo] of Object.entries(aliasesAdicionales)) {
