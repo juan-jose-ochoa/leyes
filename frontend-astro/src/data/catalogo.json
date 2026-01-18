@@ -1,5 +1,5 @@
 {
-  "_generado": "2026-01-18T00:09:11.349197",
+  "_generado": "2026-01-18T00:51:38.154436",
   "_version": "1.1",
   "leyes": [
     {
@@ -119,7 +119,8 @@
       "divisiones_permitidas": [
         "titulo",
         "capitulo",
-        "seccion"
+        "seccion",
+        "subseccion"
       ],
       "ultima_reforma_dof": "2025-11-19"
     },

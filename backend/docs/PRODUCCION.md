@@ -1,12 +1,5 @@
 # LeyesMX - Producción
 
-## Servidor
-
-- **IP:** `54.202.41.70`
-- **SSH:** `ssh jochoa@54.202.41.70`
-- **Dominio API:** `api.leyesfiscalesmexico.com`
-- **Frontend:** `leyes.pages.dev` (Cloudflare Pages)
-
 ## Arquitectura
 
 ```
@@ -15,62 +8,19 @@
                         ▼
                   ┌───────────┐
                   │Cloudflare │
+                  │  Pages    │
                   └─────┬─────┘
-          ┌─────────────┴─────────────┐
-          ▼                           ▼
-   leyes.pages.dev            api.leyesfiscalesmexico.com
-   (Frontend)                         │
-                                      ▼
-                              ┌─────────────┐
-                              │   Caddy     │ :443
-                              │  (54.202.41.70)
-                              └──────┬──────┘
-                                     │
-                    ┌────────────────┼────────────────┐
-                    ▼                ▼                ▼
-              /leyesmx/*        /pdfs/*          / (health)
-                    │                │
-                    ▼                ▼
-              ┌──────────┐    /var/www/leyesmx/pdfs/
-              │PostgREST │
-              │  :3000   │
-              └────┬─────┘
-                   │
-                   ▼
-              ┌──────────┐
-              │PostgreSQL│
-              │  :5432   │
-              └──────────┘
+                        │
+                        ▼
+              leyes.pages.dev
+              (Astro SSG)
 ```
 
-## Estructura en Servidor
+El sitio es completamente estático (SSG). No hay backend ni base de datos en producción.
 
-```
-/var/www/leyesmx/
-└── pdfs/
-    ├── cff/documento.pdf
-    ├── lisr/documento.pdf
-    └── ...
-```
+## Despliegue
 
----
-
-# Despliegue
-
-## Backend (BD + PDFs)
-
-```bash
-./deploy-backend.sh
-```
-
-El script:
-1. Exporta el schema `leyesmx` de la BD local
-2. Sube el dump al servidor
-3. Restaura la BD en el servidor (pide contraseña sudo)
-4. Reinicia PostgREST
-5. Sube todos los PDFs al servidor
-
-## Frontend
+### Frontend (Cloudflare Pages)
 
 Cloudflare Pages despliega automáticamente desde el repositorio:
 
@@ -78,69 +28,39 @@ Cloudflare Pages despliega automáticamente desde el repositorio:
 git push origin main
 ```
 
----
+Build settings en Cloudflare:
+- **Build command:** `npm run build`
+- **Build output directory:** `dist`
+- **Root directory:** `frontend-astro`
 
-# Configuración Inicial (solo primera vez)
+## Flujo de Actualización de Contenido
 
-## Caddy - Agregar ruta de PDFs
-
-```bash
-ssh jochoa@54.202.41.70
-sudo nano /etc/caddy/Caddyfile
-```
-
-Contenido completo:
-```caddyfile
-api.leyesfiscalesmexico.com {
-    tls /etc/caddy/certs/leyesfiscalesmexico.pem /etc/caddy/certs/leyesfiscalesmexico-key.pem
-
-    # API
-    handle /leyesmx/* {
-        uri strip_prefix /leyesmx
-        reverse_proxy localhost:3000
-    }
-
-    # PDFs
-    handle /pdfs/* {
-        root * /var/www/leyesmx
-        file_server
-        header Cache-Control "public, max-age=604800"
-    }
-
-    handle {
-        respond "OK" 200
-    }
-}
-```
+Cuando se actualiza una ley:
 
 ```bash
-sudo systemctl reload caddy
-exit
+# 1. Extraer estructura y contenido
+python backend/etl/extraer_mapa.py LISR
+python backend/etl/extraer.py LISR
+
+# 2. Generar datos para Astro
+python backend/scripts/generar-datos-astro.py
+
+# 3. Commit y push
+git add .
+git commit -m "Update LISR content"
+git push origin main
+
+# 4. Cloudflare Pages rebuilds automáticamente
 ```
 
----
-
-# Verificación
+## Verificación
 
 ```bash
-# API
-curl -s https://api.leyesfiscalesmexico.com/leyesmx/v_leyes | head
-
-# PDF (debe retornar 200)
-curl -I https://api.leyesfiscalesmexico.com/pdfs/cff/documento.pdf
-
 # Frontend
 curl -s https://leyes.pages.dev | head
 ```
 
-## Verificar Servicios
+## Dominio
 
-```bash
-ssh jochoa@54.202.41.70 "systemctl status postgresql postgrest caddy"
-```
-
----
-
-# Instalación Inicial del Servidor
-
-Ver: [docs/production-server.md](../../docs/production-server.md) para instalación desde cero de PostgreSQL, PostgREST, Caddy y certificados SSL.
+- **URL:** `leyes.pages.dev` (Cloudflare Pages)
+- **Custom domain:** Configurar en Cloudflare Pages dashboard si se requiere

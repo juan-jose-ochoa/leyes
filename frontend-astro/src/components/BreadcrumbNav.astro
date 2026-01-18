@@ -44,8 +44,15 @@ const hasNext = !!nextUrl;
 
   {/* Contenido del breadcrumb */}
   <a href={item.url} class="breadcrumb-content">
-    <span class="breadcrumb-tipo">{item.tipo}</span> {item.numero}
-    {item.nombre && <span class="breadcrumb-nombre"> — {item.nombre}</span>}
+    {/* Capítulo implícito (número 0): solo mostrar el nombre */}
+    {item.tipo === 'capitulo' && item.numero === '0' ? (
+      <span class="breadcrumb-nombre-solo">{item.nombre || 'Disposiciones Generales'}</span>
+    ) : (
+      <>
+        <span class="breadcrumb-tipo">{item.tipo}</span> {item.numero}
+        {item.nombre && <span class="breadcrumb-nombre"> — {item.nombre}</span>}
+      </>
+    )}
   </a>
 
   {/* Chevron derecho - división siguiente */}
@@ -134,5 +141,10 @@ const hasNext = !!nextUrl;
   .breadcrumb-nombre {
     font-weight: 400;
     opacity: 0.8;
+  }
+
+  /* Capítulo implícito - solo nombre, sin "Capítulo 0" */
+  .breadcrumb-nombre-solo {
+    font-weight: 500;
   }
 </style>

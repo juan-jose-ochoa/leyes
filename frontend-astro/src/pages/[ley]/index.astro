@@ -82,8 +82,15 @@ function getDivisionUrl(division: any, leyCode: string, parentPath: string = '')
                       href={getDivisionUrl(hijo, codigoLower, toSlug(division.numero))}
                       class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
                     >
-                      {hijo.tipo.charAt(0).toUpperCase() + hijo.tipo.slice(1)} {hijo.numero}
-                      {hijo.nombre && `: ${hijo.nombre}`}
+                      {/* Capítulo implícito (número 0): solo mostrar el nombre */}
+                      {hijo.tipo === 'capitulo' && hijo.numero === '0' ? (
+                        hijo.nombre || 'Disposiciones Generales'
+                      ) : (
+                        <>
+                          {hijo.tipo.charAt(0).toUpperCase() + hijo.tipo.slice(1)} {hijo.numero}
+                          {hijo.nombre && `: ${hijo.nombre}`}
+                        </>
+                      )}
                     </a>
                     {hijo.articulos && hijo.articulos.length > 0 && (
                       <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">

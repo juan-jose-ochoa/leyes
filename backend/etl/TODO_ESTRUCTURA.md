@@ -2,27 +2,27 @@
 
 ## Problemas detectados (pre-existentes, no regresiones)
 
-### 1. ~~Subsecciones no soportadas~~ ✅ RESUELTO PARCIALMENTE
-**Leyes afectadas**: ~~LA~~, LISR
+### 1. ~~Subsecciones no soportadas~~ ✅ RESUELTO
+**Leyes afectadas**: ~~LA~~, ~~LISR~~
 
 Las leyes tienen subdivisiones dentro de secciones/capítulos que no se detectan como marcadores:
 - ~~LA: "I", "II" dentro de secciones~~ ✅ RESUELTO (2024-01-18)
-- LISR: "DISPOSICIONES GENERALES" capturado como parte del nombre del título (sin marcador automático)
+- ~~LISR: "DISPOSICIONES GENERALES" capturado como parte del nombre del título~~ ✅ RESUELTO (2024-01-18)
 
 **Artículos ejemplo**:
 - ~~LA: Artículo 104 (página 70-71)~~ ✅ RESUELTO
-- LISR: Artículo 9 (página 13) - se muestra en Título I pero pertenece a Título II
+- ~~LISR: Artículo 9 (página 13)~~ ✅ RESUELTO
 
 **Solución LA**: Agregado `detectar_subsecciones: True` en config de LA. Detecta romanos sueltos (I, II, III) como subsecciones.
 
-**LISR pendiente**: Requiere solución manual o detección de encabezados implícitos.
+**Solución LISR**: Agregado `capitulos_implicitos` en config de LISR. Crea capítulo virtual "0" para "DISPOSICIONES GENERALES" en Títulos II y IV.
 
-### 2. Artículos sin capítulo explícito
-**Leyes afectadas**: LISR
+### 2. ~~Artículos sin capítulo explícito~~ ✅ RESUELTO
+**Leyes afectadas**: ~~LISR~~
 
-Artículos 9-15 de LISR están bajo "DISPOSICIONES GENERALES" sin capítulo. Se asignan incorrectamente al Título/Capítulo anterior.
+~~Artículos 9-15 de LISR están bajo "DISPOSICIONES GENERALES" sin capítulo. Se asignan incorrectamente al Título/Capítulo anterior.~~
 
-**Solución propuesta**: Crear capítulo virtual "DISPOSICIONES GENERALES" o similar cuando hay artículos antes del primer capítulo de un título.
+**Solución**: Configuración `capitulos_implicitos` permite definir capítulos virtuales ("0") para secciones sin marcador explícito.
 
 ### 3. ~~Patrón de sección con ordinales~~ ✅ RESUELTO
 **Leyes afectadas**: ~~LSS, LFT, CFF~~
@@ -33,7 +33,16 @@ Artículos 9-15 de LISR están bajo "DISPOSICIONES GENERALES" sin capítulo. Se 
 - LSS: 0 → 37 secciones
 - LFT: 0 → 17 secciones
 
-## Cambios realizados (2024-01-18)
+## Cambios realizados (2024-01-18) - Capítulos implícitos LISR
+
+1. Agregado `capitulos_implicitos` config para LISR (Títulos II y IV)
+2. Modificado `extraer_estructura()` para detectar y separar capítulos implícitos del nombre del título
+3. Modificado `asignar_articulos_a_capitulos()` para manejar capítulos "0"
+4. LISR ahora tiene 39 capítulos (antes 37, +2 implícitos)
+5. Título II: nombre "DE LAS PERSONAS MORALES", capítulo 0 con arts 9-15
+6. Título IV: nombre "DE LAS PERSONAS FÍSICAS", capítulo 0 con arts 90-93
+
+## Cambios realizados (2024-01-18) - Subsecciones LA
 
 1. Agregado soporte para subsecciones en LA (`detectar_subsecciones: True`)
 2. Agregado `SubseccionRef` dataclass para representar subsecciones

@@ -4,6 +4,7 @@
     "titulos": 9,
     "capitulos": 20,
     "secciones": 11,
+    "subsecciones": 6,
     "articulos_vigentes": 277,
     "articulos_derogados": 0,
     "total": 277
@@ -305,33 +306,16 @@
             {
               "tipo": "seccion",
               "numero": "PRIMERA",
-              "nombre": "Importaciones temporales I Disposiciones generales",
+              "nombre": "Importaciones temporales",
               "pagina": 70,
-              "articulos": [
-                "104",
-                "105",
-                "106",
-                "107",
-                "108",
-                "109",
-                "110",
-                "111",
-                "112"
-              ]
+              "articulos": []
             },
             {
               "tipo": "seccion",
               "numero": "SEGUNDA",
-              "nombre": "Exportaciones temporales I Disposiciones generales",
+              "nombre": "Exportaciones temporales",
               "pagina": 78,
-              "articulos": [
-                "113",
-                "114",
-                "115",
-                "116",
-                "117",
-                "118"
-              ]
+              "articulos": []
             }
           ]
         },

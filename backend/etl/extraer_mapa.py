@@ -314,6 +314,10 @@ def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[Titulo
     # Si está habilitado, detecta líneas que son solo números romanos (I, II, III, etc.)
     detectar_subsecciones = config.get("detectar_subsecciones", False)
 
+    # Capítulos implícitos: títulos que tienen sección antes del primer capítulo explícito
+    # Formato: {"II": "DISPOSICIONES GENERALES", "IV": "DISPOSICIONES GENERALES"}
+    capitulos_implicitos = config.get("capitulos_implicitos", {})
+
     # Configuración de layout
     requiere_centrado = config.get("requiere_centrado", True)
 
@@ -365,6 +369,8 @@ def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[Titulo
         # ¿Es título?
         match = re.match(patron_titulo, texto, re.IGNORECASE)
         if match and (not requiere_centrado or linea['centrado']) and linea['all_bold']:
+            titulo_numero = match.group(1).upper()
+
             # Capturar nombre: líneas siguientes que sean centrado+bold
             nombre_partes = []
             j = i + 1
@@ -383,13 +389,50 @@ def extraer_estructura(doc, config: dict, pagina_fin: int = None) -> list[Titulo
 
             nombre = ' '.join(nombre_partes) if nombre_partes else None
 
+            # Verificar si este título tiene capítulo implícito configurado
+            cap_implicito_nombre = capitulos_implicitos.get(titulo_numero)
+            cap_implicito = None
+
+            if cap_implicito_nombre and nombre:
+                # Buscar el texto del capítulo implícito en el nombre capturado
+                # Puede estar al final del nombre (ej: "DE LAS PERSONAS MORALES DISPOSICIONES GENERALES")
+                idx_implicito = nombre.upper().find(cap_implicito_nombre.upper())
+                if idx_implicito > 0:
+                    # Separar nombre del título y nombre del capítulo implícito
+                    nombre_titulo = nombre[:idx_implicito].strip()
+                    # Buscar la página donde aparece el capítulo implícito
+                    # Recorrer nombre_partes para encontrar dónde empieza el texto implícito
+                    texto_acum = ""
+                    pagina_cap_implicito = linea['pagina']
+                    for k, parte in enumerate(nombre_partes):
+                        texto_acum_nuevo = (texto_acum + " " + parte).strip()
+                        if cap_implicito_nombre.upper() in texto_acum_nuevo.upper():
+                            # El capítulo implícito empieza en esta parte o antes
+                            # Buscar la página de esta línea
+                            if i + 1 + k < len(lineas_layout):
+                                pagina_cap_implicito = lineas_layout[i + 1 + k]['pagina']
+                            break
+                        texto_acum = texto_acum_nuevo
+
+                    nombre = nombre_titulo
+                    cap_implicito = CapituloRef(
+                        numero="0",
+                        nombre=cap_implicito_nombre,
+                        pagina=pagina_cap_implicito
+                    )
+
             titulo_actual = TituloRef(
-                numero=match.group(1).upper(),
+                numero=titulo_numero,
                 nombre=nombre,
                 pagina=linea['pagina']
             )
+
+            # Si hay capítulo implícito, agregarlo como primer capítulo
+            if cap_implicito:
+                titulo_actual.capitulos.append(cap_implicito)
+
             titulos.append(titulo_actual)
-            capitulo_actual = None
+            capitulo_actual = cap_implicito  # El capítulo actual es el implícito (o None)
             i = j  # Saltar las líneas del nombre
             continue
 
@@ -541,6 +584,9 @@ def asignar_articulos_a_capitulos(titulos: list[TituloRef], articulos: list[Arti
                 # Para capítulos virtuales (UNICO), buscar posición del TÍTULO
                 if cap.numero == "UNICO" and cap.pagina == titulo.pagina:
                     patron = rf'T[IÍ]TULO\s+{re.escape(titulo.numero)}\b'
+                # Para capítulos implícitos (número "0"), buscar el nombre del capítulo
+                elif cap.numero == "0" and cap.nombre:
+                    patron = rf'{re.escape(cap.nombre)}'
                 else:
                     patron = rf'CAP[IÍ]TULO\s+{re.escape(cap.numero)}\b'
                 coord_y = obtener_coordenada_y(page, patron)

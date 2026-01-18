@@ -292,6 +292,14 @@ LEYES = {
         "fin_articulos_extra": [
             r"DISPOSICIONES\s+DE\s+VIGENCIA\s+TEMPORAL",
         ],
+
+        # Capítulos implícitos: títulos que tienen una sección antes del primer capítulo explícito
+        # El texto aparece después del nombre del título pero no tiene marcador "CAPÍTULO"
+        # Se crea un capítulo virtual "0" con ese nombre
+        "capitulos_implicitos": {
+            "II": "DISPOSICIONES GENERALES",   # Título II: arts 9-15 antes de Cap I
+            "IV": "DISPOSICIONES GENERALES",   # Título IV: arts 94-99 antes de Cap I
+        },
     },
 
     "LIVA": {

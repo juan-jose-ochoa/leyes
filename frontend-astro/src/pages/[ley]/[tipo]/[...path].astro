@@ -119,6 +119,12 @@ const codigoLower = leyInfo.codigo.toLowerCase();
 // Capitalizar tipo para mostrar
 const tipoCapitalizado = tipo!.charAt(0).toUpperCase() + tipo!.slice(1);
 
+// Verificar si es un capítulo implícito (número "0")
+const esCapituloImplicito = division.tipo === 'capitulo' && division.numero === '0';
+const tituloDisplay = esCapituloImplicito
+  ? (division.nombre || 'Disposiciones Generales')
+  : `${tipoCapitalizado} ${division.numero}`;
+
 // Obtener artículos de esta división y sus hijos
 function getAllArticulos(div: any): string[] {
   let articulos = [...(div.articulos || [])];
@@ -133,7 +139,7 @@ function getAllArticulos(div: any): string[] {
 const todosArticulos = getAllArticulos(division);
 ---
 
-<BaseLayout title={`${tipoCapitalizado} ${division.numero} - ${leyInfo.codigo}`}>
+<BaseLayout title={`${tituloDisplay} - ${leyInfo.codigo}`}>
   <main class="container mx-auto px-4 py-8 max-w-4xl">
     <!-- Breadcrumb -->
     <nav class="mb-6 text-sm">
@@ -141,7 +147,7 @@ const todosArticulos = getAllArticulos(division);
       <span class="text-gray-400 mx-2">/</span>
       <a href={`/${codigoLower}/`} class="text-primary-600 hover:underline">{leyInfo.codigo}</a>
       <span class="text-gray-400 mx-2">/</span>
-      <span class="text-gray-600 dark:text-gray-400">{tipoCapitalizado} {division.numero}</span>
+      <span class="text-gray-600 dark:text-gray-400">{tituloDisplay}</span>
     </nav>
 
     <!-- Header -->
@@ -150,9 +156,10 @@ const todosArticulos = getAllArticulos(division);
         {leyInfo.codigo}
       </span>
       <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
-        {tipoCapitalizado} {division.numero}
+        {tituloDisplay}
       </h1>
-      {division.nombre && (
+      {/* Para capítulos implícitos, el nombre ya está en el título */}
+      {!esCapituloImplicito && division.nombre && (
         <p class="text-xl text-gray-600 dark:text-gray-400 mt-2">
           {division.nombre}
         </p>
@@ -169,14 +176,22 @@ const todosArticulos = getAllArticulos(division);
           Contenido
         </h2>
         <div class="space-y-3">
-          {division.hijos.map((hijo: any) => (
+          {division.hijos.map((hijo: any) => {
+            const esHijoCapituloImplicito = hijo.tipo === 'capitulo' && hijo.numero === '0';
+            return (
             <a
               href={`/${codigoLower}/${hijo.tipo}/${path}/${toSlug(hijo.numero)}/`}
               class="card block hover:border-primary-500 transition-colors"
             >
               <h3 class="font-semibold text-gray-900 dark:text-white">
-                {hijo.tipo.charAt(0).toUpperCase() + hijo.tipo.slice(1)} {hijo.numero}
-                {hijo.nombre && `: ${hijo.nombre}`}
+                {esHijoCapituloImplicito ? (
+                  hijo.nombre || 'Disposiciones Generales'
+                ) : (
+                  <>
+                    {hijo.tipo.charAt(0).toUpperCase() + hijo.tipo.slice(1)} {hijo.numero}
+                    {hijo.nombre && `: ${hijo.nombre}`}
+                  </>
+                )}
               </h3>
               {hijo.articulos && hijo.articulos.length > 0 && (
                 <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
@@ -184,7 +199,7 @@ const todosArticulos = getAllArticulos(division);
                 </p>
               )}
             </a>
-          ))}
+          )})}
         </div>
       </section>
     )}

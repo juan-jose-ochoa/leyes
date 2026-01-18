@@ -19,17 +19,11 @@ SIEMPRE ESTAMOS EN MODO ANÁLISIS/DISEÑO A MENOS QUE SE INDIQUE LO CONTRARIO!!!
   - Presentar resultado de tests con **cero errores**
   - **Cero warnings** de linter/TypeScript
 
-## Base de datos
-
-- **Ser selectivo por ley.** Solo afectar la ley específica, nunca otras.
-- **No ejecutar NI DELETE NI UPDATE directo en la BD.** Con el fin de prevenir errores, se debe de usar un procedimineto en la base de datos o un script local aprobado para la modificación de los datos.
-
 ## Calidad de código
 
 ### FAIL FAST
 - **Validación BLOQUEA, no solo reporta** - Si algo falla, el proceso ABORTA
-- `importar.py` DEBE llamar validación internamente antes de escribir
-- Si validación falla → importación ABORTA con código de error
+- Si validación falla → proceso ABORTA con código de error
 
 ### Definición de "Terminado"
 Un script NO está terminado si:
@@ -38,8 +32,13 @@ Un script NO está terminado si:
 - No tiene validación de entrada/salida
 - No tiene tests o verificación post-ejecución
 
+## Pipeline de datos
+
+Después de modificar extractores (`extraer_mapa.py`, `extraer.py`):
+1. Regenerar datos de Astro: `python backend/scripts/generar-datos-astro.py`
+2. Verificar que no haya regresiones en otras leyes
+
 ## Guías del proyecto
 
-- [README.md](README.md) - Arquitectura, scripts, base de datos, API
-- [backend/docs/DESARROLLO.md](backend/docs/DESARROLLO.md) - Flujo de trabajo e importación
-- [backend/docs/PRODUCCION.md](backend/docs/PRODUCCION.md) - Despliegue con Caddy
+- [backend/docs/DESARROLLO.md](backend/docs/DESARROLLO.md) - Flujo de extracción y generación de datos
+- [backend/docs/PRODUCCION.md](backend/docs/PRODUCCION.md) - Despliegue en Cloudflare Pages

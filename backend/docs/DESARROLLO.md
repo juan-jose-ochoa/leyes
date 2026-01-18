@@ -1,49 +1,65 @@
 # LeyesMX - Flujo de Desarrollo
 
-## Pipeline de Conversión
+## Arquitectura
 
 ```
 PDF (fuente oficial)
     │
-    ▼ PyMuPDF (coordenadas X, bold flags)
-JSON (estructura jerárquica)
+    ▼ extraer_mapa.py (PyMuPDF - outline)
+backend/etl/data/{ley}/mapa_estructura.json
     │
-    ▼ importar.py
-PostgreSQL (normalizado)
+    ▼ extraer.py (PyMuPDF - coordenadas X, bold)
+backend/etl/data/{ley}/contenido.json
+    │
+    ▼ generar-datos-astro.py
+frontend-astro/src/data/{ley}/*.json
+    │
+    ▼ astro build
+Cloudflare Pages (SSG)
 ```
 
-**Fuente de verdad:** `contenido.json` es la fuente de verdad técnica.
-- La BD se regenera desde el JSON
-- **No se permiten cambios manuales** en el JSON ni en la BD
-- Todo el contenido debe emanar de los scripts de extracción
-- El JSON se versiona en git
+**Fuentes de verdad:**
+- `mapa_estructura.json` - Estructura jerárquica (títulos, capítulos, secciones)
+- `contenido.json` - Contenido de artículos y párrafos
 
-## Flujo de Importación (5 etapas)
+**No se permiten cambios manuales** en los JSON. Todo debe emanar de los scripts de extracción.
+
+---
+
+## Pipeline Completo (5 etapas)
 
 ```
 ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────────┐
-│  1. MAPA     │ -> │ 2. APROBAR   │ -> │ 3. EXTRAER   │ -> │ 4. VALIDAR   │ -> │ 5. IMPORTAR  │
-│  (outline)   │    │  (manual)    │    │  (contenido) │    │  (vs BD)     │    │  (a BD)      │
+│  1. MAPA     │ -> │ 2. APROBAR   │ -> │ 3. EXTRAER   │ -> │ 4. VALIDAR   │ -> │ 5. GENERAR   │
+│  (estructura)│    │  (manual)    │    │  (contenido) │    │  (integridad)│    │  (astro)     │
 └──────────────┘    └──────────────┘    └──────────────┘    └──────────────┘    └──────────────┘
 ```
 
 ---
 
-### Etapa 1: Extraer Mapa
+### Etapa 1: Extraer Mapa de Estructura
 
 ```bash
 python backend/etl/extraer_mapa.py CFF
 ```
 
-Genera: `backend/etl/data/cff/mapa_estructura.json`
+**Genera:** `backend/etl/data/cff/mapa_estructura.json`
+
+Extrae del outline del PDF:
+- Títulos, capítulos, secciones, subsecciones
+- Asignación de artículos a cada división
+- Páginas de cada elemento
 
 ---
 
-### Etapa 2: Aprobar (MANUAL)
+### Etapa 2: Aprobar Estructura (MANUAL)
 
 ```bash
+# Revisar el mapa generado
 cat backend/etl/data/cff/mapa_estructura.json
-# Comparar con outline en Okular/Evince
+
+# Comparar con el PDF en Okular/Evince
+# Verificar que títulos/capítulos coinciden
 ```
 
 ---
@@ -54,14 +70,14 @@ cat backend/etl/data/cff/mapa_estructura.json
 python backend/etl/extraer.py CFF
 ```
 
-Genera: `backend/etl/data/cff/contenido.json`
+**Genera:** `backend/etl/data/cff/contenido.json`
 
-El extractor usa **coordenadas X** del PDF para jerarquía de párrafos:
+Extrae del texto del PDF usando **coordenadas X** para jerarquía:
 - X~85: Fracción (I., II.)
 - X~114: Inciso (a), b))
 - X~142: Numeral (1., 2.)
 
-**Nota:** La estructura (títulos/capítulos) viene de `mapa_estructura.json` (Etapa 1), no se extrae aquí.
+**Nota:** La estructura (títulos/capítulos) viene de `mapa_estructura.json`, no se extrae aquí.
 
 ---
 
@@ -71,102 +87,80 @@ El extractor usa **coordenadas X** del PDF para jerarquía de párrafos:
 python backend/etl/validar.py CFF
 ```
 
+Verifica integridad de los datos extraídos.
+
 ---
 
-### Etapa 5: Importar
+### Etapa 5: Generar Datos para Astro
 
 ```bash
-python backend/etl/importar.py CFF
+python backend/scripts/generar-datos-astro.py
+```
+
+**Genera en `frontend-astro/src/data/`:**
+
+| Archivo | Contenido |
+|---------|-----------|
+| `catalogo.json` | Lista de todas las leyes con metadatos |
+| `{ley}/articulos.json` | Artículos con párrafos |
+| `{ley}/estructura.json` | Divisiones jerárquicas para navegación |
+| `{ley}/referencias.json` | Referencias cruzadas entre artículos |
+| `{ley}/tooltips.json` | Tooltips para referencias estructurales |
+
+**IMPORTANTE:** Este paso es necesario después de cualquier cambio en `mapa_estructura.json` o `contenido.json`.
+
+---
+
+## Flujo Rápido (una ley)
+
+```bash
+# Extraer estructura y contenido
+python backend/etl/extraer_mapa.py LISR
+python backend/etl/extraer.py LISR
+
+# Generar datos para Astro
+python backend/scripts/generar-datos-astro.py
+
+# Verificar en desarrollo
+cd frontend-astro && npm run dev
 ```
 
 ---
 
-## Verificación Post-Importación
+## Verificación de Regresiones
+
+Antes de hacer commit de cambios en extractores:
 
 ```bash
-python backend/etl/verificar_bd.py CFF
-```
-
-Confirma:
-- Cada artículo tiene `division_id` correcto
-- Conteo por capítulo coincide
-- No hay artículos huérfanos
-
----
-
-## Cambios en Extractores (extraer_mapa.py, extraer.py)
-
-**IMPORTANTE:** Antes de hacer commit de cualquier cambio en los extractores, verificar que no hay regresiones en las leyes ya implementadas.
-
-### Flujo de Trabajo
-
-```bash
-# 1. Ejecutar extracción en TODAS las leyes implementadas
+# 1. Ejecutar extracción en TODAS las leyes
 for ley in CFF CPEUM LISR LIVA LA LIEPS LFT LSS; do
+    python backend/etl/extraer_mapa.py $ley
     python backend/etl/extraer.py $ley
 done
 
-# 2. Verificar que no cambió el contenido
-git diff --stat backend/etl/data/*/contenido.json
+# 2. Regenerar datos de Astro
+python backend/scripts/generar-datos-astro.py
 
-# 3. Si hay cambios inesperados → investigar y corregir
-# 4. Solo hacer commit si las leyes existentes no tienen cambios
+# 3. Verificar cambios
+git diff --stat backend/etl/data/*/mapa_estructura.json
+git diff --stat frontend-astro/src/data/*/estructura.json
+
+# 4. Solo hacer commit si los cambios son esperados
 ```
-
-### Qué Revisar
-
-| Archivo | Verificar |
-|---------|-----------|
-| `mapa_estructura.json` | Mismos títulos, capítulos, secciones |
-| `contenido.json` | Mismo número de artículos y párrafos |
-
-**Regla:** Los cambios en extractores solo deben afectar la ley nueva que se está agregando, nunca las existentes.
 
 ---
 
-## Verificación de Regresiones (Checksums)
-
-Para detectar cambios en artículos después de modificar el algoritmo de extracción:
+## Checksums (detección de cambios)
 
 ```bash
-# 1. Guardar checksums actuales como referencia (antes de modificar)
+# Guardar checksums como referencia
 python backend/etl/checksums.py CFF --guardar
 
-# 2. [Modificar algoritmo y reimportar]
-
-# 3. Comparar contra referencia
+# Comparar después de modificaciones
 python backend/etl/checksums.py CFF --comparar
 
-# 4. Ver contenido de artículo específico
+# Ver diff de artículo específico
 python backend/etl/checksums.py CFF --diff 66
-
-# 5. Si los cambios son correctos, actualizar referencia
-python backend/etl/checksums.py CFF --guardar
-```
-
-Los checksums se guardan en `backend/etl/data/<ley>/checksums_verificados.json` (versionado con git).
-
----
-
-## Comandos de Administración
-
-### Refrescar Vista Materializada
-
-```sql
-REFRESH MATERIALIZED VIEW CONCURRENTLY jerarquia_completa;
-```
-
-### Verificar Datos
-
-```sql
-SELECT * FROM leyesmx.stats();
-SELECT * FROM api.buscar('deduccion', NULL, NULL, 5, 1);
-```
-
-### Recargar Schema de PostgREST
-
-```bash
-kill -SIGUSR1 $(pgrep postgrest)
 ```
 
 ---
@@ -179,5 +173,11 @@ kill -SIGUSR1 $(pgrep postgrest)
 | `Artículo_4o_A` | `4o-A` |
 | `Artículo_29_Bis` | `29 Bis` |
 
-- Letras sueltas → guión: `4o-A`
-- Sufijos (Bis, Ter) → espacio: `29 Bis`
+---
+
+## Configuración por Ley
+
+Ver `backend/etl/config.py` para:
+- Patrones de detección (títulos, capítulos, artículos)
+- Filtros de coordenadas Y (header/footer)
+- Opciones especiales (`detectar_subsecciones`, `capitulos_implicitos`)

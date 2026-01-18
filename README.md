@@ -1,139 +1,109 @@
-# LeyesMX - Arquitectura del Proyecto
+# LeyesMX
 
-Parsea documentos legales mexicanos (leyes, RMF) y los carga a PostgreSQL para consulta.
+Leyes fiscales y laborales mexicanas en formato web. Sitio estático generado con Astro.
 
 ## Quick Start
 
 ### Prerrequisitos
 
 ```bash
-# PostgreSQL 17
-sudo apt install postgresql-17 postgresql-contrib-17
-
 # Node.js 20+
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install nodejs
 
-# Python 3.12+
+# Python 3.12+ (para extracción de PDFs)
 sudo apt install python3.12 python3.12-venv
-
-# PostgREST
-wget https://github.com/PostgREST/postgrest/releases/download/v12.0.2/postgrest-v12.0.2-linux-static-x64.tar.xz
-tar xJf postgrest-v12.0.2-linux-static-x64.tar.xz
-mv postgrest ~/.local/bin/
 ```
 
-### Configurar Base de Datos
+### Desarrollo
 
 ```bash
-sudo -u postgres psql << 'EOF'
-CREATE USER leyesmx WITH PASSWORD 'leyesmx';
-CREATE DATABASE digiapps OWNER leyesmx;
-\c digiapps
-CREATE SCHEMA leyesmx AUTHORIZATION leyesmx;
-CREATE EXTENSION IF NOT EXISTS pg_trgm;
-CREATE EXTENSION IF NOT EXISTS unaccent;
-EOF
+# Instalar dependencias
+cd frontend-astro && npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
 ```
 
-### Iniciar Servicios
+**URL:** http://localhost:4321
 
-```bash
-./start-astro.sh          # Backend + Frontend Astro
-./start-astro.sh backend  # Solo API (puerto 3010)
-./start-astro.sh frontend # Solo Frontend Astro (puerto 4321)
+## Arquitectura
+
 ```
-
-**URLs:** Frontend http://localhost:4321 | API http://localhost:3010
+PDF (fuente oficial)
+    ↓ extraer_mapa.py + extraer.py
+backend/etl/data/{ley}/*.json
+    ↓ generar-datos-astro.py
+frontend-astro/src/data/{ley}/*.json
+    ↓ astro build
+Cloudflare Pages (SSG)
+```
 
 ## Estructura
 
 ```
-scripts/
-├── leyesmx/                    # Módulo principal
-│   ├── importar.py             # CLI para importar leyes
-│   ├── extraer_parrafos_x.py   # Extracción con coordenadas PDF
-│   ├── extraer_mapa.py         # Extrae jerarquía del outline
-│   ├── validar.py              # Valida extracción vs estructura esperada
-│   └── verificar_bd.py         # Verifica integridad post-importación
-├── rmf/                        # Módulo RMF (DOCX)
-└── tests/                      # Tests pytest
+backend/
+├── etl/                        # Extracción de PDFs
+│   ├── extraer_mapa.py         # Estructura (títulos, capítulos)
+│   ├── extraer.py              # Contenido (artículos, párrafos)
+│   ├── config.py               # Configuración por ley
+│   └── data/                   # JSONs extraídos
+│       └── {ley}/
+│           ├── mapa_estructura.json
+│           └── contenido.json
+├── scripts/
+│   └── generar-datos-astro.py  # Genera datos para Astro
+└── docs/
+    ├── DESARROLLO.md           # Flujo de desarrollo
+    └── PRODUCCION.md           # Despliegue
 
-backend/sql/                    # Funciones PostgreSQL/PostgREST
-
-frontend-astro/src/
-├── components/                 # Componentes Astro reutilizables
-├── pages/                      # Rutas y vistas (SSG)
-├── layouts/                    # Layouts base
-└── data/                       # Datos JSON para leyes
-
-doc/leyes/<ley>/
-├── mapa_estructura.json        # Estructura extraída del outline (fuente de verdad)
-├── estructura.json             # Divisiones extraídas
-└── contenido.json              # Artículos/párrafos
+frontend-astro/
+├── src/
+│   ├── components/             # Componentes Astro
+│   ├── pages/                  # Rutas (SSG)
+│   ├── layouts/                # Layouts
+│   └── data/                   # Datos JSON para leyes
+│       └── {ley}/
+│           ├── articulos.json
+│           ├── estructura.json
+│           ├── referencias.json
+│           └── tooltips.json
+└── public/                     # Assets estáticos
 ```
 
-## Base de Datos
+## Flujo de Trabajo
 
-- **Database:** `digiapps`
-- **Schema:** `leyesmx`
-
-### Tablas
-
-| Tabla | Propósito |
-|-------|-----------|
-| `leyes` | Catálogo + estructura JSONB |
-| `divisiones` | Títulos, capítulos (jerárquico) |
-| `articulos` | Artículos/reglas/transitorios |
-| `parrafos` | Contenido (texto, fracciones, incisos) |
-
-### Variables de Entorno
+### Actualizar una ley
 
 ```bash
-export LEYESMX_DB_HOST=localhost
-export LEYESMX_DB_PORT=5432
-export LEYESMX_DB_NAME=digiapps
-export LEYESMX_DB_USER=leyesmx
-export LEYESMX_DB_PASSWORD=leyesmx
+# 1. Activar entorno virtual
+source .venv/bin/activate
+
+# 2. Extraer estructura y contenido
+python backend/etl/extraer_mapa.py LISR
+python backend/etl/extraer.py LISR
+
+# 3. Generar datos para Astro
+python backend/scripts/generar-datos-astro.py
+
+# 4. Verificar en desarrollo
+cd frontend-astro && npm run dev
 ```
 
-## API REST (PostgREST)
+### Desplegar
 
-### Vistas
-
-| Endpoint | Descripción |
-|----------|-------------|
-| `GET /v_leyes` | Lista de leyes |
-| `GET /v_articulos?ley=eq.CFF` | Artículos de una ley |
-
-### Funciones RPC
-
-| Endpoint | Body |
-|----------|------|
-| `POST /rpc/buscar` | `{"q": "impuesto", "leyes": "CFF,LISR"}` |
-| `POST /rpc/articulo` | `{"art_id": 123}` |
-| `POST /rpc/estructura_ley` | `{"ley_codigo": "CFF"}` |
-| `POST /rpc/navegar` | `{"art_id": 123}` |
-| `POST /rpc/fracciones_articulo` | `{"art_id": 123}` |
-
-## Troubleshooting
-
-### PostgREST no encontrado
 ```bash
-export PATH="$HOME/.local/bin:$PATH"
+git push origin main
+# Cloudflare Pages rebuilds automáticamente
 ```
 
-### Error 401 en /rpc/buscar
-Falta permiso para `web_anon`. Verificar GRANTs en SQL.
+## Documentación
 
-### Puerto 3010 ocupado
-```bash
-lsof -i :3010
-./start.sh stop
-```
+- [backend/docs/DESARROLLO.md](backend/docs/DESARROLLO.md) - Pipeline completo de extracción
+- [backend/docs/PRODUCCION.md](backend/docs/PRODUCCION.md) - Despliegue en Cloudflare Pages
 
 ## Tests
 
 ```bash
-pytest scripts/tests/ -v
+pytest backend/etl/tests/ -v
 ```

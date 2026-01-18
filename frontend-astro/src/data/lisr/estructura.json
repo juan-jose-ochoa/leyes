@@ -2,8 +2,9 @@
   "ley": "LISR",
   "estadisticas": {
     "titulos": 7,
-    "capitulos": 37,
+    "capitulos": 39,
     "secciones": 9,
+    "subsecciones": 0,
     "articulos_vigentes": 224,
     "articulos_derogados": 12,
     "total": 236
@@ -30,7 +31,24 @@
             "5",
             "6",
             "7",
-            "8",
+            "8"
+          ],
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "tipo": "titulo",
+      "numero": "II",
+      "nombre": "DE LAS PERSONAS MORALES",
+      "pagina": 13,
+      "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "0",
+          "nombre": "DISPOSICIONES GENERALES",
+          "pagina": 13,
+          "articulos": [
             "9",
             "10",
             "11",
@@ -40,15 +58,7 @@
             "15"
           ],
           "hijos": []
-        }
-      ]
-    },
-    {
-      "tipo": "titulo",
-      "numero": "II",
-      "nombre": "DE LAS PERSONAS MORALES DISPOSICIONES GENERALES",
-      "pagina": 13,
-      "hijos": [
+        },
         {
           "tipo": "capitulo",
           "numero": "I",
@@ -248,11 +258,7 @@
             "86",
             "87",
             "88",
-            "89",
-            "90",
-            "91",
-            "92",
-            "93"
+            "89"
           ],
           "hijos": []
         }
@@ -261,9 +267,22 @@
     {
       "tipo": "titulo",
       "numero": "IV",
-      "nombre": "DE LAS PERSONAS FÍSICAS DISPOSICIONES GENERALES",
+      "nombre": "DE LAS PERSONAS FÍSICAS",
       "pagina": 118,
       "hijos": [
+        {
+          "tipo": "capitulo",
+          "numero": "0",
+          "nombre": "DISPOSICIONES GENERALES",
+          "pagina": 118,
+          "articulos": [
+            "90",
+            "91",
+            "92",
+            "93"
+          ],
+          "hijos": []
+        },
         {
           "tipo": "capitulo",
           "numero": "I",
