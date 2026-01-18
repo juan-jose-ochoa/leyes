@@ -33,6 +33,21 @@
     }
   },
   "25": {
+    "artículo 54": {
+      "ley": "cff",
+      "articulo": "54",
+      "parrafo": 1
+    },
+    "artículo 135": {
+      "ley": "cff",
+      "articulo": "135",
+      "parrafo": 1
+    },
+    "artículo 14-A": {
+      "ley": "cff",
+      "articulo": "14-A",
+      "parrafo": 1
+    },
     "artículo 14-A del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "14-A",
@@ -55,6 +70,23 @@
     "artículos 69 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "69",
+      "parrafo": 1
+    }
+  },
+  "29": {
+    "artículo 19 fracción II": {
+      "ley": "lif",
+      "articulo": "19",
+      "parrafo": 1
+    },
+    "artículo 6": {
+      "ley": "lif",
+      "articulo": "6",
+      "parrafo": 1
+    },
+    "artículo 22": {
+      "ley": "lif",
+      "articulo": "22",
       "parrafo": 1
     }
   },

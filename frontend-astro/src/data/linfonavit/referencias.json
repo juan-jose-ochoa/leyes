@@ -13,10 +13,34 @@
       "parrafo": 1
     }
   },
+  "42": {
+    "artículo 10 fracción I": {
+      "ley": "linfonavit",
+      "articulo": "10",
+      "parrafo": 2
+    },
+    "artículo 16 fracción IV": {
+      "ley": "linfonavit",
+      "articulo": "16",
+      "parrafo": 5
+    }
+  },
   "43": {
     "artículo 123 de la Constitución": {
       "ley": "cpeum",
       "articulo": "123",
+      "parrafo": 1
+    }
+  },
+  "51": {
+    "artículo 40": {
+      "ley": "linfonavit",
+      "articulo": "40",
+      "parrafo": 1
+    },
+    "artículo 42": {
+      "ley": "linfonavit",
+      "articulo": "42",
       "parrafo": 1
     }
   },

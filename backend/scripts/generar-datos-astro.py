@@ -111,6 +111,51 @@ PATRON_REFERENCIA_INVERTIDO = re.compile(
     re.IGNORECASE
 )
 
+# Regex para detectar listas de artículos
+# Captura: artículos 94, 97, 116 fracción III, y 122 Apartado A, fracción IV de LEY
+# Grupo 1: lista de artículos (todo antes de "de LEY")
+# Grupo 2: ley destino
+PATRON_LISTA_ARTICULOS = re.compile(
+    r'artículos\s+'
+    r'(.+?)'                                              # Lista de artículos (grupo 1) - non-greedy
+    r'\s+(?:de\s+|del\s+)'
+    r'(' + _LEY_ALTERNATIVAS + r')',                      # Ley destino (grupo 2)
+    re.IGNORECASE
+)
+
+# Regex para parsear cada elemento de la lista
+# Captura: NUM (Apartado LETRA)? (fracción ROMAN)?
+_PATRON_ELEMENTO_LISTA = re.compile(
+    r'(\d+[o]?(?:-[A-Z]+)?)'                              # Número de artículo (grupo 1)
+    r'(?:\s+[Aa]partado\s+([A-Z]))?'                      # Apartado opcional (grupo 2)
+    r'(?:,?\s*[Ff]racci[oó]ne?s?\s+([IVXLCDM]+))?',       # Fracción opcional (grupo 3)
+    re.IGNORECASE
+)
+
+
+def _parsear_lista_articulos(lista_texto: str) -> list[tuple[str, str | None, str | None]]:
+    """
+    Parsea una lista de artículos separados por coma y "y".
+
+    Ejemplo: "94, 97, 116 fracción III, y 122 Apartado A, fracción IV"
+    Retorna: [('94', None, None), ('97', None, None), ('116', None, 'III'), ('122', 'A', 'IV')]
+    """
+    resultados = []
+
+    # Dividir por "," y "y" pero mantener los modificadores juntos
+    # Estrategia: buscar todos los números de artículo y sus modificadores
+    for match in _PATRON_ELEMENTO_LISTA.finditer(lista_texto):
+        articulo = match.group(1)
+        apartado = match.group(2)
+        fraccion = match.group(3)
+
+        # Evitar duplicados (el regex puede encontrar el mismo número varias veces)
+        if articulo and (not resultados or resultados[-1][0] != articulo):
+            resultados.append((articulo, apartado, fraccion))
+
+    return resultados
+
+
 # Regex para detectar referencias estructurales (títulos, capítulos, secciones)
 # Patrones: "Título II de esta Ley", "Capítulo IV de este Título", "Sección I del Capítulo II"
 PATRON_ESTRUCTURA = re.compile(
@@ -360,9 +405,10 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
     """
     Extrae todas las referencias de una ley y genera mapa para renderizado.
 
-    Usa dos patrones:
+    Usa tres patrones:
     - Estándar: artículo N fracción X de LEY
     - Invertido: fracción X del artículo N de LEY
+    - Lista: artículos 94, 97, 116 fracción III de LEY
 
     Estructura de salida:
     {
@@ -383,6 +429,31 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
 
         for p in art.get("parrafos", []):
             texto = p.get("contenido", "")
+
+            # Buscar listas de artículos primero (más específico)
+            for match in PATRON_LISTA_ARTICULOS.finditer(texto):
+                texto_original = match.group(0)
+                lista_texto = match.group(1)
+                ley_texto = match.group(2).lower().strip()
+
+                # Parsear cada elemento de la lista
+                elementos = _parsear_lista_articulos(lista_texto)
+                if len(elementos) >= 2:  # Solo si hay múltiples artículos
+                    for articulo_ref, apartado, fraccion in elementos:
+                        # Crear texto de sub-referencia para cada artículo
+                        sub_texto = f"artículo {articulo_ref}"
+                        if apartado:
+                            sub_texto += f" Apartado {apartado}"
+                        if fraccion:
+                            sub_texto += f" fracción {fraccion}"
+
+                        ref = _procesar_match_referencia(
+                            sub_texto, articulo_ref, fraccion, None, ley_texto,
+                            ley_codigo, indice
+                        )
+                        if ref:
+                            # Usar el sub_texto como clave para cada referencia
+                            referencias_articulo[sub_texto] = ref
 
             # Buscar referencias con patrón estándar
             for match in PATRON_REFERENCIA.finditer(texto):

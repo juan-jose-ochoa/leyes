@@ -5,6 +5,26 @@
       "articulo": "17-A",
       "parrafo": 1
     },
+    "artículo 1o": {
+      "ley": "lieps",
+      "articulo": "1o",
+      "parrafo": 1
+    },
+    "artículo 18-B fracción II": {
+      "ley": "lieps",
+      "articulo": "18-B",
+      "parrafo": 1
+    },
+    "artículo 5o": {
+      "ley": "lieps",
+      "articulo": "5o",
+      "parrafo": 1
+    },
+    "artículo 20-A": {
+      "ley": "lieps",
+      "articulo": "20-A",
+      "parrafo": 1
+    },
     "artículo 20-A de esta Ley": {
       "ley": "lieps",
       "articulo": "20-A",
@@ -36,6 +56,16 @@
     }
   },
   "5o": {
+    "artículo 15": {
+      "ley": "lieps",
+      "articulo": "15",
+      "parrafo": 1
+    },
+    "artículo 16": {
+      "ley": "lieps",
+      "articulo": "16",
+      "parrafo": 1
+    },
     "artículo 22 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "22",
@@ -89,6 +119,16 @@
     "artículo 29 de esta Ley": {
       "ley": "lieps",
       "articulo": "29",
+      "parrafo": 1
+    },
+    "artículo 42 fracción V": {
+      "ley": "cff",
+      "articulo": "42",
+      "parrafo": 6
+    },
+    "artículo 49": {
+      "ley": "cff",
+      "articulo": "49",
       "parrafo": 1
     }
   },
