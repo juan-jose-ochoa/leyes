@@ -6,10 +6,30 @@
       "parrafo": 1
     }
   },
+  "25": {
+    "Artículo 136 de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "136",
+      "parrafo": 1
+    }
+  },
   "29": {
     "Artículo 31 de esta Ley": {
       "ley": "linfonavit",
       "articulo": "31",
+      "parrafo": 1
+    },
+    "artículos 97 y 110 de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "97",
+      "parrafo": 1,
+      "query": "lft:97,110"
+    }
+  },
+  "29 Bis": {
+    "artículo 15 de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "15",
       "parrafo": 1
     }
   },
@@ -41,6 +61,14 @@
       "ley": "linfonavit",
       "articulo": "48",
       "parrafo": 1
+    }
+  },
+  "51 Quáter": {
+    "artículos 97 y 110 de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "97",
+      "parrafo": 1,
+      "query": "lft:97,110"
     }
   },
   "66": {

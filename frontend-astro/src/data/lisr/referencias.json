@@ -213,12 +213,6 @@
     }
   },
   "16": {
-    "artículos 6, apartado B y 12, fracción II de la Ley de Ingresos sobre Hidrocarburos, siempre que para la determinación del impuesto sobre la renta a su cargo no se considere como costo de lo vendido deducible en los términos del artículo 25, fracción II de esta Ley": {
-      "ley": "lisr",
-      "articulo": "6",
-      "parrafo": 1,
-      "query": "lisr:6,12/II,25/II"
-    },
     "artículo 25, fracción II de esta Ley": {
       "ley": "lisr",
       "articulo": "25",
@@ -426,6 +420,11 @@
     "artículo 76 de esta Ley": {
       "ley": "lisr",
       "articulo": "76",
+      "parrafo": 1
+    },
+    "artículo 15 de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "15",
       "parrafo": 1
     },
     "artículo 25 de esta Ley": {
@@ -1568,6 +1567,12 @@
       "ley": "lisr",
       "articulo": "79",
       "parrafo": 1
+    },
+    "artículos 132 fracciones VII y VIII, y 804 primer párrafo fracciones II y IV de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "132",
+      "parrafo": 8,
+      "query": "lft:132/VII,804"
     }
   },
   "87": {
@@ -2002,6 +2007,13 @@
       "parrafo": 1
     }
   },
+  "113-A": {
+    "artículo 18-B de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "18-B",
+      "parrafo": 1
+    }
+  },
   "113-B": {
     "artículo 113-A de esta Ley": {
       "ley": "lisr",
@@ -2011,12 +2023,22 @@
     "inciso d) de este artículo": {
       "interno": true,
       "parrafo": 10
+    },
+    "artículo 18-J de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "18-J",
+      "parrafo": 1
     }
   },
   "113-C": {
     "artículo 113-A de esta Ley": {
       "ley": "lisr",
       "articulo": "113-A",
+      "parrafo": 1
+    },
+    "artículo 18-J de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "18-J",
       "parrafo": 1
     }
   },
@@ -2025,12 +2047,6 @@
       "ley": "lisr",
       "articulo": "113-C",
       "parrafo": 5
-    },
-    "artículos 18-H TER, 18-H QUÁTER y 18-H QUINTUS de la Ley del Impuesto al Valor Agregado, cuando las personas morales y las entidades o figuras jurídicas extranjeras a que se refiere el primer párrafo de este artículo, incumplan las obligaciones de retener y enterar el impuesto sobre la renta en los términos del artículo 113-C, fracción IV de esta Ley": {
-      "ley": "lisr",
-      "articulo": "18-H",
-      "parrafo": 1,
-      "query": "lisr:18-H,113-C/IV"
     }
   },
   "113-E": {
@@ -2066,6 +2082,11 @@
       "articulo": "113-E",
       "parrafo": 1
     },
+    "artículo 113-J de este ordenamiento": {
+      "ley": "lisr",
+      "articulo": "113-J",
+      "parrafo": 1
+    },
     "artículo 109, fracción I del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "109",
@@ -2073,11 +2094,11 @@
     }
   },
   "113-G": {
-    "artículos 120 y 127, fracción III de la Ley Federal del Trabajo, será determinada por el contribuyente al disminuir de la totalidad de los ingresos del ejercicio efectivamente cobrados y amparados por los comprobantes fiscales digitales por Internet, que correspondan a las actividades por las que deba determinarse la utilidad, el importe de los pagos de servicios y la adquisición de bienes o del uso o goce temporal de bienes, efectivamente pagados en el mismo ejercicio y estrictamente indispensables para la realización de las actividades por las que se deba calcular la utilidad; así como los pagos que a su vez sean exentos para el trabajador en los términos del artículo 28, fracción XXX de esta Ley": {
-      "ley": "lisr",
+    "artículos 120 y 127, fracción III de la Ley Federal del Trabajo": {
+      "ley": "lft",
       "articulo": "120",
       "parrafo": 1,
-      "query": "lisr:120,127/III,28/XXX"
+      "query": "lft:120,127/III"
     },
     "artículo 28, fracción XXX de esta Ley": {
       "ley": "lisr",
@@ -2726,6 +2747,11 @@
     }
   },
   "151": {
+    "artículo 477 de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "477",
+      "parrafo": 1
+    },
     "artículo 82 de esta Ley": {
       "ley": "lisr",
       "articulo": "82",
@@ -3387,6 +3413,11 @@
       "parrafo": 1,
       "query": "lisr:34,35,36,37"
     },
+    "artículo 51 de la Ley del Impuesto Sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "51",
+      "parrafo": 1
+    },
     "fracción I de este artículo": {
       "interno": true,
       "parrafo": 2
@@ -3443,6 +3474,11 @@
       "interno": true,
       "parrafo": 2
     },
+    "artículo 59, fracción IV de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "59",
+      "parrafo": 10
+    },
     "artículo 76 de esta Ley": {
       "ley": "lisr",
       "articulo": "76",
@@ -3472,6 +3508,11 @@
     "artículo 96 de esta Ley": {
       "ley": "lisr",
       "articulo": "96",
+      "parrafo": 1
+    },
+    "artículo 15 de la Ley del Seguro Social": {
+      "ley": "lss",
+      "articulo": "15",
       "parrafo": 1
     }
   },

@@ -40,10 +40,12 @@ NOMBRE_A_CODIGO = {
     'la misma': '_MISMA_',
     'este código': '_MISMA_',
     'el presente código': '_MISMA_',
+    'este ordenamiento': '_MISMA_',
+    'el presente ordenamiento': '_MISMA_',
     'esta constitución': 'CPEUM',
     'la constitución': 'CPEUM',
     'constitución política': 'CPEUM',
-    # Códigos y leyes específicas
+    # Códigos y leyes específicas (soportadas - generan links)
     'código fiscal de la federación': 'CFF',
     'código fiscal': 'CFF',
     'cff': 'CFF',
@@ -65,13 +67,35 @@ NOMBRE_A_CODIGO = {
     'ley de ingresos de la federación': 'LIF',
     'ley de ingresos': 'LIF',
     'ley federal de derechos del contribuyente': 'LFDC',
+    # Leyes reconocidas pero no soportadas (no generan links, pero delimitan referencias)
+    'ley de ingresos sobre hidrocarburos': None,
+    'ley de hidrocarburos': None,
+    'ley del mercado de valores': None,
+    'ley de los sistemas de ahorro para el retiro': None,
+    'ley federal de presupuesto y responsabilidad hacendaria': None,
+    'ley federal de derechos': None,
+    'ley general de sociedades mercantiles': None,
+    'ley general de títulos y operaciones de crédito': None,
+    'ley federal del impuesto sobre automóviles nuevos': None,
+    'ley del isan': None,
+    'ley general de educación': None,
+    'ley de tesorería de la federación': None,
+    'ley de navegación y comercio marítimos': None,
+    'ley del servicio de administración tributaria': None,
+    'ley sobre el contrato de seguro': None,
+    'ley de los impuestos generales de importación y de exportación': None,
+    'código civil federal': None,
+    'código de comercio': None,
 }
 
 # Alternativas de ley para usar en ambos patrones
 _LEY_ALTERNATIVAS = (
+    # Referencias internas
     r'esta\s+ley|la\s+presente\s+ley|la\s+misma|'
     r'este\s+código|el\s+presente\s+código|'
+    r'este\s+ordenamiento|el\s+presente\s+ordenamiento|'
     r'esta\s+constitución|la\s+constitución|'
+    # Leyes soportadas
     r'código\s+fiscal(?:\s+de\s+la\s+federación)?|cff|'
     r'ley\s+del\s+impuesto\s+sobre\s+la\s+renta|ley\s+del\s+isr|lisr|'
     r'ley\s+del\s+impuesto\s+al\s+valor\s+agregado|ley\s+del\s+iva|liva|'
@@ -81,8 +105,28 @@ _LEY_ALTERNATIVAS = (
     r'ley\s+del\s+seguro\s+social|'
     r'ley\s+del\s+infonavit|'
     r'ley\s+del\s+issste|'
+    # IMPORTANTE: patrones más específicos primero (ley de ingresos sobre hidrocarburos antes de ley de ingresos)
+    r'ley\s+de\s+ingresos\s+sobre\s+hidrocarburos|'  # No soportada, pero delimita referencias
     r'ley\s+de\s+ingresos(?:\s+de\s+la\s+federación)?|'
-    r'ley\s+federal\s+de\s+derechos\s+del\s+contribuyente'
+    r'ley\s+federal\s+de\s+derechos\s+del\s+contribuyente|'
+    # Leyes reconocidas pero no soportadas (delimitan referencias sin generar links)
+    r'ley\s+de\s+hidrocarburos|'
+    r'ley\s+del\s+mercado\s+de\s+valores|'
+    r'ley\s+de\s+los\s+sistemas\s+de\s+ahorro\s+para\s+el\s+retiro|'
+    r'ley\s+federal\s+de\s+presupuesto\s+y\s+responsabilidad\s+hacendaria|'
+    r'ley\s+federal\s+de\s+derechos|'
+    r'ley\s+general\s+de\s+sociedades\s+mercantiles|'
+    r'ley\s+general\s+de\s+títulos\s+y\s+operaciones\s+de\s+crédito|'
+    r'ley\s+federal\s+del\s+impuesto\s+sobre\s+automóviles\s+nuevos|'
+    r'ley\s+del\s+isan|'
+    r'ley\s+general\s+de\s+educación|'
+    r'ley\s+de\s+tesorería\s+de\s+la\s+federación|'
+    r'ley\s+de\s+navegación\s+y\s+comercio\s+marítimos|'
+    r'ley\s+del\s+servicio\s+de\s+administración\s+tributaria|'
+    r'ley\s+sobre\s+el\s+contrato\s+de\s+seguro|'
+    r'ley\s+de\s+los\s+impuestos\s+generales\s+de\s+importación\s+y\s+de\s+exportación|'
+    r'código\s+civil\s+federal|'
+    r'código\s+de\s+comercio'
 )
 
 # Regex para detectar referencias a artículos (patrón estándar)
@@ -92,7 +136,7 @@ PATRON_REFERENCIA = re.compile(
     r'(\d+[o]?(?:-[A-Z]+)?)'                           # Número de artículo (grupo 1)
     r'(?:\s*,?\s*(?:fracci[oó]ne?s?)\s+([IVXLCDM]+))?'  # Fracción opcional (grupo 2)
     r'(?:\s*,?\s*(?:inciso)\s+([a-z])\))?'            # Inciso opcional (grupo 3)
-    r'\s+(?:de\s+|del\s+)'
+    r'\s+(?:de\s+la\s+|de\s+|del\s+)'                 # "de la", "de" o "del" antes de ley
     r'(' + _LEY_ALTERNATIVAS + r')',                   # Ley destino (grupo 4)
     re.IGNORECASE
 )
@@ -118,7 +162,7 @@ PATRON_REFERENCIA_INVERTIDO = re.compile(
 PATRON_LISTA_ARTICULOS = re.compile(
     r'artículos\s+'
     r'(.+?)'                                              # Lista de artículos (grupo 1) - non-greedy
-    r'\s+(?:de\s+|del\s+)'
+    r'\s+(?:de\s+la\s+|de\s+|del\s+)'                     # "de la", "de" o "del" antes de ley
     r'(' + _LEY_ALTERNATIVAS + r')',                      # Ley destino (grupo 2)
     re.IGNORECASE
 )
@@ -156,7 +200,7 @@ PATRON_REFERENCIA_FRACCIONES_LISTA = re.compile(
     r'(\d+[o]?(?:-[A-Z]+)?)\s+'                          # Número de artículo (grupo 1)
     r'fraccione?s?\s+'
     r'([IVXLCDM]+(?:(?:[,\s]+(?:y|e)\s+|[,\s]+)[IVXLCDM]+)+)'  # Lista de fracciones (grupo 2)
-    r'\s+(?:de\s+|del\s+)'
+    r'\s+(?:de\s+la\s+|de\s+|del\s+)'                    # "de la", "de" o "del" antes de ley
     r'(' + _LEY_ALTERNATIVAS + r')',                     # Ley destino (grupo 3)
     re.IGNORECASE
 )

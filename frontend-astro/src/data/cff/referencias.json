@@ -42,10 +42,24 @@
       "parrafo": 1
     }
   },
+  "14-B": {
+    "artículo 93 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "93",
+      "parrafo": 1
+    }
+  },
   "15-A": {
     "artículo 14-B de este Código": {
       "ley": "cff",
       "articulo": "14-B",
+      "parrafo": 1
+    }
+  },
+  "15-D": {
+    "artículo 15 de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "15",
       "parrafo": 1
     }
   },
@@ -112,6 +126,18 @@
       "ley": "cff",
       "articulo": "10",
       "parrafo": 1
+    },
+    "artículos 79, 81 y 83 de este ordenamiento": {
+      "ley": "cff",
+      "articulo": "79",
+      "parrafo": 1,
+      "query": "cff:79,81,83"
+    },
+    "artículos 184, fracción II y 185-A de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "184",
+      "parrafo": 3,
+      "query": "la:184/II,185-A"
     }
   },
   "17-K": {
@@ -273,6 +299,11 @@
       "articulo": "22",
       "parrafo": 1
     },
+    "artículo 6 de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "6o",
+      "parrafo": 1
+    },
     "artículo 50 de este Código": {
       "ley": "cff",
       "articulo": "50",
@@ -311,6 +342,22 @@
       "ley": "cff",
       "articulo": "69-B",
       "parrafo": 1
+    },
+    "artículo 76, fracción XX de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "76",
+      "parrafo": 39
+    },
+    "artículos 90 y 179 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "90",
+      "parrafo": 1,
+      "query": "lisr:90,179"
+    },
+    "artículo 176 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "176",
+      "parrafo": 1
     }
   },
   "27": {
@@ -335,6 +382,11 @@
       "articulo": "50",
       "parrafo": 1
     },
+    "artículo 113-C, fracción I de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "113-C",
+      "parrafo": 2
+    },
     "artículos 69, 69-B y 69-B Bis de este Código": {
       "ley": "cff",
       "articulo": "69",
@@ -346,6 +398,11 @@
     "artículo 29-A de este Código": {
       "ley": "cff",
       "articulo": "29-A",
+      "parrafo": 1
+    },
+    "artículo 25 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "25",
       "parrafo": 1
     }
   },
@@ -387,6 +444,14 @@
       "parrafo": 9
     }
   },
+  "30-B": {
+    "artículos 1o.-A BIS y 18-B de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "1o",
+      "parrafo": 1,
+      "query": "liva:1o,18-B"
+    }
+  },
   "31": {
     "párrafo primero de este artículo": {
       "interno": true,
@@ -394,6 +459,12 @@
     }
   },
   "31-A": {
+    "artículos 20 y 21 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "20",
+      "parrafo": 1,
+      "query": "lisr:20,21"
+    },
     "artículos 14-B de este Código": {
       "ley": "cff",
       "articulo": "14-B",
@@ -404,6 +475,11 @@
     "artículo 144 de este Código": {
       "ley": "cff",
       "articulo": "144",
+      "parrafo": 1
+    },
+    "artículo 76 de este ordenamiento": {
+      "ley": "cff",
+      "articulo": "76",
       "parrafo": 1
     },
     "artículo 21 de este Código": {
@@ -440,6 +516,11 @@
       "interno": true,
       "parrafo": 4
     },
+    "artículo 13 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "13",
+      "parrafo": 1
+    },
     "fracción V de este artículo": {
       "interno": true,
       "parrafo": 10
@@ -469,6 +550,11 @@
     }
   },
   "33-B": {
+    "artículo 16 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "16",
+      "parrafo": 1
+    },
     "artículo 93, fracción XXIV de dicha ley": {
       "ley": "lisr",
       "articulo": "93",
@@ -479,6 +565,20 @@
     "artículo 69 de este Código": {
       "ley": "cff",
       "articulo": "69",
+      "parrafo": 1
+    }
+  },
+  "34-A": {
+    "artículo 179 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "179",
+      "parrafo": 1
+    }
+  },
+  "36 Bis": {
+    "artículo 59 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "59",
       "parrafo": 1
     }
   },
@@ -499,6 +599,11 @@
       "ley": "cff",
       "articulo": "40",
       "parrafo": 6
+    },
+    "artículo 40 de este ordenamiento": {
+      "ley": "cff",
+      "articulo": "40",
+      "parrafo": 1
     },
     "artículos 56 y 57 de este Código": {
       "ley": "cff",
@@ -552,6 +657,11 @@
     "artículo 49 de este Código": {
       "ley": "cff",
       "articulo": "49",
+      "parrafo": 1
+    },
+    "artículo 32 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "32",
       "parrafo": 1
     },
     "artículos 197 a 202 de este Código": {
@@ -633,9 +743,21 @@
       "ley": "cff",
       "articulo": "44",
       "parrafo": 3
+    },
+    "artículos 76, fracciones IX y XII, 90, penúltimo párrafo, 110, fracción XI, 179 y 180 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "76",
+      "parrafo": 12,
+      "query": "lisr:76/IX,90,110/XI,179,180"
     }
   },
   "46-A": {
+    "artículos 76, fracciones IX y XII, 90, penúltimo párrafo, 110, fracción XI, 179 y 180 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "76",
+      "parrafo": 12,
+      "query": "lisr:76/IX,90,110/XI,179,180"
+    },
     "artículo 5o-A de este Código": {
       "ley": "cff",
       "articulo": "5o-A",
@@ -646,6 +768,11 @@
     "artículo 52-A de este Código": {
       "ley": "cff",
       "articulo": "52-A",
+      "parrafo": 1
+    },
+    "artículo 53-A de este ordenamiento": {
+      "ley": "cff",
+      "articulo": "53-A",
       "parrafo": 1
     }
   },
@@ -667,10 +794,21 @@
       "ley": "cff",
       "articulo": "46-A",
       "parrafo": 1
+    },
+    "artículos 76, fracciones IX y XII, 90, penúltimo párrafo, 110, fracción XI, 179 y 180 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "76",
+      "parrafo": 12,
+      "query": "lisr:76/IX,90,110/XI,179,180"
     }
   },
   "48-A": {
     "artículo 42, fracción XIII de este Código": {
+      "ley": "cff",
+      "articulo": "42",
+      "parrafo": 26
+    },
+    "artículo 42, fracción XIII de este ordenamiento": {
       "ley": "cff",
       "articulo": "42",
       "parrafo": 26
@@ -907,6 +1045,11 @@
       "ley": "cff",
       "articulo": "56",
       "parrafo": 1
+    },
+    "Artículo 136 de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "136",
+      "parrafo": 1
     }
   },
   "58-A": {
@@ -1010,11 +1153,22 @@
       "articulo": "134",
       "parrafo": 1
     },
-    "artículos 76, fracciones IX y XII, 90, penúltimo párrafo, 110, fracción XI, 179 y 180 de la Ley del Impuesto sobre la Renta, la información relativa a la identidad de los terceros independientes en operaciones comparables y la información de los comparables utilizados para motivar la resolución, sólo podrá ser revelada a los tribunales ante los que, en su caso, se impugne el acto de autoridad, sin perjuicio de lo establecido en los artículos 46, fracción IV y 48, fracción VII de este Código": {
-      "ley": "cff",
+    "artículo 26 de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "26",
+      "parrafo": 1
+    },
+    "artículos 76, fracciones IX y XII, 90, penúltimo párrafo, 110, fracción XI, 179 y 180 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
       "articulo": "76",
-      "parrafo": 1,
-      "query": "cff:76/IX,90,110/XI,179,180,46/IV,48/VII"
+      "parrafo": 12,
+      "query": "lisr:76/IX,90,110/XI,179,180"
+    },
+    "artículos 46, fracción IV y 48, fracción VII de este Código": {
+      "ley": "cff",
+      "articulo": "46",
+      "parrafo": 5,
+      "query": "cff:46/IV,48/VII"
     },
     "artículo 146-A de este Código": {
       "ley": "cff",
@@ -1108,6 +1262,22 @@
       "articulo": "46",
       "parrafo": 5,
       "query": "cff:46/IV,48/VII"
+    },
+    "artículos 28, fracción XXXIII de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "28",
+      "parrafo": 88
+    },
+    "artículos 76, fracciones IX y XII, 76-A, 90, penúltimo párrafo, 110, fracción XI, 179, 180, 181 y 182 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "76",
+      "parrafo": 12,
+      "query": "lisr:76/IX,76-A,90,110/XI,179,180,181,182"
+    },
+    "artículo 76 de este ordenamiento": {
+      "ley": "cff",
+      "articulo": "76",
+      "parrafo": 1
     }
   },
   "76": {
@@ -1124,6 +1294,11 @@
     "artículo 70 de este Código": {
       "ley": "cff",
       "articulo": "70",
+      "parrafo": 1
+    },
+    "artículo 44 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "44",
       "parrafo": 1
     }
   },
@@ -1172,6 +1347,12 @@
       "articulo": "17-K",
       "parrafo": 1
     },
+    "artículos 17 de la Ley del Impuesto sobre Tenencia o Uso de Vehículos o 19, fracciones VIII, IX y XII, de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "17",
+      "parrafo": 1,
+      "query": "lieps:17,19/VIII"
+    },
     "artículo 29 de este Código": {
       "ley": "cff",
       "articulo": "29",
@@ -1182,9 +1363,51 @@
       "articulo": "29",
       "parrafo": 9
     },
+    "artículo 63, fracción III de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "63",
+      "parrafo": 4
+    },
     "artículo 66 de dicha Ley": {
       "ley": "lisr",
       "articulo": "66",
+      "parrafo": 1
+    },
+    "artículos 66, cuarto párrafo y 68, quinto párrafo, de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "66",
+      "parrafo": 1,
+      "query": "lisr:66,68"
+    },
+    "artículo 76, fracción XIII de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "76",
+      "parrafo": 25
+    },
+    "artículo 32 de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "32",
+      "parrafo": 1
+    },
+    "artículos 76, fracción X y 110, fracción X de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "76",
+      "parrafo": 20,
+      "query": "lisr:76/X,110/X"
+    },
+    "artículo 151 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "151",
+      "parrafo": 1
+    },
+    "artículo 29 de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "29",
+      "parrafo": 1
+    },
+    "artículo 55 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "55",
       "parrafo": 1
     },
     "artículo 28, fracción I de este Código": {
@@ -1197,20 +1420,57 @@
       "articulo": "32-G",
       "parrafo": 1
     },
+    "artículo 98 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "98",
+      "parrafo": 1
+    },
     "artículo 30-A de este Código": {
       "ley": "cff",
       "articulo": "30-A",
       "parrafo": 1
+    },
+    "artículos 262, fracción IV y 269 del Reglamento de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "262",
+      "parrafo": 1,
+      "query": "lisr:262/IV,269"
+    },
+    "artículo 161 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "161",
+      "parrafo": 1
+    },
+    "artículos 76, fracción XV, 82, fracción VII, 110, fracción VII, 118, fracción V y 128 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "76",
+      "parrafo": 28,
+      "query": "lisr:76/XV,82/VII,110/VII,118/V,128"
     },
     "artículo 42-A de este Código": {
       "ley": "cff",
       "articulo": "42-A",
       "parrafo": 1
     },
+    "artículo 82, fracción II de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "82",
+      "parrafo": 3
+    },
+    "artículo 82, fracción V de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "82",
+      "parrafo": 13
+    },
     "artículos 31-A de este Código": {
       "ley": "cff",
       "articulo": "31-A",
       "parrafo": 1
+    },
+    "artículo 82, fracción VI de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "82",
+      "parrafo": 17
     }
   },
   "82": {
@@ -1289,6 +1549,18 @@
       "articulo": "32-A",
       "parrafo": 1
     },
+    "artículos 79, 82, 83 y 84 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "79",
+      "parrafo": 1,
+      "query": "lisr:79,82,83,84"
+    },
+    "artículos 76, fracción IX y 110, fracción XI de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "76",
+      "parrafo": 12,
+      "query": "lisr:76/IX,110/XI"
+    },
     "artículo 32-H de este Código": {
       "ley": "cff",
       "articulo": "32-H",
@@ -1305,6 +1577,12 @@
       "ley": "cff",
       "articulo": "75",
       "parrafo": 1
+    },
+    "artículos 79, 82, 83 y 84 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "79",
+      "parrafo": 1,
+      "query": "lisr:79,82,83,84"
     },
     "artículo 83 de este Código": {
       "ley": "cff",
@@ -1376,6 +1654,13 @@
     "Artículo 32-C de este Código": {
       "ley": "cff",
       "articulo": "32-C",
+      "parrafo": 1
+    }
+  },
+  "84-G": {
+    "artículo 58 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "58",
       "parrafo": 1
     }
   },
@@ -1454,6 +1739,18 @@
       "parrafo": 1
     }
   },
+  "86-A": {
+    "artículo 19, fracción V de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 11
+    },
+    "artículo 19 de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 1
+    }
+  },
   "86-B": {
     "artículo 86-A de este Código": {
       "ley": "cff",
@@ -1473,6 +1770,18 @@
       "parrafo": 1
     }
   },
+  "86-E": {
+    "artículo 19, fracción X de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 21
+    },
+    "artículo 19 de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 1
+    }
+  },
   "86-F": {
     "artículo 86-E de este Código": {
       "ley": "cff",
@@ -1485,7 +1794,31 @@
       "parrafo": 1
     }
   },
+  "86-G": {
+    "artículo 19 fracción XXII de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 38
+    },
+    "artículos 19, fracción XXII y 19-A de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 38,
+      "query": "lieps:19/XXII,19-A"
+    }
+  },
   "86-H": {
+    "artículo 19, fracción XXII de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 38
+    },
+    "artículos 19, fracción XXII y 19-A de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 38,
+      "query": "lieps:19/XXII,19-A"
+    },
     "artículo 86-G de este Código": {
       "ley": "cff",
       "articulo": "86-G",
@@ -1493,6 +1826,11 @@
     }
   },
   "86-I": {
+    "artículo 19, fracción XXII de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 38
+    },
     "artículo 19-A de la citada Ley": {
       "ley": "lieps",
       "articulo": "19-A",
@@ -1504,6 +1842,11 @@
       "ley": "cff",
       "articulo": "86-I",
       "parrafo": 1
+    },
+    "artículo 19, fracción XXII de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 38
     }
   },
   "87": {
@@ -1580,7 +1923,41 @@
       "query": "cff:102,105/I,104,108,109,108"
     }
   },
+  "102": {
+    "artículo 2, fracción I, inciso D) de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 2
+    }
+  },
   "103": {
+    "artículo 108 de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "108",
+      "parrafo": 1
+    },
+    "artículo 108, fracción I de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "108",
+      "parrafo": 4
+    },
+    "artículo 106 de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "106",
+      "parrafo": 1
+    },
+    "artículos 72, 73 y 78-A de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "72",
+      "parrafo": 1,
+      "query": "la:72,73,78-A"
+    },
+    "artículos 54 y 162 de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "54",
+      "parrafo": 1,
+      "query": "la:54,162"
+    },
     "artículo 92 de este Código": {
       "ley": "cff",
       "articulo": "92",
@@ -1603,6 +1980,18 @@
       "articulo": "103",
       "parrafo": 10,
       "query": "cff:103/IX,105/V"
+    }
+  },
+  "105": {
+    "artículo 106 de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "106",
+      "parrafo": 1
+    },
+    "artículo 36 de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "36",
+      "parrafo": 1
     }
   },
   "107": {
@@ -1640,6 +2029,11 @@
     }
   },
   "111": {
+    "artículo 178 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "178",
+      "parrafo": 1
+    },
     "artículos 46, fracción IV y 48, fracción VII de este Código": {
       "ley": "cff",
       "articulo": "46",
@@ -1839,6 +2233,11 @@
     }
   },
   "144": {
+    "artículos 294 de la Ley del Seguro Social": {
+      "ley": "lss",
+      "articulo": "294",
+      "parrafo": 1
+    },
     "artículo 141 de este Código": {
       "ley": "cff",
       "articulo": "141",
@@ -2098,6 +2497,17 @@
     }
   },
   "199": {
+    "artículo 28 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "28",
+      "parrafo": 1
+    },
+    "artículos 140, segundo párrafo; 142, segundo párrafo de la fracción V; y 164 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "140",
+      "parrafo": 1,
+      "query": "lisr:140,142,164"
+    },
     "artículo 5o-A de este Código": {
       "ley": "cff",
       "articulo": "5o-A",

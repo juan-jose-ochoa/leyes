@@ -651,6 +651,14 @@
       "parrafo": 1
     }
   },
+  "86": {
+    "artículos 34 y 35 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "34",
+      "parrafo": 1,
+      "query": "lisr:34,35"
+    }
+  },
   "86-A": {
     "artículos 72 y 73 de esta Ley": {
       "ley": "la",
@@ -1064,6 +1072,14 @@
       "parrafo": 1
     }
   },
+  "144-B": {
+    "artículos 119, 127, 129 y 133 de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "119",
+      "parrafo": 1,
+      "query": "la:119,127,129,133"
+    }
+  },
   "149": {
     "artículo 148 de esta Ley": {
       "ley": "la",
@@ -1129,6 +1145,11 @@
       "ley": "la",
       "articulo": "151",
       "parrafo": 8
+    },
+    "artículo 151 de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "151",
+      "parrafo": 1
     }
   },
   "153-A": {
@@ -1299,12 +1320,6 @@
       "articulo": "127",
       "parrafo": 3,
       "query": "la:127/II,131/II"
-    },
-    "artículos 28-A, primer párrafo de la Ley del Impuesto al Valor Agregado, 15-A, primer párrafo de la Ley del Impuesto Especial sobre Producción y Servicios y 100-A de esta Ley": {
-      "ley": "la",
-      "articulo": "28-A",
-      "parrafo": 1,
-      "query": "la:28-A,15-A,100-A"
     }
   },
   "166": {

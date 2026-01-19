@@ -1,4 +1,12 @@
 {
+  "12": {
+    "artículos 20 y 21 de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "20",
+      "parrafo": 1,
+      "query": "lft:20,21"
+    }
+  },
   "15": {
     "artículo 280, fracción IV de esta Ley": {
       "ley": "lss",
@@ -108,6 +116,14 @@
       "parrafo": 1
     }
   },
+  "77": {
+    "artículos 15 fracción I y 34 fracciones I a III de este ordenamiento": {
+      "ley": "lss",
+      "articulo": "15",
+      "parrafo": 2,
+      "query": "lss:15/I,34/I"
+    }
+  },
   "79": {
     "artículo 58 de esta Ley": {
       "ley": "lss",
@@ -140,6 +156,11 @@
       "ley": "lss",
       "articulo": "91",
       "parrafo": 1
+    },
+    "artículo 84 de este ordenamiento": {
+      "ley": "lss",
+      "articulo": "84",
+      "parrafo": 1
     }
   },
   "95": {
@@ -153,6 +174,18 @@
     "artículo 98 de esta Ley": {
       "ley": "lss",
       "articulo": "98",
+      "parrafo": 1
+    },
+    "artículo 84 de este ordenamiento": {
+      "ley": "lss",
+      "articulo": "84",
+      "parrafo": 1
+    }
+  },
+  "103": {
+    "artículo 170 de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "170",
       "parrafo": 1
     }
   },
@@ -286,6 +319,11 @@
       "articulo": "129",
       "parrafo": 1,
       "query": "lss:129,137"
+    },
+    "artículo 501 de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "501",
+      "parrafo": 1
     }
   },
   "194": {
@@ -379,6 +417,11 @@
     "artículo 28 de la presente Ley": {
       "ley": "lss",
       "articulo": "28",
+      "parrafo": 1
+    },
+    "artículo 27 de este ordenamiento": {
+      "ley": "lss",
+      "articulo": "27",
       "parrafo": 1
     },
     "fracción V del artículo 13 de esta Ley": {

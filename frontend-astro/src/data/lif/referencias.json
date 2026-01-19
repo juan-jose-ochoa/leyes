@@ -32,9 +32,25 @@
     }
   },
   "20": {
+    "artículo 179 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "179",
+      "parrafo": 1
+    },
+    "artículo 74 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "74",
+      "parrafo": 1
+    },
     "fracción II de este artículo": {
       "interno": true,
       "parrafo": 6
+    },
+    "artículos 74 y 75 del Capítulo VIII del Título II de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "74",
+      "parrafo": 1,
+      "query": "lisr:74,75"
     },
     "fracción I de este artículo": {
       "interno": true,
@@ -58,10 +74,45 @@
       "parrafo": 4
     }
   },
+  "24": {
+    "artículos 54 y 135 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "54",
+      "parrafo": 1,
+      "query": "lisr:54,135"
+    }
+  },
   "25": {
+    "artículos 189, párrafo quinto, fracciones II, párrafo primero y III, y 190, párrafo cuarto, fracción II, de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "189",
+      "parrafo": 1,
+      "query": "lisr:189,190"
+    },
+    "artículo 28 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "28",
+      "parrafo": 1
+    },
+    "artículo 44 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "44",
+      "parrafo": 1
+    },
+    "artículos 16, 18, fracción IX, 81, 134, 135 y 166, párrafo séptimo, fracción V, de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "16",
+      "parrafo": 1,
+      "query": "lisr:16,18/IX,81,134,135,166"
+    },
     "artículo 16 de dicha ley": {
       "ley": "liva",
       "articulo": "16",
+      "parrafo": 1
+    },
+    "artículo 55 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "55",
       "parrafo": 1
     },
     "artículo 18-J de dicha ley": {
@@ -69,11 +120,16 @@
       "articulo": "18-J",
       "parrafo": 1
     },
-    "artículos 54, párrafo primero, y 135, de la Ley del Impuesto sobre la Renta, las instituciones que componen el sistema financiero que intervengan como intermediarias en operaciones de préstamo de títulos o valores, por las cuales no se considere que existe enajenación de bienes de conformidad con el artículo 14-A del Código Fiscal de la Federación": {
-      "ley": "cff",
+    "artículo 10 de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "10",
+      "parrafo": 1
+    },
+    "artículos 54, párrafo primero, y 135, de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
       "articulo": "54",
       "parrafo": 1,
-      "query": "cff:54,135,14-A"
+      "query": "lisr:54,135"
     },
     "artículo 14-A del Código Fiscal de la Federación": {
       "ley": "cff",
@@ -84,6 +140,17 @@
       "ley": "lif",
       "articulo": "24",
       "parrafo": 1
+    },
+    "artículo 205 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "205",
+      "parrafo": 1
+    },
+    "artículos 1o. y 4o., de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "1o",
+      "parrafo": 1,
+      "query": "liva:1o,4o"
     }
   },
   "27": {
@@ -94,18 +161,21 @@
     }
   },
   "28": {
+    "artículos 79, 82 y 83 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "79",
+      "parrafo": 1,
+      "query": "lisr:79,82,83"
+    },
+    "artículo 86 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "86",
+      "parrafo": 1
+    },
     "artículos 69 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "69",
       "parrafo": 1
-    }
-  },
-  "29": {
-    "artículos 19, fracción II, y 107, fracción I, de la Ley Federal de Presupuesto y Responsabilidad Hacendaria, la información del origen de los ingresos generados por los aprovechamientos a que se refiere el numeral 6.61.22.04 del artículo 1o. de la presente Ley": {
-      "ley": "lif",
-      "articulo": "19",
-      "parrafo": 1,
-      "query": "lif:19/II,107/I,6,61,22,04,1o"
     }
   },
   "32": {

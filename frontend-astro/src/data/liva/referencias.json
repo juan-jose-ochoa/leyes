@@ -13,6 +13,11 @@
       "articulo": "18-B",
       "parrafo": 1
     },
+    "artículo 18-J de este ordenamiento": {
+      "ley": "liva",
+      "articulo": "18-J",
+      "parrafo": 1
+    },
     "fracción II del artículo 18-B de la presente Ley": {
       "ley": "liva",
       "articulo": "18-B",
@@ -59,11 +64,11 @@
     }
   },
   "4o-A": {
-    "artículos 10, 16 y 21 de este ordenamiento, así como aquéllos diferentes a los establecidos en el artículo 1o. de esta Ley": {
+    "artículos 10, 16 y 21 de este ordenamiento": {
       "ley": "liva",
       "articulo": "10",
       "parrafo": 1,
-      "query": "liva:10,16,21,1o"
+      "query": "liva:10,16,21"
     }
   },
   "5o": {
@@ -76,6 +81,11 @@
       "ley": "liva",
       "articulo": "32",
       "parrafo": 4
+    },
+    "artículo 15 de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "15",
+      "parrafo": 1
     },
     "artículos 1o.-A y 18-J, fracción II, inciso a) de esta Ley": {
       "ley": "liva",
@@ -112,6 +122,11 @@
       "parrafo": 1,
       "query": "liva:5o,3,5o"
     },
+    "artículo 32 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "32",
+      "parrafo": 1
+    },
     "artículo 16-A del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "16-A",
@@ -124,6 +139,18 @@
       "articulo": "5o",
       "parrafo": 1,
       "query": "liva:5o,33"
+    },
+    "artículo 28 de este ordenamiento": {
+      "ley": "liva",
+      "articulo": "28",
+      "parrafo": 1
+    }
+  },
+  "5o-F": {
+    "artículo 116 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "116",
+      "parrafo": 1
     }
   },
   "7o": {
@@ -340,6 +367,11 @@
     }
   },
   "25": {
+    "artículo 62, fracción I de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "62",
+      "parrafo": 2
+    },
     "artículo 28-A de esta Ley": {
       "ley": "liva",
       "articulo": "28-A",
@@ -414,6 +446,16 @@
     "artículo 41 de esta Ley": {
       "ley": "liva",
       "articulo": "41",
+      "parrafo": 1
+    },
+    "artículo 94 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "94",
+      "parrafo": 1
+    },
+    "artículo 187 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "187",
       "parrafo": 1
     },
     "fracción III de este artículo": {

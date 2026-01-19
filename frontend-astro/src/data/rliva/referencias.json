@@ -11,5 +11,19 @@
       "interno": true,
       "parrafo": 5
     }
+  },
+  "39": {
+    "artículo 32 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "32",
+      "parrafo": 1
+    }
+  },
+  "51": {
+    "artículo 61, fracción VIII de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "61",
+      "parrafo": 11
+    }
   }
 }

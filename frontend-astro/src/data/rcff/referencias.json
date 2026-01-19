@@ -4,6 +4,19 @@
       "ley": "lisr",
       "articulo": "12",
       "parrafo": 1
+    },
+    "artículo 76, fracción V de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "76",
+      "parrafo": 6
+    }
+  },
+  "36": {
+    "artículos 29 y 29-A del Código, cuando la Autoridad Fiscal modifique la clave del registro federal de contribuyentes de las personas físicas que perciban ingresos de los señalados en el Capítulo I del Título IV de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "29",
+      "parrafo": 1,
+      "query": "lisr:29,29-A"
     }
   },
   "37": {
@@ -23,6 +36,12 @@
     }
   },
   "55": {
+    "artículos 52 del Código, 57 de este Reglamento, al Reglamento de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "52",
+      "parrafo": 1,
+      "query": "lisr:52,57"
+    },
     "fracción I de este artículo": {
       "interno": true,
       "parrafo": 2

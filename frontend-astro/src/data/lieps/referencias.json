@@ -9,11 +9,17 @@
       "interno": true,
       "parrafo": 2
     },
-    "artículos 1o.-A BIS y 18-B, fracción II de la Ley del Impuesto al Valor Agregado, deberán cumplir con las obligaciones establecidas en los artículos 5o.-A BIS y 20-A de esta Ley": {
-      "ley": "lieps",
+    "artículos 1o.-A BIS y 18-B, fracción II de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
       "articulo": "1o",
       "parrafo": 1,
-      "query": "lieps:1o,18-B/II,5o,20-A"
+      "query": "liva:1o,18-B/II"
+    },
+    "artículos 5o.-A BIS y 20-A de esta Ley": {
+      "ley": "lieps",
+      "articulo": "5o",
+      "parrafo": 1,
+      "query": "lieps:5o,20-A"
     },
     "artículo 20-A de esta Ley": {
       "ley": "lieps",
@@ -103,10 +109,22 @@
       "parrafo": 1
     }
   },
+  "18-B": {
+    "artículo 18-C de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "18-C",
+      "parrafo": 1
+    }
+  },
   "19": {
     "fracción VI de este artículo": {
       "interno": true,
       "parrafo": 15
+    },
+    "artículo 59, fracción IV de la Ley Aduanera": {
+      "ley": "la",
+      "articulo": "59",
+      "parrafo": 10
     }
   },
   "19-A": {
@@ -139,6 +157,11 @@
     }
   },
   "20-A": {
+    "artículo 18-J, fracción III de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "18-J",
+      "parrafo": 11
+    },
     "inciso a) de este artículo": {
       "interno": true,
       "parrafo": 5
