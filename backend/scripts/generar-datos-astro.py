@@ -1010,6 +1010,20 @@ def extraer_tooltips(contenido: dict, estructura: dict, indice_estructura: dict)
                 if items:
                     tooltips_articulo[texto_original] = items
 
+        # Eliminar entradas que son subcadenas de otras más largas
+        # (evita doble tooltip cuando "Título II de esta Ley" está dentro de
+        # "Capítulo V del Título II de esta Ley")
+        if tooltips_articulo:
+            keys = list(tooltips_articulo.keys())
+            keys_ordenadas = sorted(keys, key=len, reverse=True)
+            keys_a_eliminar = set()
+            for i, key_larga in enumerate(keys_ordenadas):
+                for key_corta in keys_ordenadas[i+1:]:
+                    if key_corta in key_larga and key_corta not in keys_a_eliminar:
+                        keys_a_eliminar.add(key_corta)
+            for key in keys_a_eliminar:
+                del tooltips_articulo[key]
+
         if tooltips_articulo:
             tooltips_ley[art_num] = tooltips_articulo
 
