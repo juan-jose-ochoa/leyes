@@ -40,6 +40,11 @@
       "ley": "cff",
       "articulo": "14-B",
       "parrafo": 1
+    },
+    "artículo 29-A, fracción IV, segundo párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "29-A",
+      "parrafo": 5
     }
   },
   "14-B": {
@@ -67,6 +72,13 @@
     "artículo 16-A de este Código": {
       "ley": "cff",
       "articulo": "16-A",
+      "parrafo": 1
+    }
+  },
+  "17-B": {
+    "artículo 9o. de este Código": {
+      "ley": "cff",
+      "articulo": "9o",
       "parrafo": 1
     }
   },
@@ -152,6 +164,11 @@
       "ley": "cff",
       "articulo": "17-K",
       "parrafo": 1
+    },
+    "artículo 63, primer párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "63",
+      "parrafo": 1
     }
   },
   "18": {
@@ -181,6 +198,11 @@
     "artículo 50 de este Código": {
       "ley": "cff",
       "articulo": "50",
+      "parrafo": 1
+    },
+    "artículo 18, sexto párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "18",
       "parrafo": 1
     }
   },
@@ -309,6 +331,11 @@
       "articulo": "50",
       "parrafo": 1
     },
+    "artículo 20, octavo párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "20",
+      "parrafo": 1
+    },
     "artículo 65 de este Código": {
       "ley": "cff",
       "articulo": "65",
@@ -337,6 +364,16 @@
     "fracción X de este artículo": {
       "interno": true,
       "parrafo": 22
+    },
+    "artículo 69-B, cuarto párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    },
+    "artículo 69-B, octavo párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
     },
     "artículo 69-B del este código": {
       "ley": "cff",
@@ -376,6 +413,11 @@
       "articulo": "17-H",
       "parrafo": 11,
       "query": "cff:17-H/X,69"
+    },
+    "artículo 19, primer párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "19",
+      "parrafo": 1
     },
     "artículo 50 de este Código": {
       "ley": "cff",
@@ -423,6 +465,21 @@
       "ley": "cff",
       "articulo": "29",
       "parrafo": 14
+    },
+    "artículo 73, quinto párrafo de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "73",
+      "parrafo": 1
+    },
+    "artículo 19, fracción II, último párrafo de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 3
+    },
+    "artículo 29, primer y último párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
     }
   },
   "29-A Bis": {
@@ -455,6 +512,11 @@
   "31": {
     "párrafo primero de este artículo": {
       "interno": true,
+      "parrafo": 1
+    },
+    "artículo 6o. de este Código": {
+      "ley": "cff",
+      "articulo": "6o",
       "parrafo": 1
     }
   },
@@ -800,6 +862,11 @@
       "articulo": "76",
       "parrafo": 12,
       "query": "lisr:76/IX,90,110/XI,179,180"
+    },
+    "artículo 42, primer párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "42",
+      "parrafo": 1
     }
   },
   "48-A": {
@@ -1126,6 +1193,11 @@
     }
   },
   "67": {
+    "artículo 5o., fracción VI, cuarto párrafo de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "5o",
+      "parrafo": 18
+    },
     "artículo 42 de este Código": {
       "ley": "cff",
       "articulo": "42",
@@ -1173,6 +1245,11 @@
     "artículo 146-A de este Código": {
       "ley": "cff",
       "articulo": "146-A",
+      "parrafo": 1
+    },
+    "artículo 69-B, octavo párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "69-B",
       "parrafo": 1
     }
   },
@@ -1230,6 +1307,13 @@
       "articulo": "46-A",
       "parrafo": 1,
       "query": "cff:46-A,50,53-B,67"
+    }
+  },
+  "69-H": {
+    "artículo 36, primer párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "36",
+      "parrafo": 1
     }
   },
   "70": {
@@ -1347,6 +1431,11 @@
       "articulo": "17-K",
       "parrafo": 1
     },
+    "artículo 31, sexto párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "31",
+      "parrafo": 1
+    },
     "artículos 17 de la Ley del Impuesto sobre Tenencia o Uso de Vehículos o 19, fracciones VIII, IX y XII, de la Ley del Impuesto Especial sobre Producción y Servicios": {
       "ley": "lieps",
       "articulo": "17",
@@ -1394,6 +1483,11 @@
       "articulo": "76",
       "parrafo": 20,
       "query": "lisr:76/X,110/X"
+    },
+    "artículo 9o. de este Código": {
+      "ley": "cff",
+      "articulo": "9o",
+      "parrafo": 1
     },
     "artículo 151 de la Ley del Impuesto sobre la Renta": {
       "ley": "lisr",
@@ -1471,6 +1565,16 @@
       "ley": "lisr",
       "articulo": "82",
       "parrafo": 17
+    },
+    "artículos 27, fracción V, tercer párrafo de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 18
+    },
+    "artículo 29-A, cuarto párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "29-A",
+      "parrafo": 1
     }
   },
   "82": {
@@ -1564,6 +1668,11 @@
     "artículo 32-H de este Código": {
       "ley": "cff",
       "articulo": "32-H",
+      "parrafo": 1
+    },
+    "artículo 69-B, cuarto párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "69-B",
       "parrafo": 1
     },
     "artículo 42 de este Código": {
@@ -1901,6 +2010,11 @@
       "ley": "cff",
       "articulo": "52",
       "parrafo": 1
+    },
+    "artículo 52, fracción III, tercer párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 11
     }
   },
   "91-B": {
@@ -1913,6 +2027,13 @@
       "ley": "cff",
       "articulo": "52",
       "parrafo": 2
+    }
+  },
+  "96": {
+    "artículo 52, fracción III, tercer párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 11
     }
   },
   "101": {
@@ -1958,6 +2079,11 @@
       "parrafo": 1,
       "query": "la:54,162"
     },
+    "artículo 2o., fracción I, inciso D) de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 2
+    },
     "artículo 92 de este Código": {
       "ley": "cff",
       "articulo": "92",
@@ -1980,6 +2106,11 @@
       "articulo": "103",
       "parrafo": 10,
       "query": "cff:103/IX,105/V"
+    },
+    "artículo 2o., fracción I, inciso D) de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 2
     }
   },
   "105": {
@@ -2039,6 +2170,13 @@
       "articulo": "46",
       "parrafo": 5,
       "query": "cff:46/IV,48/VII"
+    }
+  },
+  "111 Bis": {
+    "artículo 69-B, cuarto párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
     }
   },
   "113 Bis": {
@@ -2145,6 +2283,13 @@
       "articulo": "18",
       "parrafo": 1,
       "query": "cff:18,122"
+    }
+  },
+  "133-F": {
+    "artículo 130, cuarto párrafo de este Código": {
+      "ley": "cff",
+      "articulo": "130",
+      "parrafo": 1
     }
   },
   "133-G": {

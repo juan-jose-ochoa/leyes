@@ -1,5 +1,10 @@
 {
   "2.1.1": {
+    "artículo 4o., penúltimo y último párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "4o",
+      "parrafo": 1
+    },
     "artículo 17-I del CFF": {
       "ley": "cff",
       "articulo": "17-I",
@@ -10,9 +15,33 @@
       "articulo": "65",
       "parrafo": 1
     },
+    "artículo 21, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "21",
+      "parrafo": 1
+    },
     "artículo 21 del CFF": {
       "ley": "cff",
       "articulo": "21",
+      "parrafo": 1
+    },
+    "artículo 146-A, primer y segundo párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "146-A",
+      "parrafo": 1
+    }
+  },
+  "2.1.2": {
+    "artículos 9o., tercer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "9o",
+      "parrafo": 1
+    }
+  },
+  "2.1.3": {
+    "artículo 9o. del CFF": {
+      "ley": "cff",
+      "articulo": "9o",
       "parrafo": 1
     }
   },
@@ -24,6 +53,11 @@
     }
   },
   "2.1.6": {
+    "artículo 12, primer y segundo párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "12",
+      "parrafo": 1
+    },
     "artículos 13 del CFF": {
       "ley": "cff",
       "articulo": "13",
@@ -37,7 +71,19 @@
       "parrafo": 1
     }
   },
+  "2.1.9": {
+    "artículo 14-B, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "14-B",
+      "parrafo": 1
+    }
+  },
   "2.1.10": {
+    "artículo 14-B, noveno párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "14-B",
+      "parrafo": 1
+    },
     "artículo 24, fracción IX de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "24",
@@ -52,6 +98,11 @@
     }
   },
   "2.1.12": {
+    "artículo 17-A, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-A",
+      "parrafo": 1
+    },
     "artículos 22-C y 59, fracción III, tercer párrafo del CFF": {
       "ley": "cff",
       "articulo": "22-C",
@@ -64,17 +115,37 @@
       "parrafo": 24,
       "query": "cff:82/X,84-B/X"
     },
+    "artículo 17-A, séptimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-A",
+      "parrafo": 1
+    },
+    "artículo 17-A, octavo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-A",
+      "parrafo": 1
+    },
     "artículos 82, fracción XXXV; 84, fracción IV, incisos a), b) y c); 84-B, fracción VII; 84-J y 84-L del CFF": {
       "ley": "cff",
       "articulo": "82",
       "parrafo": 58,
       "query": "cff:82/XXXV,84/IV,84-B/VII,84-J,84-L"
     },
+    "artículo 17-A, antepenúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-A",
+      "parrafo": 1
+    },
     "artículos 32-A, fracción I; 80, fracción II; 82, fracción XXXIV; 84, fracción VI; 84-B, fracciones VIII y IX, y 84-H del CFF": {
       "ley": "cff",
       "articulo": "32-A",
       "parrafo": 1,
       "query": "cff:32-A/I,80/II,82/XXXIV,84/VI,84-B/VIII,84-H"
+    },
+    "artículo 90, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "90",
+      "parrafo": 1
     },
     "artículos 20, séptimo párrafo; 32-A, primer párrafo; 32-H, fracción I; 80, fracción II; 82, fracciones XI, XVI, XXVI y XXXVI; 84, fracciones IV, incisos b) y c), VI, IX, XV, XVI; 84-B, fracciones VIII, IX, X, XI, XII; 86- B, fracciones I, III y V; 86-H, primero, segundo y tercer párrafo y 86-J, primer párrafo del CFF": {
       "ley": "cff",
@@ -105,6 +176,11 @@
       "parrafo": 1,
       "query": "cff:20,22,32-A,32-H/I,59/III,80/II,82/X,84/IV,84-B/VIII,86-B/I,86-H"
     },
+    "artículo 32-H, fracción I, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "32-H",
+      "parrafo": 2
+    },
     "artículos 80, fracciones I, III, incisos a) y b), IV, V y VI; 82 fracciones I, incisos a) a e), II, incisos a) a g), III a IX, XII a XV, XVII a XXV, XXVII a XXXI; 84, fracciones I a IV, inciso a), V, VIII, XI, XIII; 84-B, fracciones I, III a VII; 84-D; 84-F; 84-J; 84-L; 86, fracciones I a V; 86-B, fracciones II y IV; 86-F; 88; 91; 102, último párrafo; 104, fracciones I y II; 108, fracciones I a III; 112; 115 y 150 del CFF": {
       "ley": "cff",
       "articulo": "80",
@@ -128,6 +204,11 @@
       "articulo": "86-B",
       "parrafo": 4,
       "query": "cff:86-B/III,86-J"
+    },
+    "artículo 32-H, fracción I, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "32-H",
+      "parrafo": 2
     },
     "artículo 82, fracción XXV del CFF": {
       "ley": "cff",
@@ -213,6 +294,20 @@
       "parrafo": 1
     }
   },
+  "2.1.17": {
+    "artículos 20, séptimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "20",
+      "parrafo": 1
+    }
+  },
+  "2.1.18": {
+    "artículo 20, séptimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "20",
+      "parrafo": 1
+    }
+  },
   "2.1.19": {
     "artículos 20, séptimo párrafo y 22-B del CFF": {
       "ley": "cff",
@@ -223,6 +318,13 @@
   },
   "2.1.20": {
     "artículo 21 del CFF": {
+      "ley": "cff",
+      "articulo": "21",
+      "parrafo": 1
+    }
+  },
+  "2.1.21": {
+    "artículo 21, séptimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "21",
       "parrafo": 1
@@ -240,6 +342,11 @@
       "ley": "cff",
       "articulo": "32-D",
       "parrafo": 1
+    },
+    "artículo 32-D, último párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "32-D",
+      "parrafo": 1
     }
   },
   "2.1.25": {
@@ -248,6 +355,20 @@
       "articulo": "19",
       "parrafo": 1,
       "query": "cff:19,34"
+    }
+  },
+  "2.1.26": {
+    "artículo 90, cuarto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "90",
+      "parrafo": 1
+    }
+  },
+  "2.1.27": {
+    "artículo 32-D, quinto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "32-D",
+      "parrafo": 1
     }
   },
   "2.1.28": {
@@ -261,6 +382,13 @@
     "artículo 32-G del CFF": {
       "ley": "cff",
       "articulo": "32-G",
+      "parrafo": 1
+    }
+  },
+  "2.1.31": {
+    "artículo 131, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "131",
       "parrafo": 1
     }
   },
@@ -288,6 +416,11 @@
       "articulo": "32-D",
       "parrafo": 9
     },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    },
     "artículo 141 del CFF": {
       "ley": "cff",
       "articulo": "141",
@@ -297,6 +430,16 @@
       "ley": "cff",
       "articulo": "66-A",
       "parrafo": 10
+    },
+    "artículo 69, último párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69",
+      "parrafo": 1
+    },
+    "artículo 86, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "86",
+      "parrafo": 1
     },
     "artículo 82, fracción VI de la Ley del ISR": {
       "ley": "lisr",
@@ -348,6 +491,20 @@
       "parrafo": 1
     }
   },
+  "2.1.42": {
+    "artículo 18, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "18",
+      "parrafo": 1
+    }
+  },
+  "2.1.43": {
+    "artículo 179, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "179",
+      "parrafo": 1
+    }
+  },
   "2.1.45": {
     "artículo 34 del CFF": {
       "ley": "cff",
@@ -373,6 +530,18 @@
       "query": "lisr:4-A,4-B,205"
     }
   },
+  "2.1.46": {
+    "artículo 14-B, quinto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "14-B",
+      "parrafo": 1
+    },
+    "artículo 24, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "24",
+      "parrafo": 1
+    }
+  },
   "2.1.47": {
     "artículos 6o., párrafo séptimo y 65 del CFF": {
       "ley": "cff",
@@ -387,6 +556,13 @@
       "articulo": "20",
       "parrafo": 1,
       "query": "cff:20,31,145"
+    }
+  },
+  "2.1.51": {
+    "artículo 32-B, fracción IV, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "32-B",
+      "parrafo": 8
     }
   },
   "2.2.1": {
@@ -427,6 +603,11 @@
       "parrafo": 1,
       "query": "cff:17-K,139"
     },
+    "artículo 17-H, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-H",
+      "parrafo": 1
+    },
     "artículos 17-H, tercer párrafo, 29, tercer párrafo y 69, primer párrafo del CFF": {
       "ley": "cff",
       "articulo": "17-H",
@@ -464,6 +645,13 @@
       "parrafo": 1
     }
   },
+  "2.2.11": {
+    "artículo 17-F, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-F",
+      "parrafo": 1
+    }
+  },
   "2.2.12": {
     "artículo 17-D del CFF": {
       "ley": "cff",
@@ -485,6 +673,11 @@
   },
   "2.2.14": {
     "artículo 17-D del CFF": {
+      "ley": "cff",
+      "articulo": "17-D",
+      "parrafo": 1
+    },
+    "artículo 17-D, quinto y sexto párrafos del CFF": {
       "ley": "cff",
       "articulo": "17-D",
       "parrafo": 1
@@ -538,6 +731,13 @@
     "artículo 17-K del CFF": {
       "ley": "cff",
       "articulo": "17-K",
+      "parrafo": 1
+    }
+  },
+  "2.2.20": {
+    "artículo 17-H, séptimo y octavo párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "17-H",
       "parrafo": 1
     }
   },
@@ -600,9 +800,19 @@
       "ley": "lisr",
       "articulo": "98",
       "parrafo": 4
+    },
+    "artículo 22, quinto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "22",
+      "parrafo": 1
     }
   },
   "2.3.3": {
+    "artículo 74, sexto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "74",
+      "parrafo": 1
+    },
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
@@ -619,7 +829,19 @@
       "parrafo": 1,
       "query": "cff:49,69-B"
     },
+    "artículo 22, séptimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "22",
+      "parrafo": 1
+    },
     "artículo 22 del mismo ordenamiento": {
+      "ley": "cff",
+      "articulo": "22",
+      "parrafo": 1
+    }
+  },
+  "2.3.4": {
+    "artículo 22, primer párrafo del CFF": {
       "ley": "cff",
       "articulo": "22",
       "parrafo": 1
@@ -653,6 +875,25 @@
       "ley": "cff",
       "articulo": "22-C",
       "parrafo": 1
+    },
+    "artículo 97, cuarto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "97",
+      "parrafo": 1
+    }
+  },
+  "2.3.9": {
+    "artículo 23, quinto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "23",
+      "parrafo": 1
+    }
+  },
+  "2.3.10": {
+    "artículo 23, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "23",
+      "parrafo": 1
     }
   },
   "2.3.11": {
@@ -670,6 +911,11 @@
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
+      "parrafo": 1
+    },
+    "artículo 22, séptimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "22",
       "parrafo": 1
     },
     "artículos 49 Bis, 69 o 69-B del CFF": {
@@ -717,6 +963,16 @@
       "parrafo": 1,
       "query": "cff:49,69,69-B"
     },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    },
+    "artículo 22, séptimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "22",
+      "parrafo": 1
+    },
     "artículo 69-B del mismo Código": {
       "ley": "cff",
       "articulo": "69-B",
@@ -728,12 +984,31 @@
       "parrafo": 1
     }
   },
+  "2.3.13": {
+    "artículos 1o., fracción I de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "1o",
+      "parrafo": 2
+    }
+  },
+  "2.3.14": {
+    "artículo 22, séptimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "22",
+      "parrafo": 1
+    }
+  },
   "2.4.1": {
     "artículos 15-C, 27 y 32-B, fracciones V, IX y X del CFF": {
       "ley": "cff",
       "articulo": "15-C",
       "parrafo": 1,
       "query": "cff:15-C,27,32-B/V"
+    },
+    "artículo 7, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "7",
+      "parrafo": 1
     },
     "artículo 151, fracción V de la Ley del ISR": {
       "ley": "lisr",
@@ -770,6 +1045,18 @@
       "articulo": "15-C",
       "parrafo": 1,
       "query": "cff:15-C,27,32-B/V"
+    },
+    "artículo 7, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "7",
+      "parrafo": 1
+    }
+  },
+  "2.5.1": {
+    "artículos 9o., último párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "9o",
+      "parrafo": 1
     }
   },
   "2.5.2": {
@@ -798,6 +1085,11 @@
       "ley": "cff",
       "articulo": "27",
       "parrafo": 1
+    },
+    "artículo 2o., fracción I, inciso G) de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 2
     }
   },
   "2.5.7": {
@@ -820,6 +1112,11 @@
     }
   },
   "2.5.9": {
+    "artículo 69, penúltimo y último párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "69",
+      "parrafo": 1
+    },
     "artículo 69-B del CFF": {
       "ley": "cff",
       "articulo": "69-B",
@@ -834,6 +1131,13 @@
       "ley": "cff",
       "articulo": "17-H",
       "parrafo": 2
+    }
+  },
+  "2.5.10": {
+    "artículos 31, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "31",
+      "parrafo": 1
     }
   },
   "2.5.11": {
@@ -877,12 +1181,26 @@
       "query": "cff:27,63"
     }
   },
+  "2.5.23": {
+    "artículo 29-A, fracción V, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29-A",
+      "parrafo": 7
+    }
+  },
   "2.6.2.1": {
     "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    }
+  },
+  "2.6.2.2": {
+    "artículo 56, fracción VII, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "56",
+      "parrafo": 8
     }
   },
   "2.7.1.1": {
@@ -893,12 +1211,26 @@
       "query": "cff:28/I,30"
     }
   },
+  "2.7.1.2": {
+    "artículo 29, primer y segundo párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
+    }
+  },
   "2.7.1.3": {
     "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    }
+  },
+  "2.7.1.4": {
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
     }
   },
   "2.7.1.7": {
@@ -914,10 +1246,27 @@
     }
   },
   "2.7.1.9": {
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
+    },
     "artículo 93, fracción XX, inciso a) de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "93",
       "parrafo": 33
+    }
+  },
+  "2.7.1.10": {
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
+    },
+    "artículo 126, cuarto y quinto párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "126",
+      "parrafo": 1
     }
   },
   "2.7.1.11": {
@@ -948,9 +1297,19 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    },
+    "artículo 29-A, fracción V, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29-A",
+      "parrafo": 7
     }
   },
   "2.7.1.15": {
+    "artículos 7, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "7",
+      "parrafo": 1
+    },
     "artículo 29-A del CFF": {
       "ley": "cff",
       "articulo": "29-A",
@@ -1016,6 +1375,27 @@
       "query": "cff:29,29-A"
     }
   },
+  "2.7.1.23": {
+    "artículos 29-A, fracción IV, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29-A",
+      "parrafo": 5
+    }
+  },
+  "2.7.1.24": {
+    "artículos 29-A, fracción IV, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29-A",
+      "parrafo": 5
+    }
+  },
+  "2.7.1.25": {
+    "artículo 29-A, fracción V, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29-A",
+      "parrafo": 7
+    }
+  },
   "2.7.1.26": {
     "artículos 27, fracción I, inciso a) y 151, fracción III, inciso a) de la Ley del ISR": {
       "ley": "lisr",
@@ -1037,6 +1417,13 @@
       "ley": "cff",
       "articulo": "29-A",
       "parrafo": 30
+    }
+  },
+  "2.7.1.36": {
+    "artículos 86, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "86",
+      "parrafo": 1
     }
   },
   "2.7.1.37": {
@@ -1065,6 +1452,11 @@
       "articulo": "28",
       "parrafo": 2,
       "query": "cff:28/I,29"
+    },
+    "artículo 86, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "86",
+      "parrafo": 1
     }
   },
   "2.7.1.40": {
@@ -1121,6 +1513,11 @@
       "articulo": "79",
       "parrafo": 4
     },
+    "artículo 69, penúltimo y último párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "69",
+      "parrafo": 1
+    },
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
@@ -1145,6 +1542,60 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    }
+  },
+  "2.7.3.1": {
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
+    }
+  },
+  "2.7.3.2": {
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
+    }
+  },
+  "2.7.3.3": {
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
+    }
+  },
+  "2.7.3.4": {
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
+    }
+  },
+  "2.7.3.5": {
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
+    }
+  },
+  "2.7.3.6": {
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
+    }
+  },
+  "2.7.3.7": {
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
     }
   },
   "2.7.3.8": {
@@ -1154,11 +1605,42 @@
       "parrafo": 1,
       "query": "cff:29,29-A"
     },
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
+    },
     "artículos 17-H, primer párrafo, fracción X o 17- H Bis, último párrafo del CFF": {
       "ley": "cff",
       "articulo": "17-H",
       "parrafo": 1,
       "query": "cff:17-H,17"
+    }
+  },
+  "2.7.3.9": {
+    "artículos 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
+    }
+  },
+  "2.7.3.10": {
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
+    },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    }
+  },
+  "2.7.4.1": {
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
     }
   },
   "2.7.4.2": {
@@ -1171,6 +1653,11 @@
       "ley": "cff",
       "articulo": "32-D",
       "parrafo": 1
+    },
+    "artículo 69, penúltimo y último párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "69",
+      "parrafo": 1
     }
   },
   "2.7.4.5": {
@@ -1178,12 +1665,22 @@
       "ley": "cff",
       "articulo": "69",
       "parrafo": 1
+    },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
     }
   },
   "2.7.4.11": {
     "artículo 29-A del CFF": {
       "ley": "cff",
       "articulo": "29-A",
+      "parrafo": 1
+    },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
       "parrafo": 1
     }
   },
@@ -1210,6 +1707,13 @@
       "query": "cff:82-G,82-H"
     }
   },
+  "2.7.5.7": {
+    "artículo 145, séptimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "145",
+      "parrafo": 1
+    }
+  },
   "2.7.5.8": {
     "artículo 186 de la Ley del ISR": {
       "ley": "lisr",
@@ -1233,7 +1737,17 @@
     }
   },
   "2.7.6.4": {
+    "artículo 29, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29",
+      "parrafo": 1
+    },
     "artículo 29-A del CFF": {
+      "ley": "cff",
+      "articulo": "29-A",
+      "parrafo": 1
+    },
+    "artículos 29-A, cuarto párrafo del CFF": {
       "ley": "cff",
       "articulo": "29-A",
       "parrafo": 1
@@ -1302,6 +1816,13 @@
       "parrafo": 3
     }
   },
+  "2.8.1.7": {
+    "artículo 30-A, tercer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "30-A",
+      "parrafo": 1
+    }
+  },
   "2.8.1.8": {
     "artículos 22, décimo párrafo y 42, fracciones II, III, IV o IX del CFF": {
       "ley": "cff",
@@ -1318,6 +1839,11 @@
     "artículo 30-A del CFF": {
       "ley": "cff",
       "articulo": "30-A",
+      "parrafo": 1
+    },
+    "artículo 22, séptimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "22",
       "parrafo": 1
     }
   },
@@ -1341,12 +1867,22 @@
       "articulo": "6o",
       "parrafo": 1,
       "query": "cff:6o,31"
+    },
+    "artículo 3o. del CFF": {
+      "ley": "cff",
+      "articulo": "3o",
+      "parrafo": 1
     }
   },
   "2.8.1.12": {
     "artículo 31-A del CFF": {
       "ley": "cff",
       "articulo": "31-A",
+      "parrafo": 1
+    },
+    "artículo 7, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "7",
       "parrafo": 1
     },
     "artículo 52 del CFF": {
@@ -1388,6 +1924,13 @@
       "parrafo": 1
     }
   },
+  "2.8.1.19": {
+    "artículo 30, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "30",
+      "parrafo": 1
+    }
+  },
   "2.8.1.21": {
     "artículo 30 del CFF": {
       "ley": "cff",
@@ -1397,6 +1940,13 @@
     "artículo 134 del CFF": {
       "ley": "cff",
       "articulo": "134",
+      "parrafo": 1
+    }
+  },
+  "2.8.2.1": {
+    "artículos 31, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "31",
       "parrafo": 1
     }
   },
@@ -1420,6 +1970,11 @@
       "articulo": "20",
       "parrafo": 1,
       "query": "cff:20,31"
+    },
+    "artículo 6o., último párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "6o",
+      "parrafo": 1
     }
   },
   "2.8.3.2": {
@@ -1441,6 +1996,13 @@
       "articulo": "17-A",
       "parrafo": 1,
       "query": "cff:17-A,21"
+    }
+  },
+  "2.8.3.5": {
+    "artículo 31, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "31",
+      "parrafo": 1
     }
   },
   "2.8.3.6": {
@@ -1468,6 +2030,13 @@
   },
   "2.8.5.1": {
     "artículo 31 del CFF": {
+      "ley": "cff",
+      "articulo": "31",
+      "parrafo": 1
+    }
+  },
+  "2.8.5.2": {
+    "artículo 31, primer párrafo del CFF": {
       "ley": "cff",
       "articulo": "31",
       "parrafo": 1
@@ -1575,7 +2144,31 @@
       "parrafo": 1
     }
   },
+  "2.9.9": {
+    "artículo 42, sexto y séptimo párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "42",
+      "parrafo": 1
+    },
+    "artículo 42, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "42",
+      "parrafo": 1
+    }
+  },
+  "2.9.10": {
+    "artículo 66, tercer y cuarto párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "66",
+      "parrafo": 1
+    }
+  },
   "2.9.11": {
+    "artículo 33-A, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "33-A",
+      "parrafo": 1
+    },
     "artículo 41, fracción II del CFF": {
       "ley": "cff",
       "articulo": "41",
@@ -1600,8 +2193,32 @@
       "query": "cff:33/IV,41,81,82"
     }
   },
+  "2.9.15": {
+    "artículo 69, último párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69",
+      "parrafo": 1
+    }
+  },
   "2.9.17": {
+    "artículo 69-B, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    },
+    "artículo 69-B, primer y último párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    },
     "artículo 69-B del Código Fiscal de la Federación": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    }
+  },
+  "2.9.18": {
+    "artículo 69-B, antepenúltimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "69-B",
       "parrafo": 1
@@ -1633,6 +2250,11 @@
       "parrafo": 1,
       "query": "liva:1o,18-B"
     },
+    "artículo 30-B, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "30-B",
+      "parrafo": 1
+    },
     "artículo 18-B, fracción II de la Ley del IVA": {
       "ley": "liva",
       "articulo": "18-B",
@@ -1649,6 +2271,20 @@
       "ley": "lisr",
       "articulo": "24",
       "parrafo": 8
+    }
+  },
+  "2.10.2": {
+    "artículos 52, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 1
+    }
+  },
+  "2.10.3": {
+    "artículos 52, fracción I, inciso a), segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 3
     }
   },
   "2.10.4": {
@@ -1719,7 +2355,24 @@
       "query": "cff:52,54"
     }
   },
+  "2.10.11": {
+    "artículo 52, antepenúltimo y último párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 1
+    }
+  },
   "2.10.12": {
+    "artículo 32-A, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "32-A",
+      "parrafo": 1
+    },
+    "artículo 44, fracción I, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "44",
+      "parrafo": 2
+    },
     "artículos 31, primer a octavo párrafos y 37 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "31",
@@ -1903,10 +2556,22 @@
     }
   },
   "2.10.27": {
+    "artículo 14-B, décimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "14-B",
+      "parrafo": 1
+    },
     "artículo 32-A del CFF": {
       "ley": "cff",
       "articulo": "32-A",
       "parrafo": 1
+    }
+  },
+  "2.10.28": {
+    "artículo 52, fracción III, tercer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "52",
+      "parrafo": 11
     }
   },
   "2.11.1": {
@@ -1938,7 +2603,19 @@
       "query": "cff:66,66-A"
     }
   },
+  "2.11.4": {
+    "artículo 66, tercer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "66",
+      "parrafo": 1
+    }
+  },
   "2.11.5": {
+    "artículo 66-A, fracción III, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "66-A",
+      "parrafo": 8
+    },
     "artículo 150 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "150",
@@ -1974,6 +2651,16 @@
       "articulo": "135",
       "parrafo": 1,
       "query": "cff:135,136,137"
+    },
+    "artículo 134, último párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "134",
+      "parrafo": 1
+    },
+    "artículo 69, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69",
+      "parrafo": 1
     }
   },
   "2.12.3": {
@@ -1985,6 +2672,11 @@
     }
   },
   "2.12.4": {
+    "artículo 141, primer y segundo párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "141",
+      "parrafo": 1
+    },
     "artículo 141, fracción III del CFF": {
       "ley": "cff",
       "articulo": "141",
@@ -2083,6 +2775,13 @@
       "parrafo": 1
     }
   },
+  "2.13.4": {
+    "artículo 181, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "181",
+      "parrafo": 1
+    }
+  },
   "2.13.5": {
     "artículo 183 del CFF": {
       "ley": "cff",
@@ -2094,6 +2793,11 @@
       "articulo": "185",
       "parrafo": 1,
       "query": "cff:185,186"
+    },
+    "artículos 183, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "183",
+      "parrafo": 1
     }
   },
   "2.13.6": {
@@ -2103,9 +2807,21 @@
       "parrafo": 1,
       "query": "cff:185,186"
     },
+    "artículo 181, último párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "181",
+      "parrafo": 1
+    },
     "artículo 184 del CFF": {
       "ley": "cff",
       "articulo": "184",
+      "parrafo": 1
+    }
+  },
+  "2.13.8": {
+    "artículo 176, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "176",
       "parrafo": 1
     }
   },
@@ -2159,6 +2875,11 @@
   },
   "2.13.17": {
     "artículo 17-A del CFF": {
+      "ley": "cff",
+      "articulo": "17-A",
+      "parrafo": 1
+    },
+    "artículo 17-A, sexto párrafo del CFF": {
       "ley": "cff",
       "articulo": "17-A",
       "parrafo": 1
@@ -2219,6 +2940,11 @@
     }
   },
   "2.14.2": {
+    "artículos 1o., tercer párrafo de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "1o",
+      "parrafo": 1
+    },
     "artículo 66-A, fracción VI, inciso a) del CFF": {
       "ley": "cff",
       "articulo": "66-A",
@@ -2293,6 +3019,16 @@
       "articulo": "95",
       "parrafo": 1
     },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    },
+    "artículo 69-B, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    },
     "artículo 75 del CFF": {
       "ley": "cff",
       "articulo": "75",
@@ -2308,6 +3044,11 @@
     "artículo 70 del CFF": {
       "ley": "cff",
       "articulo": "70",
+      "parrafo": 1
+    },
+    "artículo 74, último párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "74",
       "parrafo": 1
     }
   },
@@ -2413,6 +3154,11 @@
     }
   },
   "2.15.1": {
+    "artículo 121, primer y segundo párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "121",
+      "parrafo": 1
+    },
     "artículo 133-B del CFF": {
       "ley": "cff",
       "articulo": "133-B",
@@ -2457,6 +3203,11 @@
     }
   },
   "2.17.1": {
+    "artículo 33-B, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "33-B",
+      "parrafo": 1
+    },
     "artículo 33-B del CFF": {
       "ley": "cff",
       "articulo": "33-B",
@@ -2539,6 +3290,11 @@
       "ley": "cff",
       "articulo": "32-I",
       "parrafo": 1
+    },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
     }
   },
   "2.18.9": {
@@ -2564,9 +3320,21 @@
     }
   },
   "2.19.2": {
+    "artículo 202, tercer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "202",
+      "parrafo": 1
+    },
     "artículo 200 del CFF": {
       "ley": "cff",
       "articulo": "200",
+      "parrafo": 1
+    }
+  },
+  "2.19.3": {
+    "artículo 197, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "197",
       "parrafo": 1
     }
   },
@@ -2778,6 +3546,25 @@
       "query": "cff:199/XIV,200/VI,201"
     }
   },
+  "2.19.23": {
+    "artículo 197, sexto y último párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "197",
+      "parrafo": 1
+    },
+    "artículo 197, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "197",
+      "parrafo": 1
+    }
+  },
+  "2.19.24": {
+    "artículo 199, último párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "199",
+      "parrafo": 1
+    }
+  },
   "2.19.25": {
     "artículo 199 del CFF": {
       "ley": "cff",
@@ -2786,9 +3573,28 @@
     }
   },
   "2.19.26": {
+    "artículo 197, séptimo y último párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "197",
+      "parrafo": 1
+    },
     "artículo 199 del CFF": {
       "ley": "cff",
       "articulo": "199",
+      "parrafo": 1
+    }
+  },
+  "2.19.27": {
+    "artículo 201, último párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "201",
+      "parrafo": 1
+    }
+  },
+  "2.19.28": {
+    "artículo 197, octavo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "197",
       "parrafo": 1
     }
   },
@@ -2815,6 +3621,20 @@
       "parrafo": 1
     }
   },
+  "3.1.4": {
+    "artículo 4, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "4",
+      "parrafo": 1
+    }
+  },
+  "3.1.5": {
+    "artículo 4, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "4",
+      "parrafo": 1
+    }
+  },
   "3.1.6": {
     "artículos 2o. y 3o. del CFF": {
       "ley": "cff",
@@ -2833,6 +3653,32 @@
       "ley": "cff",
       "articulo": "16-C",
       "parrafo": 2
+    },
+    "artículo 142, fracción V, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "142",
+      "parrafo": 6
+    }
+  },
+  "3.1.8": {
+    "artículo 7, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "7",
+      "parrafo": 1
+    }
+  },
+  "3.1.9": {
+    "artículo 7, cuarto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "7",
+      "parrafo": 1
+    }
+  },
+  "3.1.10": {
+    "artículo 7, cuarto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "7",
+      "parrafo": 1
     }
   },
   "3.1.11": {
@@ -2879,6 +3725,11 @@
     }
   },
   "3.1.18": {
+    "artículo 5, segundo y cuarto párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "5",
+      "parrafo": 1
+    },
     "artículo 5 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "5",
@@ -2898,6 +3749,11 @@
     }
   },
   "3.1.20": {
+    "artículo 4-B, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "4-B",
+      "parrafo": 1
+    },
     "artículos 76, fracción IX y 110, fracción XI de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "76",
@@ -2908,6 +3764,16 @@
       "ley": "lisr",
       "articulo": "180",
       "parrafo": 1
+    },
+    "artículo 76, fracción IX, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "76",
+      "parrafo": 12
+    },
+    "artículo 27, fracción III, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 13
     },
     "artículo 30 del CFF": {
       "ley": "cff",
@@ -2965,6 +3831,11 @@
       "ley": "lisr",
       "articulo": "17",
       "parrafo": 5
+    },
+    "artículo 17, penúltimo y último párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "17",
+      "parrafo": 1
     }
   },
   "3.2.5": {
@@ -2981,10 +3852,27 @@
       "articulo": "20",
       "parrafo": 9
     },
+    "artículo 20, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "20",
+      "parrafo": 1
+    },
     "artículo 20, fracción VII de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "20",
       "parrafo": 8
+    }
+  },
+  "3.2.7": {
+    "artículo 20, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "20",
+      "parrafo": 1
+    },
+    "artículo 163, noveno párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "163",
+      "parrafo": 1
     }
   },
   "3.2.8": {
@@ -2997,9 +3885,19 @@
       "ley": "lisr",
       "articulo": "22",
       "parrafo": 3
+    },
+    "artículo 188, fracción IX, sexto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "188",
+      "parrafo": 13
     }
   },
   "3.2.9": {
+    "artículo 77, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "77",
+      "parrafo": 1
+    },
     "artículo 140 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "140",
@@ -3008,6 +3906,11 @@
     "artículo 10 de la citada Ley": {
       "ley": "lisr",
       "articulo": "10",
+      "parrafo": 1
+    },
+    "artículo 16, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "16",
       "parrafo": 1
     }
   },
@@ -3080,6 +3983,11 @@
       "articulo": "166",
       "parrafo": 17
     },
+    "artículo 153, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "153",
+      "parrafo": 1
+    },
     "artículos 87 y 88 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "87",
@@ -3119,9 +4027,28 @@
       "parrafo": 1,
       "query": "lisr:22,23"
     },
+    "artículo 23, penúltimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "23",
+      "parrafo": 1
+    },
     "artículo 8 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "8",
+      "parrafo": 1
+    }
+  },
+  "3.2.19": {
+    "artículo 88, segundo y tercer párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "88",
+      "parrafo": 1
+    }
+  },
+  "3.2.20": {
+    "artículo 88, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "88",
       "parrafo": 1
     }
   },
@@ -3152,6 +4079,11 @@
       "articulo": "14",
       "parrafo": 1,
       "query": "lisr:14,17/I"
+    },
+    "artículo 17, penúltimo y último párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "17",
+      "parrafo": 1
     }
   },
   "3.2.25": {
@@ -3207,7 +4139,54 @@
       "parrafo": 13
     }
   },
+  "3.3.1.4": {
+    "artículo 27, fracción III, cuarto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 13
+    }
+  },
+  "3.3.1.5": {
+    "artículo 27, fracción III, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 13
+    }
+  },
+  "3.3.1.6": {
+    "artículo 27, fracción III, primer y segundo párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 13
+    }
+  },
+  "3.3.1.7": {
+    "artículo 27, fracción III, primer y segundo párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 13
+    }
+  },
+  "3.3.1.8": {
+    "artículo 27, fracción III, primer y segundo párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 13
+    }
+  },
+  "3.3.1.9": {
+    "artículo 27, fracción III, primer y segundo párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 13
+    }
+  },
   "3.3.1.10": {
+    "artículo 27, fracción III, primer y segundo párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 13
+    },
     "artículo 30 del CFF": {
       "ley": "cff",
       "articulo": "30",
@@ -3219,6 +4198,32 @@
       "parrafo": 1
     }
   },
+  "3.3.1.11": {
+    "artículo 27, fracción III, primer y segundo párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 13
+    }
+  },
+  "3.3.1.12": {
+    "artículo 27, fracción III, primer y segundo párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 13
+    },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    }
+  },
+  "3.3.1.13": {
+    "artículo 27, fracción III, primer y segundo párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 13
+    }
+  },
   "3.3.1.14": {
     "artículos 108, fracción I, 125 del Reglamento de la Ley del ISR": {
       "ley": "lisr",
@@ -3227,11 +4232,77 @@
       "query": "lisr:108/I,125"
     }
   },
+  "3.3.1.15": {
+    "artículo 27, fracción XI, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 33
+    }
+  },
+  "3.3.1.16": {
+    "artículo 27, fracción XI, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 33
+    }
+  },
+  "3.3.1.17": {
+    "artículo 27, fracción XI, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 33
+    }
+  },
+  "3.3.1.18": {
+    "artículo 27, fracción XI, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 33
+    }
+  },
   "3.3.1.19": {
+    "artículo 27, fracción XI, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 33
+    },
     "artículo 30 del CFF": {
       "ley": "cff",
       "articulo": "30",
       "parrafo": 1
+    }
+  },
+  "3.3.1.20": {
+    "artículo 27, fracción XI, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 33
+    }
+  },
+  "3.3.1.21": {
+    "artículo 27, fracción XI, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 33
+    },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    }
+  },
+  "3.3.1.22": {
+    "artículo 27, fracción XI, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 33
+    }
+  },
+  "3.3.1.23": {
+    "artículo 27, fracción XV, inciso a), último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 45
     }
   },
   "3.3.1.24": {
@@ -3285,6 +4356,11 @@
     }
   },
   "3.3.1.30": {
+    "artículo 28, fracción XXIII, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "28",
+      "parrafo": 45
+    },
     "artículo 30 del CFF": {
       "ley": "cff",
       "articulo": "30",
@@ -3327,6 +4403,11 @@
       "ley": "lisr",
       "articulo": "50",
       "parrafo": 1
+    },
+    "artículo 50, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "50",
+      "parrafo": 1
     }
   },
   "3.3.1.38": {
@@ -3358,6 +4439,13 @@
       "parrafo": 5
     }
   },
+  "3.3.2.3": {
+    "artículo 37, quinto y sexto párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "37",
+      "parrafo": 1
+    }
+  },
   "3.3.3.1": {
     "artículo 41, fracción IV de la Ley del ISR": {
       "ley": "lisr",
@@ -3372,11 +4460,25 @@
       "parrafo": 1
     }
   },
+  "3.3.3.3": {
+    "artículo 39, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "39",
+      "parrafo": 1
+    }
+  },
   "3.3.3.4": {
     "artículo 30 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "30",
       "parrafo": 1
+    }
+  },
+  "3.4.1": {
+    "artículo 44, fracción I, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "44",
+      "parrafo": 2
     }
   },
   "3.5.1": {
@@ -3386,7 +4488,24 @@
       "parrafo": 1
     }
   },
+  "3.5.2": {
+    "artículo 50, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "50",
+      "parrafo": 1
+    },
+    "artículo 50, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "50",
+      "parrafo": 1
+    }
+  },
   "3.5.3": {
+    "artículo 54, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "54",
+      "parrafo": 1
+    },
     "artículo 187 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "187",
@@ -3412,6 +4531,21 @@
       "articulo": "54",
       "parrafo": 1,
       "query": "lisr:54,55,87,88,89,135"
+    },
+    "artículo 54, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "54",
+      "parrafo": 1
+    },
+    "artículo 87, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "87",
+      "parrafo": 1
+    },
+    "artículo 54, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "54",
+      "parrafo": 1
     }
   },
   "3.5.6": {
@@ -3426,6 +4560,11 @@
       "parrafo": 1
     },
     "artículos 87 de la misma Ley": {
+      "ley": "lisr",
+      "articulo": "87",
+      "parrafo": 1
+    },
+    "artículo 87, quinto y penúltimo párrafos de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "87",
       "parrafo": 1
@@ -3553,6 +4692,13 @@
       "parrafo": 6
     }
   },
+  "3.5.20": {
+    "artículo 129, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "129",
+      "parrafo": 1
+    }
+  },
   "3.5.21": {
     "artículo 55, fracción IV de la Ley del ISR": {
       "ley": "lisr",
@@ -3577,6 +4723,27 @@
       "ley": "lisr",
       "articulo": "63",
       "parrafo": 3
+    }
+  },
+  "3.6.2": {
+    "artículo 66, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "66",
+      "parrafo": 1
+    }
+  },
+  "3.6.3": {
+    "artículo 68, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "68",
+      "parrafo": 1
+    }
+  },
+  "3.6.4": {
+    "artículo 59, segundo y tercer párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "59",
+      "parrafo": 1
     }
   },
   "3.6.5": {
@@ -3742,6 +4909,11 @@
       "articulo": "34-A",
       "parrafo": 1
     },
+    "artículo 182, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "182",
+      "parrafo": 1
+    },
     "artículo 76-A, fracción II de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "76-A",
@@ -3760,6 +4932,11 @@
       "ley": "lisr",
       "articulo": "76",
       "parrafo": 6
+    },
+    "artículo 17-D, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-D",
+      "parrafo": 1
     }
   },
   "3.9.15": {
@@ -3767,12 +4944,22 @@
       "ley": "lisr",
       "articulo": "14",
       "parrafo": 1
+    },
+    "artículo 17-D, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-D",
+      "parrafo": 1
     }
   },
   "3.9.16": {
     "artículo 96 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "96",
+      "parrafo": 1
+    },
+    "artículo 17-D, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-D",
       "parrafo": 1
     }
   },
@@ -3801,6 +4988,13 @@
       "articulo": "11",
       "parrafo": 3,
       "query": "lisr:11/II,140/III,164/I"
+    }
+  },
+  "3.9.1.2": {
+    "artículo 14, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "14",
+      "parrafo": 1
     }
   },
   "3.9.1.3": {
@@ -3849,6 +5043,11 @@
       "articulo": "27",
       "parrafo": 18
     },
+    "artículo 153, primer y cuarto párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "153",
+      "parrafo": 1
+    },
     "artículo 32-A del CFF": {
       "ley": "cff",
       "articulo": "32-A",
@@ -3892,6 +5091,18 @@
       "articulo": "27",
       "parrafo": 2,
       "query": "lisr:27/I,151/III"
+    }
+  },
+  "3.10.1.5": {
+    "artículo 86, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "86",
+      "parrafo": 1
+    },
+    "artículo 82, fracción V, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "82",
+      "parrafo": 13
     }
   },
   "3.10.1.6": {
@@ -3965,12 +5176,33 @@
       "parrafo": 17
     }
   },
+  "3.10.1.13": {
+    "artículo 82, fracción VI, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "82",
+      "parrafo": 17
+    }
+  },
+  "3.10.1.14": {
+    "artículo 82, fracción V, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "82",
+      "parrafo": 13
+    }
+  },
   "3.10.1.15": {
     "artículos 82, fracción VIII y 151, fracción III, último párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "82",
       "parrafo": 21,
       "query": "lisr:82/VIII,151/III"
+    }
+  },
+  "3.10.1.16": {
+    "artículo 82, cuarto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "82",
+      "parrafo": 1
     }
   },
   "3.10.1.17": {
@@ -4010,6 +5242,27 @@
       "query": "lisr:82/V,82-Qu"
     }
   },
+  "3.10.1.19": {
+    "artículo 82, cuarto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "82",
+      "parrafo": 1
+    }
+  },
+  "3.10.1.20": {
+    "artículo 79, penúltimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "79",
+      "parrafo": 1
+    }
+  },
+  "3.10.1.21": {
+    "artículo 179, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "179",
+      "parrafo": 1
+    }
+  },
   "3.10.1.23": {
     "artículos 82, fracción V, segundo párrafo y 82-Bis de la Ley del ISR": {
       "ley": "lisr",
@@ -4037,13 +5290,30 @@
       "parrafo": 7,
       "query": "lisr:79/VI,36,134"
     },
+    "artículo 80, penúltimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "80",
+      "parrafo": 1
+    },
     "artículo 82 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "82",
       "parrafo": 1
     }
   },
+  "3.10.2.2": {
+    "artículo 80, penúltimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "80",
+      "parrafo": 1
+    }
+  },
   "3.10.2.4": {
+    "artículo 87, noveno párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "87",
+      "parrafo": 1
+    },
     "artículo 187 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "187",
@@ -4066,6 +5336,11 @@
       "articulo": "146",
       "parrafo": 1,
       "query": "lisr:146,163"
+    },
+    "artículo 146, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "146",
+      "parrafo": 1
     }
   },
   "3.10.2.6": {
@@ -4110,6 +5385,11 @@
       "articulo": "93",
       "parrafo": 28
     },
+    "artículo 9o., fracción I del CFF": {
+      "ley": "cff",
+      "articulo": "9o",
+      "parrafo": 2
+    },
     "artículo 93, fracción XIX, inciso a) de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "93",
@@ -4124,6 +5404,13 @@
       "ley": "lisr",
       "articulo": "160",
       "parrafo": 1
+    }
+  },
+  "3.11.4": {
+    "artículo 93, fracción XIX, inciso a), último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "93",
+      "parrafo": 28
     }
   },
   "3.11.5": {
@@ -4149,6 +5436,11 @@
     }
   },
   "3.11.7": {
+    "artículo 142, fracción V, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "142",
+      "parrafo": 6
+    },
     "artículo 16-C, fracción I del CFF": {
       "ley": "cff",
       "articulo": "16-C",
@@ -4178,10 +5470,27 @@
       "parrafo": 1
     }
   },
+  "3.12.3": {
+    "artículo 99, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "99",
+      "parrafo": 1
+    }
+  },
   "3.12.4": {
+    "artículo 94, séptimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "94",
+      "parrafo": 1
+    },
     "artículo 96 de la citada Ley": {
       "ley": "lisr",
       "articulo": "96",
+      "parrafo": 1
+    },
+    "artículo 30, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "30",
       "parrafo": 1
     }
   },
@@ -4210,6 +5519,11 @@
       "articulo": "113-E",
       "parrafo": 1
     },
+    "artículo 113-A, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-A",
+      "parrafo": 1
+    },
     "artículo 18-B, fracción II de la Ley del IVA": {
       "ley": "liva",
       "articulo": "18-B",
@@ -4222,14 +5536,43 @@
       "articulo": "106",
       "parrafo": 1,
       "query": "lisr:106,116"
+    },
+    "artículo 106, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "106",
+      "parrafo": 1
+    }
+  },
+  "3.13.6": {
+    "artículo 113-E, cuarto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-E",
+      "parrafo": 1
     }
   },
   "3.13.7": {
+    "artículo 113-E, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-E",
+      "parrafo": 1
+    },
     "artículos 113-E, cuarto párrafo, 113-F y 113-G, fracción VII de dicha Ley, únicamente por los ingresos que correspondan al Régimen Simplificado de Confianza. Lo establecido en el presente párrafo, no exime a los contribuyentes de determinar la renta gravable en términos del artículo 113-G, último párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "113-E",
       "parrafo": 1,
       "query": "lisr:113-E,113-F,113-G/VII"
+    },
+    "artículo 113-G, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-G",
+      "parrafo": 1
+    }
+  },
+  "3.13.8": {
+    "artículo 113-E, sexto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-E",
+      "parrafo": 1
     }
   },
   "3.13.9": {
@@ -4250,12 +5593,29 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    },
+    "artículo 113-E, noveno y décimo párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-E",
+      "parrafo": 1
+    }
+  },
+  "3.13.11": {
+    "artículos 113-E, noveno párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-E",
+      "parrafo": 1
     }
   },
   "3.13.12": {
     "artículo 113-E de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "113-E",
+      "parrafo": 1
+    },
+    "artículo 111, penúltimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "111",
       "parrafo": 1
     }
   },
@@ -4279,10 +5639,22 @@
       "parrafo": 1
     }
   },
+  "3.13.15": {
+    "artículo 209, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "209",
+      "parrafo": 1
+    }
+  },
   "3.13.16": {
     "artículo 211 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "211",
+      "parrafo": 1
+    },
+    "artículo 17-D, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-D",
       "parrafo": 1
     }
   },
@@ -4304,12 +5676,29 @@
       "articulo": "113-E",
       "parrafo": 1,
       "query": "lisr:113-E,113-F"
+    },
+    "artículo 5o., fracción I de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "5o",
+      "parrafo": 2
+    }
+  },
+  "3.13.19": {
+    "artículo 17-D, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-D",
+      "parrafo": 1
     }
   },
   "3.13.20": {
     "artículo 27 del CFF": {
       "ley": "cff",
       "articulo": "27",
+      "parrafo": 1
+    },
+    "artículo 113-E, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-E",
       "parrafo": 1
     }
   },
@@ -4333,6 +5722,18 @@
       "query": "lisr:16,17,102"
     }
   },
+  "3.13.24": {
+    "artículo 113-E, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-E",
+      "parrafo": 1
+    },
+    "artículo 113-E, noveno párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-E",
+      "parrafo": 1
+    }
+  },
   "3.13.25": {
     "artículo 113-E de la Ley del ISR": {
       "ley": "lisr",
@@ -4350,12 +5751,24 @@
       "ley": "lisr",
       "articulo": "113-J",
       "parrafo": 1
+    },
+    "artículo 113-E, noveno párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-E",
+      "parrafo": 1
     }
   },
   "3.13.28": {
     "artículo 214 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "214",
+      "parrafo": 1
+    }
+  },
+  "3.13.29": {
+    "artículos 29-A, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "29-A",
       "parrafo": 1
     }
   },
@@ -4407,6 +5820,11 @@
       "ley": "cff",
       "articulo": "27",
       "parrafo": 1
+    },
+    "artículo 116, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "116",
+      "parrafo": 1
     }
   },
   "3.14.3": {
@@ -4423,6 +5841,13 @@
       "parrafo": 1
     }
   },
+  "3.15.2": {
+    "artículo 124, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "124",
+      "parrafo": 1
+    }
+  },
   "3.15.3": {
     "artículos 126, 127, 160 de la Ley del ISR": {
       "ley": "lisr",
@@ -4436,15 +5861,44 @@
       "parrafo": 2
     }
   },
+  "3.15.4": {
+    "artículo 126, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "126",
+      "parrafo": 1
+    }
+  },
+  "3.15.5": {
+    "artículo 126, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "126",
+      "parrafo": 1
+    }
+  },
   "3.15.6": {
     "artículos 18, fracción XII, 126, tercer párrafo, 132, último párrafo y 160, tercer párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "18",
       "parrafo": 16,
       "query": "lisr:18/XII,126,132,160"
+    },
+    "artículo 93, fracción XIX, inciso a), último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "93",
+      "parrafo": 28
     }
   },
   "3.15.7": {
+    "artículo 126, cuarto y quinto párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "126",
+      "parrafo": 1
+    },
+    "artículo 124, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "124",
+      "parrafo": 1
+    },
     "artículo 93, fracción XIX, inciso b) de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "93",
@@ -4455,6 +5909,18 @@
     "artículo 127 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "127",
+      "parrafo": 1
+    },
+    "artículo 127, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "127",
+      "parrafo": 1
+    }
+  },
+  "3.15.9": {
+    "artículo 129, segundo y tercer párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "129",
       "parrafo": 1
     }
   },
@@ -4497,6 +5963,13 @@
       "query": "lisr:129,161"
     }
   },
+  "3.15.13": {
+    "artículos 124, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "124",
+      "parrafo": 1
+    }
+  },
   "3.15.14": {
     "artículos 27, fracción III, tercer párrafo y 147, fracción IV, tercer párrafo de la Ley del ISR": {
       "ley": "lisr",
@@ -4512,6 +5985,25 @@
       "parrafo": 1
     }
   },
+  "3.16.1": {
+    "artículo 20, tercer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "20",
+      "parrafo": 1
+    },
+    "artículo 20, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "20",
+      "parrafo": 1
+    }
+  },
+  "3.16.2": {
+    "artículo 54, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "54",
+      "parrafo": 1
+    }
+  },
   "3.16.3": {
     "artículos 55, fracción I, 133, 134, 135 y 136 de la Ley del ISR": {
       "ley": "lisr",
@@ -4523,6 +6015,26 @@
       "ley": "lisr",
       "articulo": "134",
       "parrafo": 1
+    },
+    "artículo 134, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "134",
+      "parrafo": 1
+    },
+    "artículo 134, cuarto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "134",
+      "parrafo": 1
+    },
+    "artículo 20, tercer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "20",
+      "parrafo": 1
+    },
+    "artículo 20, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "20",
+      "parrafo": 1
     }
   },
   "3.16.4": {
@@ -4533,6 +6045,11 @@
     }
   },
   "3.16.5": {
+    "artículo 87, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "87",
+      "parrafo": 1
+    },
     "artículo 54 de la misma Ley": {
       "ley": "lisr",
       "articulo": "54",
@@ -4590,9 +6107,21 @@
     }
   },
   "3.16.8": {
+    "artículo 135, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "135",
+      "parrafo": 1
+    },
     "artículo 22-A del CFF": {
       "ley": "cff",
       "articulo": "22-A",
+      "parrafo": 1
+    }
+  },
+  "3.16.9": {
+    "artículo 166, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "166",
       "parrafo": 1
     }
   },
@@ -4641,6 +6170,18 @@
       "ley": "lisr",
       "articulo": "136",
       "parrafo": 3
+    },
+    "artículo 135, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "135",
+      "parrafo": 1
+    }
+  },
+  "3.17.3": {
+    "artículo 150, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "150",
+      "parrafo": 1
     }
   },
   "3.17.4": {
@@ -4655,6 +6196,18 @@
       "parrafo": 19
     }
   },
+  "3.17.5": {
+    "artículo 151, fracción V, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "151",
+      "parrafo": 21
+    },
+    "artículo 18, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "18",
+      "parrafo": 1
+    }
+  },
   "3.17.6": {
     "artículo 151, fracción V de la Ley del ISR": {
       "ley": "lisr",
@@ -4666,6 +6219,11 @@
       "articulo": "93",
       "parrafo": 5
     },
+    "artículo 145, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "145",
+      "parrafo": 1
+    },
     "artículo 142, fracción XVIII de dicha Ley": {
       "ley": "lisr",
       "articulo": "142",
@@ -4675,6 +6233,18 @@
       "ley": "lisr",
       "articulo": "54",
       "parrafo": 1
+    },
+    "artículo 151, fracción V, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "151",
+      "parrafo": 21
+    }
+  },
+  "3.17.7": {
+    "artículo 151, fracción V, primer y segundo párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "151",
+      "parrafo": 21
     }
   },
   "3.17.8": {
@@ -4709,9 +6279,38 @@
       "ley": "cff",
       "articulo": "81",
       "parrafo": 2
+    },
+    "artículo 90, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "90",
+      "parrafo": 1
+    }
+  },
+  "3.18.1": {
+    "artículos 153, séptimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "153",
+      "parrafo": 1
+    }
+  },
+  "3.18.2": {
+    "artículo 153, décimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "153",
+      "parrafo": 1
+    },
+    "artículo 153, noveno párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "153",
+      "parrafo": 1
     }
   },
   "3.18.3": {
+    "artículo 153, décimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "153",
+      "parrafo": 1
+    },
     "artículo 153 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "153",
@@ -4749,7 +6348,26 @@
       "parrafo": 3
     }
   },
+  "3.18.7": {
+    "artículo 129, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "129",
+      "parrafo": 1
+    }
+  },
+  "3.18.8": {
+    "artículo 163, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "163",
+      "parrafo": 1
+    }
+  },
   "3.18.9": {
+    "artículo 163, antepenúltimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "163",
+      "parrafo": 1
+    },
     "artículo 16-C, fracción II del CFF": {
       "ley": "cff",
       "articulo": "16-C",
@@ -4847,6 +6465,13 @@
       "parrafo": 17
     }
   },
+  "3.18.22": {
+    "artículo 166, séptimo y octavo párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "166",
+      "parrafo": 1
+    }
+  },
   "3.18.23": {
     "artículo 171 de la Ley del ISR": {
       "ley": "lisr",
@@ -4882,6 +6507,13 @@
       "parrafo": 1
     }
   },
+  "3.18.33": {
+    "artículo 163, antepenúltimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "163",
+      "parrafo": 1
+    }
+  },
   "3.18.34": {
     "artículos 76, fracción XI, inciso b), 140, primer y segundo párrafo y 164, fracción I, quinto párrafo de la Ley del ISR": {
       "ley": "lisr",
@@ -4909,6 +6541,11 @@
       "ley": "lisr",
       "articulo": "85",
       "parrafo": 1
+    },
+    "artículo 10, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "10",
+      "parrafo": 1
     }
   },
   "3.18.35": {
@@ -4917,6 +6554,16 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "lisr:29/VII,30/V,174"
+    },
+    "artículo 174, cuarto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "174",
+      "parrafo": 1
+    },
+    "artículos 27, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "27",
+      "parrafo": 1
     }
   },
   "3.18.36": {
@@ -4931,10 +6578,24 @@
       "parrafo": 1
     }
   },
+  "3.18.37": {
+    "artículos 161, penúltimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "161",
+      "parrafo": 1
+    }
+  },
   "3.18.38": {
     "artículo 161 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "161",
+      "parrafo": 1
+    }
+  },
+  "3.18.39": {
+    "artículo 174, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "174",
       "parrafo": 1
     }
   },
@@ -4944,6 +6605,13 @@
       "articulo": "176",
       "parrafo": 1,
       "query": "lisr:176,177"
+    }
+  },
+  "3.19.3": {
+    "artículo 176, tercer y cuarto párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "176",
+      "parrafo": 1
     }
   },
   "3.19.5": {
@@ -4971,11 +6639,42 @@
       "parrafo": 1
     }
   },
+  "3.19.9": {
+    "artículo 177, cuarto y quinto párrafos de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "177",
+      "parrafo": 1
+    }
+  },
+  "3.20.1": {
+    "artículo 77, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "77",
+      "parrafo": 1
+    }
+  },
   "3.20.2": {
+    "artículo 8, penúltimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "8",
+      "parrafo": 1
+    },
     "artículo 182 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "182",
       "parrafo": 1
+    }
+  },
+  "3.20.3": {
+    "artículo 181, fracción IV, penúltimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "181",
+      "parrafo": 8
+    },
+    "artículo 181, fracción IV, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "181",
+      "parrafo": 8
     }
   },
   "3.20.4": {
@@ -4991,7 +6690,19 @@
       "parrafo": 1
     }
   },
+  "3.20.5": {
+    "artículo 182, fracción I, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "182",
+      "parrafo": 2
+    }
+  },
   "3.20.6": {
+    "artículo 183, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "183",
+      "parrafo": 1
+    },
     "artículo 14 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "14",
@@ -5012,6 +6723,16 @@
     }
   },
   "3.20.8": {
+    "artículo 182, fracción I, inciso a), segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "182",
+      "parrafo": 5
+    },
+    "artículo 44, fracción I, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "44",
+      "parrafo": 2
+    },
     "artículos 31 y 37 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "31",
@@ -5021,6 +6742,13 @@
     "artículo 41 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "41",
+      "parrafo": 1
+    }
+  },
+  "3.20.9": {
+    "artículo 182, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "182",
       "parrafo": 1
     }
   },
@@ -5121,6 +6849,11 @@
       "parrafo": 1,
       "query": "lisr:187,188"
     },
+    "artículo 7, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "7",
+      "parrafo": 1
+    },
     "artículo 188 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "188",
@@ -5171,6 +6904,11 @@
       "parrafo": 7
     },
     "artículo 188, fracción IX de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "188",
+      "parrafo": 13
+    },
+    "artículo 188, fracción IX, último párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "188",
       "parrafo": 13
@@ -5250,6 +6988,11 @@
     }
   },
   "3.21.2.6": {
+    "artículo 188, fracción IV, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "188",
+      "parrafo": 5
+    },
     "artículo 188, fracción VII de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "188",
@@ -5311,6 +7054,11 @@
     "artículo 187 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "187",
+      "parrafo": 1
+    },
+    "artículo 87, noveno párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "87",
       "parrafo": 1
     }
   },
@@ -5381,6 +7129,13 @@
       "query": "lisr:187,188"
     }
   },
+  "3.21.3.1": {
+    "artículo 192, fracción V, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "192",
+      "parrafo": 6
+    }
+  },
   "3.21.3.2": {
     "artículo 193 fracción IV de la Ley del ISR": {
       "ley": "lisr",
@@ -5400,6 +7155,18 @@
       "parrafo": 1
     }
   },
+  "3.21.5.2": {
+    "artículo 185, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "185",
+      "parrafo": 1
+    },
+    "artículo 18, penúltimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "18",
+      "parrafo": 1
+    }
+  },
   "3.21.6.1": {
     "artículo 205, fracción I de la Ley del ISR": {
       "ley": "lisr",
@@ -5413,9 +7180,19 @@
       "articulo": "93",
       "parrafo": 5,
       "query": "lisr:93/IV,142/XVIII,145,151/V"
+    },
+    "artículo 151, fracción V, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "151",
+      "parrafo": 21
     }
   },
   "3.22.2": {
+    "artículo 142, fracción V, segundo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "142",
+      "parrafo": 6
+    },
     "artículo 30 del CFF": {
       "ley": "cff",
       "articulo": "30",
@@ -5450,7 +7227,19 @@
       "articulo": "27",
       "parrafo": 43
     },
+    "artículo 53, penúltimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "53",
+      "parrafo": 1
+    },
     "artículo 53 de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "53",
+      "parrafo": 1
+    }
+  },
+  "3.23.2": {
+    "artículo 53, cuarto párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "53",
       "parrafo": 1
@@ -5475,18 +7264,47 @@
       "parrafo": 28
     }
   },
+  "4.1.3": {
+    "artículo 3o., tercer párrafo de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "3o",
+      "parrafo": 1
+    }
+  },
+  "4.1.4": {
+    "artículo 5o., fracción IV de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "5o",
+      "parrafo": 6
+    }
+  },
   "4.1.5": {
+    "artículo 6o., último párrafo de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "6o",
+      "parrafo": 1
+    },
     "artículos 222 y 276 de la LFD. Se considerará que no es aplicable lo señalado en el artículo 22, octavo párrafo del CFF": {
       "ley": "cff",
       "articulo": "222",
       "parrafo": 1,
       "query": "cff:222,276,22"
     },
+    "artículo 22, octavo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "22",
+      "parrafo": 1
+    },
     "artículos 222 y 276 de la LFD, podrán considerar que las devoluciones que obtengan en los términos de la presente regla se han destinado a los citados conceptos de conformidad con el artículo 6o. de la Ley del IVA": {
       "ley": "liva",
       "articulo": "222",
       "parrafo": 1,
       "query": "liva:222,276,6o"
+    },
+    "artículo 6o. de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "6o",
+      "parrafo": 1
     },
     "artículos 222 y 276 de la LFD. Lo señalado en esta fracción no será aplicable cuando los organismos descentralizados y los concesionarios hayan presentado una solicitud de devolución de saldos a favor del IVA durante el mes de enero del año inmediato anterior a aquel al que se deba presentar el aviso a que se refiere el primer párrafo de esta fracción, en este caso, el aviso se presentará de conformidad con lo establecido en la fracción I de esta regla. En ningún caso procederá la devolución de saldos a favor del IVA por la aplicación de la tasa del 0% señalada en el artículo 2o.-A, fracción II, inciso h) de la Ley del IVA": {
       "ley": "liva",
@@ -5496,6 +7314,11 @@
     }
   },
   "4.1.6": {
+    "artículos 6o. de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "6o",
+      "parrafo": 1
+    },
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
@@ -5513,9 +7336,19 @@
       "parrafo": 1,
       "query": "cff:49,69-B"
     },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    },
     "artículo 69-B del mismo Código": {
       "ley": "cff",
       "articulo": "69-B",
+      "parrafo": 1
+    },
+    "artículo 22, séptimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "22",
       "parrafo": 1
     },
     "artículo 22 del mismo ordenamiento": {
@@ -5529,6 +7362,20 @@
       "ley": "cff",
       "articulo": "34",
       "parrafo": 1
+    }
+  },
+  "4.1.11": {
+    "artículo 17-D, sexto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-D",
+      "parrafo": 1
+    }
+  },
+  "4.2.2": {
+    "artículo 9o., fracción V de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "9o",
+      "parrafo": 6
     }
   },
   "4.2.4": {
@@ -5546,6 +7393,13 @@
       "query": "lisr:90,179"
     }
   },
+  "4.2.6": {
+    "artículo 9o., fracción IX de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "9o",
+      "parrafo": 11
+    }
+  },
   "4.2.7": {
     "artículo 12 de la Ley del IVA": {
       "ley": "liva",
@@ -5559,6 +7413,13 @@
       "articulo": "8o",
       "parrafo": 1,
       "query": "liva:8o,12"
+    }
+  },
+  "4.3.2": {
+    "artículo 15, fracción X, inciso b) segundo párrafo de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "15",
+      "parrafo": 13
     }
   },
   "4.3.3": {
@@ -5603,10 +7464,22 @@
       "parrafo": 10
     }
   },
+  "4.3.11": {
+    "artículo 9o., fracción VII de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "9o",
+      "parrafo": 8
+    }
+  },
   "4.4.1": {
     "artículo 25 de la Ley del IVA": {
       "ley": "liva",
       "articulo": "25",
+      "parrafo": 1
+    },
+    "artículo 1o., tercer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "1o",
       "parrafo": 1
     }
   },
@@ -5652,6 +7525,13 @@
       "ley": "liva",
       "articulo": "25",
       "parrafo": 6
+    }
+  },
+  "4.5.1": {
+    "artículo 5o., fracción I de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "5o",
+      "parrafo": 2
     }
   },
   "4.5.2": {
@@ -5718,6 +7598,39 @@
       "query": "lieps:2o,5o"
     }
   },
+  "5.1.2": {
+    "artículo 2o., fracción I, inciso J), penúltimo párrafo de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 2
+    }
+  },
+  "5.1.8": {
+    "artículo 3o., fracción XXVI de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "3o",
+      "parrafo": 56
+    }
+  },
+  "5.1.9": {
+    "artículo 5o., segundo párrafo de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "5o",
+      "parrafo": 1
+    }
+  },
+  "5.1.10": {
+    "artículo 2o., fracción III de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 94
+    },
+    "artículo 2o., fracción I, inciso J) de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 2
+    }
+  },
   "5.1.12": {
     "artículos 2o., fracción I, inciso C), tercer párrafo y 5o., segundo párrafo de la Ley del IEPS": {
       "ley": "lieps",
@@ -5748,6 +7661,13 @@
       "parrafo": 11
     }
   },
+  "5.2.5": {
+    "artículo 19, fracción V, tercer párrafo de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 11
+    }
+  },
   "5.2.6": {
     "artículo 19, fracción V de la Ley del IEPS": {
       "ley": "lieps",
@@ -5768,6 +7688,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 11
+    },
+    "artículo 19, fracción XV, segundo párrafo de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 30
     }
   },
   "5.2.9": {
@@ -5791,11 +7716,23 @@
       "parrafo": 11
     }
   },
+  "5.2.12": {
+    "artículo 19, fracción V, segundo párrafo de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 11
+    }
+  },
   "5.2.13": {
     "artículo 19, fracción VI de la Ley del IEPS": {
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 15
+    },
+    "artículo 2o., fracción I, inciso A) de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 2
     }
   },
   "5.2.14": {
@@ -5810,6 +7747,13 @@
       "parrafo": 1
     }
   },
+  "5.2.15": {
+    "artículo 19, fracción VIII, primer párrafo de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 17
+    }
+  },
   "5.2.16": {
     "artículo 19, fracción IX de la Ley del IEPS": {
       "ley": "lieps",
@@ -5822,6 +7766,27 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 21
+    }
+  },
+  "5.2.18": {
+    "artículo 19, fracción XII, primer párrafo de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 24
+    }
+  },
+  "5.2.19": {
+    "artículo 19, fracción XII, segundo párrafo de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 24
+    }
+  },
+  "5.2.20": {
+    "artículo 19, fracción XII, tercer párrafo de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 24
     }
   },
   "5.2.21": {
@@ -5893,6 +7858,13 @@
       "parrafo": 38
     }
   },
+  "5.2.33": {
+    "artículo 20, tercer párrafo de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "20",
+      "parrafo": 1
+    }
+  },
   "5.2.34": {
     "artículo 20, fracción II de la Ley del IEPS": {
       "ley": "lieps",
@@ -5946,6 +7918,11 @@
     }
   },
   "5.2.44": {
+    "artículo 3o., fracción IV de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "3o",
+      "parrafo": 7
+    },
     "artículo 26, fracción VIII del CFF": {
       "ley": "cff",
       "articulo": "26",
@@ -5982,6 +7959,11 @@
       "articulo": "19",
       "parrafo": 38
     },
+    "artículo 86-G último párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "86-G",
+      "parrafo": 1
+    },
     "artículo 86-G del CFF": {
       "ley": "cff",
       "articulo": "86-G",
@@ -5990,6 +7972,13 @@
   },
   "5.2.48": {
     "artículo 19, fracción V de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 11
+    }
+  },
+  "5.2.49": {
+    "artículo 19, fracción V, segundo y tercer párrafos de la Ley del IEPS": {
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 11
@@ -6021,12 +8010,32 @@
       "ley": "cff",
       "articulo": "110",
       "parrafo": 1
+    },
+    "artículo 19, fracción XV, segundo párrafo de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 30
+    },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
     }
   },
   "5.3.2": {
     "artículo 26 de la Ley del IEPS": {
       "ley": "lieps",
       "articulo": "26",
+      "parrafo": 1
+    },
+    "artículo 17-A, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-A",
+      "parrafo": 1
+    },
+    "artículo 17-A, último párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-A",
       "parrafo": 1
     },
     "artículo 17-I del CFF": {
@@ -6051,6 +8060,11 @@
     }
   },
   "9.1.2": {
+    "artículo 32-D, quinto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "32-D",
+      "parrafo": 1
+    },
     "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
@@ -6084,6 +8098,11 @@
       "ley": "cff",
       "articulo": "32-D",
       "parrafo": 1
+    },
+    "artículo 25, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "25",
+      "parrafo": 1
     }
   },
   "9.1.20": {
@@ -6108,10 +8127,29 @@
       "parrafo": 1
     }
   },
+  "9.2.1": {
+    "artículo 80, séptimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "80",
+      "parrafo": 1
+    },
+    "artículo 80, octavo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "80",
+      "parrafo": 1
+    }
+  },
   "9.2.2": {
     "artículo 75 del CFF": {
       "ley": "cff",
       "articulo": "75",
+      "parrafo": 1
+    }
+  },
+  "9.2.3": {
+    "artículo 4o., tercer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "4o",
       "parrafo": 1
     }
   },
@@ -6137,12 +8175,34 @@
       "parrafo": 1
     }
   },
+  "9.4.4": {
+    "artículo 170, quinto párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "170",
+      "parrafo": 1
+    },
+    "artículo 4, primer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "4",
+      "parrafo": 1
+    }
+  },
   "9.4.6": {
     "artículos 25, fracción III y 28, fracción XXVI de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "25",
       "parrafo": 4,
       "query": "lisr:25/III,28/XXVI"
+    },
+    "artículo 30, quinto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "30",
+      "parrafo": 1
+    },
+    "artículo 66, séptimo párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "66",
+      "parrafo": 1
     },
     "artículo 179 de la Ley del ISR": {
       "ley": "lisr",
@@ -6155,6 +8215,11 @@
       "parrafo": 1,
       "query": "lisr:64,154"
     },
+    "artículos 6o. de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "6o",
+      "parrafo": 1
+    },
     "artículo 69-B del mismo Código": {
       "ley": "cff",
       "articulo": "69-B",
@@ -6165,6 +8230,16 @@
       "articulo": "69",
       "parrafo": 1,
       "query": "cff:69,69-B"
+    },
+    "artículo 22, séptimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "22",
+      "parrafo": 1
+    },
+    "artículo 5o., fracción VI, quinto párrafo de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "5o",
+      "parrafo": 18
     },
     "artículo 34 de la Ley del IVA": {
       "ley": "liva",
@@ -6229,6 +8304,13 @@
       "parrafo": 1
     }
   },
+  "11.1.6": {
+    "artículo 9o., fracción IV de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "9o",
+      "parrafo": 5
+    }
+  },
   "11.2.1": {
     "artículo 8 de la Ley del ISR": {
       "ley": "lisr",
@@ -6241,6 +8323,11 @@
       "ley": "lisr",
       "articulo": "44",
       "parrafo": 1
+    },
+    "artículo 15, fracción X, inciso b), segundo y tercer párrafos de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "15",
+      "parrafo": 13
     }
   },
   "11.2.5": {
@@ -6254,6 +8341,37 @@
     "artículo 29-A del CFF": {
       "ley": "cff",
       "articulo": "29-A",
+      "parrafo": 1
+    }
+  },
+  "11.4.1": {
+    "artículos 33-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "33-B",
+      "parrafo": 1
+    }
+  },
+  "11.4.2": {
+    "artículos 33-B, cuarto y último párrafos del CFF": {
+      "ley": "cff",
+      "articulo": "33-B",
+      "parrafo": 1
+    }
+  },
+  "11.6.2": {
+    "artículo 7o. de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "7o",
+      "parrafo": 1
+    },
+    "artículo 5o., cuarto párrafo de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "5o",
+      "parrafo": 1
+    },
+    "artículo 25, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "25",
       "parrafo": 1
     }
   },
@@ -6284,6 +8402,11 @@
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
+      "parrafo": 1
+    },
+    "artículo 22, séptimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "22",
       "parrafo": 1
     }
   },
@@ -6381,12 +8504,29 @@
       "query": "lisr:181,182"
     }
   },
+  "11.9.13": {
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    }
+  },
   "11.9.20": {
     "artículos Sexto, fracción XI, segundo párrafo y Décimo Tercero, fracción IV, segundo párrafo del Decreto de estímulos fiscales región fronteriza norte, las personas físicas o morales que con posterioridad a la presentación de los avisos de inscripción o renovación a que se refieren las reglas 11.9.1., 11.9.2. y 11.9.14., para obtener los beneficios del estímulo fiscal para la región fronteriza norte en materia del ISR o del IVA en dicha región, hubieran realizado operaciones con los contribuyentes a que se refiere el artículo 69-B, cuarto párrafo del CFF": {
       "ley": "cff",
       "articulo": "11",
       "parrafo": 1,
       "query": "cff:11,9,1,11,9,2,11,9,14,69-B"
+    },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    },
+    "artículo 69-B, octavo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
     }
   },
   "11.9.21": {
@@ -6401,6 +8541,13 @@
     "artículo 186 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "186",
+      "parrafo": 1
+    }
+  },
+  "11.9.23": {
+    "artículo 113-I, tercer párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-I",
       "parrafo": 1
     }
   },
@@ -6420,6 +8567,16 @@
       "articulo": "69",
       "parrafo": 1,
       "query": "cff:69,69-B"
+    },
+    "artículo 69-B, cuarto párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    },
+    "artículo 22, séptimo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "22",
+      "parrafo": 1
     }
   },
   "11.10.2": {
@@ -6563,6 +8720,13 @@
       "query": "cff:28,30"
     }
   },
+  "12.1.1": {
+    "artículos 18-D, último párrafo de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "18-D",
+      "parrafo": 1
+    }
+  },
   "12.1.4": {
     "artículo 18-B, fracción II de la Ley del IVA": {
       "ley": "liva",
@@ -6596,6 +8760,13 @@
       "ley": "liva",
       "articulo": "18-B",
       "parrafo": 1
+    }
+  },
+  "12.1.11": {
+    "artículo 2o., fracción II, inciso B), segundo párrafo de la Ley del IEPS": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 82
     }
   },
   "12.2.2": {
@@ -6682,7 +8853,26 @@
       "parrafo": 1
     }
   },
+  "12.3.6": {
+    "artículo 113-A, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-A",
+      "parrafo": 1
+    }
+  },
+  "12.3.7": {
+    "artículo 113-A, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-A",
+      "parrafo": 1
+    }
+  },
   "12.3.8": {
+    "artículo 18-M, segundo párrafo de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "18-M",
+      "parrafo": 1
+    },
     "artículo 18-L de la citada Ley": {
       "ley": "liva",
       "articulo": "18-L",
@@ -6711,9 +8901,19 @@
       "articulo": "1o",
       "parrafo": 1,
       "query": "liva:1o,18-J/II,18-K"
+    },
+    "artículo 7o., último párrafo de la Ley del IVA": {
+      "ley": "liva",
+      "articulo": "7o",
+      "parrafo": 1
     }
   },
   "12.3.12": {
+    "artículos 22, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "22",
+      "parrafo": 1
+    },
     "artículo 18-M de la Ley del IVA": {
       "ley": "liva",
       "articulo": "18-M",
@@ -6737,6 +8937,11 @@
     }
   },
   "12.3.15": {
+    "artículos 113-A, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-A",
+      "parrafo": 1
+    },
     "artículos 113-A de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "113-A",
@@ -6744,9 +8949,21 @@
     }
   },
   "12.3.16": {
+    "artículo 113-A, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-A",
+      "parrafo": 1
+    },
     "artículo 32 del CFF": {
       "ley": "cff",
       "articulo": "32",
+      "parrafo": 1
+    }
+  },
+  "12.3.17": {
+    "artículos 22, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "22",
       "parrafo": 1
     }
   },
@@ -6777,6 +8994,16 @@
       "articulo": "134",
       "parrafo": 1
     },
+    "artículo 17-L, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "17-L",
+      "parrafo": 1
+    },
+    "artículo 144, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "144",
+      "parrafo": 1
+    },
     "artículo 69-B del CFF": {
       "ley": "cff",
       "articulo": "69-B",
@@ -6792,6 +9019,16 @@
       "articulo": "86-D",
       "parrafo": 1
     },
+    "artículo 69-B, segundo párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    },
+    "artículo 69-B, primer párrafo del CFF": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    },
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
@@ -6801,6 +9038,11 @@
       "ley": "lisr",
       "articulo": "113-G",
       "parrafo": 3
+    },
+    "artículo 93, fracción XIX, inciso a), último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "93",
+      "parrafo": 28
     },
     "artículo 19, fracción XXII de la Ley del IEPS": {
       "ley": "lieps",

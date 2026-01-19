@@ -129,13 +129,22 @@ _LEY_ALTERNATIVAS = (
     r'código\s+de\s+comercio'
 )
 
+# Ordinales para referencias a párrafos
+_ORDINALES_PARRAFO = (
+    r'primer|segundo|tercer|cuarto|quinto|sexto|séptimo|octavo|noveno|décimo|'
+    r'antepenúltimo|penúltimo|último'
+)
+
 # Regex para detectar referencias a artículos (patrón estándar)
-# Captura: artículo(s) NUM (fracción ROMAN)? (inciso LETRA)? de LEY
+# Captura: artículo(s) NUM (fracción ROMAN)? (inciso LETRA)? (párrafo)? de LEY
 PATRON_REFERENCIA = re.compile(
     r'artículos?\s+'
-    r'(\d+[o]?(?:-[A-Z]+)?)'                           # Número de artículo (grupo 1)
+    r'(\d+[o]?\.?(?:-[A-Z]+)?)'                         # Número de artículo (grupo 1) - incluye 4o.
     r'(?:\s*,?\s*(?:fracci[oó]ne?s?)\s+([IVXLCDM]+))?'  # Fracción opcional (grupo 2)
     r'(?:\s*,?\s*(?:inciso)\s+([a-z])\))?'            # Inciso opcional (grupo 3)
+    r'(?:\s*,?\s*(?:' + _ORDINALES_PARRAFO + r')'     # Párrafo opcional (primer, último, etc.)
+    r'(?:\s+(?:y|e)\s+(?:' + _ORDINALES_PARRAFO + r'))?'  # Segundo ordinal opcional (penúltimo y último)
+    r'\s+párrafos?)?'                                  # "párrafo" o "párrafos"
     r'\s+(?:de\s+la\s+|de\s+|del\s+)'                 # "de la", "de" o "del" antes de ley
     r'(' + _LEY_ALTERNATIVAS + r')',                   # Ley destino (grupo 4)
     re.IGNORECASE
@@ -347,6 +356,10 @@ def normalizar_articulo(articulo: str, ley_codigo: str, indice: dict) -> str | N
         Número de artículo normalizado si existe en el índice, None si no se encuentra
     """
     ley_indice = indice.get(ley_codigo, {})
+
+    # Limpiar punto final de ordinales (4o. → 4o)
+    if articulo.endswith('.'):
+        articulo = articulo[:-1]
 
     # Intento 1: exacto
     if articulo in ley_indice:

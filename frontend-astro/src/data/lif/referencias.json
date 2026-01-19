@@ -1,4 +1,11 @@
 {
+  "4": {
+    "artículo 2o. de esta Ley": {
+      "ley": "lif",
+      "articulo": "2",
+      "parrafo": 1
+    }
+  },
   "11": {
     "fracción II de este artículo": {
       "interno": true,
@@ -16,6 +23,13 @@
     "artículo 17 de la presente Ley": {
       "ley": "lif",
       "articulo": "17",
+      "parrafo": 1
+    }
+  },
+  "16": {
+    "artículo 1o. de esta Ley": {
+      "ley": "lif",
+      "articulo": "1",
       "parrafo": 1
     }
   },
@@ -57,7 +71,19 @@
       "parrafo": 3
     }
   },
+  "21": {
+    "artículo 1o. de esta Ley": {
+      "ley": "lif",
+      "articulo": "1",
+      "parrafo": 1
+    }
+  },
   "22": {
+    "artículo 1o. de esta Ley": {
+      "ley": "lif",
+      "articulo": "1",
+      "parrafo": 1
+    },
     "artículo 16 de esta Ley": {
       "ley": "lif",
       "articulo": "16",
@@ -175,6 +201,13 @@
     "artículos 69 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "69",
+      "parrafo": 1
+    }
+  },
+  "29": {
+    "artículo 1o. de la presente Ley": {
+      "ley": "lif",
+      "articulo": "1",
       "parrafo": 1
     }
   },

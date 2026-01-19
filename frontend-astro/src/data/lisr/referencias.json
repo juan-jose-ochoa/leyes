@@ -422,6 +422,11 @@
       "articulo": "76",
       "parrafo": 1
     },
+    "artículo 15-D, tercer párrafo del Código Fiscal de la Federación": {
+      "ley": "cff",
+      "articulo": "15-D",
+      "parrafo": 1
+    },
     "artículo 15 de la Ley Federal del Trabajo": {
       "ley": "lft",
       "articulo": "15",
@@ -613,6 +618,11 @@
     "fracción XXVII de este artículo": {
       "interno": true,
       "parrafo": 56
+    },
+    "artículo 15-D, primer y segundo párrafos del Código Fiscal de la Federación": {
+      "ley": "cff",
+      "articulo": "15-D",
+      "parrafo": 1
     }
   },
   "29": {
@@ -1227,6 +1237,11 @@
       "articulo": "180",
       "parrafo": 1
     },
+    "artículo 179, tercer párrafo de esta Ley": {
+      "ley": "lisr",
+      "articulo": "179",
+      "parrafo": 1
+    },
     "artículos 140 y 164 de esta Ley": {
       "ley": "lisr",
       "articulo": "140",
@@ -1301,6 +1316,11 @@
       "articulo": "32-A",
       "parrafo": 1,
       "query": "cff:32-A,32-H/I"
+    },
+    "artículo 179, primer y último párrafos de esta Ley": {
+      "ley": "lisr",
+      "articulo": "179",
+      "parrafo": 1
     },
     "fracción III de este artículo": {
       "interno": true,
@@ -1493,6 +1513,11 @@
       "articulo": "79",
       "parrafo": 7,
       "query": "lisr:79/VI,84"
+    },
+    "artículo 27, fracción I, último párrafo de esta Ley": {
+      "ley": "lisr",
+      "articulo": "27",
+      "parrafo": 2
     }
   },
   "82 Quáter": {
@@ -1674,6 +1699,11 @@
     }
   },
   "93": {
+    "artículo 7, quinto párrafo de esta Ley": {
+      "ley": "lisr",
+      "articulo": "7",
+      "parrafo": 1
+    },
     "artículo 151 de esta Ley": {
       "ley": "lisr",
       "articulo": "151",
@@ -2047,6 +2077,11 @@
       "ley": "lisr",
       "articulo": "113-C",
       "parrafo": 5
+    },
+    "artículo 113-A, segundo párrafo de esta Ley": {
+      "ley": "lisr",
+      "articulo": "113-A",
+      "parrafo": 1
     }
   },
   "113-E": {
@@ -2115,6 +2150,11 @@
     "artículo 32-D del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "32-D",
+      "parrafo": 1
+    },
+    "artículo 69-B, cuarto párrafo del Código Fiscal de la Federación": {
+      "ley": "cff",
+      "articulo": "69-B",
       "parrafo": 1
     }
   },
@@ -2939,6 +2979,11 @@
       "ley": "lisr",
       "articulo": "166",
       "parrafo": 1
+    },
+    "artículo 24, penúltimo párrafo de esta Ley": {
+      "ley": "lisr",
+      "articulo": "24",
+      "parrafo": 1
     }
   },
   "162": {
@@ -3308,6 +3353,11 @@
       "articulo": "77",
       "parrafo": 1
     },
+    "artículo 142, fracción V, segundo párrafo de esta Ley": {
+      "ley": "lisr",
+      "articulo": "142",
+      "parrafo": 6
+    },
     "artículo 22 de esta Ley": {
       "ley": "lisr",
       "articulo": "22",
@@ -3497,6 +3547,11 @@
       "ley": "lisr",
       "articulo": "152",
       "parrafo": 1
+    },
+    "artículo 93, fracción XXI, primer párrafo de esta Ley": {
+      "ley": "lisr",
+      "articulo": "93",
+      "parrafo": 36
     },
     "artículo 145 de esta Ley": {
       "ley": "lisr",

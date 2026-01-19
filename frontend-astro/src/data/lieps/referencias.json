@@ -54,6 +54,16 @@
     }
   },
   "4o": {
+    "artículo 2o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 1
+    },
+    "artículo 2o., fracción III de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 94
+    },
     "artículo 19 de esta Ley": {
       "ley": "lieps",
       "articulo": "19",
@@ -72,16 +82,79 @@
       "parrafo": 1,
       "query": "lieps:15,16"
     },
+    "artículo 2o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 1
+    },
+    "artículo 4o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "4o",
+      "parrafo": 1
+    },
+    "artículo 2o., fracción III de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 94
+    },
     "artículo 22 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "22",
       "parrafo": 1
+    },
+    "artículo 2o., fracción I, inciso D) de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 2
+    }
+  },
+  "5o-A": {
+    "artículo 2o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 1
+    },
+    "artículo 5o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "5o",
+      "parrafo": 1
+    }
+  },
+  "5o-A Bis": {
+    "artículo 2o., fracción II, inciso D) de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 82
+    }
+  },
+  "5o-B": {
+    "artículo 2o., fracción II, inciso B) de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 82
+    }
+  },
+  "7o": {
+    "artículo 2o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 1
     }
   },
   "8o": {
+    "artículo 2o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 1
+    },
     "artículo 29-A del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "29-A",
+      "parrafo": 1
+    },
+    "artículo 3o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "3o",
       "parrafo": 1
     },
     "artículo 19 de la misma": {
@@ -93,12 +166,48 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 23
+    },
+    "artículo 2o., fracción III de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 94
+    },
+    "artículo 2o., fracción II, inciso B) de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 82
+    }
+  },
+  "10": {
+    "artículo 2o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 1
+    }
+  },
+  "11": {
+    "artículo 2o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 1
     }
   },
   "13": {
     "artículo 15-A de esta Ley": {
       "ley": "lieps",
       "articulo": "15-A",
+      "parrafo": 1
+    },
+    "artículo 3o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "3o",
+      "parrafo": 1
+    }
+  },
+  "14": {
+    "artículo 2o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
       "parrafo": 1
     }
   },
@@ -109,6 +218,35 @@
       "parrafo": 1
     }
   },
+  "17": {
+    "artículo 2o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 1
+    },
+    "artículo 5o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "5o",
+      "parrafo": 1
+    }
+  },
+  "18": {
+    "artículo 2o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 1
+    },
+    "artículo 2o., fracción II, inciso B) de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 82
+    },
+    "artículo 2o., fracción II, inciso B), segundo párrafo de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 82
+    }
+  },
   "18-B": {
     "artículo 18-C de la Ley del Impuesto al Valor Agregado": {
       "ley": "liva",
@@ -117,6 +255,11 @@
     }
   },
   "19": {
+    "artículo 2o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 1
+    },
     "fracción VI de este artículo": {
       "interno": true,
       "parrafo": 15
@@ -140,9 +283,19 @@
     }
   },
   "20": {
+    "artículo 2o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 1
+    },
     "fracción I de este artículo": {
       "interno": true,
       "parrafo": 2
+    },
+    "artículo 8o., fracción III de esta Ley": {
+      "ley": "lieps",
+      "articulo": "8o",
+      "parrafo": 15
     },
     "artículo 29 de esta Ley": {
       "ley": "lieps",
@@ -157,6 +310,11 @@
     }
   },
   "20-A": {
+    "artículo 2o., fracción II, inciso D) de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 82
+    },
     "artículo 18-J, fracción III de la Ley del Impuesto al Valor Agregado": {
       "ley": "liva",
       "articulo": "18-J",
@@ -165,6 +323,13 @@
     "inciso a) de este artículo": {
       "interno": true,
       "parrafo": 5
+    }
+  },
+  "21": {
+    "artículo 2o., fracción I, inciso D) de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 2
     }
   },
   "23-A": {
@@ -178,6 +343,11 @@
       "articulo": "19",
       "parrafo": 24
     },
+    "artículo 8o. de esta Ley": {
+      "ley": "lieps",
+      "articulo": "8o",
+      "parrafo": 1
+    },
     "artículo 19 de la misma": {
       "ley": "lieps",
       "articulo": "19",
@@ -189,6 +359,13 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 1
+    }
+  },
+  "27": {
+    "artículo 2o., fracción II, inciso B) de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 82
     }
   }
 }

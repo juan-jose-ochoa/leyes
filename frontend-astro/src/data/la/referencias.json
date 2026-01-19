@@ -150,6 +150,11 @@
     }
   },
   "36-A": {
+    "artículo 6o. de esta Ley": {
+      "ley": "la",
+      "articulo": "6o",
+      "parrafo": 1
+    },
     "artículo 59-A de la presente Ley": {
       "ley": "la",
       "articulo": "59-A",
@@ -275,6 +280,11 @@
     }
   },
   "53": {
+    "artículo 1o. de esta Ley": {
+      "ley": "la",
+      "articulo": "1o",
+      "parrafo": 1
+    },
     "artículo 119 de esta Ley": {
       "ley": "la",
       "articulo": "119",
@@ -325,6 +335,13 @@
     "artículo 36 de esta Ley": {
       "ley": "la",
       "articulo": "36",
+      "parrafo": 1
+    }
+  },
+  "60": {
+    "artículo 1o. de esta Ley": {
+      "ley": "la",
+      "articulo": "1o",
       "parrafo": 1
     }
   },
@@ -696,6 +713,11 @@
     }
   },
   "88": {
+    "artículo 1o. de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "1o",
+      "parrafo": 1
+    },
     "artículo 160 de esta Ley": {
       "ley": "la",
       "articulo": "160",
@@ -715,6 +737,13 @@
       "ley": "la",
       "articulo": "61",
       "parrafo": 9
+    }
+  },
+  "88 Bis": {
+    "artículo 1o. de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "1o",
+      "parrafo": 1
     }
   },
   "88 Ter": {
@@ -801,6 +830,13 @@
     "artículo 98 de esta Ley": {
       "ley": "la",
       "articulo": "98",
+      "parrafo": 1
+    }
+  },
+  "103": {
+    "artículo 114, segundo párrafo de esta Ley": {
+      "ley": "la",
+      "articulo": "114",
       "parrafo": 1
     }
   },
@@ -1063,6 +1099,11 @@
       "ley": "la",
       "articulo": "36-A",
       "parrafo": 8
+    },
+    "artículo 9o. de esta Ley": {
+      "ley": "la",
+      "articulo": "9o",
+      "parrafo": 1
     }
   },
   "144-A": {
@@ -1127,6 +1168,11 @@
       "articulo": "123",
       "parrafo": 1,
       "query": "cff:123,130"
+    },
+    "artículo 46-A, segundo párrafo del Código Fiscal de la Federación": {
+      "ley": "cff",
+      "articulo": "46-A",
+      "parrafo": 1
     }
   },
   "153": {
@@ -1145,6 +1191,11 @@
       "ley": "la",
       "articulo": "151",
       "parrafo": 8
+    },
+    "artículo 46-A, segundo párrafo del Código Fiscal de la Federación": {
+      "ley": "cff",
+      "articulo": "46-A",
+      "parrafo": 1
     },
     "artículo 151 de la Ley Aduanera": {
       "ley": "la",
@@ -1193,6 +1244,11 @@
     "artículo 150 de esta Ley": {
       "ley": "la",
       "articulo": "150",
+      "parrafo": 1
+    },
+    "artículo 46-A, segundo párrafo del Código Fiscal de la Federación": {
+      "ley": "cff",
+      "articulo": "46-A",
       "parrafo": 1
     },
     "artículos 152 y 153 de esta Ley": {
@@ -1257,6 +1313,11 @@
       "articulo": "68",
       "parrafo": 1
     },
+    "artículo 69-B, cuarto párrafo del Código Fiscal de la Federación": {
+      "ley": "cff",
+      "articulo": "69-B",
+      "parrafo": 1
+    },
     "artículos 6o., 36, 36-A, 37 y 37-A de la presente Ley": {
       "ley": "la",
       "articulo": "6o",
@@ -1267,6 +1328,11 @@
       "ley": "la",
       "articulo": "59",
       "parrafo": 6
+    },
+    "artículo 6o. de esta Ley": {
+      "ley": "la",
+      "articulo": "6o",
+      "parrafo": 1
     }
   },
   "163": {
@@ -1320,6 +1386,16 @@
       "articulo": "127",
       "parrafo": 3,
       "query": "la:127/II,131/II"
+    },
+    "artículo 104, último párrafo del Código Fiscal de la Federación": {
+      "ley": "cff",
+      "articulo": "104",
+      "parrafo": 1
+    },
+    "artículos 28-A, primer párrafo de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "28-A",
+      "parrafo": 1
     }
   },
   "166": {
@@ -1401,6 +1477,11 @@
       "articulo": "6o",
       "parrafo": 1,
       "query": "la:6o,36,36-A,37"
+    },
+    "artículo 6o. de esta Ley": {
+      "ley": "la",
+      "articulo": "6o",
+      "parrafo": 1
     }
   },
   "167-I": {
@@ -1600,6 +1681,11 @@
       "parrafo": 1,
       "query": "la:36-A,37-A/I,59-A"
     },
+    "artículo 153, último párrafo de esta Ley": {
+      "ley": "la",
+      "articulo": "153",
+      "parrafo": 1
+    },
     "artículos 36 y 36-A de esta Ley": {
       "ley": "la",
       "articulo": "36",
@@ -1624,6 +1710,11 @@
       "parrafo": 1,
       "query": "la:36,36-A"
     },
+    "artículo 7o. de esta Ley": {
+      "ley": "la",
+      "articulo": "7o",
+      "parrafo": 1
+    },
     "artículo 20 de esta Ley": {
       "ley": "la",
       "articulo": "20",
@@ -1638,6 +1729,11 @@
       "ley": "la",
       "articulo": "87",
       "parrafo": 2
+    },
+    "artículo 9o. de esta Ley": {
+      "ley": "la",
+      "articulo": "9o",
+      "parrafo": 1
     }
   },
   "184-A": {
@@ -1734,6 +1830,11 @@
       "ley": "la",
       "articulo": "121",
       "parrafo": 2
+    },
+    "artículo 4o. de esta Ley": {
+      "ley": "la",
+      "articulo": "4o",
+      "parrafo": 1
     },
     "artículo 14-C de esta Ley": {
       "ley": "la",

@@ -57,6 +57,11 @@
     }
   },
   "4o": {
+    "artículo 15-D, primer y segundo párrafos del Código Fiscal de la Federación": {
+      "ley": "cff",
+      "articulo": "15-D",
+      "parrafo": 1
+    },
     "artículo 14-B del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "14-B",
@@ -69,6 +74,11 @@
       "articulo": "10",
       "parrafo": 1,
       "query": "liva:10,16,21"
+    },
+    "artículo 1o. de esta Ley": {
+      "ley": "liva",
+      "articulo": "1o",
+      "parrafo": 1
     }
   },
   "5o": {
@@ -82,6 +92,11 @@
       "articulo": "32",
       "parrafo": 4
     },
+    "artículo 15-D, tercer párrafo del Código Fiscal de la Federación": {
+      "ley": "cff",
+      "articulo": "15-D",
+      "parrafo": 1
+    },
     "artículo 15 de la Ley Federal del Trabajo": {
       "ley": "lft",
       "articulo": "15",
@@ -92,6 +107,11 @@
       "articulo": "1o",
       "parrafo": 1,
       "query": "liva:1o,18-J/II"
+    },
+    "artículo 1o. de la presente Ley": {
+      "ley": "liva",
+      "articulo": "1o",
+      "parrafo": 1
     },
     "artículo 21 del Código Fiscal de la Federación": {
       "ley": "cff",
@@ -130,6 +150,11 @@
     "artículo 16-A del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "16-A",
+      "parrafo": 1
+    },
+    "artículo 9o. de esta Ley": {
+      "ley": "liva",
+      "articulo": "9o",
       "parrafo": 1
     }
   },
@@ -172,6 +197,11 @@
       "articulo": "1o",
       "parrafo": 1,
       "query": "liva:1o,3o,18-J/II"
+    },
+    "artículo 7o. de esta Ley": {
+      "ley": "liva",
+      "articulo": "7o",
+      "parrafo": 1
     }
   },
   "15": {
@@ -212,6 +242,13 @@
     "artículo 18-A de esta Ley": {
       "ley": "liva",
       "articulo": "18-A",
+      "parrafo": 1
+    }
+  },
+  "18-A": {
+    "artículo 7o. de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "7",
       "parrafo": 1
     }
   },
@@ -436,10 +473,22 @@
       "articulo": "32",
       "parrafo": 1
     },
+    "artículo 30, tercer párrafo del Código Fiscal de la Federación": {
+      "ley": "cff",
+      "articulo": "30",
+      "parrafo": 1
+    },
     "fracción III del artículo 32 de esta Ley": {
       "ley": "liva",
       "articulo": "32",
       "parrafo": 4
+    }
+  },
+  "42": {
+    "artículo 9o. de esta Ley": {
+      "ley": "liva",
+      "articulo": "9o",
+      "parrafo": 1
     }
   },
   "43": {
