@@ -320,6 +320,15 @@ PATRON_CAPITULO_TITULO = re.compile(
     re.IGNORECASE
 )
 
+# Regex para referencias con 3 niveles: "Sección X, del Capítulo Y del Título Z de esta Ley"
+PATRON_SECCION_CAPITULO_TITULO = re.compile(
+    r'(Secci[oó]ne?s?)\s+([IVXLCDM0-9]+),?\s+'
+    r'del\s+(Capítulos?)\s+([IVXLCDM0-9]+)\s+'
+    r'del\s+(Títulos?)\s+([IVXLCDM0-9]+)\s+'
+    r'de\s+esta\s+Ley',
+    re.IGNORECASE
+)
+
 
 def normalizar_articulo(articulo: str, ley_codigo: str, indice: dict) -> str | None:
     """
@@ -1045,7 +1054,49 @@ def extraer_tooltips(contenido: dict, estructura: dict, indice_estructura: dict)
             texto = p.get("contenido", "")
             textos_procesados = set()  # Evitar doble procesamiento
 
-            # PRIMERO: Buscar referencias jerárquicas (Capítulo X del Título Y)
+            # PRIMERO: Buscar referencias de 3 niveles (Sección X del Capítulo Y del Título Z)
+            for match in PATRON_SECCION_CAPITULO_TITULO.finditer(texto):
+                texto_original = match.group(0)
+                textos_procesados.add(texto_original)
+
+                num_sec = match.group(2)    # Número de sección
+                num_cap = match.group(4)    # Número de capítulo
+                num_tit = match.group(6)    # Número de título
+
+                # Marcar subcadenas como procesadas para evitar duplicados
+                textos_procesados.add(f"Capítulo {num_cap} del Título {num_tit} de esta Ley")
+                textos_procesados.add(f"Título {num_tit} de esta Ley")
+
+                # Buscar nombres en la estructura
+                nombre_sec = buscar_division_por_numero(estructura, "seccion", num_sec, None)
+                nombre_cap = buscar_division_por_numero(estructura, "capitulo", num_cap, num_tit)
+                nombre_tit = buscar_division_por_numero(estructura, "titulo", num_tit, None)
+
+                # Construir items (Sección, Capítulo, Título - de específico a general)
+                items = []
+                if nombre_sec:
+                    items.append({
+                        "tipo": "Sección",
+                        "numero": num_sec,
+                        "nombre": nombre_sec
+                    })
+                if nombre_cap:
+                    items.append({
+                        "tipo": "Capítulo",
+                        "numero": num_cap,
+                        "nombre": nombre_cap
+                    })
+                if nombre_tit:
+                    items.append({
+                        "tipo": "Título",
+                        "numero": num_tit,
+                        "nombre": nombre_tit
+                    })
+
+                if items:
+                    tooltips_articulo[texto_original] = items
+
+            # SEGUNDO: Buscar referencias jerárquicas (Capítulo X del Título Y)
             for match in PATRON_CAPITULO_TITULO.finditer(texto):
                 texto_original = match.group(0)
                 textos_procesados.add(texto_original)
@@ -1086,7 +1137,7 @@ def extraer_tooltips(contenido: dict, estructura: dict, indice_estructura: dict)
                 if items:
                     tooltips_articulo[texto_original] = items
 
-            # SEGUNDO: Buscar referencias estructurales simples
+            # TERCERO: Buscar referencias estructurales simples
             for match in PATRON_ESTRUCTURA.finditer(texto):
                 texto_original = match.group(0)
                 # Saltar si ya fue procesado por patrón jerárquico

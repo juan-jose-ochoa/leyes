@@ -125,7 +125,12 @@
     ]
   },
   "18": {
-    "Capítulo II del Título II de esta Ley": [
+    "Sección III, del Capítulo II del Título II de esta Ley": [
+      {
+        "tipo": "Sección",
+        "numero": "III",
+        "nombre": "DEL COSTO DE LO VENDIDO"
+      },
       {
         "tipo": "Capítulo",
         "numero": "II",
@@ -392,7 +397,12 @@
     ]
   },
   "104": {
-    "Capítulo II del Título II de esta Ley": [
+    "Sección II del Capítulo II del Título II de esta Ley": [
+      {
+        "tipo": "Sección",
+        "numero": "II",
+        "nombre": "DE LAS INVERSIONES"
+      },
       {
         "tipo": "Capítulo",
         "numero": "II",
@@ -877,7 +887,29 @@
     ]
   },
   "209": {
-    "Capítulo II del Título II de esta Ley": [
+    "Sección II, del Capítulo II del Título II de esta Ley": [
+      {
+        "tipo": "Sección",
+        "numero": "II",
+        "nombre": "DE LAS INVERSIONES"
+      },
+      {
+        "tipo": "Capítulo",
+        "numero": "II",
+        "nombre": "DE LAS DEDUCCIONES"
+      },
+      {
+        "tipo": "Título",
+        "numero": "II",
+        "nombre": "DE LAS PERSONAS MORALES"
+      }
+    ],
+    "Sección II del Capítulo II del Título II de esta Ley": [
+      {
+        "tipo": "Sección",
+        "numero": "II",
+        "nombre": "DE LAS INVERSIONES"
+      },
       {
         "tipo": "Capítulo",
         "numero": "II",
@@ -891,7 +923,12 @@
     ]
   },
   "210": {
-    "Capítulo II del Título II de esta Ley": [
+    "Sección II del Capítulo II del Título II de esta Ley": [
+      {
+        "tipo": "Sección",
+        "numero": "II",
+        "nombre": "DE LAS INVERSIONES"
+      },
       {
         "tipo": "Capítulo",
         "numero": "II",
