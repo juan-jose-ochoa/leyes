@@ -1,4 +1,48 @@
 {
+  "8": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    },
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 4
+    }
+  },
+  "24": {
+    "párrafo primero de este artículo": {
+      "interno": true,
+      "parrafo": 1
+    }
+  },
+  "29": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    }
+  },
+  "30": {
+    "fracción IV de este artículo": {
+      "interno": true,
+      "parrafo": 5
+    }
+  },
+  "31": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    }
+  },
+  "45": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    }
+  },
   "54": {
     "artículo 73 del Código Fiscal de la Federación": {
       "ley": "cff",
@@ -25,6 +69,12 @@
       "ley": "cff",
       "articulo": "30",
       "parrafo": 1
+    }
+  },
+  "114": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
     }
   },
   "138": {
@@ -59,10 +109,54 @@
       "query": "cff:29,30"
     }
   },
+  "163": {
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 4
+    }
+  },
+  "164": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    }
+  },
+  "165": {
+    "párrafo segundo de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 7
+    }
+  },
+  "174": {
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 4
+    }
+  },
+  "175": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    }
+  },
   "180": {
     "artículo 22 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "22",
+      "parrafo": 1
+    }
+  },
+  "185": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    },
+    "párrafo primero de este artículo": {
+      "interno": true,
       "parrafo": 1
     }
   },
@@ -71,6 +165,18 @@
       "ley": "cff",
       "articulo": "29-A",
       "parrafo": 1
+    }
+  },
+  "200": {
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 4
+    }
+  },
+  "203": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
     }
   },
   "213": {
@@ -87,11 +193,61 @@
       "parrafo": 2
     }
   },
+  "220": {
+    "inciso c) de este artículo": {
+      "interno": true,
+      "parrafo": 9
+    }
+  },
+  "223": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    }
+  },
+  "227": {
+    "párrafo primero de este artículo": {
+      "interno": true,
+      "parrafo": 1
+    }
+  },
   "228": {
+    "párrafo primero de este artículo": {
+      "interno": true,
+      "parrafo": 1
+    },
     "artículo 26 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "26",
       "parrafo": 1
+    }
+  },
+  "231": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    }
+  },
+  "233": {
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 4
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    }
+  },
+  "241": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    }
+  },
+  "257": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
     }
   },
   "265": {
@@ -99,6 +255,12 @@
       "ley": "cff",
       "articulo": "9o",
       "parrafo": 6
+    }
+  },
+  "278": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
     }
   },
   "288": {
@@ -118,6 +280,34 @@
       "ley": "cff",
       "articulo": "31",
       "parrafo": 1
+    }
+  },
+  "302": {
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 4
+    },
+    "fracción V de este artículo": {
+      "interno": true,
+      "parrafo": 10
+    }
+  },
+  "308": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    }
+  },
+  "310": {
+    "párrafo cuarto de este artículo": {
+      "interno": true,
+      "parrafo": 4
+    }
+  },
+  "311": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 7
     }
   }
 }

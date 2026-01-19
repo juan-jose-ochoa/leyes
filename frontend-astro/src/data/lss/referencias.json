@@ -98,6 +98,10 @@
     }
   },
   "72": {
+    "párrafo primero de este artículo": {
+      "interno": true,
+      "parrafo": 1
+    },
     "artículo 73 de esta Ley": {
       "ley": "lss",
       "articulo": "73",
@@ -640,6 +644,12 @@
       "articulo": "150",
       "parrafo": 1,
       "query": "lss:150,151"
+    }
+  },
+  "308": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
     }
   }
 }

@@ -30,9 +30,21 @@
       "ley": "cff",
       "articulo": "29-A",
       "parrafo": 1
+    },
+    "fracción V de este artículo": {
+      "interno": true,
+      "parrafo": 8
+    },
+    "fracción IV de este artículo": {
+      "interno": true,
+      "parrafo": 7
     }
   },
   "2o-A": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
     "artículo 29 de esta Ley": {
       "ley": "liva",
       "articulo": "29",
@@ -87,6 +99,10 @@
       "ley": "cff",
       "articulo": "17-A",
       "parrafo": 1
+    },
+    "párrafo segundo de este artículo": {
+      "interno": true,
+      "parrafo": 2
     }
   },
   "5o-C": {
@@ -180,6 +196,10 @@
     }
   },
   "18-D": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
     "artículo 19-A del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "19-A",
@@ -395,6 +415,10 @@
       "ley": "liva",
       "articulo": "41",
       "parrafo": 1
+    },
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 8
     }
   }
 }

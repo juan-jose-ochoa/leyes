@@ -5,6 +5,10 @@
       "articulo": "17-A",
       "parrafo": 1
     },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
     "artículos 1o.-A BIS y 18-B, fracción II de la Ley del Impuesto al Valor Agregado, deberán cumplir con las obligaciones establecidas en los artículos 5o.-A BIS y 20-A de esta Ley": {
       "ley": "lieps",
       "articulo": "1o",
@@ -27,6 +31,20 @@
       "ley": "cff",
       "articulo": "17-A",
       "parrafo": 1
+    }
+  },
+  "3o": {
+    "fracción XX de este artículo": {
+      "interno": true,
+      "parrafo": 37
+    },
+    "inciso b) de este artículo": {
+      "interno": true,
+      "parrafo": 4
+    },
+    "inciso c) de este artículo": {
+      "interno": true,
+      "parrafo": 14
     }
   },
   "4o": {
@@ -85,6 +103,12 @@
       "parrafo": 1
     }
   },
+  "19": {
+    "fracción VI de este artículo": {
+      "interno": true,
+      "parrafo": 15
+    }
+  },
   "19-A": {
     "artículo 19, fracción XXII de esta Ley": {
       "ley": "lieps",
@@ -98,6 +122,10 @@
     }
   },
   "20": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
     "artículo 29 de esta Ley": {
       "ley": "lieps",
       "articulo": "29",
@@ -108,6 +136,12 @@
       "articulo": "42",
       "parrafo": 6,
       "query": "cff:42/V,49"
+    }
+  },
+  "20-A": {
+    "inciso a) de este artículo": {
+      "interno": true,
+      "parrafo": 5
     }
   },
   "23-A": {

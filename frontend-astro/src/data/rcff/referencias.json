@@ -5,5 +5,33 @@
       "articulo": "12",
       "parrafo": 1
     }
+  },
+  "37": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    }
+  },
+  "52": {
+    "fracción VI de este artículo": {
+      "interno": true,
+      "parrafo": 10
+    }
+  },
+  "55": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    }
+  },
+  "69": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    }
   }
 }

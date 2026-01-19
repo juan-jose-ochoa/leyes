@@ -341,6 +341,12 @@
       "parrafo": 1
     }
   },
+  "570": {
+    "inciso a) de este artículo": {
+      "interno": true,
+      "parrafo": 5
+    }
+  },
   "571": {
     "artículo 562 de esta Ley": {
       "ley": "lft",
@@ -387,6 +393,12 @@
       "articulo": "704",
       "parrafo": 1,
       "query": "lft:704,928/V"
+    }
+  },
+  "707 Bis": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
     }
   },
   "712 Bis": {

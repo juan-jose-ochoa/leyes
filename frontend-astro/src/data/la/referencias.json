@@ -1,4 +1,10 @@
 {
+  "1o": {
+    "párrafo primero de este artículo": {
+      "interno": true,
+      "parrafo": 1
+    }
+  },
   "2o": {
     "artículo 167-D de esta Ley": {
       "ley": "la",
@@ -52,6 +58,10 @@
     }
   },
   "15": {
+    "fracción VII de este artículo": {
+      "interno": true,
+      "parrafo": 22
+    },
     "artículo 144-A de esta Ley": {
       "ley": "la",
       "articulo": "144-A",
@@ -177,6 +187,10 @@
       "articulo": "36",
       "parrafo": 1,
       "query": "la:36,36-A"
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
     }
   },
   "39": {
@@ -221,6 +235,10 @@
       "articulo": "18",
       "parrafo": 1,
       "query": "cff:18,18-A,34"
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
     },
     "artículos 152 y 153 de esta Ley": {
       "ley": "la",
@@ -739,6 +757,10 @@
       "ley": "la",
       "articulo": "98",
       "parrafo": 6
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
     }
   },
   "100": {
@@ -780,6 +802,12 @@
       "articulo": "63-A",
       "parrafo": 1,
       "query": "la:63-A,105,108/III,110,112"
+    }
+  },
+  "106": {
+    "fracción IV de este artículo": {
+      "interno": true,
+      "parrafo": 16
     }
   },
   "107": {

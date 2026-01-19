@@ -43,6 +43,10 @@
     }
   },
   "5": {
+    "párrafo séptimo de este artículo": {
+      "interno": true,
+      "parrafo": 7
+    },
     "artículo 9 de esta Ley": {
       "ley": "lisr",
       "articulo": "9",
@@ -181,6 +185,10 @@
       "articulo": "28",
       "parrafo": 55
     },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
     "artículo 9 de esta Ley": {
       "ley": "lisr",
       "articulo": "9",
@@ -308,6 +316,14 @@
       "articulo": "77",
       "parrafo": 1
     },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    },
+    "fracción IV de este artículo": {
+      "interno": true,
+      "parrafo": 16
+    },
     "artículo 30 del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "30",
@@ -328,6 +344,10 @@
       "parrafo": 1,
       "query": "lisr:22,23"
     },
+    "fracción VII de este artículo": {
+      "interno": true,
+      "parrafo": 8
+    },
     "artículo 32-A del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "32-A",
@@ -340,6 +360,10 @@
     }
   },
   "25": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    },
     "artículo 44 de esta Ley": {
       "ley": "lisr",
       "articulo": "44",
@@ -359,6 +383,10 @@
       "ley": "lisr",
       "articulo": "27",
       "parrafo": 57
+    },
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 4
     }
   },
   "26": {
@@ -446,6 +474,10 @@
       "articulo": "76",
       "parrafo": 1
     },
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 13
+    },
     "fracción III del artículo 25 de esta Ley": {
       "ley": "lisr",
       "articulo": "25",
@@ -499,6 +531,10 @@
       "articulo": "21",
       "parrafo": 1
     },
+    "fracción V de este artículo": {
+      "interno": true,
+      "parrafo": 7
+    },
     "artículo 171 de esta Ley": {
       "ley": "lisr",
       "articulo": "171",
@@ -540,6 +576,10 @@
       "articulo": "25",
       "parrafo": 3
     },
+    "fracción XXIII de este artículo": {
+      "interno": true,
+      "parrafo": 45
+    },
     "artículo 24 de esta Ley": {
       "ley": "lisr",
       "articulo": "24",
@@ -570,6 +610,10 @@
       "ley": "lisr",
       "articulo": "57",
       "parrafo": 1
+    },
+    "fracción XXVII de este artículo": {
+      "interno": true,
+      "parrafo": 56
     }
   },
   "29": {
@@ -582,6 +626,10 @@
       "ley": "lisr",
       "articulo": "9",
       "parrafo": 1
+    },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
     }
   },
   "30": {
@@ -595,6 +643,10 @@
       "ley": "lisr",
       "articulo": "31",
       "parrafo": 1
+    },
+    "párrafo quinto de este artículo": {
+      "interno": true,
+      "parrafo": 5
     }
   },
   "31": {
@@ -621,7 +673,17 @@
       "parrafo": 1
     }
   },
+  "35": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    }
+  },
   "36": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 4
+    },
     "artículo 8 de esta Ley": {
       "ley": "lisr",
       "articulo": "8",
@@ -653,6 +715,10 @@
     }
   },
   "41": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
     "artículo 76 de esta Ley": {
       "ley": "lisr",
       "articulo": "76",
@@ -926,6 +992,10 @@
       "articulo": "64",
       "parrafo": 8
     },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
     "artículo 64 de esta Ley": {
       "ley": "lisr",
       "articulo": "64",
@@ -1012,6 +1082,10 @@
       "ley": "lisr",
       "articulo": "14",
       "parrafo": 1
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
     },
     "artículo 64 de esta Ley": {
       "ley": "lisr",
@@ -1228,6 +1302,10 @@
       "articulo": "32-A",
       "parrafo": 1,
       "query": "cff:32-A,32-H/I"
+    },
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 9
     }
   },
   "77": {
@@ -1316,10 +1394,18 @@
       "articulo": "9",
       "parrafo": 1
     },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
     "artículo 10 de esta Ley": {
       "ley": "lisr",
       "articulo": "10",
       "parrafo": 1
+    },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 8
     },
     "artículo 7 de esta Ley": {
       "ley": "lisr",
@@ -1337,6 +1423,10 @@
       "ley": "lisr",
       "articulo": "83",
       "parrafo": 1
+    },
+    "fracción XIII de este artículo": {
+      "interno": true,
+      "parrafo": 28
     },
     "artículo 152 de esta Ley": {
       "ley": "lisr",
@@ -1389,6 +1479,10 @@
       "ley": "lisr",
       "articulo": "79",
       "parrafo": 1
+    },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
     },
     "artículo 69 del Código Fiscal de la Federación": {
       "ley": "cff",
@@ -1624,6 +1718,10 @@
     }
   },
   "95": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    },
     "artículo 152 de esta Ley": {
       "ley": "lisr",
       "articulo": "152",
@@ -1635,6 +1733,10 @@
       "ley": "lisr",
       "articulo": "152",
       "parrafo": 1
+    },
+    "párrafo segundo de este artículo": {
+      "interno": true,
+      "parrafo": 2
     },
     "artículo 95 de esta Ley": {
       "ley": "lisr",
@@ -1657,6 +1759,10 @@
       "ley": "lisr",
       "articulo": "152",
       "parrafo": 1
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
     },
     "artículo 93, fracción XIII de esta Ley": {
       "ley": "lisr",
@@ -1871,6 +1977,10 @@
       "articulo": "76",
       "parrafo": 1
     },
+    "fracción VII de este artículo": {
+      "interno": true,
+      "parrafo": 11
+    },
     "artículo 48 de la misma": {
       "ley": "lisr",
       "articulo": "48",
@@ -1897,6 +2007,10 @@
       "ley": "lisr",
       "articulo": "113-A",
       "parrafo": 1
+    },
+    "inciso d) de este artículo": {
+      "interno": true,
+      "parrafo": 10
     }
   },
   "113-C": {
@@ -2056,6 +2170,14 @@
       "ley": "lisr",
       "articulo": "151",
       "parrafo": 1
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 4
     }
   },
   "121": {
@@ -2080,6 +2202,10 @@
       "ley": "lisr",
       "articulo": "152",
       "parrafo": 1
+    },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
     }
   },
   "123": {
@@ -2216,6 +2342,10 @@
       "ley": "lisr",
       "articulo": "93",
       "parrafo": 36
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 6
     }
   },
   "135": {
@@ -2269,6 +2399,10 @@
       "ley": "lisr",
       "articulo": "76",
       "parrafo": 21
+    },
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 12
     }
   },
   "141": {
@@ -2280,6 +2414,10 @@
     }
   },
   "142": {
+    "fracción V de este artículo": {
+      "interno": true,
+      "parrafo": 6
+    },
     "artículo 5 de esta Ley": {
       "ley": "lisr",
       "articulo": "5",
@@ -2366,6 +2504,10 @@
       "ley": "lisr",
       "articulo": "44",
       "parrafo": 1
+    },
+    "fracción IV de este artículo": {
+      "interno": true,
+      "parrafo": 9
     }
   },
   "144": {
@@ -2517,6 +2659,10 @@
       "articulo": "76",
       "parrafo": 1
     },
+    "fracción IV de este artículo": {
+      "interno": true,
+      "parrafo": 5
+    },
     "artículo 44 de esta Ley": {
       "ley": "lisr",
       "articulo": "44",
@@ -2610,6 +2756,10 @@
       "ley": "lisr",
       "articulo": "134",
       "parrafo": 1
+    },
+    "fracción V de este artículo": {
+      "interno": true,
+      "parrafo": 21
     }
   },
   "152": {
@@ -2635,6 +2785,10 @@
       "ley": "cff",
       "articulo": "58-A",
       "parrafo": 1
+    },
+    "párrafo sexto de este artículo": {
+      "interno": true,
+      "parrafo": 6
     }
   },
   "154": {
@@ -2855,6 +3009,10 @@
       "ley": "lisr",
       "articulo": "77",
       "parrafo": 1
+    },
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 11
     }
   },
   "165": {
@@ -2880,6 +3038,10 @@
       "articulo": "80",
       "parrafo": 1
     },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 8
+    },
     "artículo 152 de esta Ley": {
       "ley": "lisr",
       "articulo": "152",
@@ -2901,6 +3063,10 @@
       "ley": "lisr",
       "articulo": "152",
       "parrafo": 1
+    },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 4
     },
     "artículo 15-B del Código Fiscal de la Federación": {
       "ley": "cff",
@@ -2955,6 +3121,10 @@
       "ley": "lisr",
       "articulo": "152",
       "parrafo": 1
+    },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
     }
   },
   "174": {
@@ -3098,6 +3268,10 @@
       "articulo": "5",
       "parrafo": 1
     },
+    "párrafo cuarto de este artículo": {
+      "interno": true,
+      "parrafo": 4
+    },
     "artículo 152 de la misma": {
       "ley": "lisr",
       "articulo": "152",
@@ -3174,6 +3348,10 @@
       "articulo": "179",
       "parrafo": 1
     },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
     "artículo 34-A del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "34-A",
@@ -3185,6 +3363,10 @@
       "ley": "lisr",
       "articulo": "182",
       "parrafo": 1
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 3
     }
   },
   "182": {
@@ -3204,6 +3386,10 @@
       "articulo": "34",
       "parrafo": 1,
       "query": "lisr:34,35,36,37"
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
     },
     "artículo 154 de esta Ley": {
       "ley": "lisr",
@@ -3252,6 +3438,10 @@
       "articulo": "181",
       "parrafo": 1,
       "query": "lisr:181,182"
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
     },
     "artículo 76 de esta Ley": {
       "ley": "lisr",
@@ -3334,6 +3524,12 @@
       "parrafo": 1
     }
   },
+  "190": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 5
+    }
+  },
   "191": {
     "artículo 18, fracción IV de esta Ley": {
       "ley": "lisr",
@@ -3368,6 +3564,10 @@
       "ley": "cff",
       "articulo": "14",
       "parrafo": 10
+    },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
     },
     "artículo 9 de esta Ley": {
       "ley": "lisr",

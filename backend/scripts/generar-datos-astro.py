@@ -161,6 +161,15 @@ PATRON_REFERENCIA_FRACCIONES_LISTA = re.compile(
     re.IGNORECASE
 )
 
+# Regex para referencias internas al mismo artículo
+# Captura: fracción I de este artículo, párrafo segundo de este artículo
+PATRON_REFERENCIA_INTERNA = re.compile(
+    r'(fracci[oó]ne?s?|párrafos?|incisos?)\s+'
+    r'([IVXLCDM]+|[a-z]\)|primero|segundo|tercero|cuarto|quinto|sexto|séptimo|octavo|noveno|décimo|anterior)\s+'
+    r'de\s+este\s+artículo',
+    re.IGNORECASE
+)
+
 # Patrones para buscar leyes mencionadas previamente en el texto
 _PATRONES_CONTEXTO_CODIGO = [
     (re.compile(r'código\s+fiscal(?:\s+de\s+la\s+federación)?', re.IGNORECASE), 'CFF'),
@@ -598,14 +607,69 @@ def generar_toc_json(articulos: list) -> dict:
     return toc
 
 
+def _resolver_parrafo_interno(parrafos: list, tipo: str, identificador: str) -> int | None:
+    """
+    Resuelve el número de párrafo de una fracción/inciso/párrafo dentro del mismo artículo.
+
+    Args:
+        parrafos: Lista de párrafos del artículo
+        tipo: "fraccion", "inciso", "parrafo"
+        identificador: "I", "II", "a", "primero", etc.
+
+    Returns:
+        Número de párrafo o None si no se encuentra
+    """
+    # Mapeo de ordinales a números para párrafos
+    ORDINALES = {
+        'primero': 1, 'segundo': 2, 'tercero': 3, 'cuarto': 4,
+        'quinto': 5, 'sexto': 6, 'séptimo': 7, 'octavo': 8,
+        'noveno': 9, 'décimo': 10, 'anterior': -1
+    }
+
+    tipo_norm = tipo.lower().rstrip('s')  # fracciones -> fraccion
+    if tipo_norm.startswith('fracc'):
+        tipo_norm = 'fraccion'
+    elif tipo_norm.startswith('párr') or tipo_norm.startswith('parr'):
+        tipo_norm = 'texto'  # Los párrafos son tipo 'texto'
+    elif tipo_norm.startswith('incis'):
+        tipo_norm = 'inciso'
+
+    ident_norm = identificador.lower().rstrip(')')
+
+    # Caso especial: párrafo por ordinal
+    if tipo_norm == 'texto' and ident_norm in ORDINALES:
+        ordinal = ORDINALES[ident_norm]
+        if ordinal == -1:  # "anterior" - no podemos resolver sin contexto
+            return None
+        # Contar párrafos de tipo texto
+        texto_count = 0
+        for p in parrafos:
+            if p.get('tipo') in (None, 'texto'):
+                texto_count += 1
+                if texto_count == ordinal:
+                    return p.get('numero')
+        return None
+
+    # Buscar por tipo e identificador
+    for p in parrafos:
+        p_tipo = p.get('tipo') or 'texto'
+        p_ident = (p.get('identificador') or '').lower()
+
+        if p_tipo == tipo_norm and p_ident == ident_norm:
+            return p.get('numero')
+
+    return None
+
+
 def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
     """
     Extrae todas las referencias de una ley y genera mapa para renderizado.
 
-    Usa tres patrones:
+    Usa varios patrones:
     - Estándar: artículo N fracción X de LEY
     - Invertido: fracción X del artículo N de LEY
     - Lista: artículos 94, 97, 116 fracción III de LEY
+    - Interno: fracción I de este artículo
 
     Estructura de salida:
     {
@@ -614,6 +678,10 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
                 "ley": "CPEUM",
                 "articulo": "4",
                 "parrafo": 1
+            },
+            "fracción I de este artículo": {
+                "interno": true,
+                "parrafo": 2
             }
         }
     }
@@ -622,6 +690,7 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
 
     for art in contenido.get("articulos", []):
         art_num = art.get("numero")
+        art_parrafos = art.get("parrafos", [])
         referencias_articulo = {}
 
         for p in art.get("parrafos", []):
@@ -761,6 +830,19 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
                             "articulo": articulo_norm,
                             "parrafo": parrafo_num
                         }
+
+            # Buscar referencias internas al mismo artículo
+            for match in PATRON_REFERENCIA_INTERNA.finditer(texto):
+                texto_original = match.group(0)
+                tipo = match.group(1)        # fracción, párrafo, inciso
+                identificador = match.group(2)  # I, II, a), primero, etc.
+
+                parrafo_num = _resolver_parrafo_interno(art_parrafos, tipo, identificador)
+                if parrafo_num is not None:
+                    referencias_articulo[texto_original] = {
+                        "interno": True,
+                        "parrafo": parrafo_num
+                    }
 
         if referencias_articulo:
             referencias_ley[art_num] = referencias_articulo

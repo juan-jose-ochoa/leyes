@@ -1,5 +1,13 @@
 {
   "3o": {
+    "fracción VII de este artículo": {
+      "interno": true,
+      "parrafo": 34
+    },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 14
+    },
     "artículo 123 de esta Constitución": {
       "ley": "cpeum",
       "articulo": "123",
@@ -38,6 +46,12 @@
       "parrafo": 1
     }
   },
+  "21": {
+    "párrafo noveno de este artículo": {
+      "interno": true,
+      "parrafo": 9
+    }
+  },
   "25": {
     "artículo 27 de esta Constitución": {
       "ley": "cpeum",
@@ -50,6 +64,10 @@
       "ley": "cpeum",
       "articulo": "28",
       "parrafo": 1
+    },
+    "fracción XV de este artículo": {
+      "interno": true,
+      "parrafo": 40
     }
   },
   "28": {
@@ -185,6 +203,10 @@
       "articulo": "27",
       "parrafo": 1
     },
+    "fracción XXV de este artículo": {
+      "interno": true,
+      "parrafo": 56
+    },
     "artículo 22 de esta Constitución": {
       "ley": "cpeum",
       "articulo": "22",
@@ -250,6 +272,10 @@
     }
   },
   "79": {
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 6
+    },
     "artículo 95 de esta Constitución": {
       "ley": "cpeum",
       "articulo": "95",
@@ -299,6 +325,12 @@
       "ley": "cpeum",
       "articulo": "96",
       "parrafo": 2
+    }
+  },
+  "98": {
+    "párrafo primero de este artículo": {
+      "interno": true,
+      "parrafo": 1
     }
   },
   "99": {
@@ -382,6 +414,10 @@
       "ley": "cpeum",
       "articulo": "103",
       "parrafo": 1
+    },
+    "fracción V de este artículo": {
+      "interno": true,
+      "parrafo": 20
     }
   },
   "109": {
@@ -512,6 +548,10 @@
       "articulo": "26",
       "parrafo": 1,
       "query": "cpeum:26,74/VI,79"
+    },
+    "párrafo segundo de este artículo": {
+      "interno": true,
+      "parrafo": 2
     }
   },
   "136": {

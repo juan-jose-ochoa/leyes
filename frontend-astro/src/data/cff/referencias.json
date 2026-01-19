@@ -185,6 +185,10 @@
       "articulo": "67",
       "parrafo": 1
     },
+    "párrafo séptimo de este artículo": {
+      "interno": true,
+      "parrafo": 7
+    },
     "artículo 66 de este Código": {
       "ley": "cff",
       "articulo": "66",
@@ -243,6 +247,10 @@
       "articulo": "46-A",
       "parrafo": 1
     },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
     "artículo 22-A de este Código": {
       "ley": "cff",
       "articulo": "22-A",
@@ -295,6 +303,10 @@
     }
   },
   "26": {
+    "fracción X de este artículo": {
+      "interno": true,
+      "parrafo": 22
+    },
     "artículo 69-B del este código": {
       "ley": "cff",
       "articulo": "69-B",
@@ -375,6 +387,12 @@
       "parrafo": 9
     }
   },
+  "31": {
+    "párrafo primero de este artículo": {
+      "interno": true,
+      "parrafo": 1
+    }
+  },
   "31-A": {
     "artículos 14-B de este Código": {
       "ley": "cff",
@@ -417,6 +435,14 @@
       "articulo": "22",
       "parrafo": 1,
       "query": "cff:22,42"
+    },
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 4
+    },
+    "fracción V de este artículo": {
+      "interno": true,
+      "parrafo": 10
     }
   },
   "32-B Bis": {
@@ -480,6 +506,10 @@
       "parrafo": 1,
       "query": "cff:56,57"
     },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 7
+    },
     "artículo 85 de este Código": {
       "ley": "cff",
       "articulo": "85",
@@ -490,10 +520,22 @@
       "articulo": "85",
       "parrafo": 2
     },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 10
+    },
     "artículo 134 de este Código": {
       "ley": "cff",
       "articulo": "134",
       "parrafo": 1
+    },
+    "fracción IV de este artículo": {
+      "interno": true,
+      "parrafo": 25
     },
     "artículo 153 de este Código": {
       "ley": "cff",
@@ -613,6 +655,14 @@
       "articulo": "134",
       "parrafo": 1
     },
+    "fracción IV de este artículo": {
+      "interno": true,
+      "parrafo": 5
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
     "artículo 46-A de este Código": {
       "ley": "cff",
       "articulo": "46-A",
@@ -629,6 +679,22 @@
       "ley": "cff",
       "articulo": "134",
       "parrafo": 1
+    },
+    "fracción IV de este artículo": {
+      "interno": true,
+      "parrafo": 5
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
+    "fracción IX de este artículo": {
+      "interno": true,
+      "parrafo": 16
+    },
+    "fracción VI de este artículo": {
+      "interno": true,
+      "parrafo": 7
     },
     "artículo 42 de este Código": {
       "ley": "cff",
@@ -680,6 +746,10 @@
       "ley": "cff",
       "articulo": "17-H",
       "parrafo": 14
+    },
+    "fracción VIII de este artículo": {
+      "interno": true,
+      "parrafo": 16
     }
   },
   "50": {
@@ -739,6 +809,10 @@
       "articulo": "46-A",
       "parrafo": 1
     },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
     "artículo 32-A de este Código": {
       "ley": "cff",
       "articulo": "32-A",
@@ -762,6 +836,18 @@
       "ley": "cff",
       "articulo": "42",
       "parrafo": 21
+    },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    },
+    "inciso a) de este artículo": {
+      "interno": true,
+      "parrafo": 6
+    },
+    "inciso b) de este artículo": {
+      "interno": true,
+      "parrafo": 7
     },
     "artículo 42 de este Código": {
       "ley": "cff",
@@ -934,6 +1020,12 @@
       "ley": "cff",
       "articulo": "146-A",
       "parrafo": 1
+    }
+  },
+  "69-B": {
+    "párrafo cuarto de este artículo": {
+      "interno": true,
+      "parrafo": 4
     }
   },
   "69-B Bis": {
@@ -1689,6 +1781,10 @@
       "ley": "cff",
       "articulo": "110",
       "parrafo": 6
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
     }
   },
   "136": {
@@ -1723,6 +1819,10 @@
       "ley": "cff",
       "articulo": "21",
       "parrafo": 1
+    },
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
     }
   },
   "142": {
@@ -1730,6 +1830,12 @@
       "ley": "cff",
       "articulo": "159",
       "parrafo": 1
+    }
+  },
+  "143": {
+    "inciso b) de este artículo": {
+      "interno": true,
+      "parrafo": 5
     }
   },
   "144": {
@@ -1740,6 +1846,14 @@
     }
   },
   "145": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 7
+    },
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 9
+    },
     "artículo 141 de este Código": {
       "ley": "cff",
       "articulo": "141",
@@ -1810,6 +1924,10 @@
       "articulo": "141",
       "parrafo": 2
     },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 2
+    },
     "artículo 149 de este Código": {
       "ley": "cff",
       "articulo": "149",
@@ -1869,6 +1987,10 @@
       "ley": "cff",
       "articulo": "127",
       "parrafo": 1
+    },
+    "párrafo quinto de este artículo": {
+      "interno": true,
+      "parrafo": 5
     }
   },
   "177": {

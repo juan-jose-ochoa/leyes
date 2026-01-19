@@ -1,4 +1,10 @@
 {
+  "11": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    }
+  },
   "13": {
     "artículo 16 de la presente Ley": {
       "ley": "lif",
@@ -25,11 +31,31 @@
       "parrafo": 5
     }
   },
+  "20": {
+    "fracción II de este artículo": {
+      "interno": true,
+      "parrafo": 6
+    },
+    "fracción I de este artículo": {
+      "interno": true,
+      "parrafo": 3
+    }
+  },
   "22": {
     "artículo 16 de esta Ley": {
       "ley": "lif",
       "articulo": "16",
       "parrafo": 1
+    },
+    "párrafo primero de este artículo": {
+      "interno": true,
+      "parrafo": 1
+    }
+  },
+  "23": {
+    "fracción III de este artículo": {
+      "interno": true,
+      "parrafo": 4
     }
   },
   "25": {

@@ -24,10 +24,11 @@ interface Parrafo {
 }
 
 interface ReferenciaInfo {
-  ley: string;
-  articulo: string;
+  ley?: string;
+  articulo?: string;
   parrafo: number;
-  query?: string;  // DSL query para listas de artículos
+  query?: string;   // DSL query para listas de artículos
+  interno?: boolean; // true si es referencia interna al mismo artículo
 }
 
 interface TooltipItem {
@@ -169,10 +170,18 @@ function procesarContenido(
     for (const textoRef of keys) {
       const ref = refs[textoRef];
       const textoEscapado = escapeHtml(textoRef);
-      // Si tiene query DSL (lista de artículos), ir a búsqueda; sino, al artículo directo
-      const url = ref.query
-        ? `/buscar/?q=${encodeURIComponent(ref.query)}`
-        : `/${ref.ley}/articulo/${ref.articulo}/#p-${ref.parrafo}`;
+      // Determinar URL según tipo de referencia
+      let url: string;
+      if (ref.interno) {
+        // Referencia interna: enlace ancla al mismo artículo
+        url = `#p-${ref.parrafo}`;
+      } else if (ref.query) {
+        // Lista de artículos: ir a búsqueda DSL
+        url = `/buscar/?q=${encodeURIComponent(ref.query)}`;
+      } else {
+        // Referencia externa: ir a otro artículo
+        url = `/${ref.ley}/articulo/${ref.articulo}/#p-${ref.parrafo}`;
+      }
       const link = `<a href="${url}" class="ref-link">${textoEscapado}</a>`;
       resultado = resultado.replaceAll(textoEscapado, link);
     }
