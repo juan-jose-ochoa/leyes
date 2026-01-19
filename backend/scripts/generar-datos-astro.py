@@ -224,9 +224,13 @@ PATRON_REFERENCIA_INTERNA = re.compile(
 )
 
 # Patrón para referencias a reglas internas (RMF y similares)
-# Detecta: "regla 2.9.3", "reglas 2.1.1 y 2.1.2"
+# Detecta: "regla 3.1.4.", "reglas 3.1.20., primer párrafo, fracción I", "3.1.4."
+# Captura número de regla (grupo 1) y opcionalmente párrafo/fracción
 PATRON_REGLA_INTERNA = re.compile(
-    r'reglas?\s+(\d+\.\d+\.\d+(?:\.\d+)?)',
+    r'(?:reglas?\s+)?'                                # "regla(s)" opcional
+    r'(\d+\.\d+\.\d+(?:\.\d+)?\.?)'                   # Número de regla (grupo 1)
+    r'(?:,?\s*(?:' + _ORDINALES_PARRAFO + r')\s+párrafo)?'  # Párrafo opcional
+    r'(?:,?\s*fracci[oó]n\s+[IVXLCDM]+)?',           # Fracción opcional
     re.IGNORECASE
 )
 
@@ -924,7 +928,7 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
             if ley_codigo in LEYES_CON_REGLAS:
                 for match in PATRON_REGLA_INTERNA.finditer(texto):
                     texto_original = match.group(0)
-                    regla_num = match.group(1)  # "2.9.3", "3.21.2.1"
+                    regla_num = match.group(1).rstrip('.')  # Quitar punto final: "2.9.3." → "2.9.3"
 
                     # Verificar que la regla existe en el índice
                     ley_indice = indice.get(ley_codigo, {})
