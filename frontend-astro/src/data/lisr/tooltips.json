@@ -45,7 +45,12 @@
         "nombre": "DE LAS PERSONAS MORALES"
       }
     ],
-    "Título VI de esta Ley": [
+    "Capítulo I del Título VI de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "I",
+        "nombre": "DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES"
+      },
       {
         "tipo": "Título",
         "numero": "VI",
@@ -54,14 +59,36 @@
     ]
   },
   "5": {
-    "Título IV de esta Ley": [
+    "Capítulo XI del Título IV de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "XI",
+        "nombre": "DE LA DECLARACIÓN ANUAL"
+      },
       {
         "tipo": "Título",
         "numero": "IV",
         "nombre": "DE LAS PERSONAS FÍSICAS"
       }
     ],
-    "Título II de esta Ley": [
+    "Capítulo II del Título IV de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "II",
+        "nombre": "DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES"
+      },
+      {
+        "tipo": "Título",
+        "numero": "IV",
+        "nombre": "DE LAS PERSONAS FÍSICAS"
+      }
+    ],
+    "Capítulo V del Título II de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "V",
+        "nombre": "DE LAS PÉRDIDAS"
+      },
       {
         "tipo": "Título",
         "numero": "II",
@@ -70,7 +97,12 @@
     ]
   },
   "8": {
-    "Título II de esta Ley": [
+    "Capítulo III del Título II de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "III",
+        "nombre": "DEL AJUSTE POR INFLACIÓN"
+      },
       {
         "tipo": "Título",
         "numero": "II",
@@ -85,10 +117,27 @@
         "numero": "II",
         "nombre": "DE LAS PERSONAS MORALES"
       }
+    ],
+    "Capítulo V del Título II de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "V",
+        "nombre": "DE LAS PÉRDIDAS"
+      },
+      {
+        "tipo": "Título",
+        "numero": "II",
+        "nombre": "DE LAS PERSONAS MORALES"
+      }
     ]
   },
   "18": {
-    "Título II de esta Ley": [
+    "Capítulo II del Título II de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "II",
+        "nombre": "DE LAS DEDUCCIONES"
+      },
       {
         "tipo": "Título",
         "numero": "II",
@@ -106,7 +155,12 @@
     ]
   },
   "28": {
-    "Título IV de esta Ley": [
+    "Capítulo I del Título IV de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "I",
+        "nombre": "DE LOS INGRESOS POR SALARIOS Y EN GENERAL POR LA PRESTACIÓN DE UN SERVICIO PERSONAL SUBORDINADO"
+      },
       {
         "tipo": "Título",
         "numero": "IV",
@@ -125,7 +179,12 @@
         "nombre": "DE LAS PERSONAS FÍSICAS"
       }
     ],
-    "Título VI de esta Ley": [
+    "Capítulo I del Título VI de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "I",
+        "nombre": "DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES"
+      },
       {
         "tipo": "Título",
         "numero": "VI",
@@ -141,7 +200,12 @@
     ]
   },
   "36": {
-    "Título II de esta Ley": [
+    "Capítulo VI del Título II de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "VI",
+        "nombre": "DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES"
+      },
       {
         "tipo": "Título",
         "numero": "II",
@@ -168,7 +232,31 @@
     ]
   },
   "74": {
+    "Capítulo VI del Título II de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "VI",
+        "nombre": "DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES"
+      },
+      {
+        "tipo": "Título",
+        "numero": "II",
+        "nombre": "DE LAS PERSONAS MORALES"
+      }
+    ],
     "Título II de esta Ley": [
+      {
+        "tipo": "Título",
+        "numero": "II",
+        "nombre": "DE LAS PERSONAS MORALES"
+      }
+    ],
+    "Capítulo III del Título II de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "III",
+        "nombre": "DEL AJUSTE POR INFLACIÓN"
+      },
       {
         "tipo": "Título",
         "numero": "II",
@@ -238,7 +326,12 @@
     ]
   },
   "87": {
-    "Título II de esta Ley": [
+    "Capítulo III del Título II de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "III",
+        "nombre": "DEL AJUSTE POR INFLACIÓN"
+      },
       {
         "tipo": "Título",
         "numero": "II",
@@ -313,7 +406,12 @@
     ]
   },
   "104": {
-    "Título II de esta Ley": [
+    "Capítulo II del Título II de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "II",
+        "nombre": "DE LAS DEDUCCIONES"
+      },
       {
         "tipo": "Título",
         "numero": "II",
@@ -368,7 +466,12 @@
     ]
   },
   "113-G": {
-    "Título IV de esta Ley": [
+    "Capítulo I del Título IV de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "I",
+        "nombre": "DE LOS INGRESOS POR SALARIOS Y EN GENERAL POR LA PRESTACIÓN DE UN SERVICIO PERSONAL SUBORDINADO"
+      },
       {
         "tipo": "Título",
         "numero": "IV",
@@ -407,7 +510,12 @@
     ]
   },
   "125": {
-    "Título IV de esta Ley": [
+    "Capítulo V del Título IV de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "V",
+        "nombre": "DE LOS INGRESOS POR ADQUISICIÓN DE BIENES"
+      },
       {
         "tipo": "Título",
         "numero": "IV",
@@ -457,7 +565,12 @@
     ]
   },
   "142": {
-    "Título IV de esta Ley": [
+    "Capítulo VI del Título IV de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "VI",
+        "nombre": "DE LOS INGRESOS POR INTERESES"
+      },
       {
         "tipo": "Título",
         "numero": "IV",
@@ -598,7 +711,12 @@
     ]
   },
   "160": {
-    "Título IV de esta Ley": [
+    "Capítulo IV del Título IV de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "IV",
+        "nombre": "DE LOS INGRESOS POR ENAJENACIÓN DE BIENES"
+      },
       {
         "tipo": "Título",
         "numero": "IV",
@@ -607,7 +725,12 @@
     ]
   },
   "161": {
-    "Título IV de esta Ley": [
+    "Capítulo IV del Título IV de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "IV",
+        "nombre": "DE LOS INGRESOS POR ENAJENACIÓN DE BIENES"
+      },
       {
         "tipo": "Título",
         "numero": "IV",
@@ -703,7 +826,12 @@
         "nombre": "DE LAS PERSONAS MORALES"
       }
     ],
-    "Título IV de esta Ley": [
+    "Capítulo IV del Título IV de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "IV",
+        "nombre": "DE LOS INGRESOS POR ENAJENACIÓN DE BIENES"
+      },
       {
         "tipo": "Título",
         "numero": "IV",
@@ -749,7 +877,12 @@
         "nombre": "DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS"
       }
     ],
-    "Título VII de esta Ley": [
+    "Capítulo VII del Título VII de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "VII",
+        "nombre": "DE LAS SOCIEDADES COOPERATIVAS DE PRODUCCIÓN"
+      },
       {
         "tipo": "Título",
         "numero": "VII",
@@ -758,7 +891,12 @@
     ]
   },
   "209": {
-    "Título II de esta Ley": [
+    "Capítulo II del Título II de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "II",
+        "nombre": "DE LAS DEDUCCIONES"
+      },
       {
         "tipo": "Título",
         "numero": "II",
@@ -767,7 +905,12 @@
     ]
   },
   "210": {
-    "Título II de esta Ley": [
+    "Capítulo II del Título II de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "II",
+        "nombre": "DE LAS DEDUCCIONES"
+      },
       {
         "tipo": "Título",
         "numero": "II",
@@ -776,7 +919,12 @@
     ]
   },
   "212": {
-    "Título II de esta Ley": [
+    "Capítulo V del Título II de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "V",
+        "nombre": "DE LAS PÉRDIDAS"
+      },
       {
         "tipo": "Título",
         "numero": "II",

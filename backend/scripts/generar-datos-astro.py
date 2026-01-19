@@ -246,6 +246,15 @@ PATRON_ESTRUCTURA = re.compile(
     re.IGNORECASE
 )
 
+# Regex para referencias jerárquicas: "Capítulo X del Título Y de esta Ley"
+# Captura tanto el capítulo como el título para mostrar contexto completo
+PATRON_CAPITULO_TITULO = re.compile(
+    r'(Capítulos?)\s+([IVXLCDM0-9]+)\s+'
+    r'del\s+(Títulos?)\s+([IVXLCDM0-9]+)\s+'
+    r'de\s+esta\s+Ley',
+    re.IGNORECASE
+)
+
 
 def normalizar_articulo(articulo: str, ley_codigo: str, indice: dict) -> str | None:
     """
@@ -859,9 +868,55 @@ def extraer_tooltips(contenido: dict, estructura: dict, indice_estructura: dict)
 
         for p in art.get("parrafos", []):
             texto = p.get("contenido", "")
+            textos_procesados = set()  # Evitar doble procesamiento
 
-            # Buscar todas las referencias estructurales
+            # PRIMERO: Buscar referencias jerárquicas (Capítulo X del Título Y)
+            for match in PATRON_CAPITULO_TITULO.finditer(texto):
+                texto_original = match.group(0)
+                textos_procesados.add(texto_original)
+
+                tipo_cap = match.group(1)   # "Capítulo" o "Capítulos"
+                num_cap = match.group(2)    # Número romano del capítulo
+                tipo_tit = match.group(3)   # "Título" o "Títulos"
+                num_tit = match.group(4)    # Número romano del título
+
+                # Marcar también "Título X de esta Ley" como procesado para evitar duplicados
+                texto_titulo_parcial = f"Título {num_tit} de esta Ley"
+                textos_procesados.add(texto_titulo_parcial)
+
+                # Buscar nombre del Capítulo (dentro del Título especificado)
+                nombre_cap = buscar_division_por_numero(
+                    estructura, "capitulo", num_cap, num_tit
+                )
+                # Buscar nombre del Título
+                nombre_tit = buscar_division_por_numero(
+                    estructura, "titulo", num_tit, None
+                )
+
+                # Construir items (Capítulo primero, luego Título como contexto)
+                items = []
+                if nombre_cap:
+                    items.append({
+                        "tipo": "Capítulo",
+                        "numero": num_cap,
+                        "nombre": nombre_cap
+                    })
+                if nombre_tit:
+                    items.append({
+                        "tipo": "Título",
+                        "numero": num_tit,
+                        "nombre": nombre_tit
+                    })
+
+                if items:
+                    tooltips_articulo[texto_original] = items
+
+            # SEGUNDO: Buscar referencias estructurales simples
             for match in PATRON_ESTRUCTURA.finditer(texto):
+                texto_original = match.group(0)
+                # Saltar si ya fue procesado por patrón jerárquico
+                if texto_original in textos_procesados:
+                    continue
                 texto_original = match.group(0)
                 tipo_ref = match.group(1).lower()  # título, capítulo, sección
                 numeros = match.group(2)           # II, IV, I, III, IV...
