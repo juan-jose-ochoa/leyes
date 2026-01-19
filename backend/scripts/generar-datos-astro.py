@@ -156,15 +156,55 @@ def _parsear_lista_articulos(lista_texto: str) -> list[tuple[str, str | None, st
     return resultados
 
 
+# Separadores para listas de elementos (y, o, u, e)
+_SEPARADORES_LISTA = r'(?:\s+(?:y|o|u|e)\s+)'
+
 # Regex para detectar referencias estructurales (títulos, capítulos, secciones)
 # Patrones: "Título II de esta Ley", "Capítulo IV de este Título", "Sección I del Capítulo II"
+# Soporta listas con coma y separadores (y/o/u/e): "Título II, III, V o VI de esta Ley"
 PATRON_ESTRUCTURA = re.compile(
     r'(Títulos?|Capítulos?|Seccione?s?)\s+'
-    r'([IVXLCDM0-9]+(?:[,\s]+[IVXLCDM0-9]+)*(?:\s+y\s+[IVXLCDM0-9]+)?)\s+'
+    r'([IVXLCDM0-9]+(?:(?:[,\s]+|' + _SEPARADORES_LISTA + r')[IVXLCDM0-9]+)*)\s+'
     r'(?:del?\s+)?'
     r'(este\s+Título|esta\s+Ley|el\s+Capítulo\s+[IVXLCDM]+|este\s+Capítulo)',
     re.IGNORECASE
 )
+
+
+def normalizar_articulo(articulo: str, ley_codigo: str, indice: dict) -> str | None:
+    """
+    Normaliza el número de artículo para encontrarlo en el índice.
+
+    Maneja variantes como:
+    - Ordinales: "9" ↔ "9o"
+    - Sufijos: "5-A", "14-B"
+
+    Args:
+        articulo: Número de artículo extraído del texto
+        ley_codigo: Código de la ley (ej: "CFF", "LISR")
+        indice: Índice global de artículos
+
+    Returns:
+        Número de artículo normalizado si existe en el índice, None si no se encuentra
+    """
+    ley_indice = indice.get(ley_codigo, {})
+
+    # Intento 1: exacto
+    if articulo in ley_indice:
+        return articulo
+
+    # Intento 2: agregar "o" (ordinal) - para "9" → "9o"
+    articulo_ordinal = f"{articulo}o"
+    if articulo_ordinal in ley_indice:
+        return articulo_ordinal
+
+    # Intento 3: quitar "o" si termina en "o" - para "9o" → "9"
+    if articulo.endswith('o') and not articulo.endswith('-o'):
+        articulo_sin_ordinal = articulo[:-1]
+        if articulo_sin_ordinal in ley_indice:
+            return articulo_sin_ordinal
+
+    return None
 
 
 def construir_indice_global(contenidos: dict) -> dict:
@@ -250,25 +290,31 @@ def resolver_referencia(
     fraccion: str | None,
     inciso: str | None,
     indice: dict
-) -> int | None:
+) -> tuple[int | None, str | None]:
     """
     Resuelve una referencia a un número de párrafo específico.
 
     Returns:
-        Número de párrafo si se resuelve sin ambigüedad, None si no se encuentra o es ambiguo.
+        Tupla (número_párrafo, artículo_normalizado):
+        - número_párrafo: si se resuelve sin ambigüedad, None si no se encuentra
+        - artículo_normalizado: el número de artículo como aparece en el índice
     """
     if ley_destino not in indice:
-        return None
+        return None, None
 
-    if articulo not in indice[ley_destino]:
-        return None
+    # Normalizar artículo (maneja variantes como 9 vs 9o)
+    articulo_norm = normalizar_articulo(articulo, ley_destino, indice)
+    if articulo_norm is None:
+        return None, None
 
-    art_data = indice[ley_destino][articulo]
+    art_data = indice[ley_destino][articulo_norm]
 
     # Si no hay fracción/inciso, enlazar al artículo (primer párrafo)
     if not fraccion:
         parrafos = art_data.get("parrafos", [])
-        return parrafos[0]["numero"] if parrafos else None
+        if parrafos:
+            return parrafos[0]["numero"], articulo_norm
+        return None, None
 
     # Buscar fracción
     por_tipo = art_data.get("por_tipo", {})
@@ -277,26 +323,28 @@ def resolver_referencia(
     if not fracciones:
         # Fracción no encontrada, enlazar al artículo
         parrafos = art_data.get("parrafos", [])
-        return parrafos[0]["numero"] if parrafos else None
+        if parrafos:
+            return parrafos[0]["numero"], articulo_norm
+        return None, None
 
     if len(fracciones) == 1:
         # Sin ambigüedad
         fraccion_num = fracciones[0]["numero"]
         if not inciso:
-            return fraccion_num
+            return fraccion_num, articulo_norm
         # Buscar inciso que sea hijo de esta fracción
         parrafos = art_data.get("parrafos", [])
         for p in parrafos:
             if (p.get("tipo") == "inciso" and
                 p.get("identificador", "").lower() == inciso.lower() and
                 p.get("padre_numero") == fraccion_num):
-                return p["numero"]
+                return p["numero"], articulo_norm
         # Inciso no encontrado, retornar fracción
-        return fraccion_num
+        return fraccion_num, articulo_norm
 
     # Ambiguo: múltiples fracciones con mismo identificador
     # Retornamos la primera (arbitrario pero consistente)
-    return fracciones[0]["numero"]
+    return fracciones[0]["numero"], articulo_norm
 
 
 def procesar_referencias(texto: str, ley_actual: str, indice: dict) -> str:
@@ -322,13 +370,13 @@ def procesar_referencias(texto: str, ley_actual: str, indice: dict) -> str:
             ley_codigo = ley_actual
 
         # Resolver a número de párrafo
-        parrafo_num = resolver_referencia(ley_codigo, articulo, fraccion, inciso, indice)
+        parrafo_num, articulo_norm = resolver_referencia(ley_codigo, articulo, fraccion, inciso, indice)
 
         if parrafo_num is None:
             return texto_original  # No se pudo resolver
 
-        # Crear marcador
-        return f"[[ref:{ley_codigo}:{articulo}:{parrafo_num}|{texto_original}]]"
+        # Crear marcador (usar artículo normalizado para URL correcta)
+        return f"[[ref:{ley_codigo}:{articulo_norm}:{parrafo_num}|{texto_original}]]"
 
     return PATRON_REFERENCIA.sub(reemplazar, texto)
 
@@ -510,9 +558,10 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
 
                             # Obtener párrafo del primer artículo para el link
                             if primer_parrafo is None:
-                                primer_parrafo = resolver_referencia(
+                                parrafo_res, _ = resolver_referencia(
                                     ley_destino, articulo_ref, fraccion, None, indice
-                                ) or 1
+                                )
+                                primer_parrafo = parrafo_res or 1
 
                         query_dsl = f"{ley_destino.lower()}:{','.join(partes_dsl)}"
 
@@ -586,14 +635,14 @@ def _procesar_match_referencia(
         ley_destino = ley_codigo
 
     # Resolver a número de párrafo
-    parrafo_num = resolver_referencia(
+    parrafo_num, articulo_norm = resolver_referencia(
         ley_destino, articulo_ref, fraccion, inciso, indice
     )
 
     if parrafo_num is not None:
         return {
             "ley": ley_destino.lower(),
-            "articulo": articulo_ref,
+            "articulo": articulo_norm,  # Usar artículo normalizado
             "parrafo": parrafo_num
         }
 
