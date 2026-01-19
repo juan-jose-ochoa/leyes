@@ -5,7 +5,15 @@ import {
   formatRef,
   refToUrl,
   type RefArticulo,
+  type ApartadosIndex,
 } from './dsl-parser';
+
+// Índice de prueba con artículos que tienen apartados
+const testApartadosIndex: ApartadosIndex = {
+  cpeum: ['2o', '6o', '20', '26', '72', '102', '122', '123', '136'],
+  cff: ['27', '28', '32-B', '46-A'],
+  lisr: ['82 Quáter', '176', '209'],
+};
 
 describe('parseDSL', () => {
   describe('referencias simples', () => {
@@ -68,13 +76,13 @@ describe('parseDSL', () => {
 
   describe('modificadores jerárquicos', () => {
     it('parsea apartado', () => {
-      const result = parseDSL('cpeum:123/A');
+      const result = parseDSL('cpeum:123/A', testApartadosIndex);
       expect(result.success).toBe(true);
       expect(result.referencias[0].apartado).toBe('A');
     });
 
     it('parsea apartado + fracción', () => {
-      const result = parseDSL('cpeum:123/A/IX');
+      const result = parseDSL('cpeum:123/A/IX', testApartadosIndex);
       expect(result.success).toBe(true);
       expect(result.referencias[0]).toEqual({
         ley: 'cpeum',
@@ -85,7 +93,7 @@ describe('parseDSL', () => {
     });
 
     it('parsea jerarquía completa', () => {
-      const result = parseDSL('cpeum:123/A/IX/e');
+      const result = parseDSL('cpeum:123/A/IX/e', testApartadosIndex);
       expect(result.success).toBe(true);
       expect(result.referencias[0]).toEqual({
         ley: 'cpeum',
@@ -127,18 +135,31 @@ describe('parseDSL', () => {
       expect(result.referencias[0].apartado).toBeUndefined();
     });
 
-    it('5/A es artículo 5 apartado A', () => {
+    it('5/A sin índice es fracción A (no apartado)', () => {
+      // Sin índice de apartados, se asume que es fracción
       const result = parseDSL('lisr:5/A');
       expect(result.success).toBe(true);
       expect(result.referencias[0].articulo).toBe('5');
-      expect(result.referencias[0].apartado).toBe('A');
+      expect(result.referencias[0].fraccion).toBe('A');
+      expect(result.referencias[0].apartado).toBeUndefined();
     });
 
-    it('5-A/B es artículo 5-A apartado B', () => {
-      const result = parseDSL('lisr:5-A/B');
+    it('123/A con índice es apartado A (artículo en índice)', () => {
+      // El artículo 123 de CPEUM está en el índice de apartados
+      const result = parseDSL('cpeum:123/A', testApartadosIndex);
       expect(result.success).toBe(true);
-      expect(result.referencias[0].articulo).toBe('5-A');
-      expect(result.referencias[0].apartado).toBe('B');
+      expect(result.referencias[0].articulo).toBe('123');
+      expect(result.referencias[0].apartado).toBe('A');
+      expect(result.referencias[0].fraccion).toBeUndefined();
+    });
+
+    it('140/I sin apartados es fracción I', () => {
+      // El artículo 140 de LISR NO tiene apartados
+      const result = parseDSL('lisr:140/I', testApartadosIndex);
+      expect(result.success).toBe(true);
+      expect(result.referencias[0].articulo).toBe('140');
+      expect(result.referencias[0].fraccion).toBe('I');
+      expect(result.referencias[0].apartado).toBeUndefined();
     });
   });
 
@@ -158,10 +179,12 @@ describe('parseDSL', () => {
     });
 
     it('parsea lista con modificadores mezclados', () => {
-      const result = parseDSL('cpeum:122/A/IV,123/A/IX');
+      const result = parseDSL('cpeum:122/A/IV,123/A/IX', testApartadosIndex);
       expect(result.success).toBe(true);
       expect(result.referencias).toHaveLength(2);
+      expect(result.referencias[0].apartado).toBe('A');
       expect(result.referencias[0].fraccion).toBe('IV');
+      expect(result.referencias[1].apartado).toBe('A');
       expect(result.referencias[1].fraccion).toBe('IX');
     });
   });
@@ -176,9 +199,10 @@ describe('parseDSL', () => {
     });
 
     it('parsea tres leyes', () => {
-      const result = parseDSL('cpeum:123/A+lisr:94+lft:132');
+      const result = parseDSL('cpeum:123/A+lisr:94+lft:132', testApartadosIndex);
       expect(result.success).toBe(true);
       expect(result.referencias).toHaveLength(3);
+      expect(result.referencias[0].apartado).toBe('A');
     });
   });
 
@@ -278,7 +302,7 @@ describe('toDSL', () => {
     ];
 
     for (const query of queries) {
-      const parsed = parseDSL(query);
+      const parsed = parseDSL(query, testApartadosIndex);
       expect(parsed.success).toBe(true);
       expect(toDSL(parsed.referencias)).toBe(query);
     }

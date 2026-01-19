@@ -149,6 +149,18 @@ PATRON_REFERENCIA_CONTEXTUAL = re.compile(
     re.IGNORECASE
 )
 
+# Regex para detectar artículo con lista de fracciones
+# Captura: artículo 140 fracciones I y II de esta Ley
+PATRON_REFERENCIA_FRACCIONES_LISTA = re.compile(
+    r'artículos?\s+'
+    r'(\d+[o]?(?:-[A-Z]+)?)\s+'                          # Número de artículo (grupo 1)
+    r'fraccione?s?\s+'
+    r'([IVXLCDM]+(?:(?:[,\s]+(?:y|e)\s+|[,\s]+)[IVXLCDM]+)+)'  # Lista de fracciones (grupo 2)
+    r'\s+(?:de\s+|del\s+)'
+    r'(' + _LEY_ALTERNATIVAS + r')',                     # Ley destino (grupo 3)
+    re.IGNORECASE
+)
+
 # Patrones para buscar leyes mencionadas previamente en el texto
 _PATRONES_CONTEXTO_CODIGO = [
     (re.compile(r'código\s+fiscal(?:\s+de\s+la\s+federación)?', re.IGNORECASE), 'CFF'),
@@ -658,6 +670,43 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
                             "query": query_dsl
                         }
 
+            # Buscar referencias con lista de fracciones (artículo 140 fracciones I y II)
+            for match in PATRON_REFERENCIA_FRACCIONES_LISTA.finditer(texto):
+                texto_original = match.group(0)
+                articulo_ref = match.group(1)
+                fracciones_texto = match.group(2)
+                ley_texto = match.group(3).lower().strip()
+
+                # Resolver ley destino
+                ley_destino = NOMBRE_A_CODIGO.get(ley_texto)
+                if ley_destino == '_MISMA_':
+                    ley_destino = ley_codigo
+
+                if ley_destino:
+                    # Normalizar artículo
+                    articulo_norm = normalizar_articulo(articulo_ref, ley_destino, indice)
+                    if articulo_norm:
+                        # Parsear lista de fracciones (I y II, I, II y III)
+                        fracciones = re.split(r'[,\s]+(?:y|e)\s+|[,\s]+', fracciones_texto.strip())
+                        fracciones = [f.strip() for f in fracciones if f.strip()]
+
+                        if len(fracciones) >= 2:
+                            # Construir DSL query con artículo y fracciones
+                            partes_dsl = [f"{articulo_norm}/{frac}" for frac in fracciones]
+                            query_dsl = f"{ley_destino.lower()}:{','.join(partes_dsl)}"
+
+                            # Resolver párrafo de la primera fracción
+                            parrafo_num, _ = resolver_referencia(
+                                ley_destino, articulo_norm, fracciones[0], None, indice
+                            )
+
+                            referencias_articulo[texto_original] = {
+                                "ley": ley_destino.lower(),
+                                "articulo": articulo_norm,
+                                "parrafo": parrafo_num or 1,
+                                "query": query_dsl
+                            }
+
             # Buscar referencias con patrón estándar
             for match in PATRON_REFERENCIA.finditer(texto):
                 texto_original = match.group(0)
@@ -1153,6 +1202,7 @@ def main():
     referencias_total = 0
     toc_global: dict = {}  # TOC consolidado para runtime
     tooltips_total = 0
+    apartados_index: dict = {}  # Índice de artículos con apartados para DSL parser
 
     for codigo in LEYES.keys():
         print(f"\n  Procesando {codigo}...")
@@ -1194,6 +1244,16 @@ def main():
             for art_tips in tooltips.values():
                 tooltips_total += len(art_tips)
 
+        # Extraer artículos con apartados para índice DSL
+        arts_con_apartados = []
+        for art in contenido.get("articulos", []):
+            for p in art.get("parrafos", []):
+                if p.get("tipo") == "apartado":
+                    arts_con_apartados.append(art.get("numero"))
+                    break
+        if arts_con_apartados:
+            apartados_index[codigo.lower()] = arts_con_apartados
+
     # 5. Generar estructura por ley
     print("\n[5/6] Generando estructura por ley...")
 
@@ -1213,13 +1273,20 @@ def main():
     guardar_json(toc_global, toc_index_path)
     print(f"  ✓ {toc_index_path.relative_to(PROJECT_ROOT)}")
 
+    # 7. Generar índice de apartados para DSL parser
+    apartados_index_path = ASTRO_DATA.parent.parent / "public" / "apartados-index.json"
+    guardar_json(apartados_index, apartados_index_path)
+    print(f"  ✓ {apartados_index_path.relative_to(PROJECT_ROOT)}")
+
     # Resumen
+    total_arts_apartados = sum(len(arts) for arts in apartados_index.values())
     print("\n" + "=" * 60)
     print("Resumen:")
     print(f"  - Leyes procesadas: {leyes_procesadas}")
     print(f"  - Artículos totales: {articulos_total}")
     print(f"  - Referencias mapeadas: {referencias_total}")
     print(f"  - Tooltips estructurales: {tooltips_total}")
+    print(f"  - Artículos con apartados: {total_arts_apartados}")
     print(f"  - TOC consolidado: {len(toc_global)} leyes")
     print(f"  - Destino: {ASTRO_DATA.relative_to(PROJECT_ROOT)}")
     print("=" * 60)

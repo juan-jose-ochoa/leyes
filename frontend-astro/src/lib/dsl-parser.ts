@@ -1,5 +1,5 @@
 /**
- * LeyesMX DSL Parser v1.0
+ * LeyesMX DSL Parser v1.1
  *
  * Parsea referencias a legislación mexicana en formato DSL.
  * Especificación completa en /DSL.md
@@ -9,9 +9,19 @@
  * Ejemplos:
  *   cpeum:123/A/IX/e     → CPEUM Art. 123, Apartado A, Fracción IX, Inciso e
  *   lisr:28/XXX          → LISR Art. 28, Fracción XXX
+ *   lisr:140/I           → LISR Art. 140, Fracción I (sin apartado)
  *   rmf:2.1.36/I         → RMF Regla 2.1.36, Fracción I
  *   cpeum:94,97,116/III  → CPEUM Arts. 94, 97, 116 Fracc. III
+ *
+ * Nota: El parser usa un índice de artículos con apartados para distinguir
+ * entre apartado y fracción cuando el primer modificador es una letra mayúscula.
  */
+
+/**
+ * Índice de artículos con apartados por ley
+ * Se carga desde /apartados-index.json
+ */
+export type ApartadosIndex = Record<string, string[]>;
 
 // Leyes soportadas
 export const LEYES_VALIDAS = new Set([
@@ -54,9 +64,10 @@ export interface ParseResult {
  * Parsea una query DSL completa
  *
  * @param query - Query DSL (ej: "cpeum:123/A/IX+lisr:28/XXX")
+ * @param apartadosIndex - Índice de artículos con apartados (opcional)
  * @returns Resultado con lista de referencias o error
  */
-export function parseDSL(query: string): ParseResult {
+export function parseDSL(query: string, apartadosIndex?: ApartadosIndex): ParseResult {
   if (!query || !query.trim()) {
     return { success: false, referencias: [], error: 'Query vacía' };
   }
@@ -65,7 +76,7 @@ export function parseDSL(query: string): ParseResult {
   const leyRefs = query.trim().split('+');
 
   for (const leyRef of leyRefs) {
-    const result = parseLeyRefs(leyRef.trim());
+    const result = parseLeyRefs(leyRef.trim(), apartadosIndex);
     if (!result.success) {
       return result;
     }
@@ -79,8 +90,9 @@ export function parseDSL(query: string): ParseResult {
  * Parsea referencias de una sola ley
  *
  * @param leyRef - Referencia con formato "ley:arts" (ej: "cpeum:94,97,116/III")
+ * @param apartadosIndex - Índice de artículos con apartados
  */
-function parseLeyRefs(leyRef: string): ParseResult {
+function parseLeyRefs(leyRef: string, apartadosIndex?: ApartadosIndex): ParseResult {
   const colonIdx = leyRef.indexOf(':');
   if (colonIdx === -1) {
     return {
@@ -110,6 +122,9 @@ function parseLeyRefs(leyRef: string): ParseResult {
     };
   }
 
+  // Obtener lista de artículos con apartados para esta ley
+  const artsConApartados = apartadosIndex?.[ley] ?? [];
+
   // Parsear lista de artículos
   const referencias: RefArticulo[] = [];
   const artRefs = splitArticulos(artsPart);
@@ -123,7 +138,7 @@ function parseLeyRefs(leyRef: string): ParseResult {
       }
       referencias.push(...rangeResult.referencias);
     } else {
-      const ref = parseArtRef(ley, artRef);
+      const ref = parseArtRef(ley, artRef, artsConApartados);
       if (!ref) {
         return {
           success: false,
@@ -171,8 +186,9 @@ function splitArticulos(artsPart: string): string[] {
  *
  * @param ley - Código de ley
  * @param artRef - Referencia (ej: "123/A/IX/e")
+ * @param artsConApartados - Lista de artículos que tienen apartados en esta ley
  */
-function parseArtRef(ley: string, artRef: string): RefArticulo | null {
+function parseArtRef(ley: string, artRef: string, artsConApartados: string[] = []): RefArticulo | null {
   const parts = artRef.split('/');
   if (parts.length === 0 || !parts[0]) {
     return null;
@@ -187,19 +203,32 @@ function parseArtRef(ley: string, artRef: string): RefArticulo | null {
 
   const ref: RefArticulo = { ley, articulo };
 
+  // Verificar si este artículo tiene apartados
+  const tieneApartados = artsConApartados.includes(articulo);
+
   // Parsear modificadores en orden jerárquico
   let idx = 1;
 
-  // Apartado (letra mayúscula sola)
-  if (idx < parts.length && APARTADO_REGEX.test(parts[idx])) {
-    ref.apartado = parts[idx];
-    idx++;
-  }
+  if (tieneApartados) {
+    // Artículo CON apartados: primero apartado, luego fracción
+    // Apartado (letra mayúscula sola)
+    if (idx < parts.length && APARTADO_REGEX.test(parts[idx])) {
+      ref.apartado = parts[idx];
+      idx++;
+    }
 
-  // Fracción (romano)
-  if (idx < parts.length && ROMANO_REGEX.test(parts[idx])) {
-    ref.fraccion = parts[idx];
-    idx++;
+    // Fracción (romano)
+    if (idx < parts.length && ROMANO_REGEX.test(parts[idx])) {
+      ref.fraccion = parts[idx];
+      idx++;
+    }
+  } else {
+    // Artículo SIN apartados: asumir que el primer modificador es fracción
+    // Fracción (romano o letra mayúscula que es romano válido)
+    if (idx < parts.length && (ROMANO_REGEX.test(parts[idx]) || APARTADO_REGEX.test(parts[idx]))) {
+      ref.fraccion = parts[idx];
+      idx++;
+    }
   }
 
   // Inciso (letra minúscula sola)

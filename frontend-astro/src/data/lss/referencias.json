@@ -49,6 +49,20 @@
       "ley": "lss",
       "articulo": "61",
       "parrafo": 1
+    },
+    "artículo 159 fracciones IV y VI de esta Ley": {
+      "ley": "lss",
+      "articulo": "159",
+      "parrafo": 6,
+      "query": "lss:159/IV,159/VI"
+    }
+  },
+  "61": {
+    "artículo 58 fracciones II y III de esta Ley": {
+      "ley": "lss",
+      "articulo": "58",
+      "parrafo": 4,
+      "query": "lss:58/II,58/III"
     }
   },
   "62": {
@@ -136,6 +150,14 @@
       "ley": "lss",
       "articulo": "98",
       "parrafo": 1
+    }
+  },
+  "126": {
+    "artículo 159 fracciones IV y V de esta Ley": {
+      "ley": "lss",
+      "articulo": "159",
+      "parrafo": 6,
+      "query": "lss:159/IV,159/V"
     }
   },
   "127": {

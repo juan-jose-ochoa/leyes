@@ -101,6 +101,12 @@
       "ley": "lisr",
       "articulo": "77",
       "parrafo": 1
+    },
+    "artículo 140 fracciones I y II de esta Ley": {
+      "ley": "lisr",
+      "articulo": "140",
+      "parrafo": 6,
+      "query": "lisr:140/I,140/II"
     }
   },
   "11": {

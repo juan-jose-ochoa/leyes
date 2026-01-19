@@ -175,7 +175,7 @@ const themeData = { categoryColors, tipoStyles };
 
 <script>
   import MiniSearch from 'minisearch';
-  import { parseDSL, formatRef, refToUrl, LEYES_VALIDAS, type RefArticulo } from '../lib/dsl-parser';
+  import { parseDSL, formatRef, refToUrl, LEYES_VALIDAS, type RefArticulo, type ApartadosIndex } from '../lib/dsl-parser';
 
   // TOC index structure (from toc-index.json)
   interface TocItem {
@@ -189,6 +189,9 @@ const themeData = { categoryColors, tipoStyles };
   // Cache for TOC index
   let tocIndex: TocIndex | null = null;
 
+  // Cache for apartados index
+  let apartadosIndex: ApartadosIndex | null = null;
+
   // Load consolidated TOC index
   async function loadTocIndex(): Promise<TocIndex> {
     if (tocIndex) return tocIndex;
@@ -198,6 +201,20 @@ const themeData = { categoryColors, tipoStyles };
       if (!res.ok) return {};
       tocIndex = await res.json();
       return tocIndex!;
+    } catch {
+      return {};
+    }
+  }
+
+  // Load apartados index for DSL parser
+  async function loadApartadosIndex(): Promise<ApartadosIndex> {
+    if (apartadosIndex) return apartadosIndex;
+
+    try {
+      const res = await fetch('/apartados-index.json');
+      if (!res.ok) return {};
+      apartadosIndex = await res.json();
+      return apartadosIndex!;
     } catch {
       return {};
     }
@@ -514,7 +531,9 @@ const themeData = { categoryColors, tipoStyles };
   async function renderDSLResults(query: string) {
     const { resultsDiv, initialMessage, resultsCount, resultsList } = getElements();
 
-    const parsed = parseDSL(query);
+    // Load apartados index for proper parsing
+    const aptIndex = await loadApartadosIndex();
+    const parsed = parseDSL(query, aptIndex);
 
     initialMessage?.classList.add('hidden');
     resultsDiv?.classList.remove('hidden');
