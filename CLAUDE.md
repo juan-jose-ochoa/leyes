@@ -19,6 +19,9 @@ SIEMPRE ESTAMOS EN MODO ANÁLISIS/DISEÑO A MENOS QUE SE INDIQUE LO CONTRARIO!!!
   - Presentar resultado de tests con **cero errores**
   - **Cero warnings** de linter/TypeScript
 
+### Archivos problemáticos para diff
+- `public/quick-access-index.json` - Archivo JSON grande, `git diff` se cuelga. Usar `git diff --stat` en su lugar o simplemente hacer commit sin revisar el diff de este archivo.
+
 ## Calidad de código
 
 ### FAIL FAST
