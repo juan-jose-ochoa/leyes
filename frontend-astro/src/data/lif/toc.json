@@ -1,0 +1,675 @@
+{
+  "11": [
+    {
+      "n": 2,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 3,
+      "t": "fraccion",
+      "i": "II"
+    },
+    {
+      "n": 4,
+      "t": "numeral",
+      "i": "1",
+      "p": 3
+    },
+    {
+      "n": 5,
+      "t": "numeral",
+      "i": "2",
+      "p": 3
+    },
+    {
+      "n": 6,
+      "t": "numeral",
+      "i": "3",
+      "p": 3
+    }
+  ],
+  "13": [
+    {
+      "n": 3,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 4,
+      "t": "fraccion",
+      "i": "II"
+    },
+    {
+      "n": 5,
+      "t": "fraccion",
+      "i": "III"
+    }
+  ],
+  "15": [
+    {
+      "n": 2,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 3,
+      "t": "fraccion",
+      "i": "II"
+    },
+    {
+      "n": 4,
+      "t": "fraccion",
+      "i": "III"
+    },
+    {
+      "n": 5,
+      "t": "fraccion",
+      "i": "IV"
+    },
+    {
+      "n": 7,
+      "t": "fraccion",
+      "i": "V"
+    },
+    {
+      "n": 8,
+      "t": "fraccion",
+      "i": "VI"
+    },
+    {
+      "n": 10,
+      "t": "fraccion",
+      "i": "VII"
+    },
+    {
+      "n": 11,
+      "t": "fraccion",
+      "i": "VIII"
+    },
+    {
+      "n": 12,
+      "t": "fraccion",
+      "i": "IX"
+    }
+  ],
+  "16": [
+    {
+      "n": 2,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 3,
+      "t": "fraccion",
+      "i": "II"
+    },
+    {
+      "n": 5,
+      "t": "fraccion",
+      "i": "III"
+    },
+    {
+      "n": 6,
+      "t": "fraccion",
+      "i": "IV"
+    },
+    {
+      "n": 7,
+      "t": "fraccion",
+      "i": "V"
+    }
+  ],
+  "18": [
+    {
+      "n": 2,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 3,
+      "t": "fraccion",
+      "i": "II"
+    }
+  ],
+  "20": [
+    {
+      "n": 2,
+      "t": "apartado",
+      "i": "A"
+    },
+    {
+      "n": 3,
+      "t": "fraccion",
+      "i": "I",
+      "p": 2
+    },
+    {
+      "n": 6,
+      "t": "fraccion",
+      "i": "II",
+      "p": 2
+    },
+    {
+      "n": 7,
+      "t": "numeral",
+      "i": "1",
+      "p": 6
+    },
+    {
+      "n": 9,
+      "t": "numeral",
+      "i": "2",
+      "p": 6
+    },
+    {
+      "n": 11,
+      "t": "fraccion",
+      "i": "III",
+      "p": 2
+    },
+    {
+      "n": 18,
+      "t": "fraccion",
+      "i": "IV",
+      "p": 2
+    },
+    {
+      "n": 26,
+      "t": "fraccion",
+      "i": "V",
+      "p": 2
+    },
+    {
+      "n": 29,
+      "t": "fraccion",
+      "i": "VI",
+      "p": 2
+    },
+    {
+      "n": 33,
+      "t": "fraccion",
+      "i": "VII",
+      "p": 2
+    },
+    {
+      "n": 35,
+      "t": "fraccion",
+      "i": "VIII",
+      "p": 2
+    },
+    {
+      "n": 43,
+      "t": "apartado",
+      "i": "B"
+    },
+    {
+      "n": 45,
+      "t": "apartado",
+      "i": "C"
+    }
+  ],
+  "23": [
+    {
+      "n": 2,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 3,
+      "t": "fraccion",
+      "i": "II"
+    },
+    {
+      "n": 4,
+      "t": "fraccion",
+      "i": "III"
+    },
+    {
+      "n": 5,
+      "t": "fraccion",
+      "i": "IV"
+    }
+  ],
+  "25": [
+    {
+      "n": 2,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 3,
+      "t": "inciso",
+      "i": "a",
+      "p": 2
+    },
+    {
+      "n": 4,
+      "t": "numeral",
+      "i": "1",
+      "p": 3
+    },
+    {
+      "n": 5,
+      "t": "numeral",
+      "i": "2",
+      "p": 3
+    },
+    {
+      "n": 6,
+      "t": "numeral",
+      "i": "3",
+      "p": 3
+    },
+    {
+      "n": 7,
+      "t": "numeral",
+      "i": "4",
+      "p": 3
+    },
+    {
+      "n": 8,
+      "t": "numeral",
+      "i": "5",
+      "p": 3
+    },
+    {
+      "n": 9,
+      "t": "numeral",
+      "i": "6",
+      "p": 3
+    },
+    {
+      "n": 10,
+      "t": "inciso",
+      "i": "b",
+      "p": 2
+    },
+    {
+      "n": 11,
+      "t": "numeral",
+      "i": "1",
+      "p": 10
+    },
+    {
+      "n": 12,
+      "t": "numeral",
+      "i": "2",
+      "p": 10
+    },
+    {
+      "n": 13,
+      "t": "numeral",
+      "i": "3",
+      "p": 10
+    },
+    {
+      "n": 14,
+      "t": "numeral",
+      "i": "4",
+      "p": 10
+    },
+    {
+      "n": 15,
+      "t": "numeral",
+      "i": "5",
+      "p": 10
+    },
+    {
+      "n": 16,
+      "t": "numeral",
+      "i": "6",
+      "p": 10
+    },
+    {
+      "n": 17,
+      "t": "numeral",
+      "i": "7",
+      "p": 10
+    },
+    {
+      "n": 19,
+      "t": "fraccion",
+      "i": "II"
+    },
+    {
+      "n": 20,
+      "t": "fraccion",
+      "i": "III"
+    },
+    {
+      "n": 21,
+      "t": "inciso",
+      "i": "a",
+      "p": 20
+    },
+    {
+      "n": 22,
+      "t": "inciso",
+      "i": "b",
+      "p": 20
+    },
+    {
+      "n": 23,
+      "t": "inciso",
+      "i": "c",
+      "p": 20
+    },
+    {
+      "n": 24,
+      "t": "fraccion",
+      "i": "IV"
+    },
+    {
+      "n": 25,
+      "t": "fraccion",
+      "i": "V"
+    },
+    {
+      "n": 26,
+      "t": "inciso",
+      "i": "a",
+      "p": 25
+    },
+    {
+      "n": 27,
+      "t": "inciso",
+      "i": "b",
+      "p": 25
+    },
+    {
+      "n": 28,
+      "t": "numeral",
+      "i": "1",
+      "p": 27
+    },
+    {
+      "n": 31,
+      "t": "numeral",
+      "i": "2",
+      "p": 27
+    },
+    {
+      "n": 32,
+      "t": "numeral",
+      "i": "3",
+      "p": 27
+    },
+    {
+      "n": 35,
+      "t": "fraccion",
+      "i": "VI"
+    },
+    {
+      "n": 39,
+      "t": "fraccion",
+      "i": "VII"
+    },
+    {
+      "n": 41,
+      "t": "fraccion",
+      "i": "VIII"
+    },
+    {
+      "n": 42,
+      "t": "inciso",
+      "i": "a",
+      "p": 41
+    },
+    {
+      "n": 46,
+      "t": "inciso",
+      "i": "b",
+      "p": 41
+    },
+    {
+      "n": 50,
+      "t": "inciso",
+      "i": "c",
+      "p": 41
+    },
+    {
+      "n": 51,
+      "t": "fraccion",
+      "i": "IX"
+    },
+    {
+      "n": 52,
+      "t": "inciso",
+      "i": "a",
+      "p": 51
+    },
+    {
+      "n": 53,
+      "t": "inciso",
+      "i": "b",
+      "p": 51
+    },
+    {
+      "n": 54,
+      "t": "inciso",
+      "i": "c",
+      "p": 51
+    },
+    {
+      "n": 55,
+      "t": "inciso",
+      "i": "d",
+      "p": 51
+    },
+    {
+      "n": 56,
+      "t": "inciso",
+      "i": "e",
+      "p": 51
+    },
+    {
+      "n": 58,
+      "t": "fraccion",
+      "i": "X"
+    },
+    {
+      "n": 59,
+      "t": "fraccion",
+      "i": "XI"
+    },
+    {
+      "n": 60,
+      "t": "fraccion",
+      "i": "XII"
+    },
+    {
+      "n": 61,
+      "t": "inciso",
+      "i": "a",
+      "p": 60
+    },
+    {
+      "n": 62,
+      "t": "inciso",
+      "i": "b",
+      "p": 60
+    },
+    {
+      "n": 63,
+      "t": "fraccion",
+      "i": "XIII"
+    },
+    {
+      "n": 64,
+      "t": "fraccion",
+      "i": "XIV"
+    }
+  ],
+  "28": [
+    {
+      "n": 2,
+      "t": "apartado",
+      "i": "A"
+    },
+    {
+      "n": 4,
+      "t": "fraccion",
+      "i": "I",
+      "p": 2
+    },
+    {
+      "n": 5,
+      "t": "fraccion",
+      "i": "II",
+      "p": 2
+    },
+    {
+      "n": 6,
+      "t": "fraccion",
+      "i": "III",
+      "p": 2
+    },
+    {
+      "n": 7,
+      "t": "fraccion",
+      "i": "IV",
+      "p": 2
+    },
+    {
+      "n": 8,
+      "t": "fraccion",
+      "i": "V",
+      "p": 2
+    },
+    {
+      "n": 9,
+      "t": "apartado",
+      "i": "B"
+    },
+    {
+      "n": 10,
+      "t": "fraccion",
+      "i": "I",
+      "p": 9
+    },
+    {
+      "n": 11,
+      "t": "fraccion",
+      "i": "II",
+      "p": 9
+    },
+    {
+      "n": 12,
+      "t": "fraccion",
+      "i": "III",
+      "p": 9
+    },
+    {
+      "n": 13,
+      "t": "fraccion",
+      "i": "IV",
+      "p": 9
+    },
+    {
+      "n": 14,
+      "t": "fraccion",
+      "i": "V",
+      "p": 9
+    },
+    {
+      "n": 15,
+      "t": "fraccion",
+      "i": "VI",
+      "p": 9
+    },
+    {
+      "n": 16,
+      "t": "fraccion",
+      "i": "VII",
+      "p": 9
+    },
+    {
+      "n": 17,
+      "t": "fraccion",
+      "i": "VIII",
+      "p": 9
+    },
+    {
+      "n": 18,
+      "t": "fraccion",
+      "i": "IX",
+      "p": 9
+    },
+    {
+      "n": 19,
+      "t": "fraccion",
+      "i": "X",
+      "p": 9
+    },
+    {
+      "n": 20,
+      "t": "fraccion",
+      "i": "XI",
+      "p": 9
+    },
+    {
+      "n": 21,
+      "t": "fraccion",
+      "i": "XII",
+      "p": 9
+    },
+    {
+      "n": 22,
+      "t": "fraccion",
+      "i": "XIII",
+      "p": 9
+    },
+    {
+      "n": 23,
+      "t": "fraccion",
+      "i": "XIV",
+      "p": 9
+    },
+    {
+      "n": 24,
+      "t": "fraccion",
+      "i": "XV",
+      "p": 9
+    },
+    {
+      "n": 26,
+      "t": "apartado",
+      "i": "C"
+    },
+    {
+      "n": 28,
+      "t": "fraccion",
+      "i": "I",
+      "p": 26
+    },
+    {
+      "n": 29,
+      "t": "fraccion",
+      "i": "II",
+      "p": 26
+    }
+  ],
+  "31": [
+    {
+      "n": 3,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 4,
+      "t": "fraccion",
+      "i": "II"
+    },
+    {
+      "n": 5,
+      "t": "fraccion",
+      "i": "III"
+    },
+    {
+      "n": 6,
+      "t": "fraccion",
+      "i": "IV"
+    }
+  ]
+}

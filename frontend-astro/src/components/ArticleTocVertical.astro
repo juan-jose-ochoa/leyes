@@ -2,44 +2,40 @@
 /**
  * ArticleTocVertical - TOC vertical fijo para navegación de fracciones
  * Se muestra como sidebar en el panel de texto
+ *
+ * Usa datos de toc.json (generados por generar-datos-astro.py)
  */
 
-interface Parrafo {
-  numero: number;
-  tipo: string;
-  identificador: string | null;
-  contenido: string;
-  padre_numero: number | null;
+// Estructura compacta de toc.json
+interface TocItem {
+  n: number;  // numero (párrafo)
+  t: string;  // tipo
+  i: string;  // identificador
+  p?: number; // padre_numero (opcional)
 }
 
 interface Props {
-  parrafos: Parrafo[];
+  items: TocItem[];
 }
 
-const { parrafos } = Astro.props;
-
-// Filtrar elementos navegables con identificador, en orden de aparición
-const items = parrafos.filter(p =>
-  (p.tipo === 'apartado' || p.tipo === 'fraccion' || p.tipo === 'inciso' || p.tipo === 'numeral')
-  && p.identificador
-);
+const { items } = Astro.props;
 
 // Generar ID de ancla (debe coincidir con FraccionesView.astro)
-function getAnclaId(p: Parrafo): string {
-  return `p-${p.numero}`;
+function getAnclaId(item: TocItem): string {
+  return `p-${item.n}`;
 }
 
 // Mostrar TOC si hay 2+ items navegables
 const mostrarToc = items.length >= 2;
 
-// Mapa de numero -> parrafo para buscar ancestros
-const parrafosPorNumero = new Map<number, Parrafo>();
-for (const p of parrafos) {
-  parrafosPorNumero.set(p.numero, p);
+// Mapa de numero -> item para buscar ancestros
+const itemsPorNumero = new Map<number, TocItem>();
+for (const item of items) {
+  itemsPorNumero.set(item.n, item);
 }
 
 // Construir ruta jerárquica completa para tooltip
-function construirRutaTooltip(p: Parrafo): string {
+function construirRutaTooltip(item: TocItem): string {
   const nombres: Record<string, string> = {
     apartado: 'Apartado',
     fraccion: 'Fracción',
@@ -47,15 +43,13 @@ function construirRutaTooltip(p: Parrafo): string {
     numeral: 'Numeral'
   };
   const ruta: string[] = [];
-  let actual: Parrafo | undefined = p;
+  let actual: TocItem | undefined = item;
 
   while (actual) {
-    if (actual.identificador) {
-      const nombre = nombres[actual.tipo] || 'Párrafo';
-      const sufijo = actual.tipo === 'inciso' ? ')' : '';
-      ruta.unshift(`${nombre} ${actual.identificador}${sufijo}`);
-    }
-    actual = actual.padre_numero ? parrafosPorNumero.get(actual.padre_numero) : undefined;
+    const nombre = nombres[actual.t] || 'Párrafo';
+    const sufijo = actual.t === 'inciso' ? ')' : '';
+    ruta.unshift(`${nombre} ${actual.i}${sufijo}`);
+    actual = actual.p ? itemsPorNumero.get(actual.p) : undefined;
   }
 
   return ruta.join(' → ');
@@ -83,10 +77,10 @@ const sufijos: Record<string, string> = {
         {items.map((item) => (
           <a
             href={`#${getAnclaId(item)}`}
-            class={clases[item.tipo] || 'toc-fraccion'}
+            class={clases[item.t] || 'toc-fraccion'}
             title={construirRutaTooltip(item)}
           >
-            {item.identificador}{sufijos[item.tipo] || ''}
+            {item.i}{sufijos[item.t] || ''}
           </a>
         ))}
       </div>

@@ -1,0 +1,173 @@
+{
+  "1": [
+    {
+      "n": 2,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 3,
+      "t": "fraccion",
+      "i": "II"
+    },
+    {
+      "n": 4,
+      "t": "fraccion",
+      "i": "III"
+    },
+    {
+      "n": 5,
+      "t": "fraccion",
+      "i": "IV"
+    }
+  ],
+  "3": [
+    {
+      "n": 2,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 3,
+      "t": "inciso",
+      "i": "a",
+      "p": 2
+    },
+    {
+      "n": 4,
+      "t": "inciso",
+      "i": "b",
+      "p": 2
+    },
+    {
+      "n": 5,
+      "t": "inciso",
+      "i": "c",
+      "p": 2
+    },
+    {
+      "n": 6,
+      "t": "fraccion",
+      "i": "II"
+    }
+  ],
+  "19": [
+    {
+      "n": 2,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 4,
+      "t": "fraccion",
+      "i": "II"
+    }
+  ],
+  "20": [
+    {
+      "n": 2,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 3,
+      "t": "fraccion",
+      "i": "II"
+    },
+    {
+      "n": 4,
+      "t": "fraccion",
+      "i": "III"
+    },
+    {
+      "n": 5,
+      "t": "fraccion",
+      "i": "IV"
+    },
+    {
+      "n": 6,
+      "t": "inciso",
+      "i": "a",
+      "p": 5
+    },
+    {
+      "n": 7,
+      "t": "inciso",
+      "i": "b",
+      "p": 5
+    },
+    {
+      "n": 9,
+      "t": "fraccion",
+      "i": "V"
+    },
+    {
+      "n": 10,
+      "t": "fraccion",
+      "i": "VI"
+    }
+  ],
+  "27": [
+    {
+      "n": 3,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 4,
+      "t": "fraccion",
+      "i": "II"
+    }
+  ],
+  "46": [
+    {
+      "n": 2,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 3,
+      "t": "fraccion",
+      "i": "II"
+    }
+  ],
+  "63": [
+    {
+      "n": 2,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 3,
+      "t": "fraccion",
+      "i": "II"
+    },
+    {
+      "n": 5,
+      "t": "fraccion",
+      "i": "III"
+    },
+    {
+      "n": 6,
+      "t": "fraccion",
+      "i": "IV"
+    }
+  ],
+  "74": [
+    {
+      "n": 2,
+      "t": "fraccion",
+      "i": "I"
+    },
+    {
+      "n": 4,
+      "t": "fraccion",
+      "i": "II"
+    },
+    {
+      "n": 5,
+      "t": "fraccion",
+      "i": "III"
+    }
+  ]
+}

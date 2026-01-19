@@ -175,6 +175,101 @@ const themeData = { categoryColors, tipoStyles };
 
 <script>
   import MiniSearch from 'minisearch';
+  import { parseDSL, formatRef, refToUrl, LEYES_VALIDAS, type RefArticulo } from '../lib/dsl-parser';
+
+  // TOC index structure (from toc-index.json)
+  interface TocItem {
+    n: number;  // numero (párrafo)
+    t: string;  // tipo
+    i: string;  // identificador
+    p?: number; // padre_numero
+  }
+  type TocIndex = Record<string, Record<string, TocItem[]>>;
+
+  // Cache for TOC index
+  let tocIndex: TocIndex | null = null;
+
+  // Load consolidated TOC index
+  async function loadTocIndex(): Promise<TocIndex> {
+    if (tocIndex) return tocIndex;
+
+    try {
+      const res = await fetch('/toc-index.json');
+      if (!res.ok) return {};
+      tocIndex = await res.json();
+      return tocIndex!;
+    } catch {
+      return {};
+    }
+  }
+
+  // Resolve paragraph number for a reference using TOC index
+  async function resolveParrafo(ref: RefArticulo): Promise<number | null> {
+    const toc = await loadTocIndex();
+    const leyToc = toc[ref.ley.toLowerCase()];
+    if (!leyToc) return null;
+
+    const items = leyToc[ref.articulo];
+    if (!items || items.length === 0) return null;
+
+    // If no modifiers, return first paragraph (1)
+    if (!ref.apartado && !ref.fraccion && !ref.inciso && !ref.numeral) {
+      return 1;
+    }
+
+    // Find apartado first if specified
+    let padreNumero: number | null = null;
+    if (ref.apartado) {
+      const apartado = items.find(item =>
+        item.t === 'apartado' && item.i === ref.apartado
+      );
+      if (!apartado) return 1;
+      padreNumero = apartado.n;
+
+      // If only apartado, return it
+      if (!ref.fraccion) return apartado.n;
+    }
+
+    // Find fraccion
+    if (ref.fraccion) {
+      const fraccion = items.find(item =>
+        item.t === 'fraccion' &&
+        item.i === ref.fraccion &&
+        (padreNumero === null || item.p === padreNumero)
+      );
+      if (!fraccion) return padreNumero || 1;
+      padreNumero = fraccion.n;
+
+      // If only fraccion (no inciso), return it
+      if (!ref.inciso) return fraccion.n;
+    }
+
+    // Find inciso
+    if (ref.inciso) {
+      const inciso = items.find(item =>
+        item.t === 'inciso' &&
+        item.i === ref.inciso &&
+        (padreNumero === null || item.p === padreNumero)
+      );
+      if (!inciso) return padreNumero || 1;
+      padreNumero = inciso.n;
+
+      // If only inciso (no numeral), return it
+      if (!ref.numeral) return inciso.n;
+    }
+
+    // Find numeral
+    if (ref.numeral) {
+      const numeral = items.find(item =>
+        item.t === 'numeral' &&
+        item.i === ref.numeral &&
+        (padreNumero === null || item.p === padreNumero)
+      );
+      if (numeral) return numeral.n;
+    }
+
+    return padreNumero || 1;
+  }
 
   // Types
   interface CatalogoLey {
@@ -408,6 +503,102 @@ const themeData = { categoryColors, tipoStyles };
     }
   }
 
+  // Check if query is DSL format (e.g., "cpeum:94,97,116/III")
+  function isDSLQuery(query: string): boolean {
+    const match = query.match(/^([a-z]+):/i);
+    if (!match) return false;
+    return LEYES_VALIDAS.has(match[1].toLowerCase());
+  }
+
+  // Render DSL results (direct article links)
+  async function renderDSLResults(query: string) {
+    const { resultsDiv, initialMessage, resultsCount, resultsList } = getElements();
+
+    const parsed = parseDSL(query);
+
+    initialMessage?.classList.add('hidden');
+    resultsDiv?.classList.remove('hidden');
+
+    if (!parsed.success || parsed.referencias.length === 0) {
+      if (resultsCount) resultsCount.textContent = parsed.error || 'Query DSL inválido';
+      if (resultsList) resultsList.innerHTML = '';
+      return;
+    }
+
+    const refs = parsed.referencias;
+
+    if (resultsCount) {
+      resultsCount.textContent = `${refs.length} artículo${refs.length > 1 ? 's' : ''} referenciado${refs.length > 1 ? 's' : ''}`;
+    }
+
+    // Resolve paragraph numbers for all references
+    const resolvedRefs = await Promise.all(refs.map(async ref => ({
+      ref,
+      parrafo: await resolveParrafo(ref)
+    })));
+
+    // Group by law
+    const byLaw = new Map<string, typeof resolvedRefs>();
+    for (const item of resolvedRefs) {
+      const ley = item.ref.ley.toUpperCase();
+      if (!byLaw.has(ley)) byLaw.set(ley, []);
+      byLaw.get(ley)!.push(item);
+    }
+
+    // Get law info helper
+    const getLeyNombre = (codigo: string) => {
+      const info = getLeyInfo(codigo);
+      return info?.nombre_corto || info?.nombre || codigo;
+    };
+
+    // Category colors
+    const catColors: Record<string, string> = {
+      fiscal: 'bg-emerald-600',
+      laboral: 'bg-blue-600',
+      constitucional: 'bg-orange-600'
+    };
+
+    if (resultsList) {
+      resultsList.innerHTML = Array.from(byLaw.entries()).map(([ley, leyRefs]) => {
+        const leyInfo = getLeyInfo(ley);
+        const catColor = catColors[leyInfo?.categoria || ''] || 'bg-primary-600';
+
+        return `
+        <div class="rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+          <div class="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-800/50">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-sm font-bold text-white ${catColor}">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <div>
+              <span class="font-semibold text-gray-900 dark:text-gray-100">${ley}</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">${getLeyNombre(ley)}</span>
+            </div>
+          </div>
+          <div class="divide-y divide-gray-100 dark:divide-gray-800">
+            ${leyRefs.map(({ ref, parrafo }) => {
+              const baseUrl = refToUrl(ref);
+              const url = parrafo ? `${baseUrl}#p-${parrafo}` : baseUrl;
+              const label = formatRef(ref);
+              return `
+              <a href="${url}" class="flex items-center gap-3 p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                <svg class="h-5 w-5 text-primary-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span class="font-medium text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400">
+                  ${label}
+                </span>
+              </a>`;
+            }).join('')}
+          </div>
+        </div>`;
+      }).join('');
+    }
+
+    updateURL();
+  }
+
   // Perform search
   async function doSearch(query: string) {
     const { resultsDiv, initialMessage, resultsCount, resultsList } = getElements();
@@ -415,6 +606,12 @@ const themeData = { categoryColors, tipoStyles };
     if (!query.trim()) {
       resultsDiv?.classList.add('hidden');
       initialMessage?.classList.remove('hidden');
+      return;
+    }
+
+    // Check for DSL query first
+    if (isDSLQuery(query)) {
+      await renderDSLResults(query);
       return;
     }
 

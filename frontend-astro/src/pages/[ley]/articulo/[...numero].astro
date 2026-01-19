@@ -71,6 +71,13 @@ export async function getStaticPaths() {
     } catch (e) {
       // No tooltips.json for this law, use empty object
     }
+    let toc: Record<string, any[]> = {};
+    try {
+      const tocModule = await import(`../../../data/${codigoLower}/toc.json`);
+      toc = tocModule.default || {};
+    } catch (e) {
+      // No toc.json for this law, use empty object
+    }
     const articulos = articulosModule.default;
     const estructura = estructuraModule.default;
 
@@ -141,6 +148,7 @@ export async function getStaticPaths() {
           leyInfo: ley,
           referenciasArticulo: referencias[articulo.numero] || {},
           tooltipsArticulo: tooltips[articulo.numero] || {},
+          tocItems: toc[articulo.numero] || [],
           prevArticulo: prevArt ? { numero: prevArt.numero } : null,
           nextArticulo: nextArt ? { numero: nextArt.numero } : null,
           totalArticulos: articulos.length,
@@ -174,6 +182,7 @@ interface Props {
   leyInfo: typeof catalogo.leyes[0];
   referenciasArticulo: Record<string, { ley: string; articulo: string; parrafo: number }>;
   tooltipsArticulo: Record<string, string>;
+  tocItems: Array<{ n: number; t: string; i: string; p?: number }>;
   prevArticulo: { numero: string } | null;
   nextArticulo: { numero: string } | null;
   totalArticulos: number;
@@ -181,7 +190,7 @@ interface Props {
   breadcrumb: BreadcrumbItem[];
 }
 
-const { articulo, leyInfo, referenciasArticulo, tooltipsArticulo, prevArticulo, nextArticulo, totalArticulos, indiceActual, breadcrumb } = Astro.props;
+const { articulo, leyInfo, referenciasArticulo, tooltipsArticulo, tocItems, prevArticulo, nextArticulo, totalArticulos, indiceActual, breadcrumb } = Astro.props;
 const codigoLower = leyInfo.codigo.toLowerCase();
 const isDerogado = articulo.tipo === 'derogado';
 const tieneParrafos = articulo.parrafos && articulo.parrafos.length > 0;
@@ -343,7 +352,7 @@ const seccionTexto = breadcrumb.length > 0
           {/* Sidebar con TOC vertical a la derecha (solo si hay fracciones) */}
           {tieneParrafos && !isDerogado && (
             <aside class="text-panel-sidebar">
-              <ArticleTocVertical parrafos={articulo.parrafos} />
+              <ArticleTocVertical items={tocItems} />
             </aside>
           )}
         </div>

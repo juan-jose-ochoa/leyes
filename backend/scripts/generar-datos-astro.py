@@ -401,6 +401,58 @@ def generar_articulos_json(contenido: dict, ley_config: dict) -> list:
     return articulos
 
 
+def generar_toc_json(articulos: list) -> dict:
+    """
+    Genera índice TOC (Table of Contents) para navegación.
+
+    Extrae solo los párrafos navegables (apartado, fraccion, inciso, numeral)
+    con su estructura jerárquica mínima.
+
+    Estructura de salida:
+    {
+        "122": [
+            {"n": 2, "t": "apartado", "i": "A"},
+            {"n": 17, "t": "fraccion", "i": "IV", "p": 2},
+            ...
+        ]
+    }
+
+    Campos compactos:
+    - n: numero (párrafo)
+    - t: tipo
+    - i: identificador
+    - p: padre_numero (opcional, solo si existe)
+    """
+    toc = {}
+    tipos_navegables = {'apartado', 'fraccion', 'inciso', 'numeral'}
+
+    for art in articulos:
+        art_num = art.get("numero")
+        items = []
+
+        for parrafo in art.get("parrafos", []):
+            tipo = parrafo.get("tipo")
+            identificador = parrafo.get("identificador")
+
+            # Solo incluir navegables con identificador
+            if tipo in tipos_navegables and identificador:
+                item = {
+                    "n": parrafo.get("numero"),
+                    "t": tipo,
+                    "i": identificador
+                }
+                # Solo incluir padre si existe
+                if parrafo.get("padre_numero"):
+                    item["p"] = parrafo.get("padre_numero")
+
+                items.append(item)
+
+        if items:
+            toc[art_num] = items
+
+    return toc
+
+
 def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
     """
     Extrae todas las referencias de una ley y genera mapa para renderizado.
@@ -888,6 +940,7 @@ def main():
     leyes_procesadas = 0
     articulos_total = 0
     referencias_total = 0
+    toc_global: dict = {}  # TOC consolidado para runtime
     tooltips_total = 0
 
     for codigo in LEYES.keys():
@@ -904,6 +957,13 @@ def main():
             guardar_json(articulos, ley_dir / "articulos.json")
             leyes_procesadas += 1
             articulos_total += len(articulos)
+
+            # Generar TOC (navegación compacta) para build-time
+            toc = generar_toc_json(articulos)
+            if toc:
+                guardar_json(toc, ley_dir / "toc.json")
+                # Acumular para índice consolidado (runtime)
+                toc_global[codigo.lower()] = toc
 
         # Generar mapa de referencias (archivo separado)
         referencias = extraer_referencias(contenido, codigo, indice)
@@ -924,7 +984,7 @@ def main():
                 tooltips_total += len(art_tips)
 
     # 5. Generar estructura por ley
-    print("\n[5/5] Generando estructura por ley...")
+    print("\n[5/6] Generando estructura por ley...")
 
     for codigo in LEYES.keys():
         mapa = cargar_estructura(codigo)
@@ -936,6 +996,12 @@ def main():
             ley_dir = ASTRO_DATA / codigo.lower()
             guardar_json(estructura, ley_dir / "estructura.json")
 
+    # 6. Generar TOC consolidado para runtime (buscar.astro)
+    print("\n[6/6] Generando TOC consolidado para runtime...")
+    toc_index_path = ASTRO_DATA.parent.parent / "public" / "toc-index.json"
+    guardar_json(toc_global, toc_index_path)
+    print(f"  ✓ {toc_index_path.relative_to(PROJECT_ROOT)}")
+
     # Resumen
     print("\n" + "=" * 60)
     print("Resumen:")
@@ -943,6 +1009,7 @@ def main():
     print(f"  - Artículos totales: {articulos_total}")
     print(f"  - Referencias mapeadas: {referencias_total}")
     print(f"  - Tooltips estructurales: {tooltips_total}")
+    print(f"  - TOC consolidado: {len(toc_global)} leyes")
     print(f"  - Destino: {ASTRO_DATA.relative_to(PROJECT_ROOT)}")
     print("=" * 60)
 
