@@ -223,6 +223,16 @@ PATRON_REFERENCIA_INTERNA = re.compile(
     re.IGNORECASE
 )
 
+# Patrón para referencias a reglas internas (RMF y similares)
+# Detecta: "regla 2.9.3", "reglas 2.1.1 y 2.1.2"
+PATRON_REGLA_INTERNA = re.compile(
+    r'reglas?\s+(\d+\.\d+\.\d+(?:\.\d+)?)',
+    re.IGNORECASE
+)
+
+# Leyes que usan "reglas" en lugar de "artículos"
+LEYES_CON_REGLAS = {'RMF'}
+
 # Patrones para buscar leyes mencionadas previamente en el texto
 _PATRONES_CONTEXTO_CODIGO = [
     (re.compile(r'código\s+fiscal(?:\s+de\s+la\s+federación)?', re.IGNORECASE), 'CFF'),
@@ -909,6 +919,21 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
                         "interno": True,
                         "parrafo": parrafo_num
                     }
+
+            # Buscar referencias a reglas internas (solo para leyes que usan reglas, como RMF)
+            if ley_codigo in LEYES_CON_REGLAS:
+                for match in PATRON_REGLA_INTERNA.finditer(texto):
+                    texto_original = match.group(0)
+                    regla_num = match.group(1)  # "2.9.3", "3.21.2.1"
+
+                    # Verificar que la regla existe en el índice
+                    ley_indice = indice.get(ley_codigo, {})
+                    if regla_num in ley_indice:
+                        referencias_articulo[texto_original] = {
+                            "ley": ley_codigo.lower(),
+                            "articulo": regla_num,
+                            "parrafo": 1
+                        }
 
         if referencias_articulo:
             referencias_ley[art_num] = referencias_articulo

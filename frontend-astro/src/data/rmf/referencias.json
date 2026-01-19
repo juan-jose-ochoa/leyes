@@ -10,6 +10,11 @@
       "articulo": "17-I",
       "parrafo": 1
     },
+    "regla 2.9.3": {
+      "ley": "rmf",
+      "articulo": "2.9.3",
+      "parrafo": 1
+    },
     "artículo 65 del CFF": {
       "ley": "cff",
       "articulo": "65",
@@ -35,6 +40,11 @@
     "artículos 9o., tercer párrafo del CFF": {
       "ley": "cff",
       "articulo": "9o",
+      "parrafo": 1
+    },
+    "reglas 3.1.4": {
+      "ley": "rmf",
+      "articulo": "3.1.4",
       "parrafo": 1
     }
   },
@@ -274,6 +284,13 @@
       "query": "cff:32-A,32-H/I"
     }
   },
+  "2.1.13": {
+    "regla 3.21.2.1": {
+      "ley": "rmf",
+      "articulo": "3.21.2.1",
+      "parrafo": 1
+    }
+  },
   "2.1.14": {
     "artículos 18, 18-A y 19 del CFF": {
       "ley": "cff",
@@ -347,6 +364,11 @@
       "ley": "cff",
       "articulo": "32-D",
       "parrafo": 1
+    },
+    "regla 2.1.36": {
+      "ley": "rmf",
+      "articulo": "2.1.36",
+      "parrafo": 1
     }
   },
   "2.1.25": {
@@ -369,9 +391,29 @@
       "ley": "cff",
       "articulo": "32-D",
       "parrafo": 1
+    },
+    "regla 2.1.37": {
+      "ley": "rmf",
+      "articulo": "2.1.37",
+      "parrafo": 1
     }
   },
   "2.1.28": {
+    "regla 2.1.24": {
+      "ley": "rmf",
+      "articulo": "2.1.24",
+      "parrafo": 1
+    },
+    "regla 2.1.36": {
+      "ley": "rmf",
+      "articulo": "2.1.36",
+      "parrafo": 1
+    },
+    "regla 2.1.37": {
+      "ley": "rmf",
+      "articulo": "2.1.37",
+      "parrafo": 1
+    },
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
@@ -382,6 +424,11 @@
     "artículo 32-G del CFF": {
       "ley": "cff",
       "articulo": "32-G",
+      "parrafo": 1
+    },
+    "regla 4.5.1": {
+      "ley": "rmf",
+      "articulo": "4.5.1",
       "parrafo": 1
     }
   },
@@ -446,13 +493,38 @@
       "articulo": "82",
       "parrafo": 17
     },
+    "reglas 5.2.2": {
+      "ley": "rmf",
+      "articulo": "5.2.2",
+      "parrafo": 1
+    },
+    "regla 2.11.5": {
+      "ley": "rmf",
+      "articulo": "2.11.5",
+      "parrafo": 1
+    },
+    "regla 3.10.1.12": {
+      "ley": "rmf",
+      "articulo": "3.10.1.12",
+      "parrafo": 1
+    },
     "artículo 65 del CFF": {
       "ley": "cff",
       "articulo": "65",
       "parrafo": 1
+    },
+    "regla 2.1.49": {
+      "ley": "rmf",
+      "articulo": "2.1.49",
+      "parrafo": 1
     }
   },
   "2.1.37": {
+    "reglas 2.1.27": {
+      "ley": "rmf",
+      "articulo": "2.1.27",
+      "parrafo": 1
+    },
     "artículo 69 del CFF": {
       "ley": "cff",
       "articulo": "69",
@@ -460,11 +532,23 @@
     }
   },
   "2.1.38": {
+    "regla 2.1.28": {
+      "ley": "rmf",
+      "articulo": "2.1.28",
+      "parrafo": 1
+    },
     "artículos 17-A y 21 del CFF": {
       "ley": "cff",
       "articulo": "17-A",
       "parrafo": 1,
       "query": "cff:17-A,21"
+    }
+  },
+  "2.1.39": {
+    "regla 2.1.1": {
+      "ley": "rmf",
+      "articulo": "2.1.1",
+      "parrafo": 1
     }
   },
   "2.1.40": {
@@ -502,6 +586,13 @@
     "artículo 179, quinto párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "179",
+      "parrafo": 1
+    }
+  },
+  "2.1.44": {
+    "regla 2.1.43": {
+      "ley": "rmf",
+      "articulo": "2.1.43",
       "parrafo": 1
     }
   },
@@ -573,6 +664,11 @@
     }
   },
   "2.2.2": {
+    "regla 2.2.1": {
+      "ley": "rmf",
+      "articulo": "2.2.1",
+      "parrafo": 1
+    },
     "artículo 17-J, fracción III del CFF": {
       "ley": "cff",
       "articulo": "17-J",
@@ -589,9 +685,24 @@
       "ley": "cff",
       "articulo": "17-G",
       "parrafo": 1
+    },
+    "regla 2.2.8": {
+      "ley": "rmf",
+      "articulo": "2.2.8",
+      "parrafo": 1
     }
   },
   "2.2.4": {
+    "regla 2.2.8": {
+      "ley": "rmf",
+      "articulo": "2.2.8",
+      "parrafo": 1
+    },
+    "regla 2.2.15": {
+      "ley": "rmf",
+      "articulo": "2.2.15",
+      "parrafo": 1
+    },
     "artículo 17-H del CFF": {
       "ley": "cff",
       "articulo": "17-H",
@@ -631,6 +742,18 @@
       "query": "cff:17-H,17-K"
     }
   },
+  "2.2.8": {
+    "regla 2.2.15": {
+      "ley": "rmf",
+      "articulo": "2.2.15",
+      "parrafo": 1
+    },
+    "regla 2.2.4": {
+      "ley": "rmf",
+      "articulo": "2.2.4",
+      "parrafo": 1
+    }
+  },
   "2.2.9": {
     "artículos 17-K del CFF": {
       "ley": "cff",
@@ -665,9 +788,19 @@
       "articulo": "17-D",
       "parrafo": 1
     },
+    "regla 2.2.2": {
+      "ley": "rmf",
+      "articulo": "2.2.2",
+      "parrafo": 1
+    },
     "artículo 17-H del CFF": {
       "ley": "cff",
       "articulo": "17-H",
+      "parrafo": 1
+    },
+    "regla 2.2.1": {
+      "ley": "rmf",
+      "articulo": "2.2.1",
       "parrafo": 1
     }
   },
@@ -700,6 +833,11 @@
       "articulo": "17-K",
       "parrafo": 1,
       "query": "cff:17-K,139"
+    },
+    "regla 2.2.8": {
+      "ley": "rmf",
+      "articulo": "2.2.8",
+      "parrafo": 1
     }
   },
   "2.2.16": {
@@ -734,10 +872,22 @@
       "parrafo": 1
     }
   },
+  "2.2.19": {
+    "regla 2.2.14": {
+      "ley": "rmf",
+      "articulo": "2.2.14",
+      "parrafo": 1
+    }
+  },
   "2.2.20": {
     "artículo 17-H, séptimo y octavo párrafos del CFF": {
       "ley": "cff",
       "articulo": "17-H",
+      "parrafo": 1
+    },
+    "regla 2.2.4": {
+      "ley": "rmf",
+      "articulo": "2.2.4",
       "parrafo": 1
     }
   },
@@ -761,6 +911,11 @@
       "parrafo": 1,
       "query": "cff:17-K,27,86-C"
     },
+    "reglas 2.4.4": {
+      "ley": "rmf",
+      "articulo": "2.4.4",
+      "parrafo": 1
+    },
     "artículos 17-K, tercer párrafo y 86-C del CFF": {
       "ley": "cff",
       "articulo": "17-K",
@@ -779,6 +934,11 @@
       "articulo": "22",
       "parrafo": 1,
       "query": "cff:22,22-B"
+    },
+    "regla 2.3.5": {
+      "ley": "rmf",
+      "articulo": "2.3.5",
+      "parrafo": 1
     },
     "artículo 69-B del mismo Código": {
       "ley": "cff",
@@ -813,9 +973,19 @@
       "articulo": "74",
       "parrafo": 1
     },
+    "regla 2.3.4": {
+      "ley": "rmf",
+      "articulo": "2.3.4",
+      "parrafo": 1
+    },
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
+      "parrafo": 1
+    },
+    "regla 2.8.1.5": {
+      "ley": "rmf",
+      "articulo": "2.8.1.5",
       "parrafo": 1
     },
     "artículo 69-B del CFF": {
@@ -845,6 +1015,11 @@
       "ley": "cff",
       "articulo": "22",
       "parrafo": 1
+    },
+    "regla 2.3.8": {
+      "ley": "rmf",
+      "articulo": "2.3.8",
+      "parrafo": 1
     }
   },
   "2.3.5": {
@@ -868,12 +1043,22 @@
       "articulo": "22",
       "parrafo": 1,
       "query": "cff:22,22-C"
+    },
+    "reglas 2.3.4": {
+      "ley": "rmf",
+      "articulo": "2.3.4",
+      "parrafo": 1
     }
   },
   "2.3.8": {
     "artículo 22-C del CFF": {
       "ley": "cff",
       "articulo": "22-C",
+      "parrafo": 1
+    },
+    "regla 2.3.2": {
+      "ley": "rmf",
+      "articulo": "2.3.2",
       "parrafo": 1
     },
     "artículo 97, cuarto párrafo de la Ley del ISR": {
@@ -911,6 +1096,16 @@
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
+      "parrafo": 1
+    },
+    "regla 2.8.1.5": {
+      "ley": "rmf",
+      "articulo": "2.8.1.5",
+      "parrafo": 1
+    },
+    "regla 2.3.4": {
+      "ley": "rmf",
+      "articulo": "2.3.4",
       "parrafo": 1
     },
     "artículo 22, séptimo párrafo del CFF": {
@@ -957,6 +1152,16 @@
       "articulo": "32-D",
       "parrafo": 1
     },
+    "regla 2.8.1.5": {
+      "ley": "rmf",
+      "articulo": "2.8.1.5",
+      "parrafo": 1
+    },
+    "regla 2.3.4": {
+      "ley": "rmf",
+      "articulo": "2.3.4",
+      "parrafo": 1
+    },
     "artículos 49 Bis, 69, párrafos penúltimo, fracciones I, II, III y IV, y último o 69-B del CFF": {
       "ley": "cff",
       "articulo": "49",
@@ -989,12 +1194,27 @@
       "ley": "liva",
       "articulo": "1o",
       "parrafo": 2
+    },
+    "regla 2.3.8": {
+      "ley": "rmf",
+      "articulo": "2.3.8",
+      "parrafo": 1
     }
   },
   "2.3.14": {
+    "regla 2.3.4": {
+      "ley": "rmf",
+      "articulo": "2.3.4",
+      "parrafo": 1
+    },
     "artículo 22, séptimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "22",
+      "parrafo": 1
+    },
+    "regla 4.1.6": {
+      "ley": "rmf",
+      "articulo": "4.1.6",
       "parrafo": 1
     }
   },
@@ -1014,6 +1234,20 @@
       "ley": "lisr",
       "articulo": "151",
       "parrafo": 21
+    }
+  },
+  "2.4.2": {
+    "reglas 2.4.6": {
+      "ley": "rmf",
+      "articulo": "2.4.6",
+      "parrafo": 1
+    }
+  },
+  "2.4.5": {
+    "regla 2.4.13": {
+      "ley": "rmf",
+      "articulo": "2.4.13",
+      "parrafo": 1
     }
   },
   "2.4.6": {
@@ -1078,6 +1312,11 @@
       "ley": "cff",
       "articulo": "27",
       "parrafo": 1
+    },
+    "regla 2.5.8": {
+      "ley": "rmf",
+      "articulo": "2.5.8",
+      "parrafo": 1
     }
   },
   "2.5.6": {
@@ -1109,9 +1348,24 @@
       "ley": "cff",
       "articulo": "27",
       "parrafo": 1
+    },
+    "REGLA 2.5.8": {
+      "ley": "rmf",
+      "articulo": "2.5.8",
+      "parrafo": 1
+    },
+    "regla 3.1.14": {
+      "ley": "rmf",
+      "articulo": "3.1.14",
+      "parrafo": 1
     }
   },
   "2.5.9": {
+    "regla 2.1.36": {
+      "ley": "rmf",
+      "articulo": "2.1.36",
+      "parrafo": 1
+    },
     "artículo 69, penúltimo y último párrafos del CFF": {
       "ley": "cff",
       "articulo": "69",
@@ -1153,6 +1407,27 @@
       "parrafo": 1
     }
   },
+  "2.5.12": {
+    "regla 3.10.1.14": {
+      "ley": "rmf",
+      "articulo": "3.10.1.14",
+      "parrafo": 1
+    }
+  },
+  "2.5.13": {
+    "regla 2.5.8": {
+      "ley": "rmf",
+      "articulo": "2.5.8",
+      "parrafo": 1
+    }
+  },
+  "2.5.14": {
+    "regla 2.5.8": {
+      "ley": "rmf",
+      "articulo": "2.5.8",
+      "parrafo": 1
+    }
+  },
   "2.5.17": {
     "artículo 74-B de la Ley del ISR": {
       "ley": "lisr",
@@ -1171,6 +1446,11 @@
       "ley": "lisr",
       "articulo": "74-B",
       "parrafo": 1
+    },
+    "regla 2.5.8": {
+      "ley": "rmf",
+      "articulo": "2.5.8",
+      "parrafo": 1
     }
   },
   "2.5.20": {
@@ -1179,6 +1459,11 @@
       "articulo": "27",
       "parrafo": 1,
       "query": "cff:27,63"
+    },
+    "regla 2.5.8": {
+      "ley": "rmf",
+      "articulo": "2.5.8",
+      "parrafo": 1
     }
   },
   "2.5.23": {
@@ -1186,6 +1471,42 @@
       "ley": "cff",
       "articulo": "29-A",
       "parrafo": 7
+    },
+    "regla 2.5.8": {
+      "ley": "rmf",
+      "articulo": "2.5.8",
+      "parrafo": 1
+    }
+  },
+  "2.6.1.2": {
+    "regla 2.6.1.1": {
+      "ley": "rmf",
+      "articulo": "2.6.1.1",
+      "parrafo": 1
+    }
+  },
+  "2.6.1.3": {
+    "regla 2.6.1.1": {
+      "ley": "rmf",
+      "articulo": "2.6.1.1",
+      "parrafo": 1
+    }
+  },
+  "2.6.1.4": {
+    "regla 2.6.1.2": {
+      "ley": "rmf",
+      "articulo": "2.6.1.2",
+      "parrafo": 1
+    },
+    "regla 2.6.1.3": {
+      "ley": "rmf",
+      "articulo": "2.6.1.3",
+      "parrafo": 1
+    },
+    "regla 2.8.1.6": {
+      "ley": "rmf",
+      "articulo": "2.8.1.6",
+      "parrafo": 1
     }
   },
   "2.6.2.1": {
@@ -1194,6 +1515,16 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    },
+    "regla 2.7.1.21": {
+      "ley": "rmf",
+      "articulo": "2.7.1.21",
+      "parrafo": 1
+    },
+    "regla 2.6.1.2": {
+      "ley": "rmf",
+      "articulo": "2.6.1.2",
+      "parrafo": 1
     }
   },
   "2.6.2.2": {
@@ -1201,6 +1532,11 @@
       "ley": "cff",
       "articulo": "56",
       "parrafo": 8
+    },
+    "regla 2.10.9": {
+      "ley": "rmf",
+      "articulo": "2.10.9",
+      "parrafo": 1
     }
   },
   "2.7.1.1": {
@@ -1209,12 +1545,22 @@
       "articulo": "28",
       "parrafo": 2,
       "query": "cff:28/I,30"
+    },
+    "regla 2.8.1.4": {
+      "ley": "rmf",
+      "articulo": "2.8.1.4",
+      "parrafo": 1
     }
   },
   "2.7.1.2": {
     "artículo 29, primer y segundo párrafos del CFF": {
       "ley": "cff",
       "articulo": "29",
+      "parrafo": 1
+    },
+    "regla 2.7.1.8": {
+      "ley": "rmf",
+      "articulo": "2.7.1.8",
       "parrafo": 1
     }
   },
@@ -1243,6 +1589,26 @@
       "ley": "cff",
       "articulo": "29-A",
       "parrafo": 4
+    },
+    "regla 2.7.5.4": {
+      "ley": "rmf",
+      "articulo": "2.7.5.4",
+      "parrafo": 1
+    },
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
+    },
+    "regla 2.7.4.4": {
+      "ley": "rmf",
+      "articulo": "2.7.4.4",
+      "parrafo": 1
+    },
+    "regla 2.7.1.32": {
+      "ley": "rmf",
+      "articulo": "2.7.1.32",
+      "parrafo": 1
     }
   },
   "2.7.1.9": {
@@ -1263,9 +1629,24 @@
       "articulo": "29",
       "parrafo": 1
     },
+    "regla 3.3.1.3": {
+      "ley": "rmf",
+      "articulo": "3.3.1.3",
+      "parrafo": 1
+    },
     "artículo 126, cuarto y quinto párrafos de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "126",
+      "parrafo": 1
+    },
+    "regla 3.15.7": {
+      "ley": "rmf",
+      "articulo": "3.15.7",
+      "parrafo": 1
+    },
+    "regla 2.7.3.6": {
+      "ley": "rmf",
+      "articulo": "2.7.3.6",
       "parrafo": 1
     }
   },
@@ -1281,6 +1662,16 @@
       "ley": "cff",
       "articulo": "29",
       "parrafo": 1
+    },
+    "regla 2.7.1.23": {
+      "ley": "rmf",
+      "articulo": "2.7.1.23",
+      "parrafo": 1
+    },
+    "regla 2.7.1.14": {
+      "ley": "rmf",
+      "articulo": "2.7.1.14",
+      "parrafo": 1
     }
   },
   "2.7.1.13": {
@@ -1289,6 +1680,11 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    },
+    "regla 2.7.1.30": {
+      "ley": "rmf",
+      "articulo": "2.7.1.30",
+      "parrafo": 1
     }
   },
   "2.7.1.14": {
@@ -1327,6 +1723,11 @@
       "ley": "cff",
       "articulo": "29-A",
       "parrafo": 5
+    },
+    "regla 2.7.1.23": {
+      "ley": "rmf",
+      "articulo": "2.7.1.23",
+      "parrafo": 1
     }
   },
   "2.7.1.17": {
@@ -1343,6 +1744,11 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    },
+    "regla 2.7.1.30": {
+      "ley": "rmf",
+      "articulo": "2.7.1.30",
+      "parrafo": 1
     }
   },
   "2.7.1.20": {
@@ -1365,6 +1771,26 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A/IV"
+    },
+    "regla 2.7.1.23": {
+      "ley": "rmf",
+      "articulo": "2.7.1.23",
+      "parrafo": 1
+    },
+    "regla 2.7.1.32": {
+      "ley": "rmf",
+      "articulo": "2.7.1.32",
+      "parrafo": 1
+    },
+    "regla 2.6.1.2": {
+      "ley": "rmf",
+      "articulo": "2.6.1.2",
+      "parrafo": 1
+    },
+    "regla 3.3.1.7": {
+      "ley": "rmf",
+      "articulo": "3.3.1.7",
+      "parrafo": 1
     }
   },
   "2.7.1.22": {
@@ -1373,6 +1799,11 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    },
+    "regla 2.7.1.21": {
+      "ley": "rmf",
+      "articulo": "2.7.1.21",
+      "parrafo": 1
     }
   },
   "2.7.1.23": {
@@ -1404,6 +1835,18 @@
       "query": "lisr:27/I,151/III"
     }
   },
+  "2.7.1.29": {
+    "regla 2.7.1.32": {
+      "ley": "rmf",
+      "articulo": "2.7.1.32",
+      "parrafo": 1
+    },
+    "regla 3.3.1.34": {
+      "ley": "rmf",
+      "articulo": "3.3.1.34",
+      "parrafo": 1
+    }
+  },
   "2.7.1.30": {
     "artículos 29-A, fracción VII, inciso c) y 32-E del CFF": {
       "ley": "cff",
@@ -1417,6 +1860,38 @@
       "ley": "cff",
       "articulo": "29-A",
       "parrafo": 30
+    }
+  },
+  "2.7.1.35": {
+    "regla 2.7.1.34": {
+      "ley": "rmf",
+      "articulo": "2.7.1.34",
+      "parrafo": 1
+    },
+    "regla 2.7.1.32": {
+      "ley": "rmf",
+      "articulo": "2.7.1.32",
+      "parrafo": 1
+    },
+    "regla 2.7.1.21": {
+      "ley": "rmf",
+      "articulo": "2.7.1.21",
+      "parrafo": 1
+    },
+    "regla 2.7.1.23": {
+      "ley": "rmf",
+      "articulo": "2.7.1.23",
+      "parrafo": 1
+    },
+    "regla 2.7.4.1": {
+      "ley": "rmf",
+      "articulo": "2.7.4.1",
+      "parrafo": 1
+    },
+    "regla 2.6.1.1": {
+      "ley": "rmf",
+      "articulo": "2.6.1.1",
+      "parrafo": 1
     }
   },
   "2.7.1.36": {
@@ -1439,6 +1914,11 @@
       "parrafo": 13,
       "query": "lisr:27/III,147/IV"
     },
+    "reglas 2.7.1.29": {
+      "ley": "rmf",
+      "articulo": "2.7.1.29",
+      "parrafo": 1
+    },
     "artículos 27, fracción III y 147, fracción IV, de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "27",
@@ -1459,12 +1939,24 @@
       "parrafo": 1
     }
   },
+  "2.7.1.39": {
+    "reglas 2.7.1.29": {
+      "ley": "rmf",
+      "articulo": "2.7.1.29",
+      "parrafo": 1
+    }
+  },
   "2.7.1.40": {
     "artículos 29, primer y penúltimo párrafos y 29-A, fracción IX del CFF": {
       "ley": "cff",
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A/IX"
+    },
+    "regla 2.7.1.32": {
+      "ley": "rmf",
+      "articulo": "2.7.1.32",
+      "parrafo": 1
     }
   },
   "2.7.1.41": {
@@ -1473,6 +1965,18 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,59"
+    },
+    "regla 2.7.1.12": {
+      "ley": "rmf",
+      "articulo": "2.7.1.12",
+      "parrafo": 1
+    }
+  },
+  "2.7.1.43": {
+    "regla 2.1.35": {
+      "ley": "rmf",
+      "articulo": "2.1.35",
+      "parrafo": 1
     }
   },
   "2.7.1.44": {
@@ -1489,6 +1993,11 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A/IV"
+    },
+    "regla 2.7.1.23": {
+      "ley": "rmf",
+      "articulo": "2.7.1.23",
+      "parrafo": 1
     }
   },
   "2.7.1.47": {
@@ -1505,6 +2014,11 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    },
+    "regla 2.6.1.1": {
+      "ley": "rmf",
+      "articulo": "2.6.1.1",
+      "parrafo": 1
     }
   },
   "2.7.2.1": {
@@ -1513,9 +2027,19 @@
       "articulo": "79",
       "parrafo": 4
     },
+    "regla 2.7.2.8": {
+      "ley": "rmf",
+      "articulo": "2.7.2.8",
+      "parrafo": 1
+    },
     "artículo 69, penúltimo y último párrafos del CFF": {
       "ley": "cff",
       "articulo": "69",
+      "parrafo": 1
+    },
+    "reglas 2.7.2.4": {
+      "ley": "rmf",
+      "articulo": "2.7.2.4",
       "parrafo": 1
     },
     "artículo 32-D del CFF": {
@@ -1527,16 +2051,104 @@
       "ley": "cff",
       "articulo": "32-A",
       "parrafo": 1
+    },
+    "reglas 2.7.2.5": {
+      "ley": "rmf",
+      "articulo": "2.7.2.5",
+      "parrafo": 1
+    },
+    "regla 2.7.2.15": {
+      "ley": "rmf",
+      "articulo": "2.7.2.15",
+      "parrafo": 1
+    }
+  },
+  "2.7.2.2": {
+    "regla 2.7.2.13": {
+      "ley": "rmf",
+      "articulo": "2.7.2.13",
+      "parrafo": 1
+    }
+  },
+  "2.7.2.3": {
+    "reglas 2.7.2.4": {
+      "ley": "rmf",
+      "articulo": "2.7.2.4",
+      "parrafo": 1
+    },
+    "regla 2.7.2.1": {
+      "ley": "rmf",
+      "articulo": "2.7.2.1",
+      "parrafo": 1
+    }
+  },
+  "2.7.2.4": {
+    "regla 2.7.2.3": {
+      "ley": "rmf",
+      "articulo": "2.7.2.3",
+      "parrafo": 1
+    },
+    "regla 2.7.2.8": {
+      "ley": "rmf",
+      "articulo": "2.7.2.8",
+      "parrafo": 1
+    },
+    "regla 2.7.2.2": {
+      "ley": "rmf",
+      "articulo": "2.7.2.2",
+      "parrafo": 1
     }
   },
   "2.7.2.5": {
+    "regla 2.7.2.1": {
+      "ley": "rmf",
+      "articulo": "2.7.2.1",
+      "parrafo": 1
+    },
     "artículo 29-A del CFF": {
       "ley": "cff",
       "articulo": "29-A",
       "parrafo": 1
+    },
+    "regla 2.7.2.7": {
+      "ley": "rmf",
+      "articulo": "2.7.2.7",
+      "parrafo": 1
+    },
+    "regla 2.7.2.8": {
+      "ley": "rmf",
+      "articulo": "2.7.2.8",
+      "parrafo": 1
+    }
+  },
+  "2.7.2.6": {
+    "regla 2.7.2.8": {
+      "ley": "rmf",
+      "articulo": "2.7.2.8",
+      "parrafo": 1
+    },
+    "regla 2.7.2.12": {
+      "ley": "rmf",
+      "articulo": "2.7.2.12",
+      "parrafo": 1
     }
   },
   "2.7.2.8": {
+    "regla 2.7.2.1": {
+      "ley": "rmf",
+      "articulo": "2.7.2.1",
+      "parrafo": 1
+    },
+    "regla 2.7.2.6": {
+      "ley": "rmf",
+      "articulo": "2.7.2.6",
+      "parrafo": 1
+    },
+    "regla 2.7.1.32": {
+      "ley": "rmf",
+      "articulo": "2.7.1.32",
+      "parrafo": 1
+    },
     "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
@@ -1549,10 +2161,190 @@
       "parrafo": 1
     }
   },
+  "2.7.2.9": {
+    "regla 2.7.2.8": {
+      "ley": "rmf",
+      "articulo": "2.7.2.8",
+      "parrafo": 1
+    }
+  },
+  "2.7.2.10": {
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
+    },
+    "regla 2.7.2.9": {
+      "ley": "rmf",
+      "articulo": "2.7.2.9",
+      "parrafo": 1
+    }
+  },
+  "2.7.2.11": {
+    "regla 2.7.1.32": {
+      "ley": "rmf",
+      "articulo": "2.7.1.32",
+      "parrafo": 1
+    },
+    "regla 2.7.2.10": {
+      "ley": "rmf",
+      "articulo": "2.7.2.10",
+      "parrafo": 1
+    },
+    "regla 2.7.3.6": {
+      "ley": "rmf",
+      "articulo": "2.7.3.6",
+      "parrafo": 1
+    },
+    "regla 2.7.2.16": {
+      "ley": "rmf",
+      "articulo": "2.7.2.16",
+      "parrafo": 1
+    },
+    "regla 2.7.2.1": {
+      "ley": "rmf",
+      "articulo": "2.7.2.1",
+      "parrafo": 1
+    },
+    "regla 2.7.2.8": {
+      "ley": "rmf",
+      "articulo": "2.7.2.8",
+      "parrafo": 1
+    }
+  },
+  "2.7.2.12": {
+    "reglas 2.7.2.5": {
+      "ley": "rmf",
+      "articulo": "2.7.2.5",
+      "parrafo": 1
+    },
+    "regla 2.7.2.5": {
+      "ley": "rmf",
+      "articulo": "2.7.2.5",
+      "parrafo": 1
+    },
+    "regla 2.7.2.8": {
+      "ley": "rmf",
+      "articulo": "2.7.2.8",
+      "parrafo": 1
+    },
+    "regla 2.7.2.11": {
+      "ley": "rmf",
+      "articulo": "2.7.2.11",
+      "parrafo": 1
+    },
+    "regla 2.7.2.2": {
+      "ley": "rmf",
+      "articulo": "2.7.2.2",
+      "parrafo": 1
+    },
+    "regla 2.7.2.12": {
+      "ley": "rmf",
+      "articulo": "2.7.2.12",
+      "parrafo": 1
+    }
+  },
+  "2.7.2.13": {
+    "regla 2.7.2.2": {
+      "ley": "rmf",
+      "articulo": "2.7.2.2",
+      "parrafo": 1
+    },
+    "regla 2.7.2.12": {
+      "ley": "rmf",
+      "articulo": "2.7.2.12",
+      "parrafo": 1
+    }
+  },
+  "2.7.2.14": {
+    "regla 2.7.2.12": {
+      "ley": "rmf",
+      "articulo": "2.7.2.12",
+      "parrafo": 1
+    },
+    "regla 2.7.2.4": {
+      "ley": "rmf",
+      "articulo": "2.7.2.4",
+      "parrafo": 1
+    },
+    "regla 2.7.2.9": {
+      "ley": "rmf",
+      "articulo": "2.7.2.9",
+      "parrafo": 1
+    },
+    "regla 2.7.2.10": {
+      "ley": "rmf",
+      "articulo": "2.7.2.10",
+      "parrafo": 1
+    },
+    "regla 2.7.2.8": {
+      "ley": "rmf",
+      "articulo": "2.7.2.8",
+      "parrafo": 1
+    }
+  },
+  "2.7.2.16": {
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
+    },
+    "regla 2.7.3.6": {
+      "ley": "rmf",
+      "articulo": "2.7.3.6",
+      "parrafo": 1
+    },
+    "regla 2.7.2.5": {
+      "ley": "rmf",
+      "articulo": "2.7.2.5",
+      "parrafo": 1
+    }
+  },
+  "2.7.2.17": {
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
+    }
+  },
+  "2.7.2.18": {
+    "reglas 2.7.2.4": {
+      "ley": "rmf",
+      "articulo": "2.7.2.4",
+      "parrafo": 1
+    }
+  },
+  "2.7.2.19": {
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
+    }
+  },
   "2.7.3.1": {
     "artículo 29, penúltimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "29",
+      "parrafo": 1
+    },
+    "regla 2.7.3.10": {
+      "ley": "rmf",
+      "articulo": "2.7.3.10",
+      "parrafo": 1
+    },
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
+    },
+    "regla 2.2.15": {
+      "ley": "rmf",
+      "articulo": "2.2.15",
+      "parrafo": 1
+    },
+    "regla 2.2.4": {
+      "ley": "rmf",
+      "articulo": "2.2.4",
       "parrafo": 1
     }
   },
@@ -1561,12 +2353,52 @@
       "ley": "cff",
       "articulo": "29",
       "parrafo": 1
+    },
+    "regla 2.7.3.10": {
+      "ley": "rmf",
+      "articulo": "2.7.3.10",
+      "parrafo": 1
+    },
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
+    },
+    "regla 2.2.15": {
+      "ley": "rmf",
+      "articulo": "2.2.15",
+      "parrafo": 1
+    },
+    "regla 2.2.4": {
+      "ley": "rmf",
+      "articulo": "2.2.4",
+      "parrafo": 1
     }
   },
   "2.7.3.3": {
     "artículo 29, penúltimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "29",
+      "parrafo": 1
+    },
+    "regla 2.7.3.10": {
+      "ley": "rmf",
+      "articulo": "2.7.3.10",
+      "parrafo": 1
+    },
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
+    },
+    "regla 2.2.15": {
+      "ley": "rmf",
+      "articulo": "2.2.15",
+      "parrafo": 1
+    },
+    "regla 2.2.4": {
+      "ley": "rmf",
+      "articulo": "2.2.4",
       "parrafo": 1
     }
   },
@@ -1575,12 +2407,57 @@
       "ley": "cff",
       "articulo": "29",
       "parrafo": 1
+    },
+    "regla 2.7.3.10": {
+      "ley": "rmf",
+      "articulo": "2.7.3.10",
+      "parrafo": 1
+    },
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
+    },
+    "regla 2.2.15": {
+      "ley": "rmf",
+      "articulo": "2.2.15",
+      "parrafo": 1
+    },
+    "regla 2.2.4": {
+      "ley": "rmf",
+      "articulo": "2.2.4",
+      "parrafo": 1
     }
   },
   "2.7.3.5": {
+    "regla 4.1.2": {
+      "ley": "rmf",
+      "articulo": "4.1.2",
+      "parrafo": 1
+    },
     "artículo 29, penúltimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "29",
+      "parrafo": 1
+    },
+    "regla 2.7.3.10": {
+      "ley": "rmf",
+      "articulo": "2.7.3.10",
+      "parrafo": 1
+    },
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
+    },
+    "regla 2.2.15": {
+      "ley": "rmf",
+      "articulo": "2.2.15",
+      "parrafo": 1
+    },
+    "regla 2.2.4": {
+      "ley": "rmf",
+      "articulo": "2.2.4",
       "parrafo": 1
     }
   },
@@ -1589,12 +2466,42 @@
       "ley": "cff",
       "articulo": "29",
       "parrafo": 1
+    },
+    "regla 2.7.3.10": {
+      "ley": "rmf",
+      "articulo": "2.7.3.10",
+      "parrafo": 1
+    },
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
     }
   },
   "2.7.3.7": {
     "artículo 29, penúltimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "29",
+      "parrafo": 1
+    },
+    "regla 2.7.3.10": {
+      "ley": "rmf",
+      "articulo": "2.7.3.10",
+      "parrafo": 1
+    },
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
+    },
+    "regla 2.2.15": {
+      "ley": "rmf",
+      "articulo": "2.2.15",
+      "parrafo": 1
+    },
+    "regla 2.2.4": {
+      "ley": "rmf",
+      "articulo": "2.2.4",
       "parrafo": 1
     }
   },
@@ -1610,11 +2517,31 @@
       "articulo": "29",
       "parrafo": 1
     },
+    "regla 2.7.3.10": {
+      "ley": "rmf",
+      "articulo": "2.7.3.10",
+      "parrafo": 1
+    },
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
+    },
     "artículos 17-H, primer párrafo, fracción X o 17- H Bis, último párrafo del CFF": {
       "ley": "cff",
       "articulo": "17-H",
       "parrafo": 1,
       "query": "cff:17-H,17"
+    },
+    "regla 2.2.15": {
+      "ley": "rmf",
+      "articulo": "2.2.15",
+      "parrafo": 1
+    },
+    "regla 2.2.4": {
+      "ley": "rmf",
+      "articulo": "2.2.4",
+      "parrafo": 1
     }
   },
   "2.7.3.9": {
@@ -1622,12 +2549,42 @@
       "ley": "cff",
       "articulo": "29",
       "parrafo": 1
+    },
+    "regla 2.7.3.10": {
+      "ley": "rmf",
+      "articulo": "2.7.3.10",
+      "parrafo": 1
+    },
+    "regla 2.7.2.14": {
+      "ley": "rmf",
+      "articulo": "2.7.2.14",
+      "parrafo": 1
+    },
+    "regla 2.2.15": {
+      "ley": "rmf",
+      "articulo": "2.2.15",
+      "parrafo": 1
+    },
+    "regla 2.2.4": {
+      "ley": "rmf",
+      "articulo": "2.2.4",
+      "parrafo": 1
     }
   },
   "2.7.3.10": {
     "artículo 29, penúltimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "29",
+      "parrafo": 1
+    },
+    "regla 2.7.3.1": {
+      "ley": "rmf",
+      "articulo": "2.7.3.1",
+      "parrafo": 1
+    },
+    "regla 4.1.2": {
+      "ley": "rmf",
+      "articulo": "4.1.2",
       "parrafo": 1
     },
     "artículo 69-B, cuarto párrafo del CFF": {
@@ -1640,6 +2597,26 @@
     "artículo 29, penúltimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "29",
+      "parrafo": 1
+    },
+    "regla 2.4.12": {
+      "ley": "rmf",
+      "articulo": "2.4.12",
+      "parrafo": 1
+    },
+    "regla 2.7.2.5": {
+      "ley": "rmf",
+      "articulo": "2.7.2.5",
+      "parrafo": 1
+    },
+    "regla 2.2.15": {
+      "ley": "rmf",
+      "articulo": "2.2.15",
+      "parrafo": 1
+    },
+    "regla 2.2.4": {
+      "ley": "rmf",
+      "articulo": "2.2.4",
       "parrafo": 1
     }
   },
@@ -1654,16 +2631,43 @@
       "articulo": "32-D",
       "parrafo": 1
     },
+    "reglas 2.7.4.7": {
+      "ley": "rmf",
+      "articulo": "2.7.4.7",
+      "parrafo": 1
+    },
     "artículo 69, penúltimo y último párrafos del CFF": {
       "ley": "cff",
       "articulo": "69",
       "parrafo": 1
     }
   },
+  "2.7.4.3": {
+    "regla 2.7.4.2": {
+      "ley": "rmf",
+      "articulo": "2.7.4.2",
+      "parrafo": 1
+    }
+  },
   "2.7.4.5": {
+    "regla 2.7.4.1": {
+      "ley": "rmf",
+      "articulo": "2.7.4.1",
+      "parrafo": 1
+    },
     "artículo 69 del CFF": {
       "ley": "cff",
       "articulo": "69",
+      "parrafo": 1
+    },
+    "regla 2.7.4.11": {
+      "ley": "rmf",
+      "articulo": "2.7.4.11",
+      "parrafo": 1
+    },
+    "regla 2.7.4.13": {
+      "ley": "rmf",
+      "articulo": "2.7.4.13",
       "parrafo": 1
     },
     "artículo 69-B, cuarto párrafo del CFF": {
@@ -1672,7 +2676,82 @@
       "parrafo": 1
     }
   },
+  "2.7.4.6": {
+    "regla 2.7.4.1": {
+      "ley": "rmf",
+      "articulo": "2.7.4.1",
+      "parrafo": 1
+    }
+  },
+  "2.7.4.7": {
+    "regla 2.7.4.8": {
+      "ley": "rmf",
+      "articulo": "2.7.4.8",
+      "parrafo": 1
+    },
+    "regla 2.7.4.2": {
+      "ley": "rmf",
+      "articulo": "2.7.4.2",
+      "parrafo": 1
+    }
+  },
+  "2.7.4.8": {
+    "regla 2.7.4.7": {
+      "ley": "rmf",
+      "articulo": "2.7.4.7",
+      "parrafo": 1
+    },
+    "regla 2.7.4.5": {
+      "ley": "rmf",
+      "articulo": "2.7.4.5",
+      "parrafo": 1
+    },
+    "regla 2.7.4.6": {
+      "ley": "rmf",
+      "articulo": "2.7.4.6",
+      "parrafo": 1
+    },
+    "regla 2.7.4.3": {
+      "ley": "rmf",
+      "articulo": "2.7.4.3",
+      "parrafo": 1
+    }
+  },
+  "2.7.4.9": {
+    "regla 2.7.4.6": {
+      "ley": "rmf",
+      "articulo": "2.7.4.6",
+      "parrafo": 1
+    }
+  },
+  "2.7.4.10": {
+    "regla 2.7.4.9": {
+      "ley": "rmf",
+      "articulo": "2.7.4.9",
+      "parrafo": 1
+    },
+    "regla 2.7.4.5": {
+      "ley": "rmf",
+      "articulo": "2.7.4.5",
+      "parrafo": 1
+    }
+  },
   "2.7.4.11": {
+    "regla 2.7.4.5": {
+      "ley": "rmf",
+      "articulo": "2.7.4.5",
+      "parrafo": 1
+    },
+    "regla 2.7.4.6": {
+      "ley": "rmf",
+      "articulo": "2.7.4.6",
+      "parrafo": 1
+    },
+    "regla 2.7.4.10": {
+      "ley": "rmf",
+      "articulo": "2.7.4.10",
+      "parrafo": 1
+    },
     "artículo 29-A del CFF": {
       "ley": "cff",
       "articulo": "29-A",
@@ -1681,6 +2760,40 @@
     "artículo 69-B, cuarto párrafo del CFF": {
       "ley": "cff",
       "articulo": "69-B",
+      "parrafo": 1
+    },
+    "regla 2.7.4.3": {
+      "ley": "rmf",
+      "articulo": "2.7.4.3",
+      "parrafo": 1
+    },
+    "regla 2.7.4.11": {
+      "ley": "rmf",
+      "articulo": "2.7.4.11",
+      "parrafo": 1
+    },
+    "reglas 2.7.4.5": {
+      "ley": "rmf",
+      "articulo": "2.7.4.5",
+      "parrafo": 1
+    }
+  },
+  "2.7.4.12": {
+    "regla 2.7.4.11": {
+      "ley": "rmf",
+      "articulo": "2.7.4.11",
+      "parrafo": 1
+    }
+  },
+  "2.7.4.13": {
+    "regla 2.7.4.2": {
+      "ley": "rmf",
+      "articulo": "2.7.4.2",
+      "parrafo": 1
+    },
+    "regla 2.7.4.11": {
+      "ley": "rmf",
+      "articulo": "2.7.4.11",
       "parrafo": 1
     }
   },
@@ -1697,6 +2810,13 @@
       "ley": "lisr",
       "articulo": "99",
       "parrafo": 4
+    }
+  },
+  "2.7.5.4": {
+    "regla 3.1.14": {
+      "ley": "rmf",
+      "articulo": "3.1.14",
+      "parrafo": 1
     }
   },
   "2.7.5.5": {
@@ -1727,6 +2847,26 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    },
+    "regla 2.7.6.3": {
+      "ley": "rmf",
+      "articulo": "2.7.6.3",
+      "parrafo": 1
+    },
+    "regla 2.7.6.4": {
+      "ley": "rmf",
+      "articulo": "2.7.6.4",
+      "parrafo": 1
+    },
+    "regla 2.2.15": {
+      "ley": "rmf",
+      "articulo": "2.2.15",
+      "parrafo": 1
+    },
+    "regla 2.2.4": {
+      "ley": "rmf",
+      "articulo": "2.2.4",
+      "parrafo": 1
     }
   },
   "2.7.6.2": {
@@ -1734,9 +2874,36 @@
       "ley": "lisr",
       "articulo": "28",
       "parrafo": 25
+    },
+    "reglas 2.7.6.3": {
+      "ley": "rmf",
+      "articulo": "2.7.6.3",
+      "parrafo": 1
+    },
+    "regla 2.7.6.1": {
+      "ley": "rmf",
+      "articulo": "2.7.6.1",
+      "parrafo": 1
+    }
+  },
+  "2.7.6.3": {
+    "regla 2.7.6.1": {
+      "ley": "rmf",
+      "articulo": "2.7.6.1",
+      "parrafo": 1
     }
   },
   "2.7.6.4": {
+    "regla 2.7.6.1": {
+      "ley": "rmf",
+      "articulo": "2.7.6.1",
+      "parrafo": 1
+    },
+    "regla 2.7.6.3": {
+      "ley": "rmf",
+      "articulo": "2.7.6.3",
+      "parrafo": 1
+    },
     "artículo 29, penúltimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "29",
@@ -1747,9 +2914,34 @@
       "articulo": "29-A",
       "parrafo": 1
     },
+    "regla 2.6.1.1": {
+      "ley": "rmf",
+      "articulo": "2.6.1.1",
+      "parrafo": 1
+    },
+    "regla 2.4.5": {
+      "ley": "rmf",
+      "articulo": "2.4.5",
+      "parrafo": 1
+    },
     "artículos 29-A, cuarto párrafo del CFF": {
       "ley": "cff",
       "articulo": "29-A",
+      "parrafo": 1
+    },
+    "regla 2.6.1.2": {
+      "ley": "rmf",
+      "articulo": "2.6.1.2",
+      "parrafo": 1
+    },
+    "regla 2.4.12": {
+      "ley": "rmf",
+      "articulo": "2.4.12",
+      "parrafo": 1
+    },
+    "reglas 2.4.12": {
+      "ley": "rmf",
+      "articulo": "2.4.12",
       "parrafo": 1
     },
     "artículos 29, penúltimo párrafo y 29-A del CFF": {
@@ -1810,10 +3002,25 @@
       "articulo": "28",
       "parrafo": 10
     },
+    "regla 2.8.1.5": {
+      "ley": "rmf",
+      "articulo": "2.8.1.5",
+      "parrafo": 1
+    },
     "artículo 16-C, fracción II del CFF": {
       "ley": "cff",
       "articulo": "16-C",
       "parrafo": 3
+    },
+    "regla 2.6.1.2": {
+      "ley": "rmf",
+      "articulo": "2.6.1.2",
+      "parrafo": 1
+    },
+    "regla 2.6.1.3": {
+      "ley": "rmf",
+      "articulo": "2.6.1.3",
+      "parrafo": 1
     }
   },
   "2.8.1.7": {
@@ -1845,6 +3052,11 @@
       "ley": "cff",
       "articulo": "22",
       "parrafo": 1
+    },
+    "regla 2.8.1.5": {
+      "ley": "rmf",
+      "articulo": "2.8.1.5",
+      "parrafo": 1
     }
   },
   "2.8.1.9": {
@@ -1872,6 +3084,16 @@
       "ley": "cff",
       "articulo": "3o",
       "parrafo": 1
+    },
+    "regla 2.8.4.1": {
+      "ley": "rmf",
+      "articulo": "2.8.4.1",
+      "parrafo": 1
+    },
+    "regla 2.8.5.1": {
+      "ley": "rmf",
+      "articulo": "2.8.5.1",
+      "parrafo": 1
     }
   },
   "2.8.1.12": {
@@ -1888,6 +3110,18 @@
     "artículo 52 del CFF": {
       "ley": "cff",
       "articulo": "52",
+      "parrafo": 1
+    }
+  },
+  "2.8.1.14": {
+    "regla 2.8.1.4": {
+      "ley": "rmf",
+      "articulo": "2.8.1.4",
+      "parrafo": 1
+    },
+    "reglas 2.8.1.5": {
+      "ley": "rmf",
+      "articulo": "2.8.1.5",
       "parrafo": 1
     }
   },
@@ -1929,9 +3163,19 @@
       "ley": "cff",
       "articulo": "30",
       "parrafo": 1
+    },
+    "regla 2.4.14": {
+      "ley": "rmf",
+      "articulo": "2.4.14",
+      "parrafo": 1
     }
   },
   "2.8.1.21": {
+    "regla 2.8.1.22": {
+      "ley": "rmf",
+      "articulo": "2.8.1.22",
+      "parrafo": 1
+    },
     "artículo 30 del CFF": {
       "ley": "cff",
       "articulo": "30",
@@ -1940,6 +3184,20 @@
     "artículo 134 del CFF": {
       "ley": "cff",
       "articulo": "134",
+      "parrafo": 1
+    }
+  },
+  "2.8.1.22": {
+    "regla 2.8.1.20": {
+      "ley": "rmf",
+      "articulo": "2.8.1.20",
+      "parrafo": 1
+    }
+  },
+  "2.8.1.23": {
+    "regla 2.8.1.22": {
+      "ley": "rmf",
+      "articulo": "2.8.1.22",
       "parrafo": 1
     }
   },
@@ -1975,6 +3233,11 @@
       "ley": "cff",
       "articulo": "6o",
       "parrafo": 1
+    },
+    "regla 2.1.18": {
+      "ley": "rmf",
+      "articulo": "2.1.18",
+      "parrafo": 1
     }
   },
   "2.8.3.2": {
@@ -1991,11 +3254,23 @@
       "articulo": "32",
       "parrafo": 1
     },
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
+      "parrafo": 1
+    },
     "artículos 17-A y 21 del CFF": {
       "ley": "cff",
       "articulo": "17-A",
       "parrafo": 1,
       "query": "cff:17-A,21"
+    }
+  },
+  "2.8.3.4": {
+    "regla 2.8.5.2": {
+      "ley": "rmf",
+      "articulo": "2.8.5.2",
+      "parrafo": 1
     }
   },
   "2.8.3.5": {
@@ -2046,6 +3321,11 @@
     "artículo 32 del CFF": {
       "ley": "cff",
       "articulo": "32",
+      "parrafo": 1
+    },
+    "regla 2.8.5.1": {
+      "ley": "rmf",
+      "articulo": "2.8.5.1",
       "parrafo": 1
     },
     "artículos 17-A y 21  del CFF": {
@@ -2099,6 +3379,11 @@
     "artículo 17-K del CFF": {
       "ley": "cff",
       "articulo": "17-K",
+      "parrafo": 1
+    },
+    "reglas 2.1.6": {
+      "ley": "rmf",
+      "articulo": "2.1.6",
       "parrafo": 1
     }
   },
@@ -2161,6 +3446,11 @@
       "ley": "cff",
       "articulo": "66",
       "parrafo": 1
+    },
+    "regla 2.11.2": {
+      "ley": "rmf",
+      "articulo": "2.11.2",
+      "parrafo": 1
     }
   },
   "2.9.11": {
@@ -2182,6 +3472,13 @@
     "artículo 69-B del CFF": {
       "ley": "cff",
       "articulo": "69-B",
+      "parrafo": 1
+    }
+  },
+  "2.9.12": {
+    "regla 3.5.8": {
+      "ley": "rmf",
+      "articulo": "3.5.8",
       "parrafo": 1
     }
   },
@@ -2221,6 +3518,11 @@
     "artículo 69-B, antepenúltimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "69-B",
+      "parrafo": 1
+    },
+    "regla 2.9.18": {
+      "ley": "rmf",
+      "articulo": "2.9.18",
       "parrafo": 1
     }
   },
@@ -2581,6 +3883,11 @@
       "parrafo": 1,
       "query": "cff:66,66-A"
     },
+    "regla 2.11.2": {
+      "ley": "rmf",
+      "articulo": "2.11.2",
+      "parrafo": 1
+    },
     "artículo 134 del CFF": {
       "ley": "cff",
       "articulo": "134",
@@ -2608,6 +3915,11 @@
       "ley": "cff",
       "articulo": "66",
       "parrafo": 1
+    },
+    "regla 2.9.10": {
+      "ley": "rmf",
+      "articulo": "2.9.10",
+      "parrafo": 1
     }
   },
   "2.11.5": {
@@ -2620,6 +3932,16 @@
       "ley": "lisr",
       "articulo": "150",
       "parrafo": 1
+    },
+    "reglas 2.9.10": {
+      "ley": "rmf",
+      "articulo": "2.9.10",
+      "parrafo": 1
+    },
+    "regla 2.9.10": {
+      "ley": "rmf",
+      "articulo": "2.9.10",
+      "parrafo": 1
     }
   },
   "2.11.6": {
@@ -2628,6 +3950,11 @@
       "articulo": "66",
       "parrafo": 1,
       "query": "cff:66,66-A"
+    },
+    "regla 3.17.3": {
+      "ley": "rmf",
+      "articulo": "3.17.3",
+      "parrafo": 1
     }
   },
   "2.11.7": {
@@ -2714,6 +4041,11 @@
       "ley": "cff",
       "articulo": "141",
       "parrafo": 3
+    },
+    "regla 2.12.11": {
+      "ley": "rmf",
+      "articulo": "2.12.11",
+      "parrafo": 1
     }
   },
   "2.12.8": {
@@ -2761,6 +4093,13 @@
       "parrafo": 1
     }
   },
+  "2.12.11": {
+    "regla 2.12.7": {
+      "ley": "rmf",
+      "articulo": "2.12.7",
+      "parrafo": 1
+    }
+  },
   "2.13.1": {
     "artículo 172 del CFF": {
       "ley": "cff",
@@ -2780,6 +4119,11 @@
       "ley": "cff",
       "articulo": "181",
       "parrafo": 1
+    },
+    "regla 2.13.3": {
+      "ley": "rmf",
+      "articulo": "2.13.3",
+      "parrafo": 1
     }
   },
   "2.13.5": {
@@ -2788,11 +4132,21 @@
       "articulo": "183",
       "parrafo": 1
     },
+    "regla 2.13.3": {
+      "ley": "rmf",
+      "articulo": "2.13.3",
+      "parrafo": 1
+    },
     "artículos 185 y 186 del CFF": {
       "ley": "cff",
       "articulo": "185",
       "parrafo": 1,
       "query": "cff:185,186"
+    },
+    "regla 2.13.10": {
+      "ley": "rmf",
+      "articulo": "2.13.10",
+      "parrafo": 1
     },
     "artículos 183, segundo párrafo del CFF": {
       "ley": "cff",
@@ -2922,9 +4276,19 @@
       "parrafo": 1,
       "query": "cff:66,66-A/VI,70-A"
     },
+    "regla 2.11.1": {
+      "ley": "rmf",
+      "articulo": "2.11.1",
+      "parrafo": 1
+    },
     "artículo 70-A del CFF": {
       "ley": "cff",
       "articulo": "70-A",
+      "parrafo": 1
+    },
+    "reglas 2.14.3": {
+      "ley": "rmf",
+      "articulo": "2.14.3",
       "parrafo": 1
     },
     "artículos 17-A y 21 del CFF": {
@@ -2945,6 +4309,11 @@
       "articulo": "1o",
       "parrafo": 1
     },
+    "regla 2.11.1": {
+      "ley": "rmf",
+      "articulo": "2.11.1",
+      "parrafo": 1
+    },
     "artículo 66-A, fracción VI, inciso a) del CFF": {
       "ley": "cff",
       "articulo": "66-A",
@@ -2953,6 +4322,11 @@
     "artículo 70-A del CFF": {
       "ley": "cff",
       "articulo": "70-A",
+      "parrafo": 1
+    },
+    "reglas 2.14.3": {
+      "ley": "rmf",
+      "articulo": "2.14.3",
       "parrafo": 1
     },
     "artículos 17-A y 21 del CFF": {
@@ -2992,6 +4366,11 @@
       "ley": "cff",
       "articulo": "70-A",
       "parrafo": 3
+    },
+    "regla 2.11.1": {
+      "ley": "rmf",
+      "articulo": "2.11.1",
+      "parrafo": 1
     }
   },
   "2.14.4": {
@@ -3041,6 +4420,11 @@
       "articulo": "74",
       "parrafo": 1
     },
+    "regla 2.14.5": {
+      "ley": "rmf",
+      "articulo": "2.14.5",
+      "parrafo": 1
+    },
     "artículo 70 del CFF": {
       "ley": "cff",
       "articulo": "70",
@@ -3070,6 +4454,11 @@
       "articulo": "66",
       "parrafo": 1,
       "query": "cff:66,66-A"
+    },
+    "regla 2.14.8": {
+      "ley": "rmf",
+      "articulo": "2.14.8",
+      "parrafo": 1
     },
     "artículo 134 del CFF": {
       "ley": "cff",
@@ -3107,6 +4496,11 @@
     }
   },
   "2.14.11": {
+    "regla 2.14.5": {
+      "ley": "rmf",
+      "articulo": "2.14.5",
+      "parrafo": 1
+    },
     "artículos 66 y 66-A del CFF": {
       "ley": "cff",
       "articulo": "66",
@@ -3119,12 +4513,22 @@
       "ley": "cff",
       "articulo": "74",
       "parrafo": 1
+    },
+    "regla 2.14.5": {
+      "ley": "rmf",
+      "articulo": "2.14.5",
+      "parrafo": 1
     }
   },
   "2.14.13": {
     "artículo 74 del CFF": {
       "ley": "cff",
       "articulo": "74",
+      "parrafo": 1
+    },
+    "regla 2.14.5": {
+      "ley": "rmf",
+      "articulo": "2.14.5",
       "parrafo": 1
     }
   },
@@ -3138,6 +4542,11 @@
       "ley": "cff",
       "articulo": "82",
       "parrafo": 3
+    },
+    "reglas 2.14.6": {
+      "ley": "rmf",
+      "articulo": "2.14.6",
+      "parrafo": 1
     }
   },
   "2.14.15": {
@@ -3265,6 +4674,11 @@
       "articulo": "32-H",
       "parrafo": 1
     },
+    "regla 2.18.6": {
+      "ley": "rmf",
+      "articulo": "2.18.6",
+      "parrafo": 1
+    },
     "artículo 27 del CFF": {
       "ley": "cff",
       "articulo": "27",
@@ -3291,6 +4705,16 @@
       "articulo": "32-I",
       "parrafo": 1
     },
+    "regla 2.18.1": {
+      "ley": "rmf",
+      "articulo": "2.18.1",
+      "parrafo": 1
+    },
+    "regla 2.18.5": {
+      "ley": "rmf",
+      "articulo": "2.18.5",
+      "parrafo": 1
+    },
     "artículo 69-B, cuarto párrafo del CFF": {
       "ley": "cff",
       "articulo": "69-B",
@@ -3308,6 +4732,11 @@
     "artículo 32-I del CFF": {
       "ley": "cff",
       "articulo": "32-I",
+      "parrafo": 1
+    },
+    "regla 2.18.8": {
+      "ley": "rmf",
+      "articulo": "2.18.8",
       "parrafo": 1
     }
   },
@@ -3329,12 +4758,27 @@
       "ley": "cff",
       "articulo": "200",
       "parrafo": 1
+    },
+    "regla 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
+    },
+    "regla 2.19.23": {
+      "ley": "rmf",
+      "articulo": "2.19.23",
+      "parrafo": 1
     }
   },
   "2.19.3": {
     "artículo 197, sexto párrafo del CFF": {
       "ley": "cff",
       "articulo": "197",
+      "parrafo": 1
+    },
+    "regla 2.19.23": {
+      "ley": "rmf",
+      "articulo": "2.19.23",
       "parrafo": 1
     }
   },
@@ -3344,6 +4788,11 @@
       "articulo": "199",
       "parrafo": 2,
       "query": "cff:199/I,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     }
   },
   "2.19.5": {
@@ -3357,6 +4806,11 @@
       "ley": "lisr",
       "articulo": "4-B",
       "parrafo": 1
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     }
   },
   "2.19.6": {
@@ -3365,6 +4819,11 @@
       "articulo": "199",
       "parrafo": 3,
       "query": "cff:199/II,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     }
   },
   "2.19.7": {
@@ -3373,6 +4832,11 @@
       "articulo": "199",
       "parrafo": 4,
       "query": "cff:199/III,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     }
   },
   "2.19.8": {
@@ -3381,6 +4845,11 @@
       "articulo": "199",
       "parrafo": 5,
       "query": "cff:199/IV,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     },
     "artículo 24 de la Ley del ISR": {
       "ley": "lisr",
@@ -3394,6 +4863,11 @@
       "articulo": "199",
       "parrafo": 6,
       "query": "cff:199/V,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     }
   },
   "2.19.10": {
@@ -3402,6 +4876,11 @@
       "articulo": "199",
       "parrafo": 7,
       "query": "cff:199/VI,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     },
     "artículo 199, fracción VI, inciso a) del CFF": {
       "ley": "cff",
@@ -3415,6 +4894,11 @@
       "articulo": "199",
       "parrafo": 7,
       "query": "cff:199/VI,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     },
     "artículo 199, fracción VI, inciso b) del CFF": {
       "ley": "cff",
@@ -3438,6 +4922,11 @@
       "articulo": "199",
       "parrafo": 7,
       "query": "cff:199/VI,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     }
   },
   "2.19.13": {
@@ -3446,6 +4935,11 @@
       "articulo": "199",
       "parrafo": 7,
       "query": "cff:199/VI,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     }
   },
   "2.19.14": {
@@ -3454,6 +4948,11 @@
       "articulo": "199",
       "parrafo": 7,
       "query": "cff:199/VI,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     }
   },
   "2.19.15": {
@@ -3462,6 +4961,11 @@
       "articulo": "199",
       "parrafo": 13,
       "query": "cff:199/VII,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     },
     "artículos 2 de la Ley del ISR": {
       "ley": "lisr",
@@ -3481,6 +4985,11 @@
       "parrafo": 14,
       "query": "cff:199/VIII,200/VI,201"
     },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
+    },
     "artículo 31 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "31",
@@ -3494,6 +5003,11 @@
       "parrafo": 15,
       "query": "cff:199/IX,200/VI,201"
     },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
+    },
     "artículo 28, fracción XXIII de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "28",
@@ -3506,6 +5020,11 @@
       "articulo": "199",
       "parrafo": 16,
       "query": "cff:199/X,200,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     }
   },
   "2.19.19": {
@@ -3514,6 +5033,11 @@
       "articulo": "199",
       "parrafo": 17,
       "query": "cff:199/XI,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     }
   },
   "2.19.20": {
@@ -3522,6 +5046,11 @@
       "articulo": "199",
       "parrafo": 18,
       "query": "cff:199/XII,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     },
     "artículos 140, segundo párrafo; 142, fracción V, segundo párrafo y 164 de la Ley del ISR": {
       "ley": "lisr",
@@ -3536,6 +5065,11 @@
       "articulo": "199",
       "parrafo": 19,
       "query": "cff:199/XIII,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     }
   },
   "2.19.22": {
@@ -3544,12 +5078,22 @@
       "articulo": "199",
       "parrafo": 20,
       "query": "cff:199/XIV,200/VI,201"
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     }
   },
   "2.19.23": {
     "artículo 197, sexto y último párrafos del CFF": {
       "ley": "cff",
       "articulo": "197",
+      "parrafo": 1
+    },
+    "regla 2.19.3": {
+      "ley": "rmf",
+      "articulo": "2.19.3",
       "parrafo": 1
     },
     "artículo 197, sexto párrafo del CFF": {
@@ -3563,9 +5107,24 @@
       "ley": "cff",
       "articulo": "199",
       "parrafo": 1
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
     }
   },
   "2.19.25": {
+    "regla 2.19.24": {
+      "ley": "rmf",
+      "articulo": "2.19.24",
+      "parrafo": 1
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
+    },
     "artículo 199 del CFF": {
       "ley": "cff",
       "articulo": "199",
@@ -3588,6 +5147,16 @@
     "artículo 201, último párrafo del CFF": {
       "ley": "cff",
       "articulo": "201",
+      "parrafo": 1
+    },
+    "reglas 2.19.1": {
+      "ley": "rmf",
+      "articulo": "2.19.1",
+      "parrafo": 1
+    },
+    "reglas 2.19.4": {
+      "ley": "rmf",
+      "articulo": "2.19.4",
       "parrafo": 1
     }
   },
@@ -3647,6 +5216,11 @@
     "artículos 5 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "5",
+      "parrafo": 1
+    },
+    "regla 3.5.8": {
+      "ley": "rmf",
+      "articulo": "3.5.8",
       "parrafo": 1
     },
     "artículo 16-C, fracción I del CFF": {
@@ -3713,14 +5287,46 @@
       "articulo": "13",
       "parrafo": 1
     },
+    "regla 3.21.2.1": {
+      "ley": "rmf",
+      "articulo": "3.21.2.1",
+      "parrafo": 1
+    },
+    "regla 2.7.5.4": {
+      "ley": "rmf",
+      "articulo": "2.7.5.4",
+      "parrafo": 1
+    },
     "artículo 141-A del CFF": {
       "ley": "cff",
       "articulo": "141-A",
       "parrafo": 1
     },
+    "reglas 2.12.7": {
+      "ley": "rmf",
+      "articulo": "2.12.7",
+      "parrafo": 1
+    },
+    "regla 3.2.13": {
+      "ley": "rmf",
+      "articulo": "3.2.13",
+      "parrafo": 1
+    },
+    "regla 3.2.16": {
+      "ley": "rmf",
+      "articulo": "3.2.16",
+      "parrafo": 1
+    },
     "artículo 192 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "192",
+      "parrafo": 1
+    }
+  },
+  "3.1.17": {
+    "reglas 3.18.1": {
+      "ley": "rmf",
+      "articulo": "3.18.1",
       "parrafo": 1
     }
   },
@@ -3741,6 +5347,11 @@
       "ley": "lisr",
       "articulo": "79",
       "parrafo": 33
+    },
+    "regla 2.5.8": {
+      "ley": "rmf",
+      "articulo": "2.5.8",
+      "parrafo": 1
     },
     "artículo 18 del CFF": {
       "ley": "cff",
@@ -3774,6 +5385,11 @@
       "ley": "lisr",
       "articulo": "27",
       "parrafo": 13
+    },
+    "regla 2.7.1.14": {
+      "ley": "rmf",
+      "articulo": "2.7.1.14",
+      "parrafo": 1
     },
     "artículo 30 del CFF": {
       "ley": "cff",
@@ -3827,6 +5443,11 @@
       "articulo": "17",
       "parrafo": 4
     },
+    "regla 2.7.1.32": {
+      "ley": "rmf",
+      "articulo": "2.7.1.32",
+      "parrafo": 1
+    },
     "artículo 17, fracción I, inciso c) de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "17",
@@ -3844,6 +5465,11 @@
       "articulo": "18",
       "parrafo": 12,
       "query": "lisr:18/IX,134"
+    },
+    "regla 3.2.16": {
+      "ley": "rmf",
+      "articulo": "3.2.16",
+      "parrafo": 1
     }
   },
   "3.2.6": {
@@ -3881,21 +5507,41 @@
       "articulo": "22",
       "parrafo": 1
     },
+    "regla 3.2.13": {
+      "ley": "rmf",
+      "articulo": "3.2.13",
+      "parrafo": 1
+    },
     "artículo 22, fracción II de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "22",
       "parrafo": 3
     },
+    "regla 3.2.9": {
+      "ley": "rmf",
+      "articulo": "3.2.9",
+      "parrafo": 1
+    },
     "artículo 188, fracción IX, sexto párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "188",
       "parrafo": 13
+    },
+    "regla 3.2.25": {
+      "ley": "rmf",
+      "articulo": "3.2.25",
+      "parrafo": 1
     }
   },
   "3.2.9": {
     "artículo 77, segundo párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "77",
+      "parrafo": 1
+    },
+    "regla 3.2.13": {
+      "ley": "rmf",
+      "articulo": "3.2.13",
       "parrafo": 1
     },
     "artículo 140 de la Ley del ISR": {
@@ -3911,6 +5557,13 @@
     "artículo 16, último párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "16",
+      "parrafo": 1
+    }
+  },
+  "3.2.10": {
+    "regla 3.2.13": {
+      "ley": "rmf",
+      "articulo": "3.2.13",
       "parrafo": 1
     }
   },
@@ -3936,6 +5589,11 @@
     }
   },
   "3.2.13": {
+    "reglas 3.1.14": {
+      "ley": "rmf",
+      "articulo": "3.1.14",
+      "parrafo": 1
+    },
     "artículos 187 y 188 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "187",
@@ -3956,6 +5614,16 @@
       "ley": "cff",
       "articulo": "14-A",
       "parrafo": 1
+    },
+    "regla 2.1.8": {
+      "ley": "rmf",
+      "articulo": "2.1.8",
+      "parrafo": 1
+    },
+    "regla 3.2.10": {
+      "ley": "rmf",
+      "articulo": "3.2.10",
+      "parrafo": 1
     }
   },
   "3.2.14": {
@@ -3964,6 +5632,11 @@
       "articulo": "55",
       "parrafo": 1,
       "query": "lisr:55,56,76/XI"
+    },
+    "regla 3.2.13": {
+      "ley": "rmf",
+      "articulo": "3.2.13",
+      "parrafo": 1
     }
   },
   "3.2.15": {
@@ -3972,6 +5645,11 @@
       "articulo": "54",
       "parrafo": 1,
       "query": "lisr:54,166/II"
+    },
+    "regla 3.2.16": {
+      "ley": "rmf",
+      "articulo": "3.2.16",
+      "parrafo": 1
     },
     "artículo 54 de la Ley del ISR": {
       "ley": "lisr",
@@ -3983,9 +5661,24 @@
       "articulo": "166",
       "parrafo": 17
     },
+    "regla 3.5.10": {
+      "ley": "rmf",
+      "articulo": "3.5.10",
+      "parrafo": 1
+    },
     "artículo 153, quinto párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "153",
+      "parrafo": 1
+    },
+    "regla 3.2.5": {
+      "ley": "rmf",
+      "articulo": "3.2.5",
+      "parrafo": 1
+    },
+    "regla 3.5.4": {
+      "ley": "rmf",
+      "articulo": "3.5.4",
       "parrafo": 1
     },
     "artículos 87 y 88 de la Ley del ISR": {
@@ -3996,9 +5689,19 @@
     }
   },
   "3.2.16": {
+    "reglas 3.2.5": {
+      "ley": "rmf",
+      "articulo": "3.2.5",
+      "parrafo": 1
+    },
     "artículo 14-A del CFF": {
       "ley": "cff",
       "articulo": "14-A",
+      "parrafo": 1
+    },
+    "regla 2.1.8": {
+      "ley": "rmf",
+      "articulo": "2.1.8",
       "parrafo": 1
     }
   },
@@ -4008,6 +5711,11 @@
       "articulo": "22",
       "parrafo": 1,
       "query": "lisr:22,23"
+    },
+    "regla 2.1.8": {
+      "ley": "rmf",
+      "articulo": "2.1.8",
+      "parrafo": 1
     },
     "artículo 8 de la Ley del ISR": {
       "ley": "lisr",
@@ -4026,6 +5734,11 @@
       "articulo": "22",
       "parrafo": 1,
       "query": "lisr:22,23"
+    },
+    "regla 2.1.8": {
+      "ley": "rmf",
+      "articulo": "2.1.8",
+      "parrafo": 1
     },
     "artículo 23, penúltimo párrafo de la Ley del ISR": {
       "ley": "lisr",
@@ -4049,6 +5762,11 @@
     "artículo 88, tercer párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "88",
+      "parrafo": 1
+    },
+    "regla 3.2.19": {
+      "ley": "rmf",
+      "articulo": "3.2.19",
       "parrafo": 1
     }
   },
@@ -4092,6 +5810,11 @@
       "articulo": "187",
       "parrafo": 1,
       "query": "lisr:187,188"
+    },
+    "regla 3.2.13": {
+      "ley": "rmf",
+      "articulo": "3.2.13",
+      "parrafo": 1
     }
   },
   "3.2.26": {
@@ -4165,6 +5888,16 @@
       "ley": "lisr",
       "articulo": "27",
       "parrafo": 13
+    },
+    "regla 3.3.1.10": {
+      "ley": "rmf",
+      "articulo": "3.3.1.10",
+      "parrafo": 1
+    },
+    "regla 2.7.1.21": {
+      "ley": "rmf",
+      "articulo": "2.7.1.21",
+      "parrafo": 1
     }
   },
   "3.3.1.8": {
@@ -4172,6 +5905,11 @@
       "ley": "lisr",
       "articulo": "27",
       "parrafo": 13
+    },
+    "reglas 3.3.1.9": {
+      "ley": "rmf",
+      "articulo": "3.3.1.9",
+      "parrafo": 1
     }
   },
   "3.3.1.9": {
@@ -4192,9 +5930,19 @@
       "articulo": "30",
       "parrafo": 1
     },
+    "regla 2.7.1.8": {
+      "ley": "rmf",
+      "articulo": "2.7.1.8",
+      "parrafo": 1
+    },
     "artículo 28 del CFF": {
       "ley": "cff",
       "articulo": "28",
+      "parrafo": 1
+    },
+    "regla 3.3.1.7": {
+      "ley": "rmf",
+      "articulo": "3.3.1.7",
       "parrafo": 1
     }
   },
@@ -4203,6 +5951,11 @@
       "ley": "lisr",
       "articulo": "27",
       "parrafo": 13
+    },
+    "regla 3.3.1.9": {
+      "ley": "rmf",
+      "articulo": "3.3.1.9",
+      "parrafo": 1
     }
   },
   "3.3.1.12": {
@@ -4211,9 +5964,29 @@
       "articulo": "27",
       "parrafo": 13
     },
+    "regla 3.3.1.8": {
+      "ley": "rmf",
+      "articulo": "3.3.1.8",
+      "parrafo": 1
+    },
+    "regla 3.3.1.11": {
+      "ley": "rmf",
+      "articulo": "3.3.1.11",
+      "parrafo": 1
+    },
+    "regla 3.3.1.42": {
+      "ley": "rmf",
+      "articulo": "3.3.1.42",
+      "parrafo": 1
+    },
     "artículo 69-B, cuarto párrafo del CFF": {
       "ley": "cff",
       "articulo": "69-B",
+      "parrafo": 1
+    },
+    "regla 3.3.1.10": {
+      "ley": "rmf",
+      "articulo": "3.3.1.10",
       "parrafo": 1
     }
   },
@@ -4251,6 +6024,11 @@
       "ley": "lisr",
       "articulo": "27",
       "parrafo": 33
+    },
+    "reglas 3.3.1.18": {
+      "ley": "rmf",
+      "articulo": "3.3.1.18",
+      "parrafo": 1
     }
   },
   "3.3.1.18": {
@@ -4266,6 +6044,11 @@
       "articulo": "27",
       "parrafo": 33
     },
+    "regla 2.7.1.8": {
+      "ley": "rmf",
+      "articulo": "2.7.1.8",
+      "parrafo": 1
+    },
     "artículo 30 del CFF": {
       "ley": "cff",
       "articulo": "30",
@@ -4277,6 +6060,11 @@
       "ley": "lisr",
       "articulo": "27",
       "parrafo": 33
+    },
+    "regla 3.3.1.18": {
+      "ley": "rmf",
+      "articulo": "3.3.1.18",
+      "parrafo": 1
     }
   },
   "3.3.1.21": {
@@ -4285,9 +6073,29 @@
       "articulo": "27",
       "parrafo": 33
     },
+    "regla 3.3.1.17": {
+      "ley": "rmf",
+      "articulo": "3.3.1.17",
+      "parrafo": 1
+    },
+    "regla 3.3.1.20": {
+      "ley": "rmf",
+      "articulo": "3.3.1.20",
+      "parrafo": 1
+    },
+    "regla 3.3.1.43": {
+      "ley": "rmf",
+      "articulo": "3.3.1.43",
+      "parrafo": 1
+    },
     "artículo 69-B, cuarto párrafo del CFF": {
       "ley": "cff",
       "articulo": "69-B",
+      "parrafo": 1
+    },
+    "regla 3.3.1.19": {
+      "ley": "rmf",
+      "articulo": "3.3.1.19",
       "parrafo": 1
     }
   },
@@ -4322,6 +6130,11 @@
       "ley": "lisr",
       "articulo": "28",
       "parrafo": 13
+    },
+    "regla 2.1.8": {
+      "ley": "rmf",
+      "articulo": "2.1.8",
+      "parrafo": 1
     }
   },
   "3.3.1.27": {
@@ -4329,6 +6142,11 @@
       "ley": "lisr",
       "articulo": "28",
       "parrafo": 39
+    },
+    "regla 2.1.2": {
+      "ley": "rmf",
+      "articulo": "2.1.2",
+      "parrafo": 1
     },
     "artículo 179 de la Ley del ISR": {
       "ley": "lisr",
@@ -4410,6 +6228,20 @@
       "parrafo": 1
     }
   },
+  "3.3.1.36": {
+    "regla 3.3.1.12": {
+      "ley": "rmf",
+      "articulo": "3.3.1.12",
+      "parrafo": 1
+    }
+  },
+  "3.3.1.37": {
+    "regla 3.3.1.21": {
+      "ley": "rmf",
+      "articulo": "3.3.1.21",
+      "parrafo": 1
+    }
+  },
   "3.3.1.38": {
     "artículo 25, fracción III de la Ley del ISR": {
       "ley": "lisr",
@@ -4423,6 +6255,44 @@
       "articulo": "25",
       "parrafo": 4,
       "query": "lisr:25/III,103/III"
+    }
+  },
+  "3.3.1.40": {
+    "regla 3.3.1.17": {
+      "ley": "rmf",
+      "articulo": "3.3.1.17",
+      "parrafo": 1
+    }
+  },
+  "3.3.1.41": {
+    "regla 3.3.1.8": {
+      "ley": "rmf",
+      "articulo": "3.3.1.8",
+      "parrafo": 1
+    }
+  },
+  "3.3.1.42": {
+    "regla 3.3.1.11": {
+      "ley": "rmf",
+      "articulo": "3.3.1.11",
+      "parrafo": 1
+    },
+    "regla 3.3.1.36": {
+      "ley": "rmf",
+      "articulo": "3.3.1.36",
+      "parrafo": 1
+    }
+  },
+  "3.3.1.43": {
+    "regla 3.3.1.20": {
+      "ley": "rmf",
+      "articulo": "3.3.1.20",
+      "parrafo": 1
+    },
+    "regla 3.3.1.37": {
+      "ley": "rmf",
+      "articulo": "3.3.1.37",
+      "parrafo": 1
     }
   },
   "3.3.2.1": {
@@ -4479,6 +6349,11 @@
       "ley": "lisr",
       "articulo": "44",
       "parrafo": 2
+    },
+    "regla 3.1.12": {
+      "ley": "rmf",
+      "articulo": "3.1.12",
+      "parrafo": 1
     }
   },
   "3.5.1": {
@@ -4514,6 +6389,11 @@
     "artículo 192 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "192",
+      "parrafo": 1
+    },
+    "regla 3.21.2.1": {
+      "ley": "rmf",
+      "articulo": "3.21.2.1",
       "parrafo": 1
     }
   },
@@ -4562,6 +6442,11 @@
     "artículos 87 de la misma Ley": {
       "ley": "lisr",
       "articulo": "87",
+      "parrafo": 1
+    },
+    "regla 3.16.5": {
+      "ley": "rmf",
+      "articulo": "3.16.5",
       "parrafo": 1
     },
     "artículo 87, quinto y penúltimo párrafos de la Ley del ISR": {
@@ -4616,9 +6501,19 @@
       "articulo": "8",
       "parrafo": 1
     },
+    "regla 3.2.12": {
+      "ley": "rmf",
+      "articulo": "3.2.12",
+      "parrafo": 1
+    },
     "artículo 134 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "134",
+      "parrafo": 1
+    },
+    "regla 3.16.1": {
+      "ley": "rmf",
+      "articulo": "3.16.1",
       "parrafo": 1
     }
   },
@@ -4626,6 +6521,11 @@
     "artículo 55 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "55",
+      "parrafo": 1
+    },
+    "regla 3.2.16": {
+      "ley": "rmf",
+      "articulo": "3.2.16",
       "parrafo": 1
     }
   },
@@ -4655,6 +6555,11 @@
       "ley": "lisr",
       "articulo": "55",
       "parrafo": 6
+    },
+    "regla 3.5.19": {
+      "ley": "rmf",
+      "articulo": "3.5.19",
+      "parrafo": 1
     }
   },
   "3.5.15": {
@@ -4897,6 +6802,13 @@
       "query": "cff:32-A,32-H/I"
     }
   },
+  "3.9.11": {
+    "regla 3.9.10": {
+      "ley": "rmf",
+      "articulo": "3.9.10",
+      "parrafo": 1
+    }
+  },
   "3.9.12": {
     "artículos 179 y 180 de la Ley del ISR": {
       "ley": "lisr",
@@ -4933,6 +6845,11 @@
       "articulo": "76",
       "parrafo": 6
     },
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
+      "parrafo": 1
+    },
     "artículo 17-D, sexto párrafo del CFF": {
       "ley": "cff",
       "articulo": "17-D",
@@ -4943,6 +6860,11 @@
     "artículo 14 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "14",
+      "parrafo": 1
+    },
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
       "parrafo": 1
     },
     "artículo 17-D, sexto párrafo del CFF": {
@@ -4991,9 +6913,19 @@
     }
   },
   "3.9.1.2": {
+    "regla 3.9.1.1": {
+      "ley": "rmf",
+      "articulo": "3.9.1.1",
+      "parrafo": 1
+    },
     "artículo 14, tercer párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "14",
+      "parrafo": 1
+    },
+    "reglas 3.9.1.3": {
+      "ley": "rmf",
+      "articulo": "3.9.1.3",
       "parrafo": 1
     }
   },
@@ -5003,6 +6935,11 @@
       "articulo": "25",
       "parrafo": 1,
       "query": "lisr:25,26,27/I,36/VII,76,90,110/XI,179"
+    },
+    "regla 3.9.1.2": {
+      "ley": "rmf",
+      "articulo": "3.9.1.2",
+      "parrafo": 1
     },
     "artículos 31-A y 32-H del CFF": {
       "ley": "cff",
@@ -5027,6 +6964,11 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    },
+    "regla 2.7.1.14": {
+      "ley": "rmf",
+      "articulo": "2.7.1.14",
+      "parrafo": 1
     },
     "artículo 76, fracción V de la Ley del ISR": {
       "ley": "lisr",
@@ -5060,6 +7002,23 @@
       "query": "lisr:76/X,110/X"
     }
   },
+  "3.9.1.4": {
+    "regla 3.9.1.3": {
+      "ley": "rmf",
+      "articulo": "3.9.1.3",
+      "parrafo": 1
+    },
+    "regla 3.9.1.4": {
+      "ley": "rmf",
+      "articulo": "3.9.1.4",
+      "parrafo": 1
+    },
+    "regla 3.9.1.1": {
+      "ley": "rmf",
+      "articulo": "3.9.1.1",
+      "parrafo": 1
+    }
+  },
   "3.9.1.5": {
     "artículo 34-A del CFF": {
       "ley": "cff",
@@ -5069,6 +7028,16 @@
     "artículo 184 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "184",
+      "parrafo": 1
+    },
+    "regla 2.9.8": {
+      "ley": "rmf",
+      "articulo": "2.9.8",
+      "parrafo": 1
+    },
+    "regla 3.9.1.3": {
+      "ley": "rmf",
+      "articulo": "3.9.1.3",
       "parrafo": 1
     },
     "artículo 32 del CFF": {
@@ -5083,6 +7052,18 @@
       "articulo": "79",
       "parrafo": 7,
       "query": "lisr:79/VI,82,83"
+    },
+    "regla 3.10.1.6": {
+      "ley": "rmf",
+      "articulo": "3.10.1.6",
+      "parrafo": 1
+    }
+  },
+  "3.10.1.2": {
+    "regla 3.10.1.8": {
+      "ley": "rmf",
+      "articulo": "3.10.1.8",
+      "parrafo": 1
     }
   },
   "3.10.1.3": {
@@ -5093,7 +7074,19 @@
       "query": "lisr:27/I,151/III"
     }
   },
+  "3.10.1.4": {
+    "regla 3.10.1.3": {
+      "ley": "rmf",
+      "articulo": "3.10.1.3",
+      "parrafo": 1
+    }
+  },
   "3.10.1.5": {
+    "regla 3.10.1.12": {
+      "ley": "rmf",
+      "articulo": "3.10.1.12",
+      "parrafo": 1
+    },
     "artículo 86, tercer párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "86",
@@ -5131,10 +7124,25 @@
       "parrafo": 7,
       "query": "lisr:79/VI,82"
     },
+    "reglas 3.10.1.1": {
+      "ley": "rmf",
+      "articulo": "3.10.1.1",
+      "parrafo": 1
+    },
     "artículo 82, fracción IV de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "82",
       "parrafo": 12
+    },
+    "regla 3.10.1.2": {
+      "ley": "rmf",
+      "articulo": "3.10.1.2",
+      "parrafo": 1
+    },
+    "regla 3.10.1.4": {
+      "ley": "rmf",
+      "articulo": "3.10.1.4",
+      "parrafo": 1
     }
   },
   "3.10.1.9": {
@@ -5143,6 +7151,11 @@
       "articulo": "79",
       "parrafo": 21,
       "query": "lisr:79/XI,82,83"
+    },
+    "regla 3.10.1.6": {
+      "ley": "rmf",
+      "articulo": "3.10.1.6",
+      "parrafo": 1
     },
     "artículo 30 del CFF": {
       "ley": "cff",
@@ -5174,6 +7187,11 @@
       "ley": "lisr",
       "articulo": "82",
       "parrafo": 17
+    },
+    "regla 2.5.9": {
+      "ley": "rmf",
+      "articulo": "2.5.9",
+      "parrafo": 1
     }
   },
   "3.10.1.13": {
@@ -5181,6 +7199,11 @@
       "ley": "lisr",
       "articulo": "82",
       "parrafo": 17
+    },
+    "regla 3.10.1.19": {
+      "ley": "rmf",
+      "articulo": "3.10.1.19",
+      "parrafo": 1
     }
   },
   "3.10.1.14": {
@@ -5206,6 +7229,11 @@
     }
   },
   "3.10.1.17": {
+    "regla 2.5.12": {
+      "ley": "rmf",
+      "articulo": "2.5.12",
+      "parrafo": 1
+    },
     "artículos 29 y 29-A del CFF": {
       "ley": "cff",
       "articulo": "29",
@@ -5232,6 +7260,11 @@
       "articulo": "129",
       "parrafo": 1,
       "query": "lisr:129,136"
+    },
+    "regla 3.10.1.12": {
+      "ley": "rmf",
+      "articulo": "3.10.1.12",
+      "parrafo": 1
     }
   },
   "3.10.1.18": {
@@ -5240,6 +7273,11 @@
       "articulo": "82",
       "parrafo": 13,
       "query": "lisr:82/V,82-Qu"
+    },
+    "regla 3.10.1.12": {
+      "ley": "rmf",
+      "articulo": "3.10.1.12",
+      "parrafo": 1
     }
   },
   "3.10.1.19": {
@@ -5260,6 +7298,13 @@
     "artículo 179, quinto párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "179",
+      "parrafo": 1
+    }
+  },
+  "3.10.1.22": {
+    "regla 2.5.12": {
+      "ley": "rmf",
+      "articulo": "2.5.12",
       "parrafo": 1
     }
   },
@@ -5308,6 +7353,13 @@
       "parrafo": 1
     }
   },
+  "3.10.2.3": {
+    "regla 2.1.37": {
+      "ley": "rmf",
+      "articulo": "2.1.37",
+      "parrafo": 1
+    }
+  },
   "3.10.2.4": {
     "artículo 87, noveno párrafo de la Ley del ISR": {
       "ley": "lisr",
@@ -5317,6 +7369,11 @@
     "artículo 187 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "187",
+      "parrafo": 1
+    },
+    "regla 3.21.2.9": {
+      "ley": "rmf",
+      "articulo": "3.21.2.9",
       "parrafo": 1
     },
     "artículo 9 de la Ley del ISR": {
@@ -5340,6 +7397,11 @@
     "artículo 146, segundo párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "146",
+      "parrafo": 1
+    },
+    "regla 3.2.19": {
+      "ley": "rmf",
+      "articulo": "3.2.19",
       "parrafo": 1
     }
   },
@@ -5390,6 +7452,16 @@
       "articulo": "9o",
       "parrafo": 2
     },
+    "regla 2.1.3": {
+      "ley": "rmf",
+      "articulo": "2.1.3",
+      "parrafo": 1
+    },
+    "regla 2.4.9": {
+      "ley": "rmf",
+      "articulo": "2.4.9",
+      "parrafo": 1
+    },
     "artículo 93, fracción XIX, inciso a) de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "93",
@@ -5428,11 +7500,21 @@
     }
   },
   "3.11.6": {
+    "regla 2.1.8": {
+      "ley": "rmf",
+      "articulo": "2.1.8",
+      "parrafo": 1
+    },
     "artículos 129 y 161, tercer párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "129",
       "parrafo": 1,
       "query": "lisr:129,161"
+    },
+    "regla 3.2.17": {
+      "ley": "rmf",
+      "articulo": "3.2.17",
+      "parrafo": 1
     }
   },
   "3.11.7": {
@@ -5481,6 +7563,11 @@
     "artículo 94, séptimo párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "94",
+      "parrafo": 1
+    },
+    "regla 2.5.8": {
+      "ley": "rmf",
+      "articulo": "2.5.8",
       "parrafo": 1
     },
     "artículo 96 de la citada Ley": {
@@ -5556,6 +7643,11 @@
       "articulo": "113-E",
       "parrafo": 1
     },
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
+      "parrafo": 1
+    },
     "artículos 113-E, cuarto párrafo, 113-F y 113-G, fracción VII de dicha Ley, únicamente por los ingresos que correspondan al Régimen Simplificado de Confianza. Lo establecido en el presente párrafo, no exime a los contribuyentes de determinar la renta gravable en términos del artículo 113-G, último párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "113-E",
@@ -5565,6 +7657,11 @@
     "artículo 113-G, último párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "113-G",
+      "parrafo": 1
+    },
+    "reglas 3.13.20": {
+      "ley": "rmf",
+      "articulo": "3.13.20",
       "parrafo": 1
     }
   },
@@ -5597,6 +7694,11 @@
     "artículo 113-E, noveno y décimo párrafos de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "113-E",
+      "parrafo": 1
+    },
+    "regla 3.13.11": {
+      "ley": "rmf",
+      "articulo": "3.13.11",
       "parrafo": 1
     }
   },
@@ -5637,6 +7739,11 @@
       "ley": "lisr",
       "articulo": "113-J",
       "parrafo": 1
+    },
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
+      "parrafo": 1
     }
   },
   "3.13.15": {
@@ -5650,6 +7757,11 @@
     "artículo 211 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "211",
+      "parrafo": 1
+    },
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
       "parrafo": 1
     },
     "artículo 17-D, sexto párrafo del CFF": {
@@ -5684,6 +7796,11 @@
     }
   },
   "3.13.19": {
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
+      "parrafo": 1
+    },
     "artículo 17-D, sexto párrafo del CFF": {
       "ley": "cff",
       "articulo": "17-D",
@@ -5708,6 +7825,11 @@
       "articulo": "113-E",
       "parrafo": 1
     },
+    "regla 3.13.20": {
+      "ley": "rmf",
+      "articulo": "3.13.20",
+      "parrafo": 1
+    },
     "artículo 113-E de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "113-E",
@@ -5720,6 +7842,11 @@
       "articulo": "16",
       "parrafo": 1,
       "query": "lisr:16,17,102"
+    },
+    "regla 2.7.1.21": {
+      "ley": "rmf",
+      "articulo": "2.7.1.21",
+      "parrafo": 1
     }
   },
   "3.13.24": {
@@ -5778,6 +7905,11 @@
       "articulo": "113-E",
       "parrafo": 1,
       "query": "lisr:113-E,113-I"
+    },
+    "regla 3.13.2": {
+      "ley": "rmf",
+      "articulo": "3.13.2",
+      "parrafo": 1
     }
   },
   "3.13.31": {
@@ -5792,6 +7924,11 @@
       "ley": "lisr",
       "articulo": "113-G",
       "parrafo": 3
+    },
+    "regla 2.2.7": {
+      "ley": "rmf",
+      "articulo": "2.2.7",
+      "parrafo": 1
     }
   },
   "3.13.33": {
@@ -5805,6 +7942,11 @@
     "artículo 113-E de la LISR": {
       "ley": "lisr",
       "articulo": "113-E",
+      "parrafo": 1
+    },
+    "regla 3.13.7": {
+      "ley": "rmf",
+      "articulo": "3.13.7",
       "parrafo": 1
     }
   },
@@ -5845,6 +7987,11 @@
     "artículo 124, segundo párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "124",
+      "parrafo": 1
+    },
+    "regla 2.7.3.6": {
+      "ley": "rmf",
+      "articulo": "2.7.3.6",
       "parrafo": 1
     }
   },
@@ -5903,6 +8050,11 @@
       "ley": "lisr",
       "articulo": "93",
       "parrafo": 31
+    },
+    "regla 3.15.2": {
+      "ley": "rmf",
+      "articulo": "3.15.2",
+      "parrafo": 1
     }
   },
   "3.15.8": {
@@ -5930,6 +8082,11 @@
       "articulo": "129",
       "parrafo": 1,
       "query": "lisr:129,161"
+    },
+    "regla 3.23.7": {
+      "ley": "rmf",
+      "articulo": "3.23.7",
+      "parrafo": 1
     },
     "artículo 30 del CFF": {
       "ley": "cff",
@@ -5961,6 +8118,11 @@
       "articulo": "129",
       "parrafo": 1,
       "query": "lisr:129,161"
+    },
+    "regla 3.23.7": {
+      "ley": "rmf",
+      "articulo": "3.23.7",
+      "parrafo": 1
     }
   },
   "3.15.13": {
@@ -5986,6 +8148,11 @@
     }
   },
   "3.16.1": {
+    "reglas 3.5.8": {
+      "ley": "rmf",
+      "articulo": "3.5.8",
+      "parrafo": 1
+    },
     "artículo 20, tercer párrafo del CFF": {
       "ley": "cff",
       "articulo": "20",
@@ -6026,6 +8193,11 @@
       "articulo": "134",
       "parrafo": 1
     },
+    "regla 3.16.1": {
+      "ley": "rmf",
+      "articulo": "3.16.1",
+      "parrafo": 1
+    },
     "artículo 20, tercer párrafo del CFF": {
       "ley": "cff",
       "articulo": "20",
@@ -6053,6 +8225,11 @@
     "artículo 54 de la misma Ley": {
       "ley": "lisr",
       "articulo": "54",
+      "parrafo": 1
+    },
+    "regla 3.16.9": {
+      "ley": "rmf",
+      "articulo": "3.16.9",
       "parrafo": 1
     },
     "artículos 54 y 87 de la Ley del ISR": {
@@ -6131,6 +8308,11 @@
       "articulo": "54",
       "parrafo": 1,
       "query": "lisr:54,135"
+    },
+    "regla 3.16.1": {
+      "ley": "rmf",
+      "articulo": "3.16.1",
+      "parrafo": 1
     }
   },
   "3.16.12": {
@@ -6139,6 +8321,11 @@
       "articulo": "54",
       "parrafo": 1,
       "query": "lisr:54,135,144,145,146,166"
+    },
+    "regla 2.1.8": {
+      "ley": "rmf",
+      "articulo": "2.1.8",
+      "parrafo": 1
     },
     "artículos 87 y 88 de la Ley del ISR": {
       "ley": "lisr",
@@ -6182,6 +8369,11 @@
       "ley": "lisr",
       "articulo": "150",
       "parrafo": 1
+    },
+    "regla 2.11.6": {
+      "ley": "rmf",
+      "articulo": "2.11.6",
+      "parrafo": 1
     }
   },
   "3.17.4": {
@@ -6205,6 +8397,11 @@
     "artículo 18, penúltimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "18",
+      "parrafo": 1
+    },
+    "reglas 3.17.6": {
+      "ley": "rmf",
+      "articulo": "3.17.6",
       "parrafo": 1
     }
   },
@@ -6315,6 +8512,11 @@
       "ley": "lisr",
       "articulo": "153",
       "parrafo": 1
+    },
+    "regla 3.18.2": {
+      "ley": "rmf",
+      "articulo": "3.18.2",
+      "parrafo": 1
     }
   },
   "3.18.4": {
@@ -6389,6 +8591,11 @@
       "ley": "lisr",
       "articulo": "76",
       "parrafo": 4
+    },
+    "regla 3.18.14": {
+      "ley": "rmf",
+      "articulo": "3.18.14",
+      "parrafo": 1
     }
   },
   "3.18.11": {
@@ -6406,6 +8613,16 @@
       "ley": "lisr",
       "articulo": "166",
       "parrafo": 16
+    },
+    "regla 3.18.10": {
+      "ley": "rmf",
+      "articulo": "3.18.10",
+      "parrafo": 1
+    },
+    "regla 3.18.14": {
+      "ley": "rmf",
+      "articulo": "3.18.14",
+      "parrafo": 1
     }
   },
   "3.18.14": {
@@ -6413,6 +8630,16 @@
       "ley": "lisr",
       "articulo": "166",
       "parrafo": 17
+    },
+    "regla 2.1.8": {
+      "ley": "rmf",
+      "articulo": "2.1.8",
+      "parrafo": 1
+    },
+    "regla 3.16.12": {
+      "ley": "rmf",
+      "articulo": "3.16.12",
+      "parrafo": 1
     }
   },
   "3.18.16": {
@@ -6463,6 +8690,18 @@
       "ley": "lisr",
       "articulo": "166",
       "parrafo": 17
+    },
+    "regla 3.18.21": {
+      "ley": "rmf",
+      "articulo": "3.18.21",
+      "parrafo": 1
+    }
+  },
+  "3.18.21": {
+    "regla 3.2.12": {
+      "ley": "rmf",
+      "articulo": "3.2.12",
+      "parrafo": 1
     }
   },
   "3.18.22": {
@@ -6470,12 +8709,24 @@
       "ley": "lisr",
       "articulo": "166",
       "parrafo": 1
+    },
+    "regla 3.18.21": {
+      "ley": "rmf",
+      "articulo": "3.18.21",
+      "parrafo": 1
     }
   },
   "3.18.23": {
     "artículo 171 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "171",
+      "parrafo": 1
+    }
+  },
+  "3.18.25": {
+    "regla 3.18.24": {
+      "ley": "rmf",
+      "articulo": "3.18.24",
       "parrafo": 1
     }
   },
@@ -6498,6 +8749,11 @@
       "ley": "lisr",
       "articulo": "166",
       "parrafo": 17
+    },
+    "regla 3.1.12": {
+      "ley": "rmf",
+      "articulo": "3.1.12",
+      "parrafo": 1
     }
   },
   "3.18.32": {
@@ -6536,6 +8792,11 @@
       "ley": "lisr",
       "articulo": "76",
       "parrafo": 23
+    },
+    "regla 2.7.5.4": {
+      "ley": "rmf",
+      "articulo": "2.7.5.4",
+      "parrafo": 1
     },
     "artículo 85 de la Ley del ISR": {
       "ley": "lisr",
@@ -6630,12 +8891,22 @@
       "ley": "lisr",
       "articulo": "178",
       "parrafo": 1
+    },
+    "regla 3.19.7": {
+      "ley": "rmf",
+      "articulo": "3.19.7",
+      "parrafo": 1
     }
   },
   "3.19.7": {
     "artículo 178 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "178",
+      "parrafo": 1
+    },
+    "regla 2.8.3.5": {
+      "ley": "rmf",
+      "articulo": "2.8.3.5",
       "parrafo": 1
     }
   },
@@ -6716,6 +8987,11 @@
       "parrafo": 1,
       "query": "lisr:183,183-Bis"
     },
+    "regla 3.20.9": {
+      "ley": "rmf",
+      "articulo": "3.20.9",
+      "parrafo": 1
+    },
     "artículo 183 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "183",
@@ -6749,6 +9025,11 @@
     "artículo 182, segundo párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "182",
+      "parrafo": 1
+    },
+    "regla 2.8.3.5": {
+      "ley": "rmf",
+      "articulo": "2.8.3.5",
       "parrafo": 1
     }
   },
@@ -6788,6 +9069,11 @@
     "artículo 187 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "187",
+      "parrafo": 1
+    },
+    "regla 3.21.2.2": {
+      "ley": "rmf",
+      "articulo": "3.21.2.2",
       "parrafo": 1
     },
     "artículo 187, fracción I de la Ley del ISR": {
@@ -6840,6 +9126,16 @@
       "ley": "liva",
       "articulo": "32",
       "parrafo": 4
+    },
+    "regla 2.4.11": {
+      "ley": "rmf",
+      "articulo": "2.4.11",
+      "parrafo": 1
+    },
+    "reglas 3.21.2.3": {
+      "ley": "rmf",
+      "articulo": "3.21.2.3",
+      "parrafo": 1
     }
   },
   "3.21.2.2": {
@@ -6857,6 +9153,11 @@
     "artículo 188 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "188",
+      "parrafo": 1
+    },
+    "regla 3.21.2.1": {
+      "ley": "rmf",
+      "articulo": "3.21.2.1",
       "parrafo": 1
     },
     "artículo 13 de dicha ley": {
@@ -6993,6 +9294,11 @@
       "articulo": "188",
       "parrafo": 5
     },
+    "regla 3.21.2.2": {
+      "ley": "rmf",
+      "articulo": "3.21.2.2",
+      "parrafo": 1
+    },
     "artículo 188, fracción VII de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "188",
@@ -7017,6 +9323,11 @@
       "ley": "lisr",
       "articulo": "151",
       "parrafo": 21
+    },
+    "regla 3.5.8": {
+      "ley": "rmf",
+      "articulo": "3.5.8",
+      "parrafo": 1
     }
   },
   "3.21.2.7": {
@@ -7038,6 +9349,21 @@
     }
   },
   "3.21.2.8": {
+    "regla 3.21.2.1": {
+      "ley": "rmf",
+      "articulo": "3.21.2.1",
+      "parrafo": 1
+    },
+    "reglas 3.21.2.1": {
+      "ley": "rmf",
+      "articulo": "3.21.2.1",
+      "parrafo": 1
+    },
+    "regla 3.21.2.2": {
+      "ley": "rmf",
+      "articulo": "3.21.2.2",
+      "parrafo": 1
+    },
     "artículos 9, 13, primer, tercer y noveno párrafos y 14 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "9",
@@ -7060,6 +9386,11 @@
       "ley": "lisr",
       "articulo": "87",
       "parrafo": 1
+    },
+    "regla 3.10.2.4": {
+      "ley": "rmf",
+      "articulo": "3.10.2.4",
+      "parrafo": 1
     }
   },
   "3.21.2.10": {
@@ -7074,6 +9405,11 @@
       "ley": "lisr",
       "articulo": "187",
       "parrafo": 3
+    },
+    "regla 3.21.2.10": {
+      "ley": "rmf",
+      "articulo": "3.21.2.10",
+      "parrafo": 1
     },
     "artículo 188 de la Ley del ISR": {
       "ley": "lisr",
@@ -7090,6 +9426,11 @@
       "ley": "lisr",
       "articulo": "187",
       "parrafo": 4
+    },
+    "regla 3.21.2.4": {
+      "ley": "rmf",
+      "articulo": "3.21.2.4",
+      "parrafo": 1
     },
     "artículo 124 de la Ley del ISR": {
       "ley": "lisr",
@@ -7127,6 +9468,11 @@
       "articulo": "187",
       "parrafo": 1,
       "query": "lisr:187,188"
+    },
+    "regla 3.21.2.1": {
+      "ley": "rmf",
+      "articulo": "3.21.2.1",
+      "parrafo": 1
     }
   },
   "3.21.3.1": {
@@ -7146,12 +9492,22 @@
       "ley": "lisr",
       "articulo": "9",
       "parrafo": 1
+    },
+    "regla 3.5.8": {
+      "ley": "rmf",
+      "articulo": "3.5.8",
+      "parrafo": 1
     }
   },
   "3.21.5.1": {
     "artículo 185 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "185",
+      "parrafo": 1
+    },
+    "regla 3.2.12": {
+      "ley": "rmf",
+      "articulo": "3.2.12",
       "parrafo": 1
     }
   },
@@ -7250,6 +9606,25 @@
       "ley": "lisr",
       "articulo": "53",
       "parrafo": 1
+    },
+    "regla 3.23.1": {
+      "ley": "rmf",
+      "articulo": "3.23.1",
+      "parrafo": 1
+    }
+  },
+  "3.23.4": {
+    "regla 3.23.3": {
+      "ley": "rmf",
+      "articulo": "3.23.3",
+      "parrafo": 1
+    }
+  },
+  "3.23.5": {
+    "reglas 3.23.1": {
+      "ley": "rmf",
+      "articulo": "3.23.1",
+      "parrafo": 1
     }
   },
   "3.23.8": {
@@ -7319,9 +9694,19 @@
       "articulo": "6o",
       "parrafo": 1
     },
+    "regla 2.8.1.5": {
+      "ley": "rmf",
+      "articulo": "2.8.1.5",
+      "parrafo": 1
+    },
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
+      "parrafo": 1
+    },
+    "regla 2.3.4": {
+      "ley": "rmf",
+      "articulo": "2.3.4",
       "parrafo": 1
     },
     "artículos 49 Bis, 69 o 69-B del CFF": {
@@ -7362,9 +9747,26 @@
       "ley": "cff",
       "articulo": "34",
       "parrafo": 1
+    },
+    "regla 4.1.9": {
+      "ley": "rmf",
+      "articulo": "4.1.9",
+      "parrafo": 1
+    }
+  },
+  "4.1.9": {
+    "reglas 4.1.7": {
+      "ley": "rmf",
+      "articulo": "4.1.7",
+      "parrafo": 1
     }
   },
   "4.1.11": {
+    "reglas 2.7.1.20": {
+      "ley": "rmf",
+      "articulo": "2.7.1.20",
+      "parrafo": 1
+    },
     "artículo 17-D, sexto párrafo del CFF": {
       "ley": "cff",
       "articulo": "17-D",
@@ -7378,11 +9780,23 @@
       "parrafo": 6
     }
   },
+  "4.2.3": {
+    "regla 11.2.2": {
+      "ley": "rmf",
+      "articulo": "11.2.2",
+      "parrafo": 1
+    }
+  },
   "4.2.4": {
     "artículo 15, fracción X, inciso b) de la Ley del IVA": {
       "ley": "liva",
       "articulo": "15",
       "parrafo": 13
+    },
+    "regla 11.2.2": {
+      "ley": "rmf",
+      "articulo": "11.2.2",
+      "parrafo": 1
     }
   },
   "4.2.5": {
@@ -7391,6 +9805,11 @@
       "articulo": "90",
       "parrafo": 1,
       "query": "lisr:90,179"
+    },
+    "reglas 4.2.3": {
+      "ley": "rmf",
+      "articulo": "4.2.3",
+      "parrafo": 1
     }
   },
   "4.2.6": {
@@ -7413,6 +9832,11 @@
       "articulo": "8o",
       "parrafo": 1,
       "query": "liva:8o,12"
+    },
+    "regla 4.2.7": {
+      "ley": "rmf",
+      "articulo": "4.2.7",
+      "parrafo": 1
     }
   },
   "4.3.2": {
@@ -7448,6 +9872,11 @@
       "ley": "liva",
       "articulo": "15",
       "parrafo": 11
+    },
+    "regla 3.1.12": {
+      "ley": "rmf",
+      "articulo": "3.1.12",
+      "parrafo": 1
     }
   },
   "4.3.9": {
@@ -7469,6 +9898,21 @@
       "ley": "liva",
       "articulo": "9o",
       "parrafo": 8
+    },
+    "regla 3.21.2.8": {
+      "ley": "rmf",
+      "articulo": "3.21.2.8",
+      "parrafo": 1
+    },
+    "reglas 3.21.2.2": {
+      "ley": "rmf",
+      "articulo": "3.21.2.2",
+      "parrafo": 1
+    },
+    "regla 3.21.2.1": {
+      "ley": "rmf",
+      "articulo": "3.21.2.1",
+      "parrafo": 1
     }
   },
   "4.4.1": {
@@ -7532,6 +9976,11 @@
       "ley": "liva",
       "articulo": "5o",
       "parrafo": 2
+    },
+    "regla 4.5.2": {
+      "ley": "rmf",
+      "articulo": "4.5.2",
+      "parrafo": 1
     }
   },
   "4.5.2": {
@@ -7581,6 +10030,11 @@
       "ley": "cff",
       "articulo": "28",
       "parrafo": 1
+    },
+    "regla 2.7.1.23": {
+      "ley": "rmf",
+      "articulo": "2.7.1.23",
+      "parrafo": 1
     }
   },
   "4.6.7": {
@@ -7603,6 +10057,23 @@
       "ley": "lieps",
       "articulo": "2o",
       "parrafo": 2
+    }
+  },
+  "5.1.7": {
+    "reglas 5.2.7": {
+      "ley": "rmf",
+      "articulo": "5.2.7",
+      "parrafo": 1
+    },
+    "reglas 5.2.42": {
+      "ley": "rmf",
+      "articulo": "5.2.42",
+      "parrafo": 1
+    },
+    "reglas 5.2.4": {
+      "ley": "rmf",
+      "articulo": "5.2.4",
+      "parrafo": 1
     }
   },
   "5.1.8": {
@@ -7647,11 +10118,23 @@
       "query": "lieps:5o,31,2021,19/II"
     }
   },
+  "5.2.2": {
+    "regla 5.2.1": {
+      "ley": "rmf",
+      "articulo": "5.2.1",
+      "parrafo": 1
+    }
+  },
   "5.2.3": {
     "artículo 19, fracción IV de la Ley del IEPS": {
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 9
+    },
+    "regla 5.2.1": {
+      "ley": "rmf",
+      "articulo": "5.2.1",
+      "parrafo": 1
     }
   },
   "5.2.4": {
@@ -7681,6 +10164,11 @@
       "articulo": "19",
       "parrafo": 11,
       "query": "lieps:19/V,26"
+    },
+    "regla 5.2.11": {
+      "ley": "rmf",
+      "articulo": "5.2.11",
+      "parrafo": 1
     }
   },
   "5.2.8": {
@@ -7688,6 +10176,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 11
+    },
+    "regla 5.3.1": {
+      "ley": "rmf",
+      "articulo": "5.3.1",
+      "parrafo": 1
     },
     "artículo 19, fracción XV, segundo párrafo de la Ley del IEPS": {
       "ley": "lieps",
@@ -7707,6 +10200,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 11
+    },
+    "regla 5.2.8": {
+      "ley": "rmf",
+      "articulo": "5.2.8",
+      "parrafo": 1
     }
   },
   "5.2.11": {
@@ -7714,6 +10212,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 11
+    },
+    "regla 5.2.24": {
+      "ley": "rmf",
+      "articulo": "5.2.24",
+      "parrafo": 1
     }
   },
   "5.2.12": {
@@ -7728,6 +10231,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 15
+    },
+    "regla 5.2.1": {
+      "ley": "rmf",
+      "articulo": "5.2.1",
+      "parrafo": 1
     },
     "artículo 2o., fracción I, inciso A) de la Ley del IEPS": {
       "ley": "lieps",
@@ -7745,6 +10253,11 @@
       "ley": "lisr",
       "articulo": "179",
       "parrafo": 1
+    },
+    "regla 5.2.1": {
+      "ley": "rmf",
+      "articulo": "5.2.1",
+      "parrafo": 1
     }
   },
   "5.2.15": {
@@ -7752,6 +10265,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 17
+    },
+    "regla 5.2.1": {
+      "ley": "rmf",
+      "articulo": "5.2.1",
+      "parrafo": 1
     }
   },
   "5.2.16": {
@@ -7759,6 +10277,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 20
+    },
+    "regla 5.2.1": {
+      "ley": "rmf",
+      "articulo": "5.2.1",
+      "parrafo": 1
     }
   },
   "5.2.17": {
@@ -7766,6 +10289,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 21
+    },
+    "regla 5.2.1": {
+      "ley": "rmf",
+      "articulo": "5.2.1",
+      "parrafo": 1
     }
   },
   "5.2.18": {
@@ -7773,6 +10301,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 24
+    },
+    "regla 5.2.1": {
+      "ley": "rmf",
+      "articulo": "5.2.1",
+      "parrafo": 1
     }
   },
   "5.2.19": {
@@ -7780,6 +10313,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 24
+    },
+    "regla 5.2.1": {
+      "ley": "rmf",
+      "articulo": "5.2.1",
+      "parrafo": 1
     }
   },
   "5.2.20": {
@@ -7787,6 +10325,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 24
+    },
+    "regla 5.2.1": {
+      "ley": "rmf",
+      "articulo": "5.2.1",
+      "parrafo": 1
     }
   },
   "5.2.21": {
@@ -7794,6 +10337,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 27
+    },
+    "regla 5.2.1": {
+      "ley": "rmf",
+      "articulo": "5.2.1",
+      "parrafo": 1
     }
   },
   "5.2.22": {
@@ -7809,6 +10357,16 @@
       "articulo": "19",
       "parrafo": 29
     },
+    "regla 2.1.36": {
+      "ley": "rmf",
+      "articulo": "2.1.36",
+      "parrafo": 1
+    },
+    "regla 5.2.24": {
+      "ley": "rmf",
+      "articulo": "5.2.24",
+      "parrafo": 1
+    },
     "artículos 69 y 69-B, cuarto párrafo del CFF": {
       "ley": "cff",
       "articulo": "69",
@@ -7816,11 +10374,28 @@
       "query": "cff:69,69-B"
     }
   },
+  "5.2.24": {
+    "regla 5.3.2": {
+      "ley": "rmf",
+      "articulo": "5.3.2",
+      "parrafo": 1
+    },
+    "regla 5.2.45": {
+      "ley": "rmf",
+      "articulo": "5.2.45",
+      "parrafo": 1
+    }
+  },
   "5.2.25": {
     "artículo 19, fracción XVI de la Ley del IEPS": {
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 32
+    },
+    "regla 5.2.1": {
+      "ley": "rmf",
+      "articulo": "5.2.1",
+      "parrafo": 1
     }
   },
   "5.2.26": {
@@ -7835,6 +10410,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 38
+    },
+    "regla 5.2.29": {
+      "ley": "rmf",
+      "articulo": "5.2.29",
+      "parrafo": 1
     }
   },
   "5.2.29": {
@@ -7842,6 +10422,16 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 38
+    },
+    "regla 5.2.28": {
+      "ley": "rmf",
+      "articulo": "5.2.28",
+      "parrafo": 1
+    },
+    "regla 5.2.31": {
+      "ley": "rmf",
+      "articulo": "5.2.31",
+      "parrafo": 1
     }
   },
   "5.2.30": {
@@ -7849,6 +10439,18 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 38
+    }
+  },
+  "5.2.31": {
+    "regla 5.2.28": {
+      "ley": "rmf",
+      "articulo": "5.2.28",
+      "parrafo": 1
+    },
+    "regla 5.2.30": {
+      "ley": "rmf",
+      "articulo": "5.2.30",
+      "parrafo": 1
     }
   },
   "5.2.32": {
@@ -7877,6 +10479,18 @@
       "ley": "lieps",
       "articulo": "20",
       "parrafo": 5
+    },
+    "regla 5.2.34": {
+      "ley": "rmf",
+      "articulo": "5.2.34",
+      "parrafo": 1
+    }
+  },
+  "5.2.36": {
+    "regla 5.2.35": {
+      "ley": "rmf",
+      "articulo": "5.2.35",
+      "parrafo": 1
     }
   },
   "5.2.37": {
@@ -7884,6 +10498,11 @@
       "ley": "lieps",
       "articulo": "20",
       "parrafo": 5
+    },
+    "regla 5.2.34": {
+      "ley": "rmf",
+      "articulo": "5.2.34",
+      "parrafo": 1
     }
   },
   "5.2.41": {
@@ -7903,6 +10522,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 11
+    },
+    "regla 5.2.6": {
+      "ley": "rmf",
+      "articulo": "5.2.6",
+      "parrafo": 1
     }
   },
   "5.2.43": {
@@ -7935,6 +10559,21 @@
       "articulo": "19",
       "parrafo": 11
     },
+    "regla 5.2.5": {
+      "ley": "rmf",
+      "articulo": "5.2.5",
+      "parrafo": 1
+    },
+    "regla 5.2.6": {
+      "ley": "rmf",
+      "articulo": "5.2.6",
+      "parrafo": 1
+    },
+    "regla 5.2.24": {
+      "ley": "rmf",
+      "articulo": "5.2.24",
+      "parrafo": 1
+    },
     "artículo 86-A del CFF": {
       "ley": "cff",
       "articulo": "86-A",
@@ -7964,6 +10603,16 @@
       "articulo": "86-G",
       "parrafo": 1
     },
+    "regla 5.2.30": {
+      "ley": "rmf",
+      "articulo": "5.2.30",
+      "parrafo": 1
+    },
+    "reglas 5.2.31": {
+      "ley": "rmf",
+      "articulo": "5.2.31",
+      "parrafo": 1
+    },
     "artículo 86-G del CFF": {
       "ley": "cff",
       "articulo": "86-G",
@@ -7975,6 +10624,11 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 11
+    },
+    "regla 5.2.42": {
+      "ley": "rmf",
+      "articulo": "5.2.42",
+      "parrafo": 1
     }
   },
   "5.2.49": {
@@ -7982,12 +10636,22 @@
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 11
+    },
+    "regla 5.2.42": {
+      "ley": "rmf",
+      "articulo": "5.2.42",
+      "parrafo": 1
     }
   },
   "5.3.1": {
     "artículo 26 de la Ley del IEPS": {
       "ley": "lieps",
       "articulo": "26",
+      "parrafo": 1
+    },
+    "regla 2.1.36": {
+      "ley": "rmf",
+      "articulo": "2.1.36",
       "parrafo": 1
     },
     "artículos 108 y 109 del CFF": {
@@ -8028,6 +10692,16 @@
       "articulo": "26",
       "parrafo": 1
     },
+    "regla 5.3.1": {
+      "ley": "rmf",
+      "articulo": "5.3.1",
+      "parrafo": 1
+    },
+    "regla 5.2.8": {
+      "ley": "rmf",
+      "articulo": "5.2.8",
+      "parrafo": 1
+    },
     "artículo 17-A, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "17-A",
@@ -8043,6 +10717,21 @@
       "articulo": "17-I",
       "parrafo": 1
     },
+    "regla 2.9.3": {
+      "ley": "rmf",
+      "articulo": "2.9.3",
+      "parrafo": 1
+    },
+    "regla 2.8.5.1": {
+      "ley": "rmf",
+      "articulo": "2.8.5.1",
+      "parrafo": 1
+    },
+    "regla 2.8.4.1": {
+      "ley": "rmf",
+      "articulo": "2.8.4.1",
+      "parrafo": 1
+    },
     "artículo 17-A del CFF": {
       "ley": "cff",
       "articulo": "17-A",
@@ -8053,10 +10742,32 @@
       "articulo": "29-A",
       "parrafo": 1
     },
+    "reglas 2.8.4.1": {
+      "ley": "rmf",
+      "articulo": "2.8.4.1",
+      "parrafo": 1
+    },
+    "regla 2.7.1.27": {
+      "ley": "rmf",
+      "articulo": "2.7.1.27",
+      "parrafo": 1
+    },
     "artículo 29-A, fracción V, inciso e) del CFF": {
       "ley": "cff",
       "articulo": "29-A",
       "parrafo": 14
+    },
+    "regla 2.1.36": {
+      "ley": "rmf",
+      "articulo": "2.1.36",
+      "parrafo": 1
+    }
+  },
+  "9.1.1": {
+    "reglas 2.8.5.1": {
+      "ley": "rmf",
+      "articulo": "2.8.5.1",
+      "parrafo": 1
     }
   },
   "9.1.2": {
@@ -8070,6 +10781,13 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    }
+  },
+  "9.1.3": {
+    "regla 9.1.3": {
+      "ley": "rmf",
+      "articulo": "9.1.3",
+      "parrafo": 1
     }
   },
   "9.1.5": {
@@ -8091,9 +10809,19 @@
       "ley": "cff",
       "articulo": "25",
       "parrafo": 1
+    },
+    "regla 9.1.11": {
+      "ley": "rmf",
+      "articulo": "9.1.11",
+      "parrafo": 1
     }
   },
   "9.1.12": {
+    "regla 9.1.11": {
+      "ley": "rmf",
+      "articulo": "9.1.11",
+      "parrafo": 1
+    },
     "artículo 32-D del CFF": {
       "ley": "cff",
       "articulo": "32-D",
@@ -8102,6 +10830,20 @@
     "artículo 25, primer párrafo del CFF": {
       "ley": "cff",
       "articulo": "25",
+      "parrafo": 1
+    }
+  },
+  "9.1.18": {
+    "regla 9.1.20": {
+      "ley": "rmf",
+      "articulo": "9.1.20",
+      "parrafo": 1
+    }
+  },
+  "9.1.19": {
+    "reglas 9.1.18": {
+      "ley": "rmf",
+      "articulo": "9.1.18",
       "parrafo": 1
     }
   },
@@ -8175,7 +10917,43 @@
       "parrafo": 1
     }
   },
+  "9.3.2": {
+    "regla 9.3.1": {
+      "ley": "rmf",
+      "articulo": "9.3.1",
+      "parrafo": 1
+    },
+    "regla 9.3.4": {
+      "ley": "rmf",
+      "articulo": "9.3.4",
+      "parrafo": 1
+    }
+  },
+  "9.4.2": {
+    "regla 9.4.1": {
+      "ley": "rmf",
+      "articulo": "9.4.1",
+      "parrafo": 1
+    }
+  },
+  "9.4.3": {
+    "regla 9.4.2": {
+      "ley": "rmf",
+      "articulo": "9.4.2",
+      "parrafo": 1
+    }
+  },
   "9.4.4": {
+    "regla 9.4.3": {
+      "ley": "rmf",
+      "articulo": "9.4.3",
+      "parrafo": 1
+    },
+    "regla 2.1.18": {
+      "ley": "rmf",
+      "articulo": "2.1.18",
+      "parrafo": 1
+    },
     "artículo 170, quinto párrafo de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "170",
@@ -8187,7 +10965,19 @@
       "parrafo": 1
     }
   },
+  "9.4.5": {
+    "regla 9.4.3": {
+      "ley": "rmf",
+      "articulo": "9.4.3",
+      "parrafo": 1
+    }
+  },
   "9.4.6": {
+    "regla 9.4.3": {
+      "ley": "rmf",
+      "articulo": "9.4.3",
+      "parrafo": 1
+    },
     "artículos 25, fracción III y 28, fracción XXVI de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "25",
@@ -8197,6 +10987,11 @@
     "artículo 30, quinto párrafo del CFF": {
       "ley": "cff",
       "articulo": "30",
+      "parrafo": 1
+    },
+    "regla 2.7.1.14": {
+      "ley": "rmf",
+      "articulo": "2.7.1.14",
       "parrafo": 1
     },
     "artículo 66, séptimo párrafo de la Ley del ISR": {
@@ -8218,6 +11013,16 @@
     "artículos 6o. de la Ley del IVA": {
       "ley": "liva",
       "articulo": "6o",
+      "parrafo": 1
+    },
+    "regla 2.3.4": {
+      "ley": "rmf",
+      "articulo": "2.3.4",
+      "parrafo": 1
+    },
+    "regla 2.8.1.5": {
+      "ley": "rmf",
+      "articulo": "2.8.1.5",
       "parrafo": 1
     },
     "artículo 69-B del mismo Código": {
@@ -8280,6 +11085,11 @@
       "ley": "lisr",
       "articulo": "86",
       "parrafo": 3
+    },
+    "reglas 2.6.1.2": {
+      "ley": "rmf",
+      "articulo": "2.6.1.2",
+      "parrafo": 1
     }
   },
   "11.1.3": {
@@ -8316,6 +11126,11 @@
       "ley": "lisr",
       "articulo": "8",
       "parrafo": 1
+    },
+    "regla 11.2.2": {
+      "ley": "rmf",
+      "articulo": "11.2.2",
+      "parrafo": 1
     }
   },
   "11.2.2": {
@@ -8330,10 +11145,29 @@
       "parrafo": 13
     }
   },
+  "11.2.4": {
+    "regla 11.2.2": {
+      "ley": "rmf",
+      "articulo": "11.2.2",
+      "parrafo": 1
+    }
+  },
   "11.2.5": {
+    "regla 11.2.2": {
+      "ley": "rmf",
+      "articulo": "11.2.2",
+      "parrafo": 1
+    },
     "artículo 44 de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "44",
+      "parrafo": 1
+    }
+  },
+  "11.2.6": {
+    "regla 11.2.2": {
+      "ley": "rmf",
+      "articulo": "11.2.2",
       "parrafo": 1
     }
   },
@@ -8358,7 +11192,38 @@
       "parrafo": 1
     }
   },
+  "11.4.3": {
+    "regla 11.4.6": {
+      "ley": "rmf",
+      "articulo": "11.4.6",
+      "parrafo": 1
+    }
+  },
+  "11.4.4": {
+    "reglas 11.4.6": {
+      "ley": "rmf",
+      "articulo": "11.4.6",
+      "parrafo": 1
+    },
+    "regla 11.4.3": {
+      "ley": "rmf",
+      "articulo": "11.4.3",
+      "parrafo": 1
+    }
+  },
+  "11.4.5": {
+    "regla 11.4.3": {
+      "ley": "rmf",
+      "articulo": "11.4.3",
+      "parrafo": 1
+    }
+  },
   "11.6.2": {
+    "regla 11.6.1": {
+      "ley": "rmf",
+      "articulo": "11.6.1",
+      "parrafo": 1
+    },
     "artículo 7o. de la Ley del IVA": {
       "ley": "liva",
       "articulo": "7o",
@@ -8404,6 +11269,11 @@
       "articulo": "32-D",
       "parrafo": 1
     },
+    "regla 2.8.1.5": {
+      "ley": "rmf",
+      "articulo": "2.8.1.5",
+      "parrafo": 1
+    },
     "artículo 22, séptimo párrafo del CFF": {
       "ley": "cff",
       "articulo": "22",
@@ -8420,6 +11290,11 @@
     "artículo 17-A del CFF": {
       "ley": "cff",
       "articulo": "17-A",
+      "parrafo": 1
+    },
+    "regla 11.7.1": {
+      "ley": "rmf",
+      "articulo": "11.7.1",
       "parrafo": 1
     }
   },
@@ -8441,6 +11316,16 @@
       "articulo": "1o",
       "parrafo": 1,
       "query": "liva:1o,3o"
+    },
+    "regla 11.9.2": {
+      "ley": "rmf",
+      "articulo": "11.9.2",
+      "parrafo": 1
+    },
+    "regla 2.7.1.21": {
+      "ley": "rmf",
+      "articulo": "2.7.1.21",
+      "parrafo": 1
     }
   },
   "11.9.5": {
@@ -8465,6 +11350,11 @@
     }
   },
   "11.9.8": {
+    "regla 11.9.1": {
+      "ley": "rmf",
+      "articulo": "11.9.1",
+      "parrafo": 1
+    },
     "artículo 28 del CFF": {
       "ley": "cff",
       "articulo": "28",
@@ -8487,9 +11377,19 @@
       "ley": "cff",
       "articulo": "28",
       "parrafo": 1
+    },
+    "regla 11.9.5": {
+      "ley": "rmf",
+      "articulo": "11.9.5",
+      "parrafo": 1
     }
   },
   "11.9.10": {
+    "regla 11.9.1": {
+      "ley": "rmf",
+      "articulo": "11.9.1",
+      "parrafo": 1
+    },
     "artículo 28 del CFF": {
       "ley": "cff",
       "articulo": "28",
@@ -8504,10 +11404,48 @@
       "query": "lisr:181,182"
     }
   },
+  "11.9.12": {
+    "reglas 11.9.1": {
+      "ley": "rmf",
+      "articulo": "11.9.1",
+      "parrafo": 1
+    }
+  },
   "11.9.13": {
     "artículo 69-B, cuarto párrafo del CFF": {
       "ley": "cff",
       "articulo": "69-B",
+      "parrafo": 1
+    },
+    "reglas 11.9.1": {
+      "ley": "rmf",
+      "articulo": "11.9.1",
+      "parrafo": 1
+    }
+  },
+  "11.9.16": {
+    "regla 11.9.2": {
+      "ley": "rmf",
+      "articulo": "11.9.2",
+      "parrafo": 1
+    }
+  },
+  "11.9.17": {
+    "regla 11.9.16": {
+      "ley": "rmf",
+      "articulo": "11.9.16",
+      "parrafo": 1
+    },
+    "regla 11.9.2": {
+      "ley": "rmf",
+      "articulo": "11.9.2",
+      "parrafo": 1
+    }
+  },
+  "11.9.19": {
+    "regla 2.1.36": {
+      "ley": "rmf",
+      "articulo": "2.1.36",
       "parrafo": 1
     }
   },
@@ -8523,6 +11461,11 @@
       "articulo": "69-B",
       "parrafo": 1
     },
+    "reglas 11.9.1": {
+      "ley": "rmf",
+      "articulo": "11.9.1",
+      "parrafo": 1
+    },
     "artículo 69-B, octavo párrafo del CFF": {
       "ley": "cff",
       "articulo": "69-B",
@@ -8535,6 +11478,11 @@
       "articulo": "11",
       "parrafo": 1,
       "query": "cff:11,9,1,11,9,2,11,9,14,69"
+    },
+    "reglas 11.9.1": {
+      "ley": "rmf",
+      "articulo": "11.9.1",
+      "parrafo": 1
     }
   },
   "11.9.22": {
@@ -8562,6 +11510,11 @@
       "articulo": "32-D",
       "parrafo": 1
     },
+    "regla 2.8.1.5": {
+      "ley": "rmf",
+      "articulo": "2.8.1.5",
+      "parrafo": 1
+    },
     "artículos 69, 69-B o 69-B Bis del CFF": {
       "ley": "cff",
       "articulo": "69",
@@ -8584,6 +11537,11 @@
       "ley": "cff",
       "articulo": "17-A",
       "parrafo": 1
+    },
+    "regla 11.10.1": {
+      "ley": "rmf",
+      "articulo": "11.10.1",
+      "parrafo": 1
     }
   },
   "11.11.7": {
@@ -8599,6 +11557,11 @@
       "articulo": "29-A",
       "parrafo": 1
     },
+    "regla 2.7.1.14": {
+      "ley": "rmf",
+      "articulo": "2.7.1.14",
+      "parrafo": 1
+    },
     "artículos 28 y 30 del CFF": {
       "ley": "cff",
       "articulo": "28",
@@ -8612,6 +11575,13 @@
       "articulo": "1o",
       "parrafo": 1,
       "query": "liva:1o,3o"
+    }
+  },
+  "11.11.12": {
+    "regla 11.11.11": {
+      "ley": "rmf",
+      "articulo": "11.11.11",
+      "parrafo": 1
     }
   },
   "11.12.4": {
@@ -8632,6 +11602,11 @@
     "artículo 29-A del CFF": {
       "ley": "cff",
       "articulo": "29-A",
+      "parrafo": 1
+    },
+    "regla 2.7.1.14": {
+      "ley": "rmf",
+      "articulo": "2.7.1.14",
       "parrafo": 1
     },
     "artículos 28 y 30 del CFF": {
@@ -8663,11 +11638,23 @@
       "articulo": "29-A",
       "parrafo": 1
     },
+    "regla 2.7.1.14": {
+      "ley": "rmf",
+      "articulo": "2.7.1.14",
+      "parrafo": 1
+    },
     "artículos 28 y 30 del CFF": {
       "ley": "cff",
       "articulo": "28",
       "parrafo": 1,
       "query": "cff:28,30"
+    }
+  },
+  "11.15.1": {
+    "regla 2.8.4.1": {
+      "ley": "rmf",
+      "articulo": "2.8.4.1",
+      "parrafo": 1
     }
   },
   "11.16.2": {
@@ -8678,10 +11665,22 @@
       "query": "cff:28,30"
     }
   },
+  "11.16.3": {
+    "regla 11.16.2": {
+      "ley": "rmf",
+      "articulo": "11.16.2",
+      "parrafo": 1
+    }
+  },
   "11.16.4": {
     "artículo 29-A del CFF": {
       "ley": "cff",
       "articulo": "29-A",
+      "parrafo": 1
+    },
+    "regla 2.7.1.14": {
+      "ley": "rmf",
+      "articulo": "2.7.1.14",
       "parrafo": 1
     },
     "artículos 28 y 30 del CFF": {
@@ -8692,6 +11691,11 @@
     }
   },
   "11.17.1": {
+    "regla 11.17.4": {
+      "ley": "rmf",
+      "articulo": "11.17.4",
+      "parrafo": 1
+    },
     "artículos 28 y 30 del CFF": {
       "ley": "cff",
       "articulo": "28",
@@ -8713,6 +11717,11 @@
       "articulo": "29-A",
       "parrafo": 1
     },
+    "regla 2.7.1.14": {
+      "ley": "rmf",
+      "articulo": "2.7.1.14",
+      "parrafo": 1
+    },
     "artículos 28 y 30 del CFF": {
       "ley": "cff",
       "articulo": "28",
@@ -8724,6 +11733,20 @@
     "artículos 18-D, último párrafo de la Ley del IVA": {
       "ley": "liva",
       "articulo": "18-D",
+      "parrafo": 1
+    }
+  },
+  "12.1.2": {
+    "regla 12.1.1": {
+      "ley": "rmf",
+      "articulo": "12.1.1",
+      "parrafo": 1
+    }
+  },
+  "12.1.3": {
+    "regla 12.1.1": {
+      "ley": "rmf",
+      "articulo": "12.1.1",
       "parrafo": 1
     }
   },
@@ -8739,6 +11762,11 @@
       "ley": "liva",
       "articulo": "18-I",
       "parrafo": 1
+    },
+    "regla 12.1.5": {
+      "ley": "rmf",
+      "articulo": "12.1.5",
+      "parrafo": 1
     }
   },
   "12.1.7": {
@@ -8748,11 +11776,23 @@
       "parrafo": 1
     }
   },
+  "12.1.8": {
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
+      "parrafo": 1
+    }
+  },
   "12.1.9": {
     "artículo 20-A, fracción III, inciso d) de la Ley del IEPS": {
       "ley": "lieps",
       "articulo": "20-A",
       "parrafo": 8
+    },
+    "regla 12.1.8": {
+      "ley": "rmf",
+      "articulo": "12.1.8",
+      "parrafo": 1
     }
   },
   "12.1.10": {
@@ -8767,6 +11807,18 @@
       "ley": "lieps",
       "articulo": "2o",
       "parrafo": 82
+    },
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
+      "parrafo": 1
+    }
+  },
+  "12.2.1": {
+    "regla 12.1.1": {
+      "ley": "rmf",
+      "articulo": "12.1.1",
+      "parrafo": 1
     }
   },
   "12.2.2": {
@@ -8775,6 +11827,20 @@
       "articulo": "29",
       "parrafo": 1,
       "query": "cff:29,29-A"
+    }
+  },
+  "12.2.3": {
+    "regla 2.7.1.23": {
+      "ley": "rmf",
+      "articulo": "2.7.1.23",
+      "parrafo": 1
+    }
+  },
+  "12.2.4": {
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
+      "parrafo": 1
     }
   },
   "12.2.5": {
@@ -8791,6 +11857,11 @@
       "articulo": "1o",
       "parrafo": 1,
       "query": "liva:1o,18-J/II"
+    },
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
+      "parrafo": 1
     }
   },
   "12.2.7": {
@@ -8807,6 +11878,11 @@
       "articulo": "18-B",
       "parrafo": 4,
       "query": "liva:18-B/II,18-D/IV"
+    },
+    "regla 12.1.4": {
+      "ley": "rmf",
+      "articulo": "12.1.4",
+      "parrafo": 1
     }
   },
   "12.2.9": {
@@ -8828,6 +11904,11 @@
       "articulo": "2o",
       "parrafo": 1,
       "query": "lieps:2o,5o"
+    },
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
+      "parrafo": 1
     }
   },
   "12.2.12": {
@@ -8865,6 +11946,11 @@
       "ley": "lisr",
       "articulo": "113-A",
       "parrafo": 1
+    },
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
+      "parrafo": 1
     }
   },
   "12.3.8": {
@@ -8876,6 +11962,11 @@
     "artículo 18-L de la citada Ley": {
       "ley": "liva",
       "articulo": "18-L",
+      "parrafo": 1
+    },
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
       "parrafo": 1
     }
   },
@@ -8918,6 +12009,11 @@
       "ley": "liva",
       "articulo": "18-M",
       "parrafo": 1
+    },
+    "regla 2.3.4": {
+      "ley": "rmf",
+      "articulo": "2.3.4",
+      "parrafo": 1
     }
   },
   "12.3.13": {
@@ -8926,6 +12022,21 @@
       "articulo": "113-A",
       "parrafo": 1,
       "query": "lisr:113-A,113-B"
+    },
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
+      "parrafo": 1
+    },
+    "regla 11.9.1": {
+      "ley": "rmf",
+      "articulo": "11.9.1",
+      "parrafo": 1
+    },
+    "regla 11.9.15": {
+      "ley": "rmf",
+      "articulo": "11.9.15",
+      "parrafo": 1
     }
   },
   "12.3.14": {
@@ -8934,6 +12045,21 @@
       "articulo": "5o",
       "parrafo": 1,
       "query": "liva:5o,18-K"
+    },
+    "regla 12.3.8": {
+      "ley": "rmf",
+      "articulo": "12.3.8",
+      "parrafo": 1
+    },
+    "regla 2.8.3.1": {
+      "ley": "rmf",
+      "articulo": "2.8.3.1",
+      "parrafo": 1
+    },
+    "regla 11.9.2": {
+      "ley": "rmf",
+      "articulo": "11.9.2",
+      "parrafo": 1
     }
   },
   "12.3.15": {
@@ -8964,6 +12090,16 @@
     "artículos 22, primer párrafo del CFF": {
       "ley": "cff",
       "articulo": "22",
+      "parrafo": 1
+    },
+    "regla 12.3.12": {
+      "ley": "rmf",
+      "articulo": "12.3.12",
+      "parrafo": 1
+    },
+    "regla 2.3.8": {
+      "ley": "rmf",
+      "articulo": "2.3.8",
       "parrafo": 1
     }
   },
@@ -9019,6 +12155,16 @@
       "articulo": "86-D",
       "parrafo": 1
     },
+    "reglas 2.13.13": {
+      "ley": "rmf",
+      "articulo": "2.13.13",
+      "parrafo": 1
+    },
+    "regla 2.9.17": {
+      "ley": "rmf",
+      "articulo": "2.9.17",
+      "parrafo": 1
+    },
     "artículo 69-B, segundo párrafo del CFF": {
       "ley": "cff",
       "articulo": "69-B",
@@ -9034,6 +12180,26 @@
       "articulo": "32-D",
       "parrafo": 1
     },
+    "regla 2.1.36": {
+      "ley": "rmf",
+      "articulo": "2.1.36",
+      "parrafo": 1
+    },
+    "reglas 2.7.1.21": {
+      "ley": "rmf",
+      "articulo": "2.7.1.21",
+      "parrafo": 1
+    },
+    "regla 2.7.1.21": {
+      "ley": "rmf",
+      "articulo": "2.7.1.21",
+      "parrafo": 1
+    },
+    "regla 2.6.1.2": {
+      "ley": "rmf",
+      "articulo": "2.6.1.2",
+      "parrafo": 1
+    },
     "artículo 113-G, fracción II de la Ley del ISR": {
       "ley": "lisr",
       "articulo": "113-G",
@@ -9044,10 +12210,65 @@
       "articulo": "93",
       "parrafo": 28
     },
+    "reglas 2.7.1.12": {
+      "ley": "rmf",
+      "articulo": "2.7.1.12",
+      "parrafo": 1
+    },
+    "regla 2.7.1.8": {
+      "ley": "rmf",
+      "articulo": "2.7.1.8",
+      "parrafo": 1
+    },
+    "reglas 2.7.1.34": {
+      "ley": "rmf",
+      "articulo": "2.7.1.34",
+      "parrafo": 1
+    },
+    "regla 2.8.1.14": {
+      "ley": "rmf",
+      "articulo": "2.8.1.14",
+      "parrafo": 1
+    },
+    "reglas 3.13.32": {
+      "ley": "rmf",
+      "articulo": "3.13.32",
+      "parrafo": 1
+    },
+    "reglas 2.2.16": {
+      "ley": "rmf",
+      "articulo": "2.2.16",
+      "parrafo": 1
+    },
+    "regla 3.2.24": {
+      "ley": "rmf",
+      "articulo": "3.2.24",
+      "parrafo": 1
+    },
+    "regla 3.6.8": {
+      "ley": "rmf",
+      "articulo": "3.6.8",
+      "parrafo": 1
+    },
+    "regla 3.11.4": {
+      "ley": "rmf",
+      "articulo": "3.11.4",
+      "parrafo": 1
+    },
+    "REGLA 2.5.8": {
+      "ley": "rmf",
+      "articulo": "2.5.8",
+      "parrafo": 1
+    },
     "artículo 19, fracción XXII de la Ley del IEPS": {
       "ley": "lieps",
       "articulo": "19",
       "parrafo": 38
+    },
+    "regla 5.2.28": {
+      "ley": "rmf",
+      "articulo": "5.2.28",
+      "parrafo": 1
     }
   }
 }
