@@ -1,11 +1,29 @@
 {
   "54": {
-    "Capítulo VI de esta Ley": "SEGURO DE RETIRO, CESANTÍA EN EDAD AVANZADA Y VEJEZ"
+    "Capítulo VI de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "VI",
+        "nombre": "SEGURO DE RETIRO, CESANTÍA EN EDAD AVANZADA Y VEJEZ"
+      }
+    ]
   },
   "85": {
-    "Capítulo II de este Título": "SEGURO DE SALUD"
+    "Capítulo II de este Título": [
+      {
+        "tipo": "Capítulo",
+        "numero": "II",
+        "nombre": "SEGURO DE SALUD"
+      }
+    ]
   },
   "88": {
-    "Capítulo II de este Título": "SEGURO DE SALUD"
+    "Capítulo II de este Título": [
+      {
+        "tipo": "Capítulo",
+        "numero": "II",
+        "nombre": "SEGURO DE SALUD"
+      }
+    ]
   }
 }

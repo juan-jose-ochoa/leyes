@@ -30,10 +30,16 @@ interface ReferenciaInfo {
   query?: string;  // DSL query para listas de artículos
 }
 
+interface TooltipItem {
+  tipo: string;   // "Título", "Capítulo", "Sección"
+  numero: string; // "II", "IV", etc.
+  nombre: string; // "DE LAS PERSONAS MORALES"
+}
+
 interface Props {
   parrafos: Parrafo[];
   referencias?: Record<string, ReferenciaInfo>;
-  tooltips?: Record<string, string>;
+  tooltips?: Record<string, TooltipItem[]>;
   mostrarReferencias?: boolean;
 }
 
@@ -139,11 +145,18 @@ function escapeHtml(text: string): string {
     .replace(/'/g, '&#039;');
 }
 
+// Generar HTML del tooltip estructurado
+function generarTooltipHtml(items: TooltipItem[]): string {
+  return items.map(item =>
+    `<div class="tooltip-item"><span class="tooltip-tipo">${escapeHtml(item.tipo)} ${escapeHtml(item.numero)}</span><span class="tooltip-nombre">${escapeHtml(item.nombre)}</span></div>`
+  ).join('');
+}
+
 // Procesar contenido insertando links de referencias y tooltips estructurales
 function procesarContenido(
   texto: string,
   refs: Record<string, ReferenciaInfo>,
-  tips: Record<string, string>
+  tips: Record<string, TooltipItem[]>
 ): string {
   // Escapar HTML primero
   let resultado = escapeHtml(texto);
@@ -171,11 +184,12 @@ function procesarContenido(
     const keys = Object.keys(tips).sort((a, b) => b.length - a.length);
 
     for (const textoTip of keys) {
-      const nombre = tips[textoTip];
+      const items = tips[textoTip];
       const textoEscapado = escapeHtml(textoTip);
       // Solo procesar si no está ya dentro de un tag (evitar doble procesamiento)
       if (!resultado.includes(`>${textoEscapado}<`)) {
-        const span = `<span class="ref-estructura" data-tooltip="${escapeHtml(nombre)}">${textoEscapado}</span>`;
+        const tooltipContent = generarTooltipHtml(items);
+        const span = `<span class="ref-estructura"><span class="ref-estructura-text">${textoEscapado}</span><span class="ref-estructura-tooltip">${tooltipContent}</span></span>`;
         resultado = resultado.replaceAll(textoEscapado, span);
       }
     }
@@ -307,51 +321,90 @@ const niveles = calcularNiveles(parrafos);
 
   /* Tooltips para referencias estructurales (Título, Capítulo, Sección) */
   :global(.ref-estructura) {
-    border-bottom: 1px dotted rgb(107 114 128);
-    cursor: help;
     position: relative;
+    display: inline;
   }
 
-  :global(.ref-estructura:hover) {
+  :global(.ref-estructura-text) {
+    border-bottom: 1px dotted rgb(107 114 128);
+    cursor: help;
+  }
+
+  :global(.ref-estructura:hover .ref-estructura-text) {
     border-bottom-color: rgb(59 130 246);
   }
 
-  :global(.ref-estructura::after) {
-    content: attr(data-tooltip);
+  :global(.ref-estructura-tooltip) {
     position: absolute;
-    bottom: 100%;
-    left: 0;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     background: rgb(17 24 39);
     color: white;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.375rem;
-    font-size: 0.75rem;
-    line-height: 1.25;
-    white-space: normal;
-    max-width: 280px;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    min-width: 300px;
+    max-width: 420px;
+    width: max-content;
     z-index: 50;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    box-shadow: 0 4px 12px -1px rgb(0 0 0 / 0.3);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.15s, visibility 0.15s;
     pointer-events: none;
-    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
   }
 
-  :global(.ref-estructura:hover::after) {
+  :global(.ref-estructura:hover .ref-estructura-tooltip) {
     opacity: 1;
     visibility: visible;
   }
 
-  :global(.dark .ref-estructura) {
+  :global(.tooltip-item) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgb(55 65 81);
+  }
+
+  :global(.tooltip-item:last-child) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  :global(.tooltip-item:first-child) {
+    padding-top: 0;
+  }
+
+  :global(.tooltip-tipo) {
+    font-weight: 600;
+    color: rgb(147 197 253);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+  }
+
+  :global(.tooltip-nombre) {
+    color: rgb(229 231 235);
+    font-size: 0.8125rem;
+  }
+
+  :global(.dark .ref-estructura-text) {
     border-bottom-color: rgb(156 163 175);
   }
 
-  :global(.dark .ref-estructura:hover) {
+  :global(.dark .ref-estructura:hover .ref-estructura-text) {
     border-bottom-color: rgb(96 165 250);
   }
 
-  :global(.dark .ref-estructura::after) {
+  :global(.dark .ref-estructura-tooltip) {
     background: rgb(31 41 55);
+  }
+
+  :global(.dark .tooltip-item) {
+    border-bottom-color: rgb(75 85 99);
   }
 </style>

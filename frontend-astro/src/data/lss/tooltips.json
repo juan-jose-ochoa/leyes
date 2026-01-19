@@ -1,29 +1,83 @@
 {
   "23": {
-    "capítulo II de esta Ley": "DE LAS BASES DE COTIZACION Y DE LAS CUOTAS"
+    "capítulo II de esta Ley": [
+      {
+        "tipo": "Capítulo",
+        "numero": "II",
+        "nombre": "DE LAS BASES DE COTIZACION Y DE LAS CUOTAS"
+      }
+    ]
   },
   "47": {
-    "capítulo IV de este Título": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+    "capítulo IV de este Título": [
+      {
+        "tipo": "Capítulo",
+        "numero": "IV",
+        "nombre": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+      }
+    ]
   },
   "120": {
-    "capítulo IV de este título": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+    "capítulo IV de este título": [
+      {
+        "tipo": "Capítulo",
+        "numero": "IV",
+        "nombre": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+      }
+    ]
   },
   "127": {
-    "capítulo IV de este Título": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+    "capítulo IV de este Título": [
+      {
+        "tipo": "Capítulo",
+        "numero": "IV",
+        "nombre": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+      }
+    ]
   },
   "154": {
-    "capítulo IV de este Título": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+    "capítulo IV de este Título": [
+      {
+        "tipo": "Capítulo",
+        "numero": "IV",
+        "nombre": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+      }
+    ]
   },
   "155": {
-    "capítulo IV de este Título": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+    "capítulo IV de este Título": [
+      {
+        "tipo": "Capítulo",
+        "numero": "IV",
+        "nombre": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+      }
+    ]
   },
   "161": {
-    "capítulo IV de este Título": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+    "capítulo IV de este Título": [
+      {
+        "tipo": "Capítulo",
+        "numero": "IV",
+        "nombre": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+      }
+    ]
   },
   "162": {
-    "capítulo IV de este Título": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+    "capítulo IV de este Título": [
+      {
+        "tipo": "Capítulo",
+        "numero": "IV",
+        "nombre": "DEL SEGURO DE ENFERMEDADES Y MATERNIDAD"
+      }
+    ]
   },
   "171": {
-    "capítulo V de este Título": "DEL SEGURO DE INVALIDEZ Y VIDA"
+    "capítulo V de este Título": [
+      {
+        "tipo": "Capítulo",
+        "numero": "V",
+        "nombre": "DEL SEGURO DE INVALIDEZ Y VIDA"
+      }
+    ]
   }
 }

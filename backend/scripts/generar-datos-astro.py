@@ -836,8 +836,14 @@ def extraer_tooltips(contenido: dict, estructura: dict, indice_estructura: dict)
     Estructura de salida:
     {
         "152": {
-            "Título II de esta Ley": "DE LAS DEDUCCIONES",
-            "Capítulo IV de este Título": "DE LOS INGRESOS POR ENAJENACIÓN DE BIENES"
+            "Título II de esta Ley": [
+                {"tipo": "Título", "numero": "II", "nombre": "DE LAS DEDUCCIONES"}
+            ],
+            "Título II, III, V o VI de esta Ley": [
+                {"tipo": "Título", "numero": "II", "nombre": "DE LAS PERSONAS MORALES"},
+                {"tipo": "Título", "numero": "III", "nombre": "DEL RÉGIMEN..."},
+                ...
+            ]
         }
     }
     """
@@ -861,18 +867,21 @@ def extraer_tooltips(contenido: dict, estructura: dict, indice_estructura: dict)
                 numeros = match.group(2)           # II, IV, I, III, IV...
                 contexto_ref = match.group(3).lower()  # "este título", "esta ley"
 
-                # Normalizar tipo (singular)
+                # Normalizar tipo para búsqueda y display
                 if tipo_ref.startswith("título"):
                     tipo_buscar = "titulo"
+                    tipo_display = "Título"
                 elif tipo_ref.startswith("capítulo"):
                     tipo_buscar = "capitulo"
+                    tipo_display = "Capítulo"
                 elif tipo_ref.startswith("sección") or tipo_ref.startswith("seccion"):
                     tipo_buscar = "seccion"
+                    tipo_display = "Sección"
                 else:
                     continue
 
-                # Parsear números (puede ser lista: "I, III, IV y IX")
-                numeros_lista = re.split(r'[,\s]+y\s+|[,\s]+', numeros.strip())
+                # Parsear números (puede ser lista: "I, III, IV y IX" o "II, III, V o VI")
+                numeros_lista = re.split(r'[,\s]+(?:y|o)\s+|[,\s]+', numeros.strip())
                 numeros_lista = [n.strip() for n in numeros_lista if n.strip()]
 
                 # Determinar contexto de título para capítulos
@@ -880,23 +889,22 @@ def extraer_tooltips(contenido: dict, estructura: dict, indice_estructura: dict)
                 if tipo_buscar == "capitulo" and "este título" in contexto_ref:
                     titulo_contexto = titulo_actual
 
-                # Buscar nombres para cada número
-                nombres = []
+                # Buscar nombres para cada número y construir lista estructurada
+                items = []
                 for num in numeros_lista:
                     nombre = buscar_division_por_numero(
                         estructura, tipo_buscar, num, titulo_contexto
                     )
                     if nombre:
-                        nombres.append(nombre)
+                        items.append({
+                            "tipo": tipo_display,
+                            "numero": num,
+                            "nombre": nombre
+                        })
 
-                # Construir tooltip
-                if nombres:
-                    if len(nombres) == 1:
-                        tooltip = nombres[0]
-                    else:
-                        tooltip = "; ".join(nombres)
-
-                    tooltips_articulo[texto_original] = tooltip
+                # Guardar tooltip estructurado
+                if items:
+                    tooltips_articulo[texto_original] = items
 
         if tooltips_articulo:
             tooltips_ley[art_num] = tooltips_articulo

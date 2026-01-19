@@ -181,7 +181,7 @@ interface Props {
   };
   leyInfo: typeof catalogo.leyes[0];
   referenciasArticulo: Record<string, { ley: string; articulo: string; parrafo: number }>;
-  tooltipsArticulo: Record<string, string>;
+  tooltipsArticulo: Record<string, Array<{ tipo: string; numero: string; nombre: string }>>;
   tocItems: Array<{ n: number; t: string; i: string; p?: number }>;
   prevArticulo: { numero: string } | null;
   nextArticulo: { numero: string } | null;
