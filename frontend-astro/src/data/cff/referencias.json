@@ -442,6 +442,13 @@
       "query": "cff:41/I,78,79,81/I"
     }
   },
+  "33-B": {
+    "artículo 93, fracción XXIV de dicha ley": {
+      "ley": "lisr",
+      "articulo": "93",
+      "parrafo": 47
+    }
+  },
   "34": {
     "artículo 69 de este Código": {
       "ley": "cff",
@@ -1083,6 +1090,11 @@
       "articulo": "29",
       "parrafo": 9
     },
+    "artículo 66 de dicha Ley": {
+      "ley": "lisr",
+      "articulo": "66",
+      "parrafo": 1
+    },
     "artículo 28, fracción I de este Código": {
       "ley": "cff",
       "articulo": "28",
@@ -1385,6 +1397,13 @@
     "artículo 86-G de este Código": {
       "ley": "cff",
       "articulo": "86-G",
+      "parrafo": 1
+    }
+  },
+  "86-I": {
+    "artículo 19-A de la citada Ley": {
+      "ley": "lieps",
+      "articulo": "19-A",
       "parrafo": 1
     }
   },

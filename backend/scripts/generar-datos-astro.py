@@ -132,6 +132,82 @@ _PATRON_ELEMENTO_LISTA = re.compile(
     re.IGNORECASE
 )
 
+# Términos de referencia contextual (citado, dicho, mismo)
+_REFERENCIA_CONTEXTUAL = r'(?:citad[oa]|dich[oa]|mism[oa])'
+_TIPO_LEY_CONTEXTUAL = r'(?:Código|Ley|ordenamiento)'
+
+# Regex para detectar referencias contextuales
+# Captura: artículo NUM (fracción ROMAN)? del citado/dicho Código/Ley
+PATRON_REFERENCIA_CONTEXTUAL = re.compile(
+    r'artículos?\s+'
+    r'(\d+[o]?(?:-[A-Z]+)?)'                              # Número de artículo (grupo 1)
+    r'(?:\s*,?\s*fracci[oó]ne?s?\s+([IVXLCDM]+))?'        # Fracción opcional (grupo 2)
+    r'(?:\s*,?\s*inciso\s+([a-z])\))?'                    # Inciso opcional (grupo 3)
+    r'\s+(?:del?|de\s+la)\s+'
+    r'(' + _REFERENCIA_CONTEXTUAL + r')\s+'              # citado/dicho/mismo (grupo 4)
+    r'(' + _TIPO_LEY_CONTEXTUAL + r')',                  # Código/Ley (grupo 5)
+    re.IGNORECASE
+)
+
+# Patrones para buscar leyes mencionadas previamente en el texto
+_PATRONES_CONTEXTO_CODIGO = [
+    (re.compile(r'código\s+fiscal(?:\s+de\s+la\s+federación)?', re.IGNORECASE), 'CFF'),
+    (re.compile(r'\bCFF\b'), 'CFF'),
+]
+
+_PATRONES_CONTEXTO_LEY = [
+    (re.compile(r'ley\s+del\s+impuesto\s+sobre\s+la\s+renta', re.IGNORECASE), 'LISR'),
+    (re.compile(r'ley\s+del\s+isr', re.IGNORECASE), 'LISR'),
+    (re.compile(r'\bLISR\b'), 'LISR'),
+    (re.compile(r'ley\s+del\s+impuesto\s+al\s+valor\s+agregado', re.IGNORECASE), 'LIVA'),
+    (re.compile(r'ley\s+del\s+iva', re.IGNORECASE), 'LIVA'),
+    (re.compile(r'\bLIVA\b'), 'LIVA'),
+    (re.compile(r'ley\s+aduanera', re.IGNORECASE), 'LA'),
+    (re.compile(r'ley\s+del\s+impuesto\s+especial\s+sobre\s+producción\s+y\s+servicios', re.IGNORECASE), 'LIEPS'),
+    (re.compile(r'ley\s+del\s+ieps', re.IGNORECASE), 'LIEPS'),
+    (re.compile(r'\bLIEPS\b'), 'LIEPS'),
+    (re.compile(r'ley\s+federal\s+del\s+trabajo', re.IGNORECASE), 'LFT'),
+    (re.compile(r'ley\s+del\s+seguro\s+social', re.IGNORECASE), 'LSS'),
+    (re.compile(r'ley\s+del\s+infonavit', re.IGNORECASE), 'LINFONAVIT'),
+    (re.compile(r'ley\s+del\s+issste', re.IGNORECASE), 'LISSSTE'),
+    (re.compile(r'ley\s+de\s+ingresos(?:\s+de\s+la\s+federación)?', re.IGNORECASE), 'LIF'),
+    (re.compile(r'ley\s+federal\s+de\s+derechos\s+del\s+contribuyente', re.IGNORECASE), 'LFDC'),
+]
+
+
+def resolver_contexto_ley(texto: str, posicion: int, tipo: str) -> str | None:
+    """
+    Busca hacia atrás en el texto para encontrar la última ley/código mencionado.
+
+    Args:
+        texto: Texto completo del párrafo
+        posicion: Posición donde se encontró "citado Código/Ley"
+        tipo: "código", "ley" o "ordenamiento"
+
+    Returns:
+        Código de ley (CFF, LISR, etc.) o None si no se encuentra
+    """
+    texto_anterior = texto[:posicion]
+
+    # Seleccionar patrones según el tipo
+    tipo_lower = tipo.lower()
+    if tipo_lower in ('código', 'ordenamiento'):
+        patrones = _PATRONES_CONTEXTO_CODIGO
+    else:  # ley
+        patrones = _PATRONES_CONTEXTO_LEY
+
+    # Buscar la última mención
+    ultima_pos = -1
+    ley_encontrada = None
+
+    for patron, codigo in patrones:
+        for match in patron.finditer(texto_anterior):
+            if match.end() > ultima_pos:
+                ultima_pos = match.end()
+                ley_encontrada = codigo
+
+    return ley_encontrada
+
 
 def _parsear_lista_articulos(lista_texto: str) -> list[tuple[str, str | None, str | None]]:
     """
@@ -604,6 +680,29 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
                 )
                 if ref:
                     referencias_articulo[texto_original] = ref
+
+            # Buscar referencias contextuales (citado/dicho Código/Ley)
+            for match in PATRON_REFERENCIA_CONTEXTUAL.finditer(texto):
+                texto_original = match.group(0)
+                articulo_ref = match.group(1)
+                fraccion = match.group(2)
+                inciso = match.group(3)
+                # ref_contextual = match.group(4)  # citado/dicho/mismo
+                tipo_ley = match.group(5)  # Código/Ley/ordenamiento
+
+                # Resolver qué ley se menciona antes en el texto
+                ley_destino = resolver_contexto_ley(texto, match.start(), tipo_ley)
+                if ley_destino:
+                    # Normalizar artículo y resolver párrafo
+                    parrafo_num, articulo_norm = resolver_referencia(
+                        ley_destino, articulo_ref, fraccion, inciso, indice
+                    )
+                    if parrafo_num is not None:
+                        referencias_articulo[texto_original] = {
+                            "ley": ley_destino.lower(),
+                            "articulo": articulo_norm,
+                            "parrafo": parrafo_num
+                        }
 
         if referencias_articulo:
             referencias_ley[art_num] = referencias_articulo
