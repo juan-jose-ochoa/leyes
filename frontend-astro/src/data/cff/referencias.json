@@ -509,6 +509,11 @@
       "ley": "cff",
       "articulo": "28",
       "parrafo": 9
+    },
+    "32-B Bis de este Código": {
+      "ley": "cff",
+      "articulo": "32-B",
+      "parrafo": 1
     }
   },
   "30-B": {
@@ -536,6 +541,11 @@
       "articulo": "20",
       "parrafo": 1,
       "query": "lisr:20,21"
+    },
+    "161 de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "161",
+      "parrafo": 1
     },
     "artículos 14-B de este Código": {
       "ley": "cff",
@@ -604,6 +614,13 @@
       "articulo": "82-E",
       "parrafo": 1,
       "query": "cff:82-E,82-F"
+    }
+  },
+  "32-D": {
+    "32-B Quinquies de este Código": {
+      "ley": "cff",
+      "articulo": "32-B",
+      "parrafo": 1
     }
   },
   "32-H": {
@@ -741,6 +758,11 @@
       "articulo": "197",
       "parrafo": 1,
       "query": "cff:197,202"
+    },
+    "32-B Quinquies de este Código": {
+      "ley": "cff",
+      "articulo": "32-B",
+      "parrafo": 1
     },
     "artículos 32, fracción V, 32-B Bis, 32-B Ter, 32-B Quáter y 32-B Quinquies de este Código": {
       "ley": "cff",
@@ -933,6 +955,11 @@
       "articulo": "197",
       "parrafo": 1,
       "query": "cff:197,202"
+    },
+    "32-B Quinquies de este Código": {
+      "ley": "cff",
+      "articulo": "32-B",
+      "parrafo": 1
     }
   },
   "49 Bis": {
@@ -1267,6 +1294,11 @@
     "párrafo cuarto de este artículo": {
       "interno": true,
       "parrafo": 4
+    },
+    "17-H Bis de este Código": {
+      "ley": "cff",
+      "articulo": "17-H",
+      "parrafo": 1
     }
   },
   "69-B Bis": {
@@ -1566,6 +1598,11 @@
       "articulo": "82",
       "parrafo": 13
     },
+    "76-A de la Ley del Impuesto sobre la Renta": {
+      "ley": "lisr",
+      "articulo": "76-A",
+      "parrafo": 1
+    },
     "artículos 31-A de este Código": {
       "ley": "cff",
       "articulo": "31-A",
@@ -1575,6 +1612,11 @@
       "ley": "lisr",
       "articulo": "82",
       "parrafo": 17
+    },
+    "5o., fracción II, segundo párrafo de la Ley del Impuesto al Valor Agregado": {
+      "ley": "liva",
+      "articulo": "5o",
+      "parrafo": 1
     },
     "artículos 27, fracción V, tercer párrafo de la Ley del Impuesto sobre la Renta": {
       "ley": "lisr",
@@ -1635,6 +1677,13 @@
     "artículo 200 de este Código": {
       "ley": "cff",
       "articulo": "200",
+      "parrafo": 1
+    }
+  },
+  "82-E": {
+    "32-B Bis de este Código": {
+      "ley": "cff",
+      "articulo": "32-B",
       "parrafo": 1
     }
   },
@@ -1830,6 +1879,13 @@
     "artículo 84-K de este Código": {
       "ley": "cff",
       "articulo": "84-K",
+      "parrafo": 1
+    }
+  },
+  "84-M": {
+    "32-B Quinquies de este Código": {
+      "ley": "cff",
+      "articulo": "32-B",
       "parrafo": 1
     }
   },
@@ -2712,6 +2768,11 @@
     }
   },
   "201": {
+    "113 Bis de este Código": {
+      "ley": "cff",
+      "articulo": "113",
+      "parrafo": 1
+    },
     "artículo 69 de este Código": {
       "ley": "cff",
       "articulo": "69",

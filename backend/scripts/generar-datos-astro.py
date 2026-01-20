@@ -56,6 +56,7 @@ NOMBRE_A_CODIGO = {
     'ley del iva': 'LIVA',
     'liva': 'LIVA',
     'ley aduanera': 'LA',
+    'la la': 'LA',  # "la LA" - artículo + abreviatura (género femenino)
     'ley del impuesto especial sobre producción y servicios': 'LIEPS',
     'ley del ieps': 'LIEPS',
     'lieps': 'LIEPS',
@@ -112,7 +113,7 @@ _LEY_ALTERNATIVAS = (
     r'código\s+fiscal(?:\s+de\s+la\s+federación)?|cff|'
     r'ley\s+del\s+impuesto\s+sobre\s+la\s+renta|ley\s+del\s+isr|lisr|'
     r'ley\s+del\s+impuesto\s+al\s+valor\s+agregado|ley\s+del\s+iva|liva|'
-    r'ley\s+aduanera|'
+    r'ley\s+aduanera|la\s+la|'  # "la LA" = artículo + abreviatura
     r'ley\s+del\s+impuesto\s+especial\s+sobre\s+producción\s+y\s+servicios|ley\s+del\s+ieps|lieps|'
     r'ley\s+federal\s+del\s+trabajo|'
     r'ley\s+del\s+seguro\s+social|'
@@ -154,6 +155,9 @@ _ORDINALES_PARRAFO = (
     r'primer|segundo|tercer|cuarto|quinto|sexto|séptimo|octavo|noveno|décimo|'
     r'antepenúltimo|penúltimo|último'
 )
+
+# Sufijos latinos para artículos (Bis, Ter, etc.)
+_SUFIJOS_LATINOS = r'Bis|Ter|Qu[aá]ter|Quinquies|Sexies|Septies|Octies|Nonies|Decies'
 
 # Regex para detectar referencias a artículos (patrón estándar)
 # Captura: artículo(s) NUM (fracción ROMAN)? (inciso LETRA)? (párrafo)? de LEY
@@ -204,6 +208,23 @@ PATRON_LISTA_ARTICULOS_IMPLICITA = re.compile(
     r'(\d+[^;]*?)'                                        # Lista de artículos (grupo 1) - empieza con número
     r'\s+(?:de\s+la\s+|de\s+|del\s+)'                     # "de la", "de" o "del" antes de ley
     r'(' + _LEY_ALTERNATIVAS + r')',                      # Ley destino (grupo 2)
+    re.IGNORECASE
+)
+
+# Regex para listas de artículos conectadas con "y" a diferentes leyes
+# Ejemplo: "artículos 13 del CFF y 18 de la LA" -> detecta "y 18 de la LA"
+# Patrón restrictivo: solo número + modificadores válidos (fracción, párrafo, sufijos latinos)
+PATRON_LISTA_ARTICULOS_Y = re.compile(
+    r'\by\s+'                                               # "y " con word boundary
+    r'(\d+[o]?\.?(?:-[A-Z]+)?)'                             # Número de artículo (grupo 1)
+    r'(?:\s+[A-Z](?=\s))?'                                  # Letra aislada opcional (69 B)
+    r'(?:\s+(?:' + _SUFIJOS_LATINOS + r'))?'                # Sufijos latinos opcionales (Bis, Ter, etc.)
+    r'(?:\s*,?\s*(?:' + _ORDINALES_PARRAFO + r')\s+párrafos?)?' # Párrafo ordinal opcional
+    r'(?:\s*,?\s*fracci[oó]ne?s?\s+[IVXLCDM]+(?:\s+[aA]\s+[IVXLCDM]+)?)?'  # Fracción o rango (I a III)
+    r'(?:\s*,?\s*(?:' + _ORDINALES_PARRAFO + r')\s+párrafos?)?' # Párrafo después de fracción
+    r'(?:\s*,?\s*inciso\s+[a-z]\)?)?'                       # Inciso opcional
+    r'\s+(?:de\s+la\s+|de\s+|del\s+)'                       # "de la", "de" o "del" antes de ley
+    r'(' + _LEY_ALTERNATIVAS + r')',                        # Ley destino (grupo 2)
     re.IGNORECASE
 )
 
@@ -858,6 +879,65 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
 
                 # El texto del link no incluye el ";" inicial
                 texto_original = texto_completo.lstrip('; ')
+
+                # Evitar duplicados: saltar si este texto ya es parte de una referencia existente
+                es_duplicado = any(texto_original in ref_existente for ref_existente in referencias_articulo)
+                if es_duplicado:
+                    continue
+
+                # Parsear cada elemento de la lista
+                elementos = _parsear_lista_articulos(lista_texto)
+                if elementos:  # Al menos un artículo
+                    # Resolver ley destino
+                    ley_destino = NOMBRE_A_CODIGO.get(ley_texto)
+                    if ley_destino == '_MISMA_':
+                        ley_destino = ley_codigo
+
+                    # Solo procesar si la ley es soportada (no None)
+                    if ley_destino and ley_destino != '_MISMA_':
+                        # Construir DSL query con todos los artículos
+                        partes_dsl = []
+                        primer_parrafo = None
+                        for articulo_ref, apartado, fraccion in elementos:
+                            parte = articulo_ref
+                            if apartado:
+                                parte += f"/{apartado}"
+                            if fraccion:
+                                parte += f"/{fraccion}"
+                            partes_dsl.append(parte)
+
+                            # Obtener párrafo del primer artículo para el link
+                            if primer_parrafo is None:
+                                parrafo_res, _ = resolver_referencia(
+                                    ley_destino, articulo_ref, fraccion, None, indice
+                                )
+                                primer_parrafo = parrafo_res or 1
+
+                        if len(elementos) >= 2:
+                            query_dsl = f"{ley_destino.lower()}:{','.join(partes_dsl)}"
+                            referencias_articulo[texto_original] = {
+                                "ley": ley_destino.lower(),
+                                "articulo": elementos[0][0],
+                                "parrafo": primer_parrafo,
+                                "query": query_dsl
+                            }
+                        else:
+                            # Solo un artículo, referencia simple
+                            referencias_articulo[texto_original] = {
+                                "ley": ley_destino.lower(),
+                                "articulo": elementos[0][0],
+                                "parrafo": primer_parrafo
+                            }
+
+            # Buscar listas de artículos conectadas con "y" a diferentes leyes
+            # Ejemplo: "artículos 13 del CFF y 18 de la LA" -> detecta "y 18 de la LA"
+            for match in PATRON_LISTA_ARTICULOS_Y.finditer(texto):
+                texto_completo = match.group(0)
+                lista_texto = match.group(1)
+                ley_texto = match.group(2).lower().strip()
+
+                # El texto del link no incluye el "y " inicial
+                texto_original = texto_completo.lstrip('y ').strip()
 
                 # Evitar duplicados: saltar si este texto ya es parte de una referencia existente
                 es_duplicado = any(texto_original in ref_existente for ref_existente in referencias_articulo)

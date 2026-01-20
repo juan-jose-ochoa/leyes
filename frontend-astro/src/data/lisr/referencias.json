@@ -1213,6 +1213,11 @@
       "articulo": "152",
       "parrafo": 1
     },
+    "105 de esta Ley": {
+      "ley": "lisr",
+      "articulo": "105",
+      "parrafo": 1
+    },
     "artículo 14 de esta Ley": {
       "ley": "lisr",
       "articulo": "14",
@@ -1995,6 +2000,11 @@
       "articulo": "123",
       "parrafo": 1
     },
+    "127, fracción III de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "127",
+      "parrafo": 1
+    },
     "artículos 123, fracción IX, inciso e) de la Constitución": {
       "ley": "cpeum",
       "articulo": "123",
@@ -2504,6 +2514,11 @@
       "articulo": "185",
       "parrafo": 4
     },
+    "21 de esta Ley": {
+      "ley": "lisr",
+      "articulo": "21",
+      "parrafo": 1
+    },
     "artículos 16-A del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "16-A",
@@ -2852,6 +2867,11 @@
     }
   },
   "153": {
+    "180 de esta Ley": {
+      "ley": "lisr",
+      "articulo": "180",
+      "parrafo": 1
+    },
     "artículos 58-A del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "58-A",
@@ -3793,6 +3813,11 @@
       "articulo": "5",
       "parrafo": 1,
       "query": "lisr:5,10"
+    },
+    "127, fracción III de la Ley Federal del Trabajo": {
+      "ley": "lft",
+      "articulo": "127",
+      "parrafo": 1
     },
     "artículos 123, fracción IX, inciso e) de la Constitución": {
       "ley": "cpeum",

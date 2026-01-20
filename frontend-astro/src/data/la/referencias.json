@@ -329,6 +329,11 @@
       "articulo": "65",
       "parrafo": 1,
       "query": "la:65,66"
+    },
+    "88 bis de esta Ley": {
+      "ley": "la",
+      "articulo": "88",
+      "parrafo": 1
     }
   },
   "59-A": {
@@ -1390,6 +1395,11 @@
     "artículo 104, último párrafo del Código Fiscal de la Federación": {
       "ley": "cff",
       "articulo": "104",
+      "parrafo": 1
+    },
+    "100-A de esta Ley": {
+      "ley": "la",
+      "articulo": "100-A",
       "parrafo": 1
     },
     "artículos 28-A, primer párrafo de la Ley del Impuesto al Valor Agregado": {

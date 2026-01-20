@@ -40,6 +40,11 @@
     }
   },
   "3o": {
+    "2o.-A de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 1
+    },
     "fracción XX de este artículo": {
       "interno": true,
       "parrafo": 37
@@ -255,6 +260,11 @@
     }
   },
   "19": {
+    "2o.-A de esta Ley": {
+      "ley": "lieps",
+      "articulo": "2o",
+      "parrafo": 1
+    },
     "artículo 2o. de esta Ley": {
       "ley": "lieps",
       "articulo": "2o",
