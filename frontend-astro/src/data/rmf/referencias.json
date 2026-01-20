@@ -1582,6 +1582,13 @@
       "parrafo": 18
     }
   },
+  "2.5.3": {
+    "artículo 113-G, último párrafo de la Ley del ISR": {
+      "ley": "lisr",
+      "articulo": "113-G",
+      "parrafo": 1
+    }
+  },
   "2.5.5": {
     "artículos 27, apartados A, fracción III, B, fracción II y C, fracción V y 63 del CFF": {
       "ley": "cff",
@@ -8283,6 +8290,11 @@
       "articulo": "76",
       "parrafo": 20,
       "query": "lisr:76/X,110/X"
+    },
+    "3.9.1.": {
+      "ley": "rmf",
+      "articulo": "3.9.1",
+      "parrafo": 1
     }
   },
   "3.9.1.1": {
@@ -12896,6 +12908,14 @@
       "query": "la:153,155"
     }
   },
+  "9.3.1": {
+    "artículos 17-A y 21 del CFF": {
+      "ley": "cff",
+      "articulo": "17-A",
+      "parrafo": 1,
+      "query": "cff:17-A,21"
+    }
+  },
   "9.3.2": {
     "regla 9.3.1.": {
       "ley": "rmf",
@@ -12912,6 +12932,11 @@
     "regla 9.4.1.": {
       "ley": "rmf",
       "articulo": "9.4.1",
+      "parrafo": 1
+    },
+    "regla 9.4.3.": {
+      "ley": "rmf",
+      "articulo": "9.4.3",
       "parrafo": 1
     }
   },

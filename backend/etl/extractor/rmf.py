@@ -347,18 +347,25 @@ class ExtractorRMF(ExtractorBase):
         numero_parrafo = None
         y_anterior = None
         titulo_pendiente = None
+        # Coordenadas del párrafo actual (para sincronización con PDF)
+        pagina_parrafo = None
+        y_parrafo = None
 
         def guardar_parrafo():
-            nonlocal texto_acumulado, tipo_parrafo, numero_parrafo
+            nonlocal texto_acumulado, tipo_parrafo, numero_parrafo, pagina_parrafo, y_parrafo
             if texto_acumulado.strip():
                 parrafos_actuales.append({
                     "tipo": tipo_parrafo,
                     "contenido": texto_acumulado.strip(),
-                    "identificador": numero_parrafo
+                    "identificador": numero_parrafo,
+                    "pagina": pagina_parrafo,
+                    "y": int(y_parrafo) if y_parrafo is not None else None
                 })
             texto_acumulado = ""
             tipo_parrafo = "texto"
             numero_parrafo = None
+            pagina_parrafo = None
+            y_parrafo = None
 
         def guardar_regla():
             nonlocal regla_actual, parrafos_actuales, nombre_regla, y_anterior
@@ -463,6 +470,10 @@ class ExtractorRMF(ExtractorBase):
                             texto_acumulado += " " + texto_linea
                         else:
                             texto_acumulado = texto_linea
+                            # Capturar coordenadas al iniciar párrafo
+                            if pagina_parrafo is None:
+                                pagina_parrafo = page_num + 1
+                                y_parrafo = y_actual
 
                     elif abs(x_min - X_NUMERAL) < X_TOLERANCIA:
                         # Numeral 1., 2., 3.
@@ -472,6 +483,9 @@ class ExtractorRMF(ExtractorBase):
                             tipo_parrafo = "numeral"
                             numero_parrafo = match_num.group(1)
                             texto_acumulado = texto_linea[match_num.end():].strip()
+                            # Capturar coordenadas del nuevo párrafo
+                            pagina_parrafo = page_num + 1
+                            y_parrafo = y_actual
                         else:
                             texto_acumulado += " " + texto_linea
 
@@ -483,6 +497,9 @@ class ExtractorRMF(ExtractorBase):
                             tipo_parrafo = "inciso"
                             numero_parrafo = match_inc.group(1)
                             texto_acumulado = texto_linea[match_inc.end():].strip()
+                            # Capturar coordenadas del nuevo párrafo
+                            pagina_parrafo = page_num + 1
+                            y_parrafo = y_actual
                         else:
                             texto_acumulado += " " + texto_linea
 
@@ -494,6 +511,9 @@ class ExtractorRMF(ExtractorBase):
                             tipo_parrafo = "fraccion"
                             numero_parrafo = match_frac.group(1)
                             texto_acumulado = texto_linea[match_frac.end():].strip()
+                            # Capturar coordenadas del nuevo párrafo
+                            pagina_parrafo = page_num + 1
+                            y_parrafo = y_actual
                         else:
                             # Detectar nuevo parrafo por salto Y
                             es_nuevo = (
@@ -505,14 +525,25 @@ class ExtractorRMF(ExtractorBase):
                             if es_nuevo:
                                 guardar_parrafo()
                                 texto_acumulado = texto_linea
+                                # Capturar coordenadas del nuevo párrafo
+                                pagina_parrafo = page_num + 1
+                                y_parrafo = y_actual
                             elif texto_acumulado:
                                 texto_acumulado += " " + texto_linea
                             else:
                                 texto_acumulado = texto_linea
+                                # Capturar coordenadas al iniciar párrafo
+                                pagina_parrafo = page_num + 1
+                                y_parrafo = y_actual
                     else:
                         # Otra posicion - continuacion
                         if texto_acumulado:
                             texto_acumulado += " " + texto_linea
+                        else:
+                            # Inicio de párrafo en posición no estándar
+                            texto_acumulado = texto_linea
+                            pagina_parrafo = page_num + 1
+                            y_parrafo = y_actual
 
                     y_anterior = y_actual
 
@@ -530,7 +561,9 @@ class ExtractorRMF(ExtractorBase):
                 tipo=p["tipo"],
                 identificador=p.get("identificador"),
                 contenido=p["contenido"],
-                padre_numero=None  # Se calculara en _asignar_padres() de la base
+                padre_numero=None,  # Se calculara en _asignar_padres() de la base
+                pagina=p.get("pagina"),
+                y=p.get("y")
             )
             resultado.append(parrafo)
         return resultado
