@@ -103,10 +103,10 @@
       "parrafo": 1
     },
     "artículos 29 y 30 del Reglamento del Código Fiscal de la Federación": {
-      "ley": "cff",
+      "ley": "rcff",
       "articulo": "29",
       "parrafo": 1,
-      "query": "cff:29,30"
+      "query": "rcff:29,30"
     }
   },
   "163": {
@@ -177,6 +177,13 @@
     "fracción I de este artículo": {
       "interno": true,
       "parrafo": 2
+    }
+  },
+  "211": {
+    "artículo 3 del Reglamento del Código Fiscal de la Federación": {
+      "ley": "rcff",
+      "articulo": "3",
+      "parrafo": 1
     }
   },
   "213": {

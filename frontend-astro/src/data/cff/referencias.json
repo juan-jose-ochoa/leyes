@@ -476,6 +476,11 @@
       "articulo": "19",
       "parrafo": 3
     },
+    "19, fracción II de la Ley del Impuesto Especial sobre Producción y Servicios": {
+      "ley": "lieps",
+      "articulo": "19",
+      "parrafo": 3
+    },
     "artículo 29, primer y último párrafo de este Código": {
       "ley": "cff",
       "articulo": "29",
@@ -1525,10 +1530,10 @@
       "parrafo": 1
     },
     "artículos 262, fracción IV y 269 del Reglamento de la Ley del Impuesto sobre la Renta": {
-      "ley": "lisr",
+      "ley": "rlisr",
       "articulo": "262",
       "parrafo": 1,
-      "query": "lisr:262/IV,269"
+      "query": "rlisr:262/IV,269"
     },
     "artículo 161 de la Ley del Impuesto sobre la Renta": {
       "ley": "lisr",

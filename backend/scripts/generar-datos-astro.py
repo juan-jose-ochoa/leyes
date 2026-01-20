@@ -67,6 +67,19 @@ NOMBRE_A_CODIGO = {
     'ley de ingresos de la federación': 'LIF',
     'ley de ingresos': 'LIF',
     'ley federal de derechos del contribuyente': 'LFDC',
+    # Reglamentos soportados
+    'reglamento del código fiscal de la federación': 'RCFF',
+    'reglamento del cff': 'RCFF',
+    'reglamento de la ley del impuesto sobre la renta': 'RLISR',
+    'reglamento de la ley del isr': 'RLISR',
+    'reglamento de la lisr': 'RLISR',
+    'reglamento de la ley del impuesto al valor agregado': 'RLIVA',
+    'reglamento de la ley del iva': 'RLIVA',
+    'reglamento de la liva': 'RLIVA',
+    'reglamento de la ley del impuesto especial sobre producción y servicios': 'RLIEPS',
+    'reglamento de la ley del ieps': 'RLIEPS',
+    'reglamento de la ley federal del trabajo': 'RLFT',
+    'reglamento de la ley del seguro social': 'RLSS',
     # Leyes reconocidas pero no soportadas (no generan links, pero delimitan referencias)
     'ley de ingresos sobre hidrocarburos': None,
     'ley de hidrocarburos': None,
@@ -105,6 +118,13 @@ _LEY_ALTERNATIVAS = (
     r'ley\s+del\s+seguro\s+social|'
     r'ley\s+del\s+infonavit|'
     r'ley\s+del\s+issste|'
+    # Reglamentos soportados
+    r'reglamento\s+del\s+c[oó]digo\s+fiscal(?:\s+de\s+la\s+federaci[oó]n)?|reglamento\s+del\s+cff|'
+    r'reglamento\s+de\s+la\s+ley\s+del\s+impuesto\s+sobre\s+la\s+renta|reglamento\s+de\s+la\s+ley\s+del\s+isr|reglamento\s+de\s+la\s+lisr|'
+    r'reglamento\s+de\s+la\s+ley\s+del\s+impuesto\s+al\s+valor\s+agregado|reglamento\s+de\s+la\s+ley\s+del\s+iva|reglamento\s+de\s+la\s+liva|'
+    r'reglamento\s+de\s+la\s+ley\s+del\s+impuesto\s+especial\s+sobre\s+producci[oó]n\s+y\s+servicios|reglamento\s+de\s+la\s+ley\s+del\s+ieps|'
+    r'reglamento\s+de\s+la\s+ley\s+federal\s+del\s+trabajo|'
+    r'reglamento\s+de\s+la\s+ley\s+del\s+seguro\s+social|'
     # IMPORTANTE: patrones más específicos primero (ley de ingresos sobre hidrocarburos antes de ley de ingresos)
     r'ley\s+de\s+ingresos\s+sobre\s+hidrocarburos|'  # No soportada, pero delimita referencias
     r'ley\s+de\s+ingresos(?:\s+de\s+la\s+federación)?|'
@@ -171,6 +191,16 @@ PATRON_REFERENCIA_INVERTIDO = re.compile(
 PATRON_LISTA_ARTICULOS = re.compile(
     r'artículos\s+'
     r'(.+?)'                                              # Lista de artículos (grupo 1) - non-greedy
+    r'\s+(?:de\s+la\s+|de\s+|del\s+)'                     # "de la", "de" o "del" antes de ley
+    r'(' + _LEY_ALTERNATIVAS + r')',                      # Ley destino (grupo 2)
+    re.IGNORECASE
+)
+
+# Regex para listas de artículos implícitas (después de ";", sin "artículos")
+# Ejemplo: "; 5, quinto párrafo, 26, segundo párrafo y 205 de la Ley del ISR"
+PATRON_LISTA_ARTICULOS_IMPLICITA = re.compile(
+    r';\s*'
+    r'(\d+[^;]*?)'                                        # Lista de artículos (grupo 1) - empieza con número
     r'\s+(?:de\s+la\s+|de\s+|del\s+)'                     # "de la", "de" o "del" antes de ley
     r'(' + _LEY_ALTERNATIVAS + r')',                      # Ley destino (grupo 2)
     re.IGNORECASE
@@ -818,6 +848,64 @@ def extraer_referencias(contenido: dict, ley_codigo: str, indice: dict) -> dict:
                             "parrafo": primer_parrafo,
                             "query": query_dsl
                         }
+
+            # Buscar listas de artículos implícitas (después de ";", sin "artículos")
+            for match in PATRON_LISTA_ARTICULOS_IMPLICITA.finditer(texto):
+                texto_completo = match.group(0)
+                lista_texto = match.group(1)
+                ley_texto = match.group(2).lower().strip()
+
+                # El texto del link no incluye el ";" inicial
+                texto_original = texto_completo.lstrip('; ')
+
+                # Evitar duplicados: saltar si este texto ya es parte de una referencia existente
+                es_duplicado = any(texto_original in ref_existente for ref_existente in referencias_articulo)
+                if es_duplicado:
+                    continue
+
+                # Parsear cada elemento de la lista
+                elementos = _parsear_lista_articulos(lista_texto)
+                if elementos:  # Al menos un artículo
+                    # Resolver ley destino
+                    ley_destino = NOMBRE_A_CODIGO.get(ley_texto)
+                    if ley_destino == '_MISMA_':
+                        ley_destino = ley_codigo
+
+                    # Solo procesar si la ley es soportada (no None)
+                    if ley_destino and ley_destino != '_MISMA_':
+                        # Construir DSL query con todos los artículos
+                        partes_dsl = []
+                        primer_parrafo = None
+                        for articulo_ref, apartado, fraccion in elementos:
+                            parte = articulo_ref
+                            if apartado:
+                                parte += f"/{apartado}"
+                            if fraccion:
+                                parte += f"/{fraccion}"
+                            partes_dsl.append(parte)
+
+                            # Obtener párrafo del primer artículo para el link
+                            if primer_parrafo is None:
+                                parrafo_res, _ = resolver_referencia(
+                                    ley_destino, articulo_ref, fraccion, None, indice
+                                )
+                                primer_parrafo = parrafo_res or 1
+
+                        if len(elementos) >= 2:
+                            query_dsl = f"{ley_destino.lower()}:{','.join(partes_dsl)}"
+                            referencias_articulo[texto_original] = {
+                                "ley": ley_destino.lower(),
+                                "articulo": elementos[0][0],
+                                "parrafo": primer_parrafo,
+                                "query": query_dsl
+                            }
+                        else:
+                            # Solo un artículo, referencia simple
+                            referencias_articulo[texto_original] = {
+                                "ley": ley_destino.lower(),
+                                "articulo": elementos[0][0],
+                                "parrafo": primer_parrafo
+                            }
 
             # Buscar referencias con lista de fracciones (artículo 140 fracciones I y II)
             for match in PATRON_REFERENCIA_FRACCIONES_LISTA.finditer(texto):
