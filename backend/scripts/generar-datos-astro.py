@@ -160,9 +160,10 @@ _ORDINALES_PARRAFO = (
 PATRON_REFERENCIA = re.compile(
     r'artículos?\s+'
     r'(\d+[o]?\.?(?:-[A-Z]+)?)'                         # Número de artículo (grupo 1) - incluye 4o.
+    r'(?:\s*,?\s*(?:' + _ORDINALES_PARRAFO + r')\s+párrafos?)?' # Párrafo ANTES de fracción (opcional)
     r'(?:\s*,?\s*(?:fracci[oó]ne?s?)\s+([IVXLCDM]+))?'  # Fracción opcional (grupo 2)
     r'(?:\s*,?\s*(?:inciso)\s+([a-z])\))?'            # Inciso opcional (grupo 3)
-    r'(?:\s*,?\s*(?:' + _ORDINALES_PARRAFO + r')'     # Párrafo opcional (primer, último, etc.)
+    r'(?:\s*,?\s*(?:' + _ORDINALES_PARRAFO + r')'     # Párrafo DESPUÉS de fracción (opcional)
     r'(?:\s+(?:y|e)\s+(?:' + _ORDINALES_PARRAFO + r'))?'  # Segundo ordinal opcional (penúltimo y último)
     r'\s+párrafos?)?'                                  # "párrafo" o "párrafos"
     r'\s+(?:de\s+la\s+|de\s+|del\s+)'                 # "de la", "de" o "del" antes de ley

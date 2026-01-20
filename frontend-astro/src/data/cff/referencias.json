@@ -52,6 +52,11 @@
       "ley": "lisr",
       "articulo": "93",
       "parrafo": 1
+    },
+    "artículo 31-A, primer párrafo, inciso d) de este Código": {
+      "ley": "cff",
+      "articulo": "31-A",
+      "parrafo": 1
     }
   },
   "15-A": {
@@ -1932,6 +1937,16 @@
       "articulo": "19",
       "parrafo": 38,
       "query": "lieps:19/XXII,19-A"
+    },
+    "artículo 86-G, segundo párrafo, fracción I de este Código": {
+      "ley": "cff",
+      "articulo": "86-G",
+      "parrafo": 3
+    },
+    "artículo 86-G, segundo párrafo, fracción II de este Código": {
+      "ley": "cff",
+      "articulo": "86-G",
+      "parrafo": 4
     },
     "artículo 86-G de este Código": {
       "ley": "cff",
