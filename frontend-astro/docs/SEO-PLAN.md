@@ -1,6 +1,6 @@
 # Plan SEO - LeyesMX
 
-> **Estado:** En progreso
+> **Estado:** Completado
 > **Fecha:** 2026-01-22
 
 ## Estado Actual
@@ -10,7 +10,7 @@
 | **P1** | og:image para compartir | ✅ Hecho | Alto | Trivial |
 | **P2** | Botones compartir + Web Share API + UTM | ✅ Hecho | Alto | Baja |
 | **P3** | Schema BreadcrumbList | ✅ Hecho | Medio | Baja |
-| **P4** | Schema WebSite + SearchAction | ❌ Pendiente | Medio | Baja |
+| **P4** | Schema WebSite + SearchAction | ✅ Hecho | Medio | Baja |
 
 ---
 
@@ -63,21 +63,26 @@ Google mostrará en SERP: `leyesmx.com › LISR › Titulo IV › Capitulo I`
 
 ---
 
-## P4: Schema WebSite + SearchAction (Pendiente)
+## ✅ P4: Schema WebSite + SearchAction (Completado)
 
-En homepage, agregar:
+JSON-LD en homepage para Sitelinks Search Box:
 ```json
 {
   "@type": "WebSite",
   "name": "LeyesMX",
-  "url": "https://leyesmx.com",
+  "url": "https://leyesmx.com/",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://leyesmx.com/buscar/?q={search_term_string}",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://leyesmx.com/buscar/?q={search_term_string}"
+    },
     "query-input": "required name=search_term_string"
   }
 }
 ```
+
+Google puede mostrar caja de búsqueda en resultados de marca.
 
 ---
 
