@@ -9,6 +9,7 @@ import PdfViewer from '../../../components/PdfViewer.astro';
 import ViewModeToggle from '../../../components/ViewModeToggle.astro';
 import ArticleNavigator from '../../../components/ArticleNavigator.astro';
 import BreadcrumbNav from '../../../components/BreadcrumbNav.astro';
+import ShareButtons from '../../../components/ShareButtons.astro';
 import catalogo from '../../../data/catalogo.json';
 import epigrafesSat from '../../../data/epigrafes-sat.json';
 
@@ -265,6 +266,11 @@ const seccionTexto = breadcrumb.length > 0
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
             </svg>
           </button>
+
+          <ShareButtons
+            title={`Artículo ${articulo.numero} - ${leyInfo.nombre} (${leyInfo.codigo})`}
+            text={articulo.contenido?.substring(0, 200) + '...'}
+          />
 
           <ViewModeToggle />
         </div>
