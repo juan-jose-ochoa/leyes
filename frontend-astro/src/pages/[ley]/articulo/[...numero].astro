@@ -226,6 +226,30 @@ const seccionTexto = breadcrumb.length > 0
     "inLanguage": "es-MX",
     "jurisdiction": "MX"
   })} />
+  <!-- BreadcrumbList for Google Search -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": leyInfo.codigo,
+        "item": `${Astro.site}${codigoLower}/`
+      },
+      ...breadcrumb.map((b, i) => ({
+        "@type": "ListItem",
+        "position": i + 2,
+        "name": `${b.tipo.charAt(0).toUpperCase() + b.tipo.slice(1)} ${b.numero}`,
+        "item": `${Astro.site}${b.url.startsWith('/') ? b.url.slice(1) : b.url}`
+      })),
+      {
+        "@type": "ListItem",
+        "position": breadcrumb.length + 2,
+        "name": `Artículo ${articulo.numero}`
+      }
+    ]
+  })} />
   <div class="h-screen flex flex-col overflow-hidden">
     <!-- Header fijo -->
     <header class="flex-shrink-0 z-20 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 px-4 py-2">

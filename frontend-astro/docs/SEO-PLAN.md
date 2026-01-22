@@ -7,9 +7,9 @@
 
 | Prioridad | Iniciativa | Estado | Impacto | Complejidad |
 |-----------|-----------|--------|---------|-------------|
-| **P1** | og:image para compartir | ❌ Pendiente | Alto | Trivial |
+| **P1** | og:image para compartir | ✅ Hecho | Alto | Trivial |
 | **P2** | Botones compartir + Web Share API + UTM | ✅ Hecho | Alto | Baja |
-| **P3** | Schema BreadcrumbList | ❌ Pendiente | Medio | Baja |
+| **P3** | Schema BreadcrumbList | ✅ Hecho | Medio | Baja |
 | **P4** | Schema WebSite + SearchAction | ❌ Pendiente | Medio | Baja |
 
 ---
@@ -44,19 +44,22 @@ Opción A: Imagen única para todo el sitio (simplicidad)
 
 ---
 
-## P3: Schema BreadcrumbList (Pendiente)
+## ✅ P3: Schema BreadcrumbList (Completado)
 
-Agregar structured data para navegación jerárquica:
+JSON-LD en páginas de artículos con jerarquía completa:
 ```json
 {
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "name": "LISR", "item": "/lisr/" },
-    { "name": "Título IV", "item": "/lisr/titulo/iv/" },
-    { "name": "Artículo 96", "item": "/lisr/articulo/96/" }
+    { "name": "LISR", "item": "https://leyesmx.com/lisr/" },
+    { "name": "Titulo IV", "item": "https://leyesmx.com/lisr/titulo/iv/" },
+    { "name": "Capitulo I", "item": "https://leyesmx.com/lisr/capitulo/iv/i/" },
+    { "name": "Artículo 96" }
   ]
 }
 ```
+
+Google mostrará en SERP: `leyesmx.com › LISR › Titulo IV › Capitulo I`
 
 ---
 
