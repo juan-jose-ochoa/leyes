@@ -205,19 +205,24 @@ const epigrafeInfo = epigrafesSat.epigrafes.find(
 // Get last breadcrumb item for division indicator
 const currentDivision = breadcrumb.length > 0 ? breadcrumb[breadcrumb.length - 1] : null;
 
+// Texto dinámico según tipo de contenido (regla para RMF, artículo para el resto)
+const esRegla = leyInfo.tipo_contenido === 'regla';
+const tipoContenido = esRegla ? 'Regla' : 'Artículo';
+const tipoContenidoCorto = esRegla ? 'Regla' : 'Art.';
+
 // Format breadcrumb for search metadata
 const seccionTexto = breadcrumb.length > 0
   ? breadcrumb.map(b => `${b.tipo.charAt(0).toUpperCase() + b.tipo.slice(1)} ${b.numero}${b.nombre ? ` - ${b.nombre}` : ''}`).join(' › ')
   : '';
 ---
 
-<BaseLayout title={`Artículo ${articulo.numero} - ${leyInfo.codigo}`} article={true} hideFloatingToggle={true} description={`${leyInfo.nombre} - Artículo ${articulo.numero}. Texto completo y actualizado.`}>
+<BaseLayout title={`${tipoContenido} ${articulo.numero} - ${leyInfo.codigo}`} article={true} hideFloatingToggle={true} description={`${leyInfo.nombre} - ${tipoContenido} ${articulo.numero}. Texto completo y actualizado.`}>
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "LegalDocument",
-    "name": `Artículo ${articulo.numero}`,
-    "description": `${leyInfo.nombre} - Artículo ${articulo.numero}`,
+    "name": `${tipoContenido} ${articulo.numero}`,
+    "description": `${leyInfo.nombre} - ${tipoContenido} ${articulo.numero}`,
     "isPartOf": {
       "@type": "Legislation",
       "name": leyInfo.nombre,
@@ -246,7 +251,7 @@ const seccionTexto = breadcrumb.length > 0
       {
         "@type": "ListItem",
         "position": breadcrumb.length + 2,
-        "name": `Artículo ${articulo.numero}`
+        "name": `${tipoContenido} ${articulo.numero}`
       }
     ]
   })} />
@@ -292,7 +297,7 @@ const seccionTexto = breadcrumb.length > 0
           </button>
 
           <ShareButtons
-            title={`Artículo ${articulo.numero} - ${leyInfo.nombre} (${leyInfo.codigo})`}
+            title={`${tipoContenido} ${articulo.numero} - ${leyInfo.nombre} (${leyInfo.codigo})`}
             text={articulo.contenido?.substring(0, 200) + '...'}
           />
 
@@ -358,7 +363,7 @@ const seccionTexto = breadcrumb.length > 0
 
               {/* H1 para SEO */}
               <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Artículo {articulo.numero} - {leyInfo.codigo}
+                {tipoContenido} {articulo.numero} - {leyInfo.codigo}
                 {articulo.nombre && <span class="text-xl font-normal text-gray-600 dark:text-gray-400"> — {articulo.nombre}</span>}
               </h1>
 
@@ -370,7 +375,7 @@ const seccionTexto = breadcrumb.length > 0
               <div id="legal-content">
                 {isDerogado ? (
                   <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-gray-500 dark:text-gray-400 italic">
-                    Artículo derogado
+                    {esRegla ? 'Regla derogada' : 'Artículo derogado'}
                   </div>
                 ) : tieneParrafos ? (
                   <FraccionesView parrafos={articulo.parrafos} referencias={referenciasArticulo} tooltips={tooltipsArticulo} />
@@ -643,7 +648,7 @@ const seccionTexto = breadcrumb.length > 0
             href={`/${codigoLower}/articulo/${prevArticulo.numero}/`}
             class="btn-secondary"
           >
-            ← Art. {prevArticulo.numero}
+            ← {tipoContenidoCorto} {prevArticulo.numero}
           </a>
         ) : (
           <span></span>
@@ -658,7 +663,7 @@ const seccionTexto = breadcrumb.length > 0
             href={`/${codigoLower}/articulo/${nextArticulo.numero}/`}
             class="btn-secondary"
           >
-            Art. {nextArticulo.numero} →
+            {tipoContenidoCorto} {nextArticulo.numero} →
           </a>
         ) : (
           <span></span>
@@ -668,7 +673,7 @@ const seccionTexto = breadcrumb.length > 0
   </div>
 
   <!-- Copy script -->
-  <script define:vars={{ articuloNumero: articulo.numero, leyNombre: leyInfo.nombre, leyCodigo: leyInfo.codigo }}>
+  <script define:vars={{ articuloNumero: articulo.numero, leyNombre: leyInfo.nombre, leyCodigo: leyInfo.codigo, tipoContenidoCopy: tipoContenido }}>
     const copyBtn = document.getElementById('copy-btn');
     const copyIcon = document.getElementById('copy-icon');
     const checkIcon = document.getElementById('check-icon');
@@ -678,7 +683,7 @@ const seccionTexto = breadcrumb.length > 0
     copyBtn?.addEventListener('click', async () => {
       if (!legalContent) return;
 
-      const header = `Artículo ${articuloNumero} - ${leyNombre} (${leyCodigo})\n\n`;
+      const header = `${tipoContenidoCopy} ${articuloNumero} - ${leyNombre} (${leyCodigo})\n\n`;
       const text = header + legalContent.innerText;
       try {
         await navigator.clipboard.writeText(text);
