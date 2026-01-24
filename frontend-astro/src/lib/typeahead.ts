@@ -271,6 +271,49 @@ export function findArticuloMatches(
 }
 
 /**
+ * Busca artículos por epígrafe (búsqueda temática)
+ */
+export function findArticulosByEpigrafe(
+  query: string,
+  index: QuickAccessIndex,
+  limit = 8
+): ArticuloMatch[] {
+  const queryLower = query.toLowerCase().trim();
+  if (queryLower.length < 3) return [];
+
+  const results: ArticuloMatch[] = [];
+
+  for (const [ley, articulos] of Object.entries(index.articulos)) {
+    const leyMeta = index.leyes[ley];
+    for (const art of articulos) {
+      if (art.e) {
+        const epigrafeLower = art.e.toLowerCase();
+        if (epigrafeLower.includes(queryLower)) {
+          // Mayor score si empieza con el query
+          const startsWithQuery = epigrafeLower.startsWith(queryLower);
+          // Mayor score si es match de palabra completa
+          const wordMatch = epigrafeLower.split(/\s+/).some(word => word.startsWith(queryLower));
+
+          results.push({
+            ...art,
+            score: startsWithQuery ? 0.95 : (wordMatch ? 0.9 : 0.8),
+            matchType: startsWithQuery ? 'prefix' : 'contains',
+            url: `/${ley.toLowerCase()}/articulo/${encodeURIComponent(art.n)}/`,
+            // Agregar info de ley para mostrar en UI
+            _ley: ley,
+            _categoria: leyMeta?.categoria || 'fiscal'
+          } as ArticuloMatch & { _ley: string; _categoria: string });
+        }
+      }
+    }
+  }
+
+  return results
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit);
+}
+
+/**
  * Ejecuta el typeahead completo
  */
 export async function executeTypeahead(query: string): Promise<TypeaheadResult> {
@@ -295,7 +338,15 @@ export async function executeTypeahead(query: string): Promise<TypeaheadResult> 
     }
   }
 
-  // Búsqueda normal
+  // Búsqueda por epígrafe (temática)
+  if (query.trim().length >= 3) {
+    const epigrafeMatches = findArticulosByEpigrafe(query, index);
+    if (epigrafeMatches.length > 0) {
+      return { parsed, matches: epigrafeMatches };
+    }
+  }
+
+  // Búsqueda normal (sin matches de acceso rápido)
   return { parsed, matches: [] };
 }
 

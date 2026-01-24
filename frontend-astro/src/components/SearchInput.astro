@@ -24,7 +24,7 @@ const dropdownId = `${id}-dropdown`;
 ---
 
 <div class="search-input-wrapper relative w-full" data-search-wrapper data-on-submit={onSubmit}>
-  <form id={formId} action="/buscar" method="get" class="relative">
+  <form id={formId} action="/buscar/" method="get" class="relative">
     <div class="relative">
       <svg class="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -209,29 +209,34 @@ const dropdownId = `${id}-dropdown`;
     }
 
     // Render article matches (indices leyCount to leyCount+artCount-1)
-    if (hasQuickMatches && result.parsed.leyMeta) {
+    // Supports both: ley+articulo pattern (leyMeta available) and epígrafe search (_ley per match)
+    if (hasQuickMatches) {
       const leyMeta = result.parsed.leyMeta;
-      const catColor = categoryColors[leyMeta.categoria] || 'bg-primary-600';
-      const tipoLabel = leyMeta.tipo_contenido === 'regla' ? 'Regla' : 'Art.';
 
       els.resultsUl.innerHTML = result.matches.map((match, idx) => {
+        // Get ley info: from parsed.leyMeta or from match._ley/_categoria (epígrafe search)
+        const matchLey = (match as any)._ley || leyMeta?.codigo || '';
+        const matchCat = (match as any)._categoria || leyMeta?.categoria || 'fiscal';
+        const catColor = categoryColors[matchCat] || 'bg-primary-600';
+        const tipoLabel = leyMeta?.tipo_contenido === 'regla' ? 'Regla' : 'Art.';
+
         const unifiedIdx = leyCount + idx;
         const isSelected = unifiedIdx === state.selectedIndex;
         return `
         <li>
-          <a href="${match.url}/"
+          <a href="${match.url}"
              data-unified-idx="${unifiedIdx}"
              class="typeahead-item flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors ${isSelected ? 'bg-primary-50 dark:bg-primary-900/20' : ''}">
             <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-xs font-bold text-white ${catColor}">
-              ${leyMeta.codigo.substring(0, 3)}
+              ${matchLey.substring(0, 3)}
             </span>
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2">
-                <span class="font-medium text-gray-900 dark:text-white">${leyMeta.codigo} ${tipoLabel} ${match.n}</span>
+                <span class="font-medium text-gray-900 dark:text-white">${matchLey} ${tipoLabel} ${match.n}</span>
                 ${match.matchType === 'exact' ? '<span class="text-xs text-primary-600 dark:text-primary-400 font-medium">exacto</span>' : ''}
               </div>
-              ${match.m ? `<p class="text-sm text-primary-600 dark:text-primary-400">${match.m}</p>` : ''}
-              ${match.e ? `<p class="text-sm text-primary-600/80 dark:text-primary-400/80">${match.e}</p>` : ''}
+              ${match.e ? `<p class="text-sm text-primary-600 dark:text-primary-400">${match.e}</p>` : ''}
+              ${match.m ? `<p class="text-sm text-gray-500 dark:text-gray-400">${match.m}</p>` : ''}
               ${match.t ? `<p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-1">${match.t}</p>` : ''}
             </div>
             <svg class="w-4 h-4 text-gray-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -447,7 +452,17 @@ const dropdownId = `${id}-dropdown`;
     }
   });
 
+  // Handle autofocus for View Transitions
+  function handleAutofocus() {
+    const autofocusInput = document.querySelector('[data-search-wrapper] .search-input[autofocus]') as HTMLInputElement;
+    autofocusInput?.focus();
+  }
+
   // Initialize on load and View Transitions
-  document.addEventListener('astro:page-load', initSearchInputs);
+  document.addEventListener('astro:page-load', () => {
+    initSearchInputs();
+    handleAutofocus();
+  });
   initSearchInputs();
+  handleAutofocus();
 </script>

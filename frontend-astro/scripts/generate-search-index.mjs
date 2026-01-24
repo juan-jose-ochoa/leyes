@@ -16,7 +16,15 @@ const outputDir = join(__dirname, '../public');
 // Leer catálogo
 const catalogo = JSON.parse(readFileSync(join(dataDir, 'catalogo.json'), 'utf-8'));
 
+// Leer epígrafes SAT y crear mapa para lookup rápido
+const epigrafesSat = JSON.parse(readFileSync(join(dataDir, 'epigrafes-sat.json'), 'utf-8'));
+const epigrafeMap = new Map();
+for (const ep of epigrafesSat.epigrafes) {
+  epigrafeMap.set(`${ep.ley}-${ep.articulo}`, ep.epigrafe);
+}
+
 // Construir mapa artículo → sección desde estructura.json
+// Devuelve objeto con texto y campos separados para búsqueda
 function buildSeccionMap(estructura) {
   const map = new Map();
 
@@ -33,8 +41,23 @@ function buildSeccionMap(estructura) {
           .map(b => `${b.tipo.charAt(0).toUpperCase() + b.tipo.slice(1)} ${b.numero}${b.nombre ? ` - ${b.nombre}` : ''}`)
           .join(' › ');
 
+        // Extraer campos individuales por tipo de división
+        const titulo = currentBreadcrumb.find(b => b.tipo === 'titulo');
+        const capitulo = currentBreadcrumb.find(b => b.tipo === 'capitulo');
+        const seccion = currentBreadcrumb.find(b => b.tipo === 'seccion');
+
+        const seccionData = {
+          seccionTexto,
+          tituloNumero: titulo?.numero || '',
+          tituloNombre: titulo?.nombre || '',
+          capituloNumero: capitulo?.numero || '',
+          capituloNombre: capitulo?.nombre || '',
+          seccionNumero: seccion?.numero || '',
+          seccionNombre: seccion?.nombre || ''
+        };
+
         for (const artNum of div.articulos) {
-          map.set(artNum, seccionTexto);
+          map.set(artNum, seccionData);
         }
       }
 
@@ -121,9 +144,12 @@ for (const leyInfo of catalogo.leyes) {
     // Solo indexar artículos (no transitorios, etc.)
     if (art.tipo !== 'articulo') continue;
 
-    const seccion = seccionMap.get(art.numero) || '';
+    const seccionData = seccionMap.get(art.numero) || { seccionTexto: '' };
     const url = `/${leyCode}/articulo/${art.numero}/`;
     const parrafos = art.parrafos || [];
+
+    // Buscar epígrafe del SAT para este artículo
+    const epigrafe = epigrafeMap.get(`${leyInfo.codigo}-${art.numero}`) || '';
 
     // Si no hay párrafos estructurados, indexar el contenido completo
     if (parrafos.length === 0 && art.contenido) {
@@ -136,9 +162,14 @@ for (const leyInfo of catalogo.leyes) {
         articuloTitulo: `Artículo ${art.numero}`,
         parrafoLabel: 'Artículo completo',
         parrafoTipo: 'completo',
-        seccion: seccion,
+        seccion: seccionData.seccionTexto || '',
         contenido: art.contenido,
-        url: url
+        url: url,
+        // Nuevos campos para búsqueda enriquecida
+        epigrafe,
+        tituloNombre: seccionData.tituloNombre || '',
+        capituloNombre: seccionData.capituloNombre || '',
+        seccionNombre: seccionData.seccionNombre || ''
       });
       artCount++;
       parrafoCount++;
@@ -167,12 +198,17 @@ for (const leyInfo of catalogo.leyes) {
         parrafoLabel: buildParrafoBreadcrumb(parrafo, parrafosMap),
         parrafoTipo: parrafo.tipo,
         parrafoId: parrafo.identificador || null,
-        seccion: seccion,
+        seccion: seccionData.seccionTexto || '',
         contenido: parrafo.contenido,
         url: `${url}#${anclaId}`,
         // Position for sorting (article position, not paragraph)
         pagina: art.pagina || 0,
-        posY: art.y || 0
+        posY: art.y || 0,
+        // Campos enriquecidos para búsqueda
+        epigrafe,
+        tituloNombre: seccionData.tituloNombre || '',
+        capituloNombre: seccionData.capituloNombre || '',
+        seccionNombre: seccionData.seccionNombre || ''
       });
       parrafoCount++;
     }
@@ -187,16 +223,32 @@ console.log(`\nTotal: ${documents.length} documentos (párrafos indexados)`);
 
 // Crear índice MiniSearch
 const miniSearch = new MiniSearch({
-  fields: ['contenido', 'articuloTitulo', 'articuloNumero'],
+  fields: [
+    'contenido',
+    'articuloTitulo',
+    'articuloNumero',
+    'epigrafe',        // Búsqueda por epígrafe SAT
+    'tituloNombre',    // Búsqueda por nombre de título
+    'capituloNombre',  // Búsqueda por nombre de capítulo
+    'seccionNombre'    // Búsqueda por nombre de sección
+  ],
   storeFields: [
     'ley', 'tipo', 'categoria',
     'articuloNumero', 'articuloTitulo',
     'parrafoLabel', 'parrafoTipo',
     'seccion', 'url',
-    'pagina', 'posY'
+    'pagina', 'posY',
+    'epigrafe'  // Para mostrar en resultados
   ],
   searchOptions: {
-    boost: { articuloTitulo: 2, articuloNumero: 1.5 },
+    boost: {
+      articuloTitulo: 2,
+      articuloNumero: 1.5,
+      epigrafe: 3,       // Alto boost - búsqueda por concepto
+      tituloNombre: 1.2,
+      capituloNombre: 1.2,
+      seccionNombre: 1.2
+    },
     fuzzy: 0.2,
     prefix: true
   }

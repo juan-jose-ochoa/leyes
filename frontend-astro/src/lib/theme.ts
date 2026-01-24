@@ -41,21 +41,29 @@ export const tipoStyles = {
     label: 'Leyes',
     chipColor: 'bg-primary-600',
     fontClass: 'font-bold',               // Negrita - documento principal
+    border: 'border-2',
+    ring: 'ring-2 ring-primary-500',
   },
   codigo: {
     label: 'Códigos',
     chipColor: 'bg-yellow-600',
     fontClass: 'font-medium',             // Medium - compilación formal
+    border: 'border-2',
+    ring: 'ring-2 ring-yellow-500',
   },
   reglamento: {
     label: 'Reglamentos',
     chipColor: 'bg-purple-600',
     fontClass: 'font-normal italic',      // Itálica - derivado de leyes
+    border: 'border border-dashed',
+    ring: 'ring-1 ring-purple-500',
   },
   resolucion: {
     label: 'RMF',
     chipColor: 'bg-amber-600',
     fontClass: 'font-light tracking-wide', // Light + espaciado - administrativo
+    border: 'border',
+    ring: 'ring-1 ring-amber-500',
   },
 } as const;
 

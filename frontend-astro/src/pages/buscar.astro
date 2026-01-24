@@ -312,6 +312,7 @@ const themeData = { categoryColors, tipoStyles };
     match: Record<string, string[]>;
     pagina: number;
     posY: number;
+    epigrafe?: string;  // Epígrafe SAT del artículo
   }
 
   interface ExcerptData {
@@ -416,12 +417,17 @@ const themeData = { categoryColors, tipoStyles };
 
         // Load MiniSearch from serialized index
         miniSearch = MiniSearch.loadJSON(JSON.stringify(indexData), {
-          fields: ['contenido', 'articuloTitulo', 'articuloNumero'],
+          fields: [
+            'contenido', 'articuloTitulo', 'articuloNumero',
+            'epigrafe', 'tituloNombre', 'capituloNombre', 'seccionNombre'
+          ],
           storeFields: [
             'ley', 'tipo', 'categoria',
             'articuloNumero', 'articuloTitulo',
             'parrafoLabel', 'parrafoTipo',
-            'seccion', 'url'
+            'seccion', 'url',
+            'pagina', 'posY',
+            'epigrafe'  // Para mostrar en resultados
           ]
         });
 
@@ -646,7 +652,14 @@ const themeData = { categoryColors, tipoStyles };
     let results = miniSearch.search(query, {
       prefix: true,
       fuzzy: 0.2,
-      boost: { articuloTitulo: 2, articuloNumero: 1.5 }
+      boost: {
+        articuloTitulo: 2,
+        articuloNumero: 1.5,
+        epigrafe: 3,       // Alto boost - búsqueda por concepto SAT
+        tituloNombre: 1.2,
+        capituloNombre: 1.2,
+        seccionNombre: 1.2
+      }
     }) as SearchResult[];
 
     // Filter by selected laws if any
@@ -674,6 +687,7 @@ const themeData = { categoryColors, tipoStyles };
       articuloTitulo: string;
       url: string;
       parrafos: ParrafoMatch[];
+      epigrafe?: string;  // Epígrafe SAT
     }
 
     interface SectionGroup {
@@ -742,7 +756,8 @@ const themeData = { categoryColors, tipoStyles };
           articuloNumero: artNum,
           articuloTitulo: result.articuloTitulo,
           url: baseUrl,
-          parrafos: []
+          parrafos: [],
+          epigrafe: result.epigrafe
         });
       }
 
@@ -879,6 +894,7 @@ const themeData = { categoryColors, tipoStyles };
                     <div class="article-group">
                       <a href="${article.url}" class="block p-3 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
                         <div class="font-medium text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400">${article.articuloTitulo}</div>
+                        ${article.epigrafe ? `<div class="text-sm text-gray-500 dark:text-gray-400 mt-0.5">${article.epigrafe}</div>` : ''}
                       </a>
                       <div class="pl-3 divide-y divide-gray-50 dark:divide-gray-800/50">
                         ${article.parrafos.map((p) => `
