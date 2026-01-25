@@ -53,6 +53,83 @@ const siteName = 'LeyesMX';
     <!-- Preconnect to Cloudflare Analytics -->
     <link rel="preconnect" href="https://cloudflareinsights.com" />
 
+    <!-- Critical CSS inline for fast LCP -->
+    <style is:inline>
+      /* Font */
+      @font-face {
+        font-family: 'Inter';
+        src: url('/fonts/inter-var.woff2') format('woff2');
+        font-weight: 100 900;
+        font-display: swap;
+      }
+      /* Base */
+      html { font-family: 'Inter', system-ui, sans-serif; }
+      body { background: #f9fafb; color: #111827; font-size: 1.25rem; margin: 0; }
+      .dark { background: #111827; color: #f3f4f6; }
+      .dark body { background: #111827; color: #f3f4f6; }
+      /* Layout */
+      .min-h-screen { min-height: 100vh; }
+      .container { width: 100%; }
+      .mx-auto { margin-left: auto; margin-right: auto; }
+      .max-w-6xl { max-width: 72rem; }
+      .max-w-2xl { max-width: 42rem; }
+      .px-4 { padding-left: 1rem; padding-right: 1rem; }
+      .py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+      .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+      .pl-12 { padding-left: 3rem; }
+      .pr-28 { padding-right: 7rem; }
+      .mb-2 { margin-bottom: 0.5rem; }
+      .mb-4 { margin-bottom: 1rem; }
+      .mb-10 { margin-bottom: 2.5rem; }
+      .mb-12 { margin-bottom: 3rem; }
+      .mt-2 { margin-top: 0.5rem; }
+      /* Flexbox */
+      .flex { display: flex; }
+      .justify-center { justify-content: center; }
+      .items-center { align-items: center; }
+      .text-center { text-align: center; }
+      /* Typography */
+      .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+      .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+      .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+      .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+      .font-bold { font-weight: 700; }
+      .font-medium { font-weight: 500; }
+      /* Colors */
+      .text-gray-900 { color: #111827; }
+      .text-gray-600 { color: #4b5563; }
+      .text-gray-500 { color: #6b7280; }
+      .text-gray-400 { color: #9ca3af; }
+      .text-primary-500 { color: #22c55e; }
+      .text-primary-600 { color: #16a34a; }
+      .dark .dark\:text-white { color: #fff; }
+      .dark .dark\:text-gray-400 { color: #9ca3af; }
+      .dark .dark\:text-gray-500 { color: #6b7280; }
+      .dark .dark\:text-primary-400 { color: #4ade80; }
+      /* Search input critical */
+      .w-full { width: 100%; }
+      .relative { position: relative; }
+      .rounded-xl { border-radius: 0.75rem; }
+      .border-2 { border-width: 2px; border-style: solid; }
+      .border-gray-200 { border-color: #e5e7eb; }
+      .bg-white { background-color: #fff; }
+      .placeholder-gray-400::placeholder { color: #9ca3af; }
+      .dark .dark\:border-gray-700 { border-color: #374151; }
+      .dark .dark\:bg-gray-800 { background-color: #1f2937; }
+      .dark .dark\:text-white { color: #fff; }
+      /* Logo */
+      .w-16 { width: 4rem; }
+      .h-16 { height: 4rem; }
+      /* Sizing for icons */
+      .h-5 { height: 1.25rem; }
+      .w-5 { width: 1.25rem; }
+      .absolute { position: absolute; }
+      .left-4 { left: 1rem; }
+      .top-1\/2 { top: 50%; }
+      .-translate-y-1\/2 { transform: translateY(-50%); }
+      .pointer-events-none { pointer-events: none; }
+    </style>
+
     <title>{title}</title>
 
     <!-- View Transitions for smooth navigation -->
