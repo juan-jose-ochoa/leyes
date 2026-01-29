@@ -38,7 +38,7 @@ const vigentes = articulos.filter(a => a.tipo !== 'derogado');
 const derogados = articulos.filter(a => a.tipo === 'derogado');
 ---
 
-<BaseLayout title={`Artículos - ${leyInfo.codigo}`}>
+<BaseLayout title={`Artículos - ${leyInfo.codigo}`} ogImage={`og-${codigoLower}.png`}>
   <main class="container mx-auto px-4 py-8 max-w-4xl">
     <!-- Breadcrumb -->
     <nav class="mb-6">

@@ -216,7 +216,7 @@ const seccionTexto = breadcrumb.length > 0
   : '';
 ---
 
-<BaseLayout title={`${tipoContenido} ${articulo.numero} - ${leyInfo.codigo}`} article={true} hideFloatingToggle={true} description={`${leyInfo.nombre} - ${tipoContenido} ${articulo.numero}. Texto completo y actualizado.`}>
+<BaseLayout title={`${tipoContenido} ${articulo.numero} - ${leyInfo.codigo}`} article={true} hideFloatingToggle={true} description={`${leyInfo.nombre} - ${tipoContenido} ${articulo.numero}. Texto completo y actualizado.`} ogImage={`og-${codigoLower}.png`}>
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",

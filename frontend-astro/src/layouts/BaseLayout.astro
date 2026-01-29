@@ -7,9 +7,10 @@ interface Props {
   description?: string;
   article?: boolean;
   hideFloatingToggle?: boolean;
+  ogImage?: string;
 }
 
-const { title, description = 'Buscador de leyes fiscales y laborales mexicanas', article = false, hideFloatingToggle = false } = Astro.props;
+const { title, description = 'Buscador de leyes fiscales y laborales mexicanas', article = false, hideFloatingToggle = false, ogImage = 'og-default.png' } = Astro.props;
 const canonicalUrl = Astro.url.href;
 const siteName = 'LeyesMX';
 ---
@@ -33,7 +34,7 @@ const siteName = 'LeyesMX';
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:site_name" content={siteName} />
     <meta property="og:locale" content="es_MX" />
-    <meta property="og:image" content={`${Astro.site}og-default.png`} />
+    <meta property="og:image" content={`${Astro.site}${ogImage}`} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
@@ -42,7 +43,7 @@ const siteName = 'LeyesMX';
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={`${Astro.site}og-default.png`} />
+    <meta name="twitter:image" content={`${Astro.site}${ogImage}`} />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

@@ -139,7 +139,7 @@ function getAllArticulos(div: any): string[] {
 const todosArticulos = getAllArticulos(division);
 ---
 
-<BaseLayout title={`${tituloDisplay} - ${leyInfo.codigo}`}>
+<BaseLayout title={`${tituloDisplay} - ${leyInfo.codigo}`} ogImage={`og-${codigoLower}.png`}>
   <main class="container mx-auto px-4 py-8 max-w-4xl">
     <!-- Breadcrumb -->
     <nav class="mb-6 text-sm">
