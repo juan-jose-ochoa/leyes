@@ -59,23 +59,23 @@ function wrapText(text, maxChars = 45) {
  */
 function generateSvg(codigo, nombre) {
   const codigoFontSize = getCodigoFontSize(codigo);
-  const lines = wrapText(nombre);
+  const lines = wrapText(nombre, 40); // Menos chars por línea para fuente más grande
   const lineCount = lines.length;
 
   // Ajustar posiciones Y según número de líneas
   let codigoY, nombreStartY;
   if (lineCount === 1) {
-    codigoY = 340;
-    nombreStartY = 450;
-  } else if (lineCount === 2) {
     codigoY = 320;
-    nombreStartY = 420;
-  } else {
+    nombreStartY = 440;
+  } else if (lineCount === 2) {
     codigoY = 300;
-    nombreStartY = 400;
+    nombreStartY = 410;
+  } else {
+    codigoY = 280;
+    nombreStartY = 380;
   }
 
-  const lineHeight = 40;
+  const lineHeight = 50;
 
   // Generar elementos de texto para el nombre
   const nombreElements = lines
@@ -89,7 +89,7 @@ function generateSvg(codigo, nombre) {
       return `
     <text x="600" y="${y}"
           font-family="system-ui, -apple-system, sans-serif"
-          font-size="28"
+          font-size="36"
           font-weight="400"
           fill="${WHITE}"
           text-anchor="middle"
@@ -118,7 +118,7 @@ function generateSvg(codigo, nombre) {
   </g>
 
   <!-- Marca LeyesMX -->
-  <text x="600" y="180"
+  <text x="600" y="160"
         font-family="system-ui, -apple-system, sans-serif"
         font-size="72"
         font-weight="700"
@@ -140,6 +140,17 @@ function generateSvg(codigo, nombre) {
 
   <!-- Nombre completo de la ley -->
   ${nombreElements}
+
+  <!-- URL del sitio -->
+  <text x="600" y="580"
+        font-family="system-ui, -apple-system, sans-serif"
+        font-size="28"
+        font-weight="400"
+        fill="${WHITE}"
+        text-anchor="middle"
+        opacity="0.7">
+    leyesmx.com
+  </text>
 </svg>
 `;
 }
